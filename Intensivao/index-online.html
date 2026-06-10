@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intensivão TEME26 | Leitura online</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <style>
+    :root {
+      --content-max: 1024px;
+      --text: #202124;
+      --muted: #5f6368;
+      --link: #0f6b5f;
+      --bg: #f7f7f4;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .sidebar {
+      background: #fbfbf8;
+    }
+
+    .app-name {
+      font-size: 1.05rem;
+      letter-spacing: 0;
+    }
+
+    #main article p,
+    #main article li,
+    #main article td,
+    #main article th,
+    #main article blockquote {
+      font-size: 1.04rem;
+      line-height: 1.62;
+    }
+
+    #main .content {
+      max-width: var(--content-max);
+      width: min(94vw, var(--content-max));
+      margin: 0 auto;
+    }
+
+    .sidebar-nav a {
+      font-size: 0.96rem;
+    }
+
+    .sidebar ul {
+      padding-left: 0.85rem;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    .mermaid {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .mermaid svg {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .search input {
+      font-size: 1rem;
+      border-radius: 8px;
+    }
+
+    @media (min-width: 1200px) {
+      #main {
+        padding-left: 360px;
+      }
+    }
+  </style>
+  <script>
+    window.$docsify = {
+      name: "Intensivão TEME26",
+      repo: "",
+      homepage: "LEITURA_OFICIAL.md",
+      loadSidebar: true,
+      alias: {
+        "/_sidebar.md": "/index-online-sidebar.md"
+      },
+      auto2top: true,
+      executeScript: true,
+      noCompileLinks: false,
+      maxLevel: 4,
+      subMaxLevel: 3,
+      relativePath: true,
+      search: "auto",
+      formatUpdated: "{DD}/{MM}/{YYYY}",
+      notFoundPage: true,
+      plugins: [
+        function(hook) {
+          hook.doneEach(function() {
+            const codeBlocks = document.querySelectorAll("pre code.language-mermaid");
+            codeBlocks.forEach((block) => {
+              if (block.dataset.rendered === "1") return;
+              const pre = block.closest("pre");
+              if (!pre) return;
+              const div = document.createElement("div");
+              div.className = "mermaid";
+              div.textContent = (block.textContent || "").trim();
+              pre.replaceWith(div);
+            });
+
+            if (window.mermaid && typeof window.mermaid.run === "function") {
+              const graphs = document.querySelectorAll("div.mermaid");
+              graphs.forEach((graph) => {
+                graph.removeAttribute("data-processed");
+                graph.removeAttribute("data-zoomable");
+              });
+              window.mermaid.run({
+                nodes: graphs,
+              });
+            }
+          });
+        }
+      ]
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    window.mermaid = window.mermaid || {};
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: "loose",
+      theme: "default",
+      flowchart: {
+        htmlLabels: true,
+        useMaxWidth: true,
+      },
+      themeVariables: {
+        fontFamily: "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+        fontSize: "17px",
+        background: "#fff"
+      }
+    });
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+</html>

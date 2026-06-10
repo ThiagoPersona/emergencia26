@@ -1,0 +1,34 @@
+# Arquivos do projeto Intensivão não necessários para publicação online
+Intensivao/build_html.ps1
+Intensivao/Intensivao_TEME26_completo.pdf
+Intensivao/Intensivao_TEME26_completo.html
+Intensivao/.obsidian/
+
+# Arquivos de mídia e binários em geral (evita subir conteúdo desnecessário)
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.svg
+*.tif
+*.tiff
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.ppt
+*.pptx
+
+# Itens de configuração pessoal/temporários
+*.tmp
+*.log
+*.bak
+/.idea/
+/.vscode/
