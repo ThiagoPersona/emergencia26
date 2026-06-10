@@ -2,7 +2,8 @@
 
 Material modular para revisão dirigida ao TEME26/RQE em Medicina de Emergência.
 
-🔗 **Leitura online:** [index-online.html](index-online.html) (mobile-friendly, sidebar e busca).
+🔗 **Leitura online:** [index.html](index.html) (mobile-friendly, sidebar e busca).  
+🔗 **Mapa de questões:** [MAPA_DE_QUESTOES_TEME22-25.md](MAPA_DE_QUESTOES_TEME22-25.md) (análise prática de prova).
 
 Objetivo: estudar com foco em aprovação, usando o padrão das provas TEME22-25, as estações práticas, o conteúdo programático oficial de 2026, as referências do edital e atualizações clínicas relevantes.
 

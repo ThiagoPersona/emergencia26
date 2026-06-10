@@ -1,825 +1,284 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Intensiv&atilde;o TEME26</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Material de estudo Intensivão TEME26 para prova de RQE em Medicina de Emergência." />
+  <title>Intensivão TEME26</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" onerror="this.onerror=null;this.href='https://unpkg.com/docsify@4/lib/themes/vue.css'" />
   <style>
     :root {
-      color-scheme: light;
-      --bg: #f7f7f4;
-      --paper: #ffffff;
-      --ink: #202124;
-      --muted: #666b70;
-      --line: #deded7;
-      --accent: #0f6b5f;
-      --accent-soft: #e3f1ed;
-      --warn: #8a4c00;
-      --code: #f2f3f0;
-      --shadow: 0 12px 36px rgba(31, 35, 40, .08);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --text: #1f2937;
+      --muted: #5f6472;
+      --link: #0f6b5f;
+      --bg: #f8f8f4;
+      --panel: #fbfbf7;
+      --max-content: 1180px;
+      --pad-main: 1.4rem;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html,
     body {
       margin: 0;
+      padding: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
       background: var(--bg);
-      color: var(--ink);
     }
 
-    .layout {
-      display: grid;
-      grid-template-columns: clamp(280px, 18vw, 340px) minmax(0, 1fr);
+    #app {
       min-height: 100vh;
+      background: #fff;
+      background: linear-gradient(180deg, #fbfbf9 0%, #f7f8f4 100%);
     }
 
-    aside {
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow: auto;
-      border-right: 1px solid var(--line);
-      background: #fbfbf8;
-      padding: 18px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-bottom: 14px;
-    }
-
-    .brand h1 {
-      font-size: 1rem;
-      line-height: 1.2;
-      margin: 0;
-    }
-
-    .brand small {
-      display: block;
-      margin-top: 3px;
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .search {
-      width: 100%;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 11px 12px;
-      font-size: .95rem;
-      background: var(--paper);
-      color: var(--ink);
-      outline: none;
-    }
-
-    .search:focus {
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px var(--accent-soft);
-    }
-
-    nav {
-      display: grid;
-      gap: 6px;
-      margin-top: 14px;
-    }
-
-    .nav-item {
-      border: 0;
-      border-radius: 8px;
-      padding: 10px 11px;
-      background: transparent;
-      color: var(--ink);
-      text-align: left;
-      font: inherit;
-      cursor: pointer;
-      line-height: 1.25;
-    }
-
-    .nav-item:hover,
-    .nav-item.active {
-      background: var(--accent-soft);
-      color: #07463e;
-    }
-
-    .nav-item small {
-      display: block;
-      margin-top: 2px;
-      color: var(--muted);
-      font-size: .76rem;
-    }
-
-    main {
-      padding: 20px clamp(16px, 2vw, 34px);
-    }
-
-    .article-shell {
-      width: 100%;
-      max-width: min(1500px, calc(100vw - clamp(280px, 18vw, 340px) - 52px));
+    #main .content {
+      width: min(96vw, var(--max-content));
       margin: 0 auto;
+      padding: 0 var(--pad-main) 2.5rem;
     }
 
-    .toolbar {
-      position: sticky;
-      top: 0;
-      z-index: 2;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 0 18px;
-      background: linear-gradient(var(--bg) 72%, rgba(247, 247, 244, 0));
-    }
-
-    .toolbar button {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--paper);
-      color: var(--ink);
-      padding: 9px 11px;
-      font: inherit;
-      cursor: pointer;
-    }
-
-    .toolbar button:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-    }
-
-    .doc-meta {
-      color: var(--muted);
-      font-size: .88rem;
-    }
-
-    article {
-      background: var(--paper);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: clamp(26px, 2.2vw, 42px);
-      box-shadow: var(--shadow);
-    }
-
-    article h1 {
-      margin-top: 0;
-      font-size: clamp(1.8rem, 5vw, 2.75rem);
-      line-height: 1.05;
-    }
-
-    article h2 {
-      margin-top: 2.2rem;
-      padding-top: 1.2rem;
-      border-top: 1px solid var(--line);
-      font-size: 1.35rem;
-      line-height: 1.2;
-    }
-
-    article h3 {
-      margin-top: 1.5rem;
-      font-size: 1.08rem;
-    }
-
-    article p,
-    article li,
-    article td,
-    article th,
-    article blockquote {
-      font-size: 1.04rem;
+    .markdown-section {
+      max-width: 100%;
       line-height: 1.62;
     }
 
-    article a {
-      color: var(--accent);
-      font-weight: 650;
-      text-decoration: none;
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3 {
+      letter-spacing: 0;
+      line-height: 1.25;
     }
 
-    article a:hover {
-      text-decoration: underline;
+    .markdown-section p,
+    .markdown-section li,
+    .markdown-section td,
+    .markdown-section th,
+    .markdown-section blockquote {
+      font-size: 1.05rem;
     }
 
-    blockquote {
-      margin: 1.1rem 0;
-      border-left: 4px solid var(--accent);
-      background: var(--accent-soft);
-      padding: 12px 16px;
-      border-radius: 0 8px 8px 0;
+    .sidebar {
+      width: min(340px, 78vw);
+      background: var(--panel);
     }
 
-    code {
-      background: var(--code);
-      border-radius: 5px;
-      padding: 2px 5px;
-      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
-      font-size: .92em;
+    .sidebar-toggle {
+      color: var(--text);
+      top: 0.75rem;
+      left: 0.75rem;
     }
 
-    pre,
+    .sidebar .app-name {
+      font-size: 1rem;
+      padding: 0.6rem 0;
+    }
+
+    .sidebar-nav a {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .markdown-section table {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+    }
+
     .mermaid {
-      overflow: auto;
-      background: var(--code);
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 18px;
-      white-space: pre;
-    }
-
-    .mermaid[data-processed="true"] {
-      white-space: normal;
-      min-height: 360px;
+      width: 100%;
+      overflow-x: auto;
+      margin: 1rem auto;
     }
 
     .mermaid svg {
-      display: block;
-      width: max(100%, 1180px);
-      max-width: none;
-      height: auto !important;
-      margin: 0 auto;
+      width: min(100%, 1000px) !important;
+      height: auto;
+      max-width: 100%;
     }
 
-    .mermaid svg .nodeLabel,
-    .mermaid svg .edgeLabel,
-    .mermaid svg .label,
-    .mermaid svg foreignObject {
-      font-size: 17px !important;
-      line-height: 1.25 !important;
-    }
-
-    pre code {
-      background: transparent;
-      padding: 0;
-    }
-
-    .table-wrap {
-      width: 100%;
-      overflow-x: auto;
-      margin: 1rem 0;
-      border: 1px solid var(--line);
+    .search input {
+      font-size: 1rem;
       border-radius: 8px;
     }
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 560px;
-      background: var(--paper);
-    }
-
-    th,
-    td {
-      border-bottom: 1px solid var(--line);
-      padding: 10px 12px;
-      vertical-align: top;
-      text-align: left;
-    }
-
-    th {
-      background: #f0f1ed;
-      font-weight: 750;
-    }
-
-    tr:last-child td {
-      border-bottom: 0;
-    }
-
-    .empty {
-      padding: 14px 10px;
+    .fallback-msg {
+      max-width: 860px;
+      margin: 4rem auto;
+      padding: 1rem;
+      border: 1px solid #dee3de;
+      border-radius: 10px;
+      background: #fff;
+      font-size: 1rem;
       color: var(--muted);
-      font-size: .92rem;
+      text-align: center;
     }
 
-    .mobile-title {
-      display: none;
-      margin: 0 0 10px;
+    .fallback-msg a {
+      color: var(--link);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .loading-msg {
+      max-width: 860px;
+      margin: 4rem auto;
+      padding: 2rem 1rem;
       color: var(--muted);
-      font-size: .88rem;
+      border-radius: 10px;
+      text-align: center;
+      background: #ffffffea;
+      border: 1px solid #e4e7e2;
     }
 
-    @media (max-width: 860px) {
-      .layout {
-        display: block;
+    @media (min-width: 1100px) {
+      .sidebar {
+        width: 330px;
       }
 
-      aside {
-        position: relative;
-        height: auto;
-        max-height: 45vh;
-        border-right: 0;
-        border-bottom: 1px solid var(--line);
-      }
-
-      main {
-        padding: 14px;
-      }
-
-      .article-shell {
-        max-width: none;
-      }
-
-      article {
-        padding: 22px 18px;
-      }
-
-      .mermaid[data-processed="true"] {
-        min-height: 280px;
-      }
-
-      .mermaid svg {
-        width: max(100%, 920px);
-      }
-
-      .toolbar {
-        padding-top: 8px;
-      }
-
-      .doc-meta {
-        display: none;
-      }
-
-      .mobile-title {
-        display: block;
-      }
-
-      th,
-      td {
-        padding: 9px 10px;
+      #main .content {
+        width: min(calc(100vw - 390px), var(--max-content));
       }
     }
 
-    @media print {
-      aside,
-      .toolbar {
-        display: none;
+    @media (max-width: 640px) {
+      .app-nav {
+        padding-right: 0;
       }
 
-      .layout {
-        display: block;
-      }
-
-      main {
-        padding: 0;
-      }
-
-      article {
-        border: 0;
-        box-shadow: none;
+      .loading-msg,
+      .fallback-msg {
+        margin: 2.5rem 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="layout">
-    <aside>
-      <div class="brand">
-        <div>
-          <h1>Intensiv&atilde;o TEME26</h1>
-          <small>Leitura r&aacute;pida para prova</small>
-        </div>
-      </div>
-      <input class="search" id="search" type="search" placeholder="Buscar tema, dose, pegadinha...">
-      <nav id="nav"></nav>
-    </aside>
-
-    <main>
-      <div class="article-shell">
-        <div class="toolbar">
-          <button id="homeBtn" type="button">&Iacute;ndice</button>
-          <span class="doc-meta" id="docMeta"></span>
-          <div>
-            <button id="prevBtn" type="button">Anterior</button>
-            <button id="nextBtn" type="button">Pr&oacute;ximo</button>
-          </div>
-        </div>
-        <p class="mobile-title" id="mobileTitle"></p>
-        <article id="content"></article>
-      </div>
-    </main>
+  <div id="app">
+    <div class="loading-msg">
+      <p>Carregando o Intensivão TEME26...</p>
+      <p><a href="LEITURA_OFICIAL.md">Leitura principal</a> · <a href="MAPA_DE_QUESTOES_TEME22-25.md">Mapa de questões</a></p>
+    </div>
   </div>
 
   <script>
-    window.mermaid = { startOnLoad: false };
-  </script>
-  <script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-  <script>
-    const DOCUMENT_FILES = [
-      "LEITURA_OFICIAL.md",
-      "MAPA_DE_QUESTOES_TEME22-25.md",
-      "temas/001_via-aerea_vm.md",
-      "temas/002_trauma-hemorragico.md",
-      "temas/003_reanimacao-pcr.md",
-      "temas/004_pocus.md",
-      "temas/005_sca-arritmias-hipertensivas.md",
-      "temas/006_choque-sepse-vasoativos.md",
-      "temas/007_emergencias-neurologicas.md",
-      "temas/008_toxicologia-animais-peconhentos.md",
-      "temas/009_emergencias-obstetricas-ginecologicas.md",
-      "temas/010_emergencias-pediatricas.md",
-      "temas/011_disturbios-metabolicos-renais-gasometria.md",
-      "temas/012_emergencias-respiratorias.md",
-      "temas/013_aph-regulacao-imv-desastres-transporte.md",
-      "temas/014_gastro-hepatologia-abdome-agudo.md",
-      "temas/015_hemato-oncologia-emergencia.md",
-      "temas/016_dermato-reumato-alergia-anafilaxia.md",
-      "temas/017_paliativos-vulnerabilidades-etica-gestao.md",
-      "temas/018_infectologia-emergencia.md",
-      "temas/019_oftalmo-otorrino-odonto.md",
-      "temas/020_urologia-emergencia.md",
-      "temas/021_ortopedia-extremidades-queimaduras.md",
-      "temas/022_psiquiatria-agitacao-contencao.md",
-      "temas/023_procedimentos-analgesia-sedacao.md",
-      "temas/024_cardiovascular-complementar.md"
-    ];
-    const DOCUMENTS = [];
-    const docMap = new Map();
-    const baseDir = new URL(".", window.location.href);
-    const nav = document.getElementById("nav");
-    const content = document.getElementById("content");
-    const search = document.getElementById("search");
-    const docMeta = document.getElementById("docMeta");
-    const mobileTitle = document.getElementById("mobileTitle");
-    const homeBtn = document.getElementById("homeBtn");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    let currentDoc = localStorage.getItem("intensivao-teme26-doc") || "LEITURA_OFICIAL.md";
-    let mermaidReady = false;
-
-    function escapeHtml(value) {
-      return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
-
-    function normalizeMermaid(source) {
-      function cleanLabel(value) {
-        return String(value)
-          .trim()
-          .replace(/^["']|["']$/g, "")
-          .replace(/"/g, "'")
-          .replace(/</g, "&lt;")
-          .replace(/>/g, "&gt;");
-      }
-
-      return String(source)
-        .replace(/([A-Za-z][A-Za-z0-9_]*)\[([^\]\n]+)\]/g, (match, id, label) => `${id}["${cleanLabel(label)}"]`)
-        .replace(/([A-Za-z][A-Za-z0-9_]*)\{([^}\n]+)\}/g, (match, id, label) => `${id}{"${cleanLabel(label)}"}`)
-        .replace(/(-->|---|\-.->)\|([^|\n]+)\|/g, (match, arrow, label) => `${arrow}|${cleanLabel(label)}|`);
-    }
-
-    function slugify(value) {
-      return value.toLowerCase()
-        .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-|-$/g, "");
-    }
-
-    function resolveDocHref(href, baseDoc) {
-      if (/^(https?:|mailto:|tel:)/i.test(href)) return null;
-      const clean = href.split("#")[0].replace(/^.\//, "");
-      const baseParts = baseDoc.split("/");
-      baseParts.pop();
-      const rawParts = clean.includes("/") ? clean.split("/") : baseParts.concat(clean.split("/"));
-      const parts = [];
-      for (const part of rawParts) {
-        if (!part || part === ".") continue;
-        if (part === "..") parts.pop();
-        else parts.push(part);
-      }
-      const normalized = parts.join("/");
-      return docMap.has(normalized) ? normalized : null;
-    }
-
-    function inlineMarkdown(value, baseDoc) {
-      let out = escapeHtml(value);
-      out = out.replace(/`([^`]+)`/g, "<code>$1</code>");
-      out = out.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
-      out = out.replace(/\*([^*]+)\*/g, "<em>$1</em>");
-      out = out.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, label, href) => {
-        const cleanHref = href.trim();
-        const targetDoc = resolveDocHref(cleanHref, baseDoc);
-        if (targetDoc) {
-          return `<a href="#${escapeHtml(targetDoc)}" data-doc="${escapeHtml(targetDoc)}">${label}</a>`;
-        }
-        return `<a href="${escapeHtml(cleanHref)}" target="_blank" rel="noopener noreferrer">${label}</a>`;
+    function normalizeThemeLinks() {
+      document.querySelectorAll('a[href*="temas/temas/"]').forEach((link) => {
+        const href = link.getAttribute("href");
+        if (!href) return;
+        link.setAttribute("href", href.replace(/temas\/temas\//g, "temas/"));
       });
-      return out;
     }
 
-    function renderTable(lines, baseDoc) {
-      const rows = lines
-        .map((line) => line.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map((cell) => cell.trim()))
-        .filter((row) => !row.every((cell) => /^:?-{3,}:?$/.test(cell)));
-      if (!rows.length) return "";
-      const [head, ...body] = rows;
-      const thead = `<thead><tr>${head.map((cell) => `<th>${inlineMarkdown(cell, baseDoc)}</th>`).join("")}</tr></thead>`;
-      const tbody = `<tbody>${body.map((row) => `<tr>${row.map((cell) => `<td>${inlineMarkdown(cell, baseDoc)}</td>`).join("")}</tr>`).join("")}</tbody>`;
-      return `<div class="table-wrap"><table>${thead}${tbody}</table></div>`;
+    function ensureMermaidInit() {
+      if (window.__mermaidReady || typeof window.mermaid !== "object" || typeof window.mermaid.initialize !== "function") return;
+      window.mermaid.initialize({
+        startOnLoad: false,
+        securityLevel: "loose",
+        flowchart: {
+          htmlLabels: true,
+          useMaxWidth: true
+        },
+        theme: "neutral",
+        themeVariables: {
+          fontFamily: "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+          fontSize: "16px"
+        }
+      });
+      window.__mermaidReady = true;
     }
 
-    function renderMarkdown(markdown, baseDoc) {
-      const lines = markdown.replace(/\r\n/g, "\n").split("\n");
-      const html = [];
-      let paragraph = [];
-      let listType = null;
-      let codeLang = null;
-      let codeLines = [];
+    function renderMermaid(attempt = 0) {
+      ensureMermaidInit();
 
-      function flushParagraph() {
-        if (!paragraph.length) return;
-        html.push(`<p>${inlineMarkdown(paragraph.join(" "), baseDoc)}</p>`);
-        paragraph = [];
-      }
-
-      function closeList() {
-        if (!listType) return;
-        html.push(`</${listType}>`);
-        listType = null;
-      }
-
-      function openList(type) {
-        if (listType === type) return;
-        closeList();
-        html.push(`<${type}>`);
-        listType = type;
-      }
-
-      for (let i = 0; i < lines.length; i++) {
-        const line = lines[i];
-        const trimmed = line.trim();
-
-        if (codeLang !== null) {
-          if (trimmed.startsWith("```")) {
-            if (codeLang.toLowerCase() === "mermaid") {
-              const code = normalizeMermaid(codeLines.join("\n"));
-              const escapedCode = escapeHtml(code);
-              const sourceAttr = escapedCode.replace(/\n/g, "&#10;");
-              html.push(`<div class="mermaid" data-mermaid-source="${sourceAttr}">${escapedCode}</div>`);
-            } else {
-              const code = escapeHtml(codeLines.join("\n"));
-              html.push(`<pre><code>${code}</code></pre>`);
-            }
-            codeLang = null;
-            codeLines = [];
-          } else {
-            codeLines.push(line);
-          }
-          continue;
-        }
-
-        if (trimmed.startsWith("```")) {
-          flushParagraph();
-          closeList();
-          codeLang = trimmed.replace(/^```/, "").trim();
-          codeLines = [];
-          continue;
-        }
-
-        if (!trimmed) {
-          flushParagraph();
-          closeList();
-          continue;
-        }
-
-        if (/^\|/.test(trimmed)) {
-          flushParagraph();
-          closeList();
-          const tableLines = [];
-          while (i < lines.length && /^\|/.test(lines[i].trim())) {
-            tableLines.push(lines[i]);
-            i++;
-          }
-          i--;
-          html.push(renderTable(tableLines, baseDoc));
-          continue;
-        }
-
-        const heading = trimmed.match(/^(#{1,6})\s+(.+)$/);
-        if (heading) {
-          flushParagraph();
-          closeList();
-          const level = heading[1].length;
-          const label = heading[2].trim();
-          const id = slugify(label);
-          html.push(`<h${level} id="${id}">${inlineMarkdown(label, baseDoc)}</h${level}>`);
-          continue;
-        }
-
-        const unordered = trimmed.match(/^[-*]\s+(.+)$/);
-        if (unordered) {
-          flushParagraph();
-          openList("ul");
-          html.push(`<li>${inlineMarkdown(unordered[1], baseDoc)}</li>`);
-          continue;
-        }
-
-        const ordered = trimmed.match(/^\d+\.\s+(.+)$/);
-        if (ordered) {
-          flushParagraph();
-          openList("ol");
-          html.push(`<li>${inlineMarkdown(ordered[1], baseDoc)}</li>`);
-          continue;
-        }
-
-        const quote = trimmed.match(/^>\s?(.*)$/);
-        if (quote) {
-          flushParagraph();
-          closeList();
-          html.push(`<blockquote>${inlineMarkdown(quote[1], baseDoc)}</blockquote>`);
-          continue;
-        }
-
-        closeList();
-        paragraph.push(trimmed);
-      }
-
-      flushParagraph();
-      closeList();
-      return html.join("\n");
-    }
-
-    function runMermaid(retry = 0) {
-      const nodes = Array.from(document.querySelectorAll(".mermaid[data-mermaid-source]"))
-        .filter((node) => node.dataset.renderedByIntensivao !== "true");
+      const nodes = document.querySelectorAll("pre code.language-mermaid, pre code.lang-mermaid");
       if (!nodes.length) return;
-      if (!window.mermaid) {
-        if (retry < 20) {
-          setTimeout(() => runMermaid(retry + 1), 300);
+
+      if (typeof window.mermaid !== "object" || typeof window.mermaid.run !== "function") {
+        if (attempt < 12) {
+          window.setTimeout(() => renderMermaid(attempt + 1), 200);
         }
         return;
       }
-      try {
-        if (!mermaidReady) {
-          mermaid.initialize({
-            startOnLoad: false,
-            theme: "neutral",
-            securityLevel: "loose",
-            themeVariables: {
-              fontFamily: "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
-              fontSize: "18px",
-              primaryColor: "#ffffff",
-              primaryBorderColor: "#8d959b",
-              lineColor: "#5f666d"
-            },
-            flowchart: {
-              htmlLabels: true,
-              curve: "linear",
-              nodeSpacing: 26,
-              rankSpacing: 34,
-              useMaxWidth: false
-            }
-          });
-          mermaidReady = true;
-        }
-        nodes.forEach((node) => {
-          node.removeAttribute("data-processed");
-          node.textContent = node.getAttribute("data-mermaid-source") || node.textContent;
+
+      const wrappers = [];
+      nodes.forEach((codeBlock) => {
+        const pre = codeBlock.closest("pre");
+        if (!pre || pre.dataset.mermaidConverted === "1") return;
+
+        const source = (codeBlock.textContent || "").trim();
+        const wrapper = document.createElement("div");
+        wrapper.className = "mermaid";
+        wrapper.textContent = source;
+        pre.replaceWith(wrapper);
+        pre.dataset.mermaidConverted = "1";
+        wrappers.push(wrapper);
+      });
+
+      if (!wrappers.length) return;
+
+      window.mermaid.run({ nodes: wrappers }).catch(() => {
+        wrappers.forEach((wrapper) => {
+          wrapper.setAttribute("data-mermaid-error", "1");
+          wrapper.style.opacity = "0.85";
         });
-        const rendered = mermaid.run({ nodes });
-        Promise.resolve(rendered).then(() => {
-          nodes.forEach((node) => {
-            node.dataset.renderedByIntensivao = "true";
-          });
-          document.querySelectorAll(".mermaid svg").forEach((svg) => {
-            svg.setAttribute("preserveAspectRatio", "xMidYMin meet");
-          });
-        }).catch((error) => {
-          console.warn("Mermaid não renderizou:", error);
-        });
-      } catch (error) {
-        console.warn("Mermaid n\u00e3o renderizou:", error);
-      }
-    }
-
-    function renderNav() {
-      const term = search.value.trim().toLowerCase();
-      nav.innerHTML = "";
-      const docs = DOCUMENTS.filter((doc) => {
-        if (!term) return true;
-        return `${doc.title}\n${doc.markdown}`.toLowerCase().includes(term);
-      });
-      if (!docs.length) {
-        nav.innerHTML = `<div class="empty">Nenhum resultado.</div>`;
-        return;
-      }
-      docs.forEach((doc, index) => {
-        const originalIndex = DOCUMENTS.findIndex((item) => item.id === doc.id);
-        const button = document.createElement("button");
-        button.className = `nav-item${doc.id === currentDoc ? " active" : ""}`;
-        button.type = "button";
-        button.innerHTML = `${escapeHtml(doc.title)}<small>${originalIndex + 1}. ${escapeHtml(doc.id)}</small>`;
-        button.addEventListener("click", () => openDoc(doc.id));
-        nav.appendChild(button);
       });
     }
 
-    function openDoc(id) {
-      const doc = docMap.get(id) || DOCUMENTS[0];
-      if (!doc) return;
-      currentDoc = doc.id;
-      localStorage.setItem("intensivao-teme26-doc", currentDoc);
-      try {
-        content.innerHTML = renderMarkdown(doc.markdown, doc.id);
-      } catch (error) {
-        console.error("Falha ao renderizar documento:", error);
-        content.innerHTML = `<p class="empty">Não foi possível renderizar este documento. Recarregue a página.</p>`;
-      }
-      const index = DOCUMENTS.findIndex((item) => item.id === doc.id);
-      docMeta.textContent = `${index + 1} de ${DOCUMENTS.length} - ${doc.id}`;
-      mobileTitle.textContent = doc.title;
-      prevBtn.disabled = index <= 0;
-      nextBtn.disabled = index >= DOCUMENTS.length - 1;
-      renderNav();
-      window.location.hash = encodeURIComponent(doc.id);
-      window.scrollTo({ top: 0, behavior: "smooth" });
-      setTimeout(() => runMermaid(), 100);
-    }
-
-    document.addEventListener("click", (event) => {
-      const link = event.target.closest("a[data-doc]");
-      if (!link) return;
-      event.preventDefault();
-      openDoc(link.dataset.doc);
-    });
-
-    search.addEventListener("input", renderNav);
-    homeBtn.addEventListener("click", () => openDoc("LEITURA_OFICIAL.md"));
-    prevBtn.addEventListener("click", () => {
-      const index = DOCUMENTS.findIndex((doc) => doc.id === currentDoc);
-      if (index > 0) openDoc(DOCUMENTS[index - 1].id);
-    });
-    nextBtn.addEventListener("click", () => {
-      const index = DOCUMENTS.findIndex((doc) => doc.id === currentDoc);
-      if (index < DOCUMENTS.length - 1) openDoc(DOCUMENTS[index + 1].id);
-    });
-
-    function extractTitle(markdown, fallback) {
-      const first = markdown
-        .split(/\r?\n/)
-        .map((line) => line.trim())
-        .find((line) => line.length > 0);
-      if (!first) return fallback;
-      return first.replace(/^#{1,6}\s*/, "").trim();
-    }
-
-    async function loadDocument(path) {
-      const response = await fetch(new URL(path, baseDir), { cache: "no-cache" });
-      if (!response.ok) {
-        throw new Error(`Erro ao carregar ${path}: ${response.status}`);
-      }
-      const markdown = await response.text();
-      return {
-        id: path,
-        title: extractTitle(markdown, path),
-        markdown
-      };
-    }
-
-    async function initializeDocuments() {
-      content.innerHTML = "<p class=\"empty\">Carregando material...</p>";
-      const fileLoadResults = await Promise.allSettled(DOCUMENT_FILES.map((path) => loadDocument(path)));
-      const loaded = fileLoadResults
-        .filter((result) => result.status === "fulfilled")
-        .map((result) => result.value);
-
-      fileLoadResults.forEach((result, index) => {
-        if (result.status === "rejected") {
-          const path = DOCUMENT_FILES[index];
-          console.error("Não foi possível carregar:", path, result.reason);
+    window.$docsify = {
+      name: "Intensivão TEME26",
+      loadSidebar: "index-online-sidebar.md",
+      homepage: "LEITURA_OFICIAL.md",
+      loadNavbar: false,
+      auto2top: true,
+      executeScript: true,
+      maxLevel: 4,
+      subMaxLevel: 2,
+      relativePath: false,
+      search: {
+        maxAge: 86400000,
+        depth: 3,
+        noData: "Nenhum resultado."
+      },
+      notFoundPage: true,
+      markdown: {
+        smartypants: false
+      },
+      formatUpdated: "{DD}/{MM}/{YYYY}",
+      plugins: [
+        function(hook) {
+          const onRendered = () => {
+            normalizeThemeLinks();
+            renderMermaid();
+            const app = document.getElementById("app");
+            if (app) app.dataset.loaded = "1";
+          };
+          hook.ready(onRendered);
+          hook.doneEach(onRendered);
         }
-      });
-
-      if (!loaded.length) {
-        const links = DOCUMENT_FILES.map((path) => `<li><a href="${escapeHtml(path)}" target="_blank" rel="noopener noreferrer">${escapeHtml(path)}</a></li>`).join("");
-        const protocolHint = window.location.protocol === "file:"
-          ? "<p>Esta página está aberta via <code>file://</code>. Use servidor local (<code>python -m http.server</code>) ou GitHub Pages para carregar os arquivos corretamente.</p>"
-          : "";
-        content.innerHTML = `<h2>Não foi possível carregar o conteúdo</h2>${protocolHint}<ul>${links}</ul>`;
-        nav.innerHTML = "<div class=\"empty\">Verifique os arquivos no painel lateral.</div>";
-        return;
-      }
-
-      loaded.sort((a, b) => DOCUMENT_FILES.indexOf(a.id) - DOCUMENT_FILES.indexOf(b.id));
-      loaded.forEach((doc) => docMap.set(doc.id, doc));
-      loaded.forEach((doc) => DOCUMENTS.push(doc));
-
-      const hashDoc = decodeURIComponent(window.location.hash.replace(/^#/, ""));
-      const targetDoc = docMap.has(hashDoc) ? hashDoc : (docMap.has(currentDoc) ? currentDoc : loaded[0].id);
-      currentDoc = targetDoc;
-      openDoc(targetDoc);
-    }
-
-    initializeDocuments().catch((error) => {
-      console.error("Falha de inicialização:", error);
-      content.innerHTML = "<p class=\"empty\">Falha crítica ao iniciar a página. Recarregue e verifique o console.</p>";
-      nav.innerHTML = "<div class=\"empty\">Não foi possível montar a navegação.</div>";
-    });
+      ]
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js" onerror="this.onerror=null; this.src='https://unpkg.com/docsify@4/lib/docsify.min.js'"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js" onerror="this.onerror=null; this.src='https://unpkg.com/docsify@4/lib/plugins/search.min.js'"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js" onerror="this.onerror=null; this.src='https://unpkg.com/mermaid@10/dist/mermaid.min.js'"></script>
+  <script>
+    setTimeout(() => {
+      const app = document.getElementById("app");
+      if (!app || app.dataset.loaded === "1") return;
+      app.innerHTML = `
+        <div class="fallback-msg">
+          <p>O app está demorando para carregar.</p>
+          <p><a href="LEITURA_OFICIAL.md">Abrir leitura principal</a></p>
+          <p><a href="MAPA_DE_QUESTOES_TEME22-25.md">Abrir mapa de questões</a></p>
+          <p><a href="javascript:location.reload()">Recarregar</a></p>
+        </div>
+      `;
+    }, 10000);
   </script>
 </body>
 </html>
-
