@@ -39,7 +39,7 @@ git add --all Intensivao/*.html Intensivao/*.md Intensivao/temas/*.md
   - Ele monta um pacote mínimo com os arquivos `html` e `md` na raiz do Pages e também em `/Intensivao/` (compatibilidade).
   - No GitHub, vá em `Settings > Pages` e em `Source` escolha **GitHub Actions**.
   - URL final:
-    - `https://SEU-USUARIO.github.io/SEU-REPO/` (se quiser uma landing curta com o index padrão)
+    - `https://SEU-USUARIO.github.io/SEU-REPO/` (recomendado: landing curta com redirect automático)
     - `https://SEU-USUARIO.github.io/SEU-REPO/index-online.html`
     - `https://SEU-USUARIO.github.io/SEU-REPO/Intensivao/index-online.html`
 

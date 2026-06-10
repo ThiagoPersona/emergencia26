@@ -22,7 +22,7 @@ Podemos publicar em 3 opções:
 3. Em `Settings > Pages`, selecione:
    - Source: `GitHub Actions`
 4. URL final:
-   - `https://SEU-USUARIO.github.io/SEU-REPO/`
+   - `https://SEU-USUARIO.github.io/SEU-REPO/`  (landing com redirecionamento automático)
    - `https://SEU-USUARIO.github.io/SEU-REPO/index-online.html`
    - `https://SEU-USUARIO.github.io/SEU-REPO/Intensivao/index-online.html`
 
