@@ -23,9 +23,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Montar site
+        run: |
+          set -euo pipefail
+          mkdir -p site/Intensivao/temas site/Intensivao/assets
+          shopt -s nullglob
+
+          cp -f Intensivao/*.html site/Intensivao/ 2>/dev/null || true
+          cp -f Intensivao/*.md site/Intensivao/ 2>/dev/null || true
+          for file in Intensivao/temas/*.md; do
+            cp "$file" site/Intensivao/temas/
+          done
+          for file in Intensivao/assets/*.md; do
+            cp "$file" site/Intensivao/assets/
+          done
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./Intensivao
+          path: ./site
       - id: deployment
         uses: actions/deploy-pages@v4

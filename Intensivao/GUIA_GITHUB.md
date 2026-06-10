@@ -36,10 +36,11 @@ git add --all Intensivao/*.html Intensivao/*.md Intensivao/temas/*.md
 ## 3) Link final no GitHub Pages
 - Opção 1 (automático com workflow):
   - O projeto já inclui o workflow `.github/workflows/pages-intensivao.yml`.
-  - Ele publica a pasta `Intensivao/` inteira como site.
+  - Ele monta um pacote mínimo com os arquivos `html` e `md` e publica com a pasta `Intensivao/` no site.
   - No GitHub, vá em `Settings > Pages` e em `Source` escolha **GitHub Actions**.
   - URL final:
     - `https://SEU-USUARIO.github.io/SEU-REPO/index-online.html`
+    - `https://SEU-USUARIO.github.io/SEU-REPO/Intensivao/index-online.html`
 
 - Opção 2 (manual):
   - Vá em `Settings > Pages`.
@@ -47,5 +48,3 @@ git add --all Intensivao/*.html Intensivao/*.md Intensivao/temas/*.md
   - **Branch**: `main`, pasta `/ (root)`.
   - URL final:
     - `https://SEU-USUARIO.github.io/SEU-REPO/Intensivao/index-online.html`
-
-Se quiser, podemos no próximo passo criar também um `workflow` de GitHub Actions para publicação automática no Pages a cada push.

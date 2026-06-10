@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intensivão TEME26 | Leitura online</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" />
+  <script>
+    const BASE_PATH = (() => {
+      const pathname = window.location.pathname || "/";
+      if (pathname.endsWith("/")) {
+        return pathname;
+      }
+      const idx = pathname.lastIndexOf("/");
+      return idx >= 0 ? pathname.slice(0, idx + 1) : "/";
+    })();
+  </script>
   <style>
     :root {
       --content-max: 1024px;
@@ -85,7 +95,7 @@
       homepage: "LEITURA_OFICIAL.md",
       loadSidebar: true,
       alias: {
-        "/_sidebar.md": "/index-online-sidebar.md"
+        "/_sidebar.md": `${BASE_PATH}index-online-sidebar.md`
       },
       auto2top: true,
       executeScript: true,

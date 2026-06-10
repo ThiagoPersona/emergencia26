@@ -14,7 +14,7 @@ Podemos publicar em 3 opções:
    - Branch: `main` (ou a branch do seu projeto)
    - Folder: `/ (root)`
 3. Abra o link gerado, exemplo:
-   - `https://SEU-USUARIO.github.io/SEU-REPO/index-online.html`
+   - `https://SEU-USUARIO.github.io/SEU-REPO/Intensivao/index-online.html`
 
 ## Opção 3: publicar no GitHub Pages com deploy automático (recomendado)
 1. Crie um repositório no GitHub e envie a pasta inteira do projeto.
@@ -23,6 +23,7 @@ Podemos publicar em 3 opções:
    - Source: `GitHub Actions`
 4. URL final:
    - `https://SEU-USUARIO.github.io/SEU-REPO/index-online.html`
+   - `https://SEU-USUARIO.github.io/SEU-REPO/Intensivao/index-online.html`
 
 ## Opção 4: publicar no Vercel (também simples)
 1. Crie novo projeto no Vercel com a pasta raiz do repositório.
