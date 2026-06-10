@@ -1,63 +1,170 @@
-# Mapa de Questões TEME22-25
+# Mapa de Questões TEME22-25 (Modo Prova)
 
-Este mapa é um rastreio inicial para evitar ponto cego. Ele cruza o conteúdo programático TEME26, os capítulos do Intensivão e termos recorrentes encontrados nos cadernos TEME22-25. A próxima passada deve transformar cada linha em questão exata, gabarito e comentário curto.
+Objetivo: transformar os cadernos recentes em trilha de estudo operacional para aprovação.
 
-## Como usar
+## Como foi feito
 
-1. Leia a coluna "Onde revisar" antes de fazer questões.
-2. Marque a questão no PDF quando encontrar o enunciado.
-3. Se a questão cair fora do capítulo indicado, anote em "Ajuste futuro".
-4. Priorize temas que aparecem em mais de um ano ou que viraram estação prática.
+- Usei os cadernos oficiais **TEME22, TEME23 e TEME24** (arquivos PDF locais).
+- Gabaritos oficiais extraídos destes anos e alinhados às questões por número.
+- TEME25 não possui gabarito oficial confiável no repositório (somente prova; imagem de gabarito do usuário não foi automaticamente parseável).
+- Cada questão foi classificada por tema com motor por palavras-chave nos enunciados + revisão manual dos blocos mais relevantes.
+- Resultado: uma análise útil para **estratégia de prova**, não um “corte oficial”.
 
-## Cobertura rápida
+## Resumo geral de prova (22–24)
 
-| Tema | Sinais nas provas TEME22-25 | Onde revisar | Status |
-|---|---|---|---|
-| Via aérea e VM | Todos os anos; prática 2024/2025; auto-PEEP, RSI, via aérea difícil | [001](temas/001_via-aerea_vm.md) | Forte |
-| Trauma hemorrágico | Torniquete, pelve, transfusão, TXA, cálcio, hipotermia | [002](temas/002_trauma-hemorragico.md) | Forte |
-| PCR e pós-RCE | Ritmos, gestante, pediatria, tamponamento, TEP, temperatura | [003](temas/003_reanimacao-pcr.md) | Forte |
-| POCUS | BLUE, FAST/eFAST, CASA, aorta, punção guiada, ONSD/ocular | [004](temas/004_pocus.md) | Forte |
-| SCA/arritmias/PA | IAMCST, bradi/taqui, SCAPE, dissecção, choque cardiogênico | [005](temas/005_sca-arritmias-hipertensivas.md) | Forte |
-| Choque/sepse/DVA | Choque oculto, lactato, noradrenalina periférica, fluido-responsividade | [006](temas/006_choque-sepse-vasoativos.md) | Forte |
-| Neuro | AVC, HSA, TCE/HIC, crise, morte encefálica, SGB/miastenia | [007](temas/007_emergencias-neurologicas.md) | Forte |
-| Toxicologia/peçonhentos | Carvão, naloxona, salicilato, metanol, organofosforado, escorpião | [008](temas/008_toxicologia-animais-peconhentos.md) | Forte |
-| Obstetrícia/gineco | Eclâmpsia, ectópica, HPP, violência sexual, parto, HELLP | [009](temas/009_emergencias-obstetricas-ginecologicas.md) | Forte |
-| Pediatria | Sepse, asma/bronquiolite, convulsão febril, falciforme, abuso | [010](temas/010_emergencias-pediatricas.md) | Forte |
-| Metabólico/renal/gaso | CAD/EHH, Na/K/Ca, tireoide, diálise, rabdomiólise | [011](temas/011_disturbios-metabolicos-renais-gasometria.md) | Forte |
-| Respiratório | DPOC, asma, pneumonia, TEP, SDRA, derrame, traqueostomia | [012](temas/012_emergencias-respiratorias.md) | Forte |
-| APH/desastres | SAMU/regulação, START, transporte, CBRN, altitude, afogamento | [013](temas/013_aph-regulacao-imv-desastres-transporte.md) | Forte |
-| Gastro/hepato/abdome | HDA, PBE, pancreatite, colangite, apendicite, C. difficile | [014](temas/014_gastro-hepatologia-abdome-agudo.md) | Forte |
-| Hemato-onco | Neutropenia febril, falciforme, lise tumoral, transfusão | [015](temas/015_hemato-oncologia-emergencia.md) | Forte |
-| Dermato/reumato/alergia | Anafilaxia, angioedema, celulite, fasciite, SJS/TEN, monoartrite | [016](temas/016_dermato-reumato-alergia-anafilaxia.md) | Forte |
-| Ética/gestão/paliativos | Morte encefálica, CFM, alta segura, paliativo, vulneráveis | [017](temas/017_paliativos-vulnerabilidades-etica-gestao.md) | Forte |
-| Infectologia | HIV/TB, meningite, dengue, IST/PEP, febre e antibiótico empírico | [018](temas/018_infectologia-emergencia.md) | Novo |
-| Oftalmo/otorrino/odonto | Olho vermelho, glaucoma, retina, vertigem, epistaxe, infecção odontogênica | [019](temas/019_oftalmo-otorrino-odonto.md) | Novo |
-| Urologia | Torção testicular, obstrução infectada, priapismo, parafimose | [020](temas/020_urologia-emergencia.md) | Novo |
-| Ortopedia/queimaduras | Fratura exposta, luxações, compartimental, queimadura, lesão inalatória | [021](temas/021_ortopedia-extremidades-queimaduras.md) | Novo |
-| Psiquiatria/agitação | BARS, contenção, delirium, psicose, abstinência, suicídio | [022](temas/022_psiquiatria-agitacao-contencao.md) | Novo |
-| Procedimentos/sedação | Sedação procedural, bloqueios, toracocentese, paracentese, analgesia | [023](temas/023_procedimentos-analgesia-sedacao.md) | Novo |
-| Cardio complementar | Pericardite, miocardite, endocardite, tamponamento, aorta, TEV/TVP | [024](temas/024_cardiovascular-complementar.md) | Novo |
+| Ano | Questões | Anuladas | A | B | C | D | %A | %B | %C | %D |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| TEME22 | 120 | 2 | 30 | 27 | 32 | 29 | 25,4% | 22,9% | 27,1% | 24,6% |
+| TEME23 | 100 | 9 | 24 | 18 | 30 | 19 | 26,4% | 19,8% | 33,0% | 20,9% |
+| TEME24 | 100 | 6 | 16 | 26 | 32 | 20 | 17,0% | 27,7% | 34,0% | 21,3% |
 
-## Rastreio por ano
+Conjunto 22–24 (apenas questões válidas):
+- **A: 70 (23,1%)**
+- **B: 71 (23,4%)**
+- **C: 94 (31,0%)** — mais frequente
+- **D: 68 (22,4%)**
 
-| Ano | Questões citadas nominalmente nos capítulos | Temas que ainda exigiam capítulo próprio |
-|---|---:|---|
-| TEME22 | 57 | Olho/glaucoma, HIV/TB/meningite/dengue, psiquiatria, fratura, afogamento/altitude/descompressão |
-| TEME23 | 41 | Fratura/luxação/compartimental, pielonefrite obstrutiva, afogamento/mergulho, otorrino/vertigem |
-| TEME24 | 40 | Olho vermelho/glaucoma, HIV/TB/meningite/encefalite/dengue, agitação/contenção/delirium, queimadura |
-| TEME25 | 48 | POCUS ocular/retina, HIV/TB/meningite/dengue, BARS/agitação, torção testicular, fraturas/luxações |
+**Implicação prática:** não é “tema de letras”, é prova de decisão. Mesmo assim, quando a banca está com mais de 1/3 em `C`, costuma compensar não eliminar C sem boa justificativa.
 
-## Lista de ataque
+## Matriz de temas (22–24 + mapa de recorte no 25)
 
-1. Fazer uma passada nos capítulos 018-024.
-2. Voltar aos PDFs e marcar as questões exatas no cabeçalho de cada capítulo.
-3. Criar cartões rápidos para números de prova: PEP 72 h/28 dias, torção <6 h, priapismo >4 h, queimadura grave, BARS 6-7, dengue com sinais de alarme.
-4. Após cada simulado, atualizar a coluna de "Status": Forte, fraco, revisar ou erro recorrente.
+|Tema|TEME22|TEME23|TEME24|TEME25*|Total 22-24|A|B|C|D|
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+|Via aérea e VM|26|18|18|17|62|12|16|20|11|
+|Pediatria|15|16|19|11|50|13|8|12|15|
+|Trauma e hemorragia|11|14|8|8|33|7|8|7|7|
+|Choque e sepse|14|6|3|2|23|5|7|4|5|
+|Respiratória|10|2|8|8|20|2|8|6|3|
+|Gastro/hepatologia/abdome|5|8|5|5|18|1|2|9|5|
+|PCR e RCE|5|5|6|3|16|6|4|3|2|
+|SCA/arritmias/HAS|4|5|6|7|15|4|4|5|2|
+|POCUS|3|5|3|1|11|0|5|3|3|
+|Distúrbios metabólico-renais/gasometria|6|2|2|4|10|3|1|6|0|
+|Procedimentos e sedação|1|1|5|4|7|2|1|1|3|
+|APH/Regulação/Desastres/Transporte|1|1|3|3|5|0|0|3|2|
+|Hemato-oncologia|2|1|1|6|4|2|0|1|1|
+|Ética/gestão/vulnerabilidade|0|2|4|2|6|2|2|1|0|
+|Toxicologia/peçonhentos|0|5|0|3|5|2|0|2|1|
+|Obstetrícia/ginecologia|2|1|2|2|5|1|2|1|1|
+|Infectologia|1|0|1|4|2|1|0|0|1|
+|Oftalmo/ENT/odonto|1|1|2|2|4|1|0|2|1|
+|Neuro|3|0|2|2|5|0|2|3|0|
+|Urologia|1|0|0|2|1|0|0|0|1|
+|Ortopedia/extremidades/queimadura|0|3|0|2|3|2|0|0|0|
+|Psiquiatria/agitação|2|0|1|1|3|0|0|2|1|
+|Cardiovascular complementar|2|1|0|1|3|1|0|1|1|
+|Dermato/reativo-alérgico|0|1|0|0|1|0|0|1|0|
+|Outros/Multidisciplinar|5|2|1|0|8|3|1|1|2|
 
-## Pegadinhas transversais
+`*` TEME25: contagem por tema sem letra (sem gabarito confiável no material local).
 
-- "Paciente está calmo" não significa melhora: pode ser exaustão, hipercapnia, hipoglicemia, choque ou sedação.
-- "Exame normal" não exclui emergência tempo-dependente: retina, torção testicular, síndrome compartimental, meningite inicial.
-- "Encaminhar especialista" não substitui conduta inicial do emergencista.
-- "Dar antibiótico" não substitui controle de foco: abscesso, obstrução urinária infectada, colangite, fasciite, empiema.
-- "Fazer imagem" não pode atrasar tratamento se o diagnóstico clínico é tempo-dependente.
+## Prioridade de estudo por retorno de prova
+
+- **Bloco A (maior retorno):** Via aérea e VM, Pediatria, Trauma e hemorragia, Choque/sepse, Respiratório, Gastro/hepatologia.
+- **Bloco B (alto risco de pegadinha):** PCR e RCE, SCA/arritmias/HAS, POCUS, Distúrbios metabólico-renais.
+- **Bloco C (revisão pontual):** Procedimentos/sedação, APH, Hemato-oncologia, Obstetrícia, Ética/gestão.
+
+## Padrões que a banca gosta de cobrar
+
+### 1) Via aérea e VM (mais recorrente)
+- **Taxa de aparição (22–24):** 62 questões.
+- Letra dominante no bloco: **C (32,3%)**, depois **B (25,8%)** e **D (17,7%)**.
+- **Pelo menos 2 “vias”:** estabilização prática + conduta de falha (não só “teoria de algoritmo”).
+- **Pegadinhas frequentes**
+  - Ignorar pré-oxigenação completa e “colar” intubação sem plano B.
+  - Trocar sedação/analgesia por “bloqueio sem proteção hemodinâmica”.
+  - No cenário com paciente agressivo, confundir controle de agitação com controle definitivo da via aérea.
+- **Pontos de atenção prova**
+  - Em 22–24, quando há via aérea em sequência, a banca cobra muito “ordem de segurança” antes da técnica: sequência, monitoração, plano alternativo.
+
+### 2) Pediatria (alta densidade + pegadinha de risco temporal)
+- **Taxa de aparição:** 50 questões.
+- Distribuição de letras: **D (30%)** aparece mais dentro do tema.
+- **Pegadinhas**
+  - Sinais gerais da criança (“agitação/fadiga/febre”) confundindo com urgência menos grave.
+  - Confundir peso estimado, dose e diluição por pressa.
+  - Subestimar sepse pediátrica precoce por parecer “apenas bronquiolite/convulsão”.
+- **Pontos de atenção**
+  - Sempre separar primeiro conduta de estabilização imediata, depois diagnóstico.
+  - Rótulo de gravidade pediátrica: perfusão, comportamento, trabalho respiratório, padrão de alerta.
+
+### 3) Trauma e hemorragia
+- **Taxa de aparição:** 33 questões.
+- Distribuição relativamente equilibrada entre A/B/C/D (sem letra fácil para “chute por frequência”).
+- **Pegadinhas**
+  - Excesso de confiança em exames de imagem.
+  - Esquecer controle cêntrico de hemorragia e ressuscitação por protocolo.
+  - Tratar trauma como evento mecânico isolado e perder foco em ameaça de vida (hemorragia, via aérea, choque).
+- **Pontos de atenção**
+  - “Tempo é recurso”: controlar o ciclo ABCDE, sangramento e resposta hemodinâmica antes de protocolos longos.
+
+### 4) Choque/sepse
+- **Taxa de aparição:** 23 questões.
+- Letras um pouco dispersas (nenhuma dominante).
+- **Pegadinhas**
+  - Sobrediagnosticar choque séptico apenas pela febre.
+  - Trocar alvo de ressuscitação por “fluido sem limite” sem avaliar perfusão.
+  - Deixar de ajustar drogas vasoativas em sequência lógica.
+- **Pontos de atenção**
+  - Foque em prioridade de fluxo, lactato com contexto clínico, e revisão rápida de doses/posologia.
+
+### 5) Respiratório e pneumopatias críticas
+- **Taxa:** 20 questões.
+- Forte tendência de prova em `B` e `C`, principalmente em cenários de decisão ventilatória.
+- **Pegadinhas**
+  - Trocar melhora parcial de gás por resolução de processo clínico.
+  - Sobretratar broncoespasmo sem reconhecer síndrome/instabilidade.
+- **Pontos de atenção**
+  - Em dúvida, pense em oxigenação primeiro, ventilação e causa de base no mesmo minuto.
+
+## Outras armadilhas transversais (top 12)
+
+- Ler a letra errada por “palavra parecida” (ex.: “sepsis” em lugar de “choque séptico”).
+- Não separar o que é **teste diagnóstico** do que é **conduta definitiva**.
+- Trocar risco imediato por risco tardio; a prova cobra o que salva vida em 0–30 min.
+- Ignorar a alternativa “incompleta” ou “menos agressiva” quando o cenário não justifica invasão.
+- Ficar preso à conduta padrão e esquecer a exceção do cenário (idade, gestação, uso crônico de medicação).
+- Confundir “não tem alergia comprovada” com “pode-se usar qualquer fármaco”.
+- Responder `C` por inércia quando texto é de falha de técnica (via aérea/choque) e exige ação de backup.
+- Em POCUS, aceitar imagem sem sequência lógica: achado + conduta + reavaliação.
+- Em pediatria, erro clássico de dose e volume.
+- Em trauma, deixar que achado radiológico retrase a intervenção inicial.
+- Em ética/gestão, confundir “conduta inicial” com “decisão final do processo”.
+
+## Erros clássicos que derrubam prova
+
+1. **Errar a primeira ação** (ex.: atrasar via aérea ou controle de sangramento para “confirmar” melhor exame).
+2. **Intercalar alternativas contraditórias** (fazer duas etapas de tratamento mutuamente excludentes em uma só linha de raciocínio).
+3. **Confundir protocolo de treinamento com protocolo real da situação**.
+4. **Cenário de choque com escolha de droga “mais potente” sem base de segurança hemodinâmica**.
+5. **Descontextualizar pediatria/obstetrícia** (peso por kg, janela temporal e risco materno-fetal).
+
+## Perguntas-alvo de revisão por tema (exemplos dos anos recentes)
+
+- Via aérea e VM: TEME22 (3,4,6,7,8,15,18...), TEME23 (1,2,14,16,19,21...), TEME24 (6,15,16,23,30,34...)
+- Trauma e hemorragia: TEME22 (5,25,49,53,56,61...), TEME23 (20,28,34,35,43,44...), TEME24 (1,5,7,21,36,54...)
+- Pediatria: TEME22 (2,10,11,12,16,35...), TEME23 (12,18,23,27,36,49...), TEME24 (12,13,19,20,32,33...)
+- Choque e sepse: TEME22 (13,16,17,38,42,43...), TEME23 (10,45,50,51,69,75...), TEME24 (4,56,73,65...)
+- Respiratório: TEME22 (9,24,30,34,59...), TEME23 (24,29...), TEME24 (3,11,22,39,49...)
+- SCA/arritmias/HAS: TEME22 (27,53,77...), TEME23 (8,25,31,92...), TEME24 (8,29,37,55...)
+
+## Checklist antes de responder 1 simulado
+
+- Revisar em 5 min: fluxograma de via aérea de emergência + choque por fases.
+- Revisar em 5 min: doses críticas (adrenalina/noradrenalina, sedativos/relaxantes, anticonvulsivantes de emergência).
+- Revisar em 5 min: condutas de “falha de técnica” (via aérea, ventilação, acesso, acesso de choque).
+- Resolver 10 questões de tema com maior retorno e anotar onde quase errou.
+- Consolidar 3 “erros fatais” da semana (no seu bloco de anotações).
+
+## Conclusão operativa
+
+Este mapa mostra que a prova **é de decisão prática**: via aérea + pediatria + trauma/choque dominam volume e pegadinhas.  
+Use o bloco acima para orientar revisão semanal:
+1) temas de alta frequência primeiro;  
+2) depois temas com alta chance de erro por contexto (choque/VM/pediatria/POCUS);  
+3) e por último os blocos de menor retorno.
+
+Se quiser, no próximo passo eu já deixo uma versão “**simulador**” do mapa com:
+- mini-tabela de revisão semanal (segunda/terça/quinta),  
+- 20 questões-alvo por tema com gabarito comentado,  
+- e um card de “método de eliminação de alternativa em 20 segundos”.

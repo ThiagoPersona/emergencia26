@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" onerror="this.onerror=null; this.href='https://unpkg.com/docsify@4/lib/themes/vue.css'" />
   <style>
     :root {
-      --content-max: 1024px;
+      --content-max: 1240px;
+      --content-padding: 2rem;
       --text: #202124;
       --muted: #5f6368;
       --link: #0f6b5f;
@@ -22,6 +23,7 @@
 
     .sidebar {
       background: #fbfbf8;
+      width: 320px;
     }
 
     .app-name {
@@ -40,8 +42,9 @@
 
     #main .content {
       max-width: var(--content-max);
-      width: min(94vw, var(--content-max));
+      width: min(96vw, var(--content-max));
       margin: 0 auto;
+      padding-right: var(--content-padding);
     }
 
     .sidebar-nav a {
@@ -72,34 +75,104 @@
       border-radius: 8px;
     }
 
+    .app-name {
+      margin-left: 8px;
+    }
+
     @media (min-width: 1200px) {
+      #main .content {
+        width: min(calc(100vw - 360px), var(--content-max));
+      }
+
       #main {
-        padding-left: 360px;
+        padding-left: 340px;
+      }
+    }
+
+    @media (min-width: 1500px) {
+      :root {
+        --content-max: 1380px;
+      }
+
+      #main .content {
+        width: min(calc(100vw - 390px), var(--content-max));
+      }
+
+      #main {
+        padding-left: 390px;
       }
     }
   </style>
   <script>
     window.__docsifyLoadingTimeout = 8000;
+
+    function normalizeThemeLinks() {
+      const links = document.querySelectorAll('a[href*="temas/temas/"]');
+      links.forEach((link) => {
+        const rawHref = link.getAttribute("href");
+        if (!rawHref) return;
+        if (rawHref.includes("temas/temas/")) {
+          link.setAttribute("href", rawHref.replace(/temas\/temas\//g, "temas/"));
+        }
+      });
+    }
+
+    function renderMermaidBlocks() {
+      const toConvert = document.querySelectorAll("pre code.lang-mermaid, pre code.language-mermaid");
+
+      toConvert.forEach((codeBlock) => {
+        if (codeBlock.dataset.mermaidRendered) return;
+        const pre = codeBlock.closest("pre");
+        if (!pre) return;
+
+        const wrapper = document.createElement("div");
+        const diagram = (codeBlock.textContent || "").trim();
+        wrapper.className = "mermaid";
+        wrapper.dataset.source = diagram;
+        wrapper.textContent = diagram;
+        codeBlock.dataset.mermaidRendered = "1";
+        pre.replaceWith(wrapper);
+      });
+
+      const graphs = Array.from(document.querySelectorAll("div.mermaid"))
+        .filter((graph) => graph.dataset.diagramRendered !== "1");
+
+      if (!graphs.length) return;
+
+      if (!window.mermaid || typeof window.mermaid.run !== "function") {
+        window.setTimeout(renderMermaidBlocks, 120);
+        return;
+      }
+
+      window.mermaid.run({
+        nodes: graphs
+      }).then(() => {
+        graphs.forEach((graph) => {
+          graph.dataset.diagramRendered = "1";
+        });
+      }).catch((error) => {
+        console.warn("Mermaid não renderizou:", error);
+      });
+    }
+
     window.$docsify = {
       name: "Intensivão TEME26",
       repo: "",
-      loadSidebar: "_sidebar.md",
+      loadSidebar: "index-online-sidebar.md",
       homepage: "LEITURA_OFICIAL.md",
       auto2top: true,
       executeScript: true,
       noCompileLinks: false,
       maxLevel: 4,
       subMaxLevel: 3,
-      relativePath: true,
+      relativePath: false,
       search: "auto",
       formatUpdated: "{DD}/{MM}/{YYYY}",
       notFoundPage: true,
       readyState: {
         start: function() {
           const app = document.getElementById("app");
-          if (app) {
-            app.classList.add("is-loading");
-          }
+          if (app) app.classList.add("is-loading");
         },
         done: function() {
           const app = document.getElementById("app");
@@ -112,34 +185,19 @@
       },
       plugins: [
         function(hook) {
+          const flushMermaid = function() {
+            window.setTimeout(renderMermaidBlocks, 0);
+          };
+
+          hook.ready(function() {
+            flushMermaid();
+            normalizeThemeLinks();
+          });
           hook.doneEach(function() {
+            flushMermaid();
+            normalizeThemeLinks();
             const app = document.getElementById("app");
             if (app) app.dataset.loaded = "1";
-          });
-        },
-        function(hook) {
-          hook.doneEach(function() {
-            const codeBlocks = document.querySelectorAll("pre code.language-mermaid");
-            codeBlocks.forEach((block) => {
-              if (block.dataset.rendered === "1") return;
-              const pre = block.closest("pre");
-              if (!pre) return;
-              const div = document.createElement("div");
-              div.className = "mermaid";
-              div.textContent = (block.textContent || "").trim();
-              pre.replaceWith(div);
-            });
-
-            if (window.mermaid && typeof window.mermaid.run === "function") {
-              const graphs = document.querySelectorAll("div.mermaid");
-              graphs.forEach((graph) => {
-                graph.removeAttribute("data-processed");
-                graph.removeAttribute("data-zoomable");
-              });
-              window.mermaid.run({
-                nodes: graphs,
-              });
-            }
           });
         }
       ]

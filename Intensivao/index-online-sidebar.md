@@ -1,6 +1,4 @@
-- [Início / Índice](LEITURA_OFICIAL.md)
-- [Mapa de questões TEME22-25](MAPA_DE_QUESTOES_TEME22-25.md)
-- Temas por módulo
+- Temas
   - [1. Via aérea e ventilação mecânica](temas/001_via-aerea_vm.md)
   - [2. Trauma hemorrágico e transfusão maciça](temas/002_trauma-hemorragico.md)
   - [3. Reanimação/PCR](temas/003_reanimacao-pcr.md)

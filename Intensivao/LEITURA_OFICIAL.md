@@ -44,17 +44,3 @@ Objetivo: estudar com foco em aprovação, usando o padrão das provas TEME22-25
 |    22 | Psiquiatria, agitação e contenção                            | Pronto | [Abrir](temas/022_psiquiatria-agitacao-contencao.md)           |
 |    23 | Procedimentos, analgesia e sedação                           | Pronto | [Abrir](temas/023_procedimentos-analgesia-sedacao.md)          |
 |    24 | Cardiovascular complementar                                  | Pronto | [Abrir](temas/024_cardiovascular-complementar.md)              |
-
-## Arquivos de apoio
-
-- [REGRAS_DO_MATERIAL.md](REGRAS_DO_MATERIAL.md): combinados editoriais, hierarquia de fontes e como lidar com conflitos.
-- [TEMPLATE_TEMA.md](TEMPLATE_TEMA.md): modelo a ser copiado para novos capítulos.
-- [MAPA_DE_QUESTOES_TEME22-25.md](MAPA_DE_QUESTOES_TEME22-25.md): rastreio inicial dos temas que apareceram nas provas e onde revisar.
-- [assets/README.md](assets/README.md): pasta para imagens, fluxos exportados e esquemas.
-
-## Próximos passos
-
-- Revisar os capítulos em ciclos curtos, corrigindo estilo e prioridade conforme simulados.
-- Refinar o mapa de questões até cobrir questão por questão das provas TEME22-25.
-- Acrescentar imagens/esquemas próprios em `assets/` quando um fluxograma Mermaid não bastar.
-- Atualizar referências que mudarem até o TEME26 e registrar revisões pós-simulado.

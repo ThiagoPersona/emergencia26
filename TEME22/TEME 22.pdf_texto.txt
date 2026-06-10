@@ -1,0 +1,1603 @@
+Prova Título de Especialista em Medicina de Emergência 2022
+Utilize o caso a seguir como referência às questões 1, 2 e 3:
+Você faz parte de uma equipe de Suporte Avançado de Vida pré-hospitalar
+que foi acionada para atender uma vítima de tentativa de suicídio por precipi-
+tação. Segundo informações do solicitante, a paciente se jogou de um viadu-
+to de aproximadamente 8 metros de altura, que passa sobre uma rodovia de
+alta velocidade. Chegando ao local, você identifica uma vítima feminina ao
+solo, na faixa 1 da via.  
+1) Considerando que sua equipe foi a primeira a chegar ao local, o posiciona-
+mento mais correto de estacionamento da viatura seria:
+a) Transversalmente ao sentido do fluxo, de maneira a bloquear qualquer cir-
+culação de veículos na via
+b) Na faixa 1, à frente de onde se localiza a vítima, de maneira a facilitar o
+acesso às portas traseiras da viatura
+c) No acostamento à direita, de maneira a proteger toda equipe no momento
+de desembarque
+d) Na faixa 1, antes de onde se localiza a vítima, da maneira a desviar o fluxo
+de veículos para as outras faixas de rolamento
+2) Essa paciente pode apresentar lesões pelo mecanismo de cisalhamento.
+Dentre as alternativas abaixo, assinale qual apresenta os órgãos mais comu-
+mente acometidos por esse tipo de mecanismo
+a) Fêmur, aorta abdominal e baço
+b) Fígado, pâncreas e bexiga
+c) Aorta torácica, rins e baço
+d) Rins, pâncreas e fêmur
+3) Na avaliação inicial dessa paciente você identifica que sua via aérea está
+pérvia e que ela ventila adequadamente. Não há  sangramento externo de
+grande monta, e ela apresenta palidez, sudorese fria e rebaixamento do nível
+de consciência. O abdome é indolor à palpação e a pelve está estável. Afe-
+rindo os sinais vitais, você identifica FC 110 BPM, FR 28 IRPM, SaO2 92%,
+ECG de 8 e PA 124 x 88 mmHg em membro superior direito e de 96 x 65
+mmHg em membro superior esquerdo. Levando em conta o mecanismo de
+
+trauma e a provável lesão que essa paciente apresenta, assinale a alternati-
+va incorreta em relação às medidas terapêuticas que podem ser oferecidas à
+essa vítima:
+a) Administração de 1 g de ácido tranexâmico EV, visando ao controle de he-
+morragia interna
+b) Pericardiocentese, a fim de aliviar provável tamponamento cardíaco
+c) Administração de betabloqueador, a fim de manter a pressão arterial mé-
+dia inferior a 70 mmHg
+d) Sequência rápida de intubação utilizando etomidato, rocurônio e fentanil
+4) Sobre a decisão de intubar um paciente, escolha a opção com a alternati-
+va que contenha o conceito ERRADO:
+a) Existem três indicações bem estabelecidas de intubação baseado em ava-
+liação clínica do médico: Proteção de via aérea, insuficiência respiratória e
+antecipação do curso clínico da doença.
+b) A ausência do reflexo de vômito no paciente com rebaixamento do nível
+de consciência é o sinal para indicar a via aérea definitiva imediata;
+c) A deglutição espontânea ou voluntária é a melhor forma de avaliação da
+capacidade do paciente proteger sua via aérea
+d) Estridor  é  um sinal de alerta para antecipação no manejo da via aérea
+mesmo na ausência de dispneia
+5) Vítima de atropelamento por ônibus há 1 hora, sexo masculino, 43 anos,
+dá entrada na sala de emergência trazido por equipe de suporte avançado
+do SAMU intubado, com colar cervical e prancha longa, recebendo oxigênio
+em MNR á 15 L/min, com acesso venoso em membro superior direito, tendo
+recebido de 500 mL de Ringer Lactato EV. Ao exame inicial apresenta múlti-
+plas fraturas e lacerações em face, equimoses e crepitações em face, redu-
+ção de expansibilidade e ausculta diminuída em hemitórax esquerdo, abdo-
+me sem lesões aparentes, pelve estável, fratura exposta de tíbia e fíbula à di-
+reita. Sinais vitais: FC 112 BPM, FR 12 IRPM, SaO2 90%, PA 84 x 56mm Hg,
+sedado com escala de Richmond Agitation-Sedation Scale (RASS) de -4.
+Em relação ao caso acima, considere as seguintes afirmações:
+I – O trauma de face pode justificar seu quadro de choque
+II – Toracostomia digital à esquerda está contraindicada
+III – Deve ser realizada toracostomia digital bilateral
+IV – Intubação seletiva à direita não pode ser descartada
+
+Estão corretas as afirmativas:
+a) Apenas I e III
+b) Apenas II e IV
+c) II, III e IV
+d) Apenas I e IV
+Referência para Questões 6 e 7:
+Paciente de 19 anos é  trazido ao DE por familiares. Você  verifica que ele
+está inconsciente e não apresenta pulso. 
+6) Qual das seguintes estratégias deve ser realizada de modo prioritário?
+a) Iniciar Compressões cardíacas na frequência de 100 a 120 por minuto
+b) Realizar IOT
+c) Iniciar Infusão de Adrenalina EV
+d) Ventilações Assistidas na velocidade de 10 por minuto
+7) Você administrou 02 choques não sincronizados de 200 J no paciente aci-
+ma. Foram reiniciadas as compressões torácicas com profundidade de míni-
+mo 5 cm e no máximo 6 cm, com retorno total do tórax à posição de repouso.
+Nesse mesmo ciclo, foi administrado 1 mg de adrenalina EV e feito flush de
+20 ml soro fisiológico. Ainda resta 1 minuto para a próxima verificação do rit-
+mo.
+Qual conduta prioritária sequencial você poderia considerar no manejo desse
+caso ainda nesse ciclo?
+a) Administrar amiodarona EV 300 mg
+b) Considerar via aérea avançada e colocação de capnografia em formato de
+onda contínua
+c) Considerar causas reversíveis
+d) Administração de lidocaína EV 1 mg/kg
+8) Sobre a técnica de Videolaringoscopia, escolha resposta correta:
+a) Há a necessidade de deslocamento da língua do paciente para uma me-
+lhor visualização
+b) É necessário uma linha direta de visão da via aérea obtidos com o alinha-
+mento dos eixos, a clássica posição do “cheirador” é uma das formas de atin-
+gir esse alinhamento;
+c) A única restrição absoluta do seu uso é quando há abertura bucal limitada
+para a lâmina disponível;
+
+d) O uso de lâminas hiper-anguladas deve ser priorizado rotineiramente
+9) Com o POCUS Pulmonar as patologias respiratórias são avaliadas através
+da:
+a) Avaliação de pleura e artefatos ar-tecidos (relação ar-líquido)
+b) Avaliação de pleura e parênquima pulmonar
+c) Avaliação do parênquima pulmonar e artefatos
+d) Avaliação da relação entre linhas pleurais verticais e horizontais
+ 
+10) Sobre COVID-19, escolha a alternativa correta:
+a) Os coronavírus são um grupo de vírus de genoma de DNA
+b) O resultado positivo para o COVID -19 se dá apenas com o exame RT-
+PCR;
+c) O uso de corticoide é indicado para todo quadro de COVID-19 
+d) Nenhuma das alternativas estão corretas.
+11) Paciente de 23 anos é admitido ao DE após queda de moto em alta velo-
+cidade, encontrado pela equipe do APH na cena com ECG de 7, sem outras
+disfunções na avaliação primária. Na admissão ao DE primário  às 14:00h,
+paciente recebe IOT, por meio de SRI com Etomidato e Succinilcolina e é ini-
+ciado ventilação mecânica, TC de crânio descreve hemorragia subaracnóide
+volumosa, focos de contusão cerebral e edema cerebral difuso, paciente se-
+gue em Sala de Emergência sem sedação e 1 hora após a admissão a equi-
+pe médica identifica anisocoria, sendo indicada transferência imediata, ao ser
+admitido em DE terciário foi levantada a hipótese que o paciente apresen-
+
+tava-se em morte encefálica. Qual das alternativas abaixo, se presente  à
+avaliação do DE terciário às 16:00h, corrobora com essa hipótese?
+a) Paciente apresentou-se em Postura de Descerebração e sem drive respi-
+ratório.
+b) Ausência de reflexo corneopalpebral, Resposta pupilar reduzida à luz e re-
+flexo oculocefálico ausente.
+c) Ausência de reflexo corneopalpebral, Resposta pupilar reduzida à luz e re-
+flexo oculocefálico presente.
+d) Nenhum dos achados deve ainda ser valorizado já que o paciente fez uso
+de sedativos recentemente.
+Referência para Questões 12 e 13: 
+Criança de 09 meses de idade apresenta febre, vômitos e diarreia há  03
+dias. Na avaliação no DE, você percebe que a criança está sonolenta. A FC
+170 BPM, TAx 38.9 °C, PA: 64 x 42 mmHg e FR 60 IRPM e superficial. O
+TEC é de 3 a 4 segundos, com sinal da prega evidente.
+ 
+12) Com base na apresentação dessa criança, qual tipo de choque ele apre-
+senta?
+a) Obstrutivo
+b) Hipovolêmico
+c) Distributivo
+d) Cardiogênico
+ 
+13) Qual a conduta terapêutica inicial apropriada?
+a) Iniciar Noradrenalina EV em BIC à 0,10 mcg/kg/min
+b) Iniciar 15ml/kg de glicose a 5% + soro fisiológico a 0,45%
+c) Iniciar 20 ml/kg de soro fisiológico 0,9%
+d) Iniciar Dopamina EV em BIC à 2 mcg/kg/min
+14) Em relação à hemorragia digestiva alta em pacientes com cirrose e hiper-
+tensão portal, assinale a alternativa correta:
+a)  A  recorrência  de  sangramento  após  a  descompressão  do  balão  de
+Sengstaken-Blakemore ocorre em 3 a cada 4 pacientes
+
+b) A administração de eritromicina 250 mg endovenosa 60 minutos antes da
+realização da endoscopia digestiva alta previne o desenvolvimento de perito-
+nite bacteriana espontânea
+c) A terlipressina na dose de 2 mg 4/4 horas por via endovenosa deve ser
+administrada caso a terapêutica endoscópica não seja eficaz
+d) Não há evidências de que a endoscopia digestiva alta realizada em menos
+de 6 horas traga melhores desfechos em relação à endoscopia realizada em
+até 12 horas da admissão do paciente, se estável hemodinamicamente.
+Referência para Questões 15 e 16:
+Paciente de 20 anos, trazido pela equipe de Atendimento Pré-hospitalar por
+unidade móvel básica, com relato de colisão moto vs carro, paciente era o
+motorista da moto e estava sem uso de capacete. Há relato de vítima fatal na
+cena. Sinais Vitais: FR 30 irpm, FC 140 bpm, PA 70x30 mmHg, SaO2 91%
+em AA
+Exame primário realizado na sala de emergência:
+A: colar cervical, sem sangue na cavidade oral, via aérea pérvia com Retra-
+ção de Mandíbula (Jaw Thrust)
+B: Ausculta abolida em hemitórax direito, com enfisema subcutâneo local,
+ausculta a esquerda preservada
+C: Pulsos periféricos não perceptíveis, enchimento capilar lentificado, sem
+sangramento exteriorizados
+D: Abertura ocular ao estímulo doloroso, verbaliza sons incompreensíveis,
+resposta motora com retirada à dor e pupilas médias, isocóricas e fotorrea-
+gentes
+E: Escoriações em tórax
+15) Qual das opções abaixo representa a melhor alternativa em relação ao
+manejo imediato da via aérea desse paciente?
+a) Intubação em sequência rápida imediata pelo risco de broncoaspiração
+b) Sequência atrasada de intubação com otimização da pré oxigenação
+c) Manter manobras externas para garantir a perviedade da via aérea
+d) Intubação crash pelo risco de colapso circulatório iminente
+16) Em relação ao índice de choque (Shock index) do paciente, escolha a al-
+ternativa correta:
+a) Shock index =  2
+b) Shock index = 0.5
+
+c) Shock index  = 1
+d) Shock index = 0.9
+17) Mulher, 52 anos de idade, hipertensa, admitida no DE com hipótese
+diagnóstica de sepse de foco pulmonar. Encontra-se confusa, hipotensa com
+PA 80x42 mmHg (pressão arterial média 55 mmHg), extremidades frias e
+tempo de enchimento capilar lentificado. Iniciado antibioticoterapia empírica
+com ceftriaxone e azitromicina endovenosos. Realizada prova volêmica com
+500mL de ringer lactato, sem reversão do quadro.
+POCUS Pulmonar: Linhas B bilaterais, sem outras alterações
+POCUS Cardíaco: VTI (Integral Velocidade Tempo): 18 e Veia Cava Inferior
+SEM variabilidade e distendida                              
+A conduta terapêutica nesse momento é:
+a)  Realizar  nova prova volêmica  devido a sinais claros de baixo  débito
+cardíaco e hipovolemia 
+b) Nova etapa de ringer lactato 500ml e aguardar a realização da punção ve-
+nosa central guiada por US para iniciar noradrenalina.
+c) Iniciar noradrenalina em acesso venoso periférico.
+d) Instalar monitorização hemodinâmica minimamente invasiva e posterior-
+mente avaliar a necessidade de iniciar noradrenalina.
+18) Homem, 22 anos de idade, no terceiro dia de internação hospitalar por
+pneumonia viral, foi submetido a intubação orotraqueal ainda no Departa-
+
+mento de Emergência. Atualmente encontra-se sedado, estável hemodinami-
+camente, sob ventilação mecânica. Peso ideal estimado de 70 kg.
+Parâmetros ventilatórios: Modo ventilação controlada, com volume corrente
+de 420 mL, FR 18 IRPM, FiO₂ 50%, PEEP 10 cmH₂O.
+Gasometria  arterial  coletada  com  esses  parâmetros:  pH  7,16;  PaO₂ 80
+mmHg; PaCO₂ 86 mmHg; BIC 24 mEq/L; SaO2 96%. Ao realizar manobra de
+pausa inspiratória,  obtêm-se  os seguintes parâmetros:  Pressão  de  Platô
+(Pplatô) de 25 cmH₂O; Pressão de Pico (Ppico) de 32 cmH₂O. 
+É correto afirmar:
+a) No modo VCV  ao reduzir o volume corrente a janela de tempo não altera.
+b) No modo VCV ao reduzir o volume corrente e mantendo o fluxo inspirató-
+rio o tempo expiratório irá diminuir.
+c) No modo PCV ao reduzir o tempo inspiratório a janela de tempo irá dimi-
+nuir.
+d) No modo PCV a relação I:E não depende do tempo inspiratório.
+19) Em relação ao paciente em choque circulatório e que necessita de uma
+via aérea definitiva imediata, dentre as opções abaixo qual escolha farmacoló-
+gica é a mais favorável para esse cenário:
+a) Fentanil + Etomidato 0.5mg/kg + Suxametônio 1.5mg/kg, IV
+b) Etomidato 1 mg/kg + Suxametônio 1 mg/kg, IV
+c) Cetamina 1.5 mg/kg +  Suxametônio 1.5 mg/kg, IV
+d)  Cetamina  0.75  mg/kg  +  
+Suxametônio  1.5  mg/kg,  IV
+20) Sobre a imagem abaixo responda:
+
+a) Trata-se de um Hematoma subdural subagudo
+b) Trata-se de um Hematoma epidural subagudo
+c) Trata-se de um Hematoma subdural agudo
+d) Trata-se de um Hematoma subdural crônico
+21) Sobre as Doenças Hipertensivas durante a gestação marque a alternati-
+va correta.
+a) O uso de benzodiazepínicos é a primeira linha de tratamento para pacien-
+tes com convulsões secundárias à Eclampsia
+b) Gestantes em pré-eclâmpsia evoluindo com déficits neurológicos devem
+receber avaliação por Tomografia de Crânio independente da Idade Gestaci-
+onal.
+c)  Para  o  manejo  da  pressão  arterial  durante  a  pré-eclâmpsia  grave,
+Nitroprussiato de Sódio EV é a medicação de escolha.
+d) Na presença de valores pressóricos maiores que 140 x 90 mmHg cesária
+de emergência está indicada
+22) Mulher 34 anos deu entrada no Departamento de Emergência inconsci-
+ente mas com pulso central presente. Apresentava o ECG mostrado abaixo.
+
+Apesar dos esforços iniciais da equipe, a paciente desenvolve parada cardi-
+orrespiratória com ritmo organizado (bradicardia sinusal FC 40 BPM).
+Qual a provável causa da PCR da paciente?
+a) Hipercalemia
+b) Hipercalcemia
+c) Hipotermia
+d) Hipocalemia
+23) Paciente de 25 anos vítima queda de moto sem uso de capacete, da en-
+trada no Departamento de Emergência (DE) conduzido por uma unidade de
+suporte básico. Encontra-se com colar cervical, imobilizado em prancha rígi-
+da (que já foi prontamente retirada). Vias aéreas pérvias, SaO2 92%. FR 24
+irpm, MV sem ruídos adventícios porém reduzido na base direita. FC 110
+bpm, PA 90 x 70 mmHg, TEC de 4 seg. Abre os olhos ao estímulo pressórico
+no tórax, confuso, localiza estímulos. Escoriação em hemitórax direito e joe-
+lho direito. Rx de tórax com fratura do 5̊ arco costal direito e moderado he-
+motórax. Rx de coluna cervical sem alterações, assim como Rx de MID tam-
+bém sem fraturas. Paciente é submetido à Intubação Orotraqueal e é iniciado
+Ventilação Mecânica (VM), recebe 1L de Ringer Lactato aquecido e tem ago-
+ra PA 100 x 80 mmHg. Submetido a drenagem torácica à direita com drena-
+gem de 500ml de sangue sem débito adicional. Realizada TC de crânio
+(apresentada abaixo)
+
+ 
+Está agora sob suporte no DE aguardando transferência para centro de re-
+ferência.
+Em relação às medidas neuroprotetoras assinale a afirmativa CORRETA:
+a) Manter o paciente em hipotermia terapêutica
+b) Manter SaO2 acima de 94% e PA Sistólica (PAS) > 100 mmHg
+c) Manter o Sódio (Na+) sérico entre 125 a 135 mEq/L
+d) Manter Pressão Arterial de Gás Carbônico (PaCO2) entre 45 e 55 mmHg.
+24) Paciente de 33 anos, é admitido ao Departamento de Emergência com
+quadro de Dispneia de instalação aguda, ao exame físico apresenta SaO2
+90% em ar ambiente, FC 113 BPM, FR 28 IRPM e Temperatura Axilar (TAx)
+de 36.4ºC, Ausculta pulmonar com MV reduzidos difusamente, sem outros
+achados significativos. Marque o exame complementar inicial com boa acurá-
+cia para definir as próximas medidas a serem priorizadas para esse pacien-
+te. 
+a) Radiografia de Tórax
+b) Tomografia de Tórax
+c) Ultrassonografia Point-of-care de Tórax
+d) Cintilografia Pulmonar
+
+25) Em relação à cinemática do trauma nos acidentes com veículos automo-
+tores, assinale a alternativa correta:
+a) Passageiros de um carro de passeio atingido lateralmente por uma van
+têm 13 vezes mais probabilidade de morrer do que os ocupantes da van
+b) Passageiros de um carro de passeio atingido lateralmente por outro carro
+de passeio têm 8 vezes mais chances de morrer do que os ocupantes do veí-
+culo que os atingiu
+c) Passageiros de um carro de passeio atingido lateralmente por um veículo
+utilitário esportivo têm 32 vezes mais probabilidade de morrer do que os ocu-
+pantes do utilitário esportivo.
+d) Vítimas ejetadas do veículo têm 11 vezes mais chance de morrer do que
+as não ejetadas
+26) Paciente procura o DE por volta das 23:00h com queixa de intensa dor
+ocular, a avaliação apresenta edema importante de pálpebras e hiperemia
+conjuntival, ele refere que trabalhou com solda durante o dia, há cerca de 6
+horas, e depois iniciou a irritação ocular. Qual sua conduta inicial?
+a) Solicitar transferência com urgência para serviço de oftalmologia
+b) Lavagem exaustiva com soro fisiológico e limpeza local com algodão
+c) Uso de colírio anestésico
+d) Uso de substância neutralizante de pH
+27) Paciente masculino de 43 anos, previamente hígido, dá entrada no DE
+com quadro de náuseas, vômitos e dor na porção superior do abdome há 1
+dia. Ao exame encontra-se em bom estado geral, consciente, orientado, eup-
+neico, afebril, FR 16 IRPM, SaO2 97% em ar ambiente, FC 88 BPM, PA 118
+x 76 mmHg, com dor à palpação difusamente em andar superior do abdome,
+sem descompressão brusca dolorosa. Exames laboratoriais revelam creatini-
+na de 1,2 mg/dL, alanina amino transferase de 180 u/L, amilase de 426 u/L,
+lipase de 632 u/L, triglicérides de 180 mg/dL, bilirrubina direta de 0,8 mg/dL.
+A ultrassonografia de abdome evidenciou discreta dilatação de vias biliares,
+com cálculo de 1,6 cm em colédoco distal e imagens hipoecoicas em topo-
+grafia de pâncreas. Dentre as alternativas abaixo, assinale a melhor conduta
+inicial para esse paciente:
+a) Analgesia com meperidina, hidratação com solução fisiológica 0.9% endo-
+venosa 20ml/kg/hora nas primeiras 24 horas e jejum
+
+b) Analgesia com dipirona e morfina se necessário, hidratação com ringer
+lactato endovenoso 10mL/kg/hora, ciprofloxacino 400mg endovenosa 12/12
+horas associado a metronidazol 500 mg endovenoso 8/8 horas e jejum
+c) Analgesia com morfina, hidratação com ringer lactato endovenoso 20mL/
+Kg/hora nas primeiras 24 horas, indicar colangiopancreatografia endoscópica
+retrógrada e jejum
+d) Analgesia com dipirona e morfina se necessário, hidratação com ringer
+lactato  endovenoso  10mL/Kg/hora,  indicar  colangiopancreatografia
+endoscópica retrógrada e jejum
+28) Marque a alternativa que demonstra a provável melhor escolha de dispo-
+sitivo de oxigênio suplementar para determinado quadro clínico.
+a) Paciente com exacerbação de DPOC, com SaO2 86% em Ar Ambiente e
+FR 24 IRPM - Máscara de Venturi com FiO2 35%.
+b) Paciente previamente hígido, com Pneumonia Bacteriana, SaO2 90% em
+Ar Ambiente, FR 36 IRPM e uso de musculatura acessória - Cateter Nasal de
+O2 2 L/min.
+c) Paciente com Infarto Agudo do Miocárdio (IAM) com supradesnivelamento
+de Segmento ST em parede anterior no Eletrocardiograma (ECG), com SaO2
+95% em Ar Ambiente, FC 101 BPM, FR 22 IRPM, PA 170 x 85 mmHg - Cate-
+ter Nasal de O2 5 L/min.
+d)  Paciente  com  Síndrome  de  Guillain-Barré  evoluindo  com  Dispnéia  e
+Disfagia, SaO2 99% em Ar Ambiente, FC 52 BPM, FR 14 IRPM - Máscara
+Não Reinalante em 15 L/min.
+29)  Paciente  62  anos,  53  kg,  hipertenso  prévio  (com  história  de
+miocardiopatia hipertrófica) em uso de Amlodipina e Losartana, sabidamente
+portador de hiperplasia benigna de próstata, dá entrada no DE com quadro
+de sepse de foco urinário. Evoluiu para choque séptico já em uso de noradre-
+nalina 1 mcg/Kg/min infundida em Cateter Venoso Central (CVC) pela Veia
+Jugular Interna Esquerda (VJI). Foi intubado na urgência devido a rebaixa-
+mento de nível de consciência seguido por broncoaspiração. Colocado em
+Modo Assistido-Controlado a Pressão (PCV) com Pressão Inspiratória (PI) de
+22 mmHg resultando em um VC 769 ml, FiO2 60% PEEP 14 mmHg FR 20
+IRPM. Evolui com SaO2 89% FC 130 bpm e PA 80 x 50 mmHg sendo au-
+mentado a FiO2 e a vazão de drogas vasoativas. Ultrassom Point Of Care
+(POCUS) realizado revela:
+
+-Coração com sinais de Hipertrofia e hiperdinamismo
+-Veia Cava Inferior distendida e sem oscilação
+-Pulmão direito com padrão A’, ponto pulmonar+, PLAPS-
+-Pulmão esquerdo com padrão A, sem ponto pulmonar, PLAPS -
+-Sistema venoso de Membros Inferiores (MMII) compressíveis
+ 
+O diagnóstico provável é:
+a) Tamponamento cardíaco
+b) Pneumotórax à direita
+c) Trombo Embolia Pulmonar
+d) Edema Agudo de pulmão
+30) Sobre o uso de Escalas de Triagem para definir prioridades de cuidado
+no DE, marque a alternativa correta.
+a) A escala de Manchester é muito utilizada no Brasil e é especialmente sen-
+sível para identificar pacientes com Sepse.
+b) A Escala americana do ESI (Emergency Severity Index) tem como objetivo
+a alocação dos recursos necessários para manejar aquele paciente.
+c) Triagem ou classificação de risco deve ser incluída em serviços que te-
+nham mais de dois médicos de plantão ao mesmo tempo.
+d) A triagem deve ser realizada pelo profissional mais rapidamente disponí-
+vel, independente de sua formação.
+Referência para Questões 31 e 32:
+Paciente 55 anos, Obesidade Grau III, procura atendimento de emergência
+por quadro de febre, tosse produtiva e dispneia de início progressivo há 7
+dias. No seu exame físico breve, o paciente encontra-se agitado e combati-
+vo,  confuso, caótico, com ausculta de Murmúrios Vesiculares (MV) reduzi-
+dos em base direita e ventilando com esforço respiratório. Sinais Vitais:
+Frequência  Respiratória  (FR)  de  45  Incursões  Respiratórias  por  Minuto
+(IRPM), Frequência Cardíaca (FC) de 130 Batimentos por Minuto (BPM),
+Pressão Arterial (PA) de 80 x 40 milímetros de Mercurio (mmHg) e Saturação
+Arterial de Oxigênio (SaO2) de 84% em Ar Ambiente (AA).
+Durante a realização das medidas iniciais, o paciente não tolerou a acopla-
+gem em oxigênio suplementar pela agitação psicomotora e decidiu-se por in-
+tubar o paciente.
+
+31) Considerando o paciente, qual o método de intubação mais adequado
+nesse contexto:
+a) Intubação em Sequência Rápida (ISR)
+b) Intubação Acordado
+c) Intubação em Sequência Atrasada
+d) Intubação Facilitada com Midazolam
+32) Considerando o status fisiológico pré intubação desse paciente, qual a
+melhor combinação de fármacos para a abordagem dessa via aérea:
+a) Fentanil + Midazolam, Intravenoso (IV)
+b) Midazolam + Suxametônio, IV
+c) Fentanil + Etomidato + Suxametônio, IV
+d) Cetamina + Suxametônio, IV
+33) Paciente trazida ao DE por unidade de resgate do Corpo de Bombeiros,
+feminina, 24 anos, passageira da garupa de uma moto que colidiu frontal-
+mente com uma van. Trazida em prancha longa com colar cervical, dá entra-
+da na sala de emergência sendo submetida a Reanimação Cardiopulmonar
+(RCP) pelos bombeiros, que relatam que a paciente entrou em Parada Cardi-
+opulmonar (PCR) no trajeto para o hospital, cinco minutos atrás. Você confir-
+ma a PCR e identifica uma Atividade Elétrica Sem Pulso (AESP) ao monitor
+cardíaco. Assinale a alternativa correta em relação à continuidade do atendi-
+mento a essa paciente:
+a) Deve ser realizada torascostomia digital bilateral caso não haja retorno à
+circulação espontânea após o primeiro ciclo de reanimação com suporte
+avançado de vida
+b) Toracotomia de reanimação pode ser realizada caso não haja retorno à
+circulação espontânea após cinco minutos de RCP com suporte avançado de
+vida
+c) Intubação orotraqueal pode ser protelada até o terceiro ciclo de RCP, caso
+a ventilação esteja adequada com o dispositivo bolsa-válvula-máscara
+d) A reanimação cardiopulmonar dessa paciente está contraindicada, e não
+deve ser continuada na sala de emergência
+
+34) Sobre as principais metas de saturação de oxigênio em pacientes com
+insuficiência
+ 
+respiratória
+ 
+marque
+ 
+a
+ 
+alternativa
+ 
+correta.
+a) Em pacientes com Hipoventilação relacionada à obesidade, metas entre
+88 e 92% podem reduzir o risco de depressão respiratória.
+b) Em pacientes com IRpA o uso de O2 deve ser feito de maneira liberal já
+que os riscos da hipoxemia ultrapassam os malefícios da Hiperóxia.
+c) Frequência Respiratória e o uso de musculatura acessória não devem ser
+levados em conta na determinação do alvo de oximetria para esses pacien-
+tes.
+d) Meta de oxigênio em pacientes com estado crítico, como pacientes em
+choque hemodinâmico ou vítimas de politrauma grave é bem estabelecida e
+deve ser alcançada com uso de MNR à 15 L/min
+35) Paciente masculino de 72 anos de idade, com diagnóstico prévio de
+diverticulose colônica, dá entrada no departamento de emergência com qua-
+dro de dor abdominal em fossa ilíaca esquerda, associada a febre não aferi-
+da. Ao exame encontra-se consciente, orientado, afebril, estável hemodina-
+micamente, com dor à palpação de quadrante inferior esquerdo do abdome,
+associada à descompressão brusca dolorosa. Realizada tomografia de abdo-
+me que evidenciou parede de cólon sigmóide com 6mm de espessura e infla-
+mação de gordura pericólica. Assinale dentre as alternativas abaixo a condu-
+ta mais adequada para a condução desse paciente:
+a) Tratamento ambulatorial com ciprofloxacino 500mg via oral 12/12 horas
+associado a metronidazol 500 mg via oral 8/8 horas por 10 dias
+b) Internação, jejum, analgesia e ciprofloxacino 400mg endovenosa 12/12
+horas associado a metronidazol 500 mg endovenoso 8/8 horas
+c) Internação, jejum, analgesia, piperacilina + tazobactam 4,5 mg endoveno-
+sa 6/6 horas e avaliação do cirurgião para realização de drenagem per-
+cutânea
+d) Internação, jejum, analgesia, cefepime 2g endovenoso 8/8 horas associa-
+do a metronidazol 500 mg endovenoso 8/8 horas e avaliação do cirurgião
+para realização de drenagem cirúrgica
+36) Dentre os exames complementares, marque a alternativa que demonstra
+o melhor exame para definir a gravidade da hipoxemia em pacientes com in-
+suficiência respiratória aguda (IRpA).
+a) Gasometria Venosa em ar ambiente
+
+b) Gasometria Arterial em Uso de O2 Suplementar à 2 L/min em Cateter Na-
+sal
+c) Gasometria Arterial em ar ambiente
+d) Tomografia de Tórax
+37) Em relação ao derrame pericárdico (DP) podemos afirmar:
+a) DP mínimo corresponde a uma fina lâmina líquida observada somente du-
+rante a diástole ventricular
+b) DP discreto corresponde a uma fina lâmina líquida circunferencial com até
+15 mm sisto-diastólico
+c) DP importante geralmente circunferencial tem volume maior que 10 mm na
+diástole
+d) DP moderado pode ser localizado ou circunferencial, com maior volume
+medindo de 10 a 20 mm na diástole
+38) Paciente, sexo feminino, 32 anos, sem comorbidades prévias, em pós-
+operatório  de  abdominoplastia  e  mamoplastia  em  3º  dia  Pós-Operatório
+(PO), dá entrada no DE com queixa de dor torácica e dispnéia há 3 horas;
+imediatamente evolui com hipotensão. Ao exame físico: palidez cutâneo-
+mucosa, sonolência, PA 63x47 mmHg, FC 123 BPM; FR 27 IRPM; SaO2
+94%; ausculta pulmonar e cardíaca sem alterações, presença de FO em re-
+gião de mamas, em bom aspecto. Presença de extensa cicatriz abdominal
+sem alterações, discreta dor à palpação do abdome. São solicitados exames
+complementares: Hb: 9,8 mg/dL; Ht: 28%; Leucograma normal; Plaquetas
+normais; D-dímero: 5,6 ng/dL. Qual sua primeira conduta a ser tomada?
+a) Alteplase EV
+b) Realização de angiotomografia de Tórax em protocolo TEP
+c) Hidratação com Ringer Lactato 500ml EV
+d) Iniciar Noradrenalina EV em Bomba de Infusão Contínua (BIC)
+39) Durante a realização do exame E-FAST no contexto de Trauma busca-
+mos responder perguntas objetivas para tomada de decisão. Avaliando as ja-
+nelas ultrassonográficas do exame E-FAST, o que procuramos encontrar
+para definir possível etiologia de Choque Hemodinâmico?
+
+ 
+a) A1- Hipercontratilidade de VE,
+A2 - líquido perivesicular,
+A3 -coleção esplênica,           
+A4 - líquido retro-uterino
+ 
+b) A1- Líquido pericárdico,
+A2 - Líquido no espaço de Morrison,
+A3 - Líquido periesplênico,
+A4 - Líquido peri-vesical
+ 
+c) A1- Hipocontratilidade de VE,
+A2 - Hidronefrose com líquido peri-renal
+A3 - Hidronefrose com líquido peri-renal          
+A4 - líquido peri-vesical
+d) A1- Líquido pericárdico
+A2 - Líquido póstero apical renal D
+A3 - líquido póstero apical renal E
+A4 - Líquido Intra-vesical
+40) Paciente feminina, 24 anos, dá entrada por meios próprios no DE devido
+a abaulamento doloroso em região escapular direita há 3 dias. Nega comor-
+bidades, nega febre. Está em bom estado geral, consciente, orientada, hidra-
+tada, afebril, eupneica. Ao exame físico apresentava lesão nodular abaulada
+
+de aproximadamente 2 cm de diâmetro, com ponto de flutuação central,
+acompanhada de eritema e aumento de temperatura locais. A melhor condu-
+ta para esse caso seria:
+a) Anestesia/sedação, incisão local, drenagem, limpeza, curativo e alta com
+orientações
+b) Anestesia/sedação, incisão local, drenagem, limpeza, curativo e alta com
+prescrição de clindamicina
+c) Iniciar clindamicina e solicitar avaliação do cirurgião
+d) Iniciar ampicilina EV e realizar incisão local seguida de drenagem e curati-
+vo
+41) Você é o médico de uma companhia de exploração de petróleo e encon-
+tra-se embarcado em uma plataforma offshore. É levado para sua avaliação
+indivíduo masculino de 37 anos, que após realizar um mergulho para um re-
+paro estrutural na plataforma, a 40 metros de profundidade, iniciou quadro de
+dor em articulações de ombro e cotovelo, associado a rash cutâneo e prurido
+em região do tronco. Sinais vitais: FR 20 IRPM, SaO2 95% em ar ambiente,
+FC 88 BPM, PA 110 x 75 mmHg, TEC < 2 segundos e ECG de 15. Sua hi-
+pótese diagnóstica e conduta imediata seriam:
+a) Doença Descompressiva - Repouso no leito e observação por 4 a 8 horas
+b) Barotrauma - Oferecer oxigenioterapia em cateter à 4L/min
+c) Doença Descompressiva - Oferecer oxigenioterapia em MNR Á 15 L/min
+d) Barotrauma – Indicar câmara hiperbárica imediata
+42) Motorista de caminhão vítima de colisão traseira com outro caminhão,
+encontra-se preso nas ferragens pelos membros inferiores na altura das co-
+xas há 3 horas. Consciente e orientado, em uso de MNR a 10 L/min e com
+acesso venoso em membro superior esquerdo. Dentre as alternativas abaixo,
+assinale a melhor conduta em relação à administração de fluidos para esse
+paciente:
+a) Infusão de alíquotas de 500 mL de Ringer Lactato, mantendo estratégia de
+hipotensão permissiva até que o paciente seja retirado das ferragens
+b) Infusão de alíquotas de 500mL de solução fisiológica 0,9%, a fim de man-
+ter pressão arterial sistólica em torno de 90 mmHg
+c) Puncionar outro acesso venoso e infundir 1 L de Ringer Lactato aquecido
+por cada um dos acessos
+
+d) Infusão de até 1500 mL de solução fisiológica 0,9% por hora, até que o
+paciente seja retirado das ferragens
+43) Paciente, 28 anos, com histórico de trauma torácico há 3 semanas, dá
+entrada em DE com sonolência, febre e sudorese. Refere dor em hemitórax
+direito ventilatório-dependente que vem piorando com o passar dos dias, ao
+exame apresentava-se descorado, febril (TAx 38,6ºC), sonolento, PA: 83x59
+mmHg, FC: 112 BPM, FR: 31 IRPM, SaO2: 96%, apresentando Moteamento
+cutâneo (Mottling Score) Grau 4, TEC maior que 3 segundos, ausculta car-
+díaca sem alterações, ausculta pulmonar com presença de estertores em he-
+mitórax direito e base com ausculta diminuída, é realizado Rx de Tórax que
+mostra opacificação do seio costofrênico direito e hipotransparência de base
+direita. Qual sua hipótese diagnóstica e conduta inicial?
+a) Tromboembolismo pulmonar, choque obstrutivo, trombólise imediata
+b) Infecção pulmonar, sepse/choque séptico, expansão volêmica, antibiotico-
+terapia imediata
+c) Pneumotórax hipertensivo, choque obstrutivo, punção torácica de alívio
+d) Pneumonia aspirativa, choque séptico, expansão volêmica, antibioticotera-
+pia imediata
+44) Paciente, sexo masculino, 78 anos, procura o DE com quadro de falta de
+ar importante e sensação de pressão no peito, apresenta histórico de hiper-
+tensão arterial sistêmica, diabetes mellitus e doença coronariana crônica.
+Faz uso de  ácido acetilsalicílico, betabloqueador, clopidogrel e anlodipino.
+Apresentando ao exame físico PA: 74x58 mmHg, FC: 89 BPM; FR: 22 IRPM;
+SaO2: 93%, ausculta cardíaca com bulhas hipofonéticas, ausculta pulmonar
+com estertores crepitantes, edema de extremidades. Ao realizar eletrocardio-
+grama apresenta supradesnivelamento de segmento ST em parede inferior,
+o paciente foi encaminhado imediatamente para a hemodinâmica. Foi reali-
+zado então angioplastia primária de artéria coronária direita. Após 6 horas da
+realização da angioplastia foi realizada coleta de exames, apresentando nes-
+te momento uma creatinina de 3,9 mg/dl e uréia de 108 mg/dl. Das razões
+abaixo, qual provavelmente não deve ser atribuída como causa da alteração
+renal?
+a) Insuficiência Renal Crônica agudizada em paciente com comorbidades pré-
+vias
+b) Insuficiência Renal Aguda em paciente com Infarto Agudo do Miocárdio e
+hipotensão
+
+c) Nefrotoxicidade causada pelo contraste
+d) Doença Renal Crônica em paciente com vasculopatia
+45) Paciente apresentando sangramento intenso devido à amputação traumá-
+tica de membro inferior direito, trazido pelo atendimento pré-hospitalar que já
+iniciou Ringer Lactato 1500 ml em bolus Endovenoso (EV) e aplicou Torni-
+quete no Membro. Mantendo hipotensão e outros sinais hemodinâmicos de
+choque, hipoperfusão tecidual, taquicardia e taquipneia. Qual das condutas
+abaixo seria a mais prioritária neste momento?
+a) Administração de mais 1000 ml de cristalóide
+b) Administração de 500ml de NaCl 3% EV
+c) Transfusão de 3 Bolsas de concentrados de hemácias EV
+d) Transfusão de Hemocomponentes na proporção 1:1:1 concentrado de
+hemácias, plasma fresco congelado e plaquetas
+46) Paciente de 33 anos em Monitorização contínua em Sala de Emergência
+há 2 dias devido quadro de IRpA por COVID-19, atualmente em Intubação
+Orotraqueal (IOT) e VM em modo Volume Controlado: Volume Corrente (VC)
+6-7 ml/kg, Fluxo 65 L/min, PEEP 10 cmH₂O, FiO2 80%, FR 25 IRPM, manten-
+do Pressão de Platô de 33 mmHg, mantendo SaO2 90% e FC 122 BPM, PA
+100 x 70 mmHg sem uso de Drogas Vasoativas (DVA), sob sedoanalgesia
+em uso de Midazolam EV e Fentanil EV. Você é chamado pela equipe de En-
+fermagem devido à avisos de alarme no Ventilador e SaO2 75%, após o ba-
+nho. Após avaliação sistematizada você observa: MV reduzidos globalmente,
+Curva de Capnografia Abaixo, Aspiração Traqueal sem secreção,  POCUS
+com Linhas A bilateralmente, deslizamento pleural não foi avaliado. Qual a
+conduta imediata a ser realizada?
+
+a) Realizar ventilações de resgate
+b) Iniciar tentativa imediata de IOT por laringoscopia direta
+c) Drenar o tórax direito e esquerdo
+d) Trocar o ventilador e seus circuitos
+47) Paciente com quadro de choque, ainda não identificado, apresenta a se-
+guinte história e exames físico e complementares: Vítima de acidente auto-
+mobilístico, motorista sem cinto de segurança, dá entrada em um DE após
+cerca de 30 minutos do acidente. Apresenta palidez cutâneo-mucosa, queixa
+de dor torácica, PA 87x53 mmHg, FC 105 BPM; FR 23 IRPM; SaO2: 94%.
+Ausculta pulmonar com roncos e estertores crepitantes, bulhas cardíacas
+abafadas, lactato 3 mmol/dL, PaCO2 34 mmHg, BE -4,5. Qual sua hipótese
+diagnóstica e tipo de choque?
+a) Pneumotórax hipertensivo, choque obstrutivo
+b) Tromboembolismo pulmonar, choque distributivo
+c) Hemotórax maciço, choque hipovolêmico
+d) Tamponamento cardíaco, choque obstrutivo
+48) Sobre conceitos envolvendo mecanismos de insuficiência respiratória
+Hipoxêmica, marque a alternativa correta:
+a) Em pacientes com distúrbios de ventilação-perfusão (V/Q) hipoxemia ten-
+de a ocorrer quando áreas de ventilação prejudicada vem acompanhadas de
+vasoconstrição hipóxica.
+b) Dentre os principais mecanismos descreve-se: Distúrbios V/Q, Espessa-
+mento da Membrana Alveolar, Hiperventilação Alveolar e Redução da Pres-
+são Inspirada de Oxigênio
+c) A Síndrome do Desconforto Respiratório Agudo (SDRA) é o protótipo da
+Hipoventilação alveolar, sendo frequentemente eficaz o uso de oxigenotera-
+pia suplementar nesses pacientes.
+d) Didaticamente o Gradiente Alvéolo-Arterial é a melhor forma de diferenciar
+entre os mecanismos de IRpA Hipoxêmica 
+49) Segundo a Regra Canadense de Tomografia Computadorizada, no paci-
+ente com Traumatismo Cranioencefálico leve, são critérios que indicam a re-
+alização de uma tomografia computadorizada de crânio, EXCETO:
+a) Uso de anticoagulantes
+b) Redução do nível de consciência transitório por 2 minutos
+
+c) Presença de 2 ou mais episódios de  vômitos
+d) Idade maior que 65 anos
+50) Paciente chega ao departamento de emergência, conduzido pelo SAMU,
+em parada cardiorrespiratória, em vigência de Reanimação Cardiopulmonar
+(RCP). Seu colega assume a condução da RCP e te pede para auxiliá-lo
+com o ultrassom. Utilizando o Protocolo Cardiac Arrest Sonographic Assess-
+ment (CASA),  nos  intervalos  das  compressões,  estando  o  paciente  em
+AESP, você começa a realizar as janelas ultrassonográficas. Se deparando
+com a imagem abaixo e tendo a informação de que o paciente não tinha car-
+diopatia prévia, qual seria sua provável conduta em relação a possível causa
+da PCR?
+a) Alteplase EV
+b) Toracotomia de reanimação
+c) Toracocentese de alívio
+d) Pericardiocentese de alívio
+51) Paciente de 16 anos dá entrada no departamento de emergência com
+quadro de dor abdominal aguda. Apresenta-se desidratado, com odor fétido
+na boca. FR 24 IRPM, SaO2 94%, MV com crepitações em base direita, FC
+130 BPM, PA 80x60 mmHg, TEC 4 seg, ECG  11 (AO 2 RV 4 RM 5) pupilas
+2+2+, TAx. 37,9 ̊C. Glicemia capilar 390 mg/dl.
+Solicitados exames laboratoriais e iniciado suporte sendo a conduta imedia-
+ta:
+a) Hidratação 1000ml com Soro fisiológico 0,45% + insulina regular bolus 0,1
+U/kg +  Bicarbonato de Sódio 8.4% 100 mEq + KCl 19.1% 30 mEq em 1h +
+Antibiótico na primeira hora
+b) Hidratação vigorosa com Soro fisiológico 0,9% + insulina regular bolus 0,1
+U/kg + Antibiótico na primeira hora
+
+c) Hidratação 1500ml com Soro fisiológico 0,9% + insulina regular bolus 0,1
+U/kg +  Bicarbonato de Sódio 8.4% 100 mEq + KCl 19.1% 30 mEq em 1h +
+Antibiótico na primeira hora
+d) Hidratação 1500ml com Soro fisiológico 0,9% + Antibiótico na primeira
+hora
+Referência para Questões 52 e 53:
+Paciente sexo masculino, 63 anos, hipertenso e diabético, deu entrada no
+DE com quadro de desvio de rima labial para direita e hemiparesia à esquer-
+da, de início há 03 h da admissão. Os sinais vitais da entrada eram PA: 175 x
+105 mmHg, FC: 82 bpm, FR: 14 IRPM, SaO2: 95% em ar ambiente. Glicemia
+capilar 98 mg/dl
+52) De acordo com as Diretrizes atuais, quais as metas de tempo necessári-
+as para o correto atendimento de uma vítima com suspeita de AVE?
+a) Avaliação geral imediata: até 10 minutos; Avaliação neurológica imediata:
+até  20  minutos;  Realização  de  tomografia/ressonância:  até  20  minutos;
+Interpretação  tomografia/ressonância:  até  45  minutos;  Administração
+trombolítico: até 60 minutos 
+b) Avaliação geral imediata: até 05 minutos; Avaliação neurológica imediata:
+até  30  minutos;  Realização  de  tomografia/ressonância:  até  45  minutos;
+Interpretação  tomografia/ressonância:  até  60  minutos;  Administração
+trombolítico: até 180 minutos
+c) Avaliação geral imediata: até 10 minutos; Avaliação neurológica imediata:
+até  25  minutos;  Realização  de  tomografia/ressonância:  até  30  minutos;
+Interpretação  tomografia/ressonância:  até  60  minutos;  Administração
+trombolítico: até 120 minutos
+d) Avaliação geral imediata: até 10 minutos; Avaliação neurológica imediata:
+até  25  minutos;  Realização  de  tomografia/ressonância:  até  25  minutos;
+Interpretação  tomografia/ressonância:  até  60  minutos;  Administração
+trombolítico: até 60 minutos.
+
+53)  Realizado  tomografia  de  crânio  imediatamente,  demonstrada  abaixo.
+ 
+ Considerando os achados do corte o tomográfico acima, qual o diagnóstico
+mais provável e a melhor conduta indicada?
+a) Acidente vascular encefálico hemorrágico. Infusão de Alteplase EV se não
+houver contraindicações.
+b) Acidente vascular encefálico hemorrágico. Craniectomia descompressiva.
+c) Acidente vascular encefálico isquêmico. Infusão de Alteplase EV se não
+houver contraindicações.
+d) Acidente vascular encefálico isquêmico. Craniectomia descompressiva.
+54)  Você é  o médico que está  acompanhando um grupo de montanhistas
+brasileiros que está realizando a subida do monte Aconcágua, na Argentina.
+No segundo dia de expedição, ao atingirem 3000 metros de altitude, um dos
+montanhistas inicia quadro de cefaleia moderada, fadiga, náuseas e tontura.
+Sua hipótese diagnóstica mais provável e conduta imediata seriam, respecti-
+vamente:
+a) Edema Cerebral da Alta Altitude, indicar câmara hiperbárica
+b) Mal Agudo de Altitude, orientar descida de pelo menos 300 metros verti-
+cais
+c) Edema Pulmonar de Alta Altitude, indicar ventilação não invasiva
+d) Mal Agudo de Montanha, manter a subida em ritmo mais lento
+55) Descreva a patologia abaixo que  não apresenta mecanismo de Insufi-
+ciência Respiratória Tipo II exclusiva.
+a) Intoxicação por Opióides
+b) Inalação de Fumaça
+
+c) Hipoventilação associada à Obesidade
+d) Trauma Raquimedular em Nível de Segmento C2
+56) Em relação às lesões por explosão, assinale a alternativa correta:
+a) Ruptura da membrana timpânica é um exemplo de lesão primária
+b) Amputações traumáticas são exemplos de lesões quaternárias
+c) Queimaduras são exemplos de lesão terciária
+d) Síndrome de esmagamento é exemplo de lesão secundária
+57) Paciente com quadro de choque dá entrada no DE. São iniciadas medi-
+das para o choque, tendo sido colhidos exames e realizada ressuscitação
+volêmica com cristalóide. Quais dos parâmetros abaixo podem ser usados
+para avaliar a melhora do paciente após a ressuscitação volêmica?
+a) Diminuição dos níveis séricos de Lactato entre 10-20%, aumento dos valo-
+res de Base excess, diurese superior a 1 mL/kg/h
+b) Aumento do índice cardíaco medido por cateter de artéria pulmonar, au-
+mento do pH, diurese superior a 0,5 mL/kg/h
+c) Diminuição dos níveis séricos de Lactato entre 10-20%, aumento do índice
+cardíaco medido por cateter de artéria pulmonar, aumento da PAS acima de
+90 mmHg
+d) Aumento de PAM acima de 65 mmHg, aumento do débito cardíaco avalia-
+do por ultrassonografia, diurese superior a 0,5 mL/kg/h
+58) A Cetoacidose Diabética (CAD) é uma complicação relacionada à hiper-
+glicemia e representa 4,9% das internações por diabetes mellitus (DM). Defi-
+nimos a CAD pela tríade:
+a) Glicemia >600 mg/dl , pH <7,3 , Cetonemia positiva
+b) Glicemia >250 mg/dl , Osmolaridade >320 mosm/Kg, Cetonúria fortemente
+positiva
+c) Glicemia >250 mg/dl, pH <7,3 , Cetonemia positiva
+d) Glicemia > 600 mg/dl, Osmolaridade >320 mosm/Kg, Cetonemia positiva
+59) O Ventrículo Direito (VD) tem importante papel na morbidade e mortalida-
+de de pacientes com sinais e sintomas de doença cardiopulmonar. Para uma
+adequada avaliação do VD, o médico deve examiná-lo através de múltiplas
+janelas acústicas e se basear  em parâmetros quantitativos e qualitativos.
+
+Um dos parâmetros para avaliar a função de VD  é  a medida da excursão
+sistólica do plano do anel tricúspide (TAPSE).
+Avaliando a imagem abaixo podemos suspeitar que:
+a) O paciente apresenta provável cor pulmonale
+b) O paciente apresenta Trombo Embolia Pulmonar (TEP)
+c) O paciente tem função reduzida de VD
+d) O paciente apresenta boa função de VD
+60) Familiar leva ao DE paciente de 4 anos por disfagia e dor cervical após
+ter ingerido uma moeda. Sobre o manejo do paciente em questão, escolha a
+alternativa ERRADA.
+a) Quando existe dúvida sobre a localização traqueal ou esofágica,o posicio-
+namento do corpo estranho em plano coronal no Rx aumenta a suspeita de
+posicionamento traqueal;
+b) A perfuração do trato gastrointestinal ocorre mais frequentemente no esô-
+fago ou na região ileocecal
+c) A investigação inicial deve ser feita com a radiografia simples
+d) A remoção antecipada em geral é requerida para objetos mais largos que
+2 cm
+61) Quando um paciente está evoluindo em um quadro de choque hemorrá-
+gico, qual das alterações abaixo aparece mais precocemente?
+a) Alteração de débito cardíaco
+b) Hipotensão Arterial Sistêmica
+
+c) Hiperlactatemia Arterial
+d) Queda da Saturação Arterial
+62) Paciente com diagnóstico de cirrose hepática grave, dá entrada no De-
+partamento de Emergência com quadro de agitação psicomotora, confusão
+mental e agressividade. Ao exame físico apresenta ataxia e flapping. O
+acompanhante relata que o paciente está sem realizar evacuações há três
+dias. Dentre as alternativas abaixo, escolha a mais adequada como medida
+inicial para o tratamento desse paciente:
+a) Enema de Glicerina 12% Via Retal
+b) Rifaximina 550 mg via oral de 12/12 horas
+c) Lactulose 20 mL via oral de 8/8 horas associada a Neomicina 1 g via oral
+de 6/6 horas
+d) Lactulose 40 mL de 8/8 horas por via oral
+63) Paciente do sexo feminino, 35 anos, com diagnóstico de esclerose sistê-
+mica difusa há  cerca de 1 ano, em acompanhamento no ambulatório de
+Reumatologia, dá entrada no pronto socorro com crises convulsivas de difícil
+controle. Exame físico revela PA 180x110 mmHg e laboratório com creatinina
+sérica 2,8 mg/dL e análise do sedimento urinário com presença de proteinú-
+ria e hematúria. Diante da hipótese diagnóstica de crise renal esclerodérmi-
+ca, marque a alternativa que apresenta a conduta terapêutica adequada.
+a) Pulsoterapia com metilprednisolona 1g IV por 3 dias.
+b) Captopril 25mg de 8 em 8 horas.
+c) Pulsoterapia com ciclofosfamida 1g IV por 1 dia.
+d) Prednisona oral 2mg/kg/dia.
+64) Marque a alternativa que demonstra uma correlação errada entre um de-
+terminado dispositivo de oxigenoterapia e sua função prática.
+a) Fluxo de Gás Oxigênio nas válvulas hospitalares é o principal determinan-
+te da Fração Inspirada de O2 (FiO2) que os dispositivos são capazes de pro-
+duzir.
+b) O uso da máscara associada a válvula com mecanismo de Venturi é indi-
+cado para permitir oxigenação com FiO2 mais precisas, sendo pouco útil para
+pacientes com altas demandas de O2 suplementar (>50%)
+
+c) O Dispositivo Bolsa-Válvula-Máscara (BVM) é eficaz em produzir FiO2 pró-
+ximas a 100% mesmo em respiração espontânea, quando a vedação da
+máscara no rosto do paciente é robusta e em altas taxas de fluxo de O2. 
+d) O Umidificador e Aquecedor de Ar associado aos Cateteres Nasais de Alto
+Fluxo (CNAF) tem a intenção de reduzir o conteúdo bacteriano no sistema.
+65) Paciente de 60 anos, masculino, hipertenso em uso regular da sua medi-
+cação e diabético tipo II em acompanhamento regular. Procura o DE com re-
+lato de febre não aferida, tosse com expectoração amarelada e dispneia. Re-
+fere necessidade de internação hospitalar no último mês com uso de antibió-
+tico endovenoso . O exame radiológico abaixo corresponde ao paciente em
+questão. Ao exame físico, paciente acordado, cooperativo. Sinais vitais: ECG
+15, PA: 142 X 73 mmHg, FC: 88 BPM, FR: 24 IRPM, SaO2: 96 (em AA), TAx
+37.3. Cº. Exames laboratoriais: Creatinina sérica: 1.2 mg/dl, Uréia: 90 mg/dl,
+restante dos exames laboratoriais dentro do valor de referência de normali-
+dade.
+Sobre o caso acima responda VERDADEIRO ou FALSO para as questões
+abaixo e marque a alternativa que corresponde à ordem dessas respostas:
+(  ) A solicitação de exames laboratoriais é fundamental no caso em questão
+para estratificação do caso pelo CURB-65;
+(  ) Paciente com quadro de pneumonia em curso necessitando de interna-
+ção hospitalar e uso de antibioticoterapia com cobertura para Pseudomonas
+aeruginosa;
+(  ) Paciente com quadro de pneumonia em curso não necessitando de inter-
+nação hospitalar podendo ser tratado em nível ambulatorial
+(  ) O uso de Levofloxacina oferece cobertura antimicrobiana necessária para
+o paciente em questão
+(  ) O uso de Azitromicina oferece cobertura antimicrobiana necessária para o
+paciente em questão
+a) V-F-V-V-F 
+b) V-F-V-V-V
+c) F-V-V-F-V
+d) V-V-F-F-F
+
+66) Em relação às operações aeromédicas, considere as afirmativas abaixo:
+I – Atendimento Primário é aquele em que a equipe se desloca até o local
+onde ocorreu o agravo à saúde do paciente
+II  –  Atendimento Secundário também pode ser denominado remoção ou
+transferência
+III –  Em aeronaves não pressurizadas, a altitude considerada como limite
+para a compensação fisiológica e manutenção da homeostase é de 10 mil
+pés
+IV – Aeronaves pressurizadas possibilitam a manutenção de uma pressão de
+cabine similar à pressão encontrada ao nível do mar
+ 
+São verdadeiras:
+a) I e II
+b) I, II e III
+c) I, II e IV
+d) I, II, III e IV
+67) Paciente de 18 anos vítima de agressão com uma garrafada na cabeça,
+chega ao DE conduzido por familiares. Consciente, mantém via aérea pérvia,
+coluna cervical livre. Tórax livre, ventila bem bilateralmente, porém com FR
+22 IRPM, SaO2 96%. FC de 120 BPM, PA 100 x 70 mmHg, TEC 4 seg, hipo-
+corado +/4. ECG de 14, pupilas isocóricas e sem déficits. Escoriação em
+flanco direito com abdome livre e peristáltico. Em uso de O2 no Cateter Nasal
+de Baixo Fluxo (CN) à 2 l/min, já com um acesso venoso foi submetido ao
+exame Focused Assessment Sonography Trauma Estendido (E-FAST) que
+se mostrou negativo.
+Em relação ao exame E-FAST podemos afirmar:
+a) O E-FAST é um exame de alta sensibilidade, mas com baixa especificida-
+de sendo alto seu valor preditivo negativo
+b) O E-FAST tem maior acurácia em traumas penetrantes quando compara-
+do aos traumas contusos
+c) O E-FAST não é um exame acurado para avaliar lesões de órgãos sólidos
+ou de vísceras retroperitoneais
+d) O  E-FAST deve ser realizado com transdutores de alta frequência com
+alta penetração
+
+68) Mulher 58 anos deu entrada com quadro de síncope no seu Departamen-
+to de Emergência. É hipertensa e diabética em uso regular de medicação.
+Apresenta história familiar de doença arterial coronariana. O Score San Fran-
+cisco Syncope Rule apresenta 03 pontos (anormalidade ECG, hipotensão ar-
+terial e dispnéia).
+Segue o ECG:
+Quais as suas medidas terapêuticas iniciais?
+a) Suporte de oxigênio (se SaO2 < 94%), atropina 0,5 mg EV (dose máxima
+de  até  3  mg),  marcapasso  transcutâneo  OU  dopamina  (dose  2  a  20
+mcg/kg/min) OU adrenalina (dose 2 a 10 mcg/min)
+b) Suporte de oxigênio (se SaO2 < 94%), atropina 0,5 mg EV (dose máxima
+de até  3 mg), marcapasso transcutâneo OU dobutamina (dose 2,5 a 20
+mcg/kg/min) OU noradrenalina (dose 0,05 a 3,3 mcg/kg/min)
+c) Suporte de oxigênio (se SaO2 < 94%), atropina 1,0 mg EV (dose máxima
+de  até  3  mg),  marcapasso  transcutâneo  OU  dopamina  (dose  5  a  20
+mcg/kg/min) OU adrenalina (dose 2 a 10 mcg/min)
+d) Suporte de oxigênio (se SaO2 < 94%), atropina 1,0 mg EV (dose única),
+marcapasso  transvenoso  OU  dopamina  (dose  5  a  20  mcg/kg/min)  OU
+adrenalina (dose 2 a 10 mcg/min)
+69) Paciente 61 anos, diagnosticado com Diabetes e Hipertensão, procura
+atendimento com relato de extração dentária há 7 dias, apresentando febre
+há 2 dias, odinofagia e aumento do volume cervical. Sinais vitais no momen-
+to do atendimento estáveis e triado como prioridade Verde de atendimento.
+
+Ao exame físico, presença de edema submandibular bilateral com sinais flo-
+gísticos e protrusão da língua, segue imagem do exame físico dessa pacien-
+te.
+Sobre o caso acima escolha a alternativa correta:
+a) A melhor conduta para o caso é antibioticoterapia por via oral associados
+a analgésicos e retorno imediato ao consultório odontológico para manejo
+dessa complicação tardia da cirurgia
+b) Encaminhar paciente à sala de emergência para avaliação de intubação
+traqueal precoce e antibiótico parenteral
+c) Internação em leito de enfermaria para administração de antibiótico paren-
+teral e avaliação do cirurgião de plantão
+d) Trata-se de um abscesso cervical com bom prognóstico se iniciado antibi-
+oticoterapia, a paciente em questão não tem indicação de internação hospita-
+lar 
+70) Sobre o uso de Ventilação Não Invasiva (VNI) considere os casos descri-
+tos abaixo.
+I) Paciente com Acidente Vascular Encefálico (AVE) isquêmico com ECG de
+9, evoluindo com disartria, disfagia grave e acúmulo de secreção em orofa-
+ringe, respiração ruidosa e SaO2 90%.
+II) Vítima de Trauma com dispneia, SaO2 88%, Presença de Linhas A com
+ausência de Lung Sliding (Deslizamento Pleural) e Presença de Lung Point
+(Ponto Pulmonar) em Ápice Pulmonar.
+III) Paciente com queixa de dor torácica e dispneia, SaO2 88%, FR 28 IRPM,
+FC 113 BPM, PA 70 x 50 mmHg em ritmo sinusal, com sinais de sobrecarga
+
+direita, Ecocardiograma demonstrando Ventrículo Direito aumentado e com
+Sinal do D.
+Marque a alternativa que demonstra as situações com indicação de uso de
+VNI.
+a) I e II
+b) II
+c) I e III
+d) Nenhuma das alternativas
+71) Paciente 38 anos, em situação de rua, com diagnóstico de HIV em trata-
+mento irregular, trazido ao DE por crise convulsiva de aspecto tônico-clônica
+generalizada.  Ao atendimento inicial: PA: 110x70 mmHg, FC: 123 BPM,
+SaO2: 96% em AA, TAx: 38.1°  C, ECG de 15 e se queixando de cefaleia,
+com agitação psicomotora discreta. Responda verdadeiro ou falso para as
+questões abaixo e marque a alternativa que corresponde  à  ordem dessas
+respostas.
+(  ) No caso em questão, a punção lombar tem prioridade a ser realizada an-
+tes dos exames de imagem.
+(  ) Ausência de sinal focal exclui diagnóstico de neurotoxoplasmose.
+(  ) O retorno da terapia antirretroviral deve ser voltada o quanto antes.
+(  ) Um CD4 acima de 200 excluiria o diagnóstico de doença oportunista.
+a) F - F - F - F
+b) V - F - V - V
+c) V - F - V - V
+d) F - V - F - F
+72)  São características mais factíveis do líquor da meningite tuberculosa:
+a) Pressão de abertura: normal; celularidade 5 a 500; contagem diferencial:
+linfócitos/monócitos; glicose: normal; Proteína: <100 mg/dL; Bacterioscopia:
+negativa
+b) Pressão de abertura: normal; celularidade >1000; contagem diferencial:
+linfócitos/monócitos; glicose: normal; Proteína: <100 mg/dL; Bacterioscopia:
+negativa
+
+c) Pressão de abertura: aumentada; celularidade >1000; contagem diferenci-
+al:  predomínio  neutrofílico;  glicose:  diminuída;  Proteína:  >100  mg/dL;
+Bacterioscopia: positiva
+d) Pressão de abertura: aumentada; celularidade 5 a 1000; contagem dife-
+rencial:  perfil  misto;  glicose:  diminuída;  Proteína:  >100  mg/dL;
+Bacterioscopia: negativa
+Referência para Questões 73 e 74:
+Você faz parte de uma equipe de resgate que é acionada para atender uma
+ocorrência de queda de um ônibus em ribanceira, em um trecho de serra de
+uma estrada de pista simples. Há relatos de que são mais de 30 vítimas e di-
+versas equipes de socorro estão se dirigindo para o local.
+73) Considerando que sua equipe é a primeira a chegar ao local do acidente,
+sua prioridade de conduta deve ser:
+a) Realizar a contagem do número de vítimas, a fim de obter uma real dimen-
+são da ocorrência e poder solicitar apoio adequado
+b) Realizar a triagem das vítimas pelo método START, pois trata-se de um
+incidente com múltiplas vítimas e os recursos são limitados
+c) Retirar rapidamente as vítimas da zona quente, pois trata-se de um local
+de alto risco de acontecerem outros acidentes
+d) Atender rapidamente as vítimas com comprometimento de vias aéreas ou
+aquelas que se encontrem em parada cardiorrespiratória, pois são as que
+necessitam de socorro imediato
+74) Sua equipe inicia o atendimento e se depara com uma vítima que está
+consciente e bastante agitada, porém consegue se comunicar verbalmente e
+queixa-se de muita dor em membros inferiores. Ao examiná-la você constata
+que sua FC 128, FR 24 IRPM, seu TEC é de 1 segundo e ela apresenta uma
+fratura exposta de perna esquerda, com movimentação espontânea do mem-
+bro inferior direito.  Utilizando o método de triagem START (Simple Triage
+And Rapid Treatment), sua conduta seria:
+a) Classificá-lo como vítima vermelha, pois deverá  apresentar grande san-
+gramento da perna fraturada e tem sinais de choque
+b) Classificá-lo como vítima verde, pois está  consciente, com Escala de
+Coma de Glasgow > 13 e consegue andar com apoio.
+c) Classificá-la como vítima vermelha, pois apesar de estar consciente apre-
+senta uma lesão com risco imediato de piora e ameaça à vida
+
+d) Classificá-la como vítima amarela, pois não apresenta sinais de choque
+nem de comprometimento ventilatório e obedece a ordens simples
+75) Sobre o quadro de Dengue, responda Verdadeiro ou Falso nas afirma-
+ções abaixo e marque a alternativa que corresponde à ordem dessas respos-
+tas.
+(   ) As sorologias devem ser colhidas apenas após o 6˚  dia do início da
+sintomatologia
+(  ) A prescrição de colóide é contra indicada durante qualquer etapa da res-
+suscitação hemodinamicamente do paciente com dengue grave
+(  ) Dengue é sempre uma doença de notificação compulsória no Brasil
+( ) O uso de plasma fresco congelado é contra indicado independente dos
+exames laboratoriais
+a) V - F - V - F
+b) V - V - F - F
+c) V - F - V - V
+d) F - V - V - F
+76) Paciente vítima de acidente com abelhas, apresentando diversas picadas
+por região de membros superiores e tórax; dá entrada em DE apresentando
+hipotensão importante; PA: 58x42 mmHg. Quais outros sinais são esperados
+neste caso?
+a) Estridor laríngeo e hiperemia cutânea
+b) Febre e dor abdominal
+c) Tosse seca e palidez cutânea
+d) Bradicardia e edema palpebral
+77) Paciente masculino de 28 anos  é  resgatado pelo SAMU após colisão
+moto x poste. Chega ao departamento de emergência imobilização, com co-
+lar cervical. Recebe O2 suplementar na Máscara não reinalante (MNR) à 10
+l/min, SaO2 88% e com FR 28. Respiração rápida, superficial e paradoxal à
+direita, ausculta reduzida em Hemitórax (HTX) direito e normal à esquerda.
+FC 120 bpm, PA 100 x 70 mmHg, perfusão mantida com Tempo de Reenchi-
+mento Capilar (TEC) de 2 seg. Escala de Coma de Glasgow (ECG) de 15,
+Pupilas médias, isocóricas e fotorreagentes, sem déficits. Escoriação em
+
+HTX direito com respiração paradoxal. Mantem SaO2 de 88% apesar da Oxi-
+genoterapia.
+Com base no caso acima, em relação ao diagnóstico e conduta, é CORRE-
+TO afirmar:
+a) Pneumotórax hipertensivo à esquerda, toracocentese de alívio seguida de
+drenagem torácica à esquerda.
+b) Hemotórax à direita, reposição volêmica e drenagem torácica à direita.
+c) Tórax instável à direita com contusão pulmonar, sedoanalgesia e intuba-
+ção orotraqueal.
+d)  Pneumotórax  à  esquerda  e  contusão  pulmonar  à  direita,  drenagem
+torácica bilateral.
+78) Mulher de 68 anos de idade, natural e procedente de Minas Gerais, fu-
+mante de 2 maços de cigarro por dia, há 30 anos, é levada ao DE com quei-
+xa de falta de ar, chiado e tosse produtiva há 3 dias. Não sabia referir febre.
+Ao exame clínico está em regular estado geral, alerta, afebril, acianótica, PA
+74x58 mmHg, FC 103 bpm, FR 28 IRPM, SaO2 89% (em AA), murmúrios
+vesiculares diminuídos globalmente com estertores crepitantes em base de
+hemitórax direito, bulhas hipofonéticas regulares sem sopros, sem outras al-
+terações relevantes ao exame físico. A paciente foi internada e foram realiza-
+dos os seguintes exames: Creatinina: 1,8 mg/dl, Ureia: 86 mg/dl, Na+: 138
+mEq/L, Hb: 16,0 g/dl, Ht: 50%, leucócitos: 18750 cél/µL (4% bastões e 87%
+segmentados) e plaquetas: 174.000 cél/µL, gasometria arterial: pH: 7,21,
+PaO2: 70 mmHg, PaCO2: 50 mmHg, bicarbonato: 14 mEq/L, SaO2: 89%. O
+principal diagnóstico é:
+
+a) Choque séptico por pneumonia, pois trata-se de uma paciente com DPOC,
+apresentando hipotensão e a principal causa de descompensação é infecção
+b) Choque obstrutivo por tromboembolia pulmonar, visto que a paciente apre-
+senta hipóxia acentuada com retenção de CO2
+c) Choque cardiogênico por quadro de insuficiência cardíaca descompensa-
+da, visto que paciente apresentava estertores em base
+d) Sepse por pneumonia, pois trata-se de uma paciente DPOC, apresentan-
+do disfunção orgânica e a principal causa de descompensação é infecção
+79) Paciente de 67 anos, é admitido no DE com quadro de Doença Pulmonar
+Obstrutiva crônica (DPOC) exacerbada, em Gasometria Arterial (em AA)
+você observa pH 7.2, PaCO2 90 mmHg, Pressão Arterial de Oxigênio (PaO2)
+55 mmHg, Bicarbonato (BIC) 37 mEq/L. Marque a alternativa que descreve a
+melhor configuração de VNI para esse paciente.
+a) Modo CPAP, com CPAP 10 mmHg e FiO2 80%
+b) Modo CPAP, com CPAP 15 mmHg e FiO2 40%
+c) Modo BiPAP, com IPAP 10 mmHg e EPAP 5 mmHg e FiO2 40%
+d) Modo BiPAP, com IPAP 12mmHg e EPAP 6 mmHg e FiO2 95%
+80) Sobre a intubação com a Técnica Retromolar escolha a alternativa ER-
+RADA:
+a) Preferencialmente deve ser utilizada a lâmina de Macintosh para entrada
+retromolar e com isso a melhorar a manipulação da língua
+b) Uma indicação de utilizar essa técnica é quando o paciente apresenta-se
+com incisivos superiores proeminentes
+c) Essa técnica é melhor realizada com auxílio do Bougie 
+d) Uma indicação de utilizar essa técnica é quando o paciente apresenta-se
+com abertura bucal limitada 
+81) O uso de drogas vasoativas é frequente em pacientes com quadro de
+choque independente do tipo e causa. Das drogas mais usadas temos como
+primeira escolha a noradrenalina, apenas um tipo de choque não tem a nora-
+drenalina como primeira escolha. Qual dos descritos abaixo é este choque?
+a) Anafilático
+b) Séptico
+c) Hipovolêmico Hemorrágico
+d) Hipovolêmico Não-Hemorrágico
+
+82) Equipe do Atendimento pré-hospitalar chega em local de acidente auto-
+mobilístico, carro X carro, apresentando 2 vítimas graves, ao retirar a primei-
+ra vítima, esta é encaminhada para o DE mais próximo, ela é admitida em
+bradicardia e respiração ruidosa e evolui rapidamente com Parada Cardior-
+respiratória (PCR) em AESP, a vítima está gestante, com abdome gravídico
+evidente há cerca de 35cm de altura uterina. São iniciadas as manobras de
+ressuscitação cardiorrespiratórias, e o emergencista opta pela realização de
+cesárea perimortem. Assinale a alternativa correta quanto a conduta escolhi-
+da:
+a) Não deve ser realizada pois a paciente está com provavelmente com me-
+nos de 24 semanas de gestação
+b) Não deve ser realizada pois a paciente apresentou PCR em AESP o que
+contra-indica o procedimento
+c) Pode ser realizada para tentativa de socorrer o feto se este tiver batimento
+cardíaco fetal positivo.
+d) Pode ser realizada após os primeiros 4 minutos de manobras de RCP se
+PCR persistente.
+83) Sobre as escalas para avaliação de acometimento neurológico, marque a
+alternativa correta.
+a) A Escala de Coma de Glasgow, isoladamente, é eficaz em identificar com-
+plicações em doentes neurológicos, como perda de proteção de via aérea e
+risco de broncoaspiração.
+b) A Escala de Cincinnati Pré Hospitalar para AVE pode auxiliar na decisão
+de encaminhamento do paciente no ambiente Pré-hospitalar
+c) A Escala de Hunt & Hess utilizada para pacientes com Hemorragia Suba-
+racnóidea utiliza os achados tomográficos nessa patologia para predizer a
+evolução final nesses pacientes.
+d) A Escala de Acidente Vascular Encefálico do NIH (NIHSS) é útil para pre-
+dizer  o  prognóstico  das  lesões  isquêmicas  independente  do  seu  sítio
+anatômico
+84) Podemos avaliar fluido responsividade, em um paciente chocado, com o
+auxílio do ultrassom, utilizando algumas técnicas listadas abaixo. Marque a
+alternativa correta:
+ 
+a) Variação do diâmetro da Veia Cava Inferior < 50% em pacientes em respi-
+ração espontânea
+
+b)  Variação  do  volume  sistólico  <  8%  em  pacientes  em  respiração  es-
+pontânea
+c) Variação do débito cardíaco > 5% com a elevação das pernas (PLR: Pas-
+sive Leg Raising)
+d) Variação do débito cardíaco > 6% após infusão de 100ml (desafio de mini
+fluido)
+85) Sobre Síndrome de Abstinência Alcoólica (SAA) Marque a alternativa
+correta.
+a) Presença de crises convulsivas em etilistas geralmente  é  induzida por
+abstinência,  avaliações  complementares  com  Tomografia  de  Crânio  não
+estão indicadas.
+b) O uso de Tiamina nesses pacientes está indicado após a dosagem dos ní-
+veis séricos da vitamina.
+c) Fenobarbital é a medicação de escolha para os casos refratários de Crises
+Convulsivas induzidas por SAA.
+d) O uso de Benzodiazepínicos EV tem a intenção de controlar a agitação
+psicomotora desses pacientes e seu alvo terapêutico deve ser a sedação
+profunda.
+86) No caso de falência circulatória, o protocolo Fluid Administration Limited
+by Lung Sonography (FALLS) utiliza a combinação de ecocardiografia e
+POCUS Pulmonar para avaliação da pleura, dos pulmões e do pericárdio no
+intuito de identificar o tipo de choque. Diante dos achados abaixo, seguindo o
+Protocolo FALLS e o Protocolo BLUE, qual a provável causa do choque?
+- Ecocardiograma Transtorácico com ventrículo esquerdo hiperdinâmico, com
+tamanho e forma habitual
+- Veia Cava Inferior 2,1 cm com colabamento <50% e E-FAST Negativo para
+líquido Livre
+- Pulmões em perfil A/B sem resposta infusão de volume com piora de linhas
+B ao dar volume
+- Veias de MMII compressíveis e sem trombos internos
+a) Obstrutivo: TEP
+b) Distributivo: Sepse
+c) Hipovolêmico: Hemorragia
+d) Obstrutivo: Tamponamento Cardíaco
+
+87) Das situações descritas, em qual delas não representa paciente com al-
+terações psiquiátricas que necessita de complementação de investigação clí-
+nica, com exames complementares laboratoriais e/ou de imagem
+a) Paciente idoso, independente dos sintomas psiquiátricos
+b) Paciente com comorbidades, independente dos sintomas psiquiátricos
+c) Paciente com primeiro episódio maníaco
+d) Paciente com quadro depressivo com suspensão de medicamento
+88) São manobras a serem realizadas caso sua visualização da via aérea
+não esteja adequada durante a laringoscopia direta, EXCETO: 
+a) Manipulação externa da laringe
+b) Manobra de BURP (Back Up right position)
+c) Manobra de Selick
+d) Fletir ou elevar a cabeça durante a laringoscopia
+89)  Homem,  64  anos  de  idade,  internado  em  Sala  de  Emergência  por
+Síndrome Respiratória Aguda Grave, encontra-se intubado há 48h, em seda-
+ção profunda, em ventilação mecânica protetora, sem assincronias e sem si-
+nais de esforço respiratório, com pressão expiratória final positiva – PEEP,
+titulada. Gasometria arterial: pH 7.22; PaCO2 62 mmHg; PaO2 81 mmHg
+(FiO2 100%); BIC 16 mEq/L; BE -6, Troca pulmonar (Relação PaO 2/FiO2) 81.
+Sem histórico de doenças cardiovasculares prévias.
+Diante da situação atual, a conduta apropriada será:
+a) Colocar o paciente em posição prona.
+b) Instalação de óxido nítrico no ramo inspiratório do VM.
+c) Instalação de óxido nítrico no ramo expiratório do VM.
+d) ECMO Veno–Venosa
+90) Paciente masculino, 58 anos, diagnóstico prévio de cirrose hepática
+avançada, dá entrada no Departamento de Emergência com quadro de febre
+e dor abdominal difusa. Apresenta ascite volumosa ao exame físico. Você re-
+aliza uma punção do líquido ascítico e diagnostica uma peritonite bacteriana
+espontânea. Assinale a alternativa que apresenta o achado laboratorial da
+análise da líquido ascítico que possibilitou a realização desse diagnóstico:
+a) Glicose < 50 mg/dL
+b) Cultura polimicrobiana
+c) Proteínas totais > 1 g/dL
+d) Presença de 300 polimorfonucleares/mL
+
+91) Ciclista atropelado por automóvel, apresenta fratura exposta de terço mé-
+dio do fêmur, com desvio acentuado e sangramento externo volumoso em
+coxa esquerda. A conduta mais adequada, em ambiente pré-hospitalar, em
+relação à contenção da hemorragia e imobilização da fratura são, respectiva-
+mente:
+a) Curativo compressivo sobre o foco de sangramento e elevação do mem-
+bro fraturado, buscando restauração da posição anatômica normal.
+b) Curativo compressivo no foco de sangramento e imobilização do membro
+da maneira em que foi encontrado.
+c) Compressão manual do foco de sangramento e aplicação de torniquete
+caso a compressão não seja efetiva, imobilizando o membro na posição
+anatômica mais próxima do normal
+d) Clampeamento do vaso sangrante com pinça hemostática e imobilização
+do membro da maneira em que foi encontrado
+Referência para Questões 92 e 93:
+Homem, 76 anos de idade, hipertenso há 10 anos em uso regular do trata-
+mento medicamentoso, admitido na sala de emergência com quadro de con-
+fusão mental, letargia há duas horas associado a dispnéia em repouso. Apre-
+senta também dor torácica em aperto, retroesternal, tipo A.
+Previamente independente para atividades básicas da vida diária. Faz uso de
+anlodipina 10mg por dia, AAS 100mg por dia e atorvastatina 40mg por dia. 
+Ao exame clínico: ECG 14. FC: 38 BPM; PA: 88 x 52 mmHg; FR: 28 IRPM;
+SaO2: 88% em AA. Sem outras alterações ao exame.
+Foi obtido um eletrocardiograma de 12 derivações, reproduzido a seguir: 
+
+ 
+92) Dentre as opções abaixo qual é a primeira conduta terapêutica a ser ado-
+tada?
+a) Dopamina a 1 mcg/kg/min, por via intravenosa em infusão contínua.
+b) Atropina 1 mg, administrada por via intravenosa em bolus.
+c) Atropina 0,5 mg, administrada por via intravenosa em bolus.
+d) Noradrenalina 0,1 mcg/kg/min, por via intravenosa em infusão contínua.
+93) Durante a estabilização e controle da frequência cardíaca acima, obser-
+vou-se  supradesnivelamento  do  segmento  ST.  Indicado  intervenção
+coronariana percutânea mas o tempo de transporte até  o hospital terciário
+somado ao tempo para a realização da angioplastia seria maior do que 120
+minutos. Você opta por indicar tratamento fibrino-específico.
+Quais seriam as opções terapêuticas medicamentosas para o caso acima na
+ausência de contra–indicações?
+ 
+a) Ácido Acetilsalicílico VO 162 a 325 mg, Clopidogrel VO 300 mg, Enoxapa-
+rina 30 mg EV e 1 mg/kg 12/12h SC, Tenecteplase EV (dose em bolus de
+acordo com o peso paciente)
+b) Ácido Acetilsalicílico VO 162 a 325 mg, Clopidogrel VO 75 mg, Enoxapari-
+na 0,75 mg/kg 12/12 h SC, Tenecteplase EV (metade da dose em bolus de
+acordo com o peso paciente)
+
+c) Ácido Acetilsalicílico VO 162 a 325 mg, Clopidogrel VO 600 mg, Enoxapa-
+rina 1 mg/kg 12/12 h SC, Tenecteplase EV (dose em bolus de acordo com o
+peso paciente)
+d) AAS 162 a 325 mg, Clopidogrel VO 300 mg, Dinitrato de isossorbida VO 5
+mg a cada 5 a 15 min, Enoxaparina 30 mg EV e 1 mg/kg 12/12h SC, Tenec-
+teplase EV (dose em bolus de acordo com o peso paciente)
+94) A manobra de elevação dos membros tem sido usada em DE para avali-
+armos paciente com quadro de choque, o paciente inicialmente é colocado
+com decúbito elevado em 45º, aferida a pressão arterial e em seguida sua
+posição  é  invertida, elevando os membros inferiores a 45º  e aferida nova
+pressão arterial. Sobre a manobra, o que avaliamos?
+a) Aumento de Pressão Arterial Média em pelo menos 25%
+b) Aumento de Débito Cardíaco em pelo menos 25%
+c) Aumento de Débito Cardíaco em pelo menos 10%
+d) Aumento de Pressão Arterial Média em pelo menos 10%
+95) Sobre o conceito de via aérea falha, escolha a alternativa correta:
+a) A via aérea falha acontece quando o intubador experiente faz cinco tentati-
+vas de intubação sem sucesso independente da oximetria do paciente e in-
+dependente do quadro clínico
+b) A via aérea falha acontece quando o intubador experiente faz duas tentati-
+vas de intubação sem sucesso independente da oximetria do paciente e in-
+dependente do quadro clínico
+c) A via aérea falha pode acontecer após a primeira tentativa de intubação
+sem sucesso caso realizada por um intubador experiente, com posiciona-
+mento otimizado e dispositivos adequados;
+d) Na situação “não consigo intubar, consigo oxigenar”, o próximo passo se-
+ria garantir uma via aérea cirúrgica
+96) Sobre os conceitos abaixo envolvendo técnicas para manejo de pacien-
+tes intoxicados marque a alternativa correta. 
+a) Carvão ativado é uma substância que induz adsorção, logo quanto menos
+tempo o carvão passar no TGI maior seu benefício.
+b) Lavagem Gástrica deve ser indicada para pacientes que fizeram o uso de
+medicações em doses tóxicas nos últimos 30 minutos após realizar intuba-
+ção orotraqueal
+
+c) Hemodiálise é um método eficaz em eliminar xenobióticos, quando o tóxi-
+co envolvido for sabidamente causa de disfunção renal, como por exemplo
+Ácido Acetilsalicílico ou Etilenoglicol.
+d) Muitas das medidas para manejo de intoxicações podem induzir efeitos
+adversos importantes, logo quando xenobióticos de baixa toxicidade são en-
+volvidos, essas medidas nem sempre são indicadas.
+97) Em relação à  abordagem do paciente com dor abdominal no Departa-
+mento de Emergência, assinale a alternativa correta:
+a) A analgesia com opioides deve ser evitada, pois interfere no processo de
+investigação diagnóstica e tratamento
+b) Mais de 40% dos pacientes não terão a etiologia da dor definida do Depar-
+tamento de Emergência, devendo ser admitidos para complementação da in-
+vestigação
+c) O leucograma normal não exclui a possibilidade de abdome agudo infla-
+matório
+d) A tomografia computadorizada tem acurácia superior ao ultrassom para o
+diagnóstico de dor originária do trato biliar
+98) Paciente sexo masculino, 18 anos, vítima de acidente motociclístico, dá
+entrada em DE com ECG 3, pupilas midiáticas não fotorreagentes. Apresen-
+tando Trauma crânio encefálico (TCE) grave, a impressão inicial é que o pa-
+ciente potencialmente encontra-se em morte encefálica. A família procura a
+recepção do DE buscando por informações e é direcionada até o emergen-
+cista. Qual a postura mais adequada a ser adotada?
+a) Questionar a percepção dos fatos, questionar sobre o conhecimento da
+gravidade, explicar de forma clara, oferecer tempo suficiente para a interpre-
+tação da informação e explicações adicionais
+b) Ser claro e objetivo, já afirmando sobre a morte encefálica, a família tem o
+direito de ser rapidamente esclarecida sobre tudo
+c) Esclarecer a gravidade do quadro orientando sobre doação de órgãos, já
+que se trata de paciente jovem e sem doenças crônicas
+d) Amenizar ao máximo o quadro clínico, poupando a família inicialmente so-
+bre a gravidade e só esclarecendo realmente o fato após o término dos exa-
+mes para realização de diagnóstico de morte encefálica
+
+99) Marque a alternativa abaixo que descreve um quadro clínico mais prova-
+velmente compatível com um paciente vítima de Acidente Vascular Encefáli-
+co de etiologia isquêmica. 
+a) Paciente de 23 anos, previamente epiléptico, com quadro de IVAS evoluin-
+do com Crise Convulsiva tônico-clônica generalizada e ao acordar com hemi-
+paresia em MSD.
+b) Paciente de 33 anos, cardiopatia congênita, evoluindo com afasia de ex-
+pressão de instalação em minutos.
+c) Paciente de 71 anos, com fibrilação atrial em uso de marevan, INR de 2
+dias atrás maior >7, com cefaleia e rebaixamento do nível de consciência há
+cerca de 2 horas em piora progressiva.
+d) Paciente de 23 anos, com queixa de tontura recorrente, novo evento há
+cerca de 20 minutos, induzido ao se levantar da cama, ao exame a Manobra
+de Dix Hallpike induziu nistagmo horizontal.
+100) Paciente masculino com 14 anos de idade, previamente hígido, vem ao
+DE com queixa de aumento na frequência de evacuações, relatando fezes lí-
+quidas e com sangue há um dia. Nega náuseas ou vômitos, relata sensação
+de febre. Sinais vitais: FR 16 IRPM, FC 88 BPM, PA 110 x 72 mmHg. Dentre
+as medidas abaixo, assinale a mais correta para o quadro apresentado por
+esse paciente:
+a) Orientar terapia de reidratação oral
+b) Iniciar hidratação parenteral com solução isotônica endovenosa na dose
+de 20 ml/kg
+c) Prescrever loperamida 4 mg por via oral
+d) Iniciar ciprofloxacina 200 mg a cada 12 horas por via endovenosa
+101) Homem, 28 anos de idade, sem comorbidades conhecidas, procura o
+DE por dor precordial em peso iniciada há 3 dias associada a dispneia pro-
+gressiva e atualmente aos mínimos esforços.
+Ao exame clínico: estado geral ruim, taquidispneico, sudorese fria, FC 122
+bpm e PA 102 x 66 mmHg, com bulhas hipofonéticas e sem sopros.
+Repetiu-se a mensuração da pressão arterial durante manobra de inspiração
+profunda: 88 x 58 mmHg, acompanhada de intensificação de estase jugular.
+restante do exame clínico sem alterações. 
+Qual a principal alteração esperada nos POCUS e qual a conduta de emer-
+gência necessária para estabilização hemodinâmica deste paciente?
+
+a) POCUS Pulmonar em Perfil B e administrar 60 mg de furosemida EV
+b) POCUS Cardíaco com Colabamento diastólico do átrio e ventrículo direi-
+tos, dilatação de veia cava inferior, derrame pericárdio e realizar pericardio-
+centese
+c) POCUS Pulmonar com Lung Point e realizar toracocentese de alívio
+d) POCUS Cardíaco com Disfunção grave de ventrículo esquerdo com alte-
+ração segmentar e administrar Tenecteplase EV
+102) Criança de 06 anos, 25 kg, deu entrada no Departamento de Emergên-
+cia inconsciente. Iniciada avaliação primária e detectou-se PCR. Iniciada
+RCP de alta qualidade e na análise do ritmo cardíaco observou-se o seguinte
+ritmo:
+Qual a sua conduta a seguir?
+a) Desfibrilação com 2 a 4 J/Kg g
+b) Cardioversão com 2 a 4 J/Kg
+c) Desfibrilação com 4 a 6 J/Kg
+d) Desfibrilação com 0,5 a 2 J/K
+103) Sobre o uso da aferição de Pico de Fluxo ou Peak-Flow (PF) em paci-
+entes asmáticos marque a alternativa correta.
+a) Exame complementar que não propicia maiores benefícios para o manejo
+da Asma
+b) Valores Isolados de PF não devem ser utilizados para indicar Internação
+Hospitalar
+c) Reavaliações frequentes com PF aumentam o tempo de estadia no DE e
+não modificam a conduta proposta
+d) Valores maiores que 60% após o uso de broncodilatadores sugerem res-
+posta clínica importante e indicam manejo ambulatorial da crise.
+
+104) Paciente, sexo masculino, 34 anos, procura o DE com queixa de dor in-
+tensa em região lombar direita, apresentando irradiação para região inguinal
+e testiculo direito, refere diminuição de diurese, é feito hipótese diagnóstica
+de litíase renal, qual sua primeira escolha de analgesia?
+a) Tramadol
+b) Morfina
+c) Indometacina
+d) Cetorolaco
+105) Na avaliação de um paciente com choque, o uso do POCUS é cada vez
+mais difundido por poder esclarecer muitas vezes a causa. No caso da avali-
+ação cardíaca com o ultrassom em paciente com choque, foram achados os
+seguintes dados: PSAP 61 mmHg, aumento de câmaras cardíacas direitas,
+desvio de septo interventricular para a esquerda, contratilidade preservada
+de ventrículo esquerdo, pequena variabilidade de veia cava inferior. Com
+esta descrição, qual a causa e tipo de choque o paciente apresenta?
+a) Infarto Agudo de Ventrículo Esquerdo, choque cardiogênico
+b) Tromboembolismo pulmonar, choque obstrutivo
+c) Hipovolemia, choque hipovolêmico/hemorrágico
+d) Insuficiência Cardíaca Descompensada, choque cardiogênico
+106) Paciente, sexo feminino, 63 anos, procura DE com quadro de dor ocular
+intensa, vômitos e diminuição da acuidade visual há 4 horas, apresentando
+edema de córnea e pupila hiporreativa. Qual sua principal hipótese diagnósti
+ca?
+a) Uveíte Anterior
+b) Conjuntivite
+c) Glaucoma Agudo
+d) Endoftalmite
+107) Paciente de 32 anos, tercigesta, dois partos normais anteriores, acaba
+de dar à luz criança do sexo masculino com 39 semanas de gestação. Após
+secção do cordão umbilical e dequitação da placenta, o obstetra que auxiliou
+o parto nota sangramento acima do habitual por via vaginal, e à palpação o
+fundo uterino encontra-se flácido. A paciente está consciente, sua frequência
+respiratória é de 24 movimentos por minuto, frequência cardíaca de 118 bati-
+
+mentos por minuto e pressão arterial de 92 x 65 mmHg. Assinale a medida
+mais correta a ser tomada em relação ao quadro apresentado:
+a) Administração de 40 unidades de ocitocina endovenosa em bolus
+b) Administração de 1 g de ácido tranexâmico EV em 10 minutos, repetindo
+essa dose após 8 horas caso haja persistência do sangramento
+c) Massagem uterina bimanual
+d) Histerectomia imediata
+108) Paciente de 23 anos, masculino, é admitido com quadro de letargia há
+algumas horas ou dias, familiares negavam outras comorbidades, exceto uso
+abusivo de álcool. Ao exame, FR 33 IRPM, SaO2 94%, Respiração ruidosa,
+ECG de 10  (Abertura Ocular 3 Resposta Motora 4 Resposta Verbal 3),
+Pupilas médias, PA 90x50 mm Hg, TC de crânio sem achados específicos.
+Gasometria Arterial: pH 7.12, PaO2 50 mmHg, PaCO2 33 mmHg,  BIC 11
+mEq/L, Na 144 mEq/L, Cl 94 mEq/L, Albumina 4.5 g/L. Osmolaridade Aferida
+340 mOsm/Kg e Osmolaridade Calculada 317 mOsm/Kg. Qual das medidas
+abaixo é mais apropriada?
+a) Iniciar Etanol EV e encaminhar para serviço com Hemodiálise
+b) Iniciar Iniciar Expansão com SF 0,9% e Induzir Diurese com Furosemida
+c) Iniciar Flumazenil EV
+d) Iniciar Naloxona EV
+109) Paciente, sexo feminino, 24 anos, vítima de violência sexual, trazida ao
+DE para avaliação. Qual conduta deve ser tomada?
+a) Encaminhamento imediato da paciente ao Instituto Médico Legal para rea-
+lização de primeira avaliação
+b) Atendimento da paciente somente se o ato tenha sido praticado a menos
+de 72 horas, se período superior paciente não necessita mais de avaliação
+c) Realização de profilaxia para ISTs somente se agressor for desconhecido
+d)  Exame  físico  detalhado  pois  as  lesões  podem  estar  presentes  não
+somente nos órgãos sexuais
+110) Paciente de 23 anos, sexo feminino, procura o DE com queixa de cefa-
+leia de intensidade moderada (6/10) de início há cerca de 6 horas, pulsátil,
+em face temporal do crânio, com náuseas intensas e dor ao olhar para luzes
+fortes, nega mialgia, febre ou artralgia, relata episódios prévios semelhantes.
+
+Sobre o uso de medicações para controle dos sintomas nessa paciente mar-
+que a alternativa correta.
+a) O uso de metoclopramida EV isoladamente ou em associação a outras
+drogas pode ser utilizada para o manejo desses pacientes.
+b) Morfina EV ou outros opióides são as medicações de escolha para esses
+pacientes com quadros de Dor Grave (>7/10 na escala subjetiva).
+c) Dexametasona EV deve ser indicada precocemente nesses pacientes,
+para reduzir a intensidade da dor de maneira mais rápida.
+d) Antiinflamatórios Não-Esteroidais EV aumentam o risco de sangramento
+logo essa paciente deve ser submetida à uma Tomografia de Crânio antes
+da infusão dessas medicações.
+111) Sobre choque cardiogênico, assinale a alternativa incorreta:
+a) O uso de vasodilatadores  é  possível no contexto para otimizar a pós-
+carga, a vasodilatação melhora o quadro clínico por diminuir o trabalho car-
+díaco
+b) Por se tratar de um choque distributivo, o uso de vasopressina é indicado
+como primeira escolha de droga vasoativa
+c) A dobutamina é o inotrópico de escolha nos pacientes com choque cardio-
+gênico e apresenta nos quadros mais graves inclusive a possibilidade de au-
+mento dos níveis pressóricos
+d) O uso de balão intra-aórtico pode melhora o débito cardíaco de pacientes
+com quadro refratário de choque cardiogênico, porém seu uso  é  restrito e
+não rotineiro
+112) Paciente feminina de 28 anos, com transtorno depressivo psicótico gra-
+ve e multiplas tentativas de suicídio prévias. Ambulatorialmente ela faz uso
+de Sertralina 25 mg 1x/dia VO, Quetiapina 25 mg 1x/dia VO, Carbonato de Lí-
+tio 300 mg 3x/dia VO e Clonazepam 1 mg 1x/dia VO. Foi então admitida ao
+DE com quadro de RNC há 2 horas, após ingestão de múltiplos de  um dos
+seus comprimidos. Caso os achados clínicos abaixo sejam encontrados, qual
+o comprimido que mais provavelmente foi ingerido em doses tóxicas?
+a) Hiperreflexia e Hipotermia - Sertralina
+b) Pupilas Mióticas - Lítio
+c) Bradicinesia e Hipertermia - Quetiapina
+d) Alargamento de QT - Clonazepam
+
+113) O termo sangramento uterino anormal (SUA) diz respeito a todas as
+causas de sangramento uterino em mulheres não gestantes, e as causas
+mais prováveis são determinadas pela idade da paciente. Frente a um qua-
+dro no departamento de emergência de SUA são boas opções terapêuticas,
+EXCETO:
+a) Tamponamento vaginal protetor exerce uma função hemostática e pode
+proteger infecções e perdas sanguíneas subsequentes
+b) Correção de coagulopatias subjacentes
+c) Transfusão de Concentrado de Hemácias se anemia sintomática
+d) Uso de Ácido Tranexâmico EV e Anti-inflamatórios em caso de hemorragia
+grave
+114) Nas alternativas abaixo descreve-se 4 casos clínicos de pacientes víti-
+mas de acidentes com animais peçonhentos, marque a alternativa que corre-
+tamente correlaciona o caso clínico com o provável animal responsável.
+a) Paciente apresenta dor intensa no local da ferida, urina escurecida e san-
+gramento gengival - Acidente crotálico
+b) Paciente apresenta dor leve no local da ferida, urina escurecida e visão
+turva - Acidente laquético
+c) Criança apresenta sinais de choque, rebaixamento do nível de consciência
+e priapismo - Acidente com Tityus serrulatus
+d) Paciente com fácies miastênica, insuficiência respiratório aguda tipo II e
+com urina e função renal normais - Acidente crotálico
+115) Dispneia Aguda é uma queixa comum no DE, sobre o uso de exame
+complementares para avaliação desses pacientes, marque a alternativa cor-
+reta.
+a) Gasometria Arterial deve ser solicitada para definir o diagnóstico etiológico
+desses pacientes.
+b) Ultrassonografia Pulmonar pode auxiliar a introdução de medidas iniciais
+para esses paciente
+c) Prova de Função pulmonar é o exame de escolha para definir a causa de
+broncoespasmo no DE s
+d) A Tomografía de Tórax está indicada para pacientes com quadros de disp-
+néia crônica com piora aguda.
+116) Paciente de 13 anos,  é  admitido ao DE com queixa de febre aferida
+(TAx até  39.1 C) há  cerca de 3 dias, com fadiga e mal-estar importante,
+queixa-se também de odinofagia com dor intensa na garganta, ao Exame:
+
+FC 131 BPM, FR 24 IRPM, PA 70 x 50 mmHg, TAx 37.8 Desidratado +/4+,
+AR: MV+, sem Ruídos Adventícios (SRA). Abdome globoso, depressível,
+doloroso à palpação de Hipocôndrio Esquerdo, com Descompressão Brusca
+Positiva e Hepatomegalia 3cm do RCD. Oroscopia: Hiperemia Difusa, sem
+abcessos ou trismo. Relata também queda de bicicleta há 1 dia. Dentre as
+condutas diagnósticas abaixo, qual deve ser priorizada nesse paciente?
+a) Sorologia para EBV e CMV
+b) Tomografia Cervical com Contraste
+c) Ultrassonografia Beira-leito de Abdome
+d) Cultura de Orofaringe
+117) Sobre a criança com menos de 1 ano que é admitida ao DE com disp-
+neia aguda marque a alternativa correta:
+a) Na ausência de sinais de alergia, a presença de estridor inspiratório é su-
+gestivo de Crupe e deve ser tratado por meio Corticoides Sistêmicos
+b) Crianças com menos de 6 meses, evoluindo com a primeira crise de Bron-
+coespasmo da vida provavelmente terão quadro de asma aos 5 anos de ida-
+de
+c) Tratamento do Broncoespasmo é por meio de Broncodilatadores de Longa
+Duração associados aos Inaladores Dosimetrados com Espaçadores
+d) Terbutalina EV é a droga de escolha para crianças com asma leve
+118) Durante um Incidente com Múltiplas vítimas umas das prioridades no
+manejo pré-hospitalar é identificar os pacientes mais graves e priorizar o su-
+porte a essas vítimas, nesse contexto marque a alternativa que descreve um
+conceito correto sobre medidas a serem iniciados pelo profissional responsá-
+vel pela triagem.
+a) Ao identificar um paciente que não respira, Intubação orotraqueal é a me-
+dida inicial a ser indicada
+b) Na presença de hemorragias exteriorizadas volumosas, a primeira medida
+é  iniciar transfusão de hemoconcentrados na cena e realizar o transporte
+imediato.
+c) Em vítimas classificadas como vermelhas, com a presença de sangramen-
+tos exteriorizados volumosos a aplicação do torniquete deve ser imediata.
+d) Em vítimas cinzas, com ausência de pulso central, é prioritário ao profissi-
+onal da triagem que inicie as medidas de reanimação Cardiopulmonar.
+
+119) De acordo com as Diretrizes do ILCOR de 2020, qual a relação de com-
+pressões e ventilações em um paciente lactente com 01 socorrista?
+a) 15 compressões e 02 ventilações
+b) 05 compressões e 01 ventilação
+c) 30 compressões e 02 ventilações
+d) 15 compressões e 01 ventilação
+120) Qual dos pacientes abaixo, se evoluir com ausência de sinais de tronco
+encefálico deve ser observado por tempo prolongado antes da avaliação de
+Morte Encefálica.
+a) Crianças vítimas de Trauma Crânio Encefálico
+b) Crianças vítimas de Afogamento e Hipotermia
+c) Adultos vítimas de Acidente Vascular Encefálico
+d) Adultos vítimas de Meningite Bacteriana
