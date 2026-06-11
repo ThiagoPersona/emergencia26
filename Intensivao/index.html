@@ -12,15 +12,16 @@
   />
   <style>
     :root {
-      --bg: #f7f8f4;
-      --surface: #ffffff;
-      --surface-soft: #fbfbf7;
-      --border: #dfe5df;
+      --bg: #eef4f7;
+      --surface: #eef4f7;
+      --surface-soft: #e7f0f4;
+      --card: #f8fbfc;
+      --border: #d4e0e5;
       --text: #202733;
       --muted: #606775;
       --link: #0f6b5f;
-      --link-soft: #e4f3ef;
-      --code-bg: #f2f4f1;
+      --link-soft: #dcefeb;
+      --code-bg: #e4edf1;
       --sidebar-width: 320px;
       --content-max: 1240px;
       --content-pad: 36px;
@@ -142,7 +143,7 @@
       padding: 9px !important;
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(248, 251, 252, 0.94);
       box-shadow: 0 10px 24px rgba(15, 23, 42, 0.10);
     }
 
@@ -226,7 +227,7 @@
       padding: 0.95rem 1rem;
       border-left: 4px solid var(--link);
       border-radius: 0 8px 8px 0;
-      background: #f3faf7;
+      background: #e4f1f1;
       color: #273340;
     }
 
@@ -240,7 +241,7 @@
     .markdown-section pre {
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: #f6f8f6;
+      background: #e9f1f4;
     }
 
     .markdown-section table {
@@ -249,14 +250,14 @@
       margin: 1rem 0 1.25rem;
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: var(--surface);
+      background: var(--card);
       border-collapse: collapse;
       table-layout: auto;
       overflow: hidden;
     }
 
     .markdown-section th {
-      background: #eef4f1;
+      background: #dde9ed;
       color: #22303a;
       font-weight: 720;
     }
@@ -298,7 +299,7 @@
     }
 
     .markdown-section tr:nth-child(even) td {
-      background: #fafbf8;
+      background: #f2f7f8;
     }
 
     .study-search {
@@ -313,7 +314,7 @@
       padding: 0 12px !important;
       border: 1px solid var(--border) !important;
       border-radius: 8px;
-      background: #fff !important;
+      background: var(--card) !important;
       color: var(--text);
       font-size: 0.95rem;
       line-height: 40px;
@@ -325,7 +326,7 @@
       padding: 6px;
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: #fff;
+      background: var(--card);
     }
 
     .study-search-results.has-results {
@@ -359,7 +360,7 @@
       overflow-x: auto;
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: #fff;
+      background: var(--card);
     }
 
     .mermaid svg {
@@ -377,7 +378,7 @@
       padding: 1.25rem;
       border: 1px solid var(--border);
       border-radius: 8px;
-      background: #fff;
+      background: var(--card);
       color: var(--muted);
       text-align: center;
     }
