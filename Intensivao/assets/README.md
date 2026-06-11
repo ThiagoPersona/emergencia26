@@ -1,6 +1,6 @@
 ﻿# Assets
 
-Pasta para imagens, prints, fluxogramas exportados e esquemas proprios do Intensivão TEME26.
+Pasta para imagens, prints, fluxogramas exportados e esquemas proprios do Resumos de Emergência.
 
 Preferencia:
 

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Material de estudo Intensivão TEME26 para prova de RQE em Medicina de Emergência." />
-  <title>Intensivão TEME26</title>
+  <meta name="description" content="Resumos de Emergência por Dr. Thiago Persona." />
+  <title>Resumos de Emergência</title>
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
@@ -91,6 +91,15 @@
 
     .sidebar .app-name a {
       color: var(--text);
+    }
+
+    .brand-subtitle {
+      display: block;
+      margin-top: 0.28rem;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0;
     }
 
     .sidebar-nav {
@@ -504,7 +513,7 @@
 <body class="close">
   <div id="app">
     <div class="loading-msg">
-      <p>Carregando o Intensivão TEME26...</p>
+      <p>Carregando Resumos de Emergência...</p>
       <p>
         <a href="LEITURA_OFICIAL.md">Leitura principal</a>
         ·
@@ -540,6 +549,20 @@
     function markAppLoaded() {
       const app = document.getElementById("app");
       if (app) app.dataset.loaded = "1";
+    }
+
+    function ensureBranding() {
+      const appName = document.querySelector(".sidebar .app-name");
+      const link = appName ? appName.querySelector("a") : null;
+      if (!appName || !link) return;
+
+      link.textContent = "Resumos de Emergência";
+      if (!appName.querySelector(".brand-subtitle")) {
+        const subtitle = document.createElement("span");
+        subtitle.className = "brand-subtitle";
+        subtitle.textContent = "Dr. Thiago Persona";
+        appName.appendChild(subtitle);
+      }
     }
 
     function normalizeThemeLinks() {
@@ -708,6 +731,7 @@
 
     function afterRender() {
       ensureStudySearch();
+      ensureBranding();
       normalizeThemeLinks();
       tuneExternalLinks();
       tuneTables();
@@ -723,7 +747,7 @@
       document.body.classList.toggle("close", window.innerWidth <= 980);
 
       window.$docsify = {
-        name: "Intensivão TEME26",
+        name: "Resumos de Emergência",
         homepage: "LEITURA_OFICIAL.md",
         loadSidebar: "_sidebar.md",
         loadNavbar: false,

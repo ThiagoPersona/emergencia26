@@ -1,4 +1,4 @@
-# Intensivão TEME26
+# Resumos de Emergência
 
 Material modular para revisão dirigida ao TEME26/RQE em Medicina de Emergência.
 
