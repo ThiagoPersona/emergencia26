@@ -311,57 +311,6 @@
       background: #f2f7f8;
     }
 
-    .study-search {
-      margin: 0 0 18px !important;
-      padding: 0 6px !important;
-      border-bottom: 0 !important;
-    }
-
-    .study-search input {
-      width: 100%;
-      min-height: 40px;
-      padding: 0 12px !important;
-      border: 1px solid var(--border) !important;
-      border-radius: 8px;
-      background: var(--card) !important;
-      color: var(--text);
-      font-size: 0.95rem;
-      line-height: 40px;
-    }
-
-    .study-search-results {
-      display: none;
-      margin-top: 8px;
-      padding: 6px;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      background: var(--card);
-    }
-
-    .study-search-results.has-results {
-      display: block;
-    }
-
-    .study-search-results a,
-    .study-search-results span {
-      display: block;
-      padding: 7px 8px;
-      border-radius: 7px;
-      color: var(--text);
-      font-size: 0.88rem;
-      line-height: 1.35;
-      text-decoration: none;
-    }
-
-    .study-search-results a:hover {
-      background: var(--link-soft);
-      color: var(--link);
-    }
-
-    .study-search-results span {
-      color: var(--muted);
-    }
-
     .mermaid {
       width: 100%;
       margin: 1.1rem 0 1.35rem;
@@ -494,8 +443,7 @@
 
     @media print {
       .sidebar,
-      .sidebar-toggle,
-      .study-search {
+      .sidebar-toggle {
         display: none !important;
       }
 
@@ -587,95 +535,6 @@
       });
     }
 
-    const searchCache = new Map();
-
-    function normalizeDocPath(href) {
-      if (!href) return "";
-      let path = href.replace(/^#\/?/, "").split("?")[0].split("#")[0];
-      path = path.replace(/^\/+/, "");
-      if (!path || path === "index.html") return "LEITURA_OFICIAL.md";
-      return path;
-    }
-
-    function collectSearchItems() {
-      const items = new Map([
-        ["LEITURA_OFICIAL.md", "Leitura oficial"],
-        ["MAPA_DE_QUESTOES_TEME22-25.md", "Mapa de questões"]
-      ]);
-
-      document.querySelectorAll(".sidebar-nav a[href]").forEach((link) => {
-        const path = normalizeDocPath(link.getAttribute("href"));
-        const label = (link.textContent || "").trim();
-        if (path && label) items.set(path, label);
-      });
-
-      return Array.from(items, ([path, label]) => ({ path, label }));
-    }
-
-    async function fetchSearchText(item) {
-      if (searchCache.has(item.path)) return searchCache.get(item.path);
-
-      const text = await fetch(item.path).then((response) => response.ok ? response.text() : "");
-      const firstHeading = text.match(/^#\s+(.+)$/m);
-      const payload = {
-        ...item,
-        title: firstHeading ? firstHeading[1].trim() : item.label,
-        text: text.toLowerCase()
-      };
-
-      searchCache.set(item.path, payload);
-      return payload;
-    }
-
-    function ensureStudySearch() {
-      const sidebar = document.querySelector(".sidebar");
-      const nav = document.querySelector(".sidebar-nav");
-      if (!sidebar || !nav || sidebar.querySelector(".study-search")) return;
-
-      const wrapper = document.createElement("div");
-      wrapper.className = "study-search";
-      wrapper.innerHTML = `
-        <input type="search" placeholder="Buscar nos temas" aria-label="Buscar nos temas" />
-        <div class="study-search-results" aria-live="polite"></div>
-      `;
-      sidebar.insertBefore(wrapper, nav);
-
-      const input = wrapper.querySelector("input");
-      const results = wrapper.querySelector(".study-search-results");
-      let timer = 0;
-
-      input.addEventListener("input", () => {
-        window.clearTimeout(timer);
-        timer = window.setTimeout(async () => {
-          const query = input.value.trim().toLowerCase();
-          results.classList.remove("has-results");
-          results.innerHTML = "";
-          if (query.length < 2) return;
-
-          const docs = await Promise.all(collectSearchItems().map(fetchSearchText));
-          const matches = docs
-            .map((doc) => {
-              const inTitle = doc.title.toLowerCase().includes(query);
-              const inText = doc.text.includes(query);
-              return { ...doc, score: inTitle ? 2 : inText ? 1 : 0 };
-            })
-            .filter((doc) => doc.score > 0)
-            .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title, "pt-BR"))
-            .slice(0, 8);
-
-          results.classList.add("has-results");
-          if (!matches.length) {
-            results.innerHTML = "<span>Nenhum resultado.</span>";
-            return;
-          }
-
-          results.innerHTML = matches
-            .map((doc) => `<a href="#/${doc.path}">${doc.title}</a>`)
-            .join("");
-        }, 180);
-      });
-    }
-
     function ensureMermaidInit() {
       if (window.__mermaidReady || typeof window.mermaid !== "object" || typeof window.mermaid.initialize !== "function") return;
       window.mermaid.initialize({
@@ -730,7 +589,6 @@
     }
 
     function afterRender() {
-      ensureStudySearch();
       ensureBranding();
       normalizeThemeLinks();
       tuneExternalLinks();
