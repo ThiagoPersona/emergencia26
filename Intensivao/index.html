@@ -329,6 +329,109 @@
       max-width: 100% !important;
     }
 
+    .quiz-card {
+      margin: 1.35rem 0;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card);
+      box-shadow: 0 10px 26px rgba(15, 23, 42, 0.05);
+    }
+
+    .quiz-source {
+      margin-top: 0 !important;
+      color: var(--muted);
+      font-size: 0.92rem !important;
+      font-weight: 650;
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 0.55rem;
+      margin: 0.9rem 0;
+    }
+
+    .quiz-option {
+      display: flex;
+      gap: 0.62rem;
+      align-items: flex-start;
+      min-height: 44px;
+      padding: 0.72rem 0.78rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #eef4f7;
+      color: var(--text);
+      cursor: pointer;
+      line-height: 1.45;
+      transition: border-color 140ms ease, background 140ms ease, box-shadow 140ms ease;
+    }
+
+    .quiz-option:hover,
+    .quiz-option.is-selected {
+      border-color: #7abbb0;
+      background: #e4f1f1;
+    }
+
+    .quiz-option.is-correct {
+      border-color: #1f8f72;
+      background: #dff3ea;
+    }
+
+    .quiz-option.is-wrong {
+      border-color: #b75c5c;
+      background: #f5e3e3;
+    }
+
+    .quiz-option input {
+      flex: 0 0 auto;
+      margin-top: 0.23rem;
+      accent-color: var(--link);
+    }
+
+    .quiz-check {
+      min-height: 40px;
+      padding: 0.62rem 0.9rem;
+      border: 1px solid var(--link);
+      border-radius: 8px;
+      background: var(--link);
+      color: #ffffff;
+      font: inherit;
+      font-weight: 720;
+      cursor: pointer;
+    }
+
+    .quiz-check:hover {
+      background: #0b5b51;
+      border-color: #0b5b51;
+    }
+
+    .quiz-feedback {
+      margin-top: 0.9rem;
+      padding: 0.85rem 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #eef4f7;
+    }
+
+    .quiz-feedback[hidden] {
+      display: none !important;
+    }
+
+    .quiz-feedback.is-correct {
+      border-color: #1f8f72;
+      background: #dff3ea;
+    }
+
+    .quiz-feedback.is-wrong {
+      border-color: #b75c5c;
+      background: #f5e3e3;
+    }
+
+    .quiz-feedback.is-warning {
+      border-color: #b58a2b;
+      background: #f4ecd8;
+    }
+
     .loading-msg,
     .fallback-msg {
       max-width: 760px;
@@ -535,6 +638,56 @@
       });
     }
 
+    function initQuizzes() {
+      document.querySelectorAll(".quiz-card").forEach((card) => {
+        if (card.dataset.quizReady === "1") return;
+        const answer = card.dataset.answer;
+        const button = card.querySelector(".quiz-check");
+        const feedback = card.querySelector(".quiz-feedback");
+        const options = Array.from(card.querySelectorAll(".quiz-option"));
+
+        if (!answer || !button || !feedback || !options.length) return;
+        feedback.dataset.originalHtml = feedback.innerHTML;
+
+        options.forEach((option) => {
+          const input = option.querySelector("input[type='radio']");
+          if (!input) return;
+          input.addEventListener("change", () => {
+            options.forEach((item) => {
+              const itemInput = item.querySelector("input[type='radio']");
+              item.classList.toggle("is-selected", Boolean(itemInput && itemInput.checked));
+            });
+          });
+        });
+
+        button.addEventListener("click", () => {
+          const checked = card.querySelector("input[type='radio']:checked");
+          options.forEach((option) => {
+            option.classList.remove("is-correct", "is-wrong");
+            const input = option.querySelector("input[type='radio']");
+            if (!input || !checked) return;
+            if (input.value === answer) option.classList.add("is-correct");
+            if (input.checked && input.value !== answer) option.classList.add("is-wrong");
+          });
+
+          feedback.hidden = false;
+          feedback.className = "quiz-feedback";
+
+          if (!checked) {
+            feedback.classList.add("is-warning");
+            feedback.innerHTML = "<p><strong>Escolha uma alternativa primeiro.</strong></p>";
+            return;
+          }
+
+          const isCorrect = checked.value === answer;
+          feedback.classList.add(isCorrect ? "is-correct" : "is-wrong");
+          feedback.innerHTML = `<p><strong>${isCorrect ? "Correto." : "Ainda não."}</strong> Gabarito: ${answer}.</p>${feedback.dataset.originalHtml}`;
+        });
+
+        card.dataset.quizReady = "1";
+      });
+    }
+
     function ensureMermaidInit() {
       if (window.__mermaidReady || typeof window.mermaid !== "object" || typeof window.mermaid.initialize !== "function") return;
       window.mermaid.initialize({
@@ -593,6 +746,7 @@
       normalizeThemeLinks();
       tuneExternalLinks();
       tuneTables();
+      initQuizzes();
       renderMermaid();
       markAppLoaded();
     }

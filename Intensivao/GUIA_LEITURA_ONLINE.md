@@ -4,8 +4,8 @@ Podemos publicar em 3 opções:
 
 ## Opção 1 (rápida): leitura online no celular
 - Use o arquivo já pronto: `index-online.html`
-- Ele lê os arquivos Markdown desta pasta (`LEITURA_OFICIAL.md`, `MAPA_DE_QUESTOES_TEME22-25.md` e os `temas/*.md`)
-- A navegação é por sidebar, busca e fluxo responsivo.
+- Ele lê os arquivos Markdown desta pasta (`LEITURA_OFICIAL.md`, `MAPA_DE_QUESTOES_TEME22-25.md`, `PROVAS.md`, `temas/*.md` e `provas/*.md`)
+- A navegação é por sidebar e fluxo responsivo.
 
 ## Opção 2 (mais indicada): publicar no GitHub Pages
 1. Suba a pasta `Intensivao` para um repositório.
@@ -36,7 +36,7 @@ Podemos publicar em 3 opções:
 
 ## Dica para “estilo Docusaurus”
 Se você quiser a mesma experiência, mas com estrutura e busca ainda mais robusta (versão Docusaurus mesmo), a gente pode migrar no próximo passo.  
-A versão atual já cumpre o objetivo prático: leitura limpa no navegador, mobile-first, com barra lateral, busca e atualização automática pelo mesmo Markdown.
+A versão atual já cumpre o objetivo prático: leitura limpa no navegador, mobile-first, com barra lateral e atualização automática pelo mesmo Markdown.
 
 ## Observação importante
 - Os arquivos `REGRAS_DO_MATERIAL.md` e `TEMPLATE_TEMA.md` ficaram fora do sidebar de leitura.
