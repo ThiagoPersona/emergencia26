@@ -14,11 +14,11 @@ Como usar:
 
 > Regra do projeto: ao abrir uma nova seção de prova, vamos montar o banco completo das questões mapeadas daquele tema. Se o volume ficar grande, dividimos em blocos, mas sem excluir questões do tema.
 >
-> O tema piloto **Via aérea/VM** foi expandido para **51 questões**, cobrindo todas as questões teóricas listadas no capítulo 001. O mapa geral tem uma contagem automatizada mais ampla; aqui usamos a lista revisada do capítulo como banco de treinamento.
+> O tema piloto **Via aérea/VM** foi expandido para **79 questões**: 62 do mapa amplo TEME22-24 e 17 do recorte TEME25. As questões com imagens/curvas foram reescritas e, quando útil, receberam esquemas autorais.
 
 | Tema | Status | Abrir |
 |---|---|---|
-| Via aérea e ventilação mecânica | 51 questões | [Resolver](provas/001_via-aerea_vm.md) |
+| Via aérea e ventilação mecânica | 79 questões | [Resolver](provas/001_via-aerea_vm.md) |
 | Trauma hemorrágico e transfusão maciça | A fazer | - |
 | Reanimação/PCR | A fazer | - |
 | POCUS | A fazer | - |

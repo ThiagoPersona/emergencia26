@@ -4,7 +4,7 @@ Banco do tema 01, baseado nas questões relacionadas no capítulo **Via Aérea e
 
 > Questões reescritas para estudo, sem cópia literal dos cadernos. Use como treino de raciocínio e revisão das pegadinhas.
 >
-> Este banco inclui **51 questões autorais**, uma para cada questão teórica listada no capítulo 001: TEME22, TEME23, TEME24 e TEME25. Algumas questões originais dependiam de imagem ou curva; nesses casos, o padrão cobrado foi reescrito em texto.
+> Este banco inclui **79 questões autorais**: 62 do mapa amplo TEME22-24 e 17 do recorte TEME25. Algumas questões originais dependiam de imagem ou curva; nesses casos, o padrão cobrado foi reescrito em texto e, quando útil, com esquema autoral.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
@@ -527,6 +527,19 @@ Banco do tema 01, baseado nas questões relacionadas no capítulo **Via Aérea e
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME24 Q97 | Capnografia na PCR.</p>
 <p><strong>35. Durante PCR, a capnografia mostra subida abrupta e sustentada do ETCO2. O que isso sugere?</strong></p>
+<figure class="quiz-figure" aria-label="Esquema autoral de capnografia com subida abrupta do ETCO2">
+<svg viewBox="0 0 760 230" role="img">
+<rect x="18" y="18" width="724" height="194" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+<line x1="70" y1="180" x2="700" y2="180" stroke="#64748b" stroke-width="2"/>
+<line x1="70" y1="45" x2="70" y2="180" stroke="#64748b" stroke-width="2"/>
+<text x="30" y="55" font-size="14" fill="#334155">ETCO2</text>
+<text x="654" y="202" font-size="14" fill="#334155">tempo</text>
+<polyline points="80,168 105,168 115,142 145,142 155,168 185,168 195,140 225,140 235,168 265,168 275,141 305,141 315,168 345,168 355,139 385,139 395,168 425,168 435,84 475,84 485,168 520,168 530,78 570,78 580,168 615,168 625,76 665,76 675,168" fill="none" stroke="#0f766e" stroke-width="5" stroke-linejoin="round"/>
+<line x1="420" y1="50" x2="420" y2="182" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="440" y="62" font-size="15" fill="#991b1b">salto sustentado</text>
+</svg>
+<figcaption>Esquema próprio: durante RCP, uma elevação súbita e persistente do ETCO2 sugere aumento de perfusão, frequentemente RCE.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-va-035" value="A"> A. Piora da compressão.</label>
 <label class="quiz-option"><input type="radio" name="q-va-035" value="B"> B. Extubação.</label>
@@ -619,6 +632,19 @@ Banco do tema 01, baseado nas questões relacionadas no capítulo **Via Aérea e
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME25 Q13 | Curvas de VM e auto-PEEP.</p>
 <p><strong>41. Na curva fluxo-tempo, o fluxo expiratório não retorna a zero antes do próximo ciclo. O achado é:</strong></p>
+<figure class="quiz-figure" aria-label="Esquema autoral de curva fluxo-tempo com aprisionamento aéreo">
+<svg viewBox="0 0 760 230" role="img">
+<rect x="18" y="18" width="724" height="194" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+<line x1="72" y1="110" x2="700" y2="110" stroke="#64748b" stroke-width="2"/>
+<line x1="72" y1="40" x2="72" y2="185" stroke="#64748b" stroke-width="2"/>
+<text x="28" y="52" font-size="14" fill="#334155">fluxo</text>
+<text x="655" y="202" font-size="14" fill="#334155">tempo</text>
+<polyline points="90,110 110,55 170,55 185,110 245,154 285,145 315,132 335,118 350,110 365,110 385,56 445,56 462,110 520,158 560,151 595,139 625,126 650,118 670,110" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="625" cy="126" r="6" fill="#ef4444"/>
+<text x="430" y="178" font-size="15" fill="#991b1b">expiração ainda não zerou</text>
+</svg>
+<figcaption>Esquema próprio: se o fluxo expiratório não volta à linha de base antes do próximo ciclo, pense em auto-PEEP.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-va-041" value="A"> A. Pausa expiratória normal.</label>
 <label class="quiz-option"><input type="radio" name="q-va-041" value="B"> B. Auto-PEEP/hiperinsuflação dinâmica.</label>
@@ -724,6 +750,20 @@ Banco do tema 01, baseado nas questões relacionadas no capítulo **Via Aérea e
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME25 Q55 | PCR, supraglótico e capnografia.</p>
 <p><strong>48. FV refratária com supraglótico e capnografia sugerindo ventilação ruim/hipóxia. O que priorizar?</strong></p>
+<figure class="quiz-figure" aria-label="Esquema autoral de capnografia baixa durante PCR">
+<svg viewBox="0 0 760 220" role="img">
+<rect x="18" y="18" width="724" height="184" rx="10" fill="#f8fafc" stroke="#cbd5e1"/>
+<line x1="70" y1="170" x2="700" y2="170" stroke="#64748b" stroke-width="2"/>
+<line x1="70" y1="45" x2="70" y2="170" stroke="#64748b" stroke-width="2"/>
+<text x="30" y="55" font-size="14" fill="#334155">ETCO2</text>
+<text x="650" y="192" font-size="14" fill="#334155">RCP</text>
+<polyline points="88,166 110,166 120,148 145,148 155,166 185,166 195,151 220,151 230,166 260,166 270,153 295,153 305,166 335,166 345,152 370,152 380,166 410,166 420,154 445,154 455,166 485,166 495,150 520,150 530,166 560,166 570,153 595,153 605,166 635,166 645,152 670,152 680,166" fill="none" stroke="#0f766e" stroke-width="5" stroke-linejoin="round"/>
+<text x="405" y="68" font-size="15" fill="#991b1b">traçado baixo + ventilação inadequada</text>
+<path d="M430 78 L500 145" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow-q48)"/>
+<defs><marker id="arrow-q48" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#ef4444"/></marker></defs>
+</svg>
+<figcaption>Esquema próprio: na PCR, capnografia baixa/ineficaz obriga revisar compressões, via aérea, ventilação e hipóxia.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-va-048" value="A"> A. Trocar vetor das pás antes de avaliar oxigenação.</label>
 <label class="quiz-option"><input type="radio" name="q-va-048" value="B"> B. Trombólise imediata como causa presumida obrigatória.</label>
@@ -778,6 +818,438 @@ Banco do tema 01, baseado nas questões relacionadas no capítulo **Via Aérea e
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> "Silêncio" e sonolência em asma grave podem ser exaustão, não melhora. A, B e D são a armadilha que mata.</p>
+</div>
+</div>
+
+## Complemento do Mapa Amplo TEME22-25
+
+Estas questões completam o recorte amplo de via aérea, oxigenação, insuficiência respiratória, ventilação e temas conectados nas provas recentes. Seguem reescritas em formato autoral, sem reprodução literal dos enunciados originais.
+
+### TEME22 - complemento
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME22 Q3 | Trauma, rebaixamento e lesão torácica vascular.</p>
+<p><strong>52. Vítima de queda de grande altura está com via aérea pérvia e ventilando, mas tem rebaixamento, hipoperfusão e diferença importante de pressão entre membros superiores. Qual medida é a pegadinha menos coerente com a suspeita principal?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-052" value="A"> A. Ressuscitação cuidadosa e controle de hemorragia quando indicado.</label>
+<label class="quiz-option"><input type="radio" name="q-va-052" value="B"> B. Pericardiocentese como tratamento de provável tamponamento.</label>
+<label class="quiz-option"><input type="radio" name="q-va-052" value="C"> C. Controle hemodinâmico, evitando hipertensão e taquicardia se a suspeita for lesão aórtica.</label>
+<label class="quiz-option"><input type="radio" name="q-va-052" value="D"> D. Preparar RSI se houver indicação por proteção de via aérea ou curso clínico.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Diferença pressórica após trauma de desaceleração lembra lesão aórtica, não tamponamento como diagnóstico automático. A, C e D podem entrar no plano conforme fisiologia e lesões associadas.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME22 Q5 | Intubado no trauma e assimetria ventilatória.</p>
+<p><strong>53. Politraumatizado chega intubado, hipoxêmico, hipotenso e com murmúrio vesicular reduzido à esquerda. Antes de atribuir tudo ao tórax, qual hipótese precisa ser checada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-053" value="A"> A. Hiperventilação psicogênica.</label>
+<label class="quiz-option"><input type="radio" name="q-va-053" value="B"> B. Intoxicação por monóxido de carbono.</label>
+<label class="quiz-option"><input type="radio" name="q-va-053" value="C"> C. Edema agudo pulmonar cardiogênico isolado.</label>
+<label class="quiz-option"><input type="radio" name="q-va-053" value="D"> D. Intubação seletiva à direita, além de pneumotórax/hemotórax.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Hipoxemia em paciente intubado exige checar posição do tubo, ausculta, capnografia e causas DOPE. A, B e C não explicam tão bem a assimetria após IOT no trauma.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME22 Q6 | PCR: prioridade inicial.</p>
+<p><strong>54. Paciente inconsciente e sem pulso chega ao DE. Qual ação tem prioridade imediata?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-054" value="A"> A. Iniciar compressões torácicas de alta qualidade, 100-120/min.</label>
+<label class="quiz-option"><input type="radio" name="q-va-054" value="B"> B. Realizar IOT antes de iniciar compressões.</label>
+<label class="quiz-option"><input type="radio" name="q-va-054" value="C"> C. Preparar adrenalina antes do primeiro ciclo de RCP.</label>
+<label class="quiz-option"><input type="radio" name="q-va-054" value="D"> D. Ventilar isoladamente a 10 incursões por minuto.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> A prova cobra o básico que salva: compressões efetivas primeiro. IOT e drogas não devem atrasar compressões e desfibrilação quando indicadas.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME22 Q7 | Via aérea avançada na RCP.</p>
+<p><strong>55. Durante RCP em ritmo chocável, após choques, adrenalina e compressões em andamento, qual medida pode ser considerada no mesmo ciclo sem interromper a RCP?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-055" value="A"> A. Amiodarona antes do momento indicado pelo algoritmo.</label>
+<label class="quiz-option"><input type="radio" name="q-va-055" value="B"> B. Via aérea avançada e capnografia contínua em onda.</label>
+<label class="quiz-option"><input type="radio" name="q-va-055" value="C"> C. Pausa prolongada para buscar causas reversíveis.</label>
+<label class="quiz-option"><input type="radio" name="q-va-055" value="D"> D. Lidocaína empírica sem considerar o ritmo e o algoritmo.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Capnografia contínua confirma ventilação, monitora qualidade da RCP e pode sugerir RCE. As outras alternativas atropelam timing ou aumentam pausas.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME22 Q9 | POCUS pulmonar.</p>
+<p><strong>56. O POCUS pulmonar interpreta principalmente quais elementos?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-056" value="A"> A. Linha pleural e artefatos produzidos pela relação ar-tecido/fluido.</label>
+<label class="quiz-option"><input type="radio" name="q-va-056" value="B"> B. Anatomia alveolar direta em alta definição.</label>
+<label class="quiz-option"><input type="radio" name="q-va-056" value="C"> C. Somente parênquima pulmonar, sem utilidade para pleura.</label>
+<label class="quiz-option"><input type="radio" name="q-va-056" value="D"> D. Apenas linhas horizontais, sem valor dinâmico.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Ultrassom pulmonar é leitura de pleura, deslizamento e artefatos. A pegadinha é imaginar que ele "enxerga" alvéolos como uma TC.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME22 Q23 | TCE grave e neuroproteção.</p>
+<p><strong>57. Paciente com TCE grave intubado aguarda transferência. Qual meta é mais alinhada à neuroproteção inicial?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-057" value="A"> A. Hipotermia terapêutica de rotina.</label>
+<label class="quiz-option"><input type="radio" name="q-va-057" value="B"> B. Evitar hipóxia e hipotensão, mantendo SpO2 adequada e PAS pelo menos acima de 100 mmHg.</label>
+<label class="quiz-option"><input type="radio" name="q-va-057" value="C"> C. Manter sódio baixo para reduzir osmolaridade.</label>
+<label class="quiz-option"><input type="radio" name="q-va-057" value="D"> D. Manter hipercapnia permissiva como regra.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> TCE grave não tolera hipóxia nem hipotensão. A não é rotina; C e D aumentam risco de piora neurológica.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME22 Q24 | Dispneia aguda e POCUS.</p>
+<p><strong>58. Paciente com dispneia aguda, hipoxemia leve e ausculta pouco específica. Qual exame à beira-leito pode orientar rapidamente as próximas condutas?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-058" value="A"> A. Cintilografia pulmonar como primeira medida.</label>
+<label class="quiz-option"><input type="radio" name="q-va-058" value="B"> B. Tomografia de tórax antes de qualquer avaliação dinâmica.</label>
+<label class="quiz-option"><input type="radio" name="q-va-058" value="C"> C. Ultrassonografia point-of-care de tórax.</label>
+<label class="quiz-option"><input type="radio" name="q-va-058" value="D"> D. Radiografia obrigatória antes de oxigênio.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> POCUS ajuda a separar pneumotórax, edema, derrame, consolidação e outros perfis respiratórios. TC pode ser necessária, mas não é a resposta inicial mais prática em todo paciente.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME22 Q34 | Alvos de oxigenação.</p>
+<p><strong>59. Sobre metas de saturação em insuficiência respiratória, qual afirmação é mais segura para prova?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-059" value="A"> A. Em pacientes com risco de hipercapnia, como síndrome de hipoventilação da obesidade/DPOC, alvo 88-92% pode ser apropriado.</label>
+<label class="quiz-option"><input type="radio" name="q-va-059" value="B"> B. Oxigênio deve ser liberal para todos porque hiperóxia não traz dano.</label>
+<label class="quiz-option"><input type="radio" name="q-va-059" value="C"> C. Frequência respiratória e esforço não influenciam a decisão.</label>
+<label class="quiz-option"><input type="radio" name="q-va-059" value="D"> D. Todo paciente crítico deve ficar em máscara não reinalante até SpO2 100%.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> A banca gosta do alvo 88-92% em retentores de CO2. B e D ignoram hiperóxia; C esquece que trabalho respiratório importa tanto quanto o número.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME22 Q48 | Mecanismos de hipoxemia.</p>
+<p><strong>60. Em insuficiência respiratória hipoxêmica, qual ferramenta conceitual ajuda a diferenciar mecanismos como V/Q, shunt e hipoventilação?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-060" value="A"> A. Apenas a frequência respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-va-060" value="B"> B. A presença de tosse produtiva.</label>
+<label class="quiz-option"><input type="radio" name="q-va-060" value="C"> C. Oximetria isolada, sem gasometria.</label>
+<label class="quiz-option"><input type="radio" name="q-va-060" value="D"> D. Gradiente alvéolo-arterial de oxigênio.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Gradiente A-a ajuda a organizar a fisiologia da hipoxemia. As outras opções são dados clínicos úteis, mas não discriminam bem o mecanismo.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME22 Q64 | Dispositivos de oxigenoterapia.</p>
+<p><strong>61. Qual associação entre dispositivo e função prática está errada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-061" value="A"> A. Venturi permite FiO2 mais controlada.</label>
+<label class="quiz-option"><input type="radio" name="q-va-061" value="B"> B. BVM com boa vedação e alto fluxo pode entregar FiO2 muito alta.</label>
+<label class="quiz-option"><input type="radio" name="q-va-061" value="C"> C. Fluxo de oxigênio e desenho do dispositivo influenciam a FiO2 entregue.</label>
+<label class="quiz-option"><input type="radio" name="q-va-061" value="D"> D. Aquecimento/umidificação no cateter nasal de alto fluxo tem como objetivo principal reduzir bactérias do sistema.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Umidificação/aquecimento tornam alto fluxo tolerável e reduzem ressecamento; não são um "filtro antibacteriano" como objetivo central. A, B e C estão corretas.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME22 Q69 | Infecção odontogênica e via aérea.</p>
+<p><strong>62. Diabético após extração dentária evolui com febre, edema submandibular bilateral e protrusão da língua. Qual conduta é mais segura?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-062" value="A"> A. Antibiótico oral e retorno ao dentista.</label>
+<label class="quiz-option"><input type="radio" name="q-va-062" value="B"> B. Sala de emergência, avaliação precoce de via aérea e antibiótico parenteral.</label>
+<label class="quiz-option"><input type="radio" name="q-va-062" value="C"> C. Enfermaria simples sem avaliação de via aérea.</label>
+<label class="quiz-option"><input type="radio" name="q-va-062" value="D"> D. Alta se sinais vitais iniciais estiverem estáveis.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Angina de Ludwig/infecção cervical profunda pode fechar via aérea. Sinal vital estável não tranquiliza quando há língua elevada e edema submandibular.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME22 Q77 | Tórax instável e contusão pulmonar.</p>
+<p><strong>63. Trauma torácico com respiração paradoxal, hipoxemia persistente apesar de máscara não reinalante e ausculta reduzida à direita. Qual diagnóstico/conduta melhor encaixa?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-063" value="A"> A. Pneumotórax hipertensivo à esquerda, toracocentese esquerda.</label>
+<label class="quiz-option"><input type="radio" name="q-va-063" value="B"> B. Hemotórax simples com observação clínica.</label>
+<label class="quiz-option"><input type="radio" name="q-va-063" value="C"> C. Tórax instável com contusão pulmonar, sedoanalgesia e IOT/VM quando falha oxigenação.</label>
+<label class="quiz-option"><input type="radio" name="q-va-063" value="D"> D. Pneumotórax esquerdo e drenagem bilateral automática.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Respiração paradoxal + hipoxemia persistente apontam tórax instável/contusão. A e D erram lado e automatizam; B subtrata insuficiência respiratória.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME22 Q78 | DPOC, pneumonia e choque.</p>
+<p><strong>64. Idosa tabagista com exacerbação respiratória, pneumonia provável, hipotensão, leucocitose, acidose e disfunção renal. Qual diagnóstico sindrômico é mais provável?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-064" value="A"> A. Choque séptico por pneumonia em paciente com DPOC.</label>
+<label class="quiz-option"><input type="radio" name="q-va-064" value="B"> B. Choque obstrutivo por TEP, porque há retenção de CO2.</label>
+<label class="quiz-option"><input type="radio" name="q-va-064" value="C"> C. Choque cardiogênico isolado por estertores em base.</label>
+<label class="quiz-option"><input type="radio" name="q-va-064" value="D"> D. Dispneia ansiosa sem disfunção orgânica.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> O conjunto pneumonia + hipotensão + disfunção orgânica favorece choque séptico. As outras alternativas pinçam achados isolados e ignoram o quadro global.</p>
+</div>
+</div>
+
+### TEME23 - complemento
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME23 Q1 | Choque obstrutivo e intubação de alto risco.</p>
+<p><strong>65. Dispneia súbita, hipoxemia, choque e POCUS sugerindo TEP maciço. Qual raciocínio imediato é mais seguro?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-065" value="A"> A. Intubar imediatamente antes de ressuscitar.</label>
+<label class="quiz-option"><input type="radio" name="q-va-065" value="B"> B. VNI como tratamento definitivo do choque obstrutivo.</label>
+<label class="quiz-option"><input type="radio" name="q-va-065" value="C"> C. Pericardiocentese por padrão em todo choque com dispneia.</label>
+<label class="quiz-option"><input type="radio" name="q-va-065" value="D"> D. Evitar/postergar IOT se possível enquanto otimiza vasopressor e trata a causa, como trombólise quando indicada.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> IOT em TEP maciço pode colapsar o VD. A banca cobra intubação fisiologicamente difícil: ressuscitar, preparar e só avançar se inevitável.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME23 Q19 | Emergências do mergulho.</p>
+<p><strong>66. Em relação a patologias do mergulho, qual afirmação é correta?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-066" value="A"> A. Apagamento em águas rasas ocorre tipicamente na descida após hiperventilação.</label>
+<label class="quiz-option"><input type="radio" name="q-va-066" value="B"> B. Doença descompressiva se manifesta principalmente como dor frontal e epistaxe.</label>
+<label class="quiz-option"><input type="radio" name="q-va-066" value="C"> C. Narcose por nitrogênio lembra embriaguez e costuma ficar mais evidente em maiores profundidades, por volta de 30 m.</label>
+<label class="quiz-option"><input type="radio" name="q-va-066" value="D"> D. A 40 m de profundidade o pulmão está submetido a apenas 4 atm absolutas.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Narcose por nitrogênio é a frase clássica. A erra porque apagamento em água rasa costuma ocorrer na subida; D esquece a atmosfera da superfície, então 40 m equivalem a cerca de 5 atm absolutas.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME23 Q24 | Exacerbação de DPOC.</p>
+<p><strong>67. Na exacerbação de DPOC, qual conjunto é mais compatível com a resposta de prova?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-067" value="A"> A. Alvo de SpO2 sempre maior que 93%, sem exceção.</label>
+<label class="quiz-option"><input type="radio" name="q-va-067" value="B"> B. Beta-agonista injetável deve ser rotina por ser mais rápido.</label>
+<label class="quiz-option"><input type="radio" name="q-va-067" value="C"> C. Oxigênio titulado, broncodilatador inalatório, corticoide sistêmico e VNI quando acidose hipercápnica/elegibilidade.</label>
+<label class="quiz-option"><input type="radio" name="q-va-067" value="D"> D. VNI não reduz intubação nem mortalidade na exacerbação.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> A erra o alvo em retentores; B aumenta eventos adversos; D nega uma das indicações mais fortes de VNI na emergência.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME23 Q33 | Afogamento e ventilações iniciais.</p>
+<p><strong>68. Vítima de afogamento é retirada inconsciente e sem respirar. Qual primeira medida específica deve entrar no atendimento?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-068" value="A"> A. Posicionar via aérea e realizar ventilações de resgate iniciais.</label>
+<label class="quiz-option"><input type="radio" name="q-va-068" value="B"> B. Colocar a cabeça abaixo do corpo para drenar água.</label>
+<label class="quiz-option"><input type="radio" name="q-va-068" value="C"> C. Não iniciar reanimação se houve submersão prolongada.</label>
+<label class="quiz-option"><input type="radio" name="q-va-068" value="D"> D. Classificar como grau 6 apenas se melhorar após ventilação.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Afogamento é hipóxia: abrir via aérea e ventilar cedo é central. Drenagem postural e desistência precoce são pegadinhas.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME23 Q38 | POCUS pós-RCE e hipoxemia.</p>
+<p><strong>69. Pós-RCE, após correção de problema de tubo, o paciente fica hipoxêmico e instável; POCUS pulmonar mostra ausência de deslizamento e achado compatível com ponto pulmonar. Qual causa provável?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-069" value="A"> A. Derrame pleural simples.</label>
+<label class="quiz-option"><input type="radio" name="q-va-069" value="B"> B. Derrame pericárdico isolado.</label>
+<label class="quiz-option"><input type="radio" name="q-va-069" value="C"> C. Pneumotórax.</label>
+<label class="quiz-option"><input type="radio" name="q-va-069" value="D"> D. Edema pulmonar cardiogênico como única hipótese.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Ausência de lung sliding com lung point é pista forte de pneumotórax. Em instabilidade, pense em causa obstrutiva tratável.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME23 Q40 | Inalação de fumaça e CO.</p>
+<p><strong>70. Em vítima de incêndio com suspeita de intoxicação por monóxido de carbono e carboxi-hemoglobina moderadamente elevada, qual tratamento inicial é correto?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-070" value="A"> A. Aguardar coloração vermelho-cereja para confirmar.</label>
+<label class="quiz-option"><input type="radio" name="q-va-070" value="B"> B. Confiar na SpO2 normal e observar.</label>
+<label class="quiz-option"><input type="radio" name="q-va-070" value="C"> C. Hidroxocobalamina em dose baixa como tratamento do CO.</label>
+<label class="quiz-option"><input type="radio" name="q-va-070" value="D"> D. Oxigênio normobárico a 100% enquanto avalia gravidade e indicação de terapia hiperbárica.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> CO exige O2 a 100% imediatamente; o oxímetro pode enganar. Hidroxocobalamina trata suspeita de cianeto, não CO isolado.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME23 Q76 | TCE grave e ventilação.</p>
+<p><strong>71. No TCE grave sem sinais de herniação, qual alvo ventilatório é mais adequado?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-071" value="A"> A. Hiperventilar sempre para PaCO2 menor que 30 mmHg.</label>
+<label class="quiz-option"><input type="radio" name="q-va-071" value="B"> B. Buscar normocapnia, com PaCO2 em torno de 35-45 mmHg.</label>
+<label class="quiz-option"><input type="radio" name="q-va-071" value="C"> C. Hipotermia terapêutica de rotina.</label>
+<label class="quiz-option"><input type="radio" name="q-va-071" value="D"> D. Hipercapnia permissiva para aumentar fluxo cerebral.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Hiperventilação profilática pode reduzir fluxo cerebral. Reserve hiperventilação temporária para sinais de herniação enquanto faz tratamento definitivo.</p>
+</div>
+</div>
+
+### TEME24 - complemento
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME24 Q6 | Incêndio, via aérea e cianeto.</p>
+<p><strong>72. Três vítimas de incêndio: uma com queimadura de face e respiração ruidosa; outra sonolenta com exposição a fumaça; outra já intubada, hipoxêmica e com lactato muito alto. Qual sequência é mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-072" value="A"> A. IOT / O2 100% / cianocobalamina.</label>
+<label class="quiz-option"><input type="radio" name="q-va-072" value="B"> B. IOT / O2 100% / hidroxocobalamina.</label>
+<label class="quiz-option"><input type="radio" name="q-va-072" value="C"> C. O2 100% / IOT / hidroxocobalamina.</label>
+<label class="quiz-option"><input type="radio" name="q-va-072" value="D"> D. O2 100% / O2 100% / cianocobalamina.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Respiração ruidosa/queimadura de face pede via aérea precoce; suspeita de CO recebe O2 100%; lactato muito alto em incêndio sugere cianeto, tratado com hidroxocobalamina.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME24 Q15 | Bronquiolite grave e bradicardia.</p>
+<p><strong>73. Lactente com bronquiolite fica desacordado, SpO2 70%, entrada de ar muito reduzida, esforço intenso e FC 48 com pulso central. Qual prioridade?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-073" value="A"> A. Máscara facial e expansão volêmica como primeira medida.</label>
+<label class="quiz-option"><input type="radio" name="q-va-073" value="B"> B. Ventilação com pressão positiva conectada a oxigênio, reavaliando FC e iniciando compressões se não melhorar.</label>
+<label class="quiz-option"><input type="radio" name="q-va-073" value="C"> C. Atropina antes de ventilar.</label>
+<label class="quiz-option"><input type="radio" name="q-va-073" value="D"> D. Compressões e adrenalina antes de corrigir hipóxia.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Em criança, bradicardia frequentemente é hipóxica. Ventilar bem é a intervenção inicial; se FC permanecer baixa, entram compressões e medicações.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME24 Q16 | Asma grave e indicação de IOT.</p>
+<p><strong>74. Em crise asmática grave, qual cenário/estratégia sugere indicação de IOT com maior segurança fisiológica?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-074" value="A"> A. Aumento progressivo de pCO2 com esforço mantido; pré-oxigenação com VNI e considerar sequência prolongada.</label>
+<label class="quiz-option"><input type="radio" name="q-va-074" value="B"> B. Queda de pCO2 com esforço, RSI imediata sem pré-oxigenação otimizada.</label>
+<label class="quiz-option"><input type="radio" name="q-va-074" value="C"> C. Aumento de pCO2, mas pré-oxigenação com máscara não reinalante a baixo fluxo.</label>
+<label class="quiz-option"><input type="radio" name="q-va-074" value="D"> D. Queda de pCO2 isolada como indicação absoluta de IOT.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> CO2 subindo em paciente ainda fazendo esforço sugere falência ventilatória. Asma intubada precisa de pré-oxigenação, preparo e estratégia para evitar hiperinsuflação.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME24 Q30 | Antidepressivo tricíclico e via aérea.</p>
+<p><strong>75. Paciente com provável intoxicação por amitriptilina, choque, QRS alargado e secreção em via aérea. Qual conjunto inicial é mais adequado?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-075" value="A"> A. Bicarbonato de sódio EV, expansão/vasopressores e IOT após estabilização inicial.</label>
+<label class="quiz-option"><input type="radio" name="q-va-075" value="B"> B. IOT imediata, flumazenil e observar resposta.</label>
+<label class="quiz-option"><input type="radio" name="q-va-075" value="C"> C. Cardioversão sincronizada e flumazenil como tratamento principal.</label>
+<label class="quiz-option"><input type="radio" name="q-va-075" value="D"> D. Cardioversão elétrica como primeira terapia para todo QRS largo tóxico.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> TCA instável pede bicarbonato e suporte hemodinâmico. Flumazenil é perigoso em intoxicação mista/TCA; IOT deve ser planejada sem agravar o colapso.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME24 Q36 | TCE grave, Cushing e medidas neuroprotetoras.</p>
+<p><strong>76. TCE grave com vômitos, anisocoria e reflexo de Cushing. Qual sequência conceitual é mais adequada para a prova?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-076" value="A"> A. Reflexo de Cushing falso; hipotensão permissiva; hiperventilação por 24 h.</label>
+<label class="quiz-option"><input type="radio" name="q-va-076" value="B"> B. Manter sódio até 160 como meta rotineira e suspender profilaxia de crise precoce.</label>
+<label class="quiz-option"><input type="radio" name="q-va-076" value="C"> C. Evitar osmoterapia e aceitar PAS baixa para reduzir sangramento.</label>
+<label class="quiz-option"><input type="radio" name="q-va-076" value="D"> D. Reconhecer Cushing, evitar hipotensão, usar osmoterapia quando indicada e não fazer hiperventilação profilática prolongada.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Hiperventilação pode ser ponte curta na herniação, não meta fixa por 24 h. O núcleo é perfusão cerebral, oxigenação, osmoterapia indicada e transferência/neurocirurgia.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME24 Q38 | Asma pediátrica grave.</p>
+<p><strong>77. Criança asmática grave, fala entrecortada, SpO2 90% e história de UTI/VM. Qual afirmação é mais correta?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-077" value="A"> A. Se não responder ao primeiro beta-agonista inalatório, beta-agonista EV é obrigatório e imediato.</label>
+<label class="quiz-option"><input type="radio" name="q-va-077" value="B"> B. Corticoide sistêmico precoce, inclusive EV se houver dificuldade de deglutição, é parte do manejo.</label>
+<label class="quiz-option"><input type="radio" name="q-va-077" value="C"> C. Magnésio IV só pode ser feito após dosagem sérica normal.</label>
+<label class="quiz-option"><input type="radio" name="q-va-077" value="D"> D. Terbutalina/adrenalina nunca têm papel fora de anafilaxia.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Corticoide precoce reduz falha e internação; via EV é razoável se a criança não consegue deglutir. A, C e D usam absolutos perigosos.</p>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME24 Q82 | Overdose, naloxona e PCR.</p>
+<p><strong>78. Usuário de drogas com pulso fraco evolui para PCR durante abordagem. Há suspeita de opioide. Qual conduta resume melhor o atendimento?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-078" value="A"> A. RCP, mas evitar epinefrina.</label>
+<label class="quiz-option"><input type="radio" name="q-va-078" value="B"> B. Bicarbonato obrigatório e lidocaína preferencial sempre.</label>
+<label class="quiz-option"><input type="radio" name="q-va-078" value="C"> C. Naloxona sem atrasar RCP/ACLS, mantendo epinefrina e antiarrítmico quando indicados.</label>
+<label class="quiz-option"><input type="radio" name="q-va-078" value="D"> D. Benzodiazepínico e trombólise como rotina.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Naloxona pode ser administrada se suspeita de opioide, mas não substitui compressões, ventilação, desfibrilação e drogas do ACLS quando indicadas.</p>
+</div>
+</div>
+
+### TEME25 - complemento
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME25 Q56 | LES, insuficiência respiratória e hemorragia alveolar.</p>
+<p><strong>79. Paciente com lúpus, febre/tosse, hipoxemia, falha de VNI e POCUS com perfil B bilateral. Na suspeita de hemorragia alveolar, qual afirmação é mais correta?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-va-079" value="A"> A. Ausência de hemoptise afasta hemorragia alveolar.</label>
+<label class="quiz-option"><input type="radio" name="q-va-079" value="B"> B. Broncoscopia com lavado broncoalveolar pode ser importante para confirmar padrão e excluir infecção/lesão brônquica.</label>
+<label class="quiz-option"><input type="radio" name="q-va-079" value="C"> C. Perfil B bilateral confirma pneumonia extensa.</label>
+<label class="quiz-option"><input type="radio" name="q-va-079" value="D"> D. Se sangramento unilateral for suspeito, posicionar o pulmão sangrante para cima.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Hemorragia alveolar pode ocorrer sem hemoptise. Perfil B é inespecífico; se sangramento unilateral, pulmão sangrante fica para baixo para proteger o pulmão bom.</p>
 </div>
 </div>
 
