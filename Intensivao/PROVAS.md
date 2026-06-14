@@ -7,11 +7,14 @@ Como usar:
 1. Leia o resumo do tema.
 2. Resolva as questões sem consultar o capítulo.
 3. Clique em **Checar resposta** após cada item.
-4. Anote a pegadinha que quase te fez errar.
+4. Depois de checar, a alternativa fica travada.
+5. Ao final, revise o desempenho do tema e anote a pegadinha que quase te fez errar.
 
 > As questões abaixo são autorais e reescritas para estudo. Elas indicam o ano/questão que inspirou o padrão de cobrança, mas não reproduzem o texto literal dos cadernos.
 
-> O primeiro simulado tem **10 questões selecionadas** como piloto de alto rendimento. Isso não representa o total de questões do tema nas provas recentes; no mapa, Via aérea/VM aparece como o bloco mais frequente, com 62 questões classificadas em TEME22-24 e recorte adicional no TEME25.
+> Regra do projeto: ao abrir uma nova seção de prova, vamos montar o banco completo das questões mapeadas daquele tema. Se o volume ficar grande, dividimos em blocos, mas sem excluir questões do tema.
+>
+> O primeiro simulado começou com **10 questões selecionadas** para validar o formato. O tema Via aérea/VM aparece como o bloco mais frequente no mapa, com 62 questões classificadas em TEME22-24 e recorte adicional no TEME25; ele será expandido para banco completo do tema.
 
 | Tema | Status | Abrir |
 |---|---|---|

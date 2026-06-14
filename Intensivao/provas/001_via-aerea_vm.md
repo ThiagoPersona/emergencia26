@@ -4,7 +4,9 @@ Treino do tema 01, baseado no padrão das provas TEME22-25 e nas estações prá
 
 > Questões reescritas para estudo, sem cópia literal dos cadernos. Use como treino de raciocínio e revisão das pegadinhas.
 >
-> Este piloto tem **10 questões selecionadas** para testar o formato e cobrir as pegadinhas mais cobradas. Não é o total de questões de via aérea/VM das provas recentes.
+> Este piloto tem **10 questões selecionadas** para testar o formato e cobrir as pegadinhas mais cobradas. Não é o total de questões de via aérea/VM das provas recentes; a seção será expandida para o banco completo do tema.
+>
+> Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">Fonte inspiradora: TEME25 Q1; intoxicação estimulante, hipertermia e RSI.</p>

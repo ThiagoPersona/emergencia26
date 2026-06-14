@@ -372,6 +372,10 @@
       background: #e4f1f1;
     }
 
+    .quiz-option.is-locked {
+      cursor: default;
+    }
+
     .quiz-option.is-correct {
       border-color: #1f8f72;
       background: #dff3ea;
@@ -405,6 +409,12 @@
       border-color: #0b5b51;
     }
 
+    .quiz-check:disabled {
+      border-color: #97a6ad;
+      background: #97a6ad;
+      cursor: default;
+    }
+
     .quiz-feedback {
       margin-top: 0.9rem;
       padding: 0.85rem 0.95rem;
@@ -430,6 +440,72 @@
     .quiz-feedback.is-warning {
       border-color: #b58a2b;
       background: #f4ecd8;
+    }
+
+    .quiz-summary {
+      margin: 1.4rem 0 1.8rem;
+      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #e4f1f1;
+    }
+
+    .quiz-summary h2 {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+      border-top: 0 !important;
+    }
+
+    .quiz-summary-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0.65rem;
+      margin: 0.8rem 0;
+    }
+
+    .quiz-summary-stat {
+      padding: 0.7rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--card);
+    }
+
+    .quiz-summary-stat strong {
+      display: block;
+      color: var(--text);
+      font-size: 1.35rem;
+      line-height: 1.1;
+    }
+
+    .quiz-summary-stat span {
+      display: block;
+      margin-top: 0.2rem;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 650;
+    }
+
+    .quiz-progress {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #d4e0e5;
+    }
+
+    .quiz-progress span {
+      display: block;
+      width: 0;
+      height: 100%;
+      border-radius: inherit;
+      background: var(--link);
+      transition: width 180ms ease;
+    }
+
+    .quiz-summary-note {
+      margin-bottom: 0 !important;
+      color: var(--muted);
+      font-size: 0.95rem !important;
+      font-weight: 650;
     }
 
     .loading-msg,
@@ -537,6 +613,10 @@
         min-width: 760px;
       }
 
+      .quiz-summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
       .mermaid svg {
         width: 860px !important;
         min-width: 860px;
@@ -639,7 +719,12 @@
     }
 
     function initQuizzes() {
-      document.querySelectorAll(".quiz-card").forEach((card) => {
+      const section = document.querySelector(".markdown-section");
+      const cards = Array.from(document.querySelectorAll(".quiz-card"));
+
+      if (section && cards.length) ensureQuizSummary(section, cards);
+
+      cards.forEach((card) => {
         if (card.dataset.quizReady === "1") return;
         const answer = card.dataset.answer;
         const button = card.querySelector(".quiz-check");
@@ -661,6 +746,8 @@
         });
 
         button.addEventListener("click", () => {
+          if (card.dataset.locked === "1") return;
+
           const checked = card.querySelector("input[type='radio']:checked");
           options.forEach((option) => {
             option.classList.remove("is-correct", "is-wrong");
@@ -680,12 +767,68 @@
           }
 
           const isCorrect = checked.value === answer;
+          card.dataset.locked = "1";
+          card.dataset.correct = isCorrect ? "1" : "0";
+          button.disabled = true;
+          button.textContent = "Resposta checada";
+
+          options.forEach((option) => {
+            option.classList.add("is-locked");
+            const input = option.querySelector("input[type='radio']");
+            if (input) input.disabled = true;
+          });
+
           feedback.classList.add(isCorrect ? "is-correct" : "is-wrong");
           feedback.innerHTML = `<p><strong>${isCorrect ? "Correto." : "Ainda não."}</strong> Gabarito: ${answer}.</p>${feedback.dataset.originalHtml}`;
+          updateQuizSummary();
         });
 
         card.dataset.quizReady = "1";
       });
+    }
+
+    function ensureQuizSummary(section, cards) {
+      if (section.querySelector(".quiz-summary")) {
+        updateQuizSummary();
+        return;
+      }
+
+      const summary = document.createElement("section");
+      summary.className = "quiz-summary";
+      summary.setAttribute("aria-live", "polite");
+      cards[cards.length - 1].insertAdjacentElement("afterend", summary);
+      updateQuizSummary();
+    }
+
+    function updateQuizSummary() {
+      const section = document.querySelector(".markdown-section");
+      if (!section) return;
+
+      const summary = section.querySelector(".quiz-summary");
+      const cards = Array.from(section.querySelectorAll(".quiz-card"));
+      if (!summary || !cards.length) return;
+
+      const total = cards.length;
+      const answered = cards.filter((card) => card.dataset.locked === "1").length;
+      const correct = cards.filter((card) => card.dataset.correct === "1").length;
+      const wrong = answered - correct;
+      const completion = Math.round((answered / total) * 100);
+      const accuracy = answered ? Math.round((correct / answered) * 100) : 0;
+      const note = answered === total
+        ? `Tema concluído: ${correct}/${total} acertos (${accuracy}%).`
+        : `Resolvidas ${answered} de ${total}. A alternativa trava depois de checar.`;
+
+      summary.innerHTML = `
+        <h2>Desempenho do tema</h2>
+        <div class="quiz-summary-grid">
+          <div class="quiz-summary-stat"><strong>${answered}/${total}</strong><span>respondidas</span></div>
+          <div class="quiz-summary-stat"><strong>${correct}</strong><span>acertos</span></div>
+          <div class="quiz-summary-stat"><strong>${wrong}</strong><span>erros</span></div>
+          <div class="quiz-summary-stat"><strong>${accuracy}%</strong><span>aproveitamento</span></div>
+        </div>
+        <div class="quiz-progress" aria-label="Progresso da prova"><span style="width: ${completion}%"></span></div>
+        <p class="quiz-summary-note">${note}</p>
+      `;
     }
 
     function ensureMermaidInit() {
