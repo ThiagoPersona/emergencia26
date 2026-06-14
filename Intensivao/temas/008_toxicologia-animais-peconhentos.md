@@ -293,7 +293,7 @@ FA = frascos-ampolas. A dose e definida por gravidade, não por peso.
 
 ## Checklist de revisão
 
-- [ ] No intoxicado grave, eu faco ABCDE, glicemia, ECG, temperatura e suporte antes de "nomear" o veneno.
+- [ ] No intoxicado grave, eu faço ABCDE, glicemia, ECG, temperatura e suporte antes de "nomear" o veneno.
 - [ ] Sei quando usar e quando evitar carvão, lavagem e flumazenil.
 - [ ] Sei reconhecer opioide, colinérgico, simpatomimético, TCA, CCB/BB e álcool tóxico.
 - [ ] Sei as doses centrais: naloxona, bicarbonato, atropina, pralidoxima, NAC, fomepizol, hidroxocobalamina, HDI e lipídica.

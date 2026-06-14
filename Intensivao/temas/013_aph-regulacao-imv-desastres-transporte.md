@@ -1,4 +1,4 @@
-# APH, Regulação, IMV, Desastrês E Transporte
+# APH, regulação, IMV, desastres e transporte
 
 ## Leitura de 30 segundos
 
@@ -373,7 +373,7 @@ flowchart TD
 - **Não respira = preto imediatamente:** em START adulto, abra via aérea primeiro; se passar a respirar, e vermelho.
 - **FR 28 no START e vermelho:** não pelo critério respiratório isolado; vermelho se >30 ou outros critérios.
 - **START serve para qualquer CBRN/HazMat:** cuidado. Pode haver algoritmo e descontaminação específicos.
-- **SCI e estrutura fixa e burocratica:** falso. E modular e escalavel.
+- **SCI e estrutura fixa e burocrática:** falso. É modular e escalável.
 - **Span ideal do SCI e 12 por lider:** falso. Ideal clássico e 5.
 - **Médico regulador só aciona viatura:** falso. Ele orienta, classifica, acompanha, decide recurso/destino e coordena fluxo.
 - **Transferência assistida e responsabilidade exclusiva do regulador:** falso. Origem, transporte, regulação e receptor compartilham deveres.
@@ -419,7 +419,7 @@ flowchart TD
 - [ ] Sei riscos do aeromédico: altitude, gases, pneumotórax e cabine.
 - [ ] Sei zonas hot/warm/cold no atendimento tático.
 - [ ] Sei que HazMat exige EPI, isolamento e descontaminação antes de contaminar a rede.
-- [ ] Sei blast primário, secundário, terciario, quaternario e quinario.
+- [ ] Sei blast primário, secundário, terciário, quaternário e quinário.
 - [ ] Sei afogamento, intermação, altitude, mergulho e hipotermia em uma linha cada.
 
 ## Questões e estações relacionadas

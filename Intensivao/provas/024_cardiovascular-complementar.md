@@ -1,219 +1,268 @@
-# Prova: Cardiovascular Complementar
+# Prova: Cardiovascular complementar
 
-Banco do tema 024, baseado no capítulo **Cardiovascular Complementar** e nas questões/estações relacionadas no resumo. Resolva como prova: escolha a melhor alternativa, depois clique em **Checar resposta**.
+Banco refinado do tema 024, baseado no capítulo **Cardiovascular complementar**, nas questões/estações mapeadas, nas pegadinhas e no checklist de revisão. Resolva como prova: escolha a melhor alternativa e depois clique em **Checar resposta**.
 
-> Questões autorais e reescritas para estudo, sem cópia literal dos cadernos. Use como treino de raciocínio, revisão das pegadinhas e fixação do padrão da banca.
->
-> Este banco cobre todos os pontos mapeados em **Questões e estações relacionadas** do capítulo. Quando o capítulo traz apenas um bloco por ano, o card resume o padrão de cobrança daquele bloco.
+> Questões autorais e reescritas para estudo, sem cópia literal dos cadernos, livros ou slides. O foco é treinar decisão clínica, padrão da banca e armadilhas recorrentes.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
+
+## Questões e estações
+
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME22</p>
-<p><strong>1. No padr&#227;o cobrado em TEME22, qual &#233; a melhor resposta de prova para: tamponamento/peric&#225;rdio, miocardite e aorta como diagn&#243;sticos diferenciais.?</strong></p>
+<p><strong>1. Em uma questão/estação inspirada em TEME22, aparece este padrão: tamponamento/pericárdio, miocardite e aorta como diagnósticos diferenciais. Qual raciocínio é mais seguro para marcar a alternativa?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-001" value="A"> A. tamponamento/peric&#225;rdio, miocardite e aorta como diagn&#243;sticos diferenciais.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-001" value="B"> B. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-001" value="C"> C. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-001" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-001" value="A"> A. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. O achado-chave do enunciado é: tamponamento/pericárdio, miocardite e aorta como diagnósticos diferenciais.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-001" value="B"> B. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-001" value="C"> C. Dar alta para pericardite com troponina alta, síncope, derrame importante ou instabilidade.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-001" value="D"> D. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: A.</strong> O ponto cobrado é: tamponamento/peric&#225;rdio, miocardite e aorta como diagn&#243;sticos diferenciais.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: tamponamento/pericárdio, miocardite e aorta como diagnósticos diferenciais. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME23</p>
-<p><strong>2. No padr&#227;o cobrado em TEME23, qual &#233; a melhor resposta de prova para: endocardite, tamponamento, TEV/TVP, dissec&#231;&#227;o e choque obstrutivo.?</strong></p>
+<p><strong>2. Em uma questão/estação inspirada em TEME23, aparece este padrão: endocardite, tamponamento, TEV/TVP, dissecção e choque obstrutivo. Qual raciocínio é mais seguro para marcar a alternativa?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-002" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-002" value="B"> B. endocardite, tamponamento, TEV/TVP, dissec&#231;&#227;o e choque obstrutivo.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-002" value="C"> C. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-002" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-002" value="A"> A. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-002" value="B"> B. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. O achado-chave do enunciado é: endocardite, tamponamento, TEV/TVP, dissecção e choque obstrutivo.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-002" value="C"> C. Ignorar sopro novo e choque após IAM, perdendo complicação mecânica.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-002" value="D"> D. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: B.</strong> O ponto cobrado é: endocardite, tamponamento, TEV/TVP, dissec&#231;&#227;o e choque obstrutivo.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: B.</strong> O gatilho da questão é: endocardite, tamponamento, TEV/TVP, dissecção e choque obstrutivo. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME24</p>
-<p><strong>3. No padr&#227;o cobrado em TEME24, qual &#233; a melhor resposta de prova para: tamponamento, aorta/aneurisma, TEV e choque.?</strong></p>
+<p><strong>3. Em uma questão/estação inspirada em TEME24, aparece este padrão: tamponamento, aorta/aneurisma, TEV e choque. Qual raciocínio é mais seguro para marcar a alternativa?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-003" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-003" value="B"> B. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-003" value="C"> C. tamponamento, aorta/aneurisma, TEV e choque.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-003" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-003" value="A"> A. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-003" value="B"> B. Começar nitroprussiato na dissecção antes de beta-bloquear frequência.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-003" value="C"> C. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. O achado-chave do enunciado é: tamponamento, aorta/aneurisma, TEV e choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-003" value="D"> D. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: C.</strong> O ponto cobrado é: tamponamento, aorta/aneurisma, TEV e choque.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: C.</strong> O gatilho da questão é: tamponamento, aorta/aneurisma, TEV e choque. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME25</p>
-<p><strong>4. No padr&#227;o cobrado em TEME25, qual &#233; a melhor resposta de prova para: miocardite, peric&#225;rdio, TEV e choque cardiog&#234;nico/obstrutivo em quest&#245;es e POCUS.?</strong></p>
+<p><strong>4. Em uma questão/estação inspirada em TEME25, aparece este padrão: miocardite, pericárdio, TEV e choque cardiogênico/obstrutivo em questões e POCUS. Qual raciocínio é mais seguro para marcar a alternativa?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-004" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-004" value="B"> B. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-004" value="C"> C. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-004" value="D"> D. miocardite, peric&#225;rdio, TEV e choque cardiog&#234;nico/obstrutivo em quest&#245;es e POCUS.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-004" value="A"> A. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-004" value="B"> B. Dar alta para pericardite com troponina alta, síncope, derrame importante ou instabilidade.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-004" value="C"> C. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-004" value="D"> D. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. O achado-chave do enunciado é: miocardite, pericárdio, TEV e choque cardiogênico/obstrutivo em questões e POCUS.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: D.</strong> O ponto cobrado é: miocardite, peric&#225;rdio, TEV e choque cardiog&#234;nico/obstrutivo em quest&#245;es e POCUS.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: D.</strong> O gatilho da questão é: miocardite, pericárdio, TEV e choque cardiogênico/obstrutivo em questões e POCUS. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
+## Pegadinhas TEME
+
 <div class="quiz-card" data-answer="A">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>5. Qual alternativa evita a pegadinha: Dor tor&#225;cica com supra = tromb&#243;lise sempre: falso; dissec&#231;&#227;o/pericardite entram no diferencial.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>5. A banca tenta derrubar com a seguinte ideia: Dor torácica com supra = trombólise sempre: falso; dissecção/pericardite entram no diferencial. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-005" value="A"> A. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-005" value="B"> B. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-005" value="C"> C. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-005" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-005" value="A"> A. Não comprar a frase-armadilha; responder pelo princípio: Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-005" value="B"> B. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-005" value="C"> C. Ignorar sopro novo e choque após IAM, perdendo complicação mecânica.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-005" value="D"> D. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: A.</strong> O ponto cobrado é: Dor tor&#225;cica com supra = tromb&#243;lise sempre: falso; dissec&#231;&#227;o/pericardite entram no diferencial.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: Dor torácica com supra = trombólise sempre: falso; dissecção/pericardite entram no diferencial. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="B">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>6. Qual alternativa evita a pegadinha: Dissec&#231;&#227;o trata primeiro com nitroprussiato: falso se sem beta-bloqueio.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>6. A banca tenta derrubar com a seguinte ideia: Dissecção trata primeiro com nitroprussiato: falso se sem beta-bloqueio. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-006" value="A"> A. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-006" value="B"> B. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-006" value="C"> C. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-006" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-006" value="A"> A. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-006" value="B"> B. Não comprar a frase-armadilha; responder pelo princípio: Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-006" value="C"> C. Começar nitroprussiato na dissecção antes de beta-bloquear frequência.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-006" value="D"> D. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: B.</strong> O ponto cobrado é: Dissec&#231;&#227;o trata primeiro com nitroprussiato: falso se sem beta-bloqueio.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: B.</strong> O gatilho da questão é: Dissecção trata primeiro com nitroprussiato: falso se sem beta-bloqueio. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="C">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>7. Qual alternativa evita a pegadinha: Tamponamento precisa tr&#237;ade de Beck completa: falso; POCUS pode ser decisivo.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>7. A banca tenta derrubar com a seguinte ideia: Tamponamento precisa tríade de Beck completa: falso; POCUS pode ser decisivo. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-007" value="A"> A. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-007" value="B"> B. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-007" value="C"> C. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-007" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-007" value="A"> A. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-007" value="B"> B. Dar alta para pericardite com troponina alta, síncope, derrame importante ou instabilidade.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-007" value="C"> C. Não comprar a frase-armadilha; responder pelo princípio: Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-007" value="D"> D. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: C.</strong> O ponto cobrado é: Tamponamento precisa tr&#237;ade de Beck completa: falso; POCUS pode ser decisivo.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: C.</strong> O gatilho da questão é: Tamponamento precisa tríade de Beck completa: falso; POCUS pode ser decisivo. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="D">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>8. Qual alternativa evita a pegadinha: Pericardite com troponina alta &#233; sempre alta: falso; miopericardite muda risco.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>8. A banca tenta derrubar com a seguinte ideia: Pericardite com troponina alta é sempre alta: falso; miopericardite muda risco. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-008" value="A"> A. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-008" value="B"> B. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-008" value="C"> C. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-008" value="D"> D. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-008" value="A"> A. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-008" value="B"> B. Ignorar sopro novo e choque após IAM, perdendo complicação mecânica.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-008" value="C"> C. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-008" value="D"> D. Não comprar a frase-armadilha; responder pelo princípio: Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: D.</strong> O ponto cobrado é: Pericardite com troponina alta &#233; sempre alta: falso; miopericardite muda risco.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: D.</strong> O gatilho da questão é: Pericardite com troponina alta é sempre alta: falso; miopericardite muda risco. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="A">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>9. Qual alternativa evita a pegadinha: Endocardite est&#225;vel recebe antibi&#243;tico antes de hemocultura: em geral colete antes se n&#227;o atrasar e paciente est&#225;vel.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>9. A banca tenta derrubar com a seguinte ideia: Endocardite estável recebe antibiótico antes de hemocultura: em geral colete antes se não atrasar e paciente estável. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-009" value="A"> A. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-009" value="B"> B. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-009" value="C"> C. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-009" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-009" value="A"> A. Não comprar a frase-armadilha; responder pelo princípio: Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-009" value="B"> B. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-009" value="C"> C. Começar nitroprussiato na dissecção antes de beta-bloquear frequência.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-009" value="D"> D. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: A.</strong> O ponto cobrado é: Endocardite est&#225;vel recebe antibi&#243;tico antes de hemocultura: em geral colete antes se n&#227;o atrasar e paciente est&#225;vel.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: Endocardite estável recebe antibiótico antes de hemocultura: em geral colete antes se não atrasar e paciente estável. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="B">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>10. Qual alternativa evita a pegadinha: VD dilatado fecha TEP: falso; precisa contexto.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>10. A banca tenta derrubar com a seguinte ideia: VD dilatado fecha TEP: falso; precisa contexto. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-010" value="A"> A. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-010" value="B"> B. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-010" value="C"> C. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-010" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-010" value="A"> A. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-010" value="B"> B. Não comprar a frase-armadilha; responder pelo princípio: Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-010" value="C"> C. Dar alta para pericardite com troponina alta, síncope, derrame importante ou instabilidade.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-010" value="D"> D. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: B.</strong> O ponto cobrado é: VD dilatado fecha TEP: falso; precisa contexto.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: B.</strong> O gatilho da questão é: VD dilatado fecha TEP: falso; precisa contexto. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
+## Checklist de revisão
+
 <div class="quiz-card" data-answer="C">
-<p class="quiz-source">Checklist de revis&#227;o</p>
-<p><strong>11. No checklist de revis&#227;o de Cardiovascular Complementar, qual afirma&#231;&#227;o deve estar dominada antes de avan&#231;ar?</strong></p>
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>11. Antes da prova, este ponto precisa estar automático: Sei diferenciar pericardite, miocardite e SCA. Qual resposta traduz melhor essa prioridade?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-011" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-011" value="B"> B. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-011" value="C"> C. Sei diferenciar pericardite, miocardite e SCA.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-011" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-011" value="A"> A. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-011" value="B"> B. Ignorar sopro novo e choque após IAM, perdendo complicação mecânica.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-011" value="C"> C. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. Para revisão final, fixe especificamente: Sei diferenciar pericardite, miocardite e SCA.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-011" value="D"> D. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: C.</strong> O ponto cobrado é: Sei diferenciar pericardite, miocardite e SCA.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: C.</strong> O gatilho da questão é: Sei diferenciar pericardite, miocardite e SCA. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="D">
-<p class="quiz-source">Checklist de revis&#227;o</p>
-<p><strong>12. No checklist de revis&#227;o de Cardiovascular Complementar, qual afirma&#231;&#227;o deve estar dominada antes de avan&#231;ar?</strong></p>
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>12. Antes da prova, este ponto precisa estar automático: Sei sinais clínicos/POCUS de tamponamento. Qual resposta traduz melhor essa prioridade?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-012" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-012" value="B"> B. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-012" value="C"> C. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-012" value="D"> D. Sei sinais cl&#237;nicos/POCUS de tamponamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-012" value="A"> A. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-012" value="B"> B. Começar nitroprussiato na dissecção antes de beta-bloquear frequência.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-012" value="C"> C. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-012" value="D"> D. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. Para revisão final, fixe especificamente: Sei sinais clínicos/POCUS de tamponamento.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: D.</strong> O ponto cobrado é: Sei sinais cl&#237;nicos/POCUS de tamponamento.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: D.</strong> O gatilho da questão é: Sei sinais clínicos/POCUS de tamponamento. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="A">
-<p class="quiz-source">Checklist de revis&#227;o</p>
-<p><strong>13. No checklist de revis&#227;o de Cardiovascular Complementar, qual afirma&#231;&#227;o deve estar dominada antes de avan&#231;ar?</strong></p>
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>13. Antes da prova, este ponto precisa estar automático: Sei metas iniciais da dissecção. Qual resposta traduz melhor essa prioridade?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-013" value="A"> A. Sei metas iniciais da dissec&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-013" value="B"> B. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-013" value="C"> C. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-013" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-013" value="A"> A. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. Para revisão final, fixe especificamente: Sei metas iniciais da dissecção.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-013" value="B"> B. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-013" value="C"> C. Dar alta para pericardite com troponina alta, síncope, derrame importante ou instabilidade.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-013" value="D"> D. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: A.</strong> O ponto cobrado é: Sei metas iniciais da dissec&#231;&#227;o.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: Sei metas iniciais da dissecção. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="B">
-<p class="quiz-source">Checklist de revis&#227;o</p>
-<p><strong>14. No checklist de revis&#227;o de Cardiovascular Complementar, qual afirma&#231;&#227;o deve estar dominada antes de avan&#231;ar?</strong></p>
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>14. Antes da prova, este ponto precisa estar automático: Sei quando pensar em AAA roto. Qual resposta traduz melhor essa prioridade?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t024-014" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-014" value="B"> B. Sei quando pensar em AAA roto.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-014" value="C"> C. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t024-014" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-014" value="A"> A. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-014" value="B"> B. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. Para revisão final, fixe especificamente: Sei quando pensar em AAA roto.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-014" value="C"> C. Ignorar sopro novo e choque após IAM, perdendo complicação mecânica.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-014" value="D"> D. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: B.</strong> O ponto cobrado é: Sei quando pensar em AAA roto.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: B.</strong> O gatilho da questão é: Sei quando pensar em AAA roto. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
-## Revisão Pós-Prova
 
-Use o placar automático no final do tema:
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>15. Antes da prova, este ponto precisa estar automático: Sei red flags de endocardite. Qual resposta traduz melhor essa prioridade?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t024-015" value="A"> A. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-015" value="B"> B. Começar nitroprussiato na dissecção antes de beta-bloquear frequência.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-015" value="C"> C. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. Para revisão final, fixe especificamente: Sei red flags de endocardite.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-015" value="D"> D. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> O gatilho da questão é: Sei red flags de endocardite. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
+</div>
+</div>
 
-- **>= 85%:** avançar para o próximo tema ou resolver bloco misto.
-- **70-84%:** reler as pegadinhas erradas e refazer apenas os erros no dia seguinte.
-- **< 70%:** voltar ao capítulo antes de seguir.
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>16. Antes da prova, este ponto precisa estar automático: Sei complicações mecânicas do IAM. Qual resposta traduz melhor essa prioridade?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t024-016" value="A"> A. Esperar tríade de Beck completa para suspeitar tamponamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-016" value="B"> B. Dar alta para pericardite com troponina alta, síncope, derrame importante ou instabilidade.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-016" value="C"> C. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-016" value="D"> D. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. Para revisão final, fixe especificamente: Sei complicações mecânicas do IAM.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> O gatilho da questão é: Sei complicações mecânicas do IAM. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
+</div>
+</div>
 
-Checklist rápido:
-
-- [ ] Identifiquei a prioridade prática do tema.
-- [ ] Não caí em conduta automática sem contexto.
-- [ ] Reconheci sinais de gravidade e contraindicações.
-- [ ] Sei explicar por que as alternativas erradas eram sedutoras.
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>17. Antes da prova, este ponto precisa estar automático: Sei TVP/TEP como causa obstrutiva. Qual resposta traduz melhor essa prioridade?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t024-017" value="A"> A. Separar SCA de diagnósticos cardiovasculares fatais, usar POCUS/eco quando ajuda e acionar cardio/cirurgia/vascular precocemente. Para revisão final, fixe especificamente: Sei TVP/TEP como causa obstrutiva.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-017" value="B"> B. Coletar exames indefinidamente e atrasar antibiótico em endocardite com sepse/choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-017" value="C"> C. Ignorar sopro novo e choque após IAM, perdendo complicação mecânica.</label>
+<label class="quiz-option"><input type="radio" name="q-t024-017" value="D"> D. Trombolisar/anticoagular dor torácica sem considerar dissecção quando há sinais compatíveis.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: Sei TVP/TEP como causa obstrutiva. Cardiovascular complementar derruba por simuladores de SCA e choque obstrutivo: dissecção, tamponamento, endocardite e complicações mecânicas. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
+</div>
+</div>

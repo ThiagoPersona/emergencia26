@@ -1,219 +1,268 @@
-# Prova: Psiquiatria, Agitação e Contenção
+# Prova: Psiquiatria, agitação e contenção
 
-Banco do tema 022, baseado no capítulo **Psiquiatria, Agitação e Contenção** e nas questões/estações relacionadas no resumo. Resolva como prova: escolha a melhor alternativa, depois clique em **Checar resposta**.
+Banco refinado do tema 022, baseado no capítulo **Psiquiatria, agitação e contenção**, nas questões/estações mapeadas, nas pegadinhas e no checklist de revisão. Resolva como prova: escolha a melhor alternativa e depois clique em **Checar resposta**.
 
-> Questões autorais e reescritas para estudo, sem cópia literal dos cadernos. Use como treino de raciocínio, revisão das pegadinhas e fixação do padrão da banca.
->
-> Este banco cobre todos os pontos mapeados em **Questões e estações relacionadas** do capítulo. Quando o capítulo traz apenas um bloco por ano, o card resume o padrão de cobrança daquele bloco.
+> Questões autorais e reescritas para estudo, sem cópia literal dos cadernos, livros ou slides. O foco é treinar decisão clínica, padrão da banca e armadilhas recorrentes.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
+
+## Questões e estações
+
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME22</p>
-<p><strong>1. No padr&#227;o cobrado em TEME22, qual &#233; a melhor resposta de prova para: tentativa de suic&#237;dio/trauma, agita&#231;&#227;o psicomotora, abstin&#234;ncia e investiga&#231;&#227;o cl&#237;nica em sintomas psiqui&#225;tricos.?</strong></p>
+<p><strong>1. Em uma questão/estação inspirada em TEME22, aparece este padrão: tentativa de suicídio/trauma, agitação psicomotora, abstinência e investigação clínica em sintomas psiquiátricos. Qual raciocínio é mais seguro para marcar a alternativa?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-001" value="A"> A. tentativa de suic&#237;dio/trauma, agita&#231;&#227;o psicomotora, abstin&#234;ncia e investiga&#231;&#227;o cl&#237;nica em sintomas psiqui&#225;tricos.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-001" value="B"> B. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-001" value="C"> C. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-001" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-001" value="A"> A. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. O achado-chave do enunciado é: tentativa de suicídio/trauma, agitação psicomotora, abstinência e investigação clínica em sintomas psiquiátricos.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-001" value="B"> B. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-001" value="C"> C. Atribuir agitação a psicose sem glicemia, hipóxia, trauma, intoxicação ou delirium.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-001" value="D"> D. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: A.</strong> O ponto cobrado é: tentativa de suic&#237;dio/trauma, agita&#231;&#227;o psicomotora, abstin&#234;ncia e investiga&#231;&#227;o cl&#237;nica em sintomas psiqui&#225;tricos.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: tentativa de suicídio/trauma, agitação psicomotora, abstinência e investigação clínica em sintomas psiquiátricos. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME24</p>
-<p><strong>2. No padr&#227;o cobrado em TEME24, qual &#233; a melhor resposta de prova para: agita&#231;&#227;o, conten&#231;&#227;o e delirium em casos cl&#237;nicos.?</strong></p>
+<p><strong>2. Em uma questão/estação inspirada em TEME24, aparece este padrão: agitação, contenção e delirium em casos clínicos. Qual raciocínio é mais seguro para marcar a alternativa?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-002" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-002" value="B"> B. agita&#231;&#227;o, conten&#231;&#227;o e delirium em casos cl&#237;nicos.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-002" value="C"> C. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-002" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-002" value="A"> A. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-002" value="B"> B. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. O achado-chave do enunciado é: agitação, contenção e delirium em casos clínicos.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-002" value="C"> C. Dar alta para ideação suicida recente sem estratificar risco e rede de segurança.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-002" value="D"> D. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: B.</strong> O ponto cobrado é: agita&#231;&#227;o, conten&#231;&#227;o e delirium em casos cl&#237;nicos.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: B.</strong> O gatilho da questão é: agitação, contenção e delirium em casos clínicos. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME25 Q86</p>
-<p><strong>3. No padr&#227;o cobrado em TEME25 Q86, qual &#233; a melhor resposta de prova para: BARS e conduta na agita&#231;&#227;o.?</strong></p>
+<p><strong>3. Em uma questão/estação inspirada em TEME25 Q86, aparece este padrão: BARS e conduta na agitação. Qual raciocínio é mais seguro para marcar a alternativa?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-003" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-003" value="B"> B. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-003" value="C"> C. BARS e conduta na agita&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-003" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-003" value="A"> A. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-003" value="B"> B. Aplicar medicação IM e deixar sem reavaliação de via aérea, sedação e sinais vitais.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-003" value="C"> C. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. O achado-chave do enunciado é: BARS e conduta na agitação.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-003" value="D"> D. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: C.</strong> O ponto cobrado é: BARS e conduta na agita&#231;&#227;o.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: C.</strong> O gatilho da questão é: BARS e conduta na agitação. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME25 Q88</p>
-<p><strong>4. No padr&#227;o cobrado em TEME25 Q88, qual &#233; a melhor resposta de prova para: tentativa de suic&#237;dio com tentativas pr&#233;vias e baixo suporte = alto risco, sem alta simples.?</strong></p>
+<p><strong>4. Em uma questão/estação inspirada em TEME25 Q88, aparece este padrão: tentativa de suicídio com tentativas prévias e baixo suporte = alto risco, sem alta simples. Qual raciocínio é mais seguro para marcar a alternativa?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-004" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-004" value="B"> B. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-004" value="C"> C. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-004" value="D"> D. tentativa de suic&#237;dio com tentativas pr&#233;vias e baixo suporte = alto risco, sem alta simples.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-004" value="A"> A. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-004" value="B"> B. Atribuir agitação a psicose sem glicemia, hipóxia, trauma, intoxicação ou delirium.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-004" value="C"> C. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-004" value="D"> D. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. O achado-chave do enunciado é: tentativa de suicídio com tentativas prévias e baixo suporte = alto risco, sem alta simples.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: D.</strong> O ponto cobrado é: tentativa de suic&#237;dio com tentativas pr&#233;vias e baixo suporte = alto risco, sem alta simples.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: D.</strong> O gatilho da questão é: tentativa de suicídio com tentativas prévias e baixo suporte = alto risco, sem alta simples. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
+## Pegadinhas TEME
+
 <div class="quiz-card" data-answer="A">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>5. Qual alternativa evita a pegadinha: Primeiro epis&#243;dio psiqui&#225;trico n&#227;o precisa exame cl&#237;nico: falso.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>5. A banca tenta derrubar com a seguinte ideia: Primeiro episódio psiquiátrico não precisa exame clínico: falso. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-005" value="A"> A. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-005" value="B"> B. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-005" value="C"> C. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-005" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-005" value="A"> A. Não comprar a frase-armadilha; responder pelo princípio: Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-005" value="B"> B. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-005" value="C"> C. Dar alta para ideação suicida recente sem estratificar risco e rede de segurança.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-005" value="D"> D. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: A.</strong> O ponto cobrado é: Primeiro epis&#243;dio psiqui&#225;trico n&#227;o precisa exame cl&#237;nico: falso.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: Primeiro episódio psiquiátrico não precisa exame clínico: falso. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="B">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>6. Qual alternativa evita a pegadinha: Idoso agitado &#233; psiqui&#225;trico at&#233; prova em contr&#225;rio: falso; delirium &#233; comum.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>6. A banca tenta derrubar com a seguinte ideia: Idoso agitado é psiquiátrico até prova em contrário: falso; delirium é comum. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-006" value="A"> A. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-006" value="B"> B. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-006" value="C"> C. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-006" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-006" value="A"> A. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-006" value="B"> B. Não comprar a frase-armadilha; responder pelo princípio: Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-006" value="C"> C. Aplicar medicação IM e deixar sem reavaliação de via aérea, sedação e sinais vitais.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-006" value="D"> D. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: B.</strong> O ponto cobrado é: Idoso agitado &#233; psiqui&#225;trico at&#233; prova em contr&#225;rio: falso; delirium &#233; comum.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: B.</strong> O gatilho da questão é: Idoso agitado é psiquiátrico até prova em contrário: falso; delirium é comum. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="C">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>7. Qual alternativa evita a pegadinha: BARS 6 = conten&#231;&#227;o obrigat&#243;ria: falso; avalie risco e possibilidade de desescalada/medica&#231;&#227;o.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>7. A banca tenta derrubar com a seguinte ideia: BARS 6 = contenção obrigatória: falso; avalie risco e possibilidade de desescalada/medicação. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-007" value="A"> A. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-007" value="B"> B. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-007" value="C"> C. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-007" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-007" value="A"> A. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-007" value="B"> B. Atribuir agitação a psicose sem glicemia, hipóxia, trauma, intoxicação ou delirium.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-007" value="C"> C. Não comprar a frase-armadilha; responder pelo princípio: Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-007" value="D"> D. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: C.</strong> O ponto cobrado é: BARS 6 = conten&#231;&#227;o obrigat&#243;ria: falso; avalie risco e possibilidade de desescalada/medica&#231;&#227;o.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: C.</strong> O gatilho da questão é: BARS 6 = contenção obrigatória: falso; avalie risco e possibilidade de desescalada/medicação. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="D">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>8. Qual alternativa evita a pegadinha: Benzodiazep&#237;nico serve para toda agita&#231;&#227;o: falso; pode piorar delirium/respira&#231;&#227;o, mas &#233; bom em abstin&#234;ncia/estimulante.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>8. A banca tenta derrubar com a seguinte ideia: Benzodiazepínico serve para toda agitação: falso; pode piorar delirium/respiração, mas é bom em abstinência/estimulante. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-008" value="A"> A. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-008" value="B"> B. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-008" value="C"> C. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-008" value="D"> D. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-008" value="A"> A. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-008" value="B"> B. Dar alta para ideação suicida recente sem estratificar risco e rede de segurança.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-008" value="C"> C. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-008" value="D"> D. Não comprar a frase-armadilha; responder pelo princípio: Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: D.</strong> O ponto cobrado é: Benzodiazep&#237;nico serve para toda agita&#231;&#227;o: falso; pode piorar delirium/respira&#231;&#227;o, mas &#233; bom em abstin&#234;ncia/estimulante.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: D.</strong> O gatilho da questão é: Benzodiazepínico serve para toda agitação: falso; pode piorar delirium/respiração, mas é bom em abstinência/estimulante. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="A">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>9. Qual alternativa evita a pegadinha: Paciente suicida calmo e arrependido pode ir embora: falso se alto risco longitudinal.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>9. A banca tenta derrubar com a seguinte ideia: Paciente suicida calmo e arrependido pode ir embora: falso se alto risco longitudinal. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-009" value="A"> A. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-009" value="B"> B. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-009" value="C"> C. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-009" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-009" value="A"> A. Não comprar a frase-armadilha; responder pelo princípio: Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-009" value="B"> B. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-009" value="C"> C. Aplicar medicação IM e deixar sem reavaliação de via aérea, sedação e sinais vitais.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-009" value="D"> D. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: A.</strong> O ponto cobrado é: Paciente suicida calmo e arrependido pode ir embora: falso se alto risco longitudinal.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: Paciente suicida calmo e arrependido pode ir embora: falso se alto risco longitudinal. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="B">
-<p class="quiz-source">Pegadinha TEME</p>
-<p><strong>10. Qual alternativa evita a pegadinha: Conten&#231;&#227;o &#233; castigo: falso; &#233; medida tempor&#225;ria de seguran&#231;a com monitoriza&#231;&#227;o e retirada precoce.?</strong></p>
+<p class="quiz-source">Pegadinhas TEME</p>
+<p><strong>10. A banca tenta derrubar com a seguinte ideia: Contenção é castigo: falso; é medida temporária de segurança com monitorização e retirada precoce. Qual alternativa evita a armadilha?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-010" value="A"> A. Transformar a exce&#231;&#227;o descrita em regra para todos os pacientes.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-010" value="B"> B. Reconhecer que isso &#233; armadilha de prova e escolher a conduta guiada por gravidade, fisiologia e reavalia&#231;&#227;o.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-010" value="C"> C. Repetir a conduta citada no enunciado mesmo quando ela &#233; a armadilha.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-010" value="D"> D. Usar o dado isolado para tranquilizar o caso e deixar de reavaliar risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-010" value="A"> A. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-010" value="B"> B. Não comprar a frase-armadilha; responder pelo princípio: Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-010" value="C"> C. Atribuir agitação a psicose sem glicemia, hipóxia, trauma, intoxicação ou delirium.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-010" value="D"> D. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: B.</strong> O ponto cobrado é: Conten&#231;&#227;o &#233; castigo: falso; &#233; medida tempor&#225;ria de seguran&#231;a com monitoriza&#231;&#227;o e retirada precoce.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: B.</strong> O gatilho da questão é: Contenção é castigo: falso; é medida temporária de segurança com monitorização e retirada precoce. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
+## Checklist de revisão
+
 <div class="quiz-card" data-answer="C">
-<p class="quiz-source">Checklist de revis&#227;o</p>
-<p><strong>11. No checklist de revis&#227;o de Psiquiatria, Agita&#231;&#227;o e Conten&#231;&#227;o, qual afirma&#231;&#227;o deve estar dominada antes de avan&#231;ar?</strong></p>
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>11. Antes da prova, este ponto precisa estar automático: Sei abordar segurança no primeiro minuto. Qual resposta traduz melhor essa prioridade?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-011" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-011" value="B"> B. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-011" value="C"> C. Sei abordar seguran&#231;a no primeiro minuto.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-011" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-011" value="A"> A. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-011" value="B"> B. Dar alta para ideação suicida recente sem estratificar risco e rede de segurança.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-011" value="C"> C. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. Para revisão final, fixe especificamente: Sei abordar segurança no primeiro minuto.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-011" value="D"> D. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: C.</strong> O ponto cobrado é: Sei abordar seguran&#231;a no primeiro minuto.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: C.</strong> O gatilho da questão é: Sei abordar segurança no primeiro minuto. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="D">
-<p class="quiz-source">Checklist de revis&#227;o</p>
-<p><strong>12. No checklist de revis&#227;o de Psiquiatria, Agita&#231;&#227;o e Conten&#231;&#227;o, qual afirma&#231;&#227;o deve estar dominada antes de avan&#231;ar?</strong></p>
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>12. Antes da prova, este ponto precisa estar automático: Sei red flags de causa clínica. Qual resposta traduz melhor essa prioridade?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-012" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-012" value="B"> B. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-012" value="C"> C. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-012" value="D"> D. Sei red flags de causa cl&#237;nica.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-012" value="A"> A. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-012" value="B"> B. Aplicar medicação IM e deixar sem reavaliação de via aérea, sedação e sinais vitais.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-012" value="C"> C. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-012" value="D"> D. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. Para revisão final, fixe especificamente: Sei red flags de causa clínica.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: D.</strong> O ponto cobrado é: Sei red flags de causa cl&#237;nica.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: D.</strong> O gatilho da questão é: Sei red flags de causa clínica. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="A">
-<p class="quiz-source">Checklist de revis&#227;o</p>
-<p><strong>13. No checklist de revis&#227;o de Psiquiatria, Agita&#231;&#227;o e Conten&#231;&#227;o, qual afirma&#231;&#227;o deve estar dominada antes de avan&#231;ar?</strong></p>
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>13. Antes da prova, este ponto precisa estar automático: Sei diferenciar delirium, psicose, estimulante e abstinência. Qual resposta traduz melhor essa prioridade?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-013" value="A"> A. Sei diferenciar delirium, psicose, estimulante e abstin&#234;ncia.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-013" value="B"> B. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-013" value="C"> C. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-013" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-013" value="A"> A. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. Para revisão final, fixe especificamente: Sei diferenciar delirium, psicose, estimulante e abstinência.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-013" value="B"> B. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-013" value="C"> C. Atribuir agitação a psicose sem glicemia, hipóxia, trauma, intoxicação ou delirium.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-013" value="D"> D. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: A.</strong> O ponto cobrado é: Sei diferenciar delirium, psicose, estimulante e abstin&#234;ncia.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: Sei diferenciar delirium, psicose, estimulante e abstinência. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
+
 <div class="quiz-card" data-answer="B">
-<p class="quiz-source">Checklist de revis&#227;o</p>
-<p><strong>14. No checklist de revis&#227;o de Psiquiatria, Agita&#231;&#227;o e Conten&#231;&#227;o, qual afirma&#231;&#227;o deve estar dominada antes de avan&#231;ar?</strong></p>
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>14. Antes da prova, este ponto precisa estar automático: Sei BARS 6 vs 7. Qual resposta traduz melhor essa prioridade?</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t022-014" value="A"> A. Postergar a estabiliza&#231;&#227;o inicial para confirmar todos os exames antes de agir.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-014" value="B"> B. Sei regras de conten&#231;&#227;o segura.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-014" value="C"> C. Escolher uma conduta autom&#225;tica, sem considerar gravidade, contraindica&#231;&#245;es e resposta cl&#237;nica.</label>
-<label class="quiz-option"><input type="radio" name="q-t022-014" value="D"> D. Tratar um achado isolado como diagn&#243;stico final e ignorar reavalia&#231;&#227;o seriada.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-014" value="A"> A. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-014" value="B"> B. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. Para revisão final, fixe especificamente: Sei BARS 6 vs 7.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-014" value="C"> C. Dar alta para ideação suicida recente sem estratificar risco e rede de segurança.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-014" value="D"> D. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
-<p><strong>Resposta: B.</strong> O ponto cobrado é: Sei regras de conten&#231;&#227;o segura.. A lógica TEME favorece prioridade prática, reconhecimento de gravidade e reavaliação; as demais alternativas trocam isso por automatismo, atraso ou dado isolado.</p>
+<p><strong>Resposta: B.</strong> O gatilho da questão é: Sei BARS 6 vs 7. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
 </div>
 </div>
-## Revisão Pós-Prova
 
-Use o placar automático no final do tema:
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>15. Antes da prova, este ponto precisa estar automático: Sei regras de contenção segura. Qual resposta traduz melhor essa prioridade?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t022-015" value="A"> A. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-015" value="B"> B. Aplicar medicação IM e deixar sem reavaliação de via aérea, sedação e sinais vitais.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-015" value="C"> C. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. Para revisão final, fixe especificamente: Sei regras de contenção segura.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-015" value="D"> D. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> O gatilho da questão é: Sei regras de contenção segura. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
+</div>
+</div>
 
-- **>= 85%:** avançar para o próximo tema ou resolver bloco misto.
-- **70-84%:** reler as pegadinhas erradas e refazer apenas os erros no dia seguinte.
-- **< 70%:** voltar ao capítulo antes de seguir.
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>16. Antes da prova, este ponto precisa estar automático: Sei alto risco suicida. Qual resposta traduz melhor essa prioridade?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t022-016" value="A"> A. Conter fisicamente sem indicação, equipe treinada, monitorização e prescrição.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-016" value="B"> B. Atribuir agitação a psicose sem glicemia, hipóxia, trauma, intoxicação ou delirium.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-016" value="C"> C. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-016" value="D"> D. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. Para revisão final, fixe especificamente: Sei alto risco suicida.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> O gatilho da questão é: Sei alto risco suicida. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
+</div>
+</div>
 
-Checklist rápido:
-
-- [ ] Identifiquei a prioridade prática do tema.
-- [ ] Não caí em conduta automática sem contexto.
-- [ ] Reconheci sinais de gravidade e contraindicações.
-- [ ] Sei explicar por que as alternativas erradas eram sedutoras.
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">Checklist de revisão</p>
+<p><strong>17. Antes da prova, este ponto precisa estar automático: Sei doses básicas e riscos respiratórios/QT. Qual resposta traduz melhor essa prioridade?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t022-017" value="A"> A. Proteger equipe e paciente, procurar causa orgânica, desescalar quando possível e usar contenção/sedação com monitorização e registro. Para revisão final, fixe especificamente: Sei doses básicas e riscos respiratórios/QT.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-017" value="B"> B. Usar benzodiazepínico em todo paciente agitado sem considerar álcool, delirium ou depressão respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-017" value="C"> C. Dar alta para ideação suicida recente sem estratificar risco e rede de segurança.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-017" value="D"> D. Discutir longamente com paciente violento antes de garantir segurança da cena.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> O gatilho da questão é: Sei doses básicas e riscos respiratórios/QT. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
+</div>
+</div>

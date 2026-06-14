@@ -237,7 +237,7 @@ flowchart TD
 
 ## Pegadinhas TEME
 
-- **Eclampsia = diazepam/fenitoína primeiro:** errado. E MgSO4.
+- **Eclampsia = diazepam/fenitoína primeiro:** errado. É MgSO4.
 - **pré-eclampsia precisa sempre de proteinúria:** errado. Lesão de órgão-alvo basta.
 - **PA 140/90 = cesárea imediata:** errado. Urgência e PA grave/LOA; parto depende de contexto.
 - **Nitroprussiato e droga de escolha na pré-eclampsia grave:** errado. Use nifedipina, hidralazina ou labetalol.
