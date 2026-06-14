@@ -139,7 +139,7 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 12 - Convulsões e infecções do SNC; Aula 21 - HIV e tuberculose; Aula 22 - Sepse; Aula 63 - Emergências infecciosas.
+- Aulas de cursinho: Aula 12 - Convulsões e infecções do SNC; Aula 21 - HIV e tuberculose; Aula 22 - Sepse; Aula 63 - Emergências infecciosas.
 
 **Atualização clínica**
 

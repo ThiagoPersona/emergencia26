@@ -142,7 +142,7 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 41 - Emergências otorrino e odonto; Aula 64 - Emergências oftalmológicas; Aula 18 - POCUS trauma/vascular/neuro.
+- Aulas de cursinho: Aula 41 - Emergências otorrino e odonto; Aula 64 - Emergências oftalmológicas; Aula 18 - POCUS trauma/vascular/neuro.
 
 **Atualização clínica**
 

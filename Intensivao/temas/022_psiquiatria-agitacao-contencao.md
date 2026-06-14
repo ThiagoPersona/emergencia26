@@ -143,7 +143,7 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 23 - Emergências psiquiátricas; Aula 53-55 - Toxicologia; Aula 17 - Paliativos/vulnerabilidades no material local.
+- Aulas de cursinho: Aula 23 - Emergências psiquiátricas; Aula 53-55 - Toxicologia; Aula 17 - Paliativos/vulnerabilidades no material local.
 
 **Atualização clínica**
 

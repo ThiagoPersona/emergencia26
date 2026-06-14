@@ -115,7 +115,7 @@ Sequência:
 3. Se crônica/desconhecida, reduzir em geral até 10-12 mEq/L/dia.
 4. Se aguda por carea de sódio, pode corrigir mais rápido com monitorização.
 
-> **Resposta de prova/local:** aula Emergency Talks usa salina 3% 100 mL em 10 min na hiponatremia com convulsão refratária.
+> **Resposta de prova/local:** aula de cursinho usa salina 3% 100 mL em 10 min na hiponatremia com convulsão refratária.
 >
 > **Atualização clínica:** diretrizes europeias usam bolus de 150 mL de NaCl 3% em 20 min para sintomas graves. O conceito comum e igual: bolus pequeno, reavaliar e não normalizar rápido.
 
@@ -302,7 +302,7 @@ flowchart TD
 | Osmolar gap | Osm medida - osm calculada | Alto sugere álcool tóxico, entre outros |
 | CAD prova | Glicose >250 + pH <7,3 + cetonemia | TEME22/23 |
 | EHH prova | Glicose >600 + osm >320 + pouca/sem cetose | Desidratação e SNC |
-| Queda glicêmica alvo CAD | 50-70 mg/dL/h | Aula Emergency Talks |
+| Queda glicêmica alvo CAD | 50-70 mg/dL/h | Aula de cursinho |
 | Insulina regular CAD adulto | 0,1 U/kg/h EV | Iniciar após volume e K adequado; muitos protocolos não usam bolus |
 | Segurar insulina | K <3,3-3,5 mEq/L | Repor K primeiro |
 | Bicarbonato na DKA | pH <6,9-7,0 | Não é rotina |
@@ -392,10 +392,10 @@ flowchart TD
 - **TEME24 Q79:** múltiplas picadas de abelha podem causar síndrome de envenenamento com IRA e necessidade de hemodialise.
 - **TEME25 Q83:** pós-RCE pediátrico: não usar bicarbonato de sódio rotineiramente para acidose metabólica.
 - **TEME25 Q97:** crise tireotóxica: antitireoidiano + beta-bloqueio + corticoide, iodeto após antitireoidiano.
-- **Emergency Talks Aula 16:** IRA, DRC, indicações de diálise e rabdomiólise.
-- **Emergency Talks Aula 33:** gasometria, compensações, AG, delta e osmolar gap.
-- **Emergency Talks Aula 42:** K, Na, Ca, Mg é tratamento emergente.
-- **Emergency Talks Aula 59:** hipoglicemia, CAD/EHH, mixedema, tireotoxicose e adrenal.
+- **Aulas de cursinho - Aula 16:** IRA, DRC, indicações de diálise e rabdomiólise.
+- **Aulas de cursinho - Aula 33:** gasometria, compensações, AG, delta e osmolar gap.
+- **Aulas de cursinho - Aula 42:** K, Na, Ca, Mg é tratamento emergente.
+- **Aulas de cursinho - Aula 59:** hipoglicemia, CAD/EHH, mixedema, tireotoxicose e adrenal.
 
 ## Referências
 
@@ -407,11 +407,11 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 16 - Insuficiência renal e rabdomiólise.
-- Emergency Talks: Aula 33 - Gasometria.
-- Emergency Talks: Aula 42 - Distúrbios hidroeletrolíticos e ácido-básicos.
-- Emergency Talks: Aula 59 - Emergências endocrinológicas.
-- Resumo do Emergency.docx.
+- Aulas de cursinho: Aula 16 - Insuficiência renal e rabdomiólise.
+- Aulas de cursinho: Aula 33 - Gasometria.
+- Aulas de cursinho: Aula 42 - Distúrbios hidroeletrolíticos e ácido-básicos.
+- Aulas de cursinho: Aula 59 - Emergências endocrinológicas.
+- Resumo do cursinho.docx.
 - Adendos para complementar.docx.
 
 **Atualização clínica**

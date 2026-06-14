@@ -138,7 +138,7 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 37 - Trauma ambiental I; Aula 39 - Trauma de extremidades; Aula 44 - Trauma de partes moles; Aula 56 - Trauma ambiental II e áreas remotas.
+- Aulas de cursinho: Aula 37 - Trauma ambiental I; Aula 39 - Trauma de extremidades; Aula 44 - Trauma de partes moles; Aula 56 - Trauma ambiental II e áreas remotas.
 
 **Atualização clínica**
 

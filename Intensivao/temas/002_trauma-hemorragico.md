@@ -342,15 +342,15 @@ Pulso ausente, palidez e paralisia são tardios. Conduta: retirar constrições 
 
 **Material local**
 
-- Emergency Talks: Aula 04 - Avaliação inicial do politraumatizado.
-- Emergency Talks: Aula 10 - Trauma torácico.
-- Emergency Talks: Aula 13 - Choque.
-- Emergency Talks: Aula 17 - Trauma abdominopelvico.
-- Emergency Talks: Aula 18 - POCUS no trauma, vascular e neuro.
-- Emergency Talks: Aula 39 - Trauma de extremidades.
-- Emergency Talks: Aula 45 - Trauma cranioencefálico.
-- Emergency Talks: Aula 46 - Trauma em populações especiais I.
-- Emergency Talks: Aula 49 - Trauma em populações especiais II.
+- Aulas de cursinho: Aula 04 - Avaliação inicial do politraumatizado.
+- Aulas de cursinho: Aula 10 - Trauma torácico.
+- Aulas de cursinho: Aula 13 - Choque.
+- Aulas de cursinho: Aula 17 - Trauma abdominopelvico.
+- Aulas de cursinho: Aula 18 - POCUS no trauma, vascular e neuro.
+- Aulas de cursinho: Aula 39 - Trauma de extremidades.
+- Aulas de cursinho: Aula 45 - Trauma cranioencefálico.
+- Aulas de cursinho: Aula 46 - Trauma em populações especiais I.
+- Aulas de cursinho: Aula 49 - Trauma em populações especiais II.
 
 **Atualização clínica**
 

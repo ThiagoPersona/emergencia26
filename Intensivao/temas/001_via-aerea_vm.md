@@ -387,10 +387,10 @@ Conduta: chamar ajuda cedo, preparar via aérea difícil e crico. Acordado pode 
 
 **Material local**
 
-- Emergency Talks: Aula 05 - Via aérea I.
-- Emergency Talks: Aula 50 - Via aérea II.
-- Emergency Talks: Aula 25 e 26 - Ventilação Mecânica I e II.
-- `Emergency Talks/Resumo do Emergency.docx`.
+- Aulas de cursinho: Aula 05 - Via aérea I.
+- Aulas de cursinho: Aula 50 - Via aérea II.
+- Aulas de cursinho: Aula 25 e 26 - Ventilação Mecânica I e II.
+- `Aulas de cursinho/Resumo do cursinho.docx`.
 
 **Atualização clínica**
 

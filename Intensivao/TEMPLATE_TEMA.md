@@ -1,4 +1,4 @@
-﻿# NN - Nome Do Tema
+# NN - Nome Do Tema
 
 ## Leitura de 30 segundos
 
@@ -77,7 +77,7 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks:
+- Aulas de cursinho:
 
 **Atualização clínica**
 

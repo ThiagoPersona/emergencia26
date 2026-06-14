@@ -145,7 +145,7 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 34 - Síncope e arritmias; Aula 36 - SCA; Aula 38 - Emergências vasculares; Aula 48 - Pericardite, miocardite e endocardite; Aula 29 - POCUS cardíaco.
+- Aulas de cursinho: Aula 34 - Síncope e arritmias; Aula 36 - SCA; Aula 38 - Emergências vasculares; Aula 48 - Pericardite, miocardite e endocardite; Aula 29 - POCUS cardíaco.
 
 **Atualização clínica**
 

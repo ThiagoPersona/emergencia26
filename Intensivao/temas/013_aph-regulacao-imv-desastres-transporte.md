@@ -438,7 +438,7 @@ flowchart TD
 - **TEME25 Q70:** contexto rural/remoto: POCUS pode antecipar decisão, regulação e logística.
 - **TEME25 Q75:** via aérea em cena/extricacao: considerar acesso limitado, segurança e manobras simples enquanto se organiza resgate.
 - **TEME25 Q79:** médico regulador e atribuições/experiência na Central de Regulação das Urgências.
-- **Emergency Talks Aula 11:** SCI, START, ACV, IMV e "não transferir o caos".
+- **Aulas de cursinho - Aula 11:** SCI, START, ACV, IMV e "não transferir o caos".
 
 ## Referências
 
@@ -450,12 +450,12 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 07 - Princípios do APH.
-- Emergency Talks: Aula 11 - Incidentes com múltiplas vítimas.
-- Emergency Talks: Aula 37 - Trauma ambiental I.
-- Emergency Talks: Aula 56 - Trauma ambiental II e áreas remotas.
-- Emergency Talks: Aula 04 - Avaliação inicial do politraumatizado.
-- Resumo do Emergency.docx.
+- Aulas de cursinho: Aula 07 - Princípios do APH.
+- Aulas de cursinho: Aula 11 - Incidentes com múltiplas vítimas.
+- Aulas de cursinho: Aula 37 - Trauma ambiental I.
+- Aulas de cursinho: Aula 56 - Trauma ambiental II e áreas remotas.
+- Aulas de cursinho: Aula 04 - Avaliação inicial do politraumatizado.
+- Resumo do cursinho.docx.
 - Adendos para complementar.docx.
 
 **Atualização clínica e normativa**

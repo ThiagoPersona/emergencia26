@@ -342,7 +342,7 @@ flowchart TD
 - **TEME23:** US beira-leito em choque/TEP, fisica do ultrassom, VCI em choque, trauma e eFAST.
 - **TEME24:** estação prática de POCUS com probe setorial, janela cardíaca, pulmão com linhas A/B, lung sliding, função de VE é diagnóstico de SCAPE/EAP hipertensivo.
 - **TEME25:** estação prática de POCUS com aorta aneurismática/trombo mural, choque hipovolêmico/hemorrágico, PLAX, subxifoide, Morison, VCI colabando e punção guiada por US; prova com acesso guiado, POCUS pulmonar, derrame, apendicite, ONSD e ocular.
-- **Emergency Talks:** Aula 09 POCUS pulmonar; Aula 13 Choque; Aula 18 POCUS trauma/vascular/neuro; Aula 29 POCUS cardíaco; Aula 35 POCUS procedimentos.
+- **Aulas de cursinho:** Aula 09 POCUS pulmonar; Aula 13 Choque; Aula 18 POCUS trauma/vascular/neuro; Aula 29 POCUS cardíaco; Aula 35 POCUS procedimentos.
 
 ## Referências
 
@@ -350,8 +350,8 @@ flowchart TD
 - Livro POCUS ABRAMEDE disponível no projeto.
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25 disponíveis no projeto.
 - Estações práticas TEME24 e TEME25 disponíveis no projeto.
-- Emergency Talks: Aula 09 - POCUS Pulmonar; Aula 13 - Choque; Aula 18 - POCUS Trauma, Vascular e Neuro; Aula 29 - POCUS Cardiaco; Aula 35 - POCUS Procedimentos.
-- Resumo do Emergency.docx, arquivo do usuário.
+- Aulas de cursinho: Aula 09 - POCUS Pulmonar; Aula 13 - Choque; Aula 18 - POCUS Trauma, Vascular e Neuro; Aula 29 - POCUS Cardiaco; Aula 35 - POCUS Procedimentos.
+- Resumo do cursinho.docx, arquivo do usuário.
 - American College of Emergency Physicians. 2023: [Ultrasound Guidelines: Emergency, Point-of-care, and Clinical Ultrasound Guidelines in Medicine](0).
 - EFSUMB. 2022/2023: [Clinical Practice Guidelines for Point-of-Care Ultrasound: common heart and pulmonary applications](1).
 - Society of Critical Care Medicine/ESICM. 2026: [Surviving Sepsis Campaign Guidelines](2).

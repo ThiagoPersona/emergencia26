@@ -133,7 +133,7 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 24 - Emergências Urológicas; Aula 14/15 - Abdome agudo; Aula 35 - POCUS procedimentos.
+- Aulas de cursinho: Aula 24 - Emergências Urológicas; Aula 14/15 - Abdome agudo; Aula 35 - POCUS procedimentos.
 
 **Atualização clínica**
 

@@ -426,12 +426,12 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 09 - POCUS pulmonar.
-- Emergency Talks: Aula 20 - Pneumonia e doença pleural.
-- Emergency Talks: Aula 28 - Insuficiência respiratória aguda.
-- Emergency Talks: Aula 31 - Obstrução das vias aéreas inferiores.
-- Emergency Talks: Aulas 25 e 26 - Ventilação Mecânica I e II.
-- Resumo do Emergency.docx.
+- Aulas de cursinho: Aula 09 - POCUS pulmonar.
+- Aulas de cursinho: Aula 20 - Pneumonia e doença pleural.
+- Aulas de cursinho: Aula 28 - Insuficiência respiratória aguda.
+- Aulas de cursinho: Aula 31 - Obstrução das vias aéreas inferiores.
+- Aulas de cursinho: Aulas 25 e 26 - Ventilação Mecânica I e II.
+- Resumo do cursinho.docx.
 - Adendos para complementar.docx.
 
 **Atualização clínica**

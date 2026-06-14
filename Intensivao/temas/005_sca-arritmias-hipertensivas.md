@@ -341,15 +341,15 @@ flowchart TD
 - **TEME23:** SCA, choque, síncope, arritmias, PA em AVC e emergências obstétricas.
 - **TEME24:** estação prática com BAVT instável, IAMCST, marca-passo e FV; prova com tamponamento/choque, pós-RCE e arritmias.
 - **TEME25:** TV/taquicardia instável, atendimento APH do IAMCST, eclampsia pós-parto, choque cardiogênico SCAI, FV refratária, marca-passo transvenoso, intoxicações com bradicardia e IC terminal/paliativos.
-- **Emergency Talks:** Aula 34 - Síncope e Arritmias; Aula 36 - Síndrome Coronariana Aguda; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 48 - Pericardite, Miocardite e Endocardite.
+- **Aulas de cursinho:** Aula 34 - Síncope e Arritmias; Aula 36 - Síndrome Coronariana Aguda; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 48 - Pericardite, Miocardite e Endocardite.
 
 ## Referências
 
 - Conteúdo programático TEME26 e referências oficiais do edital.
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25 disponíveis no projeto.
 - Estações práticas TEME22-25 disponíveis no projeto.
-- Emergency Talks: Aula 34 - Síncope e Arritmias; Aula 36 - Síndrome Coronariana Aguda; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 48 - Pericardite, Miocardite e Endocardite.
-- Resumo do Emergency.docx, arquivo do usuário.
+- Aulas de cursinho: Aula 34 - Síncope e Arritmias; Aula 36 - Síndrome Coronariana Aguda; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 48 - Pericardite, Miocardite e Endocardite.
+- Resumo do cursinho.docx, arquivo do usuário.
 - ACC/AHA/ACEP/NAEMSP/SCAI. 2025: [Guideline for the Management of Patients With Acute Coronary Syndromes](0).
 - European Society of Cardiology. 2023: [Guidelines for the management of acute coronary syndromes](1).
 - American Heart Association. 2025: [Adult Advanced Life Support](2).

@@ -147,7 +147,7 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 35 - POCUS procedimentos; Aula 29 - POCUS cardíaco; Aula 39 - Trauma de extremidades; Aula 32 - HDA/hepatopatia.
+- Aulas de cursinho: Aula 35 - POCUS procedimentos; Aula 29 - POCUS cardíaco; Aula 39 - Trauma de extremidades; Aula 32 - HDA/hepatopatia.
 
 **Atualização clínica**
 

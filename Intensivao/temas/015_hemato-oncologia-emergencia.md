@@ -390,12 +390,12 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 60 e 61 - Emergências onco-hematológicas.
-- Emergency Talks: Aula 22 - Sepse.
-- Emergency Talks: Aula 20 - Pneumonia e doença pleural.
-- Emergency Talks: Aula 33 - Gasometria.
-- Emergency Talks: Aula 42 - Distúrbios hidroeletrolíticos e ácido-básicos.
-- Resumo do Emergency.docx.
+- Aulas de cursinho: Aula 60 e 61 - Emergências onco-hematológicas.
+- Aulas de cursinho: Aula 22 - Sepse.
+- Aulas de cursinho: Aula 20 - Pneumonia e doença pleural.
+- Aulas de cursinho: Aula 33 - Gasometria.
+- Aulas de cursinho: Aula 42 - Distúrbios hidroeletrolíticos e ácido-básicos.
+- Resumo do cursinho.docx.
 - Adendos para complementar.docx.
 
 **Atualização clínica**

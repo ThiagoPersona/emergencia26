@@ -342,12 +342,12 @@ FA = frascos-ampolas. A dose e definida por gravidade, não por peso.
 
 **Material local**
 
-- Emergency Talks: Aula 53 - Abordagem geral do paciente intoxicado.
-- Emergency Talks: Aula 54 - Manejo específico das intoxicações I.
-- Emergency Talks: Aula 55 - Manejo específico das intoxicações II.
-- Emergency Talks: Aula 62 - Animais peçonhentos.
-- Emergency Talks: Resumo do Emergency.docx.
-- Emergency Talks: Adendos para complementar.docx.
+- Aulas de cursinho: Aula 53 - Abordagem geral do paciente intoxicado.
+- Aulas de cursinho: Aula 54 - Manejo específico das intoxicações I.
+- Aulas de cursinho: Aula 55 - Manejo específico das intoxicações II.
+- Aulas de cursinho: Aula 62 - Animais peçonhentos.
+- Aulas de cursinho: Resumo do cursinho.docx.
+- Aulas de cursinho: Adendos para complementar.docx.
 
 **Atualização clínica**
 

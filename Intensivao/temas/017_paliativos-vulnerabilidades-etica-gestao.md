@@ -337,11 +337,11 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 23 - Emergências psiquiátricas.
-- Emergency Talks: Aula 07 - Princípios do APH.
-- Emergency Talks: Aula 11 - Incidentes com múltiplas vítimas.
-- Emergency Talks: Aulas obstétricas/ginecológicas e infectológicas relacionadas a vulnerabilidades.
-- Resumo do Emergency.docx.
+- Aulas de cursinho: Aula 23 - Emergências psiquiátricas.
+- Aulas de cursinho: Aula 07 - Princípios do APH.
+- Aulas de cursinho: Aula 11 - Incidentes com múltiplas vítimas.
+- Aulas de cursinho: Aulas obstétricas/ginecológicas e infectológicas relacionadas a vulnerabilidades.
+- Resumo do cursinho.docx.
 - Adendos para complementar.docx.
 
 **Atualização clínica, normativa e legal**

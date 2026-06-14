@@ -379,10 +379,10 @@ Sinais vitais aproximados para não cair em "normal para idade":
 
 **Material local**
 
-- Emergency Talks: Aula 30 - Emergências pediátricas I.
-- Emergency Talks: Aula 43 - Emergências pediátricas II - respiratórias.
-- Emergency Talks: Aula 49 - Trauma em populações especiais II - Pediátrico.
-- Resumo do Emergency.docx.
+- Aulas de cursinho: Aula 30 - Emergências pediátricas I.
+- Aulas de cursinho: Aula 43 - Emergências pediátricas II - respiratórias.
+- Aulas de cursinho: Aula 49 - Trauma em populações especiais II - Pediátrico.
+- Resumo do cursinho.docx.
 - Adendos para complementar.docx.
 
 **Atualização clínica**

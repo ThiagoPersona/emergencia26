@@ -309,7 +309,7 @@ flowchart TD
 - **TEME25 Q59-Q60:** violência sexual, levonorgestrel, notificação, HBV/IST/PEP.
 - **TEME25 Q61:** miocárdiopatia periparto e fatores de risco.
 - **TEME25 Q85:** DPP e fibrinogênio como marcador de gravidade/transfusão.
-- **Emergency Talks:** Aulas 46, 51, 52, 57 e 58.
+- **Aulas de cursinho:** Aulas 46, 51, 52, 57 e 58.
 
 ## Referências
 
@@ -322,13 +322,13 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 46 - Trauma em populações especiais I: idoso e gestante.
-- Emergency Talks: Aula 51 - intercorrências da 1a metade da gestação.
-- Emergency Talks: Aula 52 - intercorrências do parto e pós-parto.
-- Emergency Talks: Aula 57 - Emergências ginecológicas.
-- Emergency Talks: Aula 58 - intercorrências da 2a metade da gestação.
-- Emergency Talks: Resumo do Emergency.docx.
-- Emergency Talks: Adendos para complementar.docx.
+- Aulas de cursinho: Aula 46 - Trauma em populações especiais I: idoso e gestante.
+- Aulas de cursinho: Aula 51 - intercorrências da 1a metade da gestação.
+- Aulas de cursinho: Aula 52 - intercorrências do parto e pós-parto.
+- Aulas de cursinho: Aula 57 - Emergências ginecológicas.
+- Aulas de cursinho: Aula 58 - intercorrências da 2a metade da gestação.
+- Aulas de cursinho: Resumo do cursinho.docx.
+- Aulas de cursinho: Adendos para complementar.docx.
 
 **Atualização clínica**
 

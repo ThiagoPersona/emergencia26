@@ -315,15 +315,15 @@ flowchart TD
 - **TEME23:** definição/fisiologia de choque, DO2/VO2, RUSH, VCI, fluido-responsividade, choque hipovolêmico e obstrutivo.
 - **TEME24:** trauma com FAST negativo, choque neurogênico versus hemorrágico, SCA/choque, pós-RCE e metas de perfusão.
 - **TEME25:** choque cardiogênico SCAI, TEP com choque, anafilaxia, sepse urinária com vasopressor, TRALI/TACO e lactato.
-- **Emergency Talks:** Aula 13 - Choque; Aula 22 - Sepse; Aula 63 - Emergências Infecciosas; Aula 47 - IC/choque cardiogênico; Aula 53 - intoxicações com choque/bradicardia.
+- **Aulas de cursinho:** Aula 13 - Choque; Aula 22 - Sepse; Aula 63 - Emergências Infecciosas; Aula 47 - IC/choque cardiogênico; Aula 53 - intoxicações com choque/bradicardia.
 
 ## Referências
 
 - Conteúdo programático TEME26 e referências oficiais do edital.
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25 disponíveis no projeto.
 - Estações práticas TEME22-25 disponíveis no projeto.
-- Emergency Talks: Aula 13 - Choque; Aula 22 - Sepse; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 53 - Intoxicações; Aula 63 - Emergências Infecciosas.
-- Resumo do Emergency.docx, arquivo do usuário.
+- Aulas de cursinho: Aula 13 - Choque; Aula 22 - Sepse; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 53 - Intoxicações; Aula 63 - Emergências Infecciosas.
+- Resumo do cursinho.docx, arquivo do usuário.
 - Society of Critical Care Medicine/ESICM. 2026: [Surviving Sepsis Campaign International Guidelines for Management of Sepsis and Septic Shock](0).
 - SCCM. 2026: [SSC Adult Quick Guide Infographic](1).
 - Society for Cardiovascular Angiography and Interventions. 2022: [SCAI SHOCK Stages Classification Expert Consensus Update](2).

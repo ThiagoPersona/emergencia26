@@ -452,12 +452,12 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 08 - Abdome agudo I.
-- Emergency Talks: Aula 14 e 15 - Abdome agudo II, icterícia e doenças.
-- Emergency Talks: Aula 17 - Trauma abdominopelvico.
-- Emergency Talks: Aula 24 - Emergências urológicas.
-- Emergency Talks: Aula 32 - Hemorragia digestiva alta e hepatopatia crônica.
-- Resumo do Emergency.docx.
+- Aulas de cursinho: Aula 08 - Abdome agudo I.
+- Aulas de cursinho: Aula 14 e 15 - Abdome agudo II, icterícia e doenças.
+- Aulas de cursinho: Aula 17 - Trauma abdominopelvico.
+- Aulas de cursinho: Aula 24 - Emergências urológicas.
+- Aulas de cursinho: Aula 32 - Hemorragia digestiva alta e hepatopatia crônica.
+- Resumo do cursinho.docx.
 - Adendos para complementar.docx.
 
 **Atualização clínica**

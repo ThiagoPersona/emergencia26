@@ -270,7 +270,7 @@ flowchart TD
 - **TEME22:** TCE grave/possível ME; AVCi e decisão após TC; mal agudo da montanha; encefalopatia hepática; crise/lesões em imunossuprimido; VNI contraindicada em AVE com rebaixamento/disfagia/secreção.
 - **TEME24 prática:** TCE pediátrico com indicação de imagem; estação de neuro com TCE, HSA traumática/hematoma intraparenquimatoso, ausência de reflexos de tronco e impeditivos para ME.
 - **TEME25 teórica/prática:** tenecteplase vs alteplase; eclampsia pós-parto; síncope simulando convulsão; ONSD >6 mm e HIC; TCE/via aérea; AVCi com NIHSS alto/ASPECTS; pré-requisitos de morte encefálica.
-- **Emergency Talks:** aulas 02, 03, 12, 18, 40 e 45; `Resumo do Emergency.docx`.
+- **Aulas de cursinho:** aulas 02, 03, 12, 18, 40 e 45; `Resumo do cursinho.docx`.
 
 ## Referências
 
@@ -282,13 +282,13 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks - Aula 02: Déficit focal agudo e AVCi.
-- Emergency Talks - Aula 03: Cefaleia e sangramentos do SNC.
-- Emergency Talks - Aula 12: Convulsões e infecções do SNC.
-- Emergency Talks - Aula 18: POCUS trauma, vascular e neuro.
-- Emergency Talks - Aula 40: Alteração do nível de consciência e HIC.
-- Emergency Talks - Aula 45: Trauma cranioencefálico.
-- `Resumo do Emergency.docx`.
+- Aulas de cursinho - Aula 02: Déficit focal agudo e AVCi.
+- Aulas de cursinho - Aula 03: Cefaleia e sangramentos do SNC.
+- Aulas de cursinho - Aula 12: Convulsões e infecções do SNC.
+- Aulas de cursinho - Aula 18: POCUS trauma, vascular e neuro.
+- Aulas de cursinho - Aula 40: Alteração do nível de consciência e HIC.
+- Aulas de cursinho - Aula 45: Trauma cranioencefálico.
+- `Resumo do cursinho.docx`.
 
 **Atualização clínica**
 

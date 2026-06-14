@@ -314,7 +314,7 @@ flowchart TD
 - **TEME24 Q71:** queimadura térmica com bolhas: reconhecer segundo grau e manejo local/analgesia/cobertura, sem tratar todo caso como grande queimado.
 - **TEME24 Q79:** abelhas: diferenciar anafilaxia de síndrome de envenenamento por múltiplas picadas; esta pode cursar com CIVD, alterações neuro/cardiovasculares e IRA.
 - **TEME25:** mordeduras e infecção de partes moles: gatos infectam muito; profilaxia e cobertura dependem de animal, ferida, local e risco.
-- **Emergency Talks Aula 19:** emergências reumato e dermato: rash perigoso, infecções de pele, monoartrite e vasculites.
+- **Aulas de cursinho - Aula 19:** emergências reumato e dermato: rash perigoso, infecções de pele, monoartrite e vasculites.
 
 ## Referências
 
@@ -326,11 +326,11 @@ flowchart TD
 
 **Material local**
 
-- Emergency Talks: Aula 19 - Emergências reumato e dermato.
-- Emergency Talks: Aula 37 - Trauma ambiental I.
-- Emergency Talks: Aula 53 - Abordagem geral do paciente intoxicado.
-- Emergency Talks: Aula 62 - Animais peçonhentos.
-- Resumo do Emergency.docx.
+- Aulas de cursinho: Aula 19 - Emergências reumato e dermato.
+- Aulas de cursinho: Aula 37 - Trauma ambiental I.
+- Aulas de cursinho: Aula 53 - Abordagem geral do paciente intoxicado.
+- Aulas de cursinho: Aula 62 - Animais peçonhentos.
+- Resumo do cursinho.docx.
 - Adendos para complementar.docx.
 
 **Atualização clínica**
