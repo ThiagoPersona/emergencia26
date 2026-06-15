@@ -26,8 +26,8 @@ jobs:
       - name: Montar site
         run: |
           set -euo pipefail
-          mkdir -p site/Intensivao site/Intensivao/temas site/Intensivao/provas site/Intensivao/assets
-          mkdir -p site/temas site/provas site/assets
+          mkdir -p site/Intensivao site/Intensivao/temas site/Intensivao/provas site/Intensivao/assets site/Intensivao/assets/provas
+          mkdir -p site/temas site/provas site/assets site/assets/provas
           shopt -s nullglob
 
           # Publicação na raiz (padrão dos Links do GitHub Pages): /index-online.html
@@ -50,6 +50,11 @@ jobs:
           for file in Intensivao/assets/*.md; do
             cp "$file" site/Intensivao/assets/
             cp "$file" site/assets/
+          done
+          for file in Intensivao/assets/provas/*; do
+            [ -f "$file" ] || continue
+            cp "$file" site/Intensivao/assets/provas/
+            cp "$file" site/assets/provas/
           done
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
