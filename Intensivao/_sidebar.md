@@ -27,3 +27,4 @@
   - [22. Psiquiatria, agitação e contenção](temas/022_psiquiatria-agitacao-contencao.md)
   - [23. Procedimentos, analgesia e sedação](temas/023_procedimentos-analgesia-sedacao.md)
   - [24. Cardiovascular complementar](temas/024_cardiovascular-complementar.md)
+  - [25. Estratégia de prova e estações práticas](temas/025_estrategia-prova-estacoes-praticas.md)

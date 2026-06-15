@@ -40,3 +40,4 @@ Material de revisão dirigida em módulos de emergência, organizado para estudo
 |    22 | Psiquiatria, agitação e contenção                            | Pronto | [Abrir](temas/022_psiquiatria-agitacao-contencao.md)           |
 |    23 | Procedimentos, analgesia e sedação                           | Pronto | [Abrir](temas/023_procedimentos-analgesia-sedacao.md)          |
 |    24 | Cardiovascular complementar                                  | Pronto | [Abrir](temas/024_cardiovascular-complementar.md)              |
+|    25 | Estratégia de prova e estações práticas                      | Pronto | [Abrir](temas/025_estrategia-prova-estacoes-praticas.md)       |
