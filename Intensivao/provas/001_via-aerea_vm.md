@@ -360,6 +360,12 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <p class="quiz-source">TEME22 Q46</p>
 <p><strong>16. Paciente de 33 anos em Monitorização contínua em Sala de Emergência há 2 dias devido quadro de IRpA por COVID-19, atualmente em Intubação Orotraqueal (IOT) e VM em modo Volume Controlado: Volume Corrente (VC) 6-7 ml/kg, Fluxo 65 L/min, PEEP 10 cmH₂O, FiO2 80%, FR 25 IRPM, mantendo Pressão de Platô de 33 mmHg, mantendo SaO2 90% e FC 122 BPM, PA 100 x 70 mmHg sem uso de Drogas Vasoativas (DVA), sob sedoanalgesia em uso de Midazolam EV e Fentanil EV. Você é chamado pela equipe de Enfermagem devido à avisos de alarme no Ventilador e SaO2 75%, após o banho. Após avaliação sistematizada você observa: MV reduzidos globalmente, Curva de Capnografia Abaixo, Aspiração Traqueal sem secreção, POCUS com Linhas A bilateralmente, deslizamento pleural não foi avaliado. Qual a conduta imediata a ser realizada?</strong></p>
 <p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME22_Q46_capnografia.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME22_Q46_capnografia.png" alt="Curva de capnografia da questão TEME22 Q46">
+</a>
+<figcaption>TEME22 Q46: curva de capnografia.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t001-016" value="A"> A. Realizar ventilações de resgate</label>
 <label class="quiz-option"><input type="radio" name="q-t001-016" value="B"> B. Iniciar tentativa imediata de IOT por laringoscopia direta</label>
@@ -827,6 +833,12 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <p class="quiz-source">TEME23 Q38</p>
 <p><strong>36. Caso clínico para as questões 36, 37 e 38: Você está atendendo um paciente de 59 anos vítima de Parada Cardiorrespiratória em ritmo chocável após retorno à circulação espontânea. Foram administrados 04 (quatro) choques desfibriladores, 02 (duas) doses de vasopressor (adrenalina 1 mg) e 01 (uma) dose de antiarrítmico (amiodarona 300 mg). Após corrigir a situação anterior, o paciente desenvolve grave hipoxemia com SaO2 oscilando entre 80 a 85% e piora do status hemodinâmico. Você opta por realizar POCUS cardíaco e pulmonar e identifica as seguintes imagens: Imagem 1 Imagem 2: Quais os achados no POCUS e a provável causa dessa nova instabilidade do paciente?</strong></p>
 <p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME23_Q38_pocus_pneumotorax_tamponamento.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME23_Q38_pocus_pneumotorax_tamponamento.png" alt="Imagens de POCUS da questão TEME23 Q38">
+</a>
+<figcaption>TEME23 Q38: imagens de POCUS do caso.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t001-036" value="A"> A. Derrame pleural</label>
 <label class="quiz-option"><input type="radio" name="q-t001-036" value="B"> B. Derrame Pericárdico</label>
@@ -1243,6 +1255,12 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <p class="quiz-source">TEME24 Q64</p>
 <p><strong>54. Paciente tabagista de longa data, admitido no Departamento de Emergência em insuficiência respiratória aguda. A despeito da terapia adjuvante, evolui com necessidade de suporte ventilatório invasivo. Na figura 1, observa-se a curva fluxo versus tempo imediatamente após a intubação orotraqueal. Na figura 2, nota-se a curva fluxo versus tempo após a realização de ajustes no ventilador mecânico. Assinale a alternativa correta: FIGURA 1 FIGURA 2</strong></p>
 <p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME24_Q64_curvas_fluxo_tempo.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME24_Q64_curvas_fluxo_tempo.png" alt="Curvas fluxo-tempo da questão TEME24 Q64">
+</a>
+<figcaption>TEME24 Q64: curvas fluxo-tempo antes e após ajuste ventilatório.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t001-054" value="A"> A. Duplo disparo; mudança de modo de ventilação controlada a volume (VCV) para ventilação a pressão controlada (PCV).</label>
 <label class="quiz-option"><input type="radio" name="q-t001-054" value="B"> B. Disparo reverso; redução da pressão positiva expiratória final (PEEP).</label>
@@ -1359,6 +1377,12 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <p class="quiz-source">TEME24 Q97</p>
 <p><strong>59. Durante o manejo de uma parada cardiorrespiratória, o paciente subitamente apresenta a curva abaixo no monitor multiparamétrico. Marque a alternativa que melhor descreve o que provavelmente aconteceu com o paciente: Fonte: Ward I, Amoroso DM, Brandão Neto RA, Alencar JC. Manual de via aérea na emergência. São Paulo: Manole; 2023.</strong></p>
 <p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME24_Q97_capnografia_monitor.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME24_Q97_capnografia_monitor.png" alt="Traçado de capnografia no monitor da questão TEME24 Q97">
+</a>
+<figcaption>TEME24 Q97: traçado de capnografia durante RCP.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t001-059" value="A"> A. Houve redução da qualidade da compressão torácica.</label>
 <label class="quiz-option"><input type="radio" name="q-t001-059" value="B"> B. Houve extubação do paciente.</label>
@@ -1429,6 +1453,12 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <p class="quiz-source">TEME25 Q4</p>
 <p><strong>62. Avaliando a curva de capnografia, assinale a alternativa que define a melhor conduta conforme o que está ocorrendo.</strong></p>
 <p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME25_Q4_capnografia.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME25_Q4_capnografia.png" alt="Curva de capnografia da questão TEME25 Q4">
+</a>
+<figcaption>TEME25 Q4: curva de capnografia.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t001-062" value="A"> A. Otimizar a sedação e a analgesia, pois o paciente iniciou ventilações espontâneas.</label>
 <label class="quiz-option"><input type="radio" name="q-t001-062" value="B"> B. Iniciar broncodilatadores inalatórios, pois se trata de um broncoespasmo.</label>
@@ -1499,6 +1529,12 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <p class="quiz-source">TEME25 Q13</p>
 <p><strong>65. O gráfico a seguir mostra as curvas de ventilação mecânica de um paciente admitido no Departamento de Emergência com dispnéia e sibilância. As curvas A e C representam a curva de pressão em função do tempo, e as curvas B e D representam a curva de fluxo em função do tempo, em distintos momentos de sua evolução clínica. Assinale a alternativa correta:</strong></p>
 <p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME25_Q13_curvas_vm.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME25_Q13_curvas_vm.png" alt="Curvas de ventilação mecânica da questão TEME25 Q13">
+</a>
+<figcaption>TEME25 Q13: curvas de pressão-tempo e fluxo-tempo.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t001-065" value="A"> A. Trata-se de um paciente com exacerbação de doença pulmonar obstrutiva crônica, em modo assisto-controlada à pressão.</label>
 <label class="quiz-option"><input type="radio" name="q-t001-065" value="B"> B. Na curva D, ocorre o fenômeno de auto-PEEP.</label>
@@ -1661,6 +1697,12 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <p class="quiz-source">TEME25 Q55</p>
 <p><strong>72. Você está liderando uma reanimação cardiopulmonar de ritmo inicial fibrilação ventricular, em que já foram realizadas quatro desfibrilações e uma dose de adrenalina 1 mg e de amiodarona 300 mg. Paciente 52 anos, previamente hipertenso e tabagista, chegou já em parada cardiorrespiratória, sem relatos de sintomas pródromos, a equipe do pré-hospitalar aplicou máscara laríngea e a cuja curva de capnografia encontra-se a seguir. Na pausa seguinte para checar o ritmo, paciente se mantém em fibrilação ventricular. O que deve ser priorizado?</strong></p>
 <p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME25_Q55_capnografia_mascara_laringea.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME25_Q55_capnografia_mascara_laringea.png" alt="Curva de capnografia com máscara laríngea da questão TEME25 Q55">
+</a>
+<figcaption>TEME25 Q55: capnografia durante RCP com máscara laríngea.</figcaption>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t001-072" value="A"> A. Trocar os vetores das pás dos desfibriladores, considerando fibrilação ventricular refratária.</label>
 <label class="quiz-option"><input type="radio" name="q-t001-072" value="B"> B. Trombólise farmacológica com tenecteplase, considerando principal hipótese diagnóstica de síndrome coronariana aguda.</label>

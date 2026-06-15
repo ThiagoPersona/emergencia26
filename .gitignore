@@ -26,6 +26,10 @@ Intensivao/.obsidian/
 *.ppt
 *.pptx
 
+# Recortes oficiais de prova usados pelo leitor online.
+!Intensivao/assets/provas/
+!Intensivao/assets/provas/*.png
+
 # Itens de configuração pessoal/temporários
 *.tmp
 *.log
