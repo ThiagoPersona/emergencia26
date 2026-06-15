@@ -453,6 +453,21 @@
       background: #f4ecd8;
     }
 
+    .quiz-selected-explain {
+      margin: 0.7rem 0;
+      padding: 0.72rem 0.82rem;
+      border-left: 3px solid #b75c5c;
+      border-radius: 0 8px 8px 0;
+      background: rgba(183, 92, 92, 0.10);
+      color: #313946;
+      line-height: 1.5;
+    }
+
+    .quiz-selected-explain p {
+      margin: 0 !important;
+      font-size: 0.98rem !important;
+    }
+
     .quiz-explain {
       display: grid;
       gap: 0.42rem;
@@ -814,6 +829,7 @@
           }
 
           const isCorrect = checked.value === answer;
+          const selectedExplain = getQuizExplanation(card, checked.value);
           card.dataset.locked = "1";
           card.dataset.correct = isCorrect ? "1" : "0";
           button.disabled = true;
@@ -826,12 +842,34 @@
           });
 
           feedback.classList.add(isCorrect ? "is-correct" : "is-wrong");
-          feedback.innerHTML = `<p><strong>${isCorrect ? "Correto." : "Ainda não."}</strong> Gabarito: ${answer}.</p>${feedback.dataset.originalHtml}`;
+          const selectedBlock = !isCorrect && selectedExplain
+            ? `<div class="quiz-selected-explain"><p><strong>Por que sua alternativa (${checked.value}) está errada:</strong> ${selectedExplain}</p></div>`
+            : "";
+          feedback.innerHTML = `<p><strong>${isCorrect ? "Correto." : "Ainda não."}</strong> Gabarito: ${answer}.</p>${selectedBlock}${feedback.dataset.originalHtml}`;
           updateQuizSummary();
         });
 
         card.dataset.quizReady = "1";
       });
+    }
+
+    function getQuizExplanation(card, letter) {
+      const items = Array.from(card.querySelectorAll(".quiz-explain li"));
+      const item = items.find((entry) => {
+        const text = (entry.textContent || "").trim();
+        return text.startsWith(`${letter}.`);
+      });
+
+      if (!item) return "";
+
+      const clone = item.cloneNode(true);
+      const firstStrong = clone.querySelector("strong");
+      if (firstStrong) firstStrong.remove();
+
+      return clone.innerHTML
+        .replace(/^\s*\.?\s*/, "")
+        .replace(/\s+/g, " ")
+        .trim();
     }
 
     function ensureQuizSummary(section, cards) {
