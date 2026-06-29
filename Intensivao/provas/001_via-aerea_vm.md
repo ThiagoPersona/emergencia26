@@ -23,13 +23,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME22 Q3. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Diferença pressórica após trauma de desaceleração lembra lesão aórtica, não tamponamento como diagnóstico automático. A, C e D podem entrar no plano conforme fisiologia e lesões associadas.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Pericardiocentese, a fim de aliviar provável tamponamento cardíaco”</p>
+<p><strong>Como pensar:</strong> Pense em trauma de desaceleração com diferença de pressão entre membros: o diagnóstico provável é lesão traumática de aorta, e a pergunta pede a conduta incorreta.</p>
+<p><strong>Por que a B deve ser marcada:</strong> A pericardiocentese só faz sentido em tamponamento; aqui o conjunto favorece lesão de aorta, então ela é a conduta que não resolve o problema.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “Administração de 1 g de ácido tranexâmico EV, visando ao controle de hemorragia interna”</li>
-<li><strong>B.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “Pericardiocentese, a fim de aliviar provável tamponamento cardíaco”</li>
-<li><strong>C.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “Administração de betabloqueador, a fim de manter a pressão arterial média inferior a 70 mmHg”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “Sequência rápida de intubação utilizando etomidato, rocurônio e fentanil”</li>
+<li><strong>A.</strong> <strong>Não marque.</strong> Ácido tranexâmico pode entrar cedo no politrauma com suspeita de sangramento, então não é a alternativa errada.</li>
+<li><strong>B.</strong> <strong>Deve ser marcada.</strong> Pericardiocentese trata tamponamento cardíaco, mas o enunciado aponta mais para lesão de aorta por desaceleração e diferença de PA.</li>
+<li><strong>C.</strong> <strong>Não marque.</strong> Controle de impulso com betabloqueador pode ser parte do manejo da lesão aórtica, desde que a perfusão seja respeitada.</li>
+<li><strong>D.</strong> <strong>Não marque.</strong> Com Glasgow 8 e risco de deterioração, via aérea definitiva pode ser necessária; o erro não está na ideia de intubar.</li>
 </ul>
 </div>
 </div>
@@ -46,13 +46,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME22 Q4. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Esta é uma questão de exceção/incorreta em via aérea e ventilação. O comando central é: &quot;Sobre a decisão de intubar um paciente, escolha a opção com a alternativa que contenha o conceito ERRADO:&quot;. A alternativa B deve ser marcada porque é a afirmação problemática ou a exceção reconhecida pelo gabarito oficial.</p>
-<p><strong>Por que a B deve ser marcada:</strong> o enunciado pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado pela banca: “A ausência do reflexo de vômito no paciente com rebaixamento do nível de consciência é o sinal para indicar a via aérea definitiva imediata;”</p>
+<p><strong>Como pensar:</strong> Decisão de intubar não deve depender de um reflexo isolado; procure proteção de via aérea, ventilação/oxigenação e curso clínico esperado.</p>
+<p><strong>Por que a B deve ser marcada:</strong> A ausência do reflexo de vômito é pouco confiável isoladamente e não deve ser usada como gatilho único para via aérea definitiva.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “Existem três indicações bem estabelecidas de intubação baseado em avaliação clínica do médico: Proteção de via aérea, insuficiência respiratória e antecipação do curso clínico da doença.”</li>
-<li><strong>B.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “A ausência do reflexo de vômito no paciente com rebaixamento do nível de consciência é o sinal para indicar a via aérea definitiva imediata;”</li>
-<li><strong>C.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “A deglutição espontânea ou voluntária é a melhor forma de avaliação da capacidade do paciente proteger sua via aérea”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “Estridor é um sinal de alerta para antecipação no manejo da via aérea mesmo na ausência de dispneia”</li>
+<li><strong>A.</strong> <strong>Não marque.</strong> Essas três indicações resumem bem a decisão clínica: proteção, insuficiência respiratória e antecipação de piora.</li>
+<li><strong>B.</strong> <strong>Deve ser marcada.</strong> A ausência do reflexo de vômito não mede sozinho a proteção de via aérea; é justamente o erro cobrado.</li>
+<li><strong>C.</strong> <strong>Não marque.</strong> A capacidade de deglutir é um indicador mais útil de proteção de via aérea do que o reflexo de vômito isolado.</li>
+<li><strong>D.</strong> <strong>Não marque.</strong> Estridor sugere obstrução alta e pode exigir manejo antecipado antes de exaustão ou parada respiratória.</li>
 </ul>
 </div>
 </div>
@@ -69,13 +69,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q5. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Hipoxemia em paciente intubado exige checar posição do tubo, ausculta, capnografia e causas DOPE. A, B e C não explicam tão bem a assimetria após IOT no trauma.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Apenas I e IV”</p>
+<p><strong>Como pensar:</strong> No trauma intubado com hipoxemia e MV reduzido à esquerda, pense em causas reversíveis rápidas: tubo seletivo, pneumotórax/hemotórax e sangramento de face.</p>
+<p><strong>Por que a D é correta:</strong> A combinação aceita é trauma de face como possível componente hemorrágico e necessidade de descartar intubação seletiva à direita.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Apenas I e III”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Apenas II e IV”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “II, III e IV”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Apenas I e IV”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Traz a afirmação III, que exagera ao indicar toracostomia bilateral sem achado bilateral.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Afirma que a toracostomia à esquerda está contraindicada, mas o achado respiratório à esquerda obriga investigar e tratar lesão torácica.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Mantém a II e a III, que são as partes problemáticas da combinação.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> Seleciona I e IV: face pode sangrar muito, e tubo seletivo à direita explicaria redução ventilatória à esquerda.</li>
 </ul>
 </div>
 </div>
@@ -92,13 +92,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q6. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> A prova cobra o básico que salva: compressões efetivas primeiro. IOT e drogas não devem atrasar compressões e desfibrilação quando indicadas.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar Compressões cardíacas na frequência de 100 a 120 por minuto”</p>
+<p><strong>Como pensar:</strong> Sem pulso, o primeiro tratamento é circulação artificial; via aérea e droga não antecedem compressão de alta qualidade.</p>
+<p><strong>Por que a A é correta:</strong> Compressões 100-120/min são a prioridade inicial no paciente inconsciente sem pulso.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar Compressões cardíacas na frequência de 100 a 120 por minuto”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Realizar IOT”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Iniciar Infusão de Adrenalina EV”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Ventilações Assistidas na velocidade de 10 por minuto”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a primeira intervenção efetiva para gerar fluxo coronariano e cerebral.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Intubação pode ser considerada depois, mas não deve atrasar compressões.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Adrenalina entra no algoritmo, mas não antes de iniciar RCP.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Ventilar sem compressão deixa o paciente sem perfusão.</li>
 </ul>
 </div>
 </div>
@@ -115,13 +115,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME22 Q7. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Capnografia contínua confirma ventilação, monitora qualidade da RCP e pode sugerir RCE. As outras alternativas atropelam timing ou aumentam pausas.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Considerar via aérea avançada e colocação de capnografia em formato de onda contínua”</p>
+<p><strong>Como pensar:</strong> Depois de choque, compressões e adrenalina, use o minuto restante para intervenções que não interrompem RCP: via aérea avançada e capnografia.</p>
+<p><strong>Por que a B é correta:</strong> A via aérea avançada com capnografia ajuda ventilação, confirma posição e monitora qualidade da RCP/ROSC sem pausar compressões.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Administrar amiodarona EV 300 mg”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Considerar via aérea avançada e colocação de capnografia em formato de onda contínua”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Considerar causas reversíveis”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Administração de lidocaína EV 1 mg/kg”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Amiodarona é típica após FV/TV persistente depois de choques subsequentes; não é a melhor ação naquele minuto descrito.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a resposta esperada: considerar via aérea avançada e capnografia de onda contínua durante o ciclo.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Causas reversíveis sempre importam, mas a pergunta pede uma conduta sequencial específica nesse ciclo.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Lidocaína é alternativa antiarrítmica, não a prioridade descrita neste momento.</li>
 </ul>
 </div>
 </div>
@@ -138,13 +138,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q8. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Sem abertura para introduzir lâmina/tubo, a técnica falha. A erra porque vídeo dispensa linha direta clássica; B erra pelo &quot;sempre&quot;; D é pegadinha, pois visão boa não garante entrega do tubo.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A única restrição absoluta do seu uso é quando há abertura bucal limitada para a lâmina disponível;”</p>
+<p><strong>Como pensar:</strong> Videolaringoscopia melhora a visão sem exigir alinhamento direto dos eixos, mas ainda precisa entrada física da lâmina pela boca.</p>
+<p><strong>Por que a C é correta:</strong> A limitação absoluta prática é não conseguir introduzir a lâmina pela abertura bucal disponível.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Há a necessidade de deslocamento da língua do paciente para uma melhor visualização”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “É necessário uma linha direta de visão da via aérea obtidos com o alinhamento dos eixos, a clássica posição do “cheirador” é uma das formas de atingir esse alinhamento;”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A única restrição absoluta do seu uso é quando há abertura bucal limitada para a lâmina disponível;”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “O uso de lâminas hiper-anguladas deve ser priorizado rotineiramente”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Na videolaringoscopia, não é obrigatório deslocar a língua como na laringoscopia direta clássica.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Não precisa obter linha direta de visão, que é justamente uma vantagem do vídeo.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a restrição real: sem abertura bucal suficiente, o dispositivo não entra.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Lâmina hiperangulada é útil em cenários específicos, mas não deve ser rotina para todos.</li>
 </ul>
 </div>
 </div>
@@ -161,13 +161,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q9. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Ultrassom pulmonar é leitura de pleura, deslizamento e artefatos. A pegadinha é imaginar que ele &quot;enxerga&quot; alvéolos como uma TC.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Avaliação de pleura e artefatos ar-tecidos (relação ar-líquido)”</p>
+<p><strong>Como pensar:</strong> US pulmonar enxerga pleura e artefatos gerados pela interface ar-tecido; não "vê" o parênquima como uma TC.</p>
+<p><strong>Por que a A é correta:</strong> O raciocínio correto é pleura + artefatos: linhas A/B, sliding, lung point e consolidação subpleural.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Avaliação de pleura e artefatos ar-tecidos (relação ar-líquido)”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: interpreta o exame fora da pergunta clínica; POCUS deve ligar achado, contexto e decisão imediata, não apenas nomear uma imagem. Alternativa: “Avaliação de pleura e parênquima pulmonar”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Avaliação do parênquima pulmonar e artefatos”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: interpreta o exame fora da pergunta clínica; POCUS deve ligar achado, contexto e decisão imediata, não apenas nomear uma imagem. Alternativa: “Avaliação da relação entre linhas pleurais verticais e horizontais”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a melhor descrição da base física do POCUS pulmonar.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> O parênquima aerado não é avaliado diretamente; o exame interpreta artefatos.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Inclui parênquima como se fosse visualização direta, o que confunde a lógica do método.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Reduz demais o exame a linhas verticais/horizontais e perde pleura, sliding e outros achados.</li>
 </ul>
 </div>
 </div>
@@ -184,13 +184,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q15. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Se a via aérea está temporariamente pérvia, a ameaça B/C não pode esperar. A e D podem precipitar colapso; B erra por atrasar correção de pneumotórax/choque.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Manter manobras externas para garantir a perviedade da via aérea”</p>
+<p><strong>Como pensar:</strong> No ABC do trauma, via aérea pérvia com jaw thrust deve ser mantida enquanto B/C ameaçam matar mais rápido; intubação em choque pode precipitar colapso.</p>
+<p><strong>Por que a C é correta:</strong> Manter manobras externas é a melhor ação imediata porque a via aérea está pérvia e a prioridade é corrigir pneumotórax/choque antes de induzir.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação em sequência rápida imediata pelo risco de broncoaspiração”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Sequência atrasada de intubação com otimização da pré oxigenação”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Manter manobras externas para garantir a perviedade da via aérea”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação crash pelo risco de colapso circulatório iminente”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Intubação imediata ignora que a via aérea ainda está pérvia e que o paciente está profundamente chocado.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Sequência atrasada foca pré-oxigenação, mas não resolve a ameaça circulatória/torácica imediata.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a resposta: preservar via aérea com manobra simples enquanto trata as prioridades B/C.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Crash airway é para falência iminente de via aérea; aqui a via aérea ainda responde a manobra externa.</li>
 </ul>
 </div>
 </div>
@@ -207,13 +207,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q18. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Homem, 22 anos de idade, no terceiro dia de internação hospitalar por pneumonia viral, foi submetido a intubação orotraqueal ainda no Departa- mento de Emergência. Atualmente encontra-se sedado, estável hemodinamicamente, sob vent...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “No modo VCV ao reduzir o volume corrente a janela de tempo não altera.”</p>
+<p><strong>Como pensar:</strong> Em VCV, a frequência respiratória define o tempo total do ciclo; reduzir volume com fluxo fixo muda o tempo inspiratório, não a janela total do ciclo.</p>
+<p><strong>Por que a A é correta:</strong> A frase correta para a banca é que, mantendo FR, a janela de tempo do ciclo em VCV não muda ao reduzir VC.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “No modo VCV ao reduzir o volume corrente a janela de tempo não altera.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “No modo VCV ao reduzir o volume corrente e mantendo o fluxo inspiratório o tempo expiratório irá diminuir.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “No modo PCV ao reduzir o tempo inspiratório a janela de tempo irá diminuir.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “No modo PCV a relação I:E não depende do tempo inspiratório.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É o ponto cobrado: a duração do ciclo depende da FR, mesmo que Ti/Te se redistribuam.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Com fluxo fixo, reduzir VC tende a encurtar Ti e aumentar Te, não diminuir o tempo expiratório.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> No PCV, reduzir o tempo inspiratório reduz Ti, mas a formulação da alternativa não fecha o conceito cobrado.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> A relação I:E no PCV depende diretamente do tempo inspiratório ajustado.</li>
 </ul>
 </div>
 </div>
@@ -230,13 +230,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q19. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> A prova quer droga adequada ao contexto e preparo hemodinâmico. A e B derrubam pressão; C erra pela dose e ausência de plano pressórico.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Cetamina 0.75 mg/kg + Suxametônio 1.5 mg/kg, IV”</p>
+<p><strong>Como pensar:</strong> Choque + necessidade de IOT pede indução hemodinamicamente gentil: dose menor de sedativo e evitar fentanil/propofol em paciente instável.</p>
+<p><strong>Por que a D é correta:</strong> Cetamina em dose reduzida com bloqueador neuromuscular preserva melhor a estabilidade do que combinações mais hipotensoras.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Fentanil + Etomidato 0.5mg/kg + Suxametônio 1.5mg/kg, IV”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Etomidato 1 mg/kg + Suxametônio 1 mg/kg, IV”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Cetamina 1.5 mg/kg + Suxametônio 1.5 mg/kg, IV”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Cetamina 0.75 mg/kg + Suxametônio 1.5 mg/kg, IV”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Fentanil e dose alta de etomidato aumentam risco de colapso peri-intubação.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Etomidato 1 mg/kg está acima do usual para indução e é agressivo para choque.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Cetamina 1,5 mg/kg pode ser excessiva em choque catecolamina-dependente.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a melhor opção do bloco: cetamina em dose reduzida + suxametônio.</li>
 </ul>
 </div>
 </div>
@@ -253,13 +253,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME22 Q23. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> TCE grave não tolera hipóxia nem hipotensão. A não é rotina; C e D aumentam risco de piora neurológica.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Manter SaO2 acima de 94% e PA Sistólica (PAS) &gt; 100 mmHg”</p>
+<p><strong>Como pensar:</strong> Medida neuroprotetora em TCE é evitar segundo insulto: hipóxia e hipotensão são os inimigos imediatos.</p>
+<p><strong>Por que a B é correta:</strong> Manter SaO2 &gt;94% e PAS adequada reduz lesão cerebral secundária.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Manter o paciente em hipotermia terapêutica”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Manter SaO2 acima de 94% e PA Sistólica (PAS) > 100 mmHg”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Manter o Sódio (Na+) sérico entre 125 a 135 mEq/L”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Manter Pressão Arterial de Gás Carbônico (PaCO2) entre 45 e 55 mmHg.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Hipotermia terapêutica não é rotina neuroprotetora no TCE grave.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a resposta central: oxigenação e pressão sistólica suficientes.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Hiponatremia piora edema cerebral; não é alvo neuroprotetor.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Hipercapnia causa vasodilatação cerebral e pode aumentar pressão intracraniana.</li>
 </ul>
 </div>
 </div>
@@ -276,13 +276,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q24. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> POCUS ajuda a separar pneumotórax, edema, derrame, consolidação e outros perfis respiratórios. TC pode ser necessária, mas não é a resposta inicial mais prática em todo paciente.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Ultrassonografia Point-of-care de Tórax”</p>
+<p><strong>Como pensar:</strong> Na dispneia aguda indiferenciada, POCUS à beira-leito responde rápido: pneumotórax, edema, consolidação, derrame e sinais indiretos.</p>
+<p><strong>Por que a C é correta:</strong> O ultrassom point-of-care tem boa acurácia inicial e orienta a próxima conduta sem deslocar paciente instável.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Radiografia de Tórax”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Tomografia de Tórax”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Ultrassonografia Point-of-care de Tórax”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Cintilografia Pulmonar”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> RX pode ajudar, mas é menos sensível para várias causas imediatas e pode atrasar decisão.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> TC é ótima, mas não é exame inicial de sala vermelha para definir prioridade.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É o exame inicial mais útil para decisão rápida à beira-leito.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Cintilografia não é exame inicial para dispneia aguda instável.</li>
 </ul>
 </div>
 </div>
@@ -299,13 +299,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q31. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> A sequência atrasada permite pré-oxigenar com PEEP/VNI. A sacrifica margem de segurança; B não combina com paciente não cooperativo; D não garante via aérea nem bloqueio adequado.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Intubação em Sequência Atrasada”</p>
+<p><strong>Como pensar:</strong> Agitação por hipóxia impede pré-oxigenação; DSI usa sedação para permitir oxigenação antes do bloqueio/paralisia.</p>
+<p><strong>Por que a C é correta:</strong> Sequência atrasada permite pré-oxigenar um paciente hipoxêmico/agitado antes da tentativa definitiva.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação em Sequência Rápida (ISR)”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação Acordado”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Intubação em Sequência Atrasada”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação Facilitada com Midazolam”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> SRI direta neste paciente hipoxêmico e chocado aumenta risco de dessaturação/colapso.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Intubação acordado exige cooperação e anatomia favorável, o oposto do caso.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É o nome da estratégia: sedar para tolerar oxigenação, depois intubar.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Midazolam isolado/facilitada é uma armadilha: seda, deprime e não garante controle.</li>
 </ul>
 </div>
 </div>
@@ -322,13 +322,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q32. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Cetamina é útil para aceitar VNI/BVM com PEEP. A e C podem hipotensar; B paralisa antes de pré-oxigenar.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Cetamina + Suxametônio, IV”</p>
+<p><strong>Como pensar:</strong> Na via aérea fisiologicamente difícil, escolha droga que preserve pressão e broncodilate; evite combinações que derrubem tônus simpático.</p>
+<p><strong>Por que a D é correta:</strong> Cetamina + suxametônio é a combinação mais adequada entre as opções para hipoxemia, choque e agitação.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Fentanil + Midazolam, Intravenoso (IV)”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Midazolam + Suxametônio, IV”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Fentanil + Etomidato + Suxametônio, IV”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Cetamina + Suxametônio, IV”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Fentanil e midazolam podem piorar hipotensão e ventilação.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Midazolam é ruim para esse choque e não é indutor ideal em SRI.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Fentanil/etomidato pode até ser usado em alguns cenários, mas não é o melhor bloco para esse perfil fisiológico.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a combinação que melhor preserva hemodinâmica e dá condições rápidas.</li>
 </ul>
 </div>
 </div>
@@ -345,13 +345,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q34. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> A banca gosta do alvo 88-92% em retentores de CO2. B e D ignoram hiperóxia; C esquece que trabalho respiratório importa tanto quanto o número.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Em pacientes com Hipoventilação relacionada à obesidade, metas entre 88 e 92% podem reduzir o risco de depressão respiratória.”</p>
+<p><strong>Como pensar:</strong> Alvo de oxigênio não é "quanto mais alto melhor"; em risco de retenção de CO2, use alvo controlado.</p>
+<p><strong>Por que a A é correta:</strong> Em hipoventilação da obesidade, alvo 88-92% reduz risco de hiperóxia e piora de hipercapnia.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Em pacientes com Hipoventilação relacionada à obesidade, metas entre 88 e 92% podem reduzir o risco de depressão respiratória.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Em pacientes com IRpA o uso de O2 deve ser feito de maneira liberal já que os riscos da hipoxemia ultrapassam os malefícios da Hiperóxia.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Frequência Respiratória e o uso de musculatura acessória não devem ser levados em conta na determinação do alvo de oximetria para esses pacientes.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Meta de oxigênio em pacientes com estado crítico, como pacientes em choque hemodinâmico ou vítimas de politrauma grave é bem estabelecida e deve ser alcançada com uso de MNR à 15 L/min”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É o alvo correto para paciente com risco de insuficiência respiratória hipercápnica.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Oxigênio liberal pode aumentar mortalidade e piorar hipercapnia em grupos de risco.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> FR e uso de musculatura acessória são dados fundamentais de gravidade, mesmo com SpO2 aceitável.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Em choque/trauma, a oferta inicial pode ser alta, mas a alternativa erra ao tratar uma meta como universal e bem estabelecida.</li>
 </ul>
 </div>
 </div>
@@ -375,13 +375,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q46. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> BVM separa paciente de problema de circuito e compra tempo. B, C e D pulam etapas e podem tratar a causa errada.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Realizar ventilações de resgate”</p>
+<p><strong>Como pensar:</strong> Dessaturação súbita em paciente intubado após banho: primeiro separe paciente do ventilador/circuito e ventile manualmente enquanto procura DOPE.</p>
+<p><strong>Por que a A é correta:</strong> Ventilações de resgate testam tubo/pulmão, garantem oxigênio e compram tempo antes de diagnósticos mais específicos.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Realizar ventilações de resgate”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Iniciar tentativa imediata de IOT por laringoscopia direta”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Drenar o tórax direito e esquerdo”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Trocar o ventilador e seus circuitos”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a conduta imediata para estabilizar e diferenciar problema do paciente, tubo ou circuito.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Reintubar imediatamente sem testar ventilação pode perder tempo e piorar hipóxia.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Drenagem bilateral sem confirmação de pneumotórax hipertensivo bilateral é salto perigoso.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Trocar ventilador/circuito pode ser necessário depois, mas primeiro ventile o paciente.</li>
 </ul>
 </div>
 </div>
@@ -398,13 +398,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q48. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Gradiente A-a ajuda a organizar a fisiologia da hipoxemia. As outras opções são dados clínicos úteis, mas não discriminam bem o mecanismo.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Didaticamente o Gradiente Alvéolo-Arterial é a melhor forma de diferenciar entre os mecanismos de IRpA Hipoxêmica”</p>
+<p><strong>Como pensar:</strong> Para hipoxemia, pergunte: o problema melhora com O2? O gradiente A-a ajuda a separar hipoventilação/baixa FiO2 de V/Q, shunt e difusão.</p>
+<p><strong>Por que a D é correta:</strong> O gradiente alvéolo-arterial é a ferramenta didática para diferenciar mecanismos de IRpA hipoxêmica.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Em pacientes com distúrbios de ventilação-perfusão (V/Q) hipoxemia tende a ocorrer quando áreas de ventilação prejudicada vem acompanhadas de vasoconstrição hipóxica.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Dentre os principais mecanismos descreve-se: Distúrbios V/Q, Espessamento da Membrana Alveolar, Hiperventilação Alveolar e Redução da Pressão Inspirada de Oxigênio”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “A Síndrome do Desconforto Respiratório Agudo (SDRA) é o protótipo da Hipoventilação alveolar, sendo frequentemente eficaz o uso de oxigenoterapia suplementar nesses pacientes.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Didaticamente o Gradiente Alvéolo-Arterial é a melhor forma de diferenciar entre os mecanismos de IRpA Hipoxêmica”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Vasoconstrição hipóxica tende a reduzir shunt/VQ ruim; a alternativa descreve mal o mecanismo.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Hiperventilação alveolar não é mecanismo clássico de hipoxemia; hipoventilação é.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> SDRA é protótipo de shunt/alteração V/Q grave, não de hipoventilação simples.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a melhor ferramenta conceitual para separar os mecanismos.</li>
 </ul>
 </div>
 </div>
@@ -421,13 +421,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q64. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Umidificação/aquecimento tornam alto fluxo tolerável e reduzem ressecamento; não são um &quot;filtro antibacteriano&quot; como objetivo central. A, B e C estão corretas.</p>
-<p><strong>Por que a D deve ser marcada:</strong> o enunciado pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado pela banca: “O Umidificador e Aquecedor de Ar associado aos Cateteres Nasais de Alto Fluxo (CNAF) tem a intenção de reduzir o conteúdo bacteriano no sistema.”</p>
+<p><strong>Como pensar:</strong> A pergunta quer a correlação errada entre dispositivo e função; cateter nasal de alto fluxo aquece/umidifica para conforto e alto fluxo, não para esterilizar.</p>
+<p><strong>Por que a D deve ser marcada:</strong> O aquecedor/umidificador do CNAF não tem objetivo de reduzir carga bacteriana.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Fluxo de Gás Oxigênio nas válvulas hospitalares é o principal determinante da Fração Inspirada de O2 (FiO2) que os dispositivos são capazes de produzir.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “O uso da máscara associada a válvula com mecanismo de Venturi é indicado para permitir oxigenação com FiO2 mais precisas, sendo pouco útil para pacientes com altas demandas de O2 suplementar (>50%)”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “O Dispositivo Bolsa-Válvula-Máscara (BVM) é eficaz em produzir FiO2 próximas a 100% mesmo em respiração espontânea, quando a vedação da máscara no rosto do paciente é robusta e em altas taxas de fluxo de O2.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “O Umidificador e Aquecedor de Ar associado aos Cateteres Nasais de Alto Fluxo (CNAF) tem a intenção de reduzir o conteúdo bacteriano no sistema.”</li>
+<li><strong>A.</strong> <strong>Não marque.</strong> Fluxo de O2 influencia FiO2 entregue em muitos dispositivos, então a ideia geral é aceitável.</li>
+<li><strong>B.</strong> <strong>Não marque.</strong> Venturi é para FiO2 controlada e não costuma ser solução para demanda muito alta.</li>
+<li><strong>C.</strong> <strong>Não marque.</strong> BVM bem vedado com reservatório e alto fluxo pode entregar FiO2 muito alta.</li>
+<li><strong>D.</strong> <strong>Deve ser marcada.</strong> O erro é atribuir ao umidificador função antibacteriana.</li>
 </ul>
 </div>
 </div>
@@ -445,13 +445,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME22 Q69. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Angina de Ludwig/infecção cervical profunda pode fechar via aérea. Sinal vital estável não tranquiliza quando há língua elevada e edema submandibular.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Encaminhar paciente à sala de emergência para avaliação de intubação traqueal precoce e antibiótico parenteral”</p>
+<p><strong>Como pensar:</strong> Edema submandibular bilateral, protrusão de língua e odinofagia após procedimento dentário = infecção cervical profunda com ameaça de via aérea.</p>
+<p><strong>Por que a B é correta:</strong> O manejo seguro é sala de emergência, avaliação precoce de via aérea e antibiótico parenteral.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “A melhor conduta para o caso é antibioticoterapia por via oral associados a analgésicos e retorno imediato ao consultório odontológico para manejo dessa complicação tardia da cirurgia”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Encaminhar paciente à sala de emergência para avaliação de intubação traqueal precoce e antibiótico parenteral”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Internação em leito de enfermaria para administração de antibiótico parenteral e avaliação do cirurgião de plantão”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Trata-se de um abscesso cervical com bom prognóstico se iniciado antibioticoterapia, a paciente em questão não tem indicação de internação hospitalar”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Oral e retorno ambulatorial subestimam risco de obstrução e mediastinite.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a resposta: reconhecer Ludwig/infecção profunda e antecipar via aérea.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Enfermaria sem avaliação imediata de via aérea atrasa a conduta crítica.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Dizer bom prognóstico sem internação ignora sinais anatômicos de ameaça de via aérea.</li>
 </ul>
 </div>
 </div>
@@ -469,13 +469,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q70. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> A falha proteção de via aérea, pneumotórax não tratado e choque importante são armadilhas para VNI. A, B e C isoladas estão corretas, mas a pergunta pede o conjunto.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Nenhuma das alternativas”</p>
+<p><strong>Como pensar:</strong> VNI exige proteção de via aérea, estabilidade e ausência de contraindicação; os três cenários têm contraindicações fortes.</p>
+<p><strong>Por que a D é correta:</strong> Nenhum caso é boa indicação de VNI: há secreção/rebaixamento, pneumotórax e choque/TEP grave.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “I e II”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “II”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “I e III”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Nenhuma das alternativas”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Inclui AVE com disfagia/secreção e pneumotórax, ambos ruins para VNI.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Pneumotórax com lung point não deve receber pressão positiva sem drenagem/controle.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Inclui rebaixamento com secreção e choque, duas contraindicações práticas.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a opção correta: nenhuma situação está adequada para VNI.</li>
 </ul>
 </div>
 </div>
@@ -493,13 +493,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q77. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Respiração paradoxal + hipoxemia persistente apontam tórax instável/contusão. A e D erram lado e automatizam; B subtrata insuficiência respiratória.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Tórax instável à direita com contusão pulmonar, sedoanalgesia e intubação orotraqueal.”</p>
+<p><strong>Como pensar:</strong> Trauma torácico com respiração paradoxal, hipoxemia apesar de O2 e MV reduzido do lado lesionado sugere tórax instável/contusão com falência ventilatória.</p>
+<p><strong>Por que a C é correta:</strong> A conduta esperada é sedoanalgesia e IOT/VM para controlar dor, trabalho respiratório e oxigenação.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Pneumotórax hipertensivo à esquerda, toracocentese de alívio seguida de drenagem torácica à esquerda.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Hemotórax à direita, reposição volêmica e drenagem torácica à direita.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Tórax instável à direita com contusão pulmonar, sedoanalgesia e intubação orotraqueal.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Pneumotórax à esquerda e contusão pulmonar à direita, drenagem torácica bilateral.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Lado e achados não sustentam pneumotórax hipertensivo à esquerda.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Hemotórax isolado não explica respiração paradoxal típica de tórax instável.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a resposta: tórax instável direito com contusão e necessidade de suporte ventilatório.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Drenagem bilateral exagera diagnóstico sem achado bilateral.</li>
 </ul>
 </div>
 </div>
@@ -516,13 +516,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q78. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Mulher de 68 anos de idade, natural e procedente de Minas Gerais, fumante de 2 maços de cigarro por dia, há 30 anos, é levada ao DE com queixa de falta de ar, chiado e tosse produtiva há 3 dias. Não sabia referir febre. Ao exame c...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Sepse por pneumonia, pois trata-se de uma paciente DPOC, apresentando disfunção orgânica e a principal causa de descompensação é infecção”</p>
+<p><strong>Como pensar:</strong> DPOC com pneumonia, hipotensão, IRA, leucocitose e acidose é infecção com disfunção orgânica; choque séptico exige critério mais específico de persistência/vasopressor/lactato.</p>
+<p><strong>Por que a D é correta:</strong> A melhor classificação do enunciado é sepse por pneumonia em DPOC, não necessariamente choque séptico estabelecido.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Choque séptico por pneumonia, pois trata-se de uma paciente com DPOC, apresentando hipotensão e a principal causa de descompensação é infecção”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Choque obstrutivo por tromboembolia pulmonar, visto que a paciente apresenta hipóxia acentuada com retenção de CO2”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Choque cardiogênico por quadro de insuficiência cardíaca descompensada, visto que paciente apresentava estertores em base”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Sepse por pneumonia, pois trata-se de uma paciente DPOC, apresentando disfunção orgânica e a principal causa de descompensação é infecção”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Chama de choque séptico sem demonstrar critério completo de choque após ressuscitação.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> TEP obstrutivo não explica bem febre, secreção, leucocitose e foco pulmonar infeccioso.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> IC isolada não explica o conjunto infeccioso e disfunção orgânica.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a leitura mais segura: sepse por pneumonia com disfunção orgânica.</li>
 </ul>
 </div>
 </div>
@@ -540,13 +540,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q79. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> DPOC hipercápnico acidótico é indicação clássica de VNI em dois níveis se não houver contraindicação. A não oferece suporte inspiratório; B hiperoxigena; D é excessiva se o paciente é elegível à VNI.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Modo BiPAP, com IPAP 10 mmHg e EPAP 5 mmHg e FiO2 40%”</p>
+<p><strong>Como pensar:</strong> DPOC acidótico e hipercápnico precisa ventilação em dois níveis para aumentar ventilação alveolar e O2 controlado.</p>
+<p><strong>Por que a C é correta:</strong> BiPAP com IPAP/EPAP iniciais e FiO2 moderada corrige ventilação sem hiperóxia.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Modo CPAP, com CPAP 10 mmHg e FiO2 80%”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Modo CPAP, com CPAP 15 mmHg e FiO2 40%”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Modo BiPAP, com IPAP 10 mmHg e EPAP 5 mmHg e FiO2 40%”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Modo BiPAP, com IPAP 12mmHg e EPAP 6 mmHg e FiO2 95%”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> CPAP não fornece suporte inspiratório adequado para hipercapnia.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> CPAP alto e FiO2 elevada não tratam a ventilação e podem piorar retenção de CO2.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a configuração inicial apropriada para DPOC hipercápnico.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> FiO2 95% é liberal demais para retentor de CO2 e EPAP/IPAP pouco diferencia suporte.</li>
 </ul>
 </div>
 </div>
@@ -563,13 +563,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q88. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Sellick não é manobra de melhorar visão e pode até atrapalhar. A, B e D são medidas de otimização da laringoscopia.</p>
-<p><strong>Por que a C deve ser marcada:</strong> o enunciado pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado pela banca: “Manobra de Selick”</p>
+<p><strong>Como pensar:</strong> A questão pede a manobra que não melhora visualização; pressão cricoide/Sellick é para regurgitação e pode piorar a visão.</p>
+<p><strong>Por que a C deve ser marcada:</strong> Sellick não é manobra de otimização da visão glótica e pode atrapalhar a laringoscopia.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra C, que contém o problema do item. Alternativa: “Manipulação externa da laringe”</li>
-<li><strong>B.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra C, que contém o problema do item. Alternativa: “Manobra de BURP (Back Up right position)”</li>
-<li><strong>C.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “Manobra de Selick”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra C, que contém o problema do item. Alternativa: “Fletir ou elevar a cabeça durante a laringoscopia”</li>
+<li><strong>A.</strong> <strong>Não marque.</strong> Manipulação externa da laringe pode alinhar melhor a glote.</li>
+<li><strong>B.</strong> <strong>Não marque.</strong> BURP é uma forma de manipulação externa para melhorar visão.</li>
+<li><strong>C.</strong> <strong>Deve ser marcada.</strong> Sellick é a exceção pedida.</li>
+<li><strong>D.</strong> <strong>Não marque.</strong> Ajustar flexão/elevação da cabeça pode melhorar exposição, respeitando o contexto cervical.</li>
 </ul>
 </div>
 </div>
@@ -586,13 +586,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q89. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> SDRA grave com hipoxemia persistente pede pronação precoce. B é resgate/ponte; C vem após falha de estratégia otimizada; D é lesivo.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Colocar o paciente em posição prona.”</p>
+<p><strong>Como pensar:</strong> P/F 81 com FiO2 100% em ventilação protetora = SDRA grave; antes de óxido nítrico/ECMO, pense em prona.</p>
+<p><strong>Por que a A é correta:</strong> Prona é intervenção de impacto em SDRA moderada/grave hipoxêmica sob ventilação protetora.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Colocar o paciente em posição prona.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Instalação de óxido nítrico no ramo inspiratório do VM.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Instalação de óxido nítrico no ramo expiratório do VM.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “ECMO Veno–Venosa”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a próxima conduta esperada para SDRA grave com hipoxemia refratária.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Óxido nítrico inalatório é resgate transitório, não primeira estratégia com melhor desfecho.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> NO no ramo expiratório não faz sentido terapêutico.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> ECMO é resgate para casos muito selecionados após otimização, não primeira resposta.</li>
 </ul>
 </div>
 </div>
@@ -609,13 +609,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q95. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> A banca valoriza declarar falha cedo quando a fisiologia não permite repetição. A e B são rígidas demais; D confunde &quot;não intubo, consigo oxigenar&quot; com NINO/CICO.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A via aérea falha pode acontecer após a primeira tentativa de intubação sem sucesso caso realizada por um intubador experiente, com posicionamento otimizado e dispositivos adequados;”</p>
+<p><strong>Como pensar:</strong> Via aérea falha não é número mágico de tentativas; é falha após tentativa otimizada por operador experiente ou perda de oxigenação.</p>
+<p><strong>Por que a C é correta:</strong> Uma primeira tentativa otimizada e sem sucesso por intubador experiente já pode definir via aérea falha e mudar o plano.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “A via aérea falha acontece quando o intubador experiente faz cinco tentativas de intubação sem sucesso independente da oximetria do paciente e independente do quadro clínico”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “A via aérea falha acontece quando o intubador experiente faz duas tentativas de intubação sem sucesso independente da oximetria do paciente e independente do quadro clínico”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A via aérea falha pode acontecer após a primeira tentativa de intubação sem sucesso caso realizada por um intubador experiente, com posicionamento otimizado e dispositivos adequados;”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Na situação “não consigo intubar, consigo oxigenar”, o próximo passo seria garantir uma via aérea cirúrgica”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Cinco tentativas é perigoso e aumenta trauma/hipóxia.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Duas tentativas independentes de oximetria ainda é conceito rígido demais.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É o conceito moderno cobrado: reconhecer cedo e mudar estratégia.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Se consegue oxigenar, não é CICO; via aérea cirúrgica imediata é para não intubo/não oxigeno.</li>
 </ul>
 </div>
 </div>
@@ -633,13 +633,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME23 Q1. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> IOT em TEP maciço pode colapsar o VD. A banca cobra intubação fisiologicamente difícil: ressuscitar, preparar e só avançar se inevitável.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Paciente com Shock Index(SI)&gt;0.9, postergar a intubação ao máximo até ressuscitação com vasopressor e administração de trombólise.”</p>
+<p><strong>Como pensar:</strong> TEP maciço/choque obstrutivo com shock index alto: intubação pode matar se vier antes da ressuscitação e tratamento da causa.</p>
+<p><strong>Por que a D é correta:</strong> A prioridade é ressuscitar, vasopressor e trombólise; adiar IOT se possível até reduzir risco de colapso.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação orotraqueal imediata visto falência respiratória iminente.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Solicitação de ventilação não invasiva, visto que é uma condição reversível com a pressão positiva.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: desalinha controle de dano e ressuscitação hemostática; a prova cobra controle precoce de sangramento, proporção adequada e correção de coagulopatia. Alternativa: “Pericardiocentese imediata visto que o tamponamento é o responsável pelo quadro.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Paciente com Shock Index(SI)>0.9, postergar a intubação ao máximo até ressuscitação com vasopressor e administração de trombólise.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Intubação imediata aumenta pressão intratorácica e pode precipitar parada no VD em choque.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> VNI não resolve choque obstrutivo e pode piorar hemodinâmica.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Pericardiocentese trata tamponamento, não TEP maciço.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a estratégia fisiológica mais segura para TEP com choque.</li>
 </ul>
 </div>
 </div>
@@ -657,13 +657,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q2. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Caso clínico para as questões 1 e 2: Paciente 45 anos, trazido à emergência por dispneia súbita de início há 15 horas. Previamente hipertenso, DM tipo 2 em uso regular de medicação e tabagismo 40 maços/ano. Ao exame: PA 80 x 40 mm...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Cetamina + succinilcolina”</p>
+<p><strong>Como pensar:</strong> Se for inevitável intubar paciente em choque/TEP, escolha drogas que preservem hemodinâmica e façam bloqueio rápido.</p>
+<p><strong>Por que a C é correta:</strong> Cetamina + succinilcolina é a combinação mais favorável entre as opções.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Midazolan + fentanil + rocurônio”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Fentanil + etomidato + succinilcolina”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Cetamina + succinilcolina”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Fentanil + propofol + succinilcolina”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Midazolam/fentanil é combinação hipotensora e lenta para esse choque.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Fentanil antes da indução pode piorar hipotensão.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a resposta: cetamina preserva melhor pressão; succinilcolina dá bloqueio rápido.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Propofol é ruim no choque por vasodilatação e depressão cardiovascular.</li>
 </ul>
 </div>
 </div>
@@ -680,13 +680,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q14. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Supraglóticos podem ser usados em pediatria conforme tamanho/disponibilidade. A, B e D são características clássicas da via aérea infantil.</p>
-<p><strong>Por que a C deve ser marcada:</strong> o enunciado pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado pela banca: “A máscara laríngea não é recomendada para crianças com menos de 2 anos”</p>
+<p><strong>Como pensar:</strong> A pergunta pede a característica errada da via aérea pediátrica; dispositivos supraglóticos podem ser usados em crianças pequenas quando indicados.</p>
+<p><strong>Por que a C deve ser marcada:</strong> Dizer que máscara laríngea não é recomendada abaixo de 2 anos é absoluto demais e está errado.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “É preferível usar a lâmina reta para pinçar a epiglote.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Crianças menores podem necessitar com frequência de um coxim interescapular para alinhar os eixos da via aérea.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A máscara laríngea não é recomendada para crianças com menos de 2 anos”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A epiglote é maior e em forma de ómega.”</li>
+<li><strong>A.</strong> <strong>Não marque.</strong> Lâmina reta pode ajudar a controlar epiglote infantil longa e flexível.</li>
+<li><strong>B.</strong> <strong>Não marque.</strong> Coxim interescapular pode alinhar melhor a via aérea em crianças pequenas.</li>
+<li><strong>C.</strong> <strong>Deve ser marcada.</strong> É a falsa: supraglótico tem papel pediátrico, inclusive como resgate.</li>
+<li><strong>D.</strong> <strong>Não marque.</strong> Epiglote infantil é relativamente maior e mais em ômega.</li>
 </ul>
 </div>
 </div>
@@ -703,13 +703,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME23 Q16. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Espasmo de masseter é alerta após succinilcolina e lembra risco de hipertermia maligna. B, C e D não são a associação clássica.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Succinilcolina.”</p>
+<p><strong>Como pensar:</strong> Espasmo grave de masseter após droga de intubação é associação clássica com succinilcolina, especialmente em pediatria.</p>
+<p><strong>Por que a A é correta:</strong> Succinilcolina é o bloqueador ligado a rigidez de masseter e alerta para hipertermia maligna.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Succinilcolina.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Fentanil.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Diazepam.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Rocurônio.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a droga mais provável.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Fentanil pode causar rigidez torácica, não espasmo isolado de masseter.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Diazepam não explica esse efeito após intubação.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Rocurônio não é a associação clássica com masseter spasm.</li>
 </ul>
 </div>
 </div>
@@ -726,13 +726,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q19. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Narcose por nitrogênio é a frase clássica. A erra porque apagamento em água rasa costuma ocorrer na subida; D esquece a atmosfera da superfície, então 40 m equivalem a cerca de 5 atm absolutas.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A narcose por Nitrogênio é a condição na qual o mergulhador apresenta sintomas semelhantes à embriaguez, e costuma ser mais evidente a partir dos 30 metros de profundidade”</p>
+<p><strong>Como pensar:</strong> Em mergulho, nitrogênio em profundidade causa quadro neuropsíquico tipo embriaguez; pressão absoluta inclui a atmosfera da superfície.</p>
+<p><strong>Por que a C é correta:</strong> Narcose por nitrogênio costuma aparecer em profundidades maiores, com alteração cognitiva semelhante à embriaguez.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “No mergulho em apneia, após o indivíduo realizar hiperventilação, pode ocorrer o apagamento em águas rasas, condição mais frequentemente encontrada durante a descida do mergulhador”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Os sintomas mais comuns da doença descompressiva são dor intensa na região frontal ou orelhas e sangramento nasal”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A narcose por Nitrogênio é a condição na qual o mergulhador apresenta sintomas semelhantes à embriaguez, e costuma ser mais evidente a partir dos 30 metros de profundidade”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A cada 10 metros de profundidade ganha-se 1 atm de pressão, portanto aos 40 metros de profundidade o mergulhador estará exposto a 4 atm de pressurização em seus pulmões”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Apagamento de águas rasas ocorre tipicamente na subida/próximo à superfície após hiperventilação.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Doença descompressiva é mais dor articular, pele, neuro; dor frontal/orelha/sangramento sugere barotrauma.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a descrição correta da narcose por nitrogênio.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> A 40 m são cerca de 5 atm absolutas, não 4 atm.</li>
 </ul>
 </div>
 </div>
@@ -749,13 +749,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME23 Q21. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> DEG é resgate excelente, mas falha com alta pressão, sujeira/aspiração e anatomia distorcida. A, B e C são verdadeiras, mas incompletas.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Todas as opções acima são contraindicações”</p>
+<p><strong>Como pensar:</strong> Dispositivo extraglótico falha quando precisa alta pressão, há conteúdo na boca ou anatomia/obstrução impede vedação/passagem.</p>
+<p><strong>Por que a D é correta:</strong> Todas as opções listadas reduzem segurança/eficácia do supraglótico.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Necessidade de ventilação altas pressões na via aérea”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Sangue ou vômito na boca”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Obstrução ou distorção da via aérea”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Todas as opções acima são contraindicações”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Alta pressão pode gerar vazamento e insuflação gástrica.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Sangue/vômito aumentam aspiração e impedem vedação/visualização.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Obstrução/distorção da via aérea reduz chance de funcionar.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a soma correta das contraindicações relativas.</li>
 </ul>
 </div>
 </div>
@@ -772,13 +772,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q24. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> A erra o alvo em retentores; B aumenta eventos adversos; D nega uma das indicações mais fortes de VNI na emergência.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “F - V - V - V - F”</p>
+<p><strong>Como pensar:</strong> DPOC exacerbado: alvo 88-92%, broncodilatador inalatório, corticoide sistêmico, cultura seletiva e VNI com benefício em acidose.</p>
+<p><strong>Por que a C é correta:</strong> A sequência correta é F-V-V-V-F. A prova cobra metas de O2 e benefício da VNI.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra C, que contém o problema do item. Alternativa: “F - V - F - V - F”</li>
-<li><strong>B.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra C, que contém o problema do item. Alternativa: “V - F - V - V - V”</li>
-<li><strong>C.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “F - V - V - V - F”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra C, que contém o problema do item. Alternativa: “V - V - F - F - V”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Erra ao negar corticoide e errar parte da sequência.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Inicia com alvo &gt;93%, que é hiperóxia para retentor.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a sequência correta: O2 controlado, evitar beta injetável, corticoide ajuda, cultura seletiva, VNI reduz IOT/mortalidade.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Coloca como verdade que VNI não tem evidência, o que é falso no DPOC acidótico.</li>
 </ul>
 </div>
 </div>
@@ -795,13 +795,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME23 Q33. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Afogamento é hipóxia: abrir via aérea e ventilar cedo é central. Drenagem postural e desistência precoce são pegadinhas.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A primeira medida a ser tomada é o posicionamento da via aérea e a realização de cinco ventilações de resgate”</p>
+<p><strong>Como pensar:</strong> Afogamento é hipóxia primária: antes de compressão/drogas, abra via aérea e ventile.</p>
+<p><strong>Por que a A é correta:</strong> A primeira medida é posicionar via aérea e fazer ventilações de resgate.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A primeira medida a ser tomada é o posicionamento da via aérea e a realização de cinco ventilações de resgate”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Durante as manobras de reanimação, deve-se deixar a cabeça do paciente abaixo do nível do restante do corpo, na tentativa de se otimizar a eliminação do líquido aspirado”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Caso não haja resposta às manobras iniciais de ventilação, a reanimação não deve prosseguir neste caso, devido ao tempo de submersão”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Caso haja resposta às manobras iniciais de ventilação, este paciente deve ser classificado como um afogamento Grau 6 e deve-se prosseguir com as manobras de RCP”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a prioridade fisiológica do afogamento.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Não se drena água com cabeça baixa; isso atrasa ventilação e aumenta risco.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Tempo de submersão não autoriza interromper antes de manobras iniciais apropriadas.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Grau 6 é parada respiratória/cardiopulmonar; a alternativa mistura classificação com conduta condicional.</li>
 </ul>
 </div>
 </div>
@@ -818,13 +818,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q37. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Mudança brusca do capnograma após transporte é tubo até prova em contrário. A, B e D ignoram o &quot;D&quot; do DOPE.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Retirar o tubo orotraqueal e reintubar o paciente”</p>
+<p><strong>Como pensar:</strong> Capnografia normal que depois some/zera após transferência sugere deslocamento/extubação ou tubo fora da traqueia.</p>
+<p><strong>Por que a C é correta:</strong> Retirar o tubo e reintubar é adequado quando o traçado sugere perda de via aérea efetiva.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Aspirar secreções”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Colocar o paciente em prona”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Retirar o tubo orotraqueal e reintubar o paciente”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Aumentar os parâmetros do ventilador devido ao baixo volume corrente do paciente”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Aspirar secreção não corrige ausência de capnografia compatível com tubo fora/sem ventilação alveolar.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Prona não trata perda de tubo.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a conduta segura para recuperar via aérea.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Aumentar ventilador não resolve tubo deslocado.</li>
 </ul>
 </div>
 </div>
@@ -848,13 +848,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME23 Q38. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Caso clínico para as questões 36, 37 e 38: Você está atendendo um paciente de 59 anos vítima de Parada Cardiorrespiratória em ritmo chocável após retorno à circulação espontânea. Foram administrados 04 (quatro) choques desfibrilad...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Pneumotórax e Derrame Pericárdico”</p>
+<p><strong>Como pensar:</strong> Hipoxemia e instabilidade pós-IOT/RCE com POCUS: combine achado pulmonar e cardíaco; a pergunta pede ambos.</p>
+<p><strong>Por que a D é correta:</strong> As imagens cobram pneumotórax e derrame pericárdico como causas combinadas da instabilidade.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: interpreta o exame fora da pergunta clínica; POCUS deve ligar achado, contexto e decisão imediata, não apenas nomear uma imagem. Alternativa: “Derrame pleural”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: interpreta o exame fora da pergunta clínica; POCUS deve ligar achado, contexto e decisão imediata, não apenas nomear uma imagem. Alternativa: “Derrame Pericárdico”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Pneumotórax”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Pneumotórax e Derrame Pericárdico”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Derrame pleural isolado não explica todo o quadro nem o achado cardíaco.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Derrame pericárdico isolado perde o achado pulmonar.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Pneumotórax isolado perde o achado pericárdico.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a alternativa que integra os dois achados.</li>
 </ul>
 </div>
 </div>
@@ -871,13 +871,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME23 Q40. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> CO exige O2 a 100% imediatamente; o oxímetro pode enganar. Hidroxocobalamina trata suspeita de cianeto, não CO isolado.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “O tratamento inicial para pacientes que apresentem níveis séricos de carboxi-hemoglobina entre 20% e 30% é a administração de oxigênio normobárico a 100%.”</p>
+<p><strong>Como pensar:</strong> Em incêndio, não confie em aparência clássica: trate CO com oxigênio 100% e reconheça cianeto por choque/lactato; dose importa.</p>
+<p><strong>Por que a D é correta:</strong> COHb entre 20-30% recebe oxigênio normobárico a 100% como tratamento inicial, salvo critérios de câmara hiperbárica.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Lesões por inalação de fumaça são a segunda causa de óbito mais frequente em vítimas de incêndios, atrás apenas das lesões térmicas e queimaduras”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “O desenvolvimento de pele em coloração “vermelho-cereja” é um sinal precoce de intoxicação por monóxido de carbono, e deve estar presente para a confirmação do diagnóstico”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “O tratamento mais eficaz para a intoxicação por Cianeto de Hidrogênio é a Hidroxocobalamina, na dose inicial de 2g em 10 minutos por via endovenosa”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “O tratamento inicial para pacientes que apresentem níveis séricos de carboxi-hemoglobina entre 20% e 30% é a administração de oxigênio normobárico a 100%.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Inalação de fumaça e asfixia/toxicidade costumam ser mais letais que a queimadura cutânea isolada.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Pele vermelho-cereja é tardia e ausente na maioria; não confirma nem exclui CO.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Hidroxocobalamina é antídoto do cianeto, mas a dose adulta inicial usual não é 2 g.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a conduta inicial correta para intoxicação por monóxido de carbono nessa faixa.</li>
 </ul>
 </div>
 </div>
@@ -894,13 +894,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME23 Q46. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> É o resumo operacional da RSI. B é absoluto falso; C descaracteriza RSI; D ignora dessaturação rápida e BVM difícil.</p>
-<p><strong>Por que a A deve ser marcada:</strong> o enunciado pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado pela banca: “F - V - V - F”</p>
+<p><strong>Como pensar:</strong> Na SRI, pré-oxigenação não precisa 12 min; SRI envolve indutor + bloqueador; obesidade aumenta risco; MNR 15 L/min não é a melhor pré-oxigenação grave.</p>
+<p><strong>Por que a A é correta:</strong> A sequência F-V-V-F reconhece tempo realista, conceito de SRI e limitações da MNR em fluxo comum.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “F - V - V - F”</li>
-<li><strong>B.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “F - F - F - F”</li>
-<li><strong>C.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “F - F - V - F”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “V - V - F - V”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a sequência correta.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Erra ao negar o conceito central de hipnótico + bloqueador.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Erra ao negar risco fisiológico/anatômico do IMC.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Coloca 12 minutos e MNR 15 L/min como verdadeiros, duas armadilhas.</li>
 </ul>
 </div>
 </div>
@@ -917,13 +917,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q48. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> O tubo precisa chegar à glote, não só aparecer na tela. A e B são absolutas; D é falsa segurança.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “O caminho relativamente reto entre a boca e a laringe facilita a passagem do tubo endotraqueal.”</p>
+<p><strong>Como pensar:</strong> Lâmina padrão no vídeo mantém trajeto mais reto; hiperangulada pode dar ótima visão mas dificultar a passagem do tubo.</p>
+<p><strong>Por que a C é correta:</strong> A vantagem da geometria padrão é facilitar a entrega do tubo por um caminho mais direto.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “A língua não precisa ser completamente deslocada para se obter uma boa visão da via aérea.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A geometria padrão facilita a introdução da lâmina em pacientes com abertura bucal pequena.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “O caminho relativamente reto entre a boca e a laringe facilita a passagem do tubo endotraqueal.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A técnica é igual da usada durante a laringoscopia direta”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> A língua ainda precisa ser manejada para criar espaço e passagem.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Abertura bucal pequena não favorece automaticamente geometria padrão.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É o ponto cobrado: visão não basta, precisa passar o tubo.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> A técnica não é simplesmente igual à direta, embora seja mais parecida que a hiperangulada.</li>
 </ul>
 </div>
 </div>
@@ -940,13 +940,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME23 Q56. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Pré-oxigenação exige FiO2 alta, vedação e tempo/respirações adequadas. A, B e C entregam menos oxigênio do que parecem.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Paciente acoplado à Máscara Não Reinalante, bem vedada, conectada à rede de oxigênio em “Flush Rate” (Fluxo em Jato) por 9 incursões respiratórias profundas.”</p>
+<p><strong>Como pensar:</strong> Pré-oxigenação efetiva em IR grave exige vedação, alto fluxo/FiO2 e tempo ou respirações profundas suficientes; "15 L" pode não bastar.</p>
+<p><strong>Por que a D é correta:</strong> MNR bem vedada em flush-rate com respirações profundas é a melhor opção entre as descritas.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Paciente acoplado à Ventilação Não-Invasiva, com CPAP de 10 cmH2O e FiO2 de 40%, por cerca de 5 minutos.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Paciente bem acoplado a um dispositivo bolsa-valva-máscara conectado à rede de O2 com fluxo de 10L/min, por cerca de 10 minutos.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Paciente acoplado em máscara facial simples com válvula de venturi, com orifício ocluído com FiO2 prevista de 50% em um fluxo de 15 L/min por 8 minutos.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Paciente acoplado à Máscara Não Reinalante, bem vedada, conectada à rede de oxigênio em “Flush Rate” (Fluxo em Jato) por 9 incursões respiratórias profundas.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> VNI com FiO2 40% é pouco para insuficiência respiratória grave.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> BVM a 10 L/min tende a ser fluxo insuficiente e pode não pré-oxigenar bem.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Venturi improvisado/ocluído é inadequado e imprevisível.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a descrição mais efetiva de pré-oxigenação não invasiva no bloco.</li>
 </ul>
 </div>
 </div>
@@ -963,13 +963,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME23 Q64. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> É resgate descrito para obstrução completa não removível. A pode impactar mais; C não remove obstrução; D deixa o paciente hipóxico.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Intubar o paciente com o tubo orotraqueal e avançar o CE distalmente em um brônquio principal”</p>
+<p><strong>Como pensar:</strong> Corpo estranho não removível em paciente que deteriora: se não consegue retirar, empurre para um brônquio e ventile o outro pulmão.</p>
+<p><strong>Por que a B é correta:</strong> Intubar e avançar o corpo estranho distalmente é manobra de resgate para transformar obstrução completa em ventilação unilateral.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Tentar compressões subdiafragmáticas”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Intubar o paciente com o tubo orotraqueal e avançar o CE distalmente em um brônquio principal”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Realizar uma varredura digital às cegas o máximo que conseguir”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Administrar um agente bloqueador neuromuscular”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Compressões subdiafragmáticas não são a próxima etapa após laringoscopia/Magill falhar em cenário avançado.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a manobra de salvamento descrita.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Varredura digital às cegas pode empurrar o objeto e causar trauma.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Bloqueador neuromuscular não remove a obstrução.</li>
 </ul>
 </div>
 </div>
@@ -986,13 +986,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME23 Q76. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Hiperventilação profilática pode reduzir fluxo cerebral. Reserve hiperventilação temporária para sinais de herniação enquanto faz tratamento definitivo.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Para pacientes com trauma cranioencefálico grave e sem sinais de herniação cerebral, deve-se buscar a normocapnia, com PaCO2 alvo entre 35 e 45 mmHg”</p>
+<p><strong>Como pensar:</strong> No TCE, PaCO2 é droga cerebral: normocapnia se não há herniação; hiperventilação é temporária para herniação.</p>
+<p><strong>Por que a B é correta:</strong> Em TCE grave sem herniação, alvo de PaCO2 35-45 mmHg evita vasodilatação ou isquemia por vasoconstrição.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Para pacientes com trauma cranioencefálico grave e sinais de herniação cerebral, a hiperventilação terapêutica pode ser considerada, buscando-se uma PaCO2 entre 35 e 45 mmHg”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Para pacientes com trauma cranioencefálico grave e sem sinais de herniação cerebral, deve-se buscar a normocapnia, com PaCO2 alvo entre 35 e 45 mmHg”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A hipotermia terapêutica deve ser considerada, nos casos de trauma cranioencefálico grave”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A hipotermia terapêutica deve ser considerada apenas nos pacientes com sinais de herniação cerebral”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Com herniação, a hiperventilação temporária costuma mirar valores mais baixos, não 35-45.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a resposta correta: normocapnia.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Hipotermia terapêutica não é rotina no TCE grave.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Não há indicação de hipotermia apenas por herniação.</li>
 </ul>
 </div>
 </div>
@@ -1009,13 +1009,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME23 Q81. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Radioterapia pode causar rigidez/distorção cervical e de via aérea. A, B e C não são marcadores clássicos de BVM difícil.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “História de radioterapia no pescoço”</p>
+<p><strong>Como pensar:</strong> Dificuldade de BVM segue MOANS: máscara/obesidade/idade/edentulismo/ronco-rigidez; radioterapia causa rigidez cervical/tecidual.</p>
+<p><strong>Por que a D é correta:</strong> História de radioterapia no pescoço aumenta dificuldade de vedação, mobilidade e complacência de via aérea.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Sexo atribuído ao nascimento feminino”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Movimento completo do pescoço”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Idade abaixo de 45 anos”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “História de radioterapia no pescoço”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Sexo feminino não é fator clássico.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Movimento completo do pescoço ajuda, não atrapalha.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Idade abaixo de 45 anos não é fator de risco; idade avançada é mais relevante.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É o fator realmente associado a ventilação difícil.</li>
 </ul>
 </div>
 </div>
@@ -1032,13 +1032,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q82. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Sobre pacientes com quadro de Insuficiência Respiratória Tipo II, marque a alternativa correta.&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Uso de dispositivos de ventilação mecânica não-invasiva pode ser indicado para alguns dos casos de insuficiência respiratória tipo II”</p>
+<p><strong>Como pensar:</strong> IR tipo II é problema de ventilação alveolar; SpO2 pode estar aceitável enquanto CO2 sobe.</p>
+<p><strong>Por que a C é correta:</strong> VNI pode ser indicada em alguns casos de hipercapnia, como DPOC selecionado e paciente colaborativo.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “A oximetria de pulso é o método de monitorização ideal para pacientes com risco de insuficiência respiratória tipo II”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Pacientes com quadro de doença neuromuscular com acometimento respiratório devem ser monitorizados por meio de gasometria arterial, quanto à necessidade de ventilação mecânica invasiva.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Uso de dispositivos de ventilação mecânica não-invasiva pode ser indicado para alguns dos casos de insuficiência respiratória tipo II”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Em pacientes apresentando quadro de intoxicação por Opióides evoluindo com hipercapnia à medida imediata a ser estabelecida é o uso de ventilação mecânica invasiva.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Oximetria não monitora CO2 nem acidose.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Doença neuromuscular exige avaliação ventilatória ampla; gasometria isolada pode atrasar quando há fadiga/FVC baixa.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a alternativa correta: VNI tem papel em casos selecionados de IR tipo II.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Opioide com hipercapnia pede suporte ventilatório e naloxona quando indicada; não é automaticamente IOT.</li>
 </ul>
 </div>
 </div>
@@ -1055,13 +1055,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q6. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Respiração ruidosa/queimadura de face pede via aérea precoce; suspeita de CO recebe O2 100%; lactato muito alto em incêndio sugere cianeto, tratado com hidroxocobalamina.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Realizar intubação orotraqueal/ iniciar suporte de oxigênio suplementar a 100%/ iniciar infusão de hidroxicobalamina.”</p>
+<p><strong>Como pensar:</strong> Incêndio fechado: pense em três ameaças diferentes: edema de via aérea, CO e cianeto.</p>
+<p><strong>Por que a B é correta:</strong> A sequência correta é intubar quem tem sinais de via aérea, O2 100% para suspeita de CO e hidroxicobalamina para lactato muito alto/cianeto.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Realizar intubação orotraqueal/ iniciar suporte de oxigênio suplementar a 100%/ iniciar infusão de cianocobalamina.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Realizar intubação orotraqueal/ iniciar suporte de oxigênio suplementar a 100%/ iniciar infusão de hidroxicobalamina.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Realizar suporte de oxigênio suplementar a 100%/ realizar intubação orotraqueal/ iniciar infusão de hidroxicobalamina.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Realizar suporte de oxigênio suplementar a 100%/ iniciar suporte de oxigênio suplementar a 100%/ iniciar infusão de cianocobalamina.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Erra o antídoto do cianeto: cianocobalamina não é tratamento de intoxicação aguda por cianeto.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a tríade correta para os três pacientes.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> O paciente 1 tem sinais de lesão inalatória e precisa via aérea precoce, não só O2.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Repete antídoto errado e perde a intubação do paciente 1.</li>
 </ul>
 </div>
 </div>
@@ -1078,13 +1078,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q15. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Em criança, bradicardia frequentemente é hipóxica. Ventilar bem é a intervenção inicial; se FC permanecer baixa, entram compressões e medicações.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar ventilação com pressão positiva conectada à fonte de oxigênio e reavaliar a frequência cardíaca e sinais de choque. Iniciar compressões e ventilações, se não houver melhora.”</p>
+<p><strong>Como pensar:</strong> Em lactente hipoxêmico com bradicardia e pulso, a causa até prova em contrário é hipóxia: ventile primeiro.</p>
+<p><strong>Por que a B é correta:</strong> VPP com O2 e reavaliação da FC é a conduta; se não melhora, iniciar compressões.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Iniciar oxigênio em alto fluxo por máscara facial e expansão volêmica, devido aos sinais de choque.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar ventilação com pressão positiva conectada à fonte de oxigênio e reavaliar a frequência cardíaca e sinais de choque. Iniciar compressões e ventilações, se não houver melhora.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Estimular, aquecer e realizar atropina na dose de 0,02 mg/kg por via endovenosa ou intraóssea. Iniciar a ventilação com pressão positiva.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Iniciar compressões alternando com ventilações e administrar bólus de epinefrina por via endovenosa ou intraóssea.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Máscara e volume não corrigem ventilação falha nem bradicardia hipóxica.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a prioridade no algoritmo pediátrico de bradicardia com má perfusão.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Atropina não precede ventilação no lactente hipóxico.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Já começar compressões/epinefrina sem tentar VPP perde a causa mais provável.</li>
 </ul>
 </div>
 </div>
@@ -1101,13 +1101,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME24 Q16. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> CO2 subindo em paciente ainda fazendo esforço sugere falência ventilatória. Asma intubada precisa de pré-oxigenação, preparo e estratégia para evitar hiperinsuflação.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Aumento da pressão parcial de gás carbônico (pCO2) em mais de 5 mmHg na última hora e manutenção do esforço respiratório. Pré-oxigenar com ventilação não invasiva. Considerar intubação em sequência prolongada.”</p>
+<p><strong>Como pensar:</strong> Asma grave que começa a reter CO2 está cansando; intubação deve ser planejada, com pré-oxigenação por pressão positiva e tempo para otimizar.</p>
+<p><strong>Por que a A é correta:</strong> Aumento do CO2 com esforço persistente indica falência ventilatória iminente; VNI/DSI pode preparar melhor.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Aumento da pressão parcial de gás carbônico (pCO2) em mais de 5 mmHg na última hora e manutenção do esforço respiratório. Pré-oxigenar com ventilação não invasiva. Considerar intubação em sequência prolongada.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Diminuição da pCO2 na última hora e manutenção do esforço respiratório. Préoxigenar com ventilação não invasiva. Considerar duplo preparo. Realizar sequência rápida de intubação (SRI) o mais rapidamente possível.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Aumento da pCO2 em mais de 5 mmHg na última hora e manutenção do esforço respiratório. Pré-oxigenar com máscara não reinalante a 5 L/minuto. Proceder com SRI.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Diminuição da pCO2 na última hora e manutenção do esforço respiratório. Realizar lidocaína. Considerar intubação em sequência prolongada.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É o conjunto correto de indicação e estratégia.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> CO2 caindo pode ser hiperventilação compensatória; a alternativa ainda apressa SRI sem otimização.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> MNR a 5 L/min é inadequada para pré-oxigenação grave.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> A queda do CO2 não é o gatilho descrito, e lidocaína não resolve fisiologia.</li>
 </ul>
 </div>
 </div>
@@ -1125,13 +1125,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME24 Q30. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> TCA instável pede bicarbonato e suporte hemodinâmico. Flumazenil é perigoso em intoxicação mista/TCA; IOT deve ser planejada sem agravar o colapso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar bicarbonato de sódio endovenoso, expansão volêmica e drogas vasoativas; realizar intubação orotraqueal após estabilização inicial.”</p>
+<p><strong>Como pensar:</strong> Amitriptilina com choque e ECG alterado sugere intoxicação por tricíclico: bicarbonato e suporte circulatório vêm antes de uma intubação mal preparada.</p>
+<p><strong>Por que a A é correta:</strong> Bicarbonato, volume/vasopressor e IOT após estabilização inicial tratam a causa e reduzem risco peri-intubação.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar bicarbonato de sódio endovenoso, expansão volêmica e drogas vasoativas; realizar intubação orotraqueal após estabilização inicial.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Realizar intubação orotraqueal e iniciar flumazenil e expansão volêmica e drogas vasoativas.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Realizar cardioversão elétrica sincronizada, iniciar flumazenil e aguardar a resposta terapêutica, antes de indicar intubação orotraqueal.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Iniciar bicarbonato de sódio endovenoso, iniciar expansão volêmica e drogas vasoativas e cardioversão elétrica sincronizada.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a resposta: tratar bloqueio de canal de sódio e choque antes da via aérea definitiva se possível.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Flumazenil em intoxicação mista/tricíclico pode precipitar convulsão e piorar.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Cardioversão não trata a toxicidade de canal de sódio; flumazenil é perigoso.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Cardioversão sem instabilidade arrítmica sincronizável não é o tratamento principal.</li>
 </ul>
 </div>
 </div>
@@ -1148,13 +1148,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME24 Q34. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> É o cenário clássico para sedar o bastante para pré-oxigenar. B não é factível; C é inferior sem PEEP; D é desistir da margem de segurança.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Intubação por sequência prolongada (delayed sequence intubation). Préoxigenação com ventilação não invasiva e fração inspirada de oxigênio de 100%.”</p>
+<p><strong>Como pensar:</strong> Agitação + hipoxemia grave/PF 130: use sedação para permitir pré-oxigenação adequada, não uma SRI apressada.</p>
+<p><strong>Por que a A é correta:</strong> DSI com VNI e FiO2 100% é a técnica mais segura para pré-oxigenar o paciente que não tolera máscara.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Intubação por sequência prolongada (delayed sequence intubation). Préoxigenação com ventilação não invasiva e fração inspirada de oxigênio de 100%.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Intubação com paciente acordado (awake intubation) com anestesia tópica da via aérea com lidocaína. Pré-oxigenação com máscara não reinalante em fluxo máximo (flush-rate) (>40 L/minuto).”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação por sequência rápida. Pré-oxigenação com dispositivo bolsaválvula-máscara a 15 L/minuto.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação forçada a agir. Não há tempo para pré-oxigenação.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a resposta: sequência prolongada/atrasada e VNI com FiO2 alta.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Intubação acordado não combina com delirium/abstinência e hipoxemia grave.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> BVM 15 L/min é inferior à VNI para shunt/SDRA e pode ser mal tolerado.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> "Forçada a agir" ignora que pré-oxigenação é exatamente a intervenção que reduz parada.</li>
 </ul>
 </div>
 </div>
@@ -1171,13 +1171,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME24 Q36. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Hiperventilação pode ser ponte curta na herniação, não meta fixa por 24 h. O núcleo é perfusão cerebral, oxigenação, osmoterapia indicada e transferência/neurocirurgia.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “V-V-V-F-F-V.”</p>
+<p><strong>Como pensar:</strong> TCE grave com anisocoria e Cushing: preserve perfusão, trate hipertensão intracraniana e evite hipocapnia profilática prolongada.</p>
+<p><strong>Por que a D é correta:</strong> A sequência V-V-V-F-F-V reconhece Cushing, PAS alvo, manitol, rejeita Na 160/hiperventilação de rotina e aceita profilaxia anticonvulsivante precoce.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra D, que contém o problema do item. Alternativa: “F-V-V-F-F-V.”</li>
-<li><strong>B.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra D, que contém o problema do item. Alternativa: “V-F-F-V-V-F.”</li>
-<li><strong>C.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra D, que contém o problema do item. Alternativa: “V-V-F-V-F-V.”</li>
-<li><strong>D.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “V-V-V-F-F-V.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Erra ao negar Cushing.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Erra vários itens centrais, incluindo PAS/manitol/profilaxia.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Coloca salina até Na 160 como verdadeira, alvo excessivo e perigoso.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a sequência correta.</li>
 </ul>
 </div>
 </div>
@@ -1194,13 +1194,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q38. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Corticoide precoce reduz falha e internação; via EV é razoável se a criança não consegue deglutir. A, C e D usam absolutos perigosos.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Pacientes com exacerbações graves podem apresentar dificuldade de deglutição, sendo recomendada uma dose endovenosa de metilprednisolona ou dexametasona tão logo um acesso venoso seja estabelecido.”</p>
+<p><strong>Como pensar:</strong> Asma pediátrica grave: broncodilatador inalatório repetido, ipratrópio, corticoide cedo; se não deglute, via EV.</p>
+<p><strong>Por que a B é correta:</strong> Corticoide EV é apropriado em crise grave com dificuldade de deglutição.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Por se tratar de uma crise grave, caso não haja resposta adequada após um primeiro resgate com beta-agonista inalatório, devemos iniciar precocemente o uso de beta-agonista endovenoso.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Pacientes com exacerbações graves podem apresentar dificuldade de deglutição, sendo recomendada uma dose endovenosa de metilprednisolona ou dexametasona tão logo um acesso venoso seja estabelecido.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “O uso de magnésio intravenoso, quando indicado, deve ser prescrito na dose de 50 a 75 mg/kg em infusão de 20 minutos somente após uma dosagem sérica de magnésio dentro do limite da normalidade.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “O uso de terbutalina subcutânea e adrenalina intramuscular não possuem benefício em pacientes pediátricos com crise asmática grave, devendo ser utilizados exclusivamente em caso de suspeita de broncoespasmo relacionado à anafilaxia.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Beta-agonista EV não é passo precoce após apenas um resgate inalatório.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a conduta correta para garantir corticoide sistêmico cedo.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Não se espera magnésio sérico para usar sulfato de magnésio quando indicado.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Terbutalina/adrenalina podem ser consideradas em cenários graves selecionados, não só anafilaxia.</li>
 </ul>
 </div>
 </div>
@@ -1217,13 +1217,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q52. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Chega para você um paciente de 45 anos, previamente hipertenso, apresentando quadro de edema de face, principalmente lábios e língua. Ele nega sintomas de urticária. Está com dificuldade para falar e deglutir e apresenta um estrid...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Pelo risco de falha no resgate (garantir a oxigenação).”</p>
+<p><strong>Como pensar:</strong> Angioedema por IECA com língua/lábio/estridor é via aérea que pode fechar após indução; acorde enquanto ainda ventila.</p>
+<p><strong>Por que a B é correta:</strong> Intubação acordado é indicada porque o resgate de oxigenação pode falhar se a via aérea colapsar após sedação/paralisia.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Pela impossibilidade de realizar a intubação por via orotraqueal ou nasotraqueal.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Pelo risco de falha no resgate (garantir a oxigenação).”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Pela inexperiência com via aérea cirúrgica ou indisponibilidade do cirurgião de cabeça e pescoço.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Para evitar o uso do fentanil, devido ao risco de rigidez torácica.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Não é necessariamente impossível intubar por boca/nariz; a questão é manter drive e plano de falha.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É o motivo correto: risco de não conseguir oxigenar no resgate.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Inexperiência/indisponibilidade não é indicação fisiológica da técnica.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Fentanil não é o ponto decisivo do caso.</li>
 </ul>
 </div>
 </div>
@@ -1240,13 +1240,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME24 Q60. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;A unidade de suporte avançado (USA) do Serviço de Atendimento Móvel de Urgência (Samu) é acionada para atender um paciente adulto com história de engasgo em um restaurante próximo à base operacional. À chegada, o paciente encontra...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Caso o paciente fique irresponsivo e o objeto não seja visualizado à laringoscopia, deve ser introduzir o tubo orotraqueal com guia o máximo possível, para alocar, de maneira seletiva, o objeto e recuar o tubo para ventilar.”</p>
+<p><strong>Como pensar:</strong> Obstrução por corpo estranho: enquanto consciente, manobras; se irresponsivo e laringoscopia/Magill não resolve, transformar obstrução total em seletiva.</p>
+<p><strong>Por que a D é correta:</strong> Avançar o tubo para empurrar o objeto a um brônquio permite ventilar o pulmão contralateral.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Realizar adrenalina 0,3 a 0,5 mg por via intramuscular em vasto lateral da coxa.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Conduzir o paciente para realização de broncoscopia.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Caso o paciente fique irresponsivo e o objeto não seja visualizado à laringoscopia, deve ser realizada a cricotireostomia cirúrgica.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Caso o paciente fique irresponsivo e o objeto não seja visualizado à laringoscopia, deve ser introduzir o tubo orotraqueal com guia o máximo possível, para alocar, de maneira seletiva, o objeto e recuar o tubo para ventilar.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Adrenalina trata anafilaxia, não corpo estranho.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Broncoscopia pode ser definitiva, mas não é conduta imediata na USA com paciente obstruído.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Cricotireostomia não resolve obstrução distal ao ponto cirúrgico se o objeto está abaixo/na laringe.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a técnica de resgate descrita.</li>
 </ul>
 </div>
 </div>
@@ -1270,13 +1270,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q64. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Auto-PEEP é falta de tempo expiratório. A e B pioram aprisionamento; D pode ajudar em casos, mas não é a correção central.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Auto-PEEP; redução da frequência respiratória.”</p>
+<p><strong>Como pensar:</strong> Curva fluxo-tempo que não retorna à linha de base antes do próximo ciclo = ar aprisionado/auto-PEEP; corrija dando mais tempo expiratório.</p>
+<p><strong>Por que a C é correta:</strong> Auto-PEEP melhora ao reduzir FR, aumentar tempo expiratório e tratar broncoespasmo/secreção.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Duplo disparo; mudança de modo de ventilação controlada a volume (VCV) para ventilação a pressão controlada (PCV).”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Disparo reverso; redução da pressão positiva expiratória final (PEEP).”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Auto-PEEP; redução da frequência respiratória.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Ciclagem tardia: aumento do tempo inspiratório.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Duplo disparo não é o padrão central da figura e trocar VCV por PCV não corrige aprisionamento.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Reduzir PEEP pode não resolver a causa; disparo reverso é outro padrão.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a leitura correta da curva e da intervenção.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Aumentar tempo inspiratório piora o tempo expiratório, podendo agravar auto-PEEP.</li>
 </ul>
 </div>
 </div>
@@ -1293,13 +1293,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME24 Q66. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Acidose grave exige preservar ventilação-minuto e pressão. B precipita colapso; C é inviável; D é perigosa.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Otimização hemodinâmica; sequência prolongada de intubação; cetamina + rocurônio; pré-oxigenação com ventilação não invasiva (VNI); uso de oxigenação apneica (OxAp) com cateter nasal 15 L/minuto; ajuste de parâmetros da ventilação...”</p>
+<p><strong>Como pensar:</strong> Acidose metabólica extrema pré-IOT exige plano para não perder ventilação minuto; choque e hipoxemia exigem otimização antes da laringoscopia.</p>
+<p><strong>Por que a A é correta:</strong> A sequência correta junta otimização hemodinâmica, DSI, cetamina/rocurônio, VNI, oxigenação apneica e VM com volume minuto alto.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Otimização hemodinâmica; sequência prolongada de intubação; cetamina + rocurônio; pré-oxigenação com ventilação não invasiva (VNI); uso de oxigenação apneica (OxAp) com cateter nasal 15 L/minuto; ajuste de parâmetros da ventilação mecânica (VM) para garantir um volume minuto alto.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Uso de push-dose de adrenalina; sequência rápida de intubação; etomidato + succinilcolina; hidrocortisona; pré-oxigenação com VNI; uso de OxAp com cateter nasal a 15 L/minuto; ajustar os parâmetros da VM para garantir fração inspirada de oxigênio (FiO2) 100%.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Otimização hemodinâmica; técnica SALAD de intubação; cetamina + rocurônio; pré-oxigenação com VNI; uso de OxAp com cateter nasal a 8 L/minuto; ajustar os parâmetros da VM para garantir um volume minuto alto.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Otimização da volemia; sequência atrasada de intubação; propofol + rocurônio; pré-oxigenação com máscara não reinalente em flush-rate; uso de OxAp com cateter nasal a 15 L/minuto; ajustar os parâmetros da VM para garantir uma pressão positiva expiratória final (PEEP) baixa.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É o plano mais completo para evitar colapso e piora brusca da acidemia.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Hidrocortisona não é rotina para "corrigir" etomidato, e FiO2 100% não resolve acidose ventilatória pós-IOT.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> SALAD é para via aérea contaminada; o caso é fisiológico/metabólico, e O2 apneico 8 L/min é baixo.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Propofol piora choque e PEEP baixa não é a prioridade frente à hipoxemia/acidose.</li>
 </ul>
 </div>
 </div>
@@ -1316,13 +1316,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q80. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> SALAD/aspiração contínua ajuda em via aérea contaminada. A é resgate, não rotina; C e D são inseguras.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Laringoscopia assistida por aspiração contínua e descontaminação.”</p>
+<p><strong>Como pensar:</strong> Via aérea suja com vômito/espuma: a técnica é aspirar continuamente durante a laringoscopia, não tentar às cegas.</p>
+<p><strong>Por que a B é correta:</strong> SALAD melhora visualização e descontamina a via aérea durante a laringoscopia.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Cricotireoidostomia cirúrgica.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Laringoscopia assistida por aspiração contínua e descontaminação.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Aspiração da orofaringe com aspirador flexível seguida por intubação às cegas.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação esofágica seguida de nova tentativa de laringoscopia direta.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Cricotireoidostomia não é primeira medida apenas por secreção gástrica.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a técnica certa: laringoscopia assistida por aspiração contínua.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Aspirar e intubar às cegas aumenta risco de trauma e falha.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Intubação esofágica deliberada não é técnica de descontaminação segura.</li>
 </ul>
 </div>
 </div>
@@ -1339,13 +1339,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q82. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Paciente de 28 anos é encontrado com pulso central fraco e sem resposta ao estímulo em via pública; segundo relato de amigos, é usuário de drogas. À ectoscopia, presença de pó branco nas narinas. Evolui para parada cardiorrespirat...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar manobras de ressuscitação; iniciar infusão de bicarbonato de sódio por via endovenosa; usar preferencialmente a lidocaína, caso seja indicado antiarrítmico durante a assistência.”</p>
+<p><strong>Como pensar:</strong> PCR associada à cocaína segue RCP padrão, mas toxicidade por bloqueio de canal de sódio/arrítmica favorece bicarbonato; lidocaína é preferível se antiarrítmico.</p>
+<p><strong>Por que a B é correta:</strong> O bloco com RCP, bicarbonato EV e lidocaína como antiarrítmico preferido é o que melhor encaixa intoxicação por cocaína.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Iniciar manobras de ressuscitação; evitar uso de epinefrina; iniciar amiodarona precocemente em caso de ritmos chocáveis ao monitor; realizar intubação assim que possível.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar manobras de ressuscitação; iniciar infusão de bicarbonato de sódio por via endovenosa; usar preferencialmente a lidocaína, caso seja indicado antiarrítmico durante a assistência.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Administrar naloxona; iniciar manobras de ressuscitação; manter medidas usuais, como uso de epinefrina e amiodarona, conforme indicado na abordagem geral do paciente em parada cardiorrespiratória.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Iniciar reanimação cardiopulmonar e infusão de benzodiazepínico e trombolítico por via endovenosa e manter a medicação durante a assistência.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Epinefrina não deve ser evitada de rotina na PCR.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a resposta esperada para PCR por estimulante com toxicidade cardiovascular.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Naloxona é para opioide; pó branco/cocaína aponta outro mecanismo.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Benzodiazepínico ajuda agitação/simpaticomimético com pulso, mas trombolítico não é rotina da PCR por cocaína.</li>
 </ul>
 </div>
 </div>
@@ -1362,13 +1362,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME24 Q85. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> É duplo setup. A repete erro; B falha em via aérea suja; C ignora prioridade ABC.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Aspirar a via aérea; pré-oxigenar com máscara não reinalente em flush-rate; garantir duplo preparo (“double set-up”): laringoscopia + via aérea cirúrgica de resgate; considerar técnica KOBI a depender da complexidade da lesão oral...”</p>
+<p><strong>Como pensar:</strong> Via aérea facial sangrante = via aérea suja e potencial CICO; prepare aspiração, pré-oxigenação e plano cirúrgico antes de paralisar.</p>
+<p><strong>Por que a D é correta:</strong> Double setup com laringoscopia + via aérea cirúrgica e considerar KOBI cobre falha de visualização e risco de apneia.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Aspirar a via aérea; evitar via aérea cirúrgica; pré-oxigenar com dispositivo bolsa-válvula-máscara; realizar a sequência rápida de intubação; evitar técnicas de intubação com manutenção do drive respiratório.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Aspirar a via aérea; pré-oxigenar com máscara não reinalente em flush-rate; garantir duplo preparo (“double set-up”): laringoscopia + via aérea cirúrgica de resgate; evitar o uso do dispositivo bolsa-válvula-máscara.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Aspirar a via aérea; pré-oxigenar com máscara não reinalente em flush-rate; garantir duplo preparo (“double set-up”): laringoscopia + máscara laríngea; considerar técnica KOBI, a depender da complexidade da lesão oral e dos riscos da apneia.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Aspirar a via aérea; pré-oxigenar com máscara não reinalente em flush-rate; garantir duplo preparo (“double set-up”): laringoscopia + via aérea cirúrgica de resgate; considerar técnica KOBI a depender da complexidade da lesão oral e riscos da apneia.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Evitar via aérea cirúrgica é perigoso nesse cenário.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Evitar BVM de forma absoluta é erro; ventilação de resgate pode ser necessária com técnica adequada.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Máscara laríngea pode falhar em trauma facial/sangue e não substitui via aérea cirúrgica como resgate principal.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a melhor conduta: aspiração, flush-rate, double setup cirúrgico e técnica preservando drive se necessário.</li>
 </ul>
 </div>
 </div>
@@ -1392,13 +1392,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q97. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Aumento abrupto do ETCO2 durante RCP sugere melhora de perfusão/ROSC. A e B tenderiam a queda; D não é inferência do traçado.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Houve provável retorno à circulação espontânea.”</p>
+<p><strong>Como pensar:</strong> Na RCP, capnografia que sobe abruptamente costuma significar aumento súbito de débito pulmonar: pense em ROSC.</p>
+<p><strong>Por que a C é correta:</strong> O aumento abrupto do ETCO2 durante compressões sugere retorno da circulação espontânea.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Houve redução da qualidade da compressão torácica.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Houve extubação do paciente.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Houve provável retorno à circulação espontânea.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Houve troca do dispositivo de via aérea.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Compressão pior tenderia a reduzir ETCO2, não elevar.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Extubação costuma derrubar/abolir capnograma.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a interpretação clássica da curva.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Troca de dispositivo não é inferida só por aumento abrupto de ETCO2.</li>
 </ul>
 </div>
 </div>
@@ -1415,13 +1415,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q1. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> A morte vem de hipertermia/agitação catecolaminérgica. A, B e C são absolutos ou automatismos perigosos.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Deve-se priorizar o controle da temperatura com benzodiazepínicos na pré-otimização.”</p>
+<p><strong>Como pensar:</strong> Cocaína com hipertermia/agitação é emergência simpaticomimética: controle muscular/temperatura vem antes de discutir lâmina.</p>
+<p><strong>Por que a D é correta:</strong> Benzodiazepínicos reduzem agitação, produção de calor e descarga adrenérgica; isso é pré-otimização essencial.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “O uso da cetamina é absolutamente contraindicado.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “O uso de esmolol por via endovenosa como pré-otimização deve ser preconizado.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Succinilcolina é a medicação de escolha como bloqueador neuromuscular.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Deve-se priorizar o controle da temperatura com benzodiazepínicos na pré-otimização.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Cetamina não é absolutamente contraindicada, embora exija cautela no simpaticomimético.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Beta-bloqueio puro como esmolol não é primeira escolha na intoxicação por cocaína.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Succinilcolina não é a escolha automática em hipertermia/risco de rabdomiólise/hipercalemia.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a prioridade: benzodiazepínicos e controle térmico.</li>
 </ul>
 </div>
 </div>
@@ -1438,13 +1438,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME25 Q2. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> A via aérea é necessária, mas eclâmpsia não espera. B atrasa terapia; C exige cooperação; D é resgate/ponte.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Intubação orotraqueal em sequência rápida deve ser optada com utilização de succinilcolina como bloqueador neuromuscular.”</p>
+<p><strong>Como pensar:</strong> Gestante pós-convulsão, rebaixada, secreção e respiração ruidosa: precisa via aérea; SRI com bloqueio rápido é apropriada, sem atrasar tratamento da eclâmpsia.</p>
+<p><strong>Por que a A é correta:</strong> A SRI com succinilcolina é aceitável para via aérea obstétrica emergencial nesse cenário.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Intubação orotraqueal em sequência rápida deve ser optada com utilização de succinilcolina como bloqueador neuromuscular.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “A infusão de sulfato de magnésio deve ser postergada até a fase pós-intubação orotraqueal, assim como a infusão de hidralazina por via endovenosa.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Intubação acordado é a técnica de escolha nessa paciente associada a uma pré-oxigenação otimizada.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Dispositivos supraglóticos de primeira geração devem ser escolhidos, caso haja dificuldade de ventilação com bolsa-válvula-máscara.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a conduta correta para proteger via aérea e permitir ventilação.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Magnésio e controle pressórico não devem ser postergados por causa da intubação.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Intubação acordada exige cooperação e tempo; a paciente está rebaixada e secretiva.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Supraglótico de primeira geração é pior em gestante pelo risco de aspiração e não é primeira escolha.</li>
 </ul>
 </div>
 </div>
@@ -1468,13 +1468,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME25 Q4. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Avaliando a curva de capnografia, assinale a alternativa que define a melhor conduta conforme o que está ocorrendo.&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar broncodilatadores inalatórios, pois se trata de um broncoespasmo.”</p>
+<p><strong>Como pensar:</strong> Capnograma em "barbatana de tubarão" indica obstrução expiratória/broncoespasmo; trate resistência de via aérea.</p>
+<p><strong>Por que a B é correta:</strong> Broncodilatador inalatório é a conduta compatível com capnografia de broncoespasmo.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Otimizar a sedação e a analgesia, pois o paciente iniciou ventilações espontâneas.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar broncodilatadores inalatórios, pois se trata de um broncoespasmo.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Reposicionamento do tubo; trata-se de uma seletivação do tubo.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Aspiração do tubo; trata-se de uma rolha e obstrução total do dióxido de carbono expirado no fim da expiração.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Respiração espontânea costuma deformar/irregularizar o traçado, não criar o padrão obstrutivo clássico.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a resposta da curva obstrutiva.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Seletivação altera ausculta/pressões/oxigenação, não gera esse capnograma típico.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Obstrução total/rolha tenderia a reduzir muito ou abolir CO2 expirado.</li>
 </ul>
 </div>
 </div>
@@ -1491,13 +1491,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME25 Q8. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> A prova mira a rigidez torácica. A e D são absolutas falsas; C confunde analgesia com hipnose.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Doses elevadas de fentanil estão associadas com a rigidez torácica.”</p>
+<p><strong>Como pensar:</strong> Fentanil em SRI pode ser útil, mas dose alta ou administração rápida pode causar rigidez torácica e dificultar ventilação.</p>
+<p><strong>Por que a B é correta:</strong> A associação clássica cobrada é dose alta de fentanil com rigidez torácica.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “O seu uso está contraindicado em toda a sequência rápida de intubação.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Doses elevadas de fentanil estão associadas com a rigidez torácica.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “A indicação do fentanil é a analgesia durante a laringoscopia.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “O fentanil deve ser administrado rapidamente para prevenção de eventos adversos.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Não é contraindicado em toda SRI; pode ser usado seletivamente.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a afirmação correta.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> A função principal pré-laringoscopia é atenuar resposta simpática/analgesia, mas a alternativa simplifica como se fosse "durante" o ato.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Administrar rápido aumenta risco de rigidez e depressão, não previne.</li>
 </ul>
 </div>
 </div>
@@ -1514,13 +1514,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME25 Q9. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Distorção cervical pode virar CICO. B é dependente de tempo/cooperação; C ajuda, mas não é condição obrigatória; D não trata obstrução anatômica alta.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A cricotireoidostomia como estratégia primária deve ser considerada nesse caso.”</p>
+<p><strong>Como pensar:</strong> Infecção odontogênica/cervical com edema e insuficiência respiratória pode tornar a laringoscopia impossível; crico pode ser plano primário.</p>
+<p><strong>Por que a A é correta:</strong> Cricotireoidostomia primária deve ser considerada quando a anatomia cervical/orofaríngea ameaça impedir intubação e ventilação.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A cricotireoidostomia como estratégia primária deve ser considerada nesse caso.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A abordagem com fibroscopia com o paciente acordado é recomendada nesse caso.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “É imprescindível a utilização do ultrassom point-of-care para correta localização da membrana cricotireoidea.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Na falha de intubação orotraqueal, ao realizar cricotireoidostomia como resgate, a incisão mediana deve ter 4 a 5 cm a partir da cartilagem tireóidea.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a resposta: não esperar falhar tudo se a via aérea superior está crítica.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Fibroscopia acordada pode não ser viável com insuficiência respiratória franca/edema importante.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> US ajuda, mas não é imprescindível se atrasar via aérea em extremis.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> A incisão descrita como regra fixa a partir da cartilagem tireoidea não é o ponto cobrado e pode atrasar.</li>
 </ul>
 </div>
 </div>
@@ -1544,13 +1544,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q13. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;O gráfico a seguir mostra as curvas de ventilação mecânica de um paciente admitido no Departamento de Emergência com dispnéia e sibilância. As curvas A e C representam a curva de pressão em função do tempo, e as curvas B e D repre...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Na curva A, a resistência de vias aéreas está aumentada.”</p>
+<p><strong>Como pensar:</strong> Em curva de pressão no tempo, aumento de resistência eleva pressão de pico com platô relativamente menos alterado; broncoespasmo é o contexto.</p>
+<p><strong>Por que a D é correta:</strong> A curva A traduz aumento de resistência de vias aéreas.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Trata-se de um paciente com exacerbação de doença pulmonar obstrutiva crônica, em modo assisto-controlada à pressão.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Na curva D, ocorre o fenômeno de auto-PEEP.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Na curva C, ocorre uma pausa expiratória.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Na curva A, a resistência de vias aéreas está aumentada.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> O modo não pode ser inferido assim, e o caso de sibilância não basta para cravar DPOC.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> A curva D representa outro momento; o gabarito não identifica auto-PEEP ali.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Pausa expiratória é uma manobra/achado específico, não a leitura da curva C.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a interpretação correta do padrão de resistência.</li>
 </ul>
 </div>
 </div>
@@ -1559,21 +1559,21 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <p class="quiz-source">TEME25 Q14</p>
 <p><strong>66. Você está ventilando um paciente do sexo masculino, de 1,74 m de altura, com sepse pulmonar no Departamento de Emergência. O paciente está sedado em RASS -5, bem acoplado à ventilação mecânica em ventilação controlada a volume, com volume corrente de 420 mL, pressão expiratória positiva final de 8 cmH2O, pressão de pico de 35 cmH2O, pressão de platô de 32 cmH2O, frequência respiratória de 20 irpm, fluxo de 60 L/minuto, fração inspirada de oxigênio de 50%, com gasometria arterial com pH de 7,22/ pressão parcial de dióxido de carbono de 46 mmHg/ oxigênio de 75 mmHg/ saturação periférica de oxigênio de 93%/ HCO3 de 16 mEq/L/ Lactato 4.2 mmol/L. O fisioterapeuta fez as manobras de titulação de pressão expiratória positiva final com 50% de fração inspirada de oxigênio. Durante as manobras, a pressão arterial manteve-se constante em 120 × 80 mmHg à custa de norepinefrina a 0,1 mcg/kg/minuto. Escolha a melhor estratégia de ventilação para o caso: Volume corrente (mL) Pressão expiratória positiva final Driving pressure SpO2 (%)</strong></p>
 <div class="quiz-options">
-<label class="quiz-option"><input type="radio" name="q-t001-066" value="A"> A. </label>
-<label class="quiz-option"><input type="radio" name="q-t001-066" value="B"> B. </label>
-<label class="quiz-option"><input type="radio" name="q-t001-066" value="C"> C. </label>
-<label class="quiz-option"><input type="radio" name="q-t001-066" value="D"> D. </label>
+<label class="quiz-option"><input type="radio" name="q-t001-066" value="A"> A. VC 420 mL; PEEP 10; driving pressure 18; SpO2 100%.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-066" value="B"> B. VC 420 mL; PEEP 12; driving pressure 15; SpO2 96%.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-066" value="C"> C. VC 420 mL; PEEP 14; driving pressure 12; SpO2 96%.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-066" value="D"> D. VC 420 mL; PEEP 16; driving pressure 12; SpO2 94%.</label>
 </div>
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q14. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> VM protetora combina oxigenação e mecânica. A pode colapsar; B ignora lesão; D trata pH às custas do pulmão.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “”</p>
+<p><strong>Como pensar:</strong> Na titulação de PEEP, escolha menor driving pressure com oxigenação adequada e sem instabilidade; não persiga SpO2 100% às custas de pressão.</p>
+<p><strong>Por que a C é correta:</strong> PEEP 14 com driving pressure 12 e SpO2 96% entrega melhor mecânica com oxigenação suficiente.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: o texto da alternativa ficou incompleto na extração; revise a fonte original/imagem e use o comentário do item para fixar o ponto cobrado. Alternativa: “”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: o texto da alternativa ficou incompleto na extração; revise a fonte original/imagem e use o comentário do item para fixar o ponto cobrado. Alternativa: “”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: o texto da alternativa ficou incompleto na extração; revise a fonte original/imagem e use o comentário do item para fixar o ponto cobrado. Alternativa: “”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> PEEP 10 deixa driving pressure alta (18), pior para proteção pulmonar.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> PEEP 12 melhora, mas driving pressure 15 ainda é maior que a melhor opção.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É o melhor equilíbrio: menor driving pressure com SpO2 adequada.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Embora DP seja 12, PEEP 16 não melhora oxigenação e aumenta pressão sem ganho.</li>
 </ul>
 </div>
 </div>
@@ -1590,13 +1590,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q15. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> EAP cardiogênico é indicação forte. A erra modo e contraindicação; B exagera pneumonia; D exagera evidência na asma.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Paciente com insuficiência respiratória aguda em edema agudo pulmonar cardiogênico, sem hipercapnia; a ventilação não invasiva em pressão positiva contínua na via aérea, com ajuste progressivo de fração inspirada de oxigênio, é in...”</p>
+<p><strong>Como pensar:</strong> VNI depende do fenótipo: DPOC hipercápnico usa dois níveis, edema cardiogênico responde a CPAP/BiPAP, pneumonia/asma grave têm risco de falha.</p>
+<p><strong>Por que a C é correta:</strong> Edema agudo cardiogênico sem hipercapnia é boa indicação de CPAP com ajuste de FiO2.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Paciente com exacerbação de doença pulmonar obstrutiva crônica, acidose respiratória e comprometimento do nível de consciência; indicada ventilação não invasiva em pressão positiva contínua na via aérea, com pressão positiva inspiratória nas vias aéreas e pressão expiratória positiva nas vias aéreas não ajustáveis.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Em paciente com insuficiência respiratória hipoxêmica secundária à pneumonia extensa, a ventilação não invasiva no modo pressão positiva aérea em dois níveis demonstrou menor necessidade de intubação e necessidade de suporte intensivo.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Paciente com insuficiência respiratória aguda em edema agudo pulmonar cardiogênico, sem hipercapnia; a ventilação não invasiva em pressão positiva contínua na via aérea, com ajuste progressivo de fração inspirada de oxigênio, é indicada.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Paciente com crise asmática grave, hipoxemia moderada e taquipneia intensa; é indicada ventilação não invasiva em pressão positiva contínua na via aérea com pressão expiratória positiva final elevada, para reduzir trabalho respiratório e promover recrutamento alveolar.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> DPOC acidótico geralmente precisa BiPAP, e rebaixamento compromete segurança da VNI.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Pneumonia extensa hipoxêmica tem alta taxa de falha e não é indicação forte de BiPAP.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a indicação e modo mais coerentes.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Asma grave com CPAP/PEEP elevada pode piorar hiperinsuflação; uso é selecionado, não padrão.</li>
 </ul>
 </div>
 </div>
@@ -1613,13 +1613,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME25 Q16. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Oximetria pode ser falsamente normal na intoxicação por CO. B, C e D atrasam antídoto fisiológico: O2 100%.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar o oxigênio a 100% com máscara não reinalante e solicitar carboxi-hemoglobina arterial.”</p>
+<p><strong>Como pensar:</strong> Incêndio em ambiente fechado com cefaleia/vômito: oximetria pode ser falsamente normal na intoxicação por CO.</p>
+<p><strong>Por que a A é correta:</strong> Dê O2 a 100% e dosar carboxi-hemoglobina; não espere a saturação cair.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar o oxigênio a 100% com máscara não reinalante e solicitar carboxi-hemoglobina arterial.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “Aguardar gasometria arterial antes de iniciar qualquer terapia.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “Iniciar a oxigenoterapia apenas se a saturação cair abaixo de 94%, pelo risco de carbonarcose.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Observar clinicamente e repetir a oximetria seriada, pois não há sinais de insuficiência respiratória ou instabilidade.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a conduta inicial correta.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Aguardar gasometria atrasa tratamento simples e urgente.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Não é carbonarcose; é suspeita de CO, e SpO2 não exclui.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Observação com oximetria perde o diagnóstico, porque o oxímetro lê carboxi-Hb como saturação.</li>
 </ul>
 </div>
 </div>
@@ -1636,13 +1636,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q21. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> TCE não tolera hipóxia, hipotensão nem hipertermia. A reduz perfusão cerebral; B é mito clássico; C vale sobretudo para crise precoce, não tardia.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Febre e hipertermia estão associadas a piores desfechos no traumatismo craniencefálico. O controle pode ser feito com antipiréticos e/ou métodos físicos de resfriamento.”</p>
+<p><strong>Como pensar:</strong> TCE não tolera hipóxia, hipotensão, febre nem hipercapnia; succinilcolina não é proibida só por fasciculação.</p>
+<p><strong>Por que a D é correta:</strong> Controle de febre/hipertermia é medida neuroprotetora porque hipertermia piora desfecho.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Em pacientes vítimas de politrauma associado ao traumatismo craniencefálico, a hipotensão permissiva é uma estratégia de escolha durante o manejo hemodinâmico.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “O uso de succinilcolina é contraindicado na intubação do paciente com traumatismo craniencefálico, devido ao aumento da pressão intracraniana causado pelas fasciculações.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: erra janela, critério ou prioridade neurocrítica; primeiro vem tempo, gravidade, contraindicação e proteção contra hipóxia/hipotensão. Alternativa: “A profilaxia anticonvulsivante está indicada para pacientes de alto risco, reduzindo o risco de convulsões, tanto na fase aguda (primeiros 7 dias após o trauma) quanto nas crises tardias.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Febre e hipertermia estão associadas a piores desfechos no traumatismo craniencefálico. O controle pode ser feito com antipiréticos e/ou métodos físicos de resfriamento.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Hipotensão permissiva é contraindicada em TCE.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Succinilcolina pode ser usada em SRI de TCE quando indicada; o aumento de PIC não justifica contraindicação absoluta.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Profilaxia anticonvulsivante reduz crise precoce, não crise tardia.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a afirmação correta.</li>
 </ul>
 </div>
 </div>
@@ -1659,13 +1659,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME25 Q31. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Progressão rápida, bulbar e queda de capacidade vital alertam para falência ventilatória. B, C e D distorcem o quadro.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Quadros de evolução motora mais rápida têm maior risco de progressão para insuficiência respiratória aguda.”</p>
+<p><strong>Como pensar:</strong> Guillain-Barré que progride rápido tem maior risco de falência ventilatória; monitore FVC/NIF e sinais bulbares/autonômicos.</p>
+<p><strong>Por que a A é correta:</strong> Evolução motora rápida é marcador de risco respiratório.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Quadros de evolução motora mais rápida têm maior risco de progressão para insuficiência respiratória aguda.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Insuficiência respiratória aguda geralmente acontece antes da perda de força motora das extremidades.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Presença de dissociação proteino-celular no líquor indica pior prognóstico.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Disautonomias cardiovasculares contraindicam o uso de succinilcolina.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a associação prognóstica correta.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> A insuficiência respiratória geralmente acompanha progressão de fraqueza, não antecede como regra.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Dissociação proteino-celular ajuda diagnóstico, não define pior prognóstico.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Succinilcolina é evitada por risco de hipercalemia em denervação, não por disautonomia em si.</li>
 </ul>
 </div>
 </div>
@@ -1682,13 +1682,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q42. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> O caso mistura A e C: via aérea sangrante + choque hemorrágico cervical. A, B e C deixam parte crítica sem cobertura.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Preparar um duplo setup na intubação orotraqueal; retirar o colar cervical; iniciar quatro concentrados de hemácias, quatro plasmas frescos congelados, quatro unidades de plaquetas, ácido tranexâmico 1 g por via intravenosa, cálci...”</p>
+<p><strong>Como pensar:</strong> PAF cervical com sangue em via aérea, choque e déficit: via aérea difícil + hemorragia maciça; precisa controle de dano e equipe de trauma.</p>
+<p><strong>Por que a D é correta:</strong> Double setup, retirar colar se necessário para acesso, ressuscitação balanceada, TXA/cálcio e cirurgia do trauma cobrem A e C.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Realizar a intubação orotraqueal em sequência rápida com o colar cervical; iniciar seis concentrados de hemácias, seis plasma frescos congelados e um pool de plaquetas; acionar equipe de neurocirurgia com urgência.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: desalinha controle de dano e ressuscitação hemostática; a prova cobra controle precoce de sangramento, proporção adequada e correção de coagulopatia. Alternativa: “Retirar o colar cervical; sentar o paciente; aspirar as vias aéreas; iniciar seis concentrados de hemácias, seis plasmas frescos congelados e uma aférese de plaquetas, ácido tranexâmico 1 g por via intravenosa, cálcio 2 g por via intravenosa; acionar equipe da cirurgia geral.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Preparar para um duplo setup na intubação orotraqueal em sequência rápida com o colar cervical, iniciar quatro concentrados de hemácias, dois plasmas frescos congelados, duas unidades de plaquetas, ácido tranexâmico 1 g por via intravenosa, cálcio 2 g por via intravenosa; acionar equipe da cirurgia geral.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Preparar um duplo setup na intubação orotraqueal; retirar o colar cervical; iniciar quatro concentrados de hemácias, quatro plasmas frescos congelados, quatro unidades de plaquetas, ácido tranexâmico 1 g por via intravenosa, cálcio 2 g por via intravenosa; acionar equipe da cirurgia do trauma.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Intubar com colar e chamar neurocirurgia prioriza o serviço errado e atrapalha via aérea.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Sentar e chamar cirurgia geral não organiza via aérea difícil nem controle de dano adequado.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Mantém colar, usa proporção menos balanceada e chama equipe menos adequada.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a alternativa que integra via aérea, hemorragia e destino cirúrgico.</li>
 </ul>
 </div>
 </div>
@@ -1712,13 +1712,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME25 Q55. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Você está liderando uma reanimação cardiopulmonar de ritmo inicial fibrilação ventricular, em que já foram realizadas quatro desfibrilações e uma dose de adrenalina 1 mg e de amiodarona 300 mg. Paciente 52 anos, previamente hipert...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Trocar os vetores das pás dos desfibriladores, considerando fibrilação ventricular refratária.”</p>
+<p><strong>Como pensar:</strong> FV após quatro choques = refratária; se capnografia mostra ventilação efetiva, a próxima intervenção útil é mudar estratégia de desfibrilação.</p>
+<p><strong>Por que a A é correta:</strong> Trocar vetor das pás é medida para FV refratária após choques repetidos.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Trocar os vetores das pás dos desfibriladores, considerando fibrilação ventricular refratária.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: erra janela, critério ou prioridade neurocrítica; primeiro vem tempo, gravidade, contraindicação e proteção contra hipóxia/hipotensão. Alternativa: “Trombólise farmacológica com tenecteplase, considerando principal hipótese diagnóstica de síndrome coronariana aguda.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Garantir a intubação orotraqueal e descartar hipóxia como uma das causas da parada cardiorrespiratória.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Realizar a troca da pessoa que está realizando as compressões torácicas.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a prioridade específica do caso.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Trombólise por SCA presumida sem pista forte não supera manejo de FV refratária.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Capnografia com máscara laríngea sugere ventilação presente; intubar agora pode interromper compressões sem resolver FV.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Trocar compressor é rotina a cada ciclo, mas não é a intervenção diferenciada cobrada.</li>
 </ul>
 </div>
 </div>
@@ -1736,13 +1736,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME25 Q56. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Hemorragia alveolar pode ocorrer sem hemoptise. Perfil B é inespecífico; se sangramento unilateral, pulmão sangrante fica para baixo para proteger o pulmão bom.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Na suspeita de hemorragia alveolar, a realização de broncoscopia com lavado broncoalveolar tem importante relevância para exclusão de causas infecciosas ou lesões brônquicas.”</p>
+<p><strong>Como pensar:</strong> LES + hipoxemia bilateral + perfil B pode ser hemorragia alveolar mesmo sem hemoptise; broncoscopia ajuda confirmar e excluir infecção.</p>
+<p><strong>Por que a B é correta:</strong> Broncoscopia com lavado broncoalveolar é útil na suspeita de hemorragia alveolar e no diferencial infeccioso.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: desalinha controle de dano e ressuscitação hemostática; a prova cobra controle precoce de sangramento, proporção adequada e correção de coagulopatia. Alternativa: “A ausência de hemoptise afasta a possibilidade de hemorragia alveolar, direcionando a investigação para outras etiologias, como lesão pulmonar induzida pelo cigarro eletrônico.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Na suspeita de hemorragia alveolar, a realização de broncoscopia com lavado broncoalveolar tem importante relevância para exclusão de causas infecciosas ou lesões brônquicas.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: interpreta o exame fora da pergunta clínica; POCUS deve ligar achado, contexto e decisão imediata, não apenas nomear uma imagem. Alternativa: “Achados do ultrassom point-of-care apontam para consolidação pulmonar, indicando fortemente o diagnóstico de pneumonia extensa.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Para pacientes com hemorragia alveolar unilateral com suspeita de sangramento pulmonar localizado, o paciente deve ser posicionado lateralmente com o pulmão sangrante no plano superior, permitindo melhor expansão e troca gasosa pelo pulmão funcional.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Ausência de hemoptise não exclui hemorragia alveolar.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a afirmação correta.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Perfil B bilateral indica síndrome intersticial/alveolar, não consolidação focal obrigatória.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Se sangramento unilateral, o pulmão sangrante fica para baixo para proteger o pulmão bom.</li>
 </ul>
 </div>
 </div>
@@ -1759,13 +1759,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME25 Q75. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de via aérea e ventilação, o comando central é reconhecer a melhor resposta para: &quot;Homem de 45 anos, vítima de capotamento de veículo em rodovia, apresenta abertura ocular ao chamado, localiza a dor, não obedece comandos e emite sons incompreensíveis. Apresenta ainda sangramento orofaríngeo ativo e respiração ru...&quot;. A leitura de prova deve priorizar oxigenação, ventilação, proteção de via aérea, plano de falha e ajuste ventilatório inicial; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Inserir máscara laríngea já na primeira abordagem.”</p>
+<p><strong>Como pensar:</strong> Extricação longa e acesso limitado pedem oxigenação/ventilação simples e rápida; via aérea suja torna VNI ruim e IOT pode ser inviável no local.</p>
+<p><strong>Por que a B é correta:</strong> Máscara laríngea na primeira abordagem pode garantir ventilação temporária durante extricação prolongada quando IOT não é factível.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Realização de manobras manuais e cânula orofaríngea.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Inserir máscara laríngea já na primeira abordagem.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Realizar prontamente a intubação orotraqueal, diante do cenário favorável pelo tempo de extricação.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Iniciar ventilação não invasiva para fornecer oxigenação adequada.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Manobras e cânula podem ser ponte, mas são insuficientes para 40 minutos com sangue e hipoxemia.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a melhor estratégia prática para o cenário limitado.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> IOT "prontamente" não é realista com acesso limitado e via aérea sangrante.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> VNI é contraindicada por rebaixamento, sangue e risco de aspiração.</li>
 </ul>
 </div>
 </div>
@@ -1782,13 +1782,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q83. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Pós-PCR pede oxigenação/ventilação tituladas e pressão adequada. A hiperóxia pode lesar; B exige confirmação/contexto; D não é rotina.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Correção rigorosa da hipotensão com vasopressores para manter a pressão arterial sistólica ≥ p50 para a idade.”</p>
+<p><strong>Como pensar:</strong> Pós-ROSC pediátrico: evitar hiperóxia, hipocapnia/hipercapnia e hipotensão; alvo hemodinâmico é idade-dependente.</p>
+<p><strong>Por que a C é correta:</strong> Corrigir hipotensão para manter PAS pelo menos no percentil 50 é conduta neuroprotetora pós-parada.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Manutenção da fração inspirada de oxigênio em 100% durante as primeiras 24 horas, visando à oxigenação máxima e neuroproteção.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Utilização de dióxido de carbono expirado como marcador confiável de normocapnia para ajuste da ventilação no pós-parada cardiorrespiratória.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Correção rigorosa da hipotensão com vasopressores para manter a pressão arterial sistólica ≥ p50 para a idade.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Administração rotineira de bicarbonato de sódio para correção da acidose metabólica observada após retorno da circulação espontânea.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> FiO2 100% por 24h aumenta risco de hiperóxia; titule para oxigenação adequada.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> ETCO2 ajuda tendência, mas não substitui PaCO2 para normocapnia no pós-parada.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a conduta correta: evitar hipotensão com vasopressor/fluido conforme necessidade.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Bicarbonato não é rotina pós-ROSC; trate causa e ventilação/perfusão.</li>
 </ul>
 </div>
 </div>
@@ -1805,13 +1805,13 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q91. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> &quot;Silêncio&quot; e sonolência em asma grave podem ser exaustão, não melhora. A, B e D são a armadilha que mata.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A aparente melhora do estado geral, combinada com a hipoxemia e a persistência do esforço, sugere fadiga e falência respiratória iminente.”</p>
+<p><strong>Como pensar:</strong> Na asma grave, "ficou quieto" pode ser mau sinal: fadiga, queda de fluxo e tórax silencioso precedem parada respiratória.</p>
+<p><strong>Por que a C é correta:</strong> Hipoxemia persistente, esforço e menor resposta indicam fadiga e falência respiratória iminente.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: aplica lógica adulta ou ignora dose/critério pediátrico; em pediatria, peso, perfusão, hipóxia e sinais tardios mudam a resposta. Alternativa: “A criança está respondendo bem ao tratamento. A diminuição da agitação indica melhora do quadro.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A sibilância menos audível é um sinal positivo de broncodilatação eficaz, indicando que o tratamento está surtindo efeito.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A aparente melhora do estado geral, combinada com a hipoxemia e a persistência do esforço, sugere fadiga e falência respiratória iminente.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “A saturação de oxigênio de 88% é aceitável para o momento, considerando que a criança está mais calma e menos agitada.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Calma não é melhora se a criança não responde comandos e segue hipóxica.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Sibilância menor pode significar menor fluxo de ar, não broncodilatação.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a leitura correta e mais perigosa.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> SpO2 88% em MNR não é aceitável em criança asmática grave.</li>
 </ul>
 </div>
 </div>
