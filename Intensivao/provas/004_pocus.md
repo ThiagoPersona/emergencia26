@@ -48,7 +48,7 @@ Banco do tema 004 refeito em formato mais parecido com a prova: enunciado e alte
 <p><strong>Como pensar:</strong> Choque séptico com prova volêmica sem resposta, linhas B, VCI cheia sem variabilidade e VTI baixo: não siga dando volume; precisa vasopressor cedo.</p>
 <p><strong>Por que a C é correta:</strong> Noradrenalina periférica pode ser iniciada com segurança enquanto se organiza acesso central, evitando atraso no tratamento do choque.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Incorreta.</strong> Linhas B e VCI distendida sugerem risco de congestão; nova prova volêmica não é a melhor resposta.</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Linhas B e VCI distendida sugerem risco de congestão; novo bolus tende a piorar tolerância a volume.</li>
 <li><strong>B.</strong> <strong>Incorreta.</strong> Aguardar CVC para iniciar noradrenalina atrasa correção da hipoperfusão.</li>
 <li><strong>C.</strong> <strong>Correta.</strong> Trata choque vasodilatado/hipoperfusão após volume inicial sem resposta.</li>
 <li><strong>D.</strong> <strong>Incorreta.</strong> Monitorização avançada pode ajudar depois, mas não deve atrasar vasopressor em choque.</li>
