@@ -21,6 +21,8 @@ O que já apareceu no padrão TEME:
 - Choque: RUSH, VCI, VTI, fluido-responsividade versus fluido-tolerância, iniciar noradrenalina sem esperar CVC quando necessário.
 - Trauma: eFAST, Morison, pericárdio, pneumotórax, FAST positivo + instabilidade e FAST negativo que não exclui lesão.
 - PCR: CASA, tamponamento, VD dilatado/TEP, pseudo-AESP versus AESP verdadeira.
+- Física e artefatos: frequência/comprimento de onda, impedância acústica, reforço posterior e imagem em espelho.
+- Aplicações "fora do óbvio": hidronefrose infectada, bloqueios regionais, apendicite, ocular e trombo mural em aneurisma de aorta.
 - Prática 2025: aorta abdominal aneurismática/trombo mural, PLAX, subxifoide, Morison, VCI colabando, coração hipercinético/kissing walls e punção guiada por US.
 
 Mensagem de prova: POCUS é extensão do exame físico na emergência, mas não substitui conduta tempo-dependente nem exame definitivo quando o paciente está estável e precisa de TC/eco formal.
@@ -51,7 +53,24 @@ Se o resultado não muda a conduta agora, provavelmente não é POCUS prioritár
 
 Em estação prática, verbalize: "Escolho o probe conforme profundidade e janela: setorial para coração, curvilíneo para FAST/aorta e linear para vaso/procedimento/pleura superficial."
 
-### 3. Dispneia: POCUS Pulmonar/BLUE
+### 3. Física Que Vira Questão
+
+POCUS não exige decorar física profunda, mas a banca gosta de cobrar o vocabulário que explica a imagem.
+
+| Conceito | Como resolver na prova |
+|---|---|
+| Frequência alta | Melhor resolução e menor penetração; típico do transdutor linear |
+| Frequência baixa | Maior penetração e menor resolução; útil em abdome/coração |
+| Comprimento de onda | Relação inversa com frequência |
+| Impedância acústica | Diferença entre tecidos; quanto maior a diferença, maior reflexão |
+| Osso/ar | Grande barreira ao feixe; geram sombra/reverberação e limitam janela |
+| Reforço acústico posterior | Região mais brilhante atrás de líquido/estrutura pouco atenuante |
+| Imagem em espelho | Artefato de reflexão, clássico próximo ao diafragma |
+| Sombra acústica | Escurecimento atrás de cálculo, osso ou gás |
+
+Frase curta de prova: "no pulmão, eu interpreto artefatos; no abdome/coração, eu procuro estruturas e movimento."
+
+### 4. Dispneia: POCUS Pulmonar/BLUE
 
 Sequência curta:
 
@@ -74,7 +93,7 @@ O que fazer com o achado:
 
 Regra TEME: POCUS pulmonar avalia principalmente **pleura e artefatos**, não "olha o parênquima todo" como TC.
 
-### 4. Choque: RUSH Em Linguagem De Plantão
+### 5. Choque: RUSH Em Linguagem De Plantão
 
 RUSH = **Pump, Tank, Pipes**.
 
@@ -84,6 +103,8 @@ RUSH = **Pump, Tank, Pipes**.
 - VE hipocontrátil: choque cardiogênico, miocardite, IAM, cardiomiopatia.
 - VD maior que VE, septo em D, TAPSE baixo: sobrecarga de VD/TEP/cor pulmonale.
 - Derrame pericárdico + colapso de câmaras direitas + VCI cheia: tamponamento.
+- Tamponamento no eco: colapso diastólico do VD, colapso sistólico do AD, VCI dilatada e pouca colapsibilidade. Nenhum sinal isolado substitui o contexto.
+- TEP/cor pulmonale agudo: VD dilatado, septo em D, hipocinesia de VD, VCI cheia e, quando descrito, VD fino (< 5 mm) sugerindo processo agudo. O sinal de McConnell é mais específico que sensível; não use sozinho para "fechar" TEP.
 
 **Tank - tanque/volume e congestão**
 
@@ -98,7 +119,9 @@ RUSH = **Pump, Tank, Pipes**.
 - Hipotensão/dor abdominal/dorso + AAA no POCUS = chamar cirurgia/vascular; não medir só a luz verdadeira se houver trombo.
 - Veia femoral/poplitea não compressível = TVP; com choque/VD dilatado, aumenta suspeita de TEP.
 
-### 5. Trauma: eFAST
+Quando houver choque séptico ou distributivo com hipoperfusão após volume inicial e baixa tolerância a mais cristalóide, não espere CVC para iniciar noradrenalina se houver acesso periférico adequado e monitorização. A lógica é corrigir perfusão agora e organizar acesso central em paralelo.
+
+### 6. Trauma: eFAST
 
 Janelas obrigatórias:
 
@@ -118,8 +141,9 @@ Conduta:
 - Instável + pneumotórax = descompressão/drenagem imediata.
 - FAST negativo + choque = continue procurando: pelve, retroperitônio, tórax, ossos longos, neurogênico, obstrutivo e causas não traumáticas.
 - estável + mecanismo relevante = TC com contraste pode ser indicada mesmo com FAST negativo.
+- Ascite em cirrótico, diálise peritoneal e líquido pélvico fisiológico podem confundir FAST. Em trauma estável com ferimento toracoabdominal, o caminho costuma ser TC de tórax/abdome com contraste, não exploração "às cegas".
 
-### 6. PCR: CASA Sem Roubar Tempo
+### 7. PCR: CASA Sem Roubar Tempo
 
 Durante compressões:
 
@@ -141,7 +165,7 @@ Uso inteligente:
 - Cardiac standstill tem prognóstico ruim, mas não deve ser o único critério de interrupção.
 - POCUS nunca deve atrasar desfibrilação, adrenalina indicada ou compressões.
 
-### 7. Procedimentos: O Que A Estação Quer Ver
+### 8. Procedimentos: O Que A Estação Quer Ver
 
 Para punção/acesso guiado por US:
 
@@ -153,6 +177,17 @@ Para punção/acesso guiado por US:
 6. Confirmar fio/cateter conforme procedimento; em CVC, considerar bubble test e avaliar pneumotórax.
 
 Frase de prova: "A técnica pode ser eixo curto, eixo longo ou oblíqua; o ponto crítico é manter a ponta da agulha visível e não transfixar estrutura profunda."
+
+### 9. Aplicações Que A Banca Já Usou
+
+| Cenário | Achado-chave | Conduta de prova |
+|---|---|---|
+| Pielonefrite obstrutiva | Hidronefrose importante + infecção/sinais sistêmicos | Antibiótico, analgesia e urologia para desobstrução |
+| Fratura de tornozelo/maléolo lateral | Dor distal no território ciático | Bloqueio ciático poplíteo pode ser útil |
+| Fratura proximal de fêmur/quadril | Dor anterior/proximal | Bloqueio femoral ou fáscia ilíaca |
+| Apendicite | Estrutura em alvo, não compressível, > 6 mm, gordura hiperecogênica | Em hospital rural, acelera cirurgia/regulação |
+| Ocular | Alta miopia + flashes/escotoma/perda visual indolor | POCUS ocular pode apoiar diagnóstico de descolamento de retina |
+| AAA com trombo mural | Aorta > 3 cm medindo parede externa a parede externa | Não medir só a luz; dor/choque exige vascular/cirurgia |
 
 ## Conceitos que sustentam a conduta
 
@@ -267,14 +302,17 @@ flowchart TD
 | Item | Número/achado | observação TEME |
 |---|---:|---|
 | Pausa para POCUS na PCR | < 10 s | Probe já deve estar posicionado |
-| Linhas B | >= 3 por espaco ou múltiplas zonas | Difusas bilaterais sugerem congestão/interstício |
+| Linhas B | >= 3 por espaço ou múltiplas zonas | Difusas bilaterais sugerem congestão/interstício |
 | VCI respiração espontânea | Colapso > 50% | Sugere baixo RAP/responsividade, mas isolado e fraco |
 | VCI plethorica | > 2,1 cm e colapso < 50% | Sugere RAP alta/baixa tolerância a volume |
 | VTI LVOT | 16-22 cm normal aproximado | Baixo VTI sugere baixo volume sistólico |
 | PLR/mini-bolus | Delta VTI/VS 10-15% | Sugere fluido-responsividade |
-| EPSS | > 7 mm | Sugere disfunção sistolica do VE |
+| Mini-fluid challenge | 100 mL com delta DC > 6% | Limiar cobrado em prova TEME |
+| EPSS | > 7 mm | Sugere disfunção sistólica do VE |
 | TAPSE | > 17 mm normal | Reduzido sugere disfunção de VD |
 | Relação VD:VE | VD > VE | Sugere sobrecarga de VD se agudo/contexto compatível |
+| VD agudo/cor pulmonale | Parede VD < 5 mm | Ajuda a diferenciar agudo de crônico na prova |
+| Tamponamento | Colapso diastólico VD + sistólico AD | VCI cheia reforça fisiologia |
 | Aorta abdominal | > 3 cm | Aneurisma; medir parede externa a parede externa |
 | AAA alto risco | > 5-5,5 cm ou sintomático | Dor/choque + AAA = vascular/cirurgia |
 | FAST positivo + instabilidade | Conduta imediata | Cirurgia/controle de fonte, não TC |
@@ -293,6 +331,11 @@ flowchart TD
 - **VCI decide volume sozinha:** errado. VCI é uma peca do quebra-cabeça.
 - **B-lines impedem qualquer volume:** não exatamente. Elas indicam baixa tolerância e pedem dose pequena/reavaliação; choque hemorrágico ainda precisa sangue.
 - **VD dilatado fecha TEP:** não. Sugere sobrecarga de VD; precisa contexto e excluir crônico/cor pulmonale.
+- **Cirurgia recente contraindica trombólise em TEP instável de forma absoluta:** cuidado. Contraindicações são ponderadas contra risco de morte; a prova tende a punir "nunca/sempre" em instabilidade.
+- **McConnell é triagem perfeita de TEP:** errado. É sugestivo, mais específico que sensível, e depende do contexto.
+- **Ascite no FAST = hemoperitônio:** errado. Ascite pode simular líquido livre traumático; integre história e estabilidade.
+- **Hidronefrose infectada é só ITU complicada ambulatorial:** errado. Obstrução + infecção exige antibiótico e avaliação urológica para desobstrução.
+- **Descolamento de retina precisa dor intensa:** errado. Pode ser indolor, com flashes, moscas volantes, sombra/escotoma.
 - **POCUS na PCR melhora tudo sempre:** só se não aumentar pausa. POCUS mal cronometrado piora RCP.
 - **Aorta com luz normal exclui aneurisma:** errado se houver trombo mural. Medir diâmetro externo.
 - **Procedimento guiado = olhar a tela uma vez:** errado. Deve acompanhar ponta da agulha.
@@ -319,29 +362,34 @@ flowchart TD
 | Choque | RUSH: pump/tank/pipes | SSC 2026 favorece medidas dinâmicas para fluido; VCI isolada é insuficiente |
 | Trauma | eFAST positivo + instabilidade muda conduta | eFAST negativo não exclui lesão; em estáveis, TC segue sendo exame anatômico principal |
 | PCR | CASA em pausas <10 s | Cardiac standstill tem mau prognóstico, mas não deve ser critério isolado para encerrar |
-| Procedimentos | Probe linear, eixo curto/longo, visualizar agulha | POCUS reduz complicações quando operador e treinado e imagem é integrada ao procedimento |
+| Procedimentos | Probe linear, eixo curto/longo, visualizar agulha | POCUS reduz complicações quando operador é treinado e imagem é integrada ao procedimento |
 
 ## Checklist de revisão
 
 - [ ] Sei escolher probe: linear, curvilíneo ou setorial.
+- [ ] Sei o básico de frequência, penetração, impedância, sombra, reforço posterior e espelho.
 - [ ] Sei reconhecer linhas A, linhas B, lung sliding, lung point e estratosfera.
 - [ ] Sei interpretar perfil B difuso em SCAPE/EAP hipertensivo.
 - [ ] Sei montar BLUE em dispneia sem decorar demais.
 - [ ] Sei fazer RUSH: pump, tank, pipes.
 - [ ] Sei diferenciar choque hipovolêmico, cardiogênico e obstrutivo pelos extremos ultrassonográficos.
+- [ ] Sei os sinais de tamponamento: colapso diastólico do VD, colapso sistólico do AD e VCI cheia.
+- [ ] Sei que VD dilatado sugere TEP/cor pulmonale, mas não fecha sozinho.
 - [ ] Sei que VCI sozinha não decide volume.
 - [ ] Sei usar VTI/PLR quando houver tempo e janela.
 - [ ] Sei janelas do eFAST: QSD, QSE, pelve, pericárdio e pleura.
 - [ ] Sei que FAST negativo não exclui trauma abdominal.
 - [ ] Sei usar CASA sem prolongar pausa na PCR.
+- [ ] Sei reconhecer hidronefrose infectada, apendicite, descolamento de retina e indicações básicas de bloqueio regional.
 - [ ] Sei pontos da prática: PLAX, subxifoide, Morison, VCI, aorta, punção guiada e ponta da agulha.
 
 ## Questões e estações relacionadas
 
-- **TEME22:** POCUS pulmonar e artefatos; choque com VCI/B-lines/VTI; POCUS de tórax na dispneia; pneumotórax com A' e lung point; eFAST; CASA; fluido-responsividade/FALLS/BLUE.
-- **TEME23:** US beira-leito em choque/TEP, fisica do ultrassom, VCI em choque, trauma e eFAST.
-- **TEME24:** estação prática de POCUS com probe setorial, janela cardíaca, pulmão com linhas A/B, lung sliding, função de VE é diagnóstico de SCAPE/EAP hipertensivo.
-- **TEME25:** estação prática de POCUS com aorta aneurismática/trombo mural, choque hipovolêmico/hemorrágico, PLAX, subxifoide, Morison, VCI colabando e punção guiada por US; prova com acesso guiado, POCUS pulmonar, derrame, apendicite, ONSD e ocular.
+- **TEME22:** Q9, Q17, Q24, Q29, Q39, Q50, Q57, Q84, Q86, Q105, Q115.
+- **TEME23:** Q5, Q38, Q62, Q66, Q75.
+- **TEME24:** Q17, Q40, Q41, Q53.
+- **TEME25:** Q5, Q50, Q70, Q77.
+- **Estações práticas:** TEME24 com probe setorial, janelas cardíacas e pulmão; TEME25 com aorta aneurismática/trombo mural, choque hipovolêmico/hemorrágico, PLAX, subxifoide, Morison, VCI colabando e punção guiada por US.
 - **Aulas de cursinho:** Aula 09 POCUS pulmonar; Aula 13 Choque; Aula 18 POCUS trauma/vascular/neuro; Aula 29 POCUS cardíaco; Aula 35 POCUS procedimentos.
 
 ## Referências
@@ -350,9 +398,10 @@ flowchart TD
 - Livro POCUS ABRAMEDE disponível no projeto.
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25 disponíveis no projeto.
 - Estações práticas TEME24 e TEME25 disponíveis no projeto.
-- Aulas de cursinho: Aula 09 - POCUS Pulmonar; Aula 13 - Choque; Aula 18 - POCUS Trauma, Vascular e Neuro; Aula 29 - POCUS Cardiaco; Aula 35 - POCUS Procedimentos.
+- Aulas de cursinho: Aula 09 - POCUS Pulmonar; Aula 13 - Choque; Aula 18 - POCUS Trauma, Vascular e Neuro; Aula 29 - POCUS Cardíaco; Aula 35 - POCUS Procedimentos.
 - Resumo do cursinho.docx, arquivo do usuário.
-- American College of Emergency Physicians. 2023: [Ultrasound Guidelines: Emergency, Point-of-care, and Clinical Ultrasound Guidelines in Medicine](0).
-- EFSUMB. 2022/2023: [Clinical Practice Guidelines for Point-of-Care Ultrasound: common heart and pulmonary applications](1).
-- Society of Critical Care Medicine/ESICM. 2026: [Surviving Sepsis Campaign Guidelines](2).
-- American Heart Association. 2025: [Adult Advanced Life Support](3).
+- American College of Emergency Physicians. 2023: [Ultrasound Guidelines: Emergency, Point-of-care, and Clinical Ultrasound Guidelines in Medicine](https://www.annemergmed.com/article/S0196-0644(23)00432-8/fulltext).
+- ACEP. 2023: [Point-of-Care Ultrasound Guidelines PDF](https://www.acep.org/siteassets/sites/acep/media/ultrasound/pointofcareultrasound-guidelines.pdf).
+- EFSUMB. 2022/2023: [Clinical Practice Guidelines for Point-of-Care Ultrasound: common heart and pulmonary applications](https://pubmed.ncbi.nlm.nih.gov/36228631/).
+- Society of Critical Care Medicine/ESICM. 2026: [Surviving Sepsis Campaign Guidelines](https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026).
+- American Heart Association. 2025: [Adult Advanced Life Support](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support).
