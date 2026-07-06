@@ -26,6 +26,10 @@ O que a banca costuma testar:
 - Reconhecimento de via aérea falha e NINO/CICO.
 - Capnografia e deterioração pós-IOT.
 - Ajuste inicial do ventilador e interpretação de curvas.
+- Dispositivos de oxigênio, VNI/CPAP/BiPAP e contraindicações.
+- RCP, capnografia durante parada, pós-RCE e deterioração pós-transporte.
+- POCUS pulmonar básico aplicado à dispneia e ao paciente ventilado.
+- Cenários especiais: fumaça/CO/cianeto, corpo estranho, via aérea suja, Guillain-Barré, asma pediátrica e acidose extrema.
 
 ## Conceitos que sustentam a conduta
 
@@ -233,6 +237,94 @@ Peso predito, não peso real, guia o volume corrente. Obeso não recebe VC por p
 >
 > **Na prática clínica:** ajuste a técnica ao risco fisiológico e ao time disponível. Em paciente hipoxêmico, VNI/HFNC/BVM com PEEP podem ser melhores que máscara simples para pré-oxigenação. Em choque, ressuscitação e vasopressor pronto importam tanto quanto a lâmina. Em DPOC/asma, a prioridade ventilatória é evitar auto-PEEP, mesmo que o CO2 demore a normalizar.
 
+## Complemento Dirigido Pelas Questões 22-25
+
+Este bloco cobre assuntos que aparecem nas questões do tema 01, mas que não devem virar capítulo separado. Leia como mapa de decisão rápido.
+
+### RCP, Capnografia E Pós-RCE
+
+| Situação de prova | Como resolver | Pegadinha |
+|---|---|---|
+| PCR sem pulso | Compressão/desfibrilação vem antes da obsessão pelo tubo | Intubar antes de fazer RCP de qualidade |
+| RCP com via aérea avançada | Não pausar compressão para ventilar; usar capnografia em onda | Ausculta isolada não confirma tubo |
+| ETCO2 sobe abruptamente na RCP | Pense em RCE até prova em contrário | Achar que todo aumento é problema do ventilador |
+| ETCO2 zera ou some após transporte | Pensar em extubação/deslocamento/desconexão | Procurar diagnóstico raro antes de checar circuito/tubo |
+| FV refratária com ventilação efetiva | Depois de choques, adrenalina e antiarrítmico, pense em estratégia de desfibrilação conforme protocolo | Trocar uma via aérea que está ventilando bem |
+| Pós-RCE pediátrico | Evitar hipóxia, hiperóxia, hipocapnia, hipercapnia e hipotensão | Deixar SpO2 100% e hiperventilar "por segurança" |
+
+Frase de prova: **capnografia confirma ventilação e ajuda a detectar RCE, deslocamento do tubo e qualidade da RCP**.
+
+### Oxigênio, VNI E POCUS Pulmonar
+
+| Ferramenta | Serve para | Não confundir com |
+|---|---|---|
+| Cateter nasal comum | Baixo fluxo e conforto | Pré-oxigenação robusta no crítico |
+| Máscara não reinalante | Alto fluxo/alta FiO2 se bem ajustada | PEEP ou ventilação |
+| Venturi | FiO2 controlada, útil em risco de retenção de CO2 | Melhor dispositivo para shunt grave |
+| HFNC | Alto fluxo aquecido/umidificado; pode ajudar na oxigenação apneica | Esterilização de via aérea |
+| CPAP | Pressão contínua; edema agudo cardiogênico, hipoxemia selecionada | Ventilação em dois níveis |
+| BiPAP/VNI dois níveis | Aumenta ventilação alveolar; DPOC hipercápnico acidótico | Paciente sem proteção de via aérea |
+
+Contraindicações fortes à VNI: rebaixamento com secreção/vômitos, incapacidade de proteger via aérea, choque/instabilidade, trauma facial importante, pneumotórax não drenado, agitação sem cooperação e necessidade imediata de via aérea definitiva.
+
+POCUS pulmonar que cai:
+
+| Achado | Pense em |
+|---|---|
+| Linhas A + ausência de lung sliding + lung point | Pneumotórax |
+| Linhas B difusas bilaterais | Síndrome intersticial: edema, SDRA, hemorragia alveolar, pneumonite |
+| Consolidação com broncograma aéreo | Pneumonia/atelectasia conforme contexto |
+| Derrame pleural | Líquido; no trauma pode ser hemotórax |
+| Perfil B bilateral em LES hipoxêmico | Hemorragia alveolar entra no diferencial, mesmo sem hemoptise |
+
+### Curvas, Mecânica E Gasometria Que Resolvem Questões
+
+| Dado | Interpretação rápida | Conduta mental |
+|---|---|---|
+| Ppico alta com Pplat normal/menos alta | Resistência: broncoespasmo, secreção, tubo dobrado/mordido | Aspirar, broncodilatar, checar tubo/circuito |
+| Ppico e Pplat altas | Complacência ruim: SDRA, edema, pneumotórax, abdome hipertenso | Reduzir VC, avaliar PEEP, procurar causa |
+| Driving pressure alta | Complacência ruim para o volume entregue | Tentar menor driving pressure com oxigenação aceitável |
+| Fluxo expiratório não volta a zero | Auto-PEEP/ar aprisionado | Reduzir FR/volume minuto e aumentar tempo expiratório |
+| Capnograma em "barbatana" | Obstrução expiratória/broncoespasmo | Broncodilatador, tempo expiratório, checar tubo |
+| VCV com FR fixa | Tempo total do ciclo = 60/FR | Mudar VC/fluxo altera tempo inspiratório, não o ciclo total |
+
+Na titulação de PEEP, a prova tende a premiar **oxigenação suficiente com menor driving pressure e estabilidade hemodinâmica**, não SpO2 100% a qualquer custo.
+
+### Via Aérea Suja, Corpo Estranho E APH
+
+| Cenário | Resposta curta |
+|---|---|
+| Vômito/sangue/espuma na laringoscopia | Aspirador rígido pronto, aspiração contínua e técnica tipo SALAD; não insistir às cegas |
+| Trauma facial sangrante | Pré-oxigenação, aspiração, melhor primeira tentativa e crico pronta |
+| PAF cervical com sangue na boca + choque | Via aérea difícil + hemorragia; chamar cirurgia/trauma, controle de dano, plano cirúrgico de resgate |
+| Extricação longa com acesso ruim | Priorizar oxigenação/ventilação simples possível no cenário; IOT pode não ser factível antes da retirada |
+| Afogamento ou broncoaspiração | Hipóxia é o problema central: abrir via aérea, aspirar o que impede ventilação e ventilar |
+| Corpo estranho consciente e não fala | Manobras de desobstrução enquanto consciente |
+| Corpo estranho não retirado com laringoscopia/Magill e deterioração | Como último recurso, empurrar para um brônquio para ventilar o outro pulmão |
+
+### Acidose Extrema, Choque E Intoxicações
+
+| Situação | O que mata na intubação | Como pensar |
+|---|---|---|
+| Acidose metabólica grave | Perder ventilação-minuto durante apneia e pós-IOT | Pré-oxigenar sem parar ventilação; programar FR/VC que sustentem ventilação minuto inicial |
+| TEP maciço/VD em falência | Hipotensão, hipoxemia e aumento de pressão intratorácica | Ressuscitar/tratar causa; se intubar, indução gentil e VM menos agressiva |
+| Choque séptico hipoxêmico | Colapso peri-intubação | Vasopressor pronto, pré-oxigenação com PEEP, dose ajustada de indutor |
+| Cocaína hipertermia/agitação | Hipertermia, acidose, rabdomiólise e catecolaminas | Benzodiazepínico, resfriamento, controle muscular e suporte |
+| Tricíclico com choque/QRS largo | Arritmia e colapso | Bicarbonato e suporte hemodinâmico são prioridade junto do plano de via aérea |
+| Fentanil rápido/alto | Rigidez torácica e dificuldade de ventilar | Usar com critério; se rigidez, suporte ventilatório e bloqueio neuromuscular |
+
+### Situações Especiais Que A Banca Usa Como Atalho
+
+| Cenário | Atalho de prova |
+|---|---|
+| Incêndio em ambiente fechado + cefaleia/vômitos | Intoxicação por CO: SpO2 pode ser falsamente normal; O2 100% e co-oximetria quando disponível |
+| Incêndio + choque/lactato alto | Pensar em cianeto, além de CO e lesão térmica de via aérea |
+| Fuligem, rouquidão, estridor, queimadura facial | Risco de edema de via aérea: intubação precoce se sinais progressivos |
+| Guillain-Barré | Risco maior se progressão rápida, bulbar/autonômico, CVF caindo ou NIF fraco |
+| Pediatria | Occipício/língua proporcionalmente maiores, laringe mais anterior/cefálica; dispositivo supraglótico pode ser resgate |
+| Asma pediátrica que "ficou calma" | Pode ser fadiga/tórax silencioso, não melhora |
+| Mergulho | Narcose por nitrogênio dá quadro neuropsíquico em profundidade; doença descompressiva é outro problema |
+
 ## Modos Ventilatórios Que Mais Caem
 
 | Modo | O ventilador controla | O que varia | Pegadinha |
@@ -333,6 +425,11 @@ Conduta: chamar ajuda cedo, preparar via aérea difícil e crico. Acordado pode 
 - **Pré-oxigenação por saturação apenas**: SpO2 boa não prova reserva segura.
 - **Dispositivo extraglótico**: não é solução ideal se obstrução/distorção importante, vômito/sangue ou necessidade de altas pressões.
 - **Capnografia alterada pós-transporte**: pense deslocamento/desconexão antes de diagnósticos raros.
+- **ETCO2 sobe na RCP**: pense em RCE; confirme pulso/ritmo na pausa apropriada.
+- **SpO2 normal no incêndio fechado**: não exclui CO, porque a oximetria comum pode enganar.
+- **VNI**: DPOC acidótico é ótimo cenário; coma com secreção, choque ou pneumotórax não drenado é armadilha.
+- **Corpo estranho não removível**: se deteriora e Magill falhou, pode ser necessário empurrar para um brônquio para ventilar o outro pulmão.
+- **Guillain-Barré**: não espere hipoxemia; queda de força ventilatória e sinais bulbares/autonômicos vêm antes.
 - **Auto-PEEP**: tratar reduzindo volume minuto e aumentando tempo expiratório.
 - **VC no obeso**: usar peso predito, não peso real.
 - **Hiperventilação no TCE**: ponte para herniação, não rotina.
@@ -357,18 +454,24 @@ Conduta: chamar ajuda cedo, preparar via aérea difícil e crico. Acordado pode 
 - [ ] Sei contraindicar succinilcolina quando há risco de hiperK.
 - [ ] Sei reconhecer NINO/CICO e indicar crico.
 - [ ] Sei confirmar tubo com capnografia.
+- [ ] Sei interpretar ETCO2 alto/súbito, baixo e ausente na RCP/pós-IOT.
+- [ ] Sei escolher oxigênio, HFNC, CPAP, BiPAP ou IOT conforme proteção de via aérea e estabilidade.
+- [ ] Sei contraindicar VNI quando há secreção, coma, choque, trauma facial ou pneumotórax não drenado.
 - [ ] Sei programar VM inicial protetora.
+- [ ] Sei diferenciar Ppico alta por resistência de Pplat alta por complacência.
 - [ ] Sei reconhecer auto-PEEP na curva fluxo-tempo.
 - [ ] Sei corrigir auto-PEEP reduzindo FR/volume minuto e aumentando tempo expiratório.
+- [ ] Sei lembrar que CO pode ter SpO2 normal e que fumaça também pode trazer cianeto.
+- [ ] Sei reconhecer fadiga em asma pediátrica e falência ventilatória neuromuscular.
 
 ## Questões e estações relacionadas
 
 **Provas teóricas**
 
-- TEME22: questões 4, 8, 15, 18, 19, 31, 32, 46, 70, 79, 88, 89, 95.
-- TEME23: questões 2, 14, 16, 21, 37, 46, 48, 56, 64, 81, 82.
-- TEME24: questões 3, 34, 35, 52, 60, 64, 66, 80, 84, 85, 97.
-- TEME25: questões 1, 2, 4, 8, 9, 13, 14, 15, 16, 21, 31, 42, 55, 75, 83, 91.
+- TEME22: questões 3, 4, 5, 6, 7, 8, 9, 15, 18, 19, 23, 24, 31, 32, 34, 46, 48, 64, 69, 70, 77, 78, 79, 88, 89, 95.
+- TEME23: questões 1, 2, 14, 16, 19, 21, 24, 33, 37, 38, 40, 46, 48, 56, 64, 76, 81, 82.
+- TEME24: questões 6, 15, 16, 30, 34, 36, 38, 52, 60, 64, 66, 80, 82, 85, 97.
+- TEME25: questões 1, 2, 4, 8, 9, 13, 14, 15, 16, 21, 31, 42, 55, 56, 75, 83, 91.
 
 **Práticas**
 
@@ -395,7 +498,11 @@ Conduta: chamar ajuda cedo, preparar via aérea difícil e crico. Acordado pode 
 **Atualização clínica**
 
 - American Society of Anesthesiologists. 2022 Practice Guidelines for Management of the Difficult Airway. DOI: https://doi.org/10.1097/ALN.0000000000004002
+- Difficult Airway Society. 2025 guidelines for management of unanticipated difficult tracheal intubation in adults. British Journal of Anaesthesia. DOI: https://doi.org/10.1016/j.bja.2025.10.006
 - Difficult Airway Society. Guidelines for the management of tracheal intubation in critically ill adults. British Journal of Anaesthesia, 2018. DOI: https://doi.org/10.1016/j.bja.2017.10.021
+- American Heart Association. 2025 Guidelines for CPR and Emergency Cardiovascular Care: https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines
+- British Thoracic Society. Guideline for oxygen use in adults in healthcare and emergency settings: https://www.brit-thoracic.org.uk/clinical-resources/guidelines/emergency-oxygen/
+- ATS/ESICM/SCCM. Mechanical ventilation in adult patients with ARDS: implementation tools and recommendations: https://www.thoracic.org/statements/guideline-implementation-tools/mechanical-ventilation-in-adults-with-ards.php
 - Casey JD et al. Noninvasive Ventilation for Preoxygenation during Emergency Intubation. New England Journal of Medicine, 2024. DOI: https://doi.org/10.1056/NEJMoa2313680
 - Zampieri FG et al. Induction agents for emergency tracheal intubation in critically ill adults: systematic review and network meta-analysis. Critical Care, 2026. DOI: https://doi.org/10.1186/s13054-026-06067-w
 - NIH ARDSNet Ventilator Protocol: low tidal volume ventilation, plateau pressure and oxygenation targets.
