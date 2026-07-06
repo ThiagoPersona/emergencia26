@@ -576,6 +576,35 @@
       font-weight: 650;
     }
 
+    .quiz-summary-actions {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 0.9rem;
+    }
+
+    .quiz-reset {
+      min-height: 38px;
+      padding: 0.56rem 0.82rem;
+      border: 1px solid #9fb2ba;
+      border-radius: 8px;
+      background: var(--card);
+      color: #344252;
+      font: inherit;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .quiz-reset:hover {
+      border-color: var(--link);
+      color: var(--link);
+    }
+
+    .quiz-reset:disabled {
+      cursor: default;
+      opacity: 0.52;
+    }
+
     .loading-msg,
     .fallback-msg {
       max-width: 760px;
@@ -786,44 +815,188 @@
       });
     }
 
+    const QUIZ_STORAGE_PREFIX = "resumos-emergencia:quiz:v1:";
+
+    function getQuizStorageKey() {
+      const hashRoute = (window.location.hash || "")
+        .replace(/^#\/?/, "")
+        .split(/[?#]/)[0]
+        .replace(/\/+$/, "");
+      const pathRoute = (window.location.pathname || "home")
+        .replace(/\/+/g, "/")
+        .replace(/^\//, "")
+        .replace(/\/$/, "");
+      return `${QUIZ_STORAGE_PREFIX}${hashRoute || pathRoute || "home"}`;
+    }
+
+    function readQuizProgress(storageKey = getQuizStorageKey()) {
+      try {
+        const raw = window.localStorage.getItem(storageKey);
+        if (!raw) return {};
+        const parsed = JSON.parse(raw);
+        return parsed && typeof parsed === "object" ? parsed : {};
+      } catch (error) {
+        return {};
+      }
+    }
+
+    function writeQuizProgress(progress, storageKey = getQuizStorageKey()) {
+      try {
+        window.localStorage.setItem(storageKey, JSON.stringify(progress));
+      } catch (error) {
+        // Navegação privada ou storage bloqueado: o quiz continua funcionando na sessão atual.
+      }
+    }
+
+    function saveQuizCardProgress(storageKey, cardKey, selected, isCorrect) {
+      if (!selected || !cardKey) return;
+      const progress = readQuizProgress(storageKey);
+      progress[cardKey] = {
+        selected,
+        correct: isCorrect ? "1" : "0"
+      };
+      writeQuizProgress(progress, storageKey);
+    }
+
+    function getQuizCardKey(card, index) {
+      const firstInput = card.querySelector("input[type='radio']");
+      const source = card.querySelector(".quiz-source");
+      return (firstInput && firstInput.name) || (source && source.textContent.trim()) || `card-${index + 1}`;
+    }
+
+    function updateQuizOptionSelection(card) {
+      const options = Array.from(card.querySelectorAll(".quiz-option"));
+      options.forEach((item) => {
+        const itemInput = item.querySelector("input[type='radio']");
+        item.classList.toggle("is-selected", Boolean(itemInput && itemInput.checked));
+      });
+    }
+
+    function lockQuizCard(card, selectedValue, settings = {}) {
+      const answer = card.dataset.answer;
+      const button = card.querySelector(".quiz-check");
+      const feedback = card.querySelector(".quiz-feedback");
+      const options = Array.from(card.querySelectorAll(".quiz-option"));
+      const inputs = Array.from(card.querySelectorAll("input[type='radio']"));
+      const selectedInput = inputs.find((input) => input.value === selectedValue);
+
+      if (!answer || !button || !feedback || !selectedInput) return false;
+
+      selectedInput.checked = true;
+      options.forEach((option) => {
+        option.classList.remove("is-correct", "is-wrong");
+        const input = option.querySelector("input[type='radio']");
+        if (!input) return;
+        if (input.value === answer) option.classList.add("is-correct");
+        if (input.checked && input.value !== answer) option.classList.add("is-wrong");
+      });
+      updateQuizOptionSelection(card);
+
+      const isCorrect = selectedValue === answer;
+      const selectedExplain = getQuizExplanation(card, selectedValue);
+      card.dataset.locked = "1";
+      card.dataset.correct = isCorrect ? "1" : "0";
+      button.disabled = true;
+      button.textContent = "Resposta checada";
+
+      options.forEach((option) => {
+        option.classList.add("is-locked");
+        const input = option.querySelector("input[type='radio']");
+        if (input) input.disabled = true;
+      });
+
+      feedback.hidden = false;
+      feedback.className = "quiz-feedback";
+      feedback.classList.add(isCorrect ? "is-correct" : "is-wrong");
+      const selectedBlock = !isCorrect && selectedExplain
+        ? `<div class="quiz-selected-explain"><p><strong>Por que sua alternativa (${selectedValue}) está errada:</strong> ${selectedExplain}</p></div>`
+        : "";
+      feedback.innerHTML = `<p><strong>${isCorrect ? "Correto." : "Ainda não."}</strong> Gabarito: ${answer}.</p>${selectedBlock}${feedback.dataset.originalHtml || ""}`;
+
+      if (settings.persist) {
+        saveQuizCardProgress(settings.storageKey, settings.cardKey, selectedValue, isCorrect);
+      }
+
+      return true;
+    }
+
+    function restoreQuizCard(card, saved) {
+      if (!saved || !saved.selected) return false;
+      return lockQuizCard(card, saved.selected, { persist: false });
+    }
+
+    function clearQuizCard(card) {
+      const button = card.querySelector(".quiz-check");
+      const feedback = card.querySelector(".quiz-feedback");
+      const options = Array.from(card.querySelectorAll(".quiz-option"));
+
+      delete card.dataset.locked;
+      delete card.dataset.correct;
+
+      if (button) {
+        button.disabled = false;
+        button.textContent = "Checar resposta";
+      }
+
+      if (feedback) {
+        feedback.hidden = true;
+        feedback.className = "quiz-feedback";
+        if (feedback.dataset.originalHtml) feedback.innerHTML = feedback.dataset.originalHtml;
+      }
+
+      options.forEach((option) => {
+        option.classList.remove("is-selected", "is-locked", "is-correct", "is-wrong");
+        const input = option.querySelector("input[type='radio']");
+        if (input) {
+          input.checked = false;
+          input.disabled = false;
+        }
+      });
+    }
+
+    function resetQuizProgress(section = document.querySelector(".markdown-section")) {
+      if (!section) return;
+
+      try {
+        window.localStorage.removeItem(getQuizStorageKey());
+      } catch (error) {
+        // Sem storage, ainda limpamos o estado visível da página.
+      }
+
+      Array.from(section.querySelectorAll(".quiz-card")).forEach(clearQuizCard);
+      updateQuizSummary();
+    }
+
     function initQuizzes() {
       const section = document.querySelector(".markdown-section");
       const cards = Array.from(document.querySelectorAll(".quiz-card"));
+      const storageKey = getQuizStorageKey();
+      const savedProgress = readQuizProgress(storageKey);
 
       if (section && cards.length) ensureQuizSummary(section, cards);
 
-      cards.forEach((card) => {
+      cards.forEach((card, index) => {
         if (card.dataset.quizReady === "1") return;
         const answer = card.dataset.answer;
         const button = card.querySelector(".quiz-check");
         const feedback = card.querySelector(".quiz-feedback");
         const options = Array.from(card.querySelectorAll(".quiz-option"));
+        const cardKey = getQuizCardKey(card, index);
 
         if (!answer || !button || !feedback || !options.length) return;
         feedback.dataset.originalHtml = feedback.innerHTML;
+        card.dataset.quizKey = cardKey;
 
         options.forEach((option) => {
           const input = option.querySelector("input[type='radio']");
           if (!input) return;
-          input.addEventListener("change", () => {
-            options.forEach((item) => {
-              const itemInput = item.querySelector("input[type='radio']");
-              item.classList.toggle("is-selected", Boolean(itemInput && itemInput.checked));
-            });
-          });
+          input.addEventListener("change", () => updateQuizOptionSelection(card));
         });
 
         button.addEventListener("click", () => {
           if (card.dataset.locked === "1") return;
 
           const checked = card.querySelector("input[type='radio']:checked");
-          options.forEach((option) => {
-            option.classList.remove("is-correct", "is-wrong");
-            const input = option.querySelector("input[type='radio']");
-            if (!input || !checked) return;
-            if (input.value === answer) option.classList.add("is-correct");
-            if (input.checked && input.value !== answer) option.classList.add("is-wrong");
-          });
 
           feedback.hidden = false;
           feedback.className = "quiz-feedback";
@@ -834,29 +1007,19 @@
             return;
           }
 
-          const isCorrect = checked.value === answer;
-          const selectedExplain = getQuizExplanation(card, checked.value);
-          card.dataset.locked = "1";
-          card.dataset.correct = isCorrect ? "1" : "0";
-          button.disabled = true;
-          button.textContent = "Resposta checada";
-
-          options.forEach((option) => {
-            option.classList.add("is-locked");
-            const input = option.querySelector("input[type='radio']");
-            if (input) input.disabled = true;
+          lockQuizCard(card, checked.value, {
+            persist: true,
+            storageKey,
+            cardKey
           });
-
-          feedback.classList.add(isCorrect ? "is-correct" : "is-wrong");
-          const selectedBlock = !isCorrect && selectedExplain
-            ? `<div class="quiz-selected-explain"><p><strong>Por que sua alternativa (${checked.value}) está errada:</strong> ${selectedExplain}</p></div>`
-            : "";
-          feedback.innerHTML = `<p><strong>${isCorrect ? "Correto." : "Ainda não."}</strong> Gabarito: ${answer}.</p>${selectedBlock}${feedback.dataset.originalHtml}`;
           updateQuizSummary();
         });
 
+        restoreQuizCard(card, savedProgress[cardKey]);
         card.dataset.quizReady = "1";
       });
+
+      updateQuizSummary();
     }
 
     function getQuizExplanation(card, letter) {
@@ -919,7 +1082,13 @@
         </div>
         <div class="quiz-progress" aria-label="Progresso da prova"><span style="width: ${completion}%"></span></div>
         <p class="quiz-summary-note">${note}</p>
+        <div class="quiz-summary-actions">
+          <button class="quiz-reset" type="button" ${answered ? "" : "disabled"}>Limpar respostas deste tema</button>
+        </div>
       `;
+
+      const resetButton = summary.querySelector(".quiz-reset");
+      if (resetButton) resetButton.addEventListener("click", () => resetQuizProgress(section));
     }
 
     function ensureMermaidInit() {
