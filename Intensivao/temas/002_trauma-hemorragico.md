@@ -217,6 +217,35 @@ Conduta inicial:
 
 Pegadinha: lesão esplênica grau alto na TC não é indicação automática de laparotomia se o paciente está estável e em centro capaz de monitorar/embolizar.
 
+## Pontos De Prova Fora Do Núcleo Hemorragia
+
+Esses temas aparecem nas questões de trauma mesmo quando a aula parece ser "só" controle de dano:
+
+| Tema cobrado | Como pensar na prova | Pegadinha |
+|---|---|---|
+| Cinemática | mecanismo antecipa lesão oculta: colisão lateral, ejeção, alta energia, cavitação | não desenhar o trajeto do projétil como linha reta simples |
+| Lesão aórtica traumática | desaceleração + diferença pressórica/pulso entre membros | tratar como tamponamento sem evidência |
+| Crush/esmagamento | hidratar antes da liberação; pensar em rabdomiólise, hipercalemia e IRA | usar hipotensão permissiva como se fosse hemorragia não controlada |
+| Explosão | primária = onda de pressão; secundária = fragmentos; terciária = corpo lançado; quaternária = queimadura/inalação/esmagamento | ruptura timpânica é primária |
+| START | anda? respira? perfusão? obedece comandos? | dor/fratura exposta não é automaticamente vermelho se perfusão e mental estão bons |
+| TCE leve | TC se critério de risco; perda de consciência breve isolada não é critério clássico da regra canadense | anticoagulado, vômitos e idade avançada baixam limiar |
+| Restrição de coluna | penetrante isolado com choque geralmente não ganha com colar/prancha | colar pode atrapalhar via aérea e controle de sangramento cervical |
+| Pescoço penetrante | instável ou hard signs = controle imediato; estável pode ir para angioTC e manejo seletivo | zona II não é mais cirurgia obrigatória para todos |
+| Ferida soprante de tórax | curativo oclusivo/ventilado e vigilância; descomprimir se deteriorar | curativo em três pontos não é resposta universal |
+| PCR traumática | corrigir causa reversível mecânica: hipovolemia, pneumotórax, tamponamento, hipóxia | compressão isolada sem tratar causa tem pouco valor |
+| Traqueostomia com sangramento pulsátil | fístula traqueoinominada até prova em contrário | hiperinsuflar cuff e chamar cirurgia imediatamente |
+| Trauma pediátrico | hipotensão é tardia; FAST negativo não libera criança com sinais de hipoperfusão | usar exame/laboratório de apoio, aquecer e bolus 20 mL/kg quando indicado |
+
+### Regras Curtas Que Resolvem Questões
+
+- **Cinto pélvico/lençol:** fica nos grandes trocanteres. Se a alternativa fala cintura ou espinha ilíaca, desconfie.
+- **FAST negativo:** não exclui retroperitônio, pelve, víscera oca nem lesão em criança.
+- **Paciente estável com trauma de tronco:** TC com contraste costuma ser o exame que define lesão.
+- **Paciente instável com FAST positivo:** controle de fonte, não "tomografia para entender melhor".
+- **Ferida abdominal por arma branca:** sem instabilidade/peritonite pode haver manejo seletivo com exame seriado e/ou TC conforme recurso.
+- **Fratura exposta:** antibiótico precoce; Gustilo I-II costuma ser cefazolina, Gustilo III costuma pedir cefazolina + gentamicina.
+- **Shock index:** FC/PAS. Valor > 1 em trauma deve acender transfusão/controle de fonte cedo.
+
 ## Extremidades
 
 ### Fratura Exposta
@@ -316,6 +345,10 @@ Pulso ausente, palidez e paralisia são tardios. Conduta: retirar constrições 
 - [ ] Sei repor cálcio durante transfusão maciça.
 - [ ] Sei evitar hipotermia, acidose, coagulopatia e hipocalcemia.
 - [ ] Sei que hipotensão permissiva não vale para TCE grave.
+- [ ] Sei que FAST negativo não exclui pelve/retroperitônio/criança.
+- [ ] Sei que colar cervical em penetrante de pescoço pode atrapalhar mais que ajudar.
+- [ ] Sei reconhecer fístula traqueoinominada: sangramento pulsátil pela traqueostomia.
+- [ ] Sei usar START sem transformar toda fratura exposta em vermelho.
 
 ## Questões e estações relacionadas
 
@@ -356,5 +389,7 @@ Pulso ausente, palidez e paralisia são tardios. Conduta: retirar constrições 
 
 - Rossaint R et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care, 2023. DOI: https://doi.org/10.1186/s13054-023-04327-7
 - Joint Trauma System. Damage Control Resuscitation Clinical Practice Guideline, 2019/atualizado no portal JTS. https://jts.health.mil/assets/docs/cpgs/Damage_Control_Resuscitation_12_Jul_2019_ID18.pdf
+- American College of Surgeons. ACS TQIP Massive Transfusion in Trauma Guidelines. https://www.facs.org/media/zcjdtrd1/transfusion_guildelines.pdf
+- Brain Trauma Foundation. Guidelines for the Management of Severe TBI, 4th Edition. https://braintrauma.org/coma/guidelines/severe-tbi
 - American Association for the Surgery of Trauma/American College of Surgeons Committee on Trauma. Clinical protocol for damage-control resuscitation for the adult trauma patient. Journal of Trauma and Acute Care Surgery, 2024. DOI: https://doi.org/10.1097/TA.0000000000003555
 - American Heart Association/American Red Cross. 2024 First Aid Guidelines: external bleeding control. https://cpr.heart.org/en/resuscitation-science/2024-first-aid-guidelines
