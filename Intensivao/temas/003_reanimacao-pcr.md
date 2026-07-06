@@ -1,4 +1,4 @@
-# reanimação/PCR Adulto, Pediátrica E Pós-RCE
+# Reanimação/PCR Adulto, Pediátrica E Pós-RCE
 
 ## Leitura de 30 segundos
 
@@ -20,6 +20,7 @@ O que já apareceu ou foi fortemente sugerido nas provas/estações:
 - TEME24: PCR em gestante, torsades de pointes, tamponamento, pós-RCE com IAMCST e estação prática com BAVT evoluindo para FV.
 - TEME25: FV refratária, bradicardia instável/marca-passo, regulação frente a PCR, pós-RCE pediátrico e decisão de não iniciar/interromper em contexto de futilidade.
 - Práticas 2022-24: RCP de alta qualidade, tamponamento/pneumopericárdio, PCR pediátrica com TSV, bradicardia instável, IAMCST, marca-passo e desfibrilação.
+- Pontos transversais: afogamento, PCR traumática, POCUS/CASA, capnografia, morte encefálica pós-RCE e fluxo médico-legal após óbito.
 
 Tradução para prova: se a alternativa atrasa compressão, atrasa choque, hiperventila, ignora causa reversível ou usa POCUS prolongando pausa, provavelmente está errada.
 
@@ -153,7 +154,7 @@ EtCO2 muito baixo após RCP adequada sugere mau prognóstico, mas não deve ser 
 
 Pense nas causas que você consegue tratar durante a PCR: choque, agulha/drenagem, pericardiocentese, cálcio, glicose/insulina, antídoto, trombólise quando TEP altamente provável, controle de hemorragia.
 
-### situações Especiais Que A Banca Gosta
+### Situações Especiais De Prova E Plantão
 
 **TEP com PCR:** suspeite em dispneia/síncope prévia, hipoxemia, fatores de risco, VD dilatado no POCUS. Trombólise pode ser considerada durante RCP quando TEP e altamente provável ou confirmado. Depois, a RCP costuma precisar ser prolongada.
 
@@ -170,6 +171,49 @@ Pense nas causas que você consegue tratar durante a PCR: choque, agulha/drenage
 **Opioide:** se há pulso e depressão respiratória, ventilar e usar naloxona. Se sem pulso, RCP/desfibrilador primeiro; naloxona não substitui RCP.
 
 **Torsades de pointes:** TV polimórfica com QT longo: sulfato de magnésio e corrigir K/Mg, suspender drogas que prolongam QT; se sem pulso, desfibrilar.
+
+## Decisões Rápidas Que Resolvem Questões
+
+| Cenário | Resposta de prova | Pegadinha |
+|---|---|---|
+| PCR sem pulso | Compressões 100-120/min e desfibrilador | IOT ou adrenalina antes de compressão |
+| FV/TV sem pulso | Choque precoce, RCP imediata pós-choque | Medicação antes do primeiro choque |
+| FV refratária | Após choques repetidos e antiarrítmico, considerar trocar vetor das pás conforme protocolo | Intubar só porque ainda está em FV, se ventilação/capnografia estão adequadas |
+| AESP/assistolia | RCP + adrenalina precoce + 5H/5T | Tratar AESP como diagnóstico final |
+| Capnografia sobe abruptamente na RCP | Pensar em RCE | Achar que compressão pior aumenta ETCO2 |
+| Capnografia some após transporte | Deslocamento/extubação/desconexão até prova em contrário | Aumentar ventilador antes de checar tubo/circuito |
+| POCUS/CASA | Tamponamento, VD/TEP, atividade cardíaca/pseudo-AESP em pausa curta | Parar RCP por ausência isolada de atividade cardíaca |
+| VD dilatado em AESP sem cardiopatia prévia | TEP maciço entra forte; trombólise pode ser considerada | Trombólise para toda PCR por dor torácica |
+| Gestante com útero grande em PCR | Deslocamento uterino + RCP; histerotomia por volta de 4 min se sem RCE | Esperar BCF ou obstetra chegar para decidir |
+| Afogamento | Ventilação precoce; 5 ventilações iniciais quando aplicável | Heimlich/cabeça baixa para retirar água |
+| Lactente com hipóxia + FC &lt; 60 e pulso | VPP com O2; se má perfusão persiste, compressões | Atropina antes de corrigir ventilação |
+| Pós-RCE pediátrico | Evitar hipotensão; manter PAS pelo menos p50 para idade | FiO2 100% por 24h ou bicarbonato rotineiro |
+| TdP adquirida recorrente | Magnésio, corrigir K/Mg e considerar overdrive pacing 100-120 | Procainamida/propafenona ou sincronizar se sem pulso |
+| Tamponamento traumático | Baixa voltagem é compatível; trauma penetrante com tamponamento pode pedir toracotomia | JVD confirma; pericardiocentese resolve PCR traumática |
+| Óbito com queda/lesões | Possível causa externa: constatar, registrar e encaminhar ao IML | Encaminhar ao SVO ou emitir DO natural |
+
+### Fluxo Médico-Legal Após Óbito Na Emergência
+
+| Situação | Caminho prático |
+|---|---|
+| Morte natural com causa conhecida e assistência | Médico assistente pode emitir Declaração de Óbito, conforme contexto local |
+| Morte natural sem causa definida | SVO quando disponível |
+| Suspeita de causa externa: queda, trauma, violência, acidente, intoxicação | IML |
+| Lesões antigas/novas ou cena incompatível com morte natural | Não preencher como causa clínica presumida; documentar e acionar fluxo médico-legal |
+
+Para a prova: **se não dá para excluir causa externa, não é caso de SVO nem de DO natural pelo plantonista.**
+
+### Morte Encefálica E Prognóstico Pós-RCE
+
+No pós-RCE, não confunda mau exame neurológico inicial com morte encefálica. Sedação, hipotermia, choque, distúrbios metabólicos e tempo curto invalidam conclusões apressadas.
+
+| Achado inicial | Como interpretar |
+|---|---|
+| Glasgow 3 sob sedação recente | Não prognosticar |
+| Pupilas fixas logo após RCE | Sinal ruim, mas não fecha ME isoladamente |
+| Mioclonia precoce | Não define prognóstico sozinha |
+| Temperatura baixa | Corrigir antes de avaliação formal |
+| Suspeita de ME | Cumprir pré-requisitos legais, neuroimagem compatível quando exigida, observação e exames conforme norma |
 
 ## Fluxograma
 
@@ -295,6 +339,11 @@ flowchart TD
 - **"Criança com FC 50 e perfusão ruim: só observar porque tem pulso":** errado. Se FC menor que 60 com má perfusão apesar de oxigenação/ventilação, iniciar RCP.
 - **"PCR gestante: esperar obstetra chegar":** errado. RCP imediata, deslocamento uterino e decisão precoce de histerotomia se indicado.
 - **"Trombolisar toda PCR por dor torácica":** errado. TEP altamente provável/confirmado pode justificar; SCA deve ir para angioplastia após RCE quando possível.
+- **"FV refratária = trocar tubo":** cuidado. Se a ventilação está adequada pela capnografia, pense em estratégia elétrica, como mudar vetor das pás conforme protocolo.
+- **"Afogamento = tirar água do pulmão":** errado. O foco é ventilação e oxigenação.
+- **"POCUS mostra VD grande, então sempre é TEP":** errado. O contexto define; VD isolado não é especificidade absoluta.
+- **"Pós-RCE com Glasgow 3 = morte encefálica":** errado. Corrigir confundidores e cumprir critérios formais.
+- **"Óbito idoso com Alzheimer = morte natural":** errado se há queda, ferimentos ou causa externa possível.
 
 ## Erros fatais na prática
 
@@ -333,6 +382,11 @@ flowchart TD
 - [ ] Sei ventilação pediátrica com via avançada: 20-30/min.
 - [ ] Sei quando iniciar RCP em bradicardia pediátrica com pulso.
 - [ ] Sei usar POCUS sem prolongar pausa.
+- [ ] Sei interpretar capnografia que sobe abruptamente ou desaparece após transporte.
+- [ ] Sei quando considerar trombólise em PCR por TEP provável.
+- [ ] Sei a regra prática da histerotomia perimortem na gestante.
+- [ ] Sei que afogamento é PCR hipóxica e pede ventilação precoce.
+- [ ] Sei reconhecer fluxo IML vs SVO após óbito.
 - [ ] Sei pacote pós-RCE: O2, CO2, PA, ECG, causa, temperatura, convulsão, UTI.
 - [ ] Sei que prognóstico neurológico é tardio e multimodal.
 
@@ -340,10 +394,10 @@ flowchart TD
 
 Use está lista para refazer mentalmente as respostas depois de ler o capítulo:
 
-- **TEME22:** compressões 100-120/min; FV/TVsp e drogas; bradicardia; POCUS/CASA na PCR.
-- **TEME23:** PCR em gestante; afogamento sem respiração; metas pós-RCE; capnografia; tamponamento/trauma.
-- **TEME24:** PCR em gestante; torsades; tamponamento; pós-RCE com IAMCST; questão de ritmo/monitor.
-- **TEME25:** FV refratária; bradicardia instável e marca-passo; regulação frente a PCR; pós-RCE pediátrico; limite/futilidade.
+- **TEME22:** questões 6, 7, 22, 50, 82, 102 e 119.
+- **TEME23:** questões 7, 23, 33, 37, 62 e 89.
+- **TEME24:** questões 15, 51, 63, 67, 82, 97 e 99.
+- **TEME25:** questões 45, 55, 83 e 94.
 - **Prática 2022:** reanimação, RCP de alta qualidade e tamponamento por pneumopericárdio.
 - **Prática 2023:** reanimação pediátrica e TSV estável.
 - **Prática 2024:** BAVT instável, marca-passo, IAMCST e evolução para FV.
@@ -355,10 +409,8 @@ Use está lista para refazer mentalmente as respostas depois de ler o capítulo:
 - Estações práticas TEME22-25 disponíveis no projeto.
 - Aulas de cursinho: Aula 01 - Reanimação; Aula 30 - Emergências pediátricas; Aula 34 - Síncope e Arritmias.
 - Resumo do cursinho.docx, arquivo do usuário.
-- American Heart Association. 2025 Guidelines for CPR and ECC: [Adult Advanced Life Support](0).
-- American Heart Association. 2025 Guidelines for CPR and ECC: [Adult Basic Life Support](1).
-- American Heart Association. 2025 Guidelines for CPR and ECC: [Pediatric Basic Life Support](2).
-- American Heart Association. 2025 Guidelines for CPR and ECC: [Pediatric Advanced Life Support](3).
-- American Heart Association. 2025 Guidelines for CPR and ECC: [Neonatal Resuscitation](4).
-- American Heart Association. 2025 Guidelines for CPR and ECC: [Special Circumstances of Resuscitation](5).
-- American Heart Association. 2025 Guidelines for CPR and ECC: [Post-Cardiac Arrest Care](6).
+- American Heart Association. 2025 Guidelines for CPR and ECC: https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines
+- American Heart Association. Part 9: Adult Advanced Life Support, 2025: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001376
+- American Heart Association. Part 7: Adult Basic Life Support, 2025: https://www.ahajournals.org/doi/10.1161/CIR.0000000000001369
+- European Resuscitation Council Guidelines 2025: https://www.erc.edu/science-research/guidelines/guidelines-2025/guidelines-2025-english/
+- International Liaison Committee on Resuscitation. 2025 CoSTR summary: https://professional.heart.org/en/science-news/2025-international-consensus-on-cardiopulmonary-resuscitation-and-ecc-science-treatment
