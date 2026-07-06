@@ -217,9 +217,9 @@ Conduta inicial:
 
 Pegadinha: lesão esplênica grau alto na TC não é indicação automática de laparotomia se o paciente está estável e em centro capaz de monitorar/embolizar.
 
-## Pontos De Prova Fora Do Núcleo Hemorragia
+## Situações Especiais No Trauma
 
-Esses temas aparecem nas questões de trauma mesmo quando a aula parece ser "só" controle de dano:
+Além do controle de hemorragia, a banca costuma misturar trauma com cinemática, triagem, via aérea, neurologia e lesões torácicas específicas.
 
 | Tema cobrado | Como pensar na prova | Pegadinha |
 |---|---|---|
@@ -236,7 +236,7 @@ Esses temas aparecem nas questões de trauma mesmo quando a aula parece ser "só
 | Traqueostomia com sangramento pulsátil | fístula traqueoinominada até prova em contrário | hiperinsuflar cuff e chamar cirurgia imediatamente |
 | Trauma pediátrico | hipotensão é tardia; FAST negativo não libera criança com sinais de hipoperfusão | usar exame/laboratório de apoio, aquecer e bolus 20 mL/kg quando indicado |
 
-### Regras Curtas Que Resolvem Questões
+### Regras De Decisão Rápida
 
 - **Cinto pélvico/lençol:** fica nos grandes trocanteres. Se a alternativa fala cintura ou espinha ilíaca, desconfie.
 - **FAST negativo:** não exclui retroperitônio, pelve, víscera oca nem lesão em criança.

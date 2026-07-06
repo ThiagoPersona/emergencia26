@@ -237,9 +237,9 @@ Peso predito, não peso real, guia o volume corrente. Obeso não recebe VC por p
 >
 > **Na prática clínica:** ajuste a técnica ao risco fisiológico e ao time disponível. Em paciente hipoxêmico, VNI/HFNC/BVM com PEEP podem ser melhores que máscara simples para pré-oxigenação. Em choque, ressuscitação e vasopressor pronto importam tanto quanto a lâmina. Em DPOC/asma, a prioridade ventilatória é evitar auto-PEEP, mesmo que o CO2 demore a normalizar.
 
-## Complemento Dirigido Pelas Questões 22-25
+## Tópicos Integradores De Prova E Plantão
 
-Este bloco cobre assuntos que aparecem nas questões do tema 01, mas que não devem virar capítulo separado. Leia como mapa de decisão rápido.
+Use esta parte como mapa de decisão rápido para cenários que a banca mistura com via aérea e ventilação.
 
 ### RCP, Capnografia E Pós-RCE
 
