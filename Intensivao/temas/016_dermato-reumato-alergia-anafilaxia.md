@@ -256,6 +256,14 @@ flowchart TD
 | Metilpred visual GCA | 500-1000 mg EV/dia por 3 dias | Protocolos variam |
 | Crise renal esclerodérmica | Captopril 6,25-12,5 mg e titular | IECA imediato |
 
+### Pontos de prova
+
+- **Anafilaxia:** adrenalina IM é primeira linha. Anti-histamínico/corticoide são adjuvantes; não substituem adrenalina em choque, broncoespasmo ou edema de via aérea.
+- **Angioedema por IECA:** pode fechar via aérea sem urticária; prepare via aérea acordada/cirúrgica se língua/orofaringe/estridor.
+- **SJS/TEN:** dor cutânea, bolhas, mucosa e descolamento = suspender droga, suporte em unidade adequada e cuidado de superfície.
+- **Púrpura/vasculite:** púrpura palpável, dor abdominal, rim ou neurologia não é alergia simples.
+- **Crise renal esclerodérmica:** se aparecer no recorte reumato, lembre IECA e evite corticoide alto.
+
 ## Pegadinhas TEME
 
 - **Anafilaxia sem urticária não existe:** falso. Pode ser choque/broncoespasmo/laringe.

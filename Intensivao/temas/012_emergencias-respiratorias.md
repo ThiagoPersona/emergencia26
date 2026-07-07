@@ -348,6 +348,15 @@ flowchart TD
 | POCUS linhas B | >=3 por espaco | Síndrome intersticial |
 | Lung point | - | Confirma pneumotórax com alta especificidade |
 
+### Pontos de prova
+
+- **POCUS pulmonar:** base = linha pleural e artefatos. Linhas A + ausência de sliding + lung point = pneumotórax; linhas B bilaterais = síndrome intersticial; shred sign/consolidação = pneumonia.
+- **Oxigênio:** DPOC/obesidade-hipoventilação mira 88-92%; hipoxemia grave precisa dispositivo de alto desempenho; oxigênio isolado não corrige falência ventilatória neuromuscular.
+- **VNI:** DPOC acidótico usa BiPAP; edema pulmonar cardiogênico pode usar CPAP; pneumonia extensa, asma grave e rebaixamento têm maior risco de falha.
+- **TEP instável:** pensar em VD agudo de parede fina, choque obstrutivo e trombólise quando confirmado/provável e sem contraindicação; intubação pode piorar colapso.
+- **Asma grave:** CO2 subindo ou “tórax silencioso” = fadiga. Pré-oxigene com pressão positiva e considere sequência prolongada.
+- **Intoxicação por bloqueador de cálcio/beta-bloqueador:** bradicardia + hipotensão após ingestão pode pedir glicoinsulina em altas doses.
+
 ## Pegadinhas TEME
 
 - **DPOC hipóxico precisa MNR até 100%:** falso. Oxigênio controlado, alvo 88-92%, e gaso.

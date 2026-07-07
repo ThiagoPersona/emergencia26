@@ -93,6 +93,15 @@ flowchart TD
 | Antibiótico infecção cervical | precoce EV amplo | Associar drenagem/controle de foco |
 | HINTS | só em vertigem contínua | Não usar em tontura episódica ou examinador inseguro |
 
+### Pontos de prova
+
+- **Olho vermelho doloroso:** glaucoma agudo, trauma químico/corpo estranho, ceratite, uveíte e endoftalmite são red flags. Náusea/vômito + olho pétreo = glaucoma.
+- **Fotoceratite:** solda/UV com dor horas depois; irrigação/limpeza, analgesia e avaliação de córnea. Não prescreva anestésico tópico para casa.
+- **Conjuntivite viral:** folículos + adenopatia pré-auricular = suporte e higiene; antibiótico não é rotina.
+- **Epistaxe anterior:** compressão, vasoconstritor/TXA, cautério se ponto visível; tampão se falha.
+- **Descolamento de retina:** miopia alta + flashes/escotoma sem dor; POCUS ocular ajuda a confirmar e acelerar oftalmo.
+- **Ludwig/infecção cervical:** via aérea e antibiótico EV precoces; enfermaria/alta são armadilhas.
+
 ## Pegadinhas TEME
 
 - **Olho vermelho = conjuntivite:** falso se dor forte, baixa visual, fotofobia, pupila/córnea alterada ou trauma/químico.

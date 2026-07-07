@@ -267,6 +267,14 @@ flowchart TD
 | permanência DE | 24 h como limite de referência CFM 2077 | Depois fluxo/internação/transferência |
 | Sedação paliativa | Sintoma refratário | Proporcional, consentida e documentada |
 
+### Pontos de prova
+
+- **Delirium vs psiquiatria primária:** início agudo, flutuação, idade, droga, infecção, hipóxia, hipoglicemia e primeiro surto atípico pedem investigação clínica.
+- **Risco suicida:** plano, letalidade, tentativa recente, psicose, intoxicação, ausência de suporte e recusa de segurança indicam internação/observação protegida.
+- **Paliativos:** controlar dispneia/dor/agitação é tratamento ativo. Opioide em baixa dose para dispneia não é eutanásia.
+- **Autonomia/capacidade:** decisão válida exige capacidade, informação, voluntariedade e registro. Se incapaz, representante e melhor interesse.
+- **Óbito:** morte violenta/suspeita ou sinais traumáticos = IML; morte natural sem assistência pode envolver SVO conforme fluxo local.
+
 ## Pegadinhas TEME
 
 - **Paliativo = não tratar:** falso. Trata sofrimento e condutas proporcionais.

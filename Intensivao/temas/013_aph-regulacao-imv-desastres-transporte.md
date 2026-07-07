@@ -364,6 +364,15 @@ flowchart TD
 | Queimadura importante criança | >10% SCQ | Regular para centro adequado |
 | Torniquete | Alto e apertado se hemorragia exsanguinante | Registrar horário |
 
+### Pontos de prova
+
+- **Cena e APH:** segurança da equipe vem antes do procedimento. Em rodovia, viatura antes da vítima protegendo e desviando fluxo.
+- **IMV:** START adulto não faz ventilações de resgate; JumpSTART pediátrico faz. Torniquete é intervenção mínima salvadora em sangramento maciço.
+- **Afogamento:** parada é hipóxica; ventile cedo e não tente “drenar água” com Heimlich/cabeça baixa.
+- **Mergulho/altitude:** doença descompressiva = O2 alto fluxo e hiperbárica; narcose por nitrogênio aparece em profundidade; mal agudo de altitude melhora com pausa/descida.
+- **Temperatura:** heat stroke = resfriar antes de transportar se possível; hipotermia grave muda ritmo de desfibrilação e exige reaquecimento.
+- **Regulação:** vaga zero existe para risco iminente em unidade sem recurso resolutivo; não é favor, é responsabilidade sistêmica.
+
 ## Pegadinhas TEME
 
 - **Cena insegura e "ABCDE heroico":** falso. Segurança vem antes.

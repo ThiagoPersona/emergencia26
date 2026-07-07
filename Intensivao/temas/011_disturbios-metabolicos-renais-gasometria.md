@@ -330,6 +330,15 @@ flowchart TD
 | Crise tireotóxica | Tionamida + beta-bloq + corticoide + iodo depois | Tratar gatilho e evitar AAS |
 | Mixedema | Hidrocortisona + levotiroxina EV + suporte | Aquecimento passivo |
 
+### Pontos de prova
+
+- **CAD:** definição = glicemia >250 mg/dL + pH <7,3/HCO3 baixo + cetonemia. Na conduta inicial, volume vem antes; insulina exige potássio seguro; bicarbonato só em exceção.
+- **Crise renal esclerodérmica:** hipertensão acelerada + IRA em esclerose sistêmica = IECA/captopril imediatamente. Corticoide alto é armadilha.
+- **Álcoois tóxicos:** etilenoglicol = anion gap alto + cristais de oxalato; metanol = visual; isopropanol = cetose sem acidose importante.
+- **Tricíclicos:** choque/rebaixamento + QRS largo ou ECG sugestivo = bicarbonato de sódio, suporte circulatório e via aérea planejada. Evite flumazenil.
+- **Tempestade tireotóxica:** trate clinicamente: beta-bloqueador, tionamida, corticoide e iodeto após tionamida. Não espere investigação infecciosa se o quadro fecha.
+- **Pós-RCE pediátrico:** evite hiperóxia, hipocapnia/hipercapnia, hipotensão e bicarbonato rotineiro.
+
 ## Pegadinhas TEME
 
 - **CAD = glicemia >600:** falso. Isso é mais EHH. CAD de prova e >250 + pH <7,3 + cetonemia.

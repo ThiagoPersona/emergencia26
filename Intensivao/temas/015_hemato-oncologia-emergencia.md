@@ -310,6 +310,14 @@ flowchart TD
 | TTP | Plasma exchange urgente | Não esperar ADAMTS13 se suspeita alta |
 | ITP grave sangrando | Corticoide + IVIG + plaqueta se vida-ameaça | Plaqueta isolada dura pouco |
 
+### Pontos de prova
+
+- **Síndrome torácica aguda falciforme:** dor torácica, febre, hipoxemia/infiltrado novo e queda de Hb = oxigênio, analgesia, antibiótico e considerar transfusão.
+- **Neutropenia febril:** antibiótico precoce; MASCC/CISNE estratificam risco, não identificam germe. Evite toque retal de rotina.
+- **HIC oncológica:** sonolência/cefaleia/focalidade em câncer é massa/metástase até prova; ONSD >6 mm apoia medidas iniciais enquanto organiza TC/RM.
+- **Transfusão:** pense no alvo clínico, não em número isolado; choque, sangramento ativo, síndrome torácica e hipoxemia mudam limiar.
+- **Compressão medular/síndrome de veia cava:** déficit neurológico ou obstrução de via aérea/retorno venoso exige corticoide/imagem/tratamento urgente conforme síndrome.
+
 ## Pegadinhas TEME
 
 - **neutropênico febril espera cultura para antibiótico:** falso.

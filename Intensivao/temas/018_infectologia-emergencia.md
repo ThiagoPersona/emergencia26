@@ -91,6 +91,15 @@ flowchart TD
 | TB suspeita respiratória | isolamento respiratório | Máscara/fluxo local; proteger equipe |
 | Raiva pós-exposição | lavar ferida + vacina +/- imunoglobulina | Conforme risco animal/exposição e protocolo local |
 
+### Pontos de prova
+
+- **Dengue:** dor abdominal, vômitos persistentes, derrame/ascite, letargia, sangramento, Ht subindo e plaqueta caindo = sinal de alarme e hidratação EV.
+- **HIV/TB/PCP:** hipoxemia com infiltrado intersticial e HIV = SMX-TMP; corticoide se hipoxemia relevante; cavitação exige isolamento/investigação de TB. TARV depende do contexto e risco de IRIS.
+- **Toxoplasmose cerebral:** AIDS + lesões captantes em gânglios da base com edema = tratar empiricamente e reavaliar resposta.
+- **C. difficile:** antígeno positivo/toxina negativa = indeterminado, pedir NAAT/PCR; se confirmado, vancomicina VO é escolha frequente.
+- **Sinusite bacteriana:** sintomas persistentes, graves ou dupla piora indicam antibiótico; TC fica para complicação, imunossupressão grave ou dúvida diagnóstica relevante.
+- **Infecção cervical profunda:** edema submandibular/protrusão de língua após dentário é ameaça de via aérea, não “antibiótico oral e retorno”.
+
 ## Pegadinhas TEME
 
 - **Esperar TC para tratar meningite:** errado se isso atrasar antibiótico.

@@ -358,6 +358,15 @@ flowchart TD
 | Lactato/isquemia | Normal não exclui | Dor desproporcional manda angioTC |
 | AAA | Diâmetro >=3 cm define aneurisma | Instável com suspeita = vascular/POCUS |
 
+### Pontos de prova
+
+- **HDA varicosa:** antibiótico + vasoativo + endoscopia em até 12 h se estável; balão é ponte curta e complicação com enfisema cervical sugere perfuração.
+- **Pancreatite biliar:** suporte com Ringer lactato/analgesia e CPRE quando há obstrução/colangite. Antibiótico não é rotina sem infecção.
+- **PBE:** diagnóstico por PMN >=250 no líquido ascítico; trate cedo e considere albumina conforme risco.
+- **Abdome agudo:** leucograma normal não exclui inflamação; peritonite/instabilidade mandam mais que exame isolado.
+- **POCUS abdominal:** hidronefrose + infecção = pielonefrite obstrutiva; vesícula espessada em dengue pode ser sinal de alarme, não colecistite obrigatória.
+- **Hospital rural:** imagem de apendicite no POCUS pode antecipar regulação/cirurgia quando TC não existe.
+
 ## Pegadinhas TEME
 
 - **Analgesia máscara abdome agudo:** falso. Analgesia adequada e reavaliação seriada.

@@ -22,13 +22,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q45. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Paciente apresentando sangramento intenso devido à amputação traumática de membro inferior direito, trazido pelo atendimento pré-hospitalar que já iniciou Ringer Lactato 1500 ml em bolus Endovenoso (EV) e aplicou Torniquete no Mem...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Transfusão de Hemocomponentes na proporção 1:1:1 concentrado de hemácias, plasma fresco congelado e plaquetas”</p>
+<p><strong>Como pensar:</strong> Choque hemorrágico traumático persistente após torniquete e cristaloide pede ressuscitação hemostática, não mais soro.</p>
+<p><strong>Por que a D é a melhor:</strong> protocolo balanceado 1:1:1 repõe hemácias, plasma e plaquetas e trata coagulopatia traumática.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Administração de mais 1000 ml de cristalóide”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Administração de 500ml de NaCl 3% EV”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: desalinha controle de dano e ressuscitação hemostática; a prova cobra controle precoce de sangramento, proporção adequada e correção de coagulopatia. Alternativa: “Transfusão de 3 Bolsas de concentrados de hemácias EV”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Transfusão de Hemocomponentes na proporção 1:1:1 concentrado de hemácias, plasma fresco congelado e plaquetas”</li>
+<li><strong>A.</strong> Mais cristalóide dilui fatores, piora coagulopatia e não repõe transporte de oxigênio.</li>
+<li><strong>B.</strong> NaCl 3% não trata choque hemorrágico por amputação.</li>
+<li><strong>C.</strong> Hemácias isoladas repõem oxigênio, mas não corrigem coagulopatia/plaquetas no sangramento maciço.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a estratégia de dano-control resuscitation para hemorragia grave. Alternativa: "Transfusão de Hemocomponentes na proporção 1:1:1 concentrado de hemácias, plasma fresco congelado e plaquetas".</li>
 </ul>
 </div>
 </div>
@@ -45,13 +45,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q62. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Paciente com diagnóstico de cirrose hepática grave, dá entrada no Departamento de Emergência com quadro de agitação psicomotora, confusão mental e agressividade. Ao exame físico apresenta ataxia e flapping. O acompanhante relata q...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Lactulose 40 mL de 8/8 horas por via oral”</p>
+<p><strong>Como pensar:</strong> Encefalopatia hepática com constipação: trate fator precipitante e reduza amônia intestinal; lactulose é primeira linha e deve mirar evacuações.</p>
+<p><strong>Por que a D é a melhor:</strong> lactulose em dose efetiva é a medida inicial para aumentar evacuações e reduzir absorção de amônia.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Enema de Glicerina 12% Via Retal”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Rifaximina 550 mg via oral de 12/12 horas”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Lactulose 20 mL via oral de 8/8 horas associada a Neomicina 1 g via oral de 6/6 horas”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Lactulose 40 mL de 8/8 horas por via oral”</li>
+<li><strong>A.</strong> Enema de glicerina pode ajudar constipação, mas não é tratamento específico principal da encefalopatia.</li>
+<li><strong>B.</strong> Rifaximina é adjuvante, geralmente usada com lactulose ou em recorrência.</li>
+<li><strong>C.</strong> Neomicina tem toxicidade e não é primeira escolha associada de rotina.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> Lactulose é o tratamento inicial cobrado, especialmente com três dias sem evacuar. Alternativa: "Lactulose 40 mL de 8/8 horas por via oral".</li>
 </ul>
 </div>
 </div>
@@ -68,13 +68,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q90. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Paciente masculino, 58 anos, diagnóstico prévio de cirrose hepática avançada, dá entrada no Departamento de Emergência com quadro de febre e dor abdominal difusa. Apresenta ascite volumosa ao exame físico. Você realiza uma punção...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Presença de 300 polimorfonucleares/mL”</p>
+<p><strong>Como pensar:</strong> Em cirrótico com ascite, dor/febre exige paracentese; PBE é diagnosticada por neutrófilos no líquido ascítico, mesmo antes da cultura.</p>
+<p><strong>Por que a D é a melhor:</strong> PMN ≥ 250 células/mm³ no líquido ascítico fecha PBE; 300 está acima do corte.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Glicose < 50 mg/dL”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Cultura polimicrobiana”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Proteínas totais > 1 g/dL”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Presença de 300 polimorfonucleares/mL”</li>
+<li><strong>A.</strong> Glicose baixa sugere peritonite secundária quando associada a outros achados, não é o critério central de PBE.</li>
+<li><strong>B.</strong> Cultura polimicrobiana sugere perfuração/peritonite secundária, não PBE típica.</li>
+<li><strong>C.</strong> Proteína baixa é fator de risco, mas não diagnóstico.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> Aplica diretamente o ponto de corte de PMN. Alternativa: "Presença de 300 polimorfonucleares/mL".</li>
 </ul>
 </div>
 </div>
@@ -91,13 +91,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q113. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;O termo sangramento uterino anormal (SUA) diz respeito a todas as causas de sangramento uterino em mulheres não gestantes, e as causas mais prováveis são determinadas pela idade da paciente. Frente a um quadro no departamento de e...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Tamponamento vaginal protetor exerce uma função hemostática e pode proteger infecções e perdas sanguíneas subsequentes”</p>
+<p><strong>Como pensar:</strong> No sangramento uterino anormal, trate instabilidade/anemia/coagulopatia e use terapia medicamentosa hemostática; tamponamento vaginal não é medida protetora rotineira.</p>
+<p><strong>Por que a A é a melhor:</strong> tamponamento vaginal 'protetor' para prevenir infecção/perdas subsequentes não é boa opção terapêutica geral.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “Tamponamento vaginal protetor exerce uma função hemostática e pode proteger infecções e perdas sanguíneas subsequentes”</li>
-<li><strong>B.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “Correção de coagulopatias subjacentes”</li>
-<li><strong>C.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “Transfusão de Concentrado de Hemácias se anemia sintomática”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “Uso de Ácido Tranexâmico EV e Anti-inflamatórios em caso de hemorragia grave”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a exceção: a descrição não representa manejo padrão do SUA. Alternativa: "Tamponamento vaginal protetor exerce uma função hemostática e pode proteger infecções e perdas sanguíneas subsequentes".</li>
+<li><strong>B.</strong> Corrigir coagulopatia é parte essencial quando presente.</li>
+<li><strong>C.</strong> Transfusão é indicada se anemia sintomática ou instabilidade.</li>
+<li><strong>D.</strong> Tranexâmico e anti-inflamatórios podem compor manejo conforme gravidade e contraindicações.</li>
 </ul>
 </div>
 </div>
@@ -114,13 +114,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME23 Q20. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Sobre o uso de Exame Complementares para avaliação de pacientes com quadro de Dor lombar no Departamento de Emergência marque a alternativa correta.&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Na presença de trauma e dor lombar, sem sinais de trauma raquimedular, a Tomografia de Coluna Total é um exame útil para rastrear a presença de fraturas.”</p>
+<p><strong>Como pensar:</strong> Dor lombar no DE usa imagem quando há trauma, déficit, infecção, câncer ou red flags; em trauma, TC rastreia fratura melhor que radiografia simples.</p>
+<p><strong>Por que a B é a melhor:</strong> TC de coluna total é útil para rastrear fraturas em trauma com dor lombar.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Paciente com histórico de neoplasia, exames de imagem devem ser utilizados, como forma de rastreio de metástases.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Na presença de trauma e dor lombar, sem sinais de trauma raquimedular, a Tomografia de Coluna Total é um exame útil para rastrear a presença de fraturas.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Em pacientes com quadros persistentes de febre e dor lombar, a presença de aumento de Proteína C Reativa é um marcador confirmatório do diagnóstico de Espondilodiscite.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Na ausência de trauma, o uso da RNM não deve ser priorizado, pelo baixo risco de lesões medulares agudas.”</li>
+<li><strong>A.</strong> História de neoplasia é red flag, mas 'rastreamento de metástases' indiscriminado não é a lógica do DE.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a indicação de imagem mais bem formulada entre as opções. Alternativa: "Na presença de trauma e dor lombar, sem sinais de trauma raquimedular, a Tomografia de Coluna Total é um exame útil para rastrear a presença de fraturas.".</li>
+<li><strong>C.</strong> PCR elevada apoia inflamação/infecção, mas não confirma espondilodiscite.</li>
+<li><strong>D.</strong> Sem trauma, RNM pode ser prioritária se houver déficit, infecção ou compressão medular; a alternativa é absoluta demais.</li>
 </ul>
 </div>
 </div>
@@ -137,13 +137,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME23 Q91. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Uma criança de 5 anos em tratamento com quimioterapia para uma leucemia mieloide aguda é trazida para o DE pelos pais. Eles relatam que a criança está com febre e letargia. Ao exame clínico percebe–se: frequência cardíaca de 158 b...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Administrar de 10 a 20 ml/Kg de cristalóide isotônico em 5 a 10 minutos”</p>
+<p><strong>Como pensar:</strong> Criança oncológica febril, letárgica e hipotensa precisa manejo de choque séptico com bolus menores e reavaliação frequente.</p>
+<p><strong>Por que a A é a melhor:</strong> cristaloide isotônico 10-20 mL/kg em 5-10 min é intervenção inicial apropriada.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Administrar de 10 a 20 ml/Kg de cristalóide isotônico em 5 a 10 minutos”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Administrar de 20 a 30 ml/Kg de cristalóide isotônico em 5 a 10 minutos”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: desalinha controle de dano e ressuscitação hemostática; a prova cobra controle precoce de sangramento, proporção adequada e correção de coagulopatia. Alternativa: “Administrar de 5 a 10 ml/Kg de concentrado de hemácias”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Obter uma radiografia do tórax”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É o bolus recomendado com reavaliação, evitando excesso em paciente oncológico/septico. Alternativa: "Administrar de 10 a 20 ml/Kg de cristalóide isotônico em 5 a 10 minutos".</li>
+<li><strong>B.</strong> 20-30 mL/kg de uma vez aumenta risco de sobrecarga sem reavaliação.</li>
+<li><strong>C.</strong> Concentrado de hemácias não é primeira medida para choque séptico sem anemia hemorrágica.</li>
+<li><strong>D.</strong> Radiografia não deve atrasar ressuscitação inicial.</li>
 </ul>
 </div>
 </div>
@@ -151,7 +151,6 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME24 Q39</p>
 <p><strong>7. Um paciente de 32 anos, 75 kg, portador de anemia falciforme dá entrada no Departamento de Emergência de um hospital terciário com dor torácica importante, dispneia e dessaturação. Refere ter tido dor em braço esquerdo importante há 1 semana e, há 3 meses, faz uso irregular de hidroxiureia, pois não consegue ter acesso à medicação. Frequência cardíaca de 120 bpm, ritmo regular; pressão arterial de 120 x 80 mmHg; saturação periférica da hemoglobina (SpO2) de 89% ar ambiente curva ruim do oxímetro; temperatura de 38,3ºC. Sobre a conduta no Departamento de Emergência:</strong></p>
-<p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t015-007" value="A"> A. Administrar oxigênio e ácido acetilsalicílico 200 mg; fazer eletrocardiograma, raio X de tórax e curva de troponina.</label>
 <label class="quiz-option"><input type="radio" name="q-t015-007" value="B"> B. Administrar oxigênio; fazer angiotomografia computadorizada de tórax, ecocardiograma transtorácico, expansão volêmica com Ringer Lactato, enoxaparina em dose plena; dosar troponina e pró-peptídeo natriurético cerebral.</label>
@@ -161,13 +160,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q39. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Um paciente de 32 anos, 75 kg, portador de anemia falciforme dá entrada no Departamento de Emergência de um hospital terciário com dor torácica importante, dispneia e dessaturação. Refere ter tido dor em braço esquerdo importante...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Administrar oxigênio; fazer tomografia computadorizada de tórax, expansão volêmica com Ringer Lactato; administrar morfina 10 mg por via endovenosa, dipirona 2 g por via endovenosa, ceftriaxona 2 g + azitromicina 500 mg; colher he...”</p>
+<p><strong>Como pensar:</strong> Falciforme com dor torácica, febre e dessaturação é síndrome torácica aguda até prova em contrário: oxigênio, analgesia, antibiótico e imagem.</p>
+<p><strong>Por que a C é a melhor:</strong> a opção inclui oxigênio, imagem, hidratação, analgesia forte, ceftriaxona + azitromicina e hemoculturas.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Administrar oxigênio e ácido acetilsalicílico 200 mg; fazer eletrocardiograma, raio X de tórax e curva de troponina.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Administrar oxigênio; fazer angiotomografia computadorizada de tórax, ecocardiograma transtorácico, expansão volêmica com Ringer Lactato, enoxaparina em dose plena; dosar troponina e pró-peptídeo natriurético cerebral.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Administrar oxigênio; fazer tomografia computadorizada de tórax, expansão volêmica com Ringer Lactato; administrar morfina 10 mg por via endovenosa, dipirona 2 g por via endovenosa, ceftriaxona 2 g + azitromicina 500 mg; colher hemoculturas.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Administrar oxigênio; fazer tomografia computadorizada de tórax, expansão volêmica com Ringer Lactato; administrar ceftriaxona 2 g + azitromicina 500 mg; fazer hemoculturas e exames laboratoriais para sepse.”</li>
+<li><strong>A.</strong> AAS/troponina foca SCA e deixa de tratar síndrome torácica/infecciosa.</li>
+<li><strong>B.</strong> TEP entra no diferencial, mas anticoagulação plena e angioTC como eixo inicial deslocam o tratamento essencial.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a conduta inicial mais completa para síndrome torácica aguda. Alternativa: "Administrar oxigênio; fazer tomografia computadorizada de tórax, expansão volêmica com Ringer Lactato; administrar morfina 10 mg por via endovenosa, dipirona 2 g por via endovenosa, ceftriaxona 2 g + azitromicina 500 mg; colher hemoculturas.".</li>
+<li><strong>D.</strong> Falta analgesia potente, um pilar do atendimento da crise falciforme com dor importante.</li>
 </ul>
 </div>
 </div>
@@ -184,13 +183,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q48. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Chega ao Departamento de Emergência paciente de 15 anos, sexo masculino, com relato de confusão mental, febre e calafrios. Paciente portador de linfoma de células B, em tratamento quimioterápico, tendo recebido a última infusão há...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Para avaliação de infecções anorretais, baseado em opinião de especialistas, recomenda-se que toque retal não seja realizado de rotina.”</p>
+<p><strong>Como pensar:</strong> Neutropenia febril é antibiótico precoce; toque retal de rotina deve ser evitado por risco de trauma/bacteremia.</p>
+<p><strong>Por que a C é a melhor:</strong> não realizar toque retal de rotina em suspeita anorretal é recomendação baseada em segurança.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Pacientes neutropênicos não devem receber terapia antimicrobiana até confirmação de diagnóstico infeccioso.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Cobertura empírica para Gram-positivos está recomendada se suspeita de celulite, infecção associada a cateter, pneumonia e instabilidade hemodinâmica. Nesses casos, não se recomenda cobertura antipseudomonas.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Para avaliação de infecções anorretais, baseado em opinião de especialistas, recomenda-se que toque retal não seja realizado de rotina.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “O escore MASCC pode ser utilizado para identificação do agente etiológico, enquanto o Clinical Index of Stable Febrile Neutropenia (CISNE) pode ser utilizado para escolha do antibiótico a ser utilizado.”</li>
+<li><strong>A.</strong> Não se espera confirmação infecciosa para iniciar antimicrobiano em neutropenia febril.</li>
+<li><strong>B.</strong> Quando se adiciona Gram-positivo, mantém-se cobertura antipseudomonas.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a pegadinha específica da questão. Alternativa: "Para avaliação de infecções anorretais, baseado em opinião de especialistas, recomenda-se que toque retal não seja realizado de rotina.".</li>
+<li><strong>D.</strong> MASCC/CISNE estratificam risco, não identificam agente nem escolhem antibiótico específico.</li>
 </ul>
 </div>
 </div>
@@ -207,13 +206,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q71. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;A síndrome de veia cava superior (SVCS) ocorre devido à compressão externa ou obstrução intraluminal (trombose) da veia cava superior. Mais de 60% dos casos estão associados à doença oncológica. Assinale a alternativa correta:&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A SVCS raramente é fatal; quadros mais graves podem apresentar comprometimento de via aérea, edema cerebral e instabilidade hemodinâmica.”</p>
+<p><strong>Como pensar:</strong> SVCS costuma ser subaguda e raramente fatal, mas vira emergência com via aérea, edema cerebral ou instabilidade.</p>
+<p><strong>Por que a C é a melhor:</strong> a alternativa reconhece que a maioria não mata imediatamente, mas há apresentações graves.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Edema de extremidades de membros superiores, face e tórax, bem como eritema facial, dispneia, dor torácica e tosse, são manifestações clínicas pouco usuais.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Corticoide e diuréticos devem ser utilizados de rotina.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A SVCS raramente é fatal; quadros mais graves podem apresentar comprometimento de via aérea, edema cerebral e instabilidade hemodinâmica.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “Mesmo na presença de trombose, a anticoagulação está sempre contraindicada.”</li>
+<li><strong>A.</strong> Edema de face/membros superiores/tórax, dispneia e tosse são manifestações usuais, não raras.</li>
+<li><strong>B.</strong> Corticoide/diurético não são rotina universal; dependem de causa e sintomas.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É o equilíbrio correto entre gravidade potencial e frequência. Alternativa: "A SVCS raramente é fatal; quadros mais graves podem apresentar comprometimento de via aérea, edema cerebral e instabilidade hemodinâmica.".</li>
+<li><strong>D.</strong> Se houver trombose, anticoagulação pode ser indicada; não é sempre contraindicada.</li>
 </ul>
 </div>
 </div>
@@ -230,13 +229,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME25 Q29. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Paciente do sexo masculino de 48 anos, portador de linfoma de Burkitt, sem outras comorbidades prévias ao diagnóstico hematológico, comparece ao serviço para a segunda sessão de quimioterapia. Após a triagem para procedimento foi...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Síndrome de lise tumoral clínica e laboratorial.”</p>
+<p><strong>Como pensar:</strong> Linfoma de Burkitt pós-quimio com hiperK, hiperfosfatemia, hiperuricemia, hipocalcemia, acidose e oligúria é lise tumoral.</p>
+<p><strong>Por que a B é a melhor:</strong> há critérios laboratoriais e clínicos por lesão renal/oligúria e distúrbios eletrolíticos.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Cardiotoxicidade por quimioterápicos.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Síndrome de lise tumoral clínica e laboratorial.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Neutropenia febril devido a foco urinário, com insuficiência renal aguda e acidose metabólica.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Doença renal crônica com injúria renal aguda sobreposta por toxicidade quimioterápica.”</li>
+<li><strong>A.</strong> Cardiotoxicidade não explica hiperuricemia, hiperfosfatemia e hipocalcemia.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> É a síndrome clássica nesse tumor de alta proliferação. Alternativa: "Síndrome de lise tumoral clínica e laboratorial.".</li>
+<li><strong>C.</strong> Não há febre/foco urinário e os eletrólitos apontam lise tumoral.</li>
+<li><strong>D.</strong> Doença renal crônica não explica o padrão agudo pós-quimioterapia.</li>
 </ul>
 </div>
 </div>
@@ -253,13 +252,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q40. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Paciente admitido no Departamento de Emergência com febre de 38,5°C e sem outros sintomas aparentes. Em tratamento de neoplasia de pulmão, está no 10º dia após a quimioterapia. Durante a avaliação inicial, recebeu antibioticoterap...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Descalonar para tratamento empírico com amoxicilina + clavulanato de potássio e ciprofloxacino via oral; reavaliar clinicamente em 72 horas ou antes, se houver deterioração.”</p>
+<p><strong>Como pensar:</strong> Neutropenia febril de baixo risco, estável, após dose inicial IV, pode descalonar para esquema oral combinado com seguimento próximo.</p>
+<p><strong>Por que a C é a melhor:</strong> amoxicilina-clavulanato + ciprofloxacino VO é esquema empírico ambulatorial aceito para baixo risco.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Manter antibióticos de amplo espectro por via endovenosa e realizar internação hospitalar.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Realizar observação e exames complementares, manter antibioticoterapia até a identificação do agente causador.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Descalonar para tratamento empírico com amoxicilina + clavulanato de potássio e ciprofloxacino via oral; reavaliar clinicamente em 72 horas ou antes, se houver deterioração.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Administrar fator estimulador de colônias de granulócitos o mais rapidamente possível”</li>
+<li><strong>A.</strong> Internação IV é necessária para alto risco/instabilidade, não para esse perfil baixo risco.</li>
+<li><strong>B.</strong> Aguardar agente etiológico não é necessário para condução empírica segura.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a opção de manejo ambulatorial vigiado. Alternativa: "Descalonar para tratamento empírico com amoxicilina + clavulanato de potássio e ciprofloxacino via oral; reavaliar clinicamente em 72 horas ou antes, se houver deterioração.".</li>
+<li><strong>D.</strong> G-CSF não é rotina imediata para todo caso de neutropenia febril baixo risco.</li>
 </ul>
 </div>
 </div>
@@ -276,13 +275,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q69. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Nos casos de acidente vascular cerebral hemorrágico, a reversão de coagulopatias é de vital importância para evitar a expansão do hematoma. Sobre esse tema, marque a alternativa correta:&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A transfusão de plaquetas na vigência de plaquetopenia é controversa e contraindicada na maioria dos casos.”</p>
+<p><strong>Como pensar:</strong> Na hemorragia intracraniana, reversão depende do agente; cuidado com antídotos trocados e com plaquetas em antiagregante.</p>
+<p><strong>Por que a D é a melhor:</strong> transfusão de plaquetas é controversa e geralmente contraindicada na maioria dos casos de HIC espontânea associada a antiagregante sem cirurgia.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Andexanet alfa é o agente de escolha para reverter os inibidores do fator Xa, pela melhor eficácia hemostática e pelo menor número de eventos trombóticos que o cuidado usual.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Idarucizumab é o agente de escolha para reverter os inibidores do fator Xa, pois tem maior eficácia hemostática que o complexo protrombínico.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Complexo concentrado de protrombina é o agente de escolha para reversão dos derivados de varfarina por seu efeito mais rápido que o plasma fresco congelado, mas sem diferença na expansão do hematoma entre os dois agentes.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A transfusão de plaquetas na vigência de plaquetopenia é controversa e contraindicada na maioria dos casos.”</li>
+<li><strong>A.</strong> Andexanet reverte fator Xa, mas não tem menor número de eventos trombóticos que cuidado usual de forma simples.</li>
+<li><strong>B.</strong> Idarucizumabe é para dabigatrana, não para inibidor do fator Xa.</li>
+<li><strong>C.</strong> PCC reverte varfarina rapidamente, mas a afirmação sobre expansão do hematoma está errada.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a pegadinha atual sobre plaquetas em HIC. Alternativa: "A transfusão de plaquetas na vigência de plaquetopenia é controversa e contraindicada na maioria dos casos.".</li>
 </ul>
 </div>
 </div>
@@ -299,13 +298,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q72. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Uma menina de 6 anos, portadora de anemia falciforme (HbSS), é trazida ao Departamento de Emergência com dor torácica intensa e febre aferida de 38,9°C. Encontra-se taquipneica (frequência respiratória de 42 irpm), com discretas r...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar antibioticoterapia empírica com ceftriaxona e azitromicina, oxigenoterapia para manter saturação de oxigênio ≥ 94% e considerar transfusão caso queda de hemoglobina ≥ 2 g/dL em relação ao basal.”</p>
+<p><strong>Como pensar:</strong> Falciforme com febre, dor torácica e infiltrado novo é síndrome torácica aguda: antibiótico, oxigênio e considerar transfusão.</p>
+<p><strong>Por que a C é a melhor:</strong> ceftriaxona + azitromicina, alvo de SpO2 ≥ 94% e transfusão se queda de Hb ≥ 2 g/dL cobrem o manejo inicial.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Iniciar transfusão de concentrado de hemácias visando à elevação da hemoglobina para 11 g/dL, sem necessidade de antibiótico empírico.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Prescrever cetoprofeno e paracetamol para dor, observar evolução clínica por 6 horas antes de decidir por antibioticoterapia, pois se trata de síndrome torácica aguda leve e autolimitada.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar antibioticoterapia empírica com ceftriaxona e azitromicina, oxigenoterapia para manter saturação de oxigênio ≥ 94% e considerar transfusão caso queda de hemoglobina ≥ 2 g/dL em relação ao basal.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Administrar corticoterapia sistêmica de início precoce para reduzir inflamação pulmonar, iniciar dipirona e manter observação sem oxigenoterapia, já que a saturação de oxigênio está > 90%.”</li>
+<li><strong>A.</strong> Transfundir até 11 g/dL sem antibiótico aumenta risco de hiperviscosidade e ignora infecção.</li>
+<li><strong>B.</strong> Observar sem antibiótico atrasa tratamento de condição potencialmente fatal.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> É a conduta inicial completa. Alternativa: "Iniciar antibioticoterapia empírica com ceftriaxona e azitromicina, oxigenoterapia para manter saturação de oxigênio ≥ 94% e considerar transfusão caso queda de hemoglobina ≥ 2 g/dL em relação ao basal.".</li>
+<li><strong>D.</strong> Corticoide não é rotina inicial e deixar sem oxigênio perde alvo de saturação.</li>
 </ul>
 </div>
 </div>
@@ -313,7 +312,11 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME25 Q74</p>
 <p><strong>14. Um homem de 58 anos, com histórico de adenocarcinoma de pulmão tratado há 1 ano, é trazido à emergência por familiares após apresentar quadro de sonolência progressiva e dificuldade de fala nas últimas 24 horas. Ao exame físico: escala de coma de Glasgow 11 (resposta ocular 3, resposta verbal 3, resposta motora de 5), pupilas isocóricas e reativas, PA 190 × 100 mmHg, FC de 65 bpm, sem sinais localizatórios evidentes. A equipe realiza ultrassonografia à beira do leito com sonda linear em modo B, obtendo a imagem a seguir e as medidas aferidas estão descritas ao lado: Medida diâmetro da bainha do nervo óptico: - Olho esquerdo: 0,78 cm. - Olho direito: 0,74 cm. Com base no quadro clínico e nos achados do ultrassom, assinale a alternativa correta:</strong></p>
-<p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME25_Q74_onsd.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME25_Q74_onsd.png" alt="Ultrassom da bainha do nervo óptico com medidas aumentadas, sugestivas de hipertensão intracraniana.">
+</a>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t015-014" value="A"> A. O achado do diâmetro da bainha do nervo óptico &gt; 6 mm, nesse contexto clínico, é compatível com hipertensão intracraniana e pode orientar a adoção precoce de medidas terapêuticas, mesmo antes da tomografia.</label>
 <label class="quiz-option"><input type="radio" name="q-t015-014" value="B"> B. A preservação da morfologia do disco óptico à ultrassonografia descarta hipertensão intracraniana clinicamente significativa.</label>
@@ -323,13 +326,13 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME25 Q74. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de hemato-oncologia, o comando central é reconhecer a melhor resposta para: &quot;Um homem de 58 anos, com histórico de adenocarcinoma de pulmão tratado há 1 ano, é trazido à emergência por familiares após apresentar quadro de sonolência progressiva e dificuldade de fala nas últimas 24 horas. Ao exame físico: e...&quot;. A leitura de prova deve priorizar risco tempo-dependente: neutropenia febril, síndrome de lise, hiperviscosidade, sangramento e compressões; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “O achado do diâmetro da bainha do nervo óptico &gt; 6 mm, nesse contexto clínico, é compatível com hipertensão intracraniana e pode orientar a adoção precoce de medidas terapêuticas, mesmo antes da tomografia.”</p>
+<p><strong>Como pensar:</strong> ONSD &gt; 6 mm no contexto neurológico sugere hipertensão intracraniana e pode antecipar medidas enquanto a TC é organizada.</p>
+<p><strong>Por que a A é a melhor:</strong> medidas de 7,4-7,8 mm são compatíveis com HIC nesse quadro oncológico com rebaixamento.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “O achado do diâmetro da bainha do nervo óptico > 6 mm, nesse contexto clínico, é compatível com hipertensão intracraniana e pode orientar a adoção precoce de medidas terapêuticas, mesmo antes da tomografia.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: interpreta o exame fora da pergunta clínica; POCUS deve ligar achado, contexto e decisão imediata, não apenas nomear uma imagem. Alternativa: “A preservação da morfologia do disco óptico à ultrassonografia descarta hipertensão intracraniana clinicamente significativa.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “O diâmetro da bainha do nervo óptico > 6 mm é útil apenas em pacientes com traumatismo cranioencefálico grave, não tendo valor preditivo comprovado em causas não traumáticas.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra janela, critério ou prioridade neurocrítica; primeiro vem tempo, gravidade, contraindicação e proteção contra hipóxia/hipotensão. Alternativa: “Para ser considerado sugestivo de hipertensão intracraniana, o aumento do diâmetro da bainha do nervo óptico deve ser acompanhado de sinais pupilares, como anisocoria ou midríase fixa.”</li>
+<li><strong>A.</strong> <strong>Correta.</strong> É a interpretação correta do POCUS ocular no contexto. Alternativa: "O achado do diâmetro da bainha do nervo óptico &gt; 6 mm, nesse contexto clínico, é compatível com hipertensão intracraniana e pode orientar a adoção precoce de medidas terapêuticas, mesmo antes da tomografia.".</li>
+<li><strong>B.</strong> Disco óptico preservado não descarta HIC.</li>
+<li><strong>C.</strong> ONSD também pode ser útil fora do TCE, como tumores, AVC e outras causas de HIC.</li>
+<li><strong>D.</strong> Anisocoria/midríase fixa são sinais tardios; não são obrigatórios para agir.</li>
 </ul>
 </div>
 </div>

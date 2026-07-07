@@ -84,6 +84,14 @@ flowchart TD
 | Pielonefrite obstrutiva | ATB EV + drenagem | Controle de foco obrigatório |
 | Retenção urinária | sondagem se sem trauma uretral | Não insistir se sangue no meato/trauma pélvico |
 
+### Pontos de prova
+
+- **Pielonefrite obstrutiva:** febre/calafrios + dor lombar + hidronefrose = antibiótico EV e urologia para desobstrução.
+- **Cólica renal complicada:** febre, sepse, rim único, anúria, dor refratária, IRA, gestação ou obstrução infectada mudam de “analgesia e alta” para internação/intervenção.
+- **Torção testicular:** dor súbita, náuseas/vômitos, reflexo cremastérico ausente, Prehn negativo e testículo alto/horizontal. Não espere imagem se alta suspeita.
+- **Anafilaxia no PS:** hipotensão após medicação/analgesia = adrenalina IM primeiro; corticoide/anti-histamínico não substituem.
+- **Neonato convulsionando:** fenobarbital segue primeira linha; glicose 50% em bolus grande é armadilha em RN.
+
 ## Pegadinhas TEME
 
 - **Torção espera Doppler se clínica forte:** falso.
