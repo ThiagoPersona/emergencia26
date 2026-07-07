@@ -22,16 +22,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q10. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Sobre COVID-19, escolha a alternativa correta:&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Nenhuma das alternativas estão corretas.”</p>
+<p><strong>Como pensar:</strong> Questão antiga de COVID: coronavírus é RNA, diagnóstico não é “apenas RT-PCR” e corticoide não é para todo paciente, mas para doença com necessidade de oxigênio/gravidade. Se as três afirmativas estão erradas, marque nenhuma.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque A, B e C estão incorretas no conjunto.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Os coronavírus são um grupo de vírus de genoma de DNA”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “O resultado positivo para o COVID -19 se dá apenas com o exame RTPCR;”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “O uso de corticoide é indicado para todo quadro de COVID-19”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Nenhuma das alternativas estão corretas.”</li>
+<li><strong>A.</strong> Coronavírus tem genoma de RNA, não DNA.</li>
+<li><strong>B.</strong> RT-PCR é padrão, mas não é a única forma de diagnóstico; teste de antígeno e critérios clínico-epidemiológicos podem entrar conforme contexto.</li>
+<li><strong>C.</strong> Corticoide não é para todo COVID; em quadros leves sem hipóxia pode prejudicar.</li>
+<li><strong>D.</strong> Correta. Nenhuma das alternativas anteriores está adequada.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME22 Q12</p>
@@ -45,16 +46,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME22 Q12. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Referência para Questões 12 e 13: Criança de 09 meses de idade apresenta febre, vômitos e diarreia há 03 dias. Na avaliação no DE, você percebe que a criança está sonolenta. A FC 170 BPM, TAx 38.9 °C, PA: 64 x 42 mmHg e FR 60 IRPM...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Hipovolêmico”</p>
+<p><strong>Como pensar:</strong> Lactente com vômitos/diarreia, prega cutânea, taquicardia, hipotensão e sonolência: perda de volume até choque. Febre pode coexistir, mas a fisiologia dominante é hipovolemia/desidratação.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta porque o choque é hipovolêmico por perdas gastrointestinais e desidratação.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Obstrutivo”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Hipovolêmico”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Distributivo”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Cardiogênico”</li>
+<li><strong>A.</strong> Obstrutivo seria pneumotórax hipertensivo, tamponamento ou TEP, sem pistas aqui.</li>
+<li><strong>B.</strong> Correta. Diarreia/vômitos + prega + hipotensão em lactente indicam choque hipovolêmico.</li>
+<li><strong>C.</strong> Choque distributivo por sepse é diferencial, mas o caso enfatiza perda hídrica e desidratação.</li>
+<li><strong>D.</strong> Cardiogênico teria hepatomegalia, estertores, cardiopatia, má perfusão desproporcional ou sinais de falência cardíaca.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME22 Q13</p>
@@ -68,16 +70,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q13. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Referência para Questões 12 e 13: Criança de 09 meses de idade apresenta febre, vômitos e diarreia há 03 dias. Na avaliação no DE, você percebe que a criança está sonolenta. A FC 170 BPM, TAx 38.9 °C, PA: 64 x 42 mmHg e FR 60 IRPM...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar 20 ml/kg de soro fisiológico 0,9%”</p>
+<p><strong>Como pensar:</strong> Choque hipovolêmico pediátrico inicial: cristaloide isotônico aquecido em bolus de 10-20 mL/kg e reavaliar. Não comece com solução hipotônica/glicosada nem vasoativo antes de volume se não há choque refratário.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque SF 0,9% 20 mL/kg é a reposição inicial esperada no choque hipovolêmico pediátrico.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Iniciar Noradrenalina EV em BIC à 0,10 mcg/kg/min”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Iniciar 15ml/kg de glicose a 5% + soro fisiológico a 0,45%”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar 20 ml/kg de soro fisiológico 0,9%”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Iniciar Dopamina EV em BIC à 2 mcg/kg/min”</li>
+<li><strong>A.</strong> Noradrenalina pode ser necessária em choque séptico/refratário, mas aqui falta volume primeiro.</li>
+<li><strong>B.</strong> Glicose 5% + NaCl 0,45% é hipotônica para ressuscitação de choque e não expande intravascular adequadamente.</li>
+<li><strong>C.</strong> Correta. Cristaloide isotônico 20 mL/kg é a primeira expansão.</li>
+<li><strong>D.</strong> Dopamina 2 mcg/kg/min é dose baixa e não trata hipovolemia inicial.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME22 Q100</p>
@@ -91,20 +94,26 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q100. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Paciente masculino com 14 anos de idade, previamente hígido, vem ao DE com queixa de aumento na frequência de evacuações, relatando fezes líquidas e com sangue há um dia. Nega náuseas ou vômitos, relata sensação de febre. Sinais v...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Orientar terapia de reidratação oral”</p>
+<p><strong>Como pensar:</strong> Diarreia aguda com sangue, mas adolescente está estável, sem choque, tolerando via oral. A conduta inicial é reidratação oral e orientação; evite loperamida em disenteria.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é correta porque terapia de reidratação oral é a medida inicial em paciente estável.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Orientar terapia de reidratação oral”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: aplica lógica adulta ou ignora dose/critério pediátrico; em pediatria, peso, perfusão, hipóxia e sinais tardios mudam a resposta. Alternativa: “Iniciar hidratação parenteral com solução isotônica endovenosa na dose de 20 ml/kg”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Prescrever loperamida 4 mg por via oral”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Iniciar ciprofloxacina 200 mg a cada 12 horas por via endovenosa”</li>
+<li><strong>A.</strong> Correta. Sem sinais de choque/desidratação grave, TRO é primeira medida.</li>
+<li><strong>B.</strong> EV 20 mL/kg é para desidratação grave/choque ou incapacidade de VO.</li>
+<li><strong>C.</strong> Loperamida é evitada em diarreia sanguinolenta/invasiva pelo risco de complicações.</li>
+<li><strong>D.</strong> Antibiótico empírico EV não é rotina em adolescente estável sem toxemia/risco específico.</li>
 </ul>
 </div>
 </div>
 
+
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME22 Q102</p>
 <p><strong>5. Criança de 06 anos, 25 kg, deu entrada no Departamento de Emergência inconsciente. Iniciada avaliação primária e detectou-se PCR. Iniciada RCP de alta qualidade e na análise do ritmo cardíaco observou-se o seguinte ritmo: Qual a sua conduta a seguir?</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME22_Q102_ritmo_pcr_pediatrica.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME22_Q102_ritmo_pcr_pediatrica.png" alt="Tira de ritmo de PCR pediátrica compatível com FV/TV sem pulso.">
+</a>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t010-005" value="A"> A. Desfibrilação com 2 a 4 J/Kg g</label>
 <label class="quiz-option"><input type="radio" name="q-t010-005" value="B"> B. Cardioversão com 2 a 4 J/Kg</label>
@@ -114,16 +123,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q102. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Criança de 06 anos, 25 kg, deu entrada no Departamento de Emergência inconsciente. Iniciada avaliação primária e detectou-se PCR. Iniciada RCP de alta qualidade e na análise do ritmo cardíaco observou-se o seguinte ritmo: Qual a s...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Desfibrilação com 2 a 4 J/Kg g”</p>
+<p><strong>Como pensar:</strong> PCR pediátrica com ritmo caótico de complexos largos na tira é FV/TV sem pulso, ritmo chocável. Primeiro choque em criança: 2 J/kg; choques subsequentes 4 J/kg ou mais conforme protocolo.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é a melhor porque traz desfibrilação na faixa inicial esperada de 2 a 4 J/kg para ritmo chocável.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Desfibrilação com 2 a 4 J/Kg g”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Cardioversão com 2 a 4 J/Kg”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Desfibrilação com 4 a 6 J/Kg”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Desfibrilação com 0,5 a 2 J/K”</li>
+<li><strong>A.</strong> Correta. FV/TV sem pulso em PCR pediátrica é desfibrilação, começando em 2 J/kg e escalando.</li>
+<li><strong>B.</strong> Cardioversão é para taquiarritmia com pulso e instabilidade, não PCR sem pulso.</li>
+<li><strong>C.</strong> 4-6 J/kg pula a energia inicial clássica e não é a melhor resposta de primeira conduta.</li>
+<li><strong>D.</strong> 0,5-2 J/kg é faixa de cardioversão sincronizada/energia menor, não desfibrilação de FV/TV sem pulso.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME22 Q119</p>
@@ -137,16 +147,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q119. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;De acordo com as Diretrizes do ILCOR de 2020, qual a relação de compressões e ventilações em um paciente lactente com 01 socorrista?&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “30 compressões e 02 ventilações”</p>
+<p><strong>Como pensar:</strong> BLS pediátrico com um socorrista usa 30:2, igual adulto; com dois socorristas em lactente/criança, 15:2.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque lactente com 1 socorrista deve receber 30 compressões para 2 ventilações.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “15 compressões e 02 ventilações”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “05 compressões e 01 ventilação”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “30 compressões e 02 ventilações”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “15 compressões e 01 ventilação”</li>
+<li><strong>A.</strong> 15:2 é relação para dois socorristas em lactentes/crianças.</li>
+<li><strong>B.</strong> 5:1 não é relação recomendada.</li>
+<li><strong>C.</strong> Correta. Um socorrista: 30:2.</li>
+<li><strong>D.</strong> 15:1 não é relação de BLS pediátrico.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME23 Q14</p>
@@ -160,16 +171,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q14. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Esta é uma questão de exceção/incorreta em pediatria de emergência. O comando central é: &quot;Assinale a opção errada sobre uma característica da via aérea pediátrica.&quot;. A alternativa C deve ser marcada porque é a afirmação problemática ou a exceção reconhecida pelo gabarito oficial.</p>
-<p><strong>Por que a C deve ser marcada:</strong> o enunciado pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado pela banca: “A máscara laríngea não é recomendada para crianças com menos de 2 anos”</p>
+<p><strong>Como pensar:</strong> Via aérea pediátrica: cabeça proporcionalmente maior, língua grande, epiglote longa/flácida em ômega, laringe mais anterior/cefálica. Lâmina reta ajuda a levantar epiglote; máscara laríngea existe para lactentes/crianças.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é a errada porque máscara laríngea pode ser usada em menores de 2 anos com tamanho adequado; não é contraindicada por idade.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “É preferível usar a lâmina reta para pinçar a epiglote.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Crianças menores podem necessitar com frequência de um coxim interescapular para alinhar os eixos da via aérea.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A máscara laríngea não é recomendada para crianças com menos de 2 anos”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A epiglote é maior e em forma de ómega.”</li>
+<li><strong>A.</strong> Verdadeira. Lâmina reta pode pinçar/elevar diretamente a epiglote na criança pequena.</li>
+<li><strong>B.</strong> Verdadeira. Coxim interescapular pode ajudar a alinhar via aérea em lactentes/crianças pequenas.</li>
+<li><strong>C.</strong> Correta como resposta ao comando. Máscara laríngea é opção de resgate também em menores de 2 anos.</li>
+<li><strong>D.</strong> Verdadeira. Epiglote infantil é maior, mais flexível e frequentemente em ômega.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME23 Q16</p>
@@ -183,16 +195,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME23 Q16. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Após a administração de uma medicação para intubação em um menino de 7 anos com insuficiência respiratória, nota-se um espasmo grave do masseter. Qual a mais provável medicação realizada?&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Succinilcolina.”</p>
+<p><strong>Como pensar:</strong> Espasmo de masseter após droga de SRI em criança lembra succinilcolina e alerta para hipertermia maligna, especialmente se rigidez, hipercapnia e hipertermia surgirem.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é correta porque succinilcolina é o bloqueador associado a espasmo de masseter.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Succinilcolina.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Fentanil.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Diazepam.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Rocurônio.”</li>
+<li><strong>A.</strong> Correta. Succinilcolina pode causar fasciculações, espasmo de masseter e hipertermia maligna.</li>
+<li><strong>B.</strong> Fentanil pode causar rigidez torácica em bolus rápido, não espasmo de masseter típico.</li>
+<li><strong>C.</strong> Diazepam é benzodiazepínico; não causa esse padrão.</li>
+<li><strong>D.</strong> Rocurônio não é o gatilho clássico de espasmo de masseter/hipertermia maligna.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME23 Q17</p>
@@ -206,20 +219,26 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME23 Q17. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> O gatilho da questão é: febre, hipotensão, rash/língua em framboesa e inflamação sistêmica = síndrome do choque tóxico. Pediatria cobra que criança compensa até descompensar: pese/estime peso, ventile bem, dê bolus/droga corretos e reavalie. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Síndrome do choque tóxico, provocado por estafilococos ou estreptococos, reforçado pela febre, lesões de pele, hipotensão e achados de oroscopia.”</p>
+<p><strong>Como pensar:</strong> Febre + hipotensão + rash/pele espessa/sufusões + língua em framboesa + plaquetopenia/lesão orgânica em criança = síndrome do choque tóxico por Staph/Strep. Dor abdominal pode confundir com abdome cirúrgico.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque integra febre, choque, lesões cutâneo-mucosas e disfunção multissistêmica.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Apendicite aguda, reforçado pelo quadro de distensão abdominal, dor, vômitos e parada de eliminação de fezes;”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Hepatite viral, reforçado pelo quadro de hepatomegalia e aumento de enzimas hepáticas;”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Síndrome exantemática viral, evidenciado pela febre e lesões de pele;”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Síndrome do choque tóxico, provocado por estafilococos ou estreptococos, reforçado pela febre, lesões de pele, hipotensão e achados de oroscopia.”</li>
+<li><strong>A.</strong> Apendicite não explica língua em framboesa, rash difuso, plaquetopenia e choque tóxico sistêmico.</li>
+<li><strong>B.</strong> Hepatite viral não explica choque, rash mucocutâneo e plaquetopenia com esse padrão.</li>
+<li><strong>C.</strong> Exantema viral simples não costuma cursar com hipotensão grave e disfunção orgânica.</li>
+<li><strong>D.</strong> Correta. Síndrome do choque tóxico fecha melhor o quadro sistêmico.</li>
 </ul>
 </div>
 </div>
 
+
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME23 Q50</p>
-<p><strong>10. Com base na apresentação deste paciente, qual tipo de choque mais provável?</strong></p>
+<p><strong>10. Caso clínico das questões 10 e 11: Criança de 09 meses de idade apresenta febre, vômitos e diarreia há 03 dias. Na avaliação no DE, você percebe que a criança está sonolenta. A FC é 170 bpm, temperatura 38,3 °C, PA 64 x 42 mmHg e FR 60 irpm, superficial. O TEC é de 3 a 4 segundos, com sinal da prega evidente. Com base na apresentação deste paciente, qual tipo de choque mais provável?</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME23_Q50_sinal_prega.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME23_Q50_sinal_prega.png" alt="Sinal da prega em lactente desidratado.">
+</a>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t010-010" value="A"> A. Obstrutivo</label>
 <label class="quiz-option"><input type="radio" name="q-t010-010" value="B"> B. Hipovolêmico</label>
@@ -229,20 +248,26 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME23 Q50. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Com base na apresentação deste paciente, qual tipo de choque mais provável?&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Hipovolêmico”</p>
+<p><strong>Como pensar:</strong> Mesmo caso do lactente desidratado: vômitos/diarreia, prega, hipotensão e taquicardia. O choque mais provável é hipovolêmico.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta porque perda hídrica gastrointestinal com sinais de desidratação explica a apresentação.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Obstrutivo”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Hipovolêmico”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Anafilático”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Cardiogênico”</li>
+<li><strong>A.</strong> Obstrutivo não é sugerido por sinais respiratórios/cardiovasculares específicos.</li>
+<li><strong>B.</strong> Correta. Diarreia e vômitos por dias + prega e hipotensão = hipovolemia.</li>
+<li><strong>C.</strong> Anafilático teria urticária/angioedema/broncoespasmo/exposição, ausentes.</li>
+<li><strong>D.</strong> Cardiogênico não é sugerido por hepatomegalia/crepitações/cardiopatia.</li>
 </ul>
 </div>
 </div>
 
+
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME23 Q51</p>
-<p><strong>11. Após a definição do tipo de choque, qual a conduta terapêutica apropriada?</strong></p>
+<p><strong>11. Caso clínico das questões 10 e 11: Criança de 09 meses de idade apresenta febre, vômitos e diarreia há 03 dias. Na avaliação no DE, você percebe que a criança está sonolenta. A FC é 170 bpm, temperatura 38,3 °C, PA 64 x 42 mmHg e FR 60 irpm, superficial. O TEC é de 3 a 4 segundos, com sinal da prega evidente. Após a definição do tipo de choque, qual a conduta terapêutica apropriada?</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME23_Q50_sinal_prega.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME23_Q50_sinal_prega.png" alt="Sinal da prega em lactente desidratado.">
+</a>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t010-011" value="A"> A. Noradrenalina 0,10 mcg/Kg/min</label>
 <label class="quiz-option"><input type="radio" name="q-t010-011" value="B"> B. 15 ml/Kg de glicose a 5% e NaCl a 0.45%</label>
@@ -252,16 +277,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q51. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Após a definição do tipo de choque, qual a conduta terapêutica apropriada?&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “20 ml/Kg de NaCl 0.9%”</p>
+<p><strong>Como pensar:</strong> Definido choque hipovolêmico, a primeira conduta é volume isotônico 20 mL/kg com reavaliação frequente.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque NaCl 0,9% 20 mL/kg é bolus inicial de ressuscitação no choque hipovolêmico pediátrico.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Noradrenalina 0,10 mcg/Kg/min”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: aplica lógica adulta ou ignora dose/critério pediátrico; em pediatria, peso, perfusão, hipóxia e sinais tardios mudam a resposta. Alternativa: “15 ml/Kg de glicose a 5% e NaCl a 0.45%”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “20 ml/Kg de NaCl 0.9%”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Dopamina 2 mcg/Kg/min”</li>
+<li><strong>A.</strong> Noradrenalina antes de volume não corrige a fisiologia dominante.</li>
+<li><strong>B.</strong> Solução hipotônica/glicosada não é fluido de ressuscitação.</li>
+<li><strong>C.</strong> Correta. Cristaloide isotônico 20 mL/kg e reavaliar.</li>
+<li><strong>D.</strong> Dopamina em dose baixa não é primeira linha e não substitui volume.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME23 Q72</p>
@@ -275,16 +301,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q72. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;As pneumonias adquiridas na comunidade continuam sendo uma importante causa de morbimortalidade, especialmente em menores de cinco anos, em todo o mundo. Diante de uma criança com sintomas respiratórios, em que se avalia a possibi...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “O diagnóstico de pneumonia adquirida na comunidade em crianças é essencialmente clínico, podendo ser iniciado o tratamento sem a realização de radiografia de tórax.”</p>
+<p><strong>Como pensar:</strong> Pneumonia comunitária pediátrica é diagnóstico essencialmente clínico; Rx não é obrigatório em toda criança ambulatorial estável, e hemograma não separa com segurança viral de bacteriana.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque tratamento pode ser iniciado clinicamente sem radiografia em muitos casos.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “A tosse, a febre e a presença de dificuldade para respirar são queixas comuns, e a ausculta pulmonar com estertores crepitantes é o sinal de maior sensibilidade para o diagnóstico.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: aplica lógica adulta ou ignora dose/critério pediátrico; em pediatria, peso, perfusão, hipóxia e sinais tardios mudam a resposta. Alternativa: “A frequência respiratória deve ser pesquisada: o ponto de corte para taquipneia deve ser menor de 60 irpm em crianças menores de doze meses e menor que 50 irpm em menores de cinco anos.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “O diagnóstico de pneumonia adquirida na comunidade em crianças é essencialmente clínico, podendo ser iniciado o tratamento sem a realização de radiografia de tórax.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “A realização de hemograma nos casos suspeitos de pneumonia permite a diferenciação do diagnóstico etiológico da pneumonia (evitando o uso de antibióticos nos casos de pneumonia viral).”</li>
+<li><strong>A.</strong> Estertores têm baixa sensibilidade; ausência não exclui pneumonia.</li>
+<li><strong>B.</strong> Os pontos de corte de taquipneia estão errados/incompletos por faixa etária.</li>
+<li><strong>C.</strong> Correta. Diagnóstico é clínico e Rx é reservado para dúvida, gravidade, complicação ou internação.</li>
+<li><strong>D.</strong> Hemograma não diferencia etiologia com acurácia suficiente para decidir antibiótico sozinho.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME23 Q74</p>
@@ -298,16 +325,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q74. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Criança de 9 meses, sexo masculino, é trazido ao DE devido a quadro de febre e inapetência, apresentando diurese preservada e discreto sinal de desidratação, histórico de infecção de vias aéreas altas recentemente, criança ativa e...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Antitérmico e suporte;”</p>
+<p><strong>Como pensar:</strong> Febre + úlceras orais + vesículas/bolhas em mãos e pés em lactente ativo = doença mão-pé-boca. Tratamento é suporte, hidratação e antitérmico/analgesia.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque quadro viral autolimitado deve receber suporte.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra C, que contém o problema do item. Alternativa: “Aciclovir oral;”</li>
-<li><strong>B.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra C, que contém o problema do item. Alternativa: “Hemograma, hemocultura e antibiótico de largo espectro;”</li>
-<li><strong>C.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “Antitérmico e suporte;”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra C, que contém o problema do item. Alternativa: “Hidratação de 20 a 30 ml por quilo na primeira hora.”</li>
+<li><strong>A.</strong> Aciclovir não é tratamento de rotina para mão-pé-boca.</li>
+<li><strong>B.</strong> Criança ativa, sem toxemia, não pede antibiótico amplo/hemocultura de rotina.</li>
+<li><strong>C.</strong> Correta. Suporte e controle sintomático.</li>
+<li><strong>D.</strong> Bolus 20-30 mL/kg é para choque/desidratação grave, não discreta desidratação com diurese preservada.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME23 Q80</p>
@@ -321,16 +349,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME23 Q80. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Esta é uma questão de exceção/incorreta em pediatria de emergência. O comando central é: &quot;Sobre o escore PECARN na avaliação do traumatismo crânio encefálico (TCE) pediátrico, escolha a alternativa errada:&quot;. A alternativa B deve ser marcada porque é a afirmação problemática ou a exceção reconhecida pelo gabarito oficial.</p>
-<p><strong>Por que a B deve ser marcada:</strong> o enunciado pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado pela banca: “Os critérios de avaliação mudam conforme a idade do paciente menor ou maior que 4 anos.”</p>
+<p><strong>Como pensar:</strong> PECARN divide em menor de 2 anos e 2 anos ou mais. Se a alternativa fala em 4 anos, é a pegadinha.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é a errada porque o ponto de corte etário do PECARN não é 4 anos.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “O PECARN é usado somente para avaliação de TCE leve”</li>
-<li><strong>B.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “Os critérios de avaliação mudam conforme a idade do paciente menor ou maior que 4 anos.”</li>
-<li><strong>C.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “A opinião subjetiva dos familiares frente ao nível de consciência é um dos critérios para a decisão da realização da tomografia.”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “O PECARN é um instrumento de decisão clínica que auxilia a necessidade de tomografia na população pediátrica com TCE.”</li>
+<li><strong>A.</strong> Verdadeira no contexto: PECARN é para TCE leve/menor.</li>
+<li><strong>B.</strong> Correta como resposta ao comando. O corte correto é <2 anos versus >=2 anos.</li>
+<li><strong>C.</strong> Verdadeira: comportamento segundo responsáveis é critério em menores de 2 anos.</li>
+<li><strong>D.</strong> Verdadeira. PECARN auxilia decisão de TC em TCE pediátrico.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME23 Q86</p>
@@ -344,16 +373,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME23 Q86. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Você recebe no departamento de emergência, criança de 4 anos com quadro de febre e erupção cutânea difusa há 7 dias, apresenta também hiperemia conjuntival bilateral e linfonodomegalias cervicais. Quais exames você solicitaria par...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Hemograma;”</p>
+<p><strong>Como pensar:</strong> Febre por 7 dias + conjuntivite bilateral + rash + linfonodo cervical sugere Kawasaki, mas o gabarito oficial marcou hemograma. Para prova, preserve a letra; na prática, investigação costuma incluir hemograma, PCR/VHS, urina e avaliação cardíaca.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é o gabarito oficial. Ela ao menos inclui hemograma, que ajuda a procurar anemia/leucocitose/trombocitose, embora a alternativa C seja clinicamente mais completa.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Sorologia para vírus Epstein-Barr;”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “PCR, VHS e ASLO;”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “PCR, VHS, hemograma e urina I/EAS;”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Hemograma;”</li>
+<li><strong>A.</strong> EBV não é a hipótese principal diante de conjuntivite bilateral, rash e febre prolongada no padrão Kawasaki.</li>
+<li><strong>B.</strong> ASLO direciona para estreptococo/febre reumática/escarlatina, não fecha melhor Kawasaki.</li>
+<li><strong>C.</strong> Clinicamente é uma avaliação mais completa, mas não foi a letra oficial; cuidado para prova se o gabarito local for cobrado.</li>
+<li><strong>D.</strong> Correta pelo gabarito oficial. Hemograma é parte mínima da investigação e pode mostrar achados de suporte.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME23 Q91</p>
@@ -367,16 +397,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME23 Q91. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Uma criança de 5 anos em tratamento com quimioterapia para uma leucemia mieloide aguda é trazida para o DE pelos pais. Eles relatam que a criança está com febre e letargia. Ao exame clínico percebe–se: frequência cardíaca de 158 b...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Administrar de 10 a 20 ml/Kg de cristalóide isotônico em 5 a 10 minutos”</p>
+<p><strong>Como pensar:</strong> Neutropenia febril/oncopediatria com hipotensão e letargia é choque séptico até prova em contrário. Após acesso e hemocultura, ressuscite com bolus pequeno/moderado e antibiótico rápido.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é correta porque 10-20 mL/kg de cristaloide isotônico em 5-10 min é expansão inicial cuidadosa em choque pediátrico, especialmente oncológico.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Administrar de 10 a 20 ml/Kg de cristalóide isotônico em 5 a 10 minutos”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Administrar de 20 a 30 ml/Kg de cristalóide isotônico em 5 a 10 minutos”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: desalinha controle de dano e ressuscitação hemostática; a prova cobra controle precoce de sangramento, proporção adequada e correção de coagulopatia. Alternativa: “Administrar de 5 a 10 ml/Kg de concentrado de hemácias”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Obter uma radiografia do tórax”</li>
+<li><strong>A.</strong> Correta. Bolus de 10-20 mL/kg com reavaliação é apropriado.</li>
+<li><strong>B.</strong> 20-30 mL/kg inicial pode ser excessivo sem reavaliação, especialmente em criança grave/risco de disfunção.</li>
+<li><strong>C.</strong> Concentrado de hemácias não é primeira intervenção para choque séptico sem anemia hemorrágica como causa.</li>
+<li><strong>D.</strong> Rx não deve atrasar ressuscitação e antibiótico.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME24 Q15</p>
@@ -390,16 +421,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q15. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> O gatilho da questão é: bronquiolite com rebaixamento, SatO2 70% e FC 48: ventilação com pressão positiva e O2; compressão se FC &lt;60 persistir com má perfusão. Pediatria cobra que criança compensa até descompensar: pese/estime peso, ventile bem, dê bolus/droga corretos e reavalie. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar ventilação com pressão positiva conectada à fonte de oxigênio e reavaliar a frequência cardíaca e sinais de choque. Iniciar compressões e ventilações, se não houver melhora.”</p>
+<p><strong>Como pensar:</strong> Bronquiolite grave com FC 48 e pulso central palpável: bradicardia por hipóxia. Em criança, ventilar bem é o primeiro “antiarrítmico”; se FC não melhora, compressões.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta porque ventilação com pressão positiva e O2 deve ser iniciada imediatamente, reavaliando FC e iniciando compressões se FC <60 persistir com má perfusão.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Iniciar oxigênio em alto fluxo por máscara facial e expansão volêmica, devido aos sinais de choque.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar ventilação com pressão positiva conectada à fonte de oxigênio e reavaliar a frequência cardíaca e sinais de choque. Iniciar compressões e ventilações, se não houver melhora.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Estimular, aquecer e realizar atropina na dose de 0,02 mg/kg por via endovenosa ou intraóssea. Iniciar a ventilação com pressão positiva.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Iniciar compressões alternando com ventilações e administrar bólus de epinefrina por via endovenosa ou intraóssea.”</li>
+<li><strong>A.</strong> Máscara e volume não resolvem ventilação falente com bradicardia hipóxica.</li>
+<li><strong>B.</strong> Correta. VPP com O2 é prioridade; compressões se não houver melhora.</li>
+<li><strong>C.</strong> Atropina não é primeira medida na bradicardia hipóxica; ventile primeiro.</li>
+<li><strong>D.</strong> Compressões/adrenalina podem ser necessárias, mas antes é preciso ventilar; no algoritmo, FC <60 persistente após VPP eficaz.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME24 Q16</p>
@@ -413,16 +445,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME24 Q16. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Marque a alternativa que descreve uma indicação de intubação orotraqueal e a melhor estratégia de realização do procedimento para um paciente em crise asmática grave:&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Aumento da pressão parcial de gás carbônico (pCO2) em mais de 5 mmHg na última hora e manutenção do esforço respiratório. Pré-oxigenar com ventilação não invasiva. Considerar intubação em sequência prolongada.”</p>
+<p><strong>Como pensar:</strong> Asma grave com pCO2 subindo apesar de esforço é fadiga/falência ventilatória. Pré-oxigenação com VNI e sequência prolongada/delayed sequence podem evitar colapso na IOT.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é correta porque aumento de pCO2 com esforço persistente indica falência iminente e a estratégia deve otimizar pré-oxigenação/ventilação antes da IOT.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Aumento da pressão parcial de gás carbônico (pCO2) em mais de 5 mmHg na última hora e manutenção do esforço respiratório. Pré-oxigenar com ventilação não invasiva. Considerar intubação em sequência prolongada.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Diminuição da pCO2 na última hora e manutenção do esforço respiratório. Préoxigenar com ventilação não invasiva. Considerar duplo preparo. Realizar sequência rápida de intubação (SRI) o mais rapidamente possível.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Aumento da pCO2 em mais de 5 mmHg na última hora e manutenção do esforço respiratório. Pré-oxigenar com máscara não reinalante a 5 L/minuto. Proceder com SRI.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Diminuição da pCO2 na última hora e manutenção do esforço respiratório. Realizar lidocaína. Considerar intubação em sequência prolongada.”</li>
+<li><strong>A.</strong> Correta. pCO2 subindo é sinal ruim; VNI pode pré-oxigenar e reduzir trabalho antes da sequência.</li>
+<li><strong>B.</strong> pCO2 diminuindo não indica fadiga; SRI rápida sem otimização pode ser perigosa.</li>
+<li><strong>C.</strong> Máscara não reinalante a 5 L/min é fluxo insuficiente e a estratégia fica pobre.</li>
+<li><strong>D.</strong> Lidocaína não é peça central e pCO2 diminuindo não é o gatilho descrito.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME24 Q32</p>
@@ -436,16 +469,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME24 Q32. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> O gatilho da questão é: exantemas, especialmente exantema súbito/HHV6-7. Pediatria cobra que criança compensa até descompensar: pese/estime peso, ventile bem, dê bolus/droga corretos e reavalie. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “O tratamento do sarampo é principalmente de suporte com antipiréticos, hidratação e manejo do prurido. Sua complicação mais comum é a otite média, porém complicações mais graves e ameaçadoras da vida, como encefalite e pneumonia...”</p>
+<p><strong>Como pensar:</strong> Sarampo é suporte + vitamina A em crianças conforme risco/protocolo; complicação comum é otite média, mas pneumonia e encefalite matam. Exantema súbito surge após defervescência e clareia; Koplik costuma preceder rash do sarampo.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque descreve manejo de suporte e complicações relevantes do sarampo.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: erra janela, critério ou prioridade neurocrítica; primeiro vem tempo, gravidade, contraindicação e proteção contra hipóxia/hipotensão. Alternativa: “O exantema súbito é uma doença causada por herpesvírus caracterizada por febre e rash cutâneo, que aparece tipicamente após defervescência febril. Convulsões febris podem ocorrer e devem levantar o alerta para a hipótese de encefalite, complicação comum, haja vista seu agente etiológico, porém com evolução benigna.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Um achado característico do exantema súbito são lesões rosadas maculares ou maculopapulares, de 2 a 3 mm de diâmetro, raramente coalescentes, acometendo inicialmente tronco e que se espalham para pescoço e extremidades, que não clareiam à pressão e desaparecem em 1 ou 2 dias.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “As erupções cutâneas do sarampo surgem tipicamente entre o terceiro e quinto dia de doença, concomitante ao desaparecimento das manchas de Koplik, e se caracterizam por lesões eritematosas maculopapulares envolvendo face e tronco que poupam braços, pernas, mãos e pé, até o terceiro dia de evolução, quando desaparecem.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “O tratamento do sarampo é principalmente de suporte com antipiréticos, hidratação e manejo do prurido. Sua complicação mais comum é a otite média, porém complicações mais graves e ameaçadoras da vida, como encefalite e pneumonia, podem ocorrer.”</li>
+<li><strong>A.</strong> Exantema súbito pode ter convulsão febril, mas encefalite não é complicação comum.</li>
+<li><strong>B.</strong> Exantema súbito geralmente clareia à pressão e desaparece rápido; a alternativa erra “não clareiam”.</li>
+<li><strong>C.</strong> No sarampo, rash começa face/linha capilar e desce, não poupa extremidades dessa forma; Koplik precede e pode desaparecer.</li>
+<li><strong>D.</strong> Correta. Suporte, hidratação/antitérmico e atenção a otite, pneumonia e encefalite.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME24 Q38</p>
@@ -459,16 +493,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q38. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Paciente do sexo masculino, 8 anos de idade e 32 kg de peso com diagnóstico de asma e história de internações prévias em unidade de terapia intensiva com necessidade de ventilação mecânica por exacerbação chega ao Departamento de...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Pacientes com exacerbações graves podem apresentar dificuldade de deglutição, sendo recomendada uma dose endovenosa de metilprednisolona ou dexametasona tão logo um acesso venoso seja estabelecido.”</p>
+<p><strong>Como pensar:</strong> Asma grave pediátrica: SABA/ipratrópio repetidos/contínuos, corticoide precoce; se não consegue engolir ou acesso já existe, metilpred/dexa EV. Magnésio não espera dosagem sérica.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta porque em exacerbação grave, corticoide sistêmico precoce EV é apropriado quando há dificuldade de deglutição/acesso disponível.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Por se tratar de uma crise grave, caso não haja resposta adequada após um primeiro resgate com beta-agonista inalatório, devemos iniciar precocemente o uso de beta-agonista endovenoso.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Pacientes com exacerbações graves podem apresentar dificuldade de deglutição, sendo recomendada uma dose endovenosa de metilprednisolona ou dexametasona tão logo um acesso venoso seja estabelecido.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “O uso de magnésio intravenoso, quando indicado, deve ser prescrito na dose de 50 a 75 mg/kg em infusão de 20 minutos somente após uma dosagem sérica de magnésio dentro do limite da normalidade.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “O uso de terbutalina subcutânea e adrenalina intramuscular não possuem benefício em pacientes pediátricos com crise asmática grave, devendo ser utilizados exclusivamente em caso de suspeita de broncoespasmo relacionado à anafilaxia.”</li>
+<li><strong>A.</strong> Beta-agonista EV não é passo imediato após um único resgate; primeiro nebulização/inalação intensiva, ipratrópio, corticoide e magnésio se grave.</li>
+<li><strong>B.</strong> Correta. Corticoide sistêmico precoce reduz internação e falha terapêutica.</li>
+<li><strong>C.</strong> Magnésio IV, quando indicado, não depende de dosagem sérica prévia.</li>
+<li><strong>D.</strong> Terbutalina/adrenalina podem ter papel em casos selecionados; adrenalina é especialmente útil se anafilaxia, mas a frase é absoluta demais.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME24 Q45</p>
@@ -482,16 +517,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q45. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Recém-nascido de 23 dias, com 4 kg, chega ao Departamento de Emergência trazido pela mãe com relato de “estar estranho” há cerca de 15 minutos. Ao exame físico, apresentando movimentos tônico-clônicos sugestivos de crise convulsiv...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Apesar do risco de apoptose induzida, fenobarbital é a droga de escolha na convulsão neonatal. Em caso de refratariedade, devemos proceder com infusão contínua de benzodiazepínico.”</p>
+<p><strong>Como pensar:</strong> Convulsão neonatal é outra lógica: hipoglicemia, sepse/meningite, distúrbio metabólico e hemorragia. Fenobarbital continua droga de escolha de primeira linha em muitos protocolos.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque fenobarbital é anticonvulsivante de escolha na crise neonatal; refratariedade pode exigir benzodiazepínico contínuo/UTI.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: erra janela, critério ou prioridade neurocrítica; primeiro vem tempo, gravidade, contraindicação e proteção contra hipóxia/hipotensão. Alternativa: “O manejo de crises convulsivas desencadeadas por hipoglicemia, se esse for o diagnóstico, deve ser manejado com glicose 50% em bólus de 5 mL/kg, com repetição do bólus, conforme necessário, até normalização da glicemia.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “As drogas de primeira linha no manejo do status epiléptico nesta população são os benzodiazepínicos, sendo a dose recomendada, neste paciente, de 0,15 a 0,2 mg/kg de diazepam endovenoso ou 0,2 mg/kg de midazolam intramuscular.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Apesar do risco de apoptose induzida, fenobarbital é a droga de escolha na convulsão neonatal. Em caso de refratariedade, devemos proceder com infusão contínua de benzodiazepínico.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A realização de uma punção lombar e da coleta de material deve ser realizada em um segundo tempo, pois os sinais clínicos sugestivos de meningite são bastante exacerbados em recém-nascidos.”</li>
+<li><strong>A.</strong> Glicose 50% 5 mL/kg é concentração/dose perigosa para RN; usa-se glicose 10% em bolus conforme protocolo.</li>
+<li><strong>B.</strong> Benzodiazepínicos não são primeira linha padrão na convulsão neonatal como em crianças maiores.</li>
+<li><strong>C.</strong> Correta. Fenobarbital é base do manejo neonatal.</li>
+<li><strong>D.</strong> Meningite no RN pode ter sinais sutis; punção/labs não devem ser sempre “segundo tempo” se suspeita e estabilidade permitem.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME24 Q68</p>
@@ -505,16 +541,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q68. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Sobre a avaliação e o manejo da criança vítima de traumatismo craniencefálico (TCE), assinale a alternativa correta:&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Na avaliação radiológica do TCE pediátrico, a radiografia de crânio pode ser considerada no rastreio da criança vítima de abuso e na avaliação de possíveis corpos estranhos sob lacerações de escalpe.”</p>
+<p><strong>Como pensar:</strong> TCE pediátrico: PECARN tem dois ramos etários, RX é restrito e TC é por risco. Abuso e corpo estranho em escalpo são exceções em que radiografia pode ajudar.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta porque RX de crânio pode ser considerado no rastreio de abuso e corpo estranho sob laceração.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “O algoritmo da PECARN para avaliação do TCE pediátrico é um algoritmo único validado com os mesmos critérios para todas as crianças menores de 12 anos vítimas de TCE contuso e tem por objetivo a redução do uso da tomografia computadorizada, permitindo uma alta segura do Departamento de Emergência desses pacientes.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Na avaliação radiológica do TCE pediátrico, a radiografia de crânio pode ser considerada no rastreio da criança vítima de abuso e na avaliação de possíveis corpos estranhos sob lacerações de escalpe.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “Crianças que apresentaram um episódio de crise convulsiva após TCE e possuem tomografia de crânio sem alterações, mesmo com exame neurológico normal, devem ser submetidas à observação hospitalar por 12 horas, seguida de nova tomografia de crânio, e somente se esta também for normal, podem ser liberadas com segurança para casa.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “Toda criança vítima de TCE e diagnóstico de fratura de crânio, mesmo que alertas e com fratura linear e sem depressão do crânio, deve obrigatoriamente ser hospitalizada e mantida em observação por, no mínimo, 24 horas.”</li>
+<li><strong>A.</strong> PECARN não é algoritmo único para todas as idades; divide <2 e >=2 anos.</li>
+<li><strong>B.</strong> Correta. RX tem papel restrito, não substitui TC quando indicada.</li>
+<li><strong>C.</strong> Crise pós-trauma com TC/exame normais não exige automaticamente observação de 12 h + nova TC.</li>
+<li><strong>D.</strong> Fratura linear simples em criança alerta não obriga 24 h de internação para todos.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME24 Q70</p>
@@ -528,16 +565,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q70. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Lesões físicas são uma das principais causas de morte e perda de funcionalidade em crianças. Qual das alternativas a seguir representa lesões mais sugestivas de maus tratos na população pediátrica?&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Fraturas de costelas e crânio.”</p>
+<p><strong>Como pensar:</strong> Maus-tratos: fraturas de costela, múltiplas, metafisárias, crânio em contexto incompatível e queimaduras por imersão são altamente suspeitas. Lesões comuns em áreas de impacto acidental isoladas são menos específicas.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é a melhor porque fraturas de costelas e crânio são lesões de alta suspeição para abuso, dependendo da história.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Fratura distal do rádio e queimaduras em padrão de luva.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Fratura em espiral do fêmur e contusões na testa.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Fraturas de costelas e crânio.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Hematomas na perna e fratura de clavícula.”</li>
+<li><strong>A.</strong> Queimadura em luva é suspeita, mas fratura distal de rádio pode ser acidental; a combinação não é a melhor do gabarito.</li>
+<li><strong>B.</strong> Fratura espiral de fêmur pode preocupar em não deambulador, mas contusão na testa é comum em quedas.</li>
+<li><strong>C.</strong> Correta. Costelas e crânio, sobretudo com história incompatível, levantam forte suspeita.</li>
+<li><strong>D.</strong> Hematoma em perna e clavícula são comuns em trauma acidental conforme idade/mecanismo.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME24 Q94</p>
@@ -551,16 +589,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q94. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Em comparação ao tratamento dos pacientes adultos vítimas de queimaduras, existem algumas particulares, que necessitam ser observadas no atendimento das crianças. Sobre isso, é correto afirmar:&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A ressuscitação volêmica na criança deve ser indicada bem mais precocemente com relação ao adulto, no que se diz respeito à superfície corporal queimada (superfície corporal queimada de 10 a 20%).”</p>
+<p><strong>Como pensar:</strong> Criança queimada descompensa com menor área proporcional e precisa reposição IV a partir de limiar menor que adulto, geralmente 10-20% SCQ. Analgesia não espera transferência.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque a ressuscitação volêmica na criança começa com percentuais de superfície queimada menores que no adulto.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “A quantidade de volume que deve ser infundida é relativamente menor do que em adultos.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A reposição de glicose na hidratação deve ser restrita a pacientes que se apresentam com hipoglicemia.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A ressuscitação volêmica na criança deve ser indicada bem mais precocemente com relação ao adulto, no que se diz respeito à superfície corporal queimada (superfície corporal queimada de 10 a 20%).”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: aplica lógica adulta ou ignora dose/critério pediátrico; em pediatria, peso, perfusão, hipóxia e sinais tardios mudam a resposta. Alternativa: “A analgesia em pacientes pediátricos pode ser postergada até a transferência para unidade avançada, para evitar risco de alteração neurológica.”</li>
+<li><strong>A.</strong> Crianças frequentemente precisam proporcionalmente mais cuidado hídrico e manutenção com glicose, não menos.</li>
+<li><strong>B.</strong> Glicose de manutenção é importante em crianças pequenas, não apenas quando hipoglicemia já ocorreu.</li>
+<li><strong>C.</strong> Correta. 10-20% SCQ já pode indicar ressuscitação IV em pediatria.</li>
+<li><strong>D.</strong> Analgesia adequada é parte do atendimento inicial e não deve ser postergada.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME24 Q95</p>
@@ -574,16 +613,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q95. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Sobre as particularidades do trauma pediátrico, em especial o raquimedular, assinale a alternativa correta:&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Fraturas de coluna cervical são raras, especialmente em menores de 8 anos, sendo as fraturas de coluna lombar e torácica mais frequentes. Nos segmentos lombar e torácico, as fraturas por compressão são mais comuns que fraturas por...”</p>
+<p><strong>Como pensar:</strong> Coluna pediátrica tem padrões diferentes; fraturas cervicais são mais raras em pequenos e toracolombares por compressão aparecem. Evite CT “sempre” e prancha rígida prolongada.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta no gabarito porque descreve particularidades epidemiológicas e mecânicas do trauma raquimedular pediátrico.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: aplica lógica adulta ou ignora dose/critério pediátrico; em pediatria, peso, perfusão, hipóxia e sinais tardios mudam a resposta. Alternativa: “São considerados fatores de risco para lesões de coluna cervical em criança: alteração do status mental (incluindo intoxicações), défices neurológicos focais, dor cervical apenas em linha média, torcicolo, lesões significativas em torso, condições predisponentes para lesões de coluna cervical, mecanismo de trauma relacionado a mergulho e colisões automotoras de alto risco.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Fraturas de coluna cervical são raras, especialmente em menores de 8 anos, sendo as fraturas de coluna lombar e torácica mais frequentes. Nos segmentos lombar e torácico, as fraturas por compressão são mais comuns que fraturas por explosão, que são raras em crianças.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “Tal qual no traumatismo craniencefálico, o uso de radiografias simples não é recomendado na avaliação da suspeita de lesão de coluna cervical em pacientes que não podem ser clinicamente liberados e que apresentam escala de coma de Glasgow entre 14 e 15, sendo a tomografia computadorizada sempre o exame de escolha nessa avaliação inicial.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Diferente da população adulta, crianças com alta suspeição de lesões em coluna torácica ou lombar, devem ser mantidas em tábua rígida, devido à pouca colaboração da população pediátrica.”</li>
+<li><strong>A.</strong> A lista mistura fatores verdadeiros com formulação menos precisa; o gabarito preferiu a epidemiologia da letra B.</li>
+<li><strong>B.</strong> Correta. Compressão toracolombar é padrão comum e explosão é rara.</li>
+<li><strong>C.</strong> TC sempre como exame inicial aumenta radiação; RX pode ter papel em criança estável/avaliável.</li>
+<li><strong>D.</strong> Tábua rígida é para extricação/transporte curto, não manutenção por pouca colaboração.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME24 Q100</p>
@@ -597,21 +637,21 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME24 Q100. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;O triângulo da avaliação pediátrica é uma ferramenta muito importante na avaliação inicial de pacientes, ajudando a reconhecer rapidamente pacientes pediátricos graves em risco. Seus três componentes são:&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Aparência, padrão respiratório e perfusão/circulação da pele.”</p>
+<p><strong>Como pensar:</strong> Triângulo de avaliação pediátrica é olhar da porta: aparência, trabalho respiratório e circulação/perfusão da pele. Não exige estetoscópio ou monitor.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é correta porque traz os três componentes do PAT.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Aparência, padrão respiratório e perfusão/circulação da pele.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Presença de esforço respiratório, frequência cardíaca e escala de coma de Glasgow.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Perfusão periférica, interação com o examinador e dessaturação.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Padrão respiratório, frequência respiratória e tempo de enchimento capilar.”</li>
+<li><strong>A.</strong> Correta. Aparência, padrão respiratório/trabalho respiratório e circulação cutânea.</li>
+<li><strong>B.</strong> FC e Glasgow não são componentes do triângulo.</li>
+<li><strong>C.</strong> Interação faz parte da aparência, mas dessaturação não é componente visual obrigatório.</li>
+<li><strong>D.</strong> FR e TEC são sinais úteis, mas não são a tríade formal.</li>
 </ul>
 </div>
 </div>
 
+
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME25 Q11</p>
 <p><strong>27. Criança previamente hígida, com quadro súbito de rebaixamento do nível de consciência, bradicardia, sudorese e vômitos; com leucocitose, hiperglicemia, disfunção de ventrículo esquerdo e presença de linhas B bibasais ao ultrassom point-of-care se associam mais provavelmente a qual dos diagnósticos a seguir:</strong></p>
-<p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t010-027" value="A"> A. Cetoacidose diabética.</label>
 <label class="quiz-option"><input type="radio" name="q-t010-027" value="B"> B. Intoxicação por descongestionante nasal.</label>
@@ -621,16 +661,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q11. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Criança previamente hígida, com quadro súbito de rebaixamento do nível de consciência, bradicardia, sudorese e vômitos; com leucocitose, hiperglicemia, disfunção de ventrículo esquerdo e presença de linhas B bibasais ao ultrassom...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Escorpionismo grave.”</p>
+<p><strong>Como pensar:</strong> Criança com vômitos/sudorese/bradicardia/rebaixamento + disfunção VE e linhas B sugere escorpionismo grave com miocardite/edema pulmonar.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque escorpionismo grave por Tityus em criança causa tempestade autonômica, disfunção miocárdica e edema pulmonar.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Cetoacidose diabética.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Intoxicação por descongestionante nasal.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Escorpionismo grave.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Dengue grave.”</li>
+<li><strong>A.</strong> CAD não explica bem bradicardia, sudorese e disfunção VE aguda.</li>
+<li><strong>B.</strong> Descongestionante pode alterar SNC/FC, mas não fecha miocardite/linhas B.</li>
+<li><strong>C.</strong> Correta. É quadro clássico de escorpionismo grave pediátrico.</li>
+<li><strong>D.</strong> Dengue grave cursa com choque/extravasamento, não esse padrão autonômico-cardíaco.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME25 Q39</p>
@@ -644,16 +685,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q39. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> O gatilho da questão é: trauma pediátrico com perfusão ruim e FAST negativo; não excluir choque/lesão oculta. Pediatria cobra que criança compensa até descompensar: pese/estime peso, ventile bem, dê bolus/droga corretos e reavalie. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Administrar cristaloide aquecido em bolus de 20 mL/kg e dosar enzimas hepáticas, considerando que mesmo em FAST negativo a associação com elevação de aspartato aminotransferase/alanina aminotransferase aumenta sensibilidade para d...”</p>
+<p><strong>Como pensar:</strong> FAST negativo em criança não exclui lesão intra-abdominal. Se há letargia, palidez e TEC ruim, faça ressuscitação cautelosa e use transaminases/labs/imagem para aumentar sensibilidade.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque bolus aquecido 20 mL/kg e dosagem de AST/ALT reconhecem que FAST negativo não exclui lesão abdominal significativa.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Solicitar tomografia de abdome com contraste, pois um exame FAST negativo em crianças tem alto valor preditivo negativo para descartar lesões intra-abdominais clinicamente relevantes.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Iniciar expansão volêmica com cristaloide aquecido em bolus de 40 mL/kg, seguido de ácido tranexâmico na dose única de 30 mg/kg, mesmo sem critérios de sangramento evidente, em virtude do risco aumentado de hiperfibrinólise nessa faixa etária.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Manter observação clínica apenas, pois a ausência de sinais de fratura, FAST negativo e estabilidade hemodinâmica excluem a necessidade de investigação laboratorial ou por imagem mais aprofundada.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Administrar cristaloide aquecido em bolus de 20 mL/kg e dosar enzimas hepáticas, considerando que mesmo em FAST negativo a associação com elevação de aspartato aminotransferase/alanina aminotransferase aumenta sensibilidade para detecção de lesões intra-abdominais significativas.”</li>
+<li><strong>A.</strong> FAST negativo em criança não tem VPN alto suficiente para descartar lesão clinicamente relevante.</li>
+<li><strong>B.</strong> 40 mL/kg e TXA sem sangramento evidente é excessivo como rotina inicial.</li>
+<li><strong>C.</strong> Observação isolada ignora sinais de hipoperfusão e limitações do FAST.</li>
+<li><strong>D.</strong> Correta. Cristaloide aquecido 20 mL/kg + enzimas hepáticas/labs e reavaliação é abordagem mais segura.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME25 Q72</p>
@@ -667,16 +709,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q72. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Uma menina de 6 anos, portadora de anemia falciforme (HbSS), é trazida ao Departamento de Emergência com dor torácica intensa e febre aferida de 38,9°C. Encontra-se taquipneica (frequência respiratória de 42 irpm), com discretas r...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar antibioticoterapia empírica com ceftriaxona e azitromicina, oxigenoterapia para manter saturação de oxigênio ≥ 94% e considerar transfusão caso queda de hemoglobina ≥ 2 g/dL em relação ao basal.”</p>
+<p><strong>Como pensar:</strong> Anemia falciforme + febre + dor torácica/hipoxemia/infiltrado novo = síndrome torácica aguda. Trate como emergência: O2 alvo maior, antibiótico para típico/atípico, analgesia e transfusão se queda Hb/gravidade.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque combina ceftriaxona + azitromicina, oxigênio e consideração de transfusão pela queda de Hb >=2 g/dL.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Iniciar transfusão de concentrado de hemácias visando à elevação da hemoglobina para 11 g/dL, sem necessidade de antibiótico empírico.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Prescrever cetoprofeno e paracetamol para dor, observar evolução clínica por 6 horas antes de decidir por antibioticoterapia, pois se trata de síndrome torácica aguda leve e autolimitada.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar antibioticoterapia empírica com ceftriaxona e azitromicina, oxigenoterapia para manter saturação de oxigênio ≥ 94% e considerar transfusão caso queda de hemoglobina ≥ 2 g/dL em relação ao basal.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Administrar corticoterapia sistêmica de início precoce para reduzir inflamação pulmonar, iniciar dipirona e manter observação sem oxigenoterapia, já que a saturação de oxigênio está > 90%.”</li>
+<li><strong>A.</strong> Transfundir sem antibiótico ignora infecção/pneumonia como gatilho e tratamento central.</li>
+<li><strong>B.</strong> Observar 6 h sem antibiótico é inseguro em síndrome torácica aguda.</li>
+<li><strong>C.</strong> Correta. Antibiótico empírico, O2 e avaliar transfusão são conduta inicial.</li>
+<li><strong>D.</strong> Corticoide rotineiro não é primeira linha e manter sem oxigênio com Sat 93% em falciforme é inadequado.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME25 Q83</p>
@@ -690,16 +733,17 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q83. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Durante o manejo pós-retorno da circulação espontânea em uma criança de 4 anos após parada cardiorrespiratória, a equipe inicia ventilação mecânica e suporte hemodinâmico. Considerando as diretrizes da American Heart Association d...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Correção rigorosa da hipotensão com vasopressores para manter a pressão arterial sistólica ≥ p50 para a idade.”</p>
+<p><strong>Como pensar:</strong> Pós-PCR pediátrico: evitar hipóxia e hiperóxia, confirmar ventilação com gasometria quando possível, tratar hipotensão de forma agressiva e não usar bicarbonato rotineiro.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque manter PAS pelo menos no percentil 50 para idade reduz lesão secundária pós-parada.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Manutenção da fração inspirada de oxigênio em 100% durante as primeiras 24 horas, visando à oxigenação máxima e neuroproteção.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Utilização de dióxido de carbono expirado como marcador confiável de normocapnia para ajuste da ventilação no pós-parada cardiorrespiratória.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Correção rigorosa da hipotensão com vasopressores para manter a pressão arterial sistólica ≥ p50 para a idade.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Administração rotineira de bicarbonato de sódio para correção da acidose metabólica observada após retorno da circulação espontânea.”</li>
+<li><strong>A.</strong> FiO2 100% por 24 h causa hiperóxia; titule para saturação alvo.</li>
+<li><strong>B.</strong> ETCO2 é útil, mas pode não refletir PaCO2 no pós-PCR; use gasometria para ajuste fino.</li>
+<li><strong>C.</strong> Correta. Corrigir hipotensão com fluidos/vasopressores para PAS >=p50 é recomendação de neuroproteção.</li>
+<li><strong>D.</strong> Bicarbonato não é rotina no pós-RCE; trate causa e perfusão.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME25 Q91</p>
@@ -713,13 +757,13 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q91. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de pediatria de emergência, o comando central é reconhecer a melhor resposta para: &quot;Um menino de 7 anos, com histórico de asma, chega ao Departamento de Emergência, em crise, apresentando sibilância intensa, taquipneia e uso de musculatura acessória. Após a administração de broncodilatadores inalatórios e cortico...&quot;. A leitura de prova deve priorizar aparência, trabalho respiratório, perfusão, peso/dose por kg e intervenção precoce nos sinais de gravidade; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A aparente melhora do estado geral, combinada com a hipoxemia e a persistência do esforço, sugere fadiga e falência respiratória iminente.”</p>
+<p><strong>Como pensar:</strong> Em asma grave, “ficou quieto” pode ser fadiga, não melhora. Sibilância diminuindo com hipoxemia e esforço persistente é tórax silencioso/falência iminente.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque hipoxemia em máscara, alteração do estado mental e esforço persistente indicam fadiga/falência respiratória iminente.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: aplica lógica adulta ou ignora dose/critério pediátrico; em pediatria, peso, perfusão, hipóxia e sinais tardios mudam a resposta. Alternativa: “A criança está respondendo bem ao tratamento. A diminuição da agitação indica melhora do quadro.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A sibilância menos audível é um sinal positivo de broncodilatação eficaz, indicando que o tratamento está surtindo efeito.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A aparente melhora do estado geral, combinada com a hipoxemia e a persistência do esforço, sugere fadiga e falência respiratória iminente.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “A saturação de oxigênio de 88% é aceitável para o momento, considerando que a criança está mais calma e menos agitada.”</li>
+<li><strong>A.</strong> Menos agitação pode significar exaustão/hipercapnia, não melhora.</li>
+<li><strong>B.</strong> Sibilância menos audível pode ser redução de fluxo aéreo, sinal de gravidade.</li>
+<li><strong>C.</strong> Correta. Alteração mental + Sat 88% + esforço persistente é pré-parada respiratória.</li>
+<li><strong>D.</strong> Sat 88% em máscara não reinalante não é aceitável; é falha terapêutica grave.</li>
 </ul>
 </div>
 </div>

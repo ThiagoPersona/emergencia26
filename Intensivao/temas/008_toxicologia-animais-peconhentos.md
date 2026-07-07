@@ -18,7 +18,7 @@
 
 ### 1. Intoxicado grave no primeiro minuto
 
-1. **ABCDE e proteção da equipe:** tire o paciente da fonte, use EPI se organofosforado/carbamato, retire roupas contaminadas, lave pele/olhos quando exposição cutanea.
+1. **ABCDE e proteção da equipe:** tire o paciente da fonte, use EPI se organofosforado/carbamato, retire roupas contaminadas, lave pele/olhos quando exposição cutânea.
 2. **Corrija os matadores:** hipoxemia, hipoventilação, hipoglicemia, hipertermia, choque, convulsão, arritmia e acidose grave.
 3. **Monitorize cedo:** ECG de 12 derivações, capnografia se sedado/intubado, temperatura central se hipertérmico, glicemia, gasometria/lactato, eletrólitos, função renal/hepática, CK, coagulograma conforme caso.
 4. **Procure toxíndrome, não nome comercial:** pupilas, pele, secreções, frequência respiratória, PA/FC, temperatura, estado mental, neuromuscular e ECG.
@@ -26,14 +26,14 @@
 
 > **Resposta de prova TEME:** suporte inicial, glicemia e ECG aparecem antes da "toxicologia completa". Se o paciente não ventila, ventile; se está em PCR, RCP/ACLS primeiro.
 >
-> **Atualização clínica:** em 2026, a tendência de toxicologia e individualizar protocolos fixos, principalmente NAC, diálise e observação pós-naloxona. Para prova, euarde o algoritmo clássico; na prática, discuta cedo com CIATox.
+> **Atualização clínica:** em 2026, a tendência da toxicologia é individualizar protocolos fixos, principalmente NAC, diálise e observação pós-naloxona. Para prova, guarde o algoritmo clássico; na prática, discuta cedo com CIATox.
 
 ### 2. Reconheça os toxíndromes de prova
 
 | Toxidrome | Pistas | Causas clássicas | Conduta que muda jogo |
 |---|---|---|---|
 | Opioide | Bradipneia, RNC, miose; pode não ter miose | Heroina, morfina, fentanil, metadona | Ventilação + naloxona titulada |
-| Sedativo-hipnotico | RNC, ataxia, fala arrastada, vitais relativamente preservados | Benzodiazepínicos, barbituricos, álcool | Suporte; flumazenil só em caso muito selecionado |
+| Sedativo-hipnótico | RNC, ataxia, fala arrastada, vitais relativamente preservados | Benzodiazepínicos, barbitúricos, álcool | Suporte; flumazenil só em caso muito selecionado |
 | Colinérgico | Broncorreia, salivação, lacrimejamento, miose, diarreia, fasciculações | Organofosforado/carbamato, "chumbinho" | Descontaminação + atropina até secar secreção + pralidoxima se organofosforado/desconhecido |
 | Anticolinérgico | Pele seca/quente, midríase, delirium, retenção urinária, taquicardia | Anti-histamínico, TCA, atropínicos | Suporte, benzodiazepínico; ECG manda |
 | Simpatomimético | Agitação, hipertensão, midríase, sudorese, hipertermia | Cocaína, anfetamina, MDMA | Benzodiazepínico + resfriamento agressivo |
@@ -49,7 +49,7 @@
 4. **Ipeca/vômito induzido:** não tem papel na sala vermelha.
 5. **Irrigação intestinal total com PEG:** lembrar em body packer, drogas de liberação prolongada, ferro/lítio/potássio ou substâncias radiopacas; discutir com CIATox.
 
-### 4. antídotos que mais caem
+### 4. Antídotos que mais caem
 
 - **Naloxona:** opioide com hipoventilação. Titule para respirar, não para "acordar bonito".
 - **N-acetilcisteína:** paracetamol potencialmente tóxico, curva de Rumack-Matthew quando aplicável, ingestão tardia/desconhecida com suspeita ou lesão hepática.
@@ -59,7 +59,7 @@
 - **Hidroxocobalamina:** cianeto, especialmente inalação de fumaça + lactato alto/choque/RNC.
 - **Azul de metileno:** meta-hemoglobinemia sintomática.
 - **Fab anti-digoxina:** arritmia grave, instabilidade, hipercalemia importante ou PCR associada a digoxina.
-- **Emulsao lipídica 20%:** LAST e tóxicos lipofilicos refratários selecionados.
+- **Emulsão lipídica 20%:** LAST e tóxicos lipofílicos refratários selecionados.
 
 ## Conceitos que sustentam a conduta
 
@@ -87,11 +87,11 @@ A morte vem de hipertermia, acidose, rabdomiólise, arritmia e colapso. Benzodia
 
 Na ingestão aguda conhecida, dosar paracetamol a partir de 4 h e aplicar nomograma de Rumack-Matthew. Se >8 h, tempo desconhecido, ingestão repetida, tentativa de suicídio com história ruim ou transaminase alterada, não espere tudo ficar perfeito para iniciar NAC. O protocolo clássico IV entrega 300 mg/kg em 21 h; oral clássico e 140 mg/kg seguido de 70 mg/kg de 4/4 h por 17 doses.
 
-> **Atualização clínica 2026:** a ACMT reforca que NAC IV não deve ser interrompida automaticamente em 21 h se ainda houver paracetamol detectavel, AST/ALT subindo, INR >=2 ou marcadores ruins como acidose, lactato, creatinina ou fosfato. Para prova, decore a dose; na prática, pare por critério clínico-laboratorial.
+> **Atualização clínica 2026:** a ACMT reforça que NAC IV não deve ser interrompida automaticamente em 21 h se ainda houver paracetamol detectável, AST/ALT subindo, INR >=2 ou marcadores ruins como acidose, lactato, creatinina ou fosfato. Para prova, decore a dose; na prática, pare por critério clínico-laboratorial.
 
 ### Salicilatos
 
-Salicilato e traiçoeiro porque o paciente compensa a acidose hiperventilando. Intubar sem manter ventilação minuto alta pode derrubar pH rapidamente e aumentar entrada do salicilato no SNC. Tratamento: carvão se cedo, glicose mesmo sem hipoglicemia se RNC, bicarbonato para alcalinizar soro/urina e hemodialise se grave.
+Salicilato é traiçoeiro porque o paciente compensa a acidose hiperventilando. Intubar sem manter ventilação minuto alta pode derrubar pH rapidamente e aumentar entrada do salicilato no SNC. Tratamento: carvão se cedo, glicose mesmo sem hipoglicemia se RNC, bicarbonato para alcalinizar soro/urina e hemodiálise se grave.
 
 ### Alcoois tóxicos
 
@@ -99,7 +99,7 @@ Metanol dá distúrbio visual, acidose e lesão neurológica. Etilenoglicol dá 
 
 ### Organofosforados, carbamatos e chumbinho
 
-O problema imediato é excesso colinérgico com broncorreia, broncoespasmo, bradicardia, secreção e falência ventilatória. Atropina deve ser repetida/dobrada até secar secreções respiratórias e melhorar ausculta, não até atineir uma dose "bonita". Pralidoxima é mais forte para organofosforado precoce; se a classe é desconhecida e o quadro é grave, não segure.
+O problema imediato é excesso colinérgico com broncorreia, broncoespasmo, bradicardia, secreção e falência ventilatória. Atropina deve ser repetida/dobrada até secar secreções respiratórias e melhorar ausculta, não até atingir uma dose "bonita". Pralidoxima é mais forte para organofosforado precoce; se a classe é desconhecida e o quadro é grave, não segure.
 
 ### Bloqueador de canal de cálcio e beta-bloqueador
 
@@ -107,7 +107,7 @@ Ambos podem dar bradicardia e choque refratário a atropina. CCB costuma cursar 
 
 ### Digoxina
 
-Náusea, vômitos, alteração visual, confusão e arritmias em usuário de digoxina devem acender alerta. Nível "terapêutico" não exclui toxicidade se potássio/renalidade/tempo de coleta estão confusos. Fab é indicado em arritmia ventricular, bloqueio/instabilidade grave, hipercalemia importante, ingestão maciça ou PCR. Cardioversao pode precipitar arritmia; se inevitável, use baixa energia e trate a causa.
+Náusea, vômitos, alteração visual, confusão e arritmias em usuário de digoxina devem acender alerta. Nível "terapêutico" não exclui toxicidade se potássio, função renal ou tempo de coleta estão confusos. Fab é indicado em arritmia ventricular, bloqueio/instabilidade grave, hipercalemia importante, ingestão maciça ou PCR. Cardioversão pode precipitar arritmia; se inevitável, use baixa energia e trate a causa.
 
 ### Fumaça: CO e cianeto
 
@@ -115,10 +115,10 @@ CO da cefaleia, confusão, síncope, isquemia, acidose e COHb elevada; oximetria
 
 ### Metais, paraquat e botulismo
 
-- **Arsenico:** gastroenterite intensa, diarreia tipo "água de arroz", choque, QT/torsades, linhas radiopacas possíveis no Rx. Se sintomático e exposição forte, quela antes de confirmação, com toxicologista.
+- **Arsênico:** gastroenterite intensa, diarreia tipo "água de arroz", choque, QT/torsades, linhas radiopacas possíveis no Rx. Se sintomático e exposição forte, quela antes de confirmação, com toxicologista.
 - **Chumbo:** encefalopatia em criança ou adulto exposto é indicação de quelação urgente; carvão não resolve metal pesado.
 - **Paraquat:** lesão cáustica oral/GI, lesão renal/hepática e fibrose pulmonar tardia. Não há antídoto salvador; descontaminação precoce e CIATox importam. Evite oxigênio liberal, usando apenas para hipoxemia.
-- **Botulismo:** paralisia flacida descendente, simétrica, com pares cranianos, diplopia/ptose/disfagia, pupilas alteradas, sem déficit sensitivo e geralmente consciente. Suporte ventilatório e antitoxina precoce; não espere laboratório.
+- **Botulismo:** paralisia flácida descendente, simétrica, com pares cranianos, diplopia/ptose/disfagia, pupilas alteradas, sem déficit sensitivo e geralmente consciente. Suporte ventilatório e antitoxina precoce; não espere laboratório.
 
 ### LAST
 
@@ -140,7 +140,7 @@ Toxicidade sistêmica por anestésico local pode começar com parestesia periora
 | Acidente | Pistas | Complicacao-chave | Soro de prova |
 |---|---|---|---|
 | Bothrops | Dor/edema progressivo, equimose, sangramento, coagulopatia | Hemorragia, síndrome compartimental, AKI | Antibotrópico ou combinado disponível |
-| Crotalus | Ptose/diplopia, facies miastenica, mialeia, urina escura, pouco local | Rabdomiolise e AKI | Anticrotalico |
+| Crotalus | Ptose/diplopia, fácies miastênica, mialgia, urina escura, pouco local | Rabdomiólise e AKI | Anticrotálico |
 | Lachesis | Quadro local tipo Bothrops + Vagal: vômito/diarreia, bradicardia, hipotensão | Choque, sangramento | Antilachetico/combinado |
 | Elapidico/coral | Pouco local + ptose, disfagia, fraqueza, paralisia respiratória | Insuficiência ventilatória | Antielapídico |
 
@@ -212,7 +212,7 @@ flowchart TD
 
 ## Doses, alvos e números
 
-### antídotos e medidas de toxicologia
+### Antídotos e medidas de toxicologia
 
 | Item | Número | observação TEME |
 |---|---:|---|
@@ -220,7 +220,7 @@ flowchart TD
 | Naloxona | 0,04-0,4 mg IV titulando; 0,4-2 mg se apneia/grave | Alvo é FR/ventilação, não abstinência; repetir ou infundir se rebaixar de novo |
 | Flumazenil | 0,2 mg IV, repetir a cada 60 s até resposta | Apenas BZD isolado/não habituado; evitar em TCA, convulsão, abstinência |
 | NAC oral | 140 mg/kg, depois 70 mg/kg 4/4 h x17 | Protocolo clássico; iniciar cedo se dúvida grave |
-| NAC IV | 300 mg/kg em 21 h | Não parar se APAP detectavel ou lesão hepática em piora |
+| NAC IV | 300 mg/kg em 21 h | Não parar se APAP detectável ou lesão hepática em piora |
 | Bicarbonato em TCA | 1-2 mEq/kg IV bolus; repetir | QRS >100 ms, hipotensão, arritmia, convulsão; alvo QRS <100 e pH 7,45-7,55 |
 | Atropina organofosforado | Adulto 1-3 mg IV; criança 0,05 mg/kg | Dobrar a cada 5 min até secar secreção pulmonar; depois infusão |
 | Infusão de atropina | 10-20% da dose total de ataque por hora | Ajustar por broncorreia/broncoespasmo |
@@ -232,7 +232,7 @@ flowchart TD
 | Insulina em alta dose | Bolus 1 U/kg + 1 U/kg/h, titular até 10 U/kg/h | CCB/BB em choque; glicose e K de perto |
 | Glucagon em BB | 5-10 mg IV bolus, depois infusão | Mais útil em beta-bloqueador; vômitos comuns |
 | Cálcio em CCB | Gluconato 10% 30-60 mL IV ou cloreto 10% 10-20 mL central | Repetir conforme ECG/hemodinâmica/calcemia |
-| Emulsao lipídica 20% | 1,5 mL/kg bolus + 0,25 mL/kg/min | LAST; repetir bolus/dobrar se instável; max 12 mL/kg |
+| Emulsão lipídica 20% | 1,5 mL/kg bolus + 0,25 mL/kg/min | LAST; repetir bolus/dobrar se instável; max 12 mL/kg |
 | CO | O2 100% | Considerar hiperbárica se COHb >25-30%, RNC, isquemia, acidose ou gestante |
 
 ### Antivenenos de alta recorrência
@@ -285,7 +285,7 @@ FA = frascos-ampolas. A dose e definida por gravidade, não por peso.
 
 > **Para prova TEME:** se o caso tem opioide + hipoventilação, responda naloxona e ventilação; se tem TCA + QRS largo, bicarbonato; se tem organofosforado/chumbinho, atropina até secar secreção e pralidoxima; se tem Bothrops, soro antibotrópico; se tem escorpião grave em criança, soro antiescorpiônico/antiaracnídico.
 >
-> **Na prática clínica:** ligue cedo para CIATox, ajuste antídotos à disponibilidade local, peso, diálise é tempo de exposição. Protocolos de NAC, EXTRIP/diálise e manejo de cocaína com beta-bloqueio mudam com evidências e contexto. O material marca a resposta provável da banca, mas a assistência real deve seguir protocolo institucional e especialista quando possível.
+> **Na prática clínica:** ligue cedo para CIATox, ajuste antídotos à disponibilidade local, peso, diálise e tempo de exposição. Protocolos de NAC, EXTRIP/diálise e manejo de cocaína com beta-bloqueio mudam com evidências e contexto. O material marca a resposta provável da banca, mas a assistência real deve seguir protocolo institucional e especialista quando possível.
 
 > **Para prova TEME:** soro antiveneno é por gravidade, não por kg; criança recebe a mesma quantidade de FA.
 >
@@ -306,11 +306,11 @@ FA = frascos-ampolas. A dose e definida por gravidade, não por peso.
 
 ## Questões e estações relacionadas
 
-- **TEME22 Q55:** insuficiência respiratória tipo II e intoxicação por opioide/inhalacao como mecanismos possíveis.
-- **TEME22 Q85:** abstinência álcoolica, crise convulsiva e avaliação de causas associadas.
+- **TEME22 Q55:** insuficiência respiratória tipo II e intoxicação por opioide/inalação como mecanismos possíveis.
+- **TEME22 Q85:** abstinência alcoólica, crise convulsiva e avaliação de causas associadas.
 - **TEME22 Q96:** descontaminação gastrointestinal, carvão, lavagem, diálise e risco de procedimento invasivo.
-- **TEME22 Q108:** álcool tóxico com acidose/gap e necessidade de antídoto + hemodialise.
-- **TEME22 Q114:** acidentes por animais peçonhentos e diferença entre escorpião, crotalico e elapídico.
+- **TEME22 Q108:** álcool tóxico com acidose/gap e necessidade de antídoto + hemodiálise.
+- **TEME22 Q114:** acidentes por animais peçonhentos e diferença entre escorpião, crotálico e elapídico.
 - **TEME23 Q30:** etilenoglicol com acidose e cristais de oxalato.
 - **TEME23 Q40:** inalação de fumaça, CO/cianeto e hidroxocobalamina.
 - **TEME23 Q70:** escorpionismo e pancreatite aguda.
@@ -329,7 +329,7 @@ FA = frascos-ampolas. A dose e definida por gravidade, não por peso.
 - **TEME25 Q27:** arsenico, diarreia intensa, QT/torsades, Rx radiopaco e quelação antes de confirmação se sintomático.
 - **TEME25 Q36:** naloxona/flumazenil e marcadores clínicos de resposta.
 - **TEME25 Q38:** botulismo alimentar e paralisia descendente.
-- **TEME25 Q64:** CCB/BB com choque bradicardico e insulina em alta dose.
+- **TEME25 Q64:** CCB/BB com choque bradicárdico e insulina em alta dose.
 
 ## Referências
 
@@ -356,7 +356,7 @@ FA = frascos-ampolas. A dose e definida por gravidade, não por peso.
 - Ministério da Saúde. Guia de bolso, orientação terapêutica nos acidentes por animais peçonhentos: https://bvsms.saude.gov.br/bvs/publicacoes/guia_bolso_6ed.pdf
 - American Heart Association. Adult and Pediatric Special Circumstances of Resuscitation: https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation
 - American College of Medical Toxicology. Duration of IV NAC Therapy Following Acetaminophen Overdose, 2026: https://www.acmt.net/wp-content/uploads/2026/01/ACMT-Duration-of-IV-NAC-STATEMENT-1_21_26.pdf
-- EXTRIP Workeroup. Recommendations for extracorporeal treatment in poisonine: https://www.extrip-workgroup.org/
+- EXTRIP Workgroup. Recommendations for extracorporeal treatment in poisoning: https://www.extrip-workgroup.org/
 - CDC. Clinical Overview of Botulism: https://www.cdc.gov/botulism/hcp/clinical-overview/
 - ATSDR/CDC. Arsenic Medical Management Guidelines: https://wwwn.cdc.gov/tsp/MMG/MMGDetails.aspx?mmgid=1424&toxid=3
 - CDC. Clinical Guidance for Carbon Monoxide Poisonine: https://www.cdc.gov/carbon-monoxide/hcp/clinical-guidance/index.html

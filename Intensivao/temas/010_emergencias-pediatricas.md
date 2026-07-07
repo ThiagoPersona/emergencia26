@@ -3,8 +3,8 @@
 ## Leitura de 30 segundos
 
 - Criança grave não avisa com hipotensão cedo. Letargia, TEC prolongado, extremidade fria, pulso ruim, taquipneia e taquicardia são choque até prova em contrário.
-- Parada pediátrica costuma ser respiratória. Se a criança está bradicárdica, hipóxica ou exausta, ventile bem antes de procurar Explicação rara.
-- Bronquiolite e suporte; asma grave e SABA + ipratrópio + corticoide precoce + MgSO4 se refratária. Intubação em asma é último recurso, com ventilação protetora contra auto-PEEP.
+- Parada pediátrica costuma ser respiratória. Se a criança está bradicárdica, hipóxica ou exausta, ventile bem antes de procurar explicação rara.
+- Bronquiolite é suporte; asma grave é SABA + ipratrópio + corticoide precoce + MgSO4 se refratária. Intubação em asma é último recurso, com ventilação protetora contra auto-PEEP.
 - Choque hipovolêmico/desidratação em prova TEME: cristaloide isotônico 20 mL/kg e reavaliação. Sepse atual: bolus de 10-20 mL/kg, reavaliar a cada etapa e vasoativo cedo se refratário.
 - Trauma pediátrico: PECARN para TCE, imagem cervical com critério pediátrico, FAST tem menor sensibilidade, concentrado de hemácias 10 mL/kg se hemorragia.
 - Estação prática pediátrica premia o simples: glicemia capilar, oxigênio, aquecer, estimular, acesso IV/IO, reconhecer toxíndrome e usar dose por peso.
@@ -19,10 +19,10 @@
 
 ### 1. Primeiro minuto da criança grave
 
-1. **Triâneulo de avaliação pediátrica:** aparência, trabalho respiratório e circulação da pele. Criança quieta, sonolenta, pálida/cianótica/moteada ou com gemência/retrações entra direto na sala vermelha.
+1. **Triângulo de avaliação pediátrica:** aparência, trabalho respiratório e circulação da pele. Criança quieta, sonolenta, pálida/cianótica/moteada ou com gemência/retrações entra direto na sala vermelha.
 2. **ABCDE com duas medidas obrigatórias:** glicemia capilar e temperatura. Hipoglicemia e hipotermia mudam consciência, perfusão e prognóstico.
-3. **Peso estimado cedo:** fita, comprimento, peso informado ou formula local. Toda droga e fluido depende disso.
-4. **Monitor, O2, acesso:** se IV não sai rápido, intraosseo. Em choque/convulsão/parada, IO e via definitiva, não "plano B vereonhoso".
+3. **Peso estimado cedo:** fita, comprimento, peso informado ou fórmula local. Toda droga e fluido depende disso.
+4. **Monitor, O2, acesso:** se IV não sai rápido, intraósseo. Em choque/convulsão/parada, IO é via definitiva, não "plano B vergonhoso".
 5. **Reavaliar depois de cada intervenção:** FC, FR, SatO2, PA, TEC, pulso, ausculta, hepatomegalia, diurese e nível de consciência.
 
 > **Resposta de prova TEME:** na estação pediátrica de 2025, a sequência pontuava glicemia capilar, oxigênio, aquecer, estimular e acesso venoso periférico.
@@ -35,13 +35,13 @@ Classifique rápido:
 
 - **Sem comando/drive:** TCE, intoxicação, pós-ictal, hipoglicemia, lesão medular, fraqueza neuromuscular.
 - **Obstrução alta:** crupe, epiglotite, corpo estranho, anafilaxia, edema de via aérea.
-- **Obstrução baixa:** bronquiolite, asma, corpo estranho bronquico.
-- **Parênquima/difusao:** pneumonia, edema pulmonar, SDRA, sepse.
+- **Obstrução baixa:** bronquiolite, asma, corpo estranho brônquico.
+- **Parênquima/difusão:** pneumonia, edema pulmonar, SDRA, sepse.
 
 Conduta inicial:
 
 1. Posicionar, aspirar secreção, abrir via aérea e dar O2.
-2. Se esforço ineficaz, apneia, rebaixamento ou bradicardia: **ventilação com bolsa-valvula-máscara e O2.**
+2. Se esforço ineficaz, apneia, rebaixamento ou bradicardia: **ventilação com bolsa-válvula-máscara e O2.**
 3. Se falha de BVM, proteção de via aérea ou exaustão: chamar ajuda para via aérea avançada.
 4. Depois de estabilizar, trate a causa provável.
 
@@ -72,16 +72,16 @@ Conduta inicial:
 
 **Corpo estranho:**
 
-- Tosse/engasgo abrupto, assimetria auscultatoria ou estridor.
+- Tosse/engasgo abrupto, assimetria auscultatória ou estridor.
 - Se tosse efetiva: estimular tosse e monitorar.
 - Se obstrução grave: manobras de desobstrução por idade; se inconsciente, RCP e olhar boca antes de ventilar.
 
 ### 5. Asma aguda grave
 
 1. O2 para hipoxemia, monitor e gravidade por fala, tiragem, SatO2, ausculta, consciência e fadiga.
-2. Salbutamol inalatorio em doses repetidas na primeira hora.
+2. Salbutamol inalatório em doses repetidas na primeira hora.
 3. Ipratrópio nas crises moderadas/graves na primeira hora.
-4. Corticoide sistêmico precoce, de preferencia VO se tolerar.
+4. Corticoide sistêmico precoce, de preferência VO se tolerar.
 5. Se grave/refratária: MgSO4 IV, considerar NIV se colaborativa, chamar UTI.
 6. Intubar se exaustão, rebaixamento, hipoxemia persistente, parada iminente, silêncio auscultatório ou hipercapnia progressiva com fadiga.
 
@@ -89,7 +89,7 @@ Pontos de ventilação pós-IOT na asma:
 
 - Baixa frequência respiratória, tempo expiratório longo, permissão de hipercapnia se pH aceitável.
 - Evitar empilhar volume: auto-PEEP mata.
-- Sedação profunda; ketamina pode ajudar pela broncodilatacao.
+- Sedação profunda; ketamina pode ajudar pela broncodilatação.
 
 > **Resposta de prova TEME:** MgSO4 em asma grave pediátrica pode ser feito 50-75 mg/kg EV em 20 min quando indicado; não precisa esperar magnesemia normal para usar. Adrenalina/terbutalina não são rotina na asma, salvo anafilaxia ou protocolo específico.
 >
@@ -98,7 +98,15 @@ Pontos de ventilação pós-IOT na asma:
 ### 6. Pneumonia e sepse respiratória
 
 - Criança toxemiada, hipoxêmica, com tiragem, incapaz de beber, vomitando tudo, convulsão, gemência, saturação baixa ou com comorbidade merece sala vermelha/observação.
-- Primeira conduta: O2, acesso, glicemia, antitérmico/analgesia, hidratação cuidadosa, antibiótico quando suspeita bacteriana/sepse e imagem depois de estabilizar se necessaria.
+- Primeira conduta: O2, acesso, glicemia, antitérmico/analgesia, hidratação cuidadosa, antibiótico quando suspeita bacteriana/sepse e imagem depois de estabilizar se necessária.
+
+### 6.1. PCR e pós-retorno da circulação espontânea
+
+- **Ritmo chocável em PCR pediátrica:** FV/TV sem pulso = desfibrilação. Energia inicial 2 J/kg; depois 4 J/kg e escalonar conforme algoritmo.
+- **RCP básica:** um socorrista usa 30:2; dois socorristas em lactente/criança usam 15:2. Com via aérea avançada, compressões contínuas e ventilação controlada.
+- **Bradicardia com pulso:** se FC <60/min com má perfusão apesar de oxigênio e ventilação eficaz, iniciar compressões.
+- **Pós-RCE:** evitar hipotensão, hipóxia, hiperóxia, febre e hipocapnia/hipercapnia. Titule FiO2, confirme ventilação com gasometria quando possível e mantenha PAS pelo menos no percentil 50 para idade.
+- **Bicarbonato:** não é rotina no pós-RCE; use se indicação específica, como hipercalemia, intoxicação por bloqueio de canal de sódio ou acidose extrema selecionada.
 - Não intube pneumonia só porque há febre e taquipneia; intube se falência ventilatória/oxigenatória, rebaixamento, choque refratário ou exaustão.
 
 ### 7. Choque, desidratação e sepse
@@ -118,6 +126,12 @@ Conduta:
 4. Se choque refratário a fluidos ou risco de sobrecarga: vasoativo cedo, inclusive periférico/IO enquanto obtém acesso melhor.
 5. Se sangramento/trauma: hemocomponente cedo, aquecer, TXA quando indicado por protocolo de trauma, controle de fonte.
 
+### 7.1. Neutropenia febril e síndrome torácica aguda
+
+- **Oncopediatria febril com letargia/hipotensão:** trate como sepse/neutropenia febril. Coletar culturas não pode atrasar antibiótico e ressuscitação; bolus de 10-20 mL/kg com reavaliação.
+- **Anemia falciforme com febre + dor torácica + hipoxemia/infiltrado novo:** síndrome torácica aguda. Faça oxigênio, analgesia, hidratação cautelosa, ceftriaxona + macrolídeo conforme protocolo e considere transfusão se queda de Hb >=2 g/dL, hipoxemia ou gravidade.
+- **Não tranquilize com SatO2 "quase normal":** em falciforme, queda em relação ao basal e infiltrado novo importam.
+
 > **Resposta de prova TEME:** lactente com diarreia, vômitos, TEC 3-4 s, PA baixa e sonolência = choque hipovolêmico; tratamento inicial = SF 0,9% 20 mL/kg.
 >
 > **Atualização clínica:** em sepse pediátrica, diretrizes atuais favorecem bolus menores de 10-20 mL/kg, guiados por reavaliação frequente, com limite e vasoativo precoce se não melhorar. Em desidratação hipovolêmica clássica, a banca ainda cobra 20 mL/kg.
@@ -135,20 +149,20 @@ Conduta:
 
 - 6 meses a 5 anos, generalizada, <15 min, única em 24 h, criança volta ao basal e não há infecção do SNC.
 - Tratamento e procurar causa da febre, antitérmico para conforto e orientação familiar.
-- Não fazer CT, EEG, anticonvulsivante crônico ou punções/exames extensos de rotina se criança bem, vacinada e sem sinais de menineite.
+- Não fazer CT, EEG, anticonvulsivante crônico ou punções/exames extensos de rotina se criança bem, vacinada e sem sinais de meningite.
 
 **Red flags:**
 
-- <6 meses ou >5 anos, crise focal, >15 min, repetida em 24 h, déficit persistente, menineismo, petéquias/púrpura, imunossupressão, trauma, rebaixamento prolongado, fontanela abaulada ou antibiótico prévio com suspeita de menineite.
+- <6 meses ou >5 anos, crise focal, >15 min, repetida em 24 h, déficit persistente, meningismo, petéquias/púrpura, imunossupressão, trauma, rebaixamento prolongado, fontanela abaulada ou antibiótico prévio com suspeita de meningite.
 
 ### 9. DKA, hipoglicemia e distúrbios metabólicos
 
-**Hipoglicemia:** sempre medir em criança rebaixada, convulsionando, hipotermica, séptica, intoxicada ou lactente que não mama.
+**Hipoglicemia:** sempre medir em criança rebaixada, convulsionando, hipotérmica, séptica, intoxicada ou lactente que não mama.
 
-**Cetoacidose diabetica:**
+**Cetoacidose diabética:**
 
-- Suspeite em vômitos, dor abdominal, Kussmaul, desidratação, perda de peso, poliuria/polidipsia ou rebaixamento.
-- ABCDE, glicemia, cetona, gasometria, eletritos, potássio e ECG se grave.
+- Suspeite em vômitos, dor abdominal, Kussmaul, desidratação, perda de peso, poliúria/polidipsia ou rebaixamento.
+- ABCDE, glicemia, cetona, gasometria, eletrólitos, potássio e ECG se grave.
 - Fluido inicial se choque/desidratação importante, insulina IV sem bolus depois de iniciar fluido e conhecer potássio.
 - Repor potássio conforme K e diurese.
 - Edema cerebral: cefaleia, bradicardia, hipertensão, queda do nível de consciência, vômitos recorrentes. Tratar com salina hipertônica ou manitol e UTI.
@@ -160,7 +174,7 @@ Conduta:
 1. **XABCDE com controle térmico:** criança perde calor fácil; hipoglicemia também confunde choque e TCE.
 2. **Via aérea:** língua proporcionalmente maior, epiglote maior/floppy, occipital proeminente. Pequenos muitas vezes precisam coxim sob ombros, não sob a cabeça.
 3. **TCE:** evitar hipóxia e hipotensão. IOT se GCS <=8, proteger cervical, cabeceira elevada quando possível.
-4. **Hernia cerebral:** salina hipertônica 3% 2-5 mL/kg ou manitol 0,5-1 g/kg.
+4. **Hérnia cerebral:** salina hipertônica 3% 2-5 mL/kg ou manitol 0,5-1 g/kg.
 5. **Imagem de crânio:** use PECARN em TCE leve. Na estação TEME24, a banca queria TC de crânio e citar PECARN.
 6. **Coluna cervical:** regra de adulto não resolve tudo em criança. Na estação TEME24, a banca queria radiografia cervical, não TC cervical/coluna total.
 7. **Abdome:** FAST tem menor sensibilidade em crianças. FAST negativo não exclui abdome, pelve, retroperitônio, ossos longos ou sangramento externo.
@@ -175,7 +189,7 @@ Conduta:
 3. Estimar SCQ com tabela pediátrica/Lund-Browder quando disponível. Cabeça pesa mais em lactentes; regra dos 9 do adulto erra.
 4. Queimadura extensa: cristaloide aquecido conforme protocolo de queimados + manutenção com glicose em crianças pequenas; titule por perfusão e diurese.
 5. Procurar hipotermia, hipoglicemia, intoxicação por CO/cianeto em incêndio e trauma associado.
-6. Transferir cedo se queimadura profunda/extensa, face/mãos/pés/genital/períneo/articulações, elétrica/quimica, inalatória, comorbidade, maus-tratos ou recurso local insuficiente.
+6. Transferir cedo se queimadura profunda/extensa, face/mãos/pés/genital/períneo/articulações, elétrica/química, inalatória, comorbidade, maus-tratos ou recurso local insuficiente.
 
 Red flags de maus-tratos: história incompatível com desenvolvimento, demora em procurar atendimento, lesões em diferentes idades, queimadura por imersão com borda nítida, marcas de objeto, fraturas inexplicadas, lesões em orelha/pescoço/tronco ou cuidador muda historia.
 
@@ -183,15 +197,17 @@ Red flags de maus-tratos: história incompatível com desenvolvimento, demora em
 
 | Diagnóstico | Pistas | Conduta de prova/prática |
 |---|---|---|
-| Exantema súbito | Lactente, febre alta 3-5 dias, rash depois da defervescencia | Suporte; pode ter crise febril |
-| Escarlatina | Farineite, febre, língua em framboesa, rash em lixa, linhas de Pastia | Penicilina/amoxicilina; prevenir febre reumatica |
+| Exantema súbito | Lactente, febre alta 3-5 dias, rash depois da defervescência | Suporte; pode ter crise febril |
+| Escarlatina | Faringite, febre, língua em framboesa, rash em lixa, linhas de Pastia | Penicilina/amoxicilina; prevenir febre reumática |
 | Eritema infeccioso | "Face esbofeteada", rash rendilhado, parvovirus B19 | Suporte; cuidado em gestante, hemólise e imunossupressão |
-| Mão-pe-boca | Vesiculas orais, mãos e pes, Coxsackie/enterovirus | Suporte e hidratação; avaliar desidratação |
+| Mão-pé-boca | Vesículas orais, mãos e pés, Coxsackie/enterovírus | Suporte e hidratação; avaliar desidratação |
 | Sarampo | Febre, tosse, coriza, conjuntivite, Koplik, rash cefalocaudal | Isolamento respiratório/aerossol, notificar, suporte/vitamina A conforme protocolo |
 | Kawasaki | Febre >=5 dias + conjuntivite, mucosa oral, rash, extremidades, linfonodo | IVIG + AAS e ecocardiograma; considerar incompleto |
-| Choque tóxico | Febre, hipotensão, rash/descamação, GI/mucosa, disfunção orgânica | Ressuscitação, vasopressor, clindamicina + cobertura staph/strep e controle de foco |
+| Choque tóxico | Febre, hipotensão, rash/descamação, GI/mucosa, disfunção orgânica | Ressuscitação, vasopressor, clindamicina + cobertura Staph/Strep e controle de foco |
 
-> **Resposta de prova TEME:** criança com febre, hipotensão, língua em framboesa, rash difuso/descamativo e disfunção inflamatoria pode ser síndrome do choque tóxico estafilococico/estreptococico, não apenas escarlatina simples.
+> **Resposta de prova TEME:** criança com febre, hipotensão, língua em framboesa, rash difuso/descamativo e disfunção inflamatória pode ser síndrome do choque tóxico estafilocócico/estreptocócico, não apenas escarlatina simples.
+>
+> **Pegadinha TEME23:** o gabarito oficial da questão de Kawasaki marcou apenas "hemograma". Para prática clínica, a investigação é mais ampla: hemograma, PCR/VHS, urina, função hepática/albumina conforme caso e ecocardiograma.
 
 ### 13. Intoxicações e animais peçonhentos em criança
 
@@ -226,12 +242,12 @@ FAST negativo não "limpa" abdome pediátrico. PECARN ajuda a reduzir TC desnece
 flowchart TD
     A[Criança grave] --> B[PAT: aparência, respiração, pele]
     B --> C[ABCDE + glicemia + temperatura + peso]
-    C --> D{Respiracao inadequada, apneia, hipoxemia ou bradicardia?}
+    C --> D{Respiração inadequada, apneia, hipoxemia ou bradicardia?}
     D -->|Sim| E[BVM com O2, posicionar, aspirar, chamar ajuda]
     E --> F{FC <60 e má perfusão apesar de ventilação?}
     F -->|Sim| G[RCP pediátrica + adrenalina + causas reversíveis]
     F -->|Não| H[Tratar causa respiratória]
-    D -->|Não| I{Hipoperfusao?}
+    D -->|Não| I{Hipoperfusão?}
     I -->|Sim| J[Acesso IV/IO + cristaloide/hemocomponente conforme causa + antibiótico se sepse]
     I -->|Não| K[Diagnóstico dirigido e observação]
 ```
@@ -244,7 +260,7 @@ flowchart TD
     D -->|Sim| E[SABA repetido + ipratrópio se moderada/grave + corticoide precoce]
     E --> F{Refratária/grave?}
     F -->|Sim| G[MgSO4 IV, UTI, NIV se apropriado, preparar IOT se exaustão]
-    F -->|Não| H[Reavaliar e espacamento]
+    F -->|Não| H[Reavaliar e espaçamento]
     D -->|Não| I[Procurar corpo estranho, anafilaxia, pneumonia, cardiopatia]
 ```
 
@@ -263,7 +279,7 @@ flowchart TD
 
 | Item | Número | observação TEME |
 |---|---:|---|
-| PA sistolica minima 1-10 anos | 70 + 2 x idade | Hipotensão e tardia; não espere PA cair para chamar choque |
+| PA sistólica mínima 1-10 anos | 70 + 2 x idade | Hipotensão é tardia; não espere PA cair para chamar choque |
 | Cristaloide no choque hipovolêmico/desidratação | 20 mL/kg | TEME22/23 cobrou SF 0,9% 20 mL/kg |
 | Bolus em sepse pediátrica atual | 10-20 mL/kg por bolus | Reavaliar perfusão e sobrecarga; vasoativo cedo se refratário |
 | Concentrado de hemácias no trauma | 10 mL/kg | Estação TEME24 |
@@ -290,9 +306,9 @@ flowchart TD
 | Profundidade oral do TOT | 3 x diâmetro interno | Ex: TOT 5,5 -> cerca de 16,5 cm |
 | Estação TEME24 TOT | 5,5 | Criança do caso prático |
 | Ventilação com pulso/avançada PALS 2025 | 20-30/min | Evitar hiper e hipoventilação |
-| RCP pediátrica | 30:2 um socorrista; 15:2 dois | Com via aérea avançada, compressões continuas + ventilações |
+| RCP pediátrica | 30:2 um socorrista; 15:2 dois | Com via aérea avançada, compressões contínuas + ventilações |
 | Bradicardia com má perfusão | FC <60 após O2/ventilação | Iniciar compressão |
-| Desfibrilacao pediátrica | 2 J/kg, depois 4 J/kg | Seguir algoritmo PALS |
+| Desfibrilação pediátrica | 2 J/kg, depois 4 J/kg | Seguir algoritmo PALS |
 | Adrenalina na PCR | 0,01 mg/kg EV/IO | 0,1 mL/kg da solução 0,1 mg/mL, a cada 3-5 min |
 | Diurese alvo em criança queimada/choque | >=1 mL/kg/h | Em queimadura, associar manutenção com glicose em crianças pequenas |
 
@@ -309,7 +325,7 @@ Sinais vitais aproximados para não cair em "normal para idade":
 
 ## Pegadinhas TEME
 
-- **"PA normal, então não é choque":** falso. Choque pediátrico e perfusão ruim; hipotensão e tardia.
+- **"PA normal, então não é choque":** falso. Choque pediátrico é perfusão ruim; hipotensão é tardia.
 - **"Bronquiolite grave com FC 48: atropina primeiro":** falso. É hipóxia até prova em contrário; ventile com O2.
 - **"Bronquiolite sempre melhora com salbutamol/corticoide":** falso na prática atual. Suporte é o padrão.
 - **"Asma com silêncio auscultatório está melhorando":** falso. Pode ser falência ventilatória.
@@ -324,7 +340,7 @@ Sinais vitais aproximados para não cair em "normal para idade":
 ## Erros fatais na prática
 
 - Não ventilar uma criança bradicárdica e hipóxica porque está tentando pegar acesso.
-- Dar varios bolus sem reavaliar hepatomegalia, estertores, perfusão e estado mental.
+- Dar vários bolus sem reavaliar hepatomegalia, estertores, perfusão e estado mental.
 - Intubar asma grave e ventilar com frequência alta, causando auto-PEEP e PCR.
 - Alta de lactente com bronquiolite que não mama, faz apneia, dessatura persistente ou está exausto.
 - Tratar anafilaxia com corticoide/anti-histamínico antes de adrenalina IM.
@@ -341,7 +357,7 @@ Sinais vitais aproximados para não cair em "normal para idade":
 
 ## Checklist de revisão
 
-- [ ] Sei reconhecer criança grave pelo triâneulo de avaliação pediátrica.
+- [ ] Sei reconhecer criança grave pelo triângulo de avaliação pediátrica.
 - [ ] Sei que hipotensão e bradicardia são sinais tardios.
 - [ ] Sei ventilar primeiro na bronquiolite grave/bradicardia hipóxica.
 - [ ] Sei diferenciar bronquiolite, crupe, anafilaxia, corpo estranho e asma.
@@ -389,7 +405,7 @@ Sinais vitais aproximados para não cair em "normal para idade":
 
 - American Heart Association/American Academy of Pediatrics. Pediatric Basic Life Support: 2025 Guidelines. https://publications.aap.org/pediatrics/article/157/1/e2025074350/205235/Part-6-Pediatric-Basic-Life-Support-2025-American
 - American Heart Association/American Academy of Pediatrics. Pediatric Advanced Life Support: 2025 Guidelines. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support
-- Survivine Sepsis Campaign. International Guidelines for the Management of Septic Shock and Sepsis-Associated Organ Dysfunction in Children, 2020. https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines
+- Surviving Sepsis Campaign. International Guidelines for the Management of Septic Shock and Sepsis-Associated Organ Dysfunction in Children, 2020. https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines
 - American Academy of Pediatrics. Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis. https://publications.aap.org/pediatrics/article/134/5/e1474/75848/Clinical-Practice-Guideline-The-Diagnosis
 - NICE NG9. Bronchiolitis in children: diagnosis and management. https://www.nice.org.uk/guidance/ng9/chapter/Recommendations
 - Global Initiative for Asthma. 2025 GINA Summary Guide/Report. https://ginasthma.org/2025-gina-summary-guide/
@@ -399,5 +415,5 @@ Sinais vitais aproximados para não cair em "normal para idade":
 - American Heart Association. Kawasaki disease complications and treatment. https://www.heart.org/en/health-topics/kawasaki-disease/kawasaki-disease-complications-and-treatment
 - PECARN cervical spine injury prediction rule, 2024. https://www.sciencedirect.com/science/article/pii/S2352464224001044
 - PECARN pediatric head trauma rule, Lancet 2009/PubMed. https://pubmed.ncbi.nlm.nih.gov/19758692/
-- ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperelycemic hyperosmolar state. https://onlinelibrary.wiley.com/doi/10.1111/pedi.13406
+- ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state. https://onlinelibrary.wiley.com/doi/10.1111/pedi.13406
 - American Burn Association. Clinical Practice Guidelines on Burn Shock Resuscitation. https://pubmed.ncbi.nlm.nih.gov/?term=38051821

@@ -53,6 +53,14 @@
 4. **Trombose venosa cerebral:** jovem, puerpério, anticoncepcional, trombofilia, cefaleia subaguda, crise ou déficit; pedir angioTC/venoRM. Anticoagulação com heparina pode ser indicada mesmo com hemorragia venosa, salvo contraindicação.
 5. **Meningite/encefalite:** se febre + cefaleia + rigidez/RNC, não atrase antibiótico/aciclovir por LP quando há indicação de TC antes.
 
+### 4.1. Cefaleias que a banca gosta de diferenciar
+
+- **Cefaleia em salvas:** dor periorbitária unilateral, fortíssima, em crises de 15-180 min, com lacrimejamento, hiperemia conjuntival, rinorreia, ptose ou miose ipsilateral; álcool pode precipitar. Tratamento abortivo: oxigênio alto fluxo e triptano.
+- **Migrânea típica recorrente:** náuseas, fotofobia/fonofobia, padrão semelhante prévio e exame neurológico normal. Metoclopramida EV, dipirona/AINE e hidratação conforme necessidade; evite opioide como primeira linha.
+- **HSA:** cefaleia súbita máxima no início, síncope, rigidez de nuca, déficit ou vômitos. Ottawa ajuda a rastrear; TC precoce é mais sensível nas primeiras horas, mas suspeita alta não morre com TC negativa tardia.
+- **PRES:** cefaleia, convulsão, alteração visual e hipertensão grave, com edema vasogênico parieto-occipital. Pense em DRC, eclampsia/puerpério, imunossupressor e doença autoimune. Tratamento é controle pressórico cuidadoso e causa de base.
+- **Altitude:** ataxia e confusão em altitude = edema cerebral de alta altitude até prova em contrário. Descida, oxigênio e dexametasona; não observar parado na mesma altitude.
+
 ### 5. HIC e herniação iminente
 
 Suspeite se cefaleia progressiva, vômitos em jato, rebaixamento, papiledema, VI par, anisocoria, Cushing, postura anormal, TCE grave, HSA/HIP volumosa ou tumor/abscesso.
@@ -76,6 +84,19 @@ Conduta de ponte:
 4. **Neurocirurgia imediata:** hematoma extradural/subdural volumoso, desvio de linha media, deterioração, anisocoria, fratura afundada complexa, contusão expansiva ou HIC refratária.
 5. **Não usar corticoide para TCE.** Profilaxia anticonvulsivante pode ser considerada nos primeiros 7 dias em TCE grave/lesão cortical, conforme protocolo local.
 
+### 6.1. Regras de imagem no TCE leve e pediátrico
+
+- **Canadian CT Head Rule:** destaque de prova por manter alta sensibilidade com especificidade melhor que New Orleans. Lembre: idade >=65 anos, dois ou mais vômitos, sinais de fratura/base, Glasgow que não normaliza, amnésia e mecanismo perigoso.
+- **PECARN:** divide criança em **menor de 2 anos** e **2 anos ou mais**; a banca tenta trocar por corte de 4 anos. Ajuda a decidir TC em TCE leve, não substitui julgamento em instabilidade, suspeita de abuso ou exame neurológico anormal.
+- **RX de crânio:** não é exame para excluir lesão intracraniana, mas pode ser considerado em suspeita de abuso e corpo estranho sob laceração de escalpo.
+
+### 6.2. Reversão de coagulopatia em hemorragia intracraniana
+
+- **Varfarina:** PCC 4 fatores + vitamina K IV; não use plasma como primeira opção se PCC disponível.
+- **Dabigatrana:** idarucizumabe quando indicado/disponível.
+- **Inibidores do fator Xa:** andexanet alfa ou PCC conforme protocolo, disponibilidade e risco; não decorar como opção "sem trombose".
+- **Plaquetas:** não transfundir de rotina em todo usuário de antiagregante; considerar se plaquetopenia relevante ou cirurgia/neurointervenção, conforme protocolo.
+
 ### 7. Morte encefálica na sala vermelha
 
 Antes de pensar em protocolo:
@@ -87,6 +108,20 @@ Antes de pensar em protocolo:
 5. Sem hipotermia, hipoxemia, choque, distúrbio metabólico grave ou droga depressora confundindo exame.
 
 > **Pegadinha de estação:** TCE grave + TC catastrofica + sem reflexos de tronco, mas hipotermico, hipoxêmico ou sob sedação relevante, não permite iniciar/concluir protocolo. Primeiro corrija confundidores e estabilize.
+
+### 8. Vertigem e déficit posterior
+
+- **HINTS só vale em síndrome vestibular aguda contínua**, não em tontura episódica posicional.
+- **Periférico/neurite vestibular:** head impulse positivo, nistagmo horizontal unidirecional, skew negativo, sem déficit focal.
+- **Central/fossa posterior:** head impulse normal, skew positivo, nistagmo vertical ou direção variável, cefaleia nova, ataxia importante, diplopia, disartria, déficit focal ou alto risco vascular.
+- **VPPB:** crises breves desencadeadas por posição, Dix-Hallpike positivo; tratar com manobra de reposicionamento.
+
+### 9. Imunossuprimido com lesão expansiva cerebral
+
+- **AIDS + lesões com realce em gânglios da base + edema:** pense primeiro em neurotoxoplasmose e trate empiricamente enquanto investiga.
+- **Criptococose:** quadro meníngeo subagudo, pressão de abertura elevada, cefaleia persistente.
+- **Tuberculose SNC:** meningite basal, hidrocefalia, vasculite ou tuberculomas; costuma ter líquor mais compatível com meningite crônica.
+- **CMV:** ventriculoencefalite/polirradiculopatia em imunossupressão avançada.
 
 ## Conceitos que sustentam a conduta
 
@@ -206,6 +241,10 @@ flowchart TD
 | Temperatura | normotermia; tratar febre | Hipotermia terapêutica rotineira não melhora desfecho |
 | Corticoide no TCE | não usar | Aumenta mortalidade em TCE grave |
 | Profilaxia crise TCE grave | 7 dias, conforme protocolo | Fenitoína ou levetiracetam; não previne epilepsia tardia |
+| Cefaleia em salvas | O2 alto fluxo + triptano | Dor orbitária unilateral com sinais autonômicos |
+| PRES | reduzir PA de modo controlado | Convulsão/alteração visual + edema vasogênico posterior |
+| HACE | dexametasona + O2 + descida | Ataxia/confusão em altitude é emergência |
+| Neurotoxoplasmose | TMP-SMX ou esquema local | AIDS + lesões em gânglios da base com edema |
 
 ## Pegadinhas TEME
 
@@ -216,6 +255,7 @@ flowchart TD
 - **Esperar INR/plaqueta de todo mundo para trombolisar:** se não há suspeita de anticoagulação/coagulopatia, não atrasar. Em varfarina/heparina/coagulopatia, precisa checar.
 - **Baixar PA forte no AVCi sem reperfusão:** pode piorar penumbra. Trate agressivamente só sé indicação específica.
 - **Trombectomia até 24 h para qualquer AVC:** precisa LVO e selecao por imagem/critérios.
+- **DWI-FLAIR mismatch obrigatório para trombectomia:** não. Ele ajuda em wake-up stroke e trombólise selecionada; trombectomia depende de LVO, janela e imagem de tecido.
 - **Benzodiazepínico subdosado no status:** dose quebrada falha; faça dose plena e avance para segunda linha.
 - **Fenitoína para eclampsia:** primeira linha é sulfato de magnésio.
 - **LP antes da TC em RNC/focal/papiledema/crise recente/imunossupressão:** risco de herniação e erro de prova.
@@ -224,6 +264,8 @@ flowchart TD
 - **Corticoide para edema do TCE:** contraindicado.
 - **Nimodipina na HSA traumática:** benefício é para HSA aneurismática; em traumática não é rotina de prova.
 - **Abrir ME com hipotermia, hipoxemia ou sedação:** não. Primeiro corrigir confundidores.
+- **Cefaleia em salvas como migrânea:** sinais autonômicos ipsilaterais + crise curta e recorrente apontam para salvas.
+- **PRES como AVC occipital bilateral:** melhora com controle pressórico e edema vasogênico posterior são pistas contra AVC arterial típico.
 
 ## Erros fatais na prática
 
@@ -270,6 +312,7 @@ flowchart TD
 - **TEME22:** TCE grave/possível ME; AVCi e decisão após TC; mal agudo da montanha; encefalopatia hepática; crise/lesões em imunossuprimido; VNI contraindicada em AVE com rebaixamento/disfagia/secreção.
 - **TEME24 prática:** TCE pediátrico com indicação de imagem; estação de neuro com TCE, HSA traumática/hematoma intraparenquimatoso, ausência de reflexos de tronco e impeditivos para ME.
 - **TEME25 teórica/prática:** tenecteplase vs alteplase; eclampsia pós-parto; síncope simulando convulsão; ONSD >6 mm e HIC; TCE/via aérea; AVCi com NIHSS alto/ASPECTS; pré-requisitos de morte encefálica.
+- **Banco teórico do tema 007:** TEME22 Q11, Q23, Q49, Q53, Q67, Q83, Q98, Q99, Q110, Q120; TEME23 Q57, Q60, Q61, Q68, Q76, Q77, Q80; TEME24 Q4, Q7, Q29, Q36, Q47, Q68, Q95; TEME25 Q18, Q21, Q43, Q69, Q81, Q82, Q96.
 - **Aulas de cursinho:** aulas 02, 03, 12, 18, 40 e 45; `Resumo do cursinho.docx`.
 
 ## Referências
@@ -292,7 +335,7 @@ flowchart TD
 
 **Atualização clínica**
 
-- Ministério da Saúde. PCDT Acidente Vascular Cerebral Isquêmico Agudo, Portaria Conjunta SAES/SECTICS n 29, 12/12/2023, páeina atualizada em 21/01/2025: https://www.gov.br/saude/pt-br/assuntos/pcdt/a/acidente-vascular-cerebral-isquemico-agudo/view
+- Ministério da Saúde. PCDT Acidente Vascular Cerebral Isquêmico Agudo, Portaria Conjunta SAES/SECTICS n 29, 12/12/2023, página atualizada em 21/01/2025: https://www.gov.br/saude/pt-br/assuntos/pcdt/a/acidente-vascular-cerebral-isquemico-agudo/view
 - Ministério da Saúde. Linha de Cuidado AVC Isquêmico até 4 horas: https://linhasdecuidado.saude.gov.br/portal/acidente-vascular-cerebral-%28AVC%29-no-adulto/unidade-hospitalar/avc-isquemico-menor-igual-4horas/
 - Powers WJ et al. AHA/ASA 2019 update to 2018 Guidelines for the Early Management of Acute Ischemic Stroke: https://www.ahajournals.org/doi/10.1161/STR.0000000000000211
 - Alamowitch S et al. European Stroke Organisation expedited recommendation on tenecteplase for acute ischaemic stroke, 2023: https://pmc.ncbi.nlm.nih.gov/articles/PMC10069183/

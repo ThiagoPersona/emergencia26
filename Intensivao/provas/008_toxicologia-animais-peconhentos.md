@@ -22,13 +22,13 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME22 Q55. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Descreva a patologia abaixo que não apresenta mecanismo de Insuficiência Respiratória Tipo II exclusiva.&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Inalação de Fumaça”</p>
+<p><strong>Como pensar:</strong> Insuficiência respiratória tipo II é hipoventilação com retenção de CO2. Opioide, obesidade-hipoventilação e TRM cervical reduzem ventilação alveolar; fumaça causa lesão inalatória, CO/cianeto e hipoxemia, não tipo II exclusiva.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta porque inalação de fumaça mistura hipoxemia, toxicidade sistêmica e lesão de via aérea, não hipoventilação pura com hipercapnia.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Intoxicação por Opióides”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Inalação de Fumaça”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Hipoventilação associada à Obesidade”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Trauma Raquimedular em Nível de Segmento C2”</li>
+<li><strong>A.</strong> Opioides deprimem centro respiratório e causam hipoventilação, padrão tipo II clássico.</li>
+<li><strong>B.</strong> Correta. Fumaça não é mecanismo tipo II exclusivo; envolve CO, cianeto, edema/queimadura de via aérea e troca gasosa.</li>
+<li><strong>C.</strong> Síndrome obesidade-hipoventilação é hipoventilação alveolar crônica com hipercapnia.</li>
+<li><strong>D.</strong> Lesão alta cervical compromete diafragma/ventilação e leva a hipercapnia.</li>
 </ul>
 </div>
 </div>
@@ -45,16 +45,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q85. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Sobre Síndrome de Abstinência Alcoólica (SAA) Marque a alternativa correta.&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Fenobarbital é a medicação de escolha para os casos refratários de Crises Convulsivas induzidas por SAA.”</p>
+<p><strong>Como pensar:</strong> Abstinência alcoólica grave é benzodiazepínico em dose titulada, tiamina precoce e fenobarbital como opção em refratariedade/convulsões. O alvo não é coma: é controlar agitação/autonomia preservando segurança.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é a melhor porque fenobarbital é opção importante nos casos refratários de SAA, especialmente convulsões persistentes apesar de benzodiazepínico.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “Presença de crises convulsivas em etilistas geralmente é induzida por abstinência, avaliações complementares com Tomografia de Crânio não estão indicadas.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “O uso de Tiamina nesses pacientes está indicado após a dosagem dos níveis séricos da vitamina.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Fenobarbital é a medicação de escolha para os casos refratários de Crises Convulsivas induzidas por SAA.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “O uso de Benzodiazepínicos EV tem a intenção de controlar a agitação psicomotora desses pacientes e seu alvo terapêutico deve ser a sedação profunda.”</li>
+<li><strong>A.</strong> Crise em etilista pode ser abstinência, mas trauma, sangramento, hipoglicemia e distúrbios metabólicos precisam ser considerados; TC pode ser indicada pelo contexto.</li>
+<li><strong>B.</strong> Tiamina deve ser feita precocemente, sem esperar dosagem sérica.</li>
+<li><strong>C.</strong> Correta. Fenobarbital é alternativa/adjunto para SAA refratária e convulsões.</li>
+<li><strong>D.</strong> Benzodiazepínico controla hiperexcitabilidade; sedação profunda não é alvo de rotina fora de refratariedade/IOT.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME22 Q96</p>
@@ -68,21 +69,21 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q96. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Sobre os conceitos abaixo envolvendo técnicas para manejo de pacientes intoxicados marque a alternativa correta.&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Muitas das medidas para manejo de intoxicações podem induzir efeitos adversos importantes, logo quando xenobióticos de baixa toxicidade são envolvidos, essas medidas nem sempre são indicadas.”</p>
+<p><strong>Como pensar:</strong> Descontaminação não é reflexo automático. Pergunte: substância adsorve no carvão? dose é tóxica? tempo é curto? via aérea está protegida? o procedimento traz mais benefício que risco?</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque medidas como carvão, lavagem e hemodiálise têm indicações específicas e podem causar broncoaspiração, perfuração, aspiração e complicações.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Carvão ativado é uma substância que induz adsorção, logo quanto menos tempo o carvão passar no TGI maior seu benefício.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Lavagem Gástrica deve ser indicada para pacientes que fizeram o uso de medicações em doses tóxicas nos últimos 30 minutos após realizar intubação orotraqueal”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Hemodiálise é um método eficaz em eliminar xenobióticos, quando o tóxico envolvido for sabidamente causa de disfunção renal, como por exemplo Ácido Acetilsalicílico ou Etilenoglicol.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Muitas das medidas para manejo de intoxicações podem induzir efeitos adversos importantes, logo quando xenobióticos de baixa toxicidade são envolvidos, essas medidas nem sempre são indicadas.”</li>
+<li><strong>A.</strong> Carvão funciona por adsorção, mas precisa permanecer em contato no TGI; “quanto menos tempo passar” reduz benefício.</li>
+<li><strong>B.</strong> Lavagem gástrica é rara, para ingestão potencialmente letal muito recente e com via aérea protegida; não é rotina para qualquer dose tóxica.</li>
+<li><strong>C.</strong> Hemodiálise depende de propriedades do tóxico e gravidade, não apenas de causar disfunção renal. AAS e etilenoglicol podem dializar em cenários definidos.</li>
+<li><strong>D.</strong> Correta. Em baixa toxicidade ou baixo risco, suporte e observação podem ser melhores que descontaminação agressiva.</li>
 </ul>
 </div>
 </div>
 
+
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME22 Q108</p>
 <p><strong>4. Paciente de 23 anos, masculino, é admitido com quadro de letargia há algumas horas ou dias, familiares negavam outras comorbidades, exceto uso abusivo de álcool. Ao exame, FR 33 IRPM, SaO2 94%, Respiração ruidosa, ECG de 10 (Abertura Ocular 3 Resposta Motora 4 Resposta Verbal 3), Pupilas médias, PA 90x50 mm Hg, TC de crânio sem achados específicos. Gasometria Arterial: pH 7.12, PaO2 50 mmHg, PaCO2 33 mmHg, BIC 11 mEq/L, Na 144 mEq/L, Cl 94 mEq/L, Albumina 4.5 g/L. Osmolaridade Aferida 340 mOsm/Kg e Osmolaridade Calculada 317 mOsm/Kg. Qual das medidas abaixo é mais apropriada?</strong></p>
-<p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t008-004" value="A"> A. Iniciar Etanol EV e encaminhar para serviço com Hemodiálise</label>
 <label class="quiz-option"><input type="radio" name="q-t008-004" value="B"> B. Iniciar Iniciar Expansão com SF 0,9% e Induzir Diurese com Furosemida</label>
@@ -92,16 +93,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME22 Q108. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Esta é uma questão de exceção/incorreta em toxicologia e acidentes. O comando central é: &quot;Paciente de 23 anos, masculino, é admitido com quadro de letargia há algumas horas ou dias, familiares negavam outras comorbidades, exceto uso abusivo de álcool. Ao exame, FR 33 IRPM, SaO2 94%, Respiração ruidosa, ECG de 10 (Abert...&quot;. A alternativa A deve ser marcada porque é a afirmação problemática ou a exceção reconhecida pelo gabarito oficial.</p>
-<p><strong>Por que a A deve ser marcada:</strong> o enunciado pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado pela banca: “Iniciar Etanol EV e encaminhar para serviço com Hemodiálise”</p>
+<p><strong>Como pensar:</strong> Acidose metabólica grave com anion gap alto + gap osmolar + álcool/letargia sugere álcool tóxico. Oxalato não aparece no enunciado, mas o conjunto favorece etilenoglicol/metanol; entre as opções, antidoto alcoólico e hemodiálise é o caminho.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é a resposta de prova porque bloqueia álcool-desidrogenase com etanol e encaminha para hemodiálise em intoxicação por álcool tóxico grave. Na prática, fomepizol é preferido quando disponível.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “Iniciar Etanol EV e encaminhar para serviço com Hemodiálise”</li>
-<li><strong>B.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “Iniciar Iniciar Expansão com SF 0,9% e Induzir Diurese com Furosemida”</li>
-<li><strong>C.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “Iniciar Flumazenil EV”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “Iniciar Naloxona EV”</li>
+<li><strong>A.</strong> Correta. Etanol/fomepizol + hemodiálise é conduta para álcool tóxico grave com acidose/gap osmolar.</li>
+<li><strong>B.</strong> SF e furosemida não tratam a formação de metabólitos tóxicos nem a acidose grave.</li>
+<li><strong>C.</strong> Flumazenil não trata acidose com gap osmolar e pode precipitar convulsão em intoxicação mista.</li>
+<li><strong>D.</strong> Naloxona trata depressão ventilatória por opioide; aqui há acidose metabólica grave, não toxidrome opioide clássico.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME22 Q114</p>
@@ -115,21 +117,21 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q114. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Nas alternativas abaixo descreve-se 4 casos clínicos de pacientes vítimas de acidentes com animais peçonhentos, marque a alternativa que corretamente correlaciona o caso clínico com o provável animal responsável.&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Criança apresenta sinais de choque, rebaixamento do nível de consciência e priapismo - Acidente com Tityus serrulatus”</p>
+<p><strong>Como pensar:</strong> Animais peçonhentos: botrópico é dor/edema/coagulação; crotálico é neurotoxicidade, mioglobinúria e pouca dor; escorpião grave em criança faz disautonomia, choque, edema pulmonar e priapismo pode aparecer.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C correlaciona corretamente quadro sistêmico grave em criança com Tityus serrulatus.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não combina síndrome clínica, gravidade e soro correto; acidente peçonhento é cobrado por padrão toxicológico, não por palpite do animal. Alternativa: “Paciente apresenta dor intensa no local da ferida, urina escurecida e sangramento gengival - Acidente crotálico”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Paciente apresenta dor leve no local da ferida, urina escurecida e visão turva - Acidente laquético”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Criança apresenta sinais de choque, rebaixamento do nível de consciência e priapismo - Acidente com Tityus serrulatus”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: é uma alternativa de combinação; ela inclui pelo menos uma assertiva fora do conjunto correto ou exclui uma assertiva verdadeira. Alternativa: “Paciente com fácies miastênica, insuficiência respiratório aguda tipo II e com urina e função renal normais - Acidente crotálico”</li>
+<li><strong>A.</strong> Dor intensa e sangramento gengival sugerem botrópico; crotálico costuma ter pouca dor local e neuro/miotoxicidade.</li>
+<li><strong>B.</strong> Laquético cursa com quadro botrópico-like + manifestações vagais; visão turva/urina escura não fecha essa alternativa.</li>
+<li><strong>C.</strong> Correta. Escorpionismo grave por Tityus em criança pode causar choque, rebaixamento, priapismo e edema pulmonar.</li>
+<li><strong>D.</strong> Fácies miastênica e insuficiência ventilatória lembram elapídico/crotálico, mas crotálico pode ter rabdomiólise/IRA; a frase de urina/função renal normais enfraquece.</li>
 </ul>
 </div>
 </div>
 
+
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME23 Q30</p>
 <p><strong>6. Você admite no DE paciente do sexo masculino com história de ter sido envenenado com bebida oferecida por um desconhecido, realizada gasometria que apresentava acidose metabólica com anion gap elevado, além de eletrocardiograma apresentando prolongamento do intervalo QT e presença de cristais de oxalato de cálcio na urina. Qual a provável substância responsável pela intoxicação?</strong></p>
-<p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t008-006" value="A"> A. Etilenoglicol</label>
 <label class="quiz-option"><input type="radio" name="q-t008-006" value="B"> B. Álcool isopropílico</label>
@@ -139,16 +141,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME23 Q30. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Você admite no DE paciente do sexo masculino com história de ter sido envenenado com bebida oferecida por um desconhecido, realizada gasometria que apresentava acidose metabólica com anion gap elevado, além de eletrocardiograma ap...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Etilenoglicol”</p>
+<p><strong>Como pensar:</strong> Cristais de oxalato de cálcio na urina são praticamente assinatura de etilenoglicol. Ele causa acidose metabólica com anion gap alto, gap osmolar inicial, lesão renal e pode alterar QT por hipocalcemia.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é correta porque etilenoglicol metaboliza em ácidos glicólico/oxálico, formando oxalato de cálcio.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Etilenoglicol”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Álcool isopropílico”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Propilenoglicol”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Metanol”</li>
+<li><strong>A.</strong> Correta. Etilenoglicol causa acidose de anion gap alto e cristais de oxalato de cálcio.</li>
+<li><strong>B.</strong> Isopropanol causa cetose sem acidose metabólica importante e depressão do SNC.</li>
+<li><strong>C.</strong> Propilenoglicol pode causar acidose/lactato em infusões, mas oxalato de cálcio aponta para etilenoglicol.</li>
+<li><strong>D.</strong> Metanol causa acidose e lesão visual, não cristais de oxalato.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME23 Q40</p>
@@ -162,16 +165,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME23 Q40. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Em relação às lesões por inalação de fumaça, assinale a alternativa correta:&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “O tratamento inicial para pacientes que apresentem níveis séricos de carboxi-hemoglobina entre 20% e 30% é a administração de oxigênio normobárico a 100%.”</p>
+<p><strong>Como pensar:</strong> Inalação de fumaça mata por CO/cianeto/lesão de via aérea. COHb 20-30% em geral recebe oxigênio 100% normobárico; hiperbárica é para selecionados/graves/gestantes conforme protocolo.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque oxigênio a 100% é o tratamento inicial para COHb nessa faixa sem critérios adicionais de câmara hiperbárica imediata.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Lesões por inalação de fumaça são a segunda causa de óbito mais frequente em vítimas de incêndios, atrás apenas das lesões térmicas e queimaduras”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “O desenvolvimento de pele em coloração “vermelho-cereja” é um sinal precoce de intoxicação por monóxido de carbono, e deve estar presente para a confirmação do diagnóstico”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “O tratamento mais eficaz para a intoxicação por Cianeto de Hidrogênio é a Hidroxocobalamina, na dose inicial de 2g em 10 minutos por via endovenosa”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “O tratamento inicial para pacientes que apresentem níveis séricos de carboxi-hemoglobina entre 20% e 30% é a administração de oxigênio normobárico a 100%.”</li>
+<li><strong>A.</strong> Em incêndios, a principal causa de morte é inalação de fumaça/toxinas, não queimadura isolada.</li>
+<li><strong>B.</strong> Pele vermelho-cereja é tardia/rara; não espere esse sinal para diagnosticar CO.</li>
+<li><strong>C.</strong> Hidroxocobalamina é tratamento de cianeto, mas dose inicial usual adulta é 5 g IV, não 2 g.</li>
+<li><strong>D.</strong> Correta. O2 a 100% reduz meia-vida da carboxi-hemoglobina e é primeira medida.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME23 Q70</p>
@@ -185,16 +189,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q70. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Dos acidentes com animais peçonhentos abaixo, qual deles pode levar a quadro de pancreatite aguda?&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Escorpião Gênero Tityus;”</p>
+<p><strong>Como pensar:</strong> Escorpionismo grave pode cursar com tempestade autonômica e lesão pancreática; a banca gosta de associar Tityus a pancreatite.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque acidentes por escorpião do gênero Tityus podem causar pancreatite aguda.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não combina síndrome clínica, gravidade e soro correto; acidente peçonhento é cobrado por padrão toxicológico, não por palpite do animal. Alternativa: “Aranha Gênero Loxosceles;”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não combina síndrome clínica, gravidade e soro correto; acidente peçonhento é cobrado por padrão toxicológico, não por palpite do animal. Alternativa: “Cobra Gênero Crotalus;”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Escorpião Gênero Tityus;”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Caravelas da Classe Hydrozoa;”</li>
+<li><strong>A.</strong> Loxosceles causa dermonecrose e hemólise, não pancreatite como associação clássica.</li>
+<li><strong>B.</strong> Crotalus causa neuro/miotoxicidade e rabdomiólise/IRA.</li>
+<li><strong>C.</strong> Correta. Tityus pode causar pancreatite, vômitos, choque e edema pulmonar.</li>
+<li><strong>D.</strong> Caravela causa dor intensa e manifestações alérgicas/toxínicas locais, não pancreatite típica.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME23 Q73</p>
@@ -208,16 +213,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME23 Q73. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> O gatilho da questão é: opioide, naloxona, miose ausente e ventilação. Toxicologia derruba quem decora antídoto sem segurança de via aérea, tempo de exposição e contraindicações. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
-<p><strong>Por que a A deve ser marcada:</strong> o enunciado pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado pela banca: “F - V - F - F”</p>
+<p><strong>Como pensar:</strong> Opioide é depressão respiratória, rebaixamento e miose, mas miose pode faltar. Naloxona é para depressão respiratória clinicamente relevante; sempre procure hipoglicemia, trauma e intoxicação mista.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é correta: distonia não é efeito típico, investigar outras causas é verdadeiro, ausência de miose não exclui, e naloxona não é para qualquer manifestação leve.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “F - V - F - F”</li>
-<li><strong>B.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “F - V - F - V”</li>
-<li><strong>C.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “F - V - V - V”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra A, que contém o problema do item. Alternativa: “F - F - V - F”</li>
+<li><strong>A.</strong> Correta. Sequência F-V-F-F. O marcador de tratamento é ventilação/FR, não apenas suspeita vaga.</li>
+<li><strong>B.</strong> Erra ao indicar naloxona para qualquer manifestação compatível; use quando há depressão respiratória/RNC relevante.</li>
+<li><strong>C.</strong> Erra ao dizer que ausência de miose descarta opioide.</li>
+<li><strong>D.</strong> Erra ao negar a necessidade de investigar causas associadas de rebaixamento.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME23 Q97</p>
@@ -231,16 +237,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME23 Q97. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Em relação a descontaminação de paciente exposto ao chumbo, assinale a alternativa correta:&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Pacientes com suspeita de encefalopatia por chumbo já devem receber terapia de quelação, como por exemplo, com dimercaprol;”</p>
+<p><strong>Como pensar:</strong> Chumbo não é bem tratado com carvão e encefalopatia é emergência de quelação. Sintomático grave não espera confirmação sérica se a suspeita é forte.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque encefalopatia por chumbo exige quelação imediata, como dimercaprol associado a outro quelante conforme protocolo.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Caso seja de conhecimento que o tempo decorrido da intoxicação a chegada ao serviço de emergência, seja inferior há 2 horas, o uso do carvão ativado é medida de escolha;”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “Deve-se evitar o uso de qualquer medicação que possa alterar o nível de consciência do paciente, independente do quadro clínico apresentado, visto que pode ser fator confundido com a encefalopatia causada pela intoxicação por chumbo;”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Pacientes com suspeita de encefalopatia por chumbo já devem receber terapia de quelação, como por exemplo, com dimercaprol;”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Os pacientes só podem ser tratados após a confirmação da dosagem de chumbo sérico, visto que os efeitos colaterais das drogas são comuns.”</li>
+<li><strong>A.</strong> Carvão ativado não adsorve bem metais pesados como chumbo.</li>
+<li><strong>B.</strong> Controlar convulsão/agitação é necessário; não se evita toda sedação por medo de confundir exame.</li>
+<li><strong>C.</strong> Correta. Encefalopatia por chumbo é indicação de quelação urgente.</li>
+<li><strong>D.</strong> Esperar confirmação laboratorial em encefalopatia atrasa tratamento de emergência.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME24 Q1</p>
@@ -254,16 +261,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q1. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Paciente admitido em Departamento de Emergência com o relato de que estava pescando e sentiu a picada de um animal não visualizado em região de maléolo lateral direito há cerca de 5 horas. No momento da admissão, apresentava gengi...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Trata-se provavelmente de um acidente por serpente do gênero Bothrops filhote, e o tratamento deve ser realizado com soro antibotrópico; plasma não está indicado.”</p>
+<p><strong>Como pensar:</strong> Picada em pescaria, dois pontos, gengivorragia/hematúria e pouca reação local podem ser Bothrops filhote: pouca inoculação local, mas coagulopatia importante. Tratamento é soro específico, não plasma de rotina.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta porque o quadro é compatível com acidente botrópico por filhote, com indicação de soro antibotrópico.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Trata-se provavelmente de um acidente por aranha Loxosceles, e o tratamento deve ser realizado com soro antiaracnídico e acompanhamento da lesão.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Trata-se provavelmente de um acidente por serpente do gênero Bothrops filhote, e o tratamento deve ser realizado com soro antibotrópico; plasma não está indicado.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Trata-se provavelmente de um acidente por Lonomia obliqua, e o tratamento deve ser realizado com soro antilonômico e transfusão de plasma fresco congelado.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Trata-se de um acidente ofídico por serpente não identificada. Nesse caso, o ideal é a realização do soro polivalente antibotrópico-crotálico, de acordo com a epidemiologia do país.”</li>
+<li><strong>A.</strong> Loxosceles não causa esse padrão imediato de dois pontos + coagulopatia hemorrágica de acidente ofídico.</li>
+<li><strong>B.</strong> Correta. Bothrops filhote pode dar pouca reação local e muita alteração de coagulação; plasma não substitui antiveneno.</li>
+<li><strong>C.</strong> Lonomia causa coagulopatia por contato com lagarta, não dois pontos de inoculação de serpente.</li>
+<li><strong>D.</strong> Soro “polivalente” não é ideal quando o quadro clínico aponta para botrópico; use soro indicado pela síndrome.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME24 Q2</p>
@@ -277,16 +285,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q2. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Sobre a descontaminação gástrica em casos de intoxicação exógena, marque a alternativa verdadeira:&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “O procedimento não deve ser indicado rotineiramente, principalmente em ingestões de substâncias com potencial de rebaixamento, arritmogênicas e convulsivantes.”</p>
+<p><strong>Como pensar:</strong> Lavagem gástrica virou exceção. Em ingestões que rebaixam, causam arritmia ou convulsão, o risco de broncoaspiração e piora costuma superar benefício se feita rotineiramente.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque descontaminação gástrica não deve ser rotina, especialmente quando há risco de rebaixamento/convulsão/arritmia sem via aérea protegida.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: erra a regra operacional/ética: segurança, comunicação, registro, regulação e responsabilidade médica não podem ser suprimidos. Alternativa: “O procedimento é útil para a maioria das substâncias, principalmente se houver ingestão maciça.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “A lavagem gástrica deve ser realizada preferencialmente ao carvão ativado, pelo menor risco associado de broncoaspiração e pneumonite.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “O procedimento não deve ser indicado rotineiramente, principalmente em ingestões de substâncias com potencial de rebaixamento, arritmogênicas e convulsivantes.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A sonda utilizada para o procedimento deve ter o menor calibre possível, para evitar lesões e sangramentos associados à sua passagem.”</li>
+<li><strong>A.</strong> Não é útil para a maioria; depende de substância, tempo, dose e risco.</li>
+<li><strong>B.</strong> Lavagem tem mais risco que carvão em muitos cenários e não é preferível de rotina.</li>
+<li><strong>C.</strong> Correta. A indicação é seletiva e exige ponderar via aérea e toxicidade.</li>
+<li><strong>D.</strong> Quando indicada, a lavagem precisa de sonda calibrosa; menor calibre não é princípio do procedimento.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME24 Q23</p>
@@ -300,21 +309,26 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q23. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Ao realizar bloqueios anestésicos no Departamento de Emergência, devemos estar atentos à escolha do fármaco, suas propriedades farmacológicas e seus possíveis efeitos colaterais. Com relação à toxicidade dos anestésicos locais, as...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “No manejo da intoxicação sistêmica por anestésicos locais, a droga de primeira linha é a emulsão lipídica 20% com dose inicial em bólus de 1,5 mg/kg em 2 a 3 minutos, seguida de uma infusão de 0,25 mL/kg/minuto em 30 a 60 minutos.”</p>
+<p><strong>Como pensar:</strong> LAST é convulsão/arrítmia/choque após anestésico local, sobretudo bupivacaína. Tratamento-chave é emulsão lipídica 20%; a questão usa unidade imprecisa, mas o conceito é bolus 1,5 mL/kg e infusão 0,25 mL/kg/min.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é a resposta de prova porque identifica emulsão lipídica 20% como primeira linha no manejo da toxicidade sistêmica por anestésico local.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Anestésicos locais mais lipofílicos, como a bupivacaína, têm menor risco de toxicidade cardíaca, o que permite que suas doses máximas sejam mais altas, em comparação com os anestésicos que são mais cardiotóxicos, como a lidocaína.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “O acréscimo de epinefrina aos anestésicos locais diminui a absorção sistêmica do medicamento, o que permite o uso de doses maiores, no entanto, isso também reduz o tempo de duração da anestesia.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “No manejo da intoxicação sistêmica por anestésicos locais, a droga de primeira linha é a emulsão lipídica 20% com dose inicial em bólus de 1,5 mg/kg em 2 a 3 minutos, seguida de uma infusão de 0,25 mL/kg/minuto em 30 a 60 minutos.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Devido à lipossolubilidade dos anestésicos locais, pacientes obesos (com maior índice de massa corporal), bem como aqueles com lesões extensas, possuem maior risco de superdosagem.”</li>
+<li><strong>A.</strong> Bupivacaína é mais lipofílica e mais cardiotóxica, não menos.</li>
+<li><strong>B.</strong> Epinefrina reduz absorção sistêmica e pode prolongar duração, não reduzir.</li>
+<li><strong>C.</strong> Correta no conceito. Em prática, leia como 1,5 mL/kg de emulsão lipídica 20%, seguida de infusão.</li>
+<li><strong>D.</strong> Dose máxima deve considerar peso magro/risco, mas obesidade não permite simplesmente dose maior por lipossolubilidade.</li>
 </ul>
 </div>
 </div>
 
+
 <div class="quiz-card" data-answer="A">
 <p class="quiz-source">TEME24 Q30</p>
 <p><strong>14. Paciente do sexo feminino, de 27 anos, é admitida ao Departamento de Emergência após ter sido encontrada desacordada em sua cama. A equipe do atendimento préhospitalar relata diversas caixas de comprimidos na cena, incluindo fluoxetina, clonazepam e amitriptilina. Ao exame, paciente desacordada, com escala de coma de Glasgow em 10, pupilas médias e fotorreagentes, reflexos tendíneos fisiológicos, frequência cardíaca de 131 bpm, pressão arterial de 70 x 50 mmHg, com extremidades frias e pegajosas, frequência respiratória de 28 irpm com respiração ruidosa e acúmulo de secreção em orofaringe. Temperatura 37,9ºC, eletrocardiograma da paciente conforme imagem a seguir. Considerando o quadro descrito, marque a alternativa com o melhor conjunto de medidas indicadas:</strong></p>
-<p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME24_Q30_ecg_triciclico.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME24_Q30_ecg_triciclico.png" alt="ECG com QRS largo em intoxicação por antidepressivo tricíclico.">
+</a>
+</figure>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t008-014" value="A"> A. Iniciar bicarbonato de sódio endovenoso, expansão volêmica e drogas vasoativas; realizar intubação orotraqueal após estabilização inicial.</label>
 <label class="quiz-option"><input type="radio" name="q-t008-014" value="B"> B. Realizar intubação orotraqueal e iniciar flumazenil e expansão volêmica e drogas vasoativas.</label>
@@ -324,16 +338,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: A.</strong> Fonte: TEME24 Q30. Gabarito oficial: A.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Paciente do sexo feminino, de 27 anos, é admitida ao Departamento de Emergência após ter sido encontrada desacordada em sua cama. A equipe do atendimento préhospitalar relata diversas caixas de comprimidos na cena, incluindo fluox...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa A é a que melhor fecha o caso.</p>
-<p><strong>Por que a A é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar bicarbonato de sódio endovenoso, expansão volêmica e drogas vasoativas; realizar intubação orotraqueal após estabilização inicial.”</p>
+<p><strong>Como pensar:</strong> Amitriptilina + choque + QRS largo = intoxicação por tricíclico/bloqueio de canal de sódio. Prioridade: bicarbonato, suporte hemodinâmico e via aérea após otimização; flumazenil é perigoso em intoxicação mista.</p>
+<p><strong>Por que a A é a melhor:</strong> A letra A é correta porque bicarbonato de sódio é tratamento central do alargamento de QRS/choque por tricíclico, junto de expansão/vasopressor e IOT após estabilizar.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar bicarbonato de sódio endovenoso, expansão volêmica e drogas vasoativas; realizar intubação orotraqueal após estabilização inicial.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Realizar intubação orotraqueal e iniciar flumazenil e expansão volêmica e drogas vasoativas.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: coloca exame, confirmação ou etapa posterior no lugar da conduta inicial; a banca costuma punir atraso de intervenção tempo-dependente. Alternativa: “Realizar cardioversão elétrica sincronizada, iniciar flumazenil e aguardar a resposta terapêutica, antes de indicar intubação orotraqueal.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Iniciar bicarbonato de sódio endovenoso, iniciar expansão volêmica e drogas vasoativas e cardioversão elétrica sincronizada.”</li>
+<li><strong>A.</strong> Correta. Bicarbonato alcaliniza e aumenta sódio sérico, revertendo bloqueio de canal de sódio.</li>
+<li><strong>B.</strong> Flumazenil em intoxicação mista/usuário crônico pode precipitar convulsões e não trata tricíclico.</li>
+<li><strong>C.</strong> Cardioversão não corrige a toxicidade por canal de sódio; flumazenil piora risco.</li>
+<li><strong>D.</strong> Cardioversão sincronizada não é primeira resposta para taquicardia de QRS largo tóxica com choque por TCA; bicarbonato é chave.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME24 Q57</p>
@@ -347,16 +362,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q57. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Paciente de zona rural cafeeira, admitido com relato de ingestão há 6 horas de 100 mL de substância não identificada após discussão com a esposa. À admissão, apresentava vômitos e ulcerações em mucosa oral compatíveis com ingestão...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Paraquat.”</p>
+<p><strong>Como pensar:</strong> Paraquat pode começar como cáustico digestivo e evoluir em dias com IRA, hepatotoxicidade e fibrose pulmonar fulminante. Esse roteiro é muito característico.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta porque paraquat causa lesão corrosiva inicial, falência renal/hepática e fibrose pulmonar progressiva.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Metanol.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Paraquat.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Ácido fluorídrico.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Glifosato.”</li>
+<li><strong>A.</strong> Metanol causa acidose e lesão visual, não fibrose pulmonar tardia típica.</li>
+<li><strong>B.</strong> Correta. Paraquat é a intoxicação clássica da fibrose pulmonar extensa dias após ingestão.</li>
+<li><strong>C.</strong> Ácido fluorídrico causa hipocalcemia/hipomagnesemia e arritmias, além de queimadura, não esse padrão pulmonar.</li>
+<li><strong>D.</strong> Glifosato pode causar irritação e choque em formulações, mas fibrose pulmonar intensa é paraquat.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME24 Q79</p>
@@ -370,16 +386,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME24 Q79. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> O gatilho da questão é: múltiplas picadas de abelha e envenenamento sistêmico. Toxicologia derruba quem decora antídoto sem segurança de via aérea, tempo de exposição e contraindicações. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Na síndrome do envenenamento por abelhas, além de coagulação intravascular disseminada, alterações cardiovasculares e neurológicas, a insuficiência renal é frequente, e pode haver necessidade de hemodiálise.”</p>
+<p><strong>Como pensar:</strong> Uma picada com sintomas sistêmicos precoces é anafilaxia: adrenalina IM. Múltiplas picadas podem causar síndrome de envenenamento tardia com hemólise, rabdomiólise, CIVD e IRA.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque envenenamento por múltiplas abelhas pode causar CIVD, alterações cardiovasculares/neurológicas e insuficiência renal com necessidade de diálise.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Em um paciente picado por uma única abelha com quadro urticária associado a náuseas, vômitos persistentes e diarreia na primeira hora do acidente, antihistamínicos e sintomáticos devem ser iniciados prioritariamente.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “O quadro de síndrome de envenenamento por múltiplas picadas de abelha geralmente se manifesta precocemente, portanto a alta segura pode ocorrer se não houver intercorrências nas primeiras 12 horas do acidente.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Tanto no caso da anafilaxia, quanto no da síndrome do envenenamento por abelhas, a epinefrina é a base do tratamento, pois o choque circulatório é a via comum das duas entidades.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Na síndrome do envenenamento por abelhas, além de coagulação intravascular disseminada, alterações cardiovasculares e neurológicas, a insuficiência renal é frequente, e pode haver necessidade de hemodiálise.”</li>
+<li><strong>A.</strong> Urticária + sintomas gastrointestinais após picada sugere anafilaxia; adrenalina IM é prioridade, não anti-histamínico.</li>
+<li><strong>B.</strong> Síndrome de envenenamento pode ter complicações tardias; 12 horas sem intercorrência não garante alta segura em múltiplas picadas.</li>
+<li><strong>C.</strong> Adrenalina é base da anafilaxia, mas não resolve sozinha toxicidade maciça com rabdomiólise/CIVD/IRA.</li>
+<li><strong>D.</strong> Correta. Múltiplas picadas podem causar toxicidade sistêmica grave e diálise.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME24 Q82</p>
@@ -393,16 +410,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME24 Q82. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Paciente de 28 anos é encontrado com pulso central fraco e sem resposta ao estímulo em via pública; segundo relato de amigos, é usuário de drogas. À ectoscopia, presença de pó branco nas narinas. Evolui para parada cardiorrespirat...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Iniciar manobras de ressuscitação; iniciar infusão de bicarbonato de sódio por via endovenosa; usar preferencialmente a lidocaína, caso seja indicado antiarrítmico durante a assistência.”</p>
+<p><strong>Como pensar:</strong> Cocaína em PCR segue ACLS, mas se houver arritmia por bloqueio de canal de sódio/toxicidade simpaticomimética, bicarbonato e lidocaína podem ser preferidos. Naloxona não vem antes de RCP em PCR.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é a melhor porque mantém RCP e adiciona bicarbonato para toxicidade por cocaína, preferindo lidocaína se antiarrítmico for necessário.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Iniciar manobras de ressuscitação; evitar uso de epinefrina; iniciar amiodarona precocemente em caso de ritmos chocáveis ao monitor; realizar intubação assim que possível.”</li>
-<li><strong>B.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Iniciar manobras de ressuscitação; iniciar infusão de bicarbonato de sódio por via endovenosa; usar preferencialmente a lidocaína, caso seja indicado antiarrítmico durante a assistência.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não respeita o momento do algoritmo de reanimação/arritmia; ritmo, estabilidade, choque, droga e busca de causa reversível têm sequência própria. Alternativa: “Administrar naloxona; iniciar manobras de ressuscitação; manter medidas usuais, como uso de epinefrina e amiodarona, conforme indicado na abordagem geral do paciente em parada cardiorrespiratória.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Iniciar reanimação cardiopulmonar e infusão de benzodiazepínico e trombolítico por via endovenosa e manter a medicação durante a assistência.”</li>
+<li><strong>A.</strong> Epinefrina não deve ser evitada no ACLS; amiodarona não é a escolha mais simpática em toxicidade por cocaína.</li>
+<li><strong>B.</strong> Correta. RCP primeiro, bicarbonato para QRS largo/toxicidade por canal de sódio e lidocaína se antiarrítmico for indicado.</li>
+<li><strong>C.</strong> Naloxona pode ser considerada se opioide, mas em PCR não substitui RCP/ACLS e o cenário sugere cocaína.</li>
+<li><strong>D.</strong> Benzodiazepínico ajuda agitação/hipertermia simpaticomimética, mas não é medicação de PCR; trombolítico não é rotina.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME25 Q1</p>
@@ -416,21 +434,21 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q1. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Paciente de 33 anos, previamente hígido, é admitido no Departamento de Emergência após ter feito uso de 10 “carreiras” de cocaína nas últimas 2 horas. Apresenta-se em agitação psicomotora importante, agredindo os profissionais de...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Deve-se priorizar o controle da temperatura com benzodiazepínicos na pré-otimização.”</p>
+<p><strong>Como pensar:</strong> Cocaína + hipertermia/agitação extrema: trate catecolamina e temperatura antes/durante IOT. Benzodiazepínico reduz agitação, hipertermia muscular e descarga simpática; evite betabloqueio isolado e cuidado com succinilcolina em hipertermia/rabdo.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque controle de temperatura e descarga simpática com benzodiazepínico é prioridade na pré-otimização.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: usa uma regra absoluta ou uma negação ampla demais; em emergência, indicação e contraindicação dependem de contexto, estabilidade e risco imediato. Alternativa: “O uso da cetamina é absolutamente contraindicado.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “O uso de esmolol por via endovenosa como pré-otimização deve ser preconizado.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Succinilcolina é a medicação de escolha como bloqueador neuromuscular.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Deve-se priorizar o controle da temperatura com benzodiazepínicos na pré-otimização.”</li>
+<li><strong>A.</strong> Cetamina pode aumentar catecolamina, mas não é absolutamente contraindicada; a palavra “absolutamente” derruba.</li>
+<li><strong>B.</strong> Betabloqueio isolado, especialmente em intoxicação por cocaína, não é pré-otimização padrão e pode piorar vasoconstrição.</li>
+<li><strong>C.</strong> Succinilcolina não é “de escolha” se há hipertermia, agitação prolongada e risco de rabdomiólise/hipercalemia.</li>
+<li><strong>D.</strong> Correta. Benzodiazepínicos e resfriamento tratam a fisiologia que está matando antes da intubação.</li>
 </ul>
 </div>
 </div>
 
+
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME25 Q11</p>
 <p><strong>19. Criança previamente hígida, com quadro súbito de rebaixamento do nível de consciência, bradicardia, sudorese e vômitos; com leucocitose, hiperglicemia, disfunção de ventrículo esquerdo e presença de linhas B bibasais ao ultrassom point-of-care se associam mais provavelmente a qual dos diagnósticos a seguir:</strong></p>
-<p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t008-019" value="A"> A. Cetoacidose diabética.</label>
 <label class="quiz-option"><input type="radio" name="q-t008-019" value="B"> B. Intoxicação por descongestionante nasal.</label>
@@ -440,16 +458,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q11. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Criança previamente hígida, com quadro súbito de rebaixamento do nível de consciência, bradicardia, sudorese e vômitos; com leucocitose, hiperglicemia, disfunção de ventrículo esquerdo e presença de linhas B bibasais ao ultrassom...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Escorpionismo grave.”</p>
+<p><strong>Como pensar:</strong> Criança com vômitos/sudorese/bradicardia/rebaixamento + disfunção ventricular e linhas B sugere escorpionismo grave com miocardite/edema pulmonar. Descongestionante não costuma fazer esse pacote com POCUS cardíaco.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque escorpionismo grave por Tityus causa tempestade autonômica, disfunção miocárdica e edema pulmonar.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Cetoacidose diabética.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Intoxicação por descongestionante nasal.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Escorpionismo grave.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Dengue grave.”</li>
+<li><strong>A.</strong> CAD teria hiperglicemia/desidratação/acidose, mas não bradicardia, sudorese e disfunção VE aguda típica.</li>
+<li><strong>B.</strong> Descongestionante alfa-adrenérgico pode dar alteração neurológica/bradicardia, mas não explica bem linhas B e disfunção VE.</li>
+<li><strong>C.</strong> Correta. O conjunto em criança é muito sugestivo de escorpionismo grave.</li>
+<li><strong>D.</strong> Dengue grave dá choque por extravasamento/plasma e sangramentos, não síndrome autonômica com miocardiopatia típica.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="B">
 <p class="quiz-source">TEME25 Q27</p>
@@ -463,16 +482,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: B.</strong> Fonte: TEME25 Q27. Gabarito oficial: B.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Ao longo do último ano, foram registrados diversos casos de intoxicação grave por arsênio, relacionados à presença intencional da substância em alimentos. Sobre esse tema, assinale V ou F nas afirmações a seguir e, ao final, marqu...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa B é a que melhor fecha o caso.</p>
-<p><strong>Por que a B é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “V-F-V-F-V.”</p>
+<p><strong>Como pensar:</strong> Arsênio agudo causa gastroenterite profusa tipo cólera, choque, QT longo/arritmias e pode ser radiopaco; carvão é ruim e irrigação intestinal pode ajudar se material no TGI. Sintomático grave não espera laboratório para quelar.</p>
+<p><strong>Por que a B é a melhor:</strong> A letra B é correta: V-F-V-F-V. A não visualização no RX não exclui intoxicação.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “V-V-V-F-F.”</li>
-<li><strong>B.</strong> <strong>Correta como resposta ao comando.</strong> A questão pede a alternativa incorreta/exceção; esta é a opção que contém o problema cobrado: “V-F-V-F-V.”</li>
-<li><strong>C.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “F-V-V-F-V.”</li>
-<li><strong>D.</strong> Não deve ser marcada. O erro ao escolhê-la é de leitura do comando: esta afirmativa não é a incorreta/exceção que a banca pediu. Compare com a letra B, que contém o problema do item. Alternativa: “F-F-F-V-V.”</li>
+<li><strong>A.</strong> Erra ao dizer que quelação deve esperar confirmação laboratorial e ao negar alterações de QT/arrítmias.</li>
+<li><strong>B.</strong> Correta. Diarreia água de arroz, irrigação intestinal possível e alterações de QT são verdadeiros; esperar laboratório e excluir por RX negativo são falsos.</li>
+<li><strong>C.</strong> Erra o primeiro item: diarreia coleriforme é manifestação reconhecida do arsênio.</li>
+<li><strong>D.</strong> Erra múltiplos itens, incluindo irrigação intestinal e radiopacidade.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME25 Q36</p>
@@ -486,16 +506,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q36. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Sobre o uso da naloxona e do flumazenil para o manejo das intoxicações por opioides ou por benzodiazepínicos, respectivamente, marque a alternativa correta:&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “A frequência respiratória é um marcador clínico de indicação e de resposta ao uso da naloxona.”</p>
+<p><strong>Como pensar:</strong> Naloxona é titulada para ventilação, não para “acordar bonito”. FR melhora é marcador. Flumazenil é raro: evite em intoxicação desconhecida, usuário crônico, epilepsia ou coingestão pró-convulsivante.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque frequência respiratória é o melhor alvo clínico para indicar e titular naloxona.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Flumazenil é a droga de escolha para teste terapêutico em jovens vítimas de intoxicação por drogas desconhecidas.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Flumazenil é a droga de escolha para manejo dos quadros de intoxicação por benzodiazepínicos em usuários crônicos.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “A naloxona deve ser infundida com muita cautela em pacientes usuários crônicos pelo risco elevado de morte associado à abstinência de opioides.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “A frequência respiratória é um marcador clínico de indicação e de resposta ao uso da naloxona.”</li>
+<li><strong>A.</strong> Flumazenil em jovem com droga desconhecida é perigoso, especialmente se houver tricíclico ou risco de convulsão.</li>
+<li><strong>B.</strong> Usuário crônico de benzodiazepínico pode convulsionar/abstinir com flumazenil.</li>
+<li><strong>C.</strong> Naloxona pode precipitar abstinência, mas o risco de morte por hipoventilação supera isso; titule com cuidado.</li>
+<li><strong>D.</strong> Correta. FR/ventilação é marcador de indicação e resposta à naloxona.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME25 Q38</p>
@@ -509,16 +530,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q38. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> O gatilho da questão é: botulismo alimentar e paralisia descendente. Toxicologia derruba quem decora antídoto sem segurança de via aérea, tempo de exposição e contraindicações. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Trata-se provavelmente de afecção causada pela ingestão de alimentos contaminados pela toxina do Clostridium botulinum.”</p>
+<p><strong>Como pensar:</strong> Botulismo alimentar: sintomas gastrointestinais iniciais, midríase, boca seca/vertigem, disfagia e paralisia descendente flácida com falência respiratória. Não costuma dar febre alta nem alteração sensitiva.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque toxina botulínica de Clostridium botulinum bloqueia liberação de acetilcolina e causa paralisia descendente.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Trata-se provavelmente de uma intoxicação por alimentos contaminados por pesticidas organofosforados.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Trata-se provavelmente de uma infecção intestinal grave, causada por Escherichia coli produtora de toxina Shiga.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Trata-se provavelmente de afecção causada pela ingestão de alimentos contaminados pela toxina do Clostridium botulinum.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Trata-se provavelmente de ingestão de taioba-brava, e os sintomas se devem à alta concentração de oxalato de cálcio.”</li>
+<li><strong>A.</strong> Organofosforado é síndrome colinérgica: miose, salivação, broncorreia, diarreia e fasciculações, não midríase/paralisia descendente típica.</li>
+<li><strong>B.</strong> Toxina Shiga dá diarreia sanguinolenta e SHU, não paralisia diafragmática.</li>
+<li><strong>C.</strong> Correta. Botulismo alimentar fecha o quadro de pares cranianos/disfagia e falência respiratória.</li>
+<li><strong>D.</strong> Taioba-brava causa irritação por oxalato, dor/edema oral, não paralisia descendente.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="C">
 <p class="quiz-source">TEME25 Q64</p>
@@ -532,16 +554,17 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q64. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Paciente do sexo masculino, de 62 anos, é trazido ao Departamento de Emergência por familiares, que relatam que, ao chegarem em casa o encontraram desacordado, com várias cartelas de medicações vazias no local. Não sabem há quanto...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Infusão de glicoinsulina por via endovenosa em altas doses.”</p>
+<p><strong>Como pensar:</strong> Bradicardia + hipotensão + hiperglicemia/sonolência em usuário de anti-hipertensivo sugere bloqueador de canal de cálcio ou beta-bloqueador. A terapia de choque por BCC/BB é insulina em altas doses com glicose e potássio monitorados.</p>
+<p><strong>Por que a C é a melhor:</strong> A letra C é correta porque glicoinsulina em altas doses melhora inotropismo e uso miocárdico de carboidrato na intoxicação por BCC/BB.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Hemodiálise de emergência.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Bicarbonato de sódio 8,4% por via endovenosa.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Infusão de glicoinsulina por via endovenosa em altas doses.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Naloxona por via endovenosa.”</li>
+<li><strong>A.</strong> Hemodiálise raramente resolve BCC/BB comuns por alto volume de distribuição/ligação proteica.</li>
+<li><strong>B.</strong> Bicarbonato é para bloqueio de canal de sódio/QRS largo, como tricíclico, não para bradicardia-choque por BCC/BB.</li>
+<li><strong>C.</strong> Correta. Insulina em altas doses é tratamento central no choque por BCC/BB.</li>
+<li><strong>D.</strong> Naloxona não trata bradicardia/choque por anti-hipertensivo.</li>
 </ul>
 </div>
 </div>
+
 
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME25 Q65</p>
@@ -555,13 +578,13 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q65. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de toxicologia e acidentes, o comando central é reconhecer a melhor resposta para: &quot;Paciente picado por animal não visualizado, em milharal, sentiu apenas um “soco” na panturrilha esquerda. À avaliação do local havia um arranhão. Procurou atendimento médico e, durante o exame físico, relatou apenas dor local, par...&quot;. A leitura de prova deve priorizar síndrome tóxica, antídoto quando indicado, suporte vital e evitar intervenções que piorem fisiologia; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Trata-se provavelmente de um acidente por Crotalus spp., e o soro anticrotálico está indicado.”</p>
+<p><strong>Como pensar:</strong> Crotálico pode ser “soco”, dor/parestesia, diplopia/fácies miastênica e coagulopatia; CPK/creatinina podem ainda estar normais cedo. Não espere rabdomiólise para indicar soro se síndrome é compatível.</p>
+<p><strong>Por que a D é a melhor:</strong> A letra D é correta porque diplopia/neurotoxicidade + acidente em área rural apontam para Crotalus, com indicação de soro anticrotálico.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não ajusta bem a ressuscitação ao fenótipo do choque/infecção; volume, vasopressor e antimicrobiano dependem de perfusão, foco e tempo. Alternativa: “Trata-se provavelmente de um acidente por Bothrops spp., filhote e o soro antibotrópico está indicado.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Função renal e creatinofosfoquinase são definidoras da gravidade nesse tipo de acidente, e, como estão normais, trata-se provavelmente de um caso leve.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “A ausência de dois pontos de inoculação torna improvável o acidente por serpente, sendo o acidente por lonomia o mais provável.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Trata-se provavelmente de um acidente por Crotalus spp., e o soro anticrotálico está indicado.”</li>
+<li><strong>A.</strong> Bothrops costuma dar dor/edema local e sangramento; diplopia/neurotoxicidade aponta mais para crotálico.</li>
+<li><strong>B.</strong> CPK e rim ajudam gravidade, mas normais em 2 horas não excluem crotálico nem tornam leve automaticamente.</li>
+<li><strong>C.</strong> Ausência de dois pontos não exclui serpente; lonomia é contato com lagarta e coagulopatia sem neurotoxicidade.</li>
+<li><strong>D.</strong> Correta. Síndrome neurotóxica por Crotalus indica soro anticrotálico.</li>
 </ul>
 </div>
 </div>
