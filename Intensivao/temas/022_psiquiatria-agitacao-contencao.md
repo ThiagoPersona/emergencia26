@@ -94,6 +94,15 @@ flowchart TD
 | Tiamina | 100 mg EV/IM | Alcoolismo/desnutrição; não atrasar glicose grave |
 | BARS | 1-7 | 6 = muito ativo; 7 = violento |
 
+### Pontos de prova
+
+- Sintoma psiquiátrico novo em idoso, paciente com comorbidades ou primeiro episódio maníaco/psicótico exige procurar causa clínica, tóxica, metabólica, infecciosa ou neurológica.
+- Quadro psiquiátrico conhecido com suspensão medicamentosa, sem sinais atípicos, é a situação menos obrigatória para investigação laboratorial/imagem ampla entre as alternativas.
+- Intoxicação por psicofármacos: sertralina combina com síndrome serotoninérgica; lítio com tremor/ataxia/GI/RNC; benzodiazepínico com depressão; antipsicótico com parkinsonismo, hipertermia, hipotensão/QT.
+- Agitação grave sem acesso seguro: midazolam IM tem início previsível; diazepam IM é ruim, haloperidol EV exige cautela/QT e cetamina IM fica para violência extrema ou protocolo específico.
+- BARS 6 significa agitação muito intensa, mas não obriga contenção física imediata; se houver segurança, tente desescalada e use medicação proporcional.
+- Tentativa de suicídio com tentativas prévias, pouca proteção, sem seguimento e desejo de ir embora continua alto risco mesmo se o paciente estiver calmo.
+
 ## Pegadinhas TEME
 
 - **Primeiro episódio psiquiátrico não precisa exame clínico:** falso.

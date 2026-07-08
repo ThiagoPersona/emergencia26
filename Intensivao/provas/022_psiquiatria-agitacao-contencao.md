@@ -13,7 +13,6 @@ Banco do tema 022 refeito em formato mais parecido com a prova: enunciado e alte
 <div class="quiz-card" data-answer="D">
 <p class="quiz-source">TEME22 Q87</p>
 <p><strong>1. Das situações descritas, em qual delas não representa paciente com alterações psiquiátricas que necessita de complementação de investigação clínica, com exames complementares laboratoriais e/ou de imagem</strong></p>
-<p class="quiz-note">A questão original pode depender de imagem/curva do caderno; aqui fica o texto extraído para treino.</p>
 <div class="quiz-options">
 <label class="quiz-option"><input type="radio" name="q-t022-001" value="A"> A. Paciente idoso, independente dos sintomas psiquiátricos</label>
 <label class="quiz-option"><input type="radio" name="q-t022-001" value="B"> B. Paciente com comorbidades, independente dos sintomas psiquiátricos</label>
@@ -23,13 +22,13 @@ Banco do tema 022 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME22 Q87. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> Nesta questão de psiquiatria e agitação, o comando central é reconhecer a melhor resposta para: &quot;Das situações descritas, em qual delas não representa paciente com alterações psiquiátricas que necessita de complementação de investigação clínica, com exames complementares laboratoriais e/ou de imagem&quot;. A leitura de prova deve priorizar segurança, causa orgânica, desescalada, medicação/contensão proporcional e risco de auto/heteroagressão; por isso a alternativa D é a que melhor fecha o caso.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Paciente com quadro depressivo com suspensão de medicamento”</p>
+<p><strong>Como pensar:</strong> Em queixa psiquiátrica, idade avançada, comorbidade e primeiro episódio exigem procurar causa clínica; quadro depressivo após suspensão de medicação é cenário menos obrigatório para imagem/laboratório amplo.</p>
+<p><strong>Por que a D é a melhor:</strong> depressão com suspensão medicamentosa, sem sinais atípicos, é a alternativa que não obriga complementação clínica ampla.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Paciente idoso, independente dos sintomas psiquiátricos”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Paciente com comorbidades, independente dos sintomas psiquiátricos”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Paciente com primeiro episódio maníaco”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Paciente com quadro depressivo com suspensão de medicamento”</li>
+<li><strong>A.</strong> Idoso com sintoma psiquiátrico novo precisa investigação de delirium, infecção, metabólico e neurológico.</li>
+<li><strong>B.</strong> Comorbidades aumentam chance de causa orgânica ou efeito medicamentoso.</li>
+<li><strong>C.</strong> Primeiro episódio maníaco deve levantar causa secundária.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É o cenário mais compatível com alteração psiquiátrica primária/recorrente entre as opções. Alternativa: "Paciente com quadro depressivo com suspensão de medicamento".</li>
 </ul>
 </div>
 </div>
@@ -46,13 +45,13 @@ Banco do tema 022 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME22 Q112. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de psiquiatria e agitação, o comando central é reconhecer a melhor resposta para: &quot;Paciente feminina de 28 anos, com transtorno depressivo psicótico grave e multiplas tentativas de suicídio prévias. Ambulatorialmente ela faz uso de Sertralina 25 mg 1x/dia VO, Quetiapina 25 mg 1x/dia VO, Carbonato de Lítio 300 mg...&quot;. A leitura de prova deve priorizar segurança, causa orgânica, desescalada, medicação/contensão proporcional e risco de auto/heteroagressão; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Bradicinesia e Hipertermia - Quetiapina”</p>
+<p><strong>Como pensar:</strong> Em intoxicação por psicofármacos, resolva por toxíndrome: serotoninérgica dá hiperreflexia/hipertermia; benzo dá depressão; lítio dá tremor/ataxia; antipsicótico pode dar hipertermia/parkinsonismo/QT.</p>
+<p><strong>Por que a C é correta:</strong> bradicinesia com hipertermia em paciente usando antipsicótico aponta para toxicidade por quetiapina/síndrome neuroléptica-like entre as opções.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Hiperreflexia e Hipotermia - Sertralina”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: troca a prioridade de via aérea/ventilação; suporte ventilatório precisa respeitar indicação, pré-oxigenação, plano de falha, confirmação e risco de colapso. Alternativa: “Pupilas Mióticas - Lítio”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Bradicinesia e Hipertermia - Quetiapina”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Alargamento de QT - Clonazepam”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Sertralina/serotonina combina com hiperreflexia e hipertermia, não hipotermia.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Lítio causa tremor, ataxia, vômitos, alteração neurológica e convulsão; miose não é pista típica.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> Antipsicótico pode cursar com parkinsonismo/bradicinesia, hipertermia, rebaixamento e alteração de QT.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Clonazepam causa sedação/depressão respiratória, não alargamento de QT como pista principal.</li>
 </ul>
 </div>
 </div>
@@ -69,13 +68,13 @@ Banco do tema 022 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME24 Q59. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> Nesta questão de psiquiatria e agitação, o comando central é reconhecer a melhor resposta para: &quot;Paciente de 26 anos, trazido por policiais após contenção física em rave devido a agitação intensa, alucinações e agressão a terceiros. À admissão, o paciente apresentava escoriações em tórax e em membros superiores, com contenção...&quot;. A leitura de prova deve priorizar segurança, causa orgânica, desescalada, medicação/contensão proporcional e risco de auto/heteroagressão; por isso a alternativa C é a que melhor fecha o caso.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Midazolam por via intramuscular na dose de 5 a 10 mg.”</p>
+<p><strong>Como pensar:</strong> Agitação intensa com risco de agressão exige via rápida e previsível. Se a opção é benzodiazepínico IM, midazolam é mais adequado que diazepam IM.</p>
+<p><strong>Por que a C é correta:</strong> midazolam IM 5-10 mg tem início rápido e é opção clássica para contenção química de agitação grave quando não há acesso seguro.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Diazepam por via intramuscular, na dose de 5 a 10 mg.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não conversa com o dado-chave do enunciado; ela desloca o foco para uma conduta, diagnóstico ou detalhe menos provável que o cobrado pela banca. Alternativa: “Haloperidol por via endovenosa, na dose de 5 mg.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Midazolam por via intramuscular na dose de 5 a 10 mg.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: erra na escolha, dose, alvo ou momento do fármaco; em prova, droga certa sem fisiologia/indicação correta continua errada. Alternativa: “Cetamina por via intramuscular, na dose de 5 mg/kg.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Diazepam IM tem absorção errática e não é a melhor via/droga nesse cenário.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Haloperidol EV pode prolongar QT e exige monitorização; a via IM/oral costuma ser preferida para agitação quando antipsicótico é escolhido.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> Midazolam IM 5-10 mg é conduta efetiva para agitação psicomotora intensa.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Cetamina IM pode ter papel em violência extrema/excited delirium, mas 5 mg/kg aumenta chance de dissociação profunda e necessidade de manejo de via aérea; não é a melhor resposta da banca aqui.</li>
 </ul>
 </div>
 </div>
@@ -92,13 +91,13 @@ Banco do tema 022 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: C.</strong> Fonte: TEME25 Q86. Gabarito oficial: C.</p>
-<p><strong>Comentário:</strong> O gatilho da questão é: BARS e conduta na agitação. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
-<p><strong>Por que a C é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Empregar medidas farmacológicas, como haloperidol ou midazolam, se tentativas de descalonamento verbal falharem.”</p>
+<p><strong>Como pensar:</strong> BARS 6 é agitação muito intensa, mas não equivale automaticamente a contenção física. Tente desescalada se houver segurança e use medicação se falhar ou se o risco exigir.</p>
+<p><strong>Por que a C é correta:</strong> haloperidol ou midazolam após falha de desescalonamento verbal é a estratégia proporcional para BARS 6 sem transformar todo caso em contenção física imediata.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Oferecer um ambiente calmo e isolado, solicitando que o paciente reflita sobre seu comportamento, evitando medicações para não mascarar a causa subjacente da agitação.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Iniciar a contenção física, pois um Behavioral Activity Rating Scale 6 indica que o paciente é violento e requer restrição imediata.”</li>
-<li><strong>C.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Empregar medidas farmacológicas, como haloperidol ou midazolam, se tentativas de descalonamento verbal falharem.”</li>
-<li><strong>D.</strong> Não é a melhor resposta. Erro da alternativa: não fecha o diagnóstico sindrômico com os dados-chave; a banca favorece a hipótese que melhor explica fisiologia, tempo e sinais de gravidade. Alternativa: “Priorizar a busca por sinais e sintomas sugestivos de alteração do estado mental de origem clínica antes, pois não há necessidade de outra intervenção para a agitação.”</li>
+<li><strong>A.</strong> <strong>Incorreta.</strong> Ambiente calmo ajuda, mas pedir reflexão e evitar medicação pode deixar equipe/paciente em risco.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> BARS 6 é muito ativo, porém “violento/restrição imediata” é mais BARS 7 ou risco iminente.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> Desescalada primeiro quando possível; medicação se falha ou risco persiste.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Causa clínica deve ser pesquisada, mas isso não elimina a necessidade de controlar a agitação perigosa.</li>
 </ul>
 </div>
 </div>
@@ -115,13 +114,13 @@ Banco do tema 022 refeito em formato mais parecido com a prova: enunciado e alte
 <button class="quiz-check" type="button">Checar resposta</button>
 <div class="quiz-feedback" hidden>
 <p><strong>Resposta: D.</strong> Fonte: TEME25 Q88. Gabarito oficial: D.</p>
-<p><strong>Comentário:</strong> O gatilho da questão é: tentativa de suicídio com tentativas prévias e baixo suporte = alto risco, sem alta simples. Psiquiatria de emergência não é só diagnóstico psiquiátrico: delirium, intoxicação, hipoglicemia e risco suicida precisam vir antes. As erradas são tentadoras porque atrasam prioridade, exageram uma exceção ou fecham diagnóstico sem reavaliar.</p>
-<p><strong>Por que a D é a melhor:</strong> ela corresponde ao gabarito oficial e é a opção que melhor atende ao ponto cobrado no enunciado: “Internação por risco elevado e ausência de fatores de proteção efetivos.”</p>
+<p><strong>Como pensar:</strong> Tentativa atual, tentativas prévias, depressão, ausência de seguimento e pressão para ir embora configuram alto risco, mesmo que o paciente negue nova intenção.</p>
+<p><strong>Por que a D é a melhor:</strong> internação é apropriada pela soma de risco elevado e fatores de proteção frágeis.</p>
 <ul class="quiz-explain">
-<li><strong>A.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Alta com orientações e reavaliação ambulatorial em até 72 horas.”</li>
-<li><strong>B.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Encaminhamento ambulatorial eletivo, considerando estabilidade clínica e suporte familiar.”</li>
-<li><strong>C.</strong> Não é a melhor resposta. Erro da alternativa: subestima gravidade ou risco de deterioração; alta/observação só entram quando sinais de alarme e critérios de segurança foram resolvidos. Alternativa: “Observação prolongada e liberação com termo de responsabilidade.”</li>
-<li><strong>D.</strong> <strong>Correta.</strong> Esta alternativa fecha melhor o comando da questão e o gabarito oficial: “Internação por risco elevado e ausência de fatores de proteção efetivos.”</li>
+<li><strong>A.</strong> Alta em 72 h subestima tentativa recente e histórico prévio.</li>
+<li><strong>B.</strong> Encaminhamento eletivo é insuficiente para risco agudo.</li>
+<li><strong>C.</strong> Termo de responsabilidade não reduz risco suicida nem substitui cuidado.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> É a conduta mais protetiva e proporcional ao risco. Alternativa: "Internação por risco elevado e ausência de fatores de proteção efetivos.".</li>
 </ul>
 </div>
 </div>

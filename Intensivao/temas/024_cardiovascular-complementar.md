@@ -96,6 +96,18 @@ flowchart TD
 | TVP US | não compressibilidade | Achado central no POCUS vascular |
 | TEP alto risco | choque/hipotensão/PCR | Reperfusão se sem contra ou benefício supera risco |
 
+### Pontos de prova
+
+- Derrame pericárdico no eco: discreto <10 mm, moderado 10-20 mm e importante >20 mm em diástole. Tamponamento é fisiologia, não só volume.
+- Tamponamento: colapso sistólico do átrio direito, colapso diastólico do ventrículo direito, VCI cheia e variação respiratória de fluxos. No choque, a conduta é drenagem/pericardiocentese ou cirurgia conforme contexto.
+- Trauma com bulhas abafadas e choque é tamponamento/choque obstrutivo até prova em contrário; pneumotórax hipertensivo e hemotórax maciço têm outras pistas no exame pulmonar.
+- POCUS com VD dilatado, septo em D, PSAP alta e VE preservado sugere TEP com cor pulmonale agudo; espessura do VD <5 mm favorece agudo, não crônico.
+- TEP segmentar baixo risco, estável, troponina/VD sem gravidade e com boa compreensão/seguimento pode ser tratado ambulatorialmente.
+- Dissecção/AAA: dor dorsal/lombar/abdominal intensa + choque pede estabilização e cirurgia/vascular; beta-bloqueio é central na dissecção estável, mas não antes de tratar choque.
+- IC aguda sem choque e hipertensiva/congesta responde a vasodilatador; choque com VD grave e congestão pode precisar diurético + inodilatador como milrinona conforme a fisiologia.
+- Síncope de esforço em jovem é alto risco: internar e investigar cardiopatia estrutural com ecocardiograma antes de pensar em liberação.
+- IC terminal com PPS 20, sonolência, recusa alimentar e mottling sugere fase ativa de morte; dispneia terminal responde a morfina em baixa dose e reavaliação.
+
 ## Pegadinhas TEME
 
 - **Dor torácica com supra = trombólise sempre:** falso; dissecção/pericardite entram no diferencial.

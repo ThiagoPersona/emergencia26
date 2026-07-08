@@ -103,6 +103,16 @@ flowchart TD
 | Via aérea | capnografia após IOT | Ausculta isolada não confirma tubo |
 | Reavaliação | após intervenção | PA, pulso, perfusão, SpO2, consciência e resposta clínica |
 
+### Pontos de prova
+
+- Antes de responder, identifique o comando: correta, incorreta, melhor próxima conduta, exceção, contraindicação ou associação. Muito erro vem de marcar a frase verdadeira quando a questão pede a falsa.
+- Nas questões TEME, a alternativa certa costuma respeitar a ordem: segurança, ABCDE, intervenção tempo-dependente, confirmação/monitorização e destino.
+- Em estação prática, fale o que está fazendo: chamar ajuda, monitorizar, acesso, glicemia, oxigênio, checar material, preparar plano B e reavaliar. O avaliador não pontua pensamento silencioso.
+- Quando houver procedimento, verbalize indicação, contraindicações rápidas, monitorização, analgesia/sedação, técnica e complicações esperadas.
+- Em POCUS, não basta descrever a imagem: diga a pergunta clínica, o achado e a conduta que muda agora.
+- Para desempenho por tema, resolva as questões sem olhar o gabarito, cheque uma vez, leia a explicação de todas as alternativas e só depois use “Limpar respostas” se quiser repetir.
+- Não troque resposta depois de checar: a taxa de acerto do tema deve refletir sua primeira decisão, porque é isso que simula a prova.
+
 ## Pegadinhas TEME
 
 - **Pedir TC antes de corrigir ABC:** se instável, estabilize e trate ameaça imediata.

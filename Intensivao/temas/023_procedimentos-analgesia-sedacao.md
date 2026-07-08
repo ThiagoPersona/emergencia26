@@ -97,6 +97,16 @@ flowchart TD
 | Bupivacaína | 2-2,5 mg/kg | Mais cardiotóxica; cuidado LAST |
 | Emulsão lipídica LAST | bolus 1,5 mL/kg a 20% | Depois infusão conforme protocolo |
 
+### Pontos de prova
+
+- Abscesso pequeno, flutuante, em paciente hígido e afebril: incisão, drenagem, limpeza, curativo e orientação; antibiótico não é automático sem celulite extensa, imunossupressão ou gravidade.
+- Analgesia não atrapalha abdome agudo; leucograma normal não exclui inflamação e ultrassom é forte para via biliar.
+- Sedação procedural exige monitorização, acesso, oxigênio, aspiração, BVM, material de via aérea e pessoa dedicada a observar o paciente quando possível.
+- Bloqueio regional: escolha pelo território anatômico. Ciático poplíteo cobre tornozelo/maléolo lateral; fáscia ilíaca é quadril/fêmur proximal; ESP block é bom para fraturas costais posteriores.
+- LAST: calcular dose máxima, injetar fracionado, aspirar e observar sinais neurológicos/cardiovasculares; toxicidade de anestésicos locais é aditiva quando se misturam drogas.
+- Torsades adquirida: corrigir K/Mg, suspender drogas que prolongam QT, magnésio EV e, se recorrente, aumentar frequência com overdrive pacing/isoproterenol conforme contexto.
+- Crise renal esclerodérmica: hipertensão + IRA em esclerose sistêmica pede IECA, não corticoide em dose alta.
+
 ## Pegadinhas TEME
 
 - **Analgesia mascara abdome agudo:** falso.
@@ -151,5 +161,4 @@ flowchart TD
 
 **Atualização clínica**
 
-- ACEP. Clinical Policy: Severe Agitation/Sedation context: https://www.acep.org/siteassets/new-pdfs/clinical-policies/severe-agitation-cp.pdf
-
+- ACEP. Procedural Sedation and Analgesia: https://www.acep.org/by-medical-focus/procedural-sedation

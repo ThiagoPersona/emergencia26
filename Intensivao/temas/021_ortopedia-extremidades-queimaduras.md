@@ -89,6 +89,18 @@ flowchart TD
 | Centro de queimados | face, mãos, pés, períneo, articulações, inalatória, elétrica/química | Critérios variam; usar referência oficial/local |
 | CO | O2 100% | SatO2 pode enganar |
 
+### Pontos de prova
+
+- Hemorragia exsanguinante de extremidade: pressão direta/curativo compressivo; se não controla ou é amputação/sangramento ameaçador, torniquete com horário registrado. Não afrouxar intermitentemente.
+- Choque hemorrágico persistente após cristalóide/torniquete pede ressuscitação hemostática balanceada, não mais cristalóide como resposta principal.
+- Fratura exposta: antibiótico precoce é parte da primeira hora. Gustilo I-II sem contaminação grosseira costuma receber cefazolina; ferida extensa/contaminada amplia cobertura, como cefazolina + aminoglicosídeo conforme protocolo.
+- Ferida simples limpa suturada no DE não exige antibiótico profilático de rotina; contaminação grosseira, mordedura, imunossupressão, osso/tendão/articulação e ferida de alto risco mudam a resposta.
+- Síndrome compartimental: dor desproporcional e dor à mobilização passiva são pistas precoces; pulso presente não exclui e laboratório não deve atrasar fasciotomia.
+- Luxações: anterior de ombro é trauma esportivo/abdução-rotação externa; posterior lembra convulsão/choque elétrico e pode passar despercebida no AP. Quadril luxado deve ser reduzido cedo.
+- Queimadura: primeiro grau não entra na SCQ da Parkland; criança hidrata com menor %SCQ que adulto; elétrica/química/inalatória e áreas nobres elevam complexidade.
+- Queimadura química: retirar agente, irrigar, escovar particulado seco quando indicado e usar antídoto específico quando existir; ácido fluorídrico pede gluconato de cálcio.
+- Incêndio fechado: SatO2 pode enganar em CO; lactato muito alto, choque ou rebaixamento sugerem cianeto e hidroxocobalamina conforme disponibilidade.
+
 ## Pegadinhas TEME
 
 - **Fratura exposta espera ortopedia para antibiótico:** falso.
