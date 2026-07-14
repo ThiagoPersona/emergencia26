@@ -5,7 +5,7 @@
 - Intubar não é "passar tubo": é **oxigenar, ventilar, proteger via aérea e sobreviver ao peri-intubação**.
 - A banca ama a diferença entre via aérea difícil anatômica, via aérea difícil fisiológica e via aérea falha.
 - Em paciente crítico, a melhor primeira tentativa é a que foi preparada: equipe, plano B, pré-oxigenação, ressuscitação, drogas, capnografia e sedação pós-IOT.
-- Em VM, prova cobra o básico bem feito: VCV/PCV, volume corrente por peso predito, pressão de plato, driving pressure, gasometria, curva fluxo-tempo e auto-PEEP.
+- Em VM, prova cobra o básico bem feito: VCV/PCV, volume corrente por peso predito, pressão de platô, driving pressure, gasometria, curva fluxo-tempo e auto-PEEP.
 
 ## Por que cai
 
@@ -37,7 +37,7 @@ O erro cognitivo mais comum é tratar a intubação como procedimento isolado. P
 
 Via aérea difícil pode ser anatômica, fisiológica ou ambas. A anatômica dificulta ver ou acessar a glote. A fisiológica faz o paciente morrer durante uma tentativa tecnicamente perfeita: hipoxemia, choque, acidose metabólica grave, falência de VD, gestação e obesidade reduzem a margem de erro.
 
-Em VM, a banca costuma cobrar a mecânica básica: volume corrente depende do peso predito, pressão de plato estima distensão alveolar no paciente passivo, driving pressure resume a relação entre volume entregue e complacência, e auto-PEEP aparece quando o fluxo expiratório não retorna a zero antes da próxima inspiração.
+Em VM, a banca costuma cobrar a mecânica básica: volume corrente depende do peso predito, pressão de platô estima distensão alveolar no paciente passivo, driving pressure resume a relação entre volume entregue e complacência, e auto-PEEP aparece quando o fluxo expiratório não retorna a zero antes da próxima inspiração.
 
 ## Abordagem prática
 
@@ -159,7 +159,7 @@ Pegadinha: videolaringoscopia melhora visão, mas não garante passagem do tubo.
 | Succinilcolina | 1-1,5 mg/kg | Rápida, curta | Evitar em hiperK, queimadura/lesão muscular após 24-48 h, doença neuromuscular, hipertermia maligna, denervação |
 | rocurônio | 1-1,2 mg/kg | Rápido, longo | Exige sedação pós-IOT impecável; paralisia longa máscara convulsão e desconforto |
 
-> **Para prova TEME:** succinilcolina costuma aparecer como bloqueador clássico da RSI quando não há contraindicação. rocurônio é alternativa forte quando há risco de hiperpotassemia, queimadura tardia, doença neuromuscular ou necessidade de evitar succinilcolina.
+> **Para prova TEME:** succinilcolina costuma aparecer como bloqueador clássico da RSI quando não há contraindicação. Rocurônio é alternativa forte quando há risco de hiperpotassemia, queimadura tardia, doença neuromuscular ou necessidade de evitar succinilcolina.
 >
 > **Na prática clínica:** a escolha entre etomidato/cetamina e succinilcolina/rocurônio depende do contexto, protocolo local, experiência e disponibilidade. Revisões e ensaios recentes sugerem mortalidade semelhante entre cetamina e etomidato, mas a cetamina pode ter mais instabilidade hemodinâmica peri-intubação em pacientes críticos; isso não transforma etomidato em resposta universal.
 
@@ -216,7 +216,7 @@ Se piorou depois de intubar, pense **DOPE**:
 | FR | 16-20 irpm | Reduzir em asma/DPOC para evitar auto-PEEP |
 | PEEP | 5 cmH2O | Aumentar conforme hipoxemia/recrutabilidade |
 | FiO2 | 100% inicialmente se peri-IOT | Reduzir para alvo de SpO2 após estabilizar |
-| Pressão de plato | <= 30 cmH2O | Medir em pausa inspiratória no VCV |
+| Pressão de platô | <= 30 cmH2O | Medir em pausa inspiratória no VCV |
 | Driving pressure | <= 15 cmH2O quando possível | Pplat - PEEP |
 
 Peso predito, não peso real, guia o volume corrente. Obeso não recebe VC por peso total.

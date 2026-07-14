@@ -73,7 +73,7 @@ O capítulo inteiro é sobre não ser enganado pela dor torácica "parecida com 
 flowchart TD
     A[Dor torácica, choque ou febre cardiovascular] --> B{Choque/instabilidade?}
     B -->|Sim| C[ABCDE + ECG + POCUS + tratar fenótipo]
-    C --> D{POCUS/clinica sugere?}
+    C --> D{POCUS/clínica sugere?}
     D -->|Tamponamento| E[Pericardiocentese/cirurgia]
     D -->|VD grande/TEP| F[Heparina/reperfusão se alto risco]
     D -->|VE ruim/IAM/miocardite| G[Vasoativo/inotrópico + hemodinâmica/UTI]
@@ -163,4 +163,3 @@ flowchart TD
 
 - ACC/AHA/ACEP/NAEMSP/SCAI. ACS Guideline 2025, listado no edital TEME26.
 - ESC/ERS. Pulmonary embolism guideline 2019: https://academic.oup.com/eurheartj/article/41/4/543/5556136
-

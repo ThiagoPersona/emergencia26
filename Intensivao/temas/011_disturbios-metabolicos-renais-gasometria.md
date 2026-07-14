@@ -130,7 +130,7 @@ Sequência:
 **EHH clássico:**
 
 - Glicemia geralmente >600 mg/dL.
-- Osmolaridade efetiva alta, típicamente >320 mOsm/kg nos materiais de prova.
+- Osmolaridade efetiva alta, tipicamente >320 mOsm/kg nos materiais de prova.
 - Pouca ou nenhuma cetose; pH geralmente >=7,3.
 - Desidratação mais intensa e sintomas neurológicos comuns.
 
@@ -146,7 +146,7 @@ Conduta:
 5. Quando glicose cair, trocar para solução com dextrose e manter insulina até fechar cetose/AG.
 6. Tratar gatilho: infecção, IAM, AVC, pancreatite, omissão de insulina, gestação, drogas.
 
-> **Resposta de prova TEME22:** adolescente com suspeita de CAD, choque/infecção e glicemia 390: a alternativa correta foi hidratação com SF 0,9% + antibiótico na primeira hora, evitando bolus de insulina, bicarbonato e KCl as cegas.
+> **Resposta de prova TEME22:** adolescente com suspeita de CAD, choque/infecção e glicemia 390: a alternativa correta foi hidratação com SF 0,9% + antibiótico na primeira hora, evitando bolus de insulina, bicarbonato e KCl às cegas.
 >
 > **Atualização clínica 2024:** o consenso internacional reduziu o limiar diagnóstico de hiperglicemia da CAD para >=200 mg/dL ou diabetes conhecido, quando há cetose significativa e acidose. Para TEME, memorize a tríade cobrada: >250 + pH <7,3 + cetonemia.
 
@@ -222,7 +222,7 @@ Acidose é marcador de causa: choque, hipóxia, cetose, uremia, tóxico, diarrei
 
 ### Insulina sem potássio pode parar o coração
 
-Na CAD, o K corporal total costuma estar baixo mesmo quando o K serico está normal/alto. Insulina desloca K para dentro da célula. Se K já está baixo, iniciar insulina antes de repor K pode precipitar arritmia fatal.
+Na CAD, o K corporal total costuma estar baixo mesmo quando o K sérico está normal/alto. Insulina desloca K para dentro da célula. Se K já está baixo, iniciar insulina antes de repor K pode precipitar arritmia fatal.
 
 ### Corrigir sódio é uma maratona com sprint inicial
 
@@ -371,7 +371,7 @@ flowchart TD
 
 ## Para prova vs na prática
 
-> **Para prova TEME:** CAD = glicemia >250 + pH <7,3 + cetonemia; CAD com choque/infecção pede SF 0,9% e antibiótico antes de insulinizar as cegas; etilenoglicol = AG alto + oxalato; crise renal esclerodérmica = captopril/IECA; TCA instável = bicarbonato; hiperK emergente = cálcio.
+> **Para prova TEME:** CAD = glicemia >250 + pH <7,3 + cetonemia; CAD com choque/infecção pede SF 0,9% e antibiótico antes de insulinizar às cegas; etilenoglicol = AG alto + oxalato; crise renal esclerodérmica = captopril/IECA; TCA instável = bicarbonato; hiperK emergente = cálcio.
 >
 > **Na prática clínica:** CAD adulta atual pode ser diagnosticada com glicemia >=200 se houver diabetes/cetose/acidose; salina balanceada pode reduzir acidose hipercloremica; protocolos de sódio usam limites de correção mais conservadores em alto risco; beta-bloqueio na tireotoxicose deve ser individualizado se choque/IC.
 
@@ -391,7 +391,7 @@ flowchart TD
 
 ## Questões e estações relacionadas
 
-- **TEME22 Q51:** suspeita de CAD com choque/infecção: hidratação com SF 0,9% + antibiótico na primeira hora; evitar bolus de insulina/bicarbonato/KCl as cegas.
+- **TEME22 Q51:** suspeita de CAD com choque/infecção: hidratação com SF 0,9% + antibiótico na primeira hora; evitar bolus de insulina/bicarbonato/KCl às cegas.
 - **TEME22 Q58:** definição de CAD: glicemia >250 mg/dL + pH <7,3 + cetonemia positiva.
 - **TEME22 Q63:** crise renal esclerodérmica com PA alta, convulsão, creatinina/proteinúria/hematúria: captopril.
 - **TEME22 Q57:** melhora pós-ressuscitação no choque: queda de lactato, melhora de BE e diurese.

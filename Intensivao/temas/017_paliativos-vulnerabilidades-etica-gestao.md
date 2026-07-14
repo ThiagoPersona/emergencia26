@@ -54,7 +54,7 @@ Frase útil:
 **Secreção terminal**
 
 - Reposicionamento, explicar para família, reduzir fluidos desnecessários.
-- Anticolinérgico pode reduzir ruido, mas funciona melhor se iniciado cedo.
+- Anticolinérgico pode reduzir ruído, mas funciona melhor se iniciado cedo.
 
 ### 3. Sedação paliativa
 
@@ -92,7 +92,7 @@ Se incapaz:
 
 Recusa terapêutica:
 
-- E direito em tratamentos eletivos quando paciente e maior, capaz, lucido, orientado e consciente.
+- É direito em tratamentos eletivos quando paciente é maior, capaz, lúcido, orientado e consciente.
 - Pode ser rejeitada em abuso de direito, risco a terceiros, doença transmissivel relevante ou urgência/emergência com risco relevante.
 
 ### 5. Diretivas, ortotanásia e morte encefálica

@@ -38,7 +38,7 @@ Controle de dano tem duas metades inseparaveis:
 ### 1. XABCDE Sem Perder O X
 
 1. **X:** hemorragia externa exsanguinante: compressão direta, packing, torniquete, curativo hemostático.
-2. **A:** via aérea com restrição de movimento cervical; IOT sé indicação, sem atrasar controle de sangramento.
+2. **A:** via aérea com restrição de movimento cervical; IOT se indicada, sem atrasar controle de sangramento.
 3. **B:** procurar pneumotórax hipertensivo, Hemotórax maciço, tórax instável, tamponamento.
 4. **C:** pulso, pele, TEC, PA, eFAST, pelve, ossos longos, acessos calibrosos/IO, sangue.
 5. **D:** Glasgow, pupilas, glicemia se necessário; TCE muda alvo pressor.
@@ -209,11 +209,11 @@ Conduta inicial:
 
 | Cenário | Conduta |
 |---|---|
-| Instável + peritonite/evisceracao/FAST positivo | Laparotomia imediata |
+| Instável + peritonite/evisceração/FAST positivo | Laparotomia imediata |
 | estável + trauma contuso | TC com contraste |
 | Lesão esplênica/hepática em estável | Manejo não operatório pode ser possível em centro com suporte |
 | Trauma penetrante anterior estável sem peritonite | exploração local/TC/observação conforme protocolo |
-| Peritonite, pneumoperitonio, evisceracao importante | Cirurgia |
+| Peritonite, pneumoperitônio, evisceração importante | Cirurgia |
 
 Pegadinha: lesão esplênica grau alto na TC não é indicação automática de laparotomia se o paciente está estável e em centro capaz de monitorar/embolizar.
 
@@ -327,7 +327,7 @@ Pulso ausente, palidez e paralisia são tardios. Conduta: retirar constrições 
 - Não registrar horário do torniquete.
 - Repetir palpação pélvica e desorganizar coágulo.
 - Mandar instável para TC sem controle de fonte.
-- Deixar o paciente hipotermico na sala vermelha.
+- Deixar o paciente hipotérmico na sala vermelha.
 - Transfundir muito sem cálcio.
 - Não acionar cirurgia/intervenção cedo.
 - Não reavaliar resposta: pulso, pele, consciência, lactato, base déficit, eFAST e sangramento.

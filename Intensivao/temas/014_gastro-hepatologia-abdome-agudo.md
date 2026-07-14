@@ -5,10 +5,10 @@
 - Abdome agudo no DE e primeiro fisiologia, depois etiqueta diagnóstica: choque, peritonite, sangramento, isquemia, perfuração, obstrução, gestação ectópica e AAA.
 - Analgesia não atrapalha diagnóstico. Dor tratada deixa o exame melhor; não espere cirurgião para aliviar sofrimento.
 - Cirrótico no pronto-socorro tem infecção e sangramento até prova em contrário: paracentese se ascite, antibiótico se HDA varicosa, lactulose se encefalopatia e cuidado com rim.
-- HDA: estabilize, acesso, tipagem/prova cruzada, transfusão restritiva, PPI se não varicosa provável; se cirrose/variz, vasoativo + ceftriaxone + EDA precoce.
+- HDA: estabilize, acesso, tipagem/prova cruzada, transfusão restritiva, PPI se não varicosa provável; se cirrose/variz, vasoativo + ceftriaxona + EDA precoce.
 - Pancreatite: 2 de 3 critérios, analgesia, cristaloide balanceado moderado, alimentar cedo quando tolera; CPRE urgente só se colangite ou obstrução biliar persistente.
 - Biliar: colecistite = cirurgia precoce; colangite = antibiótico + drenagem biliar/CPRE, principalmente se grave.
-- Isquemia mesenterica, perfuração, AAA roto e obstrução estrangulada são diagnósticos de tempo: TC/angioTC e cirurgia/intervenção cedo.
+- Isquemia mesentérica, perfuração, AAA roto e obstrução estrangulada são diagnósticos de tempo: TC/angioTC e cirurgia/intervenção cedo.
 - Ureterolitíase infectada e torção testicular são "abdome" que você não pode perder: obstrução + infecção = desobstruir; testículo torcido = urologia agora.
 
 ## Por que cai
@@ -31,9 +31,9 @@
 
 Sinais de abdome que mata:
 
-- Dor desproporcional ao exame, acidose/lactato, FA/aterosclerose: isquemia mesenterica.
+- Dor desproporcional ao exame, acidose/lactato, FA/aterosclerose: isquemia mesentérica.
 - Dor epigástrica/dorso, hipotensão, massa pulsavel, idoso: AAA roto.
-- Pneumoperitonio, rigidez, peritonite: perfuracao.
+- Pneumoperitônio, rigidez, peritonite: perfuração.
 - Vômitos persistentes, distensão, parada de flatos/fezes, hernia dolorosa: obstrução/estrangulamento.
 - Dor HCD + febre + icterícia ou choque/confusão: colangite.
 - Cirrótico com ascite + dor/febre/confusão/IRA: PBE.
@@ -53,7 +53,7 @@ Sinais de abdome que mata:
 | Mulher em idade fertil | beta-hCG antes de "abdome clínico" |
 | HCD/biliar | US, labs hepaticos; POCUS pode encurtar caminho |
 | Flanco/cólica renal | EAS, creatinina; POCUS hidronefrose; TC sem contraste se dúvida/complicação |
-| Suspeita isquemia mesenterica | AngioTC, não espere lactato |
+| Suspeita isquemia mesentérica | AngioTC, não espere lactato |
 | HDA/HDB instável | Reanimação + endoscopia/angioTC conforme fonte provável |
 
 POCUS ajuda, mas não absolve:
@@ -72,7 +72,7 @@ Primeiras medidas:
 2. Ressuscitar antes de endoscopia. Se choque/rebaixamento/vômito ativo, planejar via aérea.
 3. Transfusão restritiva na maioria: alvo Hb 7-9 g/dL; considerar limiar maior em isquemia ativa/cardiopatia grave.
 4. Não varicosa provável: PPI em alta dose, EDA em até 24 h após estabilização.
-5. Varicosa/cirrose provável: vasoativo imediato + ceftriaxone + EDA idealmente em até 12 h após estabilização.
+5. Varicosa/cirrose provável: vasoativo imediato + ceftriaxona + EDA idealmente em até 12 h após estabilização.
 6. Falha endoscópica/choque persistente: radiologia intervencionista, cirurgia ou TIPS conforme causa/recurso.
 
 Varicosa até prova em contrário se:
@@ -84,7 +84,7 @@ Varicosa até prova em contrário se:
 Conduta de variz:
 
 - Octreotide/terlipressina assim que suspeitar, antes da EDA.
-- Antibiótico profilatico: ceftriaxone e clássico em cirrótico com HDA.
+- Antibiótico profilático: ceftriaxona é clássico em cirrótico com HDA.
 - EDA com ligadura elastica se variz esofágica.
 - Lactulose se encefalopatia, mas sem atrasar controle de sangramento.
 - Evite excesso de volume/transfusão: aumenta pressão portal e ressangramento.
@@ -98,7 +98,7 @@ Todo cirrótico internado com ascite nova, dor abdominal, febre, HDA, hipotensã
 PBE:
 
 - Diagnóstico: PMN no líquido ascítico >=250 cel/mm3, independentemente de cultura.
-- Tratamento clássico: ceftriaxone ou cefotaxime.
+- Tratamento clássico: ceftriaxona ou cefotaxima.
 - Albumina reduz risco renal/mortalidade em PBE de maior risco: 1,5 g/kg no dia 1 e 1 g/kg no dia 3.
 - Não espere cultura se o paciente está grave.
 
@@ -134,16 +134,16 @@ Conduta inicial:
 1. Analgesia forte, antiemético, jejum só enquanto vomita/dor intensa.
 2. Cristaloide balanceado, em geral Ringer lactato, com estratégia moderada e reavaliação.
 3. Procurar etiologia: biliar, álcool, triglicerídeos, cálcio, medicações, trauma, CPRE, escorpião.
-4. US de abdome para litiase biliar.
-5. Alimentacao oral/enteral precoce quando tolera; não precisa "zerar dieta" por dias.
-6. Antibiótico não é rotina em pancreatite esteril.
+4. US de abdome para litíase biliar.
+5. Alimentação oral/enteral precoce quando tolera; não precisa "zerar dieta" por dias.
+6. Antibiótico não é rotina em pancreatite estéril.
 7. TC precoce não é obrigatória se diagnóstico claro e evolução boa; considerar se dúvida, grave, falha de melhora ou complicação.
 8. CPRE urgente se colangite ou obstrução biliar persistente.
 
 Gravidade:
 
 - SIRS persistente, falência orgânica, hipotensão, hipoxemia, IRA, necrose/infecção, idade/comorbidade.
-- BISAP ajuda, mas o plantão manda: lactato, diurese, BUN/ureia, creatinina, hematocrito, oxigenação e pressão.
+- BISAP ajuda, mas o plantão manda: lactato, diurese, BUN/ureia, creatinina, hematócrito, oxigenação e pressão.
 
 > **Resposta de prova TEME:** pancreatite biliar sem colangite não vai automaticamente para CPRE urgente. Colangite muda tudo.
 
@@ -154,8 +154,8 @@ Gravidade:
 | cólica biliar | Dor HCD/epigástrio pós-prandial, sem febre/peritonite, labs normais | Analgesia, antiemético, US, cirurgia eletiva se recorrente |
 | Colecistite | Dor HCD >6 h, Murphy, febre/leuco, parede espessada/líquido perivesicular | Antibiótico + colecistectomia precoce se candidato |
 | Colangite | Febre + icterícia + dor HCD; grave se choque/confusão | Antibiótico + drenagem biliar/CPRE urgente |
-| Coledocolitiase | Icterícia/colestase, dilatação de via biliar, dor | Estratificar; CPRE se alto risco/colangite |
-| Hepatite aguda | Icterícia + transaminase muito alta, dor inespecifica | Suporte, etiologia, sinais de falência hepática |
+| Coledocolitíase | Icterícia/colestase, dilatação de via biliar, dor | Estratificar; CPRE se alto risco/colangite |
+| Hepatite aguda | Icterícia + transaminase muito alta, dor inespecífica | Suporte, etiologia, sinais de falência hepática |
 
 Colangite grave:
 
@@ -169,10 +169,10 @@ Colangite grave:
 
 - Migração da dor para FID, anorexia, náusea/vômito, febre baixa, dor localizada, peritonismo.
 - US pode ser primeiro em criança/gestante; TC com contraste em adulto se dúvida.
-- Antibiótico não deve ser postergado em paciente com suspeita relevante/perfuracao/sepse.
+- Antibiótico não deve ser postergado em paciente com suspeita relevante/perfuração/sepse.
 - Cirurgia é resposta clássica, especialmente complicada. Tratamento não operatório pode ser opção selecionada, mas não é "sem risco".
 
-**Gestante/mulher em idade fertil**
+**Gestante/mulher em idade fértil**
 
 - Sempre beta-hCG.
 - Ectópica: dor + atraso/sangramento/síncope; US transvaginal e gineco.
@@ -183,9 +183,9 @@ Colangite grave:
 
 - Dor FIG, febre, alteração intestinal; TC confirma e classifica.
 - Uncomplicada, imunocompetente, leve e sem sepse: pode não precisar antibiótico na prática atual.
-- Antibiótico se imunossuprimido, comorbido, sepse, sintomas importantes, abscesso, perfuração, obstrução ou falha de melhora.
-- Abscesso grande: drenagem percutanea quando possível.
-- Peritonite/instabilidade/perfuracao livre: cirurgia.
+- Antibiótico se imunossuprimido, comórbido, sepse, sintomas importantes, abscesso, perfuração, obstrução ou falha de melhora.
+- Abscesso grande: drenagem percutânea quando possível.
+- Peritonite/instabilidade/perfuração livre: cirurgia.
 
 > **Para prova TEME:** se alternativa antiga disser diverticulite aguda não complicada com antibiótico, cuidado com o ano/fonte. A prática atual aceita selecionar sem antibiótico; a banca pode cobrar conduta clássica ou atual conforme enunciado.
 
@@ -193,8 +193,8 @@ Colangite grave:
 
 **Obstrução intestinal**
 
-- Dor cólica, distensão, vômitos, parada de eliminacao de fezes/flatos.
-- Passado de cirurgia = aderência; hernia = encarceramento; idoso = neoplasia/volvo.
+- Dor cólica, distensão, vômitos, parada de eliminação de fezes/flatos.
+- Passado de cirurgia = aderência; hérnia = encarceramento; idoso = neoplasia/volvo.
 - Instável, peritonite, febre, leucocitose importante, lactato, dor contínua, pneumatoses ou ar portal = estrangulamento/isquemia.
 - Conduta: NPO, analgesia, cristaloide, corrigir eletrólitos, sonda se vômitos/distensão importante, TC com contraste, cirurgia se complicação.
 
@@ -205,13 +205,13 @@ Colangite grave:
 
 **Perfuração**
 
-- Dor súbita, peritonite, pneumoperitonio.
+- Dor súbita, peritonite, pneumoperitônio.
 - Antibiótico amplo, ressuscitação e cirurgia.
 - Úlcera perfurada pode aparecer como dor epigástrica com POCUS/RX sugerindo ar livre.
 
-**Isquemia mesenterica**
+**Isquemia mesentérica**
 
-- Dor desproporcional, FA, aterosclerose, baixo fluxo/choque, diarreia/sangue, lactato/acidosé tardios.
+- Dor desproporcional, FA, aterosclerose, baixo fluxo/choque, diarreia/sangue, lactato/acidose tardios.
 - AngioTC é exame-chave. Lactato normal não exclui.
 - Antibiótico, heparina se arterioembólica/trombose sem contra, cirurgia/intervenção vascular cedo.
 
@@ -219,7 +219,7 @@ Colangite grave:
 
 - Idoso, dor abdominal/lombar/síncope/choque. Nem sempre tem massa palpável.
 - POCUS aorta no instável; angioTC se tolera.
-- Não normalize PA as cegas se suspeita de ruptura; vascular agora.
+- Não normalize PA às cegas se suspeita de ruptura; vascular agora.
 
 ### 9. Urológicas que simulam abdome
 
@@ -252,16 +252,16 @@ Avalie gravidade:
 C. difficile:
 
 - Suspeite após antibiótico recente, internação, idade, IPP, dor cólica, febre, leucocitose.
-- Testar se diarreia não explicada, geralmente >=3 evacuações liquidas/24 h.
+- Testar se diarreia não explicada, geralmente >=3 evacuações líquidas/24 h.
 - Inicial não fulminante: fidaxomicina preferida nas diretrizes atuais; vancomicina VO alternativa muito usada.
-- Fulminante: hipotensão/choque, ileo ou megacólon = vancomicina VO/NG em dose alta + metronidazol EV; considerar vancomicina retal se ileo e cirurgia precoce se deteriora.
+- Fulminante: hipotensão/choque, íleo ou megacólon = vancomicina VO/NG em dose alta + metronidazol EV; considerar vancomicina retal se íleo e cirurgia precoce se deteriora.
 - Evitar loperamida em colite grave/tóxica.
 
 ## Conceitos que sustentam a conduta
 
 ### Dor tratada melhora diagnóstico
 
-O mito da analgesia que máscara abdome agudo ainda aparece em prova. No DE moderno, dor controlada permite exame seriado melhor. O que máscara diagnóstico e não reavaliar.
+O mito de que analgesia mascara abdome agudo ainda aparece em prova. No DE moderno, dor controlada permite exame seriado melhor. O que mascara o diagnóstico é não reavaliar.
 
 ### Abdome do idoso e do cirrótico fala baixo
 
@@ -295,7 +295,7 @@ flowchart TD
 flowchart TD
     A[HDA suspeita] --> B[ABCDE + 2 acessos + tipagem + Hb/coag + ressuscitar]
     B --> C{Cirrose/variz provável?}
-    C -->|Sim| D[Vasoativo + ceftriaxone + EDA precoce]
+    C -->|Sim| D[Vasoativo + ceftriaxona + EDA precoce]
     C -->|Não| E[PPI alta dose + EDA até 24h após estabilizar]
     D --> F{Choque persistente ou sangramento sem controle?}
     E --> F
@@ -308,7 +308,7 @@ flowchart TD
     A[Cirrótico no DE] --> B{Ascite + internação/dor/febre/HDA/HE/IRA?}
     B -->|Sim| C[Paracentese diagnóstica]
     C --> D{PMN >=250?}
-    D -->|Sim| E[Ceftriaxone/cefotaxime + albumina se alto risco]
+    D -->|Sim| E[Ceftriaxona/cefotaxima + albumina se alto risco]
     D -->|Não| F[Procurar outros gatilhos]
     A --> G{Confusao/sonolência?}
     G -->|Sim| H[Buscar gatilho + lactulose para 2-3 evacuações/dia]
@@ -354,7 +354,7 @@ flowchart TD
 | START urológico infecção + obstrução | Desobstrução urgente | Duplo J ou nefrostomia |
 | Torção testicular | Ideal <6 h | US não deve atrasar se clínica forte |
 | C. difficile inicial | Fidaxomicina 200 mg 12/12 h 10 d ou vanco VO 125 mg 6/6 h 10 d | Diretriz atual prefere fidaxomicina |
-| C. difficile fulminante | Vanco VO/NG 500 mg 6/6 h + metronidazol EV 500 mg 8/8 h | Considerar vanco retal se ileo |
+| C. difficile fulminante | Vanco VO/NG 500 mg 6/6 h + metronidazol EV 500 mg 8/8 h | Considerar vanco retal se íleo |
 | Lactato/isquemia | Normal não exclui | Dor desproporcional manda angioTC |
 | AAA | Diâmetro >=3 cm define aneurisma | Instável com suspeita = vascular/POCUS |
 
@@ -373,16 +373,16 @@ flowchart TD
 - **Leucograma normal exclui apendicite/diverticulite:** falso.
 - **FAST negativo descarta lesão abdominal:** falso, principalmente em paciente estável.
 - **Toda dor abdominal em mulher e apendicite até provar:** falso. beta-hCG primeiro.
-- **HDA em cirrótico espera EDA para iniciar vasoativo/ceftriaxone:** falso.
+- **HDA em cirrótico espera EDA para iniciar vasoativo/ceftriaxona:** falso.
 - **Antibiótico na HDA varicosa só se febre:** falso.
 - **Transfundir cirrótico para Hb normal:** falso; piora pressão portal e ressangramento.
 - **Amônia alta diagnostica encefalopatia isoladamente:** falso. Diagnóstico é clínico e por exclusão de gatilhos.
 - **Ascite sem dor não precisa paracentese se internou:** falso no cirrótico descompensado/internado.
 - **Pancreatite biliar sempre CPRE urgente:** falso sem colangite/obstrução persistente.
-- **Antibiótico profilatico em pancreatite necrotica esteril:** falso.
+- **Antibiótico profilático em pancreatite necrótica estéril:** falso.
 - **Colecistite e colangite são iguais:** falso. Colangite precisa pensar em drenagem biliar.
 - **Diverticulite sempre precisa antibiótico:** falso na prática atual para selecionados, mas leia o enunciado.
-- **Dor desproporcional com lactato normal exclui isquemia mesenterica:** falso.
+- **Dor desproporcional com lactato normal exclui isquemia mesentérica:** falso.
 - **Volvo de ceco resolve com colonoscopia:** falso em geral; sigmoide estável pode descomprimir.
 - **Pielonefrite obstrutiva é só antibiótico:** falso; precisa drenagem.
 - **Torção testicular espera Doppler se clínica forte:** falso.
@@ -393,10 +393,10 @@ flowchart TD
 - Dar analgesia fraca e parar de reexaminar.
 - Não pedir beta-hCG em mulher em idade fertil.
 - Atrasar TC/angioTC em idoso com dor vaga e fisiologia ruim.
-- Não reconhecer isquemia mesenterica porque o abdome "não parece tao ruim".
+- Não reconhecer isquemia mesentérica porque o abdome "não parece tão ruim".
 - Tratar colangite grave só com antibiótico, sem plano de drenagem.
 - Não fazer paracentese em cirrótico com ascite e confusão/febre/IRA/HDA.
-- Esquecer ceftriaxone em HDA varicosa.
+- Esquecer ceftriaxona em HDA varicosa.
 - Transfundir demais HDA cirrotica.
 - Dar diurético/nefrotoxico em cirrótico com IRA.
 - Atrasar desobstrução de ureter infectado.
@@ -405,7 +405,7 @@ flowchart TD
 
 ## Para prova vs na prática
 
-> **Para prova TEME:** analgesia é correta; leucograma normal não exclui abdome agudo; HDA varicosa = vasoativo + ceftriaxone + EDA; PBE = PMN >=250 e cefalosporina; pancreatite = suporte e CPRE apenas se colangite/obstrução; colangite = antibiótico + CPRE/drenagem; pielonefrite obstrutiva = antibiótico EV + desobstrução; torção testicular = clínica e urologia urgente.
+> **Para prova TEME:** analgesia é correta; leucograma normal não exclui abdome agudo; HDA varicosa = vasoativo + ceftriaxona + EDA; PBE = PMN >=250 e cefalosporina; pancreatite = suporte e CPRE apenas se colangite/obstrução; colangite = antibiótico + CPRE/drenagem; pielonefrite obstrutiva = antibiótico EV + desobstrução; torção testicular = clínica e urologia urgente.
 >
 > **Na prática clínica:** diverticulite leve não complicada pode ser manejada sem antibiótico em paciente selecionado; fidaxomicina é preferida para C. difficile inicial em diretrizes atuais, mas vancomicina VO segue muito usada por custo/acesso; estratégias de fluido na pancreatite são moderadas e guiadas por resposta, não "hidratar agressivo" sem reavaliar.
 
@@ -414,13 +414,13 @@ flowchart TD
 - [ ] Sei reconhecer abdome que mata: choque, peritonite, isquemia, perfuração, AAA, obstrução estrangulada.
 - [ ] Sei que analgesia não mascara diagnóstico.
 - [ ] Sei pedir beta-hCG em mulher em idade fertil.
-- [ ] Sei diferenciar HDA varicosa de não varicosa e iniciar vasoativo/ceftriaxone quando cirrose.
+- [ ] Sei diferenciar HDA varicosa de não varicosa e iniciar vasoativo/ceftriaxona quando cirrose.
 - [ ] Sei PMN >=250 para PBE e albumina 1,5/1,0 g/kg.
 - [ ] Sei lactulose para 2-3 evacuações/dia e busca de gatilho na encefalopatia.
 - [ ] Sei pancreatite: 2/3 critérios, RL moderado, sem antibiótico rotineiro, CPRE só se indicado.
 - [ ] Sei colecistite vs colangite.
 - [ ] Sei apendicite/diverticulite e quando TC/cirurgia entram.
-- [ ] Sei isquemia mesenterica: dor desproporcional e angioTC.
+- [ ] Sei isquemia mesentérica: dor desproporcional e angioTC.
 - [ ] Sei obstrução: sinais de estrangulamento e necessidade de cirurgia.
 - [ ] Sei ureter infectado obstruido e torção testicular.
 - [ ] Sei C. difficile inicial vs fulminante.

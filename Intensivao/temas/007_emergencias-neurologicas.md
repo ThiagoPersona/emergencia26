@@ -41,7 +41,7 @@
 2. **Status é operacionalmente >5 min:** não espere 30 min para tratar como emergência neurológica.
 3. **Benzodiazepínico em dose cheia:** midazolam IM/IN se sem acesso; lorazepam/diazepam IV se acesso. Repetir uma vez se necessário.
 4. **Se persiste após benzo:** segunda linha sem demora: fenitoína/fosfenitoina, levetiracetam ou valproato conforme disponibilidade e contraindicações.
-5. **refratário:** IOT, analgesia/sedação, anestésico contínuo, EEG quando disponível e UTI. Corrija etiologia em paralelo.
+5. **Refratário:** IOT, analgesia/sedação, anestésico contínuo, EEG quando disponível e UTI. Corrija etiologia em paralelo.
 
 > **Eclampsia:** crise convulsiva em gestante/puérpera é sulfato de magnésio, não fenitoína como primeira linha. Pense também em AVC/HSA/TVC se déficit focal, cefaleia explosiva ou rebaixamento persistente.
 
@@ -107,7 +107,7 @@ Antes de pensar em protocolo:
 4. Apneia persistente.
 5. Sem hipotermia, hipoxemia, choque, distúrbio metabólico grave ou droga depressora confundindo exame.
 
-> **Pegadinha de estação:** TCE grave + TC catastrofica + sem reflexos de tronco, mas hipotermico, hipoxêmico ou sob sedação relevante, não permite iniciar/concluir protocolo. Primeiro corrija confundidores e estabilize.
+> **Pegadinha de estação:** TCE grave + TC catastrófica + sem reflexos de tronco, mas hipotérmico, hipoxêmico ou sob sedação relevante, não permite iniciar/concluir protocolo. Primeiro corrija confundidores e estabilize.
 
 ### 8. Vertigem e déficit posterior
 
@@ -253,7 +253,7 @@ flowchart TD
 - **NIHSS baixo = sem trombólise:** errado se déficit e incapacitante. O que não se trombolisa e déficit leve não incapacitante.
 - **Crise no início exclui AVC:** não exclui; pode ser AVC com crise ou paresia de Todd. A decisão depende do déficit residual e da imagem.
 - **Esperar INR/plaqueta de todo mundo para trombolisar:** se não há suspeita de anticoagulação/coagulopatia, não atrasar. Em varfarina/heparina/coagulopatia, precisa checar.
-- **Baixar PA forte no AVCi sem reperfusão:** pode piorar penumbra. Trate agressivamente só sé indicação específica.
+- **Baixar PA forte no AVCi sem reperfusão:** pode piorar penumbra. Trate agressivamente só se houver indicação específica.
 - **Trombectomia até 24 h para qualquer AVC:** precisa LVO e selecao por imagem/critérios.
 - **DWI-FLAIR mismatch obrigatório para trombectomia:** não. Ele ajuda em wake-up stroke e trombólise selecionada; trombectomia depende de LVO, janela e imagem de tecido.
 - **Benzodiazepínico subdosado no status:** dose quebrada falha; faça dose plena e avance para segunda linha.
@@ -287,7 +287,7 @@ flowchart TD
 | AVCi trombólise | Alteplase 0,9 mg/kg até 4h30, TC sem sangramento, PA <185/110 | Muitos centros usam tenecteplase 0,25 mg/kg em protocolos; alinhar com neurologia, PCDT, farmacia e bula/local |
 | AVCi leve | Não trombolisar déficit leve sem incapacidade | Afasia, hemianopsia, mão dominante, ataxia incapacitante ou profissao podem tornar "leve" clinicamente relevante |
 | Trombectomia | NIHSS >=6, ASPECTS >=6, LVO, janela até 6 h; até 24 h selecionado | Imagem avançada, transferência e discussão com centro de AVC decidem muito |
-| PA no AVCi | <185/110 antes e <180/105 depois do litico; sem litico tratar se >=220/120 | Ajustar se dissecção, IAM, EAP, encefalopatia hipertensiva ou trombectomia |
+| PA no AVCi | <185/110 antes e <180/105 depois do lítico; sem lítico tratar se >=220/120 | Ajustar se dissecção, IAM, EAP, encefalopatia hipertensiva ou trombectomia |
 | HIP | PAS alvo 140, manter 130-150 se leve-moderada | Evitar queda brusca; individualizar em hematoma grande, HIC, cirurgia e comorbidades |
 | HSA | TC; se suspeita persiste, investigar; nimodipina e neurocirurgia | LP, angioTC, RM e fluxo local variam conforme tempo da cefaleia e qualidade da TC |
 | Status epilepticus | Benzo dose cheia, depois fenitoína/fosfenitoina/levetiracetam/valproato | Levetiracetam e valproato cresceram por praticidade; fenitoína segue muito cobrada |
@@ -298,7 +298,7 @@ flowchart TD
 
 - [ ] Sei fazer abordagem inicial de coma/déficit focal/crise sem esquecer glicemia.
 - [ ] Sei dose e janela de alteplase e quando lembrar da tenecteplase.
-- [ ] Sei metas de PA no AVCi com litico, AVCi sem litico e HIP.
+- [ ] Sei metas de PA no AVCi com lítico, AVCi sem lítico e HIP.
 - [ ] Sei critério básico de trombectomia e que janela estendida exige selecao.
 - [ ] Sei tratar status em fases e não ficar preso em benzodiazepínico.
 - [ ] Sei quando TC deve vir antes da LP.

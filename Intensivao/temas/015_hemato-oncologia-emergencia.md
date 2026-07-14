@@ -40,7 +40,7 @@ Conduta:
 1. Reconheceu? Isolamento/proteção, ABCDE e sepse.
 2. Coletar culturas periféricas e de cateter se presentes, mas não atrasar antibiótico.
 3. Antibiótico EV antipseudomonas em até 60 min: cefepime, piperacilina-tazobactam ou meropenem/imipenem conforme risco local.
-4. Adicionar vancomicina apenas sé indicação: choque/instabilidade, pneumonia, pele/partes moles, cateter, mucosite grave, MRSA conhecido ou Gram+ em cultura.
+4. Adicionar vancomicina apenas se houver indicação: choque/instabilidade, pneumonia, pele/partes moles, cateter, mucosite grave, MRSA conhecido ou Gram+ em cultura.
 5. Alto risco = internar: choque, comorbidade, pneumonia, dor abdominal, mucosite intensa, ANC muito baixo/prolongado, disfunção renal/hepática, leucemia/transplante, MASCC <21, CISNE >=3.
 6. Baixo risco selecionado pode ir ambulatorial depois de dose inicial, observação e garantia de retorno: fluoroquinolona + amoxicilina/clavulanato e seguimento próximo, conforme protocolo.
 
@@ -144,7 +144,7 @@ Conduta:
 - Transfusão simples se queda de Hb importante, hipoxemia, multilobar ou piora; não elevar Hb acima de 10-11.
 - Exsanguineotransfusão se grave: hipoxemia importante, falência respiratória, multilobar, deterioração, AVC ou Hb alta que impede transfusão simples.
 
-> **Resposta de prova TEME25:** criança HbSS com febre, dor torácica, infiltrado e Hb caiu de 8,2 para 6,5: ceftriaxone + azitromicina + O2 alvo >=94% e considerar transfusão pela queda >=2 g/dL.
+> **Resposta de prova TEME25:** criança HbSS com febre, dor torácica, infiltrado e Hb caiu de 8,2 para 6,5: ceftriaxona + azitromicina + O2 alvo >=94% e considerar transfusão pela queda >=2 g/dL.
 
 ### 7. Reação transfusional
 
@@ -354,7 +354,7 @@ flowchart TD
 
 ## Para prova vs na prática
 
-> **Para prova TEME:** neutropenia febril = antibiótico antipseudomonas precoce; TLS = hiperK/hiperP/úrico alto/hipocalcemia/IRA em linfoma agressivo; SVCS grave pode comprometer via aérea/cérebro; STA falciforme = O2, ceftriaxone + azitro e transfusão se queda de Hb; reação transfusional = parar transfusão; ICH em varfarina = 4F-PCC + vitamina K.
+> **Para prova TEME:** neutropenia febril = antibiótico antipseudomonas precoce; TLS = hiperK/hiperP/úrico alto/hipocalcemia/IRA em linfoma agressivo; SVCS grave pode comprometer via aérea/cérebro; STA falciforme = O2, ceftriaxona + azitro e transfusão se queda de Hb; reação transfusional = parar transfusão; ICH em varfarina = 4F-PCC + vitamina K.
 >
 > **Na prática clínica:** protocolos locais definem cefepime vs pip-tazo vs meropenem, dose fixa de rasburicase, uso de andexanet e metas transfusionais. Em oncologia, histologia antes de corticoide/radioterapia importa quando o paciente está estável; quando via aérea, medula ou cérebro estão em risco, a emergência manda.
 
@@ -386,7 +386,7 @@ flowchart TD
 - **TEME25 Q29:** linfoma de Burkitt em quimioterapia com hiperK, hiperP, úrico alto, hipocalcemia e IRA: síndrome de lise tumoral.
 - **TEME25:** reação transfusional com TRALI/TACO/anafilaxia/sepse: parar transfusão e tratar fenótipo.
 - **TEME25 Q69:** AVC hemorrágico e reversão de coagulopatias/anticoagulantes.
-- **TEME25 Q72:** síndrome torácica aguda em criança HbSS: ceftriaxone + azitromicina, O2 e considerar transfusão se queda de Hb.
+- **TEME25 Q72:** síndrome torácica aguda em criança HbSS: ceftriaxona + azitromicina, O2 e considerar transfusão se queda de Hb.
 
 ## Referências
 

@@ -2,18 +2,18 @@
 
 ## Leitura de 30 segundos
 
-- APH comeca antes do ABCDE: segurança da cena, EPI, posicionamento da viatura, avaliação de riscos, número de vítimas e pedido precoce de recursos.
+- APH começa antes do ABCDE: segurança da cena, EPI, posicionamento da viatura, avaliação de riscos, número de vítimas e pedido precoce de recursos.
 - No SAMU, o médico regulador não é telefonista: ele classifica gravidade, orienta, decide recurso, acompanha atendimento/transporte e define destino dentro da rede.
 - IMV é medicina de massa: se os recursos são insuficientes, a meta muda de "melhor para cada um" para "maior benefício para o maior número".
 - START de adulto: anda = verde; não respira após abrir via aérea = preto; respira após abrir = vermelho; FR >30, perfusão ruim ou não obedece comandos = vermelho; o restante = amarelo.
-- Transporte e intervenção de risco: estabilize o que mata agora, escolha o recurso correto, comunique destino e registre mudanças. Grave/riscos exige equipe e ambulância compatíveis.
+- Transporte e intervenção de risco: estabilize o que mata agora, escolha o recurso correto, comunique destino e registre mudanças. Paciente grave/de risco exige equipe e ambulância compatíveis.
 - Temas ambientais que caem: afogamento = ventilação/rescue breaths; intermação = resfriar cedo; altitude = parar subida/descer; mergulho = O2 100%; hipotermia = manuseio gentil e aquecimento de tronco.
 
 ## Por que cai
 
 - **Recorrência em provas/estações:** TEME22-25 cobrou cena de rodovia, cinemática, explosão, transporte aeromédico, mergulho/descompressão, altitude, afogamento, atendimento tático, intermação, papel do médico regulador e logística em contexto remoto/rural.
-- **O que a banca costuma testar:** prioridade da primeira equipe, diferença entre APH é tratamento definitivo, START/SCI, "vaga zero", responsabilidades do regulador/transporte/receptor, zonas taticas, blast injury e condutas ambientais simples.
-- **Como costuma aparecer:** caso cheio de distratores. A resposta certa geralmente protege equipe, organiza recurso, comúnica a rede e não faz procedimento heroico em cena insegura ou com acesso limitado.
+- **O que a banca costuma testar:** prioridade da primeira equipe, diferença entre APH e tratamento definitivo, START/SCI, "vaga zero", responsabilidades do regulador/transporte/receptor, zonas táticas, óbito em cena, preservação de vestígios, blast injury e condutas ambientais simples.
+- **Como costuma aparecer:** caso cheio de distratores. A resposta certa geralmente protege equipe, organiza recurso, comunica a rede e não faz procedimento heroico em cena insegura ou com acesso limitado.
 
 ## Abordagem prática
 
@@ -32,7 +32,7 @@ Use uma mensagem tipo METHANE:
 |---|---|---|
 | M | Major incident? | "Possível IMV" |
 | E | Exact location | Rodovia, km, sentido, acesso |
-| T | Type of incident | Capotamento, explosão, colisao multipla |
+| T | Type of incident | Capotamento, explosão, colisão múltipla |
 | H | Hazards | Fogo, produto químico, violência, eletricidade |
 | A | Access/egress | Melhor entrada e saída |
 | N | Number/severity | Número estimado e cores/críticos |
@@ -40,14 +40,14 @@ Use uma mensagem tipo METHANE:
 
 Crítico para transporte rápido:
 
-- Via aérea ameacada ou ventilação inadequada.
+- Via aérea ameaçada ou ventilação inadequada.
 - FR <10 ou >29, dispneia importante, tórax instável/deformidade grave.
 - Sangramento ativo que exige torniquete, compressão ou tamponamento.
 - Choque, mesmo compensado.
 - Alteração de consciência, convulsão, déficit neurológico novo ou suspeita de TRM.
 - Trauma penetrante exceto extremidade distal isolada.
 - Amputação ou quase amputação proximal a punho/tornozelo.
-- Extricacao prolongada, ejeccao, morte no mesmo compartimento ou intrusao importante.
+- Extricação prolongada, ejeção, morte no mesmo compartimento ou intrusão importante.
 
 > **Resposta de prova TEME:** a primeira equipe em cena não "sai tratando todo mundo". Ela protege a cena, dimensiona, pede recurso, organiza e só então executa intervenções que mudam sobrevida/transporte.
 
@@ -55,10 +55,10 @@ Crítico para transporte rápido:
 
 O fluxo mental:
 
-1. TARM identifica solicitante, local, callback e dados basicos.
+1. TARM identifica solicitante, local, callback e dados básicos.
 2. Todo pedido de socorro de urgência deve chegar ao médico regulador.
-3. O regulador interroga, estima gravidade, da orientação, classifica prioridade e decide recurso.
-4. Pode resolver por orientação, enviar USB, USA, motolancia, aeromédico/hidroviario ou articular outro recurso.
+3. O regulador interroga, estima gravidade, dá orientação, classifica prioridade e decide recurso.
+4. Pode resolver por orientação, enviar USB, USA, motolância, aeromédico/hidroviário ou articular outro recurso.
 5. Acompanha a equipe, reavalia com dados da cena, define destino e avisa/repassa informações ao receptor.
 6. Registra decisões, horários, orientações e intercorrências.
 
@@ -66,14 +66,37 @@ O que cai:
 
 - O regulador tem função técnica e gestora.
 - A central regula acesso ao APH e aos serviços hospitalares de urgência.
-- experiência como intervencionista/urgência ajuda a estimar gravidade e coordenar recursos. Isso apareceu como armadilha no TEME25.
-- Transporte e transferência não são responsabilidade "exclusiva" de uma ponta. Origem, regulador, equipe de transporte e receptor tem deveres proprios.
+- Experiência como intervencionista/urgência ajuda a estimar gravidade e coordenar recursos. Isso apareceu como armadilha no TEME25.
+- Transporte e transferência não são responsabilidade "exclusiva" de uma ponta. Origem, regulador, equipe de transporte e receptor têm deveres próprios.
 
 **Vaga zero, em uma linha:** em urgência com risco iminente e necessidade de recurso especializado, a unidade receptora deve acatar a determinação do médico regulador, independentemente de leito vago, com comunicação, registro e continuidade do cuidado.
 
 > **Na prática clínica:** "vaga zero" não é autorização para jogar paciente sem estabilização, sem informação ou sem plano. É ferramenta regulatória excepcional para garantir acesso quando não aceitar o paciente seria mais perigoso.
 
-### 3. Transporte terrestre e aeromédico
+### 3. Cena legal, óbito e debriefing
+
+APH também é cenário legal e emocional. A equipe precisa tratar o paciente sem destruir informação importante nem abandonar o cuidado com quem atende.
+
+**Preservação de cena e vestígios:**
+
+- Em violência, suicídio, morte suspeita, atropelamento, arma de fogo, arma branca ou abuso, preserve a cena tanto quanto a assistência permitir.
+- Não mexa em objetos, roupas, armas, cápsulas, medicamentos, bilhetes ou posição do corpo sem necessidade assistencial ou segurança.
+- Se precisar mover algo para salvar vida ou proteger equipe, registre o motivo e comunique regulação/autoridade.
+- Evite levar contaminação química/biológica para ambulância e hospital; descontaminação é parte da segurança da rede.
+
+**Óbito em cena:**
+
+- Segurança da cena primeiro; depois confirme sinais incompatíveis com vida ou critérios locais de não iniciar/suspender RCP.
+- Em morte evidente, risco ativo ou situação legal suspeita, acione regulação e autoridade competente conforme protocolo local.
+- Não transforme morte evidente em transporte improvisado para "resolver no hospital"; registre achados, horários, orientação recebida e responsáveis presentes.
+
+**Debriefing e segurança psicológica:**
+
+- Após caso grave, IMV, morte pediátrica, violência ou evento com falha operacional, faça debriefing curto e estruturado.
+- O foco é aprendizado e segurança: o que aconteceu, o que funcionou, o que falhou, riscos pendentes e quem precisa de apoio.
+- Debriefing não é caça a culpados; é ferramenta de CRM, comunicação e proteção da equipe.
+
+### 4. Transporte terrestre e aeromédico
 
 Antes de sair:
 
@@ -89,7 +112,7 @@ Inter-hospitalar de paciente grave:
 - Avaliação médica antes da remoção.
 - Estabilização respiratória e hemodinâmica antes do transporte sempre que possível.
 - Paciente grave ou de risco deve ir com equipe compatível, em geral suporte avançado com médico, enfermagem e condutor.
-- Se o transporte for tecnicamente impossivel conforme a regra ideal, compare risco de transportar versus risco de permanecer sem recurso.
+- Se o transporte for tecnicamente impossível conforme a regra ideal, compare risco de transportar versus risco de permanecer sem recurso.
 
 Aeromédico que a banca gosta:
 
@@ -97,7 +120,7 @@ Aeromédico que a banca gosta:
 |---|---|
 | Primário | Equipe/aeronave vai até a cena |
 | Secundário | Transferência inter-hospitalar |
-| Asa rotativa | Acesso remoto/urbano, resgate, pouso próximo; pouca cabine, ruido, vibracao |
+| Asa rotativa | Acesso remoto/urbano, resgate, pouso próximo; pouca cabine, ruído, vibração |
 | Asa fixa | Distância maior, mais velocidade, cabine melhor; exige pista e transbordos |
 | Altitude | Pressão cai e gases expandem na subida |
 | Pneumotórax | Tratar/drenar antes do voo se risco relevante; estar pronto para descompressão |
@@ -107,14 +130,14 @@ Aeromédico que a banca gosta:
 Segurança com helicóptero:
 
 - Zona de pouso isolada, sem pessoas/veículos próximos.
-- Aproximar apenas com autorização da tripulacao.
+- Aproximar apenas com autorização da tripulação.
 - Aproximar pela frente/lateral, abaixado, com objetos abaixo dos ombros.
 - Nunca aproximar pela cauda.
 - Em terreno inclinado, aproximar pelo lado mais baixo.
 
-### 4. IMV, SCI e desastres
+### 5. IMV, SCI e desastres
 
-IMV e quando a demanda ultrapassa a resposta disponível. O primeiro erro e transferir o caos para o hospital mais próximo.
+IMV é quando a demanda ultrapassa a resposta disponível. O primeiro erro é transferir o caos para o hospital mais próximo.
 
 Primeira equipe:
 
@@ -122,14 +145,14 @@ Primeira equipe:
 2. Confirmar segurança e zonas.
 3. Dimensionar número de vítimas e recursos.
 4. Comunicar regulação/defesa civil/bombeiros/hospitais.
-5. Criar área de concentracao de vítimas (ACV), triagem, tratamento e transporte.
+5. Criar área de concentração de vítimas (ACV), triagem, tratamento e transporte.
 6. Distribuir pacientes por capacidade da rede, não por impulso.
 
 Sistema de Comando de Incidentes (SCI/ICS):
 
-- Estrutura modular: comando, operações, planejamento, logística e administracao/financas.
+- Estrutura modular: comando, operações, planejamento, logística e administração/finanças.
 - Pode ser comando único ou unificado.
-- Span of control clássico: 1-7 subordinados por lider; 5 é o número ideal.
+- Span of control clássico: 1-7 subordinados por líder; 5 é o número ideal.
 - Objetivo: usar recursos disponíveis de forma eficiente, com linguagem comum e cadeia clara.
 
 Regra de ouro:
@@ -140,9 +163,9 @@ Regra de ouro:
 | Recursos insuficientes | Sobrevida do maior número |
 | Hospital em sobrecarga | Triagem reversa, alta segura, expansão de área e fluxo |
 
-### 5. START adulto
+### 6. START adulto
 
-START e triagem rápida, não tratamento completo. Em geral, 60-90 segundos por vítima.
+START é triagem rápida, não tratamento completo. Em geral, 60-90 segundos por vítima.
 
 1. **Consegue andar?** Verde.
 2. **Não anda e não respira:** abrir via aérea.
@@ -160,7 +183,7 @@ Categorias:
 | Verde | Mínimo | Deambula, baixo risco imediato |
 | Amarelo | Tardio | Grave, mas pode esperar horas |
 | Vermelho | Imediato | Intervenção/transporte em minutos |
-| Preto | Obito/expectante | Sem chance com recurso disponível ou sem respiração após abertura |
+| Preto | Óbito/expectante | Sem chance com recurso disponível ou sem respiração após abertura |
 
 Limites:
 
@@ -168,7 +191,7 @@ Limites:
 - CBRN/HazMat pode exigir triagem/descontaminação específica.
 - Triagem muda com tempo e recursos. Re-triagem é obrigatória.
 
-### 6. Atendimento tático
+### 7. Atendimento tático
 
 | Zona | Prioridade | O que fazer |
 |---|---|---|
@@ -176,9 +199,9 @@ Limites:
 | Ameaça indireta / warm zone | MARCH | Hemorragia massiva, via aérea, respiração, circulação, hipotermia/head |
 | Evacuação / cold zone | APH convencional | ABCDE, analgesia, imobilização seletiva, transporte e comunicação |
 
-Na hot zone, não perca tempo com via aérea invasiva, RCP completa ou restrição espinhal formal. Se ainda há tiro/risco ativo, o tratamento e mover e controlar hemorragia que mata em minutos.
+Na hot zone, não perca tempo com via aérea invasiva, RCP completa ou restrição espinhal formal. Se ainda há tiro/risco ativo, o tratamento é mover e controlar hemorragia que mata em minutos.
 
-### 7. HazMat, CBRN e descontaminação
+### 8. HazMat, CBRN e descontaminação
 
 Sequência:
 
@@ -191,33 +214,33 @@ Sequência:
 
 Pegada de prova: vítima contaminada não deve contaminar equipe, ambulância, sala vermelha e outros pacientes. Cena insegura é indicação de recuar, não de "coragem".
 
-### 8. Explosão, esmagamento e queimaduras em cena
+### 9. Explosão, esmagamento e queimaduras em cena
 
 Explosão:
 
 | Tipo | Mecanismo | Exemplo que cai |
 |---|---|---|
-| Primária | Onda de pressão | Ruptura timpânica, barotrauma pulmonar, concussao |
-| secundária | Fragmentos/projeteis | Ferimentos penetrantes, lacerações |
+| Primária | Onda de pressão | Ruptura timpânica, barotrauma pulmonar, concussão |
+| Secundária | Fragmentos/projéteis | Ferimentos penetrantes, lacerações |
 | Terciária | Corpo arremessado/esmagado | Fraturas, trauma contuso |
-| Quaternaria | Calor/gases/ambiente | Queimaduras, inalação, intoxicação |
+| Quaternária | Calor/gases/ambiente | Queimaduras, inalação, intoxicação |
 | Quinaria | Agentes adicionados | Químico, biológico, radiológico |
 
 Esmagamento/rabdomiólise em APH:
 
 - Controle hemorragia e dor.
-- Pense em hiperK antes/depois de extricacao prolongada.
-- Acesso, ECG, cristaloide se indicado e coordenacao com destino.
+- Pense em hiperK antes/depois de extricação prolongada.
+- Acesso, ECG, cristaloide se indicado e coordenação com destino.
 - Não libere vítima de esmagamento prolongado sem plano de sala vermelha/nefro/UTI se risco alto.
 
-Queimadura/elétrica/quimica:
+Queimadura/elétrica/química:
 
 - Cena primeiro: eletricidade e produto químico matam equipe.
-- Resfriar queimadura térmica recente, remover roupas/acessorios não aderidos, analgesia, cobrir limpo/seco.
+- Resfriar queimadura térmica recente, remover roupas/acessórios não aderidos, analgesia, cobrir limpo/seco.
 - Alta voltagem, inalação, trauma associado, face/mãos/genital, grandes áreas ou criança = regular para centro adequado.
-- Em queimadura química: descontaminar conforme agente e protocolo local; não neutralizar as cegas.
+- Em queimadura química: descontaminar conforme agente e protocolo local; não neutralizar às cegas.
 
-### 9. Ambiental e áreas remotas
+### 10. Ambiental e áreas remotas
 
 **Afogamento**
 
@@ -230,10 +253,10 @@ Queimadura/elétrica/quimica:
 **Intermação/heat stroke**
 
 - Suspeite se hipertermia + alteração neurológica, especialmente após esforço/calor.
-- Antitermico não resolve.
+- Antitérmico não resolve.
 - ABCDE e resfriamento agressivo. Se houver estrutura para resfriar, "cool first, transport second" é a mensagem de prova.
 - Imersão em água fria é o método mais rápido quando viável; evaporativo/gelo em axila-virilha-pescoço se não.
-- Alvo prático: interromper resfriamento quando temperatura central chegar perto de 38,6-39 C ou houver melhora/protocolo local.
+- Alvo prático: interromper resfriamento quando temperatura central chegar perto de 38,6-39 °C ou houver melhora/protocolo local.
 
 **Altitude**
 
@@ -252,7 +275,7 @@ Queimadura/elétrica/quimica:
 
 **Hipotermia**
 
-- Hipotermia acidental: temperatura central <=35 C ou quadro compatível quando não dá para medir bem.
+- Hipotermia acidental: temperatura central <=35 °C ou quadro compatível quando não dá para medir bem.
 - Manuseio gentil, retirar do frio, remover roupa molhada, barreira de vapor/isolamento e aquecer tronco.
 - Moderada/grave: monitorização, evitar movimento brusco e aquecimento periférico isolado que favorece afterdrop.
 - Se aparentemente sem pulso, checar pulso por até 1 minuto antes de iniciar RCP.
@@ -262,7 +285,7 @@ Queimadura/elétrica/quimica:
 
 ### Cena segura é tratamento
 
-Equipe ferida vira mais vítima e reduz capacidade do sistema. Em APH, "entrar rápido" só e bom quando entrar e seguro. O primeiro procedimento pode ser estacionar bem, pedir recurso e isolar risco.
+Equipe ferida vira mais vítima e reduz capacidade do sistema. Em APH, "entrar rápido" só é bom quando entrar é seguro. O primeiro procedimento pode ser estacionar bem, pedir recurso e isolar risco.
 
 ### Regulação e ato médico
 
@@ -286,7 +309,7 @@ flowchart TD
     D --> E{IMV provável?}
     E -->|Sim| F[Estabelecer comando + comunicar METHANE + ACV]
     E -->|Não| G[XABCDE e intervenções que salvam transporte]
-    F --> H[Triagem START + tratamento mínimo + transporte distribuido]
+    F --> H[Triagem START + tratamento mínimo + transporte distribuído]
     G --> I[Decidir destino, recurso e comunicar regulação]
     H --> I
 ```
@@ -295,7 +318,7 @@ flowchart TD
 flowchart TD
     A[Chamado 192] --> B[TARM: local, solicitante, telefone, dados básicos]
     B --> C{Pedido de socorro de urgência?}
-    C -->|Não/informacao simples| D[Orientação e registro conforme protocolo]
+    C -->|Não/informação simples| D[Orientação e registro conforme protocolo]
     C -->|Sim| E[Médico regulador]
     E --> F[Interrogatório + classificação + orientação]
     F --> G{Recurso necessário?}
@@ -335,30 +358,30 @@ flowchart TD
 
 ## Doses, alvos e números
 
-| Item | Número | observação TEME |
+| Item | Número | Observação TEME |
 |---|---:|---|
 | START por vítima | 60-90 s | Triagem rápida, não atendimento completo |
 | START vermelho | FR >30/min | Ou respira após abrir VA, perfusão ruim, não obedece comando |
 | START perfusão ruim | Sem pulso radial ou TEC >2 s | Depende do protocolo/local |
 | START preto | Não respira após abrir VA | Em recurso insuficiente |
-| SCI span of control | 1-7; ideal 5 | Banca cobrou estrutura flexivel |
+| SCI span of control | 1-7; ideal 5 | Banca cobrou estrutura flexível |
 | Queda de altura alto risco | >3 m | Cinemática de trauma |
-| Intrusao veicular alto risco | >0,3 m no ocupante ou >0,5 m em qualquer área | Alem de extricacao, ejeccao, morte no mesmo compartimento |
+| Intrusão veicular alto risco | >0,3 m no ocupante ou >0,5 m em qualquer área | Além de extricação, ejeção, morte no mesmo compartimento |
 | SpO2 trauma/crítico APH | >=94% | O2 e ventilação, depois titular |
 | Aeromédico não pressurizado | Até 10.000 ft clássico | TEME22 Q66 foi anulada, cuidado com absolutos |
-| Cabine pressurizada | 5.000-8.000 ft usual | Não afirmar que e nível do mar |
+| Cabine pressurizada | 5.000-8.000 ft usual | Não afirmar que é nível do mar |
 | Helicóptero | 30 m zona livre; espectadores 60 m; sem correr/fumar 15 m | Números de aula |
 | Pressão no mergulho | +1 atm/10 m + 1 atm superfície | 40 m ~= 5 ATA |
 | Narcose por nitrogênio | Típica a partir de 30 m | Parece embriaguez |
 | DCS/mergulho | O2 100%; MNR 15 L/min se sem demand valve | Chamar medicina hiperbárica/DAN |
-| Altitude risco | >2.500 m em não aclimatado | Pode ocorrer mais baixo em suscetiveis |
+| Altitude risco | >2.500 m em não aclimatado | Pode ocorrer mais baixo em suscetíveis |
 | AMS TEME | Descer pelo menos 300 m se sintomático relevante | Descida é mais efetiva |
-| Heat stroke | SNC alterado + hipertermia | Antitermico não trata |
-| Alvo de resfriamento | 38,6-39 C | Evitar overcooline; seguir protocolo |
+| Heat stroke | SNC alterado + hipertermia | Antitérmico não trata |
+| Alvo de resfriamento | 38,6-39 °C | Evitar resfriamento excessivo; seguir protocolo |
 | Afogamento | 5 ventilações iniciais em apneico/inconsciente | Não drenar água |
 | observação afogamento | 4-6 h atual; até 8 h aula local | Se normal e sem deterioração |
-| Hipotermia | <=35 C | Diagnóstico clínico se sem termometro confiável |
-| Hipotermia grave | <28 C | Alto risco de arritmia/PCR |
+| Hipotermia | <=35 °C | Diagnóstico clínico se sem termômetro confiável |
+| Hipotermia grave | <28 °C | Alto risco de arritmia/PCR |
 | Checar pulso hipotermia | Até 1 min | Antes de declarar sem pulso |
 | Queimadura importante adulto | >20% SCQ | Aula local; depende de contexto e recurso |
 | Queimadura importante criança | >10% SCQ | Regular para centro adequado |
@@ -372,26 +395,27 @@ flowchart TD
 - **Mergulho/altitude:** doença descompressiva = O2 alto fluxo e hiperbárica; narcose por nitrogênio aparece em profundidade; mal agudo de altitude melhora com pausa/descida.
 - **Temperatura:** heat stroke = resfriar antes de transportar se possível; hipotermia grave muda ritmo de desfibrilação e exige reaquecimento.
 - **Regulação:** vaga zero existe para risco iminente em unidade sem recurso resolutivo; não é favor, é responsabilidade sistêmica.
+- **Cena legal:** assistência vem primeiro, mas vestígios, óbito suspeito e cadeia de comunicação precisam ser preservados.
 
 ## Pegadinhas TEME
 
 - **Cena insegura e "ABCDE heroico":** falso. Segurança vem antes.
 - **Primeira equipe em IMV deve iniciar tratamento detalhado:** falso. Primeiro comando, dimensionamento, recursos e triagem.
-- **IMV = salvar o paciente mais grave sempre:** falso se recurso insuficiente; e maior benefício coletivo.
+- **IMV = salvar o paciente mais grave sempre:** falso se recurso insuficiente; é maior benefício coletivo.
 - **START verde e paciente sem lesão:** falso. Verde deambula, mas ainda precisa reavaliação.
-- **Não respira = preto imediatamente:** em START adulto, abra via aérea primeiro; se passar a respirar, e vermelho.
-- **FR 28 no START e vermelho:** não pelo critério respiratório isolado; vermelho se >30 ou outros critérios.
+- **Não respira = preto imediatamente:** em START adulto, abra via aérea primeiro; se passar a respirar, é vermelho.
+- **FR 28 no START é vermelho:** não pelo critério respiratório isolado; vermelho se >30 ou outros critérios.
 - **START serve para qualquer CBRN/HazMat:** cuidado. Pode haver algoritmo e descontaminação específicos.
-- **SCI e estrutura fixa e burocrática:** falso. É modular e escalável.
-- **Span ideal do SCI e 12 por lider:** falso. Ideal clássico e 5.
+- **SCI é estrutura fixa e burocrática:** falso. É modular e escalável.
+- **Span ideal do SCI é 12 por líder:** falso. Ideal clássico é 5.
 - **Médico regulador só aciona viatura:** falso. Ele orienta, classifica, acompanha, decide recurso/destino e coordena fluxo.
-- **Transferência assistida e responsabilidade exclusiva do regulador:** falso. Origem, transporte, regulação e receptor compartilham deveres.
+- **Transferência assistida é responsabilidade exclusiva do regulador:** falso. Origem, transporte, regulação e receptor compartilham deveres.
 - **Vaga zero dispensa estabilização/comunicação:** falso.
 - **Aeronave pressurizada sempre equivale a nível do mar:** falso. Cabine costuma ficar em altitude equivalente.
 - **Pneumotórax pequeno sempre pode voar sem plano:** falso. Avalie risco, pressão, ventilação positiva e capacidade de descompressão.
 - **Intermação se trata com antitérmico e transporte imediato:** falso. Resfriamento agressivo é prioridade.
 - **Afogamento: virar de cabeça para baixo para tirar água:** falso. Ventile.
-- **Doença descompressiva leve pode apenas observar:** falso na prova. O2 100% e contato hiperbarico.
+- **Doença descompressiva leve pode apenas observar:** falso na prova. O2 100% e contato hiperbárico.
 - **Ruptura timpânica em explosão é lesão secundária:** falso. É primária.
 - **Hot zone tática pede RCP/VA invasiva:** falso. Controle hemorragia exsanguinante e evacue.
 
@@ -404,10 +428,11 @@ flowchart TD
 - Transportar intubado sem O2/bateria/aspiração/droga suficiente.
 - Não reconhecer IMV e levar todos para o hospital mais próximo.
 - Misturar área contaminada com ambulância/sala vermelha.
+- Desorganizar cena de crime/óbito suspeito sem necessidade assistencial ou registro.
 - Errar triagem por compaixão individual e gastar recurso escasso no expectante.
 - Não reavaliar verde/amarelo que deteriora.
 - Levar paciente de mergulho/altitude/calor para observação simples sem tratar fisiologia tempo-dependente.
-- Aquecer hipotermico grave movimentando demais e aquecendo periferia isoladamente.
+- Aquecer hipotérmico grave movimentando demais e aquecendo periferia isoladamente.
 
 ## Para prova vs na prática
 
@@ -417,13 +442,15 @@ flowchart TD
 
 ## Checklist de revisão
 
-- [ ] Sei que APH comeca por segurança, cena, EPI e recursos.
+- [ ] Sei que APH começa por segurança, cena, EPI e recursos.
 - [ ] Sei comunicar IMV com METHANE.
 - [ ] Sei diferenciar APH normal de medicina de massa.
 - [ ] Sei montar mentalmente comando, ACV, triagem, tratamento e transporte.
 - [ ] Sei START adulto sem olhar.
 - [ ] Sei as categorias verde, amarelo, vermelho e preto.
 - [ ] Sei as funções do médico regulador e a lógica de vaga zero.
+- [ ] Sei preservar cena/vestígios e conduzir óbito evidente conforme regulação/protocolo.
+- [ ] Sei usar debriefing como ferramenta de aprendizado e segurança psicológica.
 - [ ] Sei checar transporte antes de sair: VA, ventilação/O2, drogas, monitor, comunicação e relatório.
 - [ ] Sei riscos do aeromédico: altitude, gases, pneumotórax e cabine.
 - [ ] Sei zonas hot/warm/cold no atendimento tático.
@@ -445,7 +472,7 @@ flowchart TD
 - **TEME23 Q33:** afogamento inconsciente/apneico: abrir via aérea e realizar 5 ventilações.
 - **TEME23 Q93:** intermação/heat stroke: resfriamento prioritário, antes do transporte quando há condição.
 - **TEME25 Q70:** contexto rural/remoto: POCUS pode antecipar decisão, regulação e logística.
-- **TEME25 Q75:** via aérea em cena/extricacao: considerar acesso limitado, segurança e manobras simples enquanto se organiza resgate.
+- **TEME25 Q75:** via aérea em cena/extricação: considerar acesso limitado, segurança e manobras simples enquanto se organiza resgate.
 - **TEME25 Q79:** médico regulador e atribuições/experiência na Central de Regulação das Urgências.
 - **Aulas de cursinho - Aula 11:** SCI, START, ACV, IMV e "não transferir o caos".
 
@@ -466,6 +493,7 @@ flowchart TD
 - Aulas de cursinho: Aula 04 - Avaliação inicial do politraumatizado.
 - Resumo do cursinho.docx.
 - Adendos para complementar.docx.
+- Livro local: Atendimento pré-hospitalar: abordagem prática (`Livros/Livro - Atendimento Pré-Hospitalar.pdf`).
 
 **Atualização clínica e normativa**
 
@@ -481,6 +509,6 @@ flowchart TD
 - FEMA. National Incident Management System, 2017. https://www.fema.gov/sites/default/files/2020-07/fema_nims_doctrine-2017.pdf
 - Wilderness Medical Society. Heat Illness Clinical Practice Guidelines, 2024 update. https://journals.sagepub.com/doi/full/10.1177/10806032241227924
 - Wilderness Medical Society. Acute Altitude Illness Clinical Practice Guidelines, 2024 update. https://journals.sagepub.com/doi/10.1016/j.wem.2023.05.013
-- Wilderness Medical Society. Drownine Clinical Practice Guidelines, 2024 update. https://journals.sagepub.com/doi/10.1177/10806032241227460
+- Wilderness Medical Society. Drowning Clinical Practice Guidelines, 2024 update. https://journals.sagepub.com/doi/10.1177/10806032241227460
 - Wilderness Medical Society. Accidental Hypothermia Clinical Practice Guidelines, 2019 update. https://journals.sagepub.com/doi/10.1016/j.wem.2019.10.002
 - Divers Alert Network. Decompression Illness: What Is It and What Is the Treatment? https://dan.org/health-medicine/health-resources/diseases-conditions/decompression-illness-what-is-it-and-what-is-the-treatment/

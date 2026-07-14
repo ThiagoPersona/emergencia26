@@ -5,7 +5,7 @@
 - Anafilaxia é adrenalina IM primeiro. Anti-histamínico e corticoide são adjuntos, não salvam choque/broncoespasmo/edema de via aérea.
 - Angioedema com língua, voz, disfagia, estridor ou progressão rápida e via aérea difícil antecipada. IECA/bradicinina pode não responder a adrenalina, anti-H1 ou corticoide.
 - Celulite é clínica; abscesso drena; fasciite necrosante e cirurgia agora. Dor desproporcional, bolhas, necrose, crepitacao, anestesia cutanea ou choque não esperam TC.
-- SJS/TEN: parar droga suspeita, suporte tipo queimado, oftalmo/dermato/UTI cedo. Antibiótico profilatico não é rotina.
+- SJS/TEN: parar droga suspeita, suporte tipo queimado, oftalmo/dermato/UTI cedo. Antibiótico profilático não é rotina.
 - Monoartrite aguda e séptica até prova em contrário. Artrocentese antes do antibiótico, exceto se sepse/choque.
 - Gota/pseudogota não exclui infecção se há febre, imunossupressão, protese ou líquido muito inflamatório.
 - Arterite temporal: cefaleia nova >50 anos, claudicação mandibular ou sintomas visuais = corticoide imediato antes de biópsia/imagem.
@@ -32,7 +32,7 @@ Red flags:
 - Hipotensão, síncope, broncoespasmo, estridor, edema de língua/laringe.
 - Dor fora de proporcao ao exame.
 - Bolhas hemorrágicas, necrose, equimose progressiva, anestesia de pele.
-- Mucosite ocular/oral/genital, Nikolsky, descolamento epidermico.
+- Mucosite ocular/oral/genital, Nikolsky, descolamento epidérmico.
 - púrpura palpável com renal/abdominal, ou púrpura fulminante.
 - Monoartrite febril.
 - Cefaleia nova >50 anos com sintomas visuais ou mandibulares.
@@ -110,26 +110,26 @@ Conduta:
 
 **SJS/TEN**
 
-- Prodromo febre/mal-estar + dor de pele + lesões alvoides/violáceas + mucosite.
-- Descolamento epidermico: SJS <10% SCQ, overlap 10-30%, TEN >30%.
+- Pródromo febre/mal-estar + dor de pele + lesões alvoides/violáceas + mucosite.
+- Descolamento epidérmico: SJS <10% SCQ, overlap 10-30%, TEN >30%.
 - Medicações clássicas: alopurinol, sulfas, anticonvulsivantes, AINEs oxicam, nevirapina, antibióticos.
 
 Conduta:
 
 1. Parar droga suspeita imediatamente.
-2. Internar em UTI/queimados/dermato conforme extensao.
-3. Cuidado de pele sem trauma, aquecimento, fluidos, analgesia, nutricao.
+2. Internar em UTI/queimados/dermato conforme extensão.
+3. Cuidado de pele sem trauma, aquecimento, fluidos, analgesia, nutrição.
 4. Oftalmologia precoce.
 5. Culturas se suspeita, antibiótico só se infecção clínica.
 6. Calcular SCORTEN nas primeiras 24 h e reavaliar.
 
 **DRESS**
 
-- Latencia longa, típicamente 2-8 semanas após droga.
-- Febre, rash, edema facial, linfonodos, eosinofilia/linfocitos atipicos e órgão-alvo: hepatite, nefrite, pneumonite, miocardite.
+- Latência longa, tipicamente 2-8 semanas após droga.
+- Febre, rash, edema facial, linfonodos, eosinofilia/linfócitos atípicos e órgão-alvo: hepatite, nefrite, pneumonite, miocardite.
 - Conduta: parar droga, avaliar órgãos, internar se orgânico; corticoide sistêmico se moderado/grave conforme dermato.
 
-**urticária simples**
+**Urticária simples**
 
 - Placas pruriginosas migratórias, sem hipotensão, broncoespasmo, GI importante ou via aérea.
 - Anti-H1 e observação. Oriente retorno se anafilaxia.
@@ -143,7 +143,7 @@ Conduta:
 1. Analgesia e avaliação de sepse.
 2. Artrocentese: Gram, cultura, celularidade/diferencial e cristais.
 3. Se sepse/choque, não espere punção para antibiótico.
-4. Empirico usual: vancomicina + ceftriaxone/cefepime conforme risco local, eonococo, imunossupressão e Gram.
+4. Empírico usual: vancomicina + ceftriaxona/cefepime conforme risco local, gonococo, imunossupressão e Gram.
 5. Drenagem seriada/artroscópica conforme articulação e ortopedia.
 
 Cristais:
@@ -203,7 +203,7 @@ flowchart TD
     E -->|Sim| F[Equipe VA difícil + tratar alérgico/bradicinina conforme contexto]
     E -->|Não| G{Dor desproporcional, bolhas, necrose, choque?}
     G -->|Sim| H[Fasciite: cirurgia + ATB amplo + UTI]
-    G -->|Não| I{Mucosite/descolamento epidermico?}
+    G -->|Não| I{Mucosite/descolamento epidérmico?}
     I -->|Sim| J[SJS/TEN: parar droga + UTI/queimados + oftalmo]
     I -->|Não| K[Celulite/abscesso/urticária simples/vasculite: tratar dirigido e reavaliar]
 ```
@@ -274,7 +274,7 @@ flowchart TD
 - **Celulite precisa US para diagnóstico:** falso. US ajuda abscesso/dúvida.
 - **Abscesso trata só com antibiótico:** falso; precisa drenagem.
 - **Fasciite espera TC/LRINEC:** falso se suspeita alta.
-- **SJS/TEN recebe antibiótico profilatico:** falso; antibiótico se infecção.
+- **SJS/TEN recebe antibiótico profilático:** falso; antibiótico se infecção.
 - **Cristal no líquido articular exclui artrite séptica:** falso.
 - **Gota aguda inicia alopurinol para aliviar dor:** falso.
 - **Arterite temporal espera biópsia para corticoide:** falso.

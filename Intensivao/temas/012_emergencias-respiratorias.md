@@ -2,12 +2,12 @@
 
 ## Leitura de 30 segundos
 
-- Dispneia grave e sala vermelha até prova em contrário: aparência, fala, musculatura acessoria, consciência, choque, SpO2, ausculta, ECG, gaso e POCUS.
+- Dispneia grave e sala vermelha até prova em contrário: aparência, fala, musculatura acessória, consciência, choque, SpO2, ausculta, ECG, gaso e POCUS.
 - Oxigênio e droga: alvo 94-98% na maioria dos agudos; 88-92% se risco de retenção de CO2, como DPOC grave, obesidade-hipoventilação e neuromuscular.
 - DPOC com pH <7,35 + PaCO2 alta + desconforto, se acordado e protegendo via aérea: VNI/BiPAP cedo. Não afogue o paciente em O2 sem alvo.
 - Asma grave: SABA + ipratrópio + corticoide precoce + MgSO4 se refratária. Silêncio auscultatório, sonolência ou CO2 normal/subindo são falência iminente.
 - Pneumonia: gravidade decide local e tempo. CURB-65/PSI ajudam, mas choque, hipoxemia, confusão e necessidade de VM mandam mais. Hospitalar clássico: beta-lactâmico + macrolídeo.
-- TEP: estável = probabilidade clínica + D-dimero/angioTC; instável = suporte, heparina se possível, eco/POCUS e reperfusão se alto risco sem contra.
+- TEP: estável = probabilidade clínica + D-dímero/angioTC; instável = suporte, heparina se possível, eco/POCUS e reperfusão se alto risco sem contra.
 - SDRA: trate causa e ventile protegendo pulmão: VC 4-8 mL/kg peso predito, Pplat <30, driving <=15, PEEP adequada e prona se P/F <150.
 
 ## Por que cai
@@ -20,7 +20,7 @@
 
 ### 1. Primeiro minuto da dispneia grave
 
-1. **Olhe antes de auscultar:** fala frases? postura tripode? uso de acessorios? sudorese? cianose? confusão? exaustão?
+1. **Olhe antes de auscultar:** fala frases? postura tripé? uso de acessórios? sudorese? cianose? confusão? exaustão?
 2. **ABCDE:** via aérea, ventilação, circulação, consciência, temperatura e exposição.
 3. **Oxigênio com alvo:** não deixe hipóxico; depois ajuste para alvo, principalmente no retentor de CO2.
 4. **Monitor + ECG + acesso + gaso/lactato:** ECG pode revelar SCA, arritmia, TEP, hiperK; gaso separa hipoxemia de hipercapnia e acidose.
@@ -29,7 +29,7 @@
 
 Sinais de falência iminente:
 
-- Rebaixamento, agitação que impedé tratamento, apneia, exaustão, fala impossivel.
+- Rebaixamento, agitação que impede tratamento, apneia, exaustão, fala impossível.
 - Hipoxemia refratária, choque, arritmia instável.
 - PaCO2 subindo com acidemia e trabalho respiratório.
 - Secreção/vômito/aspiração ou incapacidade de proteger via aérea.
@@ -41,9 +41,9 @@ Sinais de falência iminente:
 | Via aérea alta | Estridor, voz abafada, edema, engasgo | Anafilaxia, corpo estranho, angioedema, tumor/abscesso |
 | Via aérea baixa | Sibilos, expiração prolongada, tórax silencioso | Asma, DPOC, broncoespasmo por anafilaxia |
 | Parênquima | Febre, crepitantes, infiltrado, linhas B/consolidação | Pneumonia, SDRA, edema pulmonar, contusão |
-| Pleura | Dor pleuritica, assimetria, MV abolido, POCUS | Pneumotórax, Hemotórax, derrame volumoso/empiema |
-| Cardiovascular | Sincopa, hipotensão, VD/VE alterado, edema | TEP, IC aguda, valvopatia, tamponamento |
-| Neuromuscular | Fraqueza, disfagia, tosse fraca, hipercapnia | Guillain-Barre, miastenia, botulismo, lesão medular |
+| Pleura | Dor pleurítica, assimetria, MV abolido, POCUS | Pneumotórax, hemotórax, derrame volumoso/empiema |
+| Cardiovascular | Síncope, hipotensão, VD/VE alterado, edema | TEP, IC aguda, valvopatia, tamponamento |
+| Neuromuscular | Fraqueza, disfagia, tosse fraca, hipercapnia | Guillain-Barré, miastenia, botulismo, lesão medular |
 | Sistêmica | Gaso/metabólico desproporcional | Sepse, CAD, IRA, intoxicação, anemia grave |
 
 > **Resposta de prova TEME:** IRpA hipoxêmica se diferencia melhor pelos mecanismos e pelo gradiente alvéolo-arterial; SDRA não é hipoventilação simples.
@@ -60,7 +60,7 @@ Sinais de falência iminente:
 
 - Cateter nasal: baixo fluxo, pouca FiO2, paciente leve.
 - Venturi: FiO2 controlada, útil no DPOC/retentor.
-- máscara não reinalante: hipoxemia grave/ponte para suporte avançado.
+- Máscara não reinalante: hipoxemia grave/ponte para suporte avançado.
 - CNAF: hipoxemia com alto drive, paciente acordado; monitorar falha.
 - BVM: ventilação de resgate.
 
@@ -68,7 +68,7 @@ Sinais de falência iminente:
 
 - DPOC exacerbado com acidose respiratória.
 - Edema agudo cardiogênico.
-- Aleuns imunossuprimidos/pós-extubação selecionados.
+- Alguns imunossuprimidos/pós-extubação selecionados.
 
 **Evite ou pare VNI se:**
 
@@ -156,14 +156,14 @@ Tratamento:
 
 > **Resposta de prova TEME22:** paciente pós-trauma torácico com febre, choque, base opacificada e derrame/hipotransparência = infecção pulmonar com sepse/choque séptico; expansão volêmica e antibiótico imediato.
 >
-> **Na prática clínica:** corticoide na PAC grave mudou bastante. ATS/IDSA 2019 não recomendava rotina salvo choque refratário; estudos recentes apoiam hidrocortisona em PAC grave selecionada. Para prova, use corticoide quando houver indicação explicita: choque refratário, DPOC/asma associada, COVID ou protocolo local de PAC grave.
+> **Na prática clínica:** corticoide na PAC grave mudou bastante. ATS/IDSA 2019 não recomendava rotina salvo choque refratário; estudos recentes apoiam hidrocortisona em PAC grave selecionada. Para prova, use corticoide quando houver indicação explícita: choque refratário, DPOC/asma associada, COVID ou protocolo local de PAC grave.
 
 ### 7. Derrame pleural, empiema e pneumotórax
 
 **Derrame pleural:**
 
 - Punir se: derrame novo sem causa clara, febre/sepsis, suspeita de empiema, alívio sintomático, neoplasia/TB, unilateral importante.
-- Light: exsudato se proteina pleural/soro >0,5, LDH pleural/soro >0,6 ou LDH pleural >2/3 do limite superior serico.
+- Light: exsudato se proteína pleural/soro >0,5, LDH pleural/soro >0,6 ou LDH pleural >2/3 do limite superior sérico.
 
 **Parapneumonico/empiema:**
 
@@ -181,7 +181,7 @@ Tratamento:
 
 1. Probabilidade clínica: Wells/Geneva ou gestalt estruturada.
 2. Baixa probabilidade: PERC pode excluir sem exames se todos negativos.
-3. Baixa/intermediaria: D-dimero; considerar corte ajustado por idade/probabilidade.
+3. Baixa/intermediária: D-dímero; considerar corte ajustado por idade/probabilidade.
 4. Alta probabilidade: angioTC, e anticoagulação enquanto aguarda se baixo risco de sangramento.
 5. Estratificar risco: PESI/sPESI, VD no eco/CT, troponina/BNP.
 
@@ -253,7 +253,7 @@ VNI que melhora pH, FR, sincronia e consciência salva intubação. VNI que não
 
 ### Dispneia sem alteração pulmonar pode ser TEP
 
-pulmão limpo, dor torácica/síncope/hipotensão, VD grande, TVP ou pós-operatório recente devem puxar TEP para cima. D-dimero em paciente de alta probabilidade ou instável só atrasa.
+pulmão limpo, dor torácica/síncope/hipotensão, VD grande, TVP ou pós-operatório recente devem puxar TEP para cima. D-dímero em paciente de alta probabilidade ou instável só atrasa.
 
 ### SDRA é uma estratégia, não uma P/F isolada
 
@@ -297,7 +297,7 @@ flowchart TD
     B -->|Não| G[Wells/Geneva/PERC]
     G --> H{Baixa e PERC negativo?}
     H -->|Sim| I[Excluir sem exame]
-    H -->|Não| J[D-dimero se baixa/intermediaria; angioTC se alto ou positivo]
+    H -->|Não| J[D-dímero se baixa/intermediária; angioTC se alto ou positivo]
 ```
 
 ```mermaid
@@ -363,11 +363,11 @@ flowchart TD
 - **PaO2/FiO2 pode ser calculada com qualquer O2 sem saber FiO2:** cuidado. Para prova, gaso arterial em ar ambiente define gravidade de hipoxemia.
 - **VNI serve para todo rebaixado:** falso. Rebaixamento/aspiração/choque grave pedem IOT.
 - **Asma mais calma sempre melhorou:** falso. Pode ser fadiga e falência.
-- **Silêncio auscultatório na asma e bom sinal:** falso.
+- **Silêncio auscultatório na asma é bom sinal:** falso.
 - **DPOC com pH 7,25 acordado deve ser intubado imediatamente:** falso em geral; VNI se sem contra.
 - **Pneumonia aspirativa sempre precisa anaerobicida:** falso. Anaerobio só em abscesso, empiema, necrose ou forte risco periodontal.
 - **Pneumonite aspirativa química precisa antibiótico imediato:** falso se sem infecção.
-- **D-dimero positivo diagnostica TEP:** falso. É exame de exclusão em baixa/intermediária probabilidade.
+- **D-dímero positivo diagnostica TEP:** falso. É exame de exclusão em baixa/intermediária probabilidade.
 - **TEP instável sempre vai primeiro para angioTC:** falso se não tolera transporte; use eco/POCUS e trate choque.
 - **VD dilatado no eco diagnostica TEP sozinho:** falso. Ajuda no contexto.
 - **SDRA grave vai direto para ECMO:** falso. Primeiro pacote: VC baixo, Pplat, PEEP, prona.
@@ -400,7 +400,7 @@ flowchart TD
 - [ ] Sei indicar VNI no DPOC hipercápnico e parar se falhar.
 - [ ] Sei tratar asma grave e ventilar obstrutivo sem auto-PEEP.
 - [ ] Sei usar CURB-65/critérios de gravidade sem atrasar antibiótico.
-- [ ] Sei quando cobrir MRSA/Pseudomonas e quando não cobrir anaerobio.
+- [ ] Sei quando cobrir MRSA/Pseudomonas e quando não cobrir anaeróbio.
 - [ ] Sei pH pleural <=7,2 como indicação de drenagem em parapneumonico.
 - [ ] Sei algoritmo de TEP estável vs instável.
 - [ ] Sei pacote inicial de SDRA é indicação de prona.
