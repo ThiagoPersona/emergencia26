@@ -613,6 +613,18 @@
       opacity: 0.52;
     }
 
+    .proof-progress-cell {
+      color: var(--text);
+      font-weight: 700;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .proof-progress-cell.is-empty {
+      color: var(--muted);
+      font-weight: 650;
+    }
+
     .loading-msg,
     .fallback-msg {
       max-width: 760px;
@@ -841,6 +853,17 @@
 
     const QUIZ_STORAGE_PREFIX = "resumos-emergencia:quiz:v1:";
 
+    function normalizeQuizRoute(route) {
+      return (route || "")
+        .replace(/^#\/?/, "")
+        .split(/[?#]/)[0]
+        .replace(/\\/g, "/")
+        .replace(/^\/+/, "")
+        .replace(/^Intensivao\//, "")
+        .replace(/\.md$/i, "")
+        .replace(/\/+$/, "");
+    }
+
     function getQuizStorageKey() {
       const hashRoute = (window.location.hash || "")
         .replace(/^#\/?/, "")
@@ -853,6 +876,17 @@
       return `${QUIZ_STORAGE_PREFIX}${hashRoute || pathRoute || "home"}`;
     }
 
+    function getQuizStorageKeysForRoute(route) {
+      const normalized = normalizeQuizRoute(route);
+      const keys = [
+        normalized,
+        `${normalized}.md`,
+        `Intensivao/${normalized}`,
+        `Intensivao/${normalized}.md`
+      ].filter(Boolean);
+      return Array.from(new Set(keys.map((item) => `${QUIZ_STORAGE_PREFIX}${item}`)));
+    }
+
     function readQuizProgress(storageKey = getQuizStorageKey()) {
       try {
         const raw = window.localStorage.getItem(storageKey);
@@ -862,6 +896,14 @@
       } catch (error) {
         return {};
       }
+    }
+
+    function readQuizProgressForRoute(route) {
+      for (const storageKey of getQuizStorageKeysForRoute(route)) {
+        const progress = readQuizProgress(storageKey);
+        if (Object.keys(progress).length) return progress;
+      }
+      return {};
     }
 
     function writeQuizProgress(progress, storageKey = getQuizStorageKey()) {
@@ -989,6 +1031,102 @@
 
       Array.from(section.querySelectorAll(".quiz-card")).forEach(clearQuizCard);
       updateQuizSummary();
+    }
+
+    function getProofRouteFromLink(link) {
+      const href = link ? link.getAttribute("href") || "" : "";
+      if (!href) return "";
+
+      let route = href;
+      if (/^https?:\/\//i.test(route)) {
+        try {
+          route = new URL(route).pathname;
+        } catch (error) {
+          return "";
+        }
+      }
+
+      const match = route.match(/provas\/[^?#)]+/i);
+      return normalizeQuizRoute(match ? match[0] : route);
+    }
+
+    function getQuizProgressStats(route, total) {
+      const progress = readQuizProgressForRoute(route);
+      const entries = Object.values(progress).filter((entry) => entry && entry.selected);
+      const answeredRaw = entries.length;
+      const answered = total ? Math.min(answeredRaw, total) : answeredRaw;
+      const correctRaw = entries.filter((entry) => entry.correct === "1" || entry.correct === true).length;
+      const correct = Math.min(correctRaw, answered);
+      const accuracy = answered ? Math.round((correct / answered) * 100) : null;
+
+      return { answered, correct, accuracy };
+    }
+
+    function hydrateProofProgressTable() {
+      const section = document.querySelector(".markdown-section");
+      if (!section) return;
+
+      const tables = Array.from(section.querySelectorAll("table"));
+      const table = tables.find((candidate) => {
+        const headers = Array.from(candidate.querySelectorAll("thead th, tr:first-child th"))
+          .map((cell) => (cell.textContent || "").trim().toLowerCase());
+        return headers.includes("tema") && headers.some((item) => item.includes("oficiais")) && headers.includes("abrir");
+      });
+      if (!table) return;
+
+      const headerRow = table.querySelector("thead tr") || table.querySelector("tr");
+      if (!headerRow) return;
+
+      let headers = Array.from(headerRow.children);
+      let openIndex = headers.findIndex((cell) => (cell.textContent || "").trim().toLowerCase() === "abrir");
+      if (openIndex < 0) return;
+
+      if (!headers.some((cell) => (cell.textContent || "").trim().toLowerCase() === "respondidas")) {
+        const answeredHeader = document.createElement("th");
+        answeredHeader.textContent = "Respondidas";
+        const accuracyHeader = document.createElement("th");
+        accuracyHeader.textContent = "Acerto";
+        const openHeader = headers[openIndex];
+        headerRow.insertBefore(answeredHeader, openHeader);
+        headerRow.insertBefore(accuracyHeader, openHeader);
+      }
+
+      headers = Array.from(headerRow.children);
+      const officialIndex = headers.findIndex((cell) => (cell.textContent || "").trim().toLowerCase().includes("oficiais"));
+      openIndex = headers.findIndex((cell) => (cell.textContent || "").trim().toLowerCase() === "abrir");
+      const answeredIndex = headers.findIndex((cell) => (cell.textContent || "").trim().toLowerCase() === "respondidas");
+      const accuracyIndex = headers.findIndex((cell) => (cell.textContent || "").trim().toLowerCase() === "acerto");
+      if (officialIndex < 0 || openIndex < 0 || answeredIndex < 0 || accuracyIndex < 0) return;
+
+      const rows = Array.from(table.querySelectorAll("tbody tr"));
+      rows.forEach((row) => {
+        const link = row.querySelector('a[href*="provas/"]');
+        if (!link) return;
+
+        let cells = Array.from(row.children);
+        const total = Number.parseInt((cells[officialIndex] && cells[officialIndex].textContent || "").replace(/\D+/g, ""), 10) || 0;
+
+        if (!row.querySelector(".proof-progress-answered")) {
+          const openCell = cells.find((cell) => cell.contains(link)) || row.lastElementChild;
+          const answeredCell = document.createElement("td");
+          answeredCell.className = "proof-progress-cell proof-progress-answered";
+          const accuracyCell = document.createElement("td");
+          accuracyCell.className = "proof-progress-cell proof-progress-accuracy";
+          row.insertBefore(answeredCell, openCell);
+          row.insertBefore(accuracyCell, openCell);
+        }
+
+        const route = getProofRouteFromLink(link);
+        const stats = getQuizProgressStats(route, total);
+        const answeredCell = row.querySelector(".proof-progress-answered");
+        const accuracyCell = row.querySelector(".proof-progress-accuracy");
+        if (!answeredCell || !accuracyCell) return;
+
+        answeredCell.textContent = `${stats.answered}/${total || stats.answered}`;
+        accuracyCell.textContent = stats.accuracy === null ? "-" : `${stats.accuracy}%`;
+        answeredCell.classList.toggle("is-empty", stats.answered === 0);
+        accuracyCell.classList.toggle("is-empty", stats.accuracy === null);
+      });
     }
 
     function initQuizzes() {
@@ -1172,6 +1310,7 @@
       ensureBranding();
       normalizeThemeLinks();
       tuneExternalLinks();
+      hydrateProofProgressTable();
       tuneTables();
       initQuizzes();
       renderMermaid();
