@@ -5,7 +5,7 @@
 - Dor torácica suspeita de SCA = ECG em até 10 min, monitor, acesso, AAS, troponina seriada e decisão de reperfusão se supra/equivalente.
 - IAM com supra é tempo para angioplastia > 120 min = pensar fibrinólise se dentro da janela e sem contraindicação.
 - Oxigênio no IAM não é rotina se SatO2 está boa; use se hipoxemia, desconforto respiratório ou choque.
-- Taquiarritmia com instabilidade = cardioversão sincronizada. Bradicardia instável = atropina, marca-passo e/ou catecolamina.
+- Taquiarritmia com instabilidade = cardioversão sincronizada. Bradicardia instável = atropina, marcapasso e/ou catecolamina.
 - QRS largo irregular ou FA pré-excitada: não bloqueie nodo AV.
 - PA muito alta sem lesão aguda de órgão-alvo não é emergência hipertensiva. Lesão aguda muda tudo.
 - SCAPE/EAP hipertensivo = VNI + nitrato EV cedo; diurético entra, mas não pode ser a única resposta.
@@ -23,13 +23,13 @@ O que já apareceu no padrão TEME:
 - Emergências hipertensivas: eclampsia/pós-parto, SCAPE/EAP hipertensivo, AVC e dissecção.
 - Padrões de ECG de prova: hipotermia/onda J, bradicardia/BAV, Wellens, IAM inferior/VD, TV polimórfica/torsades.
 - Situações transversais: IRA pós-PCI, marcapasso transvenoso mal posicionado, IC terminal/paliativos e tempestade tireotóxica.
-- Estação prática 2024: BAVT instável + IAMCST + marca-passo + evolução para FV.
+- Estação prática 2024: BAVT instável + IAMCST + marcapasso + evolução para FV.
 
 Mensagem de prova: primeiro reconheça instabilidade e doença tempo-dependente. Depois escolha a droga.
 
 ## Abordagem prática
 
-### 1. Dor torácica/Suspeita De SCA
+### 1. Dor torácica/suspeita de SCA
 
 Conduta inicial:
 
@@ -38,7 +38,7 @@ Conduta inicial:
 3. Se dor inferior, fazer V3R-V4R. Se suspeita posterior, V7-V9.
 4. AAS mastigado se não houver alergia verdadeira.
 5. Troponina de alta sensibilidade seriada se sem supra/equivalente.
-6. Procurar equivalentes de supra: posterior, VD, de Winter, Wellens, Searbossa/Smith em BRE/marca-passo quando aplicável.
+6. Procurar equivalentes de supra: posterior, VD, de Winter, Wellens, Sgarbossa/Smith em BRE/marcapasso quando aplicável.
 7. Definir: reperfusão imediata, estratégia invasiva precoce ou observação/alta segura.
 
 Se IAMCST/equivalente:
@@ -53,7 +53,34 @@ Se SCA sem supra:
 - Instabilidade, dor refratária, arritmia grave, IC/choque, alteração dinâmica de ST/T ou troponina muito elevada = estratégia invasiva urgente/precoce.
 - Baixo risco com ECG sem isquemia e troponina seriada negativa pode ir para alta orientada/seguimento conforme protocolo.
 
-### 2. Pacote Inicial De SCA
+### 2. Padrões de ECG que mudam conduta
+
+Esses padrões caem porque parecem "sem supra clássico", mas não são casos tranquilos. Na dúvida, trate como SCA de alto risco e discuta hemodinâmica cedo.
+
+| Padrão | Como reconhecer | O que significa | Pegadinha |
+|---|---|---|---|
+| **Wellens** | Dor anginosa recente que melhorou; T bifásica ou profundamente invertida em V2-V3, podendo ir até V1-V6; pouco ou nenhum supra; sem Q patológica anterior | Estenose crítica/reperfusão da DA proximal | Não fazer teste ergométrico; pode precipitar IAM extenso |
+| **de Winter** | Infradesnível ascendente do ST no ponto J em V1-V6, T altas/simétricas nas precordiais, muitas vezes supra discreto em aVR | Oclusão proximal de DA, equivalente de IAMCST | Não esperar supra aparecer para chamar hemodinâmica |
+| **Sgarbossa original** | Em BRE ou ritmo de marcapasso: supra concordante >=1 mm; infra concordante em V1-V3 >=1 mm; supra discordante >=5 mm | Ajuda a detectar oclusão com QRS largo | Muito específico, mas pouco sensível; negativo não exclui |
+| **Smith-Sgarbossa modificado** | Substitui o critério de discordância absoluta por proporção: supra discordante excessivo, ST/S <= -0,25 | Melhor para BRE e ritmo de marcapasso ventricular | Use no contexto clínico; se positivo, pense em OMI/hemodinâmica |
+
+**Como pensar em prova:** Wellens e de Winter apontam para DA e não toleram "alta/teste". Sgarbossa ajuda quando o QRS largo atrapalha a leitura do ST. O erro da alternativa costuma ser chamar de "alteração inespecífica" ou pedir troponina seriada como se o ECG não mudasse a conduta.
+
+### 3. Escores: HEART, GRACE e TIMI
+
+| Escore | Melhor uso | Componentes úteis para lembrar | Como a banca tenta confundir |
+|---|---|---|---|
+| **HEART** | Dor torácica indiferenciada no DE, especialmente para baixo risco/alta segura | História, ECG, idade, fatores de risco e troponina | Usar HEART para paciente instável ou com ECG de alto risco |
+| **GRACE** | SCASEST confirmada/suspeita para risco de morte/IAM e decisão invasiva | Idade, FC, PAS, creatinina, Killip, PCR na admissão, desvio de ST, troponina | Ignorar que GRACE alto, especialmente >140, puxa estratégia invasiva precoce |
+| **TIMI UA/NSTEMI** | Estratificação simples e rápida de SCASEST | Idade >=65, >=3 fatores de risco, DAC conhecida, AAS recente, angina recorrente, desvio de ST, marcador positivo | Achar que TIMI substitui julgamento clínico ou GRACE |
+
+Regra prática:
+
+- **Baixo risco real:** sem instabilidade, ECG sem isquemia dinâmica e troponina seriada negativa.
+- **Alto risco:** dor recorrente/refratária, alteração dinâmica de ST/T, troponina positiva, IC, choque, arritmia grave, instabilidade elétrica ou hemodinâmica.
+- **GRACE >140:** é número de prova para não deixar o paciente "só em observação"; pense em estratégia invasiva precoce.
+
+### 4. Pacote inicial de SCA
 
 Pense em **AAS + P2Y12 + anticoagulante + estatina + reperfusão/estratificação**, e use anti-isquêmicos conforme contexto.
 
@@ -68,7 +95,7 @@ Pense em **AAS + P2Y12 + anticoagulante + estatina + reperfusão/estratificaçã
 | Oxigênio | SatO2 baixa, desconforto, choque | Não é rotina se SatO2 normal |
 | Morfina | Dor refratária | Pode atrasar absorção de P2Y12; uso restrito |
 
-### 3. Bradicardia Instável
+### 5. Bradicardia instável
 
 Instabilidade: hipotensão, choque, dor isquêmica, edema agudo de pulmão, síncope/rebaixamento.
 
@@ -77,21 +104,66 @@ Conduta:
 1. Monitor, acesso IV, ECG, O2 se hipoxemia.
 2. Procurar causa: IAM inferior, hiperK, intoxicação por beta-bloqueador/bloqueador de canal de cálcio/digoxina, hipotermia, hipóxia.
 3. Atropina 1 mg IV, repetir a cada 3-5 min até 3 mg.
-4. Se falha ou BAV alto grau com instabilidade importante: marca-passo transcutâneo.
+4. Se falha ou BAV alto grau com instabilidade importante: marcapasso transcutâneo.
 5. Ponte/alternativa: adrenalina 2-10 mcg/min ou dopamina 5-20 mcg/kg/min.
-6. Preparar marca-passo transvenoso se BAVT/Mobitz II/instabilidade persistente.
+6. Preparar marcapasso transvenoso se BAVT/Mobitz II/instabilidade persistente.
 
-Pegada TEME: Mobitz II, BAV avançado e BAVT não são lugar para "esperar atropina fazer milagre".
+Pegada TEME: Mobitz II, BAV avançado e BAVT não são lugar para "esperar a atropina fazer milagre".
 
-Complicação de marca-passo transvenoso que já apareceu: soluços ou contração diafragmática após passagem do cabo sugerem estimulação frênica/diafragmática por mau posicionamento, perfuração ou migração. Na prova, reconheça como cabo mal posicionado; na prática, avalie dependência, capture, Rx/US/fluoroscopia conforme contexto e reposicione/retire em ambiente seguro.
+Complicação de marcapasso transvenoso que já apareceu: soluços ou contração diafragmática após passagem do cabo sugerem estimulação frênica/diafragmática por mau posicionamento, perfuração ou migração. Na prova, reconheça como cabo mal posicionado; na prática, avalie dependência, captura, Rx/US/fluoroscopia conforme contexto e reposicione/retire em ambiente seguro.
 
-### 4. Taquicardia Com Pulso
+### 6. Marcapasso transvenoso temporário
 
-Primeira Pergunta: está instável por causa da taquicardia?
+Pense nele como ponte: ou até a causa reverter, ou até implantar marcapasso definitivo, ou até levar o paciente para hemodinâmica/UTI.
+
+**Indicações que a prova gosta:**
+
+- BAVT, Mobitz II ou BAV avançado com instabilidade.
+- Bradicardia instável que não respondeu a atropina e precisa de suporte além do transcutâneo.
+- IAM inferior/VD com BAVT persistente e choque.
+- Overdrive pacing em torsades recorrente/pausa-dependente quando magnésio e correção eletrolítica não bastam.
+- Falha, intolerância ou necessidade prolongada de marcapasso transcutâneo.
+
+**Antes de inserir:**
+
+1. Monitor, desfibrilador, acesso, analgesia/sedação se possível e equipe para via aérea.
+2. Corrigir causas tratáveis em paralelo: hipercalemia, hipóxia, intoxicação por beta-bloqueador/bloqueador de canal de cálcio/digoxina, hipotermia e IAM.
+3. Preferir inserção com técnica estéril e ultrassom para acesso venoso quando disponível.
+
+**Acesso e inserção, em linguagem de estação:**
+
+- Acesso comum: jugular interna direita. Femoral pode ser mais rápido em emergência; subclávia exige maior cuidado por pneumotórax e compressão difícil.
+- Técnica: punção venosa central, introdutor, cabo-eletrodo com balão quando disponível, avanço até VD com monitorização eletrocardiográfica/fluoroscopia/US conforme recurso.
+- Sinais de posição/captura: espícula seguida de QRS largo e pulso correspondente. Captura elétrica sem pulso não basta; confirme captura mecânica.
+- Se houver captura intermitente, perda de captura, arritmia ventricular, dor torácica nova, hipotensão, soluços ou contração diafragmática: suspeite posição ruim, migração, perfuração ou estimulação extracardíaca.
+
+**Modos e ajustes que bastam para prova:**
+
+| Item | O que significa | Padrão inicial prático |
+|---|---|---|
+| **VVI** | Estimula ventrículo, sente ventrículo e inibe se detectar QRS próprio | Modo mais comum no temporário de emergência |
+| **VOO/assíncrono** | Estimula ventrículo sem respeitar QRS próprio | Evitar como rotina; pode competir com ritmo próprio e gerar R sobre T |
+| **Frequência** | Quantos estímulos/min se o paciente não bater sozinho | 60-80 bpm; pode subir em choque/TdP conforme objetivo |
+| **Output/corrente** | Energia para capturar miocárdio | Comece alto; reduza até limiar de captura e deixe margem de segurança 2-3x |
+| **Sensibilidade** | Capacidade de enxergar QRS próprio | Ajustar para evitar undersensing e oversensing |
+| **Overdrive** | Estimular mais rápido que o ritmo do paciente | TdP pausa-dependente: alvo comum 100-120 bpm |
+
+**Troubleshooting rápido:**
+
+- **Sem espícula:** cheque cabo/conexões, bateria/gerador, modo, frequência programada e oversensing.
+- **Espícula sem QRS:** perda de captura. Aumente output, corrija hipercalemia/acidemia/hipóxia e reposicione o cabo se necessário.
+- **Espícula competindo com QRS próprio:** undersensing. Ajuste sensibilidade e posição do cabo.
+- **QRS capturado sem pulso:** captura elétrica não garante débito. Trate choque/causa mecânica em paralelo.
+
+**Complicações para decorar:** punção arterial, hematoma, pneumotórax, arritmia, perfuração/tamponamento, infecção, trombose, deslocamento do cabo, falha de captura, undersensing/oversensing e estimulação frênica/diafragmática.
+
+### 7. Taquicardia com pulso
+
+Primeira pergunta: está instável por causa da taquicardia?
 
 - Instável: cardioversão sincronizada imediata, sedar se der tempo.
 - Sem pulso: algoritmo de PCR, desfibrilação se ritmo chocável.
-- estável: classificar QRS estreito/largo e regular/irregular.
+- Estável: classificar QRS estreito/largo e regular/irregular.
 
 Conduta por padrão:
 
@@ -116,7 +188,7 @@ Torsades:
 - Se instável/sem pulso: choque não sincronizado/desfibrilação.
 - Se recorrente com bradicardia: overdrive pacing/isoproterenol em contexto selecionado.
 
-### 5. PA Muito Alta: É emergência?
+### 8. PA muito alta: é emergência?
 
 Não trate número isolado. Procure lesão aguda de órgão-alvo:
 
@@ -137,7 +209,7 @@ Se há emergência hipertensiva:
 - Regra geral: reduzir PA média até 25% na primeira hora; depois perto de 160/100 em 2-6 h; depois gradual em 24-48 h.
 - Exceções têm metas próprias.
 
-### 6. Situações Hipertensivas Que A Banca Gosta
+### 9. Situações hipertensivas que a banca gosta
 
 | situação | Meta/conduta |
 |---|---|
@@ -158,18 +230,20 @@ SCAPE/EAP hipertensivo:
 4. Furosemida se congesto/hipervolêmico, mas não espere a diurese para melhorar pós-carga.
 5. Procurar SCA, valvopatia, arritmia, falha renal.
 
-### 7. ECGs E Situações Que Resolveram Questões
+### 10. ECGs e situações que resolveram questões
 
 | Padrão | Como reconhecer | Conduta/pegadinha |
 |---|---|---|
 | Hipotermia | Bradicardia, lentificação e onda J/Osborn | Reaquecimento e tratar H/T; arritmias podem ser refratárias até aquecer |
 | Wellens | Dor que melhorou + T bifásica/invertida em V2-V3 | Lesão crítica de DA proximal; não mandar para teste ergométrico |
+| de Winter | Infra ascendente em V1-V6 + T altas/simétricas | Equivalente de IAMCST por DA; hemodinâmica |
+| Sgarbossa/Smith | Critérios de ST em BRE/marcapasso | Se positivo no contexto certo, tratar como oclusão até prova em contrário |
 | IAM inferior/VD | Supra inferior, hipotensão/bradicardia, pulmão sem congestão | Evitar nitrato; volume cauteloso, vasopressor se choque e reperfusão |
 | TdP/TV polimórfica | QRS largo variando amplitude/eixo, QT longo ou contexto | Instável = desfibrilação; magnésio 2 g; evitar amiodarona se TdP |
 | TSV pediátrica instável | Regular, rápida, má perfusão | Cardioversão sincronizada 0,5-1 J/kg |
 | STEMI no APH | ECG diagnóstico antes do hospital | Antiagregação conforme protocolo e destino direto para hemodinâmica |
 
-### 8. Fora Da Cardiologia Pura, Mas Caiu No Bloco
+### 11. Fora da cardiologia pura, mas caiu no bloco
 
 - **Creatinina alta 6 horas após PCI:** contraste costuma subir creatinina depois de 24-48 h; pense em DRC prévia e hipoperfusão do choque/IAM.
 - **Morte encefálica pós-PCR:** não abrir protocolo com hipotermia, sedação recente e sem tempo mínimo; corrija confundidores e respeite protocolo local.
@@ -178,19 +252,19 @@ SCAPE/EAP hipertensivo:
 
 ## Conceitos que sustentam a conduta
 
-### SCA: Tempo E Miocardio
+### SCA: tempo e miocárdio
 
-No IAMCST, a Pergunta principal não é "qual troponina?", é "como reperfundir?". Troponina pode confirmar necrose, mas não deve atrasar hemodinâmica ou fibrinólise quando o ECG e o contexto fecham IAMCST/equivalente.
+No IAMCST, a pergunta principal não é "qual troponina?", é "como reperfundir?". Troponina pode confirmar necrose, mas não deve atrasar hemodinâmica ou fibrinólise quando o ECG e o contexto fecham IAMCST/equivalente.
 
 No SCASEST, o risco manda. Um paciente com dor recorrente, instabilidade, IC, choque, arritmia grave, alteração dinâmica de ST/T ou troponina alta não é "dor torácica para observar no corredor".
 
-### Arritmia: Instabilidade Vem Antes Do Nome Bonito
+### Arritmia: instabilidade vem antes do nome bonito
 
 Taquicardia instável é elétrica até prova em contrário: cardioversão sincronizada. Bradicardia instável precisa aumentar frequência/perfusão: atropina pode ajudar, mas marcapasso e catecolamina devem estar prontos.
 
-QRS largo em emergência deve ser tratado como TV até prova em contrário. O erro fatal e bloquear nodo AV em FA pré-excitada ou tentar "amiodarona para tudo".
+QRS largo em emergência deve ser tratado como TV até prova em contrário. O erro fatal é bloquear nodo AV em FA pré-excitada ou tentar "amiodarona para tudo".
 
-### Emergência Hipertensiva: Lesão De Órgão-Alvo
+### Emergência hipertensiva: lesão de órgão-alvo
 
 PA alta crônica pode ser assustadora, mas a urgência real é a lesão aguda. Reduzir PA agressivamente em paciente sem LOA pode causar AVC, IAM, síncope e lesão renal. Em contraste, dissecção, eclampsia, SCAPE e encefalopatia pedem tratamento imediato.
 
@@ -205,7 +279,7 @@ flowchart TD
     C -->|Sim| D["Ativar reperfusão"]
     D --> E{"PCI <=120 min do primeiro contato?"}
     E -->|Sim| F["Angioplastia primária"]
-    E -->|Não é sem contraindicação| G["fibrinólise + anticoagulante + transferência"]
+    E -->|Não, se sem contraindicação| G["Fibrinólise + anticoagulante + transferência"]
     G --> H{"Reperfusão em 60-90 min?"}
     H -->|Não| I["Angioplastia de resgate"]
     H -->|Sim| J["Angiografia precoce"]
@@ -215,7 +289,7 @@ flowchart TD
     L -->|Não| N["Observação, teste/alta segura conforme protocolo"]
 ```
 
-### Taquicardia Com Pulso
+### Taquicardia com pulso
 
 ```mermaid
 flowchart TD
@@ -264,9 +338,9 @@ flowchart TD
 | Nitroglicerina SL | 0,4 mg ou isordil 5 mg SL, repetir até 3 doses se PA permite |
 | Nitroglicerina EV | 5-10 mcg/min, titular; curso usa 10 mcg/min inicial |
 | Oxigênio | Usar se SatO2 <90%, desconforto respiratório ou choque |
-| PCI preferencial | Se consegue em até 120 min do primeiro contato |
-| fibrinólise | Ideal porta-agulha até 30 min quando PCI atrasada |
-| Sucesso litico | Dor melhora + supra reduz >50% em 60-90 min |
+| PCI preferencial | Se disponível em até 120 min do primeiro contato |
+| Fibrinólise | Ideal porta-agulha até 30 min quando PCI atrasada |
+| Sucesso lítico | Dor melhora + supra reduz >50% em 60-90 min |
 
 ### Arritmias
 
@@ -275,6 +349,9 @@ flowchart TD
 | Atropina bradicardia | 1 mg IV a cada 3-5 min, max 3 mg |
 | Adrenalina bradicardia | 2-10 mcg/min |
 | Dopamina bradicardia | 5-20 mcg/kg/min |
+| Marcapasso transvenoso | Modo VVI em demanda; frequência inicial 60-80 bpm |
+| Output do marcapasso | Iniciar alto; achar limiar de captura e manter margem 2-3x |
+| Sensibilidade do marcapasso | Ajustar para detectar QRS próprio sem inibir por artefato |
 | Adenosina TSV | 6 mg IV rápido; depois 12 mg |
 | Cardioversão estreita regular | 50-100 J sincronizado |
 | Cardioversão estreita irregular | 120-200 J bifásico sincronizado |
@@ -290,7 +367,7 @@ flowchart TD
 
 | situação/fármaco | Dose/alvo |
 |---|---|
-| Regra geral | Reduzir PAM até 25% na 1a hora |
+| Regra geral | Reduzir PAM até 25% na 1ª hora |
 | Dissecção aórtica | PAS <120 e FC <60 em cerca de 20 min |
 | AVCi trombólise | <185/110 antes; <180/105 após |
 | AVCi sem trombólise | Tratar se >220/120; reduzir ~15% em 24 h |
@@ -313,12 +390,15 @@ flowchart TD
 - **Nitrato em infarto de VD/hipotensão/PDE5:** perigoso.
 - **Morfina como pilar obrigatório da SCA:** hoje uso restrito para dor refratária.
 - **Angioplastia vai demorar >120 min e não pensar trombólise:** pegadinha clássica.
-- **Bradicardia instável: ficar repetindo atropina sem preparar marca-passo:** erro de estação.
+- **Bradicardia instável: ficar repetindo atropina sem preparar marcapasso:** erro de estação.
 - **BAV Mobitz II/BAVT como se fosse vasovagal:** errado.
 - **Toda taquicardia larga = amiodarona lenta:** se instável, choque sincronizado.
 - **FA pré-excitada + diltiazem/verapamil/beta-bloqueador/digoxina/adenosina:** pode degenerar para FV.
 - **TdP = amiodarona:** errado. Pense em magnésio, choque se instável, corrigir K/Mg e aumentar frequência se recorrente.
 - **Wellens melhorou, então pode testar:** perigoso. Não faça teste ergométrico; é lesão crítica de DA até prova em contrário.
+- **de Winter sem supra clássico = esperar troponina:** errado. É equivalente de oclusão de DA; chame hemodinâmica.
+- **Sgarbossa negativo exclui IAM em BRE/marcapasso:** errado. Critério positivo ajuda muito; negativo não zera probabilidade.
+- **HEART, GRACE e TIMI como se fossem iguais:** errado. HEART ajuda dor torácica indiferenciada; GRACE/TIMI entram melhor na SCASEST.
 - **Creatinina subiu 6 h após contraste = contraste:** cuidado com tempo. Em poucas horas, pense em DRC e hipoperfusão.
 - **Soluços com marcapasso transvenoso = só reduzir output:** errado na prova. Sugere cabo mal posicionado/estimulação diafragmática.
 - **PA 220/120 assintomática = nitroprussiato:** errado sem lesão de órgão-alvo.
@@ -345,11 +425,11 @@ flowchart TD
 |---|---|---|
 | SCA inicial | ECG <=10 min, AAS, monitor, troponina e reperfusão se supra | Troponina de alta sensibilidade e protocolos 0/1h ou 0/2h ajudam alta segura em baixo risco |
 | Oxigênio no IAM | Usar se hipoxemia/dispneia/choque | AHA/ACC 2025 não recomenda rotina se oxigenação normal |
-| fibrinólise | Se PCI >120 min e sem contraindicação | Rede local manda; após litico, resgate se falha e angiografia precoce se sucesso |
-| P2Y12 | Clopidogrel no litico; ticagrelor/prasugrel comuns em PCI | Ajustar por idade, sangramento, anticoagulação, AVC prévio e estratégia invasiva |
+| Fibrinólise | Se PCI >120 min e sem contraindicação | Rede local manda; após lítico, resgate se falha e angiografia precoce se sucesso |
+| P2Y12 | Clopidogrel no lítico; ticagrelor/prasugrel comuns em PCI | Ajustar por idade, sangramento, anticoagulação, AVC prévio e estratégia invasiva |
 | FA aguda | Instável = cardioversão | Se pré-excitada, evite AV nodais; se >48 h/tempo incerto, anticoag/TEE se não emergencial |
-| Bradicardia | Atropina 1 mg; marca-passo/catecolamina se falhar | Em BAV alto grau, prepare marca-passo cedo |
-| PA alta | Emergência só com LOA aguda | Termo "urgência hipertensiva" vem perdendo valor; evitar redução EV em assintomaticos |
+| Bradicardia | Atropina 1 mg; marcapasso/catecolamina se falhar | Em BAV alto grau, prepare marcapasso cedo |
+| PA alta | Emergência só com LOA aguda | Termo "urgência hipertensiva" vem perdendo valor; evitar redução EV em assintomáticos |
 | SCAPE | VNI + nitrato + diurético | Nitrato em dose alta/bolus pode ser usado por protocolos experientes; monitorar hipotensão |
 
 ## Checklist de revisão
@@ -360,8 +440,10 @@ flowchart TD
 - [ ] Sei que oxigênio não é rotina no IAM com SatO2 normal.
 - [ ] Sei contraindicações críticas de nitrato e fibrinólise.
 - [ ] Sei o ajuste de fibrinólise/anticoagulação no idoso >=75 anos.
-- [ ] Sei reconhecer Wellens, hipotermia/Osborn, IAM inferior/VD e TdP.
-- [ ] Sei tratar bradicardia instável e quando preparar marca-passo.
+- [ ] Sei reconhecer Wellens, de Winter, Sgarbossa/Smith, hipotermia/Osborn, IAM inferior/VD e TdP.
+- [ ] Sei usar HEART, GRACE e TIMI no contexto correto.
+- [ ] Sei tratar bradicardia instável e quando preparar marcapasso.
+- [ ] Sei o básico do marcapasso transvenoso: indicação, acesso, VVI, frequência, output e sensibilidade.
 - [ ] Sei reconhecer complicação de marcapasso transvenoso com soluços/estimulação diafragmática.
 - [ ] Sei classificar taquicardia por instabilidade, QRS e regularidade.
 - [ ] Sei que FA pré-excitada não recebe bloqueador nodal.
@@ -377,7 +459,7 @@ flowchart TD
 - **TEME23:** Q8, Q9, Q15, Q90.
 - **TEME24:** Q25, Q26, Q55, Q63, Q76, Q98, Q99.
 - **TEME25:** Q30, Q35, Q57, Q89, Q90, Q97.
-- **Estações práticas:** TEME24 com BAVT instável, IAMCST, marca-passo e FV.
+- **Estações práticas:** TEME24 com BAVT instável, IAMCST, marcapasso e FV.
 - **Aulas de cursinho:** Aula 34 - Síncope e Arritmias; Aula 36 - Síndrome Coronariana Aguda; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 48 - Pericardite, Miocardite e Endocardite.
 
 ## Referências
@@ -390,7 +472,11 @@ flowchart TD
 - ACC/AHA/ACEP/NAEMSP/SCAI. 2025: [Guideline for the Management of Patients With Acute Coronary Syndromes](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309).
 - European Society of Cardiology. 2023: [Guidelines for the management of acute coronary syndromes](https://pubmed.ncbi.nlm.nih.gov/37622654/).
 - American Heart Association. 2025: [Adult Advanced Life Support](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001376).
-- American Heart Association. 2025: [Adult Bradycardia Algorithm](https://cpr.heart.org/-/media/cpr-files/cpr-guidelines-files/algorithms/algorithmacls_bradycardia_200612.pdf).
+- American Heart Association. 2025: [Adult Bradycardia With a Pulse Algorithm](https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/Algorithm-ACLS-Bradycardia-250514.pdf?sc_lang=en).
 - ACC/AHA/ACCP/HRS. 2023: [Guideline for the Diagnosis and Management of Atrial Fibrillation](https://pmc.ncbi.nlm.nih.gov/articles/PMC11104284/).
+- Wellens syndrome: [StatPearls/NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK482490/).
+- de Winter ECG pattern: [StatPearls/NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK557573/).
+- Sgarbossa et al.: [Electrocardiographic diagnosis of evolving acute myocardial infarction in the presence of left bundle-branch block](https://pubmed.ncbi.nlm.nih.gov/8559200/).
+- Smith et al.: [Modified Sgarbossa rule](https://pubmed.ncbi.nlm.nih.gov/22939607/).
 - European Society of Cardiology. 2024: [Guidelines for the management of elevated blood pressure and hypertension](https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/elevated-blood-pressure-and-hypertension/).
 - American Heart Association. 2024: [The Management of Elevated Blood Pressure in the Acute Care Setting](https://www.ahajournals.org/doi/10.1161/HYP.0000000000000238).
