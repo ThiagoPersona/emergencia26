@@ -50,6 +50,23 @@
       overflow-x: hidden;
     }
 
+    body.copy-protected {
+      -webkit-touch-callout: none;
+    }
+
+    body.copy-protected .content,
+    body.copy-protected .sidebar,
+    body.copy-protected .markdown-section {
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    body.copy-protected img,
+    body.copy-protected svg {
+      -webkit-user-drag: none;
+      user-drag: none;
+    }
+
     #app {
       min-height: 100vh;
       background: var(--bg);
@@ -625,6 +642,41 @@
       font-weight: 650;
     }
 
+    .copy-guard-toast {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 80;
+      max-width: min(340px, calc(100vw - 32px));
+      padding: 0.8rem 0.95rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: rgba(248, 251, 252, 0.97);
+      box-shadow: 0 16px 34px rgba(15, 23, 42, 0.16);
+      color: var(--text);
+      font-size: 0.92rem;
+      font-weight: 700;
+      line-height: 1.35;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: opacity 160ms ease, transform 160ms ease;
+    }
+
+    .copy-guard-toast.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 700px) {
+      .copy-guard-toast {
+        right: 12px;
+        bottom: 12px;
+        left: 12px;
+        max-width: none;
+      }
+    }
+
     .loading-msg,
     .fallback-msg {
       max-width: 760px;
@@ -792,6 +844,55 @@
 
   <script>
     const isFileProtocol = location.protocol === "file:";
+
+    function showCopyGuardMessage() {
+      let toast = document.querySelector(".copy-guard-toast");
+      if (!toast) {
+        toast = document.createElement("div");
+        toast.className = "copy-guard-toast";
+        toast.setAttribute("role", "status");
+        toast.setAttribute("aria-live", "polite");
+        toast.textContent = "Cópia desativada neste material de estudo.";
+        document.body.appendChild(toast);
+      }
+
+      window.clearTimeout(showCopyGuardMessage.timer);
+      toast.classList.add("is-visible");
+      showCopyGuardMessage.timer = window.setTimeout(() => {
+        toast.classList.remove("is-visible");
+      }, 1800);
+    }
+
+    function isCopyGuardAllowedTarget(target) {
+      const element = target && target.nodeType === Node.ELEMENT_NODE ? target : target && target.parentElement;
+      if (!element || typeof element.closest !== "function") return false;
+      return Boolean(element.closest("input, textarea, select, button, [contenteditable='true'], .copy-allowed"));
+    }
+
+    function blockCopyGuardEvent(event) {
+      if (isCopyGuardAllowedTarget(event.target)) return;
+      event.preventDefault();
+      showCopyGuardMessage();
+    }
+
+    function initCopyProtection() {
+      document.body.classList.add("copy-protected");
+
+      ["contextmenu", "copy", "cut", "paste", "dragstart", "selectstart"].forEach((eventName) => {
+        document.addEventListener(eventName, blockCopyGuardEvent, { capture: true });
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (isCopyGuardAllowedTarget(event.target)) return;
+        const key = (event.key || "").toLowerCase();
+        const blockedShortcut = (event.ctrlKey || event.metaKey) && ["a", "c", "x", "u"].includes(key);
+        if (!blockedShortcut) return;
+        event.preventDefault();
+        showCopyGuardMessage();
+      }, { capture: true });
+    }
+
+    initCopyProtection();
 
     function loadScript(src, fallback) {
       return new Promise((resolve) => {
