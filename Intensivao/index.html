@@ -889,7 +889,6 @@
     </div>
   </div>
 
-  <script src="provas-utils.js"></script>
   <script>
     const isFileProtocol = location.protocol === "file:";
 
@@ -1212,6 +1211,20 @@
     }
 
     function getProofToolsApi() {
+      const normalizeLogText = (value) => String(value || "")
+        .replace(/\s+/g, " ")
+        .trim();
+      const formatLogDate = (date) => {
+        const value = date instanceof Date && !Number.isNaN(date.getTime()) ? date : new Date();
+        try {
+          return value.toLocaleString("pt-BR", {
+            dateStyle: "short",
+            timeStyle: "short"
+          });
+        } catch (error) {
+          return value.toISOString();
+        }
+      };
       const fallback = {
         calculateCompletedThemeAverage(items) {
           const rows = Array.isArray(items) ? items : [];
@@ -1228,11 +1241,48 @@
               : null
           };
         },
-        buildWrongAnswersLog(entries) {
+        buildWrongAnswersLog(entries, options) {
           const list = Array.isArray(entries) ? entries : [];
-          return list.length
-            ? list.map((entry, index) => `${index + 1}. ${entry.theme || "Tema"} | ${entry.source || "Questão"} | marcou ${entry.selected || "-"} | gabarito ${entry.answer || "-"}`).join("\n")
-            : "Nenhuma questao errada registrada neste navegador.";
+          const settings = options || {};
+          const lines = [
+            "LOG DE QUESTOES ERRADAS - RESUMOS DE EMERGENCIA",
+            `Gerado em: ${formatLogDate(settings.generatedAt)}`,
+            `Total de erros registrados: ${list.length}`,
+            ""
+          ];
+
+          if (!list.length) {
+            lines.push("Nenhuma questao errada registrada neste navegador.");
+            lines.push("Responda questoes, confira o gabarito e gere o log novamente.");
+            return lines.join("\n");
+          }
+
+          list.forEach((entry, index) => {
+            const title = normalizeLogText(entry.theme || "Tema nao identificado");
+            const source = normalizeLogText(entry.source || "Fonte nao identificada");
+            const questionNumber = normalizeLogText(entry.questionNumber);
+            const selected = normalizeLogText(entry.selected || "-");
+            const answer = normalizeLogText(entry.answer || "-");
+            const route = normalizeLogText(entry.route);
+            const prompt = normalizeLogText(entry.prompt);
+            const selectedText = normalizeLogText(entry.selectedText);
+            const answerText = normalizeLogText(entry.answerText);
+            const selectedExplanation = normalizeLogText(entry.selectedExplanation);
+            const thinking = normalizeLogText(entry.thinking);
+
+            lines.push(`ERRO ${index + 1}`);
+            lines.push(`Tema: ${title}`);
+            lines.push(`Questao: ${source}${questionNumber ? ` | item ${questionNumber}` : ""}`);
+            lines.push(`Marcada: ${selected}${selectedText ? ` - ${selectedText}` : ""}`);
+            lines.push(`Gabarito: ${answer}${answerText ? ` - ${answerText}` : ""}`);
+            if (prompt) lines.push(`Enunciado: ${prompt}`);
+            if (thinking) lines.push(`Como pensar: ${thinking}`);
+            if (selectedExplanation) lines.push(`Por que errei/ponto-chave: ${selectedExplanation}`);
+            if (route) lines.push(`Arquivo: ${route}.md`);
+            lines.push("");
+          });
+
+          return lines.join("\n");
         }
       };
       return window.TEMEProofTools || fallback;
