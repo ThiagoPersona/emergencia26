@@ -2,6 +2,8 @@
 
 - [PROVAS](PROVAS.md)
 
+- [INTENSIVÃO](INTENSIVAO.md)
+
 - Temas
   - [1. Via aérea e ventilação mecânica](temas/001_via-aerea_vm.md)
   - [2. Trauma hemorrágico e transfusão maciça](temas/002_trauma-hemorragico.md)
@@ -27,3 +29,4 @@
   - [22. Psiquiatria, agitação e contenção](temas/022_psiquiatria-agitacao-contencao.md)
   - [23. Procedimentos, analgesia e sedação](temas/023_procedimentos-analgesia-sedacao.md)
   - [24. Cardiovascular complementar](temas/024_cardiovascular-complementar.md)
+  - [25. Estratégia de prova e estações práticas](temas/025_estrategia-prova-estacoes-praticas.md)

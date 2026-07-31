@@ -642,6 +642,53 @@
       font-weight: 650;
     }
 
+    .proof-average-row td {
+      border-top: 2px solid #b9cbd2;
+      background: #e4f1f1;
+      font-weight: 800;
+    }
+
+    .proof-average-row .proof-progress-cell {
+      color: var(--link);
+    }
+
+    .proof-tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.75rem;
+      margin: 1rem 0 1.35rem;
+    }
+
+    .proof-log-button {
+      min-height: 40px;
+      padding: 0.62rem 0.9rem;
+      border: 1px solid #9fb2ba;
+      border-radius: 8px;
+      background: var(--card);
+      color: #344252;
+      font: inherit;
+      font-size: 0.94rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .proof-log-button:hover {
+      border-color: var(--link);
+      color: var(--link);
+    }
+
+    .proof-log-button:disabled {
+      cursor: wait;
+      opacity: 0.62;
+    }
+
+    .proof-log-status {
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 650;
+    }
+
     .copy-guard-toast {
       position: fixed;
       right: 18px;
@@ -842,6 +889,7 @@
     </div>
   </div>
 
+  <script src="provas-utils.js"></script>
   <script>
     const isFileProtocol = location.protocol === "file:";
 
@@ -1163,6 +1211,230 @@
       return { answered, correct, accuracy };
     }
 
+    function getProofToolsApi() {
+      const fallback = {
+        calculateCompletedThemeAverage(items) {
+          const rows = Array.isArray(items) ? items : [];
+          const completed = rows.filter((item) => {
+            const total = Number(item && item.total) || 0;
+            const answered = Number(item && item.answered) || 0;
+            return total > 0 && answered >= total && item.accuracy !== null && item.accuracy !== undefined;
+          });
+          return {
+            completedThemes: completed.length,
+            totalThemes: rows.length,
+            average: completed.length
+              ? Math.round(completed.reduce((sum, item) => sum + Number(item.accuracy), 0) / completed.length)
+              : null
+          };
+        },
+        buildWrongAnswersLog(entries) {
+          const list = Array.isArray(entries) ? entries : [];
+          return list.length
+            ? list.map((entry, index) => `${index + 1}. ${entry.theme || "Tema"} | ${entry.source || "Questão"} | marcou ${entry.selected || "-"} | gabarito ${entry.answer || "-"}`).join("\n")
+            : "Nenhuma questao errada registrada neste navegador.";
+        }
+      };
+      return window.TEMEProofTools || fallback;
+    }
+
+    function upsertProofAverageRow(table, items) {
+      const tbody = table.querySelector("tbody") || table;
+      let row = tbody.querySelector(".proof-average-row");
+      if (!row) {
+        row = document.createElement("tr");
+        row.className = "proof-average-row";
+        tbody.appendChild(row);
+      }
+
+      const totalQuestions = items.reduce((sum, item) => sum + (Number(item.total) || 0), 0);
+      const result = getProofToolsApi().calculateCompletedThemeAverage(items);
+      row.innerHTML = `
+        <td>Média dos temas completos</td>
+        <td class="proof-progress-cell">${totalQuestions}</td>
+        <td class="proof-progress-cell">${result.completedThemes}/${result.totalThemes} temas</td>
+        <td class="proof-progress-cell ${result.average === null ? "is-empty" : ""}">${result.average === null ? "-" : `${result.average}%`}</td>
+        <td></td>
+      `;
+    }
+
+    function ensureProofLogTool(section, table, items) {
+      let tools = section.querySelector(".proof-tools");
+      if (!tools) {
+        tools = document.createElement("div");
+        tools.className = "proof-tools";
+        tools.innerHTML = `
+          <button class="proof-log-button" type="button">Gerar log dos erros</button>
+          <span class="proof-log-status" aria-live="polite"></span>
+        `;
+        table.insertAdjacentElement("afterend", tools);
+      }
+
+      const button = tools.querySelector(".proof-log-button");
+      const status = tools.querySelector(".proof-log-status");
+      if (!button) return;
+
+      button.onclick = () => generateWrongAnswersLog(items, button, status);
+    }
+
+    function getPlainText(value) {
+      return String(value || "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function extractQuizPrompt(card) {
+      const candidates = Array.from(card.querySelectorAll("p"))
+        .filter((paragraph) => !paragraph.classList.contains("quiz-source") && !paragraph.classList.contains("quiz-note"));
+      const prompt = candidates.find((paragraph) => paragraph.querySelector("strong")) || candidates[0];
+      return getPlainText(prompt ? prompt.textContent : "");
+    }
+
+    function extractQuizQuestionNumber(prompt) {
+      const match = getPlainText(prompt).match(/^(\d+)\./);
+      return match ? match[1] : "";
+    }
+
+    function extractQuizOptionTexts(card) {
+      const options = {};
+      Array.from(card.querySelectorAll(".quiz-option")).forEach((option) => {
+        const input = option.querySelector("input[type='radio']");
+        if (!input) return;
+        const letter = input.value;
+        const pattern = new RegExp(`^${letter}\\.\\s*`);
+        options[letter] = getPlainText(option.textContent).replace(pattern, "");
+      });
+      return options;
+    }
+
+    function extractQuizThinking(card) {
+      const paragraphs = Array.from(card.querySelectorAll(".quiz-feedback p"));
+      const item = paragraphs.find((paragraph) => getPlainText(paragraph.textContent).toLowerCase().startsWith("como pensar:"));
+      return item ? getPlainText(item.textContent).replace(/^Como pensar:\s*/i, "") : "";
+    }
+
+    function extractPlainQuizExplanation(card, letter) {
+      const items = Array.from(card.querySelectorAll(".quiz-explain li"));
+      const item = items.find((entry) => getPlainText(entry.textContent).startsWith(`${letter}.`));
+      if (!item) return "";
+
+      return getPlainText(item.textContent)
+        .replace(new RegExp(`^${letter}\\.\\s*`), "")
+        .replace(/^(Correta|Incorreta|Não marque|Nao marque|Deve ser marcada)\.?\s*/i, "")
+        .trim();
+    }
+
+    function parseQuizCardsFromMarkdown(markdown) {
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(`<main>${markdown}</main>`, "text/html");
+      const cards = Array.from(doc.querySelectorAll(".quiz-card"));
+      const details = new Map();
+
+      cards.forEach((card, index) => {
+        const firstInput = card.querySelector("input[type='radio']");
+        const source = card.querySelector(".quiz-source");
+        const cardKey = (firstInput && firstInput.name) || (source && getPlainText(source.textContent)) || `card-${index + 1}`;
+        const answer = card.dataset.answer || "";
+        const prompt = extractQuizPrompt(card);
+        const optionTexts = extractQuizOptionTexts(card);
+        details.set(cardKey, {
+          answer,
+          prompt,
+          optionTexts,
+          source: source ? getPlainText(source.textContent) : "",
+          questionNumber: extractQuizQuestionNumber(prompt),
+          thinking: extractQuizThinking(card),
+          explanations: {
+            A: extractPlainQuizExplanation(card, "A"),
+            B: extractPlainQuizExplanation(card, "B"),
+            C: extractPlainQuizExplanation(card, "C"),
+            D: extractPlainQuizExplanation(card, "D")
+          }
+        });
+      });
+
+      return details;
+    }
+
+    async function fetchQuizCardDetails(route) {
+      const response = await fetch(`${route}.md`, { cache: "no-store" });
+      if (!response.ok) throw new Error(`Não foi possível abrir ${route}.md`);
+      const markdown = await response.text();
+      return parseQuizCardsFromMarkdown(markdown);
+    }
+
+    async function collectWrongQuizEntries(items) {
+      const wrongEntries = [];
+
+      for (const item of items) {
+        const progress = readQuizProgressForRoute(item.route);
+        const wrongProgress = Object.entries(progress)
+          .filter(([, saved]) => saved && saved.selected && saved.correct !== "1" && saved.correct !== true);
+        if (!wrongProgress.length) continue;
+
+        let details = new Map();
+        try {
+          details = await fetchQuizCardDetails(item.route);
+        } catch (error) {
+          details = new Map();
+        }
+
+        wrongProgress.forEach(([cardKey, saved]) => {
+          const detail = details.get(cardKey) || {};
+          const selected = saved.selected || "";
+          const answer = detail.answer || saved.answer || "";
+          const optionTexts = detail.optionTexts || {};
+          wrongEntries.push({
+            theme: item.title,
+            source: detail.source || cardKey,
+            questionNumber: detail.questionNumber || "",
+            selected,
+            answer,
+            prompt: detail.prompt || "",
+            selectedText: optionTexts[selected] || "",
+            answerText: optionTexts[answer] || "",
+            selectedExplanation: detail.explanations ? detail.explanations[selected] : "",
+            thinking: detail.thinking || "",
+            route: item.route
+          });
+        });
+      }
+
+      return wrongEntries;
+    }
+
+    function downloadTextFile(filename, text) {
+      const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      window.setTimeout(() => URL.revokeObjectURL(url), 500);
+    }
+
+    async function generateWrongAnswersLog(items, button, status) {
+      if (button) button.disabled = true;
+      if (status) status.textContent = "Lendo erros salvos...";
+
+      try {
+        const wrongEntries = await collectWrongQuizEntries(items);
+        const log = getProofToolsApi().buildWrongAnswersLog(wrongEntries, { generatedAt: new Date() });
+        downloadTextFile("log-questoes-erradas-teme26.txt", log);
+        if (status) {
+          status.textContent = wrongEntries.length
+            ? `Log gerado com ${wrongEntries.length} erro(s).`
+            : "Log gerado sem erros registrados.";
+        }
+      } catch (error) {
+        if (status) status.textContent = "Não consegui gerar o log agora. Recarregue e tente novamente.";
+      } finally {
+        if (button) button.disabled = false;
+      }
+    }
+
     function hydrateProofProgressTable() {
       const section = document.querySelector(".markdown-section");
       if (!section) return;
@@ -1200,6 +1472,7 @@
       if (officialIndex < 0 || openIndex < 0 || answeredIndex < 0 || accuracyIndex < 0) return;
 
       const rows = Array.from(table.querySelectorAll("tbody tr"));
+      const items = [];
       rows.forEach((row) => {
         const link = row.querySelector('a[href*="provas/"]');
         if (!link) return;
@@ -1227,7 +1500,20 @@
         accuracyCell.textContent = stats.accuracy === null ? "-" : `${stats.accuracy}%`;
         answeredCell.classList.toggle("is-empty", stats.answered === 0);
         accuracyCell.classList.toggle("is-empty", stats.accuracy === null);
+
+        cells = Array.from(row.children);
+        items.push({
+          title: getPlainText(cells[0] ? cells[0].textContent : ""),
+          total,
+          route,
+          answered: stats.answered,
+          correct: stats.correct,
+          accuracy: stats.accuracy
+        });
       });
+
+      upsertProofAverageRow(table, items);
+      ensureProofLogTool(section, table, items);
     }
 
     function initQuizzes() {

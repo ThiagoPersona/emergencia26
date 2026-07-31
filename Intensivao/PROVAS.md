@@ -9,6 +9,7 @@ Como usar:
 3. Clique em **Checar resposta** após cada item.
 4. Depois de checar, a alternativa fica travada.
 5. Ao final, revise o desempenho do tema e volte ao resumo apenas nos erros.
+6. Na página de provas, use **Gerar log dos erros** para baixar um `.txt` com as questões erradas salvas neste navegador.
 
 > TEME22-25 usam gabaritos oficiais disponíveis no projeto.
 >
