@@ -2,7 +2,6 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0;url=Intensivao/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resumos de Emergência</title>
   <style>
@@ -24,7 +23,17 @@
 </head>
 <body>
   <p>
-    Redirecionando para <a href="Intensivao/index.html">Resumos de Emergência</a>...
+    Redirecionando para <a id="destino" href="Intensivao/index.html">Resumos de Emergência</a>...
   </p>
+
+  <script>
+    (() => {
+      const hash = location.hash || "";
+      const target = `Intensivao/index.html${hash}`;
+      const link = document.getElementById("destino");
+      if (link) link.setAttribute("href", target);
+      location.replace(target);
+    })();
+  </script>
 </body>
 </html>

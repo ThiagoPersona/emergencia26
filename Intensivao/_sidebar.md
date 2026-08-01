@@ -4,6 +4,8 @@
 
 - [INTENSIVÃO](INTENSIVAO.md)
 
+- [REVISÃO DOS ERROS](REVISAO.md)
+
 - Temas
   - [1. Via aérea e ventilação mecânica](temas/001_via-aerea_vm.md)
   - [2. Trauma hemorrágico e transfusão maciça](temas/002_trauma-hemorragico.md)
