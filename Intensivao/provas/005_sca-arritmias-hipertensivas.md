@@ -2,11 +2,11 @@
 
 Banco do tema 005 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 16 com gabarito oficial TEME22-24 + 6 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 29 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -575,3 +575,208 @@ Banco do tema 005 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q13</p>
+<p><strong>23. Homem de 52 anos com histórico de hipertensão é atendido em uma Unidade de Emergência devido à dor torácica. Ainda na triagem, é realizado o seguinte ECG: Baseado neste ECG, qual a melhor alternativa:</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q13_ecg_dor_toracica.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q13_ecg_dor_toracica.png" alt="ECG da TEME26 Q13">
+</a>
+<figcaption>ECG da TEME26 Q13</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t005-023" value="A"> A. O ECG em questão evidencia um bloqueio de ramo esquerdo, mas como não temos um ECG prévio do paciente, não se consegue avaliar se possui sinais de oclusão coronariana aguda.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-023" value="B"> B. O ECG em questão evidencia um supradesnivelamento de segmento ST sugestivo de oclusão coronariana aguda.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-023" value="C"> C. O ECG em questão evidencia uma taquicardia de QRS largo e devido à dissociação entre ondas P e complexos QRS, pode-se considerar uma taquicardia ventricular.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-023" value="D"> D. O ECG em questão não é sugestivo de oclusão coronariana aguda.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q13. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> No ECG de prova, não force IAM ou TV se o traçado não sustenta; procure critérios de oclusão e ritmo.</p>
+<p><strong>Por que a D está correta:</strong> D é a leitura cobrada: o traçado não sugere oclusão coronariana aguda.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Bloqueio de ramo esquerdo não impede avaliação se houver critérios apropriados; a alternativa exagera.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Não há padrão convincente de supra com oclusão no traçado.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Não é taquicardia de QRS largo com dissociação AV sustentando TV.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é a leitura cobrada: o traçado não sugere oclusão coronariana aguda.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q19</p>
+<p><strong>24. Paciente de 52 anos com hipertensão arterial sistêmica chega ao DE com dor torácica iniciada há 2 horas. Dor com característica retroesternal, com irradiação para membro superior esquerdo e diaforese. Sinais vitais estáveis. O ECG da triagem foi esse: Com base nessas informações, qual a melhor conduta:</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q19_ecg_oclusao_coronariana.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q19_ecg_oclusao_coronariana.png" alt="ECG da TEME26 Q19">
+</a>
+<figcaption>ECG da TEME26 Q19</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t005-024" value="A"> A. Seriar troponina, se houver curva, iniciar dupla antiagregação, estatina, anticoagulação e encaminhar para referência em cardiologia.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-024" value="B"> B. Solicitar angiotomografia de artéria pulmonar, pois o ECG sugere padrão típico de tromboembolismo pulmonar.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-024" value="C"> C. Encaminhar para referência em cardiologia, pois trata-se de uma oclusão coronariana aguda; visando à intervenção coronária percutânea, realizar ácido acetilsalicílico 300 mg e ticagrelor 180 mg.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-024" value="D"> D. ECG sugestivo de pericardite aguda. Solicitar troponina, iniciar ibuprofeno 400 mg por via oral e colchicina 0,5 mg por via oral.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q19. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Dor típica + ECG de oclusão coronariana: não espere curva de troponina para tratar/referenciar.</p>
+<p><strong>Por que a C está correta:</strong> C indica encaminhamento para cardiologia/intervenção e dupla antiagregação inicial.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Seriar troponina atrasa reperfusão quando ECG já sugere oclusão.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> O ECG não é padrão típico de TEP.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C indica encaminhamento para cardiologia/intervenção e dupla antiagregação inicial.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Pericardite costuma ter supra difuso/PR baixo e conduta não é anti-inflamatório isolado nesse cenário.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q43</p>
+<p><strong>25. Paciente de 83 anos, apresentou síncope seguida de queda da própria altura com traumatismo cranioencefálico. Na admissão no DE, apresentava hematoma subgaleal na região temporal direita. No exame inicial, apresenta: Glasgow 13, pupilas isocóricas e fotorreagentes; FR: 14 irpm; FC: 38 bpm irregular; PA: 90x60 mmHg; SpO2: 98%. Exames laboratoriais: Hb: 10,8; hematócrito: 30%; leucócitos: 6.340/mm³; plaquetas: 120.000/mm³; Na: 137; K: 3,6; proteína C-reativa: 0,8; Cr: 1,8; Uréia: 70. Realizou tomografia computadorizada de crânio, que evidenciou hematoma epidural e subdural contralateral, com a seguinte imagem: Realizado eletrocardiograma, o traçado foi o seguinte: Qual o diagnóstico e o tratamento inicial adequado para o paciente?</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q43_tc_tce.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q43_tc_tce.png" alt="Tomografia de crânio da TEME26 Q43">
+</a>
+<figcaption>Tomografia de crânio da TEME26 Q43</figcaption>
+</figure>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q43_ecg_bavt.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q43_ecg_bavt.png" alt="ECG da TEME26 Q43">
+</a>
+<figcaption>ECG da TEME26 Q43</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t005-025" value="A"> A. Trata-se de um traumatismo cranioencefálico grave (TCE), com efeito de massa e aumento de pressão intracraniana, evoluindo com bradicardia. Necessita de intervenção neurocirúrgica de emergência.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-025" value="B"> B. Trata-se de um bloqueio atrioventricular total com critérios de instabilidade, com TCE sem hipertensão intracraniana. Instalar marca-passo provisório e manter observação neurológica.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-025" value="C"> C. Trata-se de uma bradicardia sinusal e TCE moderado. Realizar suporte de oxigênio com cânula nasal e noradrenalina para manter PA média entre 90 e 110 mmHg.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-025" value="D"> D. Trata-se de uma bradicardia sinusal sintomática. Após realização de atropina, apresenta grande probabilidade de melhora da FC e resolução das síncopes, podendo aguardar em enfermaria para intervenção neurocirúrgica eletiva.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q43. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Síncope com FC 38 irregular e ECG de BAVT explica queda; TC sem hipertensão intracraniana como causa principal da bradicardia.</p>
+<p><strong>Por que a B está correta:</strong> B indica marcapasso provisório por bloqueio AV total instável.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Glasgow 13 e ECG de BAVT não sustentam que bradicardia seja Cushing por TCE grave.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B indica marcapasso provisório por bloqueio AV total instável.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Não é bradicardia sinusal simples.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Atropina tem baixa resposta em bloqueio infranodal/BAVT e não resolve risco de síncope.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q51</p>
+<p><strong>26. Homem de 58 anos procura o pronto-socorro por dor torácica súbita e intensa iniciada há cerca de 1 hora, descrita como “lancinante”, com irradiação para as costas. Sinais vitais: PA: 190 x 110 mmHg; FC: 110 bpm; FR: 22 irpm e SpO2: 96%. À ausculta cardíaca, observa-se sopro diastólico em foco aórtico. O ECG não mostra sinais de isquemia aguda. Durante a avaliação à beira do leito, o médico realizou ultrassom à beira do leito (POCUS) cardíaco, identificando uma raiz da aorta medindo 4,6 cm, presença de discreto derrame pericárdico e refluxo aórtico ao Doppler colorido, não visualizado flap intimal. Considerando os dados clínicos e ultrassonográficos, qual a melhor interpretação desse caso?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t005-026" value="A"> A. O refluxo aórtico ao Doppler, associado ao diâmetro da raiz da aorta dentro da normalidade, sugere doença valvar aórtica crônica, reduzindo a probabilidade de síndrome aórtica aguda.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-026" value="B"> B. A ausência de flap intimal na avaliação com POCUS torna improvável o diagnóstico de dissecção aguda de aorta.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-026" value="C"> C. Os achados clínicos e ultrassonográficos conferem elevada probabilidade de síndrome aórtica aguda, justificando investigação definitiva urgente, com angiotomografia de tórax e tratamento direcionado.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-026" value="D"> D. O derrame pericárdico identificado ao POCUS sugere etiologia inflamatória aguda como diagnóstico mais provável associado à dor torácica súbita.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q51. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Dor lancinante para dorso + PA alta + IAo + raiz dilatada/derrame = síndrome aórtica até prova definitiva.</p>
+<p><strong>Por que a C está correta:</strong> C indica angioTC urgente e tratamento direcionado apesar de não ver flap.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Raiz 4,6 cm não é normal e refluxo agudo aumenta suspeita.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> POCUS sem flap não exclui dissecção.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C indica angioTC urgente e tratamento direcionado apesar de não ver flap.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Derrame pericárdico pode ser complicação de dissecção, não tranquiliza.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q73</p>
+<p><strong>27. Uma mulher de 82 anos procurou a emergência com dispnéia progressiva e rebaixamento do estado geral. Familiares relatam que, há 4 dias, passou por atendimento médico devido a episódio de dor torácica, recebendo alta e prescrição de sintomáticos. Na admissão, encontra-se pálida, sudorética, com FC: 118 bpm; PA: 78/45 mmHg; FR: 32 irpm e SpO2: 90% em ar ambiente. O ECG realizado na admissão é apresentado a seguir: Durante a avaliação à beira do leito, é realizado POCUS cardíaco – janela subcostal: Qual é o diagnóstico mais provável?</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q73_ecg_pos_infarto.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q73_ecg_pos_infarto.png" alt="ECG da TEME26 Q73">
+</a>
+<figcaption>ECG da TEME26 Q73</figcaption>
+</figure>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q73_pocus_tamponamento.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q73_pocus_tamponamento.png" alt="POCUS cardíaco da TEME26 Q73">
+</a>
+<figcaption>POCUS cardíaco da TEME26 Q73</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t005-027" value="A"> A. Comunicação interventricular pós-infarto.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-027" value="B"> B. Ruptura de músculo papilar com insuficiência mitral aguda.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-027" value="C"> C. Ruptura de parede livre do ventrículo esquerdo com tamponamento cardíaco.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-027" value="D"> D. Extensão do infarto com choque cardiogênico isolado.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q73. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Choque dias após IAM + ECG e derrame/tamponamento no POCUS sugere ruptura de parede livre.</p>
+<p><strong>Por que a C está correta:</strong> C é a complicação mecânica compatível.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> CIV pós-IAM daria sopro/defeito septal e shunt, não tamponamento.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Ruptura de papilar causa IM aguda e edema pulmonar, não derrame pericárdico.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C é a complicação mecânica compatível.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Choque cardiogênico isolado não explica tamponamento.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q80</p>
+<p><strong>28. Homem, anos, com infarto agudo do miocárdio com supradesnivelamento do segmento ST, classe Killip 1, iniciou trombólise com alteplase por indisponibilidade de angioplastia primária em tempo adequado. Durante a infusão, o paciente permanece assintomático e hemodinamicamente estável, porém o monitor cardíaco passa a exibir o ritmo mostrado na figura a seguir. Qual é a conduta mais apropriada?</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q80_ritmo_reperfusao.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q80_ritmo_reperfusao.png" alt="Ritmo de reperfusão da TEME26 Q80">
+</a>
+<figcaption>Ritmo de reperfusão da TEME26 Q80</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t005-028" value="A"> A. Interromper imediatamente a infusão. Trata-se de reação idiopática à alteplase, associada a arritmias ventriculares que podem instabilizar o paciente e constituem recomendação para interrupção do tratamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-028" value="B"> B. Prescrever bólus de amiodarona na dose de 150 mg em 10 minutos e repetir se não houve controle de arritmia. Na sequência, iniciar amiodarona em bomba de infusão contínua na taxa de 1 mg/minuto por 6 horas e, depois, 0,5 mg/minuto, por 18 horas.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-028" value="C"> C. Não há ondas p no segmento arrítmico. Trata-se de fibrilação atrial paroxística. Deve ser calculado o CHADS-VA do paciente e, após 24 horas do trombolítico, deve-se pesar o risco / benefício de iniciar anticoagulação contínua.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-028" value="D"> D. Trata-se de ritmo idioventricular acelerado. Não há necessidade de qualquer conduta.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q80. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Ritmo idioventricular acelerado após trombólise é arritmia de reperfusão geralmente benigna se estável.</p>
+<p><strong>Por que a D está correta:</strong> D orienta observar, sem interromper alteplase ou antiarrítmico.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Não é reação que obrigue suspender trombólise.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Amiodarona não é indicada se ritmo é reperfusão benigno e estável.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Não é FA paroxística.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D orienta observar, sem interromper alteplase ou antiarrítmico.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q87</p>
+<p><strong>29. Homem de 65 anos, hipertenso e tabagista, sem história prévia de doenças ateroscleróticas, sem uso recente de ácido acetilsalicílico, chega ao DE com dor torácica opressiva, retroesternal e em queimação iniciada há 4 horas, já resolvida no momento da avaliação. O ECG de admissão é marcadamente normal. A primeira troponina de alta sensibilidade está dentro do valor de referência. Calculado o HEART Score, o paciente totaliza 5 pontos. Com base na estratificação de risco para dor torácica no DE, a conduta mais apropriada é:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t005-029" value="A"> A. Optar por realização de nova troponina ultrassensível em 3 horas e, caso mantenha-se normal, o paciente pode ser dispensado para avaliação ambulatorial, visto que o HEART Score é moderado, mas o ECG não está alterado e não houve alteração de troponinas.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-029" value="B"> B. Direcionar para estratificação invasiva (coronariografia) em até 72 horas, em razão do HEART Score elevado, apesar do ECG sem alterações isquêmicas e sem alteração da troponina, pois o paciente é alto risco.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-029" value="C"> C. Proceder à estratificação não invasiva adicional, dado que o HEART Score superior a 3 em um contexto de ECG sem alterações isquêmicas e sem alterações de troponina ultrassensível.</label>
+<label class="quiz-option"><input type="radio" name="q-t005-029" value="D"> D. Realizar nova dosagem de troponina ultrassensível em 1 e 2 horas e, caso positivas, realizar cateterismo em até 2 horas, visto o alto risco já previamente calculado pelo HEART Score.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q87. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> HEART 5 é risco intermediário: ECG/troponina normais não autorizam alta simples; precisa estratificação adicional.</p>
+<p><strong>Por que a C está correta:</strong> C indica avaliação não invasiva adicional.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Troponina seriada normal reduz risco, mas HEART &gt;3 ainda pede plano de estratificação.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Não é alto risco obrigatório para cateterismo invasivo em 72h.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C indica avaliação não invasiva adicional.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Cateterismo em 2h depende de critérios de alto risco/oclusão, não apenas HEART.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

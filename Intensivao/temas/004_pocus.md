@@ -364,6 +364,16 @@ flowchart TD
 | PCR | CASA em pausas <10 s | Cardiac standstill tem mau prognóstico, mas não deve ser critério isolado para encerrar |
 | Procedimentos | Probe linear, eixo curto/longo, visualizar agulha | POCUS reduz complicações quando operador é treinado e imagem é integrada ao procedimento |
 
+## Pontos quentes TEME26
+
+- **Lung point no modo M:** alternância entre código de barras e sinal da praia é altamente específica para pneumotórax.
+- **Pleural vs pericárdico na PLAX:** líquido posterior à aorta descendente sugere derrame pleural; líquido anterior à aorta sugere pericárdico.
+- **PLAPS:** derrame pleural volumoso aparece como coleção anecoica com pulmão atelectasiado/comprimido.
+- **FAST difícil:** se o espaço de Morrison está pequeno/longe, ajuste inicial costuma ser reduzir profundidade; ganho/TGC melhora brilho, não enquadramento.
+- **Fluido responsivo ≠ fluido tolerante:** PLR/VTI positivo pode coexistir com VExUS congesto e linhas B; nesse caso, não empilhe volume.
+- **Pseudo-AESP:** ritmo organizado sem pulso + contração cardíaca no US sugere atividade mecânica residual e causa potencialmente reversível, mas não autoriza parar RCP.
+- **RUSH no choque distributivo:** POCUS ajuda a excluir obstrutivo/cardiogênico grosseiro, mas não diferencia sozinho sepse de anafilaxia.
+
 ## Checklist de revisão
 
 - [ ] Sei escolher probe: linear, curvilíneo ou setorial.

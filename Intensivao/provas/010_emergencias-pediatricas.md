@@ -2,11 +2,11 @@
 
 Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 26 com gabarito oficial TEME22-24 + 5 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 38 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -767,3 +767,166 @@ Banco do tema 010 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q16</p>
+<p><strong>32. Diarreia aguda é queixa recorrente nos atendimentos nas unidades de emergência pediátrica. Em relação à gastroenterite aguda na infância, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t010-032" value="A"> A. Apesar da ampla utilização da vacina contra o rotavírus, este permanece como a principal causa mundial de gastroenterite aguda, enquanto o norovírus é responsável apenas por surtos localizados.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-032" value="B"> B. O diagnóstico de gastroenterite aguda é predominantemente clínico, porém outras condições podem produzir manifestações semelhantes e devem ser consideradas durante a avaliação.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-032" value="C"> C. A investigação etiológica por culturas de fezes pode auxiliar no manejo de crianças com gastroenterite aguda, especialmente quando há suspeita de infecção bacteriana.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-032" value="D"> D. O uso rotineiro de probióticos é recomendado, uma vez que há evidência de redução da duração da doença e da necessidade de hospitalização.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q16. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Gastroenterite pediátrica é diagnóstico clínico, mas sempre pense nos imitadores cirúrgicos/metabólicos/infecciosos.</p>
+<p><strong>Por que a B está correta:</strong> B é a formulação mais segura para emergência pediátrica.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Norovírus ganhou grande relevância, especialmente onde há vacinação contra rotavírus.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B é a formulação mais segura para emergência pediátrica.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Coprocultura não auxilia de rotina; fica para casos selecionados.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Probiótico rotineiro não é recomendação forte universal para reduzir hospitalização.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q44</p>
+<p><strong>33. Em relação à estratégia step-by-step para avaliação do lactente febril sem foco infeccioso definido, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t010-033" value="A"> A. A estratégia prioriza a identificação de pacientes de baixo risco, utilizando a combinação de aparência clínica, urinálise e biomarcadores inflamatórios.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-033" value="B"> B. A estratégia foi desenvolvida para substituir os protocolos clássicos de estratificação de risco, eliminando a necessidade de avaliação clínica subjetiva.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-033" value="C"> C. A estratégia considera que lactentes com boa aparência clínica podem ser classificados como baixo risco, independentemente dos resultados laboratoriais.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-033" value="D"> D. A estratégia utiliza exclusivamente exames laboratoriais para reduzir a variabilidade interobservadora da avaliação clínica.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q44. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Step-by-step separa baixo risco em lactente febril por aparência, urina e biomarcadores.</p>
+<p><strong>Por que a A está correta:</strong> A resume corretamente a estratégia.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A resume corretamente a estratégia.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Não elimina avaliação clínica; ela é a primeira etapa.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Boa aparência não basta se urina/biomarcadores alterados.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Não é exclusivamente laboratorial.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q57</p>
+<p><strong>34. Caso clínico para as questões 57 e 58: Paciente de 9 meses trazido à emergência com história de febre, tosse, coriza e diminuição da aceitação alimentar há 3 dias. Hoje apresentou-se mais sonolento e subitamente apresentou desvio da face e olhos para o lado esquerdo, com paralisação do lado esquerdo do corpo, ficando assim por cerca de 10 minutos. A seguir, iniciou movimentos tônico-clônicos generalizados, intercalados com momentos de acalmia, mas sem recuperação da consciência entre os episódios. Chega ao pronto-socorro ainda apresentando os episódios. Durante transporte pelo SAMU recebeu midazolam intranasal, com melhora momentânea. Paciente foi levado para a sala vermelha, monitorizado e recebeu suplementação de oxigênio e antitérmico. Pergunta-se: Em caso de refratariedade da crise, qual alternativa demonstra a melhor sequência de escalonamento medicamentoso?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t010-034" value="A"> A. Três doses de benzodiazepínicos/ fenobarbital / propofol.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-034" value="B"> B. Benzodiazepínicos / fenitoína / midazolam em infusão contínua.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-034" value="C"> C. Fenobarbital/ benzodiazepínicos/ fenitoína.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-034" value="D"> D. Cetamina / fosfenitoína / fenobarbital.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q57. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Status epiléptico: benzodiazepínico, segunda linha antiepiléptica, depois anestésico/infusão contínua.</p>
+<p><strong>Por que a B está correta:</strong> B dá sequência aceitável: benzo, fenitoína, midazolam em BIC se refratário.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Três benzodiazepínicos atrasam segunda linha e aumentam depressão respiratória.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B dá sequência aceitável: benzo, fenitoína, midazolam em BIC se refratário.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Fenobarbital antes de benzo inverte prioridade.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Cetamina não é primeira etapa antes de terapias padrão.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q58</p>
+<p><strong>35. Caso clínico para as questões 57 e 58: Paciente de 9 meses trazido à emergência com história de febre, tosse, coriza e diminuição da aceitação alimentar há 3 dias. Hoje apresentou-se mais sonolento e subitamente apresentou desvio da face e olhos para o lado esquerdo, com paralisação do lado esquerdo do corpo, ficando assim por cerca de 10 minutos. A seguir, iniciou movimentos tônico-clônicos generalizados, intercalados com momentos de acalmia, mas sem recuperação da consciência entre os episódios. Chega ao pronto-socorro ainda apresentando os episódios. Durante transporte pelo SAMU recebeu midazolam intranasal, com melhora momentânea. Paciente foi levado para a sala vermelha, monitorizado e recebeu suplementação de oxigênio e antitérmico. Pergunta-se: Qual a principal hipótese diagnóstica etiológica quanto a esse quadro?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t010-035" value="A"> A. Convulsão febril simples.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-035" value="B"> B. Convulsão febril complexa.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-035" value="C"> C. Meningoencefalite.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-035" value="D"> D. Síndrome de West.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q58. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Febre + sintomas respiratórios + focalidade neurológica/status sem recuperação em lactente sugere infecção SNC.</p>
+<p><strong>Por que a C está correta:</strong> C é principal hipótese etiológica: meningoencefalite.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Convulsão febril simples é generalizada, curta e sem recorrência em 24h.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Complexa descreve forma da crise, mas não explica etiologia grave com rebaixamento persistente.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C é principal hipótese etiológica: meningoencefalite.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> West é espasmo epiléptico crônico, não quadro febril agudo.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q69</p>
+<p><strong>36. Um lactente de 4 meses é levado ao DE após episódio súbito ocorrido durante o sono. Segundo a mãe, a criança apresentou palidez facial, hipotonia e aparente pausa respiratória por cerca de 30 segundos, com recuperação espontânea antes da chegada ao hospital. Ao exame físico, encontra-se afebril, ativo, sem alterações cardiorrespiratórias ou neurológicas. História clínica e exame físico completos não identificam causa para o evento. Com base na definição atual de Brief Resolved Unexplained Event (BRUE), assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t010-036" value="A"> A. O BRUE caracteriza-se por evento súbito, breve, em menores de 1 ano, sem causa aparente, após adequada avaliação clínica, podendo cursar com alteração do tônus, alteração da responsividade ou distúrbio respiratório.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-036" value="B"> B. O diagnóstico de BRUE pode ser estabelecido em qualquer faixa etária pediátrica, desde que o episódio tenha resolução espontânea.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-036" value="C"> C. A presença de uma causa identificável para o evento, como bronquiolite ou crise convulsiva, reforça o diagnóstico de BRUE.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-036" value="D"> D. Todo paciente com diagnóstico de BRUE deve ser submetido obrigatoriamente à internação hospitalar e investigação extensa.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q69. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> BRUE é diagnóstico após história/exame sem causa em lactente menor de 1 ano, evento breve e resolvido.</p>
+<p><strong>Por que a A está correta:</strong> A traz definição atual.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A traz definição atual.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> BRUE é para menores de 1 ano.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Se há causa identificável, não é BRUE.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Nem todo BRUE precisa internação extensa; estratifique risco.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q77</p>
+<p><strong>37. Uma criança de 5 anos é admitida no DE com história de febre alta há 4 dias, tosse produtiva e desconforto respiratório progressivo. Ao exame, apresenta-se sonolenta, com extremidades frias, pulsos periféricos finos, TEC: 5 segundos; FC: 180 bpm; FR: 50 irpm; PA: 75/40 mmHg; SpO2: 89% em ar ambiente e diurese reduzida nas últimas 8 horas. A ausculta pulmonar evidencia crepitações em base pulmonar direita e a radiografia de tórax com consolidação extensa lobar. Após reconhecimento do quadro clínico, qual das alternativas descreve de forma mais adequada as medidas recomendadas durante o atendimento?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t010-037" value="A"> A. O Triângulo de Avaliação Pediátrica é uma ferramenta útil como primeira avaliação do paciente séptico na emergência e auxilia na determinação da gravidade e da urgência das intervenções. É composto pela avaliação da aparência, da ausculta pulmonar e da aferição da pressão arterial.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-037" value="B"> B. A hipotensão é o sinal mais precoce e mais sensível para o diagnóstico de choque séptico na criança, devendo ser iniciada imediatamente a droga vasoativa.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-037" value="C"> C. As medidas iniciais incluem oxigenoterapia, monitorização contínua, obtenção de acesso venoso ou intraósseo, coleta de exames e culturas sem retardar antibióticos, ressuscitação volêmica com reavaliações frequentes e consideração de droga vasoativa na persistência do choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-037" value="D"> D. A administração de antibióticos deve ocorrer após as 3 primeiras horas de estabilização inicial, após coleta de culturas, exames laboratoriais gerais e expansão volêmica.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q77. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Sepse pediátrica é perfusão/trabalho respiratório/consciência; tratar com O2, acesso, antibiótico precoce e fluido reavaliado.</p>
+<p><strong>Por que a C está correta:</strong> C descreve pacote inicial sem atrasar antibiótico.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> TAP usa aparência, trabalho respiratório e circulação cutânea, não ausculta/PA.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Hipotensão é tardia em criança.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C descreve pacote inicial sem atrasar antibiótico.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Antibiótico não espera 3 horas de estabilização.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q92</p>
+<p><strong>38. Um lactente de 3 meses é levado ao DE por coloração azulada dos lábios observada pela mãe durante um episódio de choro. Encontra-se confortável, sem desconforto respiratório, com SpO2 de 90% em ar ambiente. Apresenta FC e perfusão periférica normais. Com base nos princípios fisiológicos da cianose, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t010-038" value="A"> A. Alterações na concentração de Hb podem modificar a expressão clínica da cianose, mesmo diante de graus semelhantes de dessaturação arterial.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-038" value="B"> B. A presença de cianose é determinada principalmente pelo percentual de Hb saturada, sendo pouco influenciada pela concentração total de hemoglobina.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-038" value="C"> C. A correlação entre oximetria de pulso e intensidade da cianose observada ao exame físico tende a ser uniforme entre diferentes pacientes.</label>
+<label class="quiz-option"><input type="radio" name="q-t010-038" value="D"> D. A policitemia reduz a probabilidade de detecção clínica da cianose, por aumentar a capacidade de transporte de oxigênio.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q92. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Questão para memorizar pelo gabarito oficial: a banca marcou D, embora a fisiologia clássica da cianose costume gerar controvérsia nesse ponto.</p>
+<p><strong>Por que a D está correta:</strong> D é o gabarito oficial. Trate como item potencialmente controverso: para a prova, registre que a banca associou policitemia ao enunciado da alternativa D.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> É uma regra fisiológica importante, mas não foi a alternativa aceita no gabarito oficial desta prova.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> A concentração total de hemoglobina influencia a percepção clínica da cianose.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Oximetria e aparência não se correlacionam de forma uniforme entre pacientes.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é o gabarito oficial. Trate como item potencialmente controverso: para a prova, registre que a banca associou policitemia ao enunciado da alternativa D.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

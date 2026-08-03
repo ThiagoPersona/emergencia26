@@ -2,11 +2,11 @@
 
 Banco do tema 022 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 3 com gabarito oficial TEME22-24 + 2 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 6 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -124,3 +124,28 @@ Banco do tema 022 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q89</p>
+<p><strong>6. Durante atendimento em ambiente pré-hospitalar, você aborda paciente com história de esquizofrenia, com relato de má adesão ao tratamento. O acionamento foi realizado por familiar que se encontrava preocupado com o teor da fala do paciente, que não era o normal. O paciente encontra-se agitado e diz que não quer atendimento, referindo que está assintomático e falando que os parentes querem se meter na vida dele. Diante desse caso, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t022-006" value="A"> A. A utilização de haloperidol, mesmo após a contenção mecânica, está bem indicada neste paciente.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-006" value="B"> B. Dada a recusa em atendimento, deve-se respeitar a autonomia e decisão do paciente, solicitando a assinatura do Termo de Recusa e informando à central de regulação.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-006" value="C"> C. Notando a presença de risco para o paciente ou terceiros, a equipe de saúde deve agir imediatamente para realizar contenção química e/ou mecânica.</label>
+<label class="quiz-option"><input type="radio" name="q-t022-006" value="D"> D. O acionamento das forças de segurança para o paciente com agitação e/ou agressividade deve ser realizado somente após a avaliação da cena pela equipe da unidade móvel no local.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q89. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Agitação psicótica com risco permite contenção e antipsicótico; autonomia exige capacidade preservada.</p>
+<p><strong>Por que a A está correta:</strong> A é aceitável após contenção mecânica no paciente psicótico agitado.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A é aceitável após contenção mecânica no paciente psicótico agitado.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Recusa não vale se há risco e possível incapacidade decisória.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> A prova cobrou a alternativa mais específica; agir imediatamente pode ser correto, mas deve respeitar segurança e abordagem escalonada.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Segurança pode ser acionada antes se a cena já sugere risco.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

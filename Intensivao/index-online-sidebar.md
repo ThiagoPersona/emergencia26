@@ -1,10 +1,8 @@
-- [Mapa de questões](MAPA_DE_QUESTOES_TEME22-25.md)
+- [Mapa de questões](MAPA_DE_QUESTOES_TEME22-26.md)
 
 - [PROVAS](PROVAS.md)
 
 - [INTENSIVÃO](INTENSIVAO.md)
-
-- [REVISÃO DOS ERROS](REVISAO.md)
 
 - Temas
   - [1. Via aérea e ventilação mecânica](temas/001_via-aerea_vm.md)

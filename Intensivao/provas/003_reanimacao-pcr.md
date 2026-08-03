@@ -2,11 +2,11 @@
 
 Banco do tema 003 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 20 com gabarito oficial TEME22-24 + 4 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 26 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -583,3 +583,57 @@ Banco do tema 003 refeito em formato mais parecido com a prova: enunciado e alte
 
 - TEME23 Q36: anulada.
 - TEME24 Q14: anulada.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q83</p>
+<p><strong>25. Uma criança de 4 anos, previamente hígida, é encontrada inconsciente após episódio de afogamento. Ela é rapidamente levada ao hospital. Ao exame inicial, apresenta-se irresponsiva, apneica e sem pulso palpável. A equipe inicia imediatamente a ressuscitação cardiopulmonar (RCP) e obtém monitorização cardíaca, que evidencia o ritmo a seguir: Com relação ao manejo dessa parada cardiorrespiratória (PCR) pediátrica, assinale a alternativa correta:</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q83_ritmo_pcr_pediatrica.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q83_ritmo_pcr_pediatrica.png" alt="Ritmo da PCR pediátrica da TEME26 Q83">
+</a>
+<figcaption>Ritmo da PCR pediátrica da TEME26 Q83</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t003-025" value="A"> A. A administração precoce de adrenalina está indicada, devendo ser realizada o mais rapidamente possível, associada à RCP de alta qualidade.</label>
+<label class="quiz-option"><input type="radio" name="q-t003-025" value="B"> B. Por se tratar de atividade elétrica organizada, nesse paciente a prioridade é monitorização, incluindo saturação de oxigênio, FC e pressão arterial; coletar anamnese e realizar exame físico direcionado.</label>
+<label class="quiz-option"><input type="radio" name="q-t003-025" value="C"> C. A prioridade inicial consiste na administração de amiodarona, uma vez que a maioria das PCRs pediátricas decorre de causas cardíacas, como as arritmias malignas.</label>
+<label class="quiz-option"><input type="radio" name="q-t003-025" value="D"> D. A confirmação de atividade elétrica organizada exclui o diagnóstico de parada cardiorrespiratória, devendo ser interrompidas as manobras de ressuscitação.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q83. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> PCR pediátrica por afogamento com ritmo organizado sem pulso = AESP; RCP e adrenalina precoce.</p>
+<p><strong>Por que a A está correta:</strong> A prioriza adrenalina e compressões de qualidade em ritmo não chocável.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A prioriza adrenalina e compressões de qualidade em ritmo não chocável.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Sem pulso é PCR, não monitorização simples.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Amiodarona é para FV/TV sem pulso refratária, não AESP.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Atividade elétrica organizada não exclui PCR se não há pulso.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q98</p>
+<p><strong>26. Uma mulher de 50 anos é admitida em parada cardiorrespiratória (PCR). O monitor mostra ritmo organizado a 45 bpm, porém sem pulso palpável. Durante a checagem de ritmo, o médico realiza ultrassonografia cardíaca pela janela subxifóide e identifica atividade contrátil organizada, razão ventrículo direito/esquerdo preservada e ausência de derrame pericárdico. Diante desse achado, a interpretação mais adequada é:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t003-026" value="A"> A. Trata-se de dissociação eletromecânica verdadeira, associada a prognóstico extremamente desfavorável.</label>
+<label class="quiz-option"><input type="radio" name="q-t003-026" value="B"> B. O achado caracteriza pseudo-AESP, sugerindo atividade mecânica cardíaca organizada de possível causa potencialmente reversível e necessidade de investigação etiológica direcionada.</label>
+<label class="quiz-option"><input type="radio" name="q-t003-026" value="C"> C. A presença de atividade contrátil cardíaca ao ultrassom afasta a necessidade de investigação das causas reversíveis da PCR.</label>
+<label class="quiz-option"><input type="radio" name="q-t003-026" value="D"> D. A identificação de atividade contrátil cardíaca ao ultrassom exclui como causa da PCR condições obstrutivas, como tromboembolismo pulmonar maciço e pneumotórax hipertensivo.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q98. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> AESP com contração no US é pseudo-AESP: há atividade mecânica e causa potencialmente reversível a buscar.</p>
+<p><strong>Por que a B está correta:</strong> B interpreta o achado sem interromper algoritmo.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Dissociação eletromecânica verdadeira seria sem contração mecânica.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B interpreta o achado sem interromper algoritmo.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> US com contração não dispensa Hs e Ts.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> VD preservado/sem derrame não exclui todas causas obstrutivas, especialmente pneumotórax.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

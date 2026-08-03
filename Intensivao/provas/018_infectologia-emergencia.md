@@ -2,11 +2,11 @@
 
 Banco do tema 018 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 17 com gabarito oficial TEME22-24 + 9 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 27 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -628,3 +628,28 @@ Banco do tema 018 refeito em formato mais parecido com a prova: enunciado e alte
 
 - TEME22 Q71: anulada.
 - TEME25 Q48: anulada pelo gabarito oficial.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q66</p>
+<p><strong>27. Em relação às arboviroses, marque a afirmativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t018-027" value="A"> A. O E-FASD foca na investigação do choque relacionado à dengue e objetiva nortear a terapêutica baseada na infusão adequada de volume.</label>
+<label class="quiz-option"><input type="radio" name="q-t018-027" value="B"> B. A cronificação dos casos na infecção pelo Zika vírus não é incomum, e até 30% dos pacientes podem apresentar sequelas.</label>
+<label class="quiz-option"><input type="radio" name="q-t018-027" value="C"> C. Em relação à Chikungunya, a forma mais prevalente é a assintomática, mas, quando sintomática, geralmente cursa de forma benigna e autolimitada.</label>
+<label class="quiz-option"><input type="radio" name="q-t018-027" value="D"> D. Espessamento da vesícula biliar ao ultrassom à beira do leito (POCUS) é considerado um marcador de gravidade na dengue.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q66. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Na dengue, POCUS com espessamento de vesícula é sinal de extravasamento/plasma leakage e gravidade.</p>
+<p><strong>Por que a D está correta:</strong> D é o marcador ultrassonográfico cobrado.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> E-FASD não é ferramenta apenas para choque por dengue.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Zika crônica/sequela nesse percentual não é regra.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Chikungunya sintomática frequentemente cronifica artralgia; não é sempre benigna autolimitada.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é o marcador ultrassonográfico cobrado.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

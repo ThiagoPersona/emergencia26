@@ -8,7 +8,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME23 cobrou pielonefrite obstrutiva/hidronefrose; TEME25 cobrou torção testicular; TEME22-25 trazem termos testicular, hidronefrose, ureterolitíase, priapismo e retenção.
+- **Recorrência em provas/estações:** TEME23 cobrou pielonefrite obstrutiva/hidronefrose; TEME25 cobrou torção testicular; TEME22-26 trazem termos testicular, hidronefrose, ureterolitíase, priapismo e retenção.
 - **O que a banca costuma testar:** primeira conduta, quando chamar urologia, analgesia, controle de foco e armadilhas com imagem.
 - **Como costuma aparecer:** dor lombar/flanco com febre, dor escrotal súbita, ereção prolongada dolorosa, prepúcio preso ou trauma pélvico com uretrorragia.
 
@@ -130,7 +130,7 @@ flowchart TD
 - **TEME23 Q32:** lombar/testicular, hidronefrose e infecção = pielonefrite obstrutiva; antibiótico EV + desobstrução.
 - **TEME24 Q40:** cólica/flanco com POCUS/hidronefrose e risco de obstrução.
 - **TEME25 Q99/Q100:** dor testicular súbita, náuseas/vômitos e sinais clínicos de torção.
-- **TEME22-25:** termos hidronefrose, testicular, priapismo e retenção aparecem como distratores ou diagnósticos associados.
+- **TEME22-26:** termos hidronefrose, testicular, priapismo e retenção aparecem como distratores ou diagnósticos associados.
 
 ## Referências
 
@@ -147,4 +147,3 @@ flowchart TD
 
 - EAU. Urological Trauma Guidelines: https://uroweb.org/guidelines/urological-trauma/chapter/urogenital-trauma-guidelines
 - EAU. Priapism: https://uroweb.org/guidelines/sexual%20-and-reproductive-health/chapter/priapism
-

@@ -10,7 +10,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou eclâmpsia/pré-eclâmpsia grave, cesárea perimortem/histerotomia de reanimação, hemorragia puerperal, SUA, violência sexual, DIP, prolapso de cordão, gravidez ectópica e DPP/fibrinogênio.
+- **Recorrência em provas/estações:** TEME22-26 cobrou eclâmpsia/pré-eclâmpsia grave, cesárea perimortem/histerotomia de reanimação, hemorragia puerperal, SUA, violência sexual, DIP, prolapso de cordão, gravidez ectópica e DPP/fibrinogênio.
 - **O que a banca costuma testar:** primeira conduta, droga de escolha, quando pedir TC na eclâmpsia, quando não tocar a gestante sangrando, quando operar/transferir, e qual exame/laboratório muda gravidade.
 - **Como costuma aparecer:** caso com distrator "obstétrico" que não pode atrasar sala vermelha. A resposta costuma ser ABCDE + intervenção tempo-dependente, não uma investigação longa.
 
@@ -276,6 +276,15 @@ flowchart TD
 >
 > **Atualização clínica:** OMS/FIGO recomendam TXA precoce na HPP, idealmente até 3 h do parto, com segunda dose se sangramento persiste após 30 min ou recorre em até 24 h, conforme protocolo.
 
+## Pontos quentes TEME26
+
+- **Regulação do trabalho de parto a termo:** gestante estável, contrações regulares e meio próprio deve procurar maternidade por meios próprios; não acione SAV/SBV sem emergência materno-fetal.
+- **Ectópica/torção:** dor pélvica súbita + atraso menstrual/lipotimia = beta-HCG e US como primeira linha, avaliando estabilidade antes de tudo.
+- **Beta-HCG seriado:** se beta positivo e US inconclusivo, acompanhe evolução; gestação tópica normal tende a subir de forma importante em 48h, e elevação insuficiente sugere ectópica/não evolutiva.
+- **Prolapso de cordão:** Trendelenburg/joelho-peito e elevação manual da apresentação fetal para aliviar compressão até resolução obstétrica.
+- **Distócia de ombro:** McRoberts + pressão suprapúbica; pressão fúndica é erro clássico.
+- **HELLP:** pode ocorrer sem crise hipertensiva franca e com coagulograma normal; plaquetas baixas + DHL/hemólise + AST/ALT elevadas fecham o raciocínio.
+
 ## Checklist de revisão
 
 - [ ] Toda mulher em idade fértil com dor/sangramento/choque tem beta-hCG considerado.
@@ -318,7 +327,7 @@ flowchart TD
 - Conteúdo programático TEME26.
 - Referências bibliográficas TEME26.
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25.
-- Estações práticas TEME22-25.
+- Estações práticas disponíveis até TEME25.
 
 **Material local**
 

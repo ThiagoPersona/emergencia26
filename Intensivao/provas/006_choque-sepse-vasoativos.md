@@ -2,11 +2,11 @@
 
 Banco do tema 006 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 22 com gabarito oficial TEME22-24 + 7 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 32 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -697,3 +697,74 @@ Banco do tema 006 refeito em formato mais parecido com a prova: enunciado e alte
 - TEME23 Q10: anulada.
 - TEME23 Q44: anulada.
 - TEME23 Q69: anulada.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q34</p>
+<p><strong>30. Homem de 65 anos, cardiopata, em choque séptico de foco urinário, intubado e em ventilação mecânica controlada (volume corrente 8 mL/kg, ritmo sinusal, sem esforço espontâneo). Já recebeu 30 mL/kg de cristalóide. Mantém-se em uso de noradrenalina 0,4 mcg/kg/minuto, com lactato 4,5 mmol/L, moteamento cutâneo e oligúria. À avaliação hemodinâmica com ultrassom à beira-leito, seguem os seguintes achados: Elevação passiva das pernas (PLR): integral velocidade-tempo da via de saída do ventrículo esquerdo (VTI VSVE) sobe de 14 para 16,5 cm. Ultrassom pulmonar: linhas B difusas (≥ 3 por espaço intercostal) em zonas anteriores e laterais, bilateralmente. VExUS: Veia Cava Inferior 2,5 cm pouco colapsável; pulsatilidade da veia porta ~55%; veia hepática com inversão da onda S; veias intrarrenais com perda de fluxo monofásico e apresentando fluxo pulsátil diastólico. Considerando os conceitos de fluido responsividade e fluido tolerância, a conduta mais apropriada é:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t006-030" value="A"> A. Repetir provas volêmicas guiadas pelo índice de distensibilidade da VCI, mantendo expansão até que esse índice seja inferior a 18%.</label>
+<label class="quiz-option"><input type="radio" name="q-t006-030" value="B"> B. Administrar nova prova volêmica, pois o aumento do VTI &gt; 10% após a PLR caracteriza fluido responsividade.</label>
+<label class="quiz-option"><input type="radio" name="q-t006-030" value="C"> C. Considerar o paciente não fluidorresponsivo apenas porque apresenta VCI túrgida, com índice de distensibilidade inferior a 15%, e não indicar novas intervenções guiadas por testes dinâmicos.</label>
+<label class="quiz-option"><input type="radio" name="q-t006-030" value="D"> D. Suspender novas expansões e priorizar a otimização do vasopressor, pois, embora fluido responsivo, o paciente apresenta sinais de fluido-intolerância.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q34. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> PLR positivo mostra responsividade, mas VExUS/linhas B mostram intolerância a fluido: não basta 'responder'.</p>
+<p><strong>Por que a D está correta:</strong> D escolhe parar expansão e otimizar vasopressor diante de congestão venosa/pulmonar.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> VCI isolada é fraca e insistir em fluido piora congestão.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> VTI subiu &gt;10%, mas tolerância está ruim.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Dizer não responsivo só pela VCI ignora teste dinâmico positivo.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D escolhe parar expansão e otimizar vasopressor diante de congestão venosa/pulmonar.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q52</p>
+<p><strong>31. Sobre a avaliação da perfusão tecidual no choque circulatório, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t006-031" value="A"> A. O gradiente venoarterial de dióxido de carbono (CO2), o gap de CO2, é um bom marcador de hipóxia tecidual e deve ser utilizado para confirmar a hipoperfusão no choque.</label>
+<label class="quiz-option"><input type="radio" name="q-t006-031" value="B"> B. As janelas de perfusão (pele, sistema nervoso central e rins) permitem avaliar a perfusão à beira do leito, e o escore de Mottling é preditor independente de mortalidade na sepse.</label>
+<label class="quiz-option"><input type="radio" name="q-t006-031" value="C"> C. Um tempo de enchimento capilar normal ou acelerado reflete boa perfusão periférica e, no choque vasoplégico, costuma afastar a hipoperfusão sistêmica relevante.</label>
+<label class="quiz-option"><input type="radio" name="q-t006-031" value="D"> D. A hiperlactatemia decorre da hipoperfusão tecidual, e, por traduzir o metabolismo anaeróbio das células mal perfundidas, sua elevação caracteriza o estado de choque circulatório.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q52. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Choque se acompanha por janelas clínicas: pele, SNC e rim; moteamento é forte marcador prognóstico.</p>
+<p><strong>Por que a B está correta:</strong> B valoriza perfusão à beira-leito e escore de mottling.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Gap CO2 reflete fluxo/depuração, não confirma hipóxia tecidual isoladamente.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B valoriza perfusão à beira-leito e escore de mottling.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> TEC normal não afasta hipoperfusão no vasoplégico.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Lactato tem várias causas e não define choque sozinho.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q75</p>
+<p><strong>32. Homem, 58 anos, com dor torácica intensa há 6 dias, previamente informado em outro serviço sobre provável infarto agudo do miocárdio e ainda aguardando cineangiocoronariografia, procura o DE por dispneia e mal-estar. Em uso de ácido acetilsalicílico, losartana, atenolol e sinvastatina. Ao exame: PA: 86 × 52 mmHg; FC: 82 bpm; FR: 24 irpm; SpO2: 92% em ar ambiente, tempo de enchimento capilar de 4 segundos, estertores crepitantes bilaterais até o terço médio e moteamento cutâneo em joelhos, grau 2. Com base na avaliação clínica da perfusão, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t006-032" value="A"> A. A presença e a extensão do moteamento cutâneo são marcadores prognósticos de hipoperfusão periférica e associam-se a maior mortalidade em pacientes com choque circulatório.</label>
+<label class="quiz-option"><input type="radio" name="q-t006-032" value="B"> B. O shock index de aproximadamente 0,95 afasta choque circulatório, pois valores abaixo de 1 são considerados normais.</label>
+<label class="quiz-option"><input type="radio" name="q-t006-032" value="C"> C. A taquipneia, associada ao mal-estar e à tosse produtiva, é suficiente para caracterizar choque séptico, independentemente do contexto cardiovascular e dos sinais de congestão pulmonar.</label>
+<label class="quiz-option"><input type="radio" name="q-t006-032" value="D"> D. Um gap venoarterial de dióxido de carbono elevado pode ser utilizado isoladamente para confirmar choque circulatório e quantificar diretamente a intensidade da hipóxia tecidual.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q75. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Moteamento cutâneo e sua extensão são marcadores prognósticos no choque, independentemente da etiologia.</p>
+<p><strong>Por que a A está correta:</strong> A valoriza perfusão periférica no IAM complicado.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A valoriza perfusão periférica no IAM complicado.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Shock index perto de 0,95 não afasta choque, especialmente com PA baixa e sinais periféricos.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Contexto cardiovascular e congestão apontam choque cardiogênico, não sepse por taquipneia.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Gap CO2 não confirma/quantifica hipóxia sozinho.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

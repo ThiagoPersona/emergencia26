@@ -13,7 +13,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou HDA em cirrótico, PBE, encefalopatia/cirrose, pancreatite biliar, diverticulite, apendicite, dor abdominal em mulher, ferimento abdominal, POCUS/FAST, perfuração, ureterolitíase com obstrução, colangite, C. difficile e torção testicular.
+- **Recorrência em provas/estações:** TEME22-26 cobrou HDA em cirrótico, PBE, encefalopatia/cirrose, pancreatite biliar, diverticulite, apendicite, dor abdominal em mulher, ferimento abdominal, POCUS/FAST, perfuração, ureterolitíase com obstrução, colangite, C. difficile e torção testicular.
 - **O que a banca costuma testar:** primeira conduta, indicação de TC/US/POCUS, quando chamar cirurgia/urologia/endoscopia, quando não atrasar antibiótico, quando fazer paracentese, e diferença entre colecistite, colangite e pancreatite biliar.
 - **Como costuma aparecer:** caso com dor abdominal + sinais discretos. A resposta certa geralmente identifica gravidade por idade, comorbidade, choque, lactato, peritonite, imunossupressão/cirrose ou falha de melhora.
 

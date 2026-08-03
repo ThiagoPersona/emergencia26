@@ -432,6 +432,16 @@ flowchart TD
 | PA alta | Emergência só com LOA aguda | Termo "urgência hipertensiva" vem perdendo valor; evitar redução EV em assintomáticos |
 | SCAPE | VNI + nitrato + diurético | Nitrato em dose alta/bolus pode ser usado por protocolos experientes; monitorar hipotensão |
 
+## Pontos quentes TEME26
+
+- **BAVT instável:** síncope, hipotensão, choque, dor isquêmica ou IC = marcapasso. Atropina pode falhar em bloqueio alto grau; use marcapasso transcutâneo como ponte e considere transvenoso com especialista/recurso.
+- **Marcapasso transcutâneo:** pás antero-laterais ou antero-posteriores, modo pacing, frequência inicial usual 60-80/min, aumentar mA até captura elétrica e mecânica; confirmar pulso central/perfusão, analgesia/sedação se possível.
+- **Marcapasso transvenoso provisório:** pensar em BAVT instável, bloqueio infranodal, falha/intolerância ao transcutâneo ou necessidade de ponte prolongada; exige monitorização, acesso venoso central e confirmação de captura.
+- **Ritmo idioventricular acelerado pós-reperfusão:** se paciente estável após trombólise/IAM, costuma ser arritmia de reperfusão; não interrompa trombólise nem dê amiodarona automaticamente.
+- **HEART intermediário:** HEART >3 com ECG/troponina normais não é alta simples; precisa estratificação adicional ou observação conforme protocolo.
+- **Síndrome aórtica aguda:** dor lancinante para dorso + PA alta + IAo/raiz dilatada/derrame no POCUS = angioTC urgente, mesmo sem visualizar flap.
+- **Complicação mecânica pós-IAM:** choque dias após IAM com derrame/tamponamento no POCUS sugere ruptura de parede livre até prova em contrário.
+
 ## Checklist de revisão
 
 - [ ] Sei fazer abordagem inicial da dor torácica em até 10 min.
@@ -466,7 +476,7 @@ flowchart TD
 
 - Conteúdo programático TEME26 e referências oficiais do edital.
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25 disponíveis no projeto.
-- Estações práticas TEME22-25 disponíveis no projeto.
+- Estações práticas disponíveis até TEME25 disponíveis no projeto.
 - Aulas de cursinho: Aula 34 - Síncope e Arritmias; Aula 36 - Síndrome Coronariana Aguda; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 48 - Pericardite, Miocardite e Endocardite.
 - Resumo do cursinho.docx, arquivo do usuário.
 - ACC/AHA/ACEP/NAEMSP/SCAI. 2025: [Guideline for the Management of Patients With Acute Coronary Syndromes](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001309).

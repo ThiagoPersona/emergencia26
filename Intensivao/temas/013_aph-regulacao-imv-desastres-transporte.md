@@ -11,7 +11,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou cena de rodovia, cinemática, explosão, transporte aeromédico, mergulho/descompressão, altitude, afogamento, atendimento tático, intermação, papel do médico regulador e logística em contexto remoto/rural.
+- **Recorrência em provas/estações:** TEME22-26 cobrou cena de rodovia, cinemática, explosão, transporte aeromédico, mergulho/descompressão, altitude, afogamento, atendimento tático, intermação, papel do médico regulador e logística em contexto remoto/rural.
 - **O que a banca costuma testar:** prioridade da primeira equipe, diferença entre APH e tratamento definitivo, START/SCI, "vaga zero", responsabilidades do regulador/transporte/receptor, zonas táticas, óbito em cena, preservação de vestígios, blast injury e condutas ambientais simples.
 - **Como costuma aparecer:** caso cheio de distratores. A resposta certa geralmente protege equipe, organiza recurso, comunica a rede e não faz procedimento heroico em cena insegura ou com acesso limitado.
 
@@ -439,6 +439,17 @@ flowchart TD
 > **Para prova TEME:** cena segura antes do ABCDE; rodovia exige posicionamento protetor da ambulância; START adulto usa andar, respiração, FR >30, perfusão e comando; IMV exige comando e maior benefício coletivo; médico regulador tem papel técnico/gestor; intermação deve ser resfriada antes de transporte quando possível; afogamento apneico recebe abertura de VA e 5 ventilações; DCS recebe O2 100%; ruptura timpânica e blast primário.
 >
 > **Na prática clínica:** protocolos locais de SAMU, bombeiros, defesa civil, polícia, concessionária e hospitais definem detalhes operacionais. START é muito cobrado, mas sistemas como SALT/JumpSTART podem ser preferidos em serviços específicos. Em "vaga zero", documentação, comunicação e estabilização proporcional ao risco protegem paciente, equipe e rede.
+
+## Pontos quentes TEME26
+
+- **SCI:** objetivo é reduzir discrepância entre demanda e capacidade; controle integral de recursos inclui identificar, mobilizar, usar, rastrear e desmobilizar.
+- **Nível de incidente:** se o hospital ainda tem centro cirúrgico/UTI/equipes mobilizáveis, pode ser Nível II interno com ativação do SCI, não necessariamente catástrofe regional.
+- **HazMat/radiológico:** zona quente é área contaminada; zona morna é transição/descontaminação; zona fria é atendimento limpo/logística.
+- **Amônia/agente desconhecido:** entrada na zona quente sem concentração/risco definidos pede proteção máxima: traje encapsulado resistente a vapor/líquido + SCBA.
+- **Descontaminação:** retirar roupas e descontaminar antes de triagem definitiva/ambulância quando há contaminação química; não leve contaminação para hospital.
+- **Aeromédico:** altitude reduz pressão barométrica e expande gases; pneumotórax/coleções não drenadas podem piorar. Vibração/ruído atrapalham monitorização, então correlacione com clínica.
+- **Equipamento complexo no voo:** ECMO ou tecnologia não familiar exige profissional capacitado e briefing de segurança, ou missão deve ser rediscutida.
+- **RMC moderna:** evite prancha prolongada; faça restrição seletiva e transporte ao centro adequado quando mecanismo é de alto risco.
 
 ## Checklist de revisão
 

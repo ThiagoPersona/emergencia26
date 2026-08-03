@@ -9,7 +9,7 @@
 
 ## Por que cai
 
-Via aérea e VM aparecem todos os anos nas provas TEME22-25 e nas práticas. O padrão da banca é caso clínico com decisão sob pressão: intoxicado agitado, gestante eclâmptica, trauma, choque, DPOC/asma, TCE, PCR, falha de ventilação ou curva de ventilador.
+Via aérea e VM aparecem todos os anos nas provas TEME22-26 e nas práticas. O padrão da banca é caso clínico com decisão sob pressão: intoxicado agitado, gestante eclâmptica, trauma, choque, DPOC/asma, TCE, PCR, falha de ventilação ou curva de ventilador.
 
 Na prática, caiu de forma direta:
 
@@ -444,6 +444,15 @@ Conduta: chamar ajuda cedo, preparar via aérea difícil e crico. Acordado pode 
 - Colocar FR alta em DPOC/asma e causar auto-PEEP com hipotensão.
 - Tratar queda de saturação pós-IOT só aumentando FiO2, sem pensar DOPE.
 - Não pedir gasometria depois de iniciar VM em paciente crítico.
+
+## Pontos quentes TEME26
+
+- **Paciente intubado inquieto/assincrônico:** não trate só aumentando midazolam. Reavalie dor, sedação, tubo, ventilador, assincronia e causas reversíveis; analgesia titulada vem antes de paralisia.
+- **DSI vs RSI:** se o paciente não tolera pré-oxigenação, use cetamina para permitir VNI/PEEP e cabeceira elevada antes de bloquear. Se tolera VNI e anatomia é favorável, RSI bem preparada continua aceitável.
+- **Preparação dupla:** em hipoxêmico/obeso, prepare a intubação e prepare resgate simultaneamente: PEEP, posição, sucção, vasopressor, dispositivo extraglótico e crico.
+- **Via aérea suja:** sangue/vômito pede técnica tipo SALAD: sucção rígida contínua antes e durante a laringoscopia, posicionada na hipofaringe/proximal ao esôfago.
+- **NINO/CICO:** falhou intubação e falhou ventilação com BVM/dispositivo extraglótico = cricotireoidostomia cirúrgica imediata, dedo-bisturi-bougie, com tubo adequado.
+- **PSV em DPOC:** ciclagem tardia prolonga inspiração, piora auto-PEEP e assincronia; aumente critério de ciclagem quando o ventilador entrega tempo inspiratório maior que o esforço neural.
 
 ## Checklist de revisão
 

@@ -2,11 +2,11 @@
 
 Banco do tema 009 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 13 com gabarito oficial TEME22-24 + 6 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 24 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -468,3 +468,120 @@ Banco do tema 009 refeito em formato mais parecido com a prova: enunciado e alte
 ## Itens não pontuados
 
 - TEME24 Q14: anulada.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q4</p>
+<p><strong>20. Durante a regulação médica, você conversa com uma gestante, com idade gestacional de 38 semanas, referindo estar em sua segunda gestação, sentindo contrações há 5 horas. Ela relata que, no momento, são contrações rápidas, de menos de 1 minuto de duração, a cada 4 minutos. Nega perda de líquido no momento, mas refere perda de tampão mucoso há 2 dias. Nega outros sintomas e relata ter como ir ao hospital por meios próprios, caso necessário. Nesse contexto, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t009-020" value="A"> A. Orientar aguardar em casa até o trabalho de parto efetivo.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-020" value="B"> B. Enviar ambulância de Suporte Avançado.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-020" value="C"> C. Enviar ambulância de Suporte Básico.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-020" value="D"> D. Orientar a procurar a maternidade por meios próprios.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q4. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Gestante a termo com contrações regulares e meio próprio deve ser orientada a ir à maternidade, sem acionar SAV/SBV se está estável.</p>
+<p><strong>Por que a D está correta:</strong> D equilibra segurança obstétrica e regulação: procurar maternidade por meios próprios.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Aguardar em casa perde oportunidade de avaliação obstétrica, pois há contrações frequentes a termo.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> SAV é excessivo sem instabilidade, parto iminente complicado ou emergência materno-fetal.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> SBV também não é necessário se ela está estável e tem transporte próprio.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D equilibra segurança obstétrica e regulação: procurar maternidade por meios próprios.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q32</p>
+<p><strong>21. Mulher de 27 anos procura a emergência por dor súbita em fossa ilíaca direita, associada a náuseas e um episódio de lipotimia. Refere data da última menstruação há aproximadamente 40 dias. Está pálida, taquicárdica, com dor à palpação de hipogástrio e fossa ilíaca direita, sem febre. Qual é a conduta inicial mais adequada no Departamento de Emergência?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t009-021" value="A"> A. Iniciar antibiótico para doença inflamatória pélvica, pois dor pélvica e náuseas tornam infecção genital a hipótese mais provável. O diagnóstico, neste caso, é clínico.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-021" value="B"> B. Priorizar analgesia e alta com retorno ambulatorial, pois dor pélvica em mulher jovem é frequentemente funcional ou relacionada ao ciclo menstrual.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-021" value="C"> C. Avaliar estabilidade hemodinâmica, solicitar tomografia de abdome como primeiro exame de imagem, pois apendicite é o diagnóstico mais provável.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-021" value="D"> D. Avaliar estabilidade hemodinâmica, solicitar beta-HCG e ultrassonografia como primeiro exame de imagem e considerar precocemente gravidez ectópica e torção ovariana.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q32. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Dor pélvica súbita + atraso menstrual/lipotimia: sempre pense em ectópica e torção antes de 'DIP'.</p>
+<p><strong>Por que a D está correta:</strong> D prioriza estabilidade, beta-HCG e ultrassom.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> DIP não é a principal sem febre/corrimento e com atraso menstrual.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Alta é perigosa diante de palidez, taquicardia e lipotimia.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> TC não é primeiro exame se há possibilidade ginecológica/gestacional.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D prioriza estabilidade, beta-HCG e ultrassom.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q49</p>
+<p><strong>22. Sobre complicações no parto, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t009-022" value="A"> A. No caso de distócia de ombro, a hiperflexão das coxas da mãe, associada à pressão em região fúndica, é uma conduta adequada.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-022" value="B"> B. Em caso de prolapso de cordão umbilical, a posição de Trendelenburg, associada à elevação manual da apresentação fetal, é recomendada.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-022" value="C"> C. No caso de trabalho de parto prematuro, são recomendadas a tocólise e a corticoterapia antenatal antes de 36 semanas de gestação.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-022" value="D"> D. Durante o trabalho de parto pélvico, ao optar-se pela posição em quatro apoios, deve-se levar o dorso fetal em direção ao abdome materno.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q49. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Prolapso de cordão: aliviar compressão fetal com Trendelenburg/joelho-peito e elevar apresentação até cesárea.</p>
+<p><strong>Por que a B está correta:</strong> B traz a conduta correta.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Distócia de ombro usa McRoberts e pressão suprapúbica, não pressão fúndica.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B traz a conduta correta.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Tocólise/corticoide não são antes de 36 semanas de forma genérica; corticoide usualmente até 34-36+6 conforme protocolo.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> No pélvico em quatro apoios, o dorso fica anterior/superior; a frase está inadequada.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q63</p>
+<p><strong>23. Uma paciente de 28 anos comparece ao DE com queixa de atraso menstrual há 6 semanas e dor abdominal de intensidade leve a moderada, sem sangramento vaginal ativo no momento. Encontra-se hemodinamicamente estável. O emergencista suspeita de gravidez ectópica e inicia a propedêutica diagnóstica. Com base nos protocolos de diagnóstico de gestação e avaliação na emergência, assinale a alternativa CORRETA:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t009-023" value="A"> A. Se o beta-HCG da paciente vier entre 500 e 1.000mUI/mL, esperamos que na ultrassonografia transvaginal seja possível visualizar o saco gestacional tópico.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-023" value="B"> B. Se o beta-HCG da paciente vier positivo e ultrassom, inconclusivo, neste contexto, deve-se admitir a paciente e, em uma gestação tópica normal, espera-se que o valor do beta-HCG duplique em cerca de 2 dias; a ausência de elevação em pelo menos 66% em 48 horas pode indicar uma gravidez ectópica ou gestação não evolutiva.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-023" value="C"> C. Se o exame de ultrassonografia abdominal for o único disponível, o saco gestacional tópico deve ser visualizado, obrigatoriamente, a partir de níveis de beta-HCG entre 2.500 e 3.000 mUI/mL.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-023" value="D"> D. O diagnóstico de gravidez ectópica é confirmado no DE por meio de uma única dosagem de beta-HCG isolada e bastante elevada, não havendo necessidade de dosagens seriadas.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q63. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Gravidez de localização desconhecida exige beta-HCG seriado e US; evolução normal sobe cerca de 66% em 48h.</p>
+<p><strong>Por que a B está correta:</strong> B é a conduta/interpretação correta se beta positivo e US inconclusivo.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Zona discriminatória transvaginal costuma ser acima de 1500-2000, não 500-1000.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B é a conduta/interpretação correta se beta positivo e US inconclusivo.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> US abdominal precisa valores mais altos que transvaginal, não 2500-3000 obrigatórios.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Um beta isolado não confirma ectópica.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q82</p>
+<p><strong>24. Gestante de 32 semanas procura o DE por mal-estar, náuseas e dor persistente em hipocôndrio direito. Refere cefaléia nas últimas horas, sem convulsões ou perda de consciência. Ao exame, apresenta PA: 140 × 80 mmHg. Os exames laboratoriais evidenciam plaquetas: 72.000/mm³, aspartato aminotransferase (AST) e alanina aminotransferase (ALT) superiores ao dobro do limite superior da normalidade, desidrogenase lática (DHL) em 720 U/L e coagulograma sem alterações relevantes. Diante dessas informações, qual interpretação é a mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t009-024" value="A"> A. O conjunto sugere síndrome HELLP, mesmo sem crise hipertensiva e com coagulograma normal.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-024" value="B"> B. O quadro é pouco compatível com síndrome hipertensiva grave da gestação, pois a PA não está em faixa de crise hipertensiva.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-024" value="C"> C. A ausência de convulsão afasta eclâmpsia e permite manejo ambulatorial após controle sintomático.</label>
+<label class="quiz-option"><input type="radio" name="q-t009-024" value="D"> D. O coagulograma normal afasta a síndrome HELLP, pois a coagulopatia é critério obrigatório para o diagnóstico.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q82. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> HELLP pode ocorrer com PA só 140/80 e coagulograma normal; plaqueta baixa + hemólise/DHL + transaminases fecham.</p>
+<p><strong>Por que a A está correta:</strong> A reconhece HELLP sem exigir crise hipertensiva.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A reconhece HELLP sem exigir crise hipertensiva.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> PA não precisa estar em crise para síndrome hipertensiva grave/HELLP.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Ausência de convulsão não afasta gravidade.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Coagulopatia não é critério obrigatório de HELLP.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

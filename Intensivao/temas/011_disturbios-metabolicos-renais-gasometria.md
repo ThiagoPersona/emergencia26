@@ -12,7 +12,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou CAD, conduta inicial em CAD com choque/infecção, definição de CAD, gasometria/ácido-base em VM/DPOC/choque, etilenoglicol por anion gap + oxalato, crise renal esclerodérmica, bicarbonato em antidepressivo tricíclico, insuficiência renal por abelhas, torsades/magnésio, bicarbonato não rotineiro pós-RCE e crise tireotóxica.
+- **Recorrência em provas/estações:** TEME22-26 cobrou CAD, conduta inicial em CAD com choque/infecção, definição de CAD, gasometria/ácido-base em VM/DPOC/choque, etilenoglicol por anion gap + oxalato, crise renal esclerodérmica, bicarbonato em antidepressivo tricíclico, insuficiência renal por abelhas, torsades/magnésio, bicarbonato não rotineiro pós-RCE e crise tireotóxica.
 - **O que a banca costuma testar:** primeira conduta segura, formula simples, quando não dar bicarbonato, quando não iniciar insulina, quando fazer cálcio, quando dialisar, e diferença entre resposta de prova e prática atual.
 - **Como costuma aparecer:** caso com muitos números. A alternativa correta costuma evitar intervenção automática perigosa: insulinizar sem K, corrigir sódio até normal, usar bicarb em toda acidose, dar resininha para hiperK emergente ou esperar exame em crise adrenal.
 

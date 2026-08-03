@@ -8,7 +8,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou fratura exposta, controle de hemorragia em extremidade, START com fratura, luxações, síndrome compartimental, queimadura, lesão inalatória, blast, bloqueios e analgesia.
+- **Recorrência em provas/estações:** TEME22-26 cobrou fratura exposta, controle de hemorragia em extremidade, START com fratura, luxações, síndrome compartimental, queimadura, lesão inalatória, blast, bloqueios e analgesia.
 - **O que a banca costuma testar:** primeira conduta, torniquete, antibiótico, imobilização, redução urgente, quando chamar centro de queimados e quando não atrasar fasciotomia/cirurgia.
 - **Como costuma aparecer:** membro deformado, dor intensa, ferida contaminada, pulso alterado, queimadura com bolhas, incêndio em local fechado ou fratura/luxação com risco neurovascular.
 

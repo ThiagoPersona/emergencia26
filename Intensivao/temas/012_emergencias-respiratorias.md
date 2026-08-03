@@ -12,7 +12,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou POCUS pulmonar, escolha de dispositivo de O2, metas de saturação, gasometria arterial para hipoxemia, DPOC hipercápnico/VNI, pneumonia/choque, TEP pós-operatório, pneumotórax por POCUS, mecanismos de IRpA hipoxêmica, SDRA/prona, auto-PEEP, síndrome torácica aguda e asma grave com fadiga.
+- **Recorrência em provas/estações:** TEME22-26 cobrou POCUS pulmonar, escolha de dispositivo de O2, metas de saturação, gasometria arterial para hipoxemia, DPOC hipercápnico/VNI, pneumonia/choque, TEP pós-operatório, pneumotórax por POCUS, mecanismos de IRpA hipoxêmica, SDRA/prona, auto-PEEP, síndrome torácica aguda e asma grave com fadiga.
 - **O que a banca costuma testar:** primeira conduta, alvo de SpO2, diferença entre VNI e IOT, quando trombolisar TEP, como não errar DPOC, quando usar prona, e leitura de POCUS/curvas.
 - **Como costuma aparecer:** caso de dispneia com distratores cardíacos, infecciosos e obstrutivos. A resposta certa é a que estabiliza fisiologia e usa exame beira-leito para encurtar o caminho.
 

@@ -2,11 +2,11 @@
 
 Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 9 com gabarito oficial TEME22-24 + 5 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 18 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -336,3 +336,103 @@ Banco do tema 015 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q30</p>
+<p><strong>15. Menino de 4 anos com diagnóstico de anemia falciforme chega à unidade de emergência com quadro de dor abdominal e em membros inferiores de forte intensidade sem alívio com analgésico comum, com necessidade de escalonamento da analgesia para opioide. Iniciada morfina por infusão contínua e mantido em monitorização na sala de emergência. Apresentou febre de 39ºC e dor torácica, e a SpO2 chegou a 89%. Instalado oxigênio por cateter nasal 3L/minuto, com melhora da SpO2 para 97%, e foi solicitado raio X de tórax: Qual a conduta mais apropriada neste momento?</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q30_rx_sindrome_toracica_aguda.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q30_rx_sindrome_toracica_aguda.png" alt="Radiografia de tórax da TEME26 Q30">
+</a>
+<figcaption>Radiografia de tórax da TEME26 Q30</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t015-015" value="A"> A. Hiperidratação endovenosa (1,5 a duas vezes o volume de manutenção diário).</label>
+<label class="quiz-option"><input type="radio" name="q-t015-015" value="B"> B. Suspender morfina infusão contínua.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-015" value="C"> C. Iniciar cefalosporina de segunda ou terceira geração e azitromicina.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-015" value="D"> D. Evitar fisioterapia respiratória para não aumentar a dor.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q30. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Falciforme com febre, dor torácica e hipoxemia = síndrome torácica aguda até prova em contrário.</p>
+<p><strong>Por que a C está correta:</strong> C trata com antibiótico cobrindo pneumococo e atípicos: cefalosporina + azitromicina.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Hiperidratação favorece congestão e piora pulmonar.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Dor deve ser controlada; suspender morfina sem motivo não trata a síndrome.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C trata com antibiótico cobrindo pneumococo e atípicos: cefalosporina + azitromicina.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Fisioterapia/expansão pulmonar são úteis, ajustadas à dor.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q41</p>
+<p><strong>16. Mulher de 29 anos, previamente hígida, em tratamento para reprodução assistida, procura o pronto-socorro pela terceira vez em 2 semanas. Relatou fadiga, cefaléia e mal-estar, atribuídos inicialmente à ansiedade e, posteriormente, a possível efeito da hormonioterapia para estimulação ovariana. Hoje, refere febre, piora da astenia, equimoses espontâneas e dor associada a aumento de volume na panturrilha esquerda. Ao exame, apresenta palidez, aumento gengival com gengivorragia discreta e equimoses em membros inferiores. Diante dessa evolução, qual interpretação clínica é mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t015-016" value="A"> A. A recorrência de sintomas inespecíficos em paciente jovem, sem comorbidades, favorece hipótese funcional, devendo-se priorizar manejo sintomático e seguimento ambulatorial.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-016" value="B"> B. A associação de sintomas subagudos sugere leucemia aguda, incluindo leucemia promielocítica aguda no diagnóstico diferencial diante de manifestações hemorrágicas e possível evento trombótico.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-016" value="C"> C. O conjunto sugere predominantemente evento adverso da hormonioterapia, pois a dor em panturrilha indica trombose venosa, justificando o quadro.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-016" value="D"> D. A presença de febre e dor em panturrilha torna infecção de partes moles a hipótese principal, sendo a investigação hematológica indicada, se houver falha terapêutica após antibiótico.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q41. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Febre, equimoses, gengiva, trombose e sangramento em jovem: pense em leucemia aguda/APL antes de atribuir a ansiedade.</p>
+<p><strong>Por que a B está correta:</strong> B reconhece leucemia aguda e inclui promielocítica pela combinação hemorragia+trombose.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Sintomas recorrentes e sinais objetivos não são funcionais.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B reconhece leucemia aguda e inclui promielocítica pela combinação hemorragia+trombose.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Hormonioterapia pode trombosar, mas não explica gengivorragia/equimoses/febre.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Infecção local não explica o conjunto hematológico.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q81</p>
+<p><strong>17. Paciente mulher cis de 58 anos, portadora de neoplasia de mama, procura a emergência por febre aferida de 38,1 °C hoje, mal-estar e odinofagia. Recebeu a última quimioterapia há 20 dias. Está hemodinamicamente estável, sem sinais de disfunção orgânica. O hemograma inicial mostrou: leucócitos: 1.900/mm³; neutrófilos segmentados: 68%; bastões em 2%; linfócitos em 18%; Hb: 11,8 g/dL e plaquetas: 172.000/mm³. Considerando os critérios diagnósticos de neutropenia febril, qual é a interpretação mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t015-017" value="A"> A. Trata-se de neutropenia febril de baixo risco, pois a paciente está estável, sem sinais de disfunção orgânica e com foco infeccioso provável em orofaringe.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-017" value="B"> B. Não preenche critério laboratorial de neutropenia febril, pois a contagem absoluta de neutrófilos está acima dos pontos de corte diagnósticos.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-017" value="C"> C. Trata-se de neutropenia febril, pois há febre em paciente oncológica e com leucopenia no período de nadir da quimioterapia.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-017" value="D"> D. Não é possível considerar neutropenia febril antes da coleta de hemoculturas e identificação do foco infeccioso.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q81. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Calcule ANC: leucócitos 1900 x (68+2)% = 1330; não é neutropenia febril.</p>
+<p><strong>Por que a B está correta:</strong> B está correta porque neutrófilos absolutos estão acima dos cortes diagnósticos.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Baixo risco ainda precisaria preencher neutropenia.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B está correta porque neutrófilos absolutos estão acima dos cortes diagnósticos.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Leucopenia isolada em oncológica não basta sem ANC baixo.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Hemocultura/foco não são pré-requisito para considerar neutropenia febril.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q95</p>
+<p><strong>18. Homem de 68 anos, sem comorbidades conhecidas, procura o DE por dor lombar progressiva há 3 semanas, fadiga, constipação e redução da diurese. Nega trauma, febre ou sintomas urinários irritativos. Exames iniciais mostram Hb: 8,9 g/dL, Cr: 3,1 mg/dL e cálcio iônico elevado. Qual é a conduta mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t015-018" value="A"> A. Reconhecer emergência metabólica potencialmente associada à malignidade, iniciar hidratação venosa com monitorização e ampliar investigação etiológica para suspeita de mieloma múltiplo.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-018" value="B"> B. Tratar como lombalgia mecânica, com anti-inflamatório não esteroide, hidratação oral e investigação ambulatorial se persistência dos sintomas.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-018" value="C"> C. Solicitar tomografia computadorizada de abdome com contraste como primeiro exame, pois dor lombar associada à redução da diurese sugere obstrução urinária complicada.</label>
+<label class="quiz-option"><input type="radio" name="q-t015-018" value="D"> D. Priorizar bisfosfonato intravenoso antes de hidratação, pois a redução do cálcio sérico é a medida inicial mais importante.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q95. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Dor lombar + anemia + rim + hipercalcemia = CRAB/mieloma até prova em contrário; hidratar primeiro.</p>
+<p><strong>Por que a A está correta:</strong> A reconhece emergência metabólica e investigação de malignidade.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A reconhece emergência metabólica e investigação de malignidade.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> AINE piora rim e perde hipercalcemia/mieloma.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Contraste com creatinina 3,1 é arriscado e não é primeiro passo.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Bisfosfonato ajuda depois, mas hidratação e monitorização vêm primeiro.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

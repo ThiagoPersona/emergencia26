@@ -13,7 +13,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou violência sexual/PEP, morte encefálica, regulação/CFM, classificação de risco/fluxo, alta segura, tentativa de suicídio, dor total em câncer, responsabilidade médica em transferência, documentação e vulnerabilidades.
+- **Recorrência em provas/estações:** TEME22-26 cobrou violência sexual/PEP, morte encefálica, regulação/CFM, classificação de risco/fluxo, alta segura, tentativa de suicídio, dor total em câncer, responsabilidade médica em transferência, documentação e vulnerabilidades.
 - **O que a banca costuma testar:** diferenciar cuidado proporcional de abandono, saber quando tratar sem consentimento, conhecer PEP/notificação, reconhecer alto risco suicida, saber papel do emergencista na morte encefálica e no fluxo do DE.
 - **Como costuma aparecer:** caso ético com alternativa sedutora e absoluta. A resposta certa costuma ser a que acolhe, informa, registra, protege vulnerável e mantem cuidado clínico proporcional.
 
@@ -310,6 +310,19 @@ flowchart TD
 >
 > **Na prática clínica:** detalhes de notificação, coleta de vestígios, PEP, transferência, sedação paliativa e limite de suporte devem seguir protocolo local, comissão de ética, NIR/regulação e rede municipal/estadual. O que não muda é: acolher, proteger, informar, registrar e reavaliar.
 
+## Pontos quentes TEME26
+
+- **Lean:** takt time = tempo disponível / demanda esperada. Se tempo de ciclo > takt, há gargalo. Operar perto de 100% da capacidade gera fila não linear.
+- **5S:** separar/utilizar, ordenar, limpar, padronizar e sustentar disciplina. Não é sigla inventada de segurança/sobrecarga/satisfação.
+- **Value stream map:** mapeia fluxo de valor e desperdícios do percurso do paciente, não apenas custo.
+- **Psicologia da espera:** comunique estimativa realista e atualize; prometer “em breve” quando não é verdade piora confiança.
+- **Superlotação:** macas/corredor/boarding pedem gestão de leitos, altas, exames e internação; não se resolve só acelerando triagem.
+- **Manchester:** ordena acesso por gravidade e tempo-alvo, e também gera informação gerencial. Espera em categoria intermediária é sinal para investigar gargalo.
+- **Acreditação:** avaliação externa, voluntária, periódica e voltada à melhoria contínua.
+- **Causa raiz/Ishikawa:** erro de medicação deve ser analisado como sistema; não reduza a culpa individual.
+- **Paliativos:** dispneia refratária pode receber opioide em baixa dose titulada; sedação paliativa é proporcional para sintoma refratário, não eutanásia.
+- **Declaração de óbito:** morte domiciliar natural conhecida deve ser direcionada ao médico assistente/equipe domiciliar; IML é para causa externa/suspeita.
+
 ## Checklist de revisão
 
 - [ ] Sei diferenciar paliativo, terminalidade, ortotanásia, distanásia e eutanásia.
@@ -333,7 +346,7 @@ flowchart TD
 - **TEME25 Q78:** febre baixa/risco epidemiológico e alta segura com sinais de alarme quando sem gravidade.
 - **TEME25 Q81/Q87:** regulação, responsabilidade médica, CFM 2077 e papel do médico/coordenador de fluxo.
 - **TEME25 Q88:** tentativa de suicídio com tentativas prévias e baixo suporte: alto risco, não alta simples.
-- **TEME22-25 práticas:** comunicação, decisão compartilhada, segurança do paciente, transferência e registro aparecem como critérios de avaliação mesmo quando a estação é técnica.
+- **Práticas disponíveis até TEME25:** comunicação, decisão compartilhada, segurança do paciente, transferência e registro aparecem como critérios de avaliação mesmo quando a estação é técnica.
 
 ## Referências
 

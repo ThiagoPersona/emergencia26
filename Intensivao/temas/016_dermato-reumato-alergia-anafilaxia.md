@@ -13,7 +13,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou angioedema por IECA e via aérea acordada, acidente por abelhas/anafilaxia vs envenenamento, celulite/erisipela e papel do exame clínico/US, queimaduras/bolhas, crise renal esclerodérmica, dor lombar/neoplasia, e infecções de partes moles.
+- **Recorrência em provas/estações:** TEME22-26 cobrou angioedema por IECA e via aérea acordada, acidente por abelhas/anafilaxia vs envenenamento, celulite/erisipela e papel do exame clínico/US, queimaduras/bolhas, crise renal esclerodérmica, dor lombar/neoplasia, e infecções de partes moles.
 - **O que a banca costuma testar:** primeira droga na anafilaxia, quando antecipar via aérea, diferença entre celulite e abscesso, sinais de fasciite, quando punir articulação, e emergências reumatológicas que chegam ou destroem rim.
 - **Como costuma aparecer:** caso aparentemente dermatológico, mas com risco de via aérea, choque, sepse, necrose, perda visual, articulação séptica ou lesão renal.
 

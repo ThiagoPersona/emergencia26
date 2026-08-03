@@ -9,7 +9,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** AVCi/trombólise/trombectomia, HSA/HIP, convulsão/eclampsia, coma, ONSD/HIC, TCE grave e morte encefálica aparecem de forma repetida entre TEME22-25.
+- **Recorrência em provas/estações:** AVCi/trombólise/trombectomia, HSA/HIP, convulsão/eclampsia, coma, ONSD/HIC, TCE grave e morte encefálica aparecem de forma repetida entre TEME22-26.
 - **O que a banca costuma testar:** primeiro exame, janela, critérios de inclusao/exclusao, dose de alteplase/tenecteplase, PA antes/depois de trombólise, NIHSS/ASPECTS, conduta no status, manitol/hipertônica, hiperventilação, alvos em TCE e impeditivos do protocolo de ME.
 - **Como costuma aparecer:** caso clínico com muitos distratores. Exemplo clássico: "convulsão" que era síncope, "AVC leve" mas incapacitante, TCE com hipoxemia/hipotermia em que não se pode abrir ME, ou cefaleia explosiva com TC negativa em que a suspeita de HSA segue viva.
 
@@ -321,7 +321,7 @@ flowchart TD
 
 - Conteúdo programático TEME26.
 - Referências bibliográficas TEME26, incluindo Manual de Via aérea 2025, Tratado ABRAMEDE 2024 e materiais oficiais indicados no edital.
-- Provas teóricas TEME22-25 e estações práticas TEME24-25 disponíveis no projeto.
+- Provas teóricas TEME22-26 e estações práticas TEME24-25 disponíveis no projeto.
 
 **Material local**
 

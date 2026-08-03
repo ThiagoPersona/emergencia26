@@ -8,7 +8,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou HIV com manifestações neurológicas, meningite tuberculosa, dengue, tuberculose, PEP HIV, infecção pulmonar/sepse e febre sem gravidade com alta segura.
+- **Recorrência em provas/estações:** TEME22-26 cobrou HIV com manifestações neurológicas, meningite tuberculosa, dengue, tuberculose, PEP HIV, infecção pulmonar/sepse e febre sem gravidade com alta segura.
 - **O que a banca costuma testar:** prioridade, isolamento, notificação, antibiótico empírico, quando não esperar exame, sinais de alarme de dengue e profilaxias pós-exposição.
 - **Como costuma aparecer:** paciente febril com um detalhe que muda tudo: imunossupressão, RNC, choque, viagem/área endêmica, exposição sexual, mordida, ferida contaminada ou obstrução.
 

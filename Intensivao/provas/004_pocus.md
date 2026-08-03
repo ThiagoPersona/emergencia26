@@ -2,11 +2,11 @@
 
 Banco do tema 004 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 20 com gabarito oficial TEME22-24 + 4 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 29 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -580,3 +580,144 @@ Banco do tema 004 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q5</p>
+<p><strong>25. Um homem de 28 anos é admitido na sala de trauma 30 minutos após ferimento por arma branca em tórax. Refere dor torácica e dispneia leve. Ao exame físico, apresenta ferimento de 3 cm, não soprante, localizado entre o 4º e 5º espaços intercostais à direita, na linha hemiclavicular. PA: 150 × 100 mmHg; FC: 108 bpm; FR: 24 irpm; SpO2: 97% em ar ambiente. A ausculta pulmonar é normal. Foi realizada radiografia de tórax em incidência posteroanterior, em ortostatismo, sem evidências de pneumotórax ou hemotórax. O ferimento foi suturado, e o paciente permaneceu em observação. Devido à persistência da dor torácica e da dispneia, sem alteração dos sinais vitais, é realizado ultrassom pulmonar à beira do leito com transdutor linear, na zona R2, utilizando o modo M, obtendo-se a imagem a seguir: Com base nos achados ultrassonográficos, assinale a alternativa correta:</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q5_lung_point_modo_m.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q5_lung_point_modo_m.png" alt="Ultrassom pulmonar em modo M da TEME26 Q5">
+</a>
+<figcaption>Ultrassom pulmonar em modo M da TEME26 Q5</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t004-025" value="A"> A. O achado é compatível com enfisema subcutâneo, responsável pela ausência de deslizamento pleural, não sendo possível concluir pela presença de pneumotórax. Nesse caso, torna-se necessária a realização de tomografia computadorizada de tórax para descarte de complicações.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-025" value="B"> B. O exame demonstra sinal da praia, afastando pneumotórax no hemitórax direito e confirmando que não houve violação da cavidade pleural pelo ferimento. O achado do ultrassom em consonância com o raio X permite descarte seguro da presença de complicações e permite alta precoce.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-025" value="C"> C. O exame demonstra o lung point no modo M, caracterizado pela alternância entre o padrão de código de barras e o sinal da praia durante o ciclo respiratório. Esse achado é altamente específico para pneumotórax.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-025" value="D"> D. A presença de linhas B na imagem no contexto de trauma confirma a presença de contusão pulmonar radioculta à radiografia de tórax e permite descarte da presença de pneumotórax.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q5. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> No modo M, alternância entre código de barras e praia no mesmo ciclo é lung point.</p>
+<p><strong>Por que a C está correta:</strong> C identifica lung point, achado muito específico de pneumotórax.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Enfisema subcutâneo atrapalha a janela, mas a alternância típica permite diagnóstico.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Sinal da praia contínuo afastaria pneumotórax; a imagem mostra alternância.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C identifica lung point, achado muito específico de pneumotórax.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Linhas B afastam pneumotórax no ponto examinado, mas não são o achado apresentado.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q20</p>
+<p><strong>26. Um homem de 72 anos, portador de insuficiência cardíaca com fração de ejeção reduzida e fibrilação atrial permanente, procura o pronto-socorro por dispneia progressiva há 5 dias, ortopneia e edema de membros inferiores. Ao exame físico, apresenta-se consciente, com FR: 28 irpm; SpO2: 90% em ar ambiente; PA: 112/68 mmHg; FC: 104 bpm, turgência jugular, crepitações bibasais e edema de membros inferiores (+++/4+). Durante a avaliação inicial, é realizado um ultrassom cardíaco focado (FOCUS), sendo obtida a imagem da janela paraesternal longitudinal apresentada a seguir: Com base nos achados ultrassonográficos, assinale a alternativa correta:</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q20_focus_derrame_pleural.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q20_focus_derrame_pleural.png" alt="FOCUS da TEME26 Q20">
+</a>
+<figcaption>FOCUS da TEME26 Q20</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t004-026" value="A"> A. O líquido visualizado representa volumoso derrame pericárdico, sendo necessária investigação imediata de repercussão hemodinâmica, por provável tamponamento cardíaco.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-026" value="B"> B. O líquido visualizado representa derrame pericárdico, pois se localiza lateralmente à aorta torácica descendente, não havendo evidências de derrame pleural.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-026" value="C"> C. O líquido visualizado representa derrame pleural esquerdo, pois a coleção líquida localiza-se posteriormente à aorta torácica descendente.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-026" value="D"> D. O líquido visualizado representa derrame pleural esquerdo, porém sua diferenciação em relação ao derrame pericárdico não pode ser realizada pela janela paraesternal longitudinal, sendo obrigatória outra janela ecocardiográfica – preferencialmente a subcostal.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q20. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Na paraesternal longitudinal, líquido posterior à aorta descendente é pleural; anterior é pericárdico.</p>
+<p><strong>Por que a C está correta:</strong> C identifica derrame pleural esquerdo pela posição posterior à aorta.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Tamponamento/pericárdio ficaria anterior à aorta descendente.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Lateral não é o critério; a relação com a aorta é chave.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C identifica derrame pleural esquerdo pela posição posterior à aorta.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> A janela paraesternal permite diferenciar pleural de pericárdico.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q38</p>
+<p><strong>27. Criança de 2 anos, previamente hígida, admitida no DE com relato de ter apresentado choro súbito no domicílio e evoluindo rapidamente com vômitos incoercíveis, sudorese profusa, glicemia capilar de 320 mg/dL, extremidades frias, taquipneia, FC: 65 bpm; PA: 86 x 47 mmHg e SpO2: 89%, além de crepitações em base direita. Realizado ultrassom à beira do leito (POCUS) à admissão, qual das alternativas a seguir descreve o exame compatível com o quadro, de acordo com a hipótese diagnóstica mais provável:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t004-027" value="A"> A. Disfunção moderada de ventrículo esquerdo (VE), cava com distensibilidade preservada, linhas B coalescentes em hemitórax D e linhas A em hemitórax E.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-027" value="B"> B. Dilatação de câmara cardíaca direita, presença de sinal de Mc’Connell, veia cava túrgida, derrame pleural pequeno à direita.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-027" value="C"> C. VE hiperdinâmico, cava com distensibilidade preservada, padrão de hepatização em base pulmonar D.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-027" value="D"> D. Derrame pericárdico moderado, colapso diastólico de ventrículo direito, veia cava inferior dilatada, linhas B bibasais.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q38. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Hiperglicemia, bradicardia, choque e disfunção miocárdica em criança lembram intoxicação por bloqueador de canal de cálcio.</p>
+<p><strong>Por que a A está correta:</strong> A traz POCUS compatível com disfunção de VE e congestão pulmonar assimétrica.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A traz POCUS compatível com disfunção de VE e congestão pulmonar assimétrica.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> VD dilatado/McConnell apontaria TEP, improvável nessa criança.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> VE hiperdinâmico e hepatização sugerem sepse/pneumonia, mas não explica bradicardia/hiperglicemia.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Tamponamento não combina com o quadro tóxico-metabólico descrito.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q40</p>
+<p><strong>28. Um paciente de 68 anos é admitido na sala de emergência por insuficiência respiratória aguda. Após IOT e início da ventilação mecânica, observaram-se redução da expansibilidade do hemitórax esquerdo e diminuição do murmúrio vesicular ipsilateral. Com o objetivo de investigar a causa do achado, realiza-se ultrassonografia pulmonar no ponto PLAPS (posterior and/or lateral alveolar and/or pleural syndrome) à esquerda, cuja imagem é apresentada a seguir: Com base nesta imagem, assinale a alternativa que melhor descreve o achado:</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q40_us_derrame_pleural.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q40_us_derrame_pleural.png" alt="Ultrassom pulmonar da TEME26 Q40">
+</a>
+<figcaption>Ultrassom pulmonar da TEME26 Q40</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t004-028" value="A"> A. Intubação seletiva para o brônquio principal direito, causando atelectasia obstrutiva do pulmão esquerdo.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-028" value="B"> B. Pneumotórax à esquerda, com colapso pulmonar completo.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-028" value="C"> C. Derrame pleural volumoso associado à atelectasia compressiva do pulmão esquerdo.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-028" value="D"> D. Consolidação pulmonar por pneumonia lobar esquerda.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q40. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> No PLAPS, anecoico volumoso com pulmão comprimido flutuante = derrame pleural com atelectasia compressiva.</p>
+<p><strong>Por que a C está correta:</strong> C descreve o achado esperado.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Atelectasia por seletiva não gera coleção pleural volumosa.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Pneumotórax dá ausência de sliding/código de barras, não líquido.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C descreve o achado esperado.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Consolidação pneumônica tem hepatização/broncoograma, não grande líquido livre.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q59</p>
+<p><strong>29. Durante a realização de um FAST em paciente politraumatizado, o médico obtém a imagem apresentada a seguir no quadrante superior direito. Ele procura visualizar o espaço de Morrison, porém tem dificuldades. Qual é o ajuste inicial mais apropriado para otimizar essa janela ultrassonográfica?</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q59_fast_morrison.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q59_fast_morrison.png" alt="Imagem FAST da TEME26 Q59">
+</a>
+<figcaption>Imagem FAST da TEME26 Q59</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t004-029" value="A"> A. Ajuste de time gain compensation (TGC).</label>
+<label class="quiz-option"><input type="radio" name="q-t004-029" value="B"> B. Aumentar o ganho global.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-029" value="C"> C. Trocar para um transdutor linear.</label>
+<label class="quiz-option"><input type="radio" name="q-t004-029" value="D"> D. Reduzir a profundidade.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q59. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Se a imagem está profunda demais e Morrison fica pequeno, o primeiro ajuste é reduzir profundidade.</p>
+<p><strong>Por que a D está correta:</strong> D aumenta o espaço útil da janela no monitor.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> TGC ajusta brilho por profundidade, não enquadramento.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Ganho global clareia tudo e não traz Morrison para o centro.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Linear é inadequado para FAST abdominal profundo.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D aumenta o espaço útil da janela no monitor.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

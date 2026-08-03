@@ -2,11 +2,11 @@
 
 Banco do tema 012 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 18 com gabarito oficial TEME22-24 + 6 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 29 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -581,3 +581,126 @@ Banco do tema 012 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q50</p>
+<p><strong>25. Mulher de 72 anos, com Doença Pulmonar Obstrutiva Crônica, exacerbada, em ventilação não invasiva por máscara oronasal há 60 minutos (BIPAP/PSV: EPAP 5, IPAP 12, PS 7 cmH₂O; disparo a fluxo 3 L/minuto). Mantém-se taquipneica e agitada. No ventilador, a frequência total é de 32 irpm, mas os esforços inspiratórios ao exame são de cerca de 22 por minuto, com fração de fuga elevada e ciclos pressóricos que não coincidem com o esforço. SpO2: 92%, estável, sem rebaixamento, tolerando o dispositivo e protegendo a via aérea; gasometria de controle sem piora. Assinale a conduta mais adequada nesse momento:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t012-025" value="A"> A. Indicar IOT e iniciar ventilação mecânica invasiva.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-025" value="B"> B. Elevar a IPAP para 18 cmH₂O, mantendo a EPAP em 5 cmH₂O.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-025" value="C"> C. Ajustar o disparo a fluxo de 3 para 5 L/minuto e readequar a interface.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-025" value="D"> D. Aumentar a EPAP para 8 cmH₂O e elevar a sensibilidade do disparo.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q50. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Na DPOC em VNI, esforço não capturado/assincronia pode melhorar ao compensar auto-PEEP e ajustar o disparo.</p>
+<p><strong>Por que a D está correta:</strong> D é o gabarito oficial: aumentar EPAP pode reduzir esforço para disparar em DPOC com auto-PEEP e ajustar a sensibilidade do disparo melhora sincronia.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Não há falha clínica/gasométrica obrigando IOT.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Aumentar IPAP pode piorar vazamento e assincronia se o problema é disparo/ciclagem.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Readequar interface ajuda vazamento, mas elevar o limiar de disparo isoladamente pode piorar esforço ineficaz se houver auto-PEEP.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é o gabarito oficial: aumentar EPAP pode reduzir esforço para disparar em DPOC com auto-PEEP e ajustar a sensibilidade do disparo melhora sincronia.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q61</p>
+<p><strong>26. Paciente do sexo masculino, 58 anos, tabagista (40 anos-maço), com histórico de insuficiência cardíaca, é admitido na emergência com dispneia progressiva há 5 dias, dor torácica pleurítica à direita, associado à ortopneia. Ao exame físico: murmúrio vesicular abolido em base direita, macicez à percussão e frêmito toracovocal diminuído. Radiografia de tórax evidenciou derrame pleural à direita, ocupando aproximadamente 40% do hemitórax, assim como derrame pleural pequeno em hemitórax esquerdo. Optado por toracocentese diagnóstica à direita, com os seguintes resultados: turvo-amarelo-esverdeado, pH: 7,18; proteína total: 4,2g/dL; desidrogenase lática (DHL): 1.100U/L; glicose: 35mg/dL; leucócitos: 18.000/mm3 com 85% de neutrófilos, Adenosina Desaminase (ADA) 28, Gram em andamento. No entanto, o colega esqueceu-se de realizar o pedido de exames séricos do paciente relevantes, como proteínas totais, DHL e glicose. Diante desse cenário, indique a conduta mais adequada:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t012-026" value="A"> A. Solicitar os exames séricos faltantes (proteínas totais, DHL e glicose) e aguardar o resultado para aplicar os critérios de Light, pois, sem eles, não é possível classificar o derrame nem definir a conduta.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-026" value="B"> B. Indicar drenagem pleural tubular (toracostomia) sem atraso, associada à antibioticoterapia, pois o líquido já preenche critérios de derrame parapneumônico complicado/empiema.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-026" value="C"> C. Iniciar esquema empírico para tuberculose pleural, com base no valor de ADA e no perfil celular, e adiar a drenagem até definição etiológica.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-026" value="D"> D. Classificar o derrame como transudato secundário à insuficiência cardíaca, otimizar a diureticoterapia e manter conduta expectante.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q61. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> pH baixo, glicose baixa, DHL alto e neutrófilos em derrame = parapneumônico complicado/empiema: drenar.</p>
+<p><strong>Por que a B está correta:</strong> B indica toracostomia e antibiótico sem esperar critérios de Light séricos.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Critérios de Light não são necessários para decidir drenagem nesse líquido complicado.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B indica toracostomia e antibiótico sem esperar critérios de Light séricos.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> ADA 28 e neutrófilos não sustentam tratar TB e adiar drenagem.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Transudato por IC não tem pH 7,18, glicose 35 e DHL 1100.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q71</p>
+<p><strong>27. Você recebe paciente do sexo feminino, de 27 anos, com história de asma, com má adesão ao tratamento. Relato de intubação e internação em unidade de terapia intensiva por broncoespasmo no passado. Ela dá entrada falando frases entrecortadas, com uso de musculatura acessória, sibilos difusos à ausculta. FC: 142 bpm; FR: 38 ipm; SpO2: 83%; PA: 110x80 mmHg; Glicemia Capilar: 101. Em vista desse quadro, assinale a alternativa com a melhor sequência terapêutica para essa paciente:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t012-027" value="A"> A. Beta-2 agonista inalatório, sulfato de magnésio, adrenalina, diazepam e ventilação não invasiva.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-027" value="B"> B. Beta-2 agonista inalatório, sulfato de magnésio, levofloxacino, adrenalina, cetamina e ventilação não invasiva.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-027" value="C"> C. Beta-2 agonista inalatório, sulfato de magnésio, terbutalina, cetamina e ventilação não invasiva.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-027" value="D"> D. Beta-2 agonista inalatório, sulfato de magnésio, terbutalina, aminofilina e ventilação não invasiva.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q71. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Asma grave: beta-2, magnésio, broncodilatador sistêmico se refratária, cetamina e VNI em paciente selecionado.</p>
+<p><strong>Por que a C está correta:</strong> C monta sequência de resgate sem aminofilina/antibiótico desnecessário.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Diazepam deprime ventilação e não trata broncoespasmo.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Levofloxacino não é medida inicial da crise asmática.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C monta sequência de resgate sem aminofilina/antibiótico desnecessário.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Aminofilina perdeu espaço por toxicidade e menor benefício.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q84</p>
+<p><strong>28. Mulher de 62 anos, em tratamento para câncer de pâncreas, procura o DE por dispneia progressiva há 24 horas. Está consciente, com PA: 118/ 74 mmHg; FC: 112 bpm; SpO2: 93% em ar ambiente, sem febre, sangramento ativo ou sinais clínicos de congestão. Radiografia de tórax sem achados que expliquem o quadro. Qual é a conduta mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t012-028" value="A"> A. Atribuir inicialmente os sintomas à quimioterapia ou anemia, pois dispneia isolada em paciente oncológico é inespecífica, e tromboembolismo pulmonar (TEP) costuma cursar com dor torácica.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-028" value="B"> B. Solicitar D-dímero e investigar TEP após resultado positivo, pois a ausência de dor torácica torna baixa a probabilidade de embolia pulmonar.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-028" value="C"> C. Considerar probabilidade clínica aumentada para TEP, prosseguir com angiotomografia computadorizada de artérias pulmonares e iniciar anticoagulação conforme risco e confirmação diagnóstica.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-028" value="D"> D. Indicar trombólise endovenosa imediata, pois câncer ativo na vigência de tratamento oncológico com taquicardia e hipoxemia caracteriza TEP de alto risco.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q84. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Câncer ativo, dispneia, taquicardia e RX sem explicação aumentam probabilidade de TEP.</p>
+<p><strong>Por que a C está correta:</strong> C indica angioTC e anticoagulação conforme risco/diagnóstico.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> TEP em câncer pode não ter dor torácica.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> D-dímero é pouco útil se probabilidade clínica já é alta/câncer ativo.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C indica angioTC e anticoagulação conforme risco/diagnóstico.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Trombólise imediata é para TEP de alto risco com choque/instabilidade.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q88</p>
+<p><strong>29. Durante o atendimento a um paciente do sexo feminino, de 23 anos, com dispneia aguda, você nota ausência de murmúrios vesiculares bilateralmente à ausculta, opta por realizar o ultrassom à beira do leito (POCUS) e percebe ausência de deslizamento pleural nos campos avaliados no modo B. A imagem em modo M é a seguinte: A paciente nega dor torácica, encontra-se taquidispneica, com uso de musculatura acessória, FC: 132 bpm; FR: 38 irpm; SpO2: 87%; PA: 100 x 70 mmHg, TAX: 36,8oC, Glicemia Capilar: 87 mg/dl. Baseado no diagnóstico mais provável, escolha a alternativa com a melhor conduta nesse caso é:</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q88_modo_m_asma.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q88_modo_m_asma.png" alt="Ultrassom pulmonar em modo M da TEME26 Q88">
+</a>
+<figcaption>Ultrassom pulmonar em modo M da TEME26 Q88</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t012-029" value="A"> A. Toracostomia digital.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-029" value="B"> B. Toracocentese de alívio por agulha.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-029" value="C"> C. Beta-2 agonista de curta duração.</label>
+<label class="quiz-option"><input type="radio" name="q-t012-029" value="D"> D. Trombólise.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q88. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Asma grave pode abolir murmúrio e reduzir sliding bilateral sem pneumotórax; trate broncoespasmo.</p>
+<p><strong>Por que a C está correta:</strong> C é beta-2 agonista de curta duração como conduta imediata.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Toracostomia bilateral por ausência de sliding isolada seria desastrosa.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Punção de alívio é para pneumotórax hipertensivo, não asma sem dor/colapso unilateral.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C é beta-2 agonista de curta duração como conduta imediata.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Trombólise não combina com o quadro.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

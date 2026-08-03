@@ -2,11 +2,11 @@
 
 Banco do tema 016 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 7 com gabarito oficial TEME22-24 + 1 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 9 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -197,3 +197,34 @@ Banco do tema 016 refeito em formato mais parecido com a prova: enunciado e alte
 
 ## Itens não pontuados
 - TEME25 Q48: anulada pelo gabarito oficial.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q67</p>
+<p><strong>9. Uma mulher de 35 anos procura a emergência com febre, disúria e dor lombar. No atendimento inicial, encontrava-se estável clinicamente, sem particularidades. Diante da suspeita de pielonefrite aguda, foi administrada uma dose de ceftriaxona intravenosa. Cerca de 15 minutos após a infusão do antibiótico, a paciente apresenta mal-estar súbito, tontura, sensação de desmaio e dispneia. Ao ser reavaliada, encontra-se agitada, com FC em 132 bpm, PA em 74/38 mmHg, FR em 28 irpm e SpO2 em 95%. O exame físico, agora, evidencia pele ruborizada, extremidades quentes e tempo de enchimento capilar &lt; 2 segundos. A ausculta pulmonar não evidencia sibilos ou estridores. Diante da instabilidade hemodinâmica, é realizado o protocolo RUSH, com os seguintes achados: VE: ventrículo esquerdo; VD: ventrículo direito. Com relação à interpretação dos achados ultrassonográficos encontrados no RUSH, assinale a alternativa correta:</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q67_rush_choque.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q67_rush_choque.png" alt="RUSH da TEME26 Q67">
+</a>
+<figcaption>RUSH da TEME26 Q67</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t016-009" value="A"> A. Os achados apontados pelo RUSH não evidenciam alterações estruturais significativas, o que, somado aos achados clínicos, fortalece a hipótese diagnóstica principal de choque séptico de foco urinário para o caso descrito.</label>
+<label class="quiz-option"><input type="radio" name="q-t016-009" value="B"> B. Os achados identificam um estado de baixa pré-carga e tornam improváveis causas obstrutivas e cardiogênicas e colaboram, dessa forma, com hipovolemia como provável etiologia.</label>
+<label class="quiz-option"><input type="radio" name="q-t016-009" value="C"> C. A presença de veia cava inferior &lt; 2 cm e colapsabilidade &gt; 50% exclui a hipótese de choque distributivo como mecanismo predominante e permite apontar choque hipovolêmico ou hemorrágico como principal hipótese diagnóstica.</label>
+<label class="quiz-option"><input type="radio" name="q-t016-009" value="D"> D. Os achados ultrassonográficos no contexto clínico, tornam o choque distributivo a hipótese principal, porém somente com base nesses achados não é possível distinguir etiologia do choque entre anafilático ou séptico.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q67. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Após ceftriaxona, choque quente e RUSH sem obstrutivo/cardiogênico apontam distributivo; US não separa séptico de anafilático sozinho.</p>
+<p><strong>Por que a D está correta:</strong> D é a interpretação mais segura do RUSH no contexto.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> O tempo pós-antibiótico e choque quente favorecem anafilaxia, não sepse urinária isolada.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> VCI pequena/colapsável pode ocorrer no distributivo e não prova hipovolemia como etiologia.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> VCI colapsável não exclui choque distributivo.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é a interpretação mais segura do RUSH no contexto.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

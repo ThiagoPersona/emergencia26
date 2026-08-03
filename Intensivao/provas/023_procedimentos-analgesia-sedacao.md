@@ -2,11 +2,11 @@
 
 Banco do tema 023 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 5 com gabarito oficial TEME22-24 + 2 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 9 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -170,3 +170,51 @@ Banco do tema 023 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q27</p>
+<p><strong>8. Um homem de 53 anos, com choque séptico de foco abdominal, necessita de acesso venoso central para infusão de noradrenalina. É realizada punção ecoguiada da veia axilar direita, sem intercorrências aparentes. Ao término do procedimento, são realizados exames de confirmação, com os seguintes achados: * Bubble test: aparecimento de microbolhas no átrio direito 4 segundos após a injeção rápida de solução salina. * Ultrassom pulmonar: lung sliding bilateral, padrão de linhas A e ausência de derrame pleural. Com base nesses achados, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t023-008" value="A"> A. O bubble test sugere mau posicionamento da ponta do cateter, enquanto o ultrassom pulmonar afasta pneumotórax relacionado ao procedimento.</label>
+<label class="quiz-option"><input type="radio" name="q-t023-008" value="B"> B. O atraso das microbolhas confirma migração cefálica do cateter para a veia jugular interna direita, dispensando necessidade de investigação complementar.</label>
+<label class="quiz-option"><input type="radio" name="q-t023-008" value="C"> C. O atraso das microbolhas pode ocorrer em pacientes com baixo débito cardíaco e também devido à escolha de sítio de punção mais distal, como o axilar.</label>
+<label class="quiz-option"><input type="radio" name="q-t023-008" value="D"> D. O ultrassom pulmonar evidencia sinais sugestivos de pneumotórax, sendo necessária a avaliação no modo M para confirmação.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q27. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> No bubble test, chegada rápida é esperada; atraso sugere ponta mal posicionada ou trajeto longo, e lung sliding afasta pneumotórax.</p>
+<p><strong>Por que a A está correta:</strong> A combina suspeita de mau posicionamento com exclusão ultrassonográfica de pneumotórax.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A combina suspeita de mau posicionamento com exclusão ultrassonográfica de pneumotórax.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Atraso não confirma especificamente migração para jugular.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Baixo débito e sítio distal podem interferir, mas 4 segundos no contexto exige checar posição.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Lung sliding bilateral afasta pneumotórax no ponto avaliado.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q36</p>
+<p><strong>9. Um adolescente de 14 anos, previamente hígido, é atendido no DE após colisão moto versus automóvel; ele era o carona da moto. Apresenta fratura fechada de diáfise de tíbia e fíbula, importante dor local e necessidade de transferência para centro de trauma. Considera-se realizar um bloqueio periférico guiado por ultrassonografia como parte da estratégia de analgesia multimodal. Sobre essa estratégia de analgesia neste paciente e suas particularidades, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t023-009" value="A"> A. O bloqueio periférico deve ser evitado em qualquer paciente que necessite transporte inter-hospitalar devido a seus riscos, em especial durante transportes prolongados.</label>
+<label class="quiz-option"><input type="radio" name="q-t023-009" value="B"> B. O bloqueio periférico apresenta eficácia analgésica inferior à analgesia sistêmica para fraturas de extremidades no contexto de ambiente pré-hospitalar.</label>
+<label class="quiz-option"><input type="radio" name="q-t023-009" value="C"> C. A possibilidade de síndrome compartimental associada à lesão deve ser avaliada antes da realização do bloqueio.</label>
+<label class="quiz-option"><input type="radio" name="q-t023-009" value="D"> D. A realização do bloqueio exige sedação prévia para reduzir o risco de lesão nervosa, pela movimentação do paciente durante o procedimento.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q36. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Bloqueio periférico ajuda fratura, mas antes procure síndrome compartimental e déficit neurológico basal.</p>
+<p><strong>Por que a C está correta:</strong> C é a cautela correta antes de anestesiar uma extremidade de alto risco.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Transporte não contraindica bloqueio por si só.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Bloqueio pode ser muito eficaz e poupador de opioide.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C é a cautela correta antes de anestesiar uma extremidade de alto risco.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Sedação prévia não é exigência e pode aumentar risco.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

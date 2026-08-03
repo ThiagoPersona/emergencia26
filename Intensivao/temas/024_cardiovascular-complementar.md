@@ -8,7 +8,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 trouxe tamponamento/pericárdio, miocardite, endocardite, aorta/dissecção, aneurisma, TVP/TEV e choque obstrutivo/cardiogênico.
+- **Recorrência em provas/estações:** TEME22-26 trouxe tamponamento/pericárdio, miocardite, endocardite, aorta/dissecção, aneurisma, TVP/TEV e choque obstrutivo/cardiogênico.
 - **O que a banca costuma testar:** reconhecer fenótipo grave, usar POCUS, não trombolisar dissecção, controlar PA corretamente e chamar hemodinâmica/cirurgia.
 - **Como costuma aparecer:** dor torácica com ECG confuso, choque com POCUS, paciente pós-IAM deteriorando, febre+sopro, dor lombar/síncope com AAA.
 

@@ -2,11 +2,11 @@
 
 Banco do tema 011 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 8 com gabarito oficial TEME22-24 + 3 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 13 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -267,3 +267,51 @@ Banco do tema 011 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q6</p>
+<p><strong>12. Um homem de 54 anos é admitido no DE com história de vômitos intensos há 3 dias, redução da ingesta alimentar e dispneia progressiva nas últimas horas. Ao exame físico apresenta-se desidratado, taquipneico, FR: 30 irpm, FC: 118 bpm e PA: 96 × 58 mmHg. Exames laboratoriais iniciais: Na: 138 mEq/L; K: 2,9 mEq/L; Cl: 82 mEq/L; lactato: 5,2 mmol/L; pH: 7,49; PaCO2: 28 mmHg; HCO₃⁻: 21 mEq/L; pressão parcial de oxigênio em 92 mmHg; excesso de base: -1. Com base na análise gasométrica e nos dados clínicos apresentados, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t011-012" value="A"> A. Distúrbio misto caracterizado por alcalose metabólica associada à acidose respiratória.</label>
+<label class="quiz-option"><input type="radio" name="q-t011-012" value="B"> B. Alcalose metabólica simples secundária aos vômitos prolongados, com compensação respiratória adequada.</label>
+<label class="quiz-option"><input type="radio" name="q-t011-012" value="C"> C. Alcalose respiratória aguda simples decorrente da taquipneia, sem outros distúrbios ácido-base associados.</label>
+<label class="quiz-option"><input type="radio" name="q-t011-012" value="D"> D. Distúrbio misto caracterizado por alcalose respiratória associada à acidose metabólica com ânion gap aumentado.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q6. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> pH alcalêmico com PaCO2 baixo e HCO3 baixo, lactato alto e cloro baixo sugere mistura: alcalose respiratória + acidose metabólica AG.</p>
+<p><strong>Por que a D está correta:</strong> D explica a alcalemia apesar de lactato elevado: há distúrbio misto, não compensação simples.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> A PaCO2 está baixa, não alta; portanto não há acidose respiratória.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Alcalose metabólica por vômitos esperaria HCO3 alto, não reduzido.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Alcalose respiratória simples não explica lactato 5,2 e bicarbonato baixo.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D explica a alcalemia apesar de lactato elevado: há distúrbio misto, não compensação simples.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q45</p>
+<p><strong>13. Paciente de 28 anos, portador de diabetes mellitus tipo 1, apresentou quadro de náuseas, vômitos e dor abdominal difusa há 2 dias. Relatava glicemia capilar de 289 mg/dL, sendo realizada correção com 4 UI de insulina ultrarrápida por via subcutânea. Uma hora após a aplicação da insulina, o paciente mantinha os sintomas, sendo admitido no Departamento de Emergência. Na avaliação inicial, apresentava-se em REG, desidratado 2+/4+, FC: 105 bpm; FR: 28 irpm; PA: 131×82 mmHg; SpO2: 98% e TAX: 37,6°C. Os exames laboratoriais evidenciaram glicemia: 123 mg/dL; Na: 144 mEq/L; K: 5,7 mEq/L; pH: 7,1; HCO3: 10 mEq/L; pressão parcial de oxigênio: 99 mmHg e PaCO2: 20 mmHg. Qual das alternativas a seguir melhor exemplifica a principal hipótese diagnóstica e melhor conduta inicial:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t011-013" value="A"> A. Cetoacidose diabética: iniciar hidratação endovenosa (EV) com cristalóide e reposição inicial de potássio, seguidas de insulina regular 0,1 UI/kg em BIC.</label>
+<label class="quiz-option"><input type="radio" name="q-t011-013" value="B"> B. Estado hiperglicêmico hiperosmolar: iniciar hidratação EV com cristalóide, insulina regular 0,5 UI/kg em BIC, infusão de soro glicosado 5% e reposição de potássio.</label>
+<label class="quiz-option"><input type="radio" name="q-t011-013" value="C"> C. Cetoacidose diabética euglicêmica: iniciar hidratação EV com cristalóide, insulina regular 0,1 UI/kg em BIC e infusão de soro glicosado 5%, sem reposição inicial de potássio.</label>
+<label class="quiz-option"><input type="radio" name="q-t011-013" value="D"> D. Cetoacidose diabética euglicêmica: iniciar hidratação EV com solução bicarbonatada isotônica, reposição de potássio antes de iniciar insulina, insulina regular 0,5 UI/kg em BIC e infusão de soro glicosado 5%.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q45. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> DM1 com acidose, HCO3 baixo, cetose presumida e glicose normal após insulina = CAD euglicêmica.</p>
+<p><strong>Por que a C está correta:</strong> C trata com volume, insulina e glicose desde cedo, sem potássio inicial se K está alto.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Chamar de CAD comum e repor K inicial com K 5,7 é erro.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> EHH não cursa com acidose importante e bicarbonato 10.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C trata com volume, insulina e glicose desde cedo, sem potássio inicial se K está alto.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Bicarbonato e insulina 0,5 UI/kg/h não são conduta inicial padrão.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

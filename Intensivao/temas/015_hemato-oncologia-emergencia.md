@@ -13,7 +13,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou transfusão maciça, HDA/anemia, encefalopatia/cirrose, falciforme/síndrome torácica aguda, neutropenia febril, síndrome de lise tumoral, síndrome de veia cava superior, reversão de coagulopatia no AVC hemorrágico, reação transfusional e dor oncológica.
+- **Recorrência em provas/estações:** TEME22-26 cobrou transfusão maciça, HDA/anemia, encefalopatia/cirrose, falciforme/síndrome torácica aguda, neutropenia febril, síndrome de lise tumoral, síndrome de veia cava superior, reversão de coagulopatia no AVC hemorrágico, reação transfusional e dor oncológica.
 - **O que a banca costuma testar:** primeira hora, dose/ordem de intervenção, quando não esperar especialista, quando não transfundir automaticamente, quando não dar plaquetas, e como diferenciar complicações parecidas.
 - **Como costuma aparecer:** paciente em quimioterapia, hemopatia ou anticoagulante com febre, dispneia, sangramento, IRA, alteração neurológica ou dor. A resposta certa costuma priorizar fisiologia é tratamento tempo-dependente.
 
@@ -357,6 +357,13 @@ flowchart TD
 > **Para prova TEME:** neutropenia febril = antibiótico antipseudomonas precoce; TLS = hiperK/hiperP/úrico alto/hipocalcemia/IRA em linfoma agressivo; SVCS grave pode comprometer via aérea/cérebro; STA falciforme = O2, ceftriaxona + azitro e transfusão se queda de Hb; reação transfusional = parar transfusão; ICH em varfarina = 4F-PCC + vitamina K.
 >
 > **Na prática clínica:** protocolos locais definem cefepime vs pip-tazo vs meropenem, dose fixa de rasburicase, uso de andexanet e metas transfusionais. Em oncologia, histologia antes de corticoide/radioterapia importa quando o paciente está estável; quando via aérea, medula ou cérebro estão em risco, a emergência manda.
+
+## Pontos quentes TEME26
+
+- **ANC:** leucócitos x (% segmentados + bastões). Febre em oncológico não basta se ANC está acima do corte; calcule antes de rotular neutropenia febril.
+- **Leucemia aguda/APL:** febre, equimoses, gengivorragia/aumento gengival e trombose sugerem leucemia; APL pode sangrar e trombosar.
+- **Síndrome torácica aguda falciforme:** dor, febre, hipoxemia e infiltrado/alteração torácica = cefalosporina de 2ª/3ª geração + macrolídeo, oxigênio, analgesia e evitar hiper-hidratação.
+- **Hipercalcemia maligna/mieloma:** dor óssea/lombar + anemia + rim + cálcio alto = CRAB; hidratação venosa monitorizada vem antes de bisfosfonato.
 
 ## Checklist de revisão
 

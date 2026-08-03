@@ -2,11 +2,11 @@
 
 Banco do tema 021 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 16 com gabarito oficial TEME22-24 + 6 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 23 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -519,3 +519,28 @@ Banco do tema 021 refeito em formato mais parecido com a prova: enunciado e alte
 ## Itens não pontuados
 
 - TEME23 Q71: anulada.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q85</p>
+<p><strong>23. Você está na unidade de Suporte Avançado do SAMU em atendimento a um trauma em extremidade no interior do município, ocorrido há aproximadamente 15 minutos. A cena está segura com um jovem de 30 anos com trauma no membro inferior esquerdo por motosserra durante poda de árvores. O membro encontra-se com amputação incompleta ao nível da coxa distal com sangramento ativo arterial; o paciente está sudorético e agitado. Com base nessas informações qual a alternativa mais correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t021-023" value="A"> A. Somente realizar torniquete se deslocamento para centro de trauma menor que 120 minutos, tempo máximo da permanência do dispositivo sem causar lesão isquêmica. A melhor localização nesse caso seria a aplicação do torniquete proximal na coxa.</label>
+<label class="quiz-option"><input type="radio" name="q-t021-023" value="B"> B. Fazer compressão local; se ineficaz, colocar torniquete ao nível da coxa proximal, até parada do sangramento.</label>
+<label class="quiz-option"><input type="radio" name="q-t021-023" value="C"> C. Realizar curativo compressivo com gazes hemostáticas e compressas, seguido da infusão de ácido tranexâmico e deslocar para centro de trauma.</label>
+<label class="quiz-option"><input type="radio" name="q-t021-023" value="D"> D. Colocação imediata de torniquete alguns centímetros proximal à lesão, evitando articulações, com marcação do horário da colocação. Realizar ácido tranexâmico pelos sinais de choque do paciente e deslocar para centro de trauma.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q85. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Hemorragia arterial em amputação incompleta de coxa: torniquete imediato proximal, horário marcado, TXA se choque e centro de trauma.</p>
+<p><strong>Por que a D está correta:</strong> D é controle de hemorragia em APH.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Não condicione torniquete ao tempo de transporte; sangramento mata antes.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Compressão antes de torniquete atrasa controle em amputação arterial grave.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Curativo hemostático é insuficiente como primeira medida em amputação femoral sangrante.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é controle de hemorragia em APH.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

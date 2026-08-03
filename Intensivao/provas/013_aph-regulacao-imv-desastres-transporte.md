@@ -2,11 +2,11 @@
 
 Banco do tema 013 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 16 com gabarito oficial TEME22-24 + 6 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 33 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -525,3 +525,258 @@ Banco do tema 013 refeito em formato mais parecido com a prova: enunciado e alte
 
 - TEME22 Q66: anulada.
 - TEME24 Q89: anulada.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q25</p>
+<p><strong>23. Durante um transporte aeromédico em helicóptero de um paciente politraumatizado, intubado e em ventilação mecânica, a equipe observa aumento progressivo da pressão de pico nas vias aéreas, redução da SpO2 e piora hemodinâmica após a decolagem. Simultaneamente, o monitor passa a apresentar oscilações importantes no traçado e valores inconsistentes de PA não invasiva. Considerando os princípios fisiológicos e operacionais do transporte aeromédico, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-023" value="A"> A. A expansão gasosa decorrente da redução da pressão atmosférica pode agravar coleções gasosas não drenadas, enquanto vibração e ruído podem comprometer a precisão da monitorização, tornando indispensável a correlação com sinais clínicos.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-023" value="B"> B. A piora clínica é mais provavelmente explicada pela redução da temperatura da cabine durante a ascensão, enquanto as alterações de monitorização decorrem exclusivamente de falha dos equipamentos.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-023" value="C"> C. O aumento da pressão de pico ventilatória observado após a decolagem é incompatível com alterações fisiológicas relacionadas ao voo, devendo ser atribuído prioritariamente a erro de programação do ventilador.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-023" value="D"> D. A vibração da aeronave interfere apenas em monitores de PA não invasiva, sem impacto relevante sobre oximetria ou eletrocardiografia.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q25. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> No voo, gases expandem com menor pressão atmosférica e monitor pode sofrer vibração/ruído; trate o paciente, não só o número.</p>
+<p><strong>Por que a A está correta:</strong> A resume o risco fisiológico e operacional do aeromédico.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A resume o risco fisiológico e operacional do aeromédico.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Temperatura não explica de forma principal pressão de pico e coleções gasosas.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Pressão de pico pode subir por expansão de pneumotórax/coleção não drenada.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Vibração pode afetar PA, ECG e oximetria, não apenas PNI.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q26</p>
+<p><strong>24. Um paciente com história de queda de moto há 1 mês, restrito ao leito desde então, é atendido em um pronto atendimento de baixa complexidade do seu plano de saúde, onde é aventada a suspeita de tromboembolismo pulmonar com necessidade de investigação e tratamento em unidade de referência da mesma rede. Uma equipe de Suporte Avançado do SAMU é acionada para realizar a transferência, e, durante o trajeto, o paciente morre. A equipe do SAMU retorna com o paciente para a origem, que faz o acionamento do Instituto Médico Legal (IML) para o fornecimento do atestado de óbito. Em relação a esse caso, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-024" value="A"> A. O médico intervencionista deveria ter passado o caso para o médico regulador e este, ter orientado o destino do corpo, além de emitir a declaração de óbito.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-024" value="B"> B. A equipe do SAMU deveria ter continuado o transporte, e a equipe do destino seria a responsável pela emissão da declaração de óbito.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-024" value="C"> C. O médico assistente do paciente da unidade de pronto atendimento deveria ter preenchido o atestado de óbito.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-024" value="D"> D. A responsabilidade pelo transporte desse paciente não é do SAMU e, se foi realizado, foi em caráter de excepcionalidade.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q26. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> SAMU não é transporte ordinário inter-hospitalar de plano privado; se atua, é exceção regulatória.</p>
+<p><strong>Por que a D está correta:</strong> D é a interpretação cobrada sobre responsabilidade do transporte.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Regulador não emite DO nesse contexto de transferência privada excepcional.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Continuar transporte com óbito no trajeto não define automaticamente responsabilidade do destino.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> O caso envolve suspeita não esclarecida e transporte inadequado pelo SAMU; não é simples DO pela origem.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é a interpretação cobrada sobre responsabilidade do transporte.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q39</p>
+<p><strong>25. Um acidente com ônibus numa rodovia próxima leva, em cerca de 20 minutos, 18 vítimas a um hospital geral, sendo quatro delas em estado crítico. No DE, há dois médicos de plantão e oito leitos, já parcialmente ocupados pela demanda habitual. O hospital dispõe de centro cirúrgico com duas salas em atividade eletiva, seis leitos de unidade de terapia intensiva com vagas disponíveis e equipes de cirurgia e anestesia em sobreaviso. O emergencista de plantão, o mais experiente presente, conduz os primeiros minutos da resposta. Assinale a conduta de comando mais adequada:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-025" value="A"> A. Tratar como incidente de Nível I e conduzir apenas com a equipe e os leitos do DE, sem ativar o sistema de comando de incidentes.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-025" value="B"> B. Assumir o comando do incidente e centralizar as decisões estratégicas, por ser o profissional clínico mais experiente presente.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-025" value="C"> C. Reconhecer um incidente de Nível II, comunicar à gestão do hospital para ativar o sistema de comando de incidentes e assumir a Seção de Operações.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-025" value="D"> D. Tratar como incidente de Nível III, acionar a rede regional de saúde e transferir vítimas a outras instituições, por ultrapassar a capacidade do hospital.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q39. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> 18 vítimas com 4 críticas em hospital com recursos mobilizáveis é incidente interno ampliado, não catástrofe regional automática.</p>
+<p><strong>Por que a C está correta:</strong> C ativa SCI hospitalar e coloca o emergencista em Operações, não no comando estratégico centralizado.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Nível I subestima a chegada simultânea e críticos.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Comando não deve depender só do clínico mais experiente; SCI distribui funções.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C ativa SCI hospitalar e coloca o emergencista em Operações, não no comando estratégico centralizado.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Nível III/rede regional pode ser excessivo se hospital ainda tem centro cirúrgico/UTI mobilizáveis.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q65</p>
+<p><strong>26. Homem de 34 anos, motociclista, vítima de colisão com automóvel em via pública, atendido pelo SAMU. Após contato com a regulação médica, foi encaminhado ao hospital com recurso de tomografia mais próximo, com Glasgow 14, estável hemodinamicamente e três episódios de vômito após o trauma. À chegada, a equipe do serviço de destino recusou-se a recebê-lo, alegando ausência de retaguarda neurocirúrgica e que, por tratar-se de traumatismo cranioencefálico, o caso deveria ser conduzido a hospital com neurocirurgia. Assinale a alternativa que descreve a conduta correta do serviço de destino:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-026" value="A"> A. O atendimento médico é obrigatório a todo paciente que acessa o serviço de urgência: o serviço de destino deve recebê-lo, avaliá-lo por médico, estabilizá-lo e, confirmada a necessidade de recurso indisponível, acionar a transferência regulada.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-026" value="B"> B. Por ser o regulador quem define o destino, o serviço de destino deve devolver o caso à regulação, para redirecionamento antes de assumir o atendimento, ao constatar a ausência do recurso especializado.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-026" value="C"> C. O paciente deve ser redirecionado a hospital com neurocirurgia pela equipe de classificação de risco, já que a classificação caracteriza a necessidade de cuidado especializado e evita atraso diagnóstico.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-026" value="D"> D. O dever de recebimento aplica-se às situações de “vaga zero”; na regulação ordinária, seria facultado ao serviço de destino recusar o paciente quando não dispõe da especialidade requerida.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q65. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Serviço de urgência que recebe paciente regulado deve atender, estabilizar e só então transferir se faltar recurso.</p>
+<p><strong>Por que a A está correta:</strong> A reflete dever de atendimento e continuidade assistencial.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A reflete dever de atendimento e continuidade assistencial.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Não se devolve paciente à regulação antes de avaliação médica.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Classificação não substitui atendimento médico inicial.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> O dever não existe só em vaga zero.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q70</p>
+<p><strong>27. Durante um plantão em serviço aeromédico, sua equipe é acionada para realizar a transferência de um paciente em uso de oxigenação extracorpórea, tecnologia com a qual nenhum dos integrantes da equipe possui familiaridade ou treinamento específico. Além disso, há previsão de deterioração das condições meteorológicas durante o trajeto. Diante desse cenário, assinale a melhor alternativa:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-027" value="A"> A. O aumento de altitude gera redução da fração inspirada de oxigênio atmosférica, podendo demandar ajuste compensatório no equipamento responsável pela oxigenação do paciente.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-027" value="B"> B. A responsabilidade sobre o comando da aeronave e segurança de voo é exclusiva ao comandante da aeronave.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-027" value="C"> C. A homologação de equipamentos hospitalares para uso em APH garante sua confiabilidade no uso aeromédico.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-027" value="D"> D. Pode-se solicitar o acompanhamento de um profissional de saúde capacitado no uso do equipamento, mas alheio à equipe aeromédica, desde que receba breve instrução de segurança antes do voo.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q70. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Transporte aeromédico de ECMO sem familiaridade pede especialista no equipamento e brief de segurança se necessário.</p>
+<p><strong>Por que a D está correta:</strong> D é a alternativa operacional mais adequada.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Altitude não reduz FiO2 atmosférica; reduz pressão barométrica/pressão parcial.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Segurança de voo é do comandante, mas decisão missão envolve equipe e risco assistencial.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Homologação hospitalar não garante segurança aeromédica.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é a alternativa operacional mais adequada.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q78</p>
+<p><strong>28. O maior acidente radiológico do mundo fora de uma usina nuclear ocorreu no Brasil, em Goiânia, em 1987, quando uma fonte de césio-137 retirada de um aparelho de radioterapia abandonado foi rompida em um ferro-velho e dispersou material radioativo pela cidade, contaminando pessoas, residências e objetos e exigindo ampla descontaminação. O episódio voltou ao debate público com a minissérie Emergência Radioativa (Netflix, 2026). Considerando os princípios do atendimento pré-hospitalar a produtos perigosos aplicáveis a um cenário de contaminação radiológica como esse, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-028" value="A"> A. Em situações de risco iminente de morte, a estabilização da vítima deve ser adiada até a conclusão da descontaminação.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-028" value="B"> B. O tempo gasto para vestir, descontaminar e retirar o traje de proteção não reduz a autonomia do socorrista, pois não é descontado do tempo de ar do equipamento de respiração autônoma.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-028" value="C"> C. Na descontaminação cutânea, a fricção deve ser vigorosa, a fim de maximizar a remoção do agente.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-028" value="D"> D. A zona morna é a área de transição entre a zona quente e a zona fria, onde se instala o corredor de descontaminação pelo qual passam as vítimas e os profissionais expostos.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q78. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> HazMat/radiológico organiza zonas; zona morna é corredor de descontaminação entre quente e fria.</p>
+<p><strong>Por que a D está correta:</strong> D é o princípio operacional correto.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Risco iminente de morte pode exigir estabilização salvadora antes/descontaminação adaptada.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Tempo de vestir/descontaminar consome autonomia operacional.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Fricção vigorosa lesa pele e aumenta absorção/contaminação.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é o princípio operacional correto.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q91</p>
+<p><strong>29. Em relação às técnicas de extricação e restrição de movimento da coluna (RMC) no atendimento pré-hospitalar ao traumatizado, assinale a melhor alternativa:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-029" value="A"> A. Para pacientes deambulando na cena e com indicação de RMC, deve-se utilizar a técnica de pranchamento em pé.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-029" value="B"> B. A retirada em maca rígida em “ângulo zero” é a técnica que menos gera movimento da coluna cervical e deve ser priorizada quando factível.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-029" value="C"> C. Se o transporte de um paciente com indicação de RMC foi feito na maca da ambulância, pode-se utilizar lençol ou passador para transferi-lo para a maca do hospital.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-029" value="D"> D. A utilização de maca scoop gera menos pressão e pode ser utilizada como dispositivo de transportes em percursos longos.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q91. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> RMC moderna evita prancha prolongada; transferência pode ser feita com passador/lençol mantendo alinhamento.</p>
+<p><strong>Por que a C está correta:</strong> C é a alternativa mais adequada.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Pranchamento em pé não é preferido atualmente.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Ângulo zero não é necessariamente a técnica que menos movimenta.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C é a alternativa mais adequada.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Scoop é para transferência, não transporte longo por pressão/desconforto.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q93</p>
+<p><strong>30. Enunciado para as questões 93 e 94: Uma explosão ocorre em uma indústria de refrigeração que utiliza amônia anidra sob alta pressão. O acidente provoca a ruptura de uma tubulação, liberando grande quantidade de gás e líquido no ambiente. Equipes de resgate identificaram cerca de 40 vítimas expostas. Diversos trabalhadores apresentam dispneia, tosse, irritação ocular intensa e queimaduras químicas na pele. Após ter sido realizado o isolamento da área e feita a retirada das vítimas da zona quente, a equipe médica responsável pela organização do atendimento pré-hospitalar deve definir o fluxo assistencial inicial dessas vítimas. Qual é a conduta mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-030" value="A"> A. Realizar triagem START ainda na zona quente, seguida de transporte imediato para os hospitais da região.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-030" value="B"> B. Encaminhar as vítimas para a zona morna, onde deverá ser realizada a retirada das roupas contaminadas e descontaminação antes da triagem médica definitiva e do ingresso na zona fria.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-030" value="C"> C. Encaminhar imediatamente as vítimas para as ambulâncias de Suporte Avançado, priorizando o transporte rápido ao hospital de referência.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-030" value="D"> D. Encaminhar os pacientes diretamente à área de atendimento médico avançado, realizando descontaminação apenas naqueles com queimaduras químicas evidentes.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q93. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Em agente químico, retire da zona quente e passe pela zona morna para roupa/descontaminação antes da área fria.</p>
+<p><strong>Por que a B está correta:</strong> B organiza fluxo seguro para vítimas e equipes.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Triagem na zona quente expõe equipe e contamina fluxo.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B organiza fluxo seguro para vítimas e equipes.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Transporte imediato contamina ambulâncias/hospitais.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Mesmo sem queimadura visível pode haver contaminação química.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q94</p>
+<p><strong>31. Enunciado para as questões 93 e 94: Uma explosão ocorre em uma indústria de refrigeração que utiliza amônia anidra sob alta pressão. O acidente provoca a ruptura de uma tubulação, liberando grande quantidade de gás e líquido no ambiente. Equipes de resgate identificaram cerca de 40 vítimas expostas. Diversos trabalhadores apresentam dispneia, tosse, irritação ocular intensa e queimaduras químicas na pele. Durante a chegada das primeiras equipes especializadas em produtos perigosos, ainda não há confirmação da concentração ambiental de amônia nem exclusão da presença de outros agentes tóxicos liberados após a explosão. A equipe de resgate deverá ingressar na zona quente para retirada das vítimas. Qual dos seguintes níveis de proteção individual é o mais adequado para essa situação?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-031" value="A"> A. Vestimenta química com proteção contra respingos associada a respirador purificador de ar com filtro químico específico para o agente envolvido.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-031" value="B"> B. Vestimenta química não encapsulada associada a aparelho autônomo de respiração (SCBA), com proteção respiratória máxima, porém menor proteção cutânea.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-031" value="C"> C. Vestimenta química totalmente encapsulada resistente a vapores e líquidos, associada a SCBA, oferecendo proteção respiratória e cutânea máxima.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-031" value="D"> D. Uniforme operacional, luvas, botas e proteção ocular, sem proteção respiratória especializada.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q94. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Agente/concentração desconhecidos na zona quente pedem nível máximo: traje encapsulado + SCBA.</p>
+<p><strong>Por que a C está correta:</strong> C é proteção respiratória e cutânea máxima.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Filtro químico depende de agente/concentração conhecidos e oxigênio adequado.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Não encapsulado deixa pele vulnerável a vapor/líquido.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C é proteção respiratória e cutânea máxima.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Uniforme operacional é insuficiente.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q99</p>
+<p><strong>32. Homem de 30 anos, trabalhador, sofreu queda de cerca de 4 m de um andaime, atendido pelo SAMU após a cena ser liberada. Consciente, Glasgow 15, deambulando, sem dor à palpação da linha média cervical, com dor intensa e deformidade no antebraço direito. PA: 126 x 80 mmHg; FC: 94 bpm; sem outras queixas. A equipe discute a conduta na cena. Assinale a conduta mais adequada na cena:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-032" value="A"> A. Imobilizar cuidadosamente a fratura do antebraço e completar a avaliação secundária no local antes de definir o transporte.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-032" value="B"> B. Aplicar restrição de movimento cervical, realizar apenas as intervenções essenciais na cena e regular diretamente a um centro de trauma.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-032" value="C"> C. Liberar a coluna pelos critérios de baixo risco, pelo paciente deambular e não referir dor cervical, e transportar a um pronto-socorro geral.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-032" value="D"> D. Transportar ao pronto-socorro geral mais próximo e reservar o centro de trauma para o caso de surgir instabilidade hemodinâmica.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q99. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Queda de 4 m é mecanismo de alto risco; mesmo deambulando e sem dor cervical, faça RMC seletiva e centro de trauma.</p>
+<p><strong>Por que a B está correta:</strong> B combina intervenções essenciais e regulação ao centro adequado.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Completar secundária longa na cena atrasa transporte em mecanismo relevante.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B combina intervenções essenciais e regulação ao centro adequado.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Deambular não zera risco quando mecanismo é alto.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Centro de trauma não deve esperar instabilidade aparecer.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q100</p>
+<p><strong>33. Durante uma capacitação sobre gerenciamento de incidentes com múltiplas vítimas, o instrutor apresenta a seguinte situação hipotética: Nos primeiros minutos após um desastre, a demanda assistencial supera amplamente os recursos inicialmente disponíveis. À medida que novas equipes, equipamentos e estruturas são mobilizados, ocorre progressiva redução da discrepância entre as necessidades operacionais e a capacidade de resposta instalada. Segundo a doutrina do Sistema de Comando de Incidentes (SCI), a eficiência da gestão pode ser avaliada pela capacidade de reduzir o tempo necessário para que essa discrepância seja minimizada. Com base nos fundamentos do SCI, qual princípio operacional está mais diretamente relacionado ao objetivo descrito?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t013-033" value="A"> A. Ampliação do alcance de controle, permitindo que um único gestor coordene o maior número possível de subordinados durante a fase inicial do incidente.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-033" value="B"> B. Estabelecimento precoce de um Plano de Ação da Emergência, independentemente da disponibilidade de informações situacionais atualizadas.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-033" value="C"> C. Controle integral dos recursos, permitindo identificação, mobilização, utilização, rastreamento e desmobilização coordenada dos meios empregados até que as demandas operacionais sejam adequadamente atendidas.</label>
+<label class="quiz-option"><input type="radio" name="q-t013-033" value="D"> D. Transferência progressiva do comando para as agências que possuam maior contingente de recursos disponíveis no local.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q100. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> No SCI, reduzir discrepância entre demanda e capacidade depende de controlar recursos do início ao fim.</p>
+<p><strong>Por que a C está correta:</strong> C é o princípio de gerenciamento integral dos recursos.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Ampliar demais alcance de controle piora comando.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Plano de ação precoce precisa informação situacional e atualização.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C é o princípio de gerenciamento integral dos recursos.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Comando não migra simplesmente para quem tem mais recursos.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

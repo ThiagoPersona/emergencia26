@@ -2,11 +2,11 @@
 
 Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 59 com gabarito oficial TEME22-24 + 17 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 82 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -1821,3 +1821,149 @@ Banco do tema 001 refeito em formato mais parecido com a prova: enunciado e alte
 - TEME24 Q3: anulada.
 - TEME24 Q35: anulada.
 - TEME24 Q84: texto não extraído.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q1</p>
+<p><strong>77. Homem de 41 anos, politraumatizado, é admitido no DE após IOT e início de ventilação mecânica. Está em infusão contínua de midazolam, com olhos fechados e pouca interação, porém mantém taquicardia, hipertensão, lacrimejamento e assincronia ventilatória durante mobilização. Não há hipotensão ou hipoxemia. Qual é a conduta mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t001-077" value="A"> A. Reavaliar sistematicamente dor, sedação e causas de assincronia, instituindo analgesia contínua titulada e ajustando sedação, conforme meta clínica.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-077" value="B"> B. Aumentar progressivamente o midazolam até sedação profunda, pois ausência de interação garante controle adequado de dor e desconforto.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-077" value="C"> C. Iniciar bloqueador neuromuscular contínuo, pois assincronia ventilatória eleva riscos de barotrauma em paciente intubado e deve ser tratada prioritariamente com paralisia.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-077" value="D"> D. Suspender sedação contínua e manter apenas doses intermitentes de analgésico, pois sedação em infusão prolonga a ventilação mecânica.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q1. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Paciente intubado que parece sedado ainda pode estar com dor e assincronia; primeiro reavalie analgesia, sedação e causas ventilatórias.</p>
+<p><strong>Por que a A está correta:</strong> A conduta correta é titular analgesia contínua e ajustar sedação por meta, sem interpretar olhos fechados como conforto.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A conduta correta é titular analgesia contínua e ajustar sedação por meta, sem interpretar olhos fechados como conforto.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Sedação profunda com midazolam não garante analgesia e aumenta tempo de ventilação e delirium.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Bloqueio neuromuscular contínuo não trata dor e só entra em situações selecionadas depois de analgesia/sedação e causa corrigível.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Suspender tudo em paciente crítico e assincrônico piora desconforto e não resolve a ventilação.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q8</p>
+<p><strong>78. Mulher, 52 anos, índice de massa corporal de 42 kg/m², apresenta pneumonia grave, SpO2: 82% com máscara não reinalante a 15 L/minuto e FR: 38 irpm. Está agitada e retira repetidamente a máscara, mas mantém drive respiratório e reflexos protetores. A IOT foi indicada. Qual estratégia maximiza a segurança da pré-oxigenação?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t001-078" value="A"> A. Administrar cetamina 1 mg/kg por via endovenosa (EV) ao longo de 60 segundos, permitir ventilação não invasiva com pressão positiva ao fim da expiração (PEEP) por, pelo menos, 3 minutos com a cabeceira elevada e, posteriormente, administrar o bloqueador neuromuscular (BNM) e realizar a laringoscopia.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-078" value="B"> B. Administrar imediatamente propofol e BNM, iniciando ventilação com bolsa-válvula-máscara após o estabelecimento da apneia.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-078" value="C"> C. Posicionar a paciente em decúbito horizontal, oferecer cateter nasal a 6 L/minuto por 1 minuto e realizar a laringoscopia sem BNM.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-078" value="D"> D. Administrar midazolam e fentanil, mantendo máscara não reinalante a 10 L/minuto até que a saturação arterial de oxigênio alcance 90%.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q8. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Hipoxemia grave e agitação antes da IOT pedem pré-oxigenação com pressão positiva e DSI com cetamina.</p>
+<p><strong>Por que a A está correta:</strong> A preserva ventilação, melhora tolerância à VNI/PEEP por pelo menos 3 minutos e só depois paralisa.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A preserva ventilação, melhora tolerância à VNI/PEEP por pelo menos 3 minutos e só depois paralisa.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Induzir e paralisar sem pré-oxigenar aumenta dessaturação perintubação.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Decúbito horizontal e cateter nasal curto são insuficientes no obeso hipoxêmico.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Midazolam/fentanil podem deprimir ventilação e não resolvem a necessidade de PEEP.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q22</p>
+<p><strong>79. Paciente de 68 anos, com Doença Pulmonar Obstrutiva Crônica, em ventilação mecânica no modo pressão de suporte, apresentando desconforto respiratório, com as seguintes curvas de pressão, fluxo e volume, respectivamente: Considerando a assincronia identificada e o modo ventilatório em uso, a conduta mais apropriada para corrigi-la é:</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q22_curvas_vm_psv.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q22_curvas_vm_psv.png" alt="Curvas ventilatórias da TEME26 Q22">
+</a>
+<figcaption>Curvas ventilatórias da TEME26 Q22</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t001-079" value="A"> A. A análise das curvas evidencia tempo inspiratório do ventilador menor que o esforço inspiratório neural do paciente, com pico de pressão ao fim da inspiração, fluxo expiratório que não retorna a zero antes do próximo ciclo e tendência à hiperinsuflação. Diminuir o tempo inspiratório programado.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-079" value="B"> B. A análise das curvas evidencia tempo inspiratório do ventilador maior que o esforço inspiratório neural do paciente, com pico de pressão ao fim da inspiração, fluxo expiratório que não retorna a zero antes do próximo ciclo e tendência à hiperinsuflação. Reduzir a porcentagem do critério de ciclagem.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-079" value="C"> C. A análise das curvas evidencia tempo inspiratório do ventilador menor que o esforço inspiratório neural do paciente, com pico de pressão ao fim da inspiração, fluxo expiratório que não retorna a zero antes do próximo ciclo e tendência à hiperinsuflação. Reduzir o volume corrente.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-079" value="D"> D. A análise das curvas é compatível com tempo inspiratório do ventilador maior que o esforço inspiratório neural do paciente, com pico de pressão ao fim da inspiração, fluxo expiratório que não retorna a zero antes do próximo ciclo e tendência à hiperinsuflação. Aumentar a porcentagem do critério de ciclagem.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q22. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Em PSV, tempo inspiratório excessivo em DPOC gera ciclagem tardia, pico de pressão e auto-PEEP; aumente ciclagem.</p>
+<p><strong>Por que a D está correta:</strong> D descreve o problema e corrige encurtando o ciclo inspiratório por maior porcentagem de ciclagem.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Diminuir tempo inspiratório programado não é o ajuste típico no modo pressão de suporte.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Reduzir critério de ciclagem prolonga ainda mais a inspiração.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Volume corrente não corrige diretamente a ciclagem tardia do PSV.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D descreve o problema e corrige encurtando o ciclo inspiratório por maior porcentagem de ciclagem.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q46</p>
+<p><strong>80. Homem, 55 anos, com angioedema, é submetido à indução e ao bloqueio neuromuscular. Duas tentativas otimizadas de intubação falham. A ventilação com bolsa-válvula-máscara e dispositivo extraglótico não produz expansão torácica nem curva capnográfica, e a SpO2 cai para 62%. Qual é a próxima conduta?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t001-080" value="A"> A. Realizar cricotireoidostomia por punção e utilizá-la como via aérea definitiva no paciente adulto.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-080" value="B"> B. Interromper as intervenções e aguardar o retorno da ventilação espontânea após o término do bloqueio neuromuscular.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-080" value="C"> C. Realizar uma terceira tentativa de laringoscopia com o mesmo operador, utilizando uma lâmina diferente.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-080" value="D"> D. Realizar imediatamente cricotireoidostomia cirúrgica pela técnica dedo-bisturi-bougie, com introdução de tubo endotraqueal 6.0.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q46. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Falhou intubar e falhou ventilar com BVM/SGA: é NINO/CICO, próximo passo é frente de pescoço.</p>
+<p><strong>Por que a D está correta:</strong> D é cricotireoidostomia cirúrgica imediata dedo-bisturi-bougie com tubo 6.0.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Punção não é via definitiva recomendada no adulto.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Aguardar bloqueio acabar com SpO2 62% é fatal.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Terceira tentativa repete atraso em cenário CICO.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é cricotireoidostomia cirúrgica imediata dedo-bisturi-bougie com tubo 6.0.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q55</p>
+<p><strong>81. Homem de 52 anos, grande obeso, com pneumonia comunitária e insuficiência respiratória hipoxêmica. Está taquipneico e ansioso, porém cooperativo e tolerando pré-oxigenação com ventilação não invasiva, no entanto, sua melhor pré-oxigenação, apesar de aumentos de pressão positiva ao fim da expiração, é de SpO2: 88%. Apresenta-se estável, com PA: 128×76 mmHg e FC: 108 bpm. Ao exame da via aérea: abertura bucal adequada, Mallampatti II, distância tireomentoniana normal, mobilidade cervical prejudicada, sem distorção anatômica, massa cervical, edema ou sangramento. Indica-se via aérea definitiva, em um contexto de Unidade de Pronto Atendimento, com poucos recursos, apenas um médico plantonista e equipe com baixa experiência em pacientes críticos. Considerando a escolha do método de intubação (sequência rápida [RSI]; sequência atrasada de intubação [DSI]; intubação acordado), a conduta mais apropriada é:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t001-081" value="A"> A. Sequência rápida (RSI) com preparação dupla.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-081" value="B"> B. Intubação acordado, mantendo ventilação espontânea, pois a obesidade e a hipoxemia configuram via aérea difícil, que contraindica a paralisia.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-081" value="C"> C. Sequência atrasada (DSI), com cetamina em dose dissociativa para otimizar a pré-oxigenação antes de paralisar, dada a hipoxemia.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-081" value="D"> D. Intubação com sedação isolada (sem bloqueador neuromuscular), para preservar a ventilação espontânea por conta da obesidade.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q55. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Hipoxemia persistente apesar de VNI é fisiologicamente difícil, mas anatomia não obriga via aérea acordada; prepare RSI com plano duplo.</p>
+<p><strong>Por que a A está correta:</strong> A usa RSI com preparação dupla em UPA com equipe limitada.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A usa RSI com preparação dupla em UPA com equipe limitada.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Obesidade/hipoxemia aumentam risco, mas não contraindicam paralisia quando anatomia é favorável.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> DSI com cetamina é para paciente que não tolera pré-oxigenação; ele tolera VNI.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Sedação sem bloqueador piora condições e risco de falha.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q76</p>
+<p><strong>82. Homem, 59 anos, com cirrose hepática, apresenta hematêmese maciça, escala de coma de Glasgow 7 e SpO2 de 88%. Há acúmulo contínuo de sangue na orofaringe, e a IOT está indicada. Durante a laringoscopia, qual técnica oferece a maior probabilidade de sucesso na primeira tentativa?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t001-082" value="A"> A. Aspirar continuamente com cânula rígida antes e durante a laringoscopia, posicionando-a na hipofaringe ou porção proximal do esôfago enquanto o tubo é introduzido.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-082" value="B"> B. Utilizar videolaringoscópio sem aspiração concomitante, pois a câmera permite visualizar a glote através do sangue.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-082" value="C"> C. Realizar ventilação com pressão positiva antes da indução, com o objetivo de deslocar o sangue e ampliar o espaço faríngeo.</label>
+<label class="quiz-option"><input type="radio" name="q-t001-082" value="D"> D. Inserir um dispositivo extraglótico como via aérea definitiva, pois ele impede a aspiração do conteúdo gástrico.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q76. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Via aérea inundada por sangue pede SALAD: sucção rígida contínua antes e durante a laringoscopia.</p>
+<p><strong>Por que a A está correta:</strong> A aumenta chance de primeira passagem e reduz aspiração.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A aumenta chance de primeira passagem e reduz aspiração.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Videolaringoscópio sem sucção fica cego com sangue.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Pressão positiva pode insuflar estômago e piorar aspiração.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Extraglótico não protege contra sangue/vômito como via definitiva.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

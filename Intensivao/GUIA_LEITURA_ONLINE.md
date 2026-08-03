@@ -4,7 +4,7 @@ Podemos publicar em 3 opções:
 
 ## Opção 1 (rápida): leitura online no celular
 - Use o arquivo já pronto: `index-online.html`
-- Ele lê os arquivos Markdown desta pasta (`LEITURA_OFICIAL.md`, `MAPA_DE_QUESTOES_TEME22-25.md`, `PROVAS.md`, `temas/*.md` e `provas/*.md`)
+- Ele lê os arquivos Markdown desta pasta (`LEITURA_OFICIAL.md`, `MAPA_DE_QUESTOES_TEME22-26.md`, `PROVAS.md`, `temas/*.md` e `provas/*.md`)
 - A navegação é por sidebar e fluxo responsivo.
 
 ## Opção 2 (mais indicada): publicar no GitHub Pages

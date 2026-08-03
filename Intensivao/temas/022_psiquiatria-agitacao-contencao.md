@@ -8,7 +8,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou agitação psicomotora, investigação clínica em sintomas psiquiátricos, abstinência, contenção, BARS e tentativa de suicídio.
+- **Recorrência em provas/estações:** TEME22-26 cobrou agitação psicomotora, investigação clínica em sintomas psiquiátricos, abstinência, contenção, BARS e tentativa de suicídio.
 - **O que a banca costuma testar:** diferenciar delirium/intoxicação/psicose, quando investigar causas clínicas, contenção segura, medicação por provável etiologia e alta segura.
 - **Como costuma aparecer:** paciente agitado com hipoglicemia, hipóxia, abstinência, intoxicação, idoso, primeiro surto ou tentativa suicida "calma".
 

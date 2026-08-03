@@ -11,7 +11,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou choque hipovolêmico/desidratação, via aérea pediátrica, succinilcolina e trismo, bronquiolite com bradicardia, asma grave, exantemas, síndrome do choque tóxico, trauma pediátrico, FAST negativo, PECARN, imagem cervical e intoxicação por "chumbinho".
+- **Recorrência em provas/estações:** TEME22-26 cobrou choque hipovolêmico/desidratação, via aérea pediátrica, succinilcolina e trismo, bronquiolite com bradicardia, asma grave, exantemas, síndrome do choque tóxico, trauma pediátrico, FAST negativo, PECARN, imagem cervical e intoxicação por "chumbinho".
 - **O que a banca costuma testar:** primeira conduta, diferença entre criança compensada e descompensada, ventilação antes de atropina, bolus em mL/kg, TOT por idade, critérios de imagem é tratamento de doenças respiratórias comuns.
 - **Como costuma aparecer:** caso curto com sinais vitais que parecem "quase normais". O candidato aprovado reconhece gravidade por perfusão, consciência e trabalho respiratório, não apenas por PA.
 
@@ -354,6 +354,16 @@ Sinais vitais aproximados para não cair em "normal para idade":
 > **Para prova TEME:** desidratação grave/choque hipovolêmico = SF 0,9% 20 mL/kg; bronquiolite com bradicardia/hipoxemia = ventilação com pressão positiva; trauma pediátrico = PECARN, radiografia cervical na estação, TOT 5,5, CH 10 mL/kg e FAST com menor sensibilidade.
 >
 > **Na prática clínica:** em sepse, faça bolus de 10-20 mL/kg com reavaliação estreita e comece vasoativo cedo se refratário; em bronquiolite típica, evite broncodilatador/corticoide/antibiótico de rotina; em asma grave, MgSO4 e suporte ventilatório devem seguir protocolo local e experiência da equipe.
+
+## Pontos quentes TEME26
+
+- **Step-by-step no lactente febril:** aparência clínica, urinálise e biomarcadores ajudam a separar baixo risco; boa aparência isolada não basta.
+- **BRUE:** evento breve, resolvido, em menor de 1 ano, sem causa após história/exame; se há causa identificável, não é BRUE.
+- **Status epiléptico febril:** benzodiazepínico, segunda linha antiepiléptica e infusão contínua se refratário; focalidade/rebaixamento sustentado sugere meningoencefalite.
+- **Sepse pediátrica:** hipotensão é tardia; TAP, perfusão, TEC, extremidades, diurese e consciência mandam. Antibiótico não espera 3 horas.
+- **Gastroenterite:** diagnóstico é clínico, mas sempre procure imitadores: apendicite, intussuscepção, sepse, CAD, erro inato/metabólico.
+- **Trauma abdominal pediátrico:** sinal do cinto e alta energia mantêm investigação mesmo com FAST negativo.
+- **Cianose:** lembre que a percepção depende da hemoglobina desoxigenada absoluta. A TEME26 Q92 tem gabarito oficial controverso; preserve a letra oficial no treino.
 
 ## Checklist de revisão
 

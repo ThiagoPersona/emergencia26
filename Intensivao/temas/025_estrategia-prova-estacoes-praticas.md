@@ -9,7 +9,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** nas provas TEME22-25 há questões multidisciplinares e, nas estações, vários pontos de checklist que não pertencem a um tema clínico único.
+- **Recorrência em provas/estações:** nas provas TEME22-26 há questões multidisciplinares e, nas estações, vários pontos de checklist que não pertencem a um tema clínico único.
 - **O que a banca costuma testar:** higiene/EPI, chamada de ajuda, monitorização, ABCDE, verbalização de raciocínio, conduta tempo-dependente, uso correto de recursos e reavaliação.
 - **Como costuma aparecer:** estação de PCR, via aérea, trauma, POCUS, pediatria ou neurocrítico em que o procedimento técnico é apenas uma parte da nota.
 
@@ -167,7 +167,7 @@ flowchart TD
 
 ## Questões e estações relacionadas
 
-- **TEME22-25 teórica:** questões multidisciplinares, gestão, decisão sob incerteza, regulação, segurança e condutas que cruzam mais de um tema.
+- **TEME22-26 teórica:** questões multidisciplinares, gestão, decisão sob incerteza, regulação, segurança e condutas que cruzam mais de um tema.
 - **Prática 2022:** RCP de alta qualidade, higiene/checklist, via aérea com BVM/dispositivo supraglótico, trauma com FAST, choque cardiogênico/miocardiopatia periparto.
 - **Prática 2023:** PCR pediátrica/TSV, IOT com bougie, BLUE protocol, IMV/desastres, sepse e CAD.
 - **Prática 2024:** bradicardia instável/IAMCST/FV, cricotireoidostomia, POCUS em SCAPE, trauma pediátrico e protocolo de morte encefálica.
@@ -178,13 +178,13 @@ flowchart TD
 **Prova/TEME**
 
 - Conteúdo programático TEME26.
-- Provas teóricas TEME22-25 e gabaritos oficiais disponíveis no projeto.
-- Estações práticas TEME22-25 disponíveis no projeto.
+- Provas teóricas TEME22-26 e gabaritos oficiais disponíveis no projeto.
+- Estações práticas disponíveis até TEME25 disponíveis no projeto.
 
 **Material local**
 
 - Resumos de temas 001-024.
-- Mapa de questões TEME22-25.
+- Mapa de questões TEME22-26.
 
 **Atualização clínica**
 

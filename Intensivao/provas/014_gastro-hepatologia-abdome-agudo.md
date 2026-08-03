@@ -2,11 +2,11 @@
 
 Banco do tema 014 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 16 com gabarito oficial TEME22-24 + 7 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 26 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -567,3 +567,80 @@ Banco do tema 014 refeito em formato mais parecido com a prova: enunciado e alte
 ## Itens não pontuados
 
 - TEME23 Q94: anulada.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q35</p>
+<p><strong>24. Homem de 62 anos, tabagista e ex-etilista, procura o pronto-socorro por dor abdominal em cólicas há 3 dias, associada à distensão abdominal progressiva, náuseas, vômitos e perda ponderal não intencional nos últimos meses – em torno de 15 kg, segundo a filha que o acompanha na consulta. Ao exame físico, apresenta abdome distendido, sem sinais de irritação peritoneal. É realizado ultrassom à beira do leito (POCUS) abdominal em região de quadrante inferior direito do abdome, demonstrado na imagem a seguir: Baseado na história clínica e na imagem do POCUS apresentada, qual é o diagnóstico mais provável?</strong></p>
+<figure class="quiz-figure">
+<a href="assets/provas/TEME26_Q35_us_intussuscepcao.png" target="_blank" rel="noopener noreferrer">
+<img src="assets/provas/TEME26_Q35_us_intussuscepcao.png" alt="Ultrassom abdominal da TEME26 Q35">
+</a>
+<figcaption>Ultrassom abdominal da TEME26 Q35</figcaption>
+</figure>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t014-024" value="A"> A. Íleo paralítico.</label>
+<label class="quiz-option"><input type="radio" name="q-t014-024" value="B"> B. Intussuscepção intestinal.</label>
+<label class="quiz-option"><input type="radio" name="q-t014-024" value="C"> C. Obstrução intestinal por bridas.</label>
+<label class="quiz-option"><input type="radio" name="q-t014-024" value="D"> D. Volvo intestinal.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q35. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Adulto com perda ponderal, obstrução e US em alvo sugere intussuscepção por ponto-guia.</p>
+<p><strong>Por que a B está correta:</strong> B é o diagnóstico mais provável pela imagem e quadro suboclusivo.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Íleo paralítico não costuma formar imagem em alvo.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B é o diagnóstico mais provável pela imagem e quadro suboclusivo.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Bridas causam obstrução, mas a imagem típica aponta intussuscepção.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Volvo teria sinais de torção/whirlpool e outro contexto.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q54</p>
+<p><strong>25. Homem de 68 anos chega ao DE com história de melena iniciada há 1 dia com síncope associada. Ao exame inicial: PA: 92 x 58 mmHg; FC: 126 bpm; FR: 24 irpm; pele fria e moteada, Glasgow 15, hemoglobina: 12,8 g/dl, hematócrito: 38%, leucócitos: 8.320/mm³, plaquetas: 98.000/mm³, lactato arterial: 5,2 mmol/L, excesso de base: -8 mEq/L. Após avaliação, equipe médica assistente optou por aguardar novo exame laboratorial, para iniciar transfusão de hemocomponente. Qual interpretação fisiopatológica está correta nesse caso?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t014-025" value="A"> A. Apesar do Shock Index ser superior a 0,9, esse parâmetro não possui utilidade na avaliação fisiológica do choque neste caso, por não se tratar de uma vítima de trauma.</label>
+<label class="quiz-option"><input type="radio" name="q-t014-025" value="B"> B. A Hb inicial pode permanecer normal na fase precoce da hemorragia aguda.</label>
+<label class="quiz-option"><input type="radio" name="q-t014-025" value="C"> C. A hiperlactatemia sugere predominantemente disfunção mitocondrial isolada.</label>
+<label class="quiz-option"><input type="radio" name="q-t014-025" value="D"> D. O excesso de base reduzido possui baixa correlação com gravidade e perfusão tecidual.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q54. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Hemorragia aguda pode ter Hb inicial normal; perfusão e lactato/BE mandam mais no início.</p>
+<p><strong>Por que a B está correta:</strong> B explica por que não se deve esperar nova Hb para reconhecer choque hemorrágico.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Shock index &gt;0,9 é útil também fora do trauma.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B explica por que não se deve esperar nova Hb para reconhecer choque hemorrágico.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Lactato aqui sugere hipoperfusão, não disfunção mitocondrial isolada.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Base excess negativo se correlaciona com choque e gravidade.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q86</p>
+<p><strong>26. Paciente do sexo masculino, 4 anos, trazido pela madrinha ao DE por dor abdominal iniciada há 18 horas. Inicialmente apresentava episódios de irritabilidade e dor aparentemente abdominal intensa de início súbito, durante os quais parava de brincar, chorava e se encolhia. Após alguns minutos, apresentou melhora espontânea, voltando a brincar. Nas últimas 6 horas, a dor tornou-se contínua. Houve três episódios de vômitos e TAX de 38,2°C. Ao exame, apresenta dor localizada em quadrante inferior direito, defesa voluntária à palpação e dor à percussão abdominal. A ultrassonografia demonstrou pequena quantidade de líquido livre em fossa ilíaca direita, sem visualização do apêndice, e não identificou sinal do alvo. Qual é a melhor conduta neste momento?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t014-026" value="A"> A. Excluir apendicite pela ausência de visualização do apêndice e observar em unidade de emergência.</label>
+<label class="quiz-option"><input type="radio" name="q-t014-026" value="B"> B. Considerar apendicite como principal hipótese diagnóstica e prosseguir investigação dirigida.</label>
+<label class="quiz-option"><input type="radio" name="q-t014-026" value="C"> C. Solicitar enema pneumático diagnóstico e terapêutico devido à forte suspeita de intussuscepção.</label>
+<label class="quiz-option"><input type="radio" name="q-t014-026" value="D"> D. Excluir patologia cirúrgica abdominal pela ausência de achados ultrassonográficos específicos.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q86. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Dor migratória/contínua, febre e defesa com US inconclusivo não excluem apendicite.</p>
+<p><strong>Por que a B está correta:</strong> B mantém apendicite como principal e prossegue investigação.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Apêndice não visualizado não exclui apendicite.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B mantém apendicite como principal e prossegue investigação.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Sem sinal do alvo e com dor contínua/defesa, intussuscepção não é prioridade.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> US sem achado específico não exclui abdome cirúrgico.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

@@ -10,7 +10,7 @@
 
 ## Por que cai
 
-Trauma foi um dos blocos mais recorrentes nas provas TEME22-25 e aparece nas estações práticas. A estação de trauma de 2025 cobrou exatamente o que importa: XABCDE, identificar hemorragia exsanguinante, torniquete correto, horário do torniquete, choque hemorrágico, eFAST, pelve/ossos longos, protocolo de transfusão maciça, TXA, cálcio, aquecimento, exames de coagulopatia/ROTEM e avaliação cirúrgica.
+Trauma foi um dos blocos mais recorrentes nas provas TEME22-26 e aparece nas estações práticas. A estação de trauma de 2025 cobrou exatamente o que importa: XABCDE, identificar hemorragia exsanguinante, torniquete correto, horário do torniquete, choque hemorrágico, eFAST, pelve/ossos longos, protocolo de transfusão maciça, TXA, cálcio, aquecimento, exames de coagulopatia/ROTEM e avaliação cirúrgica.
 
 O que a banca costuma testar:
 

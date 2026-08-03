@@ -2,11 +2,11 @@
 
 Banco do tema 007 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 24 com gabarito oficial TEME22-24 + 7 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 37 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -780,3 +780,143 @@ Banco do tema 007 refeito em formato mais parecido com a prova: enunciado e alte
 
 ## Itens não pontuados
 - TEME25 Q80: anulada pelo gabarito oficial.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q10</p>
+<p><strong>32. Mulher de 34 anos procura o DE por cefaleia unilateral pulsátil há 8 horas, iniciada de forma insidiosa enquanto estudava, associada a vômitos e fotofobia. Escala Visual Numérica em 8, mas já foi pior anteriormente. Relata crises com padrão semelhante desde a adolescência. Está afebril, PA: 124 × 78 mmHg, com exame neurológico normal. Qual é a conduta mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t007-032" value="A"> A. Tratar como provável migrânea no DE, com analgesia e antiemético conforme necessidade; reavaliação clínica e alta orientada, se houver melhora.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-032" value="B"> B. Solicitar tomografia computadorizada de crânio, pois cefaleia intensa associada a vômitos e fotofobia indica maior probabilidade de cefaleia secundária.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-032" value="C"> C. Realizar punção lombar nesse caso, pois cefaleia de forte intensidade com vômitos exige exclusão de hemorragia subaracnóidea.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-032" value="D"> D. Prescrever dipirona associada à codeína como tratamento de primeira linha, considerando que cefaleias recorrentes de forte intensidade possuem pouco efeito analgésico com outras drogas.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q10. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Cefaleia recorrente, mesmo padrão desde adolescência, início insidioso e exame normal favorecem migrânea sem red flags.</p>
+<p><strong>Por que a A está correta:</strong> A trata no DE e reavalia; alta orientada se resposta adequada.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A trata no DE e reavalia; alta orientada se resposta adequada.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Intensidade, vômito e fotofobia podem ocorrer na migrânea e não obrigam TC isoladamente.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Punção lombar é para suspeita de HSA/infecção, não migrânea típica.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Opioide/codeína não é primeira linha e piora recorrência/abuso de medicação.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q21</p>
+<p><strong>33. Homem, 29 anos, é admitido no pronto-socorro após agressão por arma branca em região torácica posterior na linha paravertebral esquerda. Encontra-se hemodinamicamente estável e consciente. Relata dificuldade para movimentar e sensação de parestesia em membros inferiores. Ao exame neurológico, encontramos força grau II em membro inferior esquerdo; perda da propriocepção e da sensibilidade vibratória à esquerda abaixo do nível da lesão; preservação da força no membro inferior direito; redução da sensibilidade dolorosa e térmica em membro inferior direito, iniciando alguns dermátomos abaixo da lesão; reflexo cutâneo plantar em extensão à esquerda. Na tomografia computadorizada, não evidencia fraturas vertebrais instáveis. Com base nos achados clínicos e de imagem apresentados, qual das alternativas a seguir corresponde ao diagnóstico sindrômico mais provável nesse caso?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t007-033" value="A"> A. Síndrome do cone medular.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-033" value="B"> B. Síndrome de Brown-Séquard.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-033" value="C"> C. Síndrome da cauda equina.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-033" value="D"> D. Síndrome medular anterior.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q21. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Brown-Séquard: perda motora/propriocepção ipsilateral e dor/temperatura contralateral abaixo da lesão.</p>
+<p><strong>Por que a B está correta:</strong> B corresponde à hemissecção medular descrita.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Cone medular envolve disfunção esfincteriana/sela e sinais mistos baixos.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B corresponde à hemissecção medular descrita.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Cauda equina dá padrão radicular periférico e arreflexia, não dissociação medular clássica.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Síndrome medular anterior poupa coluna posterior/propriocepção.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q31</p>
+<p><strong>34. Um homem de 24 anos foi vítima de colisão de motocicleta versus automóvel na rodovia. Populares do local relataram que paciente estava responsivo logo após o ocorrido, porém, ao chegar à cena, a equipe de Suporte Avançado encontra o paciente inconsciente, com respiração irregular e sangramento em couro cabeludo. Ao exame físico inicial, paciente sem abertura ocular, com extensão anormal dos membros e sem resposta verbal. As pupilas são anisocóricas, com pupila direita de 6 mm e pupila esquerda de 3 mm. Diante do quadro apresentado, a equipe optou por realizar sequência rápida de IOT e iniciar medidas de neuroproteção, ainda no ambiente pré-hospitalar. Após estabilização inicial, qual das alternativas apresenta parâmetros adequados para o início da neuroproteção pré-hospitalar nesse paciente?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t007-034" value="A"> A. A hiperventilação controlada, objetivando dióxido de carbono ao fim da expiração (EtCO2) de 30 a 35 mmHg, fornece melhor neuroproteção nesse contexto.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-034" value="B"> B. A elevação da cabeceira de 30 a 45° não deve ser realizada no contexto pré-hospitalar, por risco de trauma raquimedular associado.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-034" value="C"> C. O alvo da capnografia no traumatismo cranioencefálico grave deve ser EtCO2 de 40 a 45 mmHg.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-034" value="D"> D. O uso do colar cervical não promove repercussões relacionadas ao traumatismo craniano em vigência de sinais de hipertensão intracraniana.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q31. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> TCE grave com anisocoria/hernição pede neuroproteção e hiperventilação temporária controlada se sinais de hipertensão intracraniana.</p>
+<p><strong>Por que a A está correta:</strong> A usa alvo de EtCO2 30-35 mmHg no contexto de herniação iminente.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A usa alvo de EtCO2 30-35 mmHg no contexto de herniação iminente.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Cabeceira elevada ajuda drenagem venosa se possível e segura.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> EtCO2 40-45 pode ser alvo geral, mas não em sinais de herniação.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Colar muito apertado pode dificultar retorno venoso e piorar PIC.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q47</p>
+<p><strong>35. Paciente do sexo masculino, 63 anos, 80 kg, com hipertensão arterial sistêmica e diabetes mellitus, chega ao DE com queixa de afasia grave e discreta paralisia facial central para a direita iniciadao há 2 horas. Nega trauma, nega febre, nega síncope ou tremores involuntários. FC: 80 bpm; SpO2: 97%; FR: 18 irpm; PA: 183/108 mmHg, Glasgow 15, com pupilas isocóricas e fotorreagentes, e glicemia capilar: 98. Sem demais alterações do exame neurológico ou físico. Foi realizada tomografia de crânio sem contraste, mostrando hipodensidade em território de cerebral média esquerda com ASPECTS 9. Demais laboratórios para protocolo de acidente vascular cerebral (AVC) dentro da normalidade. Baseado nessas informações assinale a melhor alternativa:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t007-035" value="A"> A. É um AVC com NIH Stroke Scale/Score (NIHSS) de 3 pontos, não sendo indicada a trombólise química. Deve-se iniciar imediatamente dupla antiagregação, estatina de alta potência, profilaxia de tromboembolismo venoso e avaliação com fonoaudiologia; a pressão permitida nesses casos é até 220/120.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-035" value="B"> B. É um AVC minor sem indicação de trombólise por NIHSS menor que 5. Deve receber dupla antiagregação plaquetária por 21 dias, associada à estatina de alta potência, fisioterapia motora e avaliação da fonoaudiologia. A profilaxia química de tromboembolismo venoso só deve ser realizada após tomografia computadorizada de controle com 24 horas do défice.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-035" value="C"> C. É um AVC agudo com indicação de trombólise pelo tempo de 2 horas de défice, independentemente do NIHSS. A dose do alteplase é de 72 mg com bólus de 10% e o restante em 1 hora. A pressão durante a trombólise deve ser menor ou igual a 200/110 mmHg.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-035" value="D"> D. É um AVC minor (NIHSS menor que 5), com indicação de trombólise por déficit funcional importante. A pressão após o início da trombólise deve ser menor 180/105 mmhg e devem ser utilizadas 72 mg de alteplase.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q47. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> AVC minor pode trombolisar se déficit é incapacitante; afasia grave é incapacitante mesmo com NIHSS baixo.</p>
+<p><strong>Por que a D está correta:</strong> D acerta indicação, dose 0,9 mg/kg para 80 kg = 72 mg, e PA pós-trombólise &lt;180/105.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Afasia grave não é minor não incapacitante; dupla antiagregação substitui trombólise apenas quando não trombolisa.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> NIHSS &lt;5 não contraindica se déficit funcional importante.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> PA durante trombólise não pode ficar 200/110.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D acerta indicação, dose 0,9 mg/kg para 80 kg = 72 mg, e PA pós-trombólise &lt;180/105.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q60</p>
+<p><strong>36. Paciente de 78 anos é trazido ao DE pela filha, que relata confusão mental iniciada há 2 dias. Ao exame, o paciente está desorientado, com dificuldade de atenção e sonolento. Sinais vitais: PA: 130/80 mmHg; FC: 88 bpm; TAX: 36.8°C; SpO2: 95% em ar ambiente. Exame neurológico sem déficits focais. Hemograma, eletrólitos, uréia e CR normais. Urina I sem alterações. Qual dos seguintes fatores é o mais importante para determinar a necessidade de internação hospitalar deste paciente?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t007-036" value="A"> A. Idade superior a 75 anos associada a delirium hipoativo.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-036" value="B"> B. Presença de alteração do nível de consciência e necessidade de investigação de causa potencialmente grave.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-036" value="C"> C. Ausência de suporte familiar adequado no domicílio.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-036" value="D"> D. Necessidade de monitorização contínua dos sinais vitais.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q60. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Delirium hipoativo com rebaixamento/atenção alterada exige investigar causa grave, mesmo exames iniciais normais.</p>
+<p><strong>Por que a B está correta:</strong> B é o fator de internação: alteração do nível de consciência e causa não esclarecida.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Idade pesa, mas não é o critério mais importante isolado.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B é o fator de internação: alteração do nível de consciência e causa não esclarecida.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Suporte social importa para alta, mas não supera delirium sem causa.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Monitorização contínua pode não ser necessária se estável; o problema é investigação.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q72</p>
+<p><strong>37. Homem de 54 anos procura o DE por lombalgia há 4 dias, iniciada após esforço físico. Refere irradiação para as pernas e, desde ontem, dificuldade para iniciar a micção, além de “dormência diferente” ao se higienizar. Percebeu ainda alguma dificuldade para subir escadas, mas acreditou ser pela dor. Qual é a conduta mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t007-037" value="A"> A. Suspeitar de síndrome da cauda equina e solicitar avaliação especializada urgente, com ressonância magnética de coluna em caráter emergencial.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-037" value="B"> B. Tratar como lombalgia mecânica, com analgesia, orientação para manter atividades conforme tolerância e retorno se houver piora.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-037" value="C"> C. Solicitar radiografia lombossacra e liberar se não houver fratura ou desalinhamento vertebral.</label>
+<label class="quiz-option"><input type="radio" name="q-t007-037" value="D"> D. Prescrever corticosteróide e relaxante muscular, pois o início após esforço físico favorece radiculopatia mecânica sem necessidade de imagem urgente.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q72. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Retenção urinária e anestesia em sela são red flags de cauda equina: RM urgente.</p>
+<p><strong>Por que a A está correta:</strong> A é a conduta para não perder janela cirúrgica.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A é a conduta para não perder janela cirúrgica.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Lombalgia mecânica não explica disfunção urinária/sela.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Radiografia não avalia compressão neural.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Corticoide/relaxante sem imagem atrasa diagnóstico.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

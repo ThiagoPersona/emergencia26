@@ -2,11 +2,11 @@
 
 Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 17 com gabarito oficial TEME22-24 + 7 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 33 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -588,3 +588,212 @@ Banco do tema 008 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q2</p>
+<p><strong>25. Criança de 5 anos, admitida com relato de ingestão de planta desconhecida apresentando ao exame físico rubor facial, agitação, alucinações, FC: 170 bpm, PA: 140 x 90 mmHg, TAX: 38oC e midríase. Evoluiu com episódio convulsivo e retenção urinária. Sobre a identificação da possível toxíndrome, qual é a mais provável?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t008-025" value="A"> A. Síndrome adrenérgica.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-025" value="B"> B. Síndrome anticolinérgica.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-025" value="C"> C. Síndrome colinérgica.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-025" value="D"> D. Síndrome serotoninérgica.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q2. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Midríase, rubor, retenção urinária, alucinação, hipertermia e taquicardia formam toxíndrome anticolinérgica.</p>
+<p><strong>Por que a B está correta:</strong> B reúne o padrão clássico: seco, quente, ruborizado, midriático, delirante e retendo urina.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Adrenérgica dá hipertensão/taquicardia e agitação, mas costuma ter sudorese, não pele seca e retenção urinária.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B reúne o padrão clássico: seco, quente, ruborizado, midriático, delirante e retendo urina.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Colinérgica cursa com salivação, lacrimejamento, broncorreia, diarreia e miose.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Serotoninérgica cobra clônus, hiperreflexia e rigidez, ausentes no caso.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q17</p>
+<p><strong>26. Adolescente de 16 anos, admitida no DE com relato de ingestão de cerca de 24 comprimidos de paracetamol de 500 mg há 26 horas, apresentando náuseas, vômitos e dor no rebordo costal direito. Sobre esse caso, sabendo que no local há dosagem de paracetamol disponível e N-acetilcisteína venosa, marque a correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t008-026" value="A"> A. Como o período ideal para a administração da N-acetilcisteína corresponde às primeiras 8 horas após a ingestão e a paciente foi admitida tardiamente, essa estratégia não apresenta mais indicação nem traz benefício ao manejo da intoxicação.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-026" value="B"> B. Antes de indicar a administração do antídoto, deve-se realizar a dosagem sérica do paracetamol, pois trata-se de dose supostamente ingerida limítrofe, e a confirmação diagnóstica evita tratamentos desnecessários.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-026" value="C"> C. Caso a paciente já apresente alterações compatíveis com disfunção hepática nos exames laboratoriais, está indicado o uso do antídoto por tempo superior ao indicado rotineiramente.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-026" value="D"> D. Caso a N-acetilcisteína venosa não estivesse disponível, a opção pelo antídoto oral não seria indicada, pois sua eficácia é inferior, e a presença de náuseas e vômitos contraindica seu uso.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q17. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Paracetamol tardio com sintomas/disfunção hepática: NAC ainda tem papel e pode ser prolongada.</p>
+<p><strong>Por que a C está correta:</strong> C acerta que o antídoto continua indicado e não deve ser encerrado no tempo padrão se há lesão hepática.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> O benefício é maior até 8h, mas não zera depois.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Dose alta e 26h com sintomas não deve aguardar nível para iniciar se houver risco.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C acerta que o antídoto continua indicado e não deve ser encerrado no tempo padrão se há lesão hepática.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> NAC oral é alternativa efetiva quando EV indisponível, apesar de náuseas manejáveis.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q23</p>
+<p><strong>27. Sobre a presença de convulsões no paciente intoxicado, marque a opção verdadeira:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t008-027" value="A"> A. A hidantalização não deve ser postergada em pacientes com suspeita de intoxicação evoluindo com convulsões, a fim de prevenir o status epilepticus.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-027" value="B"> B. Na intoxicação por antidepressivos tricíclicos, a presença de convulsões é critério de mau prognóstico e se associa à predisposição a arritmias cardíacas.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-027" value="C"> C. O uso de benzodiazepínicos no tratamento de convulsões em pacientes com toxíndrome adrenérgica e anticolinérgica pode precipitar o rebaixamento do sistema nervoso central.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-027" value="D"> D. A passagem de sonda e a realização precoce de lavagem gástrica e carvão ativado previnem a ocorrência de convulsões em ingestão de substâncias convulsivantes.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q23. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Convulsão em intoxicação por tricíclico é sinal de gravidade e risco de arritmia.</p>
+<p><strong>Por que a B está correta:</strong> B liga convulsão por ADT a mau prognóstico e cardiotoxicidade.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Fenitoína não é primeira linha para convulsão tóxica; benzodiazepínico é.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B liga convulsão por ADT a mau prognóstico e cardiotoxicidade.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Benzodiazepínicos são tratamento de escolha para convulsões nessas toxíndromes.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Lavagem/carvão não previnem convulsão já em curso e não substituem suporte.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q28</p>
+<p><strong>28. Em relação ao uso do flumazenil no paciente com evidências de superdosagem de benzodiazepínico, marque a situação na qual o antídoto tem a melhor indicação:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t008-028" value="A"> A. Paciente sabidamente usuário de benzodiazepínicos, com histórico de depressão e tentativas prévias de suicídio, encontrado em Glasgow 6 no domicílio, mantendo drive respiratório.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-028" value="B"> B. Paciente idoso portador de demência, apresentando massa a esclarecer no pescoço, submetido a sedação com midazolam para realização de tomografia computadorizada de região cervical, devido à agitação, evoluindo pós-sedação com desabamento da região, esforço respiratório e hipóxia.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-028" value="C"> C. Paciente jovem, admitido no DE, com relato de ingestão isolada de 900mg de diazepam, apresentando rebaixamento de nível de consciência, com relato de epilepsia.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-028" value="D"> D. Paciente etilista, em tratamento para delirium tremens no DE, tendo recebido dose excessiva de diazepam venoso, evoluindo com rebaixamento importante do nível de consciência, sem proteção de via aérea.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q28. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Flumazenil é melhor para iatrogenia/procedimento em paciente sem dependência, quando reverte risco ventilatório.</p>
+<p><strong>Por que a B está correta:</strong> B é cenário de sedação iatrogênica com obstrução/hipóxia após midazolam.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Uso crônico/tentativa de suicídio aumenta risco de abstinência, convulsão e coingesta.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B é cenário de sedação iatrogênica com obstrução/hipóxia após midazolam.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Epilepsia é contraindicação relativa importante.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> No delirium tremens/etilista, flumazenil pode precipitar convulsão; proteja via aérea.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q33</p>
+<p><strong>29. Paciente vítima de acidente com cnidário (caravela) apresentando dor intensa local. Marque a alternativa correta em relação aos possíveis sintomas e manejo:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t008-029" value="A"> A. Compressas de água do mar e vinagre são contraindicadas, pois podem piorar a dor por disparar nematocistos por osmose.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-029" value="B"> B. O local geralmente apresenta hiperemia e dor intensa, não sendo descritas no local lesões como bolhas ou necrose superficial.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-029" value="C"> C. Manifestações de hipersensibilidade, como angioedema e choque, podem ocorrer e devem ser tratadas, conforme protocolos gerais.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-029" value="D"> D. O tratamento de escolha é a administração de analgésicos, gelo e compressas de água doce, que impede nematocistos aderidos à pele de disparar.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q33. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Cnidário pode fazer dor intensa local e reação sistêmica; trate anafilaxia se aparecer.</p>
+<p><strong>Por que a C está correta:</strong> C lembra angioedema/choque como manifestações possíveis e manejo por protocolos gerais.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Água do mar e vinagre podem ser usados conforme espécie; água doce é pior por osmose.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Bolhas e necrose superficial podem ocorrer.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C lembra angioedema/choque como manifestações possíveis e manejo por protocolos gerais.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Água doce pode disparar nematocistos; gelo não é regra universal.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q53</p>
+<p><strong>30. Sobre o acidente por serpente do gênero Micrurus, marque a correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t008-030" value="A"> A. A dentição solenóglifa é a responsável pela picada ineficaz, sendo o dry bite frequente nesses acidentes.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-030" value="B"> B. São serpentes de hábito noturno e agressivas, e os acidentes geralmente acometem os membros inferiores.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-030" value="C"> C. O distúrbio de coagulação geralmente é tardio e não deve ser levado em consideração na classificação do acidente.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-030" value="D"> D. Neurotoxinas pré-sinápticas e pós-sinápticas atuam direta ou indiretamente na modulação da acetilcolina, provocando os sintomas do acidente.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q53. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Coral verdadeira tem neurotoxicidade por bloqueio da transmissão neuromuscular.</p>
+<p><strong>Por que a D está correta:</strong> D descreve toxinas pré e pós-sinápticas modulando acetilcolina.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Micrurus é proteróglifa, não solenóglifa.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> São pouco agressivas e acidentes costumam ocorrer ao manuseio.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Coagulação não é o eixo; o problema é neuroparalítico.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D descreve toxinas pré e pós-sinápticas modulando acetilcolina.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q68</p>
+<p><strong>31. Uma equipe de Suporte Avançado móvel é acionada para atender um paciente que teve um episódio convulsivo enquanto aguardava a abertura dos portões do show do Iron Maiden em Manaus. O acionamento ocorre às 13h, a temperatura ambiente é de 43°C e a umidade relativa do ar é de 95%. À abordagem inicial, o paciente encontra-se irresponsivo, sem espasmos musculares no momento, com FC: 132 bpm; FR: 28 irpm; PA: 150 x 90 mmHg e SpO2: 99%; glicemia capilar: 98 e TAX: 42°C. Em relação a esse caso, assinale a correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t008-031" value="A"> A. A intubação pode ser postergada e deve ser realizada prioritariamente após a redução da temperatura.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-031" value="B"> B. A utilização de antitérmicos é uma das prioridades e deve ser realizada assim que for obtido um acesso venoso.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-031" value="C"> C. A condução para o hospital pode ser postergada para que a equipe possa utilizar medidas ativas de resfriamento para reduzir a temperatura do paciente.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-031" value="D"> D. A diferenciação da causa (ambiental ou intoxicação exógena) é fundamental para o manejo inicial da hipertermia.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q68. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Temperatura 42°C com alteração neurológica é golpe de calor: resfriar ativo imediatamente, antes/de caminho do transporte conforme segurança.</p>
+<p><strong>Por que a C está correta:</strong> C permite postergar transporte para reduzir temperatura com medidas ativas quando possível.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Via aérea pode ser necessária, mas resfriamento não espera estabilização prolongada.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Antitérmico não funciona no heat stroke.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C permite postergar transporte para reduzir temperatura com medidas ativas quando possível.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Diferenciar causa é secundário; manejo inicial é resfriamento e suporte.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q74</p>
+<p><strong>32. As Novas Substâncias Psicoativas (NPS) são drogas sintéticas desenhadas para mimetizar os efeitos de substâncias ilícitas tradicionais, como maconha ou ecstasy, alterando estruturas químicas para contornar legislações. Em relação a essas substâncias, marque a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t008-032" value="A"> A. O “pó de macaco” é utilizado para infusionar papel ou ervas (para uso fumado) e leva a sintomas semelhantes aos hidrocarbonetos solventes.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-032" value="B"> B. No abuso de catinonas sintéticas esperam-se efeitos similares à intoxicação por gama-hidroxibutirato, como bradipneia e rebaixamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-032" value="C"> C. O NBOMe é uma droga sintética semelhante e comumente vendida como alternativa ao ecstasy ou ao MDMA, e, no abuso, esperam-se sintomas adrenérgicos.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-032" value="D"> D. No abuso de “maconha sintética” ou K9, os efeitos mimetizam a ação do tetrahidrocanabinol, e prevalecem sintomas adrenérgicos intensos.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q74. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> NPS: catinonas/NBOMe/K9 costumam confundir por toxíndromes; K9 pode dar quadro adrenérgico intenso.</p>
+<p><strong>Por que a D está correta:</strong> D é a afirmativa aceita sobre canabinoides sintéticos/K9 com quadro simpaticomimético importante.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> 'Pó de macaco' é catinona sintética estimulante, não solvente hidrocarboneto.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Catinonas são estimulantes, não GHB depressor.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> NBOMe é mais vendido como LSD/psicodélico, não alternativa típica ao MDMA.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é a afirmativa aceita sobre canabinoides sintéticos/K9 com quadro simpaticomimético importante.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q90</p>
+<p><strong>33. Em 2025, houve, em São Paulo um surto de intoxicação por metanol associado ao consumo de bebidas alcoólicas adulteradas; a resposta pública envolveu notificação às autoridades de saúde, alerta à população, rastreamento e remoção das fontes suspeitas (bebidas artesanais/adulteradas), além de reforço de medidas de prevenção e vigilância epidemiológica. Sobre o tratamento da intoxicação por metanol, marque a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t008-033" value="A"> A. Distúrbios oftalmológicos são indicação clara para continuação da diálise, mesmo após correção do distúrbio metabólico.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-033" value="B"> B. Os três pilares do tratamento da intoxicação são a hiperidratação, administração de antídotos e hemodiálise.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-033" value="C"> C. Durante a hemodiálise, a infusão de etanol ou fomepizol deve ser suspensa, pois pode interferir na eliminação do ácido fórmico.</label>
+<label class="quiz-option"><input type="radio" name="q-t008-033" value="D"> D. A terapia deve ser iniciada com base em forte suspeita clínica, e o tratamento não deve ser adiado enquanto se aguarda a confirmação diagnóstica.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q90. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Metanol é tempo-dependente: trate forte suspeita com antídoto e diálise quando indicado, sem esperar confirmação.</p>
+<p><strong>Por que a D está correta:</strong> D é regra de prova e prática.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Alteração visual é indicação de diálise, mas o critério não se resume a continuar após correção metabólica.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Hiperidratação não é pilar; os pilares são suporte, bloquear álcool desidrogenase, corrigir acidose e hemodiálise quando indicado.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Etanol/fomepizol devem ser mantidos/ajustados durante diálise por remoção.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D é regra de prova e prática.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

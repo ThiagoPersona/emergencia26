@@ -2,11 +2,11 @@
 
 Banco do tema 002 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 29 com gabarito oficial TEME22-24 + 9 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 42 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -894,3 +894,97 @@ Banco do tema 002 refeito em formato mais parecido com a prova: enunciado e alte
 - TEME23 Q94: anulada.
 - TEME24 Q21: anulada.
 - TEME24 Q54: anulada.
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q3</p>
+<p><strong>39. Uma criança de 8 anos é admitida no DE após colisão automobilística em alta velocidade. Estava posicionada no banco traseiro utilizando apenas cinto abdominal de duas pontas. Refere dor abdominal difusa e apresenta equimose transversal em hipogástrio compatível com sinal do cinto de segurança. Ao exame, apresenta: FC: 145 bpm, PA: 95/60 mmHg, FR: 30 irpm e SpO2: 98% em ar ambiente. O FAST realizado na admissão é negativo para líquido livre. Com base nos princípios da avaliação do trauma abdominal pediátrico, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t002-039" value="A"> A. O mecanismo de trauma associado ao sinal do cinto de segurança caracteriza fator de risco para lesão intra-abdominal, e o FAST negativo não exclui a necessidade de investigação complementar.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-039" value="B"> B. O FAST negativo afasta lesão intra-abdominal clinicamente significativa, dispensando investigação complementar na ausência de hipotensão.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-039" value="C"> C. A ausência de hipotensão reduz significativamente a probabilidade de lesão intra-abdominal grave, uma vez que a PA é um marcador precoce de choque hemorrágico na criança.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-039" value="D"> D. A presença de suspeita de lesão intra-abdominal associada a mecanismo de alta energia constitui indicação formal de laparotomia exploradora.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q3. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Em criança, sinal do cinto e mecanismo de alta energia valem mais que FAST negativo isolado.</p>
+<p><strong>Por que a A está correta:</strong> A reconhece risco de lesão intra-abdominal, especialmente víscera oca/mesentério, mesmo sem líquido livre no FAST.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A reconhece risco de lesão intra-abdominal, especialmente víscera oca/mesentério, mesmo sem líquido livre no FAST.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> FAST negativo não exclui lesão abdominal pediátrica nem lesão de víscera oca.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Pressão arterial é marcador tardio de choque na criança.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Mecanismo e suspeita indicam investigação/observação, não laparotomia automática sem peritonite ou instabilidade.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q15</p>
+<p><strong>40. Um homem de 32 anos dirigia um carro envolvido em colisão frontal contra um poste a aproximadamente 90 km/hora. O volante encontra-se deformado e há marca evidente do cinto de segurança atravessando o tórax e o abdome. O paciente apresenta dor torácica e abdominal difusa. Sinais vitais: PA: 110×70 mmHg, FC: 108 bpm, FR: 24 irpm, SpO2: 96%. O FAST inicial é negativo. Considerando a análise da cinemática do trauma, qual das lesões a seguir deve manter elevado grau de suspeição, mesmo diante do FAST negativo?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t002-040" value="A"> A. Lesão de aorta torácica e lesão de víscera oca abdominal.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-040" value="B"> B. Contusão pulmonar isolada e fratura de clavícula.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-040" value="C"> C. Pneumotórax hipertensivo e ruptura esplênica maciça obrigatória.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-040" value="D"> D. Fratura de pelve em livro aberto e contusão pulmonar.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q15. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Cinemática de desaceleração e sinal do cinto mantêm suspeita mesmo com FAST negativo.</p>
+<p><strong>Por que a A está correta:</strong> A lembra lesão de aorta torácica e víscera oca, ambas podem escapar ao FAST inicial.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A lembra lesão de aorta torácica e víscera oca, ambas podem escapar ao FAST inicial.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Contusão isolada/clavícula subestimam o mecanismo.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Pneumotórax hipertensivo e ruptura esplênica maciça não são obrigatórios com estabilidade e FAST negativo.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Fratura em livro aberto não é a principal pelo mecanismo descrito sem instabilidade pélvica.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q42</p>
+<p><strong>41. Paciente de 41 anos sofre esmagamento pélvico por maquinário industrial. Na admissão apresenta PA: 84 x 48 mmHg; FC: 142 bpm; necessidade de hemotransfusão e crescente necessidade de uso de droga vasoativa. Na radiografia pélvica, apresenta diástase importante da sínfise púbica e abertura posterior da articulação sacroilíaca esquerda. Qual mecanismo de lesão está mais associado ao padrão descrito e à gravidade hemorrágica?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t002-041" value="A"> A. Fratura isolada de ramo púbico, com importante sangramento predominantemente arterial focal.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-041" value="B"> B. Compressão lateral com redução volumétrica da pelve.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-041" value="C"> C. Cisalhamento vertical puro, sem aumento significativo do volume pélvico.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-041" value="D"> D. Compressão anteroposterior, com aumento volumétrico pélvico importante.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q42. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Diástase púbica + abertura sacroilíaca = compressão anteroposterior, pelve abre e sangra muito.</p>
+<p><strong>Por que a D está correta:</strong> D identifica mecanismo de livro aberto com aumento do volume pélvico.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Ramo púbico isolado não explica instabilidade posterior e choque.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Compressão lateral tende a fechar/reduzir volume pélvico.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Cisalhamento vertical é outro padrão, com migração vertical.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D identifica mecanismo de livro aberto com aumento do volume pélvico.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q64</p>
+<p><strong>42. Durante uma sessão de discussão de casos, um residente questiona por que crianças vítimas de trauma contuso podem apresentar lesões viscerais importantes mesmo quando o exame físico inicial demonstra poucas lesões externas e os exames de imagem não evidenciam fraturas. Qual característica anatômica e fisiológica da população pediátrica melhor explica esse padrão de lesão?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t002-042" value="A"> A. A menor massa muscular, associada à maior proporção relativa de órgãos sólidos e à menor quantidade de gordura e tecido conjuntivo, favorece a transmissão de energia aos órgãos internos.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-042" value="B"> B. A maior frequência de fraturas ocultas em crianças faz com que lesões viscerais estejam frequentemente associadas a lesões ósseas não identificadas nos exames iniciais.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-042" value="C"> C. A maior rigidez da caixa torácica e da parede abdominal reduz a dissipação da energia do impacto, concentrando-a nos órgãos internos.</label>
+<label class="quiz-option"><input type="radio" name="q-t002-042" value="D"> D. A presença de múltiplos centros de crescimento ósseo dificulta a identificação de lesões traumáticas, produzindo falsa impressão de menor gravidade.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q64. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Criança transmite energia para órgãos internos porque parede é mais complacente e proteção muscular/gordurosa é menor.</p>
+<p><strong>Por que a A está correta:</strong> A explica lesão visceral sem fratura aparente.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A explica lesão visceral sem fratura aparente.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Lesão visceral não depende de fratura oculta.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> A caixa torácica infantil é mais flexível, não mais rígida.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Centros de crescimento confundem osso, mas não explicam víscera lesionada.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

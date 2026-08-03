@@ -2,11 +2,11 @@
 
 Banco do tema 020 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 2 com gabarito oficial TEME22-24 + 3 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 5 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 

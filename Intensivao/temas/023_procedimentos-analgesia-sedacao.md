@@ -8,7 +8,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou analgesia em abdome/trauma, bloqueios guiados por US, toracocentese, paracentese, punção guiada na prática de POCUS, sedação pós-IOT e sedação contínua no TCE.
+- **Recorrência em provas/estações:** TEME22-26 cobrou analgesia em abdome/trauma, bloqueios guiados por US, toracocentese, paracentese, punção guiada na prática de POCUS, sedação pós-IOT e sedação contínua no TCE.
 - **O que a banca costuma testar:** indicação, contraindicação, preparo, monitorização, escolha de droga, técnica segura e complicações.
 - **Como costuma aparecer:** paciente com dor e procedimento necessário, alternativa que nega analgesia, ou estação pedindo verbalizar monitor/via aérea/agulha.
 

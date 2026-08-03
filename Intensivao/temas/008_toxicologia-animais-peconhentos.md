@@ -10,7 +10,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 cobrou carvão/lavagem, opioide/naloxona, álcool tóxico, tricíclico, LAST, cocaína/hipertermia, paraquat, metais, botulismo, chumbinho, Bothrops, Crotalus/coral, escorpionismo, abelhas e estação prática pediátrica com carbamato/organofosforado.
+- **Recorrência em provas/estações:** TEME22-26 cobrou carvão/lavagem, opioide/naloxona, álcool tóxico, tricíclico, LAST, cocaína/hipertermia, paraquat, metais, botulismo, chumbinho, Bothrops, Crotalus/coral, escorpionismo, abelhas e estação prática pediátrica com carbamato/organofosforado.
 - **O que a banca costuma testar:** antídoto certo, quando não usar antídoto, indicação de diálise, QRS alargado, acidose metabólica com anion gap, osmolar gap, indicação de soro antiveneno, diferença entre alergia e envenenamento e condutas que não podem atrasar suporte.
 - **Como costuma aparecer:** caso com sintomas mistos é uma alternativa tentadora que faz "procedimento de descontaminação" ou "antídoto famoso" antes de ventilar, fazer RCP, resfriar, dar bicarbonato ou aplicar soro específico.
 
@@ -290,6 +290,18 @@ FA = frascos-ampolas. A dose e definida por gravidade, não por peso.
 > **Para prova TEME:** soro antiveneno é por gravidade, não por kg; criança recebe a mesma quantidade de FA.
 >
 > **Na prática clínica:** confira tabela atual do Ministério da Saúde e estoque local. O PCDT ofídicos 2026 usa Bothrops 3/6/12 FA; materiais antigos podem trazer 2-4/4-8/12.
+
+## Pontos quentes TEME26
+
+- **Anticolinérgica:** quente, seco, ruborizado, midríase, delirium, retenção urinária e taquicardia.
+- **Paracetamol tardio:** NAC ainda é indicada se dose tóxica, sintomas ou disfunção hepática; pode precisar prolongar além do esquema habitual.
+- **Tricíclicos:** convulsão é mau prognóstico e anda junto com risco de arritmia; benzodiazepínico para crise e bicarbonato se cardiotoxicidade/QRS largo.
+- **Flumazenil:** melhor indicação é iatrogenia/procedimento em paciente sem dependência/epilepsia/coingesta; evite em uso crônico, epilepsia, tentativa de suicídio ou abstinência alcoólica.
+- **Heat stroke:** temperatura muito alta + alteração neurológica = resfriamento ativo imediato. Antitérmico não resolve.
+- **Metanol:** forte suspeita já autoriza tratamento; não espere confirmação se há acidose, alteração visual ou exposição provável.
+- **NPS:** K9/canabinoide sintético pode cursar com sintomas adrenérgicos intensos; catinonas são estimulantes; NBOMe é psicodélico tipo LSD.
+- **Micrurus:** problema é neuroparalítico por toxinas pré/pós-sinápticas; coagulação não é o eixo.
+- **Cnidários:** dor intensa local pode complicar com hipersensibilidade/anafilaxia; água doce pode piorar disparo de nematocistos.
 
 ## Checklist de revisão
 

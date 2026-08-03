@@ -11,7 +11,7 @@
 
 ## Por que cai
 
-Reanimação aparece de forma repetida nas provas TEME22-25 e nas estações práticas. O padrão é muito consistente: a banca quer ver prioridade, algoritmo, doses básicas, ritmos, causas reversíveis e segurança operacional.
+Reanimação aparece de forma repetida nas provas TEME22-26 e nas estações práticas. O padrão é muito consistente: a banca quer ver prioridade, algoritmo, doses básicas, ritmos, causas reversíveis e segurança operacional.
 
 O que já apareceu ou foi fortemente sugerido nas provas/estações:
 
@@ -406,7 +406,7 @@ Use está lista para refazer mentalmente as respostas depois de ler o capítulo:
 
 - Conteúdo programático TEME26 e referências oficiais do edital.
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25 disponíveis no projeto.
-- Estações práticas TEME22-25 disponíveis no projeto.
+- Estações práticas disponíveis até TEME25 disponíveis no projeto.
 - Aulas de cursinho: Aula 01 - Reanimação; Aula 30 - Emergências pediátricas; Aula 34 - Síncope e Arritmias.
 - Resumo do cursinho.docx, arquivo do usuário.
 - American Heart Association. 2025 Guidelines for CPR and ECC: https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines

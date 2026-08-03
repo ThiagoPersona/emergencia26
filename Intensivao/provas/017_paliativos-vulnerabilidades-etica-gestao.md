@@ -2,11 +2,11 @@
 
 Banco do tema 017 refeito em formato mais parecido com a prova: enunciado e alternativas extraídos ou muito próximos dos cadernos TEME, com a fonte indicada em cada questão.
 
-> Para TEME22-25, a resposta usa gabarito oficial local disponível no projeto.
+> Para TEME22-26, a resposta usa gabarito oficial local disponível no projeto.
 >
 > Depois de clicar em **Checar resposta**, a questão fica travada e entra no desempenho final do tema.
 
-**Itens pontuados neste banco:** 9 com gabarito oficial TEME22-24 + 5 com gabarito oficial TEME25.
+**Itens pontuados neste banco:** 29 questões oficiais TEME22-26.
 
 ## Questões em estilo TEME
 
@@ -331,3 +331,350 @@ Banco do tema 017 refeito em formato mais parecido com a prova: enunciado e alte
 </ul>
 </div>
 </div>
+
+<!-- TEME26_START -->
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q7</p>
+<p><strong>15. Diante da superlotação e do aumento do tempo de permanência (length of stay) no DE, a coordenação decide estruturar um programa de melhoria de processos baseado na metodologia Lean. A equipe planeja reorganizar fisicamente as salas de procedimento, mapear todo o percurso do paciente desde a chegada até o desfecho e estabelecer um ritmo-alvo de atendimento compatível com a demanda diária do serviço. Sobre as ferramentas de qualidade e gestão aplicáveis a esse cenário, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-015" value="A"> A. Quando o takt time está acima do tempo de ciclo (cycle time) estimado para a demanda do turno, essa etapa passa a se comportar como gargalo, com acúmulo progressivo de pacientes em fila ao longo do período.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-015" value="B"> B. A ferramenta 5S tem como objetivo principal mapear aspectos-chave no DE como segurança, sobrecarga, satisfação, sistematização, sinalização, otimizando-os para melhoria contínua do serviço.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-015" value="C"> C. O value stream map (mapa de fluxo de valor) consiste em uma metodologia de organização visual dos custos em saúde em relação ao fluxo do paciente.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-015" value="D"> D. O takt time corresponde ao ritmo de atendimento necessário para atender à demanda, obtido pela divisão do tempo disponível de operação pela demanda esperada no período.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q7. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Lean cobra conceitos objetivos: takt time é ritmo necessário para atender a demanda.</p>
+<p><strong>Por que a D está correta:</strong> D traz a fórmula operacional: tempo disponível dividido pela demanda esperada.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Gargalo ocorre quando o tempo de ciclo é maior que o takt time, não o inverso.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> 5S é organização do ambiente: utilização, ordenação, limpeza, padronização e disciplina, não esse acrônimo inventado.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Value stream map mapeia fluxo de valor e desperdícios, não custos isolados.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D traz a fórmula operacional: tempo disponível dividido pela demanda esperada.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q9</p>
+<p><strong>16. Médico atua em unidade de emergência sem disponibilidade de tomografia computadorizada. Recebe paciente com déficit neurológico focal súbito e rebaixamento do nível de consciência há aproximadamente 2 horas, hemodinamicamente estável. Após avaliação inicial, glicemia capilar normal e suporte clínico, mantém-se a hipótese de acidente vascular cerebral agudo. Considerando que a unidade não dispõe de neuroimagem, o médico solicita transferência regulada e prioritária para serviço de referência, com capacidade para realização de tomografia e eventual reperfusão. Três semanas depois, é chamado pela Comissão de Ética Médica após queixa familiar de que “o médico não fez nada pelo paciente”. Segundo o Código de Ética Médica, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-016" value="A"> A. O médico não poderia transferir o paciente, devendo realizar o tratamento definitivo na própria unidade, ainda que não dispusesse de neuroimagem.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-016" value="B"> B. O médico deveria realizar trombólise imediatamente, pois a alta probabilidade clínica de acidente vascular cerebral isquêmico e a janela de 2 horas dispensam neuroimagem.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-016" value="C"> C. A solicitação de transferência representa tentativa de eximir-se de responsabilidade profissional, pois o médico deveria manter a paciente na unidade até definição diagnóstica.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-016" value="D"> D. O médico agiu adequadamente ao instituir as medidas possíveis na unidade, estabilizar a paciente e providenciar transferência prioritária para serviço com os recursos necessários à confirmação diagnóstica e ao tratamento definitivo.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q9. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> AVC suspeito em unidade sem TC exige estabilizar, não trombolisar às cegas, e transferir regulado.</p>
+<p><strong>Por que a D está correta:</strong> D descreve responsabilidade adequada: suporte possível e transferência prioritária para neuroimagem/reperfusão.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Unidade sem recurso não deve prometer tratamento definitivo impossível.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Trombólise exige excluir hemorragia por neuroimagem.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Transferência regulada não é abandono; é continuidade de cuidado quando falta recurso.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D descreve responsabilidade adequada: suporte possível e transferência prioritária para neuroimagem/reperfusão.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q11</p>
+<p><strong>17. Uma menina de 2 anos é levada ao DE por seus responsáveis devido à recusa para deambular após uma suposta queda da cama ocorrida há 3 dias. Durante a avaliação, observam-se hematomas em diferentes estágios de evolução na face, pescoço e tronco, além de queimadura circular bem delimitada no antebraço. Os responsáveis apresentam versões divergentes sobre o mecanismo do trauma e demonstram pouco interesse durante a avaliação da criança. Com relação à suspeita de abuso e maus-tratos infantis, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-017" value="A"> A. A aplicação do instrumento ESCAPE é somente recomendada após confirmação diagnóstica de abuso infantil, sendo inadequada para triagem no Departamento de Emergência.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-017" value="B"> B. A existência de relato de trauma acidental pelos responsáveis reduz significativamente a probabilidade de maus-tratos, especialmente quando há lesões em diferentes estágios de evolução.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-017" value="C"> C. A presença de hematomas em regiões contempladas pelo mnemônico TEN-4-FACESp, associada a lesões com padrão sugestivo e história inconsistente, aumenta a suspeita de violência física infantil.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-017" value="D"> D. A notificação às autoridades competentes deve ser realizada apenas após confirmação médico-legal do abuso, evitando notificações indevidas.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q11. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> História inconsistente + lesões em regiões TEN-4-FACESp = suspeitar e notificar, não esperar confirmação.</p>
+<p><strong>Por que a C está correta:</strong> C reconhece padrão de maus-tratos e a utilidade do mnemônico para triagem.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> ESCAPE é instrumento de triagem, não apenas após confirmação.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Relato acidental divergente não reduz suspeita; aumenta.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C reconhece padrão de maus-tratos e a utilidade do mnemônico para triagem.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Notificação é por suspeita, não por confirmação médico-legal.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q12</p>
+<p><strong>18. Ao apresentar à diretoria a proposta de Acreditação do Serviço de Emergência, um gestor deve caracterizar corretamente esse processo. Assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-018" value="A"> A. Trata-se de um processo de avaliação externa, de adesão voluntária e caráter periódico, conduzido por entidade independente e fundamentado na melhoria contínua.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-018" value="B"> B. Trata-se de uma avaliação interna conduzida pela própria comissão de qualidade da instituição, como mecanismo de melhoria contínua.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-018" value="C"> C. Trata-se de uma certificação obtida por avaliação externa, válida por prazo indeterminado enquanto mantidas as condições verificadas na visita inicial.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-018" value="D"> D. Trata-se de uma exigência compulsória da vigilância sanitária, sendo condição legal para o funcionamento do Serviço de Emergência, em complementariedade aos alvarás.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q12. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Acreditação é avaliação externa voluntária e periódica focada em melhoria contínua.</p>
+<p><strong>Por que a A está correta:</strong> A define corretamente acreditação em saúde.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A define corretamente acreditação em saúde.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Avaliação interna é auditoria/qualidade local, não acreditação.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Acreditação não tem validade indeterminada.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Não é requisito compulsório da vigilância sanitária para funcionar.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q14</p>
+<p><strong>19. Equipe do Serviço de Atendimento Móvel de Urgência (SAMU) é acionada para atendimento de homem de 82 anos, encontrado inconsciente em sua residência. Na chegada, o médico constata rigidez cadavérica e livores fixos. Familiares relatam insuficiência cardíaca avançada e câncer metastático, em cuidados paliativos domiciliares e acompanhado regularmente por equipe de atenção domiciliar. Não há trauma, violência ou suspeita de causa externa. Em relação à emissão da Declaração de Óbito (DO), assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-019" value="A"> A. Na ausência de suspeita de causa externa, a DO deve ser emitida pelo médico que prestava assistência ao paciente ou por médico vinculado ao programa de atenção domiciliar responsável pelo seu acompanhamento.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-019" value="B"> B. A existência de doença terminal conhecida dispensa a emissão da DO, sendo suficiente o registro do atendimento no prontuário do SAMU.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-019" value="C"> C. O médico do SAMU deve obrigatoriamente emitir a DO, pois todo médico que constata pessoalmente o óbito assume a responsabilidade pela declaração.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-019" value="D"> D. Todo óbito ocorrido no domicílio deve ser encaminhado ao Instituto Médico Legal, independentemente da causa provável da morte.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q14. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Óbito domiciliar por causa natural conhecida deve ter DO pelo médico assistente/atenção domiciliar; IML é para causa externa/suspeita.</p>
+<p><strong>Por que a A está correta:</strong> A direciona a emissão ao médico que prestava assistência ou equipe domiciliar.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A direciona a emissão ao médico que prestava assistência ou equipe domiciliar.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Todo óbito precisa de DO.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> O SAMU que constata não é obrigatoriamente o emissor quando há assistência prévia e causa natural.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Domicílio não significa IML automático.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q18</p>
+<p><strong>20. A respeito da comunicação de óbito no DE, assinale a alternativa que representa a conduta mais adequada:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-020" value="A"> A. Comunicar o óbito de forma direta no primeiro contato, para não prolongar a angústia da espera.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-020" value="B"> B. Verificar o quanto a família deseja saber sobre os detalhes do atendimento e das circunstâncias do óbito, respeitando seu ritmo e esclarecendo dúvidas.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-020" value="C"> C. Transmitir a informação em terminologia técnica precisa, de modo a evitar qualquer ambiguidade quanto ao desfecho.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-020" value="D"> D. Diante do choro dos familiares, afirmar que compreende o que estão sentindo e, em seguida, conduzi-los às providências administrativas, ajudando-os a seguir adiante.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q18. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Comunicação de óbito começa avaliando quanto a família quer saber e acompanha o ritmo dela.</p>
+<p><strong>Por que a B está correta:</strong> B usa linguagem centrada na família e abre espaço para dúvidas.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Ser abrupto no primeiro contato pode piorar sofrimento.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B usa linguagem centrada na família e abre espaço para dúvidas.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Jargão técnico aumenta confusão e distância.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Dizer que compreende exatamente pode soar falso; choro não encerra comunicação.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="D">
+<p class="quiz-source">TEME26 Q24</p>
+<p><strong>21. A coordenação de um DE, diante de reclamações recorrentes sobre o tempo de espera e sem possibilidade de reduzir o tempo real de atendimento no curto prazo, decide implementar intervenções fundamentadas na psicologia da espera. Assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-021" value="A"> A. Informar a cada paciente, no acolhimento, que ele será atendido em breve e que sua situação está sob controle, oferecendo uma garantia tranquilizadora desde o primeiro contato.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-021" value="B"> B. Anunciar ao paciente um tempo estimado de espera mais curto do que o provável, para aliviar a ansiedade no momento da chegada, corrigindo a estimativa caso a espera se prolongue.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-021" value="C"> C. Substituir o reconhecimento presencial da chegada por um totem de autocadastro que emite a senha, dispensando a interação inicial da equipe e agilizando a entrada no fluxo.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-021" value="D"> D. Comunicar uma estimativa realista do tempo de espera, ainda que longa, e atualizá-la periodicamente, mesmo que isso revele ao paciente uma demora maior do que a desejada.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: D.</strong> Fonte: TEME26 Q24. Gabarito oficial: D.</p>
+<p><strong>Como pensar:</strong> Na espera, ansiedade cai com informação honesta e atualizada, não com promessa falsa.</p>
+<p><strong>Por que a D está correta:</strong> D aplica psicologia da espera: estimativa realista e atualização periódica.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Garantia vaga de 'em breve' gera frustração se não ocorrer.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Subestimar tempo deliberadamente quebra confiança.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Totem sem acolhimento pode piorar percepção de abandono.</li>
+<li><strong>D.</strong> <strong>Correta.</strong> D aplica psicologia da espera: estimativa realista e atualização periódica.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q29</p>
+<p><strong>22. Um DE recebe, em média, 10 pacientes por hora, com demanda variável ao longo do dia. As capacidades por etapa são: triagem, 14 pacientes por hora; consulta médica, 8 pacientes por hora (dois médicos); e imagem, 10 pacientes por hora. Observam-se fila e aumento progressivo do tempo de permanência. Com base nessas informações, assinale a alternativa correta:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-022" value="A"> A. Elevar só a consulta desloca o gargalo para a imagem, cuja capacidade iguala à demanda. Operando perto de 100%, a espera cresce de forma não linear; é preciso ampliar a capacidade médica e a de imagem acima da demanda.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-022" value="B"> B. Como a imagem e a triagem já comportam a demanda, basta elevar a capacidade da consulta, até igualá-la à demanda, para que o sistema fique dimensionado e a fila se resolva.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-022" value="C"> C. Acrescentar um terceiro médico, elevando a capacidade acima da demanda, elimina o gargalo do sistema e resolve a fila, por atuar diretamente sobre o recurso limitante.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-022" value="D"> D. Como a capacidade média do conjunto comporta a demanda, a fila decorre de variação aleatória e pode ser absorvida pela capacidade ociosa dos horários de menor movimento.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q29. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Capacidade igual à demanda não basta; operação próxima de 100% faz fila crescer com variabilidade.</p>
+<p><strong>Por que a A está correta:</strong> A reconhece gargalo médico e o próximo gargalo na imagem se ela ficar exatamente na demanda.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A reconhece gargalo médico e o próximo gargalo na imagem se ela ficar exatamente na demanda.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Igualar capacidade à demanda deixa o sistema sem folga e não resolve filas.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Terceiro médico ajuda consulta, mas imagem vira gargalo.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Média do conjunto não resolve etapa limitante.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q37</p>
+<p><strong>23. Considerando a seguinte evolução clínica em prontuário: “Apesar das medidas terapêuticas instituídas, o paciente mantém sensação intensa de sufocamento, agitação por desconforto respiratório e sofrimento evidente.” A equipe caracteriza o quadro como dispneia refratária. Nesse contexto, qual afirmação sobre sedação paliativa é correta?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-023" value="A"> A. É indicada para aliviar sintoma grave e refratário no fim de vida, podendo reduzir o nível de consciência de forma proporcional ao sofrimento.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-023" value="B"> B. Deve ser indicada para pacientes em fase ativa de morte, ainda que os sintomas estejam controlados.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-023" value="C"> C. É equivalente à eutanásia, pois antecipa a morte por meio de sedativos.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-023" value="D"> D. Deve ser evitada na emergência, pois sintomas refratários no fim de vida devem ser manejados apenas por equipe especializada.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q37. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Sedação paliativa é proporcional para sintoma refratário grave, não atalho para morte.</p>
+<p><strong>Por que a A está correta:</strong> A define indicação e proporcionalidade.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A define indicação e proporcionalidade.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Não se seda só por estar em fase ativa se sintomas estão controlados.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Não é eutanásia quando a intenção é aliviar sofrimento refratário.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Emergência também deve manejar sofrimento refratário, com apoio se possível.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q48</p>
+<p><strong>24. Um DE de um hospital geral do Sistema único de Saúde (SUS) apresenta-se recorrentemente com pacientes em macas nos corredores; demora para transferência interna; e permanência prolongada de casos já avaliados pela equipe da emergência. A direção propõe como medida principal ampliar o número de atendimentos na porta de entrada para as consultas iniciais. Com base nas estratégias de gestão de superlotação, qual intervenção tende a enfrentar a situação de forma mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-024" value="A"> A. Aumentar prioritariamente a velocidade da classificação de risco inicial, pois a superlotação decorre sobretudo da demora no primeiro atendimento.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-024" value="B"> B. Direcionar a maior parte dos pacientes de baixa complexidade para a Atenção Primária, pois a redução da demanda espontânea é a medida mais efetiva para resolver a superlotação hospitalar.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-024" value="C"> C. Administrar o fluxo assistencial com gestão de leitos, altas oportunas, articulação com setores diagnósticos e internação.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-024" value="D"> D. Ampliar leitos hospitalares, pois a principal causa da superlotação é a insuficiência física de vagas no sistema de saúde.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q48. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Superlotação por macas e internação prolongada costuma ser problema de saída/boarding, não só porta de entrada.</p>
+<p><strong>Por que a C está correta:</strong> C foca gestão de leitos, altas, diagnóstico e internação.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Classificar mais rápido não desentope corredor.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Desviar baixa complexidade ajuda pouco quando o gargalo é internação.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C foca gestão de leitos, altas, diagnóstico e internação.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Leito físico isolado sem gestão de fluxo não resolve.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q56</p>
+<p><strong>25. Em um DE, uma bomba de infusão programada incorretamente administra dez vezes a dose prescrita de insulina a um paciente, que evolui com hipoglicemia grave, revertida após intervenção, sem sequelas. Ao conduzir a análise do ocorrido, a equipe de gestão de risco deve:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-025" value="A"> A. Direcionar a investigação à identificação nominal do profissional que programou a bomba, de modo a permitir sua responsabilização e o retreinamento individual como medida corretiva.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-025" value="B"> B. Conduzir a análise de causa raiz para mapear os fatores contribuintes do sistema (humanos, de processo e tecnológicos), apoiando-se no diagrama de Ishikawa, sem reduzir o evento à culpa individual.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-025" value="C"> C. Classificar o caso como quase-falha (near miss), pois o paciente se recuperou sem sequelas, e mantê-lo apenas em registro interno da equipe, sem notificação ao sistema.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-025" value="D"> D. Tratar o episódio como falha pontual e inevitável, dada a imprevisibilidade do DE, aguardando eventual recorrência antes de instituir barreiras no processo.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q56. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Evento adverso deve ser analisado como sistema; insulina 10x é falha de barreira, não caça ao culpado.</p>
+<p><strong>Por que a B está correta:</strong> B usa análise de causa raiz/Ishikawa e fatores humanos/processo/tecnologia.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Culpa individual isolada perde fatores contribuintes.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B usa análise de causa raiz/Ishikawa e fatores humanos/processo/tecnologia.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Houve dano temporário com intervenção, não near miss puro.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Esperar recorrência é cultura insegura.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="C">
+<p class="quiz-source">TEME26 Q62</p>
+<p><strong>26. Um DE público da rede do SUS adota o Sistema de Triagem de Manchester como modelo de classificação de risco, e a gestão precisa explicitar o fundamento dessa escolha. Assinale a alternativa que melhor descreve o fundamento da escolha do Manchester nesse contexto.</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-026" value="A"> A. O Manchester foi adotado sobretudo por discriminar o risco clínico com acurácia maior que a do Emergency Severity Index e da Escala Canadense de Triagem e Acuidade.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-026" value="B"> B. A escolha se deve ao Manchester estimar o consumo de recursos de cada paciente, permitindo dimensionar leitos e equipes diretamente a partir da classificação.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-026" value="C"> C. O Manchester ordena o acesso por gravidade com tempos máximos seguros por categoria, alinhado à Política Nacional de Humanização, e produz informação gerencial sobre o perfil da demanda.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-026" value="D"> D. A classificação é etapa assistencial de ordenação do atendimento, com pouca utilidade gerencial, de modo que a gestão recorreria a indicadores administrativos próprios.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: C.</strong> Fonte: TEME26 Q62. Gabarito oficial: C.</p>
+<p><strong>Como pensar:</strong> Manchester organiza prioridade por gravidade e tempo-alvo, além de gerar dados gerenciais.</p>
+<p><strong>Por que a C está correta:</strong> C é o fundamento alinhado à PNH.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Não é adotado por superioridade universal sobre ESI/CTAS.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Estimativa de recursos é mais característica do ESI.</li>
+<li><strong>C.</strong> <strong>Correta.</strong> C é o fundamento alinhado à PNH.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Classificação também tem valor gerencial.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q79</p>
+<p><strong>27. A equipe de atendimento pré-hospitalar é acionada para atendimento de uma mulher de 83 anos, com demência, acamada, dependente para todas as atividades básicas e com múltiplas internações por infecções respiratórias. No domicílio, apresenta febre, taquipneia e hipoxemia. A família relata piora progressiva no último ano, mas nunca houve conversa estruturada sobre objetivos de cuidado ou condutas em futuras intercorrências. Nesse contexto, qual é a conduta mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-027" value="A"> A. Reconhecer a paciente como elegível para abordagem paliativa, iniciar controle de sintomas e comunicação com a família, articular a decisão com a regulação médica e garantir encaminhamento compatível com gravidade e objetivos de cuidado.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-027" value="B"> B. Realizar transporte para serviço hospitalar, pois a ausência de planejamento antecipado de cuidados impede a abordagem paliativa e exige investigação e tratamento invasivo da intercorrência aguda.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-027" value="C"> C. Restringir o atendimento ao controle sintomático no domicílio, pois demência, dependência funcional e múltiplas internações recentes caracterizam fase final de vida.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-027" value="D"> D. Priorizar a estabilização clínica e adiar a discussão sobre cuidados paliativos, pois essa abordagem deve ser iniciada por equipe especializada, após definição do diagnóstico intra-hospitalar.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q79. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Paciente frágil com demência avançada pode ter abordagem paliativa no APH sem abandonar regulação e sintomas.</p>
+<p><strong>Por que a A está correta:</strong> A integra controle de sintomas, comunicação, regulação e destino compatível.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A integra controle de sintomas, comunicação, regulação e destino compatível.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Ausência de plano prévio não proíbe abordagem paliativa.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Não se limita automaticamente ao domicílio sem decisão compartilhada/regulação.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Paliativo não precisa esperar especialista/hospital.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="B">
+<p class="quiz-source">TEME26 Q96</p>
+<p><strong>28. Um DE público que opera com o Sistema de Triagem de Manchester revisa 3 meses de dados da classificação. A distribuição por nível foi: vermelho 3%, laranja 9%, amarelo 28%, verde 46%, azul 14%. As categorias de maior prioridade vêm sendo atendidas dentro dos tempos-alvo seguros, enquanto cresce a espera nas categorias intermediárias. A gestão debate o que fazer com essa informação. Assinale a interpretação gerencial mais adequada dos dados da classificação:</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-028" value="A"> A. Os dados devem alimentar a estimativa de consumo de recursos por paciente pelo próprio Manchester, para dimensionar leitos e pessoal, conforme a demanda projetada.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-028" value="B"> B. Por ser informação de governança da própria classificação e com o acesso prioritário preservado, a espera crescente nas categorias intermediárias aponta um gargalo a investigar, não falha do instrumento.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-028" value="C"> C. A distribuição observada revela baixa acurácia do Manchester para o perfil local e recomenda sua substituição pelo Emergency Severity Index ou pela Escala Canadense de Triagem e Acuidade, de maior validade.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-028" value="D"> D. O aumento das esperas indica superclassificação pelos enfermeiros, devendo o protocolo tornar-se mais restritivo para conter a inflação de categorias.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: B.</strong> Fonte: TEME26 Q96. Gabarito oficial: B.</p>
+<p><strong>Como pensar:</strong> Manchester também gera dado de governança; espera intermediária preservando prioridade sugere gargalo, não falha automática do protocolo.</p>
+<p><strong>Por que a B está correta:</strong> B interpreta corretamente o painel.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Incorreta.</strong> Manchester não estima consumo de recursos individual como ESI.</li>
+<li><strong>B.</strong> <strong>Correta.</strong> B interpreta corretamente o painel.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> Distribuição não prova baixa acurácia nem indica trocar escala.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Espera não é prova de superclassificação.</li>
+</ul>
+</div>
+</div>
+
+<div class="quiz-card" data-answer="A">
+<p class="quiz-source">TEME26 Q97</p>
+<p><strong>29. Paciente de 78 anos, DPOC avançada, oxigenoterapia domiciliar e múltiplas internações por insuficiência respiratória, é levado à emergência por dispnéia intensa, piora funcional e redução da ingesta alimentar. A família relata que ele teme morrer sufocado e não desejava prolongar sofrimento na fase final. Na avaliação, está consciente, ansioso, taquipneico e com sensação de sufocamento. Apesar de medidas não farmacológicas, ajuste da oxigenoterapia e manejo de possíveis fatores reversíveis, mantém dispnéia importante. Considerando o controle da dispnéia em cuidados paliativos, qual é a conduta mais adequada?</strong></p>
+<div class="quiz-options">
+<label class="quiz-option"><input type="radio" name="q-t017-029" value="A"> A. Iniciar opioide em baixa dose com subsequente titulação, mantendo medidas não farmacológicas e reavaliação clínica frequente.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-029" value="B"> B. Usar benzodiazepínicos como primeira escolha, pois a dispnéia decorre principalmente de ansiedade.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-029" value="C"> C. Indicar ventilação não invasiva antes de tratamento farmacológico.</label>
+<label class="quiz-option"><input type="radio" name="q-t017-029" value="D"> D. Evitar opióides, pois estão contraindicados em pacientes com DPOC avançada, por risco de depressão respiratória.</label>
+</div>
+<button class="quiz-check" type="button">Checar resposta</button>
+<div class="quiz-feedback" hidden>
+<p><strong>Resposta: A.</strong> Fonte: TEME26 Q97. Gabarito oficial: A.</p>
+<p><strong>Como pensar:</strong> Dispneia refratária em DPOC avançada pode ser tratada com opioide baixo e titulado, além de medidas não farmacológicas.</p>
+<p><strong>Por que a A está correta:</strong> A é controle sintomático proporcional.</p>
+<ul class="quiz-explain">
+<li><strong>A.</strong> <strong>Correta.</strong> A é controle sintomático proporcional.</li>
+<li><strong>B.</strong> <strong>Incorreta.</strong> Benzodiazepínico não é primeira linha da dispneia; pode ajudar ansiedade associada.</li>
+<li><strong>C.</strong> <strong>Incorreta.</strong> VNI pode ser útil se alinhada a objetivos, mas não antes de tratar sintoma sempre.</li>
+<li><strong>D.</strong> <strong>Incorreta.</strong> Opioide não é contraindicado se dose baixa e titulação cuidadosa.</li>
+</ul>
+</div>
+</div>
+<!-- TEME26_END -->

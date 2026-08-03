@@ -357,7 +357,7 @@ flowchart TD
 
 - Conteúdo programático TEME26 e referências oficiais do edital.
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25 disponíveis no projeto.
-- Estações práticas TEME22-25 disponíveis no projeto.
+- Estações práticas disponíveis até TEME25 disponíveis no projeto.
 - Aulas de cursinho: Aula 13 - Choque; Aula 22 - Sepse; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 53 - Intoxicações; Aula 63 - Emergências Infecciosas.
 - Resumo do cursinho.docx, arquivo do usuário.
 - Society of Critical Care Medicine/ESICM. 2026: [Surviving Sepsis Campaign International Guidelines for Management of Sepsis and Septic Shock](https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026).

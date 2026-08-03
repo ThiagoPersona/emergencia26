@@ -8,7 +8,7 @@
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-25 trouxe olho/ocular/glaucoma, fotoceratite por solda, POCUS ocular, vertigem/otorrino, epistaxe, dente/infecção odontogênica e trauma facial.
+- **Recorrência em provas/estações:** TEME22-26 trouxe olho/ocular/glaucoma, fotoceratite por solda, POCUS ocular, vertigem/otorrino, epistaxe, dente/infecção odontogênica e trauma facial.
 - **O que a banca costuma testar:** separar benigno de ameaçador, conduta inicial antes da transferência, quando imagem/POCUS ajuda e quando não atrasar especialista.
 - **Como costuma aparecer:** enunciado pequeno com uma palavra decisiva: flashes, cortina, halos, vômitos, solda, produto químico, estridor, epistaxe posterior, HINTS perigoso.
 

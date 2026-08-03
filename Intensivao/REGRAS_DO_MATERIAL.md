@@ -12,7 +12,7 @@ O texto deve ser curto, prático e acionável. Explicações longas só entram q
 ## Hierarquia De Fontes
 
 1. **Referências oficiais TEME26 mais recentes**: base da resposta de prova e de eventual recurso.
-2. **Provas TEME22-25 e estações práticas**: definem prioridade, estilo de cobrança e pegadinhas.
+2. **Provas TEME22-26 e estações práticas disponíveis**: definem prioridade, estilo de cobrança e pegadinhas.
 3. **Conteúdo programático TEME26**: garante cobertura editalícia.
 4. **Resumo e slides de cursinho local**: organizam a revisão e ajudam a transformar teoria em conduta.
 5. **Diretrizes, consensos e artigos atuais**: entram para atualizar prática clínica, especialmente quando publicados após as referências-base.
