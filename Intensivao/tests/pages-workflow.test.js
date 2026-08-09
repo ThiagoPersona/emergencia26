@@ -14,3 +14,9 @@ test("workflow publica scripts, estilos, dados das praticas e sidebar atual", ()
   assert.match(workflow, /cp -R Intensivao\/praticas/);
   assert.match(workflow, /Intensivao\/_sidebar\.md/);
 });
+
+test("link ativo da sidebar sobrescreve a cor clara padrao do Docsify", () => {
+  const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
+
+  assert.match(html, /\.sidebar ul li\.active > a[\s\S]{0,180}color: var\(--link\) !important/);
+});
