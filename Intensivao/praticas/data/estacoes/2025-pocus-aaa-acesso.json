@@ -1,0 +1,36 @@
+{
+  "id": "2025-pocus-aaa-acesso",
+  "version": 1,
+  "title": "POCUS no choque, aneurisma de aorta e acesso guiado",
+  "domain": "POCUS",
+  "durationSeconds": 300,
+  "source": { "exam": "TEME", "year": 2025, "station": "POCUS" },
+  "briefing": "Paciente em choque sem fonte imediatamente evidente. Interprete as janelas ultrassonográficas apresentadas e demonstre uma punção vascular guiada por ultrassom.",
+  "phases": [
+    { "id": "aorta", "title": "Aorta", "prompt": "Identifique a janela e descreva o achado da aorta abdominal." },
+    { "id": "coracao-cava", "title": "Coração e cava", "prompt": "Interprete as janelas cardíacas e a veia cava inferior." },
+    { "id": "fast", "title": "Abdome", "prompt": "Identifique a janela abdominal e diga se há líquido livre." },
+    { "id": "acesso", "title": "Procedimento", "prompt": "Escolha o transdutor e demonstre uma punção vascular guiada." },
+    { "id": "integracao", "title": "Síntese", "prompt": "Integre os achados e forneça o diagnóstico sindrômico/etiológico mais provável." }
+  ],
+  "checklist": [
+    { "id": "sucesso-puncao", "label": "Obtém sucesso na punção", "weight": 4, "verification": "manual", "critical": false },
+    { "id": "aorta-transversal", "label": "Identifica aorta abdominal em eixo curto", "weight": 4, "verification": "hibrido", "critical": false },
+    { "id": "aorta-aneurisma", "label": "Reconhece aorta aneurismática com trombo mural e mede parede externa a parede externa", "weight": 2, "verification": "verbal", "critical": true },
+    { "id": "plax", "label": "Identifica janela paraesternal longitudinal", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "raiz-aorta-vsve", "label": "Identifica raiz da aorta e via de saída do ventrículo esquerdo", "weight": 2, "verification": "verbal", "critical": false },
+    { "id": "sem-derrame", "label": "Reconhece ausência de derrame pericárdico", "weight": 2, "verification": "verbal", "critical": false },
+    { "id": "coracao-hipercinetico", "label": "Reconhece coração hipercinético com cavidade reduzida", "weight": 4, "verification": "verbal", "critical": false },
+    { "id": "subcostal", "label": "Identifica janela subcostal/subxifoidea", "weight": 12, "verification": "hibrido", "critical": false },
+    { "id": "vci", "label": "Reconhece VCI pequena e muito colapsável", "weight": 4, "verification": "verbal", "critical": false },
+    { "id": "morison", "label": "Identifica janela hepatorrenal/Morrison", "weight": 5, "verification": "hibrido", "critical": false },
+    { "id": "figado-rim", "label": "Identifica fígado e rim", "weight": 12, "verification": "verbal", "critical": false },
+    { "id": "liquido-livre", "label": "Reconhece líquido livre anecoico", "weight": 4, "verification": "verbal", "critical": true },
+    { "id": "diagnostico", "label": "Integra choque hemorrágico por provável ruptura de aneurisma de aorta", "weight": 20, "verification": "verbal", "critical": true },
+    { "id": "transdutor", "label": "Escolhe transdutor linear para a punção", "weight": 8, "verification": "hibrido", "critical": false },
+    { "id": "tecnica", "label": "Escolhe técnica em eixo curto, longo ou oblíquo e mantém visualização da ponta", "weight": 8, "verification": "hibrido", "critical": true },
+    { "id": "agulha", "label": "Visualiza a ponta da agulha durante a progressão", "weight": 4, "verification": "manual", "critical": true }
+  ],
+  "criticalErrors": ["Não reconhecer aneurisma/ruptura", "Avançar a agulha sem visualizar a ponta"],
+  "referenceAnswer": "Na aorta em eixo curto há dilatação aneurismática com trombo mural; a medida deve incluir toda a parede externa. O coração está hipercinético, a cava é pequena e colapsável e há líquido livre no espaço hepatorrenal, integrando choque hemorrágico por provável ruptura de AAA. Para o acesso escolho transdutor linear, identifico vaso e estruturas adjacentes e avanço somente mantendo a ponta da agulha visível."
+}

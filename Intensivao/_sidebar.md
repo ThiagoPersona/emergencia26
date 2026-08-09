@@ -4,6 +4,15 @@
 
 - [INTENSIVÃO](INTENSIVAO.md)
 
+- PROVA PRÁTICA
+  - [Visão geral](PRATICAS.md)
+  - [Simulador de estações](praticas/SIMULADOR.md)
+  - [Roteiro de 5 minutos](praticas/ROTEIRO_5_MIN.md)
+  - [Matriz da banca](praticas/MATRIZ_DA_BANCA.md)
+  - [Procedimentos](praticas/PROCEDIMENTOS.md)
+  - [Treino visual](praticas/TREINO_VISUAL.md)
+  - [Desempenho](praticas/DESEMPENHO.md)
+
 - Temas
   - [1. Via aérea e ventilação mecânica](temas/001_via-aerea_vm.md)
   - [2. Trauma hemorrágico e transfusão maciça](temas/002_trauma-hemorragico.md)

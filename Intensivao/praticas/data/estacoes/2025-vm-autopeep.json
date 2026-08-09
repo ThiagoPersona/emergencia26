@@ -1,0 +1,24 @@
+{
+  "id": "2025-vm-autopeep",
+  "version": 1,
+  "title": "Ventilação mecânica e auto-PEEP",
+  "domain": "Via aérea e ventilação mecânica",
+  "durationSeconds": 300,
+  "source": { "exam": "TEME", "year": 2025, "station": "Via aérea" },
+  "briefing": "Paciente intubado em ventilação mecânica apresenta deterioração clínica. Você receberá dados progressivos e deverá interpretar o ventilador e propor a correção.",
+  "phases": [
+    { "id": "exame", "title": "Tarefa 1", "prompt": "Qual exame complementar imediato ajuda a avaliar ventilação e distúrbio acidobásico?" },
+    { "id": "modo", "title": "Tarefa 2", "prompt": "Observe as curvas apresentadas. Identifique o modo ventilatório." },
+    { "id": "fenomeno", "title": "Tarefa 3", "prompt": "Na curva fluxo-tempo, o fluxo expiratório não retorna à linha de base antes do ciclo seguinte. O que está ocorrendo?" },
+    { "id": "correcao", "title": "Tarefa 4", "prompt": "Descreva como corrigir o fenômeno e quais parâmetros você reavaliará." }
+  ],
+  "checklist": [
+    { "id": "gasometria", "label": "Solicita gasometria arterial", "weight": 10, "verification": "verbal", "critical": false, "expected": ["gasometria arterial"] },
+    { "id": "vcv", "label": "Reconhece ventilação controlada a volume (VCV)", "weight": 20, "verification": "verbal", "critical": false, "expected": ["VCV", "controlado a volume"] },
+    { "id": "autopeep", "label": "Reconhece auto-PEEP/PEEP intrínseca pela curva fluxo-tempo", "weight": 35, "verification": "verbal", "critical": true, "expected": ["auto-PEEP", "PEEP intrínseca", "aprisionamento aéreo"] },
+    { "id": "reduz-volume-minuto", "label": "Propõe reduzir o volume-minuto", "weight": 20, "verification": "verbal", "critical": true, "expected": ["reduzir volume-minuto", "reduzir FR", "reduzir volume corrente"] },
+    { "id": "aumenta-expiracao", "label": "Reduz FR e aumenta o tempo expiratório", "weight": 15, "verification": "verbal", "critical": false, "expected": ["reduzir frequência respiratória", "aumentar tempo expiratório"] }
+  ],
+  "criticalErrors": ["Não reconhecer auto-PEEP", "Aumentar a frequência respiratória sem corrigir o aprisionamento aéreo"],
+  "referenceAnswer": "Solicito gasometria arterial. As curvas mostram VCV e fluxo expiratório que não zera antes do próximo ciclo, compatível com auto-PEEP. Reduzo o volume-minuto, principalmente a frequência respiratória, aumento o tempo expiratório e trato obstrução/broncoespasmo quando presentes. Reavalio pressão, curva fluxo-tempo, capnografia e gasometria."
+}

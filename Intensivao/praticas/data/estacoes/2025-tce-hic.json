@@ -1,0 +1,37 @@
+{
+  "id": "2025-tce-hic",
+  "version": 1,
+  "title": "TCE grave e hipertensão intracraniana",
+  "domain": "Emergências neurológicas",
+  "durationSeconds": 300,
+  "source": { "exam": "TEME", "year": 2025, "station": "Caso clínico" },
+  "briefing": "Paciente com traumatismo cranioencefálico deteriora neurologicamente e necessita estabilização para imagem e tratamento emergencial de provável hipertensão intracraniana, com distúrbio de coagulação associado.",
+  "phases": [
+    { "id": "pre-tc", "title": "Tarefa 1", "prompt": "Descreva as medidas antes da tomografia, incluindo via aérea e alvos fisiológicos." },
+    { "id": "pos-dados", "title": "Tarefa 2", "prompt": "Com piora clínica, hemorragia intracraniana e coagulopatia/trombocitopenia, indique as medidas emergenciais e seus alvos." }
+  ],
+  "checklist": [
+    { "id": "via-aerea", "label": "Indica via aérea definitiva antes ou imediatamente após a TC conforme estabilidade", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "sedacao", "label": "Mantém sedação contínua apropriada", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "analgesia", "label": "Mantém analgesia contínua", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "capnia", "label": "Mantém normocapnia, reservando hiperventilação breve para herniação iminente", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "paco2", "label": "Define PaCO2 aproximadamente 35-38 mmHg; 32-35 apenas como ponte em deterioração", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "hiperventilacao", "label": "Explica indicação restrita e transitória da hiperventilação", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "euvolemia", "label": "Mantém euvolemia e evita hipotensão", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "isotonico", "label": "Usa cristaloide isotônico e evita soluções hipotônicas", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "hiperosmolar", "label": "Indica salina hipertônica ou manitol em HIC/hernição", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "cab30", "label": "Eleva cabeceira a 30 graus se não houver contraindicação", "weight": 5, "verification": "hibrido", "critical": false },
+    { "id": "cabeca-neutra", "label": "Mantém cabeça em posição neutra e evita compressão jugular", "weight": 5, "verification": "hibrido", "critical": false },
+    { "id": "normotermia", "label": "Busca normotermia", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "evita-febre", "label": "Previne e trata hipertermia", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "plaquetas", "label": "Indica transfusão urgente de plaquetas quando pertinente", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "alvo-plaquetas", "label": "Busca plaquetas acima de 100.000/mm³ em neurocirurgia/hemorragia crítica", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "reversao", "label": "Reverte anticoagulação com complexo protrombínico e/ou plasma conforme agente e disponibilidade", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "inr", "label": "Busca correção rápida do INR para menos de 1,5", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "neurocirurgia", "label": "Aciona neurocirurgia em caráter emergencial", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "pressao", "label": "Evita hipotensão e controla hipertensão extrema sem comprometer PPC", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "alvo-pas", "label": "Individualiza PAS/PAM e explicita alvo compatível com perfusão cerebral", "weight": 5, "verification": "verbal", "critical": false }
+  ],
+  "criticalErrors": ["Permitir hipoxemia ou hipotensão", "Hiperventilar profilaticamente", "Atrasar terapia hiperosmolar na herniação", "Atrasar neurocirurgia e reversão de coagulopatia"],
+  "referenceAnswer": "Estabilizo antes da TC: via aérea definitiva se indicada, pré-oxigenação, analgesia e sedação, normoxia, PaCO2 em torno de 35-38, euvolemia com isotônico, prevenção de hipotensão, cabeceira a 30 graus, cabeça neutra e normotermia. Diante de herniação, faço terapia hiperosmolar e posso hiperventilar brevemente como ponte. Reavalio pupilas e neurologia, aciono neurocirurgia, reponho plaquetas quando indicado, reverto anticoagulação rapidamente e controlo pressão preservando perfusão cerebral."
+}

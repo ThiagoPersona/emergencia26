@@ -1,0 +1,36 @@
+{
+  "id": "2025-trauma-hemorragico",
+  "version": 1,
+  "title": "Trauma com hemorragia exsanguinante",
+  "domain": "Trauma e controle de danos",
+  "durationSeconds": 300,
+  "source": { "exam": "TEME", "year": 2025, "station": "Trauma" },
+  "briefing": "Vítima de trauma chega instável, com hemorragia importante em extremidade. Faça a abordagem primária, controle o sangramento e prescreva a ressuscitação hemostática.",
+  "phases": [
+    { "id": "xabc", "title": "Tarefa 1", "prompt": "Realize verbalmente e demonstre a avaliação primária até o D." },
+    { "id": "ressuscitacao", "title": "Tarefa 2", "prompt": "Indique a ressuscitação inicial e os recursos necessários para controle definitivo." }
+  ],
+  "checklist": [
+    { "id": "via-aerea", "label": "Avalia via aérea por inspeção", "weight": 5, "verification": "hibrido", "critical": false },
+    { "id": "cervical-avalia", "label": "Avalia a região cervical", "weight": 2, "verification": "hibrido", "critical": false },
+    { "id": "cervical-restringe", "label": "Indica restrição do movimento cervical", "weight": 3, "verification": "hibrido", "critical": false },
+    { "id": "torax-palpa", "label": "Palpa o gradil torácico", "weight": 2, "verification": "manual", "critical": false },
+    { "id": "torax-avalia", "label": "Avalia tórax anterior e posterior", "weight": 3, "verification": "hibrido", "critical": false },
+    { "id": "hemorragia", "label": "Identifica hemorragia exsanguinante", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "compressao", "label": "Inicia compressão direta ou indica torniquete imediato quando apropriado", "weight": 5, "verification": "hibrido", "critical": true },
+    { "id": "torniquete", "label": "Aplica corretamente o torniquete", "weight": 15, "verification": "manual", "critical": true },
+    { "id": "horario", "label": "Registra o horário do torniquete", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "choque", "label": "Reconhece choque hemorrágico", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "efast", "label": "Pesquisa outras fontes com E-FAST", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "pelve-longos", "label": "Avalia pelve e ossos longos", "weight": 5, "verification": "hibrido", "critical": false },
+    { "id": "transfusao", "label": "Ativa transfusão maciça 1:1:1 ou sangue total", "weight": 10, "verification": "verbal", "critical": true },
+    { "id": "cristaloide", "label": "Se usar cristaloide, limita a pequeno volume aquecido", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "txa", "label": "Indica ácido tranexâmico 1 g e mais 1 g em 8 horas dentro de 3 horas", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "calcio", "label": "Repõe cálcio e monitora cálcio ionizado", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "aquecimento", "label": "Previne e trata hipotermia", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "coagulacao", "label": "Solicita avaliação de coagulação, incluindo viscoelástico se disponível", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "cirurgia", "label": "Solicita avaliação cirúrgica e controle definitivo imediato", "weight": 5, "verification": "verbal", "critical": true }
+  ],
+  "criticalErrors": ["Não controlar a hemorragia externa", "Não reconhecer choque hemorrágico", "Atrasar controle cirúrgico definitivo"],
+  "referenceAnswer": "Faço XABCDE. Identifico e controlo primeiro a hemorragia exsanguinante com compressão e torniquete proximal bem apertado, anotando horário. Avalio via aérea com restrição cervical, tórax, perfusão, pelve e ossos longos; reconheço choque hemorrágico e procuro outras fontes com E-FAST. Ativo protocolo de transfusão maciça 1:1:1 ou sangue total, aqueço paciente e fluidos, indico TXA se até 3 horas, monitoro e reponho cálcio e aciono imediatamente cirurgia para controle definitivo."
+}

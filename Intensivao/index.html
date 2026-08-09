@@ -10,6 +10,7 @@
     href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
     onerror="this.onerror=null;this.href='https://unpkg.com/docsify@4/lib/themes/vue.css'"
   />
+  <link rel="stylesheet" href="praticas.css" />
   <style>
     :root {
       --bg: #eef4f7;
@@ -889,6 +890,11 @@
     </div>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="praticas-config.js"></script>
+  <script src="praticas-utils.js"></script>
+  <script src="praticas-api.js"></script>
+  <script src="praticas-app.js"></script>
   <script>
     const isFileProtocol = location.protocol === "file:";
 
@@ -1751,6 +1757,7 @@
       tuneTables();
       initQuizzes();
       renderMermaid();
+      if (window.TemePracticeApp) window.TemePracticeApp.mount();
       markAppLoaded();
     }
 
