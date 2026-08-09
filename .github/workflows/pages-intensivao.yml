@@ -26,8 +26,8 @@ jobs:
       - name: Montar site
         run: |
           set -euo pipefail
-          mkdir -p site/Intensivao site/Intensivao/temas site/Intensivao/provas site/Intensivao/assets site/Intensivao/assets/provas
-          mkdir -p site/temas site/provas site/assets site/assets/provas
+          mkdir -p site/Intensivao site/Intensivao/temas site/Intensivao/provas site/Intensivao/assets site/Intensivao/assets/provas site/Intensivao/praticas
+          mkdir -p site/temas site/provas site/assets site/assets/provas site/praticas
           shopt -s nullglob
 
           # Publicação na raiz (padrão dos Links do GitHub Pages): /index-online.html
@@ -35,10 +35,16 @@ jobs:
           cp -f *.md site/ 2>/dev/null || true
           cp -f Intensivao/*.html site/ 2>/dev/null || true
           cp -f Intensivao/*.md site/ 2>/dev/null || true
-          cp -f Intensivao/index-online-sidebar.md site/_sidebar.md 2>/dev/null || true
-          cp -f Intensivao/index-online-sidebar.md site/Intensivao/_sidebar.md 2>/dev/null || true
+          cp -f Intensivao/*.js site/ 2>/dev/null || true
+          cp -f Intensivao/*.css site/ 2>/dev/null || true
+          cp -f Intensivao/_sidebar.md site/_sidebar.md
+          cp -f Intensivao/_sidebar.md site/Intensivao/_sidebar.md
           cp -f Intensivao/*.html site/Intensivao/ 2>/dev/null || true
           cp -f Intensivao/*.md site/Intensivao/ 2>/dev/null || true
+          cp -f Intensivao/*.js site/Intensivao/ 2>/dev/null || true
+          cp -f Intensivao/*.css site/Intensivao/ 2>/dev/null || true
+          cp -R Intensivao/praticas/. site/praticas/
+          cp -R Intensivao/praticas/. site/Intensivao/praticas/
           for file in Intensivao/temas/*.md; do
             cp "$file" site/Intensivao/temas/
             cp "$file" site/temas/
