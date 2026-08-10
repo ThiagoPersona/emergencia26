@@ -4,7 +4,8 @@ const test = require("node:test");
 const {
   validateMediaManifest,
   collectStationMedia,
-  preloadStationMedia
+  preloadStationMedia,
+  renderPhaseMedia
 } = require("../praticas-media.js");
 
 function image(id) {
@@ -32,6 +33,115 @@ function video(id) {
     thumbnail: `assets/praticas/${id}-thumb.jpg`,
     poster: `assets/praticas/${id}-poster.jpg`
   };
+}
+
+function comparison(id, items) {
+  const item = { ...image(id), type: "comparison", items };
+  delete item.src;
+  delete item.thumbnail;
+  return item;
+}
+
+function createFakeDocument() {
+  class FakeElement {
+    constructor(tagName, ownerDocument) {
+      this.tagName = tagName.toUpperCase();
+      this.ownerDocument = ownerDocument;
+      this.childNodes = [];
+      this.parentNode = null;
+      this.className = "";
+      this.style = {};
+      this.attributes = {};
+      this.listeners = new Map();
+      this.classList = {
+        add: (...names) => {
+          const classes = new Set(this.className.split(/\s+/).filter(Boolean));
+          names.forEach((name) => classes.add(name));
+          this.className = Array.from(classes).join(" ");
+        }
+      };
+    }
+
+    appendChild(child) {
+      child.parentNode = this;
+      this.childNodes.push(child);
+      return child;
+    }
+
+    replaceChildren(...children) {
+      this.childNodes.forEach((child) => { child.parentNode = null; });
+      this.childNodes = [];
+      children.forEach((child) => this.appendChild(child));
+    }
+
+    remove() {
+      if (!this.parentNode) return;
+      this.parentNode.childNodes = this.parentNode.childNodes.filter((child) => child !== this);
+      this.parentNode = null;
+    }
+
+    setAttribute(name, value) {
+      this.attributes[name] = value;
+    }
+
+    addEventListener(type, listener) {
+      const handlers = this.listeners.get(type) || [];
+      handlers.push(listener);
+      this.listeners.set(type, handlers);
+    }
+
+    removeEventListener(type, listener) {
+      const handlers = this.listeners.get(type) || [];
+      this.listeners.set(type, handlers.filter((handler) => handler !== listener));
+    }
+
+    dispatch(type, event) {
+      (this.listeners.get(type) || []).forEach((listener) => listener(event || { target: this }));
+    }
+
+    requestFullscreen() {
+      this.ownerDocument.fullscreenElement = this;
+      this.ownerDocument.dispatch("fullscreenchange");
+      return Promise.resolve();
+    }
+  }
+
+  const document = {
+    listeners: new Map(),
+    fullscreenElement: null,
+    createElement(tagName) {
+      return new FakeElement(tagName, document);
+    },
+    addEventListener(type, listener) {
+      const handlers = document.listeners.get(type) || [];
+      handlers.push(listener);
+      document.listeners.set(type, handlers);
+    },
+    removeEventListener(type, listener) {
+      const handlers = document.listeners.get(type) || [];
+      document.listeners.set(type, handlers.filter((handler) => handler !== listener));
+    },
+    dispatch(type) {
+      (document.listeners.get(type) || []).forEach((listener) => listener());
+    },
+    exitFullscreen() {
+      document.fullscreenElement = null;
+      document.dispatch("fullscreenchange");
+      return Promise.resolve();
+    }
+  };
+  document.body = document.createElement("body");
+  return document;
+}
+
+function findByClass(root, className) {
+  const found = [];
+  const visit = (element) => {
+    if (element.className.split(/\s+/).includes(className)) found.push(element);
+    element.childNodes.forEach(visit);
+  };
+  visit(root);
+  return found;
 }
 
 test("aceita manifesto vazio e manifesto valido nos dois formatos", () => {
@@ -75,6 +185,25 @@ test("rejeita caminhos de midia remotos e exige https para fontes", () => {
   assert.match(result.errors.join(" "), /licenseUrl deve usar https/i);
 });
 
+test("aceita somente caminhos relativos seguros para arquivos locais", () => {
+  const invalid = [
+    "file:///tmp/imagem.png",
+    "javascript:alert(1)",
+    "C:\\midias\\imagem.png",
+    "\\\\servidor\\midias\\imagem.png",
+    "/assets/praticas/imagem.png",
+    "assets/../segredo.png"
+  ];
+
+  invalid.forEach((path) => {
+    const item = image("caminho-seguro");
+    item.src = path;
+    const result = validateMediaManifest([item]);
+    assert.equal(result.valid, false, path);
+    assert.match(result.errors.join(" "), /src deve ser caminho local/i, path);
+  });
+});
+
 test("rejeita ids duplicados e exige alternativas diferentes", () => {
   const first = image("duplicado");
   const second = image("duplicado");
@@ -100,6 +229,17 @@ test("rejeita comparacao sem dois ids distintos", () => {
 
   assert.equal(result.valid, false);
   assert.match(result.errors.join(" "), /items deve conter dois ids distintos/i);
+});
+
+test("rejeita ciclos entre comparacoes no manifesto", () => {
+  const base = image("base");
+  const left = comparison("esquerda", ["base", "direita"]);
+  const right = comparison("direita", ["base", "esquerda"]);
+
+  const result = validateMediaManifest([base, left, right]);
+
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /ciclo de comparison/i);
 });
 
 test("coleta midias por fase, inclui dependencias e preserva a primeira ordem", () => {
@@ -144,17 +284,77 @@ test("relata ids ausentes de dependencias de comparacao sem duplicar resultados"
 test("mantem preload parcial quando um loader falha", async () => {
   const imageItem = image("imagem");
   const videoItem = video("video");
-  const comparison = { ...image("comparacao"), type: "comparison", items: ["imagem", "video"] };
-  delete comparison.src;
-  delete comparison.thumbnail;
+  const comparisonItem = comparison("comparacao", ["imagem", "video"]);
 
-  const result = await preloadStationMedia([imageItem, videoItem, comparison], {
+  const result = await preloadStationMedia([imageItem, videoItem, comparisonItem], {
     image: async (item) => item.id,
     video: async () => { throw new Error("arquivo indisponivel"); }
   });
 
-  assert.deepEqual(result.loaded.map((item) => item.id), ["imagem", "comparacao"]);
-  assert.equal(result.failures.length, 1);
-  assert.equal(result.failures[0].item.id, "video");
+  assert.deepEqual(result.loaded.map((item) => item.id), ["imagem"]);
+  assert.deepEqual(result.failures.map((failure) => failure.item.id), ["video", "comparacao"]);
   assert.match(result.failures[0].error.message, /arquivo indisponivel/i);
+});
+
+test("preload encerra ciclos de comparacao sem recursao infinita", async () => {
+  const base = image("base");
+  const left = comparison("esquerda", ["base", "direita"]);
+  const right = comparison("direita", ["base", "esquerda"]);
+
+  const result = await preloadStationMedia([base, left, right], {
+    image: async (item) => item.id
+  });
+
+  assert.deepEqual(result.loaded.map((item) => item.id), ["base"]);
+  assert.deepEqual(result.failures.map((failure) => failure.item.id).sort(), ["direita", "esquerda"]);
+  assert.match(result.failures.map((failure) => failure.error.message).join(" "), /ciclo de comparison/i);
+});
+
+test("renderiza dependencias de comparacao somente dentro da comparacao", () => {
+  const previousDocument = global.document;
+  const document = createFakeDocument();
+  global.document = document;
+  try {
+    const left = image("esquerda");
+    const right = image("direita");
+    const item = comparison("comparacao", ["esquerda", "direita"]);
+    const container = document.createElement("div");
+
+    renderPhaseMedia(container, [item, left, right]);
+    assert.equal(findByClass(container, "practice-media-frame").length, 2);
+
+    renderPhaseMedia(container, [item, left, right], { phaseMediaIds: ["esquerda"] });
+    assert.equal(findByClass(container, "practice-media-frame").length, 3);
+  } finally {
+    global.document = previousDocument;
+  }
+});
+
+test("mantem toolbar fora da area ampliada e fecha modal ao sair de tela cheia", () => {
+  const previousDocument = global.document;
+  const document = createFakeDocument();
+  global.document = document;
+  try {
+    const container = document.createElement("div");
+    renderPhaseMedia(container, [image("imagem")]);
+
+    const frame = findByClass(container, "practice-media-frame")[0];
+    const stage = findByClass(frame, "practice-media-stage")[0];
+    const toolbar = findByClass(frame, "practice-media-toolbar")[0];
+    assert.equal(stage.parentNode, frame);
+    assert.equal(toolbar.parentNode, frame);
+    assert.equal(stage.childNodes.includes(toolbar), false);
+
+    const fullscreen = findByClass(toolbar, "practice-media-control")
+      .find((button) => button.title === "Abrir em tela cheia");
+    fullscreen.dispatch("click");
+    const modal = findByClass(document.body, "practice-media-modal")[0];
+    assert.equal(document.fullscreenElement, modal);
+
+    document.fullscreenElement = null;
+    document.dispatch("fullscreenchange");
+    assert.equal(findByClass(document.body, "practice-media-modal").length, 0);
+  } finally {
+    global.document = previousDocument;
+  }
 });

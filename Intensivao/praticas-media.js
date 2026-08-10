@@ -23,7 +23,9 @@
   }
 
   function isLocalPath(value) {
-    return isNonEmptyString(value) && !/^(?:https?:|\/\/|data:)/i.test(value.trim());
+    if (!isNonEmptyString(value) || value !== value.trim()) return false;
+    if (/\\/.test(value) || /^[a-z][a-z0-9+.-]*:/i.test(value) || value.startsWith("/")) return false;
+    return value.split("/").every((segment) => segment && segment !== "." && segment !== "..");
   }
 
   function isHttpsUrl(value) {
@@ -83,6 +85,34 @@
         errors.push(`${prefix}.items deve conter dois ids distintos`);
       }
     });
+
+    const comparisons = new Map(media
+      .map((item, index) => ({ item, index }))
+      .filter(({ item }) => item && item.type === "comparison" && isNonEmptyString(item.id))
+      .map(({ item, index }) => [item.id, { item, index }]));
+    const states = new Map();
+    const cycleIndexes = new Set();
+
+    function visitComparison(id, trail) {
+      const entry = comparisons.get(id);
+      if (!entry) return;
+      const state = states.get(id);
+      if (state === "visiting") {
+        const cycleStart = trail.indexOf(id);
+        trail.slice(cycleStart).forEach((cycleId) => cycleIndexes.add(comparisons.get(cycleId).index));
+        return;
+      }
+      if (state === "visited") return;
+      states.set(id, "visiting");
+      const nextTrail = trail.concat(id);
+      (Array.isArray(entry.item.items) ? entry.item.items : []).forEach((dependencyId) => {
+        if (comparisons.has(dependencyId)) visitComparison(dependencyId, nextTrail);
+      });
+      states.set(id, "visited");
+    }
+
+    comparisons.forEach((_, id) => visitComparison(id, []));
+    cycleIndexes.forEach((index) => errors.push(`media[${index}].items contem ciclo de comparison`));
 
     return { valid: errors.length === 0, errors, media };
   }
@@ -173,28 +203,39 @@
       if (!failures.some((failure) => failure.item === item)) failures.push({ item, error });
     }
 
-    async function loadItem(item) {
+    function loadItem(item, visiting) {
+      const path = Array.isArray(visiting) ? visiting : [];
+      if (path.includes(item.id)) {
+        recordFailure(item, new Error(`Ciclo de comparison: ${path.concat(item.id).join(" -> ")}`));
+        return Promise.resolve(false);
+      }
       if (loading.has(item.id)) return loading.get(item.id);
-      const pending = (async () => {
+
+      let finish;
+      const pending = new Promise((resolve) => { finish = resolve; });
+      loading.set(item.id, pending);
+      (async () => {
         try {
           if (item.type === "comparison") {
             const dependencies = Array.isArray(item.items) ? item.items : [];
-            await Promise.all(dependencies.map((id) => {
+            const results = await Promise.all(dependencies.map((id) => {
               const dependency = byId.get(id);
-              if (!dependency) return Promise.reject(new Error(`Midia ausente: ${id}`));
-              return loadItem(dependency);
+              if (!dependency) return Promise.resolve(false);
+              return loadItem(dependency, path.concat(item.id));
             }));
+            if (!results.every(Boolean)) throw new Error(`Falha ao carregar dependencias: ${item.id}`);
           } else if (item.type === "video") {
             await loadVideo(item);
           } else {
             await loadImage(item);
           }
           recordLoaded(item);
+          finish(true);
         } catch (error) {
           recordFailure(item, error instanceof Error ? error : new Error(String(error)));
+          finish(false);
         }
       })();
-      loading.set(item.id, pending);
       return pending;
     }
 
@@ -225,7 +266,10 @@
     const controls = root.document.createElement("div");
     controls.className = "practice-media-toolbar";
     let scale = 1;
-    const applyScale = () => { image.style.transform = `scale(${scale})`; };
+    const applyScale = () => {
+      image.style.width = `${scale * 100}%`;
+      image.style.maxWidth = scale === 1 ? "100%" : "none";
+    };
     const reset = () => { scale = 1; applyScale(); };
     controls.appendChild(createIconButton("Ampliar imagem", "+", () => {
       scale = Math.min(3, Number((scale + 0.25).toFixed(2)));
@@ -243,16 +287,32 @@
       modal.setAttribute("aria-modal", "true");
       const modalContent = root.document.createElement("div");
       modalContent.className = "practice-media-modal-content";
+      const modalToolbar = root.document.createElement("div");
+      modalToolbar.className = "practice-media-modal-toolbar";
       const modalImage = root.document.createElement("img");
       modalImage.src = item.src;
       modalImage.alt = image.alt;
+      let closed = false;
+      const closeModal = () => {
+        if (closed) return;
+        closed = true;
+        root.document.removeEventListener("fullscreenchange", onFullscreenChange);
+        if (root.document.fullscreenElement === modal && typeof root.document.exitFullscreen === "function") {
+          root.document.exitFullscreen().catch(() => {});
+        }
+        modal.remove();
+      };
+      const onFullscreenChange = () => {
+        if (root.document.fullscreenElement !== modal) closeModal();
+      };
+      const close = createIconButton("Fechar tela cheia", "x", closeModal);
+      modalToolbar.appendChild(close);
+      modalContent.appendChild(modalToolbar);
       modalContent.appendChild(modalImage);
-      const close = createIconButton("Fechar tela cheia", "x", () => modal.remove());
-      close.classList.add("practice-media-modal-close");
-      modalContent.appendChild(close);
       modal.appendChild(modalContent);
-      modal.addEventListener("click", (event) => { if (event.target === modal) modal.remove(); });
+      modal.addEventListener("click", (event) => { if (event.target === modal) closeModal(); });
       root.document.body.appendChild(modal);
+      root.document.addEventListener("fullscreenchange", onFullscreenChange);
       if (typeof modal.requestFullscreen === "function") modal.requestFullscreen().catch(() => {});
     }));
     controls.appendChild(createIconButton("Fechar visualizador", "x", () => frame.remove()));
@@ -277,7 +337,10 @@
       const image = root.document.createElement("img");
       image.src = item.src;
       image.alt = alt;
-      frame.appendChild(image);
+      const stage = root.document.createElement("div");
+      stage.className = "practice-media-stage";
+      stage.appendChild(image);
+      frame.appendChild(stage);
       addImageControls(frame, image, item);
     }
     if (reviewMode) appendText(frame, "figcaption", "practice-media-caption", item.reviewCaption);
@@ -290,6 +353,14 @@
     const list = Array.isArray(media) ? media.filter((item) => item && typeof item === "object") : [];
     const byId = new Map(list.filter((item) => isNonEmptyString(item.id)).map((item) => [item.id, item]));
     const reviewMode = Boolean(options && options.reviewMode);
+    const phaseMediaIds = new Set(
+      options && Array.isArray(options.phaseMediaIds)
+        ? options.phaseMediaIds.filter(isNonEmptyString)
+        : []
+    );
+    const comparisonDependencyIds = new Set(list
+      .filter((item) => item.type === "comparison" && Array.isArray(item.items))
+      .flatMap((item) => item.items));
     const gallery = root.document.createElement("section");
     gallery.className = "practice-media-gallery";
 
@@ -308,6 +379,7 @@
         }
         return;
       }
+      if (comparisonDependencyIds.has(item.id) && !phaseMediaIds.has(item.id)) return;
       gallery.appendChild(createMediaFrame(item, reviewMode));
     });
 

@@ -17,7 +17,18 @@
   overflow: visible;
 }
 
-.practice-media-frame img,
+.practice-media-stage,
+.practice-media-frame video,
+.practice-media-modal-content,
+.practice-media-modal img {
+  min-width: 0;
+}
+
+.practice-media-stage {
+  overflow: auto;
+}
+
+.practice-media-stage img,
 .practice-media-frame video,
 .practice-media-modal img {
   display: block;
@@ -25,9 +36,9 @@
   height: auto;
 }
 
-.practice-media-frame img {
-  transform-origin: center top;
-  transition: transform 160ms ease;
+.practice-media-stage img {
+  width: 100%;
+  transition: width 160ms ease;
 }
 
 .practice-media-toolbar {
@@ -81,7 +92,7 @@
 
 .practice-media-modal {
   position: fixed;
-  z-index: 1000;
+  z-index: 2000;
   inset: 0;
   display: grid;
   place-items: center;
@@ -90,19 +101,20 @@
 }
 
 .practice-media-modal-content {
-  position: relative;
+  display: grid;
+  gap: 10px;
   max-width: 100%;
   max-height: 100%;
 }
 
-.practice-media-modal img {
-  max-height: calc(100vh - 48px);
+.practice-media-modal-toolbar {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.practice-media-modal-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+.practice-media-modal img {
+  max-height: calc(100vh - 48px);
+  margin: 0 auto;
 }
 
 @media (max-width: 640px) {
