@@ -31,6 +31,7 @@ test("cria sessao preparada e avanca fases sem ultrapassar o fim", () => {
 
   assert.equal(session.status, "ready");
   assert.equal(session.phaseIndex, 0);
+  assert.equal(session.mode, "directed");
   assert.equal(session.startedAtMs, null);
 
   const first = advancePracticePhase(session);

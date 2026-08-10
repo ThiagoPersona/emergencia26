@@ -23,7 +23,14 @@
     dashboardSyncStarted: false
   };
 
+  const sessionModule = root && root.TemePracticeSession
+    ? root.TemePracticeSession
+    : (typeof require === "function" ? require("./praticas-session.js") : null);
+
   function createPracticeSession(station, createdAtMs) {
+    if (sessionModule && typeof sessionModule.createSession === "function") {
+      return sessionModule.createSession(station, "directed", createdAtMs);
+    }
     return {
       stationId: station.id,
       stationVersion: station.version,
@@ -39,6 +46,9 @@
     const station = state.station && state.station.id === session.stationId
       ? state.station
       : null;
+    if (sessionModule && typeof sessionModule.movePhase === "function") {
+      return sessionModule.movePhase(session, station || { phases: [{}, {}] }, "next");
+    }
     const phaseCount = station ? station.phases.length : 2;
     return {
       ...session,
@@ -47,6 +57,9 @@
   }
 
   function getPracticePrimaryAction(session, station) {
+    if (sessionModule && typeof sessionModule.getPrimaryAction === "function") {
+      return sessionModule.getPrimaryAction(session, station);
+    }
     const isLastPhase = session.phaseIndex >= station.phases.length - 1;
     return isLastPhase
       ? { action: "finish", label: "Finalizar estação" }
@@ -54,6 +67,15 @@
   }
 
   function getRemainingSeconds(session, nowMs, durationSeconds) {
+    if (sessionModule && typeof sessionModule.getRemainingSeconds === "function") {
+      const currentStation = state.station && state.station.id === session.stationId
+        ? state.station
+        : { durationSeconds: Number.isFinite(durationSeconds) ? durationSeconds : 300 };
+      const stationForClock = Number.isFinite(durationSeconds)
+        ? { ...currentStation, durationSeconds }
+        : currentStation;
+      return sessionModule.getRemainingSeconds(session, stationForClock, nowMs);
+    }
     const duration = Number.isFinite(durationSeconds)
       ? durationSeconds
       : (state.station && state.station.id === session.stationId
