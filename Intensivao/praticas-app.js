@@ -1,5 +1,6 @@
 (function(root, factory) {
   const api = factory(root);
+  api.createPracticeApp = factory;
   if (typeof module === "object" && module.exports) module.exports = api;
   if (root) root.TemePracticeApp = api;
 })(typeof globalThis !== "undefined" ? globalThis : this, function(root) {

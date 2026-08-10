@@ -143,3 +143,76 @@ git diff --check
 ### Concerns
 
 - The legacy metadata fallback is temporary by design and must be retired when the schema-v2 index becomes definitive. The precedence test protects the migration path.
+
+## Fix Round 2
+
+### Status
+
+DONE_WITH_CONCERNS
+
+### Coverage Added
+
+- Added an isolated minimal DOM, storage, fetch, interval, microphone, and `MediaRecorder` harness without external dependencies.
+- Dispatches the native radio `change` event and verifies that `mount()` persists the new mode, reloads the selection, and re-renders the checked input.
+- Dispatches the `Sortear outra` click in directed mode and verifies that the next filtered entry loads while the persisted exam cycle remains unchanged.
+- Holds the station request pending to verify that start remains visible and disabled, rejects a disabled click, and becomes enabled only after preload reaches ready.
+- Dispatches the retry click after a failed station request and verifies that a second load occurs and enables start after success.
+- Starts a real handler path with the fake recorder, dispatches the next-phase click, and verifies that `startedAtMs`, recorder identity/state, and the single active interval are preserved.
+- Runs `mount()` with a valid running draft and verifies phase restoration, the resumed interval, the no-audio notice, and the absence of a recorder instance.
+
+### TDD
+
+#### RED
+
+The six interaction tests were added before the production hook. The app suite reported 29 tests: 23 passed and 6 failed. Every new test failed with the expected `createPracticeApp is not a function`, proving that the existing singleton could not yet be instantiated with an isolated test root.
+
+```powershell
+node --test Intensivao/tests/praticas-app.test.js
+```
+
+#### GREEN
+
+The existing module factory is now exported as `createPracticeApp`; no application behavior was duplicated or moved into test-only production code.
+
+- App suite: 29 passed, 0 failed.
+- Focused app/pages/media suite: 50 passed, 0 failed.
+- Full suite: 86 passed, 0 failed.
+
+### Files
+
+- `Intensivao/praticas-app.js`: exposes the existing app factory for isolated instances.
+- `Intensivao/tests/praticas-app.test.js`: adds the minimal fake DOM/root harness and six handler-level integration tests.
+- `.superpowers/sdd/2026-08-10-simulador-pratico-visual/task-5b-report.md`: records Fix Round 2.
+
+### Commands And Results
+
+```powershell
+node --check Intensivao/praticas-app.js
+node --test Intensivao/tests/praticas-app.test.js
+node --test Intensivao/tests/praticas-app.test.js Intensivao/tests/pages-workflow.test.js Intensivao/tests/praticas-media.test.js
+node --test Intensivao/tests/*.test.js
+git diff --check
+```
+
+- Syntax check passed.
+- App suite passed 29/29.
+- Focused suite passed 50/50.
+- Full suite passed 86/86.
+- Diff check passed; Git emitted only LF/CRLF conversion warnings.
+
+### Decisions
+
+- The harness drives the actual `renderSetup()`, `renderRunning()`, `mount()`, and registered event listeners. It does not copy selection, preload, retry, session, recorder, timer, or restoration logic.
+- `createPracticeApp` references the UMD factory already used to create the browser singleton, keeping production and test instances behaviorally identical.
+- The fake DOM implements only selectors and element behavior touched by these setup/running scenarios; media, authentication, correction, report, and history contracts remain covered by their existing tests.
+
+### Self-Review
+
+- Confirmed every requested scenario dispatches a real `change` or `click`, or invokes the exported real `mount()` entry point.
+- Confirmed phase navigation does not create a second recorder or interval and preserves the serialized start timestamp.
+- Confirmed the production diff does not alter timer, recording, preload, selection, retry, or draft restoration logic.
+- Confirmed no JSON, media manifest, backend, or `Praticas/` file was modified.
+
+### Concerns
+
+- The temporary legacy metadata fallback from Fix Round 1 remains the only known concern; this round introduces no new runtime concern.
