@@ -7,9 +7,27 @@
 
   const STORAGE_KEY = "teme26-practice-attempts-v1";
   const DRAFT_KEY = "teme26-practice-draft-v2";
+  const CYCLE_KEY = "teme26-practice-cycle-v2";
+  const PREFERENCES_KEY = "teme26-practice-setup-v2";
+  const DEFAULT_FILTERS = {
+    domain: "",
+    difficulty: "",
+    competency: "",
+    unattempted: false
+  };
   const state = {
+    stationEntries: [],
     stations: [],
     station: null,
+    selectedEntry: null,
+    mode: "directed",
+    filters: { ...DEFAULT_FILTERS },
+    cycleIds: [],
+    mediaManifest: [],
+    stationMedia: null,
+    mediaStatus: "idle",
+    loadError: "",
+    loadToken: 0,
     session: null,
     timerId: null,
     mediaRecorder: null,
@@ -17,6 +35,7 @@
     audioChunks: [],
     audioBlob: null,
     audioUrl: null,
+    runtimeNotice: "",
     transcript: "",
     lastAttempt: null,
     apiStatus: "idle",
@@ -26,12 +45,28 @@
   const sessionModule = root && root.TemePracticeSession
     ? root.TemePracticeSession
     : (typeof require === "function" ? require("./praticas-session.js") : null);
+  const catalogModule = root && root.TemePracticeCatalog
+    ? root.TemePracticeCatalog
+    : (typeof require === "function" ? require("./praticas-catalog.js") : null);
+  const mediaModule = root && root.TemePracticeMedia
+    ? root.TemePracticeMedia
+    : (typeof require === "function" ? require("./praticas-media.js") : null);
+  const utilsModule = root && root.TemePracticeUtils
+    ? root.TemePracticeUtils
+    : (typeof require === "function" ? require("./praticas-utils.js") : null);
 
   function getPublicStationView(station, mode) {
     if (mode === "exam") {
       return {
         kicker: "MODO PROVA",
         title: station && station.examTitle ? station.examTitle : "Estação sorteada",
+        showDiagnosticMeta: false
+      };
+    }
+    if (mode === "review") {
+      return {
+        kicker: "REVISÃO",
+        title: station && station.examTitle ? station.examTitle : "Estação recomendada",
         showDiagnosticMeta: false
       };
     }
@@ -67,8 +102,12 @@
     return phaseMedia[phaseIndex] || { media: [], directIds: [], missingIds: [] };
   }
 
-  function getRunningMediaOptions() {
-    return { reviewMode: false };
+  function getRunningMediaOptions(phaseMedia) {
+    if (!phaseMedia) return { reviewMode: false };
+    return {
+      reviewMode: false,
+      directIds: phaseMedia && Array.isArray(phaseMedia.directIds) ? phaseMedia.directIds : []
+    };
   }
 
   function getResultMediaOptions() {
@@ -97,13 +136,189 @@
     };
   }
 
-  function createPracticeSession(station, createdAtMs) {
+  function normalizePracticeMode(mode) {
+    return ["exam", "directed", "review"].includes(mode) ? mode : "directed";
+  }
+
+  function normalizePracticeFilters(filters) {
+    const source = filters && typeof filters === "object" ? filters : {};
+    return {
+      domain: typeof source.domain === "string" ? source.domain : "",
+      difficulty: typeof source.difficulty === "string" ? source.difficulty : "",
+      competency: typeof source.competency === "string" ? source.competency : "",
+      unattempted: source.unattempted === true
+    };
+  }
+
+  function parseStoredValue(storage, key, fallback) {
+    if (!storage || typeof storage.getItem !== "function") return fallback;
+    try {
+      const value = storage.getItem(key);
+      return value == null ? fallback : JSON.parse(value);
+    } catch {
+      return fallback;
+    }
+  }
+
+  function savePracticeSetup(storage, setup) {
+    if (!storage || typeof storage.setItem !== "function") return;
+    const source = setup && typeof setup === "object" ? setup : {};
+    storage.setItem(CYCLE_KEY, JSON.stringify(
+      Array.isArray(source.cycleIds) ? Array.from(new Set(source.cycleIds.filter((id) => typeof id === "string"))) : []
+    ));
+    storage.setItem(PREFERENCES_KEY, JSON.stringify({
+      mode: normalizePracticeMode(source.mode),
+      filters: normalizePracticeFilters(source.filters)
+    }));
+  }
+
+  function restorePracticeSetup(storage) {
+    const preferences = parseStoredValue(storage, PREFERENCES_KEY, {});
+    const cycleIds = parseStoredValue(storage, CYCLE_KEY, []);
+    return {
+      mode: normalizePracticeMode(preferences && preferences.mode),
+      filters: normalizePracticeFilters(preferences && preferences.filters),
+      cycleIds: Array.isArray(cycleIds)
+        ? Array.from(new Set(cycleIds.filter((id) => typeof id === "string")))
+        : []
+    };
+  }
+
+  function getFetch(fetchFn) {
+    if (typeof fetchFn === "function") return fetchFn;
+    if (root && typeof root.fetch === "function") return root.fetch.bind(root);
+    throw new Error("Fetch indisponível neste navegador.");
+  }
+
+  async function loadJson(url, fetchFn, errorMessage) {
+    const response = await getFetch(fetchFn)(url, { cache: "no-store" });
+    if (!response || !response.ok) throw new Error(errorMessage);
+    return response.json();
+  }
+
+  function isStationEntry(entry) {
+    return Boolean(entry) && typeof entry === "object" &&
+      typeof entry.id === "string" && entry.id.length > 0 &&
+      typeof entry.file === "string" && entry.file.length > 0;
+  }
+
+  async function loadStationIndex(fetchFn) {
+    const index = await loadJson(
+      `${stationBasePath()}index.json`,
+      fetchFn,
+      "Não foi possível carregar o índice de estações."
+    );
+    if (!Array.isArray(index) || !index.every(isStationEntry)) {
+      throw new Error("O índice de estações está inválido.");
+    }
+    return index;
+  }
+
+  async function loadMediaManifest(fetchFn, media) {
+    const manifest = await loadJson(
+      "assets/praticas/media.json",
+      fetchFn,
+      "Não foi possível carregar o manifesto de mídia."
+    );
+    const renderer = media || mediaModule;
+    if (!renderer || typeof renderer.validateMediaManifest !== "function") {
+      throw new Error("O visualizador de mídia não está disponível.");
+    }
+    const validation = renderer.validateMediaManifest(manifest);
+    if (!validation.valid) throw new Error(`Manifesto de mídia inválido: ${validation.errors.join("; ")}`);
+    return manifest;
+  }
+
+  async function loadStation(entry, options) {
+    if (!isStationEntry(entry)) throw new Error("A estação selecionada não está disponível.");
+    const dependencies = options && typeof options === "object" ? options : {};
+    const validator = dependencies.utils || utilsModule;
+    const renderer = dependencies.media || mediaModule;
+    if (!validator || typeof validator.validateStation !== "function") {
+      throw new Error("O validador de estações não está disponível.");
+    }
+    if (!renderer || typeof renderer.collectStationMedia !== "function" ||
+        typeof renderer.preloadStationMedia !== "function") {
+      throw new Error("O visualizador de mídia não está disponível.");
+    }
+
+    const station = await loadJson(
+      `${stationBasePath()}${entry.file}`,
+      dependencies.fetch,
+      `Falha ao carregar ${entry.file}.`
+    );
+    const validation = validator.validateStation(station, {
+      requireVersion2: entry.schemaVersion === 2
+    });
+    if (!validation.valid) throw new Error(`${entry.id}: ${validation.errors.join("; ")}`);
+
+    const stationMedia = renderer.collectStationMedia(
+      station,
+      Object.prototype.hasOwnProperty.call(dependencies, "mediaManifest")
+        ? dependencies.mediaManifest
+        : state.mediaManifest
+    );
+    if (stationMedia.missingIds.length) {
+      throw new Error(`Recurso ausente: ${stationMedia.missingIds.join(", ")}.`);
+    }
+    const preload = await renderer.preloadStationMedia(stationMedia.media);
+    if (preload.failures.length) {
+      throw new Error(`Recurso ausente: ${preload.failures.map((failure) => failure.item.id).join(", ")}.`);
+    }
+    return { station, stationMedia, mediaStatus: "ready" };
+  }
+
+  function selectStationEntry(entries, mode, filters, attempts, cycleIds, randomFn) {
+    const selectedMode = normalizePracticeMode(mode);
+    const list = Array.isArray(entries) ? entries : [];
+    const catalog = catalogModule;
+    if (!catalog) return { entry: null, cycleIds: [] };
+
+    if (selectedMode === "exam") {
+      const selection = catalog.pickStation(list, cycleIds, randomFn);
+      return { entry: selection.station, cycleIds: selection.cycleIds };
+    }
+    if (selectedMode === "review") {
+      const related = catalog.getRecommendedStations(list, attempts, 3);
+      return { entry: related[0] || null, cycleIds: Array.isArray(cycleIds) ? cycleIds : [] };
+    }
+
+    const selectedFilters = normalizePracticeFilters(filters);
+    const filtered = catalog.filterStations(list, {
+      domain: selectedFilters.domain,
+      difficulty: selectedFilters.difficulty,
+      tag: selectedFilters.competency,
+      unattempted: selectedFilters.unattempted
+    }, attempts);
+    return { entry: filtered[0] || null, cycleIds: Array.isArray(cycleIds) ? cycleIds : [] };
+  }
+
+  function getRelatedStationEntries(entries, attempts) {
+    if (!catalogModule || typeof catalogModule.getRecommendedStations !== "function") return [];
+    return catalogModule.getRecommendedStations(entries, attempts, 3);
+  }
+
+  function enrichStationEntry(entry, station) {
+    return {
+      ...entry,
+      title: station.title,
+      examTitle: station.examTitle,
+      domain: station.domain,
+      domains: station.domains,
+      difficulty: station.difficulty,
+      competencies: station.competencies,
+      tags: station.tags
+    };
+  }
+
+  function createPracticeSession(station, createdAtMs, mode) {
     if (sessionModule && typeof sessionModule.createSession === "function") {
-      return sessionModule.createSession(station, "directed", createdAtMs);
+      return sessionModule.createSession(station, mode || state.mode, createdAtMs);
     }
     return {
       stationId: station.id,
       stationVersion: station.version,
+      mode: normalizePracticeMode(mode || state.mode),
       status: "ready",
       phaseIndex: 0,
       createdAtMs: Number.isFinite(createdAtMs) ? createdAtMs : Date.now(),
@@ -113,16 +328,23 @@
   }
 
   function advancePracticePhase(session) {
+    return movePracticePhase(session, "next");
+  }
+
+  function movePracticePhase(session, direction) {
     const station = state.station && state.station.id === session.stationId
       ? state.station
       : null;
     if (sessionModule && typeof sessionModule.movePhase === "function") {
-      return sessionModule.movePhase(session, station || { phases: [{}, {}] }, "next");
+      return sessionModule.movePhase(session, station || { phases: [{}, {}] }, direction);
     }
     const phaseCount = station ? station.phases.length : 2;
     return {
       ...session,
-      phaseIndex: Math.min(session.phaseIndex + 1, Math.max(0, phaseCount - 1))
+      phaseIndex: Math.max(0, Math.min(
+        session.phaseIndex + (direction === "previous" ? -1 : direction === "next" ? 1 : 0),
+        Math.max(0, phaseCount - 1)
+      ))
     };
   }
 
@@ -241,22 +463,91 @@
   }
 
   async function loadStations() {
-    const indexResponse = await fetch(`${stationBasePath()}index.json`, { cache: "no-store" });
-    if (!indexResponse.ok) throw new Error("Não foi possível carregar o índice de estações.");
-    const index = await indexResponse.json();
-    const stations = await Promise.all(index.map(async (entry) => {
-      const response = await fetch(`${stationBasePath()}${entry.file}`, { cache: "no-store" });
-      if (!response.ok) throw new Error(`Falha ao carregar ${entry.file}.`);
-      return response.json();
-    }));
-    const utils = root.TemePracticeUtils;
-    stations.forEach((station) => {
-      const validation = utils.validateStation(station);
-      if (!validation.valid) throw new Error(`${station.id}: ${validation.errors.join("; ")}`);
-    });
-    state.stations = stations;
-    state.station = stations[0] || null;
-    return stations;
+    const entries = await loadStationIndex();
+    state.stationEntries = entries;
+    state.stations = entries;
+    return entries;
+  }
+
+  function saveCurrentSetup() {
+    if (!root || !root.localStorage) return;
+    savePracticeSetup(root.localStorage, state);
+  }
+
+  function getStationEntry(stationId) {
+    return state.stationEntries.find((entry) => entry.id === stationId) || null;
+  }
+
+  function updateStationEntry(entry, station) {
+    const enriched = enrichStationEntry(entry, station);
+    state.stationEntries = state.stationEntries.map((candidate) => (
+      candidate.id === entry.id ? enriched : candidate
+    ));
+    state.stations = state.stationEntries;
+    state.selectedEntry = enriched;
+    return enriched;
+  }
+
+  async function loadSelectedStation(entry) {
+    const requestToken = state.loadToken + 1;
+    state.loadToken = requestToken;
+    state.selectedEntry = entry || null;
+    state.station = null;
+    state.stationMedia = null;
+    state.mediaStatus = "loading";
+    state.loadError = "";
+    renderSetup();
+
+    try {
+      const loaded = await loadStation(entry);
+      if (requestToken !== state.loadToken) return null;
+      updateStationEntry(entry, loaded.station);
+      state.station = loaded.station;
+      state.stationMedia = loaded.stationMedia;
+      state.mediaStatus = loaded.mediaStatus;
+      state.session = createPracticeSession(state.station, Date.now(), state.mode);
+      renderSetup();
+      return loaded.station;
+    } catch (error) {
+      if (requestToken !== state.loadToken) return null;
+      state.mediaStatus = "error";
+      state.loadError = error && error.message ? error.message : "Recurso ausente.";
+      renderSetup();
+      return null;
+    }
+  }
+
+  function selectEntryForCurrentMode(randomFn) {
+    const selection = selectStationEntry(
+      state.stationEntries,
+      state.mode,
+      state.filters,
+      getStoredAttempts(),
+      state.cycleIds,
+      randomFn
+    );
+    state.cycleIds = selection.cycleIds;
+    saveCurrentSetup();
+    return selection.entry;
+  }
+
+  async function loadCurrentModeSelection() {
+    const entry = selectEntryForCurrentMode();
+    if (!entry) {
+      state.station = null;
+      state.stationMedia = null;
+      state.mediaStatus = "error";
+      state.loadError = "Nenhuma estação atende aos filtros atuais.";
+      renderSetup();
+      return;
+    }
+    await loadSelectedStation(entry);
+  }
+
+  async function setPracticeMode(mode) {
+    state.mode = normalizePracticeMode(mode);
+    saveCurrentSetup();
+    await loadCurrentModeSelection();
   }
 
   function cleanupRecording() {
@@ -310,44 +601,146 @@
     mount.innerHTML = `<div class="practice-alert practice-alert-error"><strong>Não foi possível abrir o simulador.</strong><span>${escapeHtml(message)}</span></div>`;
   }
 
+  function getEntryValues(field) {
+    const values = new Set();
+    state.stationEntries.forEach((entry) => {
+      const source = field === "competency"
+        ? [].concat(Array.isArray(entry.competencies) ? entry.competencies : [], Array.isArray(entry.tags) ? entry.tags : [])
+        : field === "domain"
+          ? [].concat(Array.isArray(entry.domains) ? entry.domains : [], entry.domain || [])
+          : [entry.difficulty];
+      source.forEach((value) => {
+        if (typeof value === "string" && value.trim()) values.add(value);
+      });
+    });
+    return Array.from(values).sort((left, right) => left.localeCompare(right, "pt-BR"));
+  }
+
+  function renderSelectOptions(values, selected, emptyLabel) {
+    return [`<option value="">${escapeHtml(emptyLabel)}</option>`]
+      .concat(values.map((value) => (
+        `<option value="${escapeHtml(value)}" ${value === selected ? "selected" : ""}>${escapeHtml(value)}</option>`
+      )))
+      .join("");
+  }
+
+  function getEntryLabel(entry, index) {
+    return entry && entry.title ? entry.title : `Estação ${index + 1}`;
+  }
+
   function renderSetup() {
     const mount = root.document && root.document.getElementById("practice-simulator");
-    if (!mount || !state.station) return;
+    if (!mount) return;
+    const station = state.station;
+    const publicView = getPublicStationView(station, state.mode);
+    const startDisabled = areStartActionsDisabled(state.mediaStatus) || !station;
+    const showDiagnosticMeta = station && publicView.showDiagnosticMeta;
+    const relatedIntro = state.mode === "review"
+      ? "A escolha usa seu histórico. Os detalhes da estação aparecem ao iniciar."
+      : "";
+    const statusMessage = state.mediaStatus === "loading"
+      ? "Carregando estação e preparando recursos visuais..."
+      : "";
+    const retryActions = state.mediaStatus === "error" ? `
+      <div class="practice-actions">
+        <button class="practice-button" id="practice-retry-load" type="button">Tentar novamente</button>
+        ${state.stationEntries.length ? `<button class="practice-button practice-button-quiet" id="practice-choose-another" type="button">Sortear outra</button>` : ""}
+      </div>` : "";
+    const directedControls = state.mode === "directed" ? `
+      <form id="practice-filters" class="practice-filter-bar">
+        <label><span>Domínio</span><select name="domain">${renderSelectOptions(getEntryValues("domain"), state.filters.domain, "Todos os domínios")}</select></label>
+        <label><span>Dificuldade</span><select name="difficulty">${renderSelectOptions(getEntryValues("difficulty"), state.filters.difficulty, "Todas as dificuldades")}</select></label>
+        <label><span>Competência</span><select name="competency">${renderSelectOptions(getEntryValues("competency"), state.filters.competency, "Todas as competências")}</select></label>
+        <label class="practice-toggle"><input name="unattempted" type="checkbox" ${state.filters.unattempted ? "checked" : ""}><span>Não realizadas</span></label>
+        <button class="practice-button" type="submit">Aplicar filtros</button>
+      </form>
+      <div class="practice-toolbar">
+        <label for="practice-station">Estação</label>
+        <select id="practice-station" ${state.mediaStatus === "loading" ? "disabled" : ""}>
+          ${state.stationEntries.map((entry, index) => `<option value="${escapeHtml(entry.id)}" ${state.selectedEntry && entry.id === state.selectedEntry.id ? "selected" : ""}>${escapeHtml(getEntryLabel(entry, index))}</option>`).join("")}
+        </select>
+      </div>` : "";
+
     mount.innerHTML = `
-      <section class="practice-shell">
-        <div class="practice-toolbar">
-          <label for="practice-station">Estação</label>
-          <select id="practice-station">
-            ${state.stations.map((station) => `<option value="${escapeHtml(station.id)}" ${station.id === state.station.id ? "selected" : ""}>${escapeHtml(station.title)}</option>`).join("")}
-          </select>
+      <section class="practice-shell practice-setup">
+        <div class="practice-mode-control" role="radiogroup" aria-label="Modo de prática">
+          ${[
+            ["exam", "Modo prova"],
+            ["directed", "Treino dirigido"],
+            ["review", "Revisão"]
+          ].map(([mode, label]) => `<button type="button" class="practice-mode-option ${state.mode === mode ? "is-active" : ""}" role="radio" aria-checked="${state.mode === mode}" data-practice-mode="${mode}">${label}</button>`).join("")}
         </div>
-        <div class="practice-briefing">
-          <span class="practice-kicker">${escapeHtml(state.station.domain)} · TEME ${escapeHtml(state.station.source.year)}</span>
-          <h2>${escapeHtml(state.station.title)}</h2>
-          <p>${escapeHtml(state.station.briefing)}</p>
-          <div class="practice-meta">
-            <span><strong>05:00</strong> de estação</span>
-            <span><strong>${state.station.checklist.length}</strong> itens</span>
-            <span><strong>100</strong> pontos</span>
+        ${directedControls}
+        ${statusMessage ? `<p class="practice-help" role="status">${statusMessage}</p>` : ""}
+        ${state.mediaStatus === "error" ? `<div class="practice-alert practice-alert-error"><strong>Recurso ausente.</strong><span>${escapeHtml(state.loadError || "Não foi possível preparar a estação.")}</span></div>${retryActions}` : ""}
+        ${station ? `
+          <div class="practice-briefing">
+            <span class="practice-kicker">${escapeHtml(publicView.kicker)}</span>
+            <h2>${escapeHtml(publicView.title)}</h2>
+            ${showDiagnosticMeta ? `<p>${escapeHtml(station.briefing)}</p>` : relatedIntro ? `<p>${escapeHtml(relatedIntro)}</p>` : ""}
+            <div class="practice-meta">
+              <span><strong>${formatClock(station.durationSeconds)}</strong> de estação</span>
+              <span><strong>${station.checklist.length}</strong> itens</span>
+              ${showDiagnosticMeta ? `<span><strong>${escapeHtml(station.difficulty || "não definida")}</strong> dificuldade</span>` : ""}
+            </div>
           </div>
-        </div>
-        <div class="practice-actions">
-          <button class="practice-button practice-button-primary" id="practice-start-record" type="button">Iniciar e gravar</button>
-          <button class="practice-button" id="practice-start-manual" type="button">Iniciar sem áudio</button>
-        </div>
+          <div class="practice-actions">
+            <button class="practice-button practice-button-primary" id="practice-start-record" type="button" ${startDisabled ? "disabled" : ""}>Iniciar e gravar</button>
+            <button class="practice-button" id="practice-start-manual" type="button" ${startDisabled ? "disabled" : ""}>Iniciar sem áudio</button>
+          </div>
+        ` : ""}
         <div id="practice-auth" class="practice-auth"><p>Verificando acesso à correção automática...</p></div>
         <p class="practice-help">O checklist permanece oculto durante a estação. Permita o microfone somente se desejar correção pela fala.</p>
       </section>`;
 
-    mount.querySelector("#practice-station").addEventListener("change", (event) => {
-      state.station = state.stations.find((station) => station.id === event.target.value) || state.stations[0];
-      state.session = createPracticeSession(state.station, Date.now());
-      renderSetup();
+    mount.querySelectorAll("[data-practice-mode]").forEach((button) => {
+      button.addEventListener("click", () => setPracticeMode(button.dataset.practiceMode));
     });
-    mount.querySelector("#practice-start-record").addEventListener("click", () => beginSession(true));
-    mount.querySelector("#practice-start-manual").addEventListener("click", () => beginSession(false));
+    const filterForm = mount.querySelector("#practice-filters");
+    if (filterForm) filterForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const form = new FormData(event.currentTarget);
+      state.filters = normalizePracticeFilters({
+        domain: form.get("domain"),
+        difficulty: form.get("difficulty"),
+        competency: form.get("competency"),
+        unattempted: form.get("unattempted") === "on"
+      });
+      saveCurrentSetup();
+      loadCurrentModeSelection();
+    });
+    const stationSelect = mount.querySelector("#practice-station");
+    if (stationSelect) stationSelect.addEventListener("change", (event) => {
+      const entry = getStationEntry(event.target.value);
+      if (entry) loadSelectedStation(entry);
+    });
+    const retryButton = mount.querySelector("#practice-retry-load");
+    if (retryButton) retryButton.addEventListener("click", () => {
+      if (state.selectedEntry) loadSelectedStation(state.selectedEntry);
+    });
+    const anotherButton = mount.querySelector("#practice-choose-another");
+    if (anotherButton) anotherButton.addEventListener("click", () => {
+      const candidates = state.mode === "directed" && catalogModule
+        ? catalogModule.filterStations(state.stationEntries, {
+          domain: state.filters.domain,
+          difficulty: state.filters.difficulty,
+          tag: state.filters.competency,
+          unattempted: state.filters.unattempted
+        }, getStoredAttempts())
+        : state.stationEntries;
+      const selection = catalogModule && catalogModule.pickStation(candidates, state.cycleIds);
+      if (!selection || !selection.station) return;
+      state.cycleIds = selection.cycleIds;
+      saveCurrentSetup();
+      loadSelectedStation(selection.station);
+    });
+    const recordButton = mount.querySelector("#practice-start-record");
+    if (recordButton) recordButton.addEventListener("click", () => beginSession(true));
+    const manualButton = mount.querySelector("#practice-start-manual");
+    if (manualButton) manualButton.addEventListener("click", () => beginSession(false));
     renderAuthPanel();
   }
+
 
   async function renderAuthPanel() {
     const container = root.document.getElementById("practice-auth");
@@ -403,19 +796,21 @@
   }
 
   async function beginSession(withRecording) {
-    const mount = root.document.getElementById("practice-simulator");
-    state.session = {
-      ...createPracticeSession(state.station, Date.now()),
-      status: "running",
-      startedAtMs: Date.now()
-    };
+    if (!state.station || areStartActionsDisabled(state.mediaStatus)) return;
+    const now = Date.now();
+    const prepared = createPracticeSession(state.station, now, state.mode);
+    state.session = sessionModule && typeof sessionModule.startSession === "function"
+      ? sessionModule.startSession(prepared, now)
+      : { ...prepared, status: "running", startedAtMs: now };
     state.transcript = "";
     state.lastAttempt = null;
+    state.runtimeNotice = "";
+    if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
     if (withRecording) {
       try {
         await startRecording();
       } catch (error) {
-        renderInlineNotice(mount, `Microfone indisponível: ${error.message}. O treino continuará sem áudio.`);
+        state.runtimeNotice = `Microfone indisponível: ${error.message}. O treino continuará sem áudio.`;
       }
     }
     renderRunning();
@@ -431,34 +826,68 @@
     mount.prepend(notice);
   }
 
+  function getRunningStationView(station, mode) {
+    return {
+      kicker: mode === "exam" ? "MODO PROVA" : "ESTAÇÃO EM ANDAMENTO",
+      title: station && station.examTitle ? station.examTitle : "Estação em andamento"
+    };
+  }
+
+  function getVitalEntries(patientState) {
+    const vitals = patientState && patientState.vitals;
+    if (!vitals || typeof vitals !== "object" || Array.isArray(vitals)) return [];
+    return Object.entries(vitals).filter(([label, value]) => (
+      typeof label === "string" && value != null && String(value).trim() !== ""
+    ));
+  }
+
   function renderRunning() {
     const mount = root.document.getElementById("practice-simulator");
     if (!mount || !state.session) return;
     const phase = state.station.phases[state.session.phaseIndex];
     const remaining = getRemainingSeconds(state.session, Date.now(), state.station.durationSeconds);
-    const primaryAction = getPracticePrimaryAction(state.session, state.station);
+    const controls = getPracticePhaseControls(state.session, state.station);
+    const runningView = getRunningStationView(state.station, state.mode);
+    const patientState = phase && phase.patientState;
+    const vitals = getVitalEntries(patientState);
+    const currentPhaseMedia = getCurrentPhaseMedia(state.stationMedia, state.session);
     mount.innerHTML = `
       <section class="practice-shell practice-running">
         <header class="practice-run-header">
-          <div><span class="practice-kicker">${escapeHtml(state.station.title)}</span><strong>Fase ${state.session.phaseIndex + 1}/${state.station.phases.length}</strong></div>
+          <div><span class="practice-kicker">${escapeHtml(runningView.kicker)}</span><strong>${escapeHtml(runningView.title)} · Fase ${state.session.phaseIndex + 1}/${state.station.phases.length}</strong></div>
           <time id="practice-clock" class="practice-clock ${remaining <= 60 ? "is-warning" : ""}" datetime="PT${remaining}S">${formatClock(remaining)}</time>
         </header>
+        ${state.runtimeNotice ? `<div class="practice-alert">${escapeHtml(state.runtimeNotice)}</div>` : ""}
+        ${patientState && patientState.summary ? `<section class="practice-patient-state" aria-label="Estado clínico"><h2>Estado clínico</h2><p>${escapeHtml(patientState.summary)}</p></section>` : ""}
+        ${vitals.length ? `<dl class="practice-vitals">${vitals.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>` : ""}
         <div class="practice-task">
           <span>${escapeHtml(phase.title)}</span>
           <p>${escapeHtml(phase.prompt)}</p>
         </div>
+        <div id="practice-phase-media" aria-label="Mídia da fase atual"></div>
         <div class="practice-actions">
-          <button id="practice-next" class="practice-button practice-button-primary" type="button">${primaryAction.label}</button>
+          <button id="practice-previous" class="practice-button" type="button" ${controls.previous.disabled ? "disabled" : ""}>${controls.previous.label}</button>
+          <button id="practice-next" class="practice-button practice-button-primary" type="button">${controls.primary.label}</button>
           <button id="practice-finish" class="practice-button practice-button-danger" type="button">Encerrar estação</button>
         </div>
         <p class="practice-recording-state">${state.mediaRecorder ? "● Gravação em andamento" : "Treino sem gravação"}</p>
       </section>`;
+    const mediaContainer = mount.querySelector("#practice-phase-media");
+    if (mediaContainer && mediaModule && typeof mediaModule.renderPhaseMedia === "function") {
+      mediaModule.renderPhaseMedia(mediaContainer, currentPhaseMedia, getRunningMediaOptions(currentPhaseMedia));
+    }
+    mount.querySelector("#practice-previous").addEventListener("click", () => {
+      state.session = movePracticePhase(state.session, "previous");
+      if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
+      renderRunning();
+    });
     mount.querySelector("#practice-next").addEventListener("click", () => {
-      if (primaryAction.action === "finish") {
+      if (controls.primary.action === "finish") {
         finishSession();
         return;
       }
-      state.session = advancePracticePhase(state.session);
+      state.session = movePracticePhase(state.session, "next");
+      if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
       renderRunning();
     });
     mount.querySelector("#practice-finish").addEventListener("click", finishSession);
@@ -479,6 +908,7 @@
     if (!state.session || state.session.status !== "running") return;
     root.clearInterval(state.timerId);
     state.session = { ...state.session, status: "review", completedAtMs: Date.now() };
+    if (root.localStorage) clearPracticeDraft(root.localStorage);
     if (state.mediaRecorder && state.mediaRecorder.state !== "inactive") stopRecording();
     else renderReview();
   }
@@ -581,6 +1011,7 @@
     const attempt = state.lastAttempt;
     if (!mount || !attempt) return;
     const score = Number.isFinite(attempt.finalPercent) ? attempt.finalPercent : attempt.provisionalPercent;
+    const relatedStations = getRelatedStationEntries(state.stationEntries, getStoredAttempts());
     mount.innerHTML = `
       <section class="practice-shell">
         <div class="practice-result-head">
@@ -608,14 +1039,36 @@
               ${evaluation.rationale ? `<small>${escapeHtml(evaluation.rationale)}</small>` : ""}
             </article>`).join("")}
         </div>
+        <section class="practice-result-media" aria-label="Mídias revisadas da estação">
+          <h3>Revisão visual</h3>
+          <div id="practice-result-media"></div>
+        </section>
+        ${relatedStations.length ? `<section class="practice-related-stations" aria-label="Estações relacionadas"><h3>Estações relacionadas</h3><div class="practice-related-actions">${relatedStations.map((entry, index) => `<button class="practice-button" type="button" data-related-station="${escapeHtml(entry.id)}">${escapeHtml(getEntryLabel(entry, index))}</button>`).join("")}</div></section>` : ""}
         <div class="practice-actions">
           <button id="practice-download" class="practice-button practice-button-primary" type="button">Baixar relatório</button>
           <button id="practice-repeat" class="practice-button" type="button">Repetir estação</button>
           <a class="practice-button practice-button-quiet" href="#/praticas/DESEMPENHO">Ver desempenho</a>
         </div>
       </section>`;
+    const mediaContainer = mount.querySelector("#practice-result-media");
+    if (mediaContainer && mediaModule && typeof mediaModule.renderPhaseMedia === "function") {
+      mediaModule.renderPhaseMedia(
+        mediaContainer,
+        state.stationMedia && Array.isArray(state.stationMedia.media) ? state.stationMedia.media : [],
+        getResultMediaOptions()
+      );
+    }
     mount.querySelector("#practice-download").addEventListener("click", () => downloadText(buildPracticeReport(attempt), `treino-${attempt.stationId}.txt`));
     mount.querySelector("#practice-repeat").addEventListener("click", resetSimulator);
+    mount.querySelectorAll("[data-related-station]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const entry = getStationEntry(button.dataset.relatedStation);
+        if (!entry) return;
+        state.mode = "directed";
+        saveCurrentSetup();
+        loadSelectedStation(entry);
+      });
+    });
     const confirmationForm = mount.querySelector("#practice-manual-confirm");
     if (confirmationForm) confirmationForm.addEventListener("submit", confirmManualItems);
   }
@@ -672,8 +1125,10 @@
     cleanupRecording();
     state.audioBlob = null;
     state.audioChunks = [];
+    state.runtimeNotice = "";
     state.transcript = "";
-    state.session = createPracticeSession(state.station, Date.now());
+    if (root.localStorage) clearPracticeDraft(root.localStorage);
+    state.session = state.station ? createPracticeSession(state.station, Date.now(), state.mode) : null;
     renderSetup();
   }
 
@@ -749,15 +1204,60 @@
     }
   }
 
+  async function restoreSavedDraft() {
+    if (!root.localStorage) return false;
+    const raw = root.localStorage.getItem(DRAFT_KEY);
+    if (!raw) return false;
+    let draft;
+    try {
+      draft = JSON.parse(raw);
+    } catch {
+      clearPracticeDraft(root.localStorage);
+      return false;
+    }
+    const entry = getStationEntry(draft && draft.stationId);
+    if (!entry) {
+      clearPracticeDraft(root.localStorage);
+      return false;
+    }
+    state.mode = normalizePracticeMode(draft.mode);
+    await loadSelectedStation(entry);
+    if (!state.station || state.mediaStatus !== "ready") return false;
+    const restored = restorePracticeDraft(raw, state.station, Date.now());
+    if (!restored) {
+      clearPracticeDraft(root.localStorage);
+      return false;
+    }
+    state.session = restored.session;
+    state.audioBlob = restored.audioBlob;
+    state.audioUrl = restored.audioUrl;
+    state.runtimeNotice = restored.notice;
+    renderRunning();
+    root.clearInterval(state.timerId);
+    state.timerId = root.setInterval(updateTimer, 250);
+    return true;
+  }
+
   async function mount() {
     if (!root || !root.document) return;
     state.dashboardSyncStarted = false;
     const simulator = root.document.getElementById("practice-simulator");
     if (simulator) {
       try {
-        if (!state.stations.length) await loadStations();
-        state.session = createPracticeSession(state.station, Date.now());
-        renderSetup();
+        if (!state.stationEntries.length) {
+          const [entries, manifest] = await Promise.all([
+            loadStationIndex(),
+            loadMediaManifest()
+          ]);
+          state.stationEntries = entries;
+          state.stations = entries;
+          state.mediaManifest = manifest;
+          const savedSetup = restorePracticeSetup(root.localStorage);
+          state.mode = savedSetup.mode;
+          state.filters = savedSetup.filters;
+          state.cycleIds = savedSetup.cycleIds;
+        }
+        if (!(await restoreSavedDraft())) await loadCurrentModeSelection();
       } catch (error) {
         renderError(simulator, error.message);
       }
@@ -776,9 +1276,18 @@
     getRunningMediaOptions,
     getResultMediaOptions,
     DRAFT_KEY,
+    CYCLE_KEY,
+    PREFERENCES_KEY,
     savePracticeDraft,
     clearPracticeDraft,
     restorePracticeDraft,
+    loadStationIndex,
+    loadMediaManifest,
+    loadStation,
+    selectStationEntry,
+    getRelatedStationEntries,
+    savePracticeSetup,
+    restorePracticeSetup,
     getRemainingSeconds,
     buildPracticeReport,
     parseStoredAttempts,

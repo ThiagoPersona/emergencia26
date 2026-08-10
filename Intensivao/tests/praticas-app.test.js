@@ -16,9 +16,18 @@ const {
   getRunningMediaOptions,
   getResultMediaOptions,
   DRAFT_KEY,
+  CYCLE_KEY,
+  PREFERENCES_KEY,
   savePracticeDraft,
   clearPracticeDraft,
-  restorePracticeDraft
+  restorePracticeDraft,
+  loadStationIndex,
+  loadMediaManifest,
+  loadStation,
+  selectStationEntry,
+  getRelatedStationEntries,
+  savePracticeSetup,
+  restorePracticeSetup
 } = require("../praticas-app.js");
 
 const station = {
@@ -138,6 +147,12 @@ test("deriva titulo publico por modo sem vazar diagnostico na prova", () => {
   assert.equal(directed.domain, diagnosticStation.domain);
   assert.equal(directed.difficulty, diagnosticStation.difficulty);
   assert.equal(directed.showDiagnosticMeta, true);
+
+  const review = getPublicStationView(diagnosticStation, "review");
+  assert.equal(review.kicker, "REVISÃO");
+  assert.equal(review.showDiagnosticMeta, false);
+  assert.equal(Object.values(review).join(" ").includes(diagnosticStation.title), false);
+  assert.equal(Object.values(review).join(" ").includes(diagnosticStation.domain), false);
 });
 
 test("expoe controles anterior, proximo e finalizar por fase", () => {
@@ -172,6 +187,10 @@ test("usa somente a colecao de midia da fase atual sem interpretacao", () => {
 
   assert.strictEqual(getCurrentPhaseMedia(stationMedia, running), firstPhase);
   assert.deepEqual(getRunningMediaOptions(), { reviewMode: false });
+  assert.deepEqual(getRunningMediaOptions(firstPhase), {
+    reviewMode: false,
+    directIds: ["atual"]
+  });
 });
 
 test("configura a midia do resultado para revisao visual", () => {
@@ -226,4 +245,122 @@ test("restaura rascunho valido sem recuperar audio", () => {
   assert.equal(restored.audioBlob, null);
   assert.equal(restored.audioUrl, null);
   assert.equal(restored.notice, "Sessão restaurada sem a gravação anterior.");
+});
+
+test("carrega somente o indice do catalogo e o manifesto de midia", async () => {
+  const calls = [];
+  const fetchJson = async (url) => {
+    calls.push(url);
+    return {
+      ok: true,
+      json: async () => url.endsWith("index.json")
+        ? [{ id: "station-1", file: "station-1.json" }]
+        : []
+    };
+  };
+
+  const entries = await loadStationIndex(fetchJson);
+  const manifest = await loadMediaManifest(fetchJson, {
+    validateMediaManifest(value) {
+      return { valid: true, errors: [], media: value };
+    }
+  });
+
+  assert.deepEqual(entries, [{ id: "station-1", file: "station-1.json" }]);
+  assert.deepEqual(manifest, []);
+  assert.deepEqual(calls, [
+    "praticas/data/estacoes/index.json",
+    "assets/praticas/media.json"
+  ]);
+});
+
+test("carrega, valida e prepara somente a estacao selecionada", async () => {
+  const calls = [];
+  const validationOptions = [];
+  const phaseMedia = { media: [{ id: "curva" }], directIds: ["curva"], missingIds: [] };
+  const loaded = await loadStation(
+    { id: "station-v2", file: "station-v2.json", schemaVersion: 2 },
+    {
+      fetch: async (url) => {
+        calls.push(url);
+        return { ok: true, json: async () => ({ ...station, id: "station-v2", version: 2 }) };
+      },
+      utils: {
+        validateStation(value, options) {
+          validationOptions.push(options);
+          return { valid: value.id === "station-v2", errors: [] };
+        }
+      },
+      media: {
+        collectStationMedia(value, manifest) {
+          assert.equal(value.id, "station-v2");
+          assert.deepEqual(manifest, []);
+          return { media: phaseMedia.media, phaseMedia: [phaseMedia], missingIds: [], directIds: ["curva"] };
+        },
+        async preloadStationMedia(media) {
+          assert.strictEqual(media, phaseMedia.media);
+          return { loaded: media, failures: [] };
+        }
+      },
+      mediaManifest: []
+    }
+  );
+
+  assert.deepEqual(calls, ["praticas/data/estacoes/station-v2.json"]);
+  assert.deepEqual(validationOptions, [{ requireVersion2: true }]);
+  assert.equal(loaded.station.id, "station-v2");
+  assert.strictEqual(loaded.stationMedia.phaseMedia[0], phaseMedia);
+  assert.equal(loaded.mediaStatus, "ready");
+});
+
+test("seleciona estacoes por modo e recomenda as relacionadas ao desempenho", () => {
+  const entries = [
+    { id: "airway-1", title: "Via aerea A", domain: "Via aerea", difficulty: "basica", competencies: ["airway"], tags: ["airway"] },
+    { id: "airway-2", title: "Via aerea B", domain: "Via aerea", difficulty: "avancada", competencies: ["airway"], tags: ["airway"] },
+    { id: "ecg-1", title: "ECG", domain: "Cardio", difficulty: "basica", competencies: ["ecg"], tags: ["ecg"] }
+  ];
+  const attempts = [{
+    stationId: "airway-1",
+    completedAt: "2026-08-10T12:00:00.000Z",
+    evaluations: [{ itemId: "airway", status: "ausente" }]
+  }];
+
+  const directed = selectStationEntry(entries, "directed", { domain: "Cardio" }, attempts, [], () => 0);
+  assert.equal(directed.entry.id, "ecg-1");
+
+  const exam = selectStationEntry(entries, "exam", {}, attempts, ["airway-1"], () => 0);
+  assert.equal(exam.entry.id, "airway-2");
+  assert.deepEqual(exam.cycleIds, ["airway-1", "airway-2"]);
+
+  const review = selectStationEntry(entries, "review", {}, attempts, [], () => 0);
+  assert.equal(review.entry.id, "airway-2");
+  assert.deepEqual(getRelatedStationEntries(entries, attempts).map((entry) => entry.id), ["airway-2", "ecg-1"]);
+});
+
+test("persiste modo, filtros e ciclo sem incluir audio", () => {
+  const values = new Map();
+  const storage = {
+    setItem(key, value) { values.set(key, value); },
+    getItem(key) { return values.get(key) || null; }
+  };
+
+  savePracticeSetup(storage, {
+    mode: "exam",
+    filters: { domain: "Via aerea", difficulty: "", competency: "", unattempted: true },
+    cycleIds: ["station-1", "station-2"],
+    audioBlob: { shouldNotPersist: true }
+  });
+
+  assert.equal(CYCLE_KEY, "teme26-practice-cycle-v2");
+  assert.equal(PREFERENCES_KEY, "teme26-practice-setup-v2");
+  assert.deepEqual(JSON.parse(storage.getItem(CYCLE_KEY)), ["station-1", "station-2"]);
+  assert.deepEqual(JSON.parse(storage.getItem(PREFERENCES_KEY)), {
+    mode: "exam",
+    filters: { domain: "Via aerea", difficulty: "", competency: "", unattempted: true }
+  });
+  assert.deepEqual(restorePracticeSetup(storage), {
+    mode: "exam",
+    filters: { domain: "Via aerea", difficulty: "", competency: "", unattempted: true },
+    cycleIds: ["station-1", "station-2"]
+  });
 });
