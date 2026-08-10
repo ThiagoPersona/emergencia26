@@ -20,3 +20,13 @@ test("link ativo da sidebar sobrescreve a cor clara padrao do Docsify", () => {
 
   assert.match(html, /\.sidebar ul li\.active > a[\s\S]{0,180}color: var\(--link\) !important/);
 });
+
+test("carrega o motor de sessao antes do orquestrador do simulador", () => {
+  const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
+  const sessionScript = html.indexOf('<script src="praticas-session.js"></script>');
+  const appScript = html.indexOf('<script src="praticas-app.js"></script>');
+
+  assert.notEqual(sessionScript, -1);
+  assert.notEqual(appScript, -1);
+  assert.ok(sessionScript < appScript);
+});

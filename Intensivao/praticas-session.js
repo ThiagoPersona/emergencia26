@@ -109,6 +109,8 @@
     if (session.stationId !== station.id || session.stationVersion !== station.version) return null;
     if (session.status !== "running" || !MODES.has(session.mode)) return null;
     if (!hasValidTimestamps(session)) return null;
+    const currentTime = resolveNow(nowMs);
+    if (session.startedAtMs > currentTime) return null;
 
     const restored = {
       stationId: session.stationId,
@@ -120,7 +122,7 @@
       startedAtMs: session.startedAtMs,
       completedAtMs: session.completedAtMs
     };
-    const remainingSeconds = getRemainingSeconds(restored, station, nowMs);
+    const remainingSeconds = getRemainingSeconds(restored, station, currentTime);
     if (remainingSeconds <= 0) return null;
     return { ...restored, remainingSeconds };
   }

@@ -172,6 +172,22 @@ test("rejeita restauracao com entrada corrompida, divergente, invalida ou expira
   assert.equal(restoreSession(base, station, 301000), null);
 });
 
+test("rejeita restauracao quando o inicio esta no futuro do relogio informado", () => {
+  const restoreSession = api("restoreSession");
+  const futureSession = {
+    stationId: "station-1",
+    stationVersion: 3,
+    mode: "directed",
+    status: "running",
+    phaseIndex: 0,
+    createdAtMs: 1000,
+    startedAtMs: 5000,
+    completedAtMs: null
+  };
+
+  assert.equal(restoreSession(futureSession, station, 4000), null);
+});
+
 test("publica a API UMD no global do navegador", () => {
   const fs = require("node:fs");
   const path = require("node:path");
