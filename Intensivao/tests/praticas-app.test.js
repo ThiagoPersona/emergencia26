@@ -25,7 +25,11 @@ const {
   loadMediaManifest,
   loadStation,
   selectStationEntry,
+  selectAlternativeStation,
   getRelatedStationEntries,
+  renderPracticeModeControl,
+  getSetupStationView,
+  renderPracticeStartActions,
   savePracticeSetup,
   restorePracticeSetup
 } = require("../praticas-app.js");
@@ -337,6 +341,29 @@ test("seleciona estacoes por modo e recomenda as relacionadas ao desempenho", ()
   assert.deepEqual(getRelatedStationEntries(entries, attempts).map((entry) => entry.id), ["airway-2", "ecg-1"]);
 });
 
+test("filtra treino dirigido por competencia mesmo quando ela nao e uma tag", () => {
+  const entries = [
+    { id: "a", title: "Alfa", domain: "Emergencia", difficulty: "basica", competencies: ["via-aerea"], tags: [] },
+    { id: "b", title: "Beta", domain: "Emergencia", difficulty: "basica", competencies: ["via-aerea"], tags: ["procedimento"] },
+    { id: "c", title: "Gama", domain: "Emergencia", difficulty: "basica", competencies: ["ecg"], tags: [] }
+  ];
+
+  const selected = selectStationEntry(entries, "directed", { competency: "via-aerea" }, [], [], () => 0);
+  const alternative = selectAlternativeStation({
+    entries,
+    mode: "directed",
+    filters: { competency: "via-aerea" },
+    attempts: [],
+    cycleIds: ["exam-preservado"],
+    currentEntryId: "a",
+    randomFn: () => 0
+  });
+
+  assert.equal(selected.entry.id, "a");
+  assert.equal(alternative.entry.id, "b");
+  assert.deepEqual(alternative.cycleIds, ["exam-preservado"]);
+});
+
 test("persiste modo, filtros e ciclo sem incluir audio", () => {
   const values = new Map();
   const storage = {
@@ -363,4 +390,134 @@ test("persiste modo, filtros e ciclo sem incluir audio", () => {
     filters: { domain: "Via aerea", difficulty: "", competency: "", unattempted: true },
     cycleIds: ["station-1", "station-2"]
   });
+});
+
+test("sorteia outra estacao conforme o modo sem contaminar o ciclo da prova", () => {
+  const entries = [
+    { id: "airway-1", title: "Via aerea A", domain: "Via aerea", difficulty: "basica", competencies: ["airway"], tags: ["airway"] },
+    { id: "airway-2", title: "Via aerea B", domain: "Via aerea", difficulty: "avancada", competencies: ["airway"], tags: ["airway"] },
+    { id: "ecg-1", title: "ECG", domain: "Cardio", difficulty: "basica", competencies: ["ecg"], tags: ["ecg"] }
+  ];
+  const attempts = [{
+    stationId: "airway-1",
+    completedAt: "2026-08-10T12:00:00.000Z",
+    evaluations: [{ itemId: "airway", status: "ausente" }]
+  }];
+  const originalCycle = ["airway-1"];
+
+  const exam = selectAlternativeStation({
+    entries,
+    mode: "exam",
+    filters: {},
+    attempts,
+    cycleIds: originalCycle,
+    currentEntryId: "airway-1",
+    randomFn: () => 0
+  });
+  assert.equal(exam.entry.id, "airway-2");
+  assert.deepEqual(exam.cycleIds, ["airway-1", "airway-2"]);
+  assert.deepEqual(originalCycle, ["airway-1"]);
+
+  const review = selectAlternativeStation({
+    entries,
+    mode: "review",
+    filters: {},
+    attempts,
+    cycleIds: originalCycle,
+    currentEntryId: "airway-1"
+  });
+  assert.equal(review.entry.id, "airway-2");
+  assert.deepEqual(review.cycleIds, originalCycle);
+
+  const directed = selectAlternativeStation({
+    entries,
+    mode: "directed",
+    filters: { domain: "Cardio" },
+    attempts,
+    cycleIds: originalCycle,
+    currentEntryId: "airway-1",
+    randomFn: () => 0
+  });
+  assert.equal(directed.entry.id, "ecg-1");
+  assert.deepEqual(directed.cycleIds, originalCycle);
+});
+
+test("enriquece os cinco ids legados sem baixar seus JSONs", async () => {
+  const legacyIndex = [
+    { id: "2025-vm-autopeep", file: "2025-vm-autopeep.json", year: 2025 },
+    { id: "2025-trauma-hemorragico", file: "2025-trauma-hemorragico.json", year: 2025 },
+    { id: "2025-pocus-aaa-acesso", file: "2025-pocus-aaa-acesso.json", year: 2025 },
+    { id: "2025-pediatria-colinergico", file: "2025-pediatria-colinergico.json", year: 2025 },
+    { id: "2025-tce-hic", file: "2025-tce-hic.json", year: 2025 }
+  ];
+  const calls = [];
+  const entries = await loadStationIndex(async (url) => {
+    calls.push(url);
+    return { ok: true, json: async () => legacyIndex };
+  });
+
+  assert.deepEqual(calls, ["praticas/data/estacoes/index.json"]);
+  assert.deepEqual(entries.map(({ id, examTitle, domain, difficulty }) => ({ id, examTitle, domain, difficulty })), [
+    { id: "2025-vm-autopeep", examTitle: "Deterioração em ventilação invasiva", domain: "Via aérea e ventilação mecânica", difficulty: "intermediaria" },
+    { id: "2025-trauma-hemorragico", examTitle: "Trauma com sangramento externo importante", domain: "Trauma e controle de danos", difficulty: "intermediaria" },
+    { id: "2025-pocus-aaa-acesso", examTitle: "POCUS no choque e acesso vascular guiado", domain: "POCUS", difficulty: "avancada" },
+    { id: "2025-pediatria-colinergico", examTitle: "Criança com secreções e rebaixamento", domain: "Emergências pediátricas e toxicologia", difficulty: "intermediaria" },
+    { id: "2025-tce-hic", examTitle: "Deterioração neurológica após trauma", domain: "Emergências neurológicas", difficulty: "avancada" }
+  ]);
+  entries.forEach((entry) => {
+    assert.ok(Array.isArray(entry.domains) && entry.domains.length > 0, entry.id);
+    assert.ok(Array.isArray(entry.competencies) && entry.competencies.length > 0, entry.id);
+    assert.ok(Array.isArray(entry.tags) && entry.tags.length > 0, entry.id);
+  });
+});
+
+test("mantem metadados v2 do indice acima do fallback legado", async () => {
+  const entries = await loadStationIndex(async () => ({
+    ok: true,
+    json: async () => [{
+      id: "2025-vm-autopeep",
+      file: "2025-vm-autopeep-v2.json",
+      schemaVersion: 2,
+      examTitle: "Título neutro v2",
+      domain: "Domínio v2",
+      domains: ["Domínio v2"],
+      difficulty: "avancada",
+      competencies: ["competência-v2"],
+      tags: ["tag-v2"]
+    }]
+  }));
+
+  assert.equal(entries[0].examTitle, "Título neutro v2");
+  assert.equal(entries[0].domain, "Domínio v2");
+  assert.equal(entries[0].difficulty, "avancada");
+  assert.deepEqual(entries[0].competencies, ["competência-v2"]);
+});
+
+test("renderiza modos como radios nativos com uma unica opcao marcada", () => {
+  const markup = renderPracticeModeControl("review");
+
+  assert.equal((markup.match(/type="radio"/g) || []).length, 3);
+  assert.equal((markup.match(/name="practice-mode"/g) || []).length, 3);
+  assert.match(markup, /value="exam"/);
+  assert.match(markup, /value="directed"/);
+  assert.match(markup, /value="review"[^>]*checked/);
+  assert.doesNotMatch(markup, /role="radio"|role="radiogroup"/);
+});
+
+test("mantem preview e acoes de inicio visiveis e desabilitadas durante preload", () => {
+  const selectedEntry = {
+    id: "2025-vm-autopeep",
+    title: "Ventilação mecânica e auto-PEEP",
+    examTitle: "Deterioração em ventilação invasiva",
+    domain: "Via aérea e ventilação mecânica",
+    difficulty: "intermediaria"
+  };
+  const view = getSetupStationView(null, selectedEntry, "directed", "loading");
+  const actions = renderPracticeStartActions(view);
+
+  assert.equal(view.visible, true);
+  assert.equal(view.startDisabled, true);
+  assert.equal(view.title, selectedEntry.title);
+  assert.match(actions, /id="practice-start-record"[^>]*disabled/);
+  assert.match(actions, /id="practice-start-manual"[^>]*disabled/);
 });

@@ -392,6 +392,7 @@ test("renderiza alternativas de prova e revisao e preserva texto como conteudo",
 
     renderPhaseMedia(container, [item]);
     assert.equal(findByTag(container, "img")[0].alt, item.examAlt);
+    assert.equal(findByTag(container, "a").length, 0);
 
     renderPhaseMedia(container, [item], { reviewMode: true });
     assert.equal(findByTag(container, "img")[0].alt, item.reviewAlt);
@@ -400,6 +401,34 @@ test("renderiza alternativas de prova e revisao e preserva texto como conteudo",
     assert.equal(caption.textContent, item.reviewCaption);
     assert.equal(caption.childNodes.length, 0);
     assert.equal(credit.textContent, `${item.credit} | ${item.license}`);
+    const links = findByTag(container, "a");
+    assert.equal(links.length, 2);
+    assert.equal(links[0].href, item.sourceUrl);
+    assert.equal(links[0].textContent, "Fonte");
+    assert.equal(links[1].href, item.licenseUrl);
+    assert.equal(links[1].textContent, "Licença");
+    links.forEach((link) => {
+      assert.equal(link.attributes.target, "_blank");
+      assert.equal(link.attributes.rel, "noopener noreferrer");
+    });
+  } finally {
+    global.document = previousDocument;
+  }
+});
+
+test("omite links de revisao que nao usam HTTPS", () => {
+  const previousDocument = global.document;
+  const document = createFakeDocument();
+  global.document = document;
+  try {
+    const item = image("inseguro");
+    item.sourceUrl = "http://example.org/source";
+    item.licenseUrl = "javascript:alert(1)";
+    const container = document.createElement("div");
+
+    renderPhaseMedia(container, [item], { reviewMode: true });
+
+    assert.equal(findByTag(container, "a").length, 0);
   } finally {
     global.document = previousDocument;
   }

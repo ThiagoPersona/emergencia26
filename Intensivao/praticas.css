@@ -78,6 +78,18 @@
   font-size: 0.78rem;
 }
 
+.practice-media-credit-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  font-size: 0.78rem;
+}
+
+.practice-media-credit-link {
+  color: #0f6b5f;
+  font-weight: 700;
+}
+
 .practice-media-comparison {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -138,38 +150,64 @@
 .practice-mode-control {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  min-width: 0;
   gap: 0;
+  margin: 0;
   overflow: hidden;
   border: 1px solid #9fb3bd;
   border-radius: 6px;
+  padding: 0;
   background: #f8fbfc;
 }
 
 .practice-mode-option {
-  min-height: 44px;
-  border: 0;
+  position: relative;
+  min-width: 0;
   border-right: 1px solid #9fb3bd;
-  padding: 9px 12px;
-  background: transparent;
   color: #29465f;
-  font: inherit;
   font-weight: 700;
   cursor: pointer;
+}
+
+.practice-mode-option input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.practice-mode-option span {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 12px;
+  text-align: center;
 }
 
 .practice-mode-option:last-child {
   border-right: 0;
 }
 
-.practice-mode-option:hover,
-.practice-mode-option:focus-visible {
+.practice-mode-option:hover span,
+.practice-mode-option input:focus-visible + span {
   outline: 3px solid rgba(15, 107, 95, 0.18);
   outline-offset: -3px;
 }
 
-.practice-mode-option.is-active {
+.practice-mode-option input:checked + span {
   background: #0f6b5f;
   color: #fff;
+}
+
+.practice-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .practice-filter-bar {
@@ -255,6 +293,14 @@
 
 .practice-briefing {
   padding: clamp(20px, 4vw, 36px);
+}
+
+.practice-setup-preview {
+  min-height: 220px;
+}
+
+.practice-start-actions {
+  min-height: 44px;
 }
 
 .practice-briefing h2,

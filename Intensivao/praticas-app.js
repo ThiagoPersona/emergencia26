@@ -15,6 +15,53 @@
     competency: "",
     unattempted: false
   };
+  const LEGACY_STATION_METADATA = {
+    "2025-vm-autopeep": {
+      title: "Ventilação mecânica e auto-PEEP",
+      examTitle: "Deterioração em ventilação invasiva",
+      domain: "Via aérea e ventilação mecânica",
+      domains: ["Via aérea e ventilação mecânica"],
+      difficulty: "intermediaria",
+      competencies: ["gasometria", "vcv", "autopeep", "reduz-volume-minuto", "aumenta-expiracao"],
+      tags: ["curvas ventilatórias", "auto-PEEP", "broncoobstrução", "gasometria", "reavaliação"]
+    },
+    "2025-trauma-hemorragico": {
+      title: "Trauma com hemorragia exsanguinante",
+      examTitle: "Trauma com sangramento externo importante",
+      domain: "Trauma e controle de danos",
+      domains: ["Trauma e controle de danos"],
+      difficulty: "intermediaria",
+      competencies: ["hemorragia", "compressao", "torniquete", "choque", "efast", "transfusao", "txa", "calcio", "aquecimento", "cirurgia"],
+      tags: ["XABCDE", "hemorragia exsanguinante", "choque hemorrágico", "transfusão maciça", "controle cirúrgico"]
+    },
+    "2025-pocus-aaa-acesso": {
+      title: "POCUS no choque, aneurisma de aorta e acesso guiado",
+      examTitle: "POCUS no choque e acesso vascular guiado",
+      domain: "POCUS",
+      domains: ["POCUS"],
+      difficulty: "avancada",
+      competencies: ["aorta-transversal", "aorta-aneurisma", "plax", "subcostal", "vci", "morison", "diagnostico", "transdutor", "tecnica", "agulha"],
+      tags: ["aorta abdominal", "choque hemorrágico", "FAST", "punção guiada", "visualização da ponta da agulha"]
+    },
+    "2025-pediatria-colinergico": {
+      title: "Pediatria: síndrome colinérgica por chumbinho",
+      examTitle: "Criança com secreções e rebaixamento",
+      domain: "Emergências pediátricas e toxicologia",
+      domains: ["Emergências pediátricas e toxicologia"],
+      difficulty: "intermediaria",
+      competencies: ["hipotese-colinergica", "glicemia", "oxigenio", "aquecimento", "acesso", "agente-identifica", "atropina-dose", "atropina-bolus"],
+      tags: ["toxíndrome colinérgica", "descontaminação", "atropina", "via aérea pediátrica", "CIATox"]
+    },
+    "2025-tce-hic": {
+      title: "TCE grave e hipertensão intracraniana",
+      examTitle: "Deterioração neurológica após trauma",
+      domain: "Emergências neurológicas",
+      domains: ["Emergências neurológicas"],
+      difficulty: "avancada",
+      competencies: ["via-aerea", "capnia", "paco2", "hiperventilacao", "hiperosmolar", "cab30", "cabeca-neutra", "reversao", "neurocirurgia", "pressao"],
+      tags: ["TCE grave", "lesão secundária", "terapia hiperosmolar", "herniação", "coagulopatia", "neurocirurgia"]
+    }
+  };
   const state = {
     stationEntries: [],
     stations: [],
@@ -211,7 +258,10 @@
     if (!Array.isArray(index) || !index.every(isStationEntry)) {
       throw new Error("O índice de estações está inválido.");
     }
-    return index;
+    return index.map((entry) => ({
+      ...(LEGACY_STATION_METADATA[entry.id] || {}),
+      ...entry
+    }));
   }
 
   async function loadMediaManifest(fetchFn, media) {
@@ -268,6 +318,20 @@
     return { station, stationMedia, mediaStatus: "ready" };
   }
 
+  function filterDirectedStationEntries(entries, filters, attempts) {
+    const selectedFilters = normalizePracticeFilters(filters);
+    const filtered = catalogModule.filterStations(entries, {
+      domain: selectedFilters.domain,
+      difficulty: selectedFilters.difficulty,
+      unattempted: selectedFilters.unattempted
+    }, attempts);
+    if (!selectedFilters.competency) return filtered;
+    return filtered.filter((entry) => (
+      (Array.isArray(entry.competencies) && entry.competencies.includes(selectedFilters.competency)) ||
+      (Array.isArray(entry.tags) && entry.tags.includes(selectedFilters.competency))
+    ));
+  }
+
   function selectStationEntry(entries, mode, filters, attempts, cycleIds, randomFn) {
     const selectedMode = normalizePracticeMode(mode);
     const list = Array.isArray(entries) ? entries : [];
@@ -283,14 +347,34 @@
       return { entry: related[0] || null, cycleIds: Array.isArray(cycleIds) ? cycleIds : [] };
     }
 
-    const selectedFilters = normalizePracticeFilters(filters);
-    const filtered = catalog.filterStations(list, {
-      domain: selectedFilters.domain,
-      difficulty: selectedFilters.difficulty,
-      tag: selectedFilters.competency,
-      unattempted: selectedFilters.unattempted
-    }, attempts);
+    const filtered = filterDirectedStationEntries(list, filters, attempts);
     return { entry: filtered[0] || null, cycleIds: Array.isArray(cycleIds) ? cycleIds : [] };
+  }
+
+  function selectAlternativeStation(options) {
+    const source = options && typeof options === "object" ? options : {};
+    const entries = Array.isArray(source.entries) ? source.entries : [];
+    const mode = normalizePracticeMode(source.mode);
+    const cycleIds = Array.isArray(source.cycleIds) ? source.cycleIds.slice() : [];
+    if (!catalogModule) return { entry: null, cycleIds };
+
+    if (mode === "exam") {
+      const selection = catalogModule.pickStation(entries, cycleIds, source.randomFn);
+      return { entry: selection.station, cycleIds: selection.cycleIds };
+    }
+
+    if (mode === "review") {
+      const recommended = catalogModule.getRecommendedStations(entries, source.attempts, 3);
+      return {
+        entry: recommended.find((entry) => entry.id !== source.currentEntryId) || null,
+        cycleIds
+      };
+    }
+
+    const filtered = filterDirectedStationEntries(entries, source.filters, source.attempts)
+      .filter((entry) => entry.id !== source.currentEntryId);
+    const selection = catalogModule.pickStation(filtered, [], source.randomFn);
+    return { entry: selection.station, cycleIds };
   }
 
   function getRelatedStationEntries(entries, attempts) {
@@ -301,13 +385,13 @@
   function enrichStationEntry(entry, station) {
     return {
       ...entry,
-      title: station.title,
-      examTitle: station.examTitle,
-      domain: station.domain,
-      domains: station.domains,
-      difficulty: station.difficulty,
-      competencies: station.competencies,
-      tags: station.tags
+      title: station.title || entry.title,
+      examTitle: station.examTitle || entry.examTitle,
+      domain: station.domain || entry.domain,
+      domains: Array.isArray(station.domains) ? station.domains : entry.domains,
+      difficulty: station.difficulty || entry.difficulty,
+      competencies: Array.isArray(station.competencies) ? station.competencies : entry.competencies,
+      tags: Array.isArray(station.tags) ? station.tags : entry.tags
     };
   }
 
@@ -628,13 +712,57 @@
     return entry && entry.title ? entry.title : `Estação ${index + 1}`;
   }
 
+  function renderPracticeModeControl(mode) {
+    const selectedMode = normalizePracticeMode(mode);
+    return `
+      <fieldset class="practice-mode-control">
+        <legend class="practice-visually-hidden">Modo de prática</legend>
+        ${[
+          ["exam", "Modo prova"],
+          ["directed", "Treino dirigido"],
+          ["review", "Revisão"]
+        ].map(([value, label]) => `
+          <label class="practice-mode-option">
+            <input type="radio" name="practice-mode" value="${value}" data-practice-mode="${value}" ${selectedMode === value ? "checked" : ""}>
+            <span>${label}</span>
+          </label>`).join("")}
+      </fieldset>`;
+  }
+
+  function getSetupStationView(station, selectedEntry, mode, mediaStatus) {
+    const subject = station || selectedEntry;
+    if (!subject) return { visible: false, startDisabled: true };
+    const publicView = getPublicStationView(subject, mode);
+    return {
+      visible: true,
+      loaded: Boolean(station),
+      startDisabled: areStartActionsDisabled(mediaStatus) || !station,
+      kicker: publicView.kicker,
+      title: publicView.title,
+      showDiagnosticMeta: publicView.showDiagnosticMeta,
+      briefing: station && station.briefing ? station.briefing : "",
+      durationSeconds: station && Number.isFinite(station.durationSeconds) ? station.durationSeconds : null,
+      checklistCount: station && Array.isArray(station.checklist) ? station.checklist.length : null,
+      difficulty: subject.difficulty || "não definida"
+    };
+  }
+
+  function renderPracticeStartActions(view) {
+    if (!view || !view.visible) return "";
+    const disabled = view.startDisabled ? " disabled" : "";
+    return `
+      <div class="practice-actions practice-start-actions">
+        <button class="practice-button practice-button-primary" id="practice-start-record" type="button"${disabled}>Iniciar e gravar</button>
+        <button class="practice-button" id="practice-start-manual" type="button"${disabled}>Iniciar sem áudio</button>
+      </div>`;
+  }
+
   function renderSetup() {
     const mount = root.document && root.document.getElementById("practice-simulator");
     if (!mount) return;
     const station = state.station;
-    const publicView = getPublicStationView(station, state.mode);
-    const startDisabled = areStartActionsDisabled(state.mediaStatus) || !station;
-    const showDiagnosticMeta = station && publicView.showDiagnosticMeta;
+    const setupView = getSetupStationView(station, state.selectedEntry, state.mode, state.mediaStatus);
+    const showDiagnosticMeta = setupView.showDiagnosticMeta;
     const relatedIntro = state.mode === "review"
       ? "A escolha usa seu histórico. Os detalhes da estação aparecem ao iniciar."
       : "";
@@ -663,38 +791,31 @@
 
     mount.innerHTML = `
       <section class="practice-shell practice-setup">
-        <div class="practice-mode-control" role="radiogroup" aria-label="Modo de prática">
-          ${[
-            ["exam", "Modo prova"],
-            ["directed", "Treino dirigido"],
-            ["review", "Revisão"]
-          ].map(([mode, label]) => `<button type="button" class="practice-mode-option ${state.mode === mode ? "is-active" : ""}" role="radio" aria-checked="${state.mode === mode}" data-practice-mode="${mode}">${label}</button>`).join("")}
-        </div>
+        ${renderPracticeModeControl(state.mode)}
         ${directedControls}
         ${statusMessage ? `<p class="practice-help" role="status">${statusMessage}</p>` : ""}
         ${state.mediaStatus === "error" ? `<div class="practice-alert practice-alert-error"><strong>Recurso ausente.</strong><span>${escapeHtml(state.loadError || "Não foi possível preparar a estação.")}</span></div>${retryActions}` : ""}
-        ${station ? `
-          <div class="practice-briefing">
-            <span class="practice-kicker">${escapeHtml(publicView.kicker)}</span>
-            <h2>${escapeHtml(publicView.title)}</h2>
-            ${showDiagnosticMeta ? `<p>${escapeHtml(station.briefing)}</p>` : relatedIntro ? `<p>${escapeHtml(relatedIntro)}</p>` : ""}
+        ${setupView.visible ? `
+          <div class="practice-briefing practice-setup-preview ${setupView.loaded ? "" : "is-loading"}">
+            <span class="practice-kicker">${escapeHtml(setupView.kicker)}</span>
+            <h2>${escapeHtml(setupView.title)}</h2>
+            ${showDiagnosticMeta && setupView.briefing ? `<p>${escapeHtml(setupView.briefing)}</p>` : relatedIntro ? `<p>${escapeHtml(relatedIntro)}</p>` : statusMessage ? `<p>${escapeHtml(statusMessage)}</p>` : ""}
             <div class="practice-meta">
-              <span><strong>${formatClock(station.durationSeconds)}</strong> de estação</span>
-              <span><strong>${station.checklist.length}</strong> itens</span>
-              ${showDiagnosticMeta ? `<span><strong>${escapeHtml(station.difficulty || "não definida")}</strong> dificuldade</span>` : ""}
+              <span><strong>${setupView.durationSeconds == null ? "--:--" : formatClock(setupView.durationSeconds)}</strong> de estação</span>
+              <span><strong>${setupView.checklistCount == null ? "--" : setupView.checklistCount}</strong> itens</span>
+              ${showDiagnosticMeta ? `<span><strong>${escapeHtml(setupView.difficulty)}</strong> dificuldade</span>` : ""}
             </div>
           </div>
-          <div class="practice-actions">
-            <button class="practice-button practice-button-primary" id="practice-start-record" type="button" ${startDisabled ? "disabled" : ""}>Iniciar e gravar</button>
-            <button class="practice-button" id="practice-start-manual" type="button" ${startDisabled ? "disabled" : ""}>Iniciar sem áudio</button>
-          </div>
+          ${renderPracticeStartActions(setupView)}
         ` : ""}
         <div id="practice-auth" class="practice-auth"><p>Verificando acesso à correção automática...</p></div>
         <p class="practice-help">O checklist permanece oculto durante a estação. Permita o microfone somente se desejar correção pela fala.</p>
       </section>`;
 
-    mount.querySelectorAll("[data-practice-mode]").forEach((button) => {
-      button.addEventListener("click", () => setPracticeMode(button.dataset.practiceMode));
+    mount.querySelectorAll("input[name='practice-mode']").forEach((input) => {
+      input.addEventListener("change", () => {
+        if (input.checked) setPracticeMode(input.value);
+      });
     });
     const filterForm = mount.querySelector("#practice-filters");
     if (filterForm) filterForm.addEventListener("submit", (event) => {
@@ -720,19 +841,18 @@
     });
     const anotherButton = mount.querySelector("#practice-choose-another");
     if (anotherButton) anotherButton.addEventListener("click", () => {
-      const candidates = state.mode === "directed" && catalogModule
-        ? catalogModule.filterStations(state.stationEntries, {
-          domain: state.filters.domain,
-          difficulty: state.filters.difficulty,
-          tag: state.filters.competency,
-          unattempted: state.filters.unattempted
-        }, getStoredAttempts())
-        : state.stationEntries;
-      const selection = catalogModule && catalogModule.pickStation(candidates, state.cycleIds);
-      if (!selection || !selection.station) return;
-      state.cycleIds = selection.cycleIds;
+      const selection = selectAlternativeStation({
+        entries: state.stationEntries,
+        mode: state.mode,
+        filters: state.filters,
+        attempts: getStoredAttempts(),
+        cycleIds: state.cycleIds,
+        currentEntryId: state.selectedEntry && state.selectedEntry.id
+      });
+      if (!selection.entry) return;
+      if (state.mode === "exam") state.cycleIds = selection.cycleIds;
       saveCurrentSetup();
-      loadSelectedStation(selection.station);
+      loadSelectedStation(selection.entry);
     });
     const recordButton = mount.querySelector("#practice-start-record");
     if (recordButton) recordButton.addEventListener("click", () => beginSession(true));
@@ -1285,7 +1405,11 @@
     loadMediaManifest,
     loadStation,
     selectStationEntry,
+    selectAlternativeStation,
     getRelatedStationEntries,
+    renderPracticeModeControl,
+    getSetupStationView,
+    renderPracticeStartActions,
     savePracticeSetup,
     restorePracticeSetup,
     getRemainingSeconds,

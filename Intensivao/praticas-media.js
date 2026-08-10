@@ -267,6 +267,28 @@
     return element;
   }
 
+  function appendSafeReviewLink(parent, label, url) {
+    if (!isHttpsUrl(url)) return null;
+    const link = root.document.createElement("a");
+    link.className = "practice-media-credit-link";
+    link.href = url.trim();
+    link.textContent = label;
+    link.setAttribute("target", "_blank");
+    link.setAttribute("rel", "noopener noreferrer");
+    parent.appendChild(link);
+    return link;
+  }
+
+  function appendMediaCredit(parent, item, reviewMode) {
+    appendText(parent, "small", "practice-media-credit", `${item.credit} | ${item.license}`);
+    if (!reviewMode) return;
+    const links = root.document.createElement("span");
+    links.className = "practice-media-credit-links";
+    appendSafeReviewLink(links, "Fonte", item.sourceUrl);
+    appendSafeReviewLink(links, "Licença", item.licenseUrl);
+    if (links.childNodes.length) parent.appendChild(links);
+  }
+
   function createIconButton(label, symbol, handler) {
     const button = root.document.createElement("button");
     button.type = "button";
@@ -360,7 +382,7 @@
       addImageControls(frame, image, item);
     }
     if (reviewMode) appendText(frame, "figcaption", "practice-media-caption", item.reviewCaption);
-    appendText(frame, "small", "practice-media-credit", `${item.credit} | ${item.license}`);
+    appendMediaCredit(frame, item, reviewMode);
     return frame;
   }
 
@@ -397,7 +419,7 @@
         });
         if (comparison.childNodes.length) {
           if (reviewMode) appendText(comparison, "p", "practice-media-caption", item.reviewCaption);
-          appendText(comparison, "small", "practice-media-credit", `${item.credit} | ${item.license}`);
+          appendMediaCredit(comparison, item, reviewMode);
           gallery.appendChild(comparison);
         }
         return;

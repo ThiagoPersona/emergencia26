@@ -64,3 +64,82 @@ git diff --check
 ## Concerns
 
 - The current checked-in station index is legacy and contains only IDs/files. Until a future schema-v2 index supplies domain, difficulty, competency, and tag metadata, directed filters and related recommendations correctly use the available fallback data; richer filtering becomes available as catalog entries gain those metadata fields. This task intentionally did not modify JSON files.
+
+## Fix Round 1
+
+### Status
+
+DONE_WITH_CONCERNS
+
+### Findings Addressed
+
+- Result media now exposes source and license links only in review mode. Links are restricted to HTTPS and use `target="_blank"` with `rel="noopener noreferrer"`.
+- `Sortear outra` now delegates by mode: exam uses `pickStation()` and advances its cycle only after a successful choice; review uses `getRecommendedStations()`; directed uses the active filters without mutating the exam cycle.
+- The five current legacy station IDs receive deterministic catalog metadata without loading their JSON files. Metadata declared by a future v2 index takes precedence over the fallback.
+- The practical-mode segmented control now uses native same-name radio inputs with native keyboard behavior and visible focus styling.
+- The station preview and start-action regions remain rendered during preload, with stable minimum dimensions and disabled actions.
+- Added DOM and structural coverage for mode-specific draws, legacy metadata, native controls, preload state, and safe result links.
+
+### TDD
+
+#### RED
+
+Before production changes, the focused suite reported 43 tests: 38 passed and 5 failed. The expected failures identified the absent mode-selection helpers, absent legacy metadata enrichment, and absent safe review links.
+
+```powershell
+node --test Intensivao/tests/praticas-app.test.js Intensivao/tests/pages-workflow.test.js Intensivao/tests/praticas-media.test.js
+```
+
+A separate directed-filter regression test was then added before its fix. The app suite reported 23 tests: 22 passed and 1 failed because a competency present outside `tags` was not selected.
+
+```powershell
+node --test Intensivao/tests/praticas-app.test.js
+```
+
+#### GREEN
+
+- App suite: 23 passed, 0 failed.
+- Media suite: 18 passed, 0 failed.
+- Focused app/pages/media suite: 44 passed, 0 failed.
+- Full suite: 80 passed, 0 failed.
+
+### Files
+
+- `Intensivao/praticas-app.js`: legacy metadata fallback, mode-specific alternative selection, native mode controls, and stable preload rendering.
+- `Intensivao/praticas-media.js`: safe source/license links restricted to result review.
+- `Intensivao/praticas.css`: native segmented-control states, focus styling, result-link styling, and stable preload dimensions.
+- `Intensivao/tests/praticas-app.test.js`: catalog, mode draw, radio, filter, and preload coverage.
+- `Intensivao/tests/praticas-media.test.js`: secure result-link and pre-result suppression coverage.
+
+### Commands And Results
+
+```powershell
+node --check Intensivao/praticas-app.js
+node --check Intensivao/praticas-media.js
+node --test Intensivao/tests/praticas-app.test.js Intensivao/tests/pages-workflow.test.js Intensivao/tests/praticas-media.test.js
+node --test Intensivao/tests/*.test.js
+git diff --check
+```
+
+- Both syntax checks passed.
+- Focused suite passed 44/44.
+- Full suite passed 80/80.
+- Diff check passed; Git emitted only LF/CRLF conversion warnings.
+
+### Decisions
+
+- The fallback is deliberately local to the catalog loader and covers only the five IDs in the current legacy index. It does not fetch station JSONs and is overwritten field-by-field by index metadata, allowing the v2 migration to replace it cleanly.
+- Directed selection accepts competencies from the dedicated `competencies` field as well as legacy tags. Directed draws use an isolated empty cycle; the persisted exam cycle remains untouched.
+- Links are built with DOM properties only after URL validation. Invalid, missing, and non-HTTPS URLs remain plain credit text with no anchor.
+- Timer and recording paths were not changed.
+
+### Self-Review
+
+- No remaining Critical or Important finding was identified in the changed code.
+- Verified that links cannot render during the station and that invalid protocols cannot create anchors.
+- Verified cycle mutation occurs only for a successful exam alternative selection.
+- Verified no JSON, definitive manifest, backend, or `Praticas/` file was modified.
+
+### Concerns
+
+- The legacy metadata fallback is temporary by design and must be retired when the schema-v2 index becomes definitive. The precedence test protects the migration path.
