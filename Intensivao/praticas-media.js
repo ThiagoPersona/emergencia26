@@ -122,42 +122,48 @@
     const byId = new Map(manifestMedia
       .filter((item) => item && typeof item === "object" && isNonEmptyString(item.id))
       .map((item) => [item.id, item]));
-    const media = [];
-    const missingIds = [];
-    const directIds = [];
-    const visited = new Set();
-    const missing = new Set();
-    const direct = new Set();
 
-    function include(id) {
-      if (!isNonEmptyString(id) || visited.has(id)) return;
-      const item = byId.get(id);
-      if (!item) {
-        if (!missing.has(id)) {
-          missing.add(id);
-          missingIds.push(id);
+    function collectIds(ids) {
+      const media = [];
+      const missingIds = [];
+      const directIds = [];
+      const visited = new Set();
+      const missing = new Set();
+      const direct = new Set();
+
+      function include(id) {
+        if (!isNonEmptyString(id) || visited.has(id)) return;
+        const item = byId.get(id);
+        if (!item) {
+          if (!missing.has(id)) {
+            missing.add(id);
+            missingIds.push(id);
+          }
+          return;
         }
-        return;
+        visited.add(id);
+        media.push(item);
+        if (item.type === "comparison" && Array.isArray(item.items)) item.items.forEach(include);
       }
-      visited.add(id);
-      media.push(item);
-      if (item.type === "comparison" && Array.isArray(item.items)) item.items.forEach(include);
-    }
 
-    function includeDirect(id) {
-      if (isNonEmptyString(id) && !direct.has(id)) {
-        direct.add(id);
-        directIds.push(id);
-      }
-      include(id);
+      (Array.isArray(ids) ? ids : []).forEach((id) => {
+        if (isNonEmptyString(id) && !direct.has(id)) {
+          direct.add(id);
+          directIds.push(id);
+        }
+        include(id);
+      });
+
+      return { media, missingIds, directIds };
     }
 
     const phases = station && Array.isArray(station.phases) ? station.phases : [];
-    phases.forEach((phase) => {
-      if (phase && Array.isArray(phase.media)) phase.media.forEach(includeDirect);
-    });
-
-    return { media, missingIds, directIds };
+    const phaseIds = phases.map((phase) => phase && Array.isArray(phase.media) ? phase.media : []);
+    const aggregate = collectIds(phaseIds.flat());
+    return {
+      ...aggregate,
+      phaseMedia: phaseIds.map(collectIds)
+    };
   }
 
   function defaultImageLoader(item) {
@@ -358,15 +364,19 @@
     return frame;
   }
 
-  // Passe collectStationMedia(...).directIds em options.directIds para preservar midias diretas da fase.
+  // Prefira renderPhaseMedia(container, collection.phaseMedia[index], options) para isolar a fase atual.
   function renderPhaseMedia(container, media, options) {
     if (!container || !root || !root.document || typeof root.document.createElement !== "function") return null;
-    const list = Array.isArray(media) ? media.filter((item) => item && typeof item === "object") : [];
+    const phaseCollection = !Array.isArray(media) && media && Array.isArray(media.media) ? media : null;
+    const mediaList = phaseCollection ? phaseCollection.media : media;
+    const list = Array.isArray(mediaList) ? mediaList.filter((item) => item && typeof item === "object") : [];
     const byId = new Map(list.filter((item) => isNonEmptyString(item.id)).map((item) => [item.id, item]));
     const reviewMode = Boolean(options && options.reviewMode);
     const directIds = new Set(
       options && Array.isArray(options.directIds)
         ? options.directIds.filter(isNonEmptyString)
+        : phaseCollection && Array.isArray(phaseCollection.directIds)
+          ? phaseCollection.directIds.filter(isNonEmptyString)
         : options && Array.isArray(options.phaseMediaIds)
           ? options.phaseMediaIds.filter(isNonEmptyString)
           : []

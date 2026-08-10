@@ -346,6 +346,38 @@ test("renderiza dependencias diretas fora da comparacao com directIds da coleta"
   }
 });
 
+test("isola midia direta futura ao renderizar a colecao da fase atual", () => {
+  const previousDocument = global.document;
+  const document = createFakeDocument();
+  global.document = document;
+  try {
+    const first = image("fase-um");
+    const future = image("fase-dois");
+    const item = comparison("comparacao", ["fase-um", "fase-dois"]);
+    const station = {
+      phases: [
+        { media: ["comparacao"] },
+        { media: ["fase-dois"] }
+      ]
+    };
+    const collected = collectStationMedia(station, [item, first, future]);
+    const container = document.createElement("div");
+
+    assert.deepEqual(collected.phaseMedia[0].directIds, ["comparacao"]);
+    assert.deepEqual(collected.phaseMedia[1].directIds, ["fase-dois"]);
+
+    const firstGallery = renderPhaseMedia(container, collected.phaseMedia[0]);
+    assert.equal(firstGallery.childNodes.length, 1);
+    assert.equal(findByClass(firstGallery, "practice-media-frame").length, 2);
+
+    const secondGallery = renderPhaseMedia(container, collected.phaseMedia[1]);
+    assert.equal(secondGallery.childNodes.length, 1);
+    assert.equal(findByClass(secondGallery, "practice-media-frame").length, 1);
+  } finally {
+    global.document = previousDocument;
+  }
+});
+
 test("renderiza alternativas de prova e revisao e preserva texto como conteudo", () => {
   const previousDocument = global.document;
   const document = createFakeDocument();
