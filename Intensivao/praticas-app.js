@@ -46,6 +46,13 @@
     };
   }
 
+  function getPracticePrimaryAction(session, station) {
+    const isLastPhase = session.phaseIndex >= station.phases.length - 1;
+    return isLastPhase
+      ? { action: "finish", label: "Finalizar estação" }
+      : { action: "next", label: "Próxima tarefa" };
+  }
+
   function getRemainingSeconds(session, nowMs, durationSeconds) {
     const duration = Number.isFinite(durationSeconds)
       ? durationSeconds
@@ -337,6 +344,7 @@
     if (!mount || !state.session) return;
     const phase = state.station.phases[state.session.phaseIndex];
     const remaining = getRemainingSeconds(state.session, Date.now(), state.station.durationSeconds);
+    const primaryAction = getPracticePrimaryAction(state.session, state.station);
     mount.innerHTML = `
       <section class="practice-shell practice-running">
         <header class="practice-run-header">
@@ -348,12 +356,16 @@
           <p>${escapeHtml(phase.prompt)}</p>
         </div>
         <div class="practice-actions">
-          <button id="practice-next" class="practice-button practice-button-primary" type="button" ${state.session.phaseIndex >= state.station.phases.length - 1 ? "disabled" : ""}>Próxima tarefa</button>
+          <button id="practice-next" class="practice-button practice-button-primary" type="button">${primaryAction.label}</button>
           <button id="practice-finish" class="practice-button practice-button-danger" type="button">Encerrar estação</button>
         </div>
         <p class="practice-recording-state">${state.mediaRecorder ? "● Gravação em andamento" : "Treino sem gravação"}</p>
       </section>`;
     mount.querySelector("#practice-next").addEventListener("click", () => {
+      if (primaryAction.action === "finish") {
+        finishSession();
+        return;
+      }
       state.session = advancePracticePhase(state.session);
       renderRunning();
     });
@@ -664,6 +676,7 @@
   return {
     createPracticeSession,
     advancePracticePhase,
+    getPracticePrimaryAction,
     getRemainingSeconds,
     buildPracticeReport,
     parseStoredAttempts,

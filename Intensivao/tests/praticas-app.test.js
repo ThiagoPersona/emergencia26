@@ -4,6 +4,7 @@ const test = require("node:test");
 const {
   createPracticeSession,
   advancePracticePhase,
+  getPracticePrimaryAction,
   getRemainingSeconds,
   buildPracticeReport,
   parseStoredAttempts,
@@ -36,6 +37,20 @@ test("cria sessao preparada e avanca fases sem ultrapassar o fim", () => {
   const last = advancePracticePhase(first);
   assert.equal(first.phaseIndex, 1);
   assert.equal(last.phaseIndex, 1);
+});
+
+test("botao principal avanca fases e finaliza a ultima tarefa", () => {
+  const firstPhase = createPracticeSession(station, 1000);
+  const lastPhase = { ...firstPhase, phaseIndex: station.phases.length - 1 };
+
+  assert.deepEqual(getPracticePrimaryAction(firstPhase, station), {
+    action: "next",
+    label: "Próxima tarefa"
+  });
+  assert.deepEqual(getPracticePrimaryAction(lastPhase, station), {
+    action: "finish",
+    label: "Finalizar estação"
+  });
 });
 
 test("cronometro nunca retorna valor negativo", () => {
