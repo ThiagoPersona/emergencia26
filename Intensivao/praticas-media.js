@@ -124,8 +124,10 @@
       .map((item) => [item.id, item]));
     const media = [];
     const missingIds = [];
+    const directIds = [];
     const visited = new Set();
     const missing = new Set();
+    const direct = new Set();
 
     function include(id) {
       if (!isNonEmptyString(id) || visited.has(id)) return;
@@ -142,12 +144,20 @@
       if (item.type === "comparison" && Array.isArray(item.items)) item.items.forEach(include);
     }
 
+    function includeDirect(id) {
+      if (isNonEmptyString(id) && !direct.has(id)) {
+        direct.add(id);
+        directIds.push(id);
+      }
+      include(id);
+    }
+
     const phases = station && Array.isArray(station.phases) ? station.phases : [];
     phases.forEach((phase) => {
-      if (phase && Array.isArray(phase.media)) phase.media.forEach(include);
+      if (phase && Array.isArray(phase.media)) phase.media.forEach(includeDirect);
     });
 
-    return { media, missingIds };
+    return { media, missingIds, directIds };
   }
 
   function defaultImageLoader(item) {
@@ -348,15 +358,18 @@
     return frame;
   }
 
+  // Passe collectStationMedia(...).directIds em options.directIds para preservar midias diretas da fase.
   function renderPhaseMedia(container, media, options) {
     if (!container || !root || !root.document || typeof root.document.createElement !== "function") return null;
     const list = Array.isArray(media) ? media.filter((item) => item && typeof item === "object") : [];
     const byId = new Map(list.filter((item) => isNonEmptyString(item.id)).map((item) => [item.id, item]));
     const reviewMode = Boolean(options && options.reviewMode);
-    const phaseMediaIds = new Set(
-      options && Array.isArray(options.phaseMediaIds)
-        ? options.phaseMediaIds.filter(isNonEmptyString)
-        : []
+    const directIds = new Set(
+      options && Array.isArray(options.directIds)
+        ? options.directIds.filter(isNonEmptyString)
+        : options && Array.isArray(options.phaseMediaIds)
+          ? options.phaseMediaIds.filter(isNonEmptyString)
+          : []
     );
     const comparisonDependencyIds = new Set(list
       .filter((item) => item.type === "comparison" && Array.isArray(item.items))
@@ -379,7 +392,7 @@
         }
         return;
       }
-      if (comparisonDependencyIds.has(item.id) && !phaseMediaIds.has(item.id)) return;
+      if (comparisonDependencyIds.has(item.id) && !directIds.has(item.id)) return;
       gallery.appendChild(createMediaFrame(item, reviewMode));
     });
 

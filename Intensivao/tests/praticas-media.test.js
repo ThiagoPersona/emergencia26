@@ -144,6 +144,16 @@ function findByClass(root, className) {
   return found;
 }
 
+function findByTag(root, tagName) {
+  const found = [];
+  const visit = (element) => {
+    if (element.tagName === tagName.toUpperCase()) found.push(element);
+    element.childNodes.forEach(visit);
+  };
+  visit(root);
+  return found;
+}
+
 test("aceita manifesto vazio e manifesto valido nos dois formatos", () => {
   assert.deepEqual(validateMediaManifest([]), { valid: true, errors: [], media: [] });
 
@@ -263,6 +273,7 @@ test("coleta midias por fase, inclui dependencias e preserva a primeira ordem", 
 
   assert.deepEqual(result.media.map((item) => item.id), ["comparacao", "esquerda", "direita"]);
   assert.deepEqual(result.missingIds, ["nao-existe"]);
+  assert.deepEqual(result.directIds, ["comparacao", "esquerda", "nao-existe", "direita"]);
 });
 
 test("relata ids ausentes de dependencias de comparacao sem duplicar resultados", () => {
@@ -310,7 +321,7 @@ test("preload encerra ciclos de comparacao sem recursao infinita", async () => {
   assert.match(result.failures.map((failure) => failure.error.message).join(" "), /ciclo de comparison/i);
 });
 
-test("renderiza dependencias de comparacao somente dentro da comparacao", () => {
+test("renderiza dependencias diretas fora da comparacao com directIds da coleta", () => {
   const previousDocument = global.document;
   const document = createFakeDocument();
   global.document = document;
@@ -319,12 +330,90 @@ test("renderiza dependencias de comparacao somente dentro da comparacao", () => 
     const right = image("direita");
     const item = comparison("comparacao", ["esquerda", "direita"]);
     const container = document.createElement("div");
+    const direct = collectStationMedia({ phases: [{ media: ["comparacao", "esquerda"] }] }, [item, left, right]);
+    const transitive = collectStationMedia({ phases: [{ media: ["comparacao"] }] }, [item, left, right]);
 
-    renderPhaseMedia(container, [item, left, right]);
+    renderPhaseMedia(container, direct.media, { directIds: direct.directIds });
+    assert.equal(findByClass(container, "practice-media-frame").length, 3);
+
+    renderPhaseMedia(container, transitive.media, { directIds: transitive.directIds });
     assert.equal(findByClass(container, "practice-media-frame").length, 2);
 
     renderPhaseMedia(container, [item, left, right], { phaseMediaIds: ["esquerda"] });
     assert.equal(findByClass(container, "practice-media-frame").length, 3);
+  } finally {
+    global.document = previousDocument;
+  }
+});
+
+test("renderiza alternativas de prova e revisao e preserva texto como conteudo", () => {
+  const previousDocument = global.document;
+  const document = createFakeDocument();
+  global.document = document;
+  try {
+    const item = image("texto");
+    item.examAlt = "Exame <nao interpretar>";
+    item.reviewAlt = "Revisao <nao interpretar>";
+    item.reviewCaption = "Legenda <nao interpretar>";
+    item.credit = "Credito <nao interpretar>";
+    const container = document.createElement("div");
+
+    renderPhaseMedia(container, [item]);
+    assert.equal(findByTag(container, "img")[0].alt, item.examAlt);
+
+    renderPhaseMedia(container, [item], { reviewMode: true });
+    assert.equal(findByTag(container, "img")[0].alt, item.reviewAlt);
+    const caption = findByClass(container, "practice-media-caption")[0];
+    const credit = findByClass(container, "practice-media-credit")[0];
+    assert.equal(caption.textContent, item.reviewCaption);
+    assert.equal(caption.childNodes.length, 0);
+    assert.equal(credit.textContent, `${item.credit} | ${item.license}`);
+  } finally {
+    global.document = previousDocument;
+  }
+});
+
+test("renderiza video com controles, poster e alternativa", () => {
+  const previousDocument = global.document;
+  const document = createFakeDocument();
+  global.document = document;
+  try {
+    const item = video("procedimento");
+    const container = document.createElement("div");
+
+    renderPhaseMedia(container, [item], { reviewMode: true });
+    const rendered = findByTag(container, "video")[0];
+    assert.equal(rendered.src, item.src);
+    assert.equal(rendered.poster, item.poster);
+    assert.equal(rendered.muted, true);
+    assert.equal(rendered.loop, true);
+    assert.equal(rendered.playsInline, true);
+    assert.equal(rendered.controls, true);
+    assert.equal(rendered.attributes["aria-label"], item.reviewAlt);
+  } finally {
+    global.document = previousDocument;
+  }
+});
+
+test("amplia e restaura a imagem sem mover a toolbar", () => {
+  const previousDocument = global.document;
+  const document = createFakeDocument();
+  global.document = document;
+  try {
+    const container = document.createElement("div");
+    renderPhaseMedia(container, [image("zoom")]);
+    const rendered = findByTag(container, "img")[0];
+    const toolbar = findByClass(container, "practice-media-toolbar")[0];
+    const controls = findByClass(toolbar, "practice-media-control");
+
+    controls.find((button) => button.title === "Ampliar imagem").dispatch("click");
+    assert.equal(rendered.style.width, "125%");
+    assert.equal(rendered.style.maxWidth, "none");
+    assert.equal(toolbar.style.width, undefined);
+
+    controls.find((button) => button.title === "Restaurar imagem").dispatch("click");
+    assert.equal(rendered.style.width, "100%");
+    assert.equal(rendered.style.maxWidth, "100%");
   } finally {
     global.document = previousDocument;
   }
