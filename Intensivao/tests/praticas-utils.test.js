@@ -41,6 +41,42 @@ const station = {
   ]
 };
 
+const version2Station = {
+  id: "visual-via-aerea-01",
+  version: 2,
+  title: "Abordagem visual da via aerea",
+  domain: "Via aerea e ventilacao mecanica",
+  examTitle: "Simulador pratico visual de emergencia",
+  domains: ["Via aerea", "Ventilacao mecanica"],
+  difficulty: "intermediaria",
+  origin: "acervo_reescrito",
+  tags: ["via-aerea", "simulacao"],
+  durationSeconds: 300,
+  phases: [
+    {
+      id: "avaliacao",
+      title: "Avaliacao inicial",
+      prompt: "Avalie o paciente e verbalize suas prioridades.",
+      patientState: { age: 42, consciousness: "rebaixada" },
+      media: ["paciente-inicial"]
+    },
+    {
+      id: "conduta",
+      title: "Conduta",
+      prompt: "Demonstre a conduta imediata.",
+      patientState: { oxygenSaturation: 86 },
+      media: ["monitor-conduta"]
+    }
+  ],
+  checklist: [
+    { id: "seguranca", label: "Garante seguranca", weight: 25, verification: "verbal" },
+    { id: "avaliacao", label: "Avalia a via aerea", weight: 25, verification: "verbal" },
+    { id: "oxigenio", label: "Inicia oxigenio", weight: 25, verification: "manual" },
+    { id: "reavaliacao", label: "Reavalia o paciente", weight: 25, verification: "hibrido" }
+  ],
+  references: ["Diretriz institucional de via aerea", "Manual de simulacao visual"]
+};
+
 test("valida uma estacao completa e rejeita pesos invalidos", () => {
   assert.deepEqual(validateStation(station), { valid: true, errors: [] });
 
@@ -50,6 +86,75 @@ test("valida uma estacao completa e rejeita pesos invalidos", () => {
 
   assert.equal(result.valid, false);
   assert.match(result.errors.join(" "), /weight/i);
+});
+
+test("valida uma estacao completa no contrato visual versao 2", () => {
+  assert.deepEqual(validateStation(version2Station, { requireVersion2: true }), {
+    valid: true,
+    errors: []
+  });
+});
+
+test("rejeita dificuldade e origem fora dos valores permitidos na versao 2", () => {
+  const invalid = structuredClone(version2Station);
+  invalid.difficulty = "facil";
+  invalid.origin = "talk";
+
+  const result = validateStation(invalid, { requireVersion2: true });
+
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /difficulty.*invalido/i);
+  assert.match(result.errors.join(" "), /origin.*invalido/i);
+});
+
+test("rejeita fase sem prompt e patientState que nao seja objeto", () => {
+  const invalid = structuredClone(version2Station);
+  delete invalid.phases[0].prompt;
+  invalid.phases[1].patientState = "instavel";
+
+  const result = validateStation(invalid, { requireVersion2: true });
+
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /phases\[0\]\.prompt obrigatorio/i);
+  assert.match(result.errors.join(" "), /phases\[1\]\.patientState deve ser objeto/i);
+});
+
+test("rejeita media vazia e arrays estritos invalidos", () => {
+  const invalid = structuredClone(version2Station);
+  invalid.phases[0].media = [];
+  invalid.domains = [];
+  invalid.tags = ["  "];
+  invalid.references = "referencia";
+
+  const result = validateStation(invalid, { requireVersion2: true });
+
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /media deve conter ids nao vazios/i);
+  assert.match(result.errors.join(" "), /domains deve conter strings nao vazias/i);
+  assert.match(result.errors.join(" "), /tags deve conter strings nao vazias/i);
+  assert.match(result.errors.join(" "), /references deve conter strings nao vazias/i);
+});
+
+test("rejeita ids duplicados de fase e checklist na versao 2", () => {
+  const invalid = structuredClone(version2Station);
+  invalid.phases[1].id = invalid.phases[0].id;
+  invalid.checklist[1].id = invalid.checklist[0].id;
+
+  const result = validateStation(invalid, { requireVersion2: true });
+
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /phases\[1\]\.id duplicado/i);
+  assert.match(result.errors.join(" "), /checklist\[1\]\.id duplicado/i);
+});
+
+test("rejeita checklist cuja soma de pesos nao seja exatamente 100 na versao 2", () => {
+  const invalid = structuredClone(version2Station);
+  invalid.checklist[0].weight = 24;
+
+  const result = validateStation(invalid, { requireVersion2: true });
+
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /checklist deve totalizar exatamente 100 pontos/i);
 });
 
 test("calcula nota deterministica e mantem gesto nao observavel pendente", () => {

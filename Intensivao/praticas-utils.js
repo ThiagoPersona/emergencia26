@@ -13,13 +13,22 @@
     "nao_verificavel"
   ]);
   const ALLOWED_VERIFICATION = new Set(["verbal", "manual", "hibrido"]);
+  const ALLOWED_DIFFICULTIES = new Set(["basica", "intermediaria", "avancada"]);
+  const ALLOWED_ORIGINS = new Set(["historica", "acervo_reescrito", "inedita"]);
 
   function isNonEmptyString(value) {
     return typeof value === "string" && value.trim().length > 0;
   }
 
-  function validateStation(station) {
+  function validateNonEmptyStringArray(field, value, errors) {
+    if (!Array.isArray(value) || value.length === 0 || !value.every(isNonEmptyString)) {
+      errors.push(`${field} deve conter strings nao vazias`);
+    }
+  }
+
+  function validateStation(station, options) {
     const errors = [];
+    const requireVersion2 = Boolean(options && options.requireVersion2);
 
     if (!station || typeof station !== "object") {
       return { valid: false, errors: ["station deve ser um objeto"] };
@@ -54,6 +63,51 @@
           errors.push(`${prefix}.verification invalido`);
         }
       });
+    }
+
+    if (requireVersion2) {
+      if (station.version !== 2) errors.push("version deve ser 2");
+      if (!isNonEmptyString(station.examTitle)) errors.push("examTitle obrigatorio");
+      validateNonEmptyStringArray("domains", station.domains, errors);
+      if (!ALLOWED_DIFFICULTIES.has(station.difficulty)) {
+        errors.push("difficulty invalido");
+      }
+      if (!ALLOWED_ORIGINS.has(station.origin)) {
+        errors.push("origin invalido");
+      }
+      validateNonEmptyStringArray("tags", station.tags, errors);
+      validateNonEmptyStringArray("references", station.references, errors);
+
+      if (Array.isArray(station.phases) && station.phases.length > 0) {
+        const phaseIds = new Set();
+        station.phases.forEach((phase, index) => {
+          const prefix = `phases[${index}]`;
+          if (!phase || typeof phase !== "object") {
+            errors.push(`${prefix} deve ser um objeto`);
+            return;
+          }
+          if (!isNonEmptyString(phase.id)) errors.push(`${prefix}.id obrigatorio`);
+          if (phaseIds.has(phase.id)) errors.push(`${prefix}.id duplicado`);
+          phaseIds.add(phase.id);
+          if (!isNonEmptyString(phase.title)) errors.push(`${prefix}.title obrigatorio`);
+          if (!isNonEmptyString(phase.prompt)) errors.push(`${prefix}.prompt obrigatorio`);
+          if (Object.prototype.hasOwnProperty.call(phase, "patientState") &&
+              (!phase.patientState || typeof phase.patientState !== "object" || Array.isArray(phase.patientState))) {
+            errors.push(`${prefix}.patientState deve ser objeto`);
+          }
+          if (Object.prototype.hasOwnProperty.call(phase, "media") &&
+              (!Array.isArray(phase.media) || phase.media.length === 0 || !phase.media.every(isNonEmptyString))) {
+            errors.push(`${prefix}.media deve conter ids nao vazios`);
+          }
+        });
+      }
+
+      const totalPoints = Array.isArray(station.checklist)
+        ? station.checklist.reduce((sum, item) => sum + (typeof (item && item.weight) === "number" ? item.weight : 0), 0)
+        : 0;
+      if (totalPoints !== 100) {
+        errors.push("checklist deve totalizar exatamente 100 pontos");
+      }
     }
 
     return { valid: errors.length === 0, errors };
