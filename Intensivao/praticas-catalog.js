@@ -24,11 +24,18 @@
     return Array.isArray(value) ? value.includes(expected) : value === expected;
   }
 
+  function normalizeTextFilter(value) {
+    return typeof value === "string" && value.trim().length > 0 ? value : undefined;
+  }
+
   function filterStations(entries, filters, attempts) {
     const list = asEntries(entries);
     if (!Array.isArray(entries)) return [];
 
     const criteria = filters && typeof filters === "object" ? filters : {};
+    const domain = normalizeTextFilter(criteria.domain);
+    const difficulty = normalizeTextFilter(criteria.difficulty);
+    const tag = normalizeTextFilter(criteria.tag);
     const attemptedIds = new Set(
       asArray(attempts)
         .filter((attempt) => attempt && typeof attempt === "object")
@@ -36,12 +43,12 @@
     );
 
     return list.filter((entry) => {
-      if (criteria.domain !== undefined &&
-          !(containsValue(entry.domains, criteria.domain) || entry.domain === criteria.domain)) {
+      if (domain !== undefined &&
+          !(containsValue(entry.domains, domain) || entry.domain === domain)) {
         return false;
       }
-      if (criteria.difficulty !== undefined && entry.difficulty !== criteria.difficulty) return false;
-      if (criteria.tag !== undefined && !asArray(entry.tags).includes(criteria.tag)) return false;
+      if (difficulty !== undefined && entry.difficulty !== difficulty) return false;
+      if (tag !== undefined && !asArray(entry.tags).includes(tag)) return false;
       if (criteria.hasMedia === true && entry.hasMedia !== true) return false;
       if (criteria.unattempted === true && attemptedIds.has(entry.id)) return false;
       return true;

@@ -58,6 +58,17 @@ test("filtra por cada criterio e combina filtros preservando a ordem", () => {
   );
 });
 
+test("ignora filtros domain, difficulty e tag vazios ou apenas com whitespace", () => {
+  assert.deepEqual(
+    filterStations(entries, { domain: "", difficulty: "   ", tag: "\t" }, []).map((entry) => entry.id),
+    ["a", "b", "c"]
+  );
+  assert.deepEqual(
+    filterStations(entries, { domain: "  ", difficulty: "", tag: "" }, []).map((entry) => entry.id),
+    ["a", "b", "c"]
+  );
+});
+
 test("aceita dominio em domains ou domain e retorna vazio para entrada invalida", () => {
   const legacy = { id: "legacy", title: "Legado", domain: "Clinica", difficulty: "basica", tags: [] };
   const modern = { id: "modern", title: "Moderna", domains: ["Clinica"], difficulty: "basica", tags: [] };
