@@ -21,12 +21,18 @@ test("link ativo da sidebar sobrescreve a cor clara padrao do Docsify", () => {
   assert.match(html, /\.sidebar ul li\.active > a[\s\S]{0,180}color: var\(--link\) !important/);
 });
 
-test("carrega o motor de sessao antes do orquestrador do simulador", () => {
+test("carrega os modulos do simulador na ordem de dependencia", () => {
   const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
-  const sessionScript = html.indexOf('<script src="praticas-session.js"></script>');
-  const appScript = html.indexOf('<script src="praticas-app.js"></script>');
+  const scripts = [
+    "praticas-utils.js",
+    "praticas-catalog.js",
+    "praticas-session.js",
+    "praticas-media.js",
+    "praticas-api.js",
+    "praticas-app.js"
+  ];
+  const positions = scripts.map((script) => html.indexOf(`<script src="${script}"></script>`));
 
-  assert.notEqual(sessionScript, -1);
-  assert.notEqual(appScript, -1);
-  assert.ok(sessionScript < appScript);
+  positions.forEach((position) => assert.notEqual(position, -1));
+  positions.slice(1).forEach((position, index) => assert.ok(positions[index] < position));
 });

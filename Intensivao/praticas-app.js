@@ -6,7 +6,7 @@
   "use strict";
 
   const STORAGE_KEY = "teme26-practice-attempts-v1";
-  const DRAFT_KEY = "teme26-practice-draft-v1";
+  const DRAFT_KEY = "teme26-practice-draft-v2";
   const state = {
     stations: [],
     station: null,
@@ -26,6 +26,76 @@
   const sessionModule = root && root.TemePracticeSession
     ? root.TemePracticeSession
     : (typeof require === "function" ? require("./praticas-session.js") : null);
+
+  function getPublicStationView(station, mode) {
+    if (mode === "exam") {
+      return {
+        kicker: "MODO PROVA",
+        title: station && station.examTitle ? station.examTitle : "Estação sorteada",
+        showDiagnosticMeta: false
+      };
+    }
+    return {
+      kicker: station && station.domain ? station.domain : "TREINO DIRIGIDO",
+      title: station && station.title ? station.title : "Estação sorteada",
+      domain: station && station.domain,
+      difficulty: station && station.difficulty,
+      showDiagnosticMeta: true
+    };
+  }
+
+  function getPracticePhaseControls(session, station) {
+    return {
+      previous: {
+        action: "previous",
+        label: "Fase anterior",
+        disabled: !session || session.phaseIndex <= 0
+      },
+      primary: getPracticePrimaryAction(session, station)
+    };
+  }
+
+  function areStartActionsDisabled(mediaStatus) {
+    return mediaStatus !== "ready";
+  }
+
+  function getCurrentPhaseMedia(stationMedia, session) {
+    const phaseMedia = stationMedia && Array.isArray(stationMedia.phaseMedia)
+      ? stationMedia.phaseMedia
+      : [];
+    const phaseIndex = session && Number.isInteger(session.phaseIndex) ? session.phaseIndex : -1;
+    return phaseMedia[phaseIndex] || { media: [], directIds: [], missingIds: [] };
+  }
+
+  function getRunningMediaOptions() {
+    return { reviewMode: false };
+  }
+
+  function getResultMediaOptions() {
+    return { reviewMode: true };
+  }
+
+  function savePracticeDraft(storage, session) {
+    if (!storage || !sessionModule || typeof sessionModule.serializeSession !== "function") return;
+    storage.setItem(DRAFT_KEY, sessionModule.serializeSession(session));
+  }
+
+  function clearPracticeDraft(storage) {
+    if (!storage) return;
+    storage.removeItem(DRAFT_KEY);
+  }
+
+  function restorePracticeDraft(raw, station, nowMs) {
+    if (!sessionModule || typeof sessionModule.restoreSession !== "function") return null;
+    const session = sessionModule.restoreSession(raw, station, nowMs);
+    if (!session) return null;
+    return {
+      session,
+      audioBlob: null,
+      audioUrl: null,
+      notice: "Sessão restaurada sem a gravação anterior."
+    };
+  }
 
   function createPracticeSession(station, createdAtMs) {
     if (sessionModule && typeof sessionModule.createSession === "function") {
@@ -699,6 +769,16 @@
     createPracticeSession,
     advancePracticePhase,
     getPracticePrimaryAction,
+    getPublicStationView,
+    getPracticePhaseControls,
+    areStartActionsDisabled,
+    getCurrentPhaseMedia,
+    getRunningMediaOptions,
+    getResultMediaOptions,
+    DRAFT_KEY,
+    savePracticeDraft,
+    clearPracticeDraft,
+    restorePracticeDraft,
     getRemainingSeconds,
     buildPracticeReport,
     parseStoredAttempts,
