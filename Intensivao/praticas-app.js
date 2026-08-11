@@ -875,9 +875,15 @@
       loadSelectedStation(selection.entry);
     });
     const recordButton = mount.querySelector("#practice-start-record");
-    if (recordButton) recordButton.addEventListener("click", () => beginSession(true));
+    if (recordButton) recordButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      beginSession(true);
+    });
     const manualButton = mount.querySelector("#practice-start-manual");
-    if (manualButton) manualButton.addEventListener("click", () => beginSession(false));
+    if (manualButton) manualButton.addEventListener("click", (event) => {
+      event.stopPropagation();
+      beginSession(false);
+    });
     renderAuthPanel();
   }
 
@@ -983,14 +989,7 @@
 
   function closeMobileSidebarForRunningStation() {
     if (root.innerWidth <= 980 && root.document && root.document.body && root.document.body.classList) {
-      const body = root.document.body;
-      body.classList.add("close");
-      // Docsify's delegated mobile click runs after app handlers and can remove this class.
-      Promise.resolve().then(() => {
-        if (root.innerWidth <= 980 && root.document && root.document.body === body) {
-          body.classList.add("close");
-        }
-      });
+      root.document.body.classList.add("close");
     }
   }
 

@@ -989,32 +989,41 @@ test("mantem a sidebar fechada ao iniciar e mudar de fase no mobile", async () =
   assert.equal(fixture.root.document.body.classList.contains("close"), true);
 });
 
-test("reaplica o fechamento mobile depois do listener delegado do clique inicial", async () => {
-  const storage = createStorage();
-  const fetch = async (url) => {
-    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
-    if (url.endsWith("media.json")) return jsonResponse([]);
-    return jsonResponse(createStation("a"));
-  };
-  const fixture = createInteractiveRoot(fetch, storage);
-  fixture.root.innerWidth = 390;
-  fixture.root.document.body.classList.add("close");
-  let delegatedSawRunningStation = false;
-  fixture.root.document.body.addEventListener("click", () => {
-    delegatedSawRunningStation = /Fase 1\/2/.test(fixture.simulator.innerHTML);
-    if (fixture.root.document.body.classList.contains("close")) {
-      fixture.root.document.body.classList.remove("close");
-    }
-  });
-  const app = createPracticeApp(fixture.root);
-  await app.mount();
+test("impede o listener delegado sem bloquear os dois controles de inicio", async (t) => {
+  const cases = [
+    { selector: "#practice-start-record", records: true },
+    { selector: "#practice-start-manual", records: false }
+  ];
 
-  fixture.simulator.querySelector("#practice-start-manual").click();
+  for (const currentCase of cases) {
+    await t.test(currentCase.selector, async () => {
+      const storage = createStorage();
+      const fetch = async (url) => {
+        if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+        if (url.endsWith("media.json")) return jsonResponse([]);
+        return jsonResponse(createStation("a"));
+      };
+      const fixture = createInteractiveRoot(fetch, storage);
+      fixture.root.innerWidth = 390;
+      fixture.root.document.body.classList.add("close");
+      let delegatedClicks = 0;
+      fixture.root.document.body.addEventListener("click", () => {
+        delegatedClicks += 1;
+        fixture.root.document.body.classList.remove("close");
+      });
+      const app = createPracticeApp(fixture.root);
+      await app.mount();
 
-  assert.equal(delegatedSawRunningStation, true);
-  assert.equal(fixture.root.document.body.classList.contains("close"), false);
-  await Promise.resolve();
-  assert.equal(fixture.root.document.body.classList.contains("close"), true);
+      fixture.simulator.querySelector(currentCase.selector).click();
+      await waitFor(() => assert.match(fixture.simulator.innerHTML, /Fase 1\/2/));
+
+      assert.equal(delegatedClicks, 0);
+      assert.equal(fixture.root.document.body.classList.contains("close"), true);
+      assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).status, "running");
+      assert.equal(fixture.intervals.length, 1);
+      assert.equal(fixture.recorders.length, currentCase.records ? 1 : 0);
+    });
+  }
 });
 
 test("nao força o fechamento da sidebar ao iniciar no desktop", async () => {
