@@ -46,6 +46,7 @@ test("filtra por cada criterio e combina filtros preservando a ordem", () => {
   assert.deepEqual(filterStations(entries, { difficulty: "intermediaria" }, []).map((entry) => entry.id), ["c"]);
   assert.deepEqual(filterStations(entries, { tag: "pocus" }, []).map((entry) => entry.id), ["c"]);
   assert.deepEqual(filterStations(entries, { hasMedia: true }, []).map((entry) => entry.id), ["a", "c"]);
+  assert.deepEqual(filterStations(entries, { hasMedia: false }, []).map((entry) => entry.id), ["b"]);
   assert.deepEqual(
     filterStations(entries, {
       domain: "Cardio",

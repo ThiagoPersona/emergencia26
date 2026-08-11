@@ -576,6 +576,17 @@ test("filtra treino dirigido por competencia mesmo quando ela nao e uma tag", ()
   assert.deepEqual(alternative.cycleIds, ["exam-preservado"]);
 });
 
+test("filtra treino dirigido por disponibilidade de midia", () => {
+  const entries = [
+    { id: "com-midia", title: "Com midia", domain: "Emergencia", difficulty: "basica", hasMedia: true },
+    { id: "sem-midia", title: "Sem midia", domain: "Emergencia", difficulty: "basica", hasMedia: false }
+  ];
+
+  const selected = selectStationEntry(entries, "directed", { media: "without" }, [], [], () => 0);
+
+  assert.equal(selected.entry.id, "sem-midia");
+});
+
 test("persiste modo, filtros e ciclo sem incluir audio", () => {
   const values = new Map();
   const storage = {
@@ -585,7 +596,7 @@ test("persiste modo, filtros e ciclo sem incluir audio", () => {
 
   savePracticeSetup(storage, {
     mode: "exam",
-    filters: { domain: "Via aerea", difficulty: "", competency: "", unattempted: true },
+    filters: { domain: "Via aerea", difficulty: "", competency: "", media: "", unattempted: true },
     cycleIds: ["station-1", "station-2"],
     audioBlob: { shouldNotPersist: true }
   });
@@ -595,13 +606,31 @@ test("persiste modo, filtros e ciclo sem incluir audio", () => {
   assert.deepEqual(JSON.parse(storage.getItem(CYCLE_KEY)), ["station-1", "station-2"]);
   assert.deepEqual(JSON.parse(storage.getItem(PREFERENCES_KEY)), {
     mode: "exam",
-    filters: { domain: "Via aerea", difficulty: "", competency: "", unattempted: true }
+    filters: { domain: "Via aerea", difficulty: "", competency: "", media: "", unattempted: true }
   });
   assert.deepEqual(restorePracticeSetup(storage), {
     mode: "exam",
-    filters: { domain: "Via aerea", difficulty: "", competency: "", unattempted: true },
+    filters: { domain: "Via aerea", difficulty: "", competency: "", media: "", unattempted: true },
     cycleIds: ["station-1", "station-2"]
   });
+});
+
+test("persiste o filtro de midia e aceita setups salvos sem esse campo", () => {
+  const storage = createStorage();
+
+  savePracticeSetup(storage, {
+    mode: "directed",
+    filters: { media: "without" },
+    cycleIds: []
+  });
+
+  assert.equal(restorePracticeSetup(storage).filters.media, "without");
+
+  storage.setItem(PREFERENCES_KEY, JSON.stringify({
+    mode: "directed",
+    filters: { domain: "Emergencia" }
+  }));
+  assert.equal(restorePracticeSetup(storage).filters.media, "");
 });
 
 test("sorteia outra estacao conforme o modo sem contaminar o ciclo da prova", () => {
@@ -785,6 +814,24 @@ test("troca o modo pelo evento change do radio nativo", async () => {
   });
 });
 
+test("renderiza filtro de midia com todas, com e sem midia", async () => {
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json", hasMedia: true }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  const app = createPracticeApp(fixture.root);
+
+  await app.mount();
+
+  assert.match(fixture.simulator.innerHTML, /<select name="media">/);
+  assert.match(fixture.simulator.innerHTML, /<option value=""[^>]*>Todas as mídias<\/option>/);
+  assert.match(fixture.simulator.innerHTML, /<option value="with"[^>]*>Com mídia<\/option>/);
+  assert.match(fixture.simulator.innerHTML, /<option value="without"[^>]*>Sem mídia<\/option>/);
+});
+
 test("sorteia outra estacao dirigida por click sem contaminar o ciclo da prova", async () => {
   const stationUrls = [];
   const storage = createStorage({
@@ -920,5 +967,46 @@ test("mount restaura draft em andamento sem recuperar audio", async () => {
   assert.match(fixture.simulator.innerHTML, /Treino sem gravação/);
   assert.equal(fixture.recorders.length, 0);
   assert.equal(fixture.intervals.length, 1);
+  assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
+});
+
+test("mount concorrente restaura um unico draft sem sortear outra estacao", async () => {
+  const now = Date.now();
+  const loads = { index: 0, media: 0, station: 0 };
+  const storage = createStorage({
+    [DRAFT_KEY]: JSON.stringify({
+      stationId: "a",
+      stationVersion: 1,
+      mode: "exam",
+      status: "running",
+      phaseIndex: 1,
+      createdAtMs: now - 2000,
+      startedAtMs: now - 1000,
+      completedAtMs: null
+    })
+  });
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) {
+      loads.index += 1;
+      return jsonResponse([{ id: "a", file: "a.json" }]);
+    }
+    if (url.endsWith("media.json")) {
+      loads.media += 1;
+      return jsonResponse([]);
+    }
+    loads.station += 1;
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  const app = createPracticeApp(fixture.root);
+
+  const firstMount = app.mount();
+  const secondMount = app.mount();
+  assert.strictEqual(secondMount, firstMount);
+  await firstMount;
+
+  assert.deepEqual(loads, { index: 1, media: 1, station: 1 });
+  assert.equal(fixture.intervals.length, 1);
+  assert.match(fixture.simulator.innerHTML, /Sessão restaurada sem a gravação anterior/);
   assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
 });

@@ -14,6 +14,7 @@
     domain: "",
     difficulty: "",
     competency: "",
+    media: "",
     unattempted: false
   };
   const LEGACY_STATION_METADATA = {
@@ -194,6 +195,7 @@
       domain: typeof source.domain === "string" ? source.domain : "",
       difficulty: typeof source.difficulty === "string" ? source.difficulty : "",
       competency: typeof source.competency === "string" ? source.competency : "",
+      media: ["with", "without"].includes(source.media) ? source.media : "",
       unattempted: source.unattempted === true
     };
   }
@@ -324,6 +326,11 @@
     const filtered = catalogModule.filterStations(entries, {
       domain: selectedFilters.domain,
       difficulty: selectedFilters.difficulty,
+      hasMedia: selectedFilters.media === "with"
+        ? true
+        : selectedFilters.media === "without"
+          ? false
+          : undefined,
       unattempted: selectedFilters.unattempted
     }, attempts);
     if (!selectedFilters.competency) return filtered;
@@ -709,6 +716,16 @@
       .join("");
   }
 
+  function renderMediaFilterOptions(selected) {
+    return [
+      ["", "Todas as mídias"],
+      ["with", "Com mídia"],
+      ["without", "Sem mídia"]
+    ].map(([value, label]) => (
+      `<option value="${value}" ${value === selected ? "selected" : ""}>${label}</option>`
+    )).join("");
+  }
+
   function getEntryLabel(entry, index) {
     return entry && entry.title ? entry.title : `Estação ${index + 1}`;
   }
@@ -780,6 +797,7 @@
         <label><span>Domínio</span><select name="domain">${renderSelectOptions(getEntryValues("domain"), state.filters.domain, "Todos os domínios")}</select></label>
         <label><span>Dificuldade</span><select name="difficulty">${renderSelectOptions(getEntryValues("difficulty"), state.filters.difficulty, "Todas as dificuldades")}</select></label>
         <label><span>Competência</span><select name="competency">${renderSelectOptions(getEntryValues("competency"), state.filters.competency, "Todas as competências")}</select></label>
+        <label><span>Mídia</span><select name="media">${renderMediaFilterOptions(state.filters.media)}</select></label>
         <label class="practice-toggle"><input name="unattempted" type="checkbox" ${state.filters.unattempted ? "checked" : ""}><span>Não realizadas</span></label>
         <button class="practice-button" type="submit">Aplicar filtros</button>
       </form>
@@ -826,6 +844,7 @@
         domain: form.get("domain"),
         difficulty: form.get("difficulty"),
         competency: form.get("competency"),
+        media: form.get("media"),
         unattempted: form.get("unattempted") === "on"
       });
       saveCurrentSetup();
@@ -1359,31 +1378,39 @@
     return true;
   }
 
-  async function mount() {
-    if (!root || !root.document) return;
-    state.dashboardSyncStarted = false;
-    const simulator = root.document.getElementById("practice-simulator");
-    if (simulator) {
-      try {
-        if (!state.stationEntries.length) {
-          const [entries, manifest] = await Promise.all([
-            loadStationIndex(),
-            loadMediaManifest()
-          ]);
-          state.stationEntries = entries;
-          state.stations = entries;
-          state.mediaManifest = manifest;
-          const savedSetup = restorePracticeSetup(root.localStorage);
-          state.mode = savedSetup.mode;
-          state.filters = savedSetup.filters;
-          state.cycleIds = savedSetup.cycleIds;
+  let mountingPromise = null;
+
+  function mount() {
+    if (mountingPromise) return mountingPromise;
+    mountingPromise = (async () => {
+      if (!root || !root.document) return;
+      state.dashboardSyncStarted = false;
+      const simulator = root.document.getElementById("practice-simulator");
+      if (simulator) {
+        try {
+          if (!state.stationEntries.length) {
+            const [entries, manifest] = await Promise.all([
+              loadStationIndex(),
+              loadMediaManifest()
+            ]);
+            state.stationEntries = entries;
+            state.stations = entries;
+            state.mediaManifest = manifest;
+            const savedSetup = restorePracticeSetup(root.localStorage);
+            state.mode = savedSetup.mode;
+            state.filters = savedSetup.filters;
+            state.cycleIds = savedSetup.cycleIds;
+          }
+          if (!(await restoreSavedDraft())) await loadCurrentModeSelection();
+        } catch (error) {
+          renderError(simulator, error.message);
         }
-        if (!(await restoreSavedDraft())) await loadCurrentModeSelection();
-      } catch (error) {
-        renderError(simulator, error.message);
       }
-    }
-    renderDashboard();
+      renderDashboard();
+    })().finally(() => {
+      mountingPromise = null;
+    });
+    return mountingPromise;
   }
 
   return {

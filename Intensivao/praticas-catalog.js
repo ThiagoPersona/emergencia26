@@ -49,7 +49,7 @@
       }
       if (difficulty !== undefined && entry.difficulty !== difficulty) return false;
       if (tag !== undefined && !asArray(entry.tags).includes(tag)) return false;
-      if (criteria.hasMedia === true && entry.hasMedia !== true) return false;
+      if (typeof criteria.hasMedia === "boolean" && entry.hasMedia !== criteria.hasMedia) return false;
       if (criteria.unattempted === true && attemptedIds.has(entry.id)) return false;
       return true;
     });
