@@ -685,19 +685,25 @@
       return false;
     }
     const mimeType = chooseAudioMimeType();
-    const recorder = new root.MediaRecorder(stream, mimeType ? { mimeType } : undefined);
-    recorder.addEventListener("dataavailable", (event) => {
-      if (expectedRecordingGeneration !== state.recordingGeneration) return;
-      if (event.data && event.data.size > 0) state.audioChunks.push(event.data);
-    });
-    recorder.addEventListener("stop", () => {
-      if (expectedRecordingGeneration !== state.recordingGeneration) return;
-      if (state.mediaRecorder === recorder) state.mediaRecorder = null;
-      state.audioBlob = new Blob(state.audioChunks, { type: recorder.mimeType || "audio/webm" });
-      state.audioUrl = root.URL.createObjectURL(state.audioBlob);
-      renderReview();
-    }, { once: true });
-    recorder.start(1000);
+    let recorder;
+    try {
+      recorder = new root.MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+      recorder.addEventListener("dataavailable", (event) => {
+        if (expectedRecordingGeneration !== state.recordingGeneration) return;
+        if (event.data && event.data.size > 0) state.audioChunks.push(event.data);
+      });
+      recorder.addEventListener("stop", () => {
+        if (expectedRecordingGeneration !== state.recordingGeneration) return;
+        if (state.mediaRecorder === recorder) state.mediaRecorder = null;
+        state.audioBlob = new Blob(state.audioChunks, { type: recorder.mimeType || "audio/webm" });
+        state.audioUrl = root.URL.createObjectURL(state.audioBlob);
+        renderReview();
+      }, { once: true });
+      recorder.start(1000);
+    } catch (error) {
+      stopStreamTracks(stream);
+      throw error;
+    }
     state.mediaStream = stream;
     state.mediaRecorder = recorder;
     return true;

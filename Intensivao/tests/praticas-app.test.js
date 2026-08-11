@@ -1362,3 +1362,49 @@ test("negacao tardia do microfone inicia imediatamente sem audio", async (t) => 
   assert.match(fixture.simulator.innerHTML, /Treino sem gravação/);
   assert.equal(fixture.intervals.length, 1);
 });
+
+test("libera o microfone quando o MediaRecorder falha apos a permissao", async (t) => {
+  const cases = [
+    {
+      name: "construtor",
+      replace(BaseRecorder) {
+        return class BrokenRecorder extends BaseRecorder {
+          constructor(stream) {
+            super(stream);
+            throw new Error("falha no construtor");
+          }
+        };
+      }
+    },
+    {
+      name: "inicio",
+      replace(BaseRecorder) {
+        return class BrokenRecorder extends BaseRecorder {
+          start() { throw new Error("falha ao iniciar"); }
+        };
+      }
+    }
+  ];
+
+  for (const currentCase of cases) {
+    await t.test(currentCase.name, async () => {
+      const storage = createStorage();
+      const fetch = async (url) => {
+        if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+        if (url.endsWith("media.json")) return jsonResponse([]);
+        return jsonResponse(createStation("a"));
+      };
+      const fixture = createInteractiveRoot(fetch, storage);
+      fixture.root.MediaRecorder = currentCase.replace(fixture.root.MediaRecorder);
+      const app = createPracticeApp(fixture.root);
+      await app.mount();
+
+      fixture.simulator.querySelector("#practice-start-record").click();
+      await waitFor(() => assert.match(fixture.simulator.innerHTML, /O treino continuará sem áudio/));
+
+      assert.equal(fixture.tracks.length, 1);
+      assert.equal(fixture.tracks[0].stopped, true);
+      assert.match(fixture.simulator.innerHTML, /Treino sem gravação/);
+    });
+  }
+});
