@@ -31,6 +31,30 @@ test("link ativo da sidebar sobrescreve a cor clara padrao do Docsify", () => {
   assert.match(html, /\.sidebar ul li\.active > a[\s\S]{0,180}color: var\(--link\) !important/);
 });
 
+test("botao da sidebar rola para fora do topo no breakpoint mobile", () => {
+  const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
+  const mobileStart = html.indexOf("@media (max-width: 640px)");
+  const mobileEnd = html.indexOf("@media print", mobileStart);
+  const mobileCss = html.slice(mobileStart, mobileEnd);
+
+  assert.match(mobileCss, /\.sidebar-toggle\s*\{[^}]*position:\s*absolute\s*!important;[^}]*top:\s*10px\s*!important;[^}]*left:\s*10px\s*!important;[^}]*width:\s*38px\s*!important;[^}]*height:\s*38px\s*!important;/);
+  assert.match(mobileCss, /\.markdown-section\s*\{[^}]*padding-top:\s*62px\s*!important;/);
+});
+
+test("simulador monta antes de qualquer descricao visivel", () => {
+  const simulator = fs.readFileSync(path.join(__dirname, "..", "praticas", "SIMULADOR.md"), "utf8");
+  const heading = "# Simulador De Estações";
+  const mount = '<div id="practice-simulator" class="practice-mount" aria-live="polite">';
+  const notice = "> A correção automática é uma ferramenta de treino.";
+  const mountIndex = simulator.indexOf(mount);
+
+  assert.equal(simulator.indexOf(heading), 0);
+  assert.equal(simulator.slice(heading.length, mountIndex).trim(), "");
+  assert.equal(simulator.includes("## Modos"), false);
+  assert.equal(simulator.includes("O simulador reúne"), false);
+  assert.ok(mountIndex < simulator.indexOf(notice));
+});
+
 test("carrega os modulos do simulador na ordem de dependencia", () => {
   const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
   const scripts = [
