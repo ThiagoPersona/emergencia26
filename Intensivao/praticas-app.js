@@ -875,15 +875,9 @@
       loadSelectedStation(selection.entry);
     });
     const recordButton = mount.querySelector("#practice-start-record");
-    if (recordButton) recordButton.addEventListener("click", (event) => {
-      event.stopPropagation();
-      beginSession(true);
-    });
+    if (recordButton) recordButton.addEventListener("click", () => beginSession(true));
     const manualButton = mount.querySelector("#practice-start-manual");
-    if (manualButton) manualButton.addEventListener("click", (event) => {
-      event.stopPropagation();
-      beginSession(false);
-    });
+    if (manualButton) manualButton.addEventListener("click", () => beginSession(false));
     renderAuthPanel();
   }
 
@@ -1392,6 +1386,15 @@
   }
 
   let mountingPromise = null;
+  let guardedSimulator = null;
+
+  function guardMobileSimulatorClicks(simulator) {
+    if (!simulator || guardedSimulator === simulator) return;
+    simulator.addEventListener("click", (event) => {
+      if (root.innerWidth <= 980) event.stopPropagation();
+    });
+    guardedSimulator = simulator;
+  }
 
   function mount() {
     if (mountingPromise) return mountingPromise;
@@ -1400,6 +1403,7 @@
       state.dashboardSyncStarted = false;
       const simulator = root.document.getElementById("practice-simulator");
       if (simulator) {
+        guardMobileSimulatorClicks(simulator);
         try {
           if (!state.stationEntries.length) {
             const [entries, manifest] = await Promise.all([

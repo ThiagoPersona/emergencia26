@@ -1026,6 +1026,33 @@ test("impede o listener delegado sem bloquear os dois controles de inicio", asyn
   }
 });
 
+test("impede o listener delegado ao usar os controles da estacao no mobile", async () => {
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  fixture.root.innerWidth = 390;
+  fixture.root.document.body.classList.add("close");
+  let delegatedClicks = 0;
+  fixture.root.document.body.addEventListener("click", () => {
+    delegatedClicks += 1;
+    fixture.root.document.body.classList.remove("close");
+  });
+  const app = createPracticeApp(fixture.root);
+  await app.mount();
+
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Fase 1\/2/));
+  fixture.simulator.querySelector("#practice-next").click();
+
+  assert.equal(delegatedClicks, 0);
+  assert.equal(fixture.root.document.body.classList.contains("close"), true);
+  assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
+});
+
 test("nao força o fechamento da sidebar ao iniciar no desktop", async () => {
   const storage = createStorage();
   const fetch = async (url) => {
