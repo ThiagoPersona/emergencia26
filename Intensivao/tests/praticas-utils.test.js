@@ -189,7 +189,95 @@ test("confirmacao manual conclui a nota sem alterar classificacao da IA", () => 
   assert.deepEqual(result.pendingManualItemIds, []);
 });
 
-test("identifica erro critico somente em item critico ausente ou incorreto", () => {
+test("item manual permanece pendente mesmo com status verbal cumprido", () => {
+  const manualStation = structuredClone(station);
+  manualStation.checklist = [
+    {
+      id: "gesto-manual",
+      label: "Executa o gesto manual",
+      weight: 4,
+      verification: "manual",
+      critical: false
+    }
+  ];
+
+  const result = calculatePracticeScore(manualStation, [
+    { itemId: "gesto-manual", status: "cumprido", evidence: "Gesto descrito na fala." }
+  ]);
+
+  assert.equal(result.earnedPoints, 0);
+  assert.equal(result.assessedPoints, 0);
+  assert.equal(result.pendingPoints, 4);
+  assert.equal(result.finalPercent, null);
+  assert.deepEqual(result.pendingManualItemIds, ["gesto-manual"]);
+});
+
+test("fala sem confirmacao nao pontua item hibrido", () => {
+  const hybridStation = structuredClone(station);
+  hybridStation.checklist = [
+    {
+      id: "gesto-hibrido",
+      label: "Verbaliza e executa a conduta",
+      weight: 4,
+      verification: "hibrido",
+      critical: false
+    }
+  ];
+
+  const result = calculatePracticeScore(hybridStation, [
+    { itemId: "gesto-hibrido", status: "cumprido", evidence: "Conduta verbalizada." }
+  ]);
+
+  assert.equal(result.earnedPoints, 0);
+  assert.equal(result.assessedPoints, 0);
+  assert.equal(result.pendingPoints, 4);
+  assert.equal(result.finalPercent, null);
+  assert.deepEqual(result.pendingManualItemIds, ["gesto-hibrido"]);
+});
+
+test("item hibrido confirmado pontua apenas com status verbal aceitavel", () => {
+  const hybridStation = structuredClone(station);
+  hybridStation.checklist = [
+    { id: "completo", label: "Conduta completa", weight: 4, verification: "hibrido" },
+    { id: "parcial", label: "Conduta parcial", weight: 2, verification: "hibrido" },
+    { id: "sem-fala", label: "Conduta sem fala", weight: 4, verification: "hibrido" }
+  ];
+
+  const result = calculatePracticeScore(hybridStation, [
+    { itemId: "completo", status: "cumprido", manualConfirmed: true },
+    { itemId: "parcial", status: "parcial", manualConfirmed: true },
+    { itemId: "sem-fala", status: "nao_verificavel", manualConfirmed: true }
+  ]);
+
+  assert.equal(result.earnedPoints, 5);
+  assert.equal(result.assessedPoints, 10);
+  assert.equal(result.pendingPoints, 0);
+  assert.equal(result.finalPercent, 50);
+  assert.deepEqual(result.pendingManualItemIds, []);
+});
+
+test("negacao explicita zera itens criticos manuais e hibridos e registra falhas", () => {
+  const criticalStation = structuredClone(station);
+  criticalStation.checklist = [
+    { id: "manual", label: "Gesto manual critico", weight: 4, verification: "manual", critical: true },
+    { id: "hibrido", label: "Gesto hibrido critico", weight: 6, verification: "hibrido", critical: true }
+  ];
+
+  const result = calculatePracticeScore(criticalStation, [
+    { itemId: "manual", status: "cumprido", manualConfirmed: false },
+    { itemId: "hibrido", status: "cumprido", manualConfirmed: false }
+  ]);
+
+  assert.equal(result.earnedPoints, 0);
+  assert.equal(result.assessedPoints, 10);
+  assert.equal(result.pendingPoints, 0);
+  assert.equal(result.finalPercent, 0);
+  assert.deepEqual(result.pendingManualItemIds, []);
+  assert.deepEqual(result.criticalFailures, ["manual", "hibrido"]);
+  assert.deepEqual(result.evaluations.map((evaluation) => evaluation.status), ["cumprido", "cumprido"]);
+});
+
+test("identifica erro critico verbal ausente ou incorreto", () => {
   const result = calculatePracticeScore(station, [
     { itemId: "diagnostico", status: "incorreto", evidence: "Disse ser vazamento." },
     { itemId: "frequencia", status: "ausente", evidence: "Nao mencionou." },

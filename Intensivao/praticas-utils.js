@@ -151,8 +151,9 @@
       const evaluation = normalizeEvaluation(item, evaluationMap.get(item.id));
       normalizedEvaluations.push(evaluation);
 
-      const isManualPending = evaluation.status === "nao_verificavel" &&
-        (item.verification === "manual" || item.verification === "hibrido") &&
+      const requiresManualConfirmation = item.verification === "manual" ||
+        item.verification === "hibrido";
+      const isManualPending = requiresManualConfirmation &&
         evaluation.manualConfirmed === null;
 
       if (isManualPending) {
@@ -162,12 +163,24 @@
       }
 
       assessedPoints += item.weight;
-      if (evaluation.status === "cumprido") earnedPoints += item.weight;
-      if (evaluation.status === "parcial") earnedPoints += item.weight * 0.5;
-      if (evaluation.status === "nao_verificavel" && evaluation.manualConfirmed === true) {
+      const confirmationAccepted = !requiresManualConfirmation ||
+        evaluation.manualConfirmed === true;
+      if (confirmationAccepted && evaluation.status === "cumprido") {
         earnedPoints += item.weight;
       }
-      if (item.critical && ["ausente", "incorreto"].includes(evaluation.status)) {
+      if (confirmationAccepted && evaluation.status === "parcial") {
+        earnedPoints += item.weight * 0.5;
+      }
+      if (item.verification === "manual" &&
+          evaluation.status === "nao_verificavel" &&
+          evaluation.manualConfirmed === true) {
+        earnedPoints += item.weight;
+      }
+
+      const isCriticalStatusFailure = ["ausente", "incorreto"].includes(evaluation.status);
+      const isCriticalManualDenial = requiresManualConfirmation &&
+        evaluation.manualConfirmed === false;
+      if (item.critical && (isCriticalStatusFailure || isCriticalManualDenial)) {
         criticalFailures.push(item.id);
       }
     });
