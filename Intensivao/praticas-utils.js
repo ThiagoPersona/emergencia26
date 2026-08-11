@@ -155,6 +155,11 @@
         item.verification === "hibrido";
       const isManualPending = requiresManualConfirmation &&
         evaluation.manualConfirmed === null;
+      const isCriticalStatusFailure = ["ausente", "incorreto"].includes(evaluation.status);
+
+      if (item.critical && item.verification !== "manual" && isCriticalStatusFailure) {
+        criticalFailures.push(item.id);
+      }
 
       if (isManualPending) {
         pendingPoints += item.weight;
@@ -177,10 +182,9 @@
         earnedPoints += item.weight;
       }
 
-      const isCriticalStatusFailure = ["ausente", "incorreto"].includes(evaluation.status);
       const isCriticalManualDenial = requiresManualConfirmation &&
         evaluation.manualConfirmed === false;
-      if (item.critical && (isCriticalStatusFailure || isCriticalManualDenial)) {
+      if (item.critical && isCriticalManualDenial && !criticalFailures.includes(item.id)) {
         criticalFailures.push(item.id);
       }
     });

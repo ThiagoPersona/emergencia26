@@ -235,6 +235,27 @@ test("fala sem confirmacao nao pontua item hibrido", () => {
   assert.deepEqual(result.pendingManualItemIds, ["gesto-hibrido"]);
 });
 
+test("falha verbal critica de item hibrido aparece mesmo com gesto pendente", () => {
+  const hybridStation = structuredClone(station);
+  hybridStation.checklist = [
+    {
+      id: "hibrido-critico",
+      label: "Verbaliza e executa a conduta crítica",
+      weight: 4,
+      verification: "hibrido",
+      critical: true
+    }
+  ];
+
+  const result = calculatePracticeScore(hybridStation, [
+    { itemId: "hibrido-critico", status: "incorreto", evidence: "Conduta verbal incorreta." }
+  ]);
+
+  assert.equal(result.finalPercent, null);
+  assert.deepEqual(result.pendingManualItemIds, ["hibrido-critico"]);
+  assert.deepEqual(result.criticalFailures, ["hibrido-critico"]);
+});
+
 test("item hibrido confirmado pontua apenas com status verbal aceitavel", () => {
   const hybridStation = structuredClone(station);
   hybridStation.checklist = [
