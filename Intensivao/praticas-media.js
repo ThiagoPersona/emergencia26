@@ -360,6 +360,15 @@
     frame.appendChild(controls);
   }
 
+  function addVideoControls(frame, video) {
+    const controls = root.document.createElement("div");
+    controls.className = "practice-media-toolbar";
+    controls.appendChild(createIconButton("Reiniciar vídeo", "|<", () => {
+      video.currentTime = 0;
+    }));
+    frame.appendChild(controls);
+  }
+
   function createMediaFrame(item, reviewMode) {
     const frame = root.document.createElement("figure");
     frame.className = "practice-media-frame";
@@ -374,6 +383,7 @@
       video.controls = true;
       video.setAttribute("aria-label", alt);
       frame.appendChild(video);
+      addVideoControls(frame, video);
     } else {
       const image = root.document.createElement("img");
       image.src = item.src;

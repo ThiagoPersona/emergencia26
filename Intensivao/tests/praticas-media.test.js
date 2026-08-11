@@ -512,6 +512,12 @@ test("renderiza video com controles, poster e alternativa", () => {
     assert.equal(rendered.playsInline, true);
     assert.equal(rendered.controls, true);
     assert.equal(rendered.attributes["aria-label"], item.reviewAlt);
+    rendered.currentTime = 12;
+    const restart = findByClass(container, "practice-media-control")
+      .find((button) => button.title === "Reiniciar vídeo");
+    assert.ok(restart);
+    restart.dispatch("click");
+    assert.equal(rendered.currentTime, 0);
   } finally {
     global.document = previousDocument;
   }
