@@ -15,6 +15,16 @@ test("workflow publica scripts, estilos, dados das praticas e sidebar atual", ()
   assert.match(workflow, /Intensivao\/_sidebar\.md/);
 });
 
+test("workflow publica o acervo local de midia pratica nas duas rotas do Pages", () => {
+  const workflow = fs.readFileSync(
+    path.join(__dirname, "..", "..", ".github", "workflows", "pages-intensivao.yml"),
+    "utf8"
+  );
+
+  assert.match(workflow, /cp -R Intensivao\/assets\/praticas\/\. site\/assets\/praticas\//);
+  assert.match(workflow, /cp -R Intensivao\/assets\/praticas\/\. site\/Intensivao\/assets\/praticas\//);
+});
+
 test("link ativo da sidebar sobrescreve a cor clara padrao do Docsify", () => {
   const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
 

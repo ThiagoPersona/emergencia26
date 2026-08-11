@@ -38,9 +38,11 @@ flowchart LR
 | Reavaliação | Explica o que espera melhorar e o que fará se não melhorar |
 | Comunicação | Dá comandos fechados, organiza equipe e explicita consultas/transferência |
 
-## Banco inicial
+## Banco de estações
 
-O simulador começa com as cinco estações oficiais de 2025 reconstruídas em formato de treino:
+O simulador reúne **30 estações v2**: cinco estações históricas de 2025, reconstruídas em formato de treino, e 25 estações inéditas. Todas têm cinco minutos, fases progressivas, checklist observável de 100 pontos e correção ao final.
+
+As cinco reconstruções históricas cobrem:
 
 - ventilação mecânica e auto-PEEP;
 - trauma com hemorragia exsanguinante;
@@ -48,7 +50,13 @@ O simulador começa com as cinco estações oficiais de 2025 reconstruídas em f
 - síndrome colinérgica pediátrica;
 - TCE grave e hipertensão intracraniana.
 
-Os checklists foram estruturados a partir das provas locais. As respostas de referência foram reescritas e atualizadas; quando o documento antigo apresenta formulação insegura ou ambígua, o material conserva a habilidade cobrada e explicita a conduta clínica adequada.
+Os checklists históricos foram estruturados a partir das provas locais. As respostas de referência foram reescritas e atualizadas; quando o documento antigo apresenta formulação insegura ou ambígua, o material conserva a habilidade cobrada e explicita a conduta clínica adequada.
+
+## Modos do simulador
+
+- **Modo prova:** sorteia uma estação do banco, evita repetição no ciclo atual e mantém metadados diagnósticos ocultos antes do início.
+- **Treino dirigido:** permite filtrar por domínio, dificuldade, competência, mídia disponível e tentativas ainda não realizadas antes de sortear a estação.
+- **Revisão:** usa o histórico local para recomendar estações relacionadas a itens ausentes ou incorretos; sem lacunas registradas, prioriza as menos realizadas.
 
 ## Trilhas
 

@@ -26,8 +26,8 @@ jobs:
       - name: Montar site
         run: |
           set -euo pipefail
-          mkdir -p site/Intensivao site/Intensivao/temas site/Intensivao/provas site/Intensivao/assets site/Intensivao/assets/provas site/Intensivao/praticas
-          mkdir -p site/temas site/provas site/assets site/assets/provas site/praticas
+          mkdir -p site/Intensivao site/Intensivao/temas site/Intensivao/provas site/Intensivao/assets site/Intensivao/assets/provas site/Intensivao/assets/praticas site/Intensivao/praticas
+          mkdir -p site/temas site/provas site/assets site/assets/provas site/assets/praticas site/praticas
           shopt -s nullglob
 
           # Publicação na raiz (padrão dos Links do GitHub Pages): /index-online.html
@@ -45,6 +45,8 @@ jobs:
           cp -f Intensivao/*.css site/Intensivao/ 2>/dev/null || true
           cp -R Intensivao/praticas/. site/praticas/
           cp -R Intensivao/praticas/. site/Intensivao/praticas/
+          cp -R Intensivao/assets/praticas/. site/assets/praticas/
+          cp -R Intensivao/assets/praticas/. site/Intensivao/assets/praticas/
           for file in Intensivao/temas/*.md; do
             cp "$file" site/Intensivao/temas/
             cp "$file" site/temas/
