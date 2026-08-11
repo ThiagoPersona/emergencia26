@@ -20,7 +20,7 @@
         "summary": "Adulto com dor abdominal e lombar súbita, em choque sem causa declarada.",
         "vitals": { "PA": "76/42 mmHg", "FC": "124 bpm", "FR": "24 irpm", "SpO2": "96%" }
       },
-      "media": ["us-aaa-sacular-flap"]
+      "media": ["us-aaa-trombo-mural-cc0"]
     },
     {
       "id": "bomba-tanque",

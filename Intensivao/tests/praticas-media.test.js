@@ -25,6 +25,7 @@ const REQUIRED_ACERVO_IDS = [
   "us-fast-morison-positivo",
   "us-tamponamento-rv-collapse",
   "us-aaa-sacular-flap",
+  "us-aaa-trombo-mural-cc0",
   "tc-avc-hemorragico",
   "tc-tce-subdural",
   "rx-ards-edema-naocardiogenico",
@@ -33,7 +34,7 @@ const REQUIRED_ACERVO_IDS = [
   "fascia-iliaca-probe-placement"
 ];
 
-test("acervo visual local contem os 20 itens licenciados e arquivos resolviveis", () => {
+test("acervo visual local contem os 21 itens licenciados e arquivos resolviveis", () => {
   const intensivaoRoot = path.resolve(__dirname, "..");
   const manifestPath = path.join(intensivaoRoot, "assets", "praticas", "media.json");
   const attributionPath = path.join(intensivaoRoot, "assets", "praticas", "ATRIBUICOES.md");

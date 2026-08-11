@@ -143,6 +143,18 @@ test("fases revelam estado e midia progressivamente usando apenas o manifesto", 
   });
 });
 
+test("estacao historica de AAA usa midia que demonstra trombo mural, nao flap", () => {
+  const entry = readIndex().find((item) => item.id === "2025-pocus-aaa-acesso");
+  const station = readStation(entry);
+  const aortaPhase = station.phases.find((phase) => phase.id === "aorta");
+  const manifest = JSON.parse(fs.readFileSync(mediaManifestPath, "utf8"));
+  const media = manifest.find((item) => aortaPhase.media.includes(item.id));
+  const reviewDescription = `${media.reviewAlt} ${media.reviewCaption}`;
+
+  assert.match(reviewDescription, /trombo mural/i);
+  assert.doesNotMatch(reviewDescription, /flap/i);
+});
+
 test("estacoes ineditas nao citam cursos nem recebem atribuicao historica", () => {
   readIndex().slice(5).forEach((entry) => {
     const station = readStation(entry);

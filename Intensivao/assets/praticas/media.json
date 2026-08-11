@@ -203,6 +203,20 @@
     "modified": "2026-08-10"
   },
   {
+    "id": "us-aaa-trombo-mural-cc0",
+    "type": "image",
+    "src": "assets/praticas/pocus/us-aaa-trombo-mural-cc0.jpg",
+    "thumbnail": "assets/praticas/pocus/us-aaa-trombo-mural-cc0-thumb.webp",
+    "examAlt": "Imagem ultrassonográfica transversal da aorta abdominal para interpretação.",
+    "reviewAlt": "Ultrassonografia de aneurisma da aorta abdominal com trombo mural.",
+    "reviewCaption": "A luz anecoica central está circundada por material hipoecoico aderido à parede, compatível com trombo mural no aneurisma.",
+    "credit": "Mikael Häggström, M.D.",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_abdominal_aortic_aneurysm_with_mural_thrombus.jpg",
+    "license": "CC0 1.0 Universal",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modified": "2026-08-10"
+  },
+  {
     "id": "tc-avc-hemorragico",
     "type": "image",
     "src": "assets/praticas/radiologia/tc-avc-hemorragico.webp",
