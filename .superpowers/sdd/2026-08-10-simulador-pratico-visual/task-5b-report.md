@@ -216,3 +216,66 @@ git diff --check
 ### Concerns
 
 - The temporary legacy metadata fallback from Fix Round 1 remains the only known concern; this round introduces no new runtime concern.
+
+## Fix Round 3
+
+### Status
+
+DONE_WITH_CONCERNS
+
+### Coverage Added
+
+- Added a handler-level exam-mode test using the Round 2 app factory and fake DOM.
+- Restores setup directly in `exam`, lets the first cycle-based selection fail loading so `Sortear outra` is visible, and dispatches its real click handler.
+- Uses two entries so the second choice must be the ID not yet present in the cycle, independent of which entry was initially selected.
+- Verifies that `teme26-practice-cycle-v2` matches the ordered station IDs actually loaded after the click.
+
+### TDD
+
+#### RED
+
+To prove the regression test protects the exam branch specifically, the existing `state.cycleIds = selection.cycleIds` assignment was temporarily removed after adding the test. The app suite reported 30 tests: 29 passed and 1 failed. The failing assertion showed two stations loaded (`b`, then `a` in that run) while storage remained at `['b']` instead of `['b', 'a']`.
+
+```powershell
+node --test Intensivao/tests/praticas-app.test.js
+```
+
+#### GREEN
+
+The original production line was restored unchanged. No production modification remains in this round.
+
+- App suite: 30 passed, 0 failed.
+- Focused app/pages/media suite: 51 passed, 0 failed.
+- Full suite: 87 passed, 0 failed.
+
+### Files
+
+- `Intensivao/tests/praticas-app.test.js`: adds the exam-cycle click and persistence regression test.
+- `.superpowers/sdd/2026-08-10-simulador-pratico-visual/task-5b-report.md`: records Fix Round 3.
+
+### Commands And Results
+
+```powershell
+node --check Intensivao/praticas-app.js
+node --check Intensivao/tests/praticas-app.test.js
+node --test Intensivao/tests/praticas-app.test.js
+node --test Intensivao/tests/praticas-app.test.js Intensivao/tests/pages-workflow.test.js Intensivao/tests/praticas-media.test.js
+node --test Intensivao/tests/*.test.js
+git diff --check
+```
+
+- Both syntax checks passed.
+- App suite passed 30/30.
+- Focused suite passed 51/51.
+- Full suite passed 87/87.
+- Diff check passed; Git emitted only LF/CRLF conversion warnings.
+
+### Self-Review
+
+- Confirmed the test dispatches the real `#practice-choose-another` click handler while setup state is `exam`.
+- Confirmed removing only exam-cycle state assignment makes the storage assertion fail.
+- Confirmed the final production diff is empty and no JSON, media manifest, backend, or `Praticas/` file was modified.
+
+### Concerns
+
+- The temporary legacy metadata fallback from Fix Round 1 remains the only known concern; this test-only round adds none.

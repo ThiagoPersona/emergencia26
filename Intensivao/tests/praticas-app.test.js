@@ -812,6 +812,36 @@ test("sorteia outra estacao dirigida por click sem contaminar o ciclo da prova",
   assert.deepEqual(JSON.parse(storage.getItem(CYCLE_KEY)), ["exam-preservado"]);
 });
 
+test("sorteia outra estacao de prova por click e persiste o ciclo atualizado", async () => {
+  const stationUrls = [];
+  const storage = createStorage({
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
+    [CYCLE_KEY]: JSON.stringify([])
+  });
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([
+      { id: "a", file: "a.json" },
+      { id: "b", file: "b.json" }
+    ]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    stationUrls.push(url);
+    return jsonResponse({}, false);
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  const app = createPracticeApp(fixture.root);
+  await app.mount();
+
+  const cycleBeforeClick = JSON.parse(storage.getItem(CYCLE_KEY));
+  assert.deepEqual(cycleBeforeClick, [stationUrls[0].match(/([^/]+)\.json$/)[1]]);
+
+  fixture.simulator.querySelector("#practice-choose-another").click();
+  await waitFor(() => assert.equal(stationUrls.length, 2));
+
+  const loadedIds = stationUrls.map((url) => url.match(/([^/]+)\.json$/)[1]);
+  assert.notEqual(loadedIds[0], loadedIds[1]);
+  assert.deepEqual(JSON.parse(storage.getItem(CYCLE_KEY)), loadedIds);
+});
+
 test("retry dispara um novo load e libera o start apos sucesso", async () => {
   let stationLoads = 0;
   const storage = createStorage();
