@@ -99,7 +99,7 @@ test("normaliza sorteio fora do intervalo e lida com lista vazia", () => {
   assert.deepEqual(pickStation(null, [], () => 0), { station: null, cycleIds: [] });
 });
 
-test("recomenda por lacunas ausentes ou incorretas, relacionando itemId a competencias e tags", () => {
+test("prioriza estacoes com lacunas e depois relaciona itemId a competencias e tags", () => {
   const recommendationEntries = [
     { id: "a", title: "Alfa via aerea", competencies: ["item-airway"], tags: [] },
     { id: "b", title: "Beta via aerea", competencies: [], tags: ["via-aerea"] },
@@ -125,7 +125,59 @@ test("recomenda por lacunas ausentes ou incorretas, relacionando itemId a compet
 
   assert.deepEqual(
     getRecommendedStations(recommendationEntries, attempts, 3).map((entry) => entry.id),
-    ["a", "b", "c"]
+    ["a", "d", "b"]
+  );
+});
+
+test("revisao de declara-cico prioriza CICO e depois estacoes clinicamente relacionadas", () => {
+  const bankLikeEntries = [
+    {
+      id: "sim-resp-asma-intubado-01",
+      title: "Asma intubada com hiperinsuflação dinâmica",
+      competencies: [],
+      tags: ["asma ameaçadora à vida", "auto-PEEP", "curvas ventilatórias"]
+    },
+    {
+      id: "sim-va-cico-crico-01",
+      title: "CICO e cricotireoidostomia de emergência",
+      competencies: [],
+      tags: [
+        "via aérea difícil",
+        "CICO",
+        "cricotireoidostomia",
+        "bisturi-bougie-tubo",
+        "capnografia"
+      ]
+    },
+    {
+      id: "sim-va-rsi-choque-01",
+      title: "Intubação em sequência rápida no choque",
+      competencies: [],
+      tags: ["RSI", "pré-oxigenação", "bougie", "CAPNOGRAFIA", "plano de resgate"]
+    },
+    {
+      id: "sim-trauma-pediatrico-01",
+      title: "Trauma pediátrico com choque hemorrágico",
+      competencies: [],
+      tags: ["XABCDE pediátrico", "choque hemorrágico", "eFAST"]
+    }
+  ];
+  const attempts = [{
+    stationId: "sim-va-cico-crico-01",
+    completedAt: "2026-08-10T10:00:00.000Z",
+    evaluations: [
+      { itemId: "declara-cico", status: "incorreto" },
+      { itemId: "confirma-capnografia", status: "cumprido" }
+    ]
+  }];
+
+  assert.deepEqual(
+    getRecommendedStations(bankLikeEntries, attempts, 3).map((entry) => entry.id),
+    ["sim-va-cico-crico-01", "sim-va-rsi-choque-01", "sim-resp-asma-intubado-01"]
+  );
+  assert.deepEqual(
+    getRecommendedStations(bankLikeEntries, [], 3).map((entry) => entry.id),
+    ["sim-resp-asma-intubado-01", "sim-va-cico-crico-01", "sim-va-rsi-choque-01"]
   );
 });
 

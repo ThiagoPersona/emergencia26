@@ -6,6 +6,10 @@
   "use strict";
 
   const FAILED_STATUSES = new Set(["ausente", "incorreto"]);
+  const IGNORED_CONCEPTS = new Set([
+    "aos", "com", "das", "dos", "para", "por", "que", "sem", "uma", "via",
+    "ao", "da", "de", "do", "em", "na", "no"
+  ]);
 
   function isEntry(entry) {
     return Boolean(entry) && typeof entry === "object" && !Array.isArray(entry) &&
@@ -92,19 +96,63 @@
     }, []);
   }
 
-  function failedGapCounts(attempts) {
-    const counts = new Map();
+  function normalizedConcepts(value) {
+    if (typeof value !== "string") return [];
+    const normalized = value
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLocaleLowerCase("pt-BR")
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
+    if (!normalized) return [];
+
+    return Array.from(new Set([normalized].concat(
+      normalized.split(/\s+/).filter((concept) => (
+        concept.length >= 3 && !IGNORED_CONCEPTS.has(concept)
+      ))
+    )));
+  }
+
+  function addConceptCounts(counts, values, weight) {
+    const concepts = new Set();
+    asArray(values).forEach((value) => {
+      normalizedConcepts(value).forEach((concept) => concepts.add(concept));
+    });
+    concepts.forEach((concept) => {
+      counts.set(concept, (counts.get(concept) || 0) + weight);
+    });
+  }
+
+  function failedRecommendationContext(entries, attempts) {
+    const stationCounts = new Map();
+    const conceptCounts = new Map();
+    const entriesById = new Map(asEntries(entries).map((entry) => [entry.id, entry]));
+
     asArray(attempts).forEach((attempt) => {
-      asArray(attempt && attempt.evaluations).forEach((evaluation) => {
-        if (!FAILED_STATUSES.has(evaluation && evaluation.status)) return;
-        const tokens = [evaluation.itemId].concat(asArray(evaluation.tags));
-        Array.from(new Set(tokens)).forEach((token) => {
-          if (typeof token !== "string" || token.length === 0) return;
-          counts.set(token, (counts.get(token) || 0) + 1);
-        });
+      if (!attempt || typeof attempt !== "object") return;
+      const failedEvaluations = asArray(attempt.evaluations)
+        .filter((evaluation) => FAILED_STATUSES.has(evaluation && evaluation.status));
+      if (failedEvaluations.length === 0) return;
+
+      const stationId = attempt.stationId;
+      if (typeof stationId === "string" && stationId.length > 0) {
+        stationCounts.set(stationId, (stationCounts.get(stationId) || 0) + failedEvaluations.length);
+        const sourceEntry = entriesById.get(stationId);
+        if (sourceEntry) {
+          addConceptCounts(conceptCounts, entryTokens(sourceEntry), failedEvaluations.length);
+        }
+      }
+
+      failedEvaluations.forEach((evaluation) => {
+        addConceptCounts(
+          conceptCounts,
+          [evaluation.itemId].concat(asArray(evaluation.tags)),
+          1
+        );
       });
     });
-    return counts;
+
+    return { stationCounts, conceptCounts };
   }
 
   function attemptCounts(attempts) {
@@ -140,15 +188,17 @@
     if (!Array.isArray(entries) || list.length === 0) return [];
 
     const safeAttempts = Array.isArray(attempts) ? attempts : [];
-    const gaps = failedGapCounts(safeAttempts);
+    const failures = failedRecommendationContext(list, safeAttempts);
     const counts = attemptCounts(safeAttempts);
     const recentStationId = mostRecentStationId(safeAttempts);
-    const canVary = list.some((entry) => entry.id !== recentStationId);
+    const hasFailures = failures.stationCounts.size > 0 || failures.conceptCounts.size > 0;
+    const canVary = !hasFailures && list.some((entry) => entry.id !== recentStationId);
     const candidates = canVary
       ? list.filter((entry) => entry.id !== recentStationId)
       : list;
-    const score = (entry) => Array.from(new Set(entryTokens(entry)))
-      .reduce((total, token) => total + (gaps.get(token) || 0), 0);
+    const conceptScore = (entry) => Array.from(new Set(
+      entryTokens(entry).flatMap(normalizedConcepts)
+    )).reduce((total, concept) => total + (failures.conceptCounts.get(concept) || 0), 0);
     const title = (entry) => typeof entry.title === "string" ? entry.title : "";
     const maxItems = limit === undefined
       ? 3
@@ -157,8 +207,12 @@
     return candidates
       .slice()
       .sort((left, right) => {
-        if (gaps.size > 0) {
-          const scoreDifference = score(right) - score(left);
+        if (hasFailures) {
+          const stationDifference = (failures.stationCounts.get(right.id) || 0) -
+            (failures.stationCounts.get(left.id) || 0);
+          if (stationDifference !== 0) return stationDifference;
+
+          const scoreDifference = conceptScore(right) - conceptScore(left);
           if (scoreDifference !== 0) return scoreDifference;
         }
         const attemptDifference = (counts.get(left.id) || 0) - (counts.get(right.id) || 0);
