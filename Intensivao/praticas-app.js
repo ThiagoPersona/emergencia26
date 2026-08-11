@@ -81,6 +81,7 @@
     timerId: null,
     mediaRecorder: null,
     mediaStream: null,
+    recordingGeneration: 0,
     audioChunks: [],
     audioBlob: null,
     audioUrl: null,
@@ -642,12 +643,27 @@
     await loadCurrentModeSelection();
   }
 
-  function cleanupRecording() {
-    if (state.mediaStream) state.mediaStream.getTracks().forEach((track) => track.stop());
-    state.mediaStream = null;
-    state.mediaRecorder = null;
+  function stopStreamTracks(stream) {
+    if (!stream || typeof stream.getTracks !== "function") return;
+    stream.getTracks().forEach((track) => track.stop());
+  }
+
+  function clearRecordedAudio() {
     if (state.audioUrl && root.URL) root.URL.revokeObjectURL(state.audioUrl);
     state.audioUrl = null;
+    state.audioBlob = null;
+    state.audioChunks = [];
+  }
+
+  function cleanupRecording() {
+    state.recordingGeneration += 1;
+    const recorder = state.mediaRecorder;
+    const stream = state.mediaStream;
+    state.mediaRecorder = null;
+    state.mediaStream = null;
+    if (recorder && recorder.state !== "inactive") recorder.stop();
+    stopStreamTracks(stream);
+    clearRecordedAudio();
   }
 
   function chooseAudioMimeType() {
@@ -656,20 +672,27 @@
       .find((type) => root.MediaRecorder.isTypeSupported(type)) || "";
   }
 
-  async function startRecording() {
+  async function startRecording(expectedLifecycleGeneration, expectedRecordingGeneration) {
     if (!root.navigator || !root.navigator.mediaDevices || !root.MediaRecorder) {
       throw new Error("Este navegador não oferece gravação de áudio compatível.");
     }
-    cleanupRecording();
-    state.audioChunks = [];
-    state.audioBlob = null;
     const stream = await root.navigator.mediaDevices.getUserMedia({ audio: true });
+    if (
+      expectedLifecycleGeneration !== lifecycleGeneration
+      || expectedRecordingGeneration !== state.recordingGeneration
+    ) {
+      stopStreamTracks(stream);
+      return false;
+    }
     const mimeType = chooseAudioMimeType();
     const recorder = new root.MediaRecorder(stream, mimeType ? { mimeType } : undefined);
     recorder.addEventListener("dataavailable", (event) => {
+      if (expectedRecordingGeneration !== state.recordingGeneration) return;
       if (event.data && event.data.size > 0) state.audioChunks.push(event.data);
     });
     recorder.addEventListener("stop", () => {
+      if (expectedRecordingGeneration !== state.recordingGeneration) return;
+      if (state.mediaRecorder === recorder) state.mediaRecorder = null;
       state.audioBlob = new Blob(state.audioChunks, { type: recorder.mimeType || "audio/webm" });
       state.audioUrl = root.URL.createObjectURL(state.audioBlob);
       renderReview();
@@ -677,6 +700,7 @@
     recorder.start(1000);
     state.mediaStream = stream;
     state.mediaRecorder = recorder;
+    return true;
   }
 
   function stopRecording() {
@@ -685,7 +709,7 @@
     } else {
       cleanupRecording();
     }
-    if (state.mediaStream) state.mediaStream.getTracks().forEach((track) => track.stop());
+    stopStreamTracks(state.mediaStream);
     state.mediaStream = null;
   }
 
@@ -935,26 +959,57 @@
     });
   }
 
+  function clearSessionTimer() {
+    if (state.timerId != null) root.clearInterval(state.timerId);
+    state.timerId = null;
+  }
+
+  function isSessionStartCurrent(startGeneration, expectedLifecycleGeneration, simulator, station, mode) {
+    return startGeneration === sessionStartGeneration
+      && expectedLifecycleGeneration === lifecycleGeneration
+      && root.document.getElementById("practice-simulator") === simulator
+      && state.station === station
+      && state.mode === mode;
+  }
+
   async function beginSession(withRecording) {
     if (!state.station || areStartActionsDisabled(state.mediaStatus)) return;
+    const station = state.station;
+    const mode = state.mode;
+    const simulator = root.document.getElementById("practice-simulator");
+    const expectedLifecycleGeneration = lifecycleGeneration;
+    const startGeneration = sessionStartGeneration + 1;
+    sessionStartGeneration = startGeneration;
+    cleanupRecording();
+    clearSessionTimer();
+    const expectedRecordingGeneration = state.recordingGeneration;
+    let runtimeNotice = "";
+    if (withRecording) {
+      try {
+        const recordingReady = await startRecording(
+          expectedLifecycleGeneration,
+          expectedRecordingGeneration
+        );
+        if (!recordingReady) return;
+      } catch (error) {
+        if (!isSessionStartCurrent(startGeneration, expectedLifecycleGeneration, simulator, station, mode)) return;
+        runtimeNotice = `Microfone indisponível: ${error.message}. O treino continuará sem áudio.`;
+      }
+    }
+    if (!isSessionStartCurrent(startGeneration, expectedLifecycleGeneration, simulator, station, mode)) {
+      cleanupRecording();
+      return;
+    }
     const now = Date.now();
-    const prepared = createPracticeSession(state.station, now, state.mode);
+    const prepared = createPracticeSession(station, now, mode);
     state.session = sessionModule && typeof sessionModule.startSession === "function"
       ? sessionModule.startSession(prepared, now)
       : { ...prepared, status: "running", startedAtMs: now };
     state.transcript = "";
     state.lastAttempt = null;
-    state.runtimeNotice = "";
+    state.runtimeNotice = runtimeNotice;
     if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
-    if (withRecording) {
-      try {
-        await startRecording();
-      } catch (error) {
-        state.runtimeNotice = `Microfone indisponível: ${error.message}. O treino continuará sem áudio.`;
-      }
-    }
     renderRunning();
-    root.clearInterval(state.timerId);
     state.timerId = root.setInterval(updateTimer, 250);
   }
 
@@ -1053,7 +1108,7 @@
 
   function finishSession() {
     if (!state.session || state.session.status !== "running") return;
-    root.clearInterval(state.timerId);
+    clearSessionTimer();
     state.session = { ...state.session, status: "review", completedAtMs: Date.now() };
     if (root.localStorage) clearPracticeDraft(root.localStorage);
     if (state.mediaRecorder && state.mediaRecorder.state !== "inactive") stopRecording();
@@ -1268,10 +1323,8 @@
   }
 
   function resetSimulator() {
-    root.clearInterval(state.timerId);
+    clearSessionTimer();
     cleanupRecording();
-    state.audioBlob = null;
-    state.audioChunks = [];
     state.runtimeNotice = "";
     state.transcript = "";
     if (root.localStorage) clearPracticeDraft(root.localStorage);
@@ -1380,13 +1433,41 @@
     state.audioUrl = restored.audioUrl;
     state.runtimeNotice = restored.notice;
     renderRunning();
-    root.clearInterval(state.timerId);
+    clearSessionTimer();
     state.timerId = root.setInterval(updateTimer, 250);
     return true;
   }
 
   let mountingPromise = null;
   let guardedSimulator = null;
+  let activeSimulator = null;
+  let lifecycleGeneration = 0;
+  let sessionStartGeneration = 0;
+  let lifecycleListenersAttached = false;
+
+  function cleanupRuntime() {
+    lifecycleGeneration += 1;
+    sessionStartGeneration += 1;
+    clearSessionTimer();
+    cleanupRecording();
+  }
+
+  function leaveSimulatorLifecycle() {
+    cleanupRuntime();
+    activeSimulator = null;
+  }
+
+  function ensureLifecycleListeners() {
+    if (lifecycleListenersAttached || !root || typeof root.addEventListener !== "function") return;
+    root.addEventListener("hashchange", leaveSimulatorLifecycle);
+    root.addEventListener("pagehide", leaveSimulatorLifecycle);
+    lifecycleListenersAttached = true;
+  }
+
+  function trackSimulatorMount(simulator) {
+    if (activeSimulator && activeSimulator !== simulator) cleanupRuntime();
+    activeSimulator = simulator || null;
+  }
 
   function guardMobileSimulatorClicks(simulator) {
     if (!simulator || guardedSimulator === simulator) return;
@@ -1397,11 +1478,13 @@
   }
 
   function mount() {
+    if (!root || !root.document) return Promise.resolve();
+    ensureLifecycleListeners();
+    const simulator = root.document.getElementById("practice-simulator");
+    trackSimulatorMount(simulator);
     if (mountingPromise) return mountingPromise;
     mountingPromise = (async () => {
-      if (!root || !root.document) return;
       state.dashboardSyncStarted = false;
-      const simulator = root.document.getElementById("practice-simulator");
       if (simulator) {
         guardMobileSimulatorClicks(simulator);
         try {

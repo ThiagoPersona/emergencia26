@@ -201,18 +201,29 @@ function createFakeDocument() {
       roots.set(id, element);
       document.body.appendChild(element);
       return element;
+    },
+    unregisterRoot(id) {
+      const element = roots.get(id);
+      roots.delete(id);
+      document.body.childNodes = document.body.childNodes.filter((child) => child !== element);
+      if (element) element.parentNode = null;
     }
   };
   document.body = new FakeElement("body", document);
   return document;
 }
 
-function createInteractiveRoot(fetch, storage) {
+function createInteractiveRoot(fetch, storage, options) {
+  const settings = options || {};
   const document = createFakeDocument();
   const simulator = document.registerRoot("practice-simulator");
   const intervals = [];
   const clearedIntervals = [];
   const recorders = [];
+  const tracks = [];
+  const createdUrls = [];
+  const revokedUrls = [];
+  const rootListeners = new Map();
 
   class FakeMediaRecorder {
     constructor(stream) {
@@ -223,11 +234,31 @@ function createInteractiveRoot(fetch, storage) {
       recorders.push(this);
     }
 
-    addEventListener(type, listener) { this.listeners.set(type, listener); }
+    addEventListener(type, listener) {
+      const listeners = this.listeners.get(type) || [];
+      listeners.push(listener);
+      this.listeners.set(type, listeners);
+    }
+    dispatch(type, event) {
+      (this.listeners.get(type) || []).forEach((listener) => listener(event || {}));
+    }
+    emitData(data) { this.dispatch("dataavailable", { data }); }
     start() { this.state = "recording"; }
-    stop() { this.state = "inactive"; }
+    stop() {
+      this.state = "inactive";
+      this.dispatch("stop");
+    }
     static isTypeSupported() { return true; }
   }
+
+  const defaultGetUserMedia = async () => {
+    const track = {
+      stopped: false,
+      stop() { this.stopped = true; }
+    };
+    tracks.push(track);
+    return { getTracks: () => [track] };
+  };
 
   const root = {
     document,
@@ -235,13 +266,25 @@ function createInteractiveRoot(fetch, storage) {
     localStorage: storage,
     navigator: {
       mediaDevices: {
-        async getUserMedia() {
-          return { getTracks: () => [{ stop() {} }] };
-        }
+        getUserMedia: settings.getUserMedia || defaultGetUserMedia
       }
     },
     MediaRecorder: FakeMediaRecorder,
-    URL: { createObjectURL: () => "blob:test", revokeObjectURL() {} },
+    URL: {
+      createObjectURL(blob) {
+        createdUrls.push(blob);
+        return "blob:test";
+      },
+      revokeObjectURL(url) { revokedUrls.push(url); }
+    },
+    addEventListener(type, listener) {
+      const listeners = rootListeners.get(type) || [];
+      listeners.push(listener);
+      rootListeners.set(type, listeners);
+    },
+    dispatch(type, event) {
+      (rootListeners.get(type) || []).forEach((listener) => listener(event || { type }));
+    },
     setInterval(callback, delay) {
       const id = { callback, delay };
       intervals.push(id);
@@ -249,7 +292,16 @@ function createInteractiveRoot(fetch, storage) {
     },
     clearInterval(id) { clearedIntervals.push(id); }
   };
-  return { root, simulator, intervals, clearedIntervals, recorders };
+  return {
+    root,
+    simulator,
+    intervals,
+    clearedIntervals,
+    recorders,
+    tracks,
+    createdUrls,
+    revokedUrls
+  };
 }
 
 function createStation(id) {
@@ -577,8 +629,8 @@ test("seleciona estacoes por modo e recomenda as relacionadas ao desempenho", ()
   assert.deepEqual(exam.cycleIds, ["airway-1", "airway-2"]);
 
   const review = selectStationEntry(entries, "review", {}, attempts, [], () => 0);
-  assert.equal(review.entry.id, "airway-2");
-  assert.deepEqual(getRelatedStationEntries(entries, attempts).map((entry) => entry.id), ["airway-2", "ecg-1"]);
+  assert.equal(review.entry.id, "airway-1");
+  assert.deepEqual(getRelatedStationEntries(entries, attempts).map((entry) => entry.id), ["airway-1", "airway-2", "ecg-1"]);
 });
 
 test("filtra treino dirigido por competencia mesmo quando ela nao e uma tag", () => {
@@ -1170,4 +1222,143 @@ test("mount concorrente restaura um unico draft sem sortear outra estacao", asyn
   assert.equal(fixture.intervals.length, 1);
   assert.match(fixture.simulator.innerHTML, /Sessão restaurada sem a gravação anterior/);
   assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
+});
+
+test("descarta gravacao e cronometro quando a rota deixa de usar o simulador", async (t) => {
+  const cases = [
+    {
+      name: "mount removido",
+      leave: async (fixture, app) => {
+        fixture.root.document.unregisterRoot("practice-simulator");
+        await app.mount();
+      }
+    },
+    {
+      name: "hashchange",
+      leave: async (fixture) => fixture.root.dispatch("hashchange")
+    },
+    {
+      name: "pagehide",
+      leave: async (fixture) => fixture.root.dispatch("pagehide")
+    }
+  ];
+
+  for (const currentCase of cases) {
+    await t.test(currentCase.name, async () => {
+      const storage = createStorage();
+      const fetch = async (url) => {
+        if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+        if (url.endsWith("media.json")) return jsonResponse([]);
+        return jsonResponse(createStation("a"));
+      };
+      const fixture = createInteractiveRoot(fetch, storage);
+      const app = createPracticeApp(fixture.root);
+      await app.mount();
+
+      fixture.simulator.querySelector("#practice-start-record").click();
+      await waitFor(() => assert.equal(fixture.recorders[0].state, "recording"));
+      fixture.recorders[0].emitData(new Blob(["fala anterior"], { type: "audio/webm" }));
+      const interval = fixture.intervals[0];
+      const track = fixture.tracks[0];
+
+      await currentCase.leave(fixture, app);
+
+      assert.equal(fixture.recorders[0].state, "inactive");
+      assert.equal(track.stopped, true);
+      assert.equal(fixture.clearedIntervals.includes(interval), true);
+      assert.equal(fixture.createdUrls.length, 0);
+      assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).status, "running");
+    });
+  }
+});
+
+test("nova sessao manual descarta o audio produzido pela sessao anterior", async () => {
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  const app = createPracticeApp(fixture.root);
+  await app.mount();
+
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.equal(fixture.recorders[0].state, "recording"));
+  fixture.recorders[0].emitData(new Blob(["audio antigo"], { type: "audio/webm" }));
+  fixture.simulator.querySelector("#practice-finish").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /<audio/));
+
+  await app.mount();
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
+  fixture.simulator.querySelector("#practice-finish").click();
+
+  assert.doesNotMatch(fixture.simulator.innerHTML, /<audio/);
+  assert.equal(fixture.simulator.querySelector("#practice-ai-evaluate").disabled, true);
+  assert.deepEqual(fixture.revokedUrls, ["blob:test"]);
+});
+
+test("inicia a sessao somente depois que o gravador fica pronto", async (t) => {
+  let now = 1000;
+  let permissionRequests = 0;
+  const permission = deferred();
+  const track = { stopped: false, stop() { this.stopped = true; } };
+  t.mock.method(Date, "now", () => now);
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage, {
+    getUserMedia() {
+      permissionRequests += 1;
+      return permission.promise;
+    }
+  });
+  const app = createPracticeApp(fixture.root);
+  await app.mount();
+
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.equal(permissionRequests, 1));
+  assert.equal(storage.getItem(DRAFT_KEY), null);
+  assert.equal(fixture.intervals.length, 0);
+
+  now = 7000;
+  permission.resolve({ getTracks: () => [track] });
+  await waitFor(() => assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).status, "running"));
+
+  const saved = JSON.parse(storage.getItem(DRAFT_KEY));
+  assert.equal(saved.createdAtMs, 7000);
+  assert.equal(saved.startedAtMs, 7000);
+  assert.match(fixture.simulator.innerHTML, /05:00/);
+  assert.equal(fixture.intervals.length, 1);
+});
+
+test("negacao tardia do microfone inicia imediatamente sem audio", async (t) => {
+  let now = 2000;
+  const permission = deferred();
+  t.mock.method(Date, "now", () => now);
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage, {
+    getUserMedia: () => permission.promise
+  });
+  const app = createPracticeApp(fixture.root);
+  await app.mount();
+
+  fixture.simulator.querySelector("#practice-start-record").click();
+  now = 9000;
+  permission.reject(new Error("permissao negada"));
+  await waitFor(() => assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).status, "running"));
+
+  assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).startedAtMs, 9000);
+  assert.match(fixture.simulator.innerHTML, /Microfone indisponível: permissao negada/);
+  assert.match(fixture.simulator.innerHTML, /Treino sem gravação/);
+  assert.equal(fixture.intervals.length, 1);
 });
