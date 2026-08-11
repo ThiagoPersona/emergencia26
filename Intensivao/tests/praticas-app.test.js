@@ -66,6 +66,7 @@ function createFakeDocument() {
       this.ownerDocument = ownerDocument;
       this.listeners = new Map();
       this.childNodes = [];
+      this.parentNode = null;
       this.attributes = {};
       this.className = "";
       this.style = {};
@@ -112,6 +113,7 @@ function createFakeDocument() {
         node.className = read("class");
         node.disabled = /(?:^|\s)disabled(?:\s|$)/i.test(attrs);
         node.checked = /(?:^|\s)checked(?:\s|$)/i.test(attrs);
+        node.parentNode = this;
         this._parsedNodes.push(node);
       }
     }
@@ -119,13 +121,20 @@ function createFakeDocument() {
     get innerHTML() { return this._innerHTML; }
 
     appendChild(child) {
+      child.parentNode = this;
       this.childNodes.push(child);
       return child;
     }
 
-    prepend(child) { this.childNodes.unshift(child); }
+    prepend(child) {
+      child.parentNode = this;
+      this.childNodes.unshift(child);
+    }
 
-    replaceChildren(...children) { this.childNodes = children; }
+    replaceChildren(...children) {
+      children.forEach((child) => { child.parentNode = this; });
+      this.childNodes = children;
+    }
 
     setAttribute(name, value) { this.attributes[name] = String(value); }
 
@@ -138,11 +147,20 @@ function createFakeDocument() {
     dispatch(type, properties) {
       const event = {
         target: this,
-        currentTarget: this,
-        preventDefault() {},
+        currentTarget: null,
+        defaultPrevented: false,
+        propagationStopped: false,
+        preventDefault() { this.defaultPrevented = true; },
+        stopPropagation() { this.propagationStopped = true; },
         ...(properties || {})
       };
-      (this.listeners.get(type) || []).forEach((listener) => listener(event));
+      let currentTarget = this;
+      while (currentTarget) {
+        event.currentTarget = currentTarget;
+        (currentTarget.listeners.get(type) || []).forEach((listener) => listener(event));
+        if (event.propagationStopped) break;
+        currentTarget = currentTarget.parentNode;
+      }
     }
 
     click() {
@@ -181,6 +199,7 @@ function createFakeDocument() {
       const element = new FakeElement("main", document);
       element.id = id;
       roots.set(id, element);
+      document.body.appendChild(element);
       return element;
     }
   };
@@ -967,6 +986,34 @@ test("mantem a sidebar fechada ao iniciar e mudar de fase no mobile", async () =
 
   fixture.root.document.body.classList.remove("close");
   fixture.simulator.querySelector("#practice-next").click();
+  assert.equal(fixture.root.document.body.classList.contains("close"), true);
+});
+
+test("reaplica o fechamento mobile depois do listener delegado do clique inicial", async () => {
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  fixture.root.innerWidth = 390;
+  fixture.root.document.body.classList.add("close");
+  let delegatedSawRunningStation = false;
+  fixture.root.document.body.addEventListener("click", () => {
+    delegatedSawRunningStation = /Fase 1\/2/.test(fixture.simulator.innerHTML);
+    if (fixture.root.document.body.classList.contains("close")) {
+      fixture.root.document.body.classList.remove("close");
+    }
+  });
+  const app = createPracticeApp(fixture.root);
+  await app.mount();
+
+  fixture.simulator.querySelector("#practice-start-manual").click();
+
+  assert.equal(delegatedSawRunningStation, true);
+  assert.equal(fixture.root.document.body.classList.contains("close"), false);
+  await Promise.resolve();
   assert.equal(fixture.root.document.body.classList.contains("close"), true);
 });
 

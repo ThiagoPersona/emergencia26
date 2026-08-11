@@ -983,7 +983,14 @@
 
   function closeMobileSidebarForRunningStation() {
     if (root.innerWidth <= 980 && root.document && root.document.body && root.document.body.classList) {
-      root.document.body.classList.add("close");
+      const body = root.document.body;
+      body.classList.add("close");
+      // Docsify's delegated mobile click runs after app handlers and can remove this class.
+      Promise.resolve().then(() => {
+        if (root.innerWidth <= 980 && root.document && root.document.body === body) {
+          body.classList.add("close");
+        }
+      });
     }
   }
 
