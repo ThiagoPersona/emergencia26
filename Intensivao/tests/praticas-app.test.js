@@ -75,12 +75,20 @@ function createFakeDocument() {
       this.name = "";
       this._innerHTML = "";
       this._parsedNodes = [];
+      const updateClasses = (callback) => {
+        const names = new Set(this.className.split(/\s+/).filter(Boolean));
+        callback(names);
+        this.className = Array.from(names).join(" ");
+      };
       this.classList = {
+        add: (...names) => updateClasses((classes) => names.forEach((name) => classes.add(name))),
+        remove: (...names) => updateClasses((classes) => names.forEach((name) => classes.delete(name))),
+        contains: (name) => this.className.split(/\s+/).filter(Boolean).includes(name),
         toggle: (name, enabled) => {
-          const names = new Set(this.className.split(/\s+/).filter(Boolean));
-          if (enabled) names.add(name);
-          else names.delete(name);
-          this.className = Array.from(names).join(" ");
+          updateClasses((classes) => {
+            if (enabled) classes.add(name);
+            else classes.delete(name);
+          });
         }
       };
     }
@@ -176,6 +184,7 @@ function createFakeDocument() {
       return element;
     }
   };
+  document.body = new FakeElement("body", document);
   return document;
 }
 
@@ -939,6 +948,46 @@ test("mudanca de fase preserva inicio gravador e intervalo ativos", async () => 
   assert.match(fixture.simulator.innerHTML, /Gravação em andamento/);
 });
 
+test("mantem a sidebar fechada ao iniciar e mudar de fase no mobile", async () => {
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  fixture.root.innerWidth = 390;
+  fixture.root.document.body.classList.add("close");
+  const app = createPracticeApp(fixture.root);
+  await app.mount();
+
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Fase 1\/2/));
+  assert.equal(fixture.root.document.body.classList.contains("close"), true);
+
+  fixture.root.document.body.classList.remove("close");
+  fixture.simulator.querySelector("#practice-next").click();
+  assert.equal(fixture.root.document.body.classList.contains("close"), true);
+});
+
+test("nao força o fechamento da sidebar ao iniciar no desktop", async () => {
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  fixture.root.innerWidth = 1024;
+  const app = createPracticeApp(fixture.root);
+  await app.mount();
+
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Fase 1\/2/));
+
+  assert.equal(fixture.root.document.body.classList.contains("close"), false);
+});
+
 test("mount restaura draft em andamento sem recuperar audio", async () => {
   const now = Date.now();
   const storage = createStorage({
@@ -968,6 +1017,35 @@ test("mount restaura draft em andamento sem recuperar audio", async () => {
   assert.equal(fixture.recorders.length, 0);
   assert.equal(fixture.intervals.length, 1);
   assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
+});
+
+test("fecha a sidebar no mobile ao restaurar draft em andamento", async () => {
+  const now = Date.now();
+  const storage = createStorage({
+    [DRAFT_KEY]: JSON.stringify({
+      stationId: "a",
+      stationVersion: 1,
+      mode: "exam",
+      status: "running",
+      phaseIndex: 1,
+      createdAtMs: now - 2000,
+      startedAtMs: now - 1000,
+      completedAtMs: null
+    })
+  });
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  fixture.root.innerWidth = 390;
+  const app = createPracticeApp(fixture.root);
+
+  await app.mount();
+
+  assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
+  assert.equal(fixture.root.document.body.classList.contains("close"), true);
 });
 
 test("mount concorrente restaura um unico draft sem sortear outra estacao", async () => {

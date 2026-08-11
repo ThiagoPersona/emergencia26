@@ -981,9 +981,16 @@
     ));
   }
 
+  function closeMobileSidebarForRunningStation() {
+    if (root.innerWidth <= 980 && root.document && root.document.body && root.document.body.classList) {
+      root.document.body.classList.add("close");
+    }
+  }
+
   function renderRunning() {
     const mount = root.document.getElementById("practice-simulator");
     if (!mount || !state.session) return;
+    closeMobileSidebarForRunningStation();
     const phase = state.station.phases[state.session.phaseIndex];
     const remaining = getRemainingSeconds(state.session, Date.now(), state.station.durationSeconds);
     const controls = getPracticePhaseControls(state.session, state.station);
