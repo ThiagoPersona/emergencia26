@@ -1,0 +1,159 @@
+{
+  "id": "sim-metabolico-cetoacidose-01",
+  "version": 2,
+  "title": "Cetoacidose diabética com hipocalemia",
+  "examTitle": "Descompensação metabólica com potássio baixo",
+  "domain": "Metabólico e emergências endócrinas",
+  "domains": [
+    "Metabólico",
+    "Emergências endócrinas",
+    "Terapia intensiva"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "tags": [
+    "cetoacidose diabética",
+    "beta-hidroxibutirato",
+    "reposição volêmica",
+    "potássio",
+    "insulina IV",
+    "dextrose",
+    "critérios de resolução"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Atenda um adulto com diabetes, vômitos e respiração profunda. Os exames mostram uma alteração eletrolítica que muda a ordem do tratamento.",
+  "phases": [
+    {
+      "id": "reconhecimento",
+      "title": "Reconhecimento",
+      "prompt": "Reconheça a síndrome, inicie fluidos e solicite avaliação metabólica completa e busca do gatilho.",
+      "patientState": {
+        "summary": "Mulher de 24 anos com diabetes tipo 1, interrupção de insulina, vômitos e polidipsia.",
+        "vitals": {
+          "PA": "96/58 mmHg",
+          "FC": "122 bpm",
+          "FR": "30 irpm, profunda",
+          "SpO2": "98%",
+          "T": "37,0 °C",
+          "glicemia": "548 mg/dL"
+        }
+      }
+    },
+    {
+      "id": "eletrolito-critico",
+      "title": "Eletrólito crítico",
+      "prompt": "Interprete os exames e defina a ordem entre reposição de potássio e insulina.",
+      "patientState": {
+        "summary": "Há cetonemia e acidose importantes, com hipocalemia.",
+        "vitals": {
+          "PA": "94/56 mmHg",
+          "FC": "124 bpm",
+          "FR": "30 irpm",
+          "betaHidroxibutirato": "6,4 mmol/L",
+          "pH": "7,06",
+          "HCO3": "8 mmol/L",
+          "K": "2,8 mmol/L",
+          "creatinina": "1,4 mg/dL"
+        }
+      }
+    },
+    {
+      "id": "apos-reposicao",
+      "title": "Após reposição",
+      "prompt": "Inicie a terapia subsequente e defina metas de monitorização.",
+      "patientState": {
+        "summary": "Após reposição de potássio, a concentração sérica atingiu faixa segura para iniciar insulina.",
+        "vitals": {
+          "PA": "102/62 mmHg",
+          "FC": "110 bpm",
+          "FR": "26 irpm",
+          "K": "3,6 mmol/L",
+          "glicemia": "460 mg/dL",
+          "pH": "7,12",
+          "HCO3": "10 mmol/L"
+        }
+      }
+    },
+    {
+      "id": "cetose-persistente",
+      "title": "Glicose reduzida",
+      "prompt": "Ajuste glicose e insulina e defina os critérios de resolução do episódio.",
+      "patientState": {
+        "summary": "A glicemia caiu, mas a cetose e a acidose ainda não se resolveram.",
+        "vitals": {
+          "PA": "108/66 mmHg",
+          "FC": "98 bpm",
+          "FR": "22 irpm",
+          "glicemia": "218 mg/dL",
+          "betaHidroxibutirato": "2,0 mmol/L",
+          "pH": "7,25",
+          "HCO3": "15 mmol/L",
+          "K": "4,1 mmol/L"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "diagnostica",
+      "label": "Diagnostica cetoacidose por diabetes ou hiperglicemia, beta-hidroxibutirato de pelo menos 3 mmol/L e pH abaixo de 7,3 ou bicarbonato abaixo de 18 mmol/L",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "suporte-fluido",
+      "label": "Faz ABC, acesso, ECG e monitorização, inicia cristaloide e procura o gatilho",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "segura-insulina",
+      "label": "Reconhece potássio de 2,8 mmol/L como contraindicação temporária à insulina",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "reposicao-potassio",
+      "label": "Inicia potássio a 10 mmol/h e só começa insulina quando K estiver acima de 3,5 mmol/L, visando 4 a 5 mmol/L",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "insulina-monitorizacao",
+      "label": "Após K seguro, inicia insulina regular IV 0,1 U/kg/h e monitora glicemia a cada 1 a 2 horas e K após 2 horas e a cada 4 horas",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "dextrose",
+      "label": "Com glicemia abaixo de 250 mg/dL, adiciona dextrose 5% a 10% e reduz insulina para 0,05 U/kg/h, mantendo-a até resolver cetose",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "resolucao",
+      "label": "Define resolução por cetona abaixo de 0,6 mmol/L e pH venoso de pelo menos 7,3 ou bicarbonato de pelo menos 18 mmol/L, sem usar anion gap isoladamente",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Iniciar insulina com potássio de 2,8 mmol/L",
+    "Parar insulina ao normalizar glicemia antes de resolver cetose",
+    "Não adicionar dextrose com glicemia abaixo de 250 mg/dL",
+    "Administrar bicarbonato de rotina com pH acima de 7,0",
+    "Usar apenas anion gap para declarar resolução"
+  ],
+  "referenceAnswer": "Há cetoacidose: diabetes, beta-hidroxibutirato alto e acidose. Inicio fluido, monitorização e procuro o gatilho. O potássio de 2,8 mmol/L muda a sequência: reponho potássio a 10 mmol por hora e seguro a insulina até K ficar acima de 3,5, visando 4 a 5. Então inicio insulina regular IV a 0,1 U/kg/h e controlo glicemia e potássio em série. Ao cair abaixo de 250 mg/dL, acrescento dextrose e reduzo a insulina a 0,05 U/kg/h, sem interromper até beta-hidroxibutirato abaixo de 0,6 e pH de pelo menos 7,3 ou bicarbonato de pelo menos 18.",
+  "references": [
+    "https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A",
+    "https://diabetesjournals.org/care/article-pdf/47/8/1257/780938/dci240032.pdf"
+  ]
+}

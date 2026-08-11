@@ -15,7 +15,7 @@
     {
       "id": "aorta",
       "title": "Aorta abdominal",
-      "prompt": "Identifique a janela, o vaso e a medida relevante no clipe apresentado.",
+      "prompt": "Identifique a janela, o vaso e a medida relevante na imagem apresentada.",
       "patientState": {
         "summary": "Adulto com dor abdominal e lombar súbita, em choque sem causa declarada.",
         "vitals": { "PA": "76/42 mmHg", "FC": "124 bpm", "FR": "24 irpm", "SpO2": "96%" }

@@ -1,0 +1,172 @@
+{
+  "id": "sim-sepse-choque-refratario-01",
+  "version": 2,
+  "title": "Choque séptico refratário",
+  "examTitle": "Hipoperfusão persistente apesar de tratamento inicial",
+  "domain": "Sepse e choque",
+  "domains": [
+    "Sepse",
+    "Choque",
+    "Terapia intensiva"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "choque séptico",
+    "antimicrobiano precoce",
+    "cristaloide balanceado",
+    "noradrenalina",
+    "vasopressina",
+    "hidrocortisona",
+    "controle de foco"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Um adulto com provável infecção chega em choque. Reavalie a resposta à ressuscitação, escale vasopressores sem atrasar antimicrobiano e controle de foco e evite expansão volêmica cega.",
+  "phases": [
+    {
+      "id": "choque-reconhecido",
+      "title": "Choque reconhecido",
+      "prompt": "Inicie suporte, exames e tratamento da infecção sem atrasos indevidos.",
+      "patientState": {
+        "summary": "Mulher de 67 anos com febre, confusão e dor lombar, extremidades frias e enchimento capilar lento.",
+        "vitals": {
+          "PA": "78/44 mmHg (PAM 55)",
+          "FC": "122 bpm",
+          "FR": "30 irpm",
+          "SpO2": "94% em ar ambiente",
+          "T": "39,1 °C",
+          "lactato": "5,2 mmol/L"
+        }
+      }
+    },
+    {
+      "id": "primeira-reavaliacao",
+      "title": "Primeira reavaliação",
+      "prompt": "Escale o suporte hemodinâmico e descreva como reavaliará a necessidade de fluidos.",
+      "patientState": {
+        "summary": "Após cristaloide balanceado inicial, mantém hipoperfusão e o lactato não melhora.",
+        "vitals": {
+          "PA": "82/46 mmHg (PAM 58)",
+          "FC": "116 bpm",
+          "FR": "28 irpm",
+          "SpO2": "95% com O2",
+          "lactato": "5,5 mmol/L"
+        }
+      }
+    },
+    {
+      "id": "refratariedade",
+      "title": "Refratariedade",
+      "prompt": "Indique o próximo vasopressor, corticosteroide e monitorização diante da pressão persistentemente inadequada.",
+      "patientState": {
+        "summary": "Recebe noradrenalina 0,30 mcg/kg/min há mais de 4 horas, com oligúria.",
+        "vitals": {
+          "PA": "84/48 mmHg (PAM 60)",
+          "FC": "118 bpm",
+          "FR": "26 irpm",
+          "SpO2": "95%",
+          "diurese": "baixa"
+        }
+      }
+    },
+    {
+      "id": "fenotipo-misto",
+      "title": "Hipoperfusão persistente",
+      "prompt": "Interprete o fenótipo hemodinâmico, considere suporte inotrópico e garanta controle de foco.",
+      "patientState": {
+        "summary": "A PAM atinge 66 mmHg, mas a pele segue moteada e a ecocardiografia sugere disfunção miocárdica.",
+        "vitals": {
+          "PA": "92/56 mmHg",
+          "FC": "124 bpm",
+          "FR": "24 irpm",
+          "SpO2": "95%",
+          "lactato": "6,1 mmol/L"
+        }
+      }
+    },
+    {
+      "id": "evolucao",
+      "title": "Evolução",
+      "prompt": "Reavalie as metas e defina quando limitar fluidos adicionais.",
+      "patientState": {
+        "summary": "Após drenagem do foco e ajustes, a perfusão melhora e o lactato está em queda.",
+        "vitals": {
+          "PA": "108/62 mmHg",
+          "FC": "98 bpm",
+          "FR": "20 irpm",
+          "SpO2": "96%"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "reconhece-choque",
+      "label": "Reconhece choque séptico e inicia ABC, lactato, culturas se não atrasarem e antimicrobiano precoce",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "fluido-reavaliado",
+      "label": "Usa cristaloide, preferindo balanceado, e reavalia perfusão e responsividade a fluido em vez de expansão cega",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "noradrenalina",
+      "label": "Inicia noradrenalina como vasopressor de primeira linha para manter PAM de pelo menos 65 mmHg",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "acesso-periferico",
+      "label": "Não adia vasopressor por esperar acesso central e usa acesso periférico proximal de modo curto e monitorado quando necessário",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "vasopressina",
+      "label": "Com PAM inadequada em noradrenalina, adiciona vasopressina antes de apenas escalar catecolamina e considera epinefrina se ainda inadequado",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "hidrocortisona",
+      "label": "No choque persistente com demanda vasopressora, indica hidrocortisona 200 mg/dia, como 50 mg IV a cada 6 horas ou infusão",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "inotropico",
+      "label": "Na disfunção cardíaca com hipoperfusão apesar de volume e pressão adequados, considera dobutamina com noradrenalina ou epinefrina",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "controle-foco",
+      "label": "Busca e controla o foco urgentemente, mede diurese, lactato e perfusão e instala monitorização arterial assim que viável",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    }
+  ],
+  "criticalErrors": [
+    "Atrasar antimicrobiano e controle de foco",
+    "Manter PAM abaixo de 65 mmHg sem vasopressor",
+    "Esperar acesso central para iniciar noradrenalina",
+    "Continuar grandes volumes de fluido sem reavaliação",
+    "Não reconhecer disfunção miocárdica com hipoperfusão"
+  ],
+  "referenceAnswer": "Trata-se de choque séptico com hipoperfusão. Colho lactato e culturas quando não atrasarem, inicio antimicrobiano e cristaloide, preferindo solução balanceada, mas reavalio a resposta continuamente. Como a PAM continua baixa, começo noradrenalina para atingir pelo menos 65 mmHg, inclusive por veia periférica proximal enquanto preparo acesso definitivo. Na refratariedade, adiciono vasopressina; persistindo demanda vasopressora, uso hidrocortisona 200 mg/dia. Com disfunção cardíaca e hipoperfusão apesar de PAM e volume adequados, considero dobutamina. Procuro e controlo rapidamente o foco, acompanhando perfusão, diurese, lactato e pressão arterial invasiva.",
+  "references": [
+    "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021",
+    "https://sccm.org/sccm/media/ssc/Surviving-Sepsis-Campaign-2021-Guidelines-Infographic_Vasoactive-Agent.pdf"
+  ]
+}

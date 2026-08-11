@@ -1,0 +1,153 @@
+{
+  "id": "sim-cardio-torsades-pcr-01",
+  "version": 2,
+  "title": "Torsades de pointes com deterioração para PCR",
+  "examTitle": "Colapso após alteração do ritmo",
+  "domain": "Cardiovascular e PCR",
+  "domains": [
+    "Cardiovascular",
+    "Reanimação",
+    "PCR"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "torsades de pointes",
+    "QT longo",
+    "desfibrilação",
+    "magnésio",
+    "correção eletrolítica",
+    "prevenção de recorrência"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Atenda um adulto que apresentou síncope e instabilidade durante monitorização. Interprete o ritmo, trate a deterioração e previna recorrência.",
+  "phases": [
+    {
+      "id": "risco-arritmico",
+      "title": "Risco arrítmico",
+      "prompt": "Reconheça os fatores que exigem correção imediata e vigilância contínua.",
+      "patientState": {
+        "summary": "Mulher de 38 anos com palpitações e pré-síncope após gastroenterite e uso de fármaco que prolonga o QT.",
+        "vitals": {
+          "PA": "96/60 mmHg",
+          "FC": "112 bpm",
+          "FR": "18 irpm",
+          "SpO2": "98%",
+          "K": "3,0 mmol/L",
+          "Mg": "1,3 mg/dL"
+        }
+      }
+    },
+    {
+      "id": "taquiarritmia-instavel",
+      "title": "Deterioração com pulso",
+      "prompt": "Interprete a tira de monitorização e execute a prioridade elétrica para esta instabilidade.",
+      "patientState": {
+        "summary": "A consciência rebaixa rapidamente, mas ainda há pulso central.",
+        "vitals": {
+          "PA": "58/34 mmHg",
+          "FC": "cerca de 220 bpm, irregular e polimórfica",
+          "SpO2": "92%"
+        }
+      },
+      "media": [
+        "ecg-torsades-pd"
+      ]
+    },
+    {
+      "id": "recorrencia",
+      "title": "Recorrência após choque",
+      "prompt": "Reavalie o traçado, trate a recorrência associada ao QT longo e corrija os gatilhos.",
+      "patientState": {
+        "summary": "Após choque não sincronizado, recupera pulso por segundos e volta a apresentar salvas ligadas a pausas.",
+        "vitals": {
+          "PA": "92/54 mmHg",
+          "FC": "46 bpm no ritmo basal",
+          "SpO2": "96%"
+        }
+      },
+      "media": [
+        "ecg-torsades-pd"
+      ]
+    },
+    {
+      "id": "ausencia-pulso",
+      "title": "Perda de pulso",
+      "prompt": "Interprete o ritmo atual e transicione sem demora para o algoritmo apropriado de parada cardiorrespiratória.",
+      "patientState": {
+        "summary": "A paciente não responde e não há pulso central.",
+        "vitals": {
+          "PA": "não mensurável",
+          "FC": "ritmo chocável no monitor",
+          "FR": "apneia",
+          "SpO2": "não mensurável"
+        }
+      },
+      "media": [
+        "ecg-torsades-pd"
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "id": "reconhece-torsades",
+      "label": "Reconhece TV polimórfica associada a QT longo e identifica hipocalemia, hipomagnesemia, bradicardia ou pausa e fármacos como gatilhos",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "choque-nao-sincronizado",
+      "label": "Na instabilidade com pulso, indica choque não sincronizado imediato",
+      "weight": 25,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "pcr-chocavel",
+      "label": "Na ausência de pulso, inicia RCP de alta qualidade e desfibrila o ritmo chocável sem atrasos",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "magnesio-eletrólitos",
+      "label": "Administra sulfato de magnésio IV para recorrência ligada a QT longo e corrige potássio e magnésio",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "retira-gatilhos",
+      "label": "Suspende fármacos que prolongam o QT e trata a causa precipitante",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "sobre-estimulacao",
+      "label": "Discute marcapasso de sobre-estimulação ou isoproterenol com especialista quando a recorrência depende de bradicardia ou pausa",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "reavalia",
+      "label": "Reavalia ritmo, pulso, pressão e eletrólitos após cada intervenção",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Esperar por sincronização diante de taquicardia ventricular polimórfica instável",
+    "Não desfibrilar prontamente o ritmo sem pulso",
+    "Usar amiodarona como resposta de rotina para torsades associada a QT longo",
+    "Omitir correção eletrolítica ou retirada do agente causal"
+  ],
+  "referenceAnswer": "Reconheço torsades de pointes por taquicardia ventricular polimórfica no contexto de QT longo, hipocalemia e hipomagnesemia. Como há instabilidade, aplico choque não sincronizado imediatamente; se perder pulso, inicio RCP e desfibrilo como fibrilação ventricular ou TV sem pulso. Após reversão, administro magnésio IV conforme o protocolo local, corrijo potássio e magnésio, interrompo fármacos que prolongam QT e trato a causa. Como as crises dependem de pausa e bradicardia, discuto estimulação rápida ou isoproterenol com especialista e mantenho monitorização contínua.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms/"
+  ]
+}

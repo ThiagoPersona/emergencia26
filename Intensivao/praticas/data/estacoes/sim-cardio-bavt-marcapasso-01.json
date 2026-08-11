@@ -1,0 +1,151 @@
+{
+  "id": "sim-cardio-bavt-marcapasso-01",
+  "version": 2,
+  "title": "Bloqueio atrioventricular total com instabilidade",
+  "examTitle": "Deterioração com frequência muito baixa",
+  "domain": "Cardiovascular e procedimentos",
+  "domains": [
+    "Cardiovascular",
+    "Reanimação",
+    "Procedimentos"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "tags": [
+    "bradicardia instável",
+    "bloqueio atrioventricular",
+    "marcapasso transcutâneo",
+    "captura mecânica",
+    "marcapasso transvenoso",
+    "causas reversíveis"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Conduza o atendimento do adulto com síncope recorrente e instabilidade hemodinâmica. Verbalize prioridades, tratamento e reavaliações conforme os dados forem liberados.",
+  "phases": [
+    {
+      "id": "avaliacao-inicial",
+      "title": "Avaliação inicial",
+      "prompt": "Interprete o traçado, reconheça o comprometimento cardiopulmonar e inicie o suporte.",
+      "patientState": {
+        "summary": "Homem de 72 anos, pálido, após síncope, com perfusão periférica reduzida.",
+        "vitals": {
+          "PA": "78/46 mmHg",
+          "FC": "32 bpm",
+          "FR": "20 irpm",
+          "SpO2": "95% em ar ambiente",
+          "glicemia": "118 mg/dL"
+        }
+      },
+      "media": [
+        "ecg-bavt-cc0"
+      ]
+    },
+    {
+      "id": "estabilizacao",
+      "title": "Estabilização",
+      "prompt": "Reavalie o traçado e indique monitorização, acesso, suporte de oxigenação ou ventilação e terapia farmacológica inicial.",
+      "patientState": {
+        "summary": "Mantém pulso, está confuso e refere dor torácica; a pele permanece fria.",
+        "vitals": {
+          "PA": "70/40 mmHg",
+          "FC": "28 bpm",
+          "SpO2": "94% com O2"
+        }
+      },
+      "media": [
+        "ecg-bavt-cc0"
+      ]
+    },
+    {
+      "id": "ponte-eletrica",
+      "title": "Falha da medida inicial",
+      "prompt": "Interprete a persistência do ritmo e descreva a estimulação transcutânea, incluindo conforto e confirmação de resposta.",
+      "patientState": {
+        "summary": "Não há melhora após atropina e a hipoperfusão se agrava.",
+        "vitals": {
+          "PA": "66/38 mmHg",
+          "FC": "26 bpm",
+          "perfusao": "pele fria e pulso fraco"
+        }
+      },
+      "media": [
+        "ecg-bavt-cc0"
+      ]
+    },
+    {
+      "id": "definitivacao",
+      "title": "Resposta e destino",
+      "prompt": "Planeje o tratamento definitivo, a investigação etiológica e as reavaliações após a estabilização temporária.",
+      "patientState": {
+        "summary": "Com estimulação, há pulso palpável, melhora do sensório e da pressão.",
+        "vitals": {
+          "PA": "98/58 mmHg",
+          "FC": "70 bpm sob estimulação",
+          "SpO2": "96%"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "reconhece-instabilidade",
+      "label": "Reconhece bradicardia com instabilidade por hipotensão, alteração mental, choque e dor isquêmica",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "suporte-inicial",
+      "label": "Mantém ABC, oxigenação ou ventilação conforme necessidade, monitorização, pás e acesso IV ou IO",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "atropina",
+      "label": "Administra atropina 1 mg IV, repetível a cada 3 a 5 minutos, até o máximo de 3 mg",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "estimulacao-precoce",
+      "label": "Não posterga estimulação transcutânea quando a atropina é ineficaz no bloqueio de alto grau com choque",
+      "weight": 25,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "captura-mecanica",
+      "label": "Confirma captura mecânica por pulso, perfusão e pressão, não apenas por espículas, e prevê analgesia ou sedação se tolerada",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "ponte-definitiva",
+      "label": "Organiza marcapasso transvenoso urgente e investiga ou trata causas reversíveis",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "reavaliacao",
+      "label": "Reavalia pressão, consciência, dor, ritmo e resposta após cada intervenção",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Não reconhecer a instabilidade associada à bradicardia",
+    "Aguardar resposta prolongada à atropina antes de preparar estimulação",
+    "Considerar captura elétrica sem pulso como sucesso",
+    "Atrasar o marcapasso transvenoso após estabilização temporária"
+  ],
+  "referenceAnswer": "Trata-se de bradicardia instável, provavelmente por bloqueio atrioventricular de alto grau. Mantenho via aérea e oxigenação, monitorização contínua, acesso e pás posicionadas. Faço atropina 1 mg IV, repetindo em 3 a 5 minutos até 3 mg se houver tempo, mas, pela hipotensão persistente, inicio estimulação transcutânea sem aguardar. Confirmo captura pelo pulso e pela melhora da pressão, e ofereço analgesia ou sedação apenas se tolerada. Preparo marcapasso transvenoso e, em paralelo, obtenho ECG de 12 derivações e procuro isquemia, hipóxia, fármacos e alterações eletrolíticas.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support",
+    "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Accessible/Algorithm-ACLS-Bradycardia-LngDscrp-250725-Ed.pdf?sc_lang=en"
+  ]
+}

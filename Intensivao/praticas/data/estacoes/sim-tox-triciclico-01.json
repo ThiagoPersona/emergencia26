@@ -1,0 +1,151 @@
+{
+  "id": "sim-tox-triciclico-01",
+  "version": 2,
+  "title": "Intoxicação por antidepressivo tricíclico com cardiotoxicidade",
+  "examTitle": "Rebaixamento após ingestão medicamentosa",
+  "domain": "Toxicologia e cardiovascular",
+  "domains": [
+    "Toxicologia",
+    "Cardiovascular",
+    "Reanimação"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "bloqueio de canal de sódio",
+    "antidepressivo tricíclico",
+    "QRS alargado",
+    "bicarbonato de sódio",
+    "convulsão",
+    "CIATox"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Atenda um adulto encontrado sonolento após ingestão não esclarecida de comprimidos. Os dados evoluem para toxicidade cardiológica; priorize suporte, tratamento específico e reavaliação objetiva.",
+  "phases": [
+    {
+      "id": "sindrome-inicial",
+      "title": "Síndrome inicial",
+      "prompt": "Estabilize ABC, monitore e obtenha informações sobre a exposição sem atrasar o tratamento.",
+      "patientState": {
+        "summary": "Adulto de 29 anos, confuso, com pele seca, midríase e taquicardia após provável ingestão de antidepressivo.",
+        "vitals": {
+          "PA": "98/60 mmHg",
+          "FC": "132 bpm",
+          "FR": "20 irpm",
+          "SpO2": "97%",
+          "glicemia": "106 mg/dL"
+        }
+      }
+    },
+    {
+      "id": "achado-eletrico",
+      "title": "Alteração elétrica",
+      "prompt": "Interprete o eletrocardiograma, integre a instabilidade e indique a terapia imediata.",
+      "patientState": {
+        "summary": "A pressão cai e o eletrocardiograma mostra QRS de 156 ms com alteração terminal em aVR.",
+        "vitals": {
+          "PA": "84/50 mmHg",
+          "FC": "138 bpm",
+          "FR": "18 irpm",
+          "SpO2": "96%"
+        }
+      },
+      "media": [
+        "ecg-triciclico-qrs"
+      ]
+    },
+    {
+      "id": "convulsao-acidemia",
+      "title": "Convulsão e acidemia",
+      "prompt": "Reavalie o traçado, trate a convulsão, assegure ventilação e titule a terapia guiada pelos dados objetivos.",
+      "patientState": {
+        "summary": "Após convulsão tônico-clônica, persiste instabilidade com acidemia e maior alargamento do QRS.",
+        "vitals": {
+          "PA": "78/44 mmHg",
+          "FC": "146 bpm",
+          "pH": "7,18",
+          "QRS": "170 ms"
+        }
+      },
+      "media": [
+        "ecg-triciclico-qrs"
+      ]
+    },
+    {
+      "id": "refratariedade",
+      "title": "Refratariedade",
+      "prompt": "Acione suporte especializado e descreva as opções de resgate diante da refratariedade.",
+      "patientState": {
+        "summary": "Mantém hipotensão e arritmia ventricular apesar das medidas iniciais.",
+        "vitals": {
+          "PA": "72/40 mmHg",
+          "FC": "arritmia ventricular",
+          "perfusao": "ruim"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "abc-monitorizacao",
+      "label": "Protege via aérea conforme a consciência, monitora continuamente, obtém acesso e corrige hipóxia, hipoglicemia e hipotensão",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "reconhece-bloqueio",
+      "label": "Reconhece toxíndrome anticolinérgica e bloqueio de canal de sódio diante de QRS alargado e aVR alterado",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "convulsao",
+      "label": "Usa benzodiazepínico para convulsão e evita fármacos que agravem o bloqueio de canal de sódio",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "bicarbonato",
+      "label": "Administra bicarbonato de sódio hipertônico para cardiotoxicidade ameaçadora e reavalia QRS, pressão, pH e sódio em série",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "endpoint",
+      "label": "Busca reversão da hipotensão, estreitamento do QRS e alcalinização controlada em torno de pH 7,50, evitando pH acima de 7,55 e sódio acima de 155 mEq/L",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "ventilacao",
+      "label": "Se houver intubação, ajusta ventilação para manter alcalinização controlada e evitar acidemia",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "toxicologia-resgate",
+      "label": "Contata CIATox ou toxicologia e prevê UTI, lidocaína, emulsão lipídica ou suporte extracorpóreo apenas como resgate especializado",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Não reconhecer QRS alargado como cardiotoxicidade por bloqueio de sódio",
+    "Tratar a convulsão sem corrigir ventilação e acidemia",
+    "Não administrar bicarbonato de sódio",
+    "Induzir acidemia durante a intubação",
+    "Ultrapassar metas de pH ou sódio sem monitorização"
+  ],
+  "referenceAnswer": "O quadro sugere intoxicação por tricíclico com toxíndrome anticolinérgica e bloqueio de canal de sódio: o QRS está muito alargado e há hipotensão. Faço ABC, acesso e monitorização, trato a convulsão com benzodiazepínico e administro bicarbonato de sódio hipertônico conforme o protocolo do CIATox ou hospital, repetindo e reavaliando QRS, pressão, pH e sódio. Busco melhora elétrica e hemodinâmica com alcalinização ao redor de pH 7,50, sem ultrapassar 7,55 ou sódio 155. Se precisar intubar, evito acidemia. Aciono toxicologia e UTI; em choque ou arritmia refratários, discuto lidocaína, emulsão lipídica e suporte extracorpóreo.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+    "https://www.acmt.net/wp-content/uploads/2022/06/PRS_170815_Sodium-Bicarbonate-Shortage-Recommendations.pdf"
+  ]
+}

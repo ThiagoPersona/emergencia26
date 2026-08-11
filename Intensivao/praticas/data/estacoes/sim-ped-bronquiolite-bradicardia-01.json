@@ -1,0 +1,167 @@
+{
+  "id": "sim-ped-bronquiolite-bradicardia-01",
+  "version": 2,
+  "title": "Bronquiolite grave com apneia e bradicardia",
+  "examTitle": "Lactente com pausas respiratórias",
+  "domain": "Pediatria e reanimação",
+  "domains": [
+    "Pediatria",
+    "Reanimação",
+    "Emergências respiratórias"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "bronquiolite",
+    "apneia",
+    "ventilação com bolsa-máscara",
+    "bradicardia pediátrica",
+    "RCP pediátrica",
+    "epinefrina IV ou IO"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Um lactente com sintomas respiratórios virais piora durante a observação. Reconheça a causa respiratória da bradicardia e conduza a transição para reanimação quando necessário.",
+  "phases": [
+    {
+      "id": "insuficiencia-respiratoria",
+      "title": "Insuficiência respiratória",
+      "prompt": "Inicie o suporte e identifique os critérios de gravidade e internação.",
+      "patientState": {
+        "summary": "Lactente de 4 meses, 6 kg, no terceiro dia de coriza e tosse, com alimentação reduzida e pausas respiratórias relatadas.",
+        "vitals": {
+          "PA": "72/42 mmHg",
+          "FC": "164 bpm",
+          "FR": "68 irpm",
+          "SpO2": "84% em ar ambiente",
+          "T": "37,8 °C"
+        }
+      }
+    },
+    {
+      "id": "apneia",
+      "title": "Pausa respiratória",
+      "prompt": "Descreva a abertura da via aérea, a aspiração quando indicada e a ventilação eficaz.",
+      "patientState": {
+        "summary": "Apresenta pausa respiratória de 20 segundos e secreção nasal espessa.",
+        "vitals": {
+          "PA": "70/40 mmHg",
+          "FC": "110 bpm",
+          "FR": "irregular",
+          "SpO2": "78% antes da ventilação"
+        }
+      }
+    },
+    {
+      "id": "bradicardia-com-pulso",
+      "title": "Piora circulatória",
+      "prompt": "Decida se há indicação de compressões e descreva como executá-las.",
+      "patientState": {
+        "summary": "Apesar de oxigenação e ventilação eficazes, mantém pulso com má perfusão.",
+        "vitals": {
+          "PA": "52/28 mmHg",
+          "FC": "54 bpm",
+          "FR": "assistida",
+          "SpO2": "94% com BVM e O2"
+        }
+      }
+    },
+    {
+      "id": "persistencia",
+      "title": "Persistência após suporte",
+      "prompt": "Indique a medicação, trate causas reversíveis e planeje a via aérea avançada sem interrupções desnecessárias.",
+      "patientState": {
+        "summary": "Após um ciclo de RCP e correção da hipóxia, a perfusão permanece ruim e o pulso central é fraco.",
+        "vitals": {
+          "PA": "52/30 mmHg",
+          "FC": "52 bpm",
+          "FR": "assistida",
+          "SpO2": "95%"
+        }
+      }
+    },
+    {
+      "id": "resposta",
+      "title": "Resposta",
+      "prompt": "Organize os cuidados pós-ressuscitação e o destino do lactente.",
+      "patientState": {
+        "summary": "A frequência cardíaca e a perfusão melhoram, ainda com ventilação assistida.",
+        "vitals": {
+          "PA": "74/46 mmHg",
+          "FC": "96 bpm",
+          "FR": "assistida",
+          "SpO2": "95%"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "gravidade",
+      "label": "Reconhece bronquiolite grave por apneia, hipoxemia, esforço importante e baixa ingestão e indica internação",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "ventilacao",
+      "label": "Inicia oxigênio e ventilação eficaz com bolsa-máscara na apneia, abre a via aérea e aspira a via aérea superior quando indicado",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "evita-rotina",
+      "label": "Não prescreve broncodilatador, adrenalina nebulizada ou corticoide como tratamento rotineiro de bronquiolite",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "cpap",
+      "label": "Considera CPAP na falência respiratória iminente antes da parada, quando disponível e apropriado",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "inicia-rcp",
+      "label": "Com FC abaixo de 60/min e comprometimento cardiopulmonar apesar de ventilação com oxigênio, inicia RCP imediatamente",
+      "weight": 20,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "rcp-qualidade",
+      "label": "Executa RCP pediátrica a 100 a 120/min, com profundidade de cerca de um terço do diâmetro AP e relação 15:2 com dois socorristas pré-púberes",
+      "weight": 15,
+      "verification": "manual",
+      "critical": false
+    },
+    {
+      "id": "epinefrina",
+      "label": "Administra epinefrina IV ou IO 0,01 mg/kg da solução 0,1 mg/mL, máximo 1 mg, se a bradicardia persistir após corrigir hipóxia e ventilação",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "pos-ressuscitacao",
+      "label": "Reavalia perfusão, glicemia, temperatura, ritmo e causas reversíveis e organiza UTI pediátrica",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Tratar prioritariamente a bradicardia hipóxica com atropina",
+    "Medicar antes de oferecer ventilação eficaz",
+    "Não iniciar RCP com FC abaixo de 60/min e choque apesar de ventilação eficaz",
+    "Indicar salbutamol ou corticoide de rotina para bronquiolite"
+  ],
+  "referenceAnswer": "Este lactente tem bronquiolite grave com apneia. Inicio oxigênio e ventilação eficaz com bolsa-máscara, abro a via aérea e aspiro secreções superiores porque está apneico; não uso broncodilatador ou corticoide de rotina. Se houver falência iminente antes da parada, considero CPAP se disponível. Agora a frequência está abaixo de 60 com má perfusão apesar de ventilação com oxigênio: começo RCP de alta qualidade, em 15:2 com dois socorristas. Persistindo, obtenho acesso IV ou IO e aplico epinefrina 0,01 mg/kg, enquanto procuro hipóxia, hipoglicemia, hipotermia e outras causas. Após recuperar perfusão, encaminho à UTI pediátrica.",
+  "references": [
+    "https://www.nice.org.uk/guidance/ng9/chapter/Recommendations",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+    "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Accessible/Algorithm-PALS-Bradycardia-LngDscrp-250729-Ed.pdf"
+  ]
+}

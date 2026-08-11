@@ -1,0 +1,153 @@
+{
+  "id": "sim-neuro-avc-oclusao-01",
+  "version": 2,
+  "title": "AVC isquêmico por oclusão de grande vaso",
+  "examTitle": "Déficit focal de início recente",
+  "domain": "Neurologia e sistema tempo-dependente",
+  "domains": [
+    "Neurologia",
+    "Sistema tempo-dependente"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "AVC isquêmico",
+    "oclusão de grande vaso",
+    "trombólise",
+    "tenecteplase",
+    "trombectomia",
+    "pressão arterial",
+    "último momento bem"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Conduza o atendimento de um adulto com déficit focal incapacitante de início testemunhado. Organize a decisão de reperfusão sem atrasar terapias elegíveis.",
+  "phases": [
+    {
+      "id": "porta",
+      "title": "Avaliação na porta",
+      "prompt": "Ative o protocolo, defina o horário de início, avalie a incapacidade e exclua mímicos e contraindicações imediatas.",
+      "patientState": {
+        "summary": "Homem de 68 anos, último momento bem há 90 minutos, com afasia e hemiplegia direita; NIHSS 18.",
+        "vitals": {
+          "PA": "210/112 mmHg",
+          "FC": "84 bpm",
+          "FR": "18 irpm",
+          "SpO2": "97%",
+          "glicemia": "118 mg/dL"
+        }
+      }
+    },
+    {
+      "id": "imagem-inicial",
+      "title": "Imagem inicial",
+      "prompt": "Interprete os achados fornecidos, prepare reperfusão IV e acione terapia endovascular com a meta pressórica adequada.",
+      "patientState": {
+        "summary": "TC sem hemorragia; angio-TC com oclusão de M1 esquerda e ASPECTS 8.",
+        "vitals": {
+          "PA": "192/108 mmHg",
+          "FC": "82 bpm",
+          "FR": "18 irpm",
+          "SpO2": "97%"
+        }
+      }
+    },
+    {
+      "id": "trombolise",
+      "title": "Elegibilidade para reperfusão",
+      "prompt": "Escolha e calcule a trombólise IV e explique a sequência com a trombectomia.",
+      "patientState": {
+        "summary": "Peso confirmado de 80 kg, sem contraindicação após controle cuidadoso da pressão; NIHSS 18.",
+        "vitals": {
+          "PA": "178/102 mmHg",
+          "FC": "82 bpm",
+          "FR": "18 irpm",
+          "SpO2": "97%"
+        }
+      }
+    },
+    {
+      "id": "pos-reperfusao",
+      "title": "Após reperfusão inicial",
+      "prompt": "Organize trombectomia, monitorização e alvo de pressão, evitando redução excessiva.",
+      "patientState": {
+        "summary": "Após trombólise, o déficit incapacitante persiste.",
+        "vitals": {
+          "PA": "174/98 mmHg",
+          "FC": "80 bpm",
+          "FR": "16 irpm",
+          "SpO2": "97%"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "ativa-protocolo",
+      "label": "Documenta último momento bem, NIHSS, glicemia e ativa imediatamente a equipe de AVC",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "imagem",
+      "label": "Realiza TC para excluir hemorragia e angioimagem para oclusão de grande vaso sem atrasar trombólise elegível",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "elegibilidade",
+      "label": "Reconhece déficit incapacitante dentro de 4,5 horas e oclusão M1 como indicação de reperfusão IV e avaliação endovascular",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "pa-pre",
+      "label": "Reduz a pressão para abaixo de 185/110 mmHg antes da trombólise sem queda excessiva de perfusão",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "tenecteplase",
+      "label": "Administra tenecteplase 0,25 mg/kg IV em bolus, máximo 25 mg; para 80 kg, calcula 20 mg",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "trombectomia",
+      "label": "Aciona trombectomia mecânica ou centro endovascular e não espera resposta à trombólise para transferir o paciente com oclusão de grande vaso",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "pa-pos",
+      "label": "Mantém pressão abaixo de 180/105 mmHg nas primeiras 24 horas e evita alvo intensivo de sistólica abaixo de 140 mmHg após reperfusão",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "monitorizacao",
+      "label": "Monitora estado neurológico, sangramento, glicemia, temperatura e complicações de reperfusão",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Atrasar trombólise elegível por exames avançados não necessários",
+    "Não tratar pressão acima de 185/110 mmHg antes da trombólise",
+    "Usar tenecteplase 0,40 mg/kg",
+    "Aguardar resposta à trombólise antes de acionar trombectomia na oclusão M1",
+    "Não excluir hemorragia na TC inicial"
+  ],
+  "referenceAnswer": "É um déficit isquêmico incapacitante de 90 minutos com NIHSS alto. Registro o último momento bem, glicemia e contraindicações, aciono o protocolo, faço TC sem contraste para excluir hemorragia e angio-TC para definir oclusão. Há M1 ocluída: após reduzir a pressão para menos de 185/110 mmHg, aplico tenecteplase 0,25 mg/kg em bolus, máximo 25 mg; para 80 kg são 20 mg. Não espero resposta ao trombolítico e já aciono transferência ou equipe de trombectomia. Depois, mantenho pressão abaixo de 180/105 mmHg e evito redução intensiva da sistólica abaixo de 140, com monitorização neurológica e de sangramento.",
+  "references": [
+    "https://doi.org/10.1161/str.0000000000000513",
+    "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know"
+  ]
+}

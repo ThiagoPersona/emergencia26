@@ -1,0 +1,152 @@
+{
+  "id": "sim-tox-metanol-01",
+  "version": 2,
+  "title": "Intoxicação por metanol com indicação de hemodiálise",
+  "examTitle": "Acidose após exposição a solvente",
+  "domain": "Toxicologia e metabólico",
+  "domains": [
+    "Toxicologia",
+    "Metabólico",
+    "Terapia intensiva"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "álcool tóxico",
+    "metanol",
+    "acidose metabólica",
+    "anion gap",
+    "fomepizol",
+    "hemodiálise",
+    "CIATox"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Um adulto procura atendimento após possível ingestão de líquido não destinado a consumo. Conduza a estabilização, interprete o padrão laboratorial e defina o tratamento que não deve aguardar confirmação tardia.",
+  "phases": [
+    {
+      "id": "suspeita-clinica",
+      "title": "Suspeita clínica",
+      "prompt": "Reconheça a síndrome tóxica, estabilize o paciente e solicite exames dirigidos.",
+      "patientState": {
+        "summary": "Homem de 42 anos, 18 horas após ingerir líquido de recipiente sem rótulo, com cefaleia, vômitos e visão borrada.",
+        "vitals": {
+          "PA": "112/68 mmHg",
+          "FC": "106 bpm",
+          "FR": "30 irpm",
+          "SpO2": "98%",
+          "T": "36,5 °C"
+        }
+      }
+    },
+    {
+      "id": "confirmacao-sindromica",
+      "title": "Padrão laboratorial",
+      "prompt": "Interprete o distúrbio ácido-básico e inicie o tratamento sem aguardar dosagem definitiva.",
+      "patientState": {
+        "summary": "O lactato não explica a acidose e o hiato osmolar está elevado.",
+        "vitals": {
+          "PA": "102/62 mmHg",
+          "FC": "112 bpm",
+          "FR": "32 irpm",
+          "SpO2": "98%",
+          "pH": "7,08",
+          "HCO3": "7 mmol/L",
+          "anionGap": "31 mmol/L"
+        }
+      }
+    },
+    {
+      "id": "criterio-dialitico",
+      "title": "Piora clínica",
+      "prompt": "Defina a necessidade de terapia extracorpórea, suporte intensivo e comunicação especializada.",
+      "patientState": {
+        "summary": "Passa a relatar escotomas, fica sonolento e apresenta piora da função renal.",
+        "vitals": {
+          "PA": "96/58 mmHg",
+          "FC": "118 bpm",
+          "FR": "30 irpm",
+          "SpO2": "97%",
+          "pH": "7,04",
+          "anionGap": "33 mmol/L"
+        }
+      }
+    },
+    {
+      "id": "durante-depuracao",
+      "title": "Durante a depuração",
+      "prompt": "Ajuste antídoto e cofator durante a hemodiálise e defina a monitorização seriada.",
+      "patientState": {
+        "summary": "Durante hemodiálise, está acordado e a acidemia começa a melhorar.",
+        "vitals": {
+          "PA": "110/66 mmHg",
+          "FC": "94 bpm",
+          "FR": "20 irpm",
+          "SpO2": "98%",
+          "pH": "7,30"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "suspeita",
+      "label": "Suspeita de metanol diante de exposição compatível, sintomas visuais e acidose metabólica com anion gap e hiato osmolar elevados",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "exames",
+      "label": "Obtém gasometria, eletrólitos, função renal, osmolaridade, anion gap, glicemia, etanol e metanol quando disponível, sem atrasar o cuidado",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "fomepizol",
+      "label": "Inicia fomepizol 15 mg/kg IV em 30 minutos, depois 10 mg/kg a cada 12 horas por quatro doses e 15 mg/kg a cada 12 horas, com ajuste na hemodiálise",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "acidemia-folato",
+      "label": "Corrige acidemia grave e fornece ácido fólico ou folínico conforme protocolo, com suporte ABC e UTI",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "hemodialise",
+      "label": "Indica hemodiálise intermitente urgente diante de pH até 7,15, déficit visual, coma ou convulsão, acidose persistente, anion gap acima de 24 ou disfunção renal",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "mantem-antidoto",
+      "label": "Mantém fomepizol e folato durante a terapia extracorpórea e ajusta o fomepizol para cada 4 horas durante hemodiálise",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "especialistas-monitorizacao",
+      "label": "Aciona CIATox, toxicologia e nefrologia precocemente, monitora pH, gap, visão, consciência e concentração sérica e só suspende o antídoto com metanol abaixo de 20 mg/dL, pH normal e ausência de sintomas",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Aguardar dosagem de metanol antes de iniciar antídoto em síndrome compatível",
+    "Não indicar depuração extracorpórea com pH até 7,15 ou déficit visual",
+    "Suspender fomepizol durante a hemodiálise",
+    "Atribuir a acidose apenas à hiperventilação ou ansiedade"
+  ],
+  "referenceAnswer": "A exposição, o déficit visual e a acidose de alto anion gap fazem pensar em metanol. Colho os exames específicos, mas inicio fomepizol imediatamente: 15 mg/kg IV em 30 minutos, depois 10 mg/kg a cada 12 horas por quatro doses e 15 mg/kg a cada 12 horas, com ajuste durante a diálise. Corrijo a acidemia grave e uso folato conforme o protocolo toxicológico. Este paciente tem pH abaixo de 7,15 e alteração visual, portanto indico hemodiálise intermitente urgente, mantenho fomepizol a cada 4 horas durante o procedimento e aciono CIATox, nefrologia e UTI. Reavalio pH, anion gap, visão e consciência em série e só suspendo o antídoto com metanol abaixo de 20 mg/dL, pH normal e sem sintomas.",
+  "references": [
+    "https://www.accessdata.fda.gov/drugsatfda_docs/label/2020/020696s006lbl.pdf",
+    "https://www.extrip-workgroup.org/methanol"
+  ]
+}

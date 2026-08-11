@@ -1,0 +1,146 @@
+{
+  "id": "sim-animais-escorpiao-choque-01",
+  "version": 2,
+  "title": "Escorpionismo pediátrico grave com choque",
+  "examTitle": "Criança com piora após picada",
+  "domain": "Toxicologia e animais peçonhentos",
+  "domains": [
+    "Toxicologia",
+    "Animais peçonhentos",
+    "Pediatria"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "escorpionismo pediátrico",
+    "classificação de gravidade",
+    "soro antiescorpiônico",
+    "choque",
+    "edema pulmonar",
+    "terapia intensiva"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Atenda uma criança após picada por escorpião. Diferencie manifestação local de envenenamento sistêmico e não atrase o tratamento específico quando houver gravidade.",
+  "phases": [
+    {
+      "id": "apresentacao-inicial",
+      "title": "Apresentação inicial",
+      "prompt": "Realize as medidas iniciais, obtenha a história e faça a classificação provisória.",
+      "patientState": {
+        "summary": "Criança de 4 anos, 15 kg, com dor local intensa e agitação 90 minutos após a picada.",
+        "vitals": {
+          "PA": "108/66 mmHg",
+          "FC": "132 bpm",
+          "FR": "26 irpm",
+          "SpO2": "98%",
+          "T": "36,7 °C"
+        }
+      }
+    },
+    {
+      "id": "manifestacoes-sistemicas",
+      "title": "Manifestações sistêmicas",
+      "prompt": "Reconheça a progressão e prepare tratamento específico e monitorização.",
+      "patientState": {
+        "summary": "Passa a apresentar vômitos repetidos, sudorese intensa e sialorreia.",
+        "vitals": {
+          "PA": "102/60 mmHg",
+          "FC": "154 bpm",
+          "FR": "34 irpm",
+          "SpO2": "95%"
+        }
+      }
+    },
+    {
+      "id": "gravidade",
+      "title": "Deterioração",
+      "prompt": "Classifique a gravidade, indique o tratamento específico e ofereça suporte para choque e edema pulmonar.",
+      "patientState": {
+        "summary": "Fica prostrada, com extremidades frias e estertores.",
+        "vitals": {
+          "PA": "64/36 mmHg",
+          "FC": "78 bpm",
+          "FR": "42 irpm",
+          "SpO2": "86% em ar ambiente"
+        }
+      }
+    },
+    {
+      "id": "pos-soro",
+      "title": "Após o tratamento específico",
+      "prompt": "Defina vigilância de reações, suporte intensivo e reavaliações.",
+      "patientState": {
+        "summary": "Após o soro, a perfusão e a oxigenação começam a melhorar.",
+        "vitals": {
+          "PA": "88/50 mmHg",
+          "FC": "112 bpm",
+          "FR": "28 irpm",
+          "SpO2": "95% com O2"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "abc",
+      "label": "Faz ABC, acesso IV, monitorização contínua, analgesia e identifica o tempo da picada e a evolução sistêmica",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "classificacao",
+      "label": "Reconhece a criança como grupo de maior risco e diferencia manifestações moderadas das graves",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "reconhece-gravidade",
+      "label": "Reconhece gravidade por vômitos profusos, hipersecreção intensa, prostração, bradicardia, insuficiência cardíaca, edema pulmonar ou choque",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "soro",
+      "label": "Administra soro antiescorpiônico IV o mais cedo possível e usa 6 frascos-ampola no quadro grave conforme o PCDT 2025",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "reacao-soro",
+      "label": "Mantém profissional ao lado durante a soroterapia e está preparado para tratar reação de hipersensibilidade",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "suporte-intensivo",
+      "label": "Trata choque e edema pulmonar com suporte de oxigenação ou ventilação, UTI pediátrica e suporte hemodinâmico guiado por perfusão",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "reavalia",
+      "label": "Reavalia sinais vitais, perfusão, trabalho respiratório, diurese e resposta clínica após o soro",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Classificar choque ou edema pulmonar como caso leve ou apenas moderado",
+    "Atrasar o soro no caso grave",
+    "Usar apenas analgesia e observação diante de manifestações sistêmicas graves",
+    "Não monitorar durante a soroterapia",
+    "Não escalar suporte respiratório e hemodinâmico"
+  ],
+  "referenceAnswer": "Começo por ABC, acesso, monitorização e analgesia. Nesta criança, vômitos repetidos, sudorese, sialorreia, prostração, hipoxemia, edema pulmonar e choque definem envenenamento grave. Indico imediatamente soro antiescorpiônico IV, seis frascos-ampola conforme o PCDT 2025, sem esperar exames; acompanho à beira do leito por possível reação. Trato choque e edema pulmonar com oxigenação ou ventilação e suporte hemodinâmico guiado por perfusão em UTI pediátrica, reavaliando pressão, frequência, diurese e esforço respiratório.",
+  "references": [
+    "https://animais-peconhentos.saude.gov.br/guia-de-vigilancia/informacoes-do-guia-de-vigilancia/guia-de-acidentes-escorpionicos",
+    "https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2024/manual-de-diagnostico-e-tratamento-de-acidentes-por-animais-peconhentos.pdf/%40%40download/file"
+  ]
+}

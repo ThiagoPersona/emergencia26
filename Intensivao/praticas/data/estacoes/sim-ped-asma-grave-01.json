@@ -1,0 +1,151 @@
+{
+  "id": "sim-ped-asma-grave-01",
+  "version": 2,
+  "title": "Exacerbação asmática pediátrica grave",
+  "examTitle": "Criança com esforço respiratório crescente",
+  "domain": "Pediatria e respiratório",
+  "domains": [
+    "Pediatria",
+    "Emergências respiratórias"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "tags": [
+    "exacerbação asmática grave",
+    "hipoxemia",
+    "SABA repetido",
+    "corticoide sistêmico",
+    "ipratrópio",
+    "falência respiratória"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Atenda uma criança escolar com dispneia progressiva. Reconheça gravidade, inicie tratamento nas primeiras etapas e declare critérios para escalonamento.",
+  "phases": [
+    {
+      "id": "chegada",
+      "title": "Chegada",
+      "prompt": "Classifique a gravidade e inicie simultaneamente as medidas terapêuticas prioritárias.",
+      "patientState": {
+        "summary": "Criança de 8 anos, 25 kg, fala palavras isoladas, usa musculatura acessória e permanece inclinada para frente.",
+        "vitals": {
+          "PA": "104/60 mmHg",
+          "FC": "142 bpm",
+          "FR": "42 irpm",
+          "SpO2": "89% em ar ambiente",
+          "T": "37,1 °C"
+        }
+      }
+    },
+    {
+      "id": "primeira-hora",
+      "title": "Primeira hora",
+      "prompt": "Descreva a repetição do broncodilatador, os adjuvantes e o corticoide sistêmico.",
+      "patientState": {
+        "summary": "Após uma rodada de broncodilatador, ainda fala apenas palavras e mantém sibilos difusos.",
+        "vitals": {
+          "PA": "106/62 mmHg",
+          "FC": "148 bpm",
+          "FR": "40 irpm",
+          "SpO2": "92% com O2"
+        }
+      }
+    },
+    {
+      "id": "falha-resposta",
+      "title": "Falha de resposta",
+      "prompt": "Reconheça a deterioração, acione suporte intensivo e organize a via aérea de forma segura.",
+      "patientState": {
+        "summary": "Está sonolenta, com tórax quase silencioso, esforço exaustivo e PaCO2 ascendente.",
+        "vitals": {
+          "PA": "96/54 mmHg",
+          "FC": "132 bpm",
+          "FR": "30 irpm",
+          "SpO2": "91% com O2"
+        }
+      }
+    },
+    {
+      "id": "reavaliacao",
+      "title": "Reavaliação",
+      "prompt": "Defina monitorização, desmame de oxigênio e disposição após a resposta ao tratamento intensivo.",
+      "patientState": {
+        "summary": "Volta a falar frases, com menor esforço respiratório.",
+        "vitals": {
+          "PA": "108/64 mmHg",
+          "FC": "118 bpm",
+          "FR": "26 irpm",
+          "SpO2": "95% com O2 de baixo fluxo"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "gravidade",
+      "label": "Reconhece exacerbação grave e sinais de risco de vida, incluindo fala entrecortada, hipoxemia, exaustão, sonolência ou tórax silencioso",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "oxigenio",
+      "label": "Fornece oxigênio controlado com alvo de SpO2 de pelo menos 94% para criança de 6 a 12 anos",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "saba",
+      "label": "Administra SABA repetido na primeira hora, por exemplo 4 a 10 jatos por espaçador a cada 20 minutos por até três doses",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "corticoide",
+      "label": "Inicia precocemente prednisolona 1 a 2 mg/kg/dia, máximo 40 mg, ou alternativa IV se a via oral não for possível",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "adjuvantes",
+      "label": "Associa ipratrópio no quadro grave e considera MgSO4 IV em ambiente agudo monitorado quando a resposta inicial é inadequada, conforme protocolo pediátrico local",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "falencia-respiratoria",
+      "label": "Evita sedativos e reconhece que sonolência, tórax silencioso e PaCO2 ascendente exigem UTI e preparação de via aérea por equipe experiente",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "reavalia",
+      "label": "Reavalia resposta clínica e SpO2 frequentemente e evita antibiótico, radiografia ou gasometria de rotina no quadro responsivo",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "destino",
+      "label": "Define disposição segura considerando necessidade de broncodilatador, SpO2 e risco de recaída",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Não reconhecer sonolência ou tórax silencioso como ameaça de falência respiratória",
+    "Atrasar o escalonamento para terapia intensiva",
+    "Administrar sedativo apenas para acalmar a criança",
+    "Manter hipoxemia sem titular oxigênio"
+  ],
+  "referenceAnswer": "É uma exacerbação asmática grave. Inicio oxigênio para SpO2 de pelo menos 94%, SABA repetido por espaçador a cada 20 minutos na primeira hora e corticoide sistêmico precoce, com ipratrópio no quadro grave. Se a resposta for insuficiente, considero magnésio IV em ambiente monitorado e na dose do protocolo pediátrico local. Sonolência, elevação do CO2 e tórax silencioso indicam falência iminente: aciono UTI e o profissional mais experiente de via aérea, sem usar sedativo fora de uma sequência de intubação planejada. Reavalio continuamente e só considero saída após estabilidade sustentada.",
+  "references": [
+    "https://ginasthma.org/2025-gina-strategy-report/",
+    "https://ginasthma.org/wp-content/uploads/2025/11/GINA-Summary-Guide-2025-WEB_FINAL-WMS.pdf"
+  ]
+}

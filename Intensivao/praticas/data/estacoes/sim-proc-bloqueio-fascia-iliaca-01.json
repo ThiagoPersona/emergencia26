@@ -1,0 +1,170 @@
+{
+  "id": "sim-proc-bloqueio-fascia-iliaca-01",
+  "version": 2,
+  "title": "Bloqueio da fáscia ilíaca guiado por ultrassom",
+  "examTitle": "Analgesia regional para dor de quadril",
+  "domain": "Procedimentos, POCUS e analgesia",
+  "domains": [
+    "Procedimentos",
+    "POCUS",
+    "Analgesia"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "bloqueio da fáscia ilíaca",
+    "ultrassom",
+    "analgesia regional",
+    "assepsia",
+    "injeção fracionada",
+    "anestésico local",
+    "LAST"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Um adulto com fratura proximal de fêmur tem dor importante apesar de analgesia inicial. Descreva um bloqueio regional guiado por ultrassom, desde a segurança pré-procedimento até o reconhecimento de toxicidade sistêmica.",
+  "phases": [
+    {
+      "id": "indicacao-seguranca",
+      "title": "Indicação e segurança",
+      "prompt": "Interprete o posicionamento do transdutor e confirme paciente, lado, consentimento, contraindicações, monitorização e material de resgate.",
+      "patientState": {
+        "summary": "Homem de 78 anos, 70 kg, com fratura de fêmur confirmada e dor 9/10 apesar da analgesia inicial.",
+        "vitals": {
+          "PA": "146/78 mmHg",
+          "FC": "106 bpm",
+          "FR": "20 irpm",
+          "SpO2": "96%",
+          "T": "36,6 °C"
+        }
+      },
+      "media": [
+        "fascia-iliaca-probe-placement"
+      ]
+    },
+    {
+      "id": "anatomia",
+      "title": "Anatomia",
+      "prompt": "Interprete a ultrassonografia, identifique as estruturas e declare o plano-alvo e as regiões a evitar.",
+      "patientState": {
+        "summary": "O paciente está monitorizado e a região inguinal foi preparada.",
+        "vitals": {
+          "PA": "142/76 mmHg",
+          "FC": "100 bpm",
+          "FR": "18 irpm",
+          "SpO2": "97%"
+        }
+      },
+      "media": [
+        "us-fascia-iliaca-anatomia"
+      ]
+    },
+    {
+      "id": "puncao-injecao",
+      "title": "Punção e injeção",
+      "prompt": "Reavalie a imagem, mantenha a ponta visível, confirme a dispersão e descreva a injeção fracionada respeitando a dose calculada.",
+      "patientState": {
+        "summary": "Sob técnica estéril, a agulha é vista em plano e atravessa a fáscia até o espaço potencial.",
+        "vitals": {
+          "PA": "140/74 mmHg",
+          "FC": "98 bpm",
+          "FR": "18 irpm",
+          "SpO2": "97%"
+        }
+      },
+      "media": [
+        "us-fascia-iliaca-anatomia"
+      ]
+    },
+    {
+      "id": "evento-adverso",
+      "title": "Evento adverso",
+      "prompt": "Reconheça a complicação, interrompa a exposição e conduza o resgate.",
+      "patientState": {
+        "summary": "Após a injeção, refere zumbido e parestesia perioral e, em seguida, apresenta abalos.",
+        "vitals": {
+          "PA": "132/70 mmHg",
+          "FC": "118 bpm",
+          "FR": "20 irpm",
+          "SpO2": "95%"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "seguranca",
+      "label": "Confirma identidade, lado, indicação, consentimento, alergia, risco de sangramento ou infecção, acesso IV e monitorização",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "kit-resgate",
+      "label": "Mantém oxigênio, aspirador, material de via aérea e kit de LAST com emulsão lipídica imediatamente disponíveis",
+      "weight": 10,
+      "verification": "manual",
+      "critical": true
+    },
+    {
+      "id": "anatomia-assepsia",
+      "label": "Usa assepsia e identifica músculo ilíaco, fáscia ilíaca, artéria femoral e plano-alvo ao ultrassom",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "ponta-visivel",
+      "label": "Mantém a ponta da agulha visível em plano e evita punção vascular e estruturas profundas",
+      "weight": 15,
+      "verification": "manual",
+      "critical": true
+    },
+    {
+      "id": "confirma-dispersao",
+      "label": "Após cruzar a fáscia, usa 1 a 2 mL para confirmar dispersão entre fáscia e ilíaco antes de injetar o restante",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "injecao-fracionada",
+      "label": "Aspira antes e durante injeção fracionada, observa a dispersão e calcula dose total abaixo do máximo local para o agente e paciente",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "reavalia-bloqueio",
+      "label": "Reavalia dor, bloqueio sensitivo, sinais vitais e complicações após o procedimento",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "reconhece-last",
+      "label": "Reconhece LAST, interrompe a injeção, chama ajuda, assegura via aérea e trata convulsão com benzodiazepínico",
+      "weight": 8,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "emulsao-lipidica",
+      "label": "Na LAST grave, administra emulsão lipídica 20% conforme ASRA: até 70 kg, bolus 1,5 mL/kg e infusão 0,25 mL/kg/min; acima de 70 kg, bolus aproximado de 100 mL e infusão aproximada de 250 mL em 15 a 20 minutos",
+      "weight": 12,
+      "verification": "verbal",
+      "critical": true
+    }
+  ],
+  "criticalErrors": [
+    "Realizar bloqueio no lado errado ou sem monitorização e kit de resgate",
+    "Perder a ponta da agulha e continuar a injeção",
+    "Ignorar sinais neurológicos iniciais de toxicidade sistêmica",
+    "Não interromper a injeção ou não usar emulsão lipídica em toxicidade ameaçadora"
+  ],
+  "referenceAnswer": "Confirmo paciente, lado e consentimento, reviso alergias, anticoagulação e contraindicações, obtenho acesso e deixo monitorização, via aérea e emulsão lipídica prontas. Com técnica estéril, identifico a fáscia ilíaca sobre o músculo ilíaco e mantenho a ponta da agulha visível em plano, longe dos vasos. Ao atravessar a fáscia, uso 1 a 2 mL para confirmar dispersão; então aspiro e injeto em alíquotas, respeitando a dose máxima local calculada. Se houver zumbido, parestesia ou convulsão, interrompo a injeção, chamo ajuda, trato via aérea e convulsão e, na LAST grave, uso emulsão lipídica 20% conforme peso no protocolo ASRA.",
+  "references": [
+    "https://asra.com/guidelines-articles/how-i-do-it/asra-news/2020/11/01/how-i-do-it-suprainguinal-fascia-iliaca-block",
+    "https://asra.com/docs/default-source/guidelines-articles/local-anesthetic-systemic-toxicity-rgb.pdf?sfvrsn=33b348e_2",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation"
+  ]
+}

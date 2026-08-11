@@ -1,0 +1,161 @@
+{
+  "id": "sim-cardio-pos-rce-01",
+  "version": 2,
+  "title": "Cuidados integrados após retorno da circulação espontânea",
+  "examTitle": "Cuidados após retorno da circulação",
+  "domain": "Cardiovascular e cuidados pós-PCR",
+  "domains": [
+    "Cardiovascular",
+    "Reanimação",
+    "Cuidados pós-PCR"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "RCE",
+    "oxigenação",
+    "ventilação",
+    "pressão arterial média",
+    "ECG pós-RCE",
+    "controle de temperatura",
+    "causas reversíveis"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Após reanimação por ritmo inicialmente chocável, o paciente recuperou circulação. Organize as primeiras medidas de estabilização e investigação, sem fazer prognóstico neurológico precoce.",
+  "phases": [
+    {
+      "id": "rce-confirmado",
+      "title": "Circulação restabelecida",
+      "prompt": "Interprete a capnografia e organize oxigenação, ventilação, perfusão e monitorização imediatas.",
+      "patientState": {
+        "summary": "Homem de 56 anos, intubado, com pulso central e sem obedecer comandos.",
+        "vitals": {
+          "PA": "82/48 mmHg (PAM 59)",
+          "FC": "108 bpm",
+          "FR": "16 irpm no ventilador",
+          "SpO2": "100% com FiO2 1,0",
+          "ETCO2": "34 mmHg",
+          "T": "35,9 °C"
+        }
+      },
+      "media": [
+        "capnografia-capnograma-base"
+      ]
+    },
+    {
+      "id": "gasometria-hemodinamica",
+      "title": "Gasometria e hemodinâmica",
+      "prompt": "Reavalie a curva de capnografia, defina os alvos e faça os ajustes imediatos de ventilação, oxigênio e pressão.",
+      "patientState": {
+        "summary": "A circulação persiste, mas há hiperóxia, hipercapnia e hipotensão.",
+        "vitals": {
+          "PaO2": "268 mmHg",
+          "PaCO2": "50 mmHg",
+          "pH": "7,27",
+          "lactato": "7 mmol/L",
+          "PAM": "62 mmHg"
+        }
+      },
+      "media": [
+        "capnografia-capnograma-base"
+      ]
+    },
+    {
+      "id": "busca-etiologia",
+      "title": "Investigação dirigida",
+      "prompt": "Indique a investigação precoce da causa e como decidir a estratégia coronária conforme os achados e o contexto.",
+      "patientState": {
+        "summary": "Há suspeita de causa cardíaca e um ECG de 12 derivações está disponível.",
+        "vitals": {
+          "PA": "102/64 mmHg com vasopressor",
+          "SpO2": "95%",
+          "T": "36,2 °C"
+        }
+      }
+    },
+    {
+      "id": "protecao-secundaria",
+      "title": "Proteção secundária",
+      "prompt": "Estabeleça a estratégia protocolada de temperatura e explique por que o prognóstico neurológico definitivo não deve ser feito agora.",
+      "patientState": {
+        "summary": "Permanece comatoso após correção inicial dos distúrbios gasométricos e hemodinâmicos.",
+        "vitals": {
+          "PA": "108/66 mmHg",
+          "SpO2": "94%",
+          "PaCO2": "40 mmHg",
+          "T": "37,8 °C"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "confirma-rce",
+      "label": "Confirma RCE e assegura via aérea, capnografia, ventilação e monitorização contínua ou invasiva quando disponível",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "alvo-oxigenio",
+      "label": "Titula FiO2 para SpO2 de 90% a 98% e PaO2 de 60 a 105 mmHg quando disponível, evitando hiperóxia e hipóxia",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "alvo-ventilacao",
+      "label": "Ajusta ventilação para PaCO2 fisiológica, em geral entre 35 e 45 mmHg",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "alvo-pam",
+      "label": "Evita hipotensão e mantém PAM de pelo menos 65 mmHg com fluido e vasoativo guiados pela avaliação",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "investiga-causa",
+      "label": "Obtém ECG de 12 derivações precocemente e investiga causa e complicações com ecocardiografia ou POCUS e imagem conforme o contexto",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "temperatura",
+      "label": "Inicia controle protocolado de temperatura no paciente que não obedece comandos, mantendo 32 °C a 37,5 °C por pelo menos 36 horas",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "prognostico",
+      "label": "Não emite prognóstico neurológico precoce e planeja avaliação multimodal após controle de confundidores",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "reavaliacao",
+      "label": "Reavalia gases, pressão, glicemia, temperatura, ritmo e causas tratáveis",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Manter FiO2 em 1,0 apesar de medida confiável de hiperóxia",
+    "Aceitar PAM abaixo de 65 mmHg sem intervenção",
+    "Hiperventilar sem orientação por gasometria",
+    "Emitir prognóstico neurológico definitivo nas primeiras horas",
+    "Não investigar a causa da parada"
+  ],
+  "referenceAnswer": "Há retorno da circulação, mas o atendimento continua crítico. Confirmo via aérea e capnografia, titulo oxigênio para SpO2 de 90% a 98% e ajusto a ventilação para PaCO2 de 35 a 45 mmHg. Trato a hipotensão para manter PAM de pelo menos 65 mmHg com reavaliação frequente. Obtenho ECG de 12 derivações e procuro a causa com ecocardiografia ou POCUS e exames dirigidos, avaliando estratégia coronária quando indicada. Como o paciente não obedece comandos, inicio controle protocolado de temperatura entre 32 °C e 37,5 °C por pelo menos 36 horas e reservo o prognóstico neurológico para avaliação multimodal tardia.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/post-cardiac-arrest-care",
+    "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/PCAC-Algorithm-ACLS-PCAC-250527.pdf"
+  ]
+}

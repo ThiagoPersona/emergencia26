@@ -1,0 +1,162 @@
+{
+  "id": "sim-resp-asma-intubado-01",
+  "version": 2,
+  "title": "Asma intubada com hiperinsuflação dinâmica",
+  "examTitle": "Instabilidade no ventilador após intubação",
+  "domain": "Respiratório e ventilação mecânica",
+  "domains": [
+    "Emergências respiratórias",
+    "Ventilação mecânica",
+    "Terapia intensiva"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "asma ameaçadora à vida",
+    "aprisionamento aéreo",
+    "auto-PEEP",
+    "curvas ventilatórias",
+    "hipotensão obstrutiva",
+    "hipercapnia permissiva"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Um adulto intubado por crise obstrutiva grave apresenta pressões elevadas e hipotensão. Interprete as curvas, afaste causas letais e ajuste a ventilação sem tentar normalizar imediatamente o CO2.",
+  "phases": [
+    {
+      "id": "deterioracao-inicial",
+      "title": "Deterioração inicial",
+      "prompt": "Interprete as curvas e as pressões e estabeleça o diagnóstico diferencial imediato da dificuldade ventilatória.",
+      "patientState": {
+        "summary": "Homem de 34 anos, intubado há 20 minutos por crise obstrutiva grave. VCV com Vt 500 mL, FR 18/min e PEEP 5 cmH2O; Ppico 48 e Pplat 24 cmH2O.",
+        "vitals": {
+          "PA": "86/48 mmHg",
+          "FC": "138 bpm",
+          "SpO2": "98%",
+          "ETCO2": "72 mmHg"
+        }
+      },
+      "media": [
+        "vm-autopeep-sinais-fig4"
+      ]
+    },
+    {
+      "id": "curvas",
+      "title": "Curvas ventilatórias",
+      "prompt": "Interprete a curva fluxo-tempo e a pausa expiratória e ajuste o ventilador conforme a fisiologia identificada.",
+      "patientState": {
+        "summary": "O fluxo expiratório não alcança a linha de base e a pausa expiratória mostra PEEP intrínseca de 14 cmH2O.",
+        "vitals": {
+          "PA": "76/40 mmHg",
+          "FC": "144 bpm",
+          "SpO2": "97%"
+        }
+      },
+      "media": [
+        "vm-autopeep-sinais-fig4"
+      ]
+    },
+    {
+      "id": "peri-parada",
+      "title": "Instabilidade extrema",
+      "prompt": "Reavalie as curvas, alivie a hiperinsuflação e exclua pneumotórax hipertensivo sem atrasar o suporte hemodinâmico.",
+      "patientState": {
+        "summary": "Durante a manipulação, Ppico chega a 56 cmH2O e Pplat a 26 cmH2O, com hipotensão grave.",
+        "vitals": {
+          "PA": "58/30 mmHg",
+          "FC": "150 bpm",
+          "SpO2": "94%",
+          "ETCO2": "82 mmHg"
+        }
+      },
+      "media": [
+        "vm-autopeep-sinais-fig4"
+      ]
+    },
+    {
+      "id": "apos-ajuste",
+      "title": "Após o ajuste",
+      "prompt": "Compare as curvas após o ajuste, defina a tolerância à hipercapnia e organize tratamento e monitorização.",
+      "patientState": {
+        "summary": "Com Vt reduzido, FR 10/min e maior tempo expiratório, o fluxo volta à linha de base; Ppico 34 e Pplat 23 cmH2O.",
+        "vitals": {
+          "PA": "98/58 mmHg",
+          "FC": "118 bpm",
+          "SpO2": "95%",
+          "pH": "7,22"
+        }
+      },
+      "media": [
+        "vm-autopeep-sinais-fig4"
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "id": "resistencia",
+      "label": "Reconhece que Ppico muito alto com Pplat não elevada sugere resistência ou obstrução, não redução isolada de complacência",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "auto-peep",
+      "label": "Identifica fluxo expiratório que não zera e pausa expiratória como aprisionamento aéreo e PEEP intrínseca",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "causas-letais",
+      "label": "Avalia imediatamente pneumotórax hipertensivo, desconexão, obstrução do tubo, secreção e broncoespasmo",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "ajuste-ventilador",
+      "label": "Reduz frequência e volume corrente, aumenta o tempo expiratório e reduz o volume-minuto para limitar hiperinsuflação dinâmica",
+      "weight": 20,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "evita-normocapnia",
+      "label": "Não aumenta frequência nem busca normocapnia rápida à custa de piorar aprisionamento e reavalia pH e pressão",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "desconexao-breve",
+      "label": "Na hipotensão por hiperinsuflação, considera breve desconexão ou pausa ventilatória para expiração passiva enquanto reavalia e trata a causa",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "tratamento-base",
+      "label": "Mantém broncodilatação e corticoide sistêmico, trata hipotensão e considera suporte especializado ou ECMO se refratário",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "reavalia",
+      "label": "Reavalia curvas, pressões, auto-PEEP, gases, SpO2 e perfusão após o ajuste",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Aumentar frequência ou volume corrente diante de auto-PEEP",
+    "Ignorar pneumotórax hipertensivo na deterioração súbita",
+    "Usar Ppico isolada como indicação de aumentar PEEP ou volume",
+    "Aceitar hipotensão grave sem aliviar a hiperinsuflação"
+  ],
+  "referenceAnswer": "O fluxo expiratório não retorna à linha de base e a pausa mostra PEEP intrínseca: há aprisionamento aéreo por obstrução grave. A Ppico está alta com Pplat relativamente preservada, o que apoia aumento da resistência. Em paralelo, excluo pneumotórax hipertensivo, obstrução do tubo e secreção. Reduzo o volume-minuto, sobretudo a frequência, uso volume corrente baixo e prolongando a expiração até o fluxo zerar; aceito hipercapnia permissiva acompanhando o pH. Se a hipotensão decorrer da hiperinsuflação, faço breve pausa ou desconexão para permitir expiração enquanto trato e reavalio. Mantenho broncodilatação, corticoide, suporte hemodinâmico e cuidado intensivo.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+    "https://ginasthma.org/2025-gina-strategy-report/"
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "id": "sim-obst-eclampsia-01",
+  "version": 2,
+  "title": "Eclâmpsia com hipertensão grave",
+  "examTitle": "Convulsão e hipertensão no fim da gestação",
+  "domain": "Obstetrícia e neurologia de emergência",
+  "domains": [
+    "Obstetrícia",
+    "Neurologia",
+    "Reanimação"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "eclâmpsia",
+    "sulfato de magnésio",
+    "hipertensão grave",
+    "monitorização de toxicidade",
+    "estabilização materna",
+    "resolução da gestação"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Gestante no terceiro trimestre apresenta convulsão e hipertensão grave. Priorize a mãe, trate a crise, controle a pressão sustentada e coordene a resolução obstétrica após estabilização.",
+  "phases": [
+    {
+      "id": "convulsao-ativa",
+      "title": "Convulsão ativa",
+      "prompt": "Proteja imediatamente via aérea e integridade física e faça o posicionamento materno apropriado.",
+      "patientState": {
+        "summary": "Gestante de 31 anos, 34 semanas, em convulsão tônico-clônica.",
+        "vitals": {
+          "PA": "184/118 mmHg",
+          "FC": "108 bpm",
+          "FR": "irregular, 10 a 16 irpm",
+          "SpO2": "90%",
+          "T": "36,8 °C"
+        }
+      }
+    },
+    {
+      "id": "pos-ictal",
+      "title": "Pós-ictal",
+      "prompt": "Indique tratamento anticonvulsivante específico, exames de gravidade e monitorização.",
+      "patientState": {
+        "summary": "Após cessar a crise, está sonolenta, com cefaleia, dor epigástrica e clônus.",
+        "vitals": {
+          "PA": "178/114 mmHg",
+          "FC": "102 bpm",
+          "FR": "18 irpm",
+          "SpO2": "95% com O2"
+        }
+      }
+    },
+    {
+      "id": "hipertensao-sustentada",
+      "title": "Hipertensão sustentada",
+      "prompt": "Indique tratamento de ação rápida e descreva uma redução segura da pressão.",
+      "patientState": {
+        "summary": "A pressão grave persiste por mais de 15 minutos.",
+        "vitals": {
+          "PA": "172/112 mmHg",
+          "FC": "98 bpm",
+          "FR": "18 irpm",
+          "SpO2": "96%"
+        }
+      }
+    },
+    {
+      "id": "estabilizacao-destino",
+      "title": "Estabilização e destino",
+      "prompt": "Vigie toxicidade, ajuste o tratamento à função renal e organize a resolução obstétrica após estabilização materna.",
+      "patientState": {
+        "summary": "Não há nova crise, mas a diurese está reduzida; equipes obstétrica, anestésica e neonatal estão disponíveis.",
+        "vitals": {
+          "PA": "148/94 mmHg",
+          "FC": "92 bpm",
+          "FR": "16 irpm",
+          "SpO2": "97%",
+          "diurese": "25 mL/h"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "protecao-abc",
+      "label": "Protege de trauma, posiciona lateralmente ou desloca o útero quando necessário, mantém via aérea e oxigênio e prepara aspiração e ventilação",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "reconhece-exames",
+      "label": "Reconhece eclâmpsia e solicita plaquetas, creatinina, AST, ALT, proteinúria e avaliação fetal sem atrasar a mãe",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "magnesio",
+      "label": "Administra MgSO4 4 a 6 g IV em 20 a 30 minutos, seguido de 1 a 2 g/h",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "toxicidade",
+      "label": "Monitora frequência respiratória, reflexos patelares, diurese e função renal e prevê interrupção ou antagonização conforme toxicidade e protocolo",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "trata-pa",
+      "label": "Trata pressão sistólica de pelo menos 160 mmHg ou diastólica de pelo menos 110 mmHg persistente por 15 minutos com fármaco de ação rápida",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "esquema-pa",
+      "label": "Descreve esquema válido, como labetalol 20 mg IV seguido de 40 e 80 mg a cada 10 minutos, ou hidralazina ou nifedipina conforme protocolo",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false
+    },
+    {
+      "id": "resolucao-obstetrica",
+      "label": "Após estabilizar a mãe, aciona obstetrícia, anestesia e neonatologia e indica resolução conforme a condição materno-fetal",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "reavalia",
+      "label": "Reavalia consciência, respiração, pressão, diurese e recorrência sem priorizar parto antes da estabilização materna",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Conter fisicamente a gestante sem proteger a via aérea",
+    "Não administrar sulfato de magnésio",
+    "Deixar hipertensão grave sustentada sem tratamento",
+    "Proceder ao parto antes de estabilizar a mãe",
+    "Ignorar oligúria ou depressão respiratória sob magnésio"
+  ],
+  "referenceAnswer": "Trato como eclâmpsia. Protejo de trauma, coloco em decúbito lateral, mantenho via aérea, oxigênio, aspiração e ventilação se necessária. Após cessar a crise, inicio sulfato de magnésio, 4 a 6 g IV em 20 a 30 minutos e depois 1 a 2 g por hora. Monitoro reflexos, frequência respiratória, diurese e função renal. A pressão de 172/112 mmHg persistente é emergência: uso anti-hipertensivo de ação rápida, como labetalol IV escalonado, ou alternativa válida conforme o protocolo obstétrico, evitando redução abrupta. Solicito exames de gravidade e aciono as equipes; a resolução ocorre após estabilização materna e planejamento multiprofissional.",
+  "references": [
+    "https://www.acog.org/topics/hypertension-and-preeclampsia-in-pregnancy",
+    "https://www.acog.org/-/media/secure/programs/acog_urgent-care-acute-hypertension-in-pregnancy-and-postpartum-algorithm.pdf",
+    "https://doi.org/10.1097/AOG.0000000000003891"
+  ]
+}

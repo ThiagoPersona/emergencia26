@@ -1,0 +1,152 @@
+{
+  "id": "sim-obst-pcr-materna-01",
+  "version": 2,
+  "title": "Parada cardiorrespiratória na gestação",
+  "examTitle": "Colapso materno em atendimento",
+  "domain": "Obstetrícia e PCR",
+  "domains": [
+    "Obstetrícia",
+    "PCR",
+    "Reanimação"
+  ],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": [
+    "PCR na gestação",
+    "RCP de alta qualidade",
+    "deslocamento uterino manual",
+    "desfibrilação",
+    "parto de ressuscitação",
+    "equipe neonatal"
+  ],
+  "durationSeconds": 300,
+  "briefing": "Gestante com útero ao nível ou acima do umbigo sofre colapso no hospital. Conduza a reanimação materna modificada, trate ritmos conforme o algoritmo adulto e organize a intervenção necessária no local.",
+  "phases": [
+    {
+      "id": "reconhecimento-parada",
+      "title": "Reconhecimento do colapso",
+      "prompt": "Reconheça a condição, ative a resposta e inicie as medidas imediatas adaptadas à gestação.",
+      "patientState": {
+        "summary": "Gestante de 34 semanas fica inconsciente, não respira normalmente e não tem pulso central em até 10 segundos; o monitor ainda não está conectado.",
+        "vitals": {
+          "PA": "não mensurável",
+          "FC": "sem pulso",
+          "FR": "apneia",
+          "SpO2": "não mensurável"
+        }
+      }
+    },
+    {
+      "id": "ritmo-chocavel",
+      "title": "Primeiro ritmo",
+      "prompt": "Interprete o ritmo e execute desfibrilação, compressões, via aérea e organização da equipe.",
+      "patientState": {
+        "summary": "O monitor mostra fibrilação ventricular.",
+        "vitals": {
+          "PA": "não mensurável",
+          "FC": "fibrilação ventricular",
+          "FR": "apneia",
+          "SpO2": "não mensurável"
+        }
+      }
+    },
+    {
+      "id": "quatro-minutos",
+      "title": "Quatro minutos sem circulação",
+      "prompt": "Defina e execute a intervenção obstétrica no tempo e local apropriados, em paralelo à reanimação.",
+      "patientState": {
+        "summary": "O fundo uterino está acima do umbigo e não houve retorno da circulação após duas rodadas de reanimação.",
+        "vitals": {
+          "PA": "não mensurável",
+          "FC": "sem pulso",
+          "FR": "ventilação assistida",
+          "tempoSemRCE": "4 minutos"
+        }
+      }
+    },
+    {
+      "id": "pos-extracao",
+      "title": "Após a intervenção",
+      "prompt": "Organize cuidados pós-retorno da circulação, controle de hemorragia, busca de causas e cuidado neonatal separado.",
+      "patientState": {
+        "summary": "Há retorno da circulação após o parto; outra equipe atende o recém-nascido.",
+        "vitals": {
+          "PA": "92/54 mmHg",
+          "FC": "118 bpm",
+          "FR": "assistida",
+          "SpO2": "96%"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "inicia-rcp",
+      "label": "Reconhece a parada, inicia RCP de alta qualidade imediatamente e minimiza interrupções",
+      "weight": 20,
+      "verification": "manual",
+      "critical": true
+    },
+    {
+      "id": "deslocamento-uterino",
+      "label": "Faz deslocamento uterino manual para a esquerda durante compressões quando o fundo uterino está no nível ou acima do umbigo",
+      "weight": 15,
+      "verification": "manual",
+      "critical": true
+    },
+    {
+      "id": "acls-adulto",
+      "label": "Usa desfibrilação e medicamentos do algoritmo adulto nas doses usuais e não reduz a energia por causa da gestação",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "via-aerea-acesso",
+      "label": "Prioriza via aérea por profissional experiente e instala IV ou IO preferencialmente em membro superior",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false
+    },
+    {
+      "id": "prepara-parto",
+      "label": "Prepara parto de ressuscitação desde o reconhecimento da parada, com equipe neonatal e material no local",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true
+    },
+    {
+      "id": "tempo-parto",
+      "label": "Sem retorno da circulação aos 4 minutos, inicia parto de ressuscitação com objetivo de conclusão até 5 minutos",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "local-parto",
+      "label": "Realiza o procedimento no local da parada sem perder tempo com transporte ao centro cirúrgico",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "pos-rce",
+      "label": "Após retorno da circulação, trata causa reversível, hemorragia e choque e assegura equipes separadas para mãe e recém-nascido",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false
+    }
+  ],
+  "criticalErrors": [
+    "Atrasar compressões para obter monitor ou ultrassom",
+    "Usar apenas inclinação lateral em vez de deslocamento uterino manual durante RCP",
+    "Não desfibrilar fibrilação ventricular prontamente",
+    "Esperar avaliação fetal para decidir o parto de ressuscitação",
+    "Transferir ao centro cirúrgico antes do procedimento"
+  ],
+  "referenceAnswer": "Confirmo a parada e começo RCP de alta qualidade imediatamente. Como o útero está acima do umbigo, faço deslocamento uterino manual para a esquerda durante as compressões, obtenho acesso em membro superior e priorizo via aérea por equipe experiente. A fibrilação ventricular recebe desfibrilação e medicamentos nas doses usuais do adulto, sem reduzir energia. Desde o início preparo parto de ressuscitação no local com equipe neonatal. Se não houver retorno da circulação em 4 minutos, inicio o procedimento para concluir o parto até 5 minutos, mantendo RCP. Depois do retorno da circulação, trato a causa, hemorragia e choque, enquanto outra equipe reanima o recém-nascido.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+    "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Accessible/Algorithm-BLS-in-Pregnancy-LngDscrp-250725-Ed.pdf"
+  ]
+}
