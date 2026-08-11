@@ -74,7 +74,7 @@
     {
       "id": "durante-depuracao",
       "title": "Durante a depuração",
-      "prompt": "Ajuste antídoto e cofator durante a hemodiálise e defina a monitorização seriada.",
+      "prompt": "Ajuste antídoto e cofator durante a hemodiálise, descreva a tendência laboratorial esperada e defina os critérios para suspender a terapia extracorpórea e o antídoto.",
       "patientState": {
         "summary": "Durante hemodiálise, está acordado e a acidemia começa a melhorar.",
         "vitals": {

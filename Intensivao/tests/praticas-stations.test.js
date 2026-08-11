@@ -239,6 +239,17 @@ test("estacoes da Task 8 possuem conteudo progressivo e midias obrigatorias", ()
   assert.match(methanol.referenceAnswer, /pH normal e sem sintomas/i);
 });
 
+test("fase final do metanol pede tendencia laboratorial e criterios de suspensao", () => {
+  const entry = readIndex().find((item) => item.id === "sim-tox-metanol-01");
+  const station = readStation(entry);
+  const phase = station.phases.find((item) => item.id === "durante-depuracao");
+
+  assert.equal(
+    phase.prompt,
+    "Ajuste antídoto e cofator durante a hemodiálise, descreva a tendência laboratorial esperada e defina os critérios para suspender a terapia extracorpórea e o antídoto."
+  );
+});
+
 test("referencias e familias clinicas seguem a distribuicao final sem sobreposicao", () => {
   const index = readIndex();
   const stations = index.map(readStation);
