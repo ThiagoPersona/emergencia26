@@ -1,0 +1,75 @@
+{
+  "id": "sim-trauma-torax-instavel-01",
+  "version": 2,
+  "title": "Tórax instável e pneumotórax hipertensivo",
+  "examTitle": "Trauma torácico com comprometimento ventilatório",
+  "domain": "Trauma e ventilação",
+  "domains": ["Trauma", "Ventilação"],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": ["tórax instável", "pneumotórax hipertensivo", "analgesia multimodal", "suporte ventilatório", "higiene pulmonar", "estabilização de costelas"],
+  "durationSeconds": 300,
+  "briefing": "Adulto após colisão de alta energia apresenta dor torácica intensa, movimento paradoxal e hipoxemia. Faça a abordagem do trauma, trate ameaças imediatas e organize suporte respiratório e controle da dor.",
+  "phases": [
+    {
+      "id": "avaliacao-primaria",
+      "title": "Avaliação primária",
+      "prompt": "Faça ABCDE e identifique lesões torácicas que ameaçam a vida ou a ventilação.",
+      "patientState": {
+        "summary": "Segmento anterolateral esquerdo move-se paradoxalmente e a dor impede tosse eficaz.",
+        "vitals": { "PA": "114/72 mmHg", "FC": "110 bpm", "FR": "30 irpm", "SpO2": "89% em ar ambiente" }
+      }
+    },
+    {
+      "id": "deterioracao",
+      "title": "Deterioração",
+      "prompt": "Há piora súbita da ventilação e da perfusão. Indique a intervenção que não deve aguardar imagem.",
+      "patientState": {
+        "summary": "O murmúrio vesicular reduz subitamente à esquerda, com distensão jugular e piora da perfusão.",
+        "vitals": { "PA": "84/52 mmHg", "FC": "132 bpm", "FR": "34 irpm", "SpO2": "82% com oxigênio" }
+      }
+    },
+    {
+      "id": "pos-descompressao",
+      "title": "Após a intervenção",
+      "prompt": "Revise a imagem obtida depois da intervenção e indique analgesia, drenagem e suporte respiratório.",
+      "patientState": {
+        "summary": "A perfusão melhora após descompressão, mas persistem dor, contusão pulmonar e baixa capacidade inspiratória.",
+        "vitals": { "PA": "108/66 mmHg", "FC": "104 bpm", "FR": "24 irpm", "SpO2": "94% com oxigênio" }
+      },
+      "media": ["rx-pneumotorax-expiracao"]
+    },
+    {
+      "id": "planejamento",
+      "title": "Planejamento",
+      "prompt": "Defina critérios de terapia intensiva e de avaliação para estabilização cirúrgica da parede torácica.",
+      "patientState": {
+        "summary": "A tomografia confirma múltiplas fraturas deslocadas e segmento instável; a função inspiratória segue limitada pela dor.",
+        "vitals": { "hemodinamica": "sem choque", "espirometriaIncentivo": "baixa" }
+      }
+    }
+  ],
+  "checklist": [
+    { "id": "abcde", "label": "Faz ABCDE e reconhece tórax instável, dor incapacitante e risco de contusão pulmonar", "weight": 10, "verification": "hibrido", "critical": false },
+    { "id": "oxigenio-monitorizacao", "label": "Administra oxigênio para hipoxemia, monitora continuamente e reavalia ventilação e trabalho respiratório", "weight": 8, "verification": "hibrido", "critical": false },
+    { "id": "descompressao", "label": "Reconhece sinais de pneumotórax hipertensivo e realiza descompressão imediata sem esperar radiografia", "weight": 16, "verification": "hibrido", "critical": true },
+    { "id": "drenagem", "label": "Organiza drenagem torácica após a descompressão conforme contexto e equipe", "weight": 8, "verification": "verbal", "critical": true },
+    { "id": "analgesia", "label": "Institui analgesia multimodal precoce e solicita técnica regional quando apropriada", "weight": 12, "verification": "verbal", "critical": true },
+    { "id": "higiene-pulmonar", "label": "Promove tosse assistida, fisioterapia, higiene pulmonar e mensuração seriada da função respiratória", "weight": 10, "verification": "hibrido", "critical": false },
+    { "id": "suporte-ventilatorio", "label": "Seleciona VNI apenas para paciente consciente e monitorado e indica IOT se houver falência respiratória", "weight": 11, "verification": "verbal", "critical": true },
+    { "id": "lesoes-imagem", "label": "Pesquisa lesões associadas e solicita radiografia ou tomografia somente após tratar a instabilidade", "weight": 10, "verification": "verbal", "critical": false },
+    { "id": "reavalia-uti", "label": "Evita sobrecarga hídrica e reavalia dor, gasometria, perfusão e necessidade de terapia intensiva", "weight": 6, "verification": "verbal", "critical": false },
+    { "id": "equipes-costelas", "label": "Aciona trauma, equipe de dor e cirurgia torácica e considera estabilização de costelas quando indicada", "weight": 9, "verification": "verbal", "critical": false }
+  ],
+  "criticalErrors": [
+    "Aguardar imagem diante de pneumotórax hipertensivo provável",
+    "Atribuir toda a hipoxemia apenas à dor ou ao tórax instável",
+    "Deixar dor incapacitante sem tratamento",
+    "Intubar apenas pela imagem de fraturas ou atrasar intubação na falência respiratória"
+  ],
+  "referenceAnswer": "Faço ABCDE e reconheço tórax instável com risco de contusão pulmonar. Oxigeno, monitorizo e trato a dor precocemente com analgesia multimodal e bloqueio regional quando disponível. Diante de hipotensão, hipoxemia, ausência de murmúrio e distensão jugular, descomprimo pneumotórax hipertensivo imediatamente e organizo drenagem, sem esperar imagem. Depois avalio radiografia ou tomografia, incentivo higiene pulmonar e ofereço suporte ventilatório conforme a fisiologia. Aciono trauma e cirurgia torácica; em tórax instável com insuficiência respiratória, considero estabilização cirúrgica de costelas.",
+  "references": [
+    "https://www.facs.org/media/qdgliayt/2025_tr_bestpracticesguidelines_chest-wall.pdf",
+    "https://www.who.int/publications-detail-redirect/9789241513081"
+  ]
+}

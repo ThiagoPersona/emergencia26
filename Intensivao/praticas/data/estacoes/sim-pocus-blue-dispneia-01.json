@@ -1,0 +1,76 @@
+{
+  "id": "sim-pocus-blue-dispneia-01",
+  "version": 2,
+  "title": "Edema agudo de pulmão avaliado por POCUS",
+  "examTitle": "Dispneia aguda com ultrassom pulmonar",
+  "domain": "POCUS e emergências respiratórias",
+  "domains": ["POCUS", "Emergências respiratórias"],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "tags": ["POCUS pulmonar", "linhas B", "perfil B", "pneumotórax", "edema pulmonar", "diagnóstico diferencial", "VNI", "reavaliação"],
+  "durationSeconds": 300,
+  "briefing": "Adulto com dispneia súbita chega hipertenso e hipoxêmico. Use ultrassom pulmonar como complemento à avaliação clínica para direcionar o diagnóstico e a estabilização.",
+  "phases": [
+    {
+      "id": "avaliacao-clinica",
+      "title": "Avaliação clínica",
+      "prompt": "Organize ABC, monitorização, eletrocardiograma e hipóteses tempo-dependentes.",
+      "patientState": {
+        "summary": "Adulto com ortopneia, crepitações difusas e edema de membros inferiores, falando em frases curtas.",
+        "vitals": { "PA": "196/112 mmHg", "FC": "118 bpm", "FR": "32 irpm", "SpO2": "84% em ar ambiente", "temperatura": "36,7 °C" }
+      }
+    },
+    {
+      "id": "pocus-pulmonar",
+      "title": "POCUS pulmonar",
+      "prompt": "Demonstre as janelas anteriores bilaterais, descreva os artefatos e integre-os aos demais achados.",
+      "patientState": {
+        "summary": "Com oxigênio, o paciente permanece dispneico, consciente e cooperativo.",
+        "vitals": { "SpO2": "90% com máscara", "fala": "frases curtas" }
+      },
+      "media": ["us-edema-pulmonar-linhas-b", "us-linhas-b"]
+    },
+    {
+      "id": "diagnostico-diferencial",
+      "title": "Diagnóstico diferencial",
+      "prompt": "Compare o padrão apresentado com sinais de pneumotórax e explique por que um achado isolado não basta.",
+      "patientState": {
+        "summary": "Persistem hipertensão e taquipneia, sem assimetria súbita de ausculta.",
+        "vitals": { "PA": "182/106 mmHg", "FC": "112 bpm", "FR": "28 irpm" }
+      },
+      "media": ["us-pneumotorax-mmode-barcode"]
+    },
+    {
+      "id": "reavaliacao-terapeutica",
+      "title": "Reavaliação terapêutica",
+      "prompt": "Após suporte não invasivo e tratamento dirigido, reavalie a resposta e a necessidade de escalonamento.",
+      "patientState": {
+        "summary": "Há melhora da fala, da pressão arterial e do trabalho respiratório após suporte inicial.",
+        "vitals": { "PA": "154/92 mmHg", "FR": "20 irpm", "SpO2": "95%" }
+      }
+    }
+  ],
+  "checklist": [
+    { "id": "abc-monitorizacao", "label": "Faz ABC, monitorização contínua, eletrocardiograma e avalia causas tempo-dependentes de dispneia", "weight": 10, "verification": "hibrido", "critical": false },
+    { "id": "integracao-clinica", "label": "Integra história, exame, pressão, ausculta e POCUS sem ancorar o diagnóstico apenas na imagem", "weight": 10, "verification": "verbal", "critical": true },
+    { "id": "linhas-b", "label": "Obtém janelas pulmonares adequadas e reconhece linhas B difusas bilaterais compatíveis com edema intersticial", "weight": 16, "verification": "hibrido", "critical": false },
+    { "id": "pneumotorax", "label": "Diferencia achados sugestivos de pneumotórax e verbaliza que ausência de deslizamento isolada não confirma o diagnóstico", "weight": 12, "verification": "verbal", "critical": true },
+    { "id": "hipotese-principal", "label": "Formula edema agudo de pulmão hipertensivo como hipótese principal e mantém diferenciais relevantes", "weight": 10, "verification": "verbal", "critical": false },
+    { "id": "vni", "label": "Indica CPAP ou BiPAP em paciente consciente, cooperativo e monitorado, com reavaliação precoce de falência", "weight": 12, "verification": "hibrido", "critical": true },
+    { "id": "tratamento-dirigido", "label": "Indica vasodilatação se hipertenso e sem contraindicação e diurético quando houver congestão e indicação clínica", "weight": 12, "verification": "verbal", "critical": true },
+    { "id": "reavaliacao", "label": "Reavalia pressão, trabalho respiratório, SpO2, capnografia ou gasometria e tolerância à VNI", "weight": 8, "verification": "verbal", "critical": false },
+    { "id": "escalonamento", "label": "Define critérios de intubação e terapia intensiva e comunica a equipe em caso de não resposta", "weight": 10, "verification": "verbal", "critical": true }
+  ],
+  "criticalErrors": [
+    "Tratar POCUS como substituto da avaliação clínica",
+    "Diagnosticar pneumotórax somente pela ausência de deslizamento",
+    "Atrasar suporte não invasivo ou vasodilatação em paciente elegível",
+    "Manter ventilação não invasiva diante de deterioração da consciência ou incapacidade de proteger a via aérea"
+  ],
+  "referenceAnswer": "Faço ABC, monitorização, eletrocardiograma e avalio causas graves de dispneia. No POCUS pulmonar vejo linhas B difusas bilateralmente, integradas à história, hipertensão e congestão, favorecendo edema agudo de pulmão. Não diagnostico pneumotórax por ausência de deslizamento isolada; procuro o conjunto de sinais e o contexto. Em paciente consciente, inicio ventilação não invasiva monitorada, trato hipertensão e congestão conforme protocolo e reavalio rapidamente pressão, esforço respiratório, oxigenação e necessidade de intubação e terapia intensiva.",
+  "references": [
+    "https://www.aium.org/practice-topics/point-of-care-ultrasound",
+    "https://www.acep.org/patient-care/clinical-policies",
+    "https://professional.heart.org/en/guidelines-and-statements/guidelines-and-statements-search/2022-aha-acc-hfsa-guideline-for-the-management-of-heart-failure"
+  ]
+}

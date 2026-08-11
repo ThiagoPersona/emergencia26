@@ -1,0 +1,76 @@
+{
+  "id": "sim-pocus-efast-trauma-01",
+  "version": 2,
+  "title": "eFAST positivo no trauma instável",
+  "examTitle": "POCUS no trauma com instabilidade",
+  "domain": "POCUS e trauma",
+  "domains": ["POCUS", "Trauma"],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "tags": ["eFAST", "janela hepatorrenal", "líquido livre", "pneumotórax", "hemoperitônio", "choque hemorrágico", "controle cirúrgico"],
+  "durationSeconds": 300,
+  "briefing": "Adulto após colisão de alta energia chega hipotenso. Faça XABCDE e use eFAST de modo dirigido para apoiar decisões, sem postergar intervenções salvadoras.",
+  "phases": [
+    {
+      "id": "avaliacao-primaria",
+      "title": "Avaliação primária",
+      "prompt": "Priorize hemorragia e exclusão de ameaça torácica antes do exame ultrassonográfico.",
+      "patientState": {
+        "summary": "Adulto com trauma fechado de abdome e tórax, pálido e diaforético.",
+        "vitals": { "PA": "82/48 mmHg", "FC": "128 bpm", "FR": "26 irpm", "SpO2": "94% com oxigênio", "GCS": "14" }
+      }
+    },
+    {
+      "id": "efast",
+      "title": "eFAST",
+      "prompt": "Descreva as janelas do eFAST e interprete a imagem apresentada no contexto clínico.",
+      "patientState": {
+        "summary": "A instabilidade piora, com extremidades frias, enquanto são obtidas as janelas ultrassonográficas.",
+        "vitals": { "PA": "76/44 mmHg", "FC": "134 bpm" }
+      },
+      "media": ["us-fast-morison-positivo"]
+    },
+    {
+      "id": "integracao",
+      "title": "Integração",
+      "prompt": "Integre o achado à fisiologia e decida o destino enquanto conduz a ressuscitação.",
+      "patientState": {
+        "summary": "Não há resposta sustentada ao sangue inicial e a hipotermia se instala.",
+        "vitals": { "temperatura": "35,3 °C", "respostaAoSangue": "transitória" }
+      }
+    },
+    {
+      "id": "limitacao",
+      "title": "Limitações",
+      "prompt": "Interprete a janela comparativa e explique a conduta se o eFAST fosse negativo com a mesma instabilidade.",
+      "patientState": {
+        "summary": "A fisiologia de choque persiste; uma janela hepatorrenal sem líquido livre é apresentada como contraponto.",
+        "vitals": { "PA": "80/46 mmHg", "FC": "130 bpm" }
+      },
+      "media": ["us-fast-ruq-normal-morison"]
+    }
+  ],
+  "checklist": [
+    { "id": "xabcde", "label": "Executa XABCDE e trata hemorragia externa ou ameaça torácica antes de prolongar o exame ultrassonográfico", "weight": 12, "verification": "hibrido", "critical": true },
+    { "id": "janelas", "label": "Seleciona transdutor e descreve janelas pericárdica, hepatorrenal, esplenorrenal, pélvica e pulmonares", "weight": 12, "verification": "hibrido", "critical": false },
+    { "id": "liquido-livre", "label": "Reconhece coleção anecoica no espaço hepatorrenal como eFAST positivo para líquido livre no contexto correto", "weight": 16, "verification": "verbal", "critical": true },
+    { "id": "limitacoes", "label": "Diferencia eFAST de exame definitivo e afirma que resultado negativo não exclui lesão intra-abdominal ou retroperitoneal", "weight": 10, "verification": "verbal", "critical": true },
+    { "id": "controle-definitivo", "label": "No paciente instável com eFAST positivo, prioriza intervenção e controle cirúrgico sem atrasar por tomografia", "weight": 16, "verification": "verbal", "critical": true },
+    { "id": "ressuscitacao", "label": "Ativa ressuscitação hemostática com sangue precoce, controle de temperatura e monitorização de cálcio e coagulação", "weight": 12, "verification": "verbal", "critical": true },
+    { "id": "reavaliacao", "label": "Reavalia ABC, estado mental, pressão, perfusão e eFAST seriado se isso não adiar controle definitivo", "weight": 8, "verification": "hibrido", "critical": false },
+    { "id": "tomografia", "label": "Solicita tomografia com contraste apenas quando há estabilidade suficiente e o resultado pode mudar a conduta", "weight": 7, "verification": "verbal", "critical": false },
+    { "id": "comunicacao", "label": "Comunica achado, tempo de início, resposta à ressuscitação e necessidade de cirurgia ou transferência", "weight": 7, "verification": "verbal", "critical": false }
+  ],
+  "criticalErrors": [
+    "Fazer POCUS antes de controlar ameaça imediata",
+    "Interpretar eFAST negativo como exclusão de sangramento",
+    "Encaminhar paciente instável e eFAST positivo à tomografia em vez de controle hemorrágico",
+    "Usar o exame para justificar atraso de transfusão ou cirurgia"
+  ],
+  "referenceAnswer": "Faço XABCDE e controlo ameaças imediatas. Realizo eFAST dirigido: pericárdio, espaço hepatorrenal, esplenorrenal, pelve e pulmões. Há líquido anecoico no espaço hepatorrenal; no paciente hipotenso, trato como hemorragia intra-abdominal até prova em contrário. Ativo ressuscitação hemostática, aqueço, reavalio e comunico a cirurgia, sem atrasar o controle definitivo por tomografia. Se o eFAST fosse negativo, ele não excluiria sangramento, e a decisão continuaria baseada na fisiologia e na busca de outras fontes.",
+  "references": [
+    "https://www.aium.org/docs/default-source/resources/guidelines/pointofcare.pdf?sfvrsn=6c9ad906_1",
+    "https://doi.org/10.1186/s13054-023-04327-7",
+    "https://www.facs.org/quality-programs/trauma/quality/best-practices-guidelines/"
+  ]
+}

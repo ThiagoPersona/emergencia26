@@ -1,17 +1,56 @@
 {
   "id": "2025-pocus-aaa-acesso",
-  "version": 1,
+  "version": 2,
   "title": "POCUS no choque, aneurisma de aorta e acesso guiado",
+  "examTitle": "POCUS no choque e acesso vascular guiado",
   "domain": "POCUS",
+  "domains": ["POCUS", "Reanimação", "Acesso vascular"],
+  "difficulty": "avancada",
+  "origin": "historica",
+  "tags": ["aorta abdominal", "choque hemorrágico", "FAST", "veia cava inferior", "punção guiada", "ponta da agulha"],
   "durationSeconds": 300,
   "source": { "exam": "TEME", "year": 2025, "station": "POCUS" },
   "briefing": "Paciente em choque sem fonte imediatamente evidente. Interprete as janelas ultrassonográficas apresentadas e demonstre uma punção vascular guiada por ultrassom.",
   "phases": [
-    { "id": "aorta", "title": "Aorta", "prompt": "Identifique a janela e descreva o achado da aorta abdominal." },
-    { "id": "coracao-cava", "title": "Coração e cava", "prompt": "Interprete as janelas cardíacas e a veia cava inferior." },
-    { "id": "fast", "title": "Abdome", "prompt": "Identifique a janela abdominal e diga se há líquido livre." },
-    { "id": "acesso", "title": "Procedimento", "prompt": "Escolha o transdutor e demonstre uma punção vascular guiada." },
-    { "id": "integracao", "title": "Síntese", "prompt": "Integre os achados e forneça o diagnóstico sindrômico/etiológico mais provável." }
+    {
+      "id": "aorta",
+      "title": "Aorta abdominal",
+      "prompt": "Identifique a janela, o vaso e a medida relevante no clipe apresentado.",
+      "patientState": {
+        "summary": "Adulto com dor abdominal e lombar súbita, em choque sem causa declarada.",
+        "vitals": { "PA": "76/42 mmHg", "FC": "124 bpm", "FR": "24 irpm", "SpO2": "96%" }
+      },
+      "media": ["us-aaa-sacular-flap"]
+    },
+    {
+      "id": "bomba-tanque",
+      "title": "Bomba e tanque",
+      "prompt": "Interprete as janelas cardíaca, subcostal, da veia cava inferior e hepatorrenal.",
+      "patientState": {
+        "summary": "A perfusão periférica piora enquanto novas janelas ultrassonográficas são disponibilizadas.",
+        "vitals": { "PA": "72/40 mmHg", "FC": "128 bpm", "perfusao": "ruim" }
+      },
+      "media": ["us-fast-morison-positivo"]
+    },
+    {
+      "id": "procedimento",
+      "title": "Acesso vascular",
+      "prompt": "Selecione transdutor, plano e técnica para o acesso guiado e verbalize como manterá a ponta da agulha visível.",
+      "patientState": {
+        "summary": "A condição hemodinâmica não se altera; o procedimento é demonstrado em simulador.",
+        "vitals": { "PA": "74/42 mmHg", "FC": "126 bpm" }
+      },
+      "media": ["us-acesso-vascular-subclavia"]
+    },
+    {
+      "id": "sintese",
+      "title": "Síntese e destino",
+      "prompt": "Integre os achados, declare a fisiologia do choque e indique o controle definitivo prioritário.",
+      "patientState": {
+        "summary": "Persiste instabilidade apesar da ressuscitação inicial, sem outra fonte identificada.",
+        "vitals": { "PA": "80/48 mmHg", "FC": "120 bpm" }
+      }
+    }
   ],
   "checklist": [
     { "id": "sucesso-puncao", "label": "Obtém sucesso na punção", "weight": 4, "verification": "manual", "critical": false },
@@ -32,5 +71,10 @@
     { "id": "agulha", "label": "Visualiza a ponta da agulha durante a progressão", "weight": 4, "verification": "manual", "critical": true }
   ],
   "criticalErrors": ["Não reconhecer aneurisma/ruptura", "Avançar a agulha sem visualizar a ponta"],
-  "referenceAnswer": "Na aorta em eixo curto há dilatação aneurismática com trombo mural; a medida deve incluir toda a parede externa. O coração está hipercinético, a cava é pequena e colapsável e há líquido livre no espaço hepatorrenal, integrando choque hemorrágico por provável ruptura de AAA. Para o acesso escolho transdutor linear, identifico vaso e estruturas adjacentes e avanço somente mantendo a ponta da agulha visível."
+  "referenceAnswer": "Na aorta em eixo curto há dilatação aneurismática com trombo mural; a medida deve incluir toda a parede externa. O coração está hipercinético, a cava é pequena e colapsável e há líquido livre no espaço hepatorrenal, integrando choque hemorrágico por provável ruptura de AAA. Para o acesso escolho transdutor linear, identifico vaso e estruturas adjacentes e avanço somente mantendo a ponta da agulha visível.",
+  "references": [
+    "https://www.aium.org/docs/default-source/resources/guidelines/pointofcare.pdf?sfvrsn=6c9ad906_1",
+    "https://www.aium.org/docs/default-source/resources/guidelines/abdominalaorta.pdf",
+    "https://doi.org/10.1186/s13054-023-04327-7"
+  ]
 }

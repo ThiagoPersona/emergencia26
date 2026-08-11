@@ -1,14 +1,55 @@
 {
   "id": "2025-tce-hic",
-  "version": 1,
+  "version": 2,
   "title": "TCE grave e hipertensão intracraniana",
+  "examTitle": "Deterioração neurológica após trauma",
   "domain": "Emergências neurológicas",
+  "domains": ["Emergências neurológicas", "Trauma"],
+  "difficulty": "avancada",
+  "origin": "historica",
+  "tags": ["TCE grave", "lesão secundária", "normoxia", "normocapnia", "terapia hiperosmolar", "coagulopatia", "neurocirurgia"],
   "durationSeconds": 300,
   "source": { "exam": "TEME", "year": 2025, "station": "Caso clínico" },
   "briefing": "Paciente com traumatismo cranioencefálico deteriora neurologicamente e necessita estabilização para imagem e tratamento emergencial de provável hipertensão intracraniana, com distúrbio de coagulação associado.",
   "phases": [
-    { "id": "pre-tc", "title": "Tarefa 1", "prompt": "Descreva as medidas antes da tomografia, incluindo via aérea e alvos fisiológicos." },
-    { "id": "pos-dados", "title": "Tarefa 2", "prompt": "Com piora clínica, hemorragia intracraniana e coagulopatia/trombocitopenia, indique as medidas emergenciais e seus alvos." }
+    {
+      "id": "pre-imagem",
+      "title": "Antes da imagem",
+      "prompt": "Defina as prioridades de estabilização antes ou imediatamente após a tomografia.",
+      "patientState": {
+        "summary": "Adulto após trauma de alta energia apresenta rebaixamento progressivo e ventilação inadequada.",
+        "vitals": { "GCS": "7", "PA": "102/64 mmHg", "FC": "108 bpm", "FR": "10 irpm", "SpO2": "89% em ar ambiente" }
+      }
+    },
+    {
+      "id": "imagem-deterioracao",
+      "title": "Imagem e deterioração",
+      "prompt": "Interprete a imagem e reconheça a mudança clínica que exige tratamento imediato.",
+      "patientState": {
+        "summary": "A tomografia mostra coleção subdural com desvio da linha média; uma pupila torna-se dilatada e pouco reativa.",
+        "vitals": { "GCS": "5", "PA": "154/82 mmHg", "FC": "52 bpm", "SpO2": "97% após via aérea", "ETCO2": "42 mmHg" }
+      },
+      "media": ["tc-tce-subdural"]
+    },
+    {
+      "id": "ponte-controle",
+      "title": "Ponte para controle definitivo",
+      "prompt": "Indique medidas imediatas, alvos ventilatórios, correção da coagulação e equipes que devem ser acionadas.",
+      "patientState": {
+        "summary": "Persistem anisocoria e deterioração, agora com trombocitopenia e coagulopatia documentadas.",
+        "vitals": { "plaquetas": "58.000/mm³", "INR": "2,3", "PA": "148/80 mmHg" }
+      }
+    },
+    {
+      "id": "reavaliacao",
+      "title": "Reavaliação e transferência",
+      "prompt": "Informe o que continuará monitorando e tratando durante a transferência para controle neurocirúrgico.",
+      "patientState": {
+        "summary": "Após as medidas iniciais, a oxigenação e a capnia melhoram, mas a assimetria pupilar persiste.",
+        "vitals": { "ETCO2": "36 mmHg", "SpO2": "98%", "PA": "118/70 mmHg" }
+      },
+      "media": ["capnografia-capnograma-base"]
+    }
   ],
   "checklist": [
     { "id": "via-aerea", "label": "Indica via aérea definitiva antes ou imediatamente após a TC conforme estabilidade", "weight": 5, "verification": "verbal", "critical": true },
@@ -33,5 +74,10 @@
     { "id": "alvo-pas", "label": "Individualiza PAS/PAM e explicita alvo compatível com perfusão cerebral", "weight": 5, "verification": "verbal", "critical": false }
   ],
   "criticalErrors": ["Permitir hipoxemia ou hipotensão", "Hiperventilar profilaticamente", "Atrasar terapia hiperosmolar na herniação", "Atrasar neurocirurgia e reversão de coagulopatia"],
-  "referenceAnswer": "Estabilizo antes da TC: via aérea definitiva se indicada, pré-oxigenação, analgesia e sedação, normoxia, PaCO2 em torno de 35-38, euvolemia com isotônico, prevenção de hipotensão, cabeceira a 30 graus, cabeça neutra e normotermia. Diante de herniação, faço terapia hiperosmolar e posso hiperventilar brevemente como ponte. Reavalio pupilas e neurologia, aciono neurocirurgia, reponho plaquetas quando indicado, reverto anticoagulação rapidamente e controlo pressão preservando perfusão cerebral."
+  "referenceAnswer": "Estabilizo antes da TC: via aérea definitiva se indicada, pré-oxigenação, analgesia e sedação, normoxia, PaCO2 em torno de 35-38, euvolemia com isotônico, prevenção de hipotensão, cabeceira a 30 graus, cabeça neutra e normotermia. Diante de herniação, faço terapia hiperosmolar e posso hiperventilar brevemente como ponte. Reavalio pupilas e neurologia, aciono neurocirurgia, reponho plaquetas quando indicado, reverto anticoagulação rapidamente e controlo pressão preservando perfusão cerebral.",
+  "references": [
+    "https://ww2.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
+    "https://braintrauma.org/s/Management_of_Severe_TBI_4th_Edition.pdf",
+    "https://www.facs.org/media-center/press-releases/2024/american-college-of-surgeons-releases-revised-best-practices-guidelines-in-management-of-traumatic-brain-injury/"
+  ]
 }

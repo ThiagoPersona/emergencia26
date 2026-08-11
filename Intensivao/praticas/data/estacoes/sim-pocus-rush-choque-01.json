@@ -1,0 +1,76 @@
+{
+  "id": "sim-pocus-rush-choque-01",
+  "version": 2,
+  "title": "Tamponamento cardíaco no choque obstrutivo",
+  "examTitle": "Choque indiferenciado com POCUS dirigido",
+  "domain": "POCUS e reanimação",
+  "domains": ["POCUS", "Reanimação", "Cardiovascular"],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": ["RUSH", "choque obstrutivo", "tamponamento cardíaco", "colapso de ventrículo direito", "pericardiocentese", "vasopressor", "controle definitivo"],
+  "durationSeconds": 300,
+  "briefing": "Adulto hipotenso e dispneico após procedimento invasivo recente. Use avaliação clínica e POCUS dirigido para reconhecer a fisiologia do choque e indicar intervenções temporizadoras e definitivas.",
+  "phases": [
+    {
+      "id": "reconhecimento-choque",
+      "title": "Reconhecimento do choque",
+      "prompt": "Estabeleça medidas iniciais e organize as principais hipóteses para a instabilidade.",
+      "patientState": {
+        "summary": "Adulto confuso, com turgência jugular, pele fria e campos pulmonares sem congestão evidente.",
+        "vitals": { "PA": "76/46 mmHg", "FC": "122 bpm", "FR": "26 irpm", "SpO2": "94% com oxigênio" }
+      }
+    },
+    {
+      "id": "rush-bomba",
+      "title": "RUSH: bomba",
+      "prompt": "Descreva o componente bomba do exame e interprete o clipe apresentado.",
+      "patientState": {
+        "summary": "A hipotensão progride, com pulsos periféricos filiformes durante a avaliação focada.",
+        "vitals": { "PA": "72/42 mmHg", "FC": "128 bpm" }
+      },
+      "media": ["us-tamponamento-rv-collapse"]
+    },
+    {
+      "id": "integracao-intervencao",
+      "title": "Integração e intervenção",
+      "prompt": "Integre contexto, clínica e POCUS e indique medidas de ponte e tratamento emergencial.",
+      "patientState": {
+        "summary": "O sensório piora com hipotensão profunda e hipoxemia leve, sem congestão pulmonar.",
+        "vitals": { "PA": "68/40 mmHg", "SpO2": "92%", "estadoMental": "confuso" }
+      }
+    },
+    {
+      "id": "pos-drenagem",
+      "title": "Após a drenagem",
+      "prompt": "Reavalie a resposta e organize o tratamento definitivo da causa.",
+      "patientState": {
+        "summary": "Após descompressão inicial, a perfusão e o estado mental melhoram.",
+        "vitals": { "PA": "102/64 mmHg", "FC": "102 bpm", "estadoMental": "melhor" }
+      }
+    }
+  ],
+  "checklist": [
+    { "id": "reconhece-choque", "label": "Reconhece choque e inicia monitorização, acessos, oxigênio quando há hipoxemia e chamada da equipe", "weight": 8, "verification": "hibrido", "critical": false },
+    { "id": "rush", "label": "Executa ou descreve RUSH estruturado em bomba, tanque e tubos sem substituir a avaliação clínica", "weight": 15, "verification": "hibrido", "critical": true },
+    { "id": "tamponamento", "label": "Reconhece derrame pericárdico com colapso diastólico de ventrículo direito como forte evidência de tamponamento no contexto", "weight": 18, "verification": "verbal", "critical": true },
+    { "id": "diferenciais", "label": "Mantém diferenciais de choque obstrutivo e cardiogênico até integrar todos os achados", "weight": 6, "verification": "verbal", "critical": false },
+    { "id": "ponte", "label": "Usa volume cauteloso e vasopressor titulado apenas como ponte, sem atrasar a descompressão", "weight": 7, "verification": "verbal", "critical": true },
+    { "id": "pericardiocentese", "label": "Indica pericardiocentese emergencial na instabilidade por tamponamento e organiza técnica guiada e equipe habilitada", "weight": 18, "verification": "hibrido", "critical": true },
+    { "id": "controle-definitivo", "label": "Aciona cirurgia ou cardiologia para controle definitivo e investigação da causa do derrame", "weight": 12, "verification": "verbal", "critical": true },
+    { "id": "reavaliacao", "label": "Reavalia pressão, estado mental, pulsos, POCUS e complicações após a intervenção", "weight": 8, "verification": "hibrido", "critical": false },
+    { "id": "documentacao", "label": "Comunica as limitações do POCUS e registra achados e intervenções com horário", "weight": 8, "verification": "verbal", "critical": false }
+  ],
+  "criticalErrors": [
+    "Não reconhecer tamponamento com choque obstrutivo no paciente instável",
+    "Usar volume ou vasopressor como substituto da descompressão",
+    "Atrasar drenagem e acionamento da equipe definitiva",
+    "Introduzir agulha sem competência, ambiente ou orientação adequados",
+    "Tratar a imagem isoladamente sem compatibilidade clínica"
+  ],
+  "referenceAnswer": "O paciente está em choque. Inicio monitorização, acessos e reanimação enquanto faço RUSH estruturado. O derrame pericárdico associado ao colapso diastólico do ventrículo direito e à fisiologia obstrutiva indica tamponamento. Posso usar pequeno volume ou vasopressor como ponte, mas priorizo pericardiocentese emergencial por equipe habilitada, idealmente guiada, e aciono cirurgia ou cardiologia para controle definitivo. Após a drenagem, reavalio imediatamente perfusão, pressão, estado mental e POCUS.",
+  "references": [
+    "https://www.aium.org/docs/default-source/resources/guidelines/pointofcare.pdf?sfvrsn=6c9ad906_1",
+    "https://events.acep.org/event/acep24/planning/UGxhbm5pbmdfMTk0Mzk4Mw%3D%3D",
+    "https://www.who.int/publications-detail-redirect/9789241513081"
+  ]
+}

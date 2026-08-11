@@ -1,16 +1,55 @@
 {
   "id": "2025-vm-autopeep",
-  "version": 1,
+  "version": 2,
   "title": "Ventilação mecânica e auto-PEEP",
+  "examTitle": "Deterioração em ventilação invasiva",
   "domain": "Via aérea e ventilação mecânica",
+  "domains": ["Via aérea", "Ventilação mecânica"],
+  "difficulty": "intermediaria",
+  "origin": "historica",
+  "tags": ["ventilação controlada a volume", "curvas ventilatórias", "auto-PEEP", "broncoobstrução", "gasometria", "reavaliação"],
   "durationSeconds": 300,
   "source": { "exam": "TEME", "year": 2025, "station": "Via aérea" },
   "briefing": "Paciente intubado em ventilação mecânica apresenta deterioração clínica. Você receberá dados progressivos e deverá interpretar o ventilador e propor a correção.",
   "phases": [
-    { "id": "exame", "title": "Tarefa 1", "prompt": "Qual exame complementar imediato ajuda a avaliar ventilação e distúrbio acidobásico?" },
-    { "id": "modo", "title": "Tarefa 2", "prompt": "Observe as curvas apresentadas. Identifique o modo ventilatório." },
-    { "id": "fenomeno", "title": "Tarefa 3", "prompt": "Na curva fluxo-tempo, o fluxo expiratório não retorna à linha de base antes do ciclo seguinte. O que está ocorrendo?" },
-    { "id": "correcao", "title": "Tarefa 4", "prompt": "Descreva como corrigir o fenômeno e quais parâmetros você reavaliará." }
+    {
+      "id": "avaliacao-inicial",
+      "title": "Avaliação inicial",
+      "prompt": "Avalie o paciente, priorize causas reversíveis e solicite o exame complementar imediato pertinente.",
+      "patientState": {
+        "summary": "Adulto sedado em ventilação controlada, com expiração prolongada, sibilos e hipotensão leve.",
+        "vitals": { "PA": "94/58 mmHg", "FC": "118 bpm", "FRProgramada": "22 irpm", "SpO2": "92% com FiO2 0,50" }
+      }
+    },
+    {
+      "id": "curvas",
+      "title": "Curvas ventilatórias",
+      "prompt": "Identifique o modo ventilatório e interprete a curva fluxo-tempo apresentada.",
+      "patientState": {
+        "summary": "O fluxo expiratório não alcança a linha de base antes do ciclo seguinte.",
+        "vitals": { "Ppico": "43 cmH2O", "Pplat": "25 cmH2O", "Vt": "460 mL", "IE": "1:1,5" }
+      },
+      "media": ["vm-autopeep-sinais-fig4"]
+    },
+    {
+      "id": "correcao",
+      "title": "Correção inicial",
+      "prompt": "Verbalize a correção inicial e as variáveis que precisam ser reavaliadas.",
+      "patientState": {
+        "summary": "A pausa expiratória confirma pressão expiratória total elevada e persiste retenção de dióxido de carbono.",
+        "vitals": { "PEEPTotal": "12 cmH2O", "ETCO2": "58 mmHg" }
+      },
+      "media": ["capnografia-capnograma-base"]
+    },
+    {
+      "id": "reavaliacao",
+      "title": "Reavaliação",
+      "prompt": "Confirme a resposta às medidas e determine a vigilância clínica e ventilatória subsequente.",
+      "patientState": {
+        "summary": "Após reduzir o volume-minuto e tratar a obstrução, há melhora hemodinâmica e ventilatória.",
+        "vitals": { "PA": "108/64 mmHg", "FC": "102 bpm", "FR": "12 irpm", "SpO2": "95%", "ETCO2": "45 mmHg" }
+      }
+    }
   ],
   "checklist": [
     { "id": "gasometria", "label": "Solicita gasometria arterial", "weight": 10, "verification": "verbal", "critical": false, "expected": ["gasometria arterial"] },
@@ -20,5 +59,9 @@
     { "id": "aumenta-expiracao", "label": "Reduz FR e aumenta o tempo expiratório", "weight": 15, "verification": "verbal", "critical": false, "expected": ["reduzir frequência respiratória", "aumentar tempo expiratório"] }
   ],
   "criticalErrors": ["Não reconhecer auto-PEEP", "Aumentar a frequência respiratória sem corrigir o aprisionamento aéreo"],
-  "referenceAnswer": "Solicito gasometria arterial. As curvas mostram VCV e fluxo expiratório que não zera antes do próximo ciclo, compatível com auto-PEEP. Reduzo o volume-minuto, principalmente a frequência respiratória, aumento o tempo expiratório e trato obstrução/broncoespasmo quando presentes. Reavalio pressão, curva fluxo-tempo, capnografia e gasometria."
+  "referenceAnswer": "Solicito gasometria arterial. As curvas mostram VCV e fluxo expiratório que não zera antes do próximo ciclo, compatível com auto-PEEP. Reduzo o volume-minuto, principalmente a frequência respiratória, aumento o tempo expiratório e trato obstrução/broncoespasmo quando presentes. Reavalio pressão, curva fluxo-tempo, capnografia e gasometria.",
+  "references": [
+    "https://www.aarc.org/resource/clinical-practice-guidelines/",
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-rapid-sequence-intubation"
+  ]
 }

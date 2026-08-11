@@ -1,0 +1,76 @@
+{
+  "id": "sim-cardio-iam-inferior-vd-01",
+  "version": 2,
+  "title": "IAM inferior com acometimento do ventrículo direito",
+  "examTitle": "Dor torácica com instabilidade hemodinâmica",
+  "domain": "Cardiovascular e emergência",
+  "domains": ["Cardiovascular", "Emergência"],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": ["síndrome coronariana aguda", "supra de ST", "ventrículo direito", "derivações direitas", "reperfusão", "aspirina", "bradicardia", "marcapasso"],
+  "durationSeconds": 300,
+  "briefing": "Adulto com dor torácica, sudorese e hipotensão apresenta eletrocardiograma para interpretação. Conduza o suporte e organize o tratamento tempo-dependente.",
+  "phases": [
+    {
+      "id": "ecg-inicial",
+      "title": "Eletrocardiograma inicial",
+      "prompt": "Interprete o traçado e inicie as medidas simultâneas apropriadas.",
+      "patientState": {
+        "summary": "Adulto com dor torácica há 55 minutos, náusea e sudorese.",
+        "vitals": { "PA": "94/60 mmHg", "FC": "58 bpm", "FR": "20 irpm", "SpO2": "95% em ar ambiente" }
+      },
+      "media": ["ecg-iam-inferior-vd"]
+    },
+    {
+      "id": "ventriculo-direito",
+      "title": "Derivações direitas",
+      "prompt": "Interprete as derivações direitas e explique a implicação hemodinâmica e os fármacos a evitar.",
+      "patientState": {
+        "summary": "A hipotensão e a bradicardia pioram, com extremidades frias e campos pulmonares limpos.",
+        "vitals": { "PA": "82/52 mmHg", "FC": "48 bpm" }
+      },
+      "media": ["ecg-iam-inferior-vd"]
+    },
+    {
+      "id": "suporte-reperfusao",
+      "title": "Suporte e reperfusão",
+      "prompt": "Indique antiagregação inicial, estratégia de reperfusão, suporte da perfusão e manejo da bradicardia.",
+      "patientState": {
+        "summary": "O paciente mantém o sensório, mas apresenta tontura com hipotensão e bradicardia progressivas.",
+        "vitals": { "PA": "78/48 mmHg", "FC": "40 bpm" }
+      }
+    },
+    {
+      "id": "transferencia",
+      "title": "Transferência",
+      "prompt": "Defina destino, comunicação e reavaliações durante a espera pela hemodinâmica.",
+      "patientState": {
+        "summary": "A pressão e a frequência cardíaca melhoram após suporte, com redução da dor.",
+        "vitals": { "PA": "94/60 mmHg", "FC": "56 bpm" }
+      }
+    }
+  ],
+  "checklist": [
+    { "id": "reconhece-iam-vd", "label": "Reconhece infarto com supra inferior e suspeita ou confirmação de extensão para ventrículo direito", "weight": 20, "verification": "verbal", "critical": true },
+    { "id": "derivacoes-direitas", "label": "Solicita ou interpreta derivações direitas, especialmente V4R, e eletrocardiogramas seriados quando disponíveis", "weight": 10, "verification": "verbal", "critical": false },
+    { "id": "monitorizacao", "label": "Instala monitorização, acessos e desfibrilador ou pás disponíveis e reavalia instabilidade", "weight": 8, "verification": "hibrido", "critical": false },
+    { "id": "aspirina", "label": "Indica ácido acetilsalicílico mastigável de 162 a 325 mg se não houver contraindicação", "weight": 10, "verification": "verbal", "critical": false },
+    { "id": "reperfusao", "label": "Ativa imediatamente estratégia de reperfusão e intervenção coronariana e organiza transferência sem aguardar biomarcador", "weight": 16, "verification": "verbal", "critical": true },
+    { "id": "evita-farmacos", "label": "Evita nitrato, diurético e betabloqueador diante de hipotensão e acometimento do ventrículo direito", "weight": 10, "verification": "verbal", "critical": true },
+    { "id": "suporte-perfusao", "label": "Faz pequenos bolus de cristaloide com reavaliação de congestão e perfusão e inicia noradrenalina se o choque persistir", "weight": 12, "verification": "hibrido", "critical": false },
+    { "id": "bradicardia", "label": "Reconhece bradicardia instável e prepara atropina e marcapasso transcutâneo conforme o quadro", "weight": 8, "verification": "hibrido", "critical": true },
+    { "id": "antitromboticos", "label": "Integra antitrombóticos e inibidor P2Y12 ao protocolo local e à estratégia de reperfusão", "weight": 6, "verification": "verbal", "critical": false }
+  ],
+  "criticalErrors": [
+    "Não ativar reperfusão no infarto com supra de ST",
+    "Administrar nitrato ao paciente hipotenso com provável infarto de ventrículo direito",
+    "Confundir campos pulmonares limpos com ausência de choque",
+    "Atrasar suporte da bradicardia instável"
+  ],
+  "referenceAnswer": "O eletrocardiograma mostra infarto com supra inferior; pela hipotensão e pelos campos pulmonares limpos, obtenho derivações direitas e reconheço acometimento do ventrículo direito. Monitorizo, deixo pás disponíveis, administro ácido acetilsalicílico mastigável de 162 a 325 mg se não houver contraindicação e ativo intervenção coronariana e transferência imediatamente. Evito nitrato, diurético e betabloqueador porque o ventrículo direito depende de pré-carga. Faço pequenos bolus de cristaloide com reavaliação e uso noradrenalina se o choque persiste. Se a bradicardia causar instabilidade, sigo o algoritmo, preparo marcapasso transcutâneo e não atraso a reperfusão.",
+  "references": [
+    "https://professional.heart.org/en/science-news/2025-guideline-for-the-management-of-patients-with-acute-coronary-syndromes",
+    "https://www.ahajournals.org/doi/epdf/10.1161/CIR.0000000000001309",
+    "https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2024/05/03/15/24/right-ventricular-myocardial"
+  ]
+}

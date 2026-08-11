@@ -1,14 +1,54 @@
 {
   "id": "2025-trauma-hemorragico",
-  "version": 1,
+  "version": 2,
   "title": "Trauma com hemorragia exsanguinante",
+  "examTitle": "Trauma com sangramento externo importante",
   "domain": "Trauma e controle de danos",
+  "domains": ["Trauma", "Controle de danos"],
+  "difficulty": "intermediaria",
+  "origin": "historica",
+  "tags": ["XABCDE", "hemorragia exsanguinante", "torniquete", "choque hemorrágico", "eFAST", "transfusão maciça", "controle cirúrgico"],
   "durationSeconds": 300,
   "source": { "exam": "TEME", "year": 2025, "station": "Trauma" },
   "briefing": "Vítima de trauma chega instável, com hemorragia importante em extremidade. Faça a abordagem primária, controle o sangramento e prescreva a ressuscitação hemostática.",
   "phases": [
-    { "id": "xabc", "title": "Tarefa 1", "prompt": "Realize verbalmente e demonstre a avaliação primária até o D." },
-    { "id": "ressuscitacao", "title": "Tarefa 2", "prompt": "Indique a ressuscitação inicial e os recursos necessários para controle definitivo." }
+    {
+      "id": "hemorragia",
+      "title": "Hemorragia externa",
+      "prompt": "Demonstre o controle imediato do sangramento e registre a intervenção.",
+      "patientState": {
+        "summary": "Adulto após trauma com sangramento pulsátil ativo na coxa direita e pele fria.",
+        "vitals": { "PA": "78/46 mmHg", "FC": "132 bpm", "FR": "28 irpm", "SpO2": "95%" }
+      }
+    },
+    {
+      "id": "abcde",
+      "title": "Avaliação primária",
+      "prompt": "Após controlar o sangramento externo, complete a avaliação primária e procure outras fontes.",
+      "patientState": {
+        "summary": "O sangramento externo foi contido, mas o paciente permanece instável, com dor abdominal difusa.",
+        "vitals": { "PA": "82/50 mmHg", "FC": "126 bpm", "GCS": "14", "temperatura": "35,2 °C" }
+      },
+      "media": ["us-fast-morison-positivo"]
+    },
+    {
+      "id": "ressuscitacao",
+      "title": "Ressuscitação",
+      "prompt": "Indique a ressuscitação hemostática, a prevenção da coagulopatia e os recursos para controle definitivo.",
+      "patientState": {
+        "summary": "Há hipoperfusão persistente e resposta apenas transitória às medidas iniciais.",
+        "vitals": { "lactato": "6,1 mmol/L", "baseExcess": "-9", "hemoglobina": "9,4 g/dL" }
+      }
+    },
+    {
+      "id": "destino",
+      "title": "Destino",
+      "prompt": "Defina o destino prioritário e comunique as intervenções já realizadas.",
+      "patientState": {
+        "summary": "O torniquete cessou o sangramento, mas a instabilidade persiste durante a transfusão aquecida.",
+        "vitals": { "PA": "86/52 mmHg", "FC": "118 bpm" }
+      }
+    }
   ],
   "checklist": [
     { "id": "via-aerea", "label": "Avalia via aérea por inspeção", "weight": 5, "verification": "hibrido", "critical": false },
@@ -32,5 +72,10 @@
     { "id": "cirurgia", "label": "Solicita avaliação cirúrgica e controle definitivo imediato", "weight": 5, "verification": "verbal", "critical": true }
   ],
   "criticalErrors": ["Não controlar a hemorragia externa", "Não reconhecer choque hemorrágico", "Atrasar controle cirúrgico definitivo"],
-  "referenceAnswer": "Faço XABCDE. Identifico e controlo primeiro a hemorragia exsanguinante com compressão e torniquete proximal bem apertado, anotando horário. Avalio via aérea com restrição cervical, tórax, perfusão, pelve e ossos longos; reconheço choque hemorrágico e procuro outras fontes com E-FAST. Ativo protocolo de transfusão maciça 1:1:1 ou sangue total, aqueço paciente e fluidos, indico TXA se até 3 horas, monitoro e reponho cálcio e aciono imediatamente cirurgia para controle definitivo."
+  "referenceAnswer": "Faço XABCDE. Identifico e controlo primeiro a hemorragia exsanguinante com compressão e torniquete proximal bem apertado, anotando horário. Avalio via aérea com restrição cervical, tórax, perfusão, pelve e ossos longos; reconheço choque hemorrágico e procuro outras fontes com eFAST. Ativo protocolo de transfusão maciça 1:1:1 ou sangue total, aqueço paciente e fluidos, indico TXA se até 3 horas, monitoro e reponho cálcio e aciono imediatamente cirurgia para controle definitivo.",
+  "references": [
+    "https://doi.org/10.1186/s13054-023-04327-7",
+    "https://ww2.facs.org/media/zcjdtrd1/transfusion_guildelines.pdf",
+    "https://www.who.int/publications-detail-redirect/9789241513081"
+  ]
 }

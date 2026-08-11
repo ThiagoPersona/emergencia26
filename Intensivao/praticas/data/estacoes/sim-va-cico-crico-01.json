@@ -1,0 +1,74 @@
+{
+  "id": "sim-va-cico-crico-01",
+  "version": 2,
+  "title": "CICO e cricotireoidostomia de emergência",
+  "examTitle": "Falha de oxigenação após tentativas de via aérea",
+  "domain": "Via aérea e procedimentos",
+  "domains": ["Via aérea", "Procedimentos"],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": ["via aérea difícil", "CICO", "dispositivo supraglótico", "cricotireoidostomia", "bisturi-bougie-tubo", "capnografia", "comunicação de crise"],
+  "durationSeconds": 300,
+  "briefing": "Adulto politraumatizado apresenta via aérea difícil. Conduza tentativas otimizadas de oxigenação e execute a conduta de resgate quando as estratégias iniciais falharem.",
+  "phases": [
+    {
+      "id": "via-aerea-dificil",
+      "title": "Via aérea difícil",
+      "prompt": "Prepare uma tentativa otimizada e os planos de resgate, mantendo restrição do movimento cervical.",
+      "patientState": {
+        "summary": "Adulto com trauma facial, sangue na orofaringe e mobilidade cervical limitada.",
+        "vitals": { "PA": "108/66 mmHg", "FC": "118 bpm", "FR": "30 irpm", "SpO2": "90% apesar de pré-oxigenação" }
+      }
+    },
+    {
+      "id": "falha-resgate",
+      "title": "Falha de resgate",
+      "prompt": "A intubação falhou e não há ventilação efetiva com máscara ou dispositivo supraglótico. Declare a situação e aja imediatamente.",
+      "patientState": {
+        "summary": "Não é possível intubar nem oxigenar; a saturação cai rapidamente.",
+        "vitals": { "SpO2": "72% e caindo", "FC": "128 bpm", "PA": "98/60 mmHg" }
+      }
+    },
+    {
+      "id": "acesso-anterior",
+      "title": "Acesso anterior do pescoço",
+      "prompt": "Execute a cricotireoidostomia cirúrgica no manequim, descrevendo cada etapa e os limites do procedimento.",
+      "patientState": {
+        "summary": "O paciente está inconsciente e nenhuma técnica supraglótica produz oxigenação.",
+        "vitals": { "SpO2": "58%", "FC": "136 bpm" }
+      }
+    },
+    {
+      "id": "confirmacao-transicao",
+      "title": "Confirmação e transição",
+      "prompt": "Confirme a ventilação, fixe o tubo e planeje a via aérea definitiva subsequente.",
+      "patientState": {
+        "summary": "Após o acesso anterior do pescoço, há expansão torácica e melhora da oxigenação.",
+        "vitals": { "SpO2": "94%", "FC": "112 bpm", "PA": "104/64 mmHg", "ETCO2": "presente" }
+      },
+      "media": ["capnografia-capnograma-base"]
+    }
+  ],
+  "checklist": [
+    { "id": "declara-cico", "label": "Reconhece falha de intubação e oxigenação, verbaliza CICO, solicita ajuda e cronometra a crise", "weight": 10, "verification": "verbal", "critical": true },
+    { "id": "interrompe-tentativas", "label": "Interrompe novas tentativas não otimizadas e mantém a melhor oxigenação enquanto prepara o resgate", "weight": 10, "verification": "hibrido", "critical": true },
+    { "id": "prepara-material", "label": "Prepara bisturi de lâmina 10, bougie, tubo cuffado 6,0, sucção, capnografia e fixação", "weight": 10, "verification": "hibrido", "critical": false },
+    { "id": "localiza-membrana", "label": "Identifica e estabiliza a laringe e localiza a membrana cricotireóidea por palpação, com plano para anatomia obscura", "weight": 10, "verification": "manual", "critical": true },
+    { "id": "incisao", "label": "Faz incisão horizontal de pele e membrana mantendo controle da laringe", "weight": 15, "verification": "manual", "critical": true },
+    { "id": "confirma-trajeto", "label": "Introduz o dedo para confirmar o trajeto e dilata a abertura de forma controlada", "weight": 15, "verification": "manual", "critical": true },
+    { "id": "bougie-tubo", "label": "Passa bougie caudalmente, progride tubo 6,0, insufla o cuff e inicia ventilação", "weight": 15, "verification": "manual", "critical": true },
+    { "id": "confirma-capnografia", "label": "Confirma ventilação com capnografia em onda e melhora clínica antes de fixar", "weight": 10, "verification": "hibrido", "critical": true },
+    { "id": "fixa-documenta", "label": "Fixa, documenta a hora e comunica necessidade de revisão cirúrgica e via aérea definitiva", "weight": 5, "verification": "hibrido", "critical": false }
+  ],
+  "criticalErrors": [
+    "Não declarar CICO ou atrasar o acesso anterior do pescoço",
+    "Persistir em tentativas laringoscópicas que não oxigenam",
+    "Avançar instrumento sem controle anatômico",
+    "Não confirmar o acesso com capnografia"
+  ],
+  "referenceAnswer": "Não consigo intubar nem oxigenar: declaro CICO, peço ajuda e interrompo novas tentativas de laringoscopia. Mantenho a melhor oxigenação possível enquanto preparo bisturi 10, bougie, tubo 6,0, sucção e capnografia. Estabilizo a laringe, identifico a membrana cricotireóidea, faço incisão horizontal, confirmo o trajeto com o dedo, passo a bougie caudalmente e introduzo o tubo. Insuflo o cuff, ventilo e só considero sucesso após capnografia em forma de onda e melhora da oxigenação. Fixo, registro e aciono a equipe cirúrgica para via aérea definitiva.",
+  "references": [
+    "https://database.das.uk.com/files/2017/page/DAS_ICU_guidelines.pdf",
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-rapid-sequence-intubation"
+  ]
+}

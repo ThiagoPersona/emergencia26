@@ -1,0 +1,75 @@
+{
+  "id": "sim-aph-trauma-penetrante-01",
+  "version": 2,
+  "title": "Trauma penetrante no atendimento pré-hospitalar",
+  "examTitle": "Atendimento pré-hospitalar de trauma penetrante",
+  "domain": "APH e trauma",
+  "domains": ["APH", "Trauma"],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": ["segurança de cena", "XABCDE", "torniquete", "empacotamento", "selo torácico", "pneumotórax hipertensivo", "hipotermia", "transferência"],
+  "durationSeconds": 300,
+  "briefing": "Uma equipe pré-hospitalar atende adulto com ferimentos penetrantes em membro superior e hemitórax. A cena é segura. Faça intervenções de salvamento, reavalie durante o transporte e comunique o hospital receptor.",
+  "phases": [
+    {
+      "id": "cena-hemorragia",
+      "title": "Cena e hemorragia",
+      "prompt": "Priorize segurança, equipamento de proteção e XABCDE diante das lesões apresentadas.",
+      "patientState": {
+        "summary": "Há ferida profunda no braço direito com sangramento ativo e ferida aspirativa no hemitórax direito.",
+        "vitals": { "PA": "96/60 mmHg", "FC": "122 bpm", "FR": "28 irpm", "SpO2": "91% em ar ambiente", "GCS": "15" }
+      }
+    },
+    {
+      "id": "controle-danos",
+      "title": "Controle de danos",
+      "prompt": "Demonstre controle da hemorragia e da ferida torácica e decida condutas de via aérea e circulação.",
+      "patientState": {
+        "summary": "O sangramento diminui com compressão, mas a ferida torácica continua aspirativa.",
+        "vitals": { "PA": "90/56 mmHg", "FC": "128 bpm", "FR": "30 irpm", "SpO2": "93% com oxigênio" }
+      }
+    },
+    {
+      "id": "deterioracao-transporte",
+      "title": "Deterioração no transporte",
+      "prompt": "Faça o diagnóstico operacional e trate a ameaça imediata sem atrasar o transporte.",
+      "patientState": {
+        "summary": "Durante o transporte, o paciente fica agitado, com murmúrio ausente à direita e rápida piora ventilatória e circulatória.",
+        "vitals": { "PA": "74/42 mmHg", "FC": "138 bpm", "FR": "34 irpm", "SpO2": "82% com oxigênio" }
+      }
+    },
+    {
+      "id": "handover",
+      "title": "Transferência do cuidado",
+      "prompt": "Comunique mecanismo, lesões, intervenções, horários e resposta clínica à equipe receptora.",
+      "patientState": {
+        "summary": "Após descompressão e controle do sangramento, há melhora parcial durante a chegada ao centro de trauma.",
+        "vitals": { "PA": "88/50 mmHg", "FC": "122 bpm", "SpO2": "94% com oxigênio", "temperatura": "35,5 °C" }
+      }
+    }
+  ],
+  "checklist": [
+    { "id": "seguranca-transporte", "label": "Confirma segurança de cena, usa equipamento de proteção e organiza retirada sem permanência desnecessária", "weight": 8, "verification": "hibrido", "critical": false },
+    { "id": "hemorragia-macica", "label": "Prioriza hemorragia maciça com compressão, empacotamento ou torniquete eficaz e registra a hora", "weight": 16, "verification": "hibrido", "critical": true },
+    { "id": "via-aerea-oxigenio", "label": "Reavalia via aérea e fornece oxigênio ou ventilação quando indicado, sem atrasar evacuação", "weight": 8, "verification": "hibrido", "critical": false },
+    { "id": "selo-toracico", "label": "Cobre a ferida torácica aberta com selo apropriado e monitora piora ventilatória", "weight": 12, "verification": "manual", "critical": true },
+    { "id": "descompressao", "label": "Reconhece pneumotórax hipertensivo provável e realiza descompressão imediata conforme protocolo e equipamento local", "weight": 16, "verification": "hibrido", "critical": true },
+    { "id": "circulacao", "label": "Obtém acesso IV ou IO quando viável, prioriza sangue e limita cristaloide; individualiza a meta pressórica", "weight": 12, "verification": "verbal", "critical": true },
+    { "id": "hipotermia", "label": "Previne hipotermia com exposição mínima e aquecimento ativo ou passivo", "weight": 6, "verification": "hibrido", "critical": false },
+    { "id": "prenotificacao", "label": "Faz pré-notificação e prioriza centro com cirurgia e trauma, sem atrasar por procedimentos de baixo valor", "weight": 12, "verification": "verbal", "critical": true },
+    { "id": "reavalia-handover", "label": "Reavalia ABC, sangramento, selo, torniquete e sinais vitais e faz transferência estruturada do cuidado", "weight": 10, "verification": "hibrido", "critical": false }
+  ],
+  "criticalErrors": [
+    "Não controlar hemorragia externa maciça",
+    "Deixar ferida torácica aspirativa sem cobertura",
+    "Atrasar descompressão na deterioração compatível com pneumotórax hipertensivo",
+    "Usar hipotensão permissiva quando houver suspeita de traumatismo cranioencefálico",
+    "Atrasar transporte por intervenções não salvadoras"
+  ],
+  "referenceAnswer": "Confirmo segurança da cena, uso equipamento de proteção e faço XABCDE. Controlo primeiro o sangramento do braço com torniquete ou empacotamento conforme a lesão, confirmo a cessação e registro a hora. Cubro a ferida torácica com selo e monitoro. Na deterioração com hipoxemia, hipotensão e ausência de murmúrio, trato pneumotórax hipertensivo imediatamente conforme o protocolo, sem aguardar imagem. Limito cristaloide, priorizo sangue se disponível, aqueço, aviso precocemente o centro de trauma e reavalio durante todo o transporte.",
+  "references": [
+    "https://www.who.int/publications-detail-redirect/9789241513081",
+    "https://doi.org/10.1186/s13054-023-04327-7",
+    "https://www.facs.org/quality-programs/trauma/quality/best-practices-guidelines/"
+  ]
+}

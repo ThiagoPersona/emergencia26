@@ -1,0 +1,75 @@
+{
+  "id": "sim-va-rsi-choque-01",
+  "version": 2,
+  "title": "Intubação em sequência rápida no choque",
+  "examTitle": "Via aérea avançada em instabilidade circulatória",
+  "domain": "Via aérea e ventilação mecânica",
+  "domains": ["Via aérea", "Ventilação mecânica", "Reanimação"],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": ["RSI", "pré-oxigenação", "hipotensão peri-intubação", "videolaringoscopia", "bougie", "capnografia", "plano de resgate"],
+  "durationSeconds": 300,
+  "briefing": "Adulto com insuficiência respiratória e choque necessita de via aérea definitiva. Conduza o procedimento priorizando oxigenação e perfusão, sem atrasar o tratamento da causa da instabilidade.",
+  "phases": [
+    {
+      "id": "indicacao-equipe",
+      "title": "Indicação e equipe",
+      "prompt": "Declare a indicação da via aérea definitiva, chame ajuda e organize os papéis da equipe.",
+      "patientState": {
+        "summary": "Adulto confuso, febril, com esforço respiratório intenso e provável infecção pulmonar.",
+        "vitals": { "PA": "78/44 mmHg", "FC": "126 bpm", "FR": "34 irpm", "SpO2": "84% com máscara não reinalante", "temperatura": "39,1 °C" }
+      }
+    },
+    {
+      "id": "preparacao-fisiologica",
+      "title": "Preparação fisiológica",
+      "prompt": "Prepare pré-oxigenação, posição, monitorização, fármacos, aspiração e planos de resgate; trate a hipotensão em paralelo.",
+      "patientState": {
+        "summary": "A hipoxemia melhora parcialmente com ventilação não invasiva, mas a perfusão piora.",
+        "vitals": { "PA": "72/40 mmHg", "FC": "132 bpm", "SpO2": "89% com VNI", "lactato": "5,4 mmol/L" }
+      }
+    },
+    {
+      "id": "tentativa-confirmacao",
+      "title": "Tentativa e confirmação",
+      "prompt": "Realize uma tentativa otimizada e confirme imediatamente a posição do tubo.",
+      "patientState": {
+        "summary": "A visualização glótica é adequada com videolaringoscópio; a pressão cai após a indução.",
+        "vitals": { "PA": "76/42 mmHg", "FC": "128 bpm", "SpO2Minima": "91%" }
+      },
+      "media": ["capnografia-capnograma-base"]
+    },
+    {
+      "id": "pos-intubacao",
+      "title": "Pós-intubação",
+      "prompt": "Defina ventilação inicial, analgesia, sedação e reavaliação imediata da perfusão.",
+      "patientState": {
+        "summary": "O tubo está confirmado e a pressão responde à noradrenalina titulada.",
+        "vitals": { "PA": "96/58 mmHg", "FC": "112 bpm", "SpO2": "96%", "ETCO2": "38 mmHg" }
+      }
+    }
+  ],
+  "checklist": [
+    { "id": "indica-equipe", "label": "Declara necessidade de via aérea definitiva, chama ajuda e distribui funções", "weight": 8, "verification": "verbal", "critical": false },
+    { "id": "risco-planos", "label": "Avalia risco anatômico e fisiológico e verbaliza planos A, B, C e acesso anterior do pescoço", "weight": 10, "verification": "verbal", "critical": true },
+    { "id": "preoxigenacao", "label": "Faz pré-oxigenação adequada com cabeça e tronco elevados e usa VNI se a hipoxemia grave permitir", "weight": 12, "verification": "hibrido", "critical": true },
+    { "id": "trata-hipotensao", "label": "Trata hipotensão antes e durante a tentativa com volume apenas quando responsivo e vasopressor titulado", "weight": 10, "verification": "hibrido", "critical": true },
+    { "id": "farmacos", "label": "Escolhe indutor e bloqueador apropriados ao choque e verbaliza doses usuais e contraindicações", "weight": 12, "verification": "verbal", "critical": true },
+    { "id": "equipamentos", "label": "Prepara aspirador, videolaringoscópio, tubo, bougie e dispositivo supraglótico e limita tentativas não otimizadas", "weight": 15, "verification": "hibrido", "critical": true },
+    { "id": "laringoscopia", "label": "Faz laringoscopia com a melhor visualização possível e passa o tubo sob visão", "weight": 10, "verification": "manual", "critical": true },
+    { "id": "capnografia", "label": "Confirma posição por capnografia em forma de onda contínua antes de fixar", "weight": 10, "verification": "hibrido", "critical": true },
+    { "id": "ventilacao-sedacao", "label": "Inicia ventilação, analgesia e sedação e solicita novos sinais vitais e gasometria", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "reavalia", "label": "Reavalia oxigenação, ETCO2, pressão arterial e necessidade de escalonar vasopressor", "weight": 8, "verification": "verbal", "critical": false }
+  ],
+  "criticalErrors": [
+    "Induzir sem estratégia de oxigenação e perfusão",
+    "Repetir tentativas sem otimização ou plano de resgate",
+    "Aceitar ausculta isolada como confirmação do tubo",
+    "Não reconhecer deterioração hemodinâmica peri-intubação"
+  ],
+  "referenceAnswer": "Há indicação de intubação por insuficiência respiratória com alteração do sensório. Chamo a equipe, monitorizo e preparo aspiração, videolaringoscópio, bougie, dispositivo supraglótico e acesso anterior do pescoço. Faço pré-oxigenação com cabeceira elevada e VNI enquanto tolerada, inicio noradrenalina e avalio pequena reposição se houver responsividade. Posso usar cetamina 1 mg/kg ou etomidato 0,3 mg/kg com rocurônio 1,2 mg/kg, ajustando ao paciente e ao protocolo. Faço uma tentativa otimizada, confirmo com capnografia em onda, fixo o tubo, inicio ventilação e sedoanalgesia e reavalio pressão, SpO2, ETCO2 e a causa do choque.",
+  "references": [
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-rapid-sequence-intubation",
+    "https://professional.heart.org/en/science-news/2025-aha-guidelines-for-cpr-and-ecc"
+  ]
+}

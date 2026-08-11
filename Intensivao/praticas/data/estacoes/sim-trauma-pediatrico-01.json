@@ -1,0 +1,77 @@
+{
+  "id": "sim-trauma-pediatrico-01",
+  "version": 2,
+  "title": "Trauma pediátrico com choque hemorrágico",
+  "examTitle": "Criança politraumatizada com choque",
+  "domain": "Trauma e emergências pediátricas",
+  "domains": ["Trauma", "Emergências pediátricas"],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": ["XABCDE pediátrico", "choque hemorrágico", "acesso intraósseo", "hemoderivados", "eFAST", "imagem após estabilização", "transferência"],
+  "durationSeconds": 300,
+  "briefing": "Criança de 7 anos, com aproximadamente 23 kg, chega após atropelamento. Faça a abordagem primária e decida ressuscitação, investigação e destino conforme a resposta clínica.",
+  "phases": [
+    {
+      "id": "abordagem-inicial",
+      "title": "Abordagem inicial",
+      "prompt": "Priorize XABCDE, monitorização e medidas imediatas de suporte.",
+      "patientState": {
+        "summary": "Criança pálida e ansiosa, com contusão abdominal e fratura fechada de fêmur.",
+        "vitals": { "FC": "156 bpm", "PA": "76/44 mmHg", "FR": "32 irpm", "SpO2": "93% em ar ambiente", "GCS": "14" }
+      }
+    },
+    {
+      "id": "acesso-reposicao",
+      "title": "Acesso e reposição",
+      "prompt": "Dois acessos periféricos falharam. Estabeleça acesso alternativo, colha amostras e indique a reposição inicial.",
+      "patientState": {
+        "summary": "Há má perfusão periférica e hipotermia leve após falha das tentativas venosas.",
+        "vitals": { "enchimentoCapilar": "5 s", "glicemia": "118 mg/dL", "temperatura": "35,4 °C" }
+      }
+    },
+    {
+      "id": "pocus-imagem",
+      "title": "POCUS e imagem",
+      "prompt": "Interprete a janela apresentada, explique a limitação do exame e indique próximos passos após estabilização.",
+      "patientState": {
+        "summary": "Após uma alíquota pequena de cristaloide, há resposta incompleta e persiste dor abdominal.",
+        "vitals": { "PA": "82/50 mmHg", "FC": "148 bpm", "cristaloide": "10 mL/kg" }
+      },
+      "media": ["us-fast-ruq-normal-morison"]
+    },
+    {
+      "id": "destino",
+      "title": "Destino",
+      "prompt": "Diante da resposta transitória, defina reposição, equipes, imagem dirigida e destino prioritário.",
+      "patientState": {
+        "summary": "A criança volta a apresentar hipotensão e taquicardia, com suspeita persistente de sangramento abdominal.",
+        "vitals": { "PA": "78/46 mmHg", "FC": "154 bpm", "hemoglobina": "8,6 g/dL" }
+      }
+    }
+  ],
+  "checklist": [
+    { "id": "xabcde", "label": "Executa XABCDE e controla hemorragia externa, se presente, antes de outras etapas", "weight": 12, "verification": "hibrido", "critical": true },
+    { "id": "monitorizacao-suporte", "label": "Instala monitorização, oferece oxigênio quando há hipoxemia, previne hipotermia e mede glicemia", "weight": 8, "verification": "hibrido", "critical": false },
+    { "id": "acesso-io", "label": "Obtém acesso venoso calibroso ou intraósseo e colhe exames e grupo sanguíneo", "weight": 10, "verification": "hibrido", "critical": true },
+    { "id": "reconhece-choque", "label": "Reconhece choque hemorrágico pediátrico, inclusive má perfusão e taquicardia que podem preceder hipotensão", "weight": 12, "verification": "verbal", "critical": true },
+    { "id": "reposicao", "label": "Prioriza hemoderivados precoces e, se inicia cristaloide isotônico, usa alíquota de 10 mL/kg com reavaliação imediata", "weight": 15, "verification": "verbal", "critical": true },
+    { "id": "efast-limites", "label": "Usa eFAST como adjunto e reconhece que resultado negativo não exclui lesão abdominal pediátrica", "weight": 10, "verification": "hibrido", "critical": true },
+    { "id": "imagem-dirigida", "label": "Indica imagem craniana conforme risco clínico e tomografia abdominal com contraste apenas após estabilização suficiente", "weight": 10, "verification": "verbal", "critical": false },
+    { "id": "reavaliacao", "label": "Reavalia perfusão, diurese, temperatura, lactato, hemoglobina e resposta à ressuscitação", "weight": 7, "verification": "verbal", "critical": false },
+    { "id": "txa-protocolo", "label": "Discute ácido tranexâmico conforme protocolo pediátrico e janela temporal, sem atrasar sangue ou cirurgia", "weight": 6, "verification": "verbal", "critical": false },
+    { "id": "controle-definitivo", "label": "Aciona trauma pediátrico, banco de sangue e transferência ou controle definitivo prioritário", "weight": 10, "verification": "verbal", "critical": true }
+  ],
+  "criticalErrors": [
+    "Não reconhecer choque hemorrágico",
+    "Postergar acesso intraósseo em criança instável sem acesso periférico",
+    "Administrar grandes volumes repetidos de cristaloide em vez de sangue quando disponível",
+    "Interpretar eFAST negativo como exclusão de sangramento abdominal",
+    "Encaminhar paciente instável à tomografia"
+  ],
+  "referenceAnswer": "Faço XABCDE, monitorizo, aqueço e obtenho acesso venoso ou intraósseo. Esta criança apresenta choque hemorrágico por taquicardia, má perfusão e hipotensão. Se preciso de cristaloide inicial, administro 10 mL/kg de isotônico e reavalio; na hipotensão traumática, priorizo hemoderivados precoces e aciono o protocolo pediátrico. O eFAST negativo não exclui lesão abdominal. Após estabilização, uso imagem dirigida conforme o risco clínico, mas não atraso sangue, cirurgia, transferência ou controle do sangramento.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+    "https://www.who.int/publications-detail-redirect/9789241513081",
+    "https://www.aium.org/practice-topics/point-of-care-ultrasound"
+  ]
+}

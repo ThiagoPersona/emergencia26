@@ -1,16 +1,53 @@
 {
   "id": "2025-pediatria-colinergico",
-  "version": 1,
+  "version": 2,
   "title": "Pediatria: síndrome colinérgica por chumbinho",
+  "examTitle": "Criança com secreções e rebaixamento",
   "domain": "Emergências pediátricas e toxicologia",
+  "domains": ["Emergências pediátricas", "Toxicologia"],
+  "difficulty": "intermediaria",
+  "origin": "historica",
+  "tags": ["toxíndrome colinérgica", "descontaminação", "glicemia", "aspiração", "atropina", "via aérea pediátrica"],
   "durationSeconds": 300,
   "source": { "exam": "TEME", "year": 2025, "station": "Pediatria" },
   "briefing": "Criança chega com rebaixamento, secreções e sinais autonômicos após possível exposição domiciliar. Faça hipóteses, estabilize e trate após a identificação do agente trazido pelo acompanhante.",
   "phases": [
-    { "id": "hipoteses", "title": "Tarefa 1", "prompt": "Cite duas hipóteses diagnósticas iniciais plausíveis." },
-    { "id": "inicial", "title": "Tarefa 2", "prompt": "Indique a abordagem inicial imediata." },
-    { "id": "agente", "title": "Tarefa 3", "prompt": "O acompanhante apresenta um frasco de 'chumbinho'. Qual substância ou classe é mais provável?" },
-    { "id": "antidoto", "title": "Tarefa 4", "prompt": "Indique o antídoto, via, dose inicial e critério de repetição." }
+    {
+      "id": "reconhecimento",
+      "title": "Reconhecimento",
+      "prompt": "Cite hipóteses coerentes e organize a segurança da equipe e da criança.",
+      "patientState": {
+        "summary": "Criança de 4 anos com roupa contaminada, miose, sialorreia, broncorreia, vômitos e rebaixamento.",
+        "vitals": { "FC": "62 bpm", "FR": "34 irpm", "SpO2": "88% em ar ambiente", "PA": "76/40 mmHg", "temperatura": "35,7 °C" }
+      }
+    },
+    {
+      "id": "estabilizacao",
+      "title": "Estabilização",
+      "prompt": "Verbalize a abordagem ABC, os exames imediatos e o suporte respiratório e circulatório.",
+      "patientState": {
+        "summary": "Secreções abundantes dificultam a ventilação, com roncos difusos à ausculta.",
+        "vitals": { "glicemia": "98 mg/dL", "SpO2": "91% com oxigênio" }
+      }
+    },
+    {
+      "id": "agente-antidoto",
+      "title": "Agente e antídoto",
+      "prompt": "O acompanhante apresenta um recipiente de 'chumbinho'. Identifique a classe provável e indique antídoto, via, dose e alvo clínico.",
+      "patientState": {
+        "summary": "Persistem broncorreia, bradicardia e hipotensão após retirada da roupa contaminada.",
+        "vitals": { "FC": "58 bpm", "PA": "70/38 mmHg" }
+      }
+    },
+    {
+      "id": "reavaliacao",
+      "title": "Reavaliação",
+      "prompt": "Após o primeiro bolus, descreva repetição, escalonamento e critérios para preparar via aérea definitiva.",
+      "patientState": {
+        "summary": "As secreções brônquicas começam a diminuir e a ventilação melhora após atropina.",
+        "vitals": { "FC": "98 bpm", "PA": "88/50 mmHg", "SpO2": "96% com máscara" }
+      }
+    }
   ],
   "checklist": [
     { "id": "hipotese-colinergica", "label": "Inclui síndrome colinérgica/intoxicação por inibidor de colinesterase", "weight": 10, "verification": "verbal", "critical": true },
@@ -25,5 +62,9 @@
     { "id": "atropina-bolus", "label": "Administra atropina IV em bolus repetidos, dobrando rapidamente até secar secreções e melhorar ventilação", "weight": 20, "verification": "verbal", "critical": true }
   ],
   "criticalErrors": ["Não proteger a equipe de contaminação", "Atrasar atropina em síndrome colinérgica grave", "Usar frequência cardíaca ou pupila como único alvo da atropinização"],
-  "referenceAnswer": "Penso em síndrome colinérgica por inibidor de colinesterase e mantenho diagnósticos diferenciais de rebaixamento. Protejo a equipe, retiro exposição, avalio ABC, glicemia e temperatura, ofereço oxigênio, aspiro secreções e obtenho acesso IV/IO. O 'chumbinho' costuma ser um carbamato clandestino. Faço atropina IV em bolus pediátrico, repetindo e escalonando rapidamente até reduzir secreções brônquicas e melhorar ventilação/perfusão, sem usar midríase ou taquicardia isoladas como alvo."
+  "referenceAnswer": "Penso em síndrome colinérgica por inibidor de colinesterase e mantenho diagnósticos diferenciais de rebaixamento. Protejo a equipe, retiro exposição, avalio ABC, glicemia e temperatura, ofereço oxigênio, aspiro secreções e obtenho acesso IV/IO. O 'chumbinho' costuma ser um carbamato clandestino. Faço atropina IV em bolus pediátrico, repetindo e escalonando rapidamente até reduzir secreções brônquicas e melhorar ventilação/perfusão, sem usar midríase ou taquicardia isoladas como alvo.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support"
+  ]
 }

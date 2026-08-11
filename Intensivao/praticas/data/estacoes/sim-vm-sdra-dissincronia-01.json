@@ -1,0 +1,76 @@
+{
+  "id": "sim-vm-sdra-dissincronia-01",
+  "version": 2,
+  "title": "SDRA grave com assincronia ventilatória",
+  "examTitle": "Hipoxemia persistente em ventilação invasiva",
+  "domain": "Via aérea e ventilação mecânica",
+  "domains": ["Ventilação mecânica", "Terapia intensiva"],
+  "difficulty": "avancada",
+  "origin": "inedita",
+  "tags": ["SDRA", "ventilação protetora", "assincronia", "pressão de platô", "PEEP", "pronação", "bloqueio neuromuscular", "sedoanalgesia"],
+  "durationSeconds": 300,
+  "briefing": "Adulto ventilado por pneumonia grave mantém hipoxemia e interação inadequada com o ventilador. Interprete os dados clínicos e mecânicos, corrija causas reversíveis e indique escalonamento do suporte.",
+  "phases": [
+    {
+      "id": "identificacao",
+      "title": "Identificação",
+      "prompt": "Reconheça a gravidade do quadro e os riscos imediatos a partir dos dados e da imagem.",
+      "patientState": {
+        "summary": "Adulto com sedação superficial, tosse e dupla ciclagem em modo assistido-controlado.",
+        "vitals": { "PA": "118/70 mmHg", "FC": "116 bpm", "FRTotal": "34 irpm", "SpO2": "86% com FiO2 0,80", "relacaoPF": "92" }
+      },
+      "media": ["rx-ards-edema-naocardiogenico"]
+    },
+    {
+      "id": "mecanica-causas",
+      "title": "Mecânica e causas",
+      "prompt": "Revise a ventilação protetora e investigue causas reversíveis da interação inadequada.",
+      "patientState": {
+        "summary": "Persistem tosse e ciclos empilhados; secreções e desconforto ainda não foram corrigidos.",
+        "vitals": { "Vt": "8,5 mL/kg de peso predito", "Pplat": "32 cmH2O", "PEEP": "10 cmH2O", "Ppico": "38 cmH2O" }
+      }
+    },
+    {
+      "id": "sincronia",
+      "title": "Sincronia",
+      "prompt": "Após sedoanalgesia e ajustes iniciais, indique o que ainda deve ser ajustado e reavaliado.",
+      "patientState": {
+        "summary": "A interação melhora, mas a hipoxemia persiste sem atingir plenamente as metas protetoras.",
+        "vitals": { "SpO2": "88%", "relacaoPF": "105", "Pplat": "29 cmH2O", "PA": "112/68 mmHg" }
+      },
+      "media": ["capnografia-capnograma-base"]
+    },
+    {
+      "id": "escalonamento",
+      "title": "Escalonamento",
+      "prompt": "Indique suporte de resgate e em quais condições consideraria bloqueio neuromuscular.",
+      "patientState": {
+        "summary": "A hipoxemia grave persiste após titulação protocolizada de PEEP, sem choque ou contraindicação evidente à pronação.",
+        "vitals": { "relacaoPF": "110", "FiO2": "0,70" }
+      }
+    }
+  ],
+  "checklist": [
+    { "id": "reconhece-sdra", "label": "Reconhece SDRA moderada ou grave com hipoxemia e assincronia clinicamente relevante", "weight": 10, "verification": "verbal", "critical": false },
+    { "id": "ventilacao-protetora", "label": "Ajusta Vt para cerca de 6 mL/kg de peso predito e busca pressão de platô até 30 cmH2O", "weight": 16, "verification": "hibrido", "critical": true },
+    { "id": "causas-assincronia", "label": "Investiga e corrige dor, agitação, secreção, tosse, febre, broncoobstrução e auto-PEEP", "weight": 10, "verification": "verbal", "critical": true },
+    { "id": "sedoanalgesia", "label": "Garante analgesia e sedação adequadas antes de considerar bloqueio neuromuscular", "weight": 12, "verification": "hibrido", "critical": true },
+    { "id": "ajustes-sincronia", "label": "Reavalia modo, disparo, fluxo inspiratório, tempo inspiratório, ciclagem e esforço de forma individualizada", "weight": 12, "verification": "hibrido", "critical": false },
+    { "id": "peep-fio2", "label": "Titula PEEP e FiO2 com estratégia protocolizada, acompanhando oxigenação e repercussão hemodinâmica", "weight": 10, "verification": "hibrido", "critical": false },
+    { "id": "pronacao", "label": "Indica pronação por pelo menos 16 horas por dia na hipoxemia grave persistente, avaliando equipe e contraindicações", "weight": 10, "verification": "verbal", "critical": true },
+    { "id": "bloqueio-neuromuscular", "label": "Considera bloqueio neuromuscular apenas com hipoxemia persistente ou metas inalcançáveis apesar de sedação adequada", "weight": 10, "verification": "verbal", "critical": false },
+    { "id": "reavaliacao", "label": "Reavalia gasometria, pressão de platô, pressão de distensão, capnografia e hemodinâmica após mudanças", "weight": 5, "verification": "verbal", "critical": false },
+    { "id": "terapia-intensiva", "label": "Aciona terapia intensiva e estratégia de resgate quando o quadro permanece refratário", "weight": 5, "verification": "verbal", "critical": false }
+  ],
+  "criticalErrors": [
+    "Manter volumes ou pressões lesivas sem correção",
+    "Paralisar o paciente sem analgesia e sedação adequadas ou apenas por conveniência",
+    "Ignorar sinais de assincronia",
+    "Postergar pronação em hipoxemia grave persistente elegível"
+  ],
+  "referenceAnswer": "Reconheço síndrome do desconforto respiratório agudo grave com assincronia. Confirmo o volume corrente pelo peso predito, reduzo para ventilação protetora e busco pressão de platô até 30 cmH2O. Procuro dor, agitação, secreção, febre, broncoobstrução e auto-PEEP; asseguro sedoanalgesia e ajusto disparo, fluxo e ciclagem conforme a curva e o esforço. Titulo PEEP e FiO2, reavalio gasometria e hemodinâmica e, se a relação P/F permanecer abaixo de 150, indico pronação prolongada. O bloqueio neuromuscular é condicional, somente quando persistem hipoxemia ou metas ventilatórias inalcançáveis apesar de sedação adequada.",
+  "references": [
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-for-the-administration-of-neuromuscular-blockade",
+    "https://www.aarc.org/resource/clinical-practice-guidelines/"
+  ]
+}
