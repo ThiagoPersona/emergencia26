@@ -562,6 +562,13 @@ test("mantem toolbar fora da area ampliada e fecha modal ao sair de tela cheia",
     const modal = findByClass(document.body, "practice-media-modal")[0];
     assert.equal(document.fullscreenElement, modal);
 
+    let propagationStopped = false;
+    modal.dispatch("click", {
+      target: modal.childNodes[0],
+      stopPropagation() { propagationStopped = true; }
+    });
+    assert.equal(propagationStopped, true);
+
     document.fullscreenElement = null;
     document.dispatch("fullscreenchange");
     assert.equal(findByClass(document.body, "practice-media-modal").length, 0);

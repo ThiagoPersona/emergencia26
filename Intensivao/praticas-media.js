@@ -348,7 +348,10 @@
       modalContent.appendChild(modalToolbar);
       modalContent.appendChild(modalImage);
       modal.appendChild(modalContent);
-      modal.addEventListener("click", (event) => { if (event.target === modal) closeModal(); });
+      modal.addEventListener("click", (event) => {
+        event.stopPropagation();
+        if (event.target === modal) closeModal();
+      });
       root.document.body.appendChild(modal);
       root.document.addEventListener("fullscreenchange", onFullscreenChange);
       if (typeof modal.requestFullscreen === "function") modal.requestFullscreen().catch(() => {});
