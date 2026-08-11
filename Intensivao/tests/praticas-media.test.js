@@ -1,4 +1,6 @@
 const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
 const test = require("node:test");
 
 const {
@@ -7,6 +9,64 @@ const {
   preloadStationMedia,
   renderPhaseMedia
 } = require("../praticas-media.js");
+
+const REQUIRED_ACERVO_IDS = [
+  "ecg-bavt-cc0",
+  "ecg-iam-inferior-vd",
+  "ecg-torsades-pd",
+  "ecg-triciclico-qrs",
+  "capnografia-capnograma-base",
+  "vm-autopeep-sinais-fig4",
+  "rx-pneumotorax-expiracao",
+  "us-pneumotorax-mmode-barcode",
+  "us-linhas-b",
+  "us-edema-pulmonar-linhas-b",
+  "us-fast-ruq-normal-morison",
+  "us-fast-morison-positivo",
+  "us-tamponamento-rv-collapse",
+  "us-aaa-sacular-flap",
+  "tc-avc-hemorragico",
+  "tc-tce-subdural",
+  "rx-ards-edema-naocardiogenico",
+  "us-acesso-vascular-subclavia",
+  "us-fascia-iliaca-anatomia",
+  "fascia-iliaca-probe-placement"
+];
+
+test("acervo visual local contem os 20 itens licenciados e arquivos resolviveis", () => {
+  const intensivaoRoot = path.resolve(__dirname, "..");
+  const manifestPath = path.join(intensivaoRoot, "assets", "praticas", "media.json");
+  const attributionPath = path.join(intensivaoRoot, "assets", "praticas", "ATRIBUICOES.md");
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, "utf8"));
+  const result = validateMediaManifest(manifest);
+
+  assert.equal(result.valid, true, result.errors.join("\n"));
+  assert.equal(result.media.length, REQUIRED_ACERVO_IDS.length);
+  assert.deepEqual(new Set(result.media.map((item) => item.id)), new Set(REQUIRED_ACERVO_IDS));
+
+  const attributions = fs.readFileSync(attributionPath, "utf8");
+  result.media.forEach((item) => {
+    assert.match(item.examAlt, /\S/);
+    assert.match(item.reviewAlt, /\S/);
+    assert.notEqual(item.examAlt, item.reviewAlt);
+    assert.match(item.reviewCaption, /\S/);
+    assert.match(item.credit, /\S/);
+    assert.match(item.sourceUrl, /^https:\/\//);
+    assert.match(item.license, /\S/);
+    assert.match(item.licenseUrl, /^https:\/\//);
+    assert.match(attributions, new RegExp("`" + item.id + "`"));
+
+    ["src", "thumbnail", "poster"].forEach((field) => {
+      if (!item[field]) return;
+      assert.equal(path.isAbsolute(item[field]), false, `${item.id}.${field} deve ser relativo`);
+      assert.equal(item[field].includes(".."), false, `${item.id}.${field} nao pode atravessar diretorios`);
+      const localPath = path.resolve(intensivaoRoot, item[field]);
+      assert.equal(localPath.startsWith(intensivaoRoot + path.sep), true, `${item.id}.${field} fora de Intensivao`);
+      assert.equal(fs.existsSync(localPath), true, `${item.id}.${field} ausente`);
+      assert.ok(fs.statSync(localPath).size > 0, `${item.id}.${field} vazio`);
+    });
+  });
+});
 
 function image(id) {
   return {

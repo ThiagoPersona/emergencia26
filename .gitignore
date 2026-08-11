@@ -30,6 +30,10 @@ Intensivao/.obsidian/
 !Intensivao/assets/provas/
 !Intensivao/assets/provas/*.png
 
+# Acervo visual local e licenciado das práticas.
+!Intensivao/assets/praticas/
+!Intensivao/assets/praticas/**
+
 # Itens de configuração pessoal/temporários
 *.tmp
 *.log
