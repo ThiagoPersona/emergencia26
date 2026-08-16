@@ -6,11 +6,11 @@
 
 - PROVA PRÁTICA
   - [Visão geral](PRATICAS.md)
-  - [Simulador de estações](praticas/SIMULADOR.md)
   - [Roteiro de 5 minutos](praticas/ROTEIRO_5_MIN.md)
   - [Matriz da banca](praticas/MATRIZ_DA_BANCA.md)
   - [Procedimentos](praticas/PROCEDIMENTOS.md)
   - [Treino visual](praticas/TREINO_VISUAL.md)
+  - [Simulador de estações](praticas/SIMULADOR.md)
   - [Desempenho](praticas/DESEMPENHO.md)
 
 - Temas

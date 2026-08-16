@@ -70,3 +70,22 @@ test("carrega os modulos do simulador na ordem de dependencia", () => {
   positions.forEach((position) => assert.notEqual(position, -1));
   positions.slice(1).forEach((position, index) => assert.ok(positions[index] < position));
 });
+
+test("paginas praticas omitem blocos editoriais removidos", () => {
+  const visual = fs.readFileSync(path.join(__dirname, "..", "praticas", "TREINO_VISUAL.md"), "utf8");
+  const procedures = fs.readFileSync(path.join(__dirname, "..", "praticas", "PROCEDIMENTOS.md"), "utf8");
+
+  assert.doesNotMatch(visual, /Como montar seu banco|O simulador aceita fases com mídia versionada/);
+  assert.doesNotMatch(procedures, /Treino mínimo semanal|\| Procedimento \| Repetições \| Meta \|/);
+});
+
+test("sidebar posiciona o simulador imediatamente antes do desempenho", () => {
+  const sidebar = fs.readFileSync(path.join(__dirname, "..", "_sidebar.md"), "utf8");
+  const visual = "[Treino visual](praticas/TREINO_VISUAL.md)";
+  const simulator = "[Simulador de estações](praticas/SIMULADOR.md)";
+  const performance = "[Desempenho](praticas/DESEMPENHO.md)";
+
+  assert.ok(sidebar.indexOf(visual) < sidebar.indexOf(simulator));
+  assert.ok(sidebar.indexOf(simulator) < sidebar.indexOf(performance));
+  assert.match(sidebar, /Simulador de estações[^\n]*\n\s*- \[Desempenho\]/);
+});

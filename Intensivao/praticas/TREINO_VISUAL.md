@@ -40,13 +40,3 @@ Imagens na prova não são decoração. A resposta completa transforma imagem em
 Fale na mesma ordem: frequência, ritmo, QRS, relação P-QRS, ST-T, diagnóstico e instabilidade. Em seguida, diga energia/droga/dispositivo e confirme resposta.
 
 Prioridades: ritmos de PCR, BAV avançado, taquicardias regulares/irregulares, IAM com supra e equivalentes, Wellens, De Winter e critérios de Sgarbossa modificados.
-
-## Como montar seu banco
-
-- use capturas autorizadas das próprias provas e imagens de fontes abertas/licenciadas;
-- remova legenda e diagnóstico na primeira versão;
-- crie uma segunda versão com marcações e resposta;
-- treine em tela pequena e grande;
-- limite a análise inicial a 20-30 segundos antes de verbalizar a conduta.
-
-> O simulador aceita fases com mídia versionada. As imagens oficiais serão incorporadas quando houver arquivo local legível e direito de uso compatível; nunca invente um achado que a mídia não mostra.
