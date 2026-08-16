@@ -584,7 +584,7 @@ Use assim:
 - Arterite temporal: cefaleia nova, claudicação mandibular, alteração visual; corticoide não espera biópsia se visão em risco.
 - Crise esclerodérmica renal: PA alta + IRA em esclerose sistêmica; IECA é chave.
 
-## 17. Paliativos, Vulnerabilidades, Ética, Legislação E Gestão
+## 17. Paliativos, Vulnerabilidades, Ética E Legislação
 
 ### Ética De Emergência
 
@@ -606,11 +606,6 @@ Use assim:
 - Violência sexual: acolher, preservar autonomia, profilaxias, contracepção, notificação e rede.
 - Criança, idoso, incapaz: dever de proteção e comunicação conforme lei/protocolo.
 - Suicídio: não banalizar "nega no momento" se há tentativa recente, plano, meio, desesperança ou ausência de suporte.
-
-### Gestão
-
-- Sala vermelha caótica precisa líder, papéis definidos, comunicação fechada e reavaliação.
-- Registre decisões críticas: horário, achados, condutas, resposta, comunicação familiar/equipe.
 
 ## 18. Infectologia Na Emergência
 
@@ -823,6 +818,48 @@ Use assim:
 - Se esquecer dose exata, mostre classe, intenção e segurança.
 - Não abandone conforto, analgesia, família e documentação quando o caso estabiliza.
 
+## 26. Gestão Do Departamento De Emergência
+
+### Localize O Gargalo
+
+- **Entrada:** volume, picos, epidemias, ambulâncias e perfil da rede.
+- **Processamento:** espera por médico, exame, parecer, medicação e decisão.
+- **Saída:** internação, transferência, alta e paciente em boarding.
+- Macas com pacientes já internados apontam para saída; acelerar apenas triagem não resolve.
+
+### Lean E Filas
+
+- Lean melhora valor e fluxo; não significa corte indiscriminado de equipe.
+- `Takt time = tempo disponível / demanda esperada`.
+- Tempo de ciclo maior que takt forma gargalo.
+- Capacidade igual à demanda não oferece folga; perto de 100% de utilização, a variabilidade aumenta muito a fila.
+- `Lei de Little: pacientes no sistema = chegadas por tempo x permanência média`.
+- VSM mapeia fluxo e desperdícios; 5S organiza e sustenta o ambiente; Ishikawa organiza hipóteses de causa.
+
+### Classificação De Risco
+
+- Manchester: queixa, discriminadores, prioridade clínica e tempo-alvo; também gera informação gerencial.
+- ESI: gravidade primeiro e previsão de recursos nos níveis menos graves.
+- Classificação não é diagnóstico, não substitui avaliação médica e exige reavaliação se houver piora.
+- Distribuição por cores isolada não prova falha, superclassificação ou necessidade de trocar o protocolo.
+
+### Qualidade E Segurança
+
+- Donabedian: estrutura, processo e resultado.
+- Use indicador de resultado, processo e equilíbrio.
+- Near miss não alcança o paciente; incidente sem dano alcança sem lesão; evento adverso alcança e causa dano.
+- Primeiro cuide e contenha o dano; depois comunique, notifique, analise causas e implante barreiras.
+- Cultura justa diferencia erro humano, comportamento de risco e conduta temerária.
+- Acreditação: externa, voluntária, periódica e orientada à melhoria contínua.
+
+### Números Que A Banca Pode Cobrar
+
+- CFM 2.077/2014: coordenador de fluxo acima de 50.000 atendimentos/ano.
+- Permanência no DE: até 24 h; sala de reanimação: até 4 h.
+- Referência desejável: até 3 pacientes/h/médico no primeiro atendimento.
+- Reanimação: até 2 leitos por médico exclusivo; observação: 1 médico para 8 leitos.
+- Manchester: imediato, 10, 60, 120 e 240 min.
+
 ## Última Passada: O Que Eu Tenho Que Saber Sem Pensar
 
 - Via aérea: indicação, pré-oxigenação, RSI, CICO, capnografia, DOPE, VM protetora, auto-PEEP.
@@ -841,7 +878,7 @@ Use assim:
 - Gastro: abdome cirúrgico, HDA, variz, colangite, pancreatite, hepatopata.
 - Onco-hemato: neutropenia febril, lise tumoral, compressão medular, hipercalcemia, SVCS.
 - Derm/reumato: anafilaxia, angioedema, fasciite, SJS/TEN, artrite séptica.
-- Ética/gestão: capacidade, recusa, ortotanásia, vulnerabilidade, comunicação.
+- Ética: capacidade, recusa, ortotanásia, vulnerabilidade e comunicação.
 - Infecto: meningite, encefalite, dengue grave, HIV/TB, controle de foco.
 - Oftalmo/ORL/odonto: glaucoma, trauma ocular, HINTS, epistaxe, Ludwig.
 - Uro: torção, obstrução infectada, Fournier, priapismo, uretra.
@@ -849,6 +886,7 @@ Use assim:
 - Psiquiatria: orgânico primeiro, desescalada, sedação segura, contenção, suicídio.
 - Procedimentos: analgesia, sedação, dose máxima de anestésico, LAST, US.
 - Estratégia: prioridade, comando da questão, reavaliação e destino.
+- Gestão: input-throughput-output, boarding, takt/ciclo, capacidade, Manchester/ESI, causa raiz e CFM 2.077.
 
 ## Referências De Atualização Rápida
 

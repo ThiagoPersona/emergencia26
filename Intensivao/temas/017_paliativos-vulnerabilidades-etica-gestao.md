@@ -1,21 +1,20 @@
-# Paliativos, Vulnerabilidades, Ética, Legislação E Gestão
+# Paliativos, Vulnerabilidades, Ética E Legislação
 
 ## Leitura de 30 segundos
 
 - Cuidado paliativo não é "não fazer nada": é tratar sofrimento, alinhar metas, evitar distanásia e manter cuidado proporcional.
 - Código de não reanimar, limitação de suporte e terminalidade precisam de decisão clínica, comunicação, registro e plano de cuidado. Não são ordem para abandonar o paciente.
-- Paciente capaz pode recusar tratamento eletivo após informação adequada; em urgência com risco relevante/morte, o médico pode intervir se não há consentimento valido disponível.
-- Diretivas antecipadas de vontade devem ser consideradas se conhecidas e aplicaveis, desde que não contrariem o Código de Ética.
+- Paciente capaz pode recusar tratamento eletivo após informação adequada; em urgência com risco relevante/morte, o médico pode intervir se não há consentimento válido disponível.
+- Diretivas antecipadas de vontade devem ser consideradas se conhecidas e aplicáveis, desde que não contrariem o Código de Ética.
 - Sedação paliativa exige sintoma refratário, proporcionalidade, intenção de aliviar sofrimento, consentimento/representante quando possível e registro.
 - Violência sexual: acolher, tratar antes de burocracia, não exigir boletim de ocorrência, oferecer PEP HIV até 72 h por 28 dias, contracepção, profilaxias, coleta quando possível e notificação obrigatória.
 - Tentativa/risco suicida: estabilizar, retirar meios, observação segura, avaliar risco/proteção, notificar e não dar alta se alto risco sem plano robusto.
-- Gestão TEME: classificação de risco, coordenador de fluxo, registro, comunicação, transferência segura e limite de permanência no pronto-socorro importam tanto quanto conduta clínica.
 
 ## Por que cai
 
-- **Recorrência em provas/estações:** TEME22-26 cobrou violência sexual/PEP, morte encefálica, regulação/CFM, classificação de risco/fluxo, alta segura, tentativa de suicídio, dor total em câncer, responsabilidade médica em transferência, documentação e vulnerabilidades.
-- **O que a banca costuma testar:** diferenciar cuidado proporcional de abandono, saber quando tratar sem consentimento, conhecer PEP/notificação, reconhecer alto risco suicida, saber papel do emergencista na morte encefálica e no fluxo do DE.
-- **Como costuma aparecer:** caso ético com alternativa sedutora e absoluta. A resposta certa costuma ser a que acolhe, informa, registra, protege vulnerável e mantem cuidado clínico proporcional.
+- **Recorrência em provas/estações:** TEME22-26 cobrou violência sexual/PEP, morte encefálica, alta segura, tentativa de suicídio, dor total em câncer, documentação, comunicação de óbito e vulnerabilidades.
+- **O que a banca costuma testar:** diferenciar cuidado proporcional de abandono, saber quando tratar sem consentimento, conhecer PEP/notificação, reconhecer alto risco suicida e saber o papel do emergencista na morte encefálica.
+- **Como costuma aparecer:** caso ético com alternativa sedutora e absoluta. A resposta certa costuma ser a que acolhe, informa, registra, protege vulnerável e mantém cuidado clínico proporcional.
 
 ## Abordagem prática
 
@@ -162,24 +161,6 @@ Alta só se:
 
 > **Resposta de prova TEME25:** tentativa por benzodiazepínico + álcool, tristeza, tentativas prévias, sem seguimento e pouca proteção = alto risco; não é alta simples por estar orientado.
 
-### 8. Gestão, fluxo e responsabilidade no DE
-
-Pontos CFM/gestão que caem:
-
-- Serviço hospitalar de urgência deve ter acolhimento com classificação de risco.
-- Classificação de risco não é diagnóstico médico definitivo; médico pode reclassificar no contato.
-- Coordenador de fluxo é função médica relevante, não apenas administrativa.
-- Paciente grave deve ter atendimento imediato, independentemente de burocracia.
-- permanência prolongada no DE é problema de segurança; CFM 2077 trabalha limite de 24 h para permanência no setor e necessidade de internação/transferência/fluxo.
-- Transferência exige estabilização proporcional, contato com receptor, documento clínico e transporte compatível.
-- Registro protege o paciente: horários, reavaliações, orientações, recusas, familiares, chamadas, regulação e justificativas.
-
-Gestão de risco:
-
-- Superlotação: rounds de fluxo, alta segura, leitos de retaguarda, sala de decisão, protocolos e priorização.
-- Evento adverso: reconhecer, tratar dano, comunicar liderança/paciente conforme política, registrar e aprender.
-- Passagem de plantão: diagnóstico, gravidade, pendências, limites de cuidado, riscos e plano se piorar.
-
 ## Conceitos que sustentam a conduta
 
 ### Autonomia não é abandono
@@ -193,10 +174,6 @@ Fazer tudo pode virar dano. RCP, IOT, vasopressor e UTI podem ser proporcionais 
 ### Vulnerabilidade muda o dever de proteção
 
 O emergencista não é juiz nem policial, mas deve proteger, notificar, acionar rede e evitar revitimização. Acolher bem e parte do tratamento tempo-dependente.
-
-### Gestão é clínica
-
-Fluxo ruim mata: atraso, perda de informação, paciente sem monitor, transferência improvisada e alta sem plano. A prova gosta de lembrar que Medicina de Emergência também é sistema.
 
 ## Fluxograma
 
@@ -237,19 +214,6 @@ flowchart TD
     F -->|Não| E
 ```
 
-```mermaid
-flowchart TD
-    A[Paciente no DE] --> B[Acolhimento + classificação de risco]
-    B --> C{Grave?}
-    C -->|Sim| D[Atendimento imediato + sala vermelha]
-    C -->|Potencial gravidade| E[Área observação/decisão + reavaliação]
-    C -->|Sem gravidade| F[Fluxo rápido/orientação/APS conforme rede]
-    D --> G[Plano: alta, internação, transferência ou paliativo]
-    E --> G
-    F --> G
-    G --> H[Registro + comunicação + coordenador de fluxo se bloqueio]
-```
-
 ## Doses, alvos e números
 
 | Item | Número | observação TEME |
@@ -286,8 +250,6 @@ flowchart TD
 - **Violência sexual exige BO para atender:** falso.
 - **PEP pode esperar consulta ambulatorial:** falso se dentro de 72 h.
 - **Tentativa de suicídio orientada e arrependida sempre recebe alta:** falso; risco longitudinal importa.
-- **Classificação de risco é diagnóstico médico:** falso.
-- **Coordenador de fluxo é apenas administrativo:** falso; é função médica de segurança/fluxo.
 - **Morte encefálica depende de concordância familiar para ser morte:** falso. Família participa da comunicação/doação, não valida o diagnóstico.
 
 ## Erros fatais na prática
@@ -302,24 +264,15 @@ flowchart TD
 - Dar alta para suicida de alto risco por aparente calma pós-tentativa.
 - Não notificar violência autoprovocada/interpessoal quando obrigatório.
 - Transferir paciente instável sem comunicação, equipe ou documento.
-- Deixar paciente grave "classificado" aguardando sem reavaliação.
 
 ## Para prova vs na prática
 
-> **Para prova TEME:** cuidado paliativo é ativo; ortotanásia é permitida quando há terminalidade e proporcionalidade; diretivas antecipadas devem ser consideradas; recusa terapêutica exige capacidade e informação; violência sexual não precisa BO e pede PEP até 72 h; tentativa de suicídio de alto risco não recebe alta simples; morte encefálica segue CFM 2173/2017; fluxo do DE segue CFM 2077/2014.
+> **Para prova TEME:** cuidado paliativo é ativo; ortotanásia é permitida quando há terminalidade e proporcionalidade; diretivas antecipadas devem ser consideradas; recusa terapêutica exige capacidade e informação; violência sexual não precisa BO e pede PEP até 72 h; tentativa de suicídio de alto risco não recebe alta simples; morte encefálica segue CFM 2.173/2017.
 >
 > **Na prática clínica:** detalhes de notificação, coleta de vestígios, PEP, transferência, sedação paliativa e limite de suporte devem seguir protocolo local, comissão de ética, NIR/regulação e rede municipal/estadual. O que não muda é: acolher, proteger, informar, registrar e reavaliar.
 
 ## Pontos quentes TEME26
 
-- **Lean:** takt time = tempo disponível / demanda esperada. Se tempo de ciclo > takt, há gargalo. Operar perto de 100% da capacidade gera fila não linear.
-- **5S:** separar/utilizar, ordenar, limpar, padronizar e sustentar disciplina. Não é sigla inventada de segurança/sobrecarga/satisfação.
-- **Value stream map:** mapeia fluxo de valor e desperdícios do percurso do paciente, não apenas custo.
-- **Psicologia da espera:** comunique estimativa realista e atualize; prometer “em breve” quando não é verdade piora confiança.
-- **Superlotação:** macas/corredor/boarding pedem gestão de leitos, altas, exames e internação; não se resolve só acelerando triagem.
-- **Manchester:** ordena acesso por gravidade e tempo-alvo, e também gera informação gerencial. Espera em categoria intermediária é sinal para investigar gargalo.
-- **Acreditação:** avaliação externa, voluntária, periódica e voltada à melhoria contínua.
-- **Causa raiz/Ishikawa:** erro de medicação deve ser analisado como sistema; não reduza a culpa individual.
 - **Paliativos:** dispneia refratária pode receber opioide em baixa dose titulada; sedação paliativa é proporcional para sintoma refratário, não eutanásia.
 - **Declaração de óbito:** morte domiciliar natural conhecida deve ser direcionada ao médico assistente/equipe domiciliar; IML é para causa externa/suspeita.
 
@@ -335,7 +288,6 @@ flowchart TD
 - [ ] Sei os passos da violência sexual, PEP <=72 h e notificação.
 - [ ] Sei avaliar alto risco suicida e quando não dar alta.
 - [ ] Sei pontos centrais de morte encefálica.
-- [ ] Sei CFM 2077: classificação de risco, coordenador de fluxo e limite de permanência.
 - [ ] Sei que registro e comunicação são condutas de segurança.
 
 ## Questões e estações relacionadas
@@ -344,7 +296,7 @@ flowchart TD
 - **TEME23 Q23:** óbito em cena/APH e decisão de reanimação conforme contexto legal e clínico.
 - **TEME25:** dor total em câncer: sofrimento físico, psicológico, social e espiritual; opioide não é único cuidado.
 - **TEME25 Q78:** febre baixa/risco epidemiológico e alta segura com sinais de alarme quando sem gravidade.
-- **TEME25 Q81/Q87:** regulação, responsabilidade médica, CFM 2077 e papel do médico/coordenador de fluxo.
+- **TEME25 Q81:** responsabilidade médica, estabilização e transferência para serviço com recurso adequado.
 - **TEME25 Q88:** tentativa de suicídio com tentativas prévias e baixo suporte: alto risco, não alta simples.
 - **Práticas disponíveis até TEME25:** comunicação, decisão compartilhada, segurança do paciente, transferência e registro aparecem como critérios de avaliação mesmo quando a estação é técnica.
 
@@ -354,7 +306,7 @@ flowchart TD
 
 - Conteúdo programático TEME26.
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25.
-- Referências oficiais do edital: Tratado ABRAMEDE 2024, Medicina de Emergência HCFMUSP, legislação/ética médica e capítulos de cuidados paliativos, gestão, vulnerabilidades e psiquiatria de emergência.
+- Referências oficiais do edital: Tratado ABRAMEDE 2024, Medicina de Emergência HCFMUSP, legislação/ética médica e capítulos de cuidados paliativos, vulnerabilidades e psiquiatria de emergência.
 
 **Material local**
 

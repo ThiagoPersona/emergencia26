@@ -35,7 +35,8 @@ Conjunto **22-26**:
 
 | Tema | Questões TEME26 | Principais cobranças |
 |---|---:|---|
-| Paliativos, vulnerabilidades, ética, legislação e gestão | 15 | Lean, takt time, acreditação, DO, comunicação de óbito, espera, superlotação, Manchester, Ishikawa, paliativos |
+| Gestão do Departamento de Emergência | 8 | Lean, takt time, acreditação, psicologia da espera, capacidade, superlotação, Manchester e causa raiz/Ishikawa |
+| Paliativos, vulnerabilidades, ética e legislação | 7 | Responsabilidade/transferência, maus-tratos, DO, comunicação de óbito, sedação paliativa, paliativo no APH e dispneia |
 | APH, regulação, IMV, desastres e transporte | 11 | Aeromédico, SAMU, regulação, SCI, HazMat, radiológico, RMC, centro de trauma |
 | Toxicologia e animais peçonhentos | 9 | Anticolinérgica, paracetamol, ADT, flumazenil, cnidário, Micrurus, heat stroke, NPS, metanol |
 | SCA, arritmias e emergências hipertensivas | 7 | ECG, BAVT/marcapasso, dissecção, complicação mecânica pós-IAM, ritmo de reperfusão, HEART |
@@ -91,7 +92,7 @@ Entraram BRUE, step-by-step no lactente febril, status epiléptico por meningoen
 
 ## Lacunas Encontradas No Nosso Material
 
-Não apareceu um **tema completamente fora** dos nossos 25 módulos. O que apareceu foram subtemas que merecem reforço dentro das aulas já existentes:
+Não apareceu um tema clínico completamente fora dos módulos. Gestão, antes diluída no tema 17, passou a ter um capítulo autônomo; os demais achados foram subtemas que mereceram reforço dentro das aulas existentes:
 
 - **Gestão/qualidade:** Lean, takt time, value stream map, 5S, psicologia da espera, acreditação, causa raiz/Ishikawa e Manchester como ferramenta gerencial.
 - **APH/desastres:** SCI com controle integral de recursos, níveis de incidente, HazMat/radiológico, zonas operacionais, EPI nível A/SCBA, descontaminação e transporte aeromédico com equipamentos complexos.
@@ -127,7 +128,7 @@ A seção **PROVAS** agora está consolidada como **Oficiais 22-26**, sem separa
 
 ## Prioridade De Revisão Pós-TEME26
 
-1. **Gestão/ética/fluxo:** alta prioridade, porque foi o maior bloco da prova 26.
+1. **Gestão/fluxo/qualidade:** alta prioridade, porque foi o maior núcleo novo da prova 26.
 2. **APH/desastres/transporte:** subiu muito e mistura doutrina com decisão operacional.
 3. **POCUS aplicado:** revisar imagens e limitações, não só nomes de sinais.
 4. **Cardio/ECG:** BAVT, reperfusão, HEART, dissecção e complicações mecânicas.

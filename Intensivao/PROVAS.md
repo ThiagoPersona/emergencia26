@@ -33,7 +33,7 @@ Como usar:
 | Gastro, hepatologia e abdome agudo | 26 | [Resolver](provas/014_gastro-hepatologia-abdome-agudo.md) |
 | Hemato-oncologia na emergência | 18 | [Resolver](provas/015_hemato-oncologia-emergencia.md) |
 | Dermato, reumato, alergia e anafilaxia | 9 | [Resolver](provas/016_dermato-reumato-alergia-anafilaxia.md) |
-| Paliativos, vulnerabilidades, ética, legislação e gestão | 29 | [Resolver](provas/017_paliativos-vulnerabilidades-etica-gestao.md) |
+| Paliativos, vulnerabilidades, ética e legislação | 14 | [Resolver](provas/017_paliativos-vulnerabilidades-etica-gestao.md) |
 | Infectologia na emergência | 27 | [Resolver](provas/018_infectologia-emergencia.md) |
 | Oftalmo, otorrino e odonto | 12 | [Resolver](provas/019_oftalmo-otorrino-odonto.md) |
 | Urologia na emergência | 5 | [Resolver](provas/020_urologia-emergencia.md) |
@@ -41,5 +41,6 @@ Como usar:
 | Psiquiatria, agitação e contenção | 6 | [Resolver](provas/022_psiquiatria-agitacao-contencao.md) |
 | Procedimentos, analgesia e sedação | 9 | [Resolver](provas/023_procedimentos-analgesia-sedacao.md) |
 | Cardiovascular complementar | 21 | [Resolver](provas/024_cardiovascular-complementar.md) |
+| Gestão do Departamento de Emergência | 15 | [Resolver](provas/026_gestao-departamento-emergencia.md) |
 
 Total atual da seção: **632 questões em estilo TEME**.

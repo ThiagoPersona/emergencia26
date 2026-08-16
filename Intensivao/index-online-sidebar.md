@@ -21,7 +21,7 @@
   - [14. Gastro, hepatologia e abdome agudo](temas/014_gastro-hepatologia-abdome-agudo.md)
   - [15. Hemato-oncologia na emergência](temas/015_hemato-oncologia-emergencia.md)
   - [16. Dermato, reumato, alergia e anafilaxia](temas/016_dermato-reumato-alergia-anafilaxia.md)
-  - [17. Paliativos, vulnerabilidades, ética e gestão](temas/017_paliativos-vulnerabilidades-etica-gestao.md)
+  - [17. Paliativos, vulnerabilidades, ética e legislação](temas/017_paliativos-vulnerabilidades-etica-gestao.md)
   - [18. Infectologia na emergência](temas/018_infectologia-emergencia.md)
   - [19. Oftalmo, otorrino e odonto](temas/019_oftalmo-otorrino-odonto.md)
   - [20. Urologia na emergência](temas/020_urologia-emergencia.md)
@@ -30,3 +30,4 @@
   - [23. Procedimentos, analgesia e sedação](temas/023_procedimentos-analgesia-sedacao.md)
   - [24. Cardiovascular complementar](temas/024_cardiovascular-complementar.md)
   - [25. Estratégia de prova e estações práticas](temas/025_estrategia-prova-estacoes-praticas.md)
+  - [26. Gestão do Departamento de Emergência](temas/026_gestao-departamento-emergencia.md)

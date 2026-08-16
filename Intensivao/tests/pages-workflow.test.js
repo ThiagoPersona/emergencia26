@@ -89,3 +89,29 @@ test("sidebar posiciona o simulador imediatamente antes do desempenho", () => {
   assert.ok(sidebar.indexOf(simulator) < sidebar.indexOf(performance));
   assert.match(sidebar, /Simulador de estações[^\n]*\n\s*- \[Desempenho\]/);
 });
+
+test("publica tema e banco autonomos de gestao sem alterar o total de questoes", () => {
+  const base = path.join(__dirname, "..");
+  const themePath = path.join(base, "temas", "026_gestao-departamento-emergencia.md");
+  const proofPath = path.join(base, "provas", "026_gestao-departamento-emergencia.md");
+  const legacyProofPath = path.join(base, "provas", "017_paliativos-vulnerabilidades-etica-gestao.md");
+  const reading = fs.readFileSync(path.join(base, "LEITURA_OFICIAL.md"), "utf8");
+  const proofs = fs.readFileSync(path.join(base, "PROVAS.md"), "utf8");
+  const sidebar = fs.readFileSync(path.join(base, "_sidebar.md"), "utf8");
+
+  assert.equal(fs.existsSync(themePath), true);
+  assert.equal(fs.existsSync(proofPath), true);
+  assert.match(reading, /Gestão do Departamento de Emergência[^\n]*026_gestao-departamento-emergencia\.md/);
+  assert.match(sidebar, /Gestão do Departamento de Emergência[^\n]*026_gestao-departamento-emergencia\.md/);
+  assert.match(proofs, /Gestão do Departamento de Emergência \| 15 \| \[Resolver\]\(provas\/026_gestao-departamento-emergencia\.md\)/);
+  assert.match(proofs, /Paliativos, vulnerabilidades, ética e legislação \| 14 \|/);
+  assert.match(proofs, /Total atual da seção: \*\*632 questões em estilo TEME\*\*/);
+
+  const managementProof = fs.readFileSync(proofPath, "utf8");
+  const legacyProof = fs.readFileSync(legacyProofPath, "utf8");
+  assert.equal((managementProof.match(/class="quiz-card"/g) || []).length, 15);
+  assert.equal((legacyProof.match(/class="quiz-card"/g) || []).length, 14);
+  assert.match(managementProof, /TEME26 Q7/);
+  assert.match(managementProof, /TEME26 Q96/);
+  assert.doesNotMatch(legacyProof, /<p class="quiz-source">TEME26 Q(?:7|96)<\/p>/);
+});

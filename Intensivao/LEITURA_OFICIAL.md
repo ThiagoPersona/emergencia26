@@ -32,7 +32,7 @@ Material de revisão dirigida em módulos de emergência, organizado para estudo
 |    14 | Gastro, hepatologia e abdome agudo                           | Pronto | [Abrir](temas/014_gastro-hepatologia-abdome-agudo.md)          |
 |    15 | Hemato-oncologia na emergência                               | Pronto | [Abrir](temas/015_hemato-oncologia-emergencia.md)              |
 |    16 | Dermato, reumato, alergia e anafilaxia                       | Pronto | [Abrir](temas/016_dermato-reumato-alergia-anafilaxia.md)       |
-|    17 | Paliativos, vulnerabilidades, ética, legislação e gestão     | Pronto | [Abrir](temas/017_paliativos-vulnerabilidades-etica-gestao.md) |
+|    17 | Paliativos, vulnerabilidades, ética e legislação             | Pronto | [Abrir](temas/017_paliativos-vulnerabilidades-etica-gestao.md) |
 |    18 | Infectologia na emergência                                   | Pronto | [Abrir](temas/018_infectologia-emergencia.md)                  |
 |    19 | Oftalmo, otorrino e odonto                                   | Pronto | [Abrir](temas/019_oftalmo-otorrino-odonto.md)                  |
 |    20 | Urologia na emergência                                       | Pronto | [Abrir](temas/020_urologia-emergencia.md)                      |
@@ -41,3 +41,4 @@ Material de revisão dirigida em módulos de emergência, organizado para estudo
 |    23 | Procedimentos, analgesia e sedação                           | Pronto | [Abrir](temas/023_procedimentos-analgesia-sedacao.md)          |
 |    24 | Cardiovascular complementar                                  | Pronto | [Abrir](temas/024_cardiovascular-complementar.md)              |
 |    25 | Estratégia de prova e estações práticas                      | Pronto | [Abrir](temas/025_estrategia-prova-estacoes-praticas.md)       |
+|    26 | Gestão do Departamento de Emergência                         | Pronto | [Abrir](temas/026_gestao-departamento-emergencia.md)           |
