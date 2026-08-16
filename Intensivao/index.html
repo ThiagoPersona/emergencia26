@@ -1028,6 +1028,29 @@
     }
 
     const QUIZ_STORAGE_PREFIX = "resumos-emergencia:quiz:v1:";
+    const QUIZ_ROUTE_MIGRATIONS = [
+      {
+        from: "provas/017_paliativos-vulnerabilidades-etica-gestao",
+        to: "provas/026_gestao-departamento-emergencia",
+        cardKeys: [
+          "q-t017-001",
+          "q-t017-005",
+          "q-t017-006",
+          "q-t017-007",
+          "q-t017-008",
+          "q-t017-009",
+          "q-t017-012",
+          "q-t017-015",
+          "q-t017-018",
+          "q-t017-021",
+          "q-t017-022",
+          "q-t017-024",
+          "q-t017-025",
+          "q-t017-026",
+          "q-t017-028"
+        ]
+      }
+    ];
 
     function normalizeQuizRoute(route) {
       return (route || "")
@@ -1063,6 +1086,25 @@
       return Array.from(new Set(keys.map((item) => `${QUIZ_STORAGE_PREFIX}${item}`)));
     }
 
+    function sanitizeQuizProgressForRoute(route, progress) {
+      const normalized = normalizeQuizRoute(route);
+      const sanitized = { ...(progress || {}) };
+
+      QUIZ_ROUTE_MIGRATIONS.forEach((migration) => {
+        const movedKeys = new Set(migration.cardKeys);
+        if (normalized === normalizeQuizRoute(migration.from)) {
+          migration.cardKeys.forEach((cardKey) => delete sanitized[cardKey]);
+        }
+        if (normalized === normalizeQuizRoute(migration.to)) {
+          Object.keys(sanitized).forEach((cardKey) => {
+            if (!movedKeys.has(cardKey)) delete sanitized[cardKey];
+          });
+        }
+      });
+
+      return sanitized;
+    }
+
     function readQuizProgress(storageKey = getQuizStorageKey()) {
       try {
         const raw = window.localStorage.getItem(storageKey);
@@ -1076,7 +1118,7 @@
 
     function readQuizProgressForRoute(route) {
       for (const storageKey of getQuizStorageKeysForRoute(route)) {
-        const progress = readQuizProgress(storageKey);
+        const progress = sanitizeQuizProgressForRoute(route, readQuizProgress(storageKey));
         if (Object.keys(progress).length) return progress;
       }
       return {};
@@ -1087,6 +1129,46 @@
         window.localStorage.setItem(storageKey, JSON.stringify(progress));
       } catch (error) {
         // Navegação privada ou storage bloqueado: o quiz continua funcionando na sessão atual.
+      }
+    }
+
+    function migrateQuizProgress() {
+      try {
+        QUIZ_ROUTE_MIGRATIONS.forEach((migration) => {
+          const destinationKeys = getQuizStorageKeysForRoute(migration.to);
+          const canonicalDestinationKey = destinationKeys[0];
+          const destinationProgress = {};
+
+          destinationKeys.forEach((storageKey) => {
+            const progress = sanitizeQuizProgressForRoute(migration.to, readQuizProgress(storageKey));
+            Object.entries(progress).forEach(([cardKey, saved]) => {
+              if (!destinationProgress[cardKey]) destinationProgress[cardKey] = saved;
+            });
+          });
+
+          getQuizStorageKeysForRoute(migration.from).forEach((storageKey) => {
+            const sourceProgress = readQuizProgress(storageKey);
+            migration.cardKeys.forEach((cardKey) => {
+              if (sourceProgress[cardKey] && !destinationProgress[cardKey]) {
+                destinationProgress[cardKey] = sourceProgress[cardKey];
+              }
+              delete sourceProgress[cardKey];
+            });
+
+            if (Object.keys(sourceProgress).length) {
+              writeQuizProgress(sourceProgress, storageKey);
+            } else {
+              window.localStorage.removeItem(storageKey);
+            }
+          });
+
+          if (Object.keys(destinationProgress).length) {
+            writeQuizProgress(destinationProgress, canonicalDestinationKey);
+          }
+          destinationKeys.slice(1).forEach((storageKey) => window.localStorage.removeItem(storageKey));
+        });
+      } catch (error) {
+        // O material continua utilizável quando o navegador bloqueia o armazenamento local.
       }
     }
 
@@ -1775,6 +1857,7 @@
       ensureBranding();
       normalizeThemeLinks();
       tuneExternalLinks();
+      migrateQuizProgress();
       hydrateProofProgressTable();
       tuneTables();
       initQuizzes();

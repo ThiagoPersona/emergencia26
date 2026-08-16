@@ -59,4 +59,3 @@ Prioridade:
 - O capítulo contém fluxogramas, fórmulas, tabelas, pegadinhas e checklist.
 - Não há gabarito no título dos cards.
 - Links e Markdown funcionam no Docsify/GitHub Pages.
-

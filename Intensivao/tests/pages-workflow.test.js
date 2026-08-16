@@ -109,9 +109,72 @@ test("publica tema e banco autonomos de gestao sem alterar o total de questoes",
 
   const managementProof = fs.readFileSync(proofPath, "utf8");
   const legacyProof = fs.readFileSync(legacyProofPath, "utf8");
+  const managementSources = Array.from(
+    managementProof.matchAll(/<p class="quiz-source">(TEME\d+ Q\d+)<\/p>/g),
+    (match) => match[1]
+  ).sort();
+  const expectedSources = [
+    "TEME22 Q30",
+    "TEME23 Q54",
+    "TEME23 Q96",
+    "TEME24 Q46",
+    "TEME24 Q75",
+    "TEME24 Q87",
+    "TEME25 Q87",
+    "TEME26 Q7",
+    "TEME26 Q12",
+    "TEME26 Q24",
+    "TEME26 Q29",
+    "TEME26 Q48",
+    "TEME26 Q56",
+    "TEME26 Q62",
+    "TEME26 Q96"
+  ].sort();
   assert.equal((managementProof.match(/class="quiz-card"/g) || []).length, 15);
   assert.equal((legacyProof.match(/class="quiz-card"/g) || []).length, 14);
-  assert.match(managementProof, /TEME26 Q7/);
-  assert.match(managementProof, /TEME26 Q96/);
-  assert.doesNotMatch(legacyProof, /<p class="quiz-source">TEME26 Q(?:7|96)<\/p>/);
+  assert.deepEqual(managementSources, expectedSources);
+  expectedSources.forEach((source) => {
+    assert.doesNotMatch(legacyProof, new RegExp(`<p class="quiz-source">${source}<\\/p>`));
+  });
+  assert.equal((managementProof.match(/<div class="quiz-feedback" hidden>/g) || []).length, 15);
+  assert.doesNotMatch(managementProof, /quiz-source[^\n]*(?:gabarito|resposta correta)/i);
+});
+
+test("migra o progresso das questoes de gestao sem contaminar os dois temas", () => {
+  const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
+  const movedKeys = [
+    "q-t017-001",
+    "q-t017-005",
+    "q-t017-006",
+    "q-t017-007",
+    "q-t017-008",
+    "q-t017-009",
+    "q-t017-012",
+    "q-t017-015",
+    "q-t017-018",
+    "q-t017-021",
+    "q-t017-022",
+    "q-t017-024",
+    "q-t017-025",
+    "q-t017-026",
+    "q-t017-028"
+  ];
+
+  assert.match(html, /const QUIZ_ROUTE_MIGRATIONS =/);
+  assert.match(html, /from:\s*"provas\/017_paliativos-vulnerabilidades-etica-gestao"/);
+  assert.match(html, /to:\s*"provas\/026_gestao-departamento-emergencia"/);
+  movedKeys.forEach((key) => assert.match(html, new RegExp(`"${key}"`)));
+  assert.match(html, /function migrateQuizProgress\(/);
+  assert.match(html, /function sanitizeQuizProgressForRoute\(/);
+  assert.ok(html.indexOf("migrateQuizProgress();") < html.indexOf("hydrateProofProgressTable();"));
+});
+
+test("tema de gestao ajusta capacidade paralela e hierarquia de barreiras", () => {
+  const base = path.join(__dirname, "..");
+  const theme = fs.readFileSync(path.join(base, "temas", "026_gestao-departamento-emergencia.md"), "utf8");
+  const review = fs.readFileSync(path.join(base, "INTENSIVAO.md"), "utf8");
+
+  assert.match(theme, /ciclo efetivo\s*=\s*tempo de ciclo\s*\/\s*número de recursos paralelos/i);
+  assert.match(theme, /Barreiras fortes[\s\S]{0,500}Barreiras intermediárias[\s\S]{0,500}Barreiras fracas/i);
+  assert.match(review, /capacidade agregada/i);
 });

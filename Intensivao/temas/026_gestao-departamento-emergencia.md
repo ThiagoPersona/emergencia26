@@ -4,7 +4,7 @@
 
 - **Superlotação é problema do hospital inteiro.** Pense em entrada, processamento e saída; o `boarding` de pacientes já internados costuma ser o principal determinante.
 - **Classificar risco não é diagnosticar nem dispensar.** Manchester prioriza por gravidade/tempo-alvo; ESI combina gravidade e previsão de recursos.
-- **Lean remove desperdício e melhora fluxo.** `Takt time = tempo disponível / demanda`; há gargalo quando o tempo de ciclo de uma etapa excede o takt.
+- **Lean remove desperdício e melhora fluxo.** `Takt time = tempo disponível / demanda`; compare-o com o ciclo efetivo da etapa, considerando os recursos que trabalham em paralelo.
 - **Capacidade igual à demanda não basta.** Com variabilidade e utilização próxima de 100%, a fila cresce de forma não linear.
 - **Evento adverso pede cuidado imediato, notificação e aprendizagem sistêmica.** Cultura justa não é impunidade nem caça automática ao culpado.
 - **Acreditação é externa, voluntária, periódica e orientada à melhoria contínua.** Não substitui licença sanitária nem auditoria interna.
@@ -118,12 +118,13 @@ Lean busca maximizar valor para o paciente e reduzir atividades sem valor. Não 
 ```text
 Takt time = tempo disponível de operação / demanda esperada
 Capacidade aproximada da etapa = número de recursos / tempo de ciclo
+Ciclo efetivo = tempo de ciclo / número de recursos paralelos
 Utilização = demanda / capacidade
 ```
 
-Exemplo: há 240 minutos úteis e 40 pacientes esperados. `Takt = 240/40 = 6 minutos por paciente`. Se a etapa leva 8 minutos por paciente por recurso equivalente, não acompanha o ritmo e forma fila.
+Exemplo: há 240 minutos úteis e 40 pacientes esperados. `Takt = 240/40 = 6 minutos por paciente`. Com um único profissional e ciclo de 8 minutos, a capacidade é 7,5 pacientes/h e a etapa não acompanha a demanda de 10/h. Com dois profissionais equivalentes em paralelo, a capacidade agregada passa a 15 pacientes/h e o ciclo efetivo é 4 minutos por paciente.
 
-**Pegadinha central:** gargalo ocorre quando **tempo de ciclo > takt time**. Se a capacidade da etapa for exatamente igual à demanda, qualquer variabilidade cria espera. Por isso, sistemas urgentes precisam de folga operacional.
+**Pegadinha central:** com um único recurso, ciclo maior que takt indica incapacidade. Com recursos paralelos, compare o **ciclo efetivo** com o takt ou, de forma equivalente, a **capacidade agregada** com a demanda. Se a capacidade for exatamente igual à demanda, qualquer variabilidade cria espera. Por isso, sistemas urgentes precisam de folga operacional.
 
 #### Lei de Little
 
@@ -296,7 +297,15 @@ Perguntas úteis:
 - Que condições latentes favoreceram a falha?
 - Qual ação reduz risco de recorrência sem depender apenas de memória?
 
-Prefira barreiras fortes: padronização, simplificação, bloqueio tecnológico, diferenciação de embalagens, dupla checagem independente em pontos de alto risco e redução de interrupções. "Reorientar a equipe" isoladamente é barreira fraca.
+Escolha ações pela força da barreira e pelo risco residual:
+
+| Força | Exemplos | Como interpretar |
+|---|---|---|
+| **Barreiras fortes** | função de bloqueio/`hard stop`, incompatibilidade física, automação segura, eliminar ou substituir a etapa perigosa | independem menos da memória e da vigilância humana |
+| **Barreiras intermediárias** | padronização, simplificação, diferenciação de embalagens, redundância e dupla checagem independente em situações selecionadas de alto risco | reduzem risco, mas ainda dependem parcialmente do comportamento humano |
+| **Barreiras fracas** | alerta genérico, memorando, treinamento ou "reorientar a equipe" isoladamente | úteis como apoio, porém frágeis se forem a única ação |
+
+Dupla checagem não é sinônimo de barreira forte: deve ser realmente independente, reservada a pontos críticos e associada, quando possível, a desenho de sistema mais robusto.
 
 ### Psicologia da espera e experiência do paciente
 
@@ -391,7 +400,7 @@ flowchart TD
 | Item | Número/fórmula | Observação TEME |
 |---|---:|---|
 | Takt time | tempo disponível / demanda | ritmo necessário, não duração real da tarefa |
-| Gargalo | tempo de ciclo > takt | ou capacidade da etapa abaixo da demanda |
+| Gargalo | ciclo efetivo > takt | ou capacidade agregada da etapa abaixo da demanda |
 | Lei de Little | L = lambda x W | censo = chegada x permanência, em sistema estável |
 | Utilização | demanda / capacidade | perto de 100%, variabilidade aumenta fila |
 | Manchester | 0/10/60/120/240 min | vermelho/laranja/amarelo/verde/azul |
@@ -407,7 +416,7 @@ flowchart TD
 
 - **Lean = cortar custo/pessoal:** falso. O foco é valor, fluxo e desperdício.
 - **Takt time = tempo que o profissional leva:** falso. Isso é tempo de ciclo.
-- **Tempo de ciclo menor que takt gera gargalo:** falso. O problema é ciclo maior que takt.
+- **Tempo de ciclo menor que takt gera gargalo:** falso. Para recurso único, o problema é ciclo maior que takt; com recursos paralelos, use ciclo efetivo ou capacidade agregada.
 - **Capacidade igual à demanda resolve a fila:** falso diante de variabilidade.
 - **VSM é mapa de custos:** falso. Mapeia fluxo, informação, espera e valor.
 - **5S é segurança, sobrecarga, satisfação, sistematização e sinalização:** falso; é acrônimo inventado.
@@ -436,14 +445,14 @@ flowchart TD
 
 ## Para prova vs. na prática
 
-> **Para prova TEME:** takt time é tempo disponível dividido pela demanda; ciclo maior que takt forma gargalo; operação a 100% aumenta fila; Manchester prioriza por gravidade/tempo e gera informação gerencial; ESI incorpora previsão de recursos; acreditação é externa, voluntária e periódica; superlotação com boarding exige ação sobre leitos/altas/internação; evento com dano não é near miss; causa raiz analisa sistema.
+> **Para prova TEME:** takt time é tempo disponível dividido pela demanda; em recurso único, ciclo maior que takt forma gargalo, enquanto equipes paralelas exigem comparar capacidade agregada; operação a 100% aumenta fila; Manchester prioriza por gravidade/tempo e gera informação gerencial; ESI incorpora previsão de recursos; acreditação é externa, voluntária e periódica; superlotação com boarding exige ação sobre leitos/altas/internação; evento com dano não é near miss; causa raiz analisa sistema.
 >
 > **Na prática clínica:** escolha indicadores, metas, escalas e gatilhos segundo população, contrato, protocolo local e maturidade de dados. A Resolução CFM 2.077/2014 traz referências normativas para serviços hospitalares; UPA, APH e outros cenários têm regulamentação própria. Mudanças de fluxo devem ser monitoradas quanto a segurança, equidade e efeitos indesejados.
 
 ## Checklist de revisão
 
 - [ ] Sei diferenciar entrada, processamento, saída e boarding.
-- [ ] Sei calcular takt time e reconhecer ciclo maior que takt.
+- [ ] Sei calcular takt time e comparar ciclo efetivo/capacidade agregada quando há recursos paralelos.
 - [ ] Entendo por que capacidade igual à demanda não oferece folga.
 - [ ] Sei aplicar a Lei de Little a um exemplo simples.
 - [ ] Sei os cinco sensos do 5S e o objetivo do VSM.

@@ -78,4 +78,3 @@
 - [ ] Executar `git diff --check` e validar links/contagens por script.
 - [ ] Commitar, fazer push e aguardar o workflow do GitHub Pages.
 - [ ] Abrir o tema e as provas em produção, conferir navegação, Mermaid, cards e erros do navegador.
-

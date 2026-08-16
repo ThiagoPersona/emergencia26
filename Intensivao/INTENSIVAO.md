@@ -831,7 +831,7 @@ Use assim:
 
 - Lean melhora valor e fluxo; não significa corte indiscriminado de equipe.
 - `Takt time = tempo disponível / demanda esperada`.
-- Tempo de ciclo maior que takt forma gargalo.
+- Com um recurso, tempo de ciclo maior que takt forma gargalo; com recursos paralelos, compare `ciclo efetivo = ciclo/recursos` ou capacidade agregada com a demanda.
 - Capacidade igual à demanda não oferece folga; perto de 100% de utilização, a variabilidade aumenta muito a fila.
 - `Lei de Little: pacientes no sistema = chegadas por tempo x permanência média`.
 - VSM mapeia fluxo e desperdícios; 5S organiza e sustenta o ambiente; Ishikawa organiza hipóteses de causa.
