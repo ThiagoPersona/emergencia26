@@ -60,6 +60,7 @@ Os checklists históricos foram estruturados a partir das provas locais. As resp
 
 ## Trilhas
 
+- [Intensivo Claude](praticas/INTENSIVO_CLAUDE.md): aposta de estudo para as 5 estações da prática TEME26, com prioridades para os dias restantes.
 - [Matriz da banca](praticas/MATRIZ_DA_BANCA.md): padrões de 2022 a 2025 e prioridades.
 - [Procedimentos](praticas/PROCEDIMENTOS.md): roteiro verbal/manual dos gestos mais cobrados.
 - [Treino visual](praticas/TREINO_VISUAL.md): como estudar imagens, curvas e vídeos.

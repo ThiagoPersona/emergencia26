@@ -6,6 +6,7 @@
 
 - PROVA PRÁTICA
   - [Visão geral](PRATICAS.md)
+  - [Intensivo Claude](praticas/INTENSIVO_CLAUDE.md)
   - [Roteiro de 5 minutos](praticas/ROTEIRO_5_MIN.md)
   - [Matriz da banca](praticas/MATRIZ_DA_BANCA.md)
   - [Procedimentos](praticas/PROCEDIMENTOS.md)
