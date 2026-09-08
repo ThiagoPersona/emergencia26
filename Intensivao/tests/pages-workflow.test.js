@@ -90,6 +90,37 @@ test("sidebar posiciona o simulador imediatamente antes do desempenho", () => {
   assert.match(sidebar, /Simulador de estações[^\n]*\n\s*- \[Desempenho\]/);
 });
 
+test("publica o Intensivo Codex como roteiro operacional das cinco apostas", () => {
+  const base = path.join(__dirname, "..");
+  const intensivePath = path.join(base, "praticas", "INTENSIVO_CODEX.md");
+  const sidebar = fs.readFileSync(path.join(base, "_sidebar.md"), "utf8");
+  const overview = fs.readFileSync(path.join(base, "PRATICAS.md"), "utf8");
+
+  assert.equal(fs.existsSync(intensivePath), true);
+
+  const intensive = fs.readFileSync(intensivePath, "utf8");
+  [
+    "Via aérea contaminada e fisiologicamente difícil",
+    "Incidente com múltiplas vítimas e amônia",
+    "POCUS no choque indiferenciado",
+    "BAV total instável e marcapasso",
+    "Choque séptico pediátrico"
+  ].forEach((station) => assert.match(intensive, new RegExp(station, "i")));
+
+  assert.match(intensive, /aposta[^\n]{0,120}não[^\n]{0,80}(?:conteúdo|informação|divulgação) oficial/i);
+  assert.match(intensive, /primeiros 30 segundos/i);
+  assert.match(intensive, /checklist observável/i);
+  assert.match(intensive, /script-modelo/i);
+  assert.match(intensive, /estações-reserva/i);
+  assert.match(intensive, /toxicologia[^\n]{0,200}obstetrícia[^\n]{0,200}gestão[^\n]{0,200}neuro/i);
+
+  assert.match(
+    sidebar,
+    /\[Intensivo Claude\][^\n]*\n\s*- \[Intensivo Codex\]\(praticas\/INTENSIVO_CODEX\.md\)/
+  );
+  assert.match(overview, /\[Intensivo Codex\]\(praticas\/INTENSIVO_CODEX\.md\)/);
+});
+
 test("publica tema e banco autonomos de gestao sem alterar o total de questoes", () => {
   const base = path.join(__dirname, "..");
   const themePath = path.join(base, "temas", "026_gestao-departamento-emergencia.md");
