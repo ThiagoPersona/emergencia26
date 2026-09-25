@@ -923,22 +923,49 @@ test("troca o modo pelo evento change do radio nativo", async () => {
   });
 });
 
-test("renderiza filtro de midia com todas, com e sem midia", async () => {
-  const storage = createStorage();
+test("treino dirigido agrupa cenarios, mostra a ultima nota concluida e ignora filtros antigos", async () => {
+  const storage = createStorage({
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "directed", filters: { domain: "Nao existe", media: "with", unattempted: true } }),
+    "teme26-practice-attempts-v1": JSON.stringify([
+      { stationId: "va", completedAt: "2026-09-20T10:00:00.000Z", finalPercent: null },
+      { stationId: "va", completedAt: "2026-09-19T10:00:00.000Z", finalPercent: 95 },
+      { stationId: "va", completedAt: "2026-09-18T10:00:00.000Z", finalPercent: 80 },
+      { stationId: "trauma", completedAt: "2026-09-20T10:00:00.000Z", finalPercent: null }
+    ])
+  });
   const fetch = async (url) => {
-    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json", hasMedia: true }]);
+    if (url.endsWith("index.json")) return jsonResponse([
+      { id: "va", file: "va.json", title: "Ventilação mecânica e auto-PEEP", family: "Via aérea e ventilação mecânica" },
+      { id: "trauma", file: "trauma.json", title: "Trauma com hemorragia exsanguinante", family: "Trauma e APH" }
+    ]);
     if (url.endsWith("media.json")) return jsonResponse([]);
-    return jsonResponse(createStation("a"));
+    const isAirway = url.endsWith("va.json");
+    return jsonResponse({
+      ...createStation(isAirway ? "va" : "trauma"),
+      title: isAirway ? "Ventilação mecânica e auto-PEEP" : "Trauma com hemorragia exsanguinante"
+    });
   };
   const fixture = createInteractiveRoot(fetch, storage);
   const app = createPracticeApp(fixture.root);
 
   await app.mount();
 
-  assert.match(fixture.simulator.innerHTML, /<select name="media">/);
-  assert.match(fixture.simulator.innerHTML, /<option value=""[^>]*>Todas as mídias<\/option>/);
-  assert.match(fixture.simulator.innerHTML, /<option value="with"[^>]*>Com mídia<\/option>/);
-  assert.match(fixture.simulator.innerHTML, /<option value="without"[^>]*>Sem mídia<\/option>/);
+  assert.match(fixture.simulator.innerHTML, /<label for="practice-station">Cenário<\/label>/);
+  assert.match(fixture.simulator.innerHTML, /class="practice-selected-score"[^>]*>95%<\/span>/);
+  assert.match(fixture.simulator.innerHTML, /<optgroup label="Via aérea e ventilação mecânica">/);
+  assert.match(fixture.simulator.innerHTML, /VA - Ventilação mecânica e auto-PEEP - 95%/);
+  assert.match(fixture.simulator.innerHTML, /<optgroup label="Trauma e APH">/);
+  assert.match(fixture.simulator.innerHTML, /Trauma - Trauma com hemorragia exsanguinante<\/option>/);
+  assert.doesNotMatch(fixture.simulator.innerHTML, /<summary>Filtros<\/summary>|id="practice-filters"/);
+  assert.doesNotMatch(fixture.simulator.innerHTML, /Nenhuma estação atende aos filtros atuais/);
+  assert.match(fixture.simulator.innerHTML, /de cenário<\/span>/);
+  assert.equal(fixture.simulator.querySelector("#practice-station")?.disabled, false);
+
+  const select = fixture.simulator.querySelector("#practice-station");
+  select.value = "trauma";
+  select.dispatch("change");
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /<h2>Paciente trauma<\/h2>/));
+  assert.match(fixture.simulator.innerHTML, /<option value="trauma" selected>/);
 });
 
 test("sorteia outra estacao dirigida por click sem contaminar o ciclo da prova", async () => {

@@ -19,6 +19,20 @@
     media: "",
     unattempted: false
   };
+  const DIRECTED_FAMILY_PREFIXES = {
+    "Via aérea e ventilação mecânica": "VA",
+    "Trauma e APH": "Trauma",
+    POCUS: "POCUS",
+    "Cardiovascular e PCR": "Cardio/PCR",
+    Pediatria: "Pediatria",
+    Neurologia: "Neuro",
+    "Respiratório, sepse e metabólico": "Clínico",
+    "Toxicologia e animais peçonhentos": "Toxico",
+    Obstetrícia: "Obstetrícia",
+    "Procedimentos, analgesia e sedação": "Procedimentos",
+    Gastroenterologia: "Gastro",
+    Gestão: "Gestão"
+  };
   const LEGACY_STATION_METADATA = {
     "2025-vm-autopeep": {
       title: "Ventilação mecânica e auto-PEEP",
@@ -785,41 +799,33 @@
     mount.innerHTML = `<div class="practice-alert practice-alert-error"><strong>Não foi possível abrir o simulador.</strong><span>${escapeHtml(message)}</span></div>`;
   }
 
-  function getEntryValues(field) {
-    const values = new Set();
-    state.stationEntries.forEach((entry) => {
-      const source = field === "competency"
-        ? [].concat(Array.isArray(entry.competencies) ? entry.competencies : [], Array.isArray(entry.tags) ? entry.tags : [])
-        : field === "domain"
-          ? [].concat(Array.isArray(entry.domains) ? entry.domains : [], entry.domain || [])
-          : [entry.difficulty];
-      source.forEach((value) => {
-        if (typeof value === "string" && value.trim()) values.add(value);
-      });
-    });
-    return Array.from(values).sort((left, right) => left.localeCompare(right, "pt-BR"));
-  }
-
-  function renderSelectOptions(values, selected, emptyLabel) {
-    return [`<option value="">${escapeHtml(emptyLabel)}</option>`]
-      .concat(values.map((value) => (
-        `<option value="${escapeHtml(value)}" ${value === selected ? "selected" : ""}>${escapeHtml(value)}</option>`
-      )))
-      .join("");
-  }
-
-  function renderMediaFilterOptions(selected) {
-    return [
-      ["", "Todas as mídias"],
-      ["with", "Com mídia"],
-      ["without", "Sem mídia"]
-    ].map(([value, label]) => (
-      `<option value="${value}" ${value === selected ? "selected" : ""}>${label}</option>`
-    )).join("");
-  }
-
   function getEntryLabel(entry, index) {
     return entry && entry.title ? entry.title : `Estação ${index + 1}`;
+  }
+
+  function getLatestCompletedScores(attempts) {
+    const latestScores = new Map();
+    (Array.isArray(attempts) ? attempts : []).forEach((attempt) => {
+      if (attempt && !latestScores.has(attempt.stationId) && Number.isFinite(attempt.finalPercent)) {
+        latestScores.set(attempt.stationId, attempt.finalPercent);
+      }
+    });
+    return latestScores;
+  }
+
+  function renderDirectedStationOptions(entries, latestScores, selectedId) {
+    const groups = new Map();
+    entries.forEach((entry, index) => {
+      const family = entry.family || entry.domain || "Outros cenários";
+      if (!groups.has(family)) groups.set(family, []);
+      const prefix = DIRECTED_FAMILY_PREFIXES[family] || family;
+      const score = latestScores.get(entry.id);
+      const label = `${prefix} - ${entry.title || `Cenário ${index + 1}`}${score == null ? "" : ` - ${Math.round(score)}%`}`;
+      groups.get(family).push(`<option value="${escapeHtml(entry.id)}" ${entry.id === selectedId ? "selected" : ""}>${escapeHtml(label)}</option>`);
+    });
+    return Array.from(groups, ([family, options]) => (
+      `<optgroup label="${escapeHtml(family)}">${options.join("")}</optgroup>`
+    )).join("");
   }
 
   function renderPracticeModeControl(mode) {
@@ -873,6 +879,8 @@
     const station = state.station;
     const caseNumber = state.examPlan ? state.examPlan.roundNumber + 1 : 1;
     const setupView = getSetupStationView(station, state.selectedEntry, state.mode, state.mediaStatus, caseNumber);
+    const latestScores = state.mode === "directed" ? getLatestCompletedScores(getStoredAttempts()) : new Map();
+    const selectedScore = state.selectedEntry && latestScores.get(state.selectedEntry.id);
     const showDiagnosticMeta = setupView.showDiagnosticMeta;
     const relatedIntro = state.mode === "review"
       ? "A escolha usa seu histórico. Os detalhes da estação aparecem ao iniciar."
@@ -886,18 +894,11 @@
         ${(state.mode === "exam" ? getExamAlternatives().length : state.stationEntries.length) ? `<button class="practice-button practice-button-quiet" id="practice-choose-another" type="button">Sortear outra</button>` : ""}
       </div>` : "";
     const directedControls = state.mode === "directed" ? `
-      <details class="practice-filter-details"><summary>Filtros</summary><form id="practice-filters" class="practice-filter-bar">
-        <label><span>Domínio</span><select name="domain">${renderSelectOptions(getEntryValues("domain"), state.filters.domain, "Todos os domínios")}</select></label>
-        <label><span>Dificuldade</span><select name="difficulty">${renderSelectOptions(getEntryValues("difficulty"), state.filters.difficulty, "Todas as dificuldades")}</select></label>
-        <label><span>Competência</span><select name="competency">${renderSelectOptions(getEntryValues("competency"), state.filters.competency, "Todas as competências")}</select></label>
-        <label><span>Mídia</span><select name="media">${renderMediaFilterOptions(state.filters.media)}</select></label>
-        <label class="practice-toggle"><input name="unattempted" type="checkbox" ${state.filters.unattempted ? "checked" : ""}><span>Não realizadas</span></label>
-        <button class="practice-button" type="submit">Aplicar filtros</button>
-      </form></details>
       <div class="practice-toolbar">
-        <label for="practice-station">Estação</label>
+        <label for="practice-station">Cenário</label>
+        ${selectedScore == null ? "" : `<span class="practice-selected-score" aria-label="Última nota: ${Math.round(selectedScore)}%">${Math.round(selectedScore)}%</span>`}
         <select id="practice-station" ${state.mediaStatus === "loading" ? "disabled" : ""}>
-          ${state.stationEntries.map((entry, index) => `<option value="${escapeHtml(entry.id)}" ${state.selectedEntry && entry.id === state.selectedEntry.id ? "selected" : ""}>${escapeHtml(getEntryLabel(entry, index))}</option>`).join("")}
+          ${renderDirectedStationOptions(state.stationEntries, latestScores, state.selectedEntry && state.selectedEntry.id)}
         </select>
       </div>` : "";
 
@@ -913,7 +914,7 @@
             <h2>${escapeHtml(setupView.title)}</h2>
             ${showDiagnosticMeta && setupView.briefing ? `<p>${escapeHtml(setupView.briefing)}</p>` : relatedIntro ? `<p>${escapeHtml(relatedIntro)}</p>` : statusMessage ? `<p>${escapeHtml(statusMessage)}</p>` : ""}
             <div class="practice-meta">
-              <span><strong>${setupView.durationSeconds == null ? "--:--" : formatClock(setupView.durationSeconds)}</strong> de estação</span>
+              <span><strong>${setupView.durationSeconds == null ? "--:--" : formatClock(setupView.durationSeconds)}</strong> de ${state.mode === "directed" ? "cenário" : "estação"}</span>
               ${state.mode === "exam" && state.examPlan ? `<span>Estação <strong>${state.examPlan.currentIndex + 1}/${state.examPlan.stationIds.length}</strong></span>` : ""}
               ${state.mode === "exam" ? "" : `<span><strong>${setupView.checklistCount == null ? "--" : setupView.checklistCount}</strong> itens</span>`}
               ${showDiagnosticMeta ? `<span><strong>${escapeHtml(setupView.difficulty)}</strong> dificuldade</span>` : ""}
@@ -929,20 +930,6 @@
       input.addEventListener("change", () => {
         if (input.checked) setPracticeMode(input.value);
       });
-    });
-    const filterForm = mount.querySelector("#practice-filters");
-    if (filterForm) filterForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const form = new FormData(event.currentTarget);
-      state.filters = normalizePracticeFilters({
-        domain: form.get("domain"),
-        difficulty: form.get("difficulty"),
-        competency: form.get("competency"),
-        media: form.get("media"),
-        unattempted: form.get("unattempted") === "on"
-      });
-      saveCurrentSetup();
-      loadCurrentModeSelection();
     });
     const stationSelect = mount.querySelector("#practice-station");
     if (stationSelect) stationSelect.addEventListener("change", (event) => {
@@ -1635,7 +1622,7 @@
             state.mediaManifest = manifest;
             const savedSetup = restorePracticeSetup(root.localStorage);
             state.mode = savedSetup.mode;
-            state.filters = savedSetup.filters;
+            state.filters = { ...DEFAULT_FILTERS };
             state.cycleIds = savedSetup.cycleIds;
             state.examPlan = restoreExamPlan(root.localStorage, state.stationEntries);
           }
