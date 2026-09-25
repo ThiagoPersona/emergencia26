@@ -658,12 +658,7 @@
 
   function selectEntryForCurrentMode(randomFn) {
     if (state.mode === "exam" && catalogModule && typeof catalogModule.buildExamRound === "function") {
-      if (!state.examPlan) {
-        state.examPlan = catalogModule.buildExamRound(state.stationEntries, state.cycleIds, 0, randomFn);
-        state.cycleIds = Array.from(new Set(state.cycleIds.concat(state.examPlan.stationIds)));
-        saveExamPlan();
-        saveCurrentSetup();
-      }
+      if (!state.examPlan) startNewExamRound(randomFn);
       const plannedHistory = Array.from(new Set(state.cycleIds.concat(state.examPlan.stationIds)));
       if (plannedHistory.length !== state.cycleIds.length) {
         state.cycleIds = plannedHistory;
@@ -698,9 +693,25 @@
   }
 
   async function setPracticeMode(mode) {
-    state.mode = normalizePracticeMode(mode);
+    const nextMode = normalizePracticeMode(mode);
+    if (nextMode === "exam" && state.mode !== "exam") startNewExamRound();
+    state.mode = nextMode;
     saveCurrentSetup();
     await loadCurrentModeSelection();
+  }
+
+  function startNewExamRound(randomFn) {
+    if (!catalogModule || typeof catalogModule.buildExamRound !== "function") return;
+    const previousPlan = state.examPlan || restoreExamPlan(root.localStorage, state.stationEntries);
+    state.examPlan = catalogModule.buildExamRound(
+      state.stationEntries,
+      state.cycleIds,
+      previousPlan ? previousPlan.roundNumber + 1 : 0,
+      randomFn
+    );
+    state.cycleIds = Array.from(new Set(state.cycleIds.concat(state.examPlan.stationIds)));
+    saveExamPlan();
+    saveCurrentSetup();
   }
 
   async function advanceExamStation() {
@@ -708,11 +719,7 @@
     if (state.examPlan.currentIndex < state.examPlan.stationIds.length - 1) {
       state.examPlan = { ...state.examPlan, currentIndex: state.examPlan.currentIndex + 1 };
     } else {
-      state.examPlan = catalogModule.buildExamRound(
-        state.stationEntries, state.cycleIds, state.examPlan.roundNumber + 1
-      );
-      state.cycleIds = Array.from(new Set(state.cycleIds.concat(state.examPlan.stationIds)));
-      saveCurrentSetup();
+      startNewExamRound();
     }
     saveExamPlan();
     const entry = getStationEntry(state.examPlan.stationIds[state.examPlan.currentIndex]);
@@ -921,6 +928,7 @@
             </div>
           </div>
           ${renderPracticeStartActions(setupView)}
+          ${state.mode === "exam" ? `<div class="practice-actions"><button class="practice-button practice-button-quiet" id="practice-new-exam-round" type="button">Sortear nova série de 5</button></div>` : ""}
         ` : ""}
         <div id="practice-auth" class="practice-auth"><p>Verificando acesso à correção automática...</p></div>
         <p class="practice-help">O checklist permanece oculto durante a estação. Permita o microfone somente se desejar correção pela fala.</p>
@@ -972,6 +980,11 @@
     if (recordButton) recordButton.addEventListener("click", () => beginSession(true));
     const manualButton = mount.querySelector("#practice-start-manual");
     if (manualButton) manualButton.addEventListener("click", () => beginSession(false));
+    const newRoundButton = mount.querySelector("#practice-new-exam-round");
+    if (newRoundButton) newRoundButton.addEventListener("click", () => {
+      startNewExamRound();
+      loadCurrentModeSelection();
+    });
     renderAuthPanel();
   }
 
@@ -1625,6 +1638,7 @@
     if (!root || !root.document) return Promise.resolve();
     ensureLifecycleListeners();
     const simulator = root.document.getElementById("practice-simulator");
+    const enteringSimulator = Boolean(simulator && activeSimulator !== simulator);
     trackSimulatorMount(simulator);
     if (mountingPromise) return mountingPromise;
     mountingPromise = (async () => {
@@ -1646,7 +1660,10 @@
             state.cycleIds = savedSetup.cycleIds;
             state.examPlan = restoreExamPlan(root.localStorage, state.stationEntries);
           }
-          if (!(await restoreSavedDraft())) await loadCurrentModeSelection();
+          if (!(await restoreSavedDraft())) {
+            if (state.mode === "exam" && enteringSimulator) startNewExamRound();
+            await loadCurrentModeSelection();
+          }
         } catch (error) {
           renderError(simulator, error.message);
         }

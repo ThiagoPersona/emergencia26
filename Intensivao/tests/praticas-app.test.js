@@ -471,14 +471,53 @@ test("cartao da prova oculta o caso e o total de criterios antes do inicio", asy
   assert.match(fixture.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
   assert.doesNotMatch(fixture.simulator.innerHTML, /\d+ itens/);
-  assert.equal(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).stationIds.length, 5);
+  const initialPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
+  assert.equal(initialPlan.stationIds.length, 5);
   fixture.simulator.querySelector("#practice-start-manual").click();
   assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
 
   const restored = createInteractiveRoot(fetch, storage);
   await createPracticeApp(restored.root).mount();
-  assert.equal(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).currentIndex, 0);
+  assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)), initialPlan);
   assert.match(restored.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/);
+});
+
+test("reabrir modo prova sem sessao ativa sorteia nova serie e evita cenarios da anterior", async () => {
+  const storage = createStorage({
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} })
+  });
+  const families = ["Via aérea e ventilação mecânica", "Trauma e APH", "POCUS", "Cardiovascular e PCR", "Pediatria"];
+  const entries = Array.from({ length: 10 }, (_, index) => {
+    const id = String.fromCharCode(97 + index);
+    return { id, file: `${id}.json`, family: families[index % families.length] };
+  });
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse(entries);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation(url.match(/\/([a-j])\.json$/)[1]));
+  };
+
+  const first = createInteractiveRoot(fetch, storage);
+  const firstApp = createPracticeApp(first.root);
+  await firstApp.mount();
+  const firstPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
+  assert.equal(firstPlan.roundNumber, 0);
+  await firstApp.mount();
+  assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)), firstPlan);
+
+  const reopened = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(reopened.root).mount();
+  const secondPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
+  assert.equal(secondPlan.roundNumber, 1);
+  assert.equal(secondPlan.currentIndex, 0);
+  assert.equal(secondPlan.stationIds.length, 5);
+  assert.equal(secondPlan.stationIds.some((id) => firstPlan.stationIds.includes(id)), false);
+  assert.match(reopened.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 2/);
+
+  reopened.simulator.querySelector("#practice-new-exam-round").click();
+  const thirdPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
+  assert.equal(thirdPlan.roundNumber, 2);
+  assert.equal(thirdPlan.stationIds.length, 5);
 });
 
 test("expoe controles anterior, proximo e finalizar por fase", () => {
@@ -1010,12 +1049,10 @@ test("sorteia outra estacao dirigida por click sem contaminar o ciclo da prova",
 test("substitui estacao indisponivel por outra da mesma seara na prova", async () => {
   const stationUrls = [];
   const storage = createStorage({
-    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
-    [EXAM_PLAN_KEY]: JSON.stringify({ stationIds: ["a", "c", "d", "e", "f"], currentIndex: 0, roundNumber: 0 })
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} })
   });
-  const families = ["Trauma e APH", "Trauma e APH", "Via aérea e ventilação mecânica", "POCUS", "Cardiovascular e PCR", "Pediatria"];
   const fetch = async (url) => {
-    if (url.endsWith("index.json")) return jsonResponse(["a", "b", "c", "d", "e", "f"].map((id, index) => ({ id, file: `${id}.json`, family: families[index] })));
+    if (url.endsWith("index.json")) return jsonResponse(["a", "b", "c", "d", "e", "f"].map((id) => ({ id, file: `${id}.json`, family: "Trauma e APH" })));
     if (url.endsWith("media.json")) return jsonResponse([]);
     stationUrls.push(url);
     return jsonResponse({}, false);
@@ -1024,12 +1061,16 @@ test("substitui estacao indisponivel por outra da mesma seara na prova", async (
   const app = createPracticeApp(fixture.root);
   await app.mount();
 
+  const initialPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
+  const firstId = initialPlan.stationIds[0];
   fixture.simulator.querySelector("#practice-choose-another").click();
   await waitFor(() => assert.equal(stationUrls.length, 2));
 
-  assert.match(stationUrls[0], /a\.json$/);
-  assert.match(stationUrls[1], /b\.json$/);
-  assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).stationIds, ["b", "c", "d", "e", "f"]);
+  assert.match(stationUrls[0], new RegExp(`${firstId}\\.json$`));
+  assert.notEqual(stationUrls[0], stationUrls[1]);
+  const changedPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
+  assert.equal(changedPlan.stationIds[0] === firstId, false);
+  assert.deepEqual(changedPlan.stationIds.slice(1), initialPlan.stationIds.slice(1));
   assert.match(fixture.simulator.innerHTML, /Trauma 1/);
 });
 

@@ -65,7 +65,11 @@ test("carrega os modulos do simulador na ordem de dependencia", () => {
     "praticas-api.js",
     "praticas-app.js"
   ];
-  const positions = scripts.map((script) => html.indexOf(`<script src="${script}"></script>`));
+  const loadedScripts = Array.from(
+    html.matchAll(/<script src="([^"]+)"><\/script>/g),
+    (match) => match[1].split("?")[0]
+  );
+  const positions = scripts.map((script) => loadedScripts.indexOf(script));
 
   positions.forEach((position) => assert.notEqual(position, -1));
   positions.slice(1).forEach((position, index) => assert.ok(positions[index] < position));
