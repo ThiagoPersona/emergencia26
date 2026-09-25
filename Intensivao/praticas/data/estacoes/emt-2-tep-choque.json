@@ -1,0 +1,134 @@
+{
+  "id": "emt-2-tep-choque",
+  "version": 2,
+  "title": "TEP de alto risco com choque obstrutivo",
+  "examTitle": "Hipotensão e sobrecarga de ventrículo direito",
+  "domain": "Cardiovascular e PCR",
+  "domains": [
+    "Cardiovascular e PCR"
+  ],
+  "family": "Cardiovascular e PCR",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "TEP",
+    "choque obstrutivo",
+    "POCUS",
+    "reperfusão"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 2,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "choque",
+      "title": "Primeira avaliação",
+      "prompt": "Qual a síndrome e quais etiologias precisa considerar?",
+      "patientState": {
+        "summary": "Mulher de 59 anos, cirurgia recente há 8 semanas, dispneia súbita e síncope; pulmões sem congestão difusa.",
+        "vitals": {
+          "PA": "74/42 mmHg",
+          "FC": "138 bpm",
+          "SpO2": "86%"
+        }
+      }
+    },
+    {
+      "id": "eco",
+      "title": "Imagem dirigida",
+      "prompt": "Interprete o clipe/achado e diga seus limites diagnósticos.",
+      "patientState": {
+        "summary": "POCUS mostra VD dilatado e septo retificado. Sem tamponamento e sem disfunção grave de VE. Transporte para TC é inseguro agora.",
+        "vitals": {
+          "PA": "68/38 mmHg",
+          "lactato": "5,9 mmol/L"
+        }
+      }
+    },
+    {
+      "id": "reperfusao",
+      "title": "Decisão terapêutica",
+      "prompt": "Como ressuscita e decide reperfusão, dose e destino?",
+      "patientState": {
+        "summary": "Suspeita clínica de TEP de alto risco; não há contraindicação maior conhecida à trombólise após revisão dirigida.",
+        "vitals": {
+          "PA": "70/40 mmHg",
+          "FC": "144 bpm"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "fenotipo",
+      "label": "Reconhece choque obstrutivo e inclui TEP de alto risco no diferencial",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Choque com VD sobrecarregado exige investigação urgente."
+    },
+    {
+      "id": "limite-us",
+      "label": "Reconhece que VD dilatado/McConnell não confirmam TEP isoladamente",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "US sustenta decisão quando TC é insegura, mas não é prova etiológica única."
+    },
+    {
+      "id": "ressuscita",
+      "label": "Oxigena, monitora, inicia vasopressor quando necessário e evita bolus indiscriminados",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "VD falente pode piorar com excesso de volume."
+    },
+    {
+      "id": "reperfusao",
+      "label": "Considera reperfusão imediata em TEP de alto risco após revisar contraindicações",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Choque persistente pode justificar trombólise sistêmica, cateter ou embolectomia conforme recursos."
+    },
+    {
+      "id": "alteplase",
+      "label": "Se optar por alteplase, verbaliza 100 mg IV em 2 h no adulto e revisa riscos",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Não converter automaticamente dose de tenecteplase de outro cenário em padrão de TEP."
+    },
+    {
+      "id": "anticoagula",
+      "label": "Planeja anticoagulação quando apropriada e coordena equipe/UTI",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A estratégia depende da reperfusão e do risco hemorrágico."
+    },
+    {
+      "id": "reavalia",
+      "label": "Reavalia perfusão, oxigenação e possibilidade de confirmação anatômica",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A decisão deve responder à evolução hemodinâmica."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Reconhece choque obstrutivo e inclui TEP de alto risco no diferencial",
+    "Omitir: Reconhece que VD dilatado/McConnell não confirmam TEP isoladamente",
+    "Omitir: Oxigena, monitora, inicia vasopressor quando necessário e evita bolus indiscriminados",
+    "Omitir: Considera reperfusão imediata em TEP de alto risco após revisar contraindicações"
+  ],
+  "referenceAnswer": "O quadro é de choque obstrutivo com TEP de alto risco como hipótese principal, mas a dilatação do VD isolada não o confirma. Estabilizo oxigenação e perfusão, evito excesso de fluido e aciono equipe de reperfusão. Se a probabilidade for alta e o transporte inseguro, decido tratamento avançado após avaliar contraindicações; alteplase 100 mg IV em duas horas é regime usual no adulto. Reavalio e confirmo anatomia quando possível.",
+  "references": [
+    "https://professional.heart.org/en/science-news/2026-guideline-for-the-evaluation-and-management-of-acute-pulmonary-embolism-in-adults",
+    "https://www.gene.com/download/pdf/activase_prescribing.pdf"
+  ]
+}

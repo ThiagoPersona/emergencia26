@@ -1,0 +1,137 @@
+{
+  "id": "emt-1-trauma-dupla-ameaca",
+  "version": 2,
+  "title": "Hemorragia de membro e pneumotórax hipertensivo",
+  "examTitle": "Trauma com duas ameaças imediatas",
+  "domain": "Trauma e APH",
+  "domains": [
+    "Trauma e APH"
+  ],
+  "family": "Trauma e APH",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "XABCDE",
+    "torniquete",
+    "pneumotórax hipertensivo",
+    "dreno de tórax"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 1,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "hemorragia",
+      "title": "Primeira ameaça",
+      "prompt": "Qual é a prioridade e o que você faz agora?",
+      "patientState": {
+        "summary": "Motociclista de 31 anos caiu e apresenta jato de sangue na coxa direita. Está consciente e pálido.",
+        "vitals": {
+          "PA": "84/52 mmHg",
+          "FC": "142 bpm",
+          "FR": "30 irpm",
+          "SpO2": "91%"
+        }
+      }
+    },
+    {
+      "id": "torax",
+      "title": "Nova ameaça",
+      "prompt": "Após conter o sangramento, indique a próxima intervenção imediata.",
+      "patientState": {
+        "summary": "A hemostasia externa foi obtida. Há expansão torácica reduzida à direita, ausência de murmúrio e piora súbita da perfusão.",
+        "vitals": {
+          "PA": "72/40 mmHg",
+          "FC": "150 bpm",
+          "SpO2": "84% com oxigênio"
+        }
+      }
+    },
+    {
+      "id": "destino",
+      "title": "Depois da intervenção",
+      "prompt": "Como confirma a resposta, organiza investigação e controle definitivo?",
+      "patientState": {
+        "summary": "Após descompressão torácica, melhora da expansão e da pressão. O eFAST inicial não mostra líquido livre.",
+        "vitals": {
+          "PA": "96/60 mmHg",
+          "FC": "120 bpm",
+          "SpO2": "95%"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "x-sangue",
+      "label": "Reconhece e comprime a hemorragia exsanguinante antes de outras etapas",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A perda externa maciça pode ser fatal antes da avaliação completa."
+    },
+    {
+      "id": "torniquete",
+      "label": "Aplica torniquete proximal eficaz e registra horário, sem afrouxar",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Confirmar que o sangramento cessou; não colocar sobre articulação."
+    },
+    {
+      "id": "pneumo",
+      "label": "Reconhece pneumotórax hipertensivo clinicamente e descomprime sem esperar imagem",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Hipotensão com assimetria ventilatória aguda requer ação imediata."
+    },
+    {
+      "id": "dreno",
+      "label": "Organiza drenagem torácica definitiva após descompressão",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A descompressão temporária não substitui o dreno quando indicado."
+    },
+    {
+      "id": "reanimacao",
+      "label": "Inicia sangue aquecido e prevenção da hipotermia, com reavaliação seriada",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Ressuscitação e controle de fonte ocorrem em paralelo."
+    },
+    {
+      "id": "imagem",
+      "label": "Indica TC apenas se houver estabilidade suficiente; eFAST negativo não exclui lesão",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "O exame à beira do leito tem sensibilidade limitada."
+    },
+    {
+      "id": "destino",
+      "label": "Aciona cirurgia/trauma e define controle definitivo e destino",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A melhora transitória não encerra o atendimento."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Reconhece e comprime a hemorragia exsanguinante antes de outras etapas",
+    "Omitir: Aplica torniquete proximal eficaz e registra horário, sem afrouxar",
+    "Omitir: Reconhece pneumotórax hipertensivo clinicamente e descomprime sem esperar imagem",
+    "Omitir: Inicia sangue aquecido e prevenção da hipotermia, com reavaliação seriada"
+  ],
+  "referenceAnswer": "Controlo imediatamente a hemorragia externa com compressão e torniquete eficaz. Reavalio XABCDE; a deterioração com ausência de murmúrio e hipotensão sugere pneumotórax hipertensivo, que descomprimo sem aguardar radiografia e depois dreno. Reanimo com sangue aquecido, procuro outras fontes e só envio para tomografia se suficientemente estável.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
+    "https://www.acep.org/globalassets/new-pdfs/policy-statements/emergency-ultrasound-imaging-criteria-compendium.pdf"
+  ]
+}

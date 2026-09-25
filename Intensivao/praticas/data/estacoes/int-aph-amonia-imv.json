@@ -1,0 +1,133 @@
+{
+  "id": "int-aph-amonia-imv",
+  "version": 2,
+  "title": "Incidente com amônia e múltiplas vítimas",
+  "examTitle": "Vítimas em instalação industrial",
+  "domain": "Trauma e APH",
+  "domains": [
+    "Trauma e APH"
+  ],
+  "family": "Trauma e APH",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "IMV",
+    "amônia",
+    "zonas",
+    "descontaminação"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 0,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "cena",
+      "title": "Segurança da cena",
+      "prompt": "Como organiza o atendimento antes de tocar as vítimas?",
+      "patientState": {
+        "summary": "Vazamento de amônia em câmara frigorífica. Há 12 pessoas tossindo próximo à instalação; vento sopra em sua direção.",
+        "vitals": {
+          "vítimas": "12",
+          "equipe": "2 ambulâncias no local"
+        }
+      }
+    },
+    {
+      "id": "zonas",
+      "title": "Triagem e descontaminação",
+      "prompt": "Como posiciona zonas, equipe e fluxo de vítimas?",
+      "patientState": {
+        "summary": "Duas vítimas saem com roupas molhadas e cheiro forte. Outras saíram apenas após inalar gás.",
+        "vitals": {
+          "vítimas_graves": "2 com dispneia intensa"
+        }
+      }
+    },
+    {
+      "id": "suporte",
+      "title": "Tratamento e destino",
+      "prompt": "Quais medidas clínicas imediatas, vigilância e regulação?",
+      "patientState": {
+        "summary": "Uma vítima desenvolve estridor e hipoxemia progressiva após remoção da exposição.",
+        "vitals": {
+          "SpO2": "86% com oxigênio",
+          "FR": "34 irpm"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "cena",
+      "label": "Reconhece produto e não entra na zona quente sem EPI e equipe especializada",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A segurança da equipe evita novas vítimas."
+    },
+    {
+      "id": "vento",
+      "label": "Posiciona comando e atendimento a barlavento e, quando aplicável, em cota alta",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Amônia pode concentrar-se em áreas baixas."
+    },
+    {
+      "id": "zonas",
+      "label": "Define zonas quente, morna e fria, com fluxo de entrada/saída controlado",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Vítimas contaminadas não devem entrar diretamente na área limpa."
+    },
+    {
+      "id": "triagem",
+      "label": "Aciona regulação, bombeiros/HazMat e faz triagem de múltiplas vítimas",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Distribuir recursos depende de comando e triagem."
+    },
+    {
+      "id": "decon",
+      "label": "Remove roupas e irriga pele/olhos em vítimas com líquido; não exige banho universal após exposição só gasosa sem contaminação",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Descontaminação depende da via e persistência do agente."
+    },
+    {
+      "id": "via-aerea",
+      "label": "Oxigena, trata broncoespasmo e prepara via aérea precoce no estridor progressivo",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Edema de via aérea pode progredir após a exposição."
+    },
+    {
+      "id": "destino",
+      "label": "Monitora pulmão/olhos e distribui vítimas segundo gravidade e capacidade da rede",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Hipoxemia exige observação e suporte hospitalar."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Reconhece produto e não entra na zona quente sem EPI e equipe especializada",
+    "Omitir: Posiciona comando e atendimento a barlavento e, quando aplicável, em cota alta",
+    "Omitir: Define zonas quente, morna e fria, com fluxo de entrada/saída controlado",
+    "Omitir: Remove roupas e irriga pele/olhos em vítimas com líquido; não exige banho universal após exposição só gasosa sem contaminação",
+    "Omitir: Oxigena, trata broncoespasmo e prepara via aérea precoce no estridor progressivo"
+  ],
+  "referenceAnswer": "Não entro na área contaminada: identifico agente, aciono HazMat/regulação e posiciono comando a barlavento. Delimito zonas, trago vítimas para descontaminação apropriada e triagem. Exposição líquida requer retirada de roupa e irrigação; gás isolado sem contaminação residual não impõe banho universal. Oxigeno, vigio edema de via aérea e broncoespasmo, preparo IOT se estridor progressivo e distribuo destinos.",
+  "references": [
+    "https://www.cdc.gov/niosh/ershdb/emergencyresponsecard_29750013.html",
+    "https://wwwn.cdc.gov/TSP/MMG/MMGDetails.aspx?mmgid=7&toxid=2"
+  ]
+}

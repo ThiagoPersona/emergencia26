@@ -1,0 +1,147 @@
+{
+  "id": "emt-3-queimadura-eletrica",
+  "version": 2,
+  "title": "Lesão elétrica de alta tensão com queimaduras extensas",
+  "examTitle": "Paciente após choque elétrico e queda",
+  "domain": "Trauma e APH",
+  "domains": [
+    "Trauma e APH"
+  ],
+  "family": "Trauma e APH",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "queimadura elétrica",
+    "lesão profunda",
+    "rabdomiólise",
+    "ressuscitação"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 3,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "entrada",
+      "title": "Primeira abordagem",
+      "prompt": "Quais ameaças e medidas iniciais prioriza?",
+      "patientState": {
+        "summary": "Eletricista de 29 anos sofreu descarga de alta tensão e caiu de escada. Queimaduras em face e ambas as mãos; rouquidão nova.",
+        "vitals": {
+          "PA": "108/70 mmHg",
+          "FC": "128 bpm",
+          "FR": "26 irpm",
+          "SpO2": "98% com O2",
+          "Glasgow": "14"
+        }
+      }
+    },
+    {
+      "id": "extensao",
+      "title": "Reposição inicial",
+      "prompt": "Estime reposição para 70 kg e 25% SCQ, explicando como ajusta.",
+      "patientState": {
+        "summary": "Há cerca de 25% de queimadura profunda. A urina torna-se escura. O tempo desde o acidente é de duas horas.",
+        "vitals": {
+          "PA": "102/64 mmHg",
+          "FC": "132 bpm",
+          "diurese": "15 mL/h"
+        }
+      }
+    },
+    {
+      "id": "complicacoes",
+      "title": "Lesão oculta",
+      "prompt": "Quais lesões ocultas, exames e complicações procura agora?",
+      "patientState": {
+        "summary": "ECG com extrassístoles esparsas. A mão de entrada está tensa e muito dolorosa.",
+        "vitals": {
+          "K": "5,8 mmol/L",
+          "CK": "crescendo",
+          "PA": "100/60 mmHg"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "cena",
+      "label": "Confirma desligamento da fonte e avalia lesões da queda e via aérea",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Segurança elétrica precede contato; queda pode causar trauma associado."
+    },
+    {
+      "id": "airway",
+      "label": "Reconhece rouquidão/face queimada e planeja via aérea precoce se edema progredir",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "SpO2 normal com O2 não exclui lesão de inalação."
+    },
+    {
+      "id": "formula",
+      "label": "Usa cristalóide balanceado com cálculo inicial de 2 mL/kg/%SCQ/24 h em adulto (3500 mL), desde o momento da queimadura",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A fórmula inicia, mas não determina todo volume; 4 mL/kg/% não é regra universal."
+    },
+    {
+      "id": "titulacao",
+      "label": "Titula reposição por perfusão, diurese e lesão elétrica profunda; evita sobrecarga",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Mioglobinúria pode exigir abordagem individualizada."
+    },
+    {
+      "id": "musculo",
+      "label": "Investiga rabdomiólise, função renal, potássio e lesão compartimental",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Lesão elétrica profunda pode exceder a área cutânea aparente."
+    },
+    {
+      "id": "coracao",
+      "label": "Faz ECG, monitoriza arritmias e trata distúrbios eletrolíticos",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Alta tensão e alterações no ECG exigem vigilância."
+    },
+    {
+      "id": "membro",
+      "label": "Avalia perfusão da mão e consulta centro de queimados/cirurgia para possível fasciotomia",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escarotomia e fasciotomia tratam compartimentos diferentes."
+    },
+    {
+      "id": "destino",
+      "label": "Aciona centro de queimados e organiza transferência segura",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Alta tensão merece avaliação especializada."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Confirma desligamento da fonte e avalia lesões da queda e via aérea",
+    "Omitir: Reconhece rouquidão/face queimada e planeja via aérea precoce se edema progredir",
+    "Omitir: Titula reposição por perfusão, diurese e lesão elétrica profunda; evita sobrecarga",
+    "Omitir: Investiga rabdomiólise, função renal, potássio e lesão compartimental",
+    "Omitir: Faz ECG, monitoriza arritmias e trata distúrbios eletrolíticos"
+  ],
+  "referenceAnswer": "Após segurança da cena e XABCDE, vigio via aérea por queimadura facial e rouquidão. Inicio cristalóide balanceado com estimativa 2 mL/kg/%SCQ: 3500 mL em 24 horas neste adulto, contados desde a lesão, e titulo por perfusão/diurese. Monitorizo ECG, K, CK e rim; avalio síndrome compartimental e aciono centro de queimados.",
+  "references": [
+    "https://www.ameriburn.org/quality-care/clinical-practice-guidelines",
+    "https://ameriburn.org/wp-content/uploads/2019/08/2018-abls-providermanual.pdf"
+  ]
+}

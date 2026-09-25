@@ -66,6 +66,15 @@
       }
     },
     {
+      "id": "exames-hellp",
+      "title": "Exames liberados",
+      "prompt": "Interprete os exames, ajuste a vigilância e diga se a resolução da gestação deve esperar o corticoide fetal.",
+      "patientState": {
+        "summary": "Após magnésio e anti-hipertensivo, surge dor epigástrica persistente; não há nova convulsão.",
+        "vitals": { "plaquetas": "78.000/mm³", "AST": "146 U/L", "ALT": "118 U/L", "LDH": "890 U/L", "PA": "150/96 mmHg" }
+      }
+    },
+    {
       "id": "estabilizacao-destino",
       "title": "Estabilização e destino",
       "prompt": "Vigie toxicidade, ajuste o tratamento à função renal e organize a resolução obstétrica após estabilização materna.",
@@ -92,7 +101,7 @@
     {
       "id": "reconhece-exames",
       "label": "Reconhece eclâmpsia e solicita plaquetas, creatinina, AST, ALT, proteinúria e avaliação fetal sem atrasar a mãe",
-      "weight": 10,
+      "weight": 5,
       "verification": "verbal",
       "critical": false
     },
@@ -120,9 +129,16 @@
     {
       "id": "esquema-pa",
       "label": "Descreve esquema válido, como labetalol 20 mg IV seguido de 40 e 80 mg a cada 10 minutos, ou hidralazina ou nifedipina conforme protocolo",
-      "weight": 10,
+      "weight": 5,
       "verification": "verbal",
       "critical": false
+    },
+    {
+      "id": "hellp",
+      "label": "Reconhece padrão de HELLP (plaquetopenia, transaminases/LDH elevadas), aciona obstetrícia e não adia parto indicado para completar corticoide fetal",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true
     },
     {
       "id": "resolucao-obstetrica",
@@ -146,7 +162,7 @@
     "Proceder ao parto antes de estabilizar a mãe",
     "Ignorar oligúria ou depressão respiratória sob magnésio"
   ],
-  "referenceAnswer": "Trato como eclâmpsia. Protejo de trauma, coloco em decúbito lateral, mantenho via aérea, oxigênio, aspiração e ventilação se necessária. Após cessar a crise, inicio sulfato de magnésio, 4 a 6 g IV em 20 a 30 minutos e depois 1 a 2 g por hora. Monitoro reflexos, frequência respiratória, diurese e função renal. A pressão de 172/112 mmHg persistente é emergência: uso anti-hipertensivo de ação rápida, como labetalol IV escalonado, ou alternativa válida conforme o protocolo obstétrico, evitando redução abrupta. Solicito exames de gravidade e aciono as equipes; a resolução ocorre após estabilização materna e planejamento multiprofissional.",
+  "referenceAnswer": "Trato como eclâmpsia. Protejo de trauma, mantenho via aérea e ventilação se necessária. Inicio sulfato de magnésio, 4 a 6 g IV em 20 a 30 minutos e depois 1 a 2 g por hora, com vigilância de reflexos, respiração, diurese e rim. Trato a PA grave persistente com fármaco de ação rápida. Plaquetas 78 mil, AST/ALT e LDH altas sugerem HELLP. Aciono obstetrícia, anestesia e neonatologia para resolução após estabilização materna; não atraso parto indicado para completar corticoide fetal.",
   "references": [
     "https://www.acog.org/topics/hypertension-and-preeclampsia-in-pregnancy",
     "https://www.acog.org/-/media/secure/programs/acog_urgent-care-acute-hypertension-in-pregnancy-and-postpartum-algorithm.pdf",

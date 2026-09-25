@@ -1,0 +1,133 @@
+{
+  "id": "int-pocus-vti-choque",
+  "version": 2,
+  "title": "POCUS de resposta a volume e tolerância",
+  "examTitle": "Choque após reposição inicial",
+  "domain": "POCUS",
+  "domains": [
+    "POCUS"
+  ],
+  "family": "POCUS",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "VTI",
+    "elevação passiva das pernas",
+    "congestão pulmonar"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 0,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "baseline",
+      "title": "Janela cardíaca",
+      "prompt": "Como obtém VTI e avalia resposta dinâmica à elevação das pernas?",
+      "patientState": {
+        "summary": "Adulto de 62 anos com sepse provável, PA 82/48 após 500 mL. VTI basal na via de saída do VE é 12 cm.",
+        "vitals": {
+          "PA": "82/48 mmHg",
+          "FC": "124 bpm",
+          "VTI": "12 cm"
+        }
+      }
+    },
+    {
+      "id": "plr",
+      "title": "Manobra e cálculo",
+      "prompt": "Após elevação passiva das pernas, VTI sobe para 14,4 cm. Interprete; o que ainda precisa avaliar?",
+      "patientState": {
+        "summary": "O valor foi medido na mesma janela e alinhamento Doppler, com batimentos comparáveis.",
+        "vitals": {
+          "VTI_apos_PLR": "14,4 cm",
+          "PA": "88/52 mmHg"
+        }
+      }
+    },
+    {
+      "id": "tolerancia",
+      "title": "Decisão terapêutica",
+      "prompt": "Pulmão agora mostra B-lines difusas e há hipoxemia. Que decisão toma?",
+      "patientState": {
+        "summary": "A resposta hemodinâmica à PLR é positiva, mas há sinais de congestão e piora respiratória.",
+        "vitals": {
+          "SpO2": "88% com oxigênio",
+          "FR": "32 irpm"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "janela",
+      "label": "Obtém janela apical de 5 câmaras e Doppler pulsado no trato de saída do VE",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Medidas seriadas exigem técnica e amostra semelhantes."
+    },
+    {
+      "id": "plr",
+      "label": "Realiza PLR reversível com medida em tempo real e sem atrasar ressuscitação",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "A manobra é um teste fisiológico, não um bolus obrigatório."
+    },
+    {
+      "id": "calculo",
+      "label": "Calcula aumento de VTI de 20%: (14,4-12)/12",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Há provável responsividade a volume se medida confiável."
+    },
+    {
+      "id": "limite",
+      "label": "Distingue responsividade de tolerância a fluidos",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Elevar débito com bolus não prova benefício clínico líquido."
+    },
+    {
+      "id": "congestao",
+      "label": "Reconhece B-lines difusas e hipoxemia como sinais contra mais bolus indiscriminados",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Congestão pulmonar altera a relação benefício-risco."
+    },
+    {
+      "id": "vasoativo",
+      "label": "Integra perfusão, pressão e provável sepse para titular vasoativo e tratar causa",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "POCUS complementa, não substitui a ressuscitação dirigida."
+    },
+    {
+      "id": "reavalia",
+      "label": "Repete exame e integra eco, pulmão, perfusão e diurese",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Mudanças dinâmicas demandam reavaliação."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Calcula aumento de VTI de 20%: (14,4-12)/12",
+    "Omitir: Distingue responsividade de tolerância a fluidos",
+    "Omitir: Reconhece B-lines difusas e hipoxemia como sinais contra mais bolus indiscriminados",
+    "Omitir: Integra perfusão, pressão e provável sepse para titular vasoativo e tratar causa"
+  ],
+  "referenceAnswer": "Com Doppler no trato de saída do VE, comparo VTI antes e durante elevação passiva das pernas: 12 para 14,4 cm, aumento de 20%, sugere responsividade. Isso não significa tolerância a novos bolus; B-lines difusas e hipoxemia indicam risco de congestão. Integro perfusão, pulmão e eco, considero vasoativo e trato a causa do choque, com reavaliações seriadas.",
+  "references": [
+    "https://www.acep.org/siteassets/sites/cdem/media/documents/ultrasound-cdem-article.pdf",
+    "https://www.acep.org/globalassets/new-pdfs/policy-statements/emergency-ultrasound-imaging-criteria-compendium.pdf"
+  ]
+}

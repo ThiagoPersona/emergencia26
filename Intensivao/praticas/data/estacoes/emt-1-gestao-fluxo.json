@@ -1,0 +1,133 @@
+{
+  "id": "emt-1-gestao-fluxo",
+  "version": 2,
+  "title": "Superlotação com boarding e espera prolongada",
+  "examTitle": "Departamento de emergência em sobrecarga",
+  "domain": "Gestão",
+  "domains": [
+    "Gestão"
+  ],
+  "family": "Gestão",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "boarding",
+    "classificação de risco",
+    "fluxo",
+    "indicadores"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 1,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "mapa",
+      "title": "Diagnóstico de fluxo",
+      "prompt": "Identifique os gargalos e a primeira prioridade de segurança.",
+      "patientState": {
+        "summary": "DE com 38 pacientes internados aguardando leito; 12 na sala de espera há mais de 3 horas; sala vermelha sem vaga.",
+        "vitals": {
+          "esperaMediana": "3 h 20 min",
+          "decisaoLeito": "11 h",
+          "ocupacao": "142%"
+        }
+      }
+    },
+    {
+      "id": "saida",
+      "title": "Gargalo de saída",
+      "prompt": "Qual ação de curto prazo coordena com hospital e rede?",
+      "patientState": {
+        "summary": "Há 14 altas hospitalares previstas, mas nenhuma com transporte agendado; dois procedimentos eletivos ocuparão leitos de retaguarda.",
+        "vitals": {
+          "boarding": "38 pacientes",
+          "leitosDisponiveis": "0"
+        }
+      }
+    },
+    {
+      "id": "revisao",
+      "title": "Segurança e medida",
+      "prompt": "Como revisa os pacientes retidos, organiza a fila e mede se o plano funcionou?",
+      "patientState": {
+        "summary": "Após duas horas, cinco pacientes internados foram realocados; a fila de espera inicial persiste.",
+        "vitals": {
+          "boarding": "33 pacientes",
+          "esperaMediana": "3 h 40 min"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "risco",
+      "label": "Reclassifica e reavalia pacientes em espera/boarding, priorizando deterioração clínica",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Fluxo nunca substitui vigilância clínica."
+    },
+    {
+      "id": "mapa",
+      "label": "Distingue entrada, processamento e saída com indicadores próprios",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Separar etapas evita agir no lugar errado."
+    },
+    {
+      "id": "leitos",
+      "label": "Aciona gestão de leitos, altas/transferências seguras e responsáveis com prazo",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "O boarding é restrição de saída que exige coordenação hospitalar."
+    },
+    {
+      "id": "eletivas",
+      "label": "Discute contingência de leitos e agenda eletiva conforme governança e risco",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Mudança de agenda exige decisão formal, não ordem isolada do emergencista."
+    },
+    {
+      "id": "alta",
+      "label": "Faz revisão clínica dos internados e identifica altas/contrarreferência somente se seguras",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Alta por pressão de leitos sem critério clínico transfere risco."
+    },
+    {
+      "id": "fila",
+      "label": "Reforça capacidade da avaliação inicial e cria fluxo apropriado para baixa complexidade",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Também é preciso atuar na fila de entrada."
+    },
+    {
+      "id": "metrica",
+      "label": "Acompanha tempo decisão-leito, espera, reclassificações e eventos adversos",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um indicador isolado pode esconder piora em outra etapa."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Reclassifica e reavalia pacientes em espera/boarding, priorizando deterioração clínica",
+    "Omitir: Aciona gestão de leitos, altas/transferências seguras e responsáveis com prazo",
+    "Omitir: Faz revisão clínica dos internados e identifica altas/contrarreferência somente se seguras"
+  ],
+  "referenceAnswer": "Mapeio os tempos por etapa e protejo imediatamente os pacientes de maior risco com reavaliação e reclassificação. Aciono gestão hospitalar para o boarding, altas e retaguarda com responsáveis e prazos, reviso internados para alta ou transferência segura e ajusto equipe/fluxo da fila inicial. Reavalio tempo decisão-leito, espera e eventos de segurança.",
+  "references": [
+    "https://www.ihi.org/library/white-papers/achieving-hospital-wide-patient-flow",
+    "https://www.acep.org/administration/crowding--boarding"
+  ]
+}

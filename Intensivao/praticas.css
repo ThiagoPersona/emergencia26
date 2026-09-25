@@ -217,6 +217,27 @@
   align-items: end;
 }
 
+.practice-filter-details,
+.practice-references {
+  margin-bottom: 18px;
+}
+
+.practice-filter-details > summary,
+.practice-references > summary {
+  width: fit-content;
+  color: #27505c;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.practice-filter-details[open] .practice-filter-bar {
+  margin-top: 14px;
+}
+
+.practice-references li {
+  overflow-wrap: anywhere;
+}
+
 .practice-filter-bar label {
   display: grid;
   min-width: 0;
@@ -464,12 +485,18 @@
   z-index: 10;
   border-bottom: 1px solid #ccdce3;
   padding: 12px 0;
-  background: #fff;
+  background: #f3faff;
 }
 
 .practice-run-header > div {
   display: grid;
   gap: 5px;
+}
+
+.practice-run-header small {
+  color: #586977;
+  font-size: 0.82rem;
+  font-weight: 600;
 }
 
 .practice-clock,
@@ -485,8 +512,8 @@
 }
 
 .practice-task {
-  min-height: 180px;
-  padding: 32px;
+  min-height: 132px;
+  padding: 24px;
 }
 
 .practice-task > span {
@@ -497,10 +524,29 @@
 }
 
 .practice-task p {
-  margin: 18px 0 0;
+  margin: 10px 0 0;
   color: #202733;
   font-size: 1.35rem;
   line-height: 1.45;
+}
+
+.practice-slide-answer {
+  margin-top: 16px;
+}
+
+.practice-slide-answer textarea {
+  min-height: 86px;
+  background: #fff;
+}
+
+.practice-slide-actions {
+  align-items: center;
+  margin-top: 14px;
+}
+
+.practice-end-hint {
+  color: #586977;
+  font-size: 0.9rem;
 }
 
 .practice-patient-state {
@@ -705,6 +751,11 @@
   padding: 14px 16px;
 }
 
+.practice-result-overview {
+  color: #425466;
+  font-weight: 700;
+}
+
 .practice-result-item.is-cumprido { border-left-color: #277a56; }
 .practice-result-item.is-parcial { border-left-color: #b27613; }
 .practice-result-item.is-ausente,
@@ -860,11 +911,27 @@
 
   .practice-task {
     min-height: 0;
-    padding: 22px;
+    padding: 14px;
   }
 
   .practice-task p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .practice-shell .practice-patient-state {
+    padding: 10px 12px;
+  }
+
+  .practice-shell .practice-patient-state h2 {
+    font-size: 0.9rem;
+  }
+
+  .practice-vitals {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  }
+
+  .practice-vitals > div {
+    padding: 7px 9px;
   }
 
   .practice-status-options {
@@ -879,6 +946,16 @@
   .practice-check-item legend small {
     width: 100%;
     margin-left: 28px;
+  }
+
+  .practice-result-item header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .practice-result-item header span {
+    width: 100%;
   }
 
   .practice-dashboard-stats {

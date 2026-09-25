@@ -10,12 +10,12 @@
   "tags": ["toxíndrome colinérgica", "descontaminação", "glicemia", "aspiração", "atropina", "via aérea pediátrica"],
   "durationSeconds": 300,
   "source": { "exam": "TEME", "year": 2025, "station": "Pediatria" },
-  "briefing": "Criança chega com rebaixamento, secreções e sinais autonômicos após possível exposição domiciliar. Faça hipóteses, estabilize e trate após a identificação do agente trazido pelo acompanhante.",
+  "briefing": "Criança chega com rebaixamento, secreções e sinais autonômicos após possível exposição domiciliar. Faça hipóteses, estabilize e trate a síndrome grave desde o reconhecimento.",
   "phases": [
     {
       "id": "reconhecimento",
       "title": "Reconhecimento",
-      "prompt": "Cite hipóteses coerentes e organize a segurança da equipe e da criança.",
+      "prompt": "Cite hipóteses, proteja a equipe e inicie suporte ventilatório e antídoto para a síndrome grave agora.",
       "patientState": {
         "summary": "Criança de 4 anos com roupa contaminada, miose, sialorreia, broncorreia, vômitos e rebaixamento.",
         "vitals": { "FC": "62 bpm", "FR": "34 irpm", "SpO2": "88% em ar ambiente", "PA": "76/40 mmHg", "temperatura": "35,7 °C" }
@@ -33,7 +33,7 @@
     {
       "id": "agente-antidoto",
       "title": "Agente e antídoto",
-      "prompt": "O acompanhante apresenta um recipiente de 'chumbinho'. Identifique a classe provável e indique antídoto, via, dose e alvo clínico.",
+      "prompt": "O acompanhante apresenta um recipiente de 'chumbinho'. Que composição pode estar envolvida e como ajusta o tratamento já iniciado?",
       "patientState": {
         "summary": "Persistem broncorreia, bradicardia e hipotensão após retirada da roupa contaminada.",
         "vitals": { "FC": "58 bpm", "PA": "70/38 mmHg" }
@@ -57,14 +57,15 @@
     { "id": "aquecimento", "label": "Previne perda térmica e aquece se necessário", "weight": 6, "verification": "verbal", "critical": false },
     { "id": "estimulo", "label": "Avalia resposta e estimula a criança", "weight": 6, "verification": "hibrido", "critical": false },
     { "id": "acesso", "label": "Obtém acesso venoso ou intraósseo se necessário", "weight": 6, "verification": "verbal", "critical": false },
-    { "id": "agente-identifica", "label": "Reconhece chumbinho como carbamato/inibidor de colinesterase clandestino", "weight": 20, "verification": "verbal", "critical": true },
+    { "id": "agente-identifica", "label": "Reconhece 'chumbinho' como inibidor de colinesterase clandestino de composição incerta (carbamato ou organofosforado)", "weight": 20, "verification": "verbal", "critical": true },
     { "id": "atropina-dose", "label": "Indica atropina 0,02 a 0,05 mg/kg IV (mínimo prático 0,1 mg), titulada ao quadro", "weight": 10, "verification": "verbal", "critical": true },
     { "id": "atropina-bolus", "label": "Administra atropina IV em bolus repetidos, dobrando rapidamente até secar secreções e melhorar ventilação", "weight": 20, "verification": "verbal", "critical": true }
   ],
   "criticalErrors": ["Não proteger a equipe de contaminação", "Atrasar atropina em síndrome colinérgica grave", "Usar frequência cardíaca ou pupila como único alvo da atropinização"],
-  "referenceAnswer": "Penso em síndrome colinérgica por inibidor de colinesterase e mantenho diagnósticos diferenciais de rebaixamento. Protejo a equipe, retiro exposição, avalio ABC, glicemia e temperatura, ofereço oxigênio, aspiro secreções e obtenho acesso IV/IO. O 'chumbinho' costuma ser um carbamato clandestino. Faço atropina IV em bolus pediátrico, repetindo e escalonando rapidamente até reduzir secreções brônquicas e melhorar ventilação/perfusão, sem usar midríase ou taquicardia isoladas como alvo.",
+  "referenceAnswer": "Penso em síndrome colinérgica grave por inibidor de colinesterase e mantenho diferenciais de rebaixamento. Protejo a equipe, retiro exposição, avalio ABC e glicemia, oxigeno, aspiro secreções e começo atropina imediatamente, sem esperar o recipiente. Reavalio e repito bolus de atropina até melhorar broncorreia e ventilação. 'Chumbinho' é clandestino e a composição pode ser carbamato ou organofosforado; discuto oxima com CIATox conforme suspeita e protocolo.",
   "references": [
     "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
-    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support"
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+    "https://www.gov.br/anvisa/pt-br/acessoainformacao/perguntasfrequentes/agrotoxicos/chumbinho"
   ]
 }

@@ -1,0 +1,132 @@
+{
+  "id": "int-rn-reanimacao",
+  "version": 2,
+  "title": "Reanimação neonatal no parto",
+  "examTitle": "Recém-nascido sem respiração eficaz",
+  "domain": "Pediatria",
+  "domains": [
+    "Pediatria"
+  ],
+  "family": "Pediatria",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "reanimação neonatal",
+    "VPP",
+    "FC",
+    "cordão"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 0,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "inicial",
+      "title": "Primeiro minuto",
+      "prompt": "Quais são as primeiras ações e quando inicia VPP?",
+      "patientState": {
+        "summary": "RN de 39 semanas nasce após sofrimento fetal. Está hipotônico e não respira. Equipe neonatal presente.",
+        "vitals": {
+          "FC": "80 bpm",
+          "temperatura": "aferição pendente"
+        }
+      }
+    },
+    {
+      "id": "vpp",
+      "title": "Resposta à ventilação",
+      "prompt": "Após 30 segundos de ventilação, a FC permanece baixa. O que verifica e corrige?",
+      "patientState": {
+        "summary": "O tórax não expande com a máscara inicialmente. A oximetria pré-ductal está sendo instalada.",
+        "vitals": {
+          "FC": "72 bpm",
+          "SpO2": "aferição em curso"
+        }
+      }
+    },
+    {
+      "id": "bradicardia",
+      "title": "Sem melhora",
+      "prompt": "Após VPP efetiva com expansão torácica por 30 segundos, a FC cai. Como prossegue?",
+      "patientState": {
+        "summary": "A equipe confirma ventilação efetiva; a FC permanece abaixo de 60 bpm.",
+        "vitals": {
+          "FC": "48 bpm"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "calor",
+      "label": "Previne hipotermia, posiciona, seca e estimula, avaliando respiração e FC",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A avaliação e aquecimento precedem manobras avançadas."
+    },
+    {
+      "id": "vpp",
+      "label": "Inicia VPP no primeiro minuto por apneia ou FC abaixo de 100 bpm",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Ventilação é a intervenção prioritária na bradicardia neonatal."
+    },
+    {
+      "id": "frequencia",
+      "label": "Ventila com frequência adequada e observa elevação torácica",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Expansão e recuperação da FC mostram ventilação efetiva."
+    },
+    {
+      "id": "corrige",
+      "label": "Corrige vedação, posição, obstrução e pressão antes de concluir falha de VPP",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Compressões com VPP ineficaz não resolvem a causa."
+    },
+    {
+      "id": "via-aerea",
+      "label": "Considera via aérea alternativa se máscara não ventila eficazmente",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escalar para máscara laríngea ou tubo conforme habilidade."
+    },
+    {
+      "id": "compressao",
+      "label": "Se FC abaixo de 60 após VPP efetiva, inicia compressões coordenadas 3:1 com O2 conforme protocolo",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "O limiar depende de 30 s de ventilação eficaz."
+    },
+    {
+      "id": "adrenalina",
+      "label": "Se persistir FC abaixo de 60 após ventilação e compressões, obtém acesso e considera adrenalina neonatal",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Não antecipar adrenalina antes de corrigir ventilação."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Previne hipotermia, posiciona, seca e estimula, avaliando respiração e FC",
+    "Omitir: Inicia VPP no primeiro minuto por apneia ou FC abaixo de 100 bpm",
+    "Omitir: Corrige vedação, posição, obstrução e pressão antes de concluir falha de VPP",
+    "Omitir: Se FC abaixo de 60 após VPP efetiva, inicia compressões coordenadas 3:1 com O2 conforme protocolo"
+  ],
+  "referenceAnswer": "Aqueço e avalio rapidamente; com apneia e FC 80 inicio VPP no primeiro minuto. Se o tórax não expande, corrijo vedação, posição e pressão e reavalio FC. Só com VPP efetiva por 30 segundos e FC abaixo de 60 inicio compressões 3:1; se persistir, considero via aérea alternativa, acesso e adrenalina conforme protocolo neonatal.",
+  "references": [
+    "https://www.sbp.com.br/wp-content/uploads/2026/06/PRN-SBP-Diretrizes-2026-Reanimacao-RN-igual-maior-34-semanas-12junho2026.pdf",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "int-ped-ovace",
+  "version": 2,
+  "title": "Obstrução de via aérea por corpo estranho",
+  "examTitle": "Criança com engasgo e piora",
+  "domain": "Pediatria",
+  "domains": [
+    "Pediatria"
+  ],
+  "family": "Pediatria",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "OVACE",
+    "engasgo",
+    "suporte básico pediátrico"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 0,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "tosse",
+      "title": "Obstrução parcial",
+      "prompt": "Qual sua conduta enquanto a criança tosse eficazmente?",
+      "patientState": {
+        "summary": "Criança de 2 anos engasga com alimento. Tosse forte, chora e mantém boa perfusão.",
+        "vitals": {
+          "SpO2": "97%",
+          "FC": "125 bpm"
+        }
+      }
+    },
+    {
+      "id": "grave",
+      "title": "Obstrução grave",
+      "prompt": "Agora está incapaz de tossir ou vocalizar. Demonstre as manobras apropriadas à idade.",
+      "patientState": {
+        "summary": "Fica cianótica e silenciosa; permanece consciente.",
+        "vitals": {
+          "SpO2": "82%",
+          "FC": "145 bpm"
+        }
+      }
+    },
+    {
+      "id": "inconsciente",
+      "title": "Perda de consciência",
+      "prompt": "A criança perde a consciência. Como muda a abordagem?",
+      "patientState": {
+        "summary": "Não se observa expulsão do corpo estranho após as manobras iniciais.",
+        "vitals": {
+          "FC": "60 bpm",
+          "respiração": "ausente"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "tosse",
+      "label": "Mantém estímulo à tosse e observação enquanto há tosse eficaz",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Manobras invasivas na obstrução parcial podem piorar o quadro."
+    },
+    {
+      "id": "ajuda",
+      "label": "Chama ajuda e prepara atendimento de parada",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A evolução pode ser rápida."
+    },
+    {
+      "id": "idade",
+      "label": "Em criança acima de 1 ano aplica sequências de 5 golpes dorsais e 5 compressões abdominais",
+      "weight": 25,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "No lactente menor de 1 ano usam-se compressões torácicas, não abdominais."
+    },
+    {
+      "id": "repete",
+      "label": "Repete ciclos até desobstrução ou inconsciência, reavaliando",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Não interromper diante de obstrução persistente."
+    },
+    {
+      "id": "rcp",
+      "label": "Na inconsciência inicia RCP e ventilação conforme SBV pediátrico",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Trata-se como parada/ausência de respiração eficaz."
+    },
+    {
+      "id": "visualiza",
+      "label": "Inspeciona boca antes das ventilações e retira apenas objeto visível; não faz varredura cega",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Varredura digital cega pode empurrar o objeto."
+    },
+    {
+      "id": "pos",
+      "label": "Após desobstrução reavalia respiração e complicações",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Pode haver aspiração residual ou lesão de via aérea."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Mantém estímulo à tosse e observação enquanto há tosse eficaz",
+    "Omitir: Em criança acima de 1 ano aplica sequências de 5 golpes dorsais e 5 compressões abdominais",
+    "Omitir: Na inconsciência inicia RCP e ventilação conforme SBV pediátrico",
+    "Omitir: Inspeciona boca antes das ventilações e retira apenas objeto visível; não faz varredura cega"
+  ],
+  "referenceAnswer": "Enquanto a tosse é eficaz, observo e incentivo a tossir. Se a criança de 2 anos perde a tosse e a fala, alterno 5 golpes dorsais e 5 compressões abdominais, repetindo até resolver ou perder a consciência. Na inconsciência inicio RCP, retiro só objeto visível e reavalio respiração e possível aspiração após a desobstrução.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support"
+  ]
+}

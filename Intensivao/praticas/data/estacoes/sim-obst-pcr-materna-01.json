@@ -53,7 +53,7 @@
     {
       "id": "quatro-minutos",
       "title": "Quatro minutos sem circulação",
-      "prompt": "Defina e execute a intervenção obstétrica no tempo e local apropriados, em paralelo à reanimação.",
+      "prompt": "Defina o procedimento no tempo e local apropriados e demonstre no manequim a sequência essencial, mantendo a reanimação.",
       "patientState": {
         "summary": "O fundo uterino está acima do umbigo e não houve retorno da circulação após duas rodadas de reanimação.",
         "vitals": {
@@ -117,9 +117,16 @@
     },
     {
       "id": "tempo-parto",
-      "label": "Sem retorno da circulação aos 4 minutos, inicia parto de ressuscitação com objetivo de conclusão até 5 minutos",
-      "weight": 20,
+      "label": "Prepara desde a PCR e, sem retorno da circulação, inicia parto de ressuscitação com objetivo de conclusão até 5 minutos",
+      "weight": 10,
       "verification": "verbal",
+      "critical": true
+    },
+    {
+      "id": "sequencia-histerotomia",
+      "label": "No manequim, demonstra acesso abdominal rápido, protege estruturas, abre o útero, retira o feto e entrega o recém-nascido à equipe, sem interromper a RCP",
+      "weight": 10,
+      "verification": "hibrido",
       "critical": true
     },
     {
@@ -144,7 +151,7 @@
     "Esperar avaliação fetal para decidir o parto de ressuscitação",
     "Transferir ao centro cirúrgico antes do procedimento"
   ],
-  "referenceAnswer": "Confirmo a parada e começo RCP de alta qualidade imediatamente. Como o útero está acima do umbigo, faço deslocamento uterino manual para a esquerda durante as compressões, obtenho acesso em membro superior e priorizo via aérea por equipe experiente. A fibrilação ventricular recebe desfibrilação e medicamentos nas doses usuais do adulto, sem reduzir energia. Desde o início preparo parto de ressuscitação no local com equipe neonatal. Se não houver retorno da circulação em 4 minutos, inicio o procedimento para concluir o parto até 5 minutos, mantendo RCP. Depois do retorno da circulação, trato a causa, hemorragia e choque, enquanto outra equipe reanima o recém-nascido.",
+  "referenceAnswer": "Confirmo a parada e começo RCP de alta qualidade imediatamente. Como o útero está acima do umbigo, faço deslocamento uterino manual para a esquerda durante as compressões, obtenho acesso em membro superior e priorizo via aérea por equipe experiente. Fibrilação ventricular recebe desfibrilação e medicamentos nas doses usuais do adulto. Preparo desde o início o parto de ressuscitação no local, com equipe neonatal, visando completar até cinco minutos se não houver RCE. No manequim demonstro acesso abdominal e uterino rápidos, proteção das estruturas, retirada do feto e entrega à equipe neonatal sem suspender compressões. Após RCE trato causa, hemorragia e choque.",
   "references": [
     "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
     "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Accessible/Algorithm-BLS-in-Pregnancy-LngDscrp-250725-Ed.pdf"

@@ -15,7 +15,7 @@
     {
       "id": "pre-imagem",
       "title": "Antes da imagem",
-      "prompt": "Defina as prioridades de estabilização antes ou imediatamente após a tomografia.",
+      "prompt": "Defina as prioridades de via aérea, oxigenação e perfusão antes do transporte para tomografia.",
       "patientState": {
         "summary": "Adulto após trauma de alta energia apresenta rebaixamento progressivo e ventilação inadequada.",
         "vitals": { "GCS": "7", "PA": "102/64 mmHg", "FC": "108 bpm", "FR": "10 irpm", "SpO2": "89% em ar ambiente" }
@@ -36,7 +36,7 @@
       "title": "Ponte para controle definitivo",
       "prompt": "Indique medidas imediatas, alvos ventilatórios, correção da coagulação e equipes que devem ser acionadas.",
       "patientState": {
-        "summary": "Persistem anisocoria e deterioração, agora com trombocitopenia e coagulopatia documentadas.",
+        "summary": "Persistem anisocoria e deterioração. A família informa uso de varfarina; há trombocitopenia e coagulopatia documentadas.",
         "vitals": { "plaquetas": "58.000/mm³", "INR": "2,3", "PA": "148/80 mmHg" }
       }
     },
@@ -52,7 +52,7 @@
     }
   ],
   "checklist": [
-    { "id": "via-aerea", "label": "Indica via aérea definitiva antes ou imediatamente após a TC conforme estabilidade", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "via-aerea", "label": "Estabiliza via aérea e oxigenação antes de transportar para TC, pois GCS 7 e SpO2 89%", "weight": 5, "verification": "verbal", "critical": true },
     { "id": "sedacao", "label": "Mantém sedação contínua apropriada", "weight": 5, "verification": "verbal", "critical": false },
     { "id": "analgesia", "label": "Mantém analgesia contínua", "weight": 5, "verification": "verbal", "critical": false },
     { "id": "capnia", "label": "Mantém normocapnia, reservando hiperventilação breve para herniação iminente", "weight": 5, "verification": "verbal", "critical": true },
@@ -67,7 +67,7 @@
     { "id": "evita-febre", "label": "Previne e trata hipertermia", "weight": 5, "verification": "verbal", "critical": false },
     { "id": "plaquetas", "label": "Indica transfusão urgente de plaquetas quando pertinente", "weight": 5, "verification": "verbal", "critical": false },
     { "id": "alvo-plaquetas", "label": "Busca plaquetas acima de 100.000/mm³ em neurocirurgia/hemorragia crítica", "weight": 5, "verification": "verbal", "critical": false },
-    { "id": "reversao", "label": "Reverte anticoagulação com complexo protrombínico e/ou plasma conforme agente e disponibilidade", "weight": 5, "verification": "verbal", "critical": true },
+    { "id": "reversao", "label": "Reverte varfarina urgentemente com complexo protrombínico de quatro fatores e vitamina K IV conforme protocolo", "weight": 5, "verification": "verbal", "critical": true },
     { "id": "inr", "label": "Busca correção rápida do INR para menos de 1,5", "weight": 5, "verification": "verbal", "critical": false },
     { "id": "neurocirurgia", "label": "Aciona neurocirurgia em caráter emergencial", "weight": 5, "verification": "verbal", "critical": true },
     { "id": "pressao", "label": "Evita hipotensão e controla hipertensão extrema sem comprometer PPC", "weight": 5, "verification": "verbal", "critical": true },
@@ -76,7 +76,7 @@
   "criticalErrors": ["Permitir hipoxemia ou hipotensão", "Hiperventilar profilaticamente", "Atrasar terapia hiperosmolar na herniação", "Atrasar neurocirurgia e reversão de coagulopatia"],
   "referenceAnswer": "Estabilizo antes da TC: via aérea definitiva se indicada, pré-oxigenação, analgesia e sedação, normoxia, PaCO2 em torno de 35-38, euvolemia com isotônico, prevenção de hipotensão, cabeceira a 30 graus, cabeça neutra e normotermia. Diante de herniação, faço terapia hiperosmolar e posso hiperventilar brevemente como ponte. Reavalio pupilas e neurologia, aciono neurocirurgia, reponho plaquetas quando indicado, reverto anticoagulação rapidamente e controlo pressão preservando perfusão cerebral.",
   "references": [
-    "https://ww2.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
+    "https://www.facs.org/media/vgfgjpfk/best-practices-guidelines-traumatic-brain-injury.pdf",
     "https://braintrauma.org/s/Management_of_Severe_TBI_4th_Edition.pdf",
     "https://www.facs.org/media-center/press-releases/2024/american-college-of-surgeons-releases-revised-best-practices-guidelines-in-management-of-traumatic-brain-injury/"
   ]

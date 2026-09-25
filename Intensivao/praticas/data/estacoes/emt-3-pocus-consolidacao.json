@@ -1,0 +1,136 @@
+{
+  "id": "emt-3-pocus-consolidacao",
+  "version": 2,
+  "title": "POCUS pulmonar com consolidação e derrame",
+  "examTitle": "Janela pulmonar em dispneia febril",
+  "domain": "POCUS",
+  "domains": [
+    "POCUS"
+  ],
+  "family": "POCUS",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "LUS",
+    "consolidação",
+    "broncograma",
+    "derrame pleural"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 3,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "janelas",
+      "title": "Aquisição",
+      "prompt": "Demonstre as janelas anterior e posterolateral e identifique estruturas.",
+      "patientState": {
+        "summary": "Mulher de 63 anos com febre e dispneia; ausculta com crepitações basais esquerdas.",
+        "vitals": {
+          "PA": "112/72 mmHg",
+          "FC": "110 bpm",
+          "SpO2": "90%"
+        }
+      }
+    },
+    {
+      "id": "clipe",
+      "title": "Achado liberado",
+      "prompt": "Descreva os achados do clipe e seus diferenciais principais.",
+      "patientState": {
+        "summary": "Na base esquerda há região subpleural com ecotextura semelhante à do fígado; há pequeno derrame adjacente. Clipe externo demonstra achado equivalente, não é o exame real desta paciente.",
+        "vitals": {
+          "FR": "30 irpm",
+          "SpO2": "93% com O2"
+        }
+      },
+      "media": [
+        "us-consolidacao-pulmonar"
+      ]
+    },
+    {
+      "id": "decisao",
+      "title": "Interpretação e conduta",
+      "prompt": "O ultrassom define exsudato/transudato? Como integra o achado ao tratamento?",
+      "patientState": {
+        "summary": "O quadro clínico favorece pneumonia. A imagem sozinha não define a etiologia nem a composição do líquido.",
+        "vitals": {
+          "temperatura": "38,6 °C",
+          "PA": "108/68 mmHg"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "janela",
+      "label": "Descreve linha pleural e sombras costais na janela anterior",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "A orientação inicial evita interpretar tecido superficial como pulmão."
+    },
+    {
+      "id": "base",
+      "label": "Na transição posterolateral reconhece diafragma, órgão sólido e sinal da coluna",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Essa janela ajuda a localizar líquido e consolidação."
+    },
+    {
+      "id": "consolidacao",
+      "label": "Reconhece hepatização pulmonar como consolidação",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A área pulmonar torna-se semelhante ao fígado quando perde aeração."
+    },
+    {
+      "id": "bronco",
+      "label": "Diferencia broncograma dinâmico de estático quando visualizável",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Dinâmico favorece pneumonia; estático pode ocorrer em atelectasia."
+    },
+    {
+      "id": "derrame",
+      "label": "Descreve derrame adjacente sem chamar automaticamente empiema",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Aspecto complexo pode aumentar suspeita, mas exige contexto."
+    },
+    {
+      "id": "limites",
+      "label": "Não classifica exsudato/transudato apenas pelo ultrassom",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Quando indicada, a análise do líquido estabelece a classificação."
+    },
+    {
+      "id": "integra",
+      "label": "Trata hipoxemia/infeção provável e decide imagem, drenagem ou toracocentese pelo quadro",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "POCUS orienta, mas não substitui avaliação clínica."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Reconhece hepatização pulmonar como consolidação",
+    "Omitir: Não classifica exsudato/transudato apenas pelo ultrassom",
+    "Omitir: Trata hipoxemia/infeção provável e decide imagem, drenagem ou toracocentese pelo quadro"
+  ],
+  "referenceAnswer": "Identifico pleura, sombras costais e diafragma. A hepatização subpleural mostra consolidação; broncograma dinâmico, se presente, favorece pneumonia. Pequeno derrame pode acompanhar infecção. Não classifico exsudato pelo ultrassom: quando indicada, preciso de análise do líquido. Oxigeno, trato a provável infecção e defino investigação/drenagem pela gravidade.",
+  "references": [
+    "https://www.acep.org/globalassets/new-pdfs/policy-statements/emergency-ultrasound-imaging-criteria-compendium.pdf",
+    "https://www.brit-thoracic.org.uk/clinical-resources/guidelines/pleural-disease/"
+  ]
+}

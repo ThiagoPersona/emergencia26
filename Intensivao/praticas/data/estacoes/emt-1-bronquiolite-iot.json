@@ -1,0 +1,136 @@
+{
+  "id": "emt-1-bronquiolite-iot",
+  "version": 2,
+  "title": "Bronquiolite com apneia e falha do suporte",
+  "examTitle": "Lactente com deterioração respiratória",
+  "domain": "Pediatria",
+  "domains": [
+    "Pediatria"
+  ],
+  "family": "Pediatria",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "bronquiolite",
+    "apneia",
+    "via aérea pediátrica",
+    "capnografia"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 1,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "suporte",
+      "title": "Tratamento inicial",
+      "prompt": "Que medidas de suporte indica e quais não são rotina?",
+      "patientState": {
+        "summary": "Lactente de 7 meses, 8 kg, com coriza, sibilos, tiragem e baixa aceitação alimentar.",
+        "vitals": {
+          "PA": "88/54 mmHg",
+          "FC": "170 bpm",
+          "FR": "58 irpm",
+          "SpO2": "89% em ar ambiente"
+        }
+      }
+    },
+    {
+      "id": "falha",
+      "title": "Deterioração",
+      "prompt": "A criança faz pausas respiratórias e fica sonolenta. Como conduz via aérea e preparo?",
+      "patientState": {
+        "summary": "Após aspiração nasal superficial e oxigênio, persiste esforço importante e surgem apneias.",
+        "vitals": {
+          "FC": "92 bpm",
+          "FR": "irregular",
+          "SpO2": "83% com oxigênio"
+        }
+      }
+    },
+    {
+      "id": "tubo",
+      "title": "Após passagem do tubo",
+      "prompt": "Como confirma o tubo, mantém analgesia e ventilação e define destino?",
+      "patientState": {
+        "summary": "Após ventilação com bolsa-máscara, o tubo foi passado sob visão.",
+        "vitals": {
+          "FC": "154 bpm",
+          "SpO2": "95% com ventilação"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "suporte",
+      "label": "Faz aspiração superficial, hidratação dirigida e oxigênio conforme necessidade",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Bronquiolite é tratada principalmente com suporte."
+    },
+    {
+      "id": "sem-rotina",
+      "label": "Não usa broncodilatador, corticoide ou antibiótico de rotina sem outra indicação",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Esses tratamentos não melhoram a maioria dos casos de bronquiolite."
+    },
+    {
+      "id": "falha",
+      "label": "Reconhece apneia, exaustão e rebaixamento como falha iminente e ventila imediatamente",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Não prolongar CNAF ou CPAP diante de apneias e perda de proteção de via aérea."
+    },
+    {
+      "id": "prepara",
+      "label": "Chama ajuda, escolhe material pelo tamanho e posição do lactente, pré-oxigena e prepara resgate",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Fita de comprimento e peso ajudam; o tubo não tem tamanho fixo para toda criança."
+    },
+    {
+      "id": "farmacos",
+      "label": "Verbaliza indutor/bloqueador apropriados, dose por peso e contraindicações",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Dose deve ser recalculada para 8 kg e situação hemodinâmica."
+    },
+    {
+      "id": "confirmacao",
+      "label": "Confirma por capnografia contínua, expansão e ausculta; ajusta profundidade",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Ausculta isolada não confirma posicionamento traqueal."
+    },
+    {
+      "id": "pos",
+      "label": "Inicia sedoanalgesia/ventilação, monitora e aciona UTI pediátrica",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A estabilização continua após a intubação."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Reconhece apneia, exaustão e rebaixamento como falha iminente e ventila imediatamente",
+    "Omitir: Chama ajuda, escolhe material pelo tamanho e posição do lactente, pré-oxigena e prepara resgate",
+    "Omitir: Confirma por capnografia contínua, expansão e ausculta; ajusta profundidade"
+  ],
+  "referenceAnswer": "Ofereço suporte, aspiração nasal superficial, hidratação e oxigênio. Com apneia e rebaixamento, inicio ventilação eficaz e preparo via aérea avançada sem insistir indefinidamente em suporte não invasivo. Escolho equipamentos e fármacos pelo peso, confirmo o tubo por capnografia em onda, inicio sedoanalgesia e ventilação e encaminho à UTI pediátrica.",
+  "references": [
+    "https://www.nice.org.uk/guidance/ng9/chapter/Recommendations",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support",
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-rapid-sequence-intubation"
+  ]
+}

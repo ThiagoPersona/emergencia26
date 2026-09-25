@@ -31,10 +31,12 @@ const REQUIRED_ACERVO_IDS = [
   "rx-ards-edema-naocardiogenico",
   "us-acesso-vascular-subclavia",
   "us-fascia-iliaca-anatomia",
-  "fascia-iliaca-probe-placement"
+  "fascia-iliaca-probe-placement",
+  "us-tvp-femoral-compressao",
+  "us-consolidacao-pulmonar"
 ];
 
-test("acervo visual local contem os 21 itens licenciados e arquivos resolviveis", () => {
+test("acervo visual local contem os 23 itens licenciados e arquivos resolviveis", () => {
   const intensivaoRoot = path.resolve(__dirname, "..");
   const manifestPath = path.join(intensivaoRoot, "assets", "praticas", "media.json");
   const attributionPath = path.join(intensivaoRoot, "assets", "praticas", "ATRIBUICOES.md");
@@ -453,7 +455,8 @@ test("renderiza alternativas de prova e revisao e preserva texto como conteudo",
 
     renderPhaseMedia(container, [item]);
     assert.equal(findByTag(container, "img")[0].alt, item.examAlt);
-    assert.equal(findByTag(container, "a").length, 0);
+    assert.equal(findByTag(container, "a").length, 1);
+    assert.equal(findByTag(container, "a")[0].textContent, "Fonte");
 
     renderPhaseMedia(container, [item], { reviewMode: true });
     assert.equal(findByTag(container, "img")[0].alt, item.reviewAlt);

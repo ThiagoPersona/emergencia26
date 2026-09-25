@@ -281,11 +281,10 @@
 
   function appendMediaCredit(parent, item, reviewMode) {
     appendText(parent, "small", "practice-media-credit", `${item.credit} | ${item.license}`);
-    if (!reviewMode) return;
     const links = root.document.createElement("span");
     links.className = "practice-media-credit-links";
     appendSafeReviewLink(links, "Fonte", item.sourceUrl);
-    appendSafeReviewLink(links, "Licença", item.licenseUrl);
+    if (reviewMode) appendSafeReviewLink(links, "Licença", item.licenseUrl);
     if (links.childNodes.length) parent.appendChild(links);
   }
 

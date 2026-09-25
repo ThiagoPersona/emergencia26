@@ -1,0 +1,145 @@
+{
+  "id": "emt-3-via-aerea-obesidade",
+  "version": 2,
+  "title": "Via aérea fisiológica e anatomicamente difícil na obesidade",
+  "examTitle": "Insuficiência respiratória em paciente com obesidade",
+  "domain": "Via aérea e ventilação mecânica",
+  "domains": [
+    "Via aérea e ventilação mecânica"
+  ],
+  "family": "Via aérea e ventilação mecânica",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "obesidade",
+    "rampa",
+    "VNI",
+    "RSI",
+    "bougie"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 3,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "risco",
+      "title": "Planejamento",
+      "prompt": "Indique IOT, riscos e planos de resgate.",
+      "patientState": {
+        "summary": "Mulher de 67 anos, 118 kg, 1,62 m, IMC ~45, DPOC, SAOS e IC. Com VNI há esforço intenso e acidose respiratória progressiva.",
+        "vitals": {
+          "PA": "102/60 mmHg",
+          "FC": "116 bpm",
+          "FR": "36 irpm",
+          "SpO2": "91% com VNI"
+        }
+      }
+    },
+    {
+      "id": "preparo",
+      "title": "Antes da tentativa",
+      "prompt": "Demonstre posicionamento, pré-oxigenação e escolha farmacológica com peso apropriado.",
+      "patientState": {
+        "summary": "A paciente aceita VNI por poucos minutos. Pescoço largo e baixa reserva de oxigênio; equipe e material disponíveis.",
+        "vitals": {
+          "PA": "98/58 mmHg",
+          "SpO2": "90% com VNI"
+        }
+      }
+    },
+    {
+      "id": "bougie",
+      "title": "Intubação e pós-tubo",
+      "prompt": "Descreva uso de bougie, confirmação, ventilação inicial e resposta à falha.",
+      "patientState": {
+        "summary": "A primeira visão é parcial; bougie pode ser passado sob visão. A oxigenação cai rapidamente durante a apneia.",
+        "vitals": {
+          "SpO2": "82% durante tentativa",
+          "PA": "88/50 mmHg"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "indicacao",
+      "label": "Reconhece falha da VNI, esforço e acidose como indicação de IOT",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "SpO2 isolada de 91% não expressa a gravidade ventilatória."
+    },
+    {
+      "id": "risco",
+      "label": "Avalia dificuldade anatômica e fisiológica e verbaliza A/B/C/CICO",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Pescoço largo, SAOS e baixa reserva aumentam risco de falha e dessaturação."
+    },
+    {
+      "id": "rampa",
+      "label": "Posiciona em rampa com alinhamento meato auditivo-incisura esternal",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Elevação do tronco melhora mecânica e acesso."
+    },
+    {
+      "id": "preox",
+      "label": "Pré-oxigena com vedação e PEEP/VNI quando tolerada e prepara resgate",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "A reserva é curta; evitar apneia prolongada."
+    },
+    {
+      "id": "doses",
+      "label": "Seleciona indutor/bloqueador e dose ajustada à farmacologia/peso e à pressão",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A regra de peso depende do fármaco; não generalizar peso real ou ideal para todos."
+    },
+    {
+      "id": "bougie",
+      "label": "Mantém laringoscópio, guia bougie sob visão e avança tubo sem perder o guia",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Não inserir bougie às cegas nem retirar laringoscópio cedo."
+    },
+    {
+      "id": "confirmacao",
+      "label": "Confirma por capnografia contínua e inicia sedoanalgesia",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A confirmação traqueal precede fixação definitiva."
+    },
+    {
+      "id": "ventilacao",
+      "label": "Inicia Vt 6-8 mL/kg de peso predito e reavalia pressão/expiração",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Usar 118 kg para volume corrente causaria superdistensão."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Reconhece falha da VNI, esforço e acidose como indicação de IOT",
+    "Omitir: Avalia dificuldade anatômica e fisiológica e verbaliza A/B/C/CICO",
+    "Omitir: Posiciona em rampa com alinhamento meato auditivo-incisura esternal",
+    "Omitir: Pré-oxigena com vedação e PEEP/VNI quando tolerada e prepara resgate",
+    "Omitir: Mantém laringoscópio, guia bougie sob visão e avança tubo sem perder o guia",
+    "Omitir: Confirma por capnografia contínua e inicia sedoanalgesia"
+  ],
+  "referenceAnswer": "A VNI está falhando por fadiga e acidose progressiva. Organizo equipe e planos de resgate, posiciono em rampa e pré-oxigeno com PEEP conforme tolerância. Ajusto medicamentos à fisiologia e à estratégia de peso correta para cada fármaco; uso bougie sob visão com laringoscópio mantido. Confirmo com capnografia, inicio analgesia/sedação e Vt por peso predito, monitorando hipotensão e auto-PEEP.",
+  "references": [
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-rapid-sequence-intubation"
+  ]
+}

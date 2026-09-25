@@ -39,20 +39,39 @@ const EXPECTED_STATIONS = [
   ["sim-metabolico-cetoacidose-01", "Descompensação metabólica com potássio baixo"],
   ["sim-obst-eclampsia-01", "Convulsão e hipertensão no fim da gestação"],
   ["sim-obst-pcr-materna-01", "Colapso materno em atendimento"],
-  ["sim-proc-bloqueio-fascia-iliaca-01", "Analgesia regional para dor de quadril"]
+  ["sim-proc-bloqueio-fascia-iliaca-01", "Analgesia regional para dor de quadril"],
+  ["emt-1-trauma-dupla-ameaca", "Trauma com duas ameaças imediatas"],
+  ["emt-1-bronquiolite-iot", "Lactente com deterioração respiratória"],
+  ["emt-1-avci-pos-trombolise", "Déficit focal e deterioração neurológica"],
+  ["emt-1-hda-varicosa", "Hematêmese e deterioração circulatória"],
+  ["emt-1-gestao-fluxo", "Departamento de emergência em sobrecarga"],
+  ["emt-2-tep-choque", "Hipotensão e sobrecarga de ventrículo direito"],
+  ["emt-2-tvp-compressao", "Edema unilateral e exame venoso"],
+  ["emt-2-via-aerea-suja", "Paciente com hipoxemia e orofaringe contaminada"],
+  ["emt-3-queimadura-eletrica", "Paciente após choque elétrico e queda"],
+  ["emt-3-pocus-consolidacao", "Janela pulmonar em dispneia febril"],
+  ["emt-3-sindrome-toracica-aguda", "Criança falciforme com febre e hipoxemia"],
+  ["emt-3-via-aerea-obesidade", "Insuficiência respiratória em paciente com obesidade"],
+  ["int-rn-reanimacao", "Recém-nascido sem respiração eficaz"],
+  ["int-ped-ovace", "Criança com engasgo e piora"],
+  ["int-aph-amonia-imv", "Vítimas em instalação industrial"],
+  ["int-ped-sepse-choque", "Criança febril com má perfusão"],
+  ["int-pocus-vti-choque", "Choque após reposição inicial"]
 ];
 
 const EXPECTED_FAMILY_DISTRIBUTION = {
-  "Via aérea e ventilação mecânica": 4,
-  "Trauma e APH": 4,
-  "POCUS": 4,
-  "Cardiovascular e PCR": 4,
-  "Pediatria": 3,
+  "Via aérea e ventilação mecânica": 6,
+  "Trauma e APH": 7,
+  "POCUS": 7,
+  "Cardiovascular e PCR": 5,
+  "Pediatria": 8,
   "Toxicologia e animais peçonhentos": 3,
-  "Neurologia": 2,
+  "Neurologia": 3,
   "Respiratório, sepse e metabólico": 3,
   "Obstetrícia": 2,
-  "Procedimentos, analgesia e sedação": 1
+  "Procedimentos, analgesia e sedação": 1,
+  "Gastroenterologia": 1,
+  "Gestão": 1
 };
 
 const REQUIRED_TASK_8_MEDIA = {
@@ -68,8 +87,8 @@ const HISTORICAL_CHECKLIST_SHA256 = {
   "2025-vm-autopeep": "a82acc2aa325e563651298ca50b4f4bba2194ac581a640ae132dcd89fee992e6",
   "2025-trauma-hemorragico": "4fe1a6106e9d9cb20d108aac3eb88f3ba4ebc59c32bbd92f9d3188c44be189ed",
   "2025-pocus-aaa-acesso": "cfafa216b2574859cab335a70115514916b12d26d94417b22974814b9e3cc7e6",
-  "2025-pediatria-colinergico": "a40bf46c30b8a7facff0a1da4d9520c45ad8cb16694b937481d2f3f7bfda03d5",
-  "2025-tce-hic": "1398bcda6d4bc8b20d3c41d0b4d3cd0355d2784ae109f06b18e62421879bab3c"
+  "2025-pediatria-colinergico": "c7c3d0a66164ce4fa600c3eff67ceb93928b87ea0bd3d7484a59cf335ef5f870",
+  "2025-tce-hic": "ea41882deb9939db10d4398e1ce5a8aef11f0bca25935392e56901261a3dbaf0"
 };
 
 function readIndex() {
@@ -84,17 +103,17 @@ function checklistHash(checklist) {
   return crypto.createHash("sha256").update(JSON.stringify(checklist)).digest("hex");
 }
 
-test("indice v2 possui exatamente as 30 estacoes na ordem editorial", () => {
+test("indice v2 possui exatamente as 47 estacoes na ordem editorial", () => {
   const index = readIndex();
   const expectedIds = EXPECTED_STATIONS.map(([id]) => id);
   const expectedFiles = expectedIds.map((id) => `${id}.json`);
   const stationFiles = fs.readdirSync(stationDirectory)
     .filter((file) => file.endsWith(".json") && file !== "index.json");
 
-  assert.equal(index.length, 30);
+  assert.equal(index.length, 47);
   assert.deepEqual(index.map((entry) => entry.id), expectedIds);
   assert.equal(new Set(index.map((entry) => entry.id)).size, expectedIds.length);
-  assert.equal(stationFiles.length, 30);
+  assert.equal(stationFiles.length, 47);
   assert.deepEqual(new Set(stationFiles), new Set(expectedFiles));
 });
 
@@ -201,7 +220,7 @@ test("estacao historica de AAA usa midia que demonstra trombo mural, nao flap", 
 });
 
 test("estacoes ineditas nao citam cursos nem recebem atribuicao historica", () => {
-  readIndex().slice(5).forEach((entry) => {
+  readIndex().slice(5, 30).forEach((entry) => {
     const station = readStation(entry);
     const serialized = JSON.stringify(station);
 
@@ -213,7 +232,7 @@ test("estacoes ineditas nao citam cursos nem recebem atribuicao historica", () =
 });
 
 test("estacoes da Task 8 possuem conteudo progressivo e midias obrigatorias", () => {
-  const task8Entries = readIndex().slice(15);
+  const task8Entries = readIndex().slice(15, 30);
 
   assert.equal(task8Entries.length, 15);
   task8Entries.forEach((entry) => {

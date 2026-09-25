@@ -25,9 +25,9 @@
     {
       "id": "bomba-tanque",
       "title": "Bomba e tanque",
-      "prompt": "Interprete as janelas cardíaca, subcostal, da veia cava inferior e hepatorrenal.",
+      "prompt": "Demonstre no manequim as janelas cardíaca e da VCI; interprete os achados informados e a imagem hepatorrenal apresentada.",
       "patientState": {
-        "summary": "A perfusão periférica piora enquanto novas janelas ultrassonográficas são disponibilizadas.",
+        "summary": "No exame feito pelo candidato, o avaliador informa coração hipercinético com cavidade pequena, sem derrame pericárdico, e VCI pequena/colapsável. A imagem exibida é somente da janela hepatorrenal.",
         "vitals": { "PA": "72/40 mmHg", "FC": "128 bpm", "perfusao": "ruim" }
       },
       "media": ["us-fast-morison-positivo"]

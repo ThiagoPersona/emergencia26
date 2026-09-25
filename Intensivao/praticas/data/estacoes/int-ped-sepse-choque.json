@@ -1,0 +1,138 @@
+{
+  "id": "int-ped-sepse-choque",
+  "version": 2,
+  "title": "Choque séptico pediátrico e reavaliação",
+  "examTitle": "Criança febril com má perfusão",
+  "domain": "Pediatria",
+  "domains": [
+    "Pediatria"
+  ],
+  "family": "Pediatria",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "sepse pediátrica",
+    "bolus",
+    "vasoativo",
+    "reavaliação"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 0,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "reconhecer",
+      "title": "Reconhecimento",
+      "prompt": "Como reconhece choque e quais ações da primeira hora?",
+      "patientState": {
+        "summary": "Criança de 4 anos, 18 kg, febre e sonolência. Extremidades frias, enchimento capilar 5 s e pulsos fracos.",
+        "vitals": {
+          "PA": "86/48 mmHg",
+          "FC": "168 bpm",
+          "FR": "38 irpm",
+          "SpO2": "94%"
+        }
+      }
+    },
+    {
+      "id": "fluido",
+      "title": "Primeira reavaliação",
+      "prompt": "Após 10 mL/kg de cristalóide balanceado, o que examina antes de novo bolus?",
+      "patientState": {
+        "summary": "A criança segue taquicárdica; aparecem estertores basais discretos. Há capacidade de UTI e ventilação no serviço.",
+        "vitals": {
+          "PA": "82/44 mmHg",
+          "FC": "160 bpm",
+          "SpO2": "91%"
+        }
+      }
+    },
+    {
+      "id": "refratario",
+      "title": "Choque persistente",
+      "prompt": "Qual o próximo suporte circulatório e a destinação?",
+      "patientState": {
+        "summary": "Perfusão e consciência continuam ruins após fluido inicial; há suspeita de pneumonia.",
+        "vitals": {
+          "PA": "76/40 mmHg",
+          "FC": "166 bpm",
+          "diurese": "baixa"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "choque",
+      "label": "Reconhece choque por perfusão ruim mesmo sem hipotensão franca",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A hipotensão pode ser sinal tardio em crianças."
+    },
+    {
+      "id": "acesso",
+      "label": "Obtém acesso IV/IO, glicemia, culturas se não atrasarem e lactato conforme disponibilidade",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Não adiar tratamento enquanto se obtêm exames."
+    },
+    {
+      "id": "antibiotico",
+      "label": "Administra antibiótico empírico precoce após identificação de choque séptico",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Cada atraso aumenta o tempo de hipoperfusão sem controle infeccioso."
+    },
+    {
+      "id": "bolus",
+      "label": "Faz bolus inicial 10-20 mL/kg com reavaliação após cada alíquota onde há UTI disponível",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Volume é titulado por resposta e contexto, não automático."
+    },
+    {
+      "id": "sobrecarga",
+      "label": "Reconhece novos estertores/hipoxemia como possível intolerância e evita bolus repetidos cegos",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Excesso de fluido pode piorar insuficiência respiratória."
+    },
+    {
+      "id": "vasoativo",
+      "label": "Inicia vasoativo titulado quando choque persiste ou fluido é mal tolerado, sem esperar acesso central",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Epinefrina ou norepinefrina dependem do fenótipo e protocolo local."
+    },
+    {
+      "id": "destino",
+      "label": "Aciona UTI pediátrica, suporte ventilatório e reavalia perfusão/diurese seriadas",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Choque refratário exige equipe e monitorização intensiva."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Reconhece choque por perfusão ruim mesmo sem hipotensão franca",
+    "Omitir: Administra antibiótico empírico precoce após identificação de choque séptico",
+    "Omitir: Faz bolus inicial 10-20 mL/kg com reavaliação após cada alíquota onde há UTI disponível",
+    "Omitir: Reconhece novos estertores/hipoxemia como possível intolerância e evita bolus repetidos cegos",
+    "Omitir: Inicia vasoativo titulado quando choque persiste ou fluido é mal tolerado, sem esperar acesso central"
+  ],
+  "referenceAnswer": "A criança tem choque séptico por hipoperfusão. Acesso IV/IO, culturas sem atrasar antibiótico, glicemia e tratamento precoce. Inicio 10-20 mL/kg de cristalóide e reavalio após cada bolus; novos estertores e queda da saturação contraindicam repetir volume às cegas. Inicio vasoativo titulado se persistir choque ou intolerância a fluido e aciono UTI pediátrica.",
+  "references": [
+    "https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support"
+  ]
+}

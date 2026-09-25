@@ -1,0 +1,136 @@
+{
+  "id": "emt-1-hda-varicosa",
+  "version": 2,
+  "title": "HDA varicosa com falha da ressuscitação inicial",
+  "examTitle": "Hematêmese e deterioração circulatória",
+  "domain": "Gastroenterologia",
+  "domains": [
+    "Gastroenterologia"
+  ],
+  "family": "Gastroenterologia",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "hemorragia digestiva",
+    "varizes",
+    "endoscopia",
+    "balão ponte"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 1,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "admissao",
+      "title": "Hematêmese inicial",
+      "prompt": "Qual seu diagnóstico operacional e pacote inicial?",
+      "patientState": {
+        "summary": "Homem de 54 anos com cirrose conhecida e hematêmese volumosa. Está acordado e orientado.",
+        "vitals": {
+          "PA": "106/68 mmHg",
+          "FC": "112 bpm",
+          "Hb": "8,1 g/dL"
+        }
+      }
+    },
+    {
+      "id": "persistencia",
+      "title": "Persistência do sangramento",
+      "prompt": "Que intervenção definitiva solicita e em qual prazo após ressuscitação?",
+      "patientState": {
+        "summary": "Novo episódio de sangue vivo; recebeu acesso, fármaco vasoativo e antibiótico.",
+        "vitals": {
+          "PA": "88/54 mmHg",
+          "FC": "128 bpm"
+        }
+      }
+    },
+    {
+      "id": "ponte",
+      "title": "Falha temporária",
+      "prompt": "Sangramento incontrolável enquanto se organiza terapia definitiva. Descreva a ponte e suas precauções.",
+      "patientState": {
+        "summary": "A via aérea está protegida. Endoscopia terapêutica falhou e a equipe prepara TIPS/resgate.",
+        "vitals": {
+          "PA": "78/46 mmHg",
+          "FC": "136 bpm"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "abc",
+      "label": "Ressuscita, acessa, tipa sangue e protege via aérea se houver risco real de aspiração",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "IOT não é automática em toda hematêmese; considerar incapacidade de proteger via aérea."
+    },
+    {
+      "id": "vasoativo",
+      "label": "Inicia vasoativo esplâncnico cedo (octreotídeo ou terlipressina, conforme protocolo)",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Reduzir hipertensão portal antes da endoscopia melhora controle inicial."
+    },
+    {
+      "id": "antibiotico",
+      "label": "Inicia profilaxia antibiótica apropriada, como ceftriaxona 1 g IV a cada 24 h",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A infecção aumenta ressangramento e mortalidade em cirrose."
+    },
+    {
+      "id": "endoscopia",
+      "label": "Solicita endoscopia terapêutica até 12 h após ressuscitação e avaliação para TIPS se indicado",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "O alvo de 12 h se aplica à suspeita de sangramento varicoso após estabilização."
+    },
+    {
+      "id": "balao",
+      "label": "Usa balão apenas como ponte, testa e confirma posição completa por imagem antes de insuflar plenamente",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Inflar fora do estômago pode causar ruptura esofágica."
+    },
+    {
+      "id": "limites",
+      "label": "Segue fabricante para volume/pressão, mantém tração controlada e limita tamponamento a até 24 h",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Volumes de um modelo não se generalizam para outros."
+    },
+    {
+      "id": "definitivo",
+      "label": "Reavalia perfusão e organiza hemostasia definitiva/UTI sem confiar no balão como tratamento final",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Balão é temporário e exige vigilância contínua."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Ressuscita, acessa, tipa sangue e protege via aérea se houver risco real de aspiração",
+    "Omitir: Inicia vasoativo esplâncnico cedo (octreotídeo ou terlipressina, conforme protocolo)",
+    "Omitir: Inicia profilaxia antibiótica apropriada, como ceftriaxona 1 g IV a cada 24 h",
+    "Omitir: Solicita endoscopia terapêutica até 12 h após ressuscitação e avaliação para TIPS se indicado",
+    "Omitir: Usa balão apenas como ponte, testa e confirma posição completa por imagem antes de insuflar plenamente",
+    "Omitir: Segue fabricante para volume/pressão, mantém tração controlada e limita tamponamento a até 24 h"
+  ],
+  "referenceAnswer": "Suspeito de sangramento varicoso e inicio ressuscitação com sangue conforme necessidade, fármaco vasoativo e antibiótico. Endoscopia terapêutica após estabilização deve ser organizada em até 12 horas. Se houver sangramento refratário, com via aérea protegida e equipe experiente, balão pode servir de ponte curta; confirmo toda a posição do balão por imagem, sigo o fabricante e organizo TIPS ou outra terapia definitiva.",
+  "references": [
+    "https://www.aasld.org/sites/default/files/2022-04/Garcia-Tsao_et_al-2017-Hepatology.pdf",
+    "https://www.esge.com/assets/downloads/pdfs/guidelines/2022_a-1939-4887.pdf"
+  ]
+}

@@ -75,7 +75,7 @@
     {
       "id": "apos-ajuste",
       "title": "Após o ajuste",
-      "prompt": "Compare as curvas após o ajuste, defina a tolerância à hipercapnia e organize tratamento e monitorização.",
+      "prompt": "Compare os novos valores informados com a curva anterior, defina a tolerância à hipercapnia e organize tratamento e monitorização.",
       "patientState": {
         "summary": "Com Vt reduzido, FR 10/min e maior tempo expiratório, o fluxo volta à linha de base; Ppico 34 e Pplat 23 cmH2O.",
         "vitals": {
@@ -84,10 +84,7 @@
           "SpO2": "95%",
           "pH": "7,22"
         }
-      },
-      "media": [
-        "vm-autopeep-sinais-fig4"
-      ]
+      }
     }
   ],
   "checklist": [

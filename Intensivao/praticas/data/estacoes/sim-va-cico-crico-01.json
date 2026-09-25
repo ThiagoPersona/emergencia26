@@ -54,7 +54,7 @@
     { "id": "interrompe-tentativas", "label": "Interrompe novas tentativas não otimizadas e mantém a melhor oxigenação enquanto prepara o resgate", "weight": 10, "verification": "hibrido", "critical": true },
     { "id": "prepara-material", "label": "Prepara bisturi de lâmina 10, bougie, tubo cuffado 6,0, sucção, capnografia e fixação", "weight": 10, "verification": "hibrido", "critical": false },
     { "id": "localiza-membrana", "label": "Identifica e estabiliza a laringe e localiza a membrana cricotireóidea por palpação, com plano para anatomia obscura", "weight": 10, "verification": "manual", "critical": true },
-    { "id": "incisao", "label": "Faz incisão horizontal de pele e membrana mantendo controle da laringe", "weight": 15, "verification": "manual", "critical": true },
+    { "id": "incisao", "label": "Estabiliza a laringe; se a membrana for palpável, abre-a por via horizontal; se não, faz incisão cutânea vertical mediana, disseca e identifica a membrana antes de abri-la", "weight": 15, "verification": "manual", "critical": true },
     { "id": "confirma-trajeto", "label": "Introduz o dedo para confirmar o trajeto e dilata a abertura de forma controlada", "weight": 15, "verification": "manual", "critical": true },
     { "id": "bougie-tubo", "label": "Passa bougie caudalmente, progride tubo 6,0, insufla o cuff e inicia ventilação", "weight": 15, "verification": "manual", "critical": true },
     { "id": "confirma-capnografia", "label": "Confirma ventilação com capnografia em onda e melhora clínica antes de fixar", "weight": 10, "verification": "hibrido", "critical": true },
@@ -66,7 +66,7 @@
     "Avançar instrumento sem controle anatômico",
     "Não confirmar o acesso com capnografia"
   ],
-  "referenceAnswer": "Não consigo intubar nem oxigenar: declaro CICO, peço ajuda e interrompo novas tentativas de laringoscopia. Mantenho a melhor oxigenação possível enquanto preparo bisturi 10, bougie, tubo 6,0, sucção e capnografia. Estabilizo a laringe, identifico a membrana cricotireóidea, faço incisão horizontal, confirmo o trajeto com o dedo, passo a bougie caudalmente e introduzo o tubo. Insuflo o cuff, ventilo e só considero sucesso após capnografia em forma de onda e melhora da oxigenação. Fixo, registro e aciono a equipe cirúrgica para via aérea definitiva.",
+  "referenceAnswer": "Não consigo intubar nem oxigenar: declaro CICO, peço ajuda e interrompo novas tentativas de laringoscopia. Mantenho a melhor oxigenação possível enquanto preparo bisturi, bougie, tubo 6,0, sucção e capnografia. Estabilizo a laringe; se a membrana for palpável, abro-a por via horizontal. Se impalpável, faço incisão cutânea vertical mediana, disseco até identificá-la e então abro a membrana. Confirmo o trajeto, passo a bougie caudalmente, introduzo o tubo, inflo o cuff e só considero sucesso após capnografia em onda e melhora da oxigenação. Fixo e registro.",
   "references": [
     "https://database.das.uk.com/files/2017/page/DAS_ICU_guidelines.pdf",
     "https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-rapid-sequence-intubation"

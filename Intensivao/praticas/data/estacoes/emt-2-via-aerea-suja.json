@@ -1,0 +1,134 @@
+{
+  "id": "emt-2-via-aerea-suja",
+  "version": 2,
+  "title": "Via aérea contaminada com falha de primeira tentativa",
+  "examTitle": "Paciente com hipoxemia e orofaringe contaminada",
+  "domain": "Via aérea e ventilação mecânica",
+  "domains": [
+    "Via aérea e ventilação mecânica"
+  ],
+  "family": "Via aérea e ventilação mecânica",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "SALAD",
+    "aspiração",
+    "RSI",
+    "capnografia"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 2,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "preparo",
+      "title": "Pré-intubação",
+      "prompt": "Organize oxigenação, perfusão, material e plano de falha.",
+      "patientState": {
+        "summary": "Adulto de 46 anos com hematêmese e insuficiência respiratória, sangue na boca e agitação.",
+        "vitals": {
+          "PA": "82/48 mmHg",
+          "FC": "132 bpm",
+          "SpO2": "84% com máscara"
+        }
+      }
+    },
+    {
+      "id": "primeira",
+      "title": "Via aérea inundada",
+      "prompt": "Durante a laringoscopia a visão desaparece. Que manobras executa agora?",
+      "patientState": {
+        "summary": "O aspirador fino obstruiu. Sangue volta a inundar a hipofaringe e a saturação cai.",
+        "vitals": {
+          "PA": "78/44 mmHg",
+          "SpO2": "76%"
+        }
+      }
+    },
+    {
+      "id": "pos",
+      "title": "Tubo colocado",
+      "prompt": "Como confirma, estabiliza e age se não conseguir oxigenar?",
+      "patientState": {
+        "summary": "Após aspiração rígida e tentativa otimizada, o tubo passa pelas cordas.",
+        "vitals": {
+          "PA": "92/54 mmHg",
+          "SpO2": "91%"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "ajuda",
+      "label": "Chama ajuda, distribui papéis, monitora e prepara resgate",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um operador isolado perde tempo em via aérea inundada."
+    },
+    {
+      "id": "fisiologia",
+      "label": "Pré-oxigena conforme tolerância e prepara suporte vasopressor/ressuscitação",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A indução em choque aumenta risco de colapso."
+    },
+    {
+      "id": "aspiracao",
+      "label": "Usa aspirador rígido eficaz e aspiração contínua antes/durante visualização",
+      "weight": 20,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Sangue impede visão e contamina via aérea; SALAD exige sucção efetiva."
+    },
+    {
+      "id": "tentativa",
+      "label": "Otimiza posição, videolaringoscópio/bougie e limita tentativas repetidas",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Repetir a mesma tentativa após dessaturação piora a situação."
+    },
+    {
+      "id": "capnografia",
+      "label": "Confirma tubo por capnografia em onda contínua, depois ausculta/expansão",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A capnografia é confirmação principal."
+    },
+    {
+      "id": "cico",
+      "label": "Se não intuba nem oxigena, declara CICO e inicia acesso anterior de pescoço",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Não prolongar tentativas quando oxigenação falhou."
+    },
+    {
+      "id": "pos",
+      "label": "Inicia sedoanalgesia, ventilação e reavaliação da pressão",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "O pós-tubo integra a ressuscitação."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Pré-oxigena conforme tolerância e prepara suporte vasopressor/ressuscitação",
+    "Omitir: Usa aspirador rígido eficaz e aspiração contínua antes/durante visualização",
+    "Omitir: Otimiza posição, videolaringoscópio/bougie e limita tentativas repetidas",
+    "Omitir: Confirma tubo por capnografia em onda contínua, depois ausculta/expansão",
+    "Omitir: Se não intuba nem oxigena, declara CICO e inicia acesso anterior de pescoço"
+  ],
+  "referenceAnswer": "Trato simultaneamente hipoxemia, contaminação e choque. Uso aspiração rígida antes e durante a laringoscopia, com melhor operador, posição adequada e plano de resgate. Limito tentativas, confirmo tubo por capnografia em forma de onda e trato a hipotensão e o pós-intubação. Se não intubo nem oxigeno, aciono acesso anterior do pescoço.",
+  "references": [
+    "https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-rapid-sequence-intubation"
+  ]
+}

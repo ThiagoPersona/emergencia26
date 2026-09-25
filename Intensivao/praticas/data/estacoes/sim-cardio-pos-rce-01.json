@@ -126,7 +126,7 @@
     },
     {
       "id": "temperatura",
-      "label": "Inicia controle protocolado de temperatura no paciente que não obedece comandos, mantendo 32 °C a 37,5 °C por pelo menos 36 horas",
+      "label": "Inicia controle protocolado de temperatura no paciente que não obedece comandos, tratando a temperatura atual de 37,8 °C para manter no máximo 37,5 °C",
       "weight": 15,
       "verification": "verbal",
       "critical": true
@@ -153,7 +153,7 @@
     "Emitir prognóstico neurológico definitivo nas primeiras horas",
     "Não investigar a causa da parada"
   ],
-  "referenceAnswer": "Há retorno da circulação, mas o atendimento continua crítico. Confirmo via aérea e capnografia, titulo oxigênio para SpO2 de 90% a 98% e ajusto a ventilação para PaCO2 de 35 a 45 mmHg. Trato a hipotensão para manter PAM de pelo menos 65 mmHg com reavaliação frequente. Obtenho ECG de 12 derivações e procuro a causa com ecocardiografia ou POCUS e exames dirigidos, avaliando estratégia coronária quando indicada. Como o paciente não obedece comandos, inicio controle protocolado de temperatura entre 32 °C e 37,5 °C por pelo menos 36 horas e reservo o prognóstico neurológico para avaliação multimodal tardia.",
+  "referenceAnswer": "Há retorno da circulação, mas o atendimento continua crítico. Confirmo via aérea e capnografia, titulo oxigênio para SpO2 de 90% a 98% e ajusto a ventilação para PaCO2 de 35 a 45 mmHg. Trato a hipotensão para manter PAM de pelo menos 65 mmHg com reavaliação frequente. Obtenho ECG de 12 derivações e procuro a causa com ecocardiografia ou POCUS e exames dirigidos. Como o paciente não obedece comandos, inicio controle protocolado de temperatura e trato 37,8 °C para evitar febre, mantendo a meta entre 32 °C e 37,5 °C por pelo menos 36 horas. Reservo o prognóstico neurológico para avaliação multimodal tardia.",
   "references": [
     "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/post-cardiac-arrest-care",
     "https://cpr.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/PCAC-Algorithm-ACLS-PCAC-250527.pdf"

@@ -1,0 +1,135 @@
+{
+  "id": "emt-2-tvp-compressao",
+  "version": 2,
+  "title": "POCUS de compressão venosa e TVP proximal",
+  "examTitle": "Edema unilateral e exame venoso",
+  "domain": "POCUS",
+  "domains": [
+    "POCUS"
+  ],
+  "family": "POCUS",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "TVP",
+    "ultrassom de compressão",
+    "anticoagulação"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 2,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "probabilidade",
+      "title": "Avaliação pré-teste",
+      "prompt": "Quais dados clínicos e qual rota de investigação você escolhe?",
+      "patientState": {
+        "summary": "Mulher de 47 anos com edema e dor unilateral na perna esquerda há três dias após imobilização. Sem dispneia ou dor torácica.",
+        "vitals": {
+          "PA": "122/76 mmHg",
+          "FC": "88 bpm",
+          "SpO2": "98%"
+        }
+      }
+    },
+    {
+      "id": "tecnica",
+      "title": "Manobra no manequim",
+      "prompt": "Descreva transdutor, trajetos e critério técnico positivo.",
+      "patientState": {
+        "summary": "Há aparelho com transdutor linear; na varredura femoral a veia não colaba completamente à compressão.",
+        "vitals": {
+          "local": "região femoral esquerda"
+        }
+      }
+    },
+    {
+      "id": "conduta",
+      "title": "Imagem e decisão",
+      "prompt": "Interprete a imagem apresentada e defina tratamento e seguimento.",
+      "patientState": {
+        "summary": "Imagem de outro paciente com achado femoral equivalente ao descrito; a demonstração dinâmica nesta estação confirma não compressibilidade da veia femoral.",
+        "vitals": {
+          "PA": "120/74 mmHg",
+          "FC": "84 bpm"
+        }
+      },
+      "media": [
+        "us-tvp-femoral-compressao"
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "id": "probabilidade",
+      "label": "Estratifica probabilidade clínica e procura sintomas de TEP",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Wells ajuda a definir a sequência de exames."
+    },
+    {
+      "id": "transdutor",
+      "label": "Seleciona transdutor linear e identifica veia e artéria em eixo curto",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "A identificação anatômica evita comprimir a estrutura errada."
+    },
+    {
+      "id": "compressao",
+      "label": "Demonstra compressão venosa completa em segmentos proximais, incluindo femoral e poplítea",
+      "weight": 20,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "A ausência de colabamento é o sinal central da TVP proximal."
+    },
+    {
+      "id": "limite",
+      "label": "Reconhece que exame limitado negativo não exclui TVP distal/ilíaca ou TEP",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Quando o risco persiste, planejar exame completo ou repetição."
+    },
+    {
+      "id": "diagnostico",
+      "label": "Interpreta veia femoral não compressível como TVP proximal",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A imagem está de acordo com o achado dinâmico informado."
+    },
+    {
+      "id": "anticoagula",
+      "label": "Considera anticoagulação por pelo menos três meses após revisar sangramento, rim, gestação e contexto",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Alta e fármaco oral não são automáticos para todos."
+    },
+    {
+      "id": "destino",
+      "label": "Define estabilidade, sinais de TEP e seguimento seguro",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A disposição depende da avaliação integral."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Demonstra compressão venosa completa em segmentos proximais, incluindo femoral e poplítea",
+    "Omitir: Reconhece que exame limitado negativo não exclui TVP distal/ilíaca ou TEP",
+    "Omitir: Interpreta veia femoral não compressível como TVP proximal",
+    "Omitir: Considera anticoagulação por pelo menos três meses após revisar sangramento, rim, gestação e contexto"
+  ],
+  "referenceAnswer": "Avalio a probabilidade clínica e sintomas de embolia. Com transdutor linear identifico as veias proximais e comprimo até colabar a parede normal; a femoral não compressível neste caso confirma TVP proximal. Reviso risco hemorrágico, função renal, gestação e comorbidades para anticoagular por pelo menos três meses e definir seguimento. Um exame limitado negativo exige estratégia de repetição se a suspeita persistir.",
+  "references": [
+    "https://www.acep.org/sonoguide/basic/dvt",
+    "https://www.nice.org.uk/guidance/ng158/chapter/Recommendations"
+  ]
+}

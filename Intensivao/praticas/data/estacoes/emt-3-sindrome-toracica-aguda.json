@@ -1,0 +1,135 @@
+{
+  "id": "emt-3-sindrome-toracica-aguda",
+  "version": 2,
+  "title": "Síndrome torácica aguda na doença falciforme",
+  "examTitle": "Criança falciforme com febre e hipoxemia",
+  "domain": "Pediatria",
+  "domains": [
+    "Pediatria"
+  ],
+  "family": "Pediatria",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "doença falciforme",
+    "síndrome torácica aguda",
+    "transfusão"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 3,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "diagnostico",
+      "title": "Nova síndrome",
+      "prompt": "Qual diagnóstico explica a piora e com quais dados?",
+      "patientState": {
+        "summary": "Criança de 8 anos, 25 kg, HbSS, internada por dor vaso-oclusiva; agora febre, tosse e dor torácica.",
+        "vitals": {
+          "temperatura": "38,8 °C",
+          "FC": "132 bpm",
+          "FR": "38 irpm",
+          "SpO2": "88% em ar ambiente",
+          "Hb": "6,7 g/dL (basal 8,4)"
+        }
+      }
+    },
+    {
+      "id": "inicial",
+      "title": "Tratamento",
+      "prompt": "Quais medidas inicia sem aguardar deterioração adicional?",
+      "patientState": {
+        "summary": "Radiografia mostra infiltrado novo basal direito. Sem sibilos; hidratação anterior foi liberal.",
+        "vitals": {
+          "SpO2": "92% com O2",
+          "PA": "94/58 mmHg"
+        }
+      }
+    },
+    {
+      "id": "progressao",
+      "title": "Piora respiratória",
+      "prompt": "Como escolhe suporte respiratório e modalidade transfusional?",
+      "patientState": {
+        "summary": "A criança aumenta o trabalho respiratório e necessita FiO2 crescente apesar de antibiótico e transfusão simples inicial.",
+        "vitals": {
+          "SpO2": "90% com alto fluxo",
+          "Hb": "9,0 g/dL"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "diagnostico",
+      "label": "Reconhece síndrome torácica aguda: infiltrado novo e sintomas respiratórios/febre",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Não é apenas crise álgica ou pneumonia simples."
+    },
+    {
+      "id": "oxigenio",
+      "label": "Corrige hipoxemia e reavalia esforço/SpO2 e necessidade de escalada",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Hipóxia alimenta falcização e deterioração."
+    },
+    {
+      "id": "antibiotico",
+      "label": "Inicia antibiótico cobrindo agentes usuais e atípicos conforme protocolo pediátrico",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Infecção pode desencadear ou coexistir com a síndrome."
+    },
+    {
+      "id": "suporte",
+      "label": "Faz analgesia, espirometria de incentivo quando viável e hidratação sem sobrecarga",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Excesso de fluido pode piorar pulmão."
+    },
+    {
+      "id": "transfusao",
+      "label": "Indica transfusão simples no quadro com Hb abaixo do basal, evitando Hb excessiva",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Hb final alta eleva viscosidade; discutir meta com hematologia."
+    },
+    {
+      "id": "troca",
+      "label": "Na progressão grave aciona hematologia/banco para troca eritrocitária",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Na forma grave ou rapidamente progressiva a troca pode ser preferida."
+    },
+    {
+      "id": "destino",
+      "label": "Escalona suporte, UTI pediátrica e monitorização de complicações",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A piora após tratamento inicial exige reavaliação contínua."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Reconhece síndrome torácica aguda: infiltrado novo e sintomas respiratórios/febre",
+    "Omitir: Corrige hipoxemia e reavalia esforço/SpO2 e necessidade de escalada",
+    "Omitir: Inicia antibiótico cobrindo agentes usuais e atípicos conforme protocolo pediátrico",
+    "Omitir: Indica transfusão simples no quadro com Hb abaixo do basal, evitando Hb excessiva",
+    "Omitir: Na progressão grave aciona hematologia/banco para troca eritrocitária"
+  ],
+  "referenceAnswer": "A criança tem síndrome torácica aguda pela combinação de infiltrado novo, febre, tosse e hipoxemia. Oxigeno, inicio antibiótico, analgesia e espirometria de incentivo quando tolerada, evitando hidratação excessiva. Com Hb 6,7 abaixo do basal, avalio transfusão simples sem elevar demais a Hb; se grave/progressiva após suporte, discuto troca eritrocitária e UTI pediátrica.",
+  "references": [
+    "https://ashpublications.org/bloodadvances/article/4/2/327/440607/American-Society-of-Hematology-2020-guidelines-for"
+  ]
+}

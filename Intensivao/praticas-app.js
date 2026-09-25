@@ -8,6 +8,7 @@
 
   const STORAGE_KEY = "teme26-practice-attempts-v1";
   const DRAFT_KEY = "teme26-practice-draft-v2";
+  const ANSWERS_KEY = "teme26-practice-answers-v1";
   const CYCLE_KEY = "teme26-practice-cycle-v2";
   const PREFERENCES_KEY = "teme26-practice-setup-v2";
   const DEFAULT_FILTERS = {
@@ -87,6 +88,7 @@
     audioUrl: null,
     runtimeNotice: "",
     transcript: "",
+    phaseAnswers: {},
     lastAttempt: null,
     apiStatus: "idle",
     dashboardSyncStarted: false
@@ -122,10 +124,10 @@
     }
     return {
       kicker: station && station.domain ? station.domain : "TREINO DIRIGIDO",
-      title: station && station.title ? station.title : "Estação sorteada",
+      title: station && station.examTitle ? station.examTitle : "Estação sorteada",
       domain: station && station.domain,
       difficulty: station && station.difficulty,
-      showDiagnosticMeta: true
+      showDiagnosticMeta: false
     };
   }
 
@@ -133,7 +135,7 @@
     return {
       previous: {
         action: "previous",
-        label: "Fase anterior",
+        label: "Anterior",
         disabled: !session || session.phaseIndex <= 0
       },
       primary: getPracticePrimaryAction(session, station)
@@ -823,14 +825,14 @@
         ${state.stationEntries.length ? `<button class="practice-button practice-button-quiet" id="practice-choose-another" type="button">Sortear outra</button>` : ""}
       </div>` : "";
     const directedControls = state.mode === "directed" ? `
-      <form id="practice-filters" class="practice-filter-bar">
+      <details class="practice-filter-details"><summary>Filtros</summary><form id="practice-filters" class="practice-filter-bar">
         <label><span>Domínio</span><select name="domain">${renderSelectOptions(getEntryValues("domain"), state.filters.domain, "Todos os domínios")}</select></label>
         <label><span>Dificuldade</span><select name="difficulty">${renderSelectOptions(getEntryValues("difficulty"), state.filters.difficulty, "Todas as dificuldades")}</select></label>
         <label><span>Competência</span><select name="competency">${renderSelectOptions(getEntryValues("competency"), state.filters.competency, "Todas as competências")}</select></label>
         <label><span>Mídia</span><select name="media">${renderMediaFilterOptions(state.filters.media)}</select></label>
         <label class="practice-toggle"><input name="unattempted" type="checkbox" ${state.filters.unattempted ? "checked" : ""}><span>Não realizadas</span></label>
         <button class="practice-button" type="submit">Aplicar filtros</button>
-      </form>
+      </form></details>
       <div class="practice-toolbar">
         <label for="practice-station">Estação</label>
         <select id="practice-station" ${state.mediaStatus === "loading" ? "disabled" : ""}>
@@ -1012,6 +1014,8 @@
       ? sessionModule.startSession(prepared, now)
       : { ...prepared, status: "running", startedAtMs: now };
     state.transcript = "";
+    state.phaseAnswers = {};
+    if (root.localStorage) root.localStorage.removeItem(ANSWERS_KEY);
     state.lastAttempt = null;
     state.runtimeNotice = runtimeNotice;
     if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
@@ -1032,6 +1036,32 @@
       kicker: mode === "exam" ? "MODO PROVA" : "ESTAÇÃO EM ANDAMENTO",
       title: station && station.examTitle ? station.examTitle : "Estação em andamento"
     };
+  }
+
+  function savePhaseAnswers() {
+    if (!root.localStorage || !state.session) return;
+    root.localStorage.setItem(ANSWERS_KEY, JSON.stringify({
+      stationId: state.session.stationId,
+      startedAtMs: state.session.startedAtMs,
+      answers: state.phaseAnswers
+    }));
+  }
+
+  function restorePhaseAnswers(session) {
+    const raw = root.localStorage && root.localStorage.getItem(ANSWERS_KEY);
+    try {
+      const saved = JSON.parse(raw);
+      return saved && saved.stationId === session.stationId && saved.startedAtMs === session.startedAtMs &&
+        saved.answers && typeof saved.answers === "object" && !Array.isArray(saved.answers)
+        ? saved.answers : {};
+    } catch { return {}; }
+  }
+
+  function collectPhaseAnswers() {
+    return state.station.phases.map((phase, index) => {
+      const answer = String(state.phaseAnswers[phase.id] || "").trim();
+      return answer ? `Pergunta ${index + 1}: ${answer}` : "";
+    }).filter(Boolean).join("\n\n");
   }
 
   function getVitalEntries(patientState) {
@@ -1062,20 +1092,18 @@
     mount.innerHTML = `
       <section class="practice-shell practice-running">
         <header class="practice-run-header">
-          <div><span class="practice-kicker">${escapeHtml(runningView.kicker)}</span><strong>${escapeHtml(runningView.title)} · Fase ${state.session.phaseIndex + 1}/${state.station.phases.length}</strong></div>
+          <div><span class="practice-kicker">${escapeHtml(runningView.kicker)}</span><strong>${escapeHtml(runningView.title)}</strong><small>Pergunta ${state.session.phaseIndex + 1} de ${state.station.phases.length}</small></div>
           <time id="practice-clock" class="practice-clock ${remaining <= 60 ? "is-warning" : ""}" datetime="PT${remaining}S">${formatClock(remaining)}</time>
         </header>
         ${state.runtimeNotice ? `<div class="practice-alert">${escapeHtml(state.runtimeNotice)}</div>` : ""}
         ${patientState && patientState.summary ? `<section class="practice-patient-state" aria-label="Estado clínico"><h2>Estado clínico</h2><p>${escapeHtml(patientState.summary)}</p></section>` : ""}
         ${vitals.length ? `<dl class="practice-vitals">${vitals.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>` : ""}
-        <div class="practice-task">
-          <span>${escapeHtml(phase.title)}</span>
-          <p>${escapeHtml(phase.prompt)}</p>
-        </div>
+        <div class="practice-task"><span>${escapeHtml(phase.title)}</span><p>${escapeHtml(phase.prompt)}</p></div>
         <div id="practice-phase-media" aria-label="Mídia da fase atual"></div>
-        <div class="practice-actions">
+        <label class="practice-field practice-slide-answer" for="practice-slide-answer"><span>Resposta desta pergunta</span><textarea id="practice-slide-answer" rows="3">${escapeHtml(state.phaseAnswers[phase.id] || "")}</textarea></label>
+        <div class="practice-actions practice-slide-actions">
           <button id="practice-previous" class="practice-button" type="button" ${controls.previous.disabled ? "disabled" : ""}>${controls.previous.label}</button>
-          <button id="practice-next" class="practice-button practice-button-primary" type="button">${controls.primary.label}</button>
+          ${controls.primary.action === "next" ? `<button id="practice-next" class="practice-button practice-button-primary" type="button">Próxima pergunta</button>` : `<span class="practice-end-hint">Última pergunta. Você pode voltar enquanto houver tempo.</span>`}
           <button id="practice-finish" class="practice-button practice-button-danger" type="button">Encerrar estação</button>
         </div>
         <p class="practice-recording-state">${state.mediaRecorder ? "● Gravação em andamento" : "Treino sem gravação"}</p>
@@ -1084,16 +1112,17 @@
     if (mediaContainer && mediaModule && typeof mediaModule.renderPhaseMedia === "function") {
       mediaModule.renderPhaseMedia(mediaContainer, currentPhaseMedia, getRunningMediaOptions(currentPhaseMedia));
     }
+    mount.querySelector("#practice-slide-answer").addEventListener("input", (event) => {
+      state.phaseAnswers[phase.id] = event.target.value;
+      savePhaseAnswers();
+    });
     mount.querySelector("#practice-previous").addEventListener("click", () => {
       state.session = movePracticePhase(state.session, "previous");
       if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
       renderRunning();
     });
-    mount.querySelector("#practice-next").addEventListener("click", () => {
-      if (controls.primary.action === "finish") {
-        finishSession();
-        return;
-      }
+    const nextButton = mount.querySelector("#practice-next");
+    if (nextButton) nextButton.addEventListener("click", () => {
       state.session = movePracticePhase(state.session, "next");
       if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
       renderRunning();
@@ -1117,6 +1146,8 @@
     clearSessionTimer();
     state.session = { ...state.session, status: "review", completedAtMs: Date.now() };
     if (root.localStorage) clearPracticeDraft(root.localStorage);
+    if (root.localStorage) root.localStorage.removeItem(ANSWERS_KEY);
+    if (!state.mediaRecorder || state.mediaRecorder.state === "inactive") state.transcript = collectPhaseAnswers();
     if (state.mediaRecorder && state.mediaRecorder.state !== "inactive") stopRecording();
     else renderReview();
   }
@@ -1127,11 +1158,11 @@
     mount.innerHTML = `
       <section class="practice-shell">
         <span class="practice-kicker">Estação encerrada</span>
-        <h2>Registre exatamente o que você falou</h2>
+        <h2>Revise suas respostas</h2>
         ${state.audioUrl ? `<audio class="practice-audio" controls src="${escapeHtml(state.audioUrl)}"></audio>` : ""}
         <label class="practice-field" for="practice-transcript">
-          <span>Transcrição</span>
-          <textarea id="practice-transcript" rows="10" placeholder="A transcrição automática aparecerá aqui. No modo sem API, digite ou cole sua fala sem acrescentar ações que não foram verbalizadas.">${escapeHtml(state.transcript)}</textarea>
+          <span>Respostas da estação</span>
+          <textarea id="practice-transcript" rows="8" placeholder="Registre somente o que foi dito ou demonstrado.">${escapeHtml(state.transcript)}</textarea>
         </label>
         <div id="practice-api-message"></div>
         <div class="practice-actions">
@@ -1181,7 +1212,8 @@
         itemId: item.id,
         status: form.get(`status-${item.id}`) || "ausente",
         evidence: String(form.get(`evidence-${item.id}`) || "Autoavaliação sem evidência textual."),
-        rationale: "Classificação manual do aluno."
+        rationale: "Classificação manual do aluno.",
+        manualConfirmed: item.verification === "verbal" ? null : ["cumprido", "parcial"].includes(form.get(`status-${item.id}`))
       }));
       finalizeEvaluation(evaluations, "manual");
     });
@@ -1220,14 +1252,25 @@
     if (!mount || !attempt) return;
     const score = Number.isFinite(attempt.finalPercent) ? attempt.finalPercent : attempt.provisionalPercent;
     const relatedStations = getRelatedStationEntries(state.stationEntries, getStoredAttempts());
+    const checklistById = new Map(state.station.checklist.map((item) => [item.id, item]));
+    const missingCritical = attempt.criticalFailures.map((id) => checklistById.get(id)?.label || id);
+    const missedItems = attempt.evaluations.filter((evaluation) => ["ausente", "incorreto", "parcial"].includes(evaluation.status));
+    const completedCount = attempt.evaluations.filter((evaluation) => evaluation.status === "cumprido" &&
+      (checklistById.get(evaluation.itemId)?.verification === "verbal" || evaluation.manualConfirmed === true)).length;
+    const earnedFor = (evaluation, item) => {
+      if (!item || (item.verification !== "verbal" && evaluation.manualConfirmed !== true)) return 0;
+      return evaluation.status === "cumprido" ? item.weight : evaluation.status === "parcial" ? item.weight / 2 : 0;
+    };
     mount.innerHTML = `
       <section class="practice-shell">
         <div class="practice-result-head">
           <div><span class="practice-kicker">Resultado</span><h2>${escapeHtml(state.station.title)}</h2></div>
           <strong class="practice-score">${score}%</strong>
         </div>
+        <p class="practice-result-overview">${completedCount} de ${state.station.checklist.length} critérios contemplados · ${missedItems.length} ausentes ou parciais · ${attempt.earnedPoints}/${attempt.totalPoints} pontos</p>
         ${attempt.persistenceWarning ? `<div class="practice-alert">${escapeHtml(attempt.persistenceWarning)}</div>` : ""}
         ${attempt.summary ? `<div class="practice-feedback"><strong>Síntese da avaliação</strong><p>${escapeHtml(attempt.summary)}</p></div>` : ""}
+        <div class="practice-feedback"><strong>Raciocínio clínico</strong><p>${escapeHtml(state.station.referenceAnswer || "")}</p></div>
         ${attempt.pendingManualItemIds.length ? `
           <form id="practice-manual-confirm" class="practice-manual-confirm">
             <h3>Confirme os gestos manuais</h3>
@@ -1238,15 +1281,20 @@
             }).join("")}
             <button class="practice-button practice-button-primary" type="submit">Concluir nota</button>
           </form>` : ""}
-        ${attempt.criticalFailures.length ? `<div class="practice-alert practice-alert-error"><strong>Erros críticos</strong><span>${attempt.criticalFailures.map(escapeHtml).join(", ")}</span></div>` : ""}
+        ${missingCritical.length ? `<div class="practice-alert practice-alert-error"><strong>Pontos críticos esquecidos</strong><span>${missingCritical.map(escapeHtml).join("; ")}</span></div>` : ""}
+        ${missedItems.length ? `<div class="practice-feedback"><strong>Prioridades para revisar</strong><ul>${missedItems.slice(0, 5).map((evaluation) => `<li>${escapeHtml(evaluation.label)}</li>`).join("")}</ul></div>` : ""}
         <div class="practice-result-list">
-          ${attempt.evaluations.map((evaluation) => `
+          ${attempt.evaluations.map((evaluation) => {
+            const item = checklistById.get(evaluation.itemId);
+            return `
             <article class="practice-result-item is-${escapeHtml(evaluation.status)}">
-              <header><strong>${escapeHtml(evaluation.label)}</strong><span>${escapeHtml(evaluation.status.replace("_", " "))}</span></header>
+              <header><strong>${escapeHtml(evaluation.label)}</strong><span>${escapeHtml(evaluation.status.replace("_", " "))} · ${earnedFor(evaluation, item)}/${item?.weight || 0} pts</span></header>
               <p>${escapeHtml(evaluation.evidence)}</p>
               ${evaluation.rationale ? `<small>${escapeHtml(evaluation.rationale)}</small>` : ""}
-            </article>`).join("")}
+              ${item?.explanation ? `<small>${escapeHtml(item.explanation)}</small>` : ""}
+            </article>`; }).join("")}
         </div>
+        ${state.station.references?.length ? `<details class="practice-references"><summary>Referências clínicas</summary><ul>${state.station.references.map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a></li>`).join("")}</ul></details>` : ""}
         <section class="practice-result-media" aria-label="Mídias revisadas da estação">
           <h3>Revisão visual</h3>
           <div id="practice-result-media"></div>
@@ -1333,7 +1381,9 @@
     cleanupRecording();
     state.runtimeNotice = "";
     state.transcript = "";
+    state.phaseAnswers = {};
     if (root.localStorage) clearPracticeDraft(root.localStorage);
+    if (root.localStorage) root.localStorage.removeItem(ANSWERS_KEY);
     state.session = state.station ? createPracticeSession(state.station, Date.now(), state.mode) : null;
     renderSetup();
   }
@@ -1435,6 +1485,7 @@
       return false;
     }
     state.session = restored.session;
+    state.phaseAnswers = restorePhaseAnswers(restored.session);
     state.audioBlob = restored.audioBlob;
     state.audioUrl = restored.audioUrl;
     state.runtimeNotice = restored.notice;

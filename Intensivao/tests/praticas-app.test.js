@@ -439,10 +439,10 @@ test("deriva titulo publico por modo sem vazar diagnostico na prova", () => {
   assert.equal(Object.values(exam).join(" ").includes(diagnosticStation.difficulty), false);
 
   const directed = getPublicStationView(diagnosticStation, "directed");
-  assert.equal(directed.title, diagnosticStation.title);
+  assert.equal(directed.title, diagnosticStation.examTitle);
   assert.equal(directed.domain, diagnosticStation.domain);
   assert.equal(directed.difficulty, diagnosticStation.difficulty);
-  assert.equal(directed.showDiagnosticMeta, true);
+  assert.equal(directed.showDiagnosticMeta, false);
 
   const review = getPublicStationView(diagnosticStation, "review");
   assert.equal(review.kicker, "REVISÃO");
@@ -456,11 +456,11 @@ test("expoe controles anterior, proximo e finalizar por fase", () => {
   const last = { ...first, phaseIndex: station.phases.length - 1 };
 
   assert.deepEqual(getPracticePhaseControls(first, station), {
-    previous: { action: "previous", label: "Fase anterior", disabled: true },
+    previous: { action: "previous", label: "Anterior", disabled: true },
     primary: { action: "next", label: "Próxima tarefa" }
   });
   assert.deepEqual(getPracticePhaseControls(last, station), {
-    previous: { action: "previous", label: "Fase anterior", disabled: false },
+    previous: { action: "previous", label: "Anterior", disabled: false },
     primary: { action: "finish", label: "Finalizar estação" }
   });
 });
@@ -838,7 +838,7 @@ test("mantem preview e acoes de inicio visiveis e desabilitadas durante preload"
 
   assert.equal(view.visible, true);
   assert.equal(view.startDisabled, true);
-  assert.equal(view.title, selectedEntry.title);
+  assert.equal(view.title, selectedEntry.examTitle);
   assert.match(actions, /id="practice-start-record"[^>]*disabled/);
   assert.match(actions, /id="practice-start-manual"[^>]*disabled/);
 });
@@ -1019,6 +1019,28 @@ test("mudanca de fase preserva inicio gravador e intervalo ativos", async () => 
   assert.match(fixture.simulator.innerHTML, /Gravação em andamento/);
 });
 
+test("respostas por pergunta persistem ao voltar e ao recarregar a estação", async () => {
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const first = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(first.root).mount();
+  first.simulator.querySelector("#practice-start-manual").click();
+  const answer = first.simulator.querySelector("#practice-slide-answer");
+  answer.value = "Primeira conduta dita em voz alta";
+  answer.dispatch("input");
+  first.simulator.querySelector("#practice-next").click();
+  first.simulator.querySelector("#practice-previous").click();
+  assert.match(first.simulator.innerHTML, /Primeira conduta dita em voz alta/);
+  const second = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(second.root).mount();
+  assert.match(second.simulator.innerHTML, /Primeira conduta dita em voz alta/);
+  assert.equal(second.simulator.querySelector("#practice-next") !== null, true);
+});
+
 test("mantem a sidebar fechada ao iniciar e mudar de fase no mobile", async () => {
   const storage = createStorage();
   const fetch = async (url) => {
@@ -1033,7 +1055,7 @@ test("mantem a sidebar fechada ao iniciar e mudar de fase no mobile", async () =
   await app.mount();
 
   fixture.simulator.querySelector("#practice-start-manual").click();
-  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Fase 1\/2/));
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Pergunta 1 de 2/));
   assert.equal(fixture.root.document.body.classList.contains("close"), true);
 
   fixture.root.document.body.classList.remove("close");
@@ -1067,7 +1089,7 @@ test("impede o listener delegado sem bloquear os dois controles de inicio", asyn
       await app.mount();
 
       fixture.simulator.querySelector(currentCase.selector).click();
-      await waitFor(() => assert.match(fixture.simulator.innerHTML, /Fase 1\/2/));
+      await waitFor(() => assert.match(fixture.simulator.innerHTML, /Pergunta 1 de 2/));
 
       assert.equal(delegatedClicks, 0);
       assert.equal(fixture.root.document.body.classList.contains("close"), true);
@@ -1097,12 +1119,12 @@ test("impede o listener delegado ao usar os controles da estacao no mobile", asy
   await app.mount();
 
   fixture.simulator.querySelector("#practice-start-manual").click();
-  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Fase 1\/2/));
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Pergunta 1 de 2/));
   fixture.simulator.querySelector("#practice-next").click();
 
   assert.equal(delegatedClicks, 0);
   assert.equal(fixture.root.document.body.classList.contains("close"), true);
-  assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
+  assert.match(fixture.simulator.innerHTML, /Pergunta 2 de 2/);
 });
 
 test("nao força o fechamento da sidebar ao iniciar no desktop", async () => {
@@ -1118,7 +1140,7 @@ test("nao força o fechamento da sidebar ao iniciar no desktop", async () => {
   await app.mount();
 
   fixture.simulator.querySelector("#practice-start-manual").click();
-  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Fase 1\/2/));
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Pergunta 1 de 2/));
 
   assert.equal(fixture.root.document.body.classList.contains("close"), false);
 });
@@ -1151,7 +1173,7 @@ test("mount restaura draft em andamento sem recuperar audio", async () => {
   assert.match(fixture.simulator.innerHTML, /Treino sem gravação/);
   assert.equal(fixture.recorders.length, 0);
   assert.equal(fixture.intervals.length, 1);
-  assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
+  assert.match(fixture.simulator.innerHTML, /Pergunta 2 de 2/);
 });
 
 test("fecha a sidebar no mobile ao restaurar draft em andamento", async () => {
@@ -1179,7 +1201,7 @@ test("fecha a sidebar no mobile ao restaurar draft em andamento", async () => {
 
   await app.mount();
 
-  assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
+  assert.match(fixture.simulator.innerHTML, /Pergunta 2 de 2/);
   assert.equal(fixture.root.document.body.classList.contains("close"), true);
 });
 
@@ -1221,7 +1243,7 @@ test("mount concorrente restaura um unico draft sem sortear outra estacao", asyn
   assert.deepEqual(loads, { index: 1, media: 1, station: 1 });
   assert.equal(fixture.intervals.length, 1);
   assert.match(fixture.simulator.innerHTML, /Sessão restaurada sem a gravação anterior/);
-  assert.match(fixture.simulator.innerHTML, /Fase 2\/2/);
+  assert.match(fixture.simulator.innerHTML, /Pergunta 2 de 2/);
 });
 
 test("descarta gravacao e cronometro quando a rota deixa de usar o simulador", async (t) => {

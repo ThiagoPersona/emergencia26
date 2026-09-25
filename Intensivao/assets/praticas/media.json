@@ -301,5 +301,34 @@
     "license": "CC BY-NC 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc/4.0/",
     "modified": "2026-08-10"
+  },
+  {
+    "id": "us-tvp-femoral-compressao",
+    "type": "image",
+    "src": "assets/praticas/pocus/us-tvp-compressao.png",
+    "thumbnail": "assets/praticas/pocus/us-tvp-compressao.png",
+    "examAlt": "Ultrassonografia da região femoral esquerda para interpretação.",
+    "reviewAlt": "Imagem com material ecogênico na veia femoral comum esquerda, compatível com trombo.",
+    "reviewCaption": "Achado femoral ilustrativo; na estação, a ausência de compressibilidade é informada separadamente. A imagem isolada não substitui o exame dinâmico.",
+    "credit": "James Heilman, MD",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DVTUS.PNG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "modified": "2026-09-24"
+  },
+  {
+    "id": "us-consolidacao-pulmonar",
+    "type": "video",
+    "src": "assets/praticas/pocus/us-consolidacao-pulmonar.mp4",
+    "thumbnail": "assets/praticas/pocus/us-consolidacao-pulmonar-poster.jpg",
+    "poster": "assets/praticas/pocus/us-consolidacao-pulmonar-poster.jpg",
+    "examAlt": "Clipe de ultrassonografia pulmonar para interpretação da ecotextura subpleural.",
+    "reviewAlt": "Ultrassom pulmonar com consolidação e aspecto de hepatização.",
+    "reviewCaption": "Clipe de paciente da fonte com consolidação subpleural; usado como amostra de achado equivalente ao descrito no caso simulado.",
+    "credit": "Gillman L e Kirkpatrick A",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portable-bedside-ultrasound-the-visual-stethoscope-of-the-21st-century-1757-7241-20-18-S5.ogv",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "modified": "2026-09-24; convertido de OGV para MP4 sem alterar o conteúdo"
   }
 ]

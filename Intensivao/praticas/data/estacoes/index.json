@@ -6,11 +6,21 @@
     "examTitle": "Deterioração em ventilação invasiva",
     "title": "Ventilação mecânica e auto-PEEP",
     "domain": "Via aérea e ventilação mecânica",
-    "domains": ["Via aérea", "Ventilação mecânica"],
+    "domains": [
+      "Via aérea",
+      "Ventilação mecânica"
+    ],
     "family": "Via aérea e ventilação mecânica",
     "difficulty": "intermediaria",
     "origin": "historica",
-    "tags": ["ventilação controlada a volume", "curvas ventilatórias", "auto-PEEP", "broncoobstrução", "gasometria", "reavaliação"],
+    "tags": [
+      "ventilação controlada a volume",
+      "curvas ventilatórias",
+      "auto-PEEP",
+      "broncoobstrução",
+      "gasometria",
+      "reavaliação"
+    ],
     "hasMedia": true,
     "year": 2025
   },
@@ -21,11 +31,22 @@
     "examTitle": "Trauma com sangramento externo importante",
     "title": "Trauma com hemorragia exsanguinante",
     "domain": "Trauma e controle de danos",
-    "domains": ["Trauma", "Controle de danos"],
+    "domains": [
+      "Trauma",
+      "Controle de danos"
+    ],
     "family": "Trauma e APH",
     "difficulty": "intermediaria",
     "origin": "historica",
-    "tags": ["XABCDE", "hemorragia exsanguinante", "torniquete", "choque hemorrágico", "eFAST", "transfusão maciça", "controle cirúrgico"],
+    "tags": [
+      "XABCDE",
+      "hemorragia exsanguinante",
+      "torniquete",
+      "choque hemorrágico",
+      "eFAST",
+      "transfusão maciça",
+      "controle cirúrgico"
+    ],
     "hasMedia": true,
     "year": 2025
   },
@@ -36,11 +57,22 @@
     "examTitle": "POCUS no choque e acesso vascular guiado",
     "title": "POCUS no choque, aneurisma de aorta e acesso guiado",
     "domain": "POCUS",
-    "domains": ["POCUS", "Reanimação", "Acesso vascular"],
+    "domains": [
+      "POCUS",
+      "Reanimação",
+      "Acesso vascular"
+    ],
     "family": "POCUS",
     "difficulty": "avancada",
     "origin": "historica",
-    "tags": ["aorta abdominal", "choque hemorrágico", "FAST", "veia cava inferior", "punção guiada", "ponta da agulha"],
+    "tags": [
+      "aorta abdominal",
+      "choque hemorrágico",
+      "FAST",
+      "veia cava inferior",
+      "punção guiada",
+      "ponta da agulha"
+    ],
     "hasMedia": true,
     "year": 2025
   },
@@ -51,11 +83,21 @@
     "examTitle": "Criança com secreções e rebaixamento",
     "title": "Pediatria: síndrome colinérgica por chumbinho",
     "domain": "Emergências pediátricas e toxicologia",
-    "domains": ["Emergências pediátricas", "Toxicologia"],
+    "domains": [
+      "Emergências pediátricas",
+      "Toxicologia"
+    ],
     "family": "Pediatria",
     "difficulty": "intermediaria",
     "origin": "historica",
-    "tags": ["toxíndrome colinérgica", "descontaminação", "glicemia", "aspiração", "atropina", "via aérea pediátrica"],
+    "tags": [
+      "toxíndrome colinérgica",
+      "descontaminação",
+      "glicemia",
+      "aspiração",
+      "atropina",
+      "via aérea pediátrica"
+    ],
     "hasMedia": false,
     "year": 2025
   },
@@ -66,11 +108,22 @@
     "examTitle": "Deterioração neurológica após trauma",
     "title": "TCE grave e hipertensão intracraniana",
     "domain": "Emergências neurológicas",
-    "domains": ["Emergências neurológicas", "Trauma"],
+    "domains": [
+      "Emergências neurológicas",
+      "Trauma"
+    ],
     "family": "Neurologia",
     "difficulty": "avancada",
     "origin": "historica",
-    "tags": ["TCE grave", "lesão secundária", "normoxia", "normocapnia", "terapia hiperosmolar", "coagulopatia", "neurocirurgia"],
+    "tags": [
+      "TCE grave",
+      "lesão secundária",
+      "normoxia",
+      "normocapnia",
+      "terapia hiperosmolar",
+      "coagulopatia",
+      "neurocirurgia"
+    ],
     "hasMedia": true,
     "year": 2025
   },
@@ -81,11 +134,23 @@
     "examTitle": "Via aérea avançada em instabilidade circulatória",
     "title": "Intubação em sequência rápida no choque",
     "domain": "Via aérea e ventilação mecânica",
-    "domains": ["Via aérea", "Ventilação mecânica", "Reanimação"],
+    "domains": [
+      "Via aérea",
+      "Ventilação mecânica",
+      "Reanimação"
+    ],
     "family": "Via aérea e ventilação mecânica",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["RSI", "pré-oxigenação", "hipotensão peri-intubação", "videolaringoscopia", "bougie", "capnografia", "plano de resgate"],
+    "tags": [
+      "RSI",
+      "pré-oxigenação",
+      "hipotensão peri-intubação",
+      "videolaringoscopia",
+      "bougie",
+      "capnografia",
+      "plano de resgate"
+    ],
     "hasMedia": true
   },
   {
@@ -95,11 +160,22 @@
     "examTitle": "Falha de oxigenação após tentativas de via aérea",
     "title": "CICO e cricotireoidostomia de emergência",
     "domain": "Via aérea e procedimentos",
-    "domains": ["Via aérea", "Procedimentos"],
+    "domains": [
+      "Via aérea",
+      "Procedimentos"
+    ],
     "family": "Via aérea e ventilação mecânica",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["via aérea difícil", "CICO", "dispositivo supraglótico", "cricotireoidostomia", "bisturi-bougie-tubo", "capnografia", "comunicação de crise"],
+    "tags": [
+      "via aérea difícil",
+      "CICO",
+      "dispositivo supraglótico",
+      "cricotireoidostomia",
+      "bisturi-bougie-tubo",
+      "capnografia",
+      "comunicação de crise"
+    ],
     "hasMedia": true
   },
   {
@@ -109,11 +185,23 @@
     "examTitle": "Hipoxemia persistente em ventilação invasiva",
     "title": "SDRA grave com assincronia ventilatória",
     "domain": "Via aérea e ventilação mecânica",
-    "domains": ["Ventilação mecânica", "Terapia intensiva"],
+    "domains": [
+      "Ventilação mecânica",
+      "Terapia intensiva"
+    ],
     "family": "Via aérea e ventilação mecânica",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["SDRA", "ventilação protetora", "assincronia", "pressão de platô", "PEEP", "pronação", "bloqueio neuromuscular", "sedoanalgesia"],
+    "tags": [
+      "SDRA",
+      "ventilação protetora",
+      "assincronia",
+      "pressão de platô",
+      "PEEP",
+      "pronação",
+      "bloqueio neuromuscular",
+      "sedoanalgesia"
+    ],
     "hasMedia": true
   },
   {
@@ -123,11 +211,22 @@
     "examTitle": "Criança politraumatizada com choque",
     "title": "Trauma pediátrico com choque hemorrágico",
     "domain": "Trauma e emergências pediátricas",
-    "domains": ["Trauma", "Emergências pediátricas"],
+    "domains": [
+      "Trauma",
+      "Emergências pediátricas"
+    ],
     "family": "Trauma e APH",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["XABCDE pediátrico", "choque hemorrágico", "acesso intraósseo", "hemoderivados", "eFAST", "imagem após estabilização", "transferência"],
+    "tags": [
+      "XABCDE pediátrico",
+      "choque hemorrágico",
+      "acesso intraósseo",
+      "hemoderivados",
+      "eFAST",
+      "imagem após estabilização",
+      "transferência"
+    ],
     "hasMedia": true
   },
   {
@@ -137,11 +236,21 @@
     "examTitle": "Trauma torácico com comprometimento ventilatório",
     "title": "Tórax instável e pneumotórax hipertensivo",
     "domain": "Trauma e ventilação",
-    "domains": ["Trauma", "Ventilação"],
+    "domains": [
+      "Trauma",
+      "Ventilação"
+    ],
     "family": "Trauma e APH",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["tórax instável", "pneumotórax hipertensivo", "analgesia multimodal", "suporte ventilatório", "higiene pulmonar", "estabilização de costelas"],
+    "tags": [
+      "tórax instável",
+      "pneumotórax hipertensivo",
+      "analgesia multimodal",
+      "suporte ventilatório",
+      "higiene pulmonar",
+      "estabilização de costelas"
+    ],
     "hasMedia": true
   },
   {
@@ -151,11 +260,23 @@
     "examTitle": "Atendimento pré-hospitalar de trauma penetrante",
     "title": "Trauma penetrante no atendimento pré-hospitalar",
     "domain": "APH e trauma",
-    "domains": ["APH", "Trauma"],
+    "domains": [
+      "APH",
+      "Trauma"
+    ],
     "family": "Trauma e APH",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["segurança de cena", "XABCDE", "torniquete", "empacotamento", "selo torácico", "pneumotórax hipertensivo", "hipotermia", "transferência"],
+    "tags": [
+      "segurança de cena",
+      "XABCDE",
+      "torniquete",
+      "empacotamento",
+      "selo torácico",
+      "pneumotórax hipertensivo",
+      "hipotermia",
+      "transferência"
+    ],
     "hasMedia": false
   },
   {
@@ -165,11 +286,23 @@
     "examTitle": "Dispneia aguda com ultrassom pulmonar",
     "title": "Edema agudo de pulmão avaliado por POCUS",
     "domain": "POCUS e emergências respiratórias",
-    "domains": ["POCUS", "Emergências respiratórias"],
+    "domains": [
+      "POCUS",
+      "Emergências respiratórias"
+    ],
     "family": "POCUS",
     "difficulty": "intermediaria",
     "origin": "inedita",
-    "tags": ["POCUS pulmonar", "linhas B", "perfil B", "pneumotórax", "edema pulmonar", "diagnóstico diferencial", "VNI", "reavaliação"],
+    "tags": [
+      "POCUS pulmonar",
+      "linhas B",
+      "perfil B",
+      "pneumotórax",
+      "edema pulmonar",
+      "diagnóstico diferencial",
+      "VNI",
+      "reavaliação"
+    ],
     "hasMedia": true
   },
   {
@@ -179,11 +312,22 @@
     "examTitle": "POCUS no trauma com instabilidade",
     "title": "eFAST positivo no trauma instável",
     "domain": "POCUS e trauma",
-    "domains": ["POCUS", "Trauma"],
+    "domains": [
+      "POCUS",
+      "Trauma"
+    ],
     "family": "POCUS",
     "difficulty": "intermediaria",
     "origin": "inedita",
-    "tags": ["eFAST", "janela hepatorrenal", "líquido livre", "pneumotórax", "hemoperitônio", "choque hemorrágico", "controle cirúrgico"],
+    "tags": [
+      "eFAST",
+      "janela hepatorrenal",
+      "líquido livre",
+      "pneumotórax",
+      "hemoperitônio",
+      "choque hemorrágico",
+      "controle cirúrgico"
+    ],
     "hasMedia": true
   },
   {
@@ -193,11 +337,23 @@
     "examTitle": "Choque indiferenciado com POCUS dirigido",
     "title": "Tamponamento cardíaco no choque obstrutivo",
     "domain": "POCUS e reanimação",
-    "domains": ["POCUS", "Reanimação", "Cardiovascular"],
+    "domains": [
+      "POCUS",
+      "Reanimação",
+      "Cardiovascular"
+    ],
     "family": "POCUS",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["RUSH", "choque obstrutivo", "tamponamento cardíaco", "colapso de ventrículo direito", "pericardiocentese", "vasopressor", "controle definitivo"],
+    "tags": [
+      "RUSH",
+      "choque obstrutivo",
+      "tamponamento cardíaco",
+      "colapso de ventrículo direito",
+      "pericardiocentese",
+      "vasopressor",
+      "controle definitivo"
+    ],
     "hasMedia": true
   },
   {
@@ -207,11 +363,23 @@
     "examTitle": "Dor torácica com instabilidade hemodinâmica",
     "title": "IAM inferior com acometimento do ventrículo direito",
     "domain": "Cardiovascular e emergência",
-    "domains": ["Cardiovascular", "Emergência"],
+    "domains": [
+      "Cardiovascular",
+      "Emergência"
+    ],
     "family": "Cardiovascular e PCR",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["síndrome coronariana aguda", "supra de ST", "ventrículo direito", "derivações direitas", "reperfusão", "aspirina", "bradicardia", "marcapasso"],
+    "tags": [
+      "síndrome coronariana aguda",
+      "supra de ST",
+      "ventrículo direito",
+      "derivações direitas",
+      "reperfusão",
+      "aspirina",
+      "bradicardia",
+      "marcapasso"
+    ],
     "hasMedia": true
   },
   {
@@ -221,11 +389,22 @@
     "examTitle": "Deterioração com frequência muito baixa",
     "title": "Bloqueio atrioventricular total com instabilidade",
     "domain": "Cardiovascular e procedimentos",
-    "domains": ["Cardiovascular", "Reanimação", "Procedimentos"],
+    "domains": [
+      "Cardiovascular",
+      "Reanimação",
+      "Procedimentos"
+    ],
     "family": "Cardiovascular e PCR",
     "difficulty": "intermediaria",
     "origin": "inedita",
-    "tags": ["bradicardia instável", "bloqueio atrioventricular", "marcapasso transcutâneo", "captura mecânica", "marcapasso transvenoso", "causas reversíveis"],
+    "tags": [
+      "bradicardia instável",
+      "bloqueio atrioventricular",
+      "marcapasso transcutâneo",
+      "captura mecânica",
+      "marcapasso transvenoso",
+      "causas reversíveis"
+    ],
     "hasMedia": true
   },
   {
@@ -235,11 +414,22 @@
     "examTitle": "Colapso após alteração do ritmo",
     "title": "Torsades de pointes com deterioração para PCR",
     "domain": "Cardiovascular e PCR",
-    "domains": ["Cardiovascular", "Reanimação", "PCR"],
+    "domains": [
+      "Cardiovascular",
+      "Reanimação",
+      "PCR"
+    ],
     "family": "Cardiovascular e PCR",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["torsades de pointes", "QT longo", "desfibrilação", "magnésio", "correção eletrolítica", "prevenção de recorrência"],
+    "tags": [
+      "torsades de pointes",
+      "QT longo",
+      "desfibrilação",
+      "magnésio",
+      "correção eletrolítica",
+      "prevenção de recorrência"
+    ],
     "hasMedia": true
   },
   {
@@ -249,11 +439,23 @@
     "examTitle": "Cuidados após retorno da circulação",
     "title": "Cuidados integrados após retorno da circulação espontânea",
     "domain": "Cardiovascular e cuidados pós-PCR",
-    "domains": ["Cardiovascular", "Reanimação", "Cuidados pós-PCR"],
+    "domains": [
+      "Cardiovascular",
+      "Reanimação",
+      "Cuidados pós-PCR"
+    ],
     "family": "Cardiovascular e PCR",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["RCE", "oxigenação", "ventilação", "pressão arterial média", "ECG pós-RCE", "controle de temperatura", "causas reversíveis"],
+    "tags": [
+      "RCE",
+      "oxigenação",
+      "ventilação",
+      "pressão arterial média",
+      "ECG pós-RCE",
+      "controle de temperatura",
+      "causas reversíveis"
+    ],
     "hasMedia": true
   },
   {
@@ -263,11 +465,21 @@
     "examTitle": "Criança com esforço respiratório crescente",
     "title": "Exacerbação asmática pediátrica grave",
     "domain": "Pediatria e respiratório",
-    "domains": ["Pediatria", "Emergências respiratórias"],
+    "domains": [
+      "Pediatria",
+      "Emergências respiratórias"
+    ],
     "family": "Pediatria",
     "difficulty": "intermediaria",
     "origin": "inedita",
-    "tags": ["exacerbação asmática grave", "hipoxemia", "SABA repetido", "corticoide sistêmico", "ipratrópio", "falência respiratória"],
+    "tags": [
+      "exacerbação asmática grave",
+      "hipoxemia",
+      "SABA repetido",
+      "corticoide sistêmico",
+      "ipratrópio",
+      "falência respiratória"
+    ],
     "hasMedia": false
   },
   {
@@ -277,11 +489,22 @@
     "examTitle": "Lactente com pausas respiratórias",
     "title": "Bronquiolite grave com apneia e bradicardia",
     "domain": "Pediatria e reanimação",
-    "domains": ["Pediatria", "Reanimação", "Emergências respiratórias"],
+    "domains": [
+      "Pediatria",
+      "Reanimação",
+      "Emergências respiratórias"
+    ],
     "family": "Pediatria",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["bronquiolite", "apneia", "ventilação com bolsa-máscara", "bradicardia pediátrica", "RCP pediátrica", "epinefrina IV ou IO"],
+    "tags": [
+      "bronquiolite",
+      "apneia",
+      "ventilação com bolsa-máscara",
+      "bradicardia pediátrica",
+      "RCP pediátrica",
+      "epinefrina IV ou IO"
+    ],
     "hasMedia": false
   },
   {
@@ -291,11 +514,22 @@
     "examTitle": "Rebaixamento após ingestão medicamentosa",
     "title": "Intoxicação por antidepressivo tricíclico com cardiotoxicidade",
     "domain": "Toxicologia e cardiovascular",
-    "domains": ["Toxicologia", "Cardiovascular", "Reanimação"],
+    "domains": [
+      "Toxicologia",
+      "Cardiovascular",
+      "Reanimação"
+    ],
     "family": "Toxicologia e animais peçonhentos",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["bloqueio de canal de sódio", "antidepressivo tricíclico", "QRS alargado", "bicarbonato de sódio", "convulsão", "CIATox"],
+    "tags": [
+      "bloqueio de canal de sódio",
+      "antidepressivo tricíclico",
+      "QRS alargado",
+      "bicarbonato de sódio",
+      "convulsão",
+      "CIATox"
+    ],
     "hasMedia": true
   },
   {
@@ -305,11 +539,23 @@
     "examTitle": "Acidose após exposição a solvente",
     "title": "Intoxicação por metanol com indicação de hemodiálise",
     "domain": "Toxicologia e metabólico",
-    "domains": ["Toxicologia", "Metabólico", "Terapia intensiva"],
+    "domains": [
+      "Toxicologia",
+      "Metabólico",
+      "Terapia intensiva"
+    ],
     "family": "Toxicologia e animais peçonhentos",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["álcool tóxico", "metanol", "acidose metabólica", "anion gap", "fomepizol", "hemodiálise", "CIATox"],
+    "tags": [
+      "álcool tóxico",
+      "metanol",
+      "acidose metabólica",
+      "anion gap",
+      "fomepizol",
+      "hemodiálise",
+      "CIATox"
+    ],
     "hasMedia": false
   },
   {
@@ -319,11 +565,22 @@
     "examTitle": "Criança com piora após picada",
     "title": "Escorpionismo pediátrico grave com choque",
     "domain": "Toxicologia e animais peçonhentos",
-    "domains": ["Toxicologia", "Animais peçonhentos", "Pediatria"],
+    "domains": [
+      "Toxicologia",
+      "Animais peçonhentos",
+      "Pediatria"
+    ],
     "family": "Toxicologia e animais peçonhentos",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["escorpionismo pediátrico", "classificação de gravidade", "soro antiescorpiônico", "choque", "edema pulmonar", "terapia intensiva"],
+    "tags": [
+      "escorpionismo pediátrico",
+      "classificação de gravidade",
+      "soro antiescorpiônico",
+      "choque",
+      "edema pulmonar",
+      "terapia intensiva"
+    ],
     "hasMedia": false
   },
   {
@@ -333,11 +590,22 @@
     "examTitle": "Déficit focal de início recente",
     "title": "AVC isquêmico por oclusão de grande vaso",
     "domain": "Neurologia e sistema tempo-dependente",
-    "domains": ["Neurologia", "Sistema tempo-dependente"],
+    "domains": [
+      "Neurologia",
+      "Sistema tempo-dependente"
+    ],
     "family": "Neurologia",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["AVC isquêmico", "oclusão de grande vaso", "trombólise", "tenecteplase", "trombectomia", "pressão arterial", "último momento bem"],
+    "tags": [
+      "AVC isquêmico",
+      "oclusão de grande vaso",
+      "trombólise",
+      "tenecteplase",
+      "trombectomia",
+      "pressão arterial",
+      "último momento bem"
+    ],
     "hasMedia": false
   },
   {
@@ -347,11 +615,22 @@
     "examTitle": "Instabilidade no ventilador após intubação",
     "title": "Asma intubada com hiperinsuflação dinâmica",
     "domain": "Respiratório e ventilação mecânica",
-    "domains": ["Emergências respiratórias", "Ventilação mecânica", "Terapia intensiva"],
+    "domains": [
+      "Emergências respiratórias",
+      "Ventilação mecânica",
+      "Terapia intensiva"
+    ],
     "family": "Respiratório, sepse e metabólico",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["asma ameaçadora à vida", "aprisionamento aéreo", "auto-PEEP", "curvas ventilatórias", "hipotensão obstrutiva", "hipercapnia permissiva"],
+    "tags": [
+      "asma ameaçadora à vida",
+      "aprisionamento aéreo",
+      "auto-PEEP",
+      "curvas ventilatórias",
+      "hipotensão obstrutiva",
+      "hipercapnia permissiva"
+    ],
     "hasMedia": true
   },
   {
@@ -361,11 +640,23 @@
     "examTitle": "Hipoperfusão persistente apesar de tratamento inicial",
     "title": "Choque séptico refratário",
     "domain": "Sepse e choque",
-    "domains": ["Sepse", "Choque", "Terapia intensiva"],
+    "domains": [
+      "Sepse",
+      "Choque",
+      "Terapia intensiva"
+    ],
     "family": "Respiratório, sepse e metabólico",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["choque séptico", "antimicrobiano precoce", "cristaloide balanceado", "noradrenalina", "vasopressina", "hidrocortisona", "controle de foco"],
+    "tags": [
+      "choque séptico",
+      "antimicrobiano precoce",
+      "cristaloide balanceado",
+      "noradrenalina",
+      "vasopressina",
+      "hidrocortisona",
+      "controle de foco"
+    ],
     "hasMedia": false
   },
   {
@@ -375,11 +666,23 @@
     "examTitle": "Descompensação metabólica com potássio baixo",
     "title": "Cetoacidose diabética com hipocalemia",
     "domain": "Metabólico e emergências endócrinas",
-    "domains": ["Metabólico", "Emergências endócrinas", "Terapia intensiva"],
+    "domains": [
+      "Metabólico",
+      "Emergências endócrinas",
+      "Terapia intensiva"
+    ],
     "family": "Respiratório, sepse e metabólico",
     "difficulty": "intermediaria",
     "origin": "inedita",
-    "tags": ["cetoacidose diabética", "beta-hidroxibutirato", "reposição volêmica", "potássio", "insulina IV", "dextrose", "critérios de resolução"],
+    "tags": [
+      "cetoacidose diabética",
+      "beta-hidroxibutirato",
+      "reposição volêmica",
+      "potássio",
+      "insulina IV",
+      "dextrose",
+      "critérios de resolução"
+    ],
     "hasMedia": false
   },
   {
@@ -389,11 +692,22 @@
     "examTitle": "Convulsão e hipertensão no fim da gestação",
     "title": "Eclâmpsia com hipertensão grave",
     "domain": "Obstetrícia e neurologia de emergência",
-    "domains": ["Obstetrícia", "Neurologia", "Reanimação"],
+    "domains": [
+      "Obstetrícia",
+      "Neurologia",
+      "Reanimação"
+    ],
     "family": "Obstetrícia",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["eclâmpsia", "sulfato de magnésio", "hipertensão grave", "monitorização de toxicidade", "estabilização materna", "resolução da gestação"],
+    "tags": [
+      "eclâmpsia",
+      "sulfato de magnésio",
+      "hipertensão grave",
+      "monitorização de toxicidade",
+      "estabilização materna",
+      "resolução da gestação"
+    ],
     "hasMedia": false
   },
   {
@@ -403,11 +717,22 @@
     "examTitle": "Colapso materno em atendimento",
     "title": "Parada cardiorrespiratória na gestação",
     "domain": "Obstetrícia e PCR",
-    "domains": ["Obstetrícia", "PCR", "Reanimação"],
+    "domains": [
+      "Obstetrícia",
+      "PCR",
+      "Reanimação"
+    ],
     "family": "Obstetrícia",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["PCR na gestação", "RCP de alta qualidade", "deslocamento uterino manual", "desfibrilação", "parto de ressuscitação", "equipe neonatal"],
+    "tags": [
+      "PCR na gestação",
+      "RCP de alta qualidade",
+      "deslocamento uterino manual",
+      "desfibrilação",
+      "parto de ressuscitação",
+      "equipe neonatal"
+    ],
     "hasMedia": false
   },
   {
@@ -417,11 +742,377 @@
     "examTitle": "Analgesia regional para dor de quadril",
     "title": "Bloqueio da fáscia ilíaca guiado por ultrassom",
     "domain": "Procedimentos, POCUS e analgesia",
-    "domains": ["Procedimentos", "POCUS", "Analgesia"],
+    "domains": [
+      "Procedimentos",
+      "POCUS",
+      "Analgesia"
+    ],
     "family": "Procedimentos, analgesia e sedação",
     "difficulty": "avancada",
     "origin": "inedita",
-    "tags": ["bloqueio da fáscia ilíaca", "ultrassom", "analgesia regional", "assepsia", "injeção fracionada", "anestésico local", "LAST"],
+    "tags": [
+      "bloqueio da fáscia ilíaca",
+      "ultrassom",
+      "analgesia regional",
+      "assepsia",
+      "injeção fracionada",
+      "anestésico local",
+      "LAST"
+    ],
     "hasMedia": true
+  },
+  {
+    "id": "emt-1-trauma-dupla-ameaca",
+    "file": "emt-1-trauma-dupla-ameaca.json",
+    "schemaVersion": 2,
+    "examTitle": "Trauma com duas ameaças imediatas",
+    "title": "Hemorragia de membro e pneumotórax hipertensivo",
+    "domain": "Trauma e APH",
+    "domains": [
+      "Trauma e APH"
+    ],
+    "family": "Trauma e APH",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "XABCDE",
+      "torniquete",
+      "pneumotórax hipertensivo",
+      "dreno de tórax"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "emt-1-bronquiolite-iot",
+    "file": "emt-1-bronquiolite-iot.json",
+    "schemaVersion": 2,
+    "examTitle": "Lactente com deterioração respiratória",
+    "title": "Bronquiolite com apneia e falha do suporte",
+    "domain": "Pediatria",
+    "domains": [
+      "Pediatria"
+    ],
+    "family": "Pediatria",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "bronquiolite",
+      "apneia",
+      "via aérea pediátrica",
+      "capnografia"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "emt-1-avci-pos-trombolise",
+    "file": "emt-1-avci-pos-trombolise.json",
+    "schemaVersion": 2,
+    "examTitle": "Déficit focal e deterioração neurológica",
+    "title": "AVC isquêmico com piora após trombólise",
+    "domain": "Neurologia",
+    "domains": [
+      "Neurologia"
+    ],
+    "family": "Neurologia",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "AVC",
+      "trombólise",
+      "hemorragia sintomática",
+      "neuroproteção"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "emt-1-hda-varicosa",
+    "file": "emt-1-hda-varicosa.json",
+    "schemaVersion": 2,
+    "examTitle": "Hematêmese e deterioração circulatória",
+    "title": "HDA varicosa com falha da ressuscitação inicial",
+    "domain": "Gastroenterologia",
+    "domains": [
+      "Gastroenterologia"
+    ],
+    "family": "Gastroenterologia",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "hemorragia digestiva",
+      "varizes",
+      "endoscopia",
+      "balão ponte"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "emt-1-gestao-fluxo",
+    "file": "emt-1-gestao-fluxo.json",
+    "schemaVersion": 2,
+    "examTitle": "Departamento de emergência em sobrecarga",
+    "title": "Superlotação com boarding e espera prolongada",
+    "domain": "Gestão",
+    "domains": [
+      "Gestão"
+    ],
+    "family": "Gestão",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "boarding",
+      "classificação de risco",
+      "fluxo",
+      "indicadores"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "emt-2-tep-choque",
+    "file": "emt-2-tep-choque.json",
+    "schemaVersion": 2,
+    "examTitle": "Hipotensão e sobrecarga de ventrículo direito",
+    "title": "TEP de alto risco com choque obstrutivo",
+    "domain": "Cardiovascular e PCR",
+    "domains": [
+      "Cardiovascular e PCR"
+    ],
+    "family": "Cardiovascular e PCR",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "TEP",
+      "choque obstrutivo",
+      "POCUS",
+      "reperfusão"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "emt-2-tvp-compressao",
+    "file": "emt-2-tvp-compressao.json",
+    "schemaVersion": 2,
+    "examTitle": "Edema unilateral e exame venoso",
+    "title": "POCUS de compressão venosa e TVP proximal",
+    "domain": "POCUS",
+    "domains": [
+      "POCUS"
+    ],
+    "family": "POCUS",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "TVP",
+      "ultrassom de compressão",
+      "anticoagulação"
+    ],
+    "hasMedia": true
+  },
+  {
+    "id": "emt-2-via-aerea-suja",
+    "file": "emt-2-via-aerea-suja.json",
+    "schemaVersion": 2,
+    "examTitle": "Paciente com hipoxemia e orofaringe contaminada",
+    "title": "Via aérea contaminada com falha de primeira tentativa",
+    "domain": "Via aérea e ventilação mecânica",
+    "domains": [
+      "Via aérea e ventilação mecânica"
+    ],
+    "family": "Via aérea e ventilação mecânica",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "SALAD",
+      "aspiração",
+      "RSI",
+      "capnografia"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "emt-3-queimadura-eletrica",
+    "file": "emt-3-queimadura-eletrica.json",
+    "schemaVersion": 2,
+    "examTitle": "Paciente após choque elétrico e queda",
+    "title": "Lesão elétrica de alta tensão com queimaduras extensas",
+    "domain": "Trauma e APH",
+    "domains": [
+      "Trauma e APH"
+    ],
+    "family": "Trauma e APH",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "queimadura elétrica",
+      "lesão profunda",
+      "rabdomiólise",
+      "ressuscitação"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "emt-3-pocus-consolidacao",
+    "file": "emt-3-pocus-consolidacao.json",
+    "schemaVersion": 2,
+    "examTitle": "Janela pulmonar em dispneia febril",
+    "title": "POCUS pulmonar com consolidação e derrame",
+    "domain": "POCUS",
+    "domains": [
+      "POCUS"
+    ],
+    "family": "POCUS",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "LUS",
+      "consolidação",
+      "broncograma",
+      "derrame pleural"
+    ],
+    "hasMedia": true
+  },
+  {
+    "id": "emt-3-sindrome-toracica-aguda",
+    "file": "emt-3-sindrome-toracica-aguda.json",
+    "schemaVersion": 2,
+    "examTitle": "Criança falciforme com febre e hipoxemia",
+    "title": "Síndrome torácica aguda na doença falciforme",
+    "domain": "Pediatria",
+    "domains": [
+      "Pediatria"
+    ],
+    "family": "Pediatria",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "doença falciforme",
+      "síndrome torácica aguda",
+      "transfusão"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "emt-3-via-aerea-obesidade",
+    "file": "emt-3-via-aerea-obesidade.json",
+    "schemaVersion": 2,
+    "examTitle": "Insuficiência respiratória em paciente com obesidade",
+    "title": "Via aérea fisiológica e anatomicamente difícil na obesidade",
+    "domain": "Via aérea e ventilação mecânica",
+    "domains": [
+      "Via aérea e ventilação mecânica"
+    ],
+    "family": "Via aérea e ventilação mecânica",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "obesidade",
+      "rampa",
+      "VNI",
+      "RSI",
+      "bougie"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "int-rn-reanimacao",
+    "file": "int-rn-reanimacao.json",
+    "schemaVersion": 2,
+    "examTitle": "Recém-nascido sem respiração eficaz",
+    "title": "Reanimação neonatal no parto",
+    "domain": "Pediatria",
+    "domains": [
+      "Pediatria"
+    ],
+    "family": "Pediatria",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "reanimação neonatal",
+      "VPP",
+      "FC",
+      "cordão"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "int-ped-ovace",
+    "file": "int-ped-ovace.json",
+    "schemaVersion": 2,
+    "examTitle": "Criança com engasgo e piora",
+    "title": "Obstrução de via aérea por corpo estranho",
+    "domain": "Pediatria",
+    "domains": [
+      "Pediatria"
+    ],
+    "family": "Pediatria",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "OVACE",
+      "engasgo",
+      "suporte básico pediátrico"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "int-aph-amonia-imv",
+    "file": "int-aph-amonia-imv.json",
+    "schemaVersion": 2,
+    "examTitle": "Vítimas em instalação industrial",
+    "title": "Incidente com amônia e múltiplas vítimas",
+    "domain": "Trauma e APH",
+    "domains": [
+      "Trauma e APH"
+    ],
+    "family": "Trauma e APH",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "IMV",
+      "amônia",
+      "zonas",
+      "descontaminação"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "int-ped-sepse-choque",
+    "file": "int-ped-sepse-choque.json",
+    "schemaVersion": 2,
+    "examTitle": "Criança febril com má perfusão",
+    "title": "Choque séptico pediátrico e reavaliação",
+    "domain": "Pediatria",
+    "domains": [
+      "Pediatria"
+    ],
+    "family": "Pediatria",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "sepse pediátrica",
+      "bolus",
+      "vasoativo",
+      "reavaliação"
+    ],
+    "hasMedia": false
+  },
+  {
+    "id": "int-pocus-vti-choque",
+    "file": "int-pocus-vti-choque.json",
+    "schemaVersion": 2,
+    "examTitle": "Choque após reposição inicial",
+    "title": "POCUS de resposta a volume e tolerância",
+    "domain": "POCUS",
+    "domains": [
+      "POCUS"
+    ],
+    "family": "POCUS",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "VTI",
+      "elevação passiva das pernas",
+      "congestão pulmonar"
+    ],
+    "hasMedia": false
   }
 ]

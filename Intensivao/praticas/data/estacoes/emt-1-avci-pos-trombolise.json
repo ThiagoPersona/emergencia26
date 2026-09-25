@@ -1,0 +1,136 @@
+{
+  "id": "emt-1-avci-pos-trombolise",
+  "version": 2,
+  "title": "AVC isquêmico com piora após trombólise",
+  "examTitle": "Déficit focal e deterioração neurológica",
+  "domain": "Neurologia",
+  "domains": [
+    "Neurologia"
+  ],
+  "family": "Neurologia",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": [
+    "AVC",
+    "trombólise",
+    "hemorragia sintomática",
+    "neuroproteção"
+  ],
+  "durationSeconds": 300,
+  "source": {
+    "collection": "EmTalks simulado",
+    "simulado": 1,
+    "adaptation": "Cenário autoral reescrito e revisado por diretrizes"
+  },
+  "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
+  "phases": [
+    {
+      "id": "elegibilidade",
+      "title": "Decisão inicial",
+      "prompt": "Qual a rota de reperfusão e o que checa antes de tratar?",
+      "patientState": {
+        "summary": "Adulto de 67 anos com afasia e hemiparesia incapacitante há 90 minutos. TC sem hemorragia.",
+        "vitals": {
+          "PA": "192/108 mmHg",
+          "glicemia": "112 mg/dL",
+          "NIHSS": "14"
+        }
+      }
+    },
+    {
+      "id": "piora",
+      "title": "Piora súbita",
+      "prompt": "Trinta minutos após iniciar a trombólise, há rebaixamento. O que faz antes de concluir a causa?",
+      "patientState": {
+        "summary": "O paciente torna-se sonolento, vomita e apresenta cefaleia intensa.",
+        "vitals": {
+          "PA": "184/102 mmHg",
+          "Glasgow": "7",
+          "SpO2": "93%"
+        }
+      }
+    },
+    {
+      "id": "imagem",
+      "title": "Exame de controle",
+      "prompt": "A TC agora mostra hematoma intraparenquimatoso. Organize hemostasia, neuroproteção e destino.",
+      "patientState": {
+        "summary": "A infusão foi interrompida e a TC confirma hemorragia sintomática após trombólise.",
+        "vitals": {
+          "PA": "178/100 mmHg",
+          "Glasgow": "7"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "elegibilidade",
+      "label": "Confere tempo, déficit incapacitante, TC, contraindicações e possibilidade endovascular",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "A reperfusão depende de elegibilidade clínica e vascular."
+    },
+    {
+      "id": "pa",
+      "label": "Corrige PA para menos de 185/110 mmHg antes da trombólise e vigia depois",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "PA sistólica de 192 precisa ser tratada antes da infusão."
+    },
+    {
+      "id": "dose",
+      "label": "Se usar alteplase, verbaliza 0,9 mg/kg (máx. 90 mg), 10% bolus e restante em 60 min; aceita alternativa elegível",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Tenecteplase 0,25 mg/kg (máx. 25 mg) também é opção em cenários elegíveis na diretriz 2026."
+    },
+    {
+      "id": "interrompe",
+      "label": "Interrompe trombolítico na piora e solicita TC urgente, glicemia e avaliação ABC",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Piora não deve ser atribuída a edema sem excluir hemorragia."
+    },
+    {
+      "id": "hemostasia",
+      "label": "Após confirmação, aciona protocolo de reversão/hemostasia e dosa fibrinogênio",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Crioprecipitado é considerado com alvo de fibrinogênio adequado; terapia individualizada."
+    },
+    {
+      "id": "suporte",
+      "label": "Protege oxigenação/perfusão, controla temperatura e prepara neurocirurgia/UTI",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Evitar hipóxia, hipotensão e febre; não hiperventilar de rotina."
+    },
+    {
+      "id": "pocus",
+      "label": "Não usa bainha do nervo óptico isoladamente para diagnosticar ou descartar hemorragia",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "A TC é decisiva para a nova deterioração."
+    }
+  ],
+  "criticalErrors": [
+    "Omitir: Confere tempo, déficit incapacitante, TC, contraindicações e possibilidade endovascular",
+    "Omitir: Corrige PA para menos de 185/110 mmHg antes da trombólise e vigia depois",
+    "Omitir: Interrompe trombolítico na piora e solicita TC urgente, glicemia e avaliação ABC",
+    "Omitir: Após confirmação, aciona protocolo de reversão/hemostasia e dosa fibrinogênio",
+    "Omitir: Protege oxigenação/perfusão, controla temperatura e prepara neurocirurgia/UTI"
+  ],
+  "referenceAnswer": "Avalio elegibilidade para reperfusão e reduzo PA sistólica abaixo de 185 antes do trombolítico. Se usar alteplase, 0,9 mg/kg até 90 mg; considero tenecteplase conforme protocolo. Na piora súbita, interrompo a infusão, protejo ABC e obtenho TC urgente. Confirmada hemorragia, aciono neurologia/neurocirurgia, coagulograma e fibrinogênio, terapia hemostática conforme protocolo e neuroproteção.",
+  "references": [
+    "https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke",
+    "https://professional.heart.org/en/science-news/2022-guideline-for-the-management-of-patients-with-spontaneous-intracerebral-hemorrhage/top-things-to-know"
+  ]
+}
