@@ -573,6 +573,59 @@ test("configura a midia do resultado para revisao visual", () => {
   assert.deepEqual(getResultMediaOptions(), { reviewMode: true });
 });
 
+test("resultado mostra transcricao apos referencias e permite reavaliar texto corrigido", async () => {
+  const requests = [];
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse({ ...createStation("a"), references: ["https://example.org/diretriz"] });
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  fixture.root.TemePracticeUtils = require("../praticas-utils.js");
+  fixture.root.TemePracticeApi = {
+    validatePublicConfig: () => ({ valid: false }),
+    getAuthViewModel: () => ({ status: "unconfigured", email: "" }),
+    async evaluate(request) {
+      requests.push(request);
+      const fulfilled = request.transcript.includes("gasometria arterial");
+      return {
+        transcript: request.transcript,
+        evaluations: [{
+          itemId: "item-1",
+          status: fulfilled ? "cumprido" : "ausente",
+          evidence: fulfilled ? "Solicito gasometria arterial" : "Não foi mencionado",
+          rationale: fulfilled ? "Atendeu ao critério" : "Não atendeu ao critério"
+        }],
+        summary: "Avaliação concluída."
+      };
+    }
+  };
+
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
+  const answer = fixture.simulator.querySelector("#practice-slide-answer");
+  answer.value = "Resposta inicial da estação.";
+  answer.dispatch("input");
+  fixture.simulator.querySelector("#practice-finish").click();
+  fixture.simulator.querySelector("#practice-ai-evaluate").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Transcrição da fala/));
+
+  assert.ok(fixture.simulator.innerHTML.indexOf("Referências clínicas") <
+    fixture.simulator.innerHTML.indexOf("Transcrição da fala"));
+  assert.match(fixture.simulator.innerHTML, /Resposta inicial da estação/);
+  const corrected = fixture.simulator.querySelector("#practice-result-transcript");
+  corrected.value = "Resposta inicial da estação. Voltei à pergunta: solicito gasometria arterial.";
+  corrected.dispatch("input");
+  fixture.simulator.querySelector("#practice-reevaluate-transcript").click();
+
+  await waitFor(() => assert.equal(requests.length, 2));
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /100%/));
+  assert.equal(requests[1].audioBlob, null);
+  assert.match(requests[1].transcript, /solicito gasometria arterial/);
+});
+
 test("persiste e limpa rascunho da sessao com chave v2", () => {
   const values = new Map();
   const storage = {

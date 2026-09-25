@@ -225,6 +225,10 @@
   overflow-wrap: anywhere;
 }
 
+.practice-transcript-details .practice-field {
+  margin-top: 12px;
+}
+
 .practice-toolbar {
   display: grid;
   grid-template-columns: minmax(90px, 130px) minmax(0, 1fr);

@@ -1392,6 +1392,11 @@
             </article>`; }).join("")}
         </div>
         ${state.station.references?.length ? `<details class="practice-references"><summary>Referências clínicas</summary><ul>${state.station.references.map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a></li>`).join("")}</ul></details>` : ""}
+        ${attempt.transcript ? `<details class="practice-references practice-transcript-details">
+          <summary>Transcrição da fala</summary>
+          <label class="practice-field" for="practice-result-transcript"><span>Texto analisado</span><textarea id="practice-result-transcript" rows="8" ${attempt.evaluationMode === "ai" ? "" : "readonly"}>${escapeHtml(attempt.transcript)}</textarea></label>
+          ${attempt.evaluationMode === "ai" ? `<div class="practice-actions"><button id="practice-reevaluate-transcript" class="practice-button" type="button" disabled>Reavaliar após corrigir texto</button></div><div id="practice-reevaluation-message" role="status"></div>` : ""}
+        </details>` : ""}
         <section class="practice-result-media" aria-label="Mídias revisadas da estação">
           <h3>Revisão visual</h3>
           <div id="practice-result-media"></div>
@@ -1414,6 +1419,20 @@
     }
     mount.querySelector("#practice-download").addEventListener("click", () => downloadText(buildPracticeReport(attempt), `treino-${attempt.stationId}.txt`));
     mount.querySelector("#practice-repeat").addEventListener("click", resetSimulator);
+    const revisedTranscript = mount.querySelector("#practice-result-transcript");
+    const reevaluateButton = mount.querySelector("#practice-reevaluate-transcript");
+    if (revisedTranscript && reevaluateButton) {
+      revisedTranscript.addEventListener("input", () => {
+        const value = revisedTranscript.value.trim();
+        reevaluateButton.disabled = value.length < 10 || value === attempt.transcript.trim();
+      });
+      reevaluateButton.addEventListener("click", () => requestTranscriptReevaluation(
+        attempt,
+        revisedTranscript.value,
+        reevaluateButton,
+        mount.querySelector("#practice-reevaluation-message")
+      ));
+    }
     const nextStation = mount.querySelector("#practice-next-station");
     if (nextStation) nextStation.addEventListener("click", advanceExamStation);
     mount.querySelectorAll("[data-related-station]").forEach((button) => {
@@ -1473,6 +1492,30 @@
       message.innerHTML = `<div class="practice-alert practice-alert-error"><strong>Correção indisponível.</strong><span>${escapeHtml(error.message)}</span></div>`;
       button.disabled = false;
       button.textContent = "Tentar correção novamente";
+    }
+  }
+
+  async function requestTranscriptReevaluation(attempt, revisedText, button, message) {
+    if (!root.TemePracticeApi || typeof root.TemePracticeApi.evaluate !== "function") return;
+    const transcript = String(revisedText || "").trim();
+    if (transcript.length < 10 || state.lastAttempt !== attempt || state.session?.status !== "review") return;
+    button.disabled = true;
+    button.textContent = "Reavaliando...";
+    try {
+      const result = await root.TemePracticeApi.evaluate({
+        station: state.station,
+        audioBlob: null,
+        transcript,
+        durationSeconds: attempt.durationSeconds
+      });
+      if (state.lastAttempt !== attempt || state.session?.status !== "review") return;
+      state.transcript = result.transcript || transcript;
+      finalizeEvaluation(result.evaluations, "ai", result.attemptId, result);
+    } catch (error) {
+      if (state.lastAttempt !== attempt || state.session?.status !== "review") return;
+      message.innerHTML = `<div class="practice-alert practice-alert-error">${escapeHtml(error.message || "Não foi possível reavaliar.")}</div>`;
+      button.disabled = false;
+      button.textContent = "Reavaliar após corrigir texto";
     }
   }
 
