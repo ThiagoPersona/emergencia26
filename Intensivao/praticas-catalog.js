@@ -10,6 +10,20 @@
     "aos", "com", "das", "dos", "para", "por", "que", "sem", "uma", "via",
     "ao", "da", "de", "do", "em", "na", "no"
   ]);
+  const EXAM_FAMILIES = {
+    "Via aérea e ventilação mecânica": { key: "airway", label: "Via aérea" },
+    "Trauma e APH": { key: "trauma", label: "Trauma" },
+    POCUS: { key: "pocus", label: "POCUS" },
+    "Cardiovascular e PCR": { key: "cardio", label: "Cardiovascular" },
+    Pediatria: { key: "pediatric", label: "Pediatria" },
+    "Toxicologia e animais peçonhentos": { key: "clinical", label: "Clínico" },
+    Neurologia: { key: "clinical", label: "Clínico" },
+    "Respiratório, sepse e metabólico": { key: "clinical", label: "Clínico" },
+    Obstetrícia: { key: "clinical", label: "Obstetrícia" },
+    Gastroenterologia: { key: "clinical", label: "Clínico" },
+    Gestão: { key: "clinical", label: "Gestão" },
+    "Procedimentos, analgesia e sedação": { key: "clinical", label: "Procedimentos" }
+  };
 
   function isEntry(entry) {
     return Boolean(entry) && typeof entry === "object" && !Array.isArray(entry) &&
@@ -81,6 +95,41 @@
     const station = pool[safeRandomIndex(pool.length, randomFn)];
     if (!cycle.includes(station.id)) cycle.push(station.id);
     return { station, cycleIds: cycle };
+  }
+
+  function getExamArea(entry) {
+    return entry && EXAM_FAMILIES[entry.family] ? { ...EXAM_FAMILIES[entry.family] } : null;
+  }
+
+  function buildExamRound(entries, historyIds, roundNumber, randomFn) {
+    const list = asEntries(entries);
+    const round = Number.isInteger(roundNumber) && roundNumber >= 0 ? roundNumber : 0;
+    // Três eixos recorrentes da matriz 22-25; duas vagas alternam para treinar amplitude.
+    const variable = ["cardio", "pediatric", "clinical"];
+    const areas = ["airway", "trauma", "pocus", variable[round % 3], variable[(round + 1) % 3]];
+    const used = new Set(asArray(historyIds));
+    const selected = [];
+
+    function pick(pool) {
+      const fresh = pool.filter((entry) => !used.has(entry.id));
+      const candidates = fresh.length ? fresh : pool;
+      return candidates[safeRandomIndex(candidates.length, randomFn)];
+    }
+
+    areas.forEach((area) => {
+      const candidates = list.filter((entry) => getExamArea(entry)?.key === area &&
+        !selected.some((chosen) => chosen.id === entry.id));
+      if (candidates.length) selected.push(pick(candidates));
+    });
+    while (selected.length < Math.min(5, list.length)) {
+      const remaining = list.filter((entry) => !selected.some((chosen) => chosen.id === entry.id));
+      selected.push(pick(remaining));
+    }
+    for (let index = selected.length - 1; index > 0; index -= 1) {
+      const swapIndex = safeRandomIndex(index + 1, randomFn);
+      [selected[index], selected[swapIndex]] = [selected[swapIndex], selected[index]];
+    }
+    return { stationIds: selected.map((entry) => entry.id), currentIndex: 0, roundNumber: round };
   }
 
   function entryTokens(entry) {
@@ -225,6 +274,8 @@
   return {
     filterStations,
     pickStation,
+    getExamArea,
+    buildExamRound,
     getRecommendedStations
   };
 });

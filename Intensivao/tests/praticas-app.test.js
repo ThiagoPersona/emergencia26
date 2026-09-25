@@ -17,6 +17,7 @@ const {
   getResultMediaOptions,
   DRAFT_KEY,
   CYCLE_KEY,
+  EXAM_PLAN_KEY,
   PREFERENCES_KEY,
   savePracticeDraft,
   clearPracticeDraft,
@@ -454,10 +455,10 @@ test("deriva titulo publico por modo sem vazar diagnostico na prova", () => {
 
 test("cartao da prova oculta o caso e o total de criterios antes do inicio", async () => {
   const storage = createStorage({
-    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
-    [CYCLE_KEY]: JSON.stringify(["a", "b", "c", "d"])
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} })
   });
-  const entries = ["a", "b", "c", "d", "e", "f"].map((id) => ({ id, file: `${id}.json` }));
+  const families = ["Via aérea e ventilação mecânica", "Trauma e APH", "POCUS", "Cardiovascular e PCR", "Pediatria", "Neurologia"];
+  const entries = ["a", "b", "c", "d", "e", "f"].map((id, index) => ({ id, file: `${id}.json`, family: families[index] }));
   const fetch = async (url) => {
     if (url.endsWith("index.json")) return jsonResponse(entries);
     if (url.endsWith("media.json")) return jsonResponse([]);
@@ -466,19 +467,17 @@ test("cartao da prova oculta o caso e o total de criterios antes do inicio", asy
   const fixture = createInteractiveRoot(fetch, storage);
   await createPracticeApp(fixture.root).mount();
 
-  assert.match(fixture.simulator.innerHTML, /Caso 5/);
+  assert.match(fixture.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
   assert.doesNotMatch(fixture.simulator.innerHTML, /\d+ itens/);
+  assert.equal(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).stationIds.length, 5);
   fixture.simulator.querySelector("#practice-start-manual").click();
-  assert.match(fixture.simulator.innerHTML, /Paciente [a-f]/);
+  assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
 
-  const nextCycleStorage = createStorage({
-    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
-    [CYCLE_KEY]: JSON.stringify(["a", "b", "c", "d", "e"])
-  });
-  const nextCycle = createInteractiveRoot(fetch, nextCycleStorage);
-  await createPracticeApp(nextCycle.root).mount();
-  assert.match(nextCycle.simulator.innerHTML, /Caso 1/);
+  const restored = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(restored.root).mount();
+  assert.equal(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).currentIndex, 0);
+  assert.match(restored.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/);
 });
 
 test("expoe controles anterior, proximo e finalizar por fase", () => {
@@ -969,17 +968,15 @@ test("sorteia outra estacao dirigida por click sem contaminar o ciclo da prova",
   assert.deepEqual(JSON.parse(storage.getItem(CYCLE_KEY)), ["exam-preservado"]);
 });
 
-test("sorteia outra estacao de prova por click e persiste o ciclo atualizado", async () => {
+test("substitui estacao indisponivel por outra da mesma seara na prova", async () => {
   const stationUrls = [];
   const storage = createStorage({
     [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
-    [CYCLE_KEY]: JSON.stringify([])
+    [EXAM_PLAN_KEY]: JSON.stringify({ stationIds: ["a", "c", "d", "e", "f"], currentIndex: 0, roundNumber: 0 })
   });
+  const families = ["Trauma e APH", "Trauma e APH", "Via aérea e ventilação mecânica", "POCUS", "Cardiovascular e PCR", "Pediatria"];
   const fetch = async (url) => {
-    if (url.endsWith("index.json")) return jsonResponse([
-      { id: "a", file: "a.json" },
-      { id: "b", file: "b.json" }
-    ]);
+    if (url.endsWith("index.json")) return jsonResponse(["a", "b", "c", "d", "e", "f"].map((id, index) => ({ id, file: `${id}.json`, family: families[index] })));
     if (url.endsWith("media.json")) return jsonResponse([]);
     stationUrls.push(url);
     return jsonResponse({}, false);
@@ -988,15 +985,13 @@ test("sorteia outra estacao de prova por click e persiste o ciclo atualizado", a
   const app = createPracticeApp(fixture.root);
   await app.mount();
 
-  const cycleBeforeClick = JSON.parse(storage.getItem(CYCLE_KEY));
-  assert.deepEqual(cycleBeforeClick, [stationUrls[0].match(/([^/]+)\.json$/)[1]]);
-
   fixture.simulator.querySelector("#practice-choose-another").click();
   await waitFor(() => assert.equal(stationUrls.length, 2));
 
-  const loadedIds = stationUrls.map((url) => url.match(/([^/]+)\.json$/)[1]);
-  assert.notEqual(loadedIds[0], loadedIds[1]);
-  assert.deepEqual(JSON.parse(storage.getItem(CYCLE_KEY)), loadedIds);
+  assert.match(stationUrls[0], /a\.json$/);
+  assert.match(stationUrls[1], /b\.json$/);
+  assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).stationIds, ["b", "c", "d", "e", "f"]);
+  assert.match(fixture.simulator.innerHTML, /Trauma 1/);
 });
 
 test("retry dispara um novo load e libera o start apos sucesso", async () => {

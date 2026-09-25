@@ -4,6 +4,8 @@ const test = require("node:test");
 const {
   filterStations,
   pickStation,
+  getExamArea,
+  buildExamRound,
   getRecommendedStations
 } = require("../praticas-catalog.js");
 
@@ -97,6 +99,29 @@ test("normaliza sorteio fora do intervalo e lida com lista vazia", () => {
   assert.equal(pickStation(entries, [], () => 10).station.id, "c");
   assert.deepEqual(pickStation([], ["old"], () => 0), { station: null, cycleIds: [] });
   assert.deepEqual(pickStation(null, [], () => 0), { station: null, cycleIds: [] });
+});
+
+test("cada rodada de prova tem cinco searas distintas e alterna as variaveis", () => {
+  const index = require("../praticas/data/estacoes/index.json");
+  assert.equal(index.every((entry) => getExamArea(entry) !== null), true);
+  const first = buildExamRound(index, [], 0, () => 0);
+  const firstAreas = first.stationIds.map((id) => getExamArea(index.find((entry) => entry.id === id)).key);
+  assert.equal(first.stationIds.length, 5);
+  assert.equal(new Set(firstAreas).size, 5);
+  assert.deepEqual(new Set(firstAreas), new Set(["airway", "trauma", "pocus", "cardio", "pediatric"]));
+
+  const second = buildExamRound(index, first.stationIds, 1, () => 0);
+  const secondAreas = second.stationIds.map((id) => getExamArea(index.find((entry) => entry.id === id)).key);
+  assert.deepEqual(new Set(secondAreas), new Set(["airway", "trauma", "pocus", "pediatric", "clinical"]));
+  assert.equal(second.stationIds.some((id) => first.stationIds.includes(id)), false);
+});
+
+test("rótulo da seara não entrega o diagnóstico", () => {
+  assert.deepEqual(getExamArea({ family: "Trauma e APH", title: "Pneumotórax hipertensivo" }), { key: "trauma", label: "Trauma" });
+  assert.deepEqual(getExamArea({ family: "Neurologia", title: "AVC hemorrágico" }), { key: "clinical", label: "Clínico" });
+  assert.deepEqual(getExamArea({ family: "Gestão" }), { key: "clinical", label: "Gestão" });
+  assert.deepEqual(getExamArea({ family: "Obstetrícia" }), { key: "clinical", label: "Obstetrícia" });
+  assert.deepEqual(getExamArea({ family: "Procedimentos, analgesia e sedação" }), { key: "clinical", label: "Procedimentos" });
 });
 
 test("prioriza estacoes com lacunas e depois relaciona itemId a competencias e tags", () => {

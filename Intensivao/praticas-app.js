@@ -10,6 +10,7 @@
   const DRAFT_KEY = "teme26-practice-draft-v2";
   const ANSWERS_KEY = "teme26-practice-answers-v1";
   const CYCLE_KEY = "teme26-practice-cycle-v2";
+  const EXAM_PLAN_KEY = "teme26-practice-exam-plan-v1";
   const PREFERENCES_KEY = "teme26-practice-setup-v2";
   const DEFAULT_FILTERS = {
     domain: "",
@@ -73,6 +74,7 @@
     mode: "directed",
     filters: { ...DEFAULT_FILTERS },
     cycleIds: [],
+    examPlan: null,
     mediaManifest: [],
     stationMedia: null,
     mediaStatus: "idle",
@@ -109,9 +111,11 @@
 
   function getPublicStationView(station, mode, caseNumber) {
     if (mode === "exam") {
+      const area = catalogModule && typeof catalogModule.getExamArea === "function"
+        ? catalogModule.getExamArea(station) : null;
       return {
         kicker: "MODO PROVA",
-        title: `Caso ${Number.isInteger(caseNumber) && caseNumber > 0 ? caseNumber : 1}`,
+        title: `${area ? area.label : "Caso"} ${Number.isInteger(caseNumber) && caseNumber > 0 ? caseNumber : 1}`,
         showDiagnosticMeta: false
       };
     }
@@ -235,6 +239,23 @@
         ? Array.from(new Set(cycleIds.filter((id) => typeof id === "string")))
         : []
     };
+  }
+
+  function restoreExamPlan(storage, entries) {
+    const plan = parseStoredValue(storage, EXAM_PLAN_KEY, null);
+    const ids = plan && plan.stationIds;
+    const available = new Set((Array.isArray(entries) ? entries : []).map((entry) => entry.id));
+    if (!Array.isArray(ids) || ids.length < 1 || ids.length > 5 ||
+        new Set(ids).size !== ids.length || ids.some((id) => !available.has(id)) ||
+        !Number.isInteger(plan.currentIndex) || plan.currentIndex < 0 || plan.currentIndex >= ids.length ||
+        !Number.isInteger(plan.roundNumber) || plan.roundNumber < 0) return null;
+    return { stationIds: ids, currentIndex: plan.currentIndex, roundNumber: plan.roundNumber };
+  }
+
+  function saveExamPlan() {
+    if (root.localStorage && state.examPlan) {
+      root.localStorage.setItem(EXAM_PLAN_KEY, JSON.stringify(state.examPlan));
+    }
   }
 
   function getFetch(fetchFn) {
@@ -391,6 +412,15 @@
   function getRelatedStationEntries(entries, attempts) {
     if (!catalogModule || typeof catalogModule.getRecommendedStations !== "function") return [];
     return catalogModule.getRecommendedStations(entries, attempts, 3);
+  }
+
+  function getExamAlternatives() {
+    if (!state.examPlan || !state.selectedEntry || !catalogModule) return [];
+    const area = catalogModule.getExamArea(state.selectedEntry);
+    if (!area) return [];
+    const planned = new Set(state.examPlan.stationIds);
+    return state.stationEntries.filter((entry) => !planned.has(entry.id) &&
+      catalogModule.getExamArea(entry)?.key === area.key);
   }
 
   function enrichStationEntry(entry, station) {
@@ -613,6 +643,20 @@
   }
 
   function selectEntryForCurrentMode(randomFn) {
+    if (state.mode === "exam" && catalogModule && typeof catalogModule.buildExamRound === "function") {
+      if (!state.examPlan) {
+        state.examPlan = catalogModule.buildExamRound(state.stationEntries, state.cycleIds, 0, randomFn);
+        state.cycleIds = Array.from(new Set(state.cycleIds.concat(state.examPlan.stationIds)));
+        saveExamPlan();
+        saveCurrentSetup();
+      }
+      const plannedHistory = Array.from(new Set(state.cycleIds.concat(state.examPlan.stationIds)));
+      if (plannedHistory.length !== state.cycleIds.length) {
+        state.cycleIds = plannedHistory;
+        saveCurrentSetup();
+      }
+      return getStationEntry(state.examPlan.stationIds[state.examPlan.currentIndex]);
+    }
     const selection = selectStationEntry(
       state.stationEntries,
       state.mode,
@@ -643,6 +687,22 @@
     state.mode = normalizePracticeMode(mode);
     saveCurrentSetup();
     await loadCurrentModeSelection();
+  }
+
+  async function advanceExamStation() {
+    if (state.mode !== "exam" || !state.examPlan) return;
+    if (state.examPlan.currentIndex < state.examPlan.stationIds.length - 1) {
+      state.examPlan = { ...state.examPlan, currentIndex: state.examPlan.currentIndex + 1 };
+    } else {
+      state.examPlan = catalogModule.buildExamRound(
+        state.stationEntries, state.cycleIds, state.examPlan.roundNumber + 1
+      );
+      state.cycleIds = Array.from(new Set(state.cycleIds.concat(state.examPlan.stationIds)));
+      saveCurrentSetup();
+    }
+    saveExamPlan();
+    const entry = getStationEntry(state.examPlan.stationIds[state.examPlan.currentIndex]);
+    if (entry) await loadSelectedStation(entry);
   }
 
   function stopStreamTracks(stream) {
@@ -782,7 +842,7 @@
   function getSetupStationView(station, selectedEntry, mode, mediaStatus, caseNumber) {
     const subject = station || selectedEntry;
     if (!subject) return { visible: false, startDisabled: true };
-    const publicView = getPublicStationView(subject, mode, caseNumber);
+    const publicView = getPublicStationView(mode === "exam" ? (selectedEntry || subject) : subject, mode, caseNumber);
     return {
       visible: true,
       loaded: Boolean(station),
@@ -811,7 +871,7 @@
     const mount = root.document && root.document.getElementById("practice-simulator");
     if (!mount) return;
     const station = state.station;
-    const caseNumber = ((Math.max(1, state.cycleIds.length) - 1) % 5) + 1;
+    const caseNumber = state.examPlan ? state.examPlan.roundNumber + 1 : 1;
     const setupView = getSetupStationView(station, state.selectedEntry, state.mode, state.mediaStatus, caseNumber);
     const showDiagnosticMeta = setupView.showDiagnosticMeta;
     const relatedIntro = state.mode === "review"
@@ -823,7 +883,7 @@
     const retryActions = state.mediaStatus === "error" ? `
       <div class="practice-actions">
         <button class="practice-button" id="practice-retry-load" type="button">Tentar novamente</button>
-        ${state.stationEntries.length ? `<button class="practice-button practice-button-quiet" id="practice-choose-another" type="button">Sortear outra</button>` : ""}
+        ${(state.mode === "exam" ? getExamAlternatives().length : state.stationEntries.length) ? `<button class="practice-button practice-button-quiet" id="practice-choose-another" type="button">Sortear outra</button>` : ""}
       </div>` : "";
     const directedControls = state.mode === "directed" ? `
       <details class="practice-filter-details"><summary>Filtros</summary><form id="practice-filters" class="practice-filter-bar">
@@ -854,6 +914,7 @@
             ${showDiagnosticMeta && setupView.briefing ? `<p>${escapeHtml(setupView.briefing)}</p>` : relatedIntro ? `<p>${escapeHtml(relatedIntro)}</p>` : statusMessage ? `<p>${escapeHtml(statusMessage)}</p>` : ""}
             <div class="practice-meta">
               <span><strong>${setupView.durationSeconds == null ? "--:--" : formatClock(setupView.durationSeconds)}</strong> de estação</span>
+              ${state.mode === "exam" && state.examPlan ? `<span>Estação <strong>${state.examPlan.currentIndex + 1}/${state.examPlan.stationIds.length}</strong></span>` : ""}
               ${state.mode === "exam" ? "" : `<span><strong>${setupView.checklistCount == null ? "--" : setupView.checklistCount}</strong> itens</span>`}
               ${showDiagnosticMeta ? `<span><strong>${escapeHtml(setupView.difficulty)}</strong> dificuldade</span>` : ""}
             </div>
@@ -894,6 +955,19 @@
     });
     const anotherButton = mount.querySelector("#practice-choose-another");
     if (anotherButton) anotherButton.addEventListener("click", () => {
+      if (state.mode === "exam" && state.examPlan) {
+        const alternatives = getExamAlternatives();
+        const fresh = alternatives.filter((entry) => !state.cycleIds.includes(entry.id));
+        const pool = fresh.length ? fresh : alternatives;
+        const entry = pool[Math.floor(Math.random() * pool.length)];
+        if (!entry) return;
+        state.examPlan.stationIds[state.examPlan.currentIndex] = entry.id;
+        state.cycleIds = Array.from(new Set(state.cycleIds.concat(entry.id)));
+        saveExamPlan();
+        saveCurrentSetup();
+        loadSelectedStation(entry);
+        return;
+      }
       const selection = selectAlternativeStation({
         entries: state.stationEntries,
         mode: state.mode,
@@ -1035,7 +1109,9 @@
   function getRunningStationView(station, mode) {
     return {
       kicker: mode === "exam" ? "MODO PROVA" : "ESTAÇÃO EM ANDAMENTO",
-      title: station && station.examTitle ? station.examTitle : "Estação em andamento"
+      title: mode === "exam"
+        ? getPublicStationView(state.selectedEntry || station, mode, state.examPlan ? state.examPlan.roundNumber + 1 : 1).title
+        : station && station.examTitle ? station.examTitle : "Estação em andamento"
     };
   }
 
@@ -1300,8 +1376,9 @@
           <h3>Revisão visual</h3>
           <div id="practice-result-media"></div>
         </section>
-        ${relatedStations.length ? `<section class="practice-related-stations" aria-label="Estações relacionadas"><h3>Estações relacionadas</h3><div class="practice-related-actions">${relatedStations.map((entry, index) => `<button class="practice-button" type="button" data-related-station="${escapeHtml(entry.id)}">${escapeHtml(getEntryLabel(entry, index))}</button>`).join("")}</div></section>` : ""}
+        ${state.mode !== "exam" && relatedStations.length ? `<section class="practice-related-stations" aria-label="Estações relacionadas"><h3>Estações relacionadas</h3><div class="practice-related-actions">${relatedStations.map((entry, index) => `<button class="practice-button" type="button" data-related-station="${escapeHtml(entry.id)}">${escapeHtml(getEntryLabel(entry, index))}</button>`).join("")}</div></section>` : ""}
         <div class="practice-actions">
+          ${state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : "Nova série de 5"}</button>` : ""}
           <button id="practice-download" class="practice-button practice-button-primary" type="button">Baixar relatório</button>
           <button id="practice-repeat" class="practice-button" type="button">Repetir estação</button>
           <a class="practice-button practice-button-quiet" href="#/praticas/DESEMPENHO">Ver desempenho</a>
@@ -1317,6 +1394,8 @@
     }
     mount.querySelector("#practice-download").addEventListener("click", () => downloadText(buildPracticeReport(attempt), `treino-${attempt.stationId}.txt`));
     mount.querySelector("#practice-repeat").addEventListener("click", resetSimulator);
+    const nextStation = mount.querySelector("#practice-next-station");
+    if (nextStation) nextStation.addEventListener("click", advanceExamStation);
     mount.querySelectorAll("[data-related-station]").forEach((button) => {
       button.addEventListener("click", () => {
         const entry = getStationEntry(button.dataset.relatedStation);
@@ -1558,6 +1637,7 @@
             state.mode = savedSetup.mode;
             state.filters = savedSetup.filters;
             state.cycleIds = savedSetup.cycleIds;
+            state.examPlan = restoreExamPlan(root.localStorage, state.stationEntries);
           }
           if (!(await restoreSavedDraft())) await loadCurrentModeSelection();
         } catch (error) {
@@ -1583,6 +1663,7 @@
     getResultMediaOptions,
     DRAFT_KEY,
     CYCLE_KEY,
+    EXAM_PLAN_KEY,
     PREFERENCES_KEY,
     savePracticeDraft,
     clearPracticeDraft,
