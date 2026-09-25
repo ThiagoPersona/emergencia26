@@ -107,11 +107,11 @@
     ? root.TemePracticeUtils
     : (typeof require === "function" ? require("./praticas-utils.js") : null);
 
-  function getPublicStationView(station, mode) {
+  function getPublicStationView(station, mode, caseNumber) {
     if (mode === "exam") {
       return {
         kicker: "MODO PROVA",
-        title: station && station.examTitle ? station.examTitle : "Estação sorteada",
+        title: `Caso ${Number.isInteger(caseNumber) && caseNumber > 0 ? caseNumber : 1}`,
         showDiagnosticMeta: false
       };
     }
@@ -779,10 +779,10 @@
       </fieldset>`;
   }
 
-  function getSetupStationView(station, selectedEntry, mode, mediaStatus) {
+  function getSetupStationView(station, selectedEntry, mode, mediaStatus, caseNumber) {
     const subject = station || selectedEntry;
     if (!subject) return { visible: false, startDisabled: true };
-    const publicView = getPublicStationView(subject, mode);
+    const publicView = getPublicStationView(subject, mode, caseNumber);
     return {
       visible: true,
       loaded: Boolean(station),
@@ -792,7 +792,7 @@
       showDiagnosticMeta: publicView.showDiagnosticMeta,
       briefing: station && station.briefing ? station.briefing : "",
       durationSeconds: station && Number.isFinite(station.durationSeconds) ? station.durationSeconds : null,
-      checklistCount: station && Array.isArray(station.checklist) ? station.checklist.length : null,
+      checklistCount: mode !== "exam" && station && Array.isArray(station.checklist) ? station.checklist.length : null,
       difficulty: subject.difficulty || "não definida"
     };
   }
@@ -811,7 +811,8 @@
     const mount = root.document && root.document.getElementById("practice-simulator");
     if (!mount) return;
     const station = state.station;
-    const setupView = getSetupStationView(station, state.selectedEntry, state.mode, state.mediaStatus);
+    const caseNumber = ((Math.max(1, state.cycleIds.length) - 1) % 5) + 1;
+    const setupView = getSetupStationView(station, state.selectedEntry, state.mode, state.mediaStatus, caseNumber);
     const showDiagnosticMeta = setupView.showDiagnosticMeta;
     const relatedIntro = state.mode === "review"
       ? "A escolha usa seu histórico. Os detalhes da estação aparecem ao iniciar."
@@ -853,7 +854,7 @@
             ${showDiagnosticMeta && setupView.briefing ? `<p>${escapeHtml(setupView.briefing)}</p>` : relatedIntro ? `<p>${escapeHtml(relatedIntro)}</p>` : statusMessage ? `<p>${escapeHtml(statusMessage)}</p>` : ""}
             <div class="practice-meta">
               <span><strong>${setupView.durationSeconds == null ? "--:--" : formatClock(setupView.durationSeconds)}</strong> de estação</span>
-              <span><strong>${setupView.checklistCount == null ? "--" : setupView.checklistCount}</strong> itens</span>
+              ${state.mode === "exam" ? "" : `<span><strong>${setupView.checklistCount == null ? "--" : setupView.checklistCount}</strong> itens</span>`}
               ${showDiagnosticMeta ? `<span><strong>${escapeHtml(setupView.difficulty)}</strong> dificuldade</span>` : ""}
             </div>
           </div>

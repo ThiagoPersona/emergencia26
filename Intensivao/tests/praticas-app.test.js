@@ -430,10 +430,11 @@ test("deriva titulo publico por modo sem vazar diagnostico na prova", () => {
     tags: ["aaa", "choque"]
   };
 
-  const exam = getPublicStationView(diagnosticStation, "exam");
+  const exam = getPublicStationView(diagnosticStation, "exam", 1);
   assert.equal(exam.kicker, "MODO PROVA");
-  assert.equal(exam.title, "Paciente instavel na sala de emergencia");
+  assert.equal(exam.title, "Caso 1");
   assert.equal(exam.showDiagnosticMeta, false);
+  assert.equal(Object.values(exam).join(" ").includes(diagnosticStation.examTitle), false);
   assert.equal(Object.values(exam).join(" ").includes(diagnosticStation.domain), false);
   assert.equal(Object.values(exam).join(" ").includes(diagnosticStation.title), false);
   assert.equal(Object.values(exam).join(" ").includes(diagnosticStation.difficulty), false);
@@ -449,6 +450,35 @@ test("deriva titulo publico por modo sem vazar diagnostico na prova", () => {
   assert.equal(review.showDiagnosticMeta, false);
   assert.equal(Object.values(review).join(" ").includes(diagnosticStation.title), false);
   assert.equal(Object.values(review).join(" ").includes(diagnosticStation.domain), false);
+});
+
+test("cartao da prova oculta o caso e o total de criterios antes do inicio", async () => {
+  const storage = createStorage({
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
+    [CYCLE_KEY]: JSON.stringify(["a", "b", "c", "d"])
+  });
+  const entries = ["a", "b", "c", "d", "e", "f"].map((id) => ({ id, file: `${id}.json` }));
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse(entries);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation(url.match(/\/([a-f])\.json$/)[1]));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(fixture.root).mount();
+
+  assert.match(fixture.simulator.innerHTML, /Caso 5/);
+  assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
+  assert.doesNotMatch(fixture.simulator.innerHTML, /\d+ itens/);
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  assert.match(fixture.simulator.innerHTML, /Paciente [a-f]/);
+
+  const nextCycleStorage = createStorage({
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
+    [CYCLE_KEY]: JSON.stringify(["a", "b", "c", "d", "e"])
+  });
+  const nextCycle = createInteractiveRoot(fetch, nextCycleStorage);
+  await createPracticeApp(nextCycle.root).mount();
+  assert.match(nextCycle.simulator.innerHTML, /Caso 1/);
 });
 
 test("expoe controles anterior, proximo e finalizar por fase", () => {
