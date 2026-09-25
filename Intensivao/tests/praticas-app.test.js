@@ -344,7 +344,7 @@ async function waitFor(assertion, attempts = 30) {
   throw lastError;
 }
 
-test("painel desconectado orienta acesso sem publicar senha", async () => {
+test("painel desconectado mostra as credenciais para convidados", async () => {
   const fixture = createInteractiveRoot(async (url) => {
     if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
     if (url.endsWith("media.json")) return jsonResponse([]);
@@ -360,7 +360,8 @@ test("painel desconectado orienta acesso sem publicar senha", async () => {
   await createPracticeApp(fixture.root).mount();
   await waitFor(() => assert.match(fixture.simulator.querySelector("#practice-auth").innerHTML, /contato@historiamed\.com\.br/));
   const panel = fixture.simulator.querySelector("#practice-auth").innerHTML;
-  assert.match(panel, /solicite a senha/i);
+  assert.match(panel, /Login: <code class="copy-allowed">contato@historiamed\.com\.br<\/code>/);
+  assert.match(panel, /Senha: <code class="copy-allowed">historiamed123<\/code>/);
   assert.match(panel, /name="email"[^>]*value="contato@historiamed\.com\.br"/);
   assert.doesNotMatch(panel, /name="password"[^>]*value=/);
 });

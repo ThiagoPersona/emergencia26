@@ -1046,7 +1046,10 @@
     container.innerHTML = `
       <details>
         <summary>Entrar para usar transcrição e correção automática</summary>
-        <p class="practice-access-hint">Conta para convidados: <strong>contato@historiamed.com.br</strong>. Se perdeu o acesso, solicite a senha ao responsável pelo projeto.</p>
+        <p class="practice-access-hint">Acesso para convidados:<br>
+          Login: <code class="copy-allowed">contato@historiamed.com.br</code><br>
+          Senha: <code class="copy-allowed">historiamed123</code>
+        </p>
         <form id="practice-login" class="practice-login">
           <label><span>E-mail</span><input name="email" type="email" autocomplete="username" value="contato@historiamed.com.br" required></label>
           <label><span>Senha</span><input name="password" type="password" autocomplete="current-password" required></label>

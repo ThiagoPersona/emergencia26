@@ -432,6 +432,11 @@
   font-size: 0.9rem;
 }
 
+.practice-access-hint code {
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}
+
 .practice-pix-key {
   width: min(100%, 290px);
   border: 1px solid #bfd0d8;
