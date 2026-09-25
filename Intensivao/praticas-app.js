@@ -587,6 +587,9 @@
 
     (attempt.evaluations || []).forEach((evaluation, index) => {
       lines.push(`${index + 1}. [${String(evaluation.status || "ausente").toUpperCase()}] ${evaluation.label || evaluation.itemId}`);
+      if (typeof evaluation.manualConfirmed === "boolean") {
+        lines.push(`   Execucao manual: ${evaluation.manualConfirmed ? "confirmada pelo aluno" : "nao realizada"}`);
+      }
       lines.push(`   Evidencia: ${evaluation.evidence || "Sem evidencia."}`);
       if (evaluation.rationale) lines.push(`   Comentario: ${evaluation.rationale}`);
     });
@@ -1385,13 +1388,15 @@
     const relatedStations = getRelatedStationEntries(state.stationEntries, getStoredAttempts());
     const checklistById = new Map(state.station.checklist.map((item) => [item.id, item]));
     const missingCritical = attempt.criticalFailures.map((id) => checklistById.get(id)?.label || id);
-    const missedItems = attempt.evaluations.filter((evaluation) => ["ausente", "incorreto", "parcial"].includes(evaluation.status));
-    const completedCount = attempt.evaluations.filter((evaluation) => evaluation.status === "cumprido" &&
-      (checklistById.get(evaluation.itemId)?.verification === "verbal" || evaluation.manualConfirmed === true)).length;
-    const earnedFor = (evaluation, item) => {
-      if (!item || (item.verification !== "verbal" && evaluation.manualConfirmed !== true)) return 0;
-      return evaluation.status === "cumprido" ? item.weight : evaluation.status === "parcial" ? item.weight / 2 : 0;
-    };
+    const earnedFor = (evaluation, item) => root.TemePracticeUtils.getPracticeItemPoints(item, evaluation);
+    const missedItems = attempt.evaluations.filter((evaluation) => {
+      const item = checklistById.get(evaluation.itemId);
+      return item && !attempt.pendingManualItemIds.includes(item.id) && earnedFor(evaluation, item) < item.weight;
+    });
+    const completedCount = attempt.evaluations.filter((evaluation) => {
+      const item = checklistById.get(evaluation.itemId);
+      return item && earnedFor(evaluation, item) === item.weight;
+    }).length;
     mount.innerHTML = `
       <section class="practice-shell">
         <div class="practice-result-head">
@@ -1417,9 +1422,13 @@
         <div class="practice-result-list">
           ${attempt.evaluations.map((evaluation) => {
             const item = checklistById.get(evaluation.itemId);
+            const manualOverride = item && item.verification !== "verbal" && evaluation.manualConfirmed === true &&
+              ["ausente", "nao_verificavel"].includes(evaluation.status);
+            const displayStatus = manualOverride ? "confirmado por você" : evaluation.manualConfirmed === false
+              ? "não executado" : evaluation.status.replace("_", " ");
             return `
-            <article class="practice-result-item is-${escapeHtml(evaluation.status)}">
-              <header><strong>${escapeHtml(evaluation.label)}</strong><span>${escapeHtml(evaluation.status.replace("_", " "))} · ${earnedFor(evaluation, item)}/${item?.weight || 0} pts</span></header>
+            <article class="practice-result-item is-${manualOverride ? "cumprido" : escapeHtml(evaluation.status)}">
+              <header><strong>${escapeHtml(evaluation.label)}</strong><span>${escapeHtml(displayStatus)} · ${earnedFor(evaluation, item)}/${item?.weight || 0} pts</span></header>
               <p>${escapeHtml(evaluation.evidence)}</p>
               ${evaluation.rationale ? `<small>${escapeHtml(evaluation.rationale)}</small>` : ""}
               ${item?.explanation ? `<small>${escapeHtml(item.explanation)}</small>` : ""}

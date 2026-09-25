@@ -158,10 +158,13 @@
       const requiresManualConfirmation = item.verification === "manual" ||
         item.verification === "hibrido";
       const isManualPending = requiresManualConfirmation &&
-        evaluation.manualConfirmed === null;
-      const isCriticalStatusFailure = ["ausente", "incorreto"].includes(evaluation.status);
+        evaluation.manualConfirmed === null &&
+        !(item.verification === "hibrido" && evaluation.status === "incorreto");
+      const isCriticalStatusFailure = evaluation.status === "incorreto" ||
+        (evaluation.status === "ausente" &&
+          (!requiresManualConfirmation || evaluation.manualConfirmed === false));
 
-      if (item.critical && item.verification !== "manual" && isCriticalStatusFailure) {
+      if (item.critical && isCriticalStatusFailure) {
         criticalFailures.push(item.id);
       }
 
@@ -172,19 +175,7 @@
       }
 
       assessedPoints += item.weight;
-      const confirmationAccepted = !requiresManualConfirmation ||
-        evaluation.manualConfirmed === true;
-      if (confirmationAccepted && evaluation.status === "cumprido") {
-        earnedPoints += item.weight;
-      }
-      if (confirmationAccepted && evaluation.status === "parcial") {
-        earnedPoints += item.weight * 0.5;
-      }
-      if (item.verification === "manual" &&
-          evaluation.status === "nao_verificavel" &&
-          evaluation.manualConfirmed === true) {
-        earnedPoints += item.weight;
-      }
+      earnedPoints += getPracticeItemPoints(item, evaluation);
 
       const isCriticalManualDenial = requiresManualConfirmation &&
         evaluation.manualConfirmed === false;
@@ -212,6 +203,18 @@
       criticalFailures,
       evaluations: normalizedEvaluations
     };
+  }
+
+  function getPracticeItemPoints(item, evaluation) {
+    if (!item || !evaluation || evaluation.status === "incorreto") return 0;
+    if (item.verification !== "verbal" && evaluation.manualConfirmed !== true) return 0;
+    if (item.verification === "manual" ||
+        (item.verification === "hibrido" && ["nao_verificavel", "ausente"].includes(evaluation.status))) {
+      return item.weight;
+    }
+    if (evaluation.status === "cumprido") return item.weight;
+    if (evaluation.status === "parcial") return item.weight * 0.5;
+    return 0;
   }
 
   function mergeManualChecks(evaluations, confirmations) {
@@ -243,7 +246,8 @@
       domains.set(key, current);
 
       (attempt.evaluations || []).forEach((evaluation) => {
-        if (!["ausente", "incorreto"].includes(evaluation.status)) return;
+        if (!["ausente", "incorreto"].includes(evaluation.status) ||
+            (evaluation.status === "ausente" && evaluation.manualConfirmed === true)) return;
         const gap = gaps.get(evaluation.itemId) || {
           itemId: evaluation.itemId,
           label: evaluation.label || evaluation.itemId,
@@ -274,6 +278,7 @@
     ALLOWED_STATUSES,
     validateStation,
     calculatePracticeScore,
+    getPracticeItemPoints,
     mergeManualChecks,
     summarizePracticeAttempts
   };

@@ -685,6 +685,48 @@ test("resultado mostra transcricao apos referencias e permite reavaliar texto co
   assert.match(requests[1].transcript, /solicito gasometria arterial/);
 });
 
+test("resultado mostra pontos e criterios confirmados manualmente de forma coerente com a nota", async () => {
+  const confirmedStation = createStation("confirmed");
+  confirmedStation.checklist = [
+    { id: "manual", label: "Gesto manual", weight: 50, verification: "manual", critical: true },
+    { id: "hibrido", label: "Gesto hibrido", weight: 50, verification: "hibrido", critical: true }
+  ];
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "confirmed", file: "confirmed.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(confirmedStation);
+  }, createStorage());
+  fixture.root.TemePracticeUtils = require("../praticas-utils.js");
+  fixture.root.TemePracticeApi = {
+    validatePublicConfig: () => ({ valid: false }),
+    getAuthViewModel: () => ({ status: "unconfigured", email: "" }),
+    async evaluate() {
+      return {
+        transcript: "Executei os dois gestos no manequim.",
+        evaluations: [
+          { itemId: "manual", status: "nao_verificavel", manualConfirmed: true },
+          { itemId: "hibrido", status: "ausente", manualConfirmed: true }
+        ]
+      };
+    }
+  };
+
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
+  const answer = fixture.simulator.querySelector("#practice-slide-answer");
+  answer.value = "Executei os dois gestos no manequim.";
+  answer.dispatch("input");
+  fixture.simulator.querySelector("#practice-finish").click();
+  fixture.simulator.querySelector("#practice-ai-evaluate").click();
+
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /practice-result-overview/));
+  assert.match(fixture.simulator.innerHTML, /100%/);
+  assert.match(fixture.simulator.innerHTML, /2 de 2 critérios contemplados/);
+  assert.equal((fixture.simulator.innerHTML.match(/50\/50 pts/g) || []).length, 2);
+  assert.doesNotMatch(fixture.simulator.innerHTML, /Pontos críticos esquecidos|Prioridades para revisar/);
+});
+
 test("persiste e limpa rascunho da sessao com chave v2", () => {
   const values = new Map();
   const storage = {
