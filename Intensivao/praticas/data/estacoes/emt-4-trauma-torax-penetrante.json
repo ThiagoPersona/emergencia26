@@ -10,44 +10,51 @@
   "origin": "acervo_reescrito",
   "tags": ["trauma penetrante", "hemotórax", "transfusão maciça", "toracotomia de ressuscitação"],
   "durationSeconds": 300,
-  "source": { "collection": "EmTalks simulado", "simulado": 4, "adaptation": "Caso reescrito com lateralidade coerente; perguntas e competências do checklist presencial preservadas" },
-  "briefing": "Atenda o paciente conforme a evolução. Verbalize prioridades, recursos e critérios para controle definitivo.",
+  "source": { "collection": "EmTalks simulado", "simulado": 4, "adaptation": "Caso reescrito e lateralidade corrigida; duas tarefas e 19 critérios com redação, ordem e pesos do checklist fornecido" },
+  "briefing": "Você é o médico da sala de emergência. O SAMU traz um homem de aproximadamente 35 anos, atingido no tórax há cerca de 30 minutos. Responda às tarefas conforme o caso evoluir.",
   "phases": [
     {
       "id": "choque",
-      "title": "Abordagem inicial",
-      "prompt": "Identifique os mecanismos de choque possíveis e conduza a ressuscitação inicial, inclusive acesso, hemostasia, transfusão e medidas torácicas urgentes.",
-      "patientState": { "summary": "Homem de 35 anos, ferimento por arma de fogo no hemitórax esquerdo, pálido e diaforético. Murmúrio vesicular muito reduzido à esquerda; enchimento capilar de 5 segundos. Não há sangramento externo volumoso.", "vitals": { "PA": "78/46 mmHg", "FC": "142 bpm", "FR": "30 irpm", "SpO2": "88% em ar ambiente" } }
-    },
-    {
-      "id": "dreno",
-      "title": "Controle torácico",
-      "prompt": "Após a avaliação torácica, indique a intervenção, monitore a drenagem e diga quando acionaria cirurgia sem demora.",
-      "patientState": { "summary": "À esquerda, macicez à percussão e eFAST com líquido pleural. Após drenagem torácica esquerda, saem 1.600 mL de sangue. A hipotensão persiste apesar do início de hemoderivados.", "vitals": { "PA": "70/40 mmHg", "FC": "150 bpm", "dreno": "1.600 mL iniciais" } }
+      "title": "Tarefa 1",
+      "prompt": "Qual o diagnóstico sindrômico e sua etiologia mais provável? Que intervenções você realizaria neste momento?",
+      "patientState": {
+        "summary": "Ferimento por arma de fogo no hemitórax esquerdo, sem orifício de saída identificado. Está pálido, sudoreico, com enchimento capilar acima de 4 segundos e murmúrio vesicular muito reduzido à esquerda. A equipe apresenta uma amostra de ultrassom torácico de outro paciente para interpretação; o exame foi obtido sem retardar a abordagem inicial.",
+        "vitals": { "PA": "78/46 mmHg", "FC": "142 bpm", "FR": "30 irpm", "SpO2": "88% em ar ambiente" }
+      },
+      "media": ["us-trauma-colecao-pleural"]
     },
     {
       "id": "parada",
-      "title": "Deterioração súbita",
-      "prompt": "Ocorre parada traumática presenciada. Descreva a reanimação dirigida a causas reversíveis e quando considera toracotomia de ressuscitação e suas etapas essenciais.",
-      "patientState": { "summary": "O paciente perde a consciência e fica sem pulso central na sala de trauma. A equipe cirúrgica está disponível para intervenção imediata.", "vitals": { "pulso": "ausente", "respiração": "ausente" } }
+      "title": "Tarefa 2",
+      "prompt": "Descreva o passo a passo da reanimação deste paciente.",
+      "patientState": {
+        "summary": "O paciente, que estava responsivo há instantes, perde a consciência na sala de trauma e fica sem pulso central palpável. A equipe presencia a deterioração.",
+        "vitals": { "pulso": "ausente", "respiração": "ausente" }
+      }
     }
   ],
   "checklist": [
-    { "id": "choque-misto", "label": "Reconhece choque hemorrágico e possível componente obstrutivo torácico", "weight": 5, "verification": "verbal", "critical": true, "explanation": "O ferimento torácico exige buscar hemorragia pleural, pneumotórax hipertensivo e tamponamento." },
-    { "id": "acesso", "label": "Obtém dois acessos calibrosos ou intraósseo sem atrasar controle de hemorragia", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Acesso rápido viabiliza transfusão e medicamentos." },
-    { "id": "oxigenio", "label": "Oferece oxigênio e prepara via aérea se ventilação ou consciência falharem", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Intubação em choque profundo exige ressuscitação paralela para evitar colapso." },
-    { "id": "torax", "label": "Investiga e trata prontamente a lesão torácica, com drenagem esquerda quando indicada", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "O lado do ferimento e do achado pleural é o esquerdo em toda a estação." },
-    { "id": "hemotransfusao", "label": "Ativa protocolo de transfusão maciça com componentes balanceados", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Choque hemorrágico não deve ser tratado com grandes volumes de cristaloide." },
-    { "id": "txa", "label": "Considera ácido tranexâmico precoce se trauma hemorrágico em até 3 horas e sem contraindicação", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Regime usual: 1 g IV em 10 minutos, depois 1 g em 8 horas; não oferecer tardiamente por rotina." },
-    { "id": "temperatura-calcio", "label": "Previne hipotermia e monitora acidose e cálcio ionizado durante transfusão", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Coagulopatia e hipocalcemia agravam a ressuscitação." },
-    { "id": "cirurgia-sangramento", "label": "Reconhece 1.600 mL de drenagem inicial como indicação de avaliação cirúrgica imediata", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Não aguardar tomografia ou nova queda de pressão diante de sangramento maciço." },
-    { "id": "controle-definitivo", "label": "Aciona equipe cirúrgica e prepara controle definitivo do sangramento", "weight": 5, "verification": "verbal", "critical": true, "explanation": "A ressuscitação só ganha tempo até a hemostasia definitiva." },
-    { "id": "rcp-parada", "label": "Reconhece parada, inicia compressões e prioriza correção simultânea de hemorragia e hipóxia", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "Em parada traumática, tratar causas reversíveis é essencial; compressões não devem atrasar hemostasia." },
-    { "id": "descompressao", "label": "Considera descompressão torácica bilateral diante de parada traumática com suspeita de lesão intratorácica", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Pneumotórax hipertensivo pode coexistir e ser reversível." },
-    { "id": "toracotomia", "label": "Considera toracotomia de ressuscitação em ferimento torácico penetrante com parada presenciada e sinais de vida", "weight": 10, "verification": "verbal", "critical": true, "explanation": "A seleção depende de tempo, sinais de vida e equipe capaz de controle cirúrgico imediato." },
-    { "id": "etapas-toracotomia", "label": "Descreve acesso anterolateral ou clamshell, abertura pericárdica, controle de sangramento, massagem interna e clampeamento aórtico quando indicado", "weight": 10, "verification": "verbal", "critical": false, "explanation": "Os gestos são executados por equipe treinada; verbalizar sequência e objetivo basta no treino solo." }
+    { "id": "choque-hemorragico", "label": "Reconhece o choque hemorrágico", "weight": 5, "verification": "verbal", "critical": true, "explanation": "Hipotensão, taquicardia e má perfusão após ferimento penetrante exigem presumir hemorragia até prova em contrário." },
+    { "id": "choque-obstrutivo", "label": "Reconhece possível choque obstrutivo associado", "weight": 5, "verification": "verbal", "critical": false, "explanation": "No trauma torácico, pneumotórax hipertensivo e tamponamento podem coexistir com perda de sangue." },
+    { "id": "hemopneumotorax", "label": "Verbaliza achados clínicos sugestivos de hemopneumotórax", "weight": 5, "verification": "verbal", "critical": true, "explanation": "A transição líquido/ar pleural no clipe, junto ao mecanismo e à assimetria ventilatória, apoia a hipótese; o clipe isolado não demonstra sangue." },
+    { "id": "acessos", "label": "2 acessos venosos calibrosos ou acesso intraósseo imediato", "weight": 5, "verification": "verbal", "critical": false, "explanation": "O acesso rápido permite transfusão sem atrasar o controle definitivo da lesão." },
+    { "id": "txa", "label": "Ácido Tranexâmico 1g IV em 10 min + 1g IV em 8h", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Regime cobrado no checklist para sangramento traumático precoce; não administrar de rotina após 3 horas da lesão." },
+    { "id": "cristaloide", "label": "Infusão restrita de cristaloides isotônicos (máx 1,5L)", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Este é o limite do checklist do curso; na prática, com hemocomponentes disponíveis, a ressuscitação hemostática prevalece sobre cristaloide." },
+    { "id": "transfusao", "label": "Ativa Protocolo de Transfusão Maciça (1:1:1)", "weight": 5, "verification": "verbal", "critical": true, "explanation": "A hipotensão por provável sangramento maciço pede protocolo de sangue balanceado e controle da fonte." },
+    { "id": "hipotermia", "label": "Previne/trata hipotermia (cobertores, fluidos aquecidos)", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Aquecimento do paciente e dos fluidos ajuda a conter a coagulopatia do trauma." },
+    { "id": "acidose-calcio", "label": "Verbaliza necessidade de monitoramento e correção de acidose e hipocalcemia (laboratorial ou empírica)", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Perfusão ruim causa acidose; a transfusão pode reduzir cálcio ionizado. Reavaliar exames e corrigir alterações relevantes." },
+    { "id": "iot", "label": "Considera IOT precoce para segurança, com tubo de maior calibre (7,5–8,0 mm)", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Antecipar perda de via aérea, mas preparar ressuscitação e equipe porque a indução em choque pode precipitar colapso." },
+    { "id": "limiar-dreno", "label": "Verbaliza que a drenagem >1500 mL na inserção ou >200 mL/hora por 2-4 horas indica toracotomia exploradora", "weight": 5, "verification": "verbal", "critical": true, "explanation": "O checklist cobra os limiares de sangramento pelo dreno como gatilhos de avaliação cirúrgica, sem esperar que ocorram neste caso." },
+    { "id": "cirurgia", "label": "Aciona a cirurgia imediatamente", "weight": 5, "verification": "verbal", "critical": true, "explanation": "Equipe cirúrgica deve ser chamada já na suspeita de hemorragia intratorácica com instabilidade." },
+    { "id": "rcp", "label": "Inicia RCP", "weight": 2.5, "verification": "verbal", "critical": false, "explanation": "Reconhecer a ausência de pulso e iniciar manobras sem adiar o tratamento simultâneo das causas reversíveis." },
+    { "id": "toracotomia-reanimacao", "label": "Indica toracotomia de reanimação (trauma torácico penetrante com PCR presenciada)", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Parada presenciada após lesão penetrante torácica, com sinais de vida instantes antes, favorece toracotomia de emergência por equipe habilitada." },
+    { "id": "descompressao", "label": "Descreve descompressão torácica bilateral", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Descompressão bilateral trata imediatamente pneumotórax hipertensivo possível na parada traumática." },
+    { "id": "acesso-toracotomia", "label": "Descreve toracotomia anterolateral esquerda ou bilateral", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Verbalizar acesso que permita explorar o tórax e controlar lesões intratorácicas." },
+    { "id": "pericardio", "label": "Verbaliza realização de pericardiotomia + exploração cardíaca e massagem cardíaca interna", "weight": 5, "verification": "verbal", "critical": true, "explanation": "Explorar e abrir o pericárdio permite reconhecer tamponamento e lesão cardíaca; massagem interna é possível após acesso." },
+    { "id": "aorta", "label": "Verbaliza clampeamento da aorta descendente", "weight": 5, "verification": "verbal", "critical": false, "explanation": "O clampeamento pode ser parte do controle temporário da hemorragia abaixo do diafragma, conforme achados e equipe." },
+    { "id": "sangramento-toracico", "label": "Verbaliza controle de sangramento pulmonar/vascular torácico", "weight": 2.5, "verification": "verbal", "critical": true, "explanation": "A reanimação só terá efeito duradouro se a fonte hemorrágica torácica for controlada." }
   ],
-  "criticalErrors": ["Ignorar hemorragia torácica volumosa", "Não ativar transfusão e cirurgia após drenagem de 1.600 mL", "Tratar parada traumática sem abordar causas reversíveis"],
-  "referenceAnswer": "O quadro sugere choque hemorrágico por lesão intratorácica esquerda, sem excluir pneumotórax hipertensivo ou tamponamento. Faço XABCDE, acesso rápido, oxigenação e ativação de transfusão maciça balanceada, minimizo cristaloide e previno hipotermia/hipocalcemia. Considero TXA nas primeiras três horas. A lesão pleural requer drenagem conforme avaliação; 1.600 mL iniciais exigem cirurgia imediata. Na parada presenciada, inicio RCP sem atrasar hemostasia, corrijo hipóxia, considero descompressão bilateral e, pelos sinais de vida e mecanismo penetrante torácico, toracotomia de ressuscitação por equipe habilitada. Acesso anterolateral ou clamshell permite pericardiotomia, controle hemorrágico, massagem interna e eventual clampeamento da aorta.",
-  "references": ["https://www.east.org/education-resources/practice-management-guidelines/details/emergency-department-thoracotomy", "https://www.nice.org.uk/guidance/ng39/chapter/recommendations"]
+  "criticalErrors": ["Não reconhecer o choque e deixar de acionar sangue/cirurgia", "Ignorar causa torácica reversível na parada presenciada", "Não indicar toracotomia de reanimação quando há equipe habilitada"],
+  "referenceAnswer": "Tarefa 1: reconheço choque hemorrágico provável, com possibilidade de componente obstrutivo. Integro mecanismo, assimetria ventilatória e transição líquido/ar pleural no clipe para suspeitar de hemopneumotórax. Obtenho dois acessos calibrosos ou intraósseo, ativo transfusão maciça 1:1:1, limito cristaloides, administro TXA precoce no esquema cobrado, aqueço o paciente, monitoro acidose e cálcio e preparo via aérea com atenção ao risco de colapso peri-intubação. Solicito cirurgia imediatamente e verbalizo os limiares de drenagem do checklist que exigem toracotomia exploradora. Tarefa 2: reconheço parada presenciada, inicio RCP em paralelo à correção da hemorragia e da hipóxia, descomprimo bilateralmente o tórax e indico toracotomia de reanimação por equipe habilitada. Descrevo acesso anterolateral esquerdo ou bilateral, abertura pericárdica, exploração cardíaca, massagem interna, controle de lesões pulmonares ou vasculares e clampeamento da aorta descendente quando indicado. A imagem é uma amostra de outro paciente e, isoladamente, não prova sangue pleural nem a etiologia de todo o choque.",
+  "references": ["https://www.east.org/education-resources/practice-management-guidelines/details/emergency-department-thoracotomy", "https://www.nice.org.uk/guidance/ng39/chapter/recommendations", "https://commons.wikimedia.org/wiki/File:Unusual-new-signs-of-pneumothorax-at-lung-ultrasound-2036-7902-5-10-S3.ogv"]
 }

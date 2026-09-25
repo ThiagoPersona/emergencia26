@@ -1,5 +1,20 @@
 [
   {
+    "id": "us-trauma-colecao-pleural",
+    "type": "video",
+    "src": "assets/praticas/pocus/us-trauma-colecao-pleural.mp4",
+    "thumbnail": "assets/praticas/pocus/us-trauma-colecao-pleural-poster.webp",
+    "poster": "assets/praticas/pocus/us-trauma-colecao-pleural-poster.webp",
+    "examAlt": "Clipe de ultrassonografia torácica para interpretação; registro de outro paciente.",
+    "reviewAlt": "Ultrassom de outro paciente com transição entre líquido pleural e padrão pulmonar sem deslizamento.",
+    "reviewCaption": "O hydro-point mostra líquido e ar no espaço pleural. No trauma instável, isso apoia a suspeita de hemopneumotórax, mas o vídeo de outro paciente não prova sangue nem define a fonte do choque.",
+    "credit": "Volpicelli G, Boero E, Stefanone V e Storti E",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unusual-new-signs-of-pneumothorax-at-lung-ultrasound-2036-7902-5-10-S3.ogv",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "modified": "2026-09-25"
+  },
+  {
     "id": "ecg-bavt-cc0",
     "type": "image",
     "src": "assets/praticas/ecg/ecg-bavt-cc0.svg",

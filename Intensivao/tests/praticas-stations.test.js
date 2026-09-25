@@ -186,8 +186,33 @@ test("simulado 4 mantém progressão, perguntas práticas e imagens diagnóstica
   assert.match(airway.phases[3].prompt, /tubo/i);
 
   const trauma = byId.get("emt-4-trauma-torax-penetrante");
+  assert.equal(trauma.phases.length, 2);
+  assert.equal(trauma.phases[0].prompt, "Qual o diagnóstico sindrômico e sua etiologia mais provável? Que intervenções você realizaria neste momento?");
+  assert.equal(trauma.phases[1].prompt, "Descreva o passo a passo da reanimação deste paciente.");
   assert.match(trauma.phases.at(-1).patientState.summary, /sem pulso|parada/i);
-  assert.ok(trauma.checklist.some((item) => /toracotomia/i.test(item.label)));
+  assert.ok(trauma.phases[0].media.includes("us-trauma-colecao-pleural"));
+  assert.doesNotMatch(trauma.phases.map((phase) => `${phase.prompt} ${phase.patientState.summary}`).join(" "), /1\.600|toracotomia|hemopneumotórax|choque hemorrágico/i);
+  assert.deepEqual(trauma.checklist.map(({ label, weight }) => [label, weight]), [
+    ["Reconhece o choque hemorrágico", 5],
+    ["Reconhece possível choque obstrutivo associado", 5],
+    ["Verbaliza achados clínicos sugestivos de hemopneumotórax", 5],
+    ["2 acessos venosos calibrosos ou acesso intraósseo imediato", 5],
+    ["Ácido Tranexâmico 1g IV em 10 min + 1g IV em 8h", 5],
+    ["Infusão restrita de cristaloides isotônicos (máx 1,5L)", 5],
+    ["Ativa Protocolo de Transfusão Maciça (1:1:1)", 5],
+    ["Previne/trata hipotermia (cobertores, fluidos aquecidos)", 5],
+    ["Verbaliza necessidade de monitoramento e correção de acidose e hipocalcemia (laboratorial ou empírica)", 5],
+    ["Considera IOT precoce para segurança, com tubo de maior calibre (7,5–8,0 mm)", 5],
+    ["Verbaliza que a drenagem >1500 mL na inserção ou >200 mL/hora por 2-4 horas indica toracotomia exploradora", 5],
+    ["Aciona a cirurgia imediatamente", 5],
+    ["Inicia RCP", 2.5],
+    ["Indica toracotomia de reanimação (trauma torácico penetrante com PCR presenciada)", 10],
+    ["Descreve descompressão torácica bilateral", 10],
+    ["Descreve toracotomia anterolateral esquerda ou bilateral", 5],
+    ["Verbaliza realização de pericardiotomia + exploração cardíaca e massagem cardíaca interna", 5],
+    ["Verbaliza clampeamento da aorta descendente", 5],
+    ["Verbaliza controle de sangramento pulmonar/vascular torácico", 2.5]
+  ]);
 
   const pocus = byId.get("emt-4-pocus-pelve");
   assert.match(pocus.phases[1].prompt, /e.?FAST/i);
@@ -241,7 +266,8 @@ test("fases revelam estado e midia progressivamente usando apenas o manifesto", 
 
   readIndex().forEach((entry) => {
     const station = readStation(entry);
-    assert.ok(station.phases.length >= 3 && station.phases.length <= 6, `${entry.file}: use de 3 a 6 fases`);
+    const minPhases = station.id === "emt-4-trauma-torax-penetrante" ? 2 : 3;
+    assert.ok(station.phases.length >= minPhases && station.phases.length <= 6, `${entry.file}: numero de fases invalido`);
 
     station.phases.forEach((phase, phaseIndex) => {
       const prefix = `${entry.file}/phases[${phaseIndex}]`;
@@ -346,7 +372,8 @@ test("estacoes da Task 8 possuem conteudo progressivo e midias obrigatorias", ()
     const station = readStation(entry);
     assert.equal(station.examTitle, new Map(EXPECTED_STATIONS).get(entry.id));
     assert.notEqual(station.examTitle, station.title, `${entry.id}: titulo de prova entrega diagnostico`);
-    assert.ok(station.phases.length >= 3 && station.phases.length <= 6, `${entry.id}: progressao invalida`);
+    const minPhases = station.id === "emt-4-trauma-torax-penetrante" ? 2 : 3;
+    assert.ok(station.phases.length >= minPhases && station.phases.length <= 6, `${entry.id}: progressao invalida`);
     assert.ok(station.referenceAnswer.length > 200, `${entry.id}: resposta oral incompleta`);
     assert.ok(station.references.length >= 2, `${entry.id}: referencias insuficientes`);
   });
