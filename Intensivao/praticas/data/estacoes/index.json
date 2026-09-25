@@ -227,7 +227,8 @@
       "imagem após estabilização",
       "transferência"
     ],
-    "hasMedia": true
+    "hasMedia": true,
+    "trainingSimulado": 2
   },
   {
     "id": "sim-trauma-torax-instavel-01",
@@ -708,7 +709,8 @@
       "estabilização materna",
       "resolução da gestação"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 2
   },
   {
     "id": "sim-obst-pcr-materna-01",
@@ -733,7 +735,8 @@
       "parto de ressuscitação",
       "equipe neonatal"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 3
   },
   {
     "id": "sim-proc-bloqueio-fascia-iliaca-01",
@@ -780,7 +783,8 @@
       "pneumotórax hipertensivo",
       "dreno de tórax"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 1
   },
   {
     "id": "emt-1-bronquiolite-iot",
@@ -801,7 +805,8 @@
       "via aérea pediátrica",
       "capnografia"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 1
   },
   {
     "id": "emt-1-avci-pos-trombolise",
@@ -822,7 +827,8 @@
       "hemorragia sintomática",
       "neuroproteção"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 1
   },
   {
     "id": "emt-1-hda-varicosa",
@@ -843,7 +849,8 @@
       "endoscopia",
       "balão ponte"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 1
   },
   {
     "id": "emt-1-gestao-fluxo",
@@ -864,7 +871,8 @@
       "fluxo",
       "indicadores"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 1
   },
   {
     "id": "emt-2-tep-choque",
@@ -885,7 +893,8 @@
       "POCUS",
       "reperfusão"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 2
   },
   {
     "id": "emt-2-tvp-compressao",
@@ -905,7 +914,8 @@
       "ultrassom de compressão",
       "anticoagulação"
     ],
-    "hasMedia": true
+    "hasMedia": true,
+    "trainingSimulado": 2
   },
   {
     "id": "emt-2-via-aerea-suja",
@@ -926,7 +936,8 @@
       "RSI",
       "capnografia"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 2
   },
   {
     "id": "emt-3-queimadura-eletrica",
@@ -947,7 +958,8 @@
       "rabdomiólise",
       "ressuscitação"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 3
   },
   {
     "id": "emt-3-pocus-consolidacao",
@@ -968,7 +980,8 @@
       "broncograma",
       "derrame pleural"
     ],
-    "hasMedia": true
+    "hasMedia": true,
+    "trainingSimulado": 3
   },
   {
     "id": "emt-3-sindrome-toracica-aguda",
@@ -988,7 +1001,8 @@
       "síndrome torácica aguda",
       "transfusão"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 3
   },
   {
     "id": "emt-3-via-aerea-obesidade",
@@ -1010,7 +1024,8 @@
       "RSI",
       "bougie"
     ],
-    "hasMedia": false
+    "hasMedia": false,
+    "trainingSimulado": 3
   },
   {
     "id": "int-rn-reanimacao",
@@ -1114,5 +1129,119 @@
       "congestão pulmonar"
     ],
     "hasMedia": false
+  },
+  {
+    "id": "emt-4-ovace-lactente",
+    "file": "emt-4-ovace-lactente.json",
+    "schemaVersion": 2,
+    "examTitle": "Lactente com obstrução de via aérea",
+    "title": "OVACE grave no lactente e via aérea de resgate",
+    "domain": "Via aérea e ventilação mecânica",
+    "domains": [
+      "Via aérea e ventilação mecânica",
+      "Pediatria"
+    ],
+    "family": "Via aérea e ventilação mecânica",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "OVACE",
+      "lactente",
+      "desobstrução",
+      "intubação pediátrica"
+    ],
+    "hasMedia": false,
+    "trainingSimulado": 4
+  },
+  {
+    "id": "emt-4-trauma-torax-penetrante",
+    "file": "emt-4-trauma-torax-penetrante.json",
+    "schemaVersion": 2,
+    "examTitle": "Ferimento torácico com deterioração",
+    "title": "Trauma torácico penetrante com choque e parada traumática",
+    "domain": "Trauma e APH",
+    "domains": [
+      "Trauma e APH",
+      "Cardiovascular e PCR"
+    ],
+    "family": "Trauma e APH",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "trauma penetrante",
+      "hemotórax",
+      "transfusão maciça",
+      "toracotomia de ressuscitação"
+    ],
+    "hasMedia": false,
+    "trainingSimulado": 4
+  },
+  {
+    "id": "emt-4-pocus-pelve",
+    "file": "emt-4-pocus-pelve.json",
+    "schemaVersion": 2,
+    "examTitle": "Trauma com avaliação ultrassonográfica e radiografia",
+    "title": "eFAST no trauma e instabilidade do anel pélvico",
+    "domain": "POCUS",
+    "domains": [
+      "POCUS",
+      "Trauma e APH"
+    ],
+    "family": "POCUS",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "eFAST",
+      "pelve",
+      "sínfise púbica",
+      "hemorragia pélvica"
+    ],
+    "hasMedia": true,
+    "trainingSimulado": 4
+  },
+  {
+    "id": "emt-4-neuro-febre-convulsao",
+    "file": "emt-4-neuro-febre-convulsao.json",
+    "schemaVersion": 2,
+    "examTitle": "Convulsão prolongada com febre",
+    "title": "Estado de mal convulsivo febril e investigação de meningoencefalite",
+    "domain": "Neurologia",
+    "domains": [
+      "Neurologia",
+      "Infectologia"
+    ],
+    "family": "Neurologia",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "estado de mal",
+      "meningoencefalite",
+      "punção lombar",
+      "aciclovir"
+    ],
+    "hasMedia": false,
+    "trainingSimulado": 4
+  },
+  {
+    "id": "emt-4-cardio-iam-arritmias",
+    "file": "emt-4-cardio-iam-arritmias.json",
+    "schemaVersion": 2,
+    "examTitle": "Dor torácica com evolução elétrica",
+    "title": "Infarto com supra e progressão para arritmias ventriculares",
+    "domain": "Cardiovascular e PCR",
+    "domains": [
+      "Cardiovascular e PCR"
+    ],
+    "family": "Cardiovascular e PCR",
+    "difficulty": "avancada",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "IAM com supra",
+      "fibrinólise",
+      "taquicardia ventricular",
+      "fibrilação ventricular"
+    ],
+    "hasMedia": true,
+    "trainingSimulado": 4
   }
 ]

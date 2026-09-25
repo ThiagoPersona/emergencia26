@@ -1,0 +1,59 @@
+{
+  "id": "emt-4-ovace-lactente",
+  "version": 2,
+  "title": "OVACE grave no lactente e via aérea de resgate",
+  "examTitle": "Lactente com obstrução de via aérea",
+  "domain": "Via aérea e ventilação mecânica",
+  "domains": ["Via aérea e ventilação mecânica", "Pediatria"],
+  "family": "Via aérea e ventilação mecânica",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["OVACE", "lactente", "desobstrução", "intubação pediátrica"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 4, "adaptation": "Caso reescrito; perguntas e competências do checklist presencial preservadas" },
+  "briefing": "Atenda o lactente conforme cada nova tarefa. Demonstre os gestos solicitados no manequim e verbalize o que faria em paciente real.",
+  "phases": [
+    {
+      "id": "reconhecimento",
+      "title": "Primeira intervenção",
+      "prompt": "Qual sua primeira intervenção? Diga como reconhecer a gravidade e o que fará imediatamente.",
+      "patientState": { "summary": "Lactente de 8 meses levou uma peça pequena de brinquedo à boca. Está cianótica, sem choro e com tosse ineficaz.", "vitals": { "consciência": "alerta", "respiração": "esforço sem ventilação efetiva" } }
+    },
+    {
+      "id": "manequim",
+      "title": "Demonstração",
+      "prompt": "Demonstre no manequim a sequência completa de desobstrução, com posicionamento, local dos golpes e compressões, reavaliação e manobras que evitaria.",
+      "patientState": { "summary": "O objeto ainda obstrui a via aérea. A lactente permanece consciente e com tosse ineficaz.", "vitals": { "consciência": "alerta", "cor": "cianose" } }
+    },
+    {
+      "id": "inconsciente",
+      "title": "Perda da consciência",
+      "prompt": "A lactente perdeu a consciência. O que muda na sequência? Descreva quando e como removeria um objeto visível.",
+      "patientState": { "summary": "Agora inconsciente e sem respiração efetiva. Após o ciclo inicial de compressões, a via aérea é aberta para tentativas de ventilação.", "vitals": { "consciência": "inconsciente", "pulso": "presente inicialmente" } }
+    },
+    {
+      "id": "intubacao",
+      "title": "Via aérea avançada",
+      "prompt": "A equipe solicita intubação: indique opções de tubo, lâmina, profundidade inicial aproximada e como confirma e reajusta a posição do tubo.",
+      "patientState": { "summary": "Após remoção sob visualização de um fragmento à entrada da glote, a ventilação é possível. A equipe prepara intubação por persistência de insuficiência respiratória.", "vitals": { "peso": "8 kg", "SpO2": "89% sob ventilação com bolsa-máscara" } }
+    }
+  ],
+  "checklist": [
+    { "id": "ovace-grave", "label": "Reconhece OVACE grave: cianose, tosse ineficaz e incapacidade de chorar", "weight": 5, "verification": "verbal", "critical": true, "explanation": "Obstrução leve com tosse eficaz pede observação; este lactente precisa de manobras imediatas." },
+    { "id": "alternancia", "label": "Inicia ciclos de 5 golpes dorsais e 5 compressões torácicas", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "A técnica para menor de 1 ano não inclui compressão abdominal." },
+    { "id": "sem-heimlich", "label": "Não faz Heimlich nem varredura digital às cegas", "weight": 5, "verification": "hibrido", "critical": true, "explanation": "Essas manobras podem lesar o lactente ou aprofundar o corpo estranho." },
+    { "id": "posicao-dorsal", "label": "Posiciona o lactente em prona no antebraço, cabeça abaixo do tronco e mandíbula apoiada", "weight": 10, "verification": "manual", "critical": true, "explanation": "Cabeça e pescoço devem ser sustentados sem comprimir tecidos moles." },
+    { "id": "golpes", "label": "Aplica 5 golpes interescapulares com a base da mão", "weight": 10, "verification": "manual", "critical": true, "explanation": "Golpes firmes entre as escápulas, não no pescoço ou lombar." },
+    { "id": "virada", "label": "Vira em bloco para supino, mantendo a cabeça abaixo do tronco", "weight": 5, "verification": "manual", "critical": false, "explanation": "A transição segura evita queda e perda de alinhamento." },
+    { "id": "compressoes-torax", "label": "Faz 5 compressões no terço inferior do esterno, com profundidade de cerca de um terço do tórax e retorno completo", "weight": 10, "verification": "manual", "critical": true, "explanation": "Não comprimir apêndice xifoide ou abdome." },
+    { "id": "reavaliacao", "label": "Reavalia após cada sequência de 5 mais 5 e repete enquanto consciente e obstruída", "weight": 5, "verification": "verbal", "critical": false, "explanation": "A progressão para tosse eficaz ou inconsciência muda a conduta." },
+    { "id": "inconsciente-rcp", "label": "Ao ficar inconsciente, inicia RCP, abre a via aérea após compressões e tenta ventilação", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "Não se mantém o ciclo de golpes dorsais em lactente inconsciente." },
+    { "id": "objeto-visivel", "label": "Inspeciona a boca e remove somente objeto visível, com instrumento apropriado sob visão quando necessário", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "Remoção às cegas pode empurrar o corpo estranho para distal." },
+    { "id": "tubo", "label": "Escolhe tubo 3,5 sem cuff ou 3,0 com cuff como opções iniciais para 8 meses", "weight": 7.5, "verification": "verbal", "critical": false, "explanation": "Tamanho é ponto de partida; confirmar passagem e evitar pressão excessiva do cuff." },
+    { "id": "lamina", "label": "Seleciona lâmina reta Miller 1 ou equivalente adequada", "weight": 5, "verification": "verbal", "critical": false, "explanation": "A escolha deve corresponder à anatomia e ao material disponível." },
+    { "id": "profundidade-confirmacao", "label": "Inicia perto de 10,5 cm no lábio e confirma/ajusta com capnografia, ausculta e avaliação clínica", "weight": 7.5, "verification": "hibrido", "critical": true, "explanation": "Profundidade estimada nunca substitui confirmação da posição." }
+  ],
+  "criticalErrors": ["Não iniciar desobstrução em OVACE grave", "Fazer compressões abdominais em lactente", "Fazer varredura digital às cegas", "Não iniciar RCP após perda de consciência"],
+  "referenceAnswer": "A tosse ineficaz, ausência de choro e cianose indicam OVACE grave. Sustento a lactente prona, cabeça baixa, e alterno cinco golpes interescapulares com cinco compressões no terço inferior do esterno em supino, reavaliando. Não faço Heimlich nem varredura às cegas. Se perder consciência, inicio RCP, abro a via aérea após as compressões e retiro apenas o objeto visível, com instrumento sob visão se necessário. Para a intubação, separo tubo 3,5 sem cuff ou 3,0 com cuff e Miller 1; 10,5 cm no lábio é só estimativa inicial, confirmada por capnografia contínua e exame clínico.",
+  "references": ["https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-basic-life-support", "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support"]
+}

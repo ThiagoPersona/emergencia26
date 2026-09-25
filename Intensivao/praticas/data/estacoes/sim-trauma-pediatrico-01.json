@@ -7,6 +7,7 @@
   "domains": ["Trauma", "Emergências pediátricas"],
   "difficulty": "avancada",
   "origin": "inedita",
+  "trainingReference": { "collection": "Treino presencial", "simulado": 2, "relation": "Checklist semelhante; cenário independente" },
   "tags": ["XABCDE pediátrico", "choque hemorrágico", "acesso intraósseo", "hemoderivados", "eFAST", "imagem após estabilização", "transferência"],
   "durationSeconds": 300,
   "briefing": "Criança de 7 anos, com aproximadamente 23 kg, chega após atropelamento. Faça a abordagem primária e decida ressuscitação, investigação e destino conforme a resposta clínica.",

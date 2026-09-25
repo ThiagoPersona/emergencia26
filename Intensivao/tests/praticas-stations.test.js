@@ -56,17 +56,22 @@ const EXPECTED_STATIONS = [
   ["int-ped-ovace", "Criança com engasgo e piora"],
   ["int-aph-amonia-imv", "Vítimas em instalação industrial"],
   ["int-ped-sepse-choque", "Criança febril com má perfusão"],
-  ["int-pocus-vti-choque", "Choque após reposição inicial"]
+  ["int-pocus-vti-choque", "Choque após reposição inicial"],
+  ["emt-4-ovace-lactente", "Lactente com obstrução de via aérea"],
+  ["emt-4-trauma-torax-penetrante", "Ferimento torácico com deterioração"],
+  ["emt-4-pocus-pelve", "Trauma com avaliação ultrassonográfica e radiografia"],
+  ["emt-4-neuro-febre-convulsao", "Convulsão prolongada com febre"],
+  ["emt-4-cardio-iam-arritmias", "Dor torácica com evolução elétrica"]
 ];
 
 const EXPECTED_FAMILY_DISTRIBUTION = {
-  "Via aérea e ventilação mecânica": 6,
-  "Trauma e APH": 7,
-  "POCUS": 7,
-  "Cardiovascular e PCR": 5,
+  "Via aérea e ventilação mecânica": 7,
+  "Trauma e APH": 8,
+  "POCUS": 8,
+  "Cardiovascular e PCR": 6,
   "Pediatria": 8,
   "Toxicologia e animais peçonhentos": 3,
-  "Neurologia": 3,
+  "Neurologia": 4,
   "Respiratório, sepse e metabólico": 3,
   "Obstetrícia": 2,
   "Procedimentos, analgesia e sedação": 1,
@@ -81,6 +86,14 @@ const REQUIRED_TASK_8_MEDIA = {
   "sim-tox-triciclico-01": ["ecg-triciclico-qrs"],
   "sim-proc-bloqueio-fascia-iliaca-01": ["fascia-iliaca-probe-placement", "us-fascia-iliaca-anatomia"]
 };
+
+const TRAINING_SIMULADO_BY_ID = new Map([
+  ["sim-trauma-pediatrico-01", 2],
+  ["sim-obst-eclampsia-01", 2],
+  ["sim-obst-pcr-materna-01", 3],
+  ...EXPECTED_STATIONS.filter(([id]) => /^emt-[123]-/.test(id)).map(([id]) => [id, Number(id[4])]),
+  ...EXPECTED_STATIONS.filter(([id]) => id.startsWith("emt-4-")).map(([id]) => [id, 4])
+]);
 
 const HISTORICAL_CHECKLIST_SHA256 = {
   "2025-vm-autopeep": "a82acc2aa325e563651298ca50b4f4bba2194ac581a640ae132dcd89fee992e6",
@@ -102,17 +115,17 @@ function checklistHash(checklist) {
   return crypto.createHash("sha256").update(JSON.stringify(checklist)).digest("hex");
 }
 
-test("indice v2 possui exatamente as 47 estacoes na ordem editorial", () => {
+test("indice v2 possui exatamente as 52 estacoes na ordem editorial", () => {
   const index = readIndex();
   const expectedIds = EXPECTED_STATIONS.map(([id]) => id);
   const expectedFiles = expectedIds.map((id) => `${id}.json`);
   const stationFiles = fs.readdirSync(stationDirectory)
     .filter((file) => file.endsWith(".json") && file !== "index.json");
 
-  assert.equal(index.length, 47);
+  assert.equal(index.length, 52);
   assert.deepEqual(index.map((entry) => entry.id), expectedIds);
   assert.equal(new Set(index.map((entry) => entry.id)).size, expectedIds.length);
-  assert.equal(stationFiles.length, 47);
+  assert.equal(stationFiles.length, 52);
   assert.deepEqual(new Set(stationFiles), new Set(expectedFiles));
 });
 
@@ -122,13 +135,10 @@ test("indice permite montar o catalogo sem baixar os JSONs", () => {
 
   index.forEach((entry, indexPosition) => {
     const prefix = `index[${indexPosition}]`;
-    assert.deepEqual(
-      Object.keys(entry),
-      entry.id.startsWith("2025-")
-        ? ["id", "file", "schemaVersion", "examTitle", "title", "domain", "domains", "family", "difficulty", "origin", "tags", "hasMedia", "year"]
-        : ["id", "file", "schemaVersion", "examTitle", "title", "domain", "domains", "family", "difficulty", "origin", "tags", "hasMedia"],
-      `${prefix} deve expor somente os metadados ricos esperados`
-    );
+    const expectedKeys = ["id", "file", "schemaVersion", "examTitle", "title", "domain", "domains", "family", "difficulty", "origin", "tags", "hasMedia"];
+    if (TRAINING_SIMULADO_BY_ID.has(entry.id)) expectedKeys.push("trainingSimulado");
+    if (entry.id.startsWith("2025-")) expectedKeys.push("year");
+    assert.deepEqual(Object.keys(entry), expectedKeys, `${prefix} deve expor somente os metadados ricos esperados`);
     assert.equal(entry.schemaVersion, 2, `${prefix}.schemaVersion`);
     assert.equal(entry.examTitle, expectedTitles.get(entry.id), `${prefix}.examTitle`);
     assert.match(entry.title, /\S/, `${prefix}.title`);
@@ -144,6 +154,53 @@ test("indice permite montar o catalogo sem baixar os JSONs", () => {
     if (entry.id.startsWith("2025-")) assert.equal(entry.year, 2025, `${prefix}.year`);
     else assert.equal(Object.hasOwn(entry, "year"), false, `${prefix} inedito nao deve ter year`);
   });
+});
+
+test("marcador presencial corresponde ao simulado sem atribuir autoria da prova oficial", () => {
+  const index = readIndex();
+  assert.equal(TRAINING_SIMULADO_BY_ID.size, 20);
+  index.forEach((entry) => {
+    const expected = TRAINING_SIMULADO_BY_ID.get(entry.id);
+    assert.equal(entry.trainingSimulado, expected, `${entry.id}: procedência incorreta`);
+    if (expected) {
+      const station = readStation(entry);
+      if (entry.id.startsWith("sim-")) {
+        assert.equal(station.trainingReference?.collection, "Treino presencial", `${entry.id}: relação não registrada`);
+        assert.equal(station.trainingReference?.simulado, expected, `${entry.id}: número do simulado divergente`);
+      } else {
+        assert.equal(station.source?.collection, "EmTalks simulado", `${entry.id}: fonte não registrada`);
+        assert.equal(station.source?.simulado, expected, `${entry.id}: número do simulado divergente`);
+      }
+      assert.notEqual(station.source?.exam, "TEME", `${entry.id}: atribuição oficial indevida`);
+    }
+  });
+});
+
+test("simulado 4 mantém progressão, perguntas práticas e imagens diagnósticas verificáveis", () => {
+  const byId = new Map(readIndex().map((entry) => [entry.id, readStation(entry)]));
+  const airway = byId.get("emt-4-ovace-lactente");
+  assert.equal(airway.phases.length, 4);
+  assert.match(airway.phases[0].prompt, /primeira|inicial/i);
+  assert.match(airway.phases[1].prompt, /manequim/i);
+  assert.match(airway.phases[2].patientState.summary, /inconsciente/i);
+  assert.match(airway.phases[3].prompt, /tubo/i);
+
+  const trauma = byId.get("emt-4-trauma-torax-penetrante");
+  assert.match(trauma.phases.at(-1).patientState.summary, /sem pulso|parada/i);
+  assert.ok(trauma.checklist.some((item) => /toracotomia/i.test(item.label)));
+
+  const pocus = byId.get("emt-4-pocus-pelve");
+  assert.match(pocus.phases[1].prompt, /e.?FAST/i);
+  assert.ok(pocus.phases.at(-1).media.includes("rx-pelve-diastase"));
+
+  const neuro = byId.get("emt-4-neuro-febre-convulsao");
+  assert.match(neuro.phases.at(-1).patientState.summary, /líquor|LCR/i);
+  assert.ok(neuro.checklist.some((item) => /aciclovir/i.test(item.label)));
+
+  const cardio = byId.get("emt-4-cardio-iam-arritmias");
+  assert.deepEqual(cardio.phases.map((phase) => phase.media?.[0]), ["ecg-iam-inferior-vd", "ecg-vt-cc0", "ecg-vf-cc0"]);
+  assert.ok(cardio.checklist.some((item) => /cardioversão sincronizada/i.test(item.label)));
+  assert.match(cardio.referenceAnswer, /evidência incerta|utilidade não estabelecida/i);
 });
 
 test("todas as estacoes atendem ao contrato visual v2 e totalizam 100 pontos", () => {

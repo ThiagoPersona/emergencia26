@@ -1,0 +1,54 @@
+{
+  "id": "emt-4-cardio-iam-arritmias",
+  "version": 2,
+  "title": "Infarto com supra e progressão para arritmias ventriculares",
+  "examTitle": "Dor torácica com evolução elétrica",
+  "domain": "Cardiovascular e PCR",
+  "domains": ["Cardiovascular e PCR"],
+  "family": "Cardiovascular e PCR",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["IAM com supra", "fibrinólise", "taquicardia ventricular", "fibrilação ventricular"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 4, "adaptation": "Caso reescrito; sequência ECG-isquemia, taquicardia e fibrilação e checklist presencial preservados com ressalva de evidência" },
+  "briefing": "Interprete cada traçado quando aparecer. Responda a tarefa atual antes de avançar; a evolução será revelada em seguida.",
+  "phases": [
+    {
+      "id": "isquemia",
+      "title": "ECG inicial",
+      "prompt": "Interprete o ECG e indique a estratégia de reperfusão e os medicamentos imediatos, considerando o tempo até a hemodinâmica.",
+      "patientState": { "summary": "Homem de 62 anos, hipertenso e tabagista, com dor torácica opressiva há uma hora, sudorese e náuseas. O centro com angioplastia primária fica a cerca de duas horas de transporte, além do tempo local de preparo.", "vitals": { "PA": "143/88 mmHg", "FC": "112 bpm", "SpO2": "94% em ar ambiente" } },
+      "media": ["ecg-iam-inferior-vd"]
+    },
+    {
+      "id": "tv-pulso",
+      "title": "Alteração do ritmo",
+      "prompt": "Interprete o novo traçado, avalie a estabilidade e diga a intervenção elétrica, a sedação quando viável e a energia inicial.",
+      "patientState": { "summary": "Antes da reperfusão, torna-se confuso, frio e muito hipotenso. Há pulso central palpável e ritmo regular de complexos largos no monitor. A imagem externa mostra um traçado equivalente.", "vitals": { "PA": "79/42 mmHg", "FC": "180 bpm", "SpO2": "88% em ar ambiente", "pulso": "presente" } },
+      "media": ["ecg-vt-cc0"]
+    },
+    {
+      "id": "fv-refrataria",
+      "title": "Parada e persistência do ritmo",
+      "prompt": "Agora está sem pulso e o traçado mudou. Após três choques convencionais com energia escalonada, RCP de qualidade, adrenalina e amiodarona, o ritmo persiste. O que confere e quais estratégias adicionais pode discutir, distinguindo o que é rotina do que ainda tem evidência incerta?",
+      "patientState": { "summary": "A parada é presenciada. Foram realizados três choques conforme o equipamento; compressões e ventilação prosseguem entre análises. A imagem externa mostra um ritmo equivalente ao monitor.", "vitals": { "pulso": "ausente", "PA": "não mensurável" } },
+      "media": ["ecg-vf-cc0"]
+    }
+  ],
+  "checklist": [
+    { "id": "iam-ecg", "label": "Reconhece infarto com supra de ST no território inferior e considera acometimento de VD", "weight": 5, "verification": "verbal", "critical": true, "explanation": "O ECG inicial mostra alteração isquêmica inferior; investigar VD orienta cautela hemodinâmica." },
+    { "id": "aas", "label": "Administra AAS de ataque, por exemplo 300 mg mastigado se não contraindicado", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Antiagregação inicial não deve aguardar transporte." },
+    { "id": "clopidogrel", "label": "Associa clopidogrel 300 mg de ataque na estratégia fibrinolítica para menor de 75 anos", "weight": 10, "verification": "verbal", "critical": false, "explanation": "A dose depende da idade e da via de reperfusão." },
+    { "id": "enoxaparina", "label": "Indica enoxaparina 30 mg IV inicial seguida de dose SC ajustada a peso, idade e função renal, se fibrinólise", "weight": 10, "verification": "verbal", "critical": false, "explanation": "Ajustar em idosos e insuficiência renal; não usar dose fixa subcutânea para todos." },
+    { "id": "reperfusao", "label": "Considera fibrinólise imediata se angioplastia primária não ocorrer em até 120 minutos e se não houver contraindicações", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Tempo de transporte somado a preparo torna PCI em 120 minutos improvável; checar contraindicações e plano de transferência." },
+    { "id": "tv-identifica", "label": "Reconhece taquicardia ventricular monomórfica com pulso e instabilidade", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Hipotensão e confusão exigem tratamento elétrico urgente." },
+    { "id": "cardioversao", "label": "Faz cardioversão sincronizada urgente, sem atrasar por medicamentos", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "Sincronização é apropriada para TV monomórfica com pulso; não para FV." },
+    { "id": "sedacao", "label": "Oferece sedoanalgesia se viável, sem atrasar cardioversão em instabilidade", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Conforto importa, mas não deve atrasar o choque salvador." },
+    { "id": "energia-tv", "label": "Escolhe energia inicial bipásica apropriada para TV monomórfica, como 100 J, e escala conforme aparelho/resposta", "weight": 15, "verification": "verbal", "critical": false, "explanation": "Confirmar modo sincronizado e recomendações do desfibrilador." },
+    { "id": "fv-refrataria", "label": "Reconhece FV persistente, mantém RCP/choques e confere contato, posição e energia dos eletrodos", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "A técnica do choque e a RCP seguem prioritárias; não trocar de estratégia ao custo de pausas longas." },
+    { "id": "vetor-duplo", "label": "Discute mudança de vetor ou desfibrilação dupla como opções não estabelecidas após três choques, sem tratá-las como rotina", "weight": 5, "verification": "verbal", "critical": false, "explanation": "O checklist presencial menciona essas técnicas, mas a AHA 2025 considera sua utilidade não estabelecida." }
+  ],
+  "criticalErrors": ["Não reconhecer reperfusão urgente no IAM com supra", "Tratar TV instável com pulso como FV sem sincronização", "Interromper RCP de qualidade por manobra de benefício incerto"],
+  "referenceAnswer": "O primeiro traçado mostra IAM com supra inferior, com avaliação de VD e necessidade de reperfusão. AAS 300 mg, clopidogrel 300 mg e enoxaparina 30 mg IV seguida de dose SC ajustada são componentes possíveis de estratégia fibrinolítica em paciente com menos de 75 anos; verifico contraindicações. Como PCI dentro de 120 minutos é improvável, considero fibrinólise imediata e transferência. No segundo traçado há TV monomórfica com pulso e choque: cardioversão sincronizada urgente, sedoanalgesia apenas se não atrasar; 100 J bifásicos é ponto de partida conforme aparelho. Na parada, a FV exige RCP, desfibrilação, adrenalina e amiodarona conforme algoritmo. Após três choques, confiro eletrodos, contato, energia e causas reversíveis. Mudança de vetor ou desfibrilação dupla constam no checklist do treino, mas sua utilidade não estabelecida pela AHA 2025 torna a evidência incerta; não substituem medidas comprovadas nem devem ser exigidas como rotina.",
+  "references": ["https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/acute-coronary-syndromes/", "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support"]
+}

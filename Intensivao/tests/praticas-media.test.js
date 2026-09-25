@@ -33,10 +33,13 @@ const REQUIRED_ACERVO_IDS = [
   "us-fascia-iliaca-anatomia",
   "fascia-iliaca-probe-placement",
   "us-tvp-femoral-compressao",
-  "us-consolidacao-pulmonar"
+  "us-consolidacao-pulmonar",
+  "rx-pelve-diastase",
+  "ecg-vt-cc0",
+  "ecg-vf-cc0"
 ];
 
-test("acervo visual local contem os 23 itens licenciados e arquivos resolviveis", () => {
+test("acervo visual local contem os 26 itens licenciados e arquivos resolviveis", () => {
   const intensivaoRoot = path.resolve(__dirname, "..");
   const manifestPath = path.join(intensivaoRoot, "assets", "praticas", "media.json");
   const attributionPath = path.join(intensivaoRoot, "assets", "praticas", "ATRIBUICOES.md");

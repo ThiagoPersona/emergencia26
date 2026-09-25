@@ -330,5 +330,47 @@
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
     "modified": "2026-09-24; convertido de OGV para MP4 sem alterar o conteúdo"
+  },
+  {
+    "id": "rx-pelve-diastase",
+    "type": "image",
+    "src": "assets/praticas/trauma/rx-pelve-diastase.jpg",
+    "thumbnail": "assets/praticas/trauma/rx-pelve-diastase.jpg",
+    "examAlt": "Radiografia AP da pelve para interpretação em trauma.",
+    "reviewAlt": "Radiografia AP com diástase da sínfise púbica em lesão de livro aberto.",
+    "reviewCaption": "Imagem de outro paciente com diástase púbica equivalente; não atribuir medida exata a esta amostra.",
+    "credit": "Hellerhoff, Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Open-Book-Verletzung_durch_Turmspringen_45M_-_CR_-_001.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "modified": "2026-09-25"
+  },
+  {
+    "id": "ecg-vt-cc0",
+    "type": "image",
+    "src": "assets/praticas/ecg/ecg-vt-cc0.svg",
+    "thumbnail": "assets/praticas/ecg/ecg-vt-cc0.svg",
+    "examAlt": "Traçado eletrocardiográfico de ritmo rápido com complexos largos para interpretação.",
+    "reviewAlt": "Traçado ilustrativo de taquicardia ventricular.",
+    "reviewCaption": "Traçado didático equivalente ao ritmo descrito no caso; não é o ECG do paciente simulado.",
+    "credit": "Rocuronium Bromide, Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ventricular_Tachycardia.svg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modified": "2026-09-25"
+  },
+  {
+    "id": "ecg-vf-cc0",
+    "type": "image",
+    "src": "assets/praticas/ecg/ecg-vf-cc0.svg",
+    "thumbnail": "assets/praticas/ecg/ecg-vf-cc0.svg",
+    "examAlt": "Traçado eletrocardiográfico de parada com atividade elétrica desorganizada para interpretação.",
+    "reviewAlt": "Traçado ilustrativo de fibrilação ventricular.",
+    "reviewCaption": "Traçado didático equivalente ao ritmo descrito no caso; não é o ECG do paciente simulado.",
+    "credit": "Rocuronium Bromide, Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ventricular_Fibrillation.svg",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "modified": "2026-09-25"
   }
 ]

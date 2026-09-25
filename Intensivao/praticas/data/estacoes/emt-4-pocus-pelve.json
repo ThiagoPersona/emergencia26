@@ -1,0 +1,54 @@
+{
+  "id": "emt-4-pocus-pelve",
+  "version": 2,
+  "title": "eFAST no trauma e instabilidade do anel pélvico",
+  "examTitle": "Trauma com avaliação ultrassonográfica e radiografia",
+  "domain": "POCUS",
+  "domains": ["POCUS", "Trauma e APH"],
+  "family": "POCUS",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["eFAST", "pelve", "sínfise púbica", "hemorragia pélvica"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 4, "adaptation": "Caso reescrito; sequência de janelas e competências radiográficas preservadas" },
+  "briefing": "Demonstre as janelas ultrassonográficas no manequim ou verbalmente. Os exames aparecem quando solicitados.",
+  "phases": [
+    {
+      "id": "trauma-inicial",
+      "title": "Avaliação inicial",
+      "prompt": "Qual seu exame ultrassonográfico à beira-leito e para que ele é útil neste contexto?",
+      "patientState": { "summary": "Homem de 35 anos ejetado após colisão. Consciente, pálido e diaforético, com membro inferior esquerdo encurtado e rodado externamente. Sem hemorragia externa importante.", "vitals": { "PA": "82/48 mmHg", "FC": "132 bpm", "FR": "27 irpm", "SpO2": "95% com oxigênio" } }
+    },
+    {
+      "id": "janelas",
+      "title": "Demonstração eFAST",
+      "prompt": "Demonstre todas as janelas do eFAST e identifique as estruturas avaliadas em cada uma.",
+      "patientState": { "summary": "O aparelho está disponível. Não há imagem patológica pronta; demonstre sistematicamente o exame no manequim.", "vitals": { "PA": "80/46 mmHg", "FC": "136 bpm" } }
+    },
+    {
+      "id": "pelve",
+      "title": "Radiografia e conduta",
+      "prompt": "Interprete a radiografia AP da pelve apresentada e conduza o paciente com suspeita de sangramento pélvico. Verbalize posicionamento do dispositivo e tratamento definitivo.",
+      "patientState": { "summary": "O eFAST não demonstrou líquido livre inequívoco. A radiografia AP da pelve está disponível. A imagem externa abaixo é de outro paciente e mostra um achado equivalente ao do caso.", "vitals": { "PA": "76/44 mmHg", "FC": "142 bpm" } },
+      "media": ["rx-pelve-diastase"]
+    }
+  ],
+  "checklist": [
+    { "id": "janela-hepatorrenal", "label": "Mostra janela hepatorrenal e recessos subfrênico e de Morison", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Procura líquido livre no quadrante superior direito." },
+    { "id": "janela-esplenorrenal", "label": "Mostra janela esplenorrenal e espaço subfrênico esquerdo", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Não limitar o exame ao espaço hepatorrenal." },
+    { "id": "janela-subxifoide", "label": "Mostra janela subxifoide ou paraesternal para derrame pericárdico", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Pesquisa tamponamento em trauma torácico/choque." },
+    { "id": "janela-suprapubica", "label": "Mostra janela suprapúbica em planos longitudinal e transversal", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Líquido pode se acumular na pelve." },
+    { "id": "pulmao-direito", "label": "Mostra janela pleuropulmonar direita para pneumotórax/hemotórax", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "A extensão pulmonar diferencia FAST de eFAST." },
+    { "id": "pulmao-esquerdo", "label": "Mostra janela pleuropulmonar esquerda para pneumotórax/hemotórax", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Exame bilateral evita falsa segurança." },
+    { "id": "diastase", "label": "Identifica diástase da sínfise púbica na radiografia", "weight": 10, "verification": "verbal", "critical": true, "explanation": "A imagem de referência ilustra afastamento; não atribua uma medida exata à amostra externa." },
+    { "id": "anel-instavel", "label": "Relaciona a diástase com lesão instável do anel pélvico e sangramento oculto", "weight": 10, "verification": "verbal", "critical": true, "explanation": "eFAST negativo não exclui hemorragia retroperitoneal pélvica." },
+    { "id": "binder", "label": "Aplica lençol ou binder sobre os grandes trocânteres, sem testar repetidamente a estabilidade", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "Posicionar alto, nas cristas ilíacas, reduz a eficácia." },
+    { "id": "transfusao", "label": "Ativa transfusão maciça balanceada e reavalia choque continuamente", "weight": 5, "verification": "verbal", "critical": true, "explanation": "Não esperar tomografia em paciente instável." },
+    { "id": "membros", "label": "Alinha e aproxima os membros inferiores com cuidado se apropriado", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Evitar manobras que agravem fraturas ou atrasem estabilização." },
+    { "id": "lesoes-associadas", "label": "Investiga lesões associadas sem atribuir o choque apenas ao fêmur ou ao eFAST", "weight": 5, "verification": "verbal", "critical": false, "explanation": "O trauma de alta energia pode produzir fontes simultâneas de sangramento." },
+    { "id": "controle-definitivo", "label": "Aciona trauma, cirurgia e radiologia intervencionista para controle definitivo do sangramento", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Binder e transfusão são pontes para hemostasia definitiva." }
+  ],
+  "criticalErrors": ["Não reconhecer diástase e sangramento pélvico", "Não estabilizar a pelve no nível dos grandes trocânteres", "Aguardar tomografia em choque persistente"],
+  "referenceAnswer": "Faço eFAST com janelas hepatorrenal, esplenorrenal, subxifoide, suprapúbica em dois planos e ambas as pleuras. O eFAST negativo não exclui hemorragia retroperitoneal. A radiografia mostra diástase púbica. Trato como instabilidade do anel pélvico: binder ou lençol nos grandes trocânteres, sem mobilização pélvica repetida, transfusão maciça e reavaliação. Aciono equipe de trauma e controle definitivo por cirurgia ou angioembolização conforme lesões, resposta e disponibilidade. A radiografia externa é apenas uma amostra de achado equivalente; não infiro medida exata dela.",
+  "references": ["https://www.acep.org/sonoguide/basic/fast", "https://www.nice.org.uk/guidance/ng39/chapter/recommendations"]
+}

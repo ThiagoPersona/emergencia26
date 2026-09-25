@@ -11,6 +11,7 @@
   ],
   "difficulty": "avancada",
   "origin": "inedita",
+  "trainingReference": { "collection": "Treino presencial", "simulado": 3, "relation": "Checklist semelhante; cenário independente" },
   "tags": [
     "PCR na gestação",
     "RCP de alta qualidade",

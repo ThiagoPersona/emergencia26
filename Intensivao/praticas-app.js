@@ -123,13 +123,18 @@
     ? root.TemePracticeUtils
     : (typeof require === "function" ? require("./praticas-utils.js") : null);
 
+  function trainingPrefix(entry) {
+    return entry && Number.isInteger(entry.trainingSimulado) && entry.trainingSimulado >= 1 && entry.trainingSimulado <= 4
+      ? "\u{1F534} " : "";
+  }
+
   function getPublicStationView(station, mode, caseNumber) {
     if (mode === "exam") {
       const area = catalogModule && typeof catalogModule.getExamArea === "function"
         ? catalogModule.getExamArea(station) : null;
       return {
         kicker: "MODO PROVA",
-        title: `${area ? area.label : "Caso"} ${Number.isInteger(caseNumber) && caseNumber > 0 ? caseNumber : 1}`,
+        title: `${trainingPrefix(station)}${area ? area.label : "Caso"} ${Number.isInteger(caseNumber) && caseNumber > 0 ? caseNumber : 1}`,
         showDiagnosticMeta: false
       };
     }
@@ -847,7 +852,7 @@
       if (!groups.has(family)) groups.set(family, []);
       const prefix = DIRECTED_FAMILY_PREFIXES[family] || family;
       const score = latestScores.get(entry.id);
-      const label = `${prefix} - ${entry.title || `Cenário ${index + 1}`}${score == null ? "" : ` - ${Math.round(score)}%`}`;
+      const label = `${trainingPrefix(entry)}${prefix} - ${entry.title || `Cenário ${index + 1}`}${score == null ? "" : ` - ${Math.round(score)}%`}`;
       groups.get(family).push(`<option value="${escapeHtml(entry.id)}" ${entry.id === selectedId ? "selected" : ""}>${escapeHtml(label)}</option>`);
     });
     return Array.from(groups, ([family, options]) => (

@@ -1,0 +1,51 @@
+{
+  "id": "emt-4-neuro-febre-convulsao",
+  "version": 2,
+  "title": "Estado de mal convulsivo febril e investigação de meningoencefalite",
+  "examTitle": "Convulsão prolongada com febre",
+  "domain": "Neurologia",
+  "domains": ["Neurologia", "Infectologia"],
+  "family": "Neurologia",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["estado de mal", "meningoencefalite", "punção lombar", "aciclovir"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 4, "adaptation": "Caso reescrito; sequência de tratamento, investigação, líquor e decisão preservada" },
+  "briefing": "Trate primeiro a ameaça imediata. Os resultados laboratoriais serão liberados após a pergunta de investigação.",
+  "phases": [
+    {
+      "id": "convulsao",
+      "title": "Crise ativa",
+      "prompt": "A crise persiste há aproximadamente 6 minutos. Qual sua abordagem imediata e seu tratamento anticonvulsivante inicial? Indique via e dose adulta.",
+      "patientState": { "summary": "Mulher de 35 anos, sem comorbidades conhecidas, com febre e cefaleia há 24 horas. Chega em convulsão tônico-clônica generalizada ainda em curso.", "vitals": { "temperatura": "38,6 °C", "FC": "128 bpm", "SpO2": "91% em ar ambiente", "glicemia capilar": "aferição disponível" } }
+    },
+    {
+      "id": "investigacao",
+      "title": "Investigação",
+      "prompt": "Após cessar a crise, que hipóteses, exames e medidas de investigação você solicita? Quando faz neuroimagem e punção lombar?",
+      "patientState": { "summary": "A convulsão cessou após a primeira medida e ela está sonolenta, porém protege via aérea. Não há déficit focal evidente no exame inicial.", "vitals": { "PA": "118/72 mmHg", "SpO2": "97% com oxigênio", "glicemia capilar": "112 mg/dL" } }
+    },
+    {
+      "id": "liquor",
+      "title": "Resultado e tratamento",
+      "prompt": "Interprete o líquido cefalorraquidiano e indique tratamento empírico, segunda linha anticonvulsivante se houver recorrência e seguimento.",
+      "patientState": { "summary": "Após avaliação de segurança para punção, o líquor tem pressão de abertura 28 cmH2O, 180 células/mm³ (80% linfócitos), proteínas 120 mg/dL, glicose 60 mg/dL com glicemia sérica 120 mg/dL, 200 hemácias/mm³ e Gram sem bactérias vistas. O resultado não exclui etiologia bacteriana precoce.", "vitals": { "temperatura": "38,2 °C", "estado mental": "sonolenta, desperta ao chamado" } }
+    }
+  ],
+  "checklist": [
+    { "id": "abc", "label": "Protege contra trauma, aborda via aérea e oxigenação, aspira secreções se necessário e monitora", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "A crise ativa pode causar hipoxemia e aspiração." },
+    { "id": "glicemia", "label": "Mede glicemia capilar prontamente e corrige hipoglicemia se presente", "weight": 5, "verification": "hibrido", "critical": true, "explanation": "Uma causa reversível não deve passar despercebida." },
+    { "id": "benzodiazepinico", "label": "Administra benzodiazepínico em dose efetiva: midazolam 10 mg IM se sem IV, ou diazepam 10 mg IV, por exemplo", "weight": 15, "verification": "verbal", "critical": true, "explanation": "Crise com cinco minutos ou mais pede tratamento imediato e dose adequada." },
+    { "id": "segunda-linha", "label": "Planeja antiepiléptico de segunda linha se crise persistir ou retornar", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Levetiracetam, valproato ou fosfenitoína são opções conforme contexto e contraindicações." },
+    { "id": "hipoteses", "label": "Considera meningoencefalite, distúrbios metabólicos e outras causas estruturais ou tóxicas", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Febre e cefaleia aumentam a suspeita infecciosa, mas não a tornam exclusiva." },
+    { "id": "exames-laboratorio", "label": "Solicita hemograma, eletrólitos, função renal, culturas e exames dirigidos sem atrasar terapia", "weight": 10, "verification": "verbal", "critical": false, "explanation": "Hemoculturas antes do antibiótico só quando não criam atraso relevante." },
+    { "id": "imagem-lp", "label": "Avalia indicação de TC antes da punção e faz punção lombar assim que segura, sem atrasar antimicrobianos", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Rebaixamento, crise recente e suspeita de hipertensão intracraniana exigem avaliação de segurança; imagem não substitui líquor." },
+    { "id": "liquor-estudos", "label": "Solicita no líquor celularidade/diferencial, proteína, glicose pareada, Gram, cultura e testes de PCR pertinentes", "weight": 10, "verification": "verbal", "critical": false, "explanation": "A comparação da glicose exige amostra sérica próxima." },
+    { "id": "interpretacao", "label": "Reconhece pleocitose linfocitária, proteína alta e pressão elevada como compatíveis com encefalite/meningite, sem descartar bactéria precoce", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Gram negativo e predomínio linfocitário não excluem completamente etiologia bacteriana." },
+    { "id": "antibiotico", "label": "Inicia antibiótico empírico IV apropriado para meningite bacteriana até exclusão segura", "weight": 10, "verification": "verbal", "critical": true, "explanation": "O tratamento não deve aguardar TC, punção ou PCR quando a suspeita é relevante." },
+    { "id": "aciclovir", "label": "Inicia aciclovir IV empírico para possível encefalite herpética", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Atraso em HSV pode causar dano neurológico evitável." }
+  ],
+  "criticalErrors": ["Aguardar exames antes de tratar crise prolongada", "Não medir glicemia", "Adiar antimicrobianos pela TC/punção", "Ignorar possibilidade de encefalite herpética"],
+  "referenceAnswer": "Uma convulsão generalizada com mais de cinco minutos é estado de mal: protejo via aérea, oxigeno conforme necessidade, monitoro e verifico glicemia. Dou benzodiazepínico efetivo, como midazolam 10 mg IM se não houver acesso IV ou diazepam 10 mg IV, com segunda linha se persistir/recorrer. Pela febre e cefaleia, considero meningoencefalite; colho culturas e exames, avalio neuroimagem antes da punção se houver risco e envio celularidade, proteína, glicose pareada, Gram/cultura e PCR. Não atraso antibiótico empírico nem aciclovir IV enquanto HSV/bactéria forem plausíveis. O líquor inflamatório com predomínio linfocitário e Gram negativo não elimina bactéria precoce. Dexametasona é considerada junto ao primeiro antibiótico apenas se meningite bacteriana for plausível; não é rotina em encefalite viral.",
+  "references": ["https://www.neurocriticalcare.org/Portals/0/ENLS%205.0/ENLS%206.0/Protocol%20V6_0%20Status%20Epilepticus.pdf", "https://www.idsociety.org/practice-guideline/encephalitis", "https://www.nice.org.uk/guidance/ng240/chapter/recommendations"]
+}

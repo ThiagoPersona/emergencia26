@@ -453,6 +453,10 @@ test("deriva titulo publico por modo sem vazar diagnostico na prova", () => {
   assert.equal(review.showDiagnosticMeta, false);
   assert.equal(Object.values(review).join(" ").includes(diagnosticStation.title), false);
   assert.equal(Object.values(review).join(" ").includes(diagnosticStation.domain), false);
+
+  const marked = getPublicStationView({ ...diagnosticStation, trainingSimulado: 4 }, "exam", 2);
+  assert.equal(marked.title, "\u{1F534} Caso 2");
+  assert.equal(marked.title.includes(diagnosticStation.title), false);
 });
 
 test("cartao da prova oculta o caso e o total de criterios antes do inicio", async () => {
@@ -460,7 +464,7 @@ test("cartao da prova oculta o caso e o total de criterios antes do inicio", asy
     [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} })
   });
   const families = ["Via aérea e ventilação mecânica", "Trauma e APH", "POCUS", "Cardiovascular e PCR", "Pediatria", "Neurologia"];
-  const entries = ["a", "b", "c", "d", "e", "f"].map((id, index) => ({ id, file: `${id}.json`, family: families[index] }));
+  const entries = ["a", "b", "c", "d", "e", "f"].map((id, index) => ({ id, file: `${id}.json`, family: families[index], trainingSimulado: 4 }));
   const fetch = async (url) => {
     if (url.endsWith("index.json")) return jsonResponse(entries);
     if (url.endsWith("media.json")) return jsonResponse([]);
@@ -470,11 +474,13 @@ test("cartao da prova oculta o caso e o total de criterios antes do inicio", asy
   await createPracticeApp(fixture.root).mount();
 
   assert.match(fixture.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/);
+  assert.match(fixture.simulator.innerHTML, /\u{1F534} (Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/u);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
   assert.doesNotMatch(fixture.simulator.innerHTML, /\d+ itens/);
   const initialPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
   assert.equal(initialPlan.stationIds.length, 5);
   fixture.simulator.querySelector("#practice-start-manual").click();
+  assert.match(fixture.simulator.innerHTML, /\u{1F534} (Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/u);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
 
   const restored = createInteractiveRoot(fetch, storage);
@@ -1093,7 +1099,7 @@ test("treino dirigido agrupa cenarios, mostra a ultima nota concluida e ignora f
   const fetch = async (url) => {
     if (url.endsWith("index.json")) return jsonResponse([
       { id: "va", file: "va.json", title: "Ventilação mecânica e auto-PEEP", family: "Via aérea e ventilação mecânica" },
-      { id: "trauma", file: "trauma.json", title: "Trauma com hemorragia exsanguinante", family: "Trauma e APH" }
+      { id: "trauma", file: "trauma.json", title: "Trauma com hemorragia exsanguinante", family: "Trauma e APH", trainingSimulado: 4 }
     ]);
     if (url.endsWith("media.json")) return jsonResponse([]);
     const isAirway = url.endsWith("va.json");
@@ -1112,7 +1118,7 @@ test("treino dirigido agrupa cenarios, mostra a ultima nota concluida e ignora f
   assert.match(fixture.simulator.innerHTML, /<optgroup label="Via aérea e ventilação mecânica">/);
   assert.match(fixture.simulator.innerHTML, /VA - Ventilação mecânica e auto-PEEP - 95%/);
   assert.match(fixture.simulator.innerHTML, /<optgroup label="Trauma e APH">/);
-  assert.match(fixture.simulator.innerHTML, /Trauma - Trauma com hemorragia exsanguinante<\/option>/);
+  assert.match(fixture.simulator.innerHTML, /\u{1F534} Trauma - Trauma com hemorragia exsanguinante<\/option>/u);
   assert.doesNotMatch(fixture.simulator.innerHTML, /<summary>Filtros<\/summary>|id="practice-filters"/);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Nenhuma estação atende aos filtros atuais/);
   assert.match(fixture.simulator.innerHTML, /de cenário<\/span>/);
