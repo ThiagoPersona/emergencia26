@@ -26,17 +26,17 @@
       "title": "Curvas ventilatórias",
       "prompt": "Identifique o modo ventilatório e interprete a curva fluxo-tempo apresentada.",
       "patientState": {
-        "summary": "O fluxo expiratório não alcança a linha de base antes do ciclo seguinte.",
+        "summary": "As curvas do ventilador foram registradas enquanto persistem sibilos e pressão de pico elevada.",
         "vitals": { "Ppico": "43 cmH2O", "Pplat": "25 cmH2O", "Vt": "460 mL", "IE": "1:1,5" }
       },
-      "media": ["vm-autopeep-sinais-fig4"]
+      "waveform": "flow-time-trapped"
     },
     {
       "id": "correcao",
       "title": "Correção inicial",
       "prompt": "Verbalize a correção inicial e as variáveis que precisam ser reavaliadas.",
       "patientState": {
-        "summary": "A pausa expiratória confirma pressão expiratória total elevada e persiste retenção de dióxido de carbono.",
+        "summary": "Uma pausa expiratória foi realizada; a retenção de dióxido de carbono persiste.",
         "vitals": { "PEEPTotal": "12 cmH2O", "ETCO2": "58 mmHg" }
       },
       "media": ["capnografia-capnograma-base"]
@@ -62,6 +62,7 @@
   "referenceAnswer": "Solicito gasometria arterial. As curvas mostram VCV e fluxo expiratório que não zera antes do próximo ciclo, compatível com auto-PEEP. Reduzo o volume-minuto, principalmente a frequência respiratória, aumento o tempo expiratório e trato obstrução/broncoespasmo quando presentes. Reavalio pressão, curva fluxo-tempo, capnografia e gasometria.",
   "references": [
     "https://www.aarc.org/resource/clinical-practice-guidelines/",
-    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9886194/"
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9886194/",
+    "https://ventilator.course.uiowa.edu/interpreting-flow-waveform"
   ]
 }

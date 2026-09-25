@@ -40,7 +40,7 @@
     {
       "id": "eco",
       "title": "Imagem dirigida",
-      "prompt": "Interprete o clipe/achado e diga seus limites diagnósticos.",
+      "prompt": "Interprete os achados ecocardiográficos informados e diga seus limites diagnósticos.",
       "patientState": {
         "summary": "POCUS mostra VD dilatado e septo retificado. Sem tamponamento e sem disfunção grave de VE. Transporte para TC é inseguro agora.",
         "vitals": {

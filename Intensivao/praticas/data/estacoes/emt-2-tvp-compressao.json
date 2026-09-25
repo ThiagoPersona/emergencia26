@@ -39,9 +39,9 @@
     {
       "id": "tecnica",
       "title": "Manobra no manequim",
-      "prompt": "Descreva transdutor, trajetos e critério técnico positivo.",
+      "prompt": "Escolha o transdutor, descreva a varredura dos segmentos proximais e explique como verifica a compressibilidade.",
       "patientState": {
-        "summary": "Há aparelho com transdutor linear; na varredura femoral a veia não colaba completamente à compressão.",
+        "summary": "O aparelho de ultrassom está disponível para examinar o membro acometido.",
         "vitals": {
           "local": "região femoral esquerda"
         }
@@ -50,9 +50,9 @@
     {
       "id": "conduta",
       "title": "Imagem e decisão",
-      "prompt": "Interprete a imagem apresentada e defina tratamento e seguimento.",
+      "prompt": "Durante compressão perpendicular adequada, a artéria vizinha se deforma, mas as paredes da estrutura venosa permanecem separadas. Integre esse dado dinâmico à imagem e defina tratamento e seguimento.",
       "patientState": {
-        "summary": "Imagem de outro paciente com achado femoral equivalente ao descrito; a demonstração dinâmica nesta estação confirma não compressibilidade da veia femoral.",
+        "summary": "A paciente permanece estável. A imagem estática é de outro paciente e ilustra a região femoral avaliada; a compressibilidade é informada separadamente pela manobra dinâmica.",
         "vitals": {
           "PA": "120/74 mmHg",
           "FC": "84 bpm"

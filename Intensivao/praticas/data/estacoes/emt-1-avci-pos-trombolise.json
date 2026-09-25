@@ -53,9 +53,9 @@
     {
       "id": "imagem",
       "title": "Exame de controle",
-      "prompt": "A TC agora mostra hematoma intraparenquimatoso. Organize hemostasia, neuroproteção e destino.",
+      "prompt": "Interprete a mudança na TC e organize o tratamento imediato, a neuroproteção e o destino.",
       "patientState": {
-        "summary": "A infusão foi interrompida e a TC confirma hemorragia sintomática após trombólise.",
+        "summary": "A infusão foi interrompida. O laudo da nova TC descreve uma área hiperdensa intraparenquimatosa que não estava presente no exame inicial.",
         "vitals": {
           "PA": "178/100 mmHg",
           "Glasgow": "7"

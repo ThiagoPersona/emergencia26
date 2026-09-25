@@ -26,7 +26,7 @@
       "title": "Imagem e deterioração",
       "prompt": "Interprete a imagem e reconheça a mudança clínica que exige tratamento imediato.",
       "patientState": {
-        "summary": "A tomografia mostra coleção subdural com desvio da linha média; uma pupila torna-se dilatada e pouco reativa.",
+        "summary": "Na sala de tomografia, uma pupila torna-se dilatada e pouco reativa. O corte obtido após o trauma está disponível para interpretação.",
         "vitals": { "GCS": "5", "PA": "154/82 mmHg", "FC": "52 bpm", "SpO2": "97% após via aérea", "ETCO2": "42 mmHg" }
       },
       "media": ["tc-tce-subdural"]

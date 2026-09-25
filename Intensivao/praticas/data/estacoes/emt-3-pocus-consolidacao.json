@@ -42,7 +42,7 @@
       "title": "Achado liberado",
       "prompt": "Descreva os achados do clipe e seus diferenciais principais.",
       "patientState": {
-        "summary": "Na base esquerda há região subpleural com ecotextura semelhante à do fígado; há pequeno derrame adjacente. Clipe externo demonstra achado equivalente, não é o exame real desta paciente.",
+        "summary": "Foi obtida uma janela ultrassonográfica da base esquerda. O clipe externo é de outro paciente e ilustra o achado a ser interpretado.",
         "vitals": {
           "FR": "30 irpm",
           "SpO2": "93% com O2"
@@ -57,7 +57,7 @@
       "title": "Interpretação e conduta",
       "prompt": "O ultrassom define exsudato/transudato? Como integra o achado ao tratamento?",
       "patientState": {
-        "summary": "O quadro clínico favorece pneumonia. A imagem sozinha não define a etiologia nem a composição do líquido.",
+        "summary": "A paciente permanece febril e dispneica, sem instabilidade hemodinâmica. Considere os dados clínicos e o clipe já apresentado.",
         "vitals": {
           "temperatura": "38,6 °C",
           "PA": "108/68 mmHg"

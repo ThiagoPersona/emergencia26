@@ -35,25 +35,23 @@
           "ETCO2": "72 mmHg"
         }
       },
-      "media": [
-        "vm-autopeep-sinais-fig4"
-      ]
+      "waveform": "flow-time-trapped"
     },
     {
       "id": "curvas",
       "title": "Curvas ventilatórias",
       "prompt": "Interprete a curva fluxo-tempo e a pausa expiratória e ajuste o ventilador conforme a fisiologia identificada.",
       "patientState": {
-        "summary": "O fluxo expiratório não alcança a linha de base e a pausa expiratória mostra PEEP intrínseca de 14 cmH2O.",
+        "summary": "Uma pausa expiratória foi realizada enquanto a hipotensão persiste. Compare a curva com a pressão medida nessa pausa.",
         "vitals": {
           "PA": "76/40 mmHg",
           "FC": "144 bpm",
-          "SpO2": "97%"
+          "SpO2": "97%",
+          "PEEP total na pausa": "19 cmH2O",
+          "PEEP ajustada": "5 cmH2O"
         }
       },
-      "media": [
-        "vm-autopeep-sinais-fig4"
-      ]
+      "waveform": "flow-time-trapped"
     },
     {
       "id": "peri-parada",
@@ -68,23 +66,25 @@
           "ETCO2": "82 mmHg"
         }
       },
-      "media": [
-        "vm-autopeep-sinais-fig4"
-      ]
+      "waveform": "flow-time-trapped"
     },
     {
       "id": "apos-ajuste",
       "title": "Após o ajuste",
       "prompt": "Compare os novos valores informados com a curva anterior, defina a tolerância à hipercapnia e organize tratamento e monitorização.",
       "patientState": {
-        "summary": "Com Vt reduzido, FR 10/min e maior tempo expiratório, o fluxo volta à linha de base; Ppico 34 e Pplat 23 cmH2O.",
+        "summary": "Após reduzir Vt e FR e ampliar o tempo expiratório, a pressão arterial e a ventilação melhoram. Compare a nova curva com a anterior.",
         "vitals": {
           "PA": "98/58 mmHg",
           "FC": "118 bpm",
           "SpO2": "95%",
-          "pH": "7,22"
+          "pH": "7,22",
+          "FR ajustada": "10/min",
+          "Ppico": "34 cmH2O",
+          "Pplat": "23 cmH2O"
         }
-      }
+      },
+      "waveform": "flow-time-recovered"
     }
   ],
   "checklist": [
@@ -154,6 +154,7 @@
   "referenceAnswer": "O fluxo expiratório não retorna à linha de base e a pausa mostra PEEP intrínseca: há aprisionamento aéreo por obstrução grave. A Ppico está alta com Pplat relativamente preservada, o que apoia aumento da resistência. Em paralelo, excluo pneumotórax hipertensivo, obstrução do tubo e secreção. Reduzo o volume-minuto, sobretudo a frequência, uso volume corrente baixo e prolongando a expiração até o fluxo zerar; aceito hipercapnia permissiva acompanhando o pH. Se a hipotensão decorrer da hiperinsuflação, faço breve pausa ou desconexão para permitir expiração enquanto trato e reavalio. Mantenho broncodilatação, corticoide, suporte hemodinâmico e cuidado intensivo.",
   "references": [
     "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation",
-    "https://ginasthma.org/2025-gina-strategy-report/"
+    "https://ginasthma.org/2025-gina-strategy-report/",
+    "https://ventilator.course.uiowa.edu/interpreting-flow-waveform"
   ]
 }

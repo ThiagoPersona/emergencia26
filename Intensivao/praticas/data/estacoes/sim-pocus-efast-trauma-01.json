@@ -44,7 +44,7 @@
       "title": "Limitações",
       "prompt": "Interprete a janela comparativa e explique a conduta se o eFAST fosse negativo com a mesma instabilidade.",
       "patientState": {
-        "summary": "A fisiologia de choque persiste; uma janela hepatorrenal sem líquido livre é apresentada como contraponto.",
+        "summary": "A fisiologia de choque persiste; uma segunda janela hepatorrenal é apresentada para comparação.",
         "vitals": { "PA": "80/46 mmHg", "FC": "130 bpm" }
       },
       "media": ["us-fast-ruq-normal-morison"]

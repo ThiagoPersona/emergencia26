@@ -79,7 +79,6 @@ const REQUIRED_TASK_8_MEDIA = {
   "sim-cardio-torsades-pcr-01": ["ecg-torsades-pd"],
   "sim-cardio-pos-rce-01": ["capnografia-capnograma-base"],
   "sim-tox-triciclico-01": ["ecg-triciclico-qrs"],
-  "sim-resp-asma-intubado-01": ["vm-autopeep-sinais-fig4"],
   "sim-proc-bloqueio-fascia-iliaca-01": ["fascia-iliaca-probe-placement", "us-fascia-iliaca-anatomia"]
 };
 
@@ -201,9 +200,45 @@ test("fases revelam estado e midia progressivamente usando apenas o manifesto", 
       });
     });
 
-    const hasMedia = station.phases.some((phase) => Array.isArray(phase.media) && phase.media.length > 0);
+    const hasMedia = station.phases.some((phase) =>
+      (Array.isArray(phase.media) && phase.media.length > 0) || phase.waveform === "flow-time-trapped" || phase.waveform === "flow-time-recovered");
     assert.equal(entry.hasMedia, hasMedia, `${entry.file}: hasMedia divergente`);
   });
+});
+
+test("fases de interpretação não antecipam o achado no estado clínico", () => {
+  const byId = new Map(readIndex().map((entry) => [entry.id, readStation(entry)]));
+  const getPhase = (stationId, phaseId) => byId.get(stationId).phases.find((phase) => phase.id === phaseId);
+  const noSpoiler = [
+    ["emt-2-tvp-compressao", "tecnica", /não colaba|não compress/i],
+    ["emt-2-tvp-compressao", "conduta", /não compress|confirma/i],
+    ["emt-3-pocus-consolidacao", "clipe", /ecotextura semelhante|derrame adjacente/i],
+    ["emt-3-pocus-consolidacao", "decisao", /favorece pneumonia|não define a etiologia/i],
+    ["2025-tce-hic", "imagem-deterioracao", /coleção subdural|desvio da linha média/i],
+    ["sim-pocus-efast-trauma-01", "limitacao", /sem líquido livre/i],
+    ["2025-vm-autopeep", "curvas", /não alcança a linha de base/i],
+    ["sim-resp-asma-intubado-01", "curvas", /não alcança a linha de base|PEEP intrínseca/i],
+    ["sim-tox-triciclico-01", "achado-eletrico", /QRS de 156|alteração terminal/i],
+    ["sim-cardio-pos-rce-01", "gasometria-hemodinamica", /hiperóxia|hipercapnia|hipotensão/i],
+    ["emt-1-avci-pos-trombolise", "imagem", /confirma hemorragia/i]
+  ];
+  noSpoiler.forEach(([stationId, phaseId, pattern]) => {
+    assert.doesNotMatch(getPhase(stationId, phaseId).patientState.summary, pattern, `${stationId}/${phaseId}`);
+  });
+
+  const dvt = byId.get("emt-2-tvp-compressao");
+  assert.match(getPhase(dvt.id, "conduta").prompt, /paredes.*separadas/i);
+  assert.ok(getPhase(dvt.id, "conduta").media.includes("us-tvp-femoral-compressao"));
+
+  for (const stationId of ["2025-vm-autopeep", "sim-resp-asma-intubado-01"]) {
+    const station = byId.get(stationId);
+    assert.equal(station.phases[stationId === "2025-vm-autopeep" ? 1 : 0].waveform, "flow-time-trapped");
+    assert.equal(station.phases.some((phase) => (phase.media || []).includes("vm-autopeep-sinais-fig4")), false);
+  }
+  assert.equal(getPhase("sim-resp-asma-intubado-01", "apos-ajuste").waveform, "flow-time-recovered");
+  assert.match(getPhase("sim-tox-triciclico-01", "achado-eletrico").patientState.vitals["QRS medido"], /156 ms/);
+  assert.doesNotMatch(getPhase("emt-2-tep-choque", "eco").prompt, /clipe/i);
+  assert.doesNotMatch(getPhase("emt-1-avci-pos-trombolise", "imagem").prompt, /hematoma/i);
 });
 
 test("estacao historica de AAA usa midia que demonstra trombo mural, nao flap", () => {

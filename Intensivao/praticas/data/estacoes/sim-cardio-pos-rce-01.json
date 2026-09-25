@@ -47,7 +47,7 @@
       "title": "Gasometria e hemodinâmica",
       "prompt": "Reavalie a curva de capnografia, defina os alvos e faça os ajustes imediatos de ventilação, oxigênio e pressão.",
       "patientState": {
-        "summary": "A circulação persiste, mas há hiperóxia, hipercapnia e hipotensão.",
+        "summary": "A circulação persiste. A nova gasometria e a pressão arterial média estão disponíveis para reavaliação.",
         "vitals": {
           "PaO2": "268 mmHg",
           "PaCO2": "50 mmHg",

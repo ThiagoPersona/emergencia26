@@ -99,6 +99,10 @@
               (!Array.isArray(phase.media) || phase.media.length === 0 || !phase.media.every(isNonEmptyString))) {
             errors.push(`${prefix}.media deve conter ids nao vazios`);
           }
+          if (Object.prototype.hasOwnProperty.call(phase, "waveform") &&
+              !["flow-time-trapped", "flow-time-recovered"].includes(phase.waveform)) {
+            errors.push(`${prefix}.waveform invalido`);
+          }
         });
       }
 

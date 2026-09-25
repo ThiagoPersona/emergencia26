@@ -15,6 +15,7 @@ const {
   getCurrentPhaseMedia,
   getRunningMediaOptions,
   getResultMediaOptions,
+  renderFlowTimeWaveform,
   DRAFT_KEY,
   CYCLE_KEY,
   EXAM_PLAN_KEY,
@@ -516,6 +517,17 @@ test("usa somente a colecao de midia da fase atual sem interpretacao", () => {
     reviewMode: false,
     directIds: ["atual"]
   });
+});
+
+test("curva fluxo-tempo simulada oferece traçado sem nomear o diagnóstico", () => {
+  const trapped = renderFlowTimeWaveform("flow-time-trapped");
+  const recovered = renderFlowTimeWaveform("flow-time-recovered");
+
+  assert.match(trapped, /<svg[^>]*role="img"/);
+  assert.match(trapped, /Curva fluxo-tempo simulada/);
+  assert.doesNotMatch(trapped, /auto-PEEP|aprisionamento|PEEP intrínseca/i);
+  assert.notEqual(trapped, recovered);
+  assert.equal(renderFlowTimeWaveform("other"), "");
 });
 
 test("configura a midia do resultado para revisao visual", () => {

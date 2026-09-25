@@ -119,6 +119,17 @@ test("rejeita fase sem prompt e patientState que nao seja objeto", () => {
   assert.match(result.errors.join(" "), /phases\[1\]\.patientState deve ser objeto/i);
 });
 
+test("aceita curvas simuladas conhecidas e rejeita tipo de curva desconhecido", () => {
+  const valid = structuredClone(version2Station);
+  valid.phases[0].waveform = "flow-time-trapped";
+  assert.equal(validateStation(valid, { requireVersion2: true }).valid, true);
+
+  valid.phases[0].waveform = "diagnostico-pronto";
+  const result = validateStation(valid, { requireVersion2: true });
+  assert.equal(result.valid, false);
+  assert.match(result.errors.join(" "), /phases\[0\]\.waveform invalido/i);
+});
+
 test("rejeita media vazia e arrays estritos invalidos", () => {
   const invalid = structuredClone(version2Station);
   invalid.phases[0].media = [];

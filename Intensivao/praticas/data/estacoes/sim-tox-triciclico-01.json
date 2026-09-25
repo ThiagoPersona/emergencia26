@@ -40,14 +40,16 @@
     {
       "id": "achado-eletrico",
       "title": "Alteração elétrica",
-      "prompt": "Interprete o eletrocardiograma, integre a instabilidade e indique a terapia imediata.",
+      "prompt": "Interprete a tira de ritmo e os parâmetros do ECG completo informados, integre a instabilidade e indique a terapia imediata.",
       "patientState": {
-        "summary": "A pressão cai e o eletrocardiograma mostra QRS de 156 ms com alteração terminal em aVR.",
+        "summary": "A pressão cai. Uma tira de ritmo está disponível; as medidas adicionais vieram do ECG de 12 derivações.",
         "vitals": {
           "PA": "84/50 mmHg",
           "FC": "138 bpm",
           "FR": "18 irpm",
-          "SpO2": "96%"
+          "SpO2": "96%",
+          "QRS medido": "156 ms",
+          "R terminal em aVR": "4 mm"
         }
       },
       "media": [

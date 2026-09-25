@@ -1102,6 +1102,25 @@
     };
   }
 
+  function renderFlowTimeWaveform(kind) {
+    if (kind !== "flow-time-trapped" && kind !== "flow-time-recovered") return "";
+    const trapped = kind === "flow-time-trapped";
+    const path = trapped
+      ? "M 70 135 L 70 62 L 155 62 L 155 210 C 205 175 260 160 345 158 L 345 62 L 430 62 L 430 210 C 480 175 535 160 620 158 L 620 62 L 705 62"
+      : "M 70 135 L 70 62 L 155 62 L 155 210 C 205 165 260 135 315 135 L 345 135 L 345 62 L 430 62 L 430 210 C 480 165 535 135 590 135 L 620 135 L 620 62 L 705 62";
+    const description = trapped
+      ? "Curva fluxo-tempo simulada: o fluxo expiratório ainda está abaixo de zero quando o ciclo seguinte começa."
+      : "Curva fluxo-tempo simulada: o fluxo expiratório retorna a zero antes do ciclo seguinte.";
+    return `<figure class="practice-waveform">
+      <svg viewBox="0 0 800 250" role="img" aria-label="${description}" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 52 135 H 748 M 52 32 V 222" fill="none" stroke="#8595a3" stroke-width="2" />
+        <path d="${path}" fill="none" stroke="#0b6b69" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+        <text x="18" y="28">Fluxo</text><text x="703" y="236">Tempo</text>
+      </svg>
+      <figcaption>Curva fluxo-tempo simulada</figcaption>
+    </figure>`;
+  }
+
   function savePhaseAnswers() {
     if (!root.localStorage || !state.session) return;
     root.localStorage.setItem(ANSWERS_KEY, JSON.stringify({
@@ -1163,6 +1182,7 @@
         ${patientState && patientState.summary ? `<section class="practice-patient-state" aria-label="Estado clínico"><h2>Estado clínico</h2><p>${escapeHtml(patientState.summary)}</p></section>` : ""}
         ${vitals.length ? `<dl class="practice-vitals">${vitals.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>` : ""}
         <div class="practice-task"><span>${escapeHtml(phase.title)}</span><p>${escapeHtml(phase.prompt)}</p></div>
+        ${renderFlowTimeWaveform(phase.waveform)}
         <div id="practice-phase-media" aria-label="Mídia da fase atual"></div>
         <label class="practice-field practice-slide-answer" for="practice-slide-answer"><span>Resposta desta pergunta</span><textarea id="practice-slide-answer" rows="3">${escapeHtml(state.phaseAnswers[phase.id] || "")}</textarea></label>
         <div class="practice-actions practice-slide-actions">
@@ -1648,6 +1668,7 @@
     getCurrentPhaseMedia,
     getRunningMediaOptions,
     getResultMediaOptions,
+    renderFlowTimeWaveform,
     DRAFT_KEY,
     CYCLE_KEY,
     EXAM_PLAN_KEY,
