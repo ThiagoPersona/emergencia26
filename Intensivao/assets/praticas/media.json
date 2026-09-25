@@ -1,5 +1,19 @@
 [
   {
+    "id": "tc-hemorragia-intracerebral",
+    "type": "image",
+    "src": "assets/praticas/radiologia/tc-hemorragia-intracerebral.jpg",
+    "thumbnail": "assets/praticas/radiologia/tc-hemorragia-intracerebral.jpg",
+    "examAlt": "TC de crânio de controle para interpretação; amostra de outro paciente.",
+    "reviewAlt": "TC com hemorragia intraparenquimatosa e extensão intraventricular.",
+    "reviewCaption": "A TC demonstra hemorragia intraparenquimatosa com extensão ventricular. É uma amostra de outro paciente, usada como achado equivalente na deterioração após trombólise.",
+    "credit": "Glitzy queen00, Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Intracerebral_hemorrage_(CT_scan).jpg",
+    "license": "Domínio público",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Intracerebral_hemorrage_(CT_scan).jpg",
+    "modified": "2026-09-25"
+  },
+  {
     "id": "us-trauma-colecao-pleural",
     "type": "video",
     "src": "assets/praticas/pocus/us-trauma-colecao-pleural.mp4",

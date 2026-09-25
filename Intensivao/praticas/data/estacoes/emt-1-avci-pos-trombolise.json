@@ -53,14 +53,15 @@
     {
       "id": "imagem",
       "title": "Exame de controle",
-      "prompt": "Interprete a mudança na TC e organize o tratamento imediato, a neuroproteção e o destino.",
+      "prompt": "Interprete a TC de controle apresentada e organize o tratamento imediato, a neuroproteção e o destino.",
       "patientState": {
-        "summary": "A infusão foi interrompida. O laudo da nova TC descreve uma área hiperdensa intraparenquimatosa que não estava presente no exame inicial.",
+        "summary": "A infusão foi interrompida. A TC de controle está disponível; a amostra apresentada é de outro paciente com achado equivalente ao caso.",
         "vitals": {
           "PA": "178/100 mmHg",
           "Glasgow": "7"
         }
-      }
+      },
+      "media": ["tc-hemorragia-intracerebral"]
     }
   ],
   "checklist": [

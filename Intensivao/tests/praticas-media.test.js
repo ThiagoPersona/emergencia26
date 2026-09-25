@@ -11,6 +11,7 @@ const {
 } = require("../praticas-media.js");
 
 const REQUIRED_ACERVO_IDS = [
+  "tc-hemorragia-intracerebral",
   "us-trauma-colecao-pleural",
   "ecg-bavt-cc0",
   "ecg-iam-inferior-vd",
@@ -40,7 +41,7 @@ const REQUIRED_ACERVO_IDS = [
   "ecg-vf-cc0"
 ];
 
-test("acervo visual local contem os 27 itens licenciados e arquivos resolviveis", () => {
+test("acervo visual local contem os 28 itens licenciados e arquivos resolviveis", () => {
   const intensivaoRoot = path.resolve(__dirname, "..");
   const manifestPath = path.join(intensivaoRoot, "assets", "praticas", "media.json");
   const attributionPath = path.join(intensivaoRoot, "assets", "praticas", "ATRIBUICOES.md");

@@ -339,6 +339,21 @@ test("fases de interpretação não antecipam o achado no estado clínico", () =
   assert.doesNotMatch(getPhase("emt-1-avci-pos-trombolise", "imagem").prompt, /hematoma/i);
 });
 
+test("TC solicitada no AVC apos trombolise aparece na fase de interpretacao sem laudo antecipado", () => {
+  const entry = readIndex().find((candidate) => candidate.id === "emt-1-avci-pos-trombolise");
+  const station = readStation(entry);
+  const phase = station.phases.find((candidate) => candidate.id === "imagem");
+  const media = JSON.parse(fs.readFileSync(mediaManifestPath, "utf8"))
+    .find((candidate) => phase.media?.includes(candidate.id));
+
+  assert.equal(entry.hasMedia, true);
+  assert.match(phase.prompt, /TC/);
+  assert.doesNotMatch(phase.patientState.summary, /hiperdens|hemorrag|hematoma/i);
+  assert.ok(media, "a fase precisa apresentar a TC para interpretacao");
+  assert.ok(fs.existsSync(path.join(__dirname, "..", media.src)), "arquivo de TC ausente");
+  assert.match(media.sourceUrl, /^https:\/\/commons\.wikimedia\.org\//);
+});
+
 test("estacao historica de AAA usa midia que demonstra trombo mural, nao flap", () => {
   const entry = readIndex().find((item) => item.id === "2025-pocus-aaa-acesso");
   const station = readStation(entry);
