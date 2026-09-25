@@ -512,12 +512,42 @@ test("reabrir modo prova sem sessao ativa sorteia nova serie e evita cenarios da
   assert.equal(secondPlan.currentIndex, 0);
   assert.equal(secondPlan.stationIds.length, 5);
   assert.equal(secondPlan.stationIds.some((id) => firstPlan.stationIds.includes(id)), false);
-  assert.match(reopened.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 2/);
+  assert.match(reopened.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) [12]/);
 
   reopened.simulator.querySelector("#practice-new-exam-round").click();
   const thirdPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
   assert.equal(thirdPlan.roundNumber, 2);
   assert.equal(thirdPlan.stationIds.length, 5);
+});
+
+test("numero do caso no modo prova corresponde ao cenario da familia, nao a rodada", async () => {
+  const entries = Array.from({ length: 7 }, (_, index) => ({
+    id: `pocus-${index + 1}`,
+    file: `pocus-${index + 1}.json`,
+    family: "POCUS"
+  }));
+  const storage = createStorage({
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
+    [EXAM_PLAN_KEY]: JSON.stringify({
+      stationIds: entries.slice(0, 5).map((entry) => entry.id),
+      currentIndex: 0,
+      roundNumber: 22
+    })
+  });
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse(entries);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation(url.match(/\/(pocus-\d+)\.json$/)[1]));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(fixture.root).mount();
+
+  const plan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
+  assert.equal(plan.roundNumber, 23);
+  const setupTitle = `POCUS ${Number(plan.stationIds[0].split("-")[1])}`;
+  assert.match(fixture.simulator.innerHTML, new RegExp(`<h2>${setupTitle}<\\/h2>`));
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  assert.match(fixture.simulator.innerHTML, new RegExp(`<strong>${setupTitle}<\\/strong>`));
 });
 
 test("expoe controles anterior, proximo e finalizar por fase", () => {
@@ -1124,7 +1154,8 @@ test("substitui estacao indisponivel por outra da mesma seara na prova", async (
   const changedPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
   assert.equal(changedPlan.stationIds[0] === firstId, false);
   assert.deepEqual(changedPlan.stationIds.slice(1), initialPlan.stationIds.slice(1));
-  assert.match(fixture.simulator.innerHTML, /Trauma 1/);
+  assert.match(fixture.simulator.innerHTML,
+    new RegExp(`Trauma ${changedPlan.stationIds[0].charCodeAt(0) - 96}`));
 });
 
 test("retry dispara um novo load e libera o start apos sucesso", async () => {

@@ -149,6 +149,17 @@
     };
   }
 
+  function getExamCaseNumber(entry, entries) {
+    if (!entry || !catalogModule || typeof catalogModule.getExamArea !== "function") return 1;
+    const area = catalogModule.getExamArea(entry);
+    if (!area) return 1;
+    const sameArea = (Array.isArray(entries) ? entries : []).filter((candidate) =>
+      catalogModule.getExamArea(candidate)?.label === area.label
+    );
+    const index = sameArea.findIndex((candidate) => candidate.id === entry.id);
+    return index >= 0 ? index + 1 : 1;
+  }
+
   function getPracticePhaseControls(session, station) {
     return {
       previous: {
@@ -884,7 +895,7 @@
     const mount = root.document && root.document.getElementById("practice-simulator");
     if (!mount) return;
     const station = state.station;
-    const caseNumber = state.examPlan ? state.examPlan.roundNumber + 1 : 1;
+    const caseNumber = getExamCaseNumber(state.selectedEntry, state.stationEntries);
     const setupView = getSetupStationView(station, state.selectedEntry, state.mode, state.mediaStatus, caseNumber);
     const latestScores = state.mode === "directed" ? getLatestCompletedScores(getStoredAttempts()) : new Map();
     const selectedScore = state.selectedEntry && latestScores.get(state.selectedEntry.id);
@@ -1110,7 +1121,8 @@
     return {
       kicker: mode === "exam" ? "MODO PROVA" : "ESTAÇÃO EM ANDAMENTO",
       title: mode === "exam"
-        ? getPublicStationView(state.selectedEntry || station, mode, state.examPlan ? state.examPlan.roundNumber + 1 : 1).title
+        ? getPublicStationView(state.selectedEntry || station, mode,
+          getExamCaseNumber(state.selectedEntry, state.stationEntries)).title
         : station && station.examTitle ? station.examTitle : "Estação em andamento"
     };
   }
