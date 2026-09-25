@@ -55,6 +55,17 @@ test("simulador monta antes de qualquer descricao visivel", () => {
   assert.ok(mountIndex < simulator.indexOf(notice));
 });
 
+test("simulador informa gratuidade, custo operacional e apoio opcional via Pix", () => {
+  const simulator = fs.readFileSync(path.join(__dirname, "..", "praticas", "SIMULADOR.md"), "utf8");
+
+  assert.match(simulator, /projeto aut[oô]nomo/i);
+  assert.match(simulator, /APIs externas/i);
+  assert.match(simulator, /gratuitamente/i);
+  assert.match(simulator, /doa[cç][aã]o opcional/i);
+  assert.match(simulator, /thiagopersona@gmail\.com/);
+  assert.match(simulator, /class="practice-pix-key copy-allowed"/);
+});
+
 test("carrega os modulos do simulador na ordem de dependencia", () => {
   const html = fs.readFileSync(path.join(__dirname, "..", "index.html"), "utf8");
   const scripts = [

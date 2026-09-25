@@ -344,6 +344,27 @@ async function waitFor(assertion, attempts = 30) {
   throw lastError;
 }
 
+test("painel desconectado orienta acesso sem publicar senha", async () => {
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, createStorage());
+  fixture.root.TEME_PRACTICE_CONFIG = {};
+  fixture.root.TemePracticeApi = {
+    validatePublicConfig: () => ({ valid: true }),
+    getSession: async () => null,
+    getAuthViewModel: () => ({ status: "anonymous", email: "" })
+  };
+
+  await createPracticeApp(fixture.root).mount();
+  await waitFor(() => assert.match(fixture.simulator.querySelector("#practice-auth").innerHTML, /contato@historiamed\.com\.br/));
+  const panel = fixture.simulator.querySelector("#practice-auth").innerHTML;
+  assert.match(panel, /solicite a senha/i);
+  assert.match(panel, /name="email"[^>]*value="contato@historiamed\.com\.br"/);
+  assert.doesNotMatch(panel, /name="password"[^>]*value=/);
+});
+
 test("cria sessao preparada e avanca fases sem ultrapassar o fim", () => {
   const session = createPracticeSession(station, 1000);
 
