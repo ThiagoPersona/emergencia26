@@ -39,7 +39,7 @@
     {
       "id": "ritmo-chocavel",
       "title": "Primeiro ritmo",
-      "prompt": "Interprete o ritmo e execute desfibrilação, compressões, via aérea e organização da equipe.",
+      "prompt": "Diante do ritmo informado pelo monitor, execute desfibrilação, compressões, manejo da via aérea e organização da equipe.",
       "patientState": {
         "summary": "O monitor mostra fibrilação ventricular.",
         "vitals": {

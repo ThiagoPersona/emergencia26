@@ -63,9 +63,9 @@
     {
       "id": "busca-etiologia",
       "title": "Investigação dirigida",
-      "prompt": "Indique a investigação precoce da causa e como decidir a estratégia coronária conforme os achados e o contexto.",
+      "prompt": "Solicite os exames iniciais, incluindo ECG de 12 derivações, e explique como os achados e o contexto orientariam a estratégia coronária.",
       "patientState": {
-        "summary": "Há suspeita de causa cardíaca e um ECG de 12 derivações está disponível.",
+        "summary": "Há suspeita de causa cardíaca; o ECG de 12 derivações ainda não foi realizado.",
         "vitals": {
           "PA": "102/64 mmHg com vasopressor",
           "SpO2": "95%",

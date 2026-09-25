@@ -206,6 +206,21 @@ test("fases revelam estado e midia progressivamente usando apenas o manifesto", 
   });
 });
 
+test("fases não prometem ECG disponível sem apresentar o traçado", () => {
+  readIndex().forEach((entry) => {
+    const station = readStation(entry);
+    station.phases.forEach((phase) => {
+      const summary = phase.patientState.summary;
+      if (/\bECG\b.*\bdisponível\b/i.test(summary)) {
+        assert.ok((phase.media || []).length > 0, `${entry.id}/${phase.id}: ECG anunciado sem imagem`);
+      }
+      if (/interprete (?:o )?(?:ECG|eletrocardiograma|traçado|ritmo)/i.test(phase.prompt)) {
+        assert.ok((phase.media || []).length > 0, `${entry.id}/${phase.id}: interpretação elétrica sem traçado`);
+      }
+    });
+  });
+});
+
 test("fases de interpretação não antecipam o achado no estado clínico", () => {
   const byId = new Map(readIndex().map((entry) => [entry.id, readStation(entry)]));
   const getPhase = (stationId, phaseId) => byId.get(stationId).phases.find((phase) => phase.id === phaseId);

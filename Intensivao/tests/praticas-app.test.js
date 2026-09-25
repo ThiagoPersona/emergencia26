@@ -600,6 +600,28 @@ test("curva fluxo-tempo simulada oferece traçado sem nomear o diagnóstico", ()
   assert.equal(renderFlowTimeWaveform("other"), "");
 });
 
+test("fase visual exibe pergunta e traçado antes da grade de sinais vitais", async () => {
+  const visualStation = createStation("visual");
+  visualStation.phases[0] = {
+    ...visualStation.phases[0],
+    waveform: "flow-time-trapped",
+    patientState: { summary: "Paciente em avaliação", vitals: { PA: "90/60 mmHg" } }
+  };
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "visual", file: "visual.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(visualStation);
+  }, createStorage());
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
+
+  const html = fixture.simulator.innerHTML;
+  assert.ok(html.indexOf("practice-patient-state") < html.indexOf("practice-task"));
+  assert.ok(html.indexOf("practice-task") < html.indexOf("Curva fluxo-tempo simulada"));
+  assert.ok(html.indexOf("Curva fluxo-tempo simulada") < html.indexOf("practice-vitals"));
+});
+
 test("configura a midia do resultado para revisao visual", () => {
   assert.deepEqual(getResultMediaOptions(), { reviewMode: true });
 });

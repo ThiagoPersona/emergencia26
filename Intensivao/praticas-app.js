@@ -1206,6 +1206,8 @@
     const patientState = phase && phase.patientState;
     const vitals = getVitalEntries(patientState);
     const currentPhaseMedia = getCurrentPhaseMedia(state.stationMedia, state.session);
+    const hasVisual = Boolean(phase.waveform || (currentPhaseMedia && currentPhaseMedia.media && currentPhaseMedia.media.length));
+    const vitalsHtml = vitals.length ? `<dl class="practice-vitals">${vitals.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>` : "";
     mount.innerHTML = `
       <section class="practice-shell practice-running">
         <header class="practice-run-header">
@@ -1214,10 +1216,11 @@
         </header>
         ${state.runtimeNotice ? `<div class="practice-alert">${escapeHtml(state.runtimeNotice)}</div>` : ""}
         ${patientState && patientState.summary ? `<section class="practice-patient-state" aria-label="Estado clínico"><h2>Estado clínico</h2><p>${escapeHtml(patientState.summary)}</p></section>` : ""}
-        ${vitals.length ? `<dl class="practice-vitals">${vitals.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>` : ""}
+        ${hasVisual ? "" : vitalsHtml}
         <div class="practice-task"><span>${escapeHtml(phase.title)}</span><p>${escapeHtml(phase.prompt)}</p></div>
         ${renderFlowTimeWaveform(phase.waveform)}
         <div id="practice-phase-media" aria-label="Mídia da fase atual"></div>
+        ${hasVisual ? vitalsHtml : ""}
         <label class="practice-field practice-slide-answer" for="practice-slide-answer"><span>Resposta desta pergunta</span><textarea id="practice-slide-answer" rows="3">${escapeHtml(state.phaseAnswers[phase.id] || "")}</textarea></label>
         <div class="practice-actions practice-slide-actions">
           <button id="practice-previous" class="practice-button" type="button" ${controls.previous.disabled ? "disabled" : ""}>${controls.previous.label}</button>
