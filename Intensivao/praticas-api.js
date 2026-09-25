@@ -7,6 +7,7 @@
 
   let supabaseClient = null;
   let initialized = false;
+  const MAX_PRACTICE_AUDIO_BYTES = 4 * 1024 * 1024;
 
   function isSafeHttpUrl(value, allowLocalhost) {
     try {
@@ -44,6 +45,12 @@
       return payload.message.trim();
     }
     return `A API respondeu com erro ${status || "desconhecido"}.`;
+  }
+
+  function getPracticeFetchError(error) {
+    return error instanceof TypeError || /failed to fetch|networkerror|load failed/i.test(error?.message || "")
+      ? new Error("Não foi possível conectar ao servidor da correção. Confira sua internet e tente novamente. A gravação permanece disponível nesta tela.")
+      : error;
   }
 
   function getAuthViewModel(session, configured) {
@@ -115,7 +122,15 @@
     const config = getConfig();
     const validation = validatePublicConfig(config);
     if (!validation.valid) throw new Error(validation.errors.join("; "));
-    const session = await getSession();
+    if (audioBlob && audioBlob.size > MAX_PRACTICE_AUDIO_BYTES) {
+      throw new Error("A gravação excede 4 MB, limite de envio do simulador. Baixe o áudio para preservá-lo ou use a autoavaliação.");
+    }
+    let session;
+    try {
+      session = await getSession();
+    } catch (error) {
+      throw getPracticeFetchError(error);
+    }
     if (!session || !session.access_token) {
       throw new Error("Entre na sua conta para usar a correção automática.");
     }
@@ -130,12 +145,17 @@
       form.set("audio", audioBlob, `estacao.${extension}`);
     }
 
-    const response = await fetch(buildEvaluationEndpoint(config.apiBaseUrl), {
-      method: "POST",
-      headers: { Authorization: `Bearer ${session.access_token}` },
-      body: form,
-      cache: "no-store"
-    });
+    let response;
+    try {
+      response = await fetch(buildEvaluationEndpoint(config.apiBaseUrl), {
+        method: "POST",
+        headers: { Authorization: `Bearer ${session.access_token}` },
+        body: form,
+        cache: "no-store"
+      });
+    } catch (error) {
+      throw getPracticeFetchError(error);
+    }
     let payload = null;
     try {
       payload = await response.json();
@@ -184,6 +204,7 @@
     validatePublicConfig,
     buildEvaluationEndpoint,
     parseApiError,
+    getPracticeFetchError,
     getAuthViewModel,
     init,
     getSession,

@@ -228,8 +228,9 @@ function createInteractiveRoot(fetch, storage, options) {
   const rootListeners = new Map();
 
   class FakeMediaRecorder {
-    constructor(stream) {
+    constructor(stream, options) {
       this.stream = stream;
+      this.options = options;
       this.state = "inactive";
       this.listeners = new Map();
       this.mimeType = "audio/webm";
@@ -1508,6 +1509,48 @@ test("nova sessao manual descarta o audio produzido pela sessao anterior", async
   assert.doesNotMatch(fixture.simulator.innerHTML, /<audio/);
   assert.equal(fixture.simulator.querySelector("#practice-ai-evaluate").disabled, true);
   assert.deepEqual(fixture.revokedUrls, ["blob:test"]);
+});
+
+test("gravacao informa duracao e tamanho reais e permite salvar audio", async (t) => {
+  let now = 1000;
+  t.mock.method(Date, "now", () => now);
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.equal(fixture.recorders[0].state, "recording"));
+  assert.equal(fixture.recorders[0].options.audioBitsPerSecond, 48000);
+  assert.equal(fixture.recorders[0].options.mimeType, "audio/mp4;codecs=mp4a.40.2");
+  fixture.recorders[0].emitData(new Blob([new Uint8Array(200_000)], { type: "audio/webm" }));
+  now += 123_000;
+  fixture.simulator.querySelector("#practice-finish").click();
+
+  assert.match(fixture.simulator.innerHTML, /Gravação: 02:03/);
+  assert.match(fixture.simulator.innerHTML, /195 kB/);
+  assert.match(fixture.simulator.innerHTML, /Baixar gravação/);
+});
+
+test("gravacao vazia nao oferece envio de audio inexistente", async () => {
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.equal(fixture.recorders[0].state, "recording"));
+  fixture.simulator.querySelector("#practice-finish").click();
+
+  assert.match(fixture.simulator.innerHTML, /Nenhum áudio foi captado/);
+  assert.doesNotMatch(fixture.simulator.innerHTML, /<audio/);
+  assert.equal(fixture.simulator.querySelector("#practice-ai-evaluate").disabled, true);
 });
 
 test("inicia a sessao somente depois que o gravador fica pronto", async (t) => {

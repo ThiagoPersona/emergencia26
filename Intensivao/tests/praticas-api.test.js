@@ -44,3 +44,38 @@ test("distingue configuracao ausente, sessao anonima e usuario autenticado", () 
     email: "thiago@example.com"
   });
 });
+
+test("nao envia audio acima do limite aceito pela hospedagem", async (t) => {
+  const originalConfig = globalThis.TEME_PRACTICE_CONFIG;
+  const originalSupabase = globalThis.supabase;
+  globalThis.TEME_PRACTICE_CONFIG = {
+    apiBaseUrl: "https://historia.example.com",
+    supabaseUrl: "https://project.supabase.co",
+    supabaseAnonKey: "public-anon-key"
+  };
+  globalThis.supabase = {
+    createClient: () => ({ auth: { getSession: async () => ({ data: { session: { access_token: "test" } } }) } })
+  };
+  t.after(() => {
+    globalThis.TEME_PRACTICE_CONFIG = originalConfig;
+    globalThis.supabase = originalSupabase;
+  });
+  let fetchCalls = 0;
+  t.mock.method(globalThis, "fetch", async () => { fetchCalls += 1; throw new Error("Não deveria enviar"); });
+  const { evaluate } = require("../praticas-api.js");
+
+  await assert.rejects(evaluate({
+    station: { id: "teste" },
+    audioBlob: new Blob([new Uint8Array(4 * 1024 * 1024 + 1)], { type: "audio/webm" }),
+    transcript: "",
+    durationSeconds: 300
+  }), /4 MB/);
+  assert.equal(fetchCalls, 0);
+});
+
+test("traduz falha de rede sem esconder erros normais da API", () => {
+  const { getPracticeFetchError } = require("../praticas-api.js");
+  assert.match(getPracticeFetchError(new TypeError("Failed to fetch")).message, /Não foi possível conectar/);
+  assert.match(getPracticeFetchError(new Error("Failed to fetch")).message, /Não foi possível conectar/);
+  assert.match(getPracticeFetchError(new Error("Limite atingido")).message, /Limite atingido/);
+});

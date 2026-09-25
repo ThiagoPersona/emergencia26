@@ -591,7 +591,17 @@
 
 .practice-audio {
   width: 100%;
-  margin: 10px 0 18px;
+  margin: 10px 0 4px;
+}
+
+.practice-audio-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-bottom: 18px;
+  color: #586977;
+  font-size: 0.88rem;
 }
 
 .practice-field {

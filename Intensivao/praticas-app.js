@@ -608,6 +608,12 @@
     return `${String(Math.floor(safe / 60)).padStart(2, "0")}:${String(safe % 60).padStart(2, "0")}`;
   }
 
+  function formatAudioSize(bytes) {
+    return bytes >= 1024 * 1024
+      ? `${(bytes / (1024 * 1024)).toFixed(1).replace(".", ",")} MB`
+      : `${Math.round(bytes / 1024)} kB`;
+  }
+
   function stationBasePath() {
     return "praticas/data/estacoes/";
   }
@@ -762,7 +768,7 @@
 
   function chooseAudioMimeType() {
     if (!root.MediaRecorder || typeof root.MediaRecorder.isTypeSupported !== "function") return "";
-    return ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg;codecs=opus"]
+    return ["audio/mp4;codecs=mp4a.40.2", "audio/webm;codecs=opus", "audio/mp4", "audio/webm", "audio/ogg;codecs=opus"]
       .find((type) => root.MediaRecorder.isTypeSupported(type)) || "";
   }
 
@@ -781,7 +787,10 @@
     const mimeType = chooseAudioMimeType();
     let recorder;
     try {
-      recorder = new root.MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+      recorder = new root.MediaRecorder(stream, {
+        ...(mimeType ? { mimeType } : {}),
+        audioBitsPerSecond: 48000
+      });
       recorder.addEventListener("dataavailable", (event) => {
         if (expectedRecordingGeneration !== state.recordingGeneration) return;
         if (event.data && event.data.size > 0) state.audioChunks.push(event.data);
@@ -790,7 +799,7 @@
         if (expectedRecordingGeneration !== state.recordingGeneration) return;
         if (state.mediaRecorder === recorder) state.mediaRecorder = null;
         state.audioBlob = new Blob(state.audioChunks, { type: recorder.mimeType || "audio/webm" });
-        state.audioUrl = root.URL.createObjectURL(state.audioBlob);
+        state.audioUrl = state.audioBlob.size > 0 ? root.URL.createObjectURL(state.audioBlob) : null;
         renderReview();
       }, { once: true });
       recorder.start(1000);
@@ -1264,18 +1273,23 @@
   function renderReview() {
     const mount = root.document.getElementById("practice-simulator");
     if (!mount || !state.session || state.session.status !== "review") return;
+    const recordedSeconds = Math.max(0, Math.round(
+      ((state.session.completedAtMs || Date.now()) - state.session.startedAtMs) / 1000
+    ));
     mount.innerHTML = `
       <section class="practice-shell">
         <span class="practice-kicker">Estação encerrada</span>
         <h2>Revise suas respostas</h2>
         ${state.audioUrl ? `<audio class="practice-audio" controls src="${escapeHtml(state.audioUrl)}"></audio>` : ""}
+        ${state.audioUrl ? `<div class="practice-audio-info"><span>Gravação: ${formatClock(recordedSeconds)} · ${formatAudioSize(state.audioBlob.size)}</span><a href="${escapeHtml(state.audioUrl)}" download="estacao.${state.audioBlob.type.includes("mp4") ? "m4a" : state.audioBlob.type.includes("ogg") ? "ogg" : "webm"}">Baixar gravação</a></div>` : ""}
+        ${state.audioBlob && !state.audioBlob.size ? `<div class="practice-alert practice-alert-error">Nenhum áudio foi captado. Você ainda pode registrar sua resposta em texto ou usar a autoavaliação.</div>` : ""}
         <label class="practice-field" for="practice-transcript">
           <span>Respostas da estação</span>
           <textarea id="practice-transcript" rows="8" placeholder="Registre somente o que foi dito ou demonstrado.">${escapeHtml(state.transcript)}</textarea>
         </label>
         <div id="practice-api-message"></div>
         <div class="practice-actions">
-          <button id="practice-ai-evaluate" class="practice-button practice-button-primary" type="button" ${state.audioBlob || state.transcript ? "" : "disabled"}>Transcrever e corrigir com IA</button>
+          <button id="practice-ai-evaluate" class="practice-button practice-button-primary" type="button" ${state.audioBlob?.size || state.transcript ? "" : "disabled"}>Transcrever e corrigir com IA</button>
           <button id="practice-manual-evaluate" class="practice-button" type="button">Abrir autoavaliação</button>
           <button id="practice-restart" class="practice-button practice-button-quiet" type="button">Descartar e reiniciar</button>
         </div>
@@ -1283,7 +1297,7 @@
     const textarea = mount.querySelector("#practice-transcript");
     textarea.addEventListener("input", () => {
       state.transcript = textarea.value;
-      mount.querySelector("#practice-ai-evaluate").disabled = !(state.audioBlob || state.transcript.trim());
+      mount.querySelector("#practice-ai-evaluate").disabled = !(state.audioBlob?.size || state.transcript.trim());
     });
     mount.querySelector("#practice-manual-evaluate").addEventListener("click", renderManualChecklist);
     mount.querySelector("#practice-ai-evaluate").addEventListener("click", requestAiEvaluation);
