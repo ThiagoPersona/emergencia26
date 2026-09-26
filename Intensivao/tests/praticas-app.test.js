@@ -28,7 +28,6 @@ const {
   loadStation,
   selectStationEntry,
   selectAlternativeStation,
-  getRelatedStationEntries,
   renderPracticeModeControl,
   getSetupStationView,
   renderPracticeStartActions,
@@ -727,6 +726,11 @@ test("resultado mostra transcricao apos referencias e permite reavaliar texto co
   await waitFor(() => assert.match(fixture.simulator.innerHTML, /100%/));
   assert.equal(requests[1].audioBlob, null);
   assert.match(requests[1].transcript, /solicito gasometria arterial/);
+  assert.doesNotMatch(fixture.simulator.innerHTML, /Estações relacionadas/);
+  const back = fixture.simulator.querySelector("#practice-back");
+  assert.ok(back);
+  back.click();
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-start-manual")));
 });
 
 test("resultado mostra pontos e criterios confirmados manualmente de forma coerente com a nota", async () => {
@@ -887,7 +891,7 @@ test("carrega, valida e prepara somente a estacao selecionada", async () => {
   assert.equal(loaded.mediaStatus, "ready");
 });
 
-test("seleciona estacoes por modo e recomenda as relacionadas ao desempenho", () => {
+test("seleciona estacoes por modo", () => {
   const entries = [
     { id: "airway-1", title: "Via aerea A", domain: "Via aerea", difficulty: "basica", competencies: ["airway"], tags: ["airway"] },
     { id: "airway-2", title: "Via aerea B", domain: "Via aerea", difficulty: "avancada", competencies: ["airway"], tags: ["airway"] },
@@ -908,7 +912,6 @@ test("seleciona estacoes por modo e recomenda as relacionadas ao desempenho", ()
 
   const review = selectStationEntry(entries, "review", {}, attempts, [], () => 0);
   assert.equal(review.entry.id, "airway-1");
-  assert.deepEqual(getRelatedStationEntries(entries, attempts).map((entry) => entry.id), ["airway-1", "airway-2", "ecg-1"]);
 });
 
 test("filtra treino dirigido por competencia mesmo quando ela nao e uma tag", () => {

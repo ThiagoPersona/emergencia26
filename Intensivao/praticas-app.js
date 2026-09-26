@@ -439,11 +439,6 @@
     return { entry: selection.station, cycleIds };
   }
 
-  function getRelatedStationEntries(entries, attempts) {
-    if (!catalogModule || typeof catalogModule.getRecommendedStations !== "function") return [];
-    return catalogModule.getRecommendedStations(entries, attempts, 3);
-  }
-
   function getExamAlternatives() {
     if (!state.examPlan || !state.selectedEntry || !catalogModule) return [];
     const area = catalogModule.getExamArea(state.selectedEntry);
@@ -1355,7 +1350,6 @@
     const attempt = state.lastAttempt;
     if (!mount || !attempt) return;
     const score = Number.isFinite(attempt.finalPercent) ? attempt.finalPercent : attempt.provisionalPercent;
-    const relatedStations = getRelatedStationEntries(state.stationEntries, getStoredAttempts());
     const checklistById = new Map(state.station.checklist.map((item) => [item.id, item]));
     const missingCritical = attempt.criticalFailures.map((id) => checklistById.get(id)?.label || id);
     const earnedFor = (evaluation, item) => root.TemePracticeUtils.getPracticeItemPoints(item, evaluation);
@@ -1414,11 +1408,10 @@
           <h3>Revisão visual</h3>
           <div id="practice-result-media"></div>
         </section>
-        ${state.mode !== "exam" && relatedStations.length ? `<section class="practice-related-stations" aria-label="Estações relacionadas"><h3>Estações relacionadas</h3><div class="practice-related-actions">${relatedStations.map((entry, index) => `<button class="practice-button" type="button" data-related-station="${escapeHtml(entry.id)}">${escapeHtml(getEntryLabel(entry, index))}</button>`).join("")}</div></section>` : ""}
         <div class="practice-actions">
           ${state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : "Nova série de 5"}</button>` : ""}
           <button id="practice-download" class="practice-button practice-button-primary" type="button">Baixar relatório</button>
-          <button id="practice-repeat" class="practice-button" type="button">Repetir estação</button>
+          <button id="practice-back" class="practice-button" type="button">Voltar ao simulador</button>
           <a class="practice-button practice-button-quiet" href="#/praticas/DESEMPENHO">Ver desempenho</a>
         </div>
       </section>`;
@@ -1431,7 +1424,7 @@
       );
     }
     mount.querySelector("#practice-download").addEventListener("click", () => downloadText(buildPracticeReport(attempt), `treino-${attempt.stationId}.txt`));
-    mount.querySelector("#practice-repeat").addEventListener("click", resetSimulator);
+    mount.querySelector("#practice-back").addEventListener("click", resetSimulator);
     const revisedTranscript = mount.querySelector("#practice-result-transcript");
     const reevaluateButton = mount.querySelector("#practice-reevaluate-transcript");
     if (revisedTranscript && reevaluateButton) {
@@ -1448,15 +1441,6 @@
     }
     const nextStation = mount.querySelector("#practice-next-station");
     if (nextStation) nextStation.addEventListener("click", advanceExamStation);
-    mount.querySelectorAll("[data-related-station]").forEach((button) => {
-      button.addEventListener("click", () => {
-        const entry = getStationEntry(button.dataset.relatedStation);
-        if (!entry) return;
-        state.mode = "directed";
-        saveCurrentSetup();
-        loadSelectedStation(entry);
-      });
-    });
     const confirmationForm = mount.querySelector("#practice-manual-confirm");
     if (confirmationForm) confirmationForm.addEventListener("submit", confirmManualItems);
   }
@@ -1755,7 +1739,6 @@
     loadStation,
     selectStationEntry,
     selectAlternativeStation,
-    getRelatedStationEntries,
     renderPracticeModeControl,
     getSetupStationView,
     renderPracticeStartActions,
