@@ -101,35 +101,48 @@
     return entry && EXAM_FAMILIES[entry.family] ? { ...EXAM_FAMILIES[entry.family] } : null;
   }
 
-  function buildExamRound(entries, historyIds, roundNumber, randomFn) {
-    const list = asEntries(entries);
-    const round = Number.isInteger(roundNumber) && roundNumber >= 0 ? roundNumber : 0;
-    // Três eixos recorrentes da matriz 22-25; duas vagas alternam para treinar amplitude.
-    const variable = ["cardio", "pediatric", "clinical"];
-    const areas = ["airway", "trauma", "pocus", variable[round % 3], variable[(round + 1) % 3]];
-    const used = new Set(asArray(historyIds));
-    const selected = [];
-
-    function pick(pool) {
-      const fresh = pool.filter((entry) => !used.has(entry.id));
-      const candidates = fresh.length ? fresh : pool;
-      return candidates[safeRandomIndex(candidates.length, randomFn)];
-    }
-
-    areas.forEach((area) => {
-      const candidates = list.filter((entry) => getExamArea(entry)?.key === area &&
-        !selected.some((chosen) => chosen.id === entry.id));
-      if (candidates.length) selected.push(pick(candidates));
+  function getSimuladoNumbers(entries) {
+    const counts = new Map();
+    asEntries(entries).forEach((entry) => {
+      if (Number.isInteger(entry.trainingSimulado) && entry.trainingSimulado >= 1) {
+        counts.set(entry.trainingSimulado, (counts.get(entry.trainingSimulado) || 0) + 1);
+      }
     });
-    while (selected.length < Math.min(5, list.length)) {
-      const remaining = list.filter((entry) => !selected.some((chosen) => chosen.id === entry.id));
-      selected.push(pick(remaining));
-    }
-    for (let index = selected.length - 1; index > 0; index -= 1) {
-      const swapIndex = safeRandomIndex(index + 1, randomFn);
-      [selected[index], selected[swapIndex]] = [selected[swapIndex], selected[index]];
-    }
-    return { stationIds: selected.map((entry) => entry.id), currentIndex: 0, roundNumber: round };
+    return [...counts].filter(([, count]) => count === 5).map(([number]) => number).sort((a, b) => a - b);
+  }
+
+  function buildSimuladoExamPlan(entries, simulado) {
+    if (!getSimuladoNumbers(entries).includes(simulado)) return null;
+    return {
+      simulado,
+      stationIds: asEntries(entries).filter((entry) => entry.trainingSimulado === simulado).map((entry) => entry.id),
+      currentIndex: 0,
+      attemptIds: {},
+      completed: false
+    };
+  }
+
+  function summarizeSimuladoExamPlan(plan, attempts) {
+    const ids = plan && Array.isArray(plan.stationIds) ? plan.stationIds : [];
+    const attemptIds = plan && plan.attemptIds && typeof plan.attemptIds === "object" ? plan.attemptIds : {};
+    const byId = new Map(asArray(attempts).filter((attempt) => attempt && typeof attempt.id === "string")
+      .map((attempt) => [attempt.id, attempt]));
+    const selectedAttempts = ids.map((stationId) => {
+      const attempt = byId.get(attemptIds[stationId]);
+      return attempt && attempt.stationId === stationId && Number.isFinite(attempt.finalPercent) ? attempt : null;
+    });
+    const scores = selectedAttempts.map((attempt) => attempt?.finalPercent ?? null);
+    const completedCount = scores.filter((score) => score !== null).length;
+    const complete = ids.length === 5 && completedCount === 5;
+    const earnedPoints = complete ? selectedAttempts.reduce((sum, attempt) =>
+      sum + (Number.isFinite(attempt.earnedPoints) ? attempt.earnedPoints : attempt.finalPercent), 0) : null;
+    return {
+      scores,
+      completedCount,
+      earnedPoints,
+      totalPoints: 500,
+      finalPercent: complete ? Math.round(earnedPoints / 5) : null
+    };
   }
 
   function entryTokens(entry) {
@@ -275,7 +288,9 @@
     filterStations,
     pickStation,
     getExamArea,
-    buildExamRound,
+    getSimuladoNumbers,
+    buildSimuladoExamPlan,
+    summarizeSimuladoExamPlan,
     getRecommendedStations
   };
 });

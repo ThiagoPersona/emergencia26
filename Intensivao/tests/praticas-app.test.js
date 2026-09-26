@@ -19,6 +19,7 @@ const {
   DRAFT_KEY,
   CYCLE_KEY,
   EXAM_PLAN_KEY,
+  EXAM_RESULTS_KEY,
   PREFERENCES_KEY,
   savePracticeDraft,
   clearPracticeDraft,
@@ -389,6 +390,28 @@ test("acesso compartilhado nao importa historico dos outros convidados", async (
   assert.equal(listCalls, 0);
 });
 
+test("limpar historico local tambem limpa notas finais dos simulados", async () => {
+  const storage = createStorage({
+    "teme26-practice-attempts-v1": JSON.stringify([{ id: "a1", stationId: "a", finalPercent: 80 }]),
+    [EXAM_RESULTS_KEY]: JSON.stringify({ 1: { finalPercent: 80 } }),
+    [EXAM_PLAN_KEY]: JSON.stringify({ simulado: 1, stationIds: ["a", "b", "c", "d", "e"],
+      currentIndex: 0, attemptIds: { a: "a1" }, completed: false })
+  });
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, storage);
+  const dashboard = fixture.root.document.registerRoot("practice-dashboard");
+  fixture.root.TemePracticeUtils = require("../praticas-utils.js");
+  fixture.root.TEME_PRACTICE_CONFIG = { guestEmail: "convidado@example.com" };
+  fixture.root.confirm = () => true;
+  await createPracticeApp(fixture.root).mount();
+  dashboard.querySelector("#practice-clear-history").click();
+  assert.equal(storage.getItem(EXAM_RESULTS_KEY), null);
+  assert.equal(storage.getItem(EXAM_PLAN_KEY), null);
+});
+
 test("cria sessao preparada e avanca fases sem ultrapassar o fim", () => {
   const session = createPracticeSession(station, 1000);
 
@@ -515,11 +538,11 @@ test("cartao da prova oculta o caso e o total de criterios antes do inicio", asy
     [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} })
   });
   const families = ["Via aérea e ventilação mecânica", "Trauma e APH", "POCUS", "Cardiovascular e PCR", "Pediatria", "Neurologia"];
-  const entries = ["a", "b", "c", "d", "e", "f"].map((id, index) => ({ id, file: `${id}.json`, family: families[index], trainingSimulado: 4 }));
+  const entries = ["a", "b", "c", "d", "e"].map((id, index) => ({ id, file: `${id}.json`, family: families[index], trainingSimulado: 4 }));
   const fetch = async (url) => {
     if (url.endsWith("index.json")) return jsonResponse(entries);
     if (url.endsWith("media.json")) return jsonResponse([]);
-    return jsonResponse(createStation(url.match(/\/([a-f])\.json$/)[1]));
+    return jsonResponse(createStation(url.match(/\/([a-e])\.json$/)[1]));
   };
   const fixture = createInteractiveRoot(fetch, storage);
   await createPracticeApp(fixture.root).mount();
@@ -538,6 +561,77 @@ test("cartao da prova oculta o caso e o total de criterios antes do inicio", asy
   await createPracticeApp(restored.root).mount();
   assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)), initialPlan);
   assert.match(restored.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/);
+});
+
+test("modo prova escolhe o simulado e conserva os cinco casos ao reabrir", async () => {
+  const storage = createStorage({ [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }) });
+  const entries = [1, 2].flatMap((simulado) => Array.from({ length: 5 }, (_, index) => ({
+    id: `s${simulado}-${index + 1}`,
+    file: `s${simulado}-${index + 1}.json`,
+    family: ["Trauma e APH", "POCUS", "Pediatria", "Cardiovascular e PCR", "Neurologia"][index],
+    trainingSimulado: simulado
+  })));
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse(entries);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation(url.match(/\/(s\d-\d)\.json$/)[1]));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(fixture.root).mount();
+  assert.match(fixture.simulator.innerHTML, /id="practice-simulado"/);
+  assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).stationIds, entries.slice(0, 5).map((entry) => entry.id));
+  const select = fixture.simulator.querySelector("#practice-simulado");
+  select.value = "2";
+  select.dispatch("change");
+  await waitFor(() => assert.equal(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).simulado, 2));
+  assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).stationIds, entries.slice(5).map((entry) => entry.id));
+  const reopened = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(reopened.root).mount();
+  assert.equal(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).simulado, 2);
+  assert.match(reopened.simulator.innerHTML, /Simulado 2/);
+  assert.doesNotMatch(reopened.simulator.innerHTML, /Sortear nova série/);
+});
+
+test("apos atualizar a pagina uma estacao corrigida ainda permite avancar", async () => {
+  const entries = ["a", "b", "c", "d", "e"].map((id) => ({
+    id, file: `${id}.json`, family: "Trauma e APH", trainingSimulado: 1
+  }));
+  const storage = createStorage({
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
+    [EXAM_PLAN_KEY]: JSON.stringify({ simulado: 1, stationIds: entries.map((entry) => entry.id), currentIndex: 0,
+      attemptIds: { a: "done-a" }, completed: false }),
+    "teme26-practice-attempts-v1": JSON.stringify([{ id: "done-a", stationId: "a", finalPercent: 85, earnedPoints: 85 }])
+  });
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse(entries);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation(url.match(/\/([a-e])\.json$/)[1]));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(fixture.root).mount();
+  assert.match(fixture.simulator.innerHTML, /id="practice-resume-exam"/);
+  fixture.simulator.querySelector("#practice-resume-exam").click();
+  await waitFor(() => assert.equal(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).currentIndex, 1));
+  assert.match(fixture.simulator.innerHTML, /Estação <strong>2\/5<\/strong>/);
+});
+
+test("seletor mostra a ultima nota final sem misturar tentativas da nova serie", async () => {
+  const entries = [1, 2].flatMap((simulado) => Array.from({ length: 5 }, (_, index) => ({
+    id: `s${simulado}-${index + 1}`, file: `s${simulado}-${index + 1}.json`, trainingSimulado: simulado
+  })));
+  const storage = createStorage({
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
+    [EXAM_RESULTS_KEY]: JSON.stringify({ 1: { finalPercent: 82, earnedPoints: 410 }, 2: { finalPercent: 74, earnedPoints: 370 } })
+  });
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse(entries);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation(url.match(/\/(s\d-\d)\.json$/)[1]));
+  }, storage);
+  await createPracticeApp(fixture.root).mount();
+  assert.match(fixture.simulator.innerHTML, /Simulado 1 - 82%/);
+  assert.match(fixture.simulator.innerHTML, /Simulado 2 - 74%/);
+  assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).attemptIds, {});
 });
 
 test("lista do treino dirigido mostra o numero do simulado em cada cenario", async () => {
@@ -561,14 +655,14 @@ test("lista do treino dirigido mostra o numero do simulado em cada cenario", asy
   assert.doesNotMatch(fixture.simulator.innerHTML, /🔴/u);
 });
 
-test("reabrir modo prova sem sessao ativa sorteia nova serie e evita cenarios da anterior", async () => {
+test("reabrir modo prova conserva a serie escolhida e reiniciar zera apenas a serie atual", async () => {
   const storage = createStorage({
     [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} })
   });
   const families = ["Via aérea e ventilação mecânica", "Trauma e APH", "POCUS", "Cardiovascular e PCR", "Pediatria"];
   const entries = Array.from({ length: 10 }, (_, index) => {
     const id = String.fromCharCode(97 + index);
-    return { id, file: `${id}.json`, family: families[index % families.length] };
+    return { id, file: `${id}.json`, family: families[index % families.length], trainingSimulado: index < 5 ? 1 : 2 };
   });
   const fetch = async (url) => {
     if (url.endsWith("index.json")) return jsonResponse(entries);
@@ -580,37 +674,41 @@ test("reabrir modo prova sem sessao ativa sorteia nova serie e evita cenarios da
   const firstApp = createPracticeApp(first.root);
   await firstApp.mount();
   const firstPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
-  assert.equal(firstPlan.roundNumber, 0);
+  assert.equal(firstPlan.simulado, 1);
   await firstApp.mount();
   assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)), firstPlan);
 
   const reopened = createInteractiveRoot(fetch, storage);
   await createPracticeApp(reopened.root).mount();
   const secondPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
-  assert.equal(secondPlan.roundNumber, 1);
+  assert.equal(secondPlan.simulado, 1);
   assert.equal(secondPlan.currentIndex, 0);
   assert.equal(secondPlan.stationIds.length, 5);
-  assert.equal(secondPlan.stationIds.some((id) => firstPlan.stationIds.includes(id)), false);
-  assert.match(reopened.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) [12]/);
+  assert.deepEqual(secondPlan.stationIds, firstPlan.stationIds);
+  assert.match(reopened.simulator.innerHTML, /Simulado 1/);
 
   reopened.simulator.querySelector("#practice-new-exam-round").click();
   const thirdPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
-  assert.equal(thirdPlan.roundNumber, 2);
+  assert.equal(thirdPlan.simulado, 1);
   assert.equal(thirdPlan.stationIds.length, 5);
+  assert.deepEqual(thirdPlan.attemptIds, {});
 });
 
-test("numero do caso no modo prova corresponde ao cenario da familia, nao a rodada", async () => {
+test("numero do caso no modo prova corresponde ao cenario da familia", async () => {
   const entries = Array.from({ length: 7 }, (_, index) => ({
     id: `pocus-${index + 1}`,
     file: `pocus-${index + 1}.json`,
-    family: "POCUS"
+    family: "POCUS",
+    ...(index < 5 ? { trainingSimulado: 4 } : {})
   }));
   const storage = createStorage({
     [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }),
     [EXAM_PLAN_KEY]: JSON.stringify({
       stationIds: entries.slice(0, 5).map((entry) => entry.id),
       currentIndex: 0,
-      roundNumber: 22
+      simulado: 4,
+      attemptIds: {},
+      completed: false
     })
   });
   const fetch = async (url) => {
@@ -622,8 +720,8 @@ test("numero do caso no modo prova corresponde ao cenario da familia, nao a roda
   await createPracticeApp(fixture.root).mount();
 
   const plan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
-  assert.equal(plan.roundNumber, 23);
-  const setupTitle = `POCUS ${Number(plan.stationIds[0].split("-")[1])}`;
+  assert.equal(plan.simulado, 4);
+  const setupTitle = `❹ POCUS ${Number(plan.stationIds[0].split("-")[1])}`;
   assert.match(fixture.simulator.innerHTML, new RegExp(`<h2>${setupTitle}<\\/h2>`));
   fixture.simulator.querySelector("#practice-start-manual").click();
   assert.match(fixture.simulator.innerHTML, new RegExp(`<strong>${setupTitle}<\\/strong>`));
@@ -708,7 +806,7 @@ test("resultado mostra transcricao apos referencias e permite reavaliar texto co
   const requests = [];
   const storage = createStorage();
   const fetch = async (url) => {
-    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("index.json")) return jsonResponse(["a", "b", "c", "d", "e"].map((id) => ({ id, file: `${id}.json`, trainingSimulado: 1 })));
     if (url.endsWith("media.json")) return jsonResponse([]);
     return jsonResponse({ ...createStation("a"), references: ["https://example.org/diretriz"] });
   };
@@ -1143,8 +1241,8 @@ test("sorteia outra estacao conforme o modo sem contaminar o ciclo da prova", ()
     currentEntryId: "airway-1",
     randomFn: () => 0
   });
-  assert.equal(exam.entry.id, "airway-2");
-  assert.deepEqual(exam.cycleIds, ["airway-1", "airway-2"]);
+  assert.equal(exam.entry, null);
+  assert.deepEqual(exam.cycleIds, originalCycle);
   assert.deepEqual(originalCycle, ["airway-1"]);
 
   const review = selectAlternativeStation({
@@ -1279,7 +1377,7 @@ test("troca o modo pelo evento change do radio nativo", async () => {
   let stationLoads = 0;
   const storage = createStorage();
   const fetch = async (url) => {
-    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("index.json")) return jsonResponse(["a", "b", "c", "d", "e"].map((id) => ({ id, file: `${id}.json`, trainingSimulado: 1 })));
     if (url.endsWith("media.json")) return jsonResponse([]);
     stationLoads += 1;
     return jsonResponse(createStation("a"));
@@ -1374,13 +1472,13 @@ test("sorteia outra estacao dirigida por click sem contaminar o ciclo da prova",
   assert.deepEqual(JSON.parse(storage.getItem(CYCLE_KEY)), ["exam-preservado"]);
 });
 
-test("substitui estacao indisponivel por outra da mesma seara na prova", async () => {
+test("erro de recurso na prova mantém o caso fixo e permite tentar novamente", async () => {
   const stationUrls = [];
   const storage = createStorage({
     [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} })
   });
   const fetch = async (url) => {
-    if (url.endsWith("index.json")) return jsonResponse(["a", "b", "c", "d", "e", "f"].map((id) => ({ id, file: `${id}.json`, family: "Trauma e APH" })));
+    if (url.endsWith("index.json")) return jsonResponse(["a", "b", "c", "d", "e"].map((id) => ({ id, file: `${id}.json`, family: "Trauma e APH", trainingSimulado: 1 })));
     if (url.endsWith("media.json")) return jsonResponse([]);
     stationUrls.push(url);
     return jsonResponse({}, false);
@@ -1391,14 +1489,14 @@ test("substitui estacao indisponivel por outra da mesma seara na prova", async (
 
   const initialPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
   const firstId = initialPlan.stationIds[0];
-  fixture.simulator.querySelector("#practice-choose-another").click();
+  assert.equal(fixture.simulator.querySelector("#practice-choose-another"), null);
+  fixture.simulator.querySelector("#practice-retry-load").click();
   await waitFor(() => assert.equal(stationUrls.length, 2));
 
   assert.match(stationUrls[0], new RegExp(`${firstId}\\.json$`));
-  assert.notEqual(stationUrls[0], stationUrls[1]);
+  assert.equal(stationUrls[0], stationUrls[1]);
   const changedPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
-  assert.equal(changedPlan.stationIds[0] === firstId, false);
-  assert.deepEqual(changedPlan.stationIds.slice(1), initialPlan.stationIds.slice(1));
+  assert.deepEqual(changedPlan.stationIds, initialPlan.stationIds);
   assert.match(fixture.simulator.innerHTML,
     new RegExp(`Trauma ${changedPlan.stationIds[0].charCodeAt(0) - 96}`));
 });
@@ -1585,7 +1683,7 @@ test("mount restaura draft em andamento sem recuperar audio", async () => {
     [DRAFT_KEY]: JSON.stringify({
       stationId: "a",
       stationVersion: 1,
-      mode: "exam",
+      mode: "directed",
       status: "running",
       phaseIndex: 1,
       createdAtMs: now - 2000,
@@ -1616,7 +1714,7 @@ test("fecha a sidebar no mobile ao restaurar draft em andamento", async () => {
     [DRAFT_KEY]: JSON.stringify({
       stationId: "a",
       stationVersion: 1,
-      mode: "exam",
+      mode: "directed",
       status: "running",
       phaseIndex: 1,
       createdAtMs: now - 2000,
@@ -1646,7 +1744,7 @@ test("mount concorrente restaura um unico draft sem sortear outra estacao", asyn
     [DRAFT_KEY]: JSON.stringify({
       stationId: "a",
       stationVersion: 1,
-      mode: "exam",
+      mode: "directed",
       status: "running",
       phaseIndex: 1,
       createdAtMs: now - 2000,

@@ -259,6 +259,29 @@
   padding: 8px 36px 8px 12px;
 }
 
+.practice-simulado-toolbar select {
+  max-width: 280px;
+}
+
+.practice-exam-results {
+  border-top: 1px solid #ccdce3;
+  margin: 18px 0 24px;
+}
+
+.practice-exam-results > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border-bottom: 1px solid #ccdce3;
+  padding: 12px 0;
+}
+
+.practice-exam-results strong {
+  color: #0f6b5f;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 .practice-selected-score {
   display: none;
 }

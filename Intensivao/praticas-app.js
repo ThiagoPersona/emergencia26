@@ -11,6 +11,7 @@
   const ANSWERS_KEY = "teme26-practice-answers-v1";
   const CYCLE_KEY = "teme26-practice-cycle-v2";
   const EXAM_PLAN_KEY = "teme26-practice-exam-plan-v1";
+  const EXAM_RESULTS_KEY = "teme26-practice-exam-results-v1";
   const PREFERENCES_KEY = "teme26-practice-setup-v2";
   const DEFAULT_FILTERS = {
     domain: "",
@@ -274,19 +275,36 @@
 
   function restoreExamPlan(storage, entries) {
     const plan = parseStoredValue(storage, EXAM_PLAN_KEY, null);
-    const ids = plan && plan.stationIds;
-    const available = new Set((Array.isArray(entries) ? entries : []).map((entry) => entry.id));
-    if (!Array.isArray(ids) || ids.length < 1 || ids.length > 5 ||
-        new Set(ids).size !== ids.length || ids.some((id) => !available.has(id)) ||
-        !Number.isInteger(plan.currentIndex) || plan.currentIndex < 0 || plan.currentIndex >= ids.length ||
-        !Number.isInteger(plan.roundNumber) || plan.roundNumber < 0) return null;
-    return { stationIds: ids, currentIndex: plan.currentIndex, roundNumber: plan.roundNumber };
+    const expected = catalogModule?.buildSimuladoExamPlan(entries, plan?.simulado);
+    if (!expected || !Array.isArray(plan.stationIds) || plan.stationIds.length !== 5 ||
+        plan.stationIds.some((id, index) => id !== expected.stationIds[index]) ||
+        !Number.isInteger(plan.currentIndex) || plan.currentIndex < 0 || plan.currentIndex >= 5) return null;
+    const attemptIds = {};
+    expected.stationIds.forEach((id) => {
+      if (typeof plan.attemptIds?.[id] === "string") attemptIds[id] = plan.attemptIds[id];
+    });
+    return { ...expected, currentIndex: plan.currentIndex, attemptIds, completed: plan.completed === true };
   }
 
   function saveExamPlan() {
     if (root.localStorage && state.examPlan) {
       root.localStorage.setItem(EXAM_PLAN_KEY, JSON.stringify(state.examPlan));
     }
+  }
+
+  function getExamResults() {
+    const results = parseStoredValue(root.localStorage, EXAM_RESULTS_KEY, {});
+    return results && typeof results === "object" && !Array.isArray(results) ? results : {};
+  }
+
+  function saveCompletedExamResult(plan) {
+    const summary = catalogModule.summarizeSimuladoExamPlan(plan, getStoredAttempts());
+    if (summary.finalPercent == null || !root.localStorage) return;
+    root.localStorage.setItem(EXAM_RESULTS_KEY, JSON.stringify({
+      ...getExamResults(),
+      [plan.simulado]: { finalPercent: summary.finalPercent, earnedPoints: summary.earnedPoints,
+        completedAt: new Date().toISOString() }
+    }));
   }
 
   function getFetch(fetchFn) {
@@ -422,8 +440,7 @@
     if (!catalogModule) return { entry: null, cycleIds };
 
     if (mode === "exam") {
-      const selection = catalogModule.pickStation(entries, cycleIds, source.randomFn);
-      return { entry: selection.station, cycleIds: selection.cycleIds };
+      return { entry: null, cycleIds };
     }
 
     if (mode === "review") {
@@ -438,15 +455,6 @@
       .filter((entry) => entry.id !== source.currentEntryId);
     const selection = catalogModule.pickStation(filtered, [], source.randomFn);
     return { entry: selection.station, cycleIds };
-  }
-
-  function getExamAlternatives() {
-    if (!state.examPlan || !state.selectedEntry || !catalogModule) return [];
-    const area = catalogModule.getExamArea(state.selectedEntry);
-    if (!area) return [];
-    const planned = new Set(state.examPlan.stationIds);
-    return state.stationEntries.filter((entry) => !planned.has(entry.id) &&
-      catalogModule.getExamArea(entry)?.key === area.key);
   }
 
   function enrichStationEntry(entry, station) {
@@ -552,6 +560,10 @@
     if (!root || !root.localStorage) return;
     const next = upsertAttemptList(getStoredAttempts(), attempt);
     root.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    if (state.mode === "exam" && state.examPlan?.stationIds.includes(attempt.stationId)) {
+      state.examPlan.attemptIds[attempt.stationId] = attempt.id;
+      saveExamPlan();
+    }
     root.localStorage.removeItem(DRAFT_KEY);
   }
 
@@ -679,14 +691,9 @@
   }
 
   function selectEntryForCurrentMode(randomFn) {
-    if (state.mode === "exam" && catalogModule && typeof catalogModule.buildExamRound === "function") {
-      if (!state.examPlan) startNewExamRound(randomFn);
-      const plannedHistory = Array.from(new Set(state.cycleIds.concat(state.examPlan.stationIds)));
-      if (plannedHistory.length !== state.cycleIds.length) {
-        state.cycleIds = plannedHistory;
-        saveCurrentSetup();
-      }
-      return getStationEntry(state.examPlan.stationIds[state.examPlan.currentIndex]);
+    if (state.mode === "exam") {
+      if (!state.examPlan) startNewExamRound();
+      return state.examPlan ? getStationEntry(state.examPlan.stationIds[state.examPlan.currentIndex]) : null;
     }
     const selection = selectStationEntry(
       state.stationEntries,
@@ -702,6 +709,10 @@
   }
 
   async function loadCurrentModeSelection() {
+    if (state.mode === "exam" && state.examPlan?.completed) {
+      renderExamSummary();
+      return;
+    }
     const entry = selectEntryForCurrentMode();
     if (!entry) {
       state.station = null;
@@ -716,24 +727,17 @@
 
   async function setPracticeMode(mode) {
     const nextMode = normalizePracticeMode(mode);
-    if (nextMode === "exam" && state.mode !== "exam") startNewExamRound();
     state.mode = nextMode;
     saveCurrentSetup();
     await loadCurrentModeSelection();
   }
 
-  function startNewExamRound(randomFn) {
-    if (!catalogModule || typeof catalogModule.buildExamRound !== "function") return;
-    const previousPlan = state.examPlan || restoreExamPlan(root.localStorage, state.stationEntries);
-    state.examPlan = catalogModule.buildExamRound(
-      state.stationEntries,
-      state.cycleIds,
-      previousPlan ? previousPlan.roundNumber + 1 : 0,
-      randomFn
-    );
-    state.cycleIds = Array.from(new Set(state.cycleIds.concat(state.examPlan.stationIds)));
+  function startNewExamRound(simulado) {
+    const numbers = catalogModule?.getSimuladoNumbers(state.stationEntries) || [];
+    const selected = numbers.includes(simulado) ? simulado : numbers.includes(state.examPlan?.simulado)
+      ? state.examPlan.simulado : numbers[0];
+    state.examPlan = catalogModule?.buildSimuladoExamPlan(state.stationEntries, selected) || null;
     saveExamPlan();
-    saveCurrentSetup();
   }
 
   async function advanceExamStation() {
@@ -741,9 +745,18 @@
     if (state.examPlan.currentIndex < state.examPlan.stationIds.length - 1) {
       state.examPlan = { ...state.examPlan, currentIndex: state.examPlan.currentIndex + 1 };
     } else {
-      startNewExamRound();
+      state.examPlan = { ...state.examPlan, completed: true };
+      saveExamPlan();
+      saveCompletedExamResult(state.examPlan);
+      renderExamSummary();
+      return;
     }
     saveExamPlan();
+    state.transcript = "";
+    state.phaseAnswers = {};
+    state.lastAttempt = null;
+    state.runtimeNotice = "";
+    if (root.localStorage) root.localStorage.removeItem(ANSWERS_KEY);
     const entry = getStationEntry(state.examPlan.stationIds[state.examPlan.currentIndex]);
     if (entry) await loadSelectedStation(entry);
   }
@@ -905,12 +918,78 @@
       </div>`;
   }
 
+  function renderExamSelector() {
+    if (state.mode !== "exam") return "";
+    const numbers = catalogModule?.getSimuladoNumbers(state.stationEntries) || [];
+    const results = getExamResults();
+    return `<div class="practice-toolbar practice-simulado-toolbar">
+      <label for="practice-simulado">Simulado</label>
+      <select id="practice-simulado">${numbers.map((number) =>
+        `<option value="${number}" ${number === state.examPlan?.simulado ? "selected" : ""}>Simulado ${number}${Number.isFinite(results[number]?.finalPercent) ? ` - ${results[number].finalPercent}%` : ""}</option>`
+      ).join("")}</select>
+    </div>`;
+  }
+
+  function bindExamSelector(mount) {
+    const select = mount.querySelector("#practice-simulado");
+    if (select) select.addEventListener("change", () => switchSimulado(Number(select.value)));
+  }
+
+  async function switchSimulado(number) {
+    clearSessionTimer();
+    cleanupRecording();
+    state.transcript = "";
+    state.phaseAnswers = {};
+    state.lastAttempt = null;
+    if (root.localStorage) {
+      clearPracticeDraft(root.localStorage);
+      root.localStorage.removeItem(ANSWERS_KEY);
+    }
+    startNewExamRound(number);
+    await loadCurrentModeSelection();
+  }
+
+  function renderExamSummary() {
+    const mount = root.document?.getElementById("practice-simulator");
+    if (!mount || !state.examPlan) return;
+    const plan = state.examPlan;
+    const summary = catalogModule.summarizeSimuladoExamPlan(plan, getStoredAttempts());
+    mount.innerHTML = `<section class="practice-shell practice-exam-summary">
+      ${renderPracticeModeControl("exam")}
+      ${renderExamSelector()}
+      <div class="practice-result-head">
+        <div><span class="practice-kicker">RESULTADO DO SIMULADO ${plan.simulado}</span><h2>Prova prática</h2></div>
+        <strong class="practice-score">${summary.finalPercent == null ? "-" : `${summary.finalPercent}%`}</strong>
+      </div>
+      <p class="practice-result-overview">${summary.completedCount}/5 estações concluídas${summary.earnedPoints == null ? "" : ` · ${summary.earnedPoints.toLocaleString("pt-BR", { maximumFractionDigits: 2 })}/500 pontos`}</p>
+      ${summary.finalPercent == null ? `<div class="practice-alert">A nota final depende das cinco correções concluídas neste navegador.</div>` : ""}
+      <div class="practice-exam-results">${plan.stationIds.map((id, index) => {
+        const entry = getStationEntry(id);
+        const score = summary.scores[index];
+        return `<div><span>${index + 1}. ${escapeHtml(entry?.title || "Estação")}</span><strong>${score == null ? "Pendente" : `${score}%`}</strong></div>`;
+      }).join("")}</div>
+      <div class="practice-actions"><button id="practice-restart-simulado" class="practice-button practice-button-primary" type="button">Refazer simulado ${plan.simulado}</button></div>
+    </section>`;
+    mount.querySelectorAll("input[name='practice-mode']").forEach((input) => {
+      input.addEventListener("change", () => { if (input.checked) setPracticeMode(input.value); });
+    });
+    bindExamSelector(mount);
+    mount.querySelector("#practice-restart-simulado").addEventListener("click", () => switchSimulado(plan.simulado));
+  }
+
   function renderSetup() {
     const mount = root.document && root.document.getElementById("practice-simulator");
     if (!mount) return;
+    if (state.mode === "exam" && state.examPlan?.completed) {
+      renderExamSummary();
+      return;
+    }
     const station = state.station;
     const caseNumber = getExamCaseNumber(state.selectedEntry, state.stationEntries);
     const setupView = getSetupStationView(station, state.selectedEntry, state.mode, state.mediaStatus, caseNumber);
+    const examProgress = state.mode === "exam" && state.examPlan
+      ? catalogModule.summarizeSimuladoExamPlan(state.examPlan, getStoredAttempts()) : null;
+    const currentExamScore = examProgress?.scores[state.examPlan.currentIndex];
     const latestScores = state.mode === "directed" ? getLatestCompletedScores(getStoredAttempts()) : new Map();
     const selectedScore = state.selectedEntry && latestScores.get(state.selectedEntry.id);
     const showDiagnosticMeta = setupView.showDiagnosticMeta;
@@ -923,7 +1002,7 @@
     const retryActions = state.mediaStatus === "error" ? `
       <div class="practice-actions">
         <button class="practice-button" id="practice-retry-load" type="button">Tentar novamente</button>
-        ${(state.mode === "exam" ? getExamAlternatives().length : state.stationEntries.length) ? `<button class="practice-button practice-button-quiet" id="practice-choose-another" type="button">Sortear outra</button>` : ""}
+        ${state.mode !== "exam" && state.stationEntries.length ? `<button class="practice-button practice-button-quiet" id="practice-choose-another" type="button">Sortear outra</button>` : ""}
       </div>` : "";
     const directedControls = state.mode === "directed" ? `
       <div class="practice-toolbar">
@@ -937,6 +1016,7 @@
     mount.innerHTML = `
       <section class="practice-shell practice-setup">
         ${renderPracticeModeControl(state.mode)}
+        ${renderExamSelector()}
         ${directedControls}
         ${statusMessage ? `<p class="practice-help" role="status">${statusMessage}</p>` : ""}
         ${state.mediaStatus === "error" ? `<div class="practice-alert practice-alert-error"><strong>Recurso ausente.</strong><span>${escapeHtml(state.loadError || "Não foi possível preparar a estação.")}</span></div>${retryActions}` : ""}
@@ -953,7 +1033,8 @@
             </div>
           </div>
           ${renderPracticeStartActions(setupView)}
-          ${state.mode === "exam" ? `<div class="practice-actions"><button class="practice-button practice-button-quiet" id="practice-new-exam-round" type="button">Sortear nova série de 5</button></div>` : ""}
+          ${currentExamScore != null ? `<div class="practice-actions"><button class="practice-button practice-button-primary" id="practice-resume-exam" type="button">${state.examPlan.currentIndex < 4 ? "Próxima estação" : "Ver resultado do simulado"}</button></div>` : ""}
+          ${state.mode === "exam" ? `<div class="practice-actions"><button class="practice-button practice-button-quiet" id="practice-new-exam-round" type="button">Reiniciar simulado ${state.examPlan?.simulado || ""}</button></div>` : ""}
         ` : ""}
         <div id="practice-auth" class="practice-auth"><p>Verificando acesso à correção automática...</p></div>
         <p class="practice-help">O checklist permanece oculto durante a estação. Permita o microfone somente se desejar correção pela fala.</p>
@@ -964,6 +1045,7 @@
         if (input.checked) setPracticeMode(input.value);
       });
     });
+    bindExamSelector(mount);
     const stationSelect = mount.querySelector("#practice-station");
     if (stationSelect) stationSelect.addEventListener("change", (event) => {
       const entry = getStationEntry(event.target.value);
@@ -975,19 +1057,6 @@
     });
     const anotherButton = mount.querySelector("#practice-choose-another");
     if (anotherButton) anotherButton.addEventListener("click", () => {
-      if (state.mode === "exam" && state.examPlan) {
-        const alternatives = getExamAlternatives();
-        const fresh = alternatives.filter((entry) => !state.cycleIds.includes(entry.id));
-        const pool = fresh.length ? fresh : alternatives;
-        const entry = pool[Math.floor(Math.random() * pool.length)];
-        if (!entry) return;
-        state.examPlan.stationIds[state.examPlan.currentIndex] = entry.id;
-        state.cycleIds = Array.from(new Set(state.cycleIds.concat(entry.id)));
-        saveExamPlan();
-        saveCurrentSetup();
-        loadSelectedStation(entry);
-        return;
-      }
       const selection = selectAlternativeStation({
         entries: state.stationEntries,
         mode: state.mode,
@@ -1005,10 +1074,11 @@
     if (recordButton) recordButton.addEventListener("click", () => beginSession(true));
     const manualButton = mount.querySelector("#practice-start-manual");
     if (manualButton) manualButton.addEventListener("click", () => beginSession(false));
+    const resumeExamButton = mount.querySelector("#practice-resume-exam");
+    if (resumeExamButton) resumeExamButton.addEventListener("click", advanceExamStation);
     const newRoundButton = mount.querySelector("#practice-new-exam-round");
     if (newRoundButton) newRoundButton.addEventListener("click", () => {
-      startNewExamRound();
-      loadCurrentModeSelection();
+      switchSimulado(state.examPlan?.simulado);
     });
     renderAuthPanel();
   }
@@ -1411,7 +1481,7 @@
           <div id="practice-result-media"></div>
         </section>
         <div class="practice-actions">
-          ${state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : "Nova série de 5"}</button>` : ""}
+          ${state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : "Ver resultado do simulado"}</button>` : ""}
           <button id="practice-download" class="practice-button practice-button-primary" type="button">Baixar relatório</button>
           <button id="practice-back" class="practice-button" type="button">Voltar ao simulador</button>
           <a class="practice-button practice-button-quiet" href="#/praticas/DESEMPENHO">Ver desempenho</a>
@@ -1598,6 +1668,9 @@
     if (clearButton) clearButton.addEventListener("click", () => {
       if (!root.confirm("Apagar apenas o histórico prático salvo neste navegador?")) return;
       root.localStorage.removeItem(STORAGE_KEY);
+      root.localStorage.removeItem(EXAM_RESULTS_KEY);
+      root.localStorage.removeItem(EXAM_PLAN_KEY);
+      state.examPlan = null;
       renderDashboard();
     });
     if (!sharedGuestAccess && !skipSync && !state.dashboardSyncStarted) syncDashboardAttempts();
@@ -1639,7 +1712,9 @@
       return false;
     }
     const entry = getStationEntry(draft && draft.stationId);
-    if (!entry) {
+    if (!entry || (draft.mode === "exam" &&
+        (!state.examPlan || state.examPlan.completed ||
+          state.examPlan.stationIds[state.examPlan.currentIndex] !== draft.stationId))) {
       clearPracticeDraft(root.localStorage);
       return false;
     }
@@ -1728,7 +1803,6 @@
             state.examPlan = restoreExamPlan(root.localStorage, state.stationEntries);
           }
           if (!(await restoreSavedDraft())) {
-            if (state.mode === "exam" && enteringSimulator) startNewExamRound();
             await loadCurrentModeSelection();
           }
         } catch (error) {
@@ -1756,6 +1830,7 @@
     DRAFT_KEY,
     CYCLE_KEY,
     EXAM_PLAN_KEY,
+    EXAM_RESULTS_KEY,
     PREFERENCES_KEY,
     savePracticeDraft,
     clearPracticeDraft,

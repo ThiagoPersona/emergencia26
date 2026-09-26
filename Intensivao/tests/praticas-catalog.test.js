@@ -5,7 +5,9 @@ const {
   filterStations,
   pickStation,
   getExamArea,
-  buildExamRound,
+  getSimuladoNumbers,
+  buildSimuladoExamPlan,
+  summarizeSimuladoExamPlan,
   getRecommendedStations
 } = require("../praticas-catalog.js");
 
@@ -101,19 +103,40 @@ test("normaliza sorteio fora do intervalo e lida com lista vazia", () => {
   assert.deepEqual(pickStation(null, [], () => 0), { station: null, cycleIds: [] });
 });
 
-test("cada rodada de prova tem cinco searas distintas e alterna as variaveis", () => {
+test("cada simulado selecionado usa exatamente seus cinco cenarios na ordem editorial", () => {
   const index = require("../praticas/data/estacoes/index.json");
-  assert.equal(index.every((entry) => getExamArea(entry) !== null), true);
-  const first = buildExamRound(index, [], 0, () => 0);
-  const firstAreas = first.stationIds.map((id) => getExamArea(index.find((entry) => entry.id === id)).key);
-  assert.equal(first.stationIds.length, 5);
-  assert.equal(new Set(firstAreas).size, 5);
-  assert.deepEqual(new Set(firstAreas), new Set(["airway", "trauma", "pocus", "cardio", "pediatric"]));
+  assert.deepEqual(getSimuladoNumbers(index), [1, 2, 3, 4, 5, 6]);
+  for (const number of getSimuladoNumbers(index)) {
+    const plan = buildSimuladoExamPlan(index, number);
+    assert.equal(plan.simulado, number);
+    assert.deepEqual(plan.stationIds, index.filter((entry) => entry.trainingSimulado === number).map((entry) => entry.id));
+    assert.equal(plan.stationIds.length, 5);
+    assert.deepEqual(plan.attemptIds, {});
+    assert.equal(plan.currentIndex, 0);
+  }
+  assert.equal(buildSimuladoExamPlan(index, 7), null);
+  assert.deepEqual(getSimuladoNumbers([{ id: "a", trainingSimulado: 1 }]), []);
+});
 
-  const second = buildExamRound(index, first.stationIds, 1, () => 0);
-  const secondAreas = second.stationIds.map((id) => getExamArea(index.find((entry) => entry.id === id)).key);
-  assert.deepEqual(new Set(secondAreas), new Set(["airway", "trauma", "pocus", "pediatric", "clinical"]));
-  assert.equal(second.stationIds.some((id) => first.stationIds.includes(id)), false);
+test("nota final do simulado usa apenas as cinco tentativas desta execucao", () => {
+  const plan = { simulado: 6, stationIds: ["a", "b", "c", "d", "e"], attemptIds: { a: "a-2", b: "b-1", c: "c-1", d: "d-1", e: "e-1" } };
+  const attempts = [
+    { id: "a-1", stationId: "a", finalPercent: 100, earnedPoints: 100 },
+    { id: "a-2", stationId: "a", finalPercent: 80, earnedPoints: 79.5 },
+    { id: "b-1", stationId: "b", finalPercent: 60, earnedPoints: 60 },
+    { id: "c-1", stationId: "c", finalPercent: 90, earnedPoints: 90 },
+    { id: "d-1", stationId: "d", provisionalPercent: 40, earnedPoints: 40 },
+    { id: "e-1", stationId: "e", finalPercent: 70, earnedPoints: 70 }
+  ];
+  const pending = summarizeSimuladoExamPlan(plan, attempts);
+  assert.equal(pending.completedCount, 4);
+  assert.equal(pending.finalPercent, null);
+  attempts[4].finalPercent = 40;
+  const complete = summarizeSimuladoExamPlan(plan, attempts);
+  assert.equal(complete.completedCount, 5);
+  assert.equal(complete.finalPercent, 68);
+  assert.equal(complete.earnedPoints, 339.5);
+  assert.deepEqual(complete.scores, [80, 60, 90, 40, 70]);
 });
 
 test("rótulo da seara não entrega o diagnóstico", () => {
