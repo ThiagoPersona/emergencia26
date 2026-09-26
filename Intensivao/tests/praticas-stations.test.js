@@ -189,6 +189,9 @@ test("simulado 5 preserva cada item, ordem e pontuação do checklist do curso",
   }
   assert.ok(byId.get("emt-5-pocus-valvulas").phases.some((phase) => phase.media?.length));
   assert.ok(byId.get("emt-5-obstrucao-intestinal").phases[0].media?.length);
+  const bowelChecklist = byId.get("emt-5-obstrucao-intestinal").checklist;
+  assert.match(bowelChecklist.find((item) => item.id === "liquido").explanation, /aceitar.*procurar/i);
+  assert.match(bowelChecklist.find((item) => item.id === "peristaltismo").explanation, /aceitar.*motilidade/i);
   assert.doesNotMatch(byId.get("emt-5-metanol").phases[0].patientState.summary, /metanol/i);
 });
 
