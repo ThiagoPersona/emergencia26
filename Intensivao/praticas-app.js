@@ -1255,11 +1255,12 @@
     const vitalsHtml = vitals.length ? `<dl class="practice-vitals">${vitals.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join("")}</dl>` : "";
     mount.innerHTML = `
       <section class="practice-shell practice-running">
-        <header class="practice-run-header">
+        <header id="practice-run-header" class="practice-run-header">
           <div><span class="practice-kicker">${escapeHtml(runningView.kicker)}</span><strong>${escapeHtml(runningView.title)}</strong><small>Pergunta ${state.session.phaseIndex + 1} de ${state.station.phases.length}</small></div>
           <time id="practice-clock" class="practice-clock ${remaining <= 60 ? "is-warning" : ""}" datetime="PT${remaining}S">${formatClock(remaining)}</time>
         </header>
         ${state.runtimeNotice ? `<div class="practice-alert">${escapeHtml(state.runtimeNotice)}</div>` : ""}
+        <div id="practice-phase-start" aria-hidden="true"></div>
         ${patientState && patientState.summary ? `<section class="practice-patient-state" aria-label="Estado clínico"><h2>Estado clínico</h2><p>${escapeHtml(patientState.summary)}</p></section>` : ""}
         ${hasVisual ? "" : vitalsHtml}
         <div class="practice-task"><span>${escapeHtml(phase.title)}</span><p>${escapeHtml(phase.prompt)}</p></div>
@@ -1286,14 +1287,27 @@
       state.session = movePracticePhase(state.session, "previous");
       if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
       renderRunning();
+      scrollToCurrentQuestion();
     });
     const nextButton = mount.querySelector("#practice-next");
     if (nextButton) nextButton.addEventListener("click", () => {
       state.session = movePracticePhase(state.session, "next");
       if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
       renderRunning();
+      scrollToCurrentQuestion();
     });
     mount.querySelector("#practice-finish").addEventListener("click", finishSession);
+  }
+
+  function scrollToCurrentQuestion() {
+    const mount = root.document.getElementById("practice-simulator");
+    const anchor = mount && mount.querySelector("#practice-phase-start");
+    if (!anchor || typeof anchor.scrollIntoView !== "function") return;
+    const header = mount.querySelector("#practice-run-header");
+    const headerHeight = header && typeof header.getBoundingClientRect === "function"
+      ? header.getBoundingClientRect().height : 0;
+    anchor.style.scrollMarginTop = `${Math.ceil(headerHeight) + 12}px`;
+    anchor.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function updateTimer() {
@@ -1421,7 +1435,7 @@
     const mount = root.document.getElementById("practice-simulator");
     const attempt = state.lastAttempt;
     if (!mount || !attempt) return;
-    const score = Number.isFinite(attempt.finalPercent) ? attempt.finalPercent : attempt.provisionalPercent;
+    const hasPendingManual = attempt.pendingManualItemIds.length > 0;
     const checklistById = new Map(state.station.checklist.map((item) => [item.id, item]));
     const missingCritical = attempt.criticalFailures.map((id) => checklistById.get(id)?.label || id);
     const earnedFor = (evaluation, item) => root.TemePracticeUtils.getPracticeItemPoints(item, evaluation);
@@ -1436,14 +1450,12 @@
     mount.innerHTML = `
       <section class="practice-shell">
         <div class="practice-result-head">
-          <div><span class="practice-kicker">Resultado</span><h2>${escapeHtml(state.station.title)}</h2></div>
-          <strong class="practice-score">${score}%</strong>
+          <div><span class="practice-kicker">${hasPendingManual ? "Confirmação final" : "Resultado"}</span><h2>${escapeHtml(state.station.title)}</h2></div>
+          ${hasPendingManual ? "" : `<strong class="practice-score">${attempt.finalPercent}%</strong>`}
         </div>
-        <p class="practice-result-overview">${completedCount} de ${state.station.checklist.length} critérios contemplados · ${missedItems.length} ausentes ou parciais · ${attempt.earnedPoints}/${attempt.totalPoints} pontos</p>
+        ${hasPendingManual ? "" : `<p class="practice-result-overview">${completedCount} de ${state.station.checklist.length} critérios contemplados · ${missedItems.length} ausentes ou parciais · ${attempt.earnedPoints}/${attempt.totalPoints} pontos</p>`}
         ${attempt.persistenceWarning ? `<div class="practice-alert">${escapeHtml(attempt.persistenceWarning)}</div>` : ""}
-        ${attempt.summary ? `<div class="practice-feedback"><strong>Síntese da avaliação</strong><p>${escapeHtml(attempt.summary)}</p></div>` : ""}
-        <div class="practice-feedback"><strong>Raciocínio clínico</strong><p>${escapeHtml(state.station.referenceAnswer || "")}</p></div>
-        ${attempt.pendingManualItemIds.length ? `
+        ${hasPendingManual ? `
           <form id="practice-manual-confirm" class="practice-manual-confirm">
             <h3>Confirme os gestos manuais</h3>
             <p>Marque apenas o que você realmente executou no manequim ou material.</p>
@@ -1451,8 +1463,10 @@
               const item = state.station.checklist.find((candidate) => candidate.id === itemId);
               return `<fieldset><legend>${escapeHtml(item ? item.label : itemId)}</legend><label><input required type="radio" name="manual-${escapeHtml(itemId)}" value="true"> Executei</label><label><input required type="radio" name="manual-${escapeHtml(itemId)}" value="false"> Não executei</label></fieldset>`;
             }).join("")}
-            <button class="practice-button practice-button-primary" type="submit">Concluir nota</button>
+            <button class="practice-button practice-button-primary" type="submit">Concluir avaliação</button>
           </form>` : ""}
+        ${attempt.summary ? `<div class="practice-feedback"><strong>Síntese da avaliação</strong><p>${escapeHtml(attempt.summary)}</p></div>` : ""}
+        <div class="practice-feedback"><strong>Raciocínio clínico</strong><p>${escapeHtml(state.station.referenceAnswer || "")}</p></div>
         ${missingCritical.length ? `<div class="practice-alert practice-alert-error"><strong>Pontos críticos esquecidos</strong><span>${missingCritical.map(escapeHtml).join("; ")}</span></div>` : ""}
         ${missedItems.length ? `<div class="practice-feedback"><strong>Prioridades para revisar</strong><ul>${missedItems.slice(0, 5).map((evaluation) => `<li>${escapeHtml(evaluation.label)}</li>`).join("")}</ul></div>` : ""}
         <div class="practice-result-list">
@@ -1464,7 +1478,7 @@
               ? "não executado" : evaluation.status.replace("_", " ");
             return `
             <article class="practice-result-item is-${manualOverride ? "cumprido" : escapeHtml(evaluation.status)}">
-              <header><strong>${escapeHtml(evaluation.label)}</strong><span>${escapeHtml(displayStatus)} · ${earnedFor(evaluation, item)}/${item?.weight || 0} pts</span></header>
+              <header><strong>${escapeHtml(evaluation.label)}</strong><span>${escapeHtml(displayStatus)}${hasPendingManual ? "" : ` · ${earnedFor(evaluation, item)}/${item?.weight || 0} pts`}</span></header>
               <p>${escapeHtml(evaluation.evidence)}</p>
               ${evaluation.rationale ? `<small>${escapeHtml(evaluation.rationale)}</small>` : ""}
               ${item?.explanation ? `<small>${escapeHtml(item.explanation)}</small>` : ""}
@@ -1482,7 +1496,7 @@
         </section>
         <div class="practice-actions">
           ${state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : "Ver resultado do simulado"}</button>` : ""}
-          <button id="practice-download" class="practice-button practice-button-primary" type="button">Baixar relatório</button>
+          ${hasPendingManual ? "" : `<button id="practice-download" class="practice-button practice-button-primary" type="button">Baixar relatório</button>`}
           <button id="practice-back" class="practice-button" type="button">Voltar ao simulador</button>
           <a class="practice-button practice-button-quiet" href="#/praticas/DESEMPENHO">Ver desempenho</a>
         </div>
@@ -1495,7 +1509,8 @@
         getResultMediaOptions()
       );
     }
-    mount.querySelector("#practice-download").addEventListener("click", () => downloadText(buildPracticeReport(attempt), `treino-${attempt.stationId}.txt`));
+    const downloadButton = mount.querySelector("#practice-download");
+    if (downloadButton) downloadButton.addEventListener("click", () => downloadText(buildPracticeReport(attempt), `treino-${attempt.stationId}.txt`));
     mount.querySelector("#practice-back").addEventListener("click", resetSimulator);
     const revisedTranscript = mount.querySelector("#practice-result-transcript");
     const reevaluateButton = mount.querySelector("#practice-reevaluate-transcript");

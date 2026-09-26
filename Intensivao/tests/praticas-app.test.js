@@ -78,6 +78,7 @@ function createFakeDocument() {
       this.name = "";
       this._innerHTML = "";
       this._parsedNodes = [];
+      this.scrolledWith = null;
       const updateClasses = (callback) => {
         const names = new Set(this.className.split(/\s+/).filter(Boolean));
         callback(names);
@@ -99,7 +100,7 @@ function createFakeDocument() {
     set innerHTML(value) {
       this._innerHTML = String(value);
       this._parsedNodes = [];
-      const tagPattern = /<(input|button|select|form|div|textarea|time)\b([^>]*)>/gi;
+      const tagPattern = /<(input|button|select|form|div|header|textarea|time)\b([^>]*)>/gi;
       let match;
       while ((match = tagPattern.exec(this._innerHTML))) {
         const node = new FakeElement(match[1], this.ownerDocument);
@@ -168,6 +169,10 @@ function createFakeDocument() {
     click() {
       if (!this.disabled) this.dispatch("click");
     }
+
+    scrollIntoView(options) { this.scrolledWith = options; }
+
+    getBoundingClientRect() { return { height: 88 }; }
 
     querySelector(selector) {
       if (selector.startsWith("#")) {
@@ -1000,6 +1005,45 @@ test("resultado mostra pontos e criterios confirmados manualmente de forma coere
   assert.doesNotMatch(fixture.simulator.innerHTML, /Pontos críticos esquecidos|Prioridades para revisar/);
 });
 
+test("resultado pendente de gesto manual nao mostra nota ou pontos provisórios", async () => {
+  const pendingStation = createStation("pending");
+  pendingStation.checklist = [
+    { id: "verbal", label: "Ação verbal", weight: 50, verification: "verbal" },
+    { id: "manual", label: "Gesto manual", weight: 50, verification: "manual" }
+  ];
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "pending", file: "pending.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(pendingStation);
+  }, createStorage());
+  fixture.root.TemePracticeUtils = require("../praticas-utils.js");
+  fixture.root.TemePracticeApi = {
+    validatePublicConfig: () => ({ valid: false }),
+    async evaluate() {
+      return {
+        transcript: "Realizei a ação verbal.",
+        evaluations: [
+          { itemId: "verbal", status: "cumprido", evidence: "Ação verbal mencionada." },
+          { itemId: "manual", status: "nao_verificavel", evidence: "Gesto requer confirmação." }
+        ]
+      };
+    }
+  };
+
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  const answer = fixture.simulator.querySelector("#practice-slide-answer");
+  answer.value = "Realizei a ação verbal.";
+  answer.dispatch("input");
+  fixture.simulator.querySelector("#practice-finish").click();
+  fixture.simulator.querySelector("#practice-ai-evaluate").click();
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-manual-confirm")));
+  const html = fixture.simulator.innerHTML;
+  assert.match(html, /Confirme os gestos manuais/);
+  assert.doesNotMatch(html, /practice-score|practice-result-overview|\b100%\b|\b50\/100 pontos\b|\b\d+\/\d+ pts\b/);
+  assert.equal(fixture.simulator.querySelector("#practice-download"), null);
+});
+
 test("persiste e limpa rascunho da sessao com chave v2", () => {
   const values = new Map();
   const storage = {
@@ -1549,6 +1593,26 @@ test("mudanca de fase preserva inicio gravador e intervalo ativos", async () => 
   assert.equal(recorder.state, "recording");
   assert.deepEqual(fixture.intervals, [interval]);
   assert.match(fixture.simulator.innerHTML, /Gravação em andamento/);
+});
+
+test("proxima pergunta leva a tela ao inicio da nova progressao", async () => {
+  const nextStation = createStation("scroll");
+  nextStation.phases[1].patientState = { summary: "Nova evolução clínica." };
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "scroll", file: "scroll.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(nextStation);
+  }, createStorage());
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-manual").click();
+
+  fixture.simulator.querySelector("#practice-next").click();
+
+  const anchor = fixture.simulator.querySelector("#practice-phase-start");
+  assert.ok(anchor);
+  assert.match(fixture.simulator.innerHTML, /Nova evolução clínica/);
+  assert.deepEqual(anchor.scrolledWith, { behavior: "smooth", block: "start" });
+  assert.equal(anchor.style.scrollMarginTop, "100px");
 });
 
 test("respostas por pergunta persistem ao voltar e ao recarregar a estação", async () => {
