@@ -158,6 +158,20 @@
     "modified": "2026-08-10"
   },
   {
+    "id": "ecg-em6-triciclico-12-derivacoes",
+    "type": "image",
+    "src": "assets/praticas/ecg/ecg-em6-triciclico-12-derivacoes.jpg",
+    "thumbnail": "assets/praticas/ecg/ecg-em6-triciclico-12-derivacoes.jpg",
+    "examAlt": "ECG de 12 derivações de outro paciente para interpretação das alterações de condução.",
+    "reviewAlt": "ECG de 12 derivações com QRS alargado e onda R terminal proeminente em aVR após intoxicação por antidepressivo tricíclico.",
+    "reviewCaption": "A amostra mostra QRS alargado e R terminal proeminente em aVR; compare esses achados com a evolução clínica da estação.",
+    "credit": "Harvey M e Cave G, International Journal of Emergency Medicine, figura 1",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3395873/",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "modified": "2026-09-26"
+  },
+  {
     "id": "capnografia-capnograma-base",
     "type": "image",
     "src": "assets/praticas/equipamentos/capnografia-capnograma-base.webp",

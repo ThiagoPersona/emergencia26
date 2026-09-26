@@ -22,6 +22,7 @@ const REQUIRED_ACERVO_IDS = [
   "ecg-iam-inferior-vd",
   "ecg-torsades-pd",
   "ecg-triciclico-qrs",
+  "ecg-em6-triciclico-12-derivacoes",
   "capnografia-capnograma-base",
   "vm-autopeep-sinais-fig4",
   "rx-pneumotorax-expiracao",
@@ -51,7 +52,7 @@ const REQUIRED_ACERVO_IDS = [
   "us-em6-duplo-trajeto"
 ];
 
-test("acervo visual local contem os 38 itens licenciados e arquivos resolviveis", () => {
+test("acervo visual local contem os 39 itens licenciados e arquivos resolviveis", () => {
   const intensivaoRoot = path.resolve(__dirname, "..");
   const manifestPath = path.join(intensivaoRoot, "assets", "praticas", "media.json");
   const attributionPath = path.join(intensivaoRoot, "assets", "praticas", "ATRIBUICOES.md");

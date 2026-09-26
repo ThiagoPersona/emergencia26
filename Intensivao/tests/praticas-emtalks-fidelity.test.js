@@ -68,5 +68,13 @@ test("simulado 6 preserva ordem, granularidade e 100 pontos por checklist", () =
   assert.deepEqual(read("emt-6-triciclico").phases.map((phase) => phase.title),
     ["Tarefa 1.1", "Tarefa 1.2", "Tarefa 2.1", "Tarefa 2.2", "Tarefa 3.1", "Tarefa 3.2"]);
   assert.deepEqual(read("emt-6-pocus-via-aerea").phases[2].media, ["us-em6-duplo-trajeto"]);
-  assert.deepEqual(read("emt-6-triciclico").phases[1].media, ["ecg-triciclico-qrs"]);
+  assert.deepEqual(read("emt-6-triciclico").phases[1].media, ["ecg-em6-triciclico-12-derivacoes"]);
+});
+
+test("simulado 6 exige interpretar o ECG sem entregar QRS e aVR na pergunta", () => {
+  const station = read("emt-6-triciclico");
+  const phase = station.phases[1];
+  assert.deepEqual(phase.media, ["ecg-em6-triciclico-12-derivacoes"]);
+  assert.doesNotMatch(JSON.stringify(phase.patientState), /QRS|aVR|tric[ií]clic|bloqueio de s[oó]dio/i);
+  assert.match(station.checklist[1].label, /QRS.*aVR/i);
 });
