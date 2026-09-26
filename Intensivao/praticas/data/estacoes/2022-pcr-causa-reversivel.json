@@ -1,0 +1,151 @@
+{
+  "id": "2022-pcr-causa-reversivel",
+  "version": 2,
+  "title": "PCR em AESP com causa reversível",
+  "examTitle": "Colapso durante observação",
+  "domain": "Reanimação cardiovascular",
+  "domains": [
+    "PCR",
+    "POCUS"
+  ],
+  "family": "Cardiovascular e PCR",
+  "tags": [
+    "AESP",
+    "RCP",
+    "tamponamento",
+    "causas reversíveis"
+  ],
+  "briefing": "Um paciente em observação perde consciência e pulso. Conduza a reanimação e uma busca curta de causa reversível.",
+  "phases": [
+    {
+      "id": "colapso",
+      "title": "Primeiros ciclos",
+      "prompt": "Conduza o primeiro ciclo de atendimento, incluindo ritmo e medicação.",
+      "patientState": {
+        "summary": "Adulto inconsciente e sem pulso. Monitor com atividade elétrica organizada de baixa frequência.",
+        "vitals": {
+          "FC monitor": "42 bpm",
+          "SpO2": "sem leitura"
+        }
+      }
+    },
+    {
+      "id": "pausa",
+      "title": "Investigação dirigida",
+      "prompt": "Na próxima checagem de ritmo, diga como usa o ultrassom sem prejudicar a RCP e interprete o achado.",
+      "patientState": {
+        "summary": "Compressões em andamento. Há janela cardíaca disponível durante a pausa programada.",
+        "vitals": {
+          "ETCO2": "12 mmHg"
+        }
+      },
+      "media": [
+        "us-tamponamento-rv-collapse"
+      ]
+    },
+    {
+      "id": "reversao",
+      "title": "Causa reversível",
+      "prompt": "Indique a intervenção específica e como mantém a ressuscitação.",
+      "patientState": {
+        "summary": "A próxima checagem continua sem pulso; a equipe de cirurgia está chegando.",
+        "vitals": {
+          "Ritmo": "atividade elétrica organizada"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "rcp",
+      "label": "Reconhece AESP, inicia RCP de qualidade e aciona equipe",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "AESP",
+        "compressões",
+        "ajuda"
+      ],
+      "explanation": "AESP não é ritmo chocável; compressões são imediatas."
+    },
+    {
+      "id": "adrenalina",
+      "label": "Administra adrenalina 1 mg IV/IO o quanto antes",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "adrenalina 1 mg",
+        "epinefrina 1 mg"
+      ],
+      "explanation": "Adrenalina precoce integra o algoritmo não chocável."
+    },
+    {
+      "id": "pocus-pausa",
+      "label": "Limita POCUS à pausa breve sem atrasar compressões",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "pausa breve",
+        "não interrompo RCP",
+        "ultrassom na checagem"
+      ],
+      "explanation": "Pausas prolongadas pioram perfusão."
+    },
+    {
+      "id": "imagem",
+      "label": "Reconhece derrame com repercussão como causa reversível",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "derrame pericárdico",
+        "tamponamento"
+      ],
+      "explanation": "O achado orienta intervenção específica."
+    },
+    {
+      "id": "descompressao",
+      "label": "Solicita descompressão pericárdica imediata com equipe adequada",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "pericardiocentese",
+        "drenagem pericárdica",
+        "cirurgia"
+      ],
+      "explanation": "Tratar a causa é essencial na AESP por tamponamento."
+    },
+    {
+      "id": "reavaliacao",
+      "label": "Retoma RCP e reavalia pulso/ritmo/ETCO2 em ciclos",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "retomo compressões",
+        "reavalio ritmo",
+        "ETCO2"
+      ],
+      "explanation": "Tratamento da causa não substitui RCP contínua."
+    }
+  ],
+  "referenceAnswer": "Identifico AESP, inicio compressões e adrenalina 1 mg IV/IO, sem choque. Uso POCUS só na pausa curta: há derrame com colapso direito, sugerindo tamponamento. Aciono descompressão imediata e sigo RCP com reavaliação seriada.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+    "https://www.acep.org/sonoguide"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2022
+  },
+  "criticalErrors": [
+    "Desfibrilar AESP ou deixar de iniciar RCP e tratar a causa reversível."
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "2022-va-bvm-supraglotico",
+  "version": 2,
+  "title": "Falha ventilatória e resgate com supraglótico",
+  "examTitle": "Paciente com ventilação ineficaz",
+  "domain": "Via aérea e ventilação mecânica",
+  "domains": [
+    "Via aérea",
+    "Reanimação"
+  ],
+  "family": "Via aérea e ventilação mecânica",
+  "tags": [
+    "bolsa-válvula-máscara",
+    "supraglótico",
+    "capnografia"
+  ],
+  "briefing": "Paciente inconsciente chega com ventilação ineficaz. Conduza a oxigenação e demonstre o resgate da via aérea.",
+  "phases": [
+    {
+      "id": "abertura",
+      "title": "Ventilação inicial",
+      "prompt": "Avalie a ameaça imediata e descreva como obter ventilação eficaz com bolsa-válvula-máscara.",
+      "patientState": {
+        "summary": "Adulto encontrado inconsciente. Roncos, expansibilidade torácica pequena e saturação em queda.",
+        "vitals": {
+          "PA": "112/68 mmHg",
+          "FC": "116 bpm",
+          "SpO2": "82%"
+        }
+      }
+    },
+    {
+      "id": "resgate",
+      "title": "Falha da máscara",
+      "prompt": "A ventilação continua insuficiente apesar de reposicionamento. Qual é o próximo dispositivo e como você o instala e verifica?",
+      "patientState": {
+        "summary": "Após duas tentativas de ventilação com máscara, a expansibilidade segue inadequada. Há dispositivo supraglótico disponível.",
+        "vitals": {
+          "SpO2": "79%",
+          "ETCO2": "não detectado"
+        }
+      }
+    },
+    {
+      "id": "reavaliacao",
+      "title": "Confirmação e plano de falha",
+      "prompt": "Explique como confirma ventilação efetiva e o que fará se não conseguir oxigenar.",
+      "patientState": {
+        "summary": "Após a inserção do dispositivo, o tórax começa a elevar bilateralmente.",
+        "vitals": {
+          "SpO2": "88% e subindo",
+          "PA": "108/66 mmHg"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "bvm",
+      "label": "Abre via aérea, aspira se necessário e ventila com BVM e oxigênio",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "abro via aérea",
+        "ventilo com bolsa-válvula-máscara",
+        "aspiração"
+      ],
+      "explanation": "A desobstrução e a ventilação são a primeira intervenção."
+    },
+    {
+      "id": "vedacao",
+      "label": "Usa técnica de duas pessoas para vedação e observa expansão torácica",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "duas pessoas",
+        "vedação da máscara",
+        "expansão torácica"
+      ],
+      "explanation": "A vedação e a elevação do tórax testam a eficácia do BVM."
+    },
+    {
+      "id": "resgate",
+      "label": "Reconhece ventilação ineficaz e muda para dispositivo supraglótico",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "ventilação ineficaz",
+        "máscara laríngea",
+        "supraglótico"
+      ],
+      "explanation": "Persistir em manobras ineficazes atrasa a oxigenação."
+    },
+    {
+      "id": "insercao",
+      "label": "Escolhe tamanho, lubrifica, introduz e insufla conforme dispositivo",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false,
+      "expected": [
+        "tamanho",
+        "lubrifico",
+        "introduzo",
+        "insuflo"
+      ],
+      "explanation": "A técnica deve ser narrada na sequência correta."
+    },
+    {
+      "id": "confirmacao",
+      "label": "Confirma com expansibilidade, ausculta e capnografia",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "expansibilidade",
+        "ausculta",
+        "capnografia"
+      ],
+      "explanation": "CO2 expirado contínuo ajuda a confirmar ventilação efetiva."
+    },
+    {
+      "id": "falha",
+      "label": "Prevê ventilação de resgate e via aérea cirúrgica se CICO",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "CICO",
+        "via aérea cirúrgica",
+        "plano de falha"
+      ],
+      "explanation": "A via aérea difícil exige contingência antes de novas tentativas."
+    }
+  ],
+  "referenceAnswer": "Abro a via aérea, aspiro secreções, faço vedação com duas pessoas e ventilo com BVM e oxigênio observando o tórax. Se ineficaz, insiro supraglótico adequado, confirmo expansão, ausculta e capnografia. Se não oxigenar, aciono ajuda e sigo plano CICO.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+    "https://das.uk.com/guidelines/das_intubation_guidelines/"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2022
+  },
+  "criticalErrors": [
+    "Persistir em tentativas de intubação enquanto não é possível oxigenar."
+  ]
+}

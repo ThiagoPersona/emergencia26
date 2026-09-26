@@ -1,0 +1,148 @@
+{
+  "id": "2023-va-bougie",
+  "version": 2,
+  "title": "Intubação difícil com bougie",
+  "examTitle": "Dificuldade durante proteção da via aérea",
+  "domain": "Via aérea e ventilação mecânica",
+  "domains": [
+    "Via aérea",
+    "Procedimentos"
+  ],
+  "family": "Via aérea e ventilação mecânica",
+  "tags": [
+    "via aérea difícil",
+    "bougie",
+    "capnografia"
+  ],
+  "briefing": "Paciente com insuficiência respiratória necessita intubação. Demonstre decisões e técnica quando a visualização glótica é limitada.",
+  "phases": [
+    {
+      "id": "preparo",
+      "title": "Preparação",
+      "prompt": "Antecipe riscos, pré-oxigene e organize plano A, B e C.",
+      "patientState": {
+        "summary": "Adulto com pneumonia grave e hipoxemia. Abertura oral limitada e obesidade dificultam a laringoscopia.",
+        "vitals": {
+          "PA": "108/64 mmHg",
+          "FC": "122 bpm",
+          "SpO2": "89% com máscara"
+        }
+      }
+    },
+    {
+      "id": "primeira",
+      "title": "Visão parcial",
+      "prompt": "Após a primeira tentativa, apenas uma parte posterior da glote é vista. Descreva como usa o introdutor e evita trauma.",
+      "patientState": {
+        "summary": "Ventilação com máscara entre tentativas recupera oxigenação. O campo tem secreção moderada.",
+        "vitals": {
+          "SpO2": "94% com BVM"
+        }
+      }
+    },
+    {
+      "id": "confirmacao",
+      "title": "Após passagem",
+      "prompt": "Como confirma o tubo e qual é o limite para novas tentativas?",
+      "patientState": {
+        "summary": "O tubo foi passado sobre o introdutor; há elevação torácica aparente.",
+        "vitals": {
+          "ETCO2": "a confirmar"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "preparo",
+      "label": "Chama ajuda, avalia via aérea difícil e prepara sucção e resgate",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "chamo ajuda",
+        "sucção",
+        "plano de resgate"
+      ],
+      "explanation": "A falha precisa ser antecipada antes da indução."
+    },
+    {
+      "id": "preox",
+      "label": "Pré-oxigena e monitoriza saturação/hemodinâmica",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "pré-oxigenação",
+        "monitorização"
+      ],
+      "explanation": "Reservas de oxigênio são pequenas no paciente hipoxêmico."
+    },
+    {
+      "id": "bougie",
+      "label": "Usa bougie sob visualização parcial, sem inserção às cegas",
+      "weight": 25,
+      "verification": "hibrido",
+      "critical": true,
+      "expected": [
+        "bougie",
+        "introdutor",
+        "visão glótica parcial"
+      ],
+      "explanation": "O introdutor auxilia quando há alvo glótico visível; avanço forçado lesiona."
+    },
+    {
+      "id": "tubo",
+      "label": "Avança o tubo sobre o bougie e retira o introdutor sem perder posição",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false,
+      "expected": [
+        "tubo sobre bougie",
+        "retiro introdutor"
+      ],
+      "explanation": "A sequência evita deslocamento do tubo."
+    },
+    {
+      "id": "etco2",
+      "label": "Confirma posição por capnografia contínua e exame clínico",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "capnografia",
+        "ETCO2",
+        "ausculta"
+      ],
+      "explanation": "Elevação torácica isolada não confirma localização traqueal."
+    },
+    {
+      "id": "limite",
+      "label": "Limita tentativas e retorna à oxigenação/plano de resgate se falhar",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "limito tentativas",
+        "volto a ventilar",
+        "supraglótico"
+      ],
+      "explanation": "Oxigenação prevalece sobre insistência em intubar."
+    }
+  ],
+  "referenceAnswer": "Peço ajuda, preparo sucção, pré-oxigenação, dispositivos de resgate e monitorização. Com visão parcial da glote, passo o bougie suavemente sob visão, avanço o tubo, retiro o introdutor e confirmo CO2 expirado contínuo. Se falhar, priorizo oxigenação e plano alternativo.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+    "https://das.uk.com/guidelines/das_intubation_guidelines/"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2023
+  },
+  "criticalErrors": [
+    "Avançar o introdutor às cegas ou repetir laringoscopias sem recuperar oxigenação."
+  ]
+}

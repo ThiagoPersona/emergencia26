@@ -1,0 +1,161 @@
+{
+  "id": "2023-ped-tsv",
+  "version": 2,
+  "title": "Taquicardia supraventricular pediátrica",
+  "examTitle": "Criança com taquicardia regular",
+  "domain": "Emergências pediátricas",
+  "domains": [
+    "Pediatria",
+    "Cardiovascular"
+  ],
+  "family": "Pediatria",
+  "tags": [
+    "TSV pediátrica",
+    "adenosina",
+    "cardioversão sincronizada"
+  ],
+  "briefing": "Criança com palpitações e frequência elevada. Conduza avaliação, intervenção e progressão hemodinâmica.",
+  "phases": [
+    {
+      "id": "estavel",
+      "title": "Primeira abordagem",
+      "prompt": "Classifique o ritmo descrito e escolha o tratamento inicial na criança estável.",
+      "patientState": {
+        "summary": "Criança de 8 anos, 25 kg, acordada, taquicardia regular de QRS estreito e início abrupto. Sem ondas P discerníveis no monitor.",
+        "vitals": {
+          "PA": "102/62 mmHg",
+          "FC": "228 bpm",
+          "SpO2": "98%"
+        }
+      }
+    },
+    {
+      "id": "persistencia",
+      "title": "Resposta",
+      "prompt": "Após manobra vagal sem reversão, prescreva a próxima intervenção com dose, via e modo de administração.",
+      "patientState": {
+        "summary": "A criança continua alerta e perfundida. Há acesso venoso periférico.",
+        "vitals": {
+          "PA": "98/60 mmHg",
+          "FC": "226 bpm"
+        }
+      }
+    },
+    {
+      "id": "instabilidade",
+      "title": "Deterioração",
+      "prompt": "A criança fica sonolenta e hipotensa. Qual é a nova prioridade, com energia inicial e plano se falhar?",
+      "patientState": {
+        "summary": "A taquicardia regular de QRS estreito persiste, agora com perfusão ruim.",
+        "vitals": {
+          "PA": "66/38 mmHg",
+          "FC": "234 bpm",
+          "SpO2": "94%"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "ritmo",
+      "label": "Reconhece TSV regular de QRS estreito e avalia estabilidade",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "TSV",
+        "QRS estreito",
+        "estável"
+      ],
+      "explanation": "O estado perfusional define a intervenção."
+    },
+    {
+      "id": "vagal",
+      "label": "Realiza manobra vagal apropriada sem atrasar medidas em instabilidade",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "manobra vagal",
+        "Valsalva modificada"
+      ],
+      "explanation": "Manobra vagal é inicial quando a criança está estável."
+    },
+    {
+      "id": "adenosina",
+      "label": "Prescreve adenosina 0,1 mg/kg IV/IO em bolus rápido (máx. 6 mg)",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "adenosina 0,1 mg/kg",
+        "2,5 mg",
+        "bolus rápido"
+      ],
+      "explanation": "Para 25 kg, a primeira dose é 2,5 mg com flush."
+    },
+    {
+      "id": "repeticao",
+      "label": "Se necessário, repete 0,2 mg/kg (máx. 12 mg)",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "adenosina 0,2 mg/kg",
+        "5 mg"
+      ],
+      "explanation": "Uma segunda dose pode ser usada se não converter."
+    },
+    {
+      "id": "choque",
+      "label": "Na instabilidade, indica cardioversão sincronizada sem atraso",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "cardioversão sincronizada",
+        "choque sincronizado"
+      ],
+      "explanation": "Má perfusão muda o algoritmo imediatamente."
+    },
+    {
+      "id": "energia",
+      "label": "Indica 0,5–1 J/kg inicialmente, escalando para 2 J/kg",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "0,5 a 1 J/kg",
+        "2 J/kg"
+      ],
+      "explanation": "Dose de energia e sincronismo precisam ser claros."
+    },
+    {
+      "id": "reavaliacao",
+      "label": "Reavalia pulso, ritmo e perfusão após intervenção",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "reavalio pulso",
+        "ritmo",
+        "perfusão"
+      ],
+      "explanation": "Confirma resposta e orienta novos passos."
+    }
+  ],
+  "referenceAnswer": "Taquicardia regular estreita de início abrupto sugere TSV. Estável: manobra vagal e, se persistir, adenosina 0,1 mg/kg (2,5 mg para 25 kg) em bolus rápido com flush; segunda dose 0,2 mg/kg (5 mg). Com hipotensão e rebaixamento, cardioversão sincronizada 0,5–1 J/kg e depois 2 J/kg se necessário.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2023
+  },
+  "criticalErrors": [
+    "Atrasar cardioversão sincronizada na criança com taquicardia e sinais de choque."
+  ]
+}

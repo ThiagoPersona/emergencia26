@@ -1,0 +1,147 @@
+{
+  "id": "2024-va-cricotireoidostomia",
+  "version": 2,
+  "title": "Via aérea não oxigenável e cricotireoidostomia",
+  "examTitle": "Perda de oxigenação após falha de via aérea",
+  "domain": "Via aérea e procedimentos",
+  "domains": [
+    "Via aérea",
+    "Procedimentos"
+  ],
+  "family": "Via aérea e ventilação mecânica",
+  "tags": [
+    "CICO",
+    "cricotireoidostomia",
+    "oxigenação"
+  ],
+  "briefing": "Adulto com falha progressiva de oxigenação. Demonstre no manequim a decisão e os passos críticos da via aérea cirúrgica.",
+  "phases": [
+    {
+      "id": "reconhecer",
+      "title": "Decisão",
+      "prompt": "Declare a ameaça, comunique a equipe e diga quando indica via aérea cirúrgica.",
+      "patientState": {
+        "summary": "Paciente com trauma facial grave. Após duas tentativas de IOT, não há ventilação adequada com BVM nem supraglótico.",
+        "vitals": {
+          "SpO2": "68%",
+          "FC": "134 bpm"
+        }
+      }
+    },
+    {
+      "id": "executar",
+      "title": "Procedimento",
+      "prompt": "Narre e demonstre a cricotireoidostomia cirúrgica no manequim.",
+      "patientState": {
+        "summary": "O material de via aérea cirúrgica está pronto. A equipe segue tentando oxigenação de resgate.",
+        "vitals": {
+          "SpO2": "63%"
+        }
+      }
+    },
+    {
+      "id": "confirmar",
+      "title": "Após abertura",
+      "prompt": "Como confirma ventilação e quais complicações precisa vigiar?",
+      "patientState": {
+        "summary": "A cânula foi introduzida e conectada ao circuito.",
+        "vitals": {
+          "ETCO2": "ainda não confirmado"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "cico",
+      "label": "Declara CICO e aciona ajuda imediatamente",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "não intubo não oxigeno",
+        "CICO",
+        "ajuda"
+      ],
+      "explanation": "Persistir em intubação sem oxigenação aumenta o risco de parada."
+    },
+    {
+      "id": "anatomia",
+      "label": "Identifica membrana cricotireóidea e estabiliza laringe",
+      "weight": 15,
+      "verification": "hibrido",
+      "critical": false,
+      "expected": [
+        "membrana cricotireóidea",
+        "estabilizo laringe"
+      ],
+      "explanation": "O marco anatômico correto evita falso trajeto."
+    },
+    {
+      "id": "incisao",
+      "label": "Faz incisão vertical cutânea e abre membrana no manequim",
+      "weight": 20,
+      "verification": "manual",
+      "critical": true,
+      "expected": [
+        "incisão vertical",
+        "membrana cricotireóidea"
+      ],
+      "explanation": "A abertura deve atingir a via aérea rapidamente."
+    },
+    {
+      "id": "tubo",
+      "label": "Introduz bougie ou cânula e avança tubo de calibre adequado",
+      "weight": 20,
+      "verification": "hibrido",
+      "critical": true,
+      "expected": [
+        "bougie",
+        "cânula",
+        "tubo"
+      ],
+      "explanation": "A via de acesso precisa ser mantida até a ventilação."
+    },
+    {
+      "id": "confirmacao",
+      "label": "Ventila e confirma com CO2 expirado contínuo",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "ventilo",
+        "capnografia",
+        "CO2 expirado"
+      ],
+      "explanation": "O acesso só é bem-sucedido se há ventilação efetiva."
+    },
+    {
+      "id": "seguranca",
+      "label": "Fixa dispositivo, vigia sangramento/falso trajeto e planeja via aérea definitiva",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "fixo tubo",
+        "sangramento",
+        "falso trajeto"
+      ],
+      "explanation": "Após salvar oxigenação, o dispositivo precisa de vigilância."
+    }
+  ],
+  "referenceAnswer": "Declaro CICO, peço ajuda e continuo oxigenação de resgate. Palpo a membrana, estabilizo laringe, faço incisão cutânea vertical e abertura da membrana, passo bougie/tubo ou cânula segundo material disponível, ventilo e confirmo capnografia. Fixo e vigio complicações.",
+  "references": [
+    "https://das.uk.com/guidelines/das_intubation_guidelines/",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2024
+  },
+  "criticalErrors": [
+    "Não reconhecer situação CICO e insistir em tentativas sem oxigenação."
+  ]
+}

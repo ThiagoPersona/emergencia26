@@ -1,0 +1,167 @@
+{
+  "id": "2023-clinico-sepse-cad",
+  "version": 2,
+  "title": "Infecção grave com cetoacidose e hipocalemia",
+  "examTitle": "Febre, desidratação e hipoperfusão",
+  "domain": "Respiratório, sepse e metabólico",
+  "domains": [
+    "Sepse",
+    "Metabólico"
+  ],
+  "family": "Respiratório, sepse e metabólico",
+  "tags": [
+    "sepse",
+    "cetoacidose",
+    "potássio",
+    "insulina"
+  ],
+  "briefing": "Paciente diabético febril chega hipotenso e com respiração profunda. Integre os dois problemas e priorize medidas seguras.",
+  "phases": [
+    {
+      "id": "inicio",
+      "title": "Primeira hora",
+      "prompt": "Que medidas toma imediatamente e quais exames determinam a conduta?",
+      "patientState": {
+        "summary": "Mulher de 34 anos com febre, vômitos e respiração profunda. Foco urinário suspeito e extremidades frias.",
+        "vitals": {
+          "PA": "84/50 mmHg",
+          "FC": "128 bpm",
+          "FR": "30 irpm",
+          "Glicemia": "410 mg/dL"
+        }
+      }
+    },
+    {
+      "id": "laboratorio",
+      "title": "Resultados",
+      "prompt": "Interprete a acidose e o potássio; diga a sequência de reposição e insulina.",
+      "patientState": {
+        "summary": "Resultados laboratoriais são liberados.",
+        "vitals": {
+          "pH": "7,14",
+          "HCO3": "9 mmol/L",
+          "Cetonemia": "5,2 mmol/L",
+          "K": "3,1 mmol/L"
+        }
+      }
+    },
+    {
+      "id": "choque",
+      "title": "Persistência",
+      "prompt": "Se a perfusão continuar inadequada após reposição inicial guiada, qual o próximo passo?",
+      "patientState": {
+        "summary": "Antibiótico foi iniciado. Após fluido inicial, mantém PAM abaixo do alvo.",
+        "vitals": {
+          "PA": "82/48 mmHg",
+          "Lactato": "4,2 mmol/L"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "suporte",
+      "label": "Monitora, obtém acessos e inicia cristaloide com reavaliação",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "monitorização",
+        "acesso venoso",
+        "cristaloide"
+      ],
+      "explanation": "Trata hipoperfusão enquanto esclarece a causa."
+    },
+    {
+      "id": "sepse",
+      "label": "Coleta culturas sem atrasar antibiótico empírico precoce",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "culturas",
+        "antibiótico",
+        "sepse"
+      ],
+      "explanation": "Infecção e choque exigem antimicrobiano precoce."
+    },
+    {
+      "id": "cad",
+      "label": "Reconhece cetoacidose diabética pela cetonemia e acidose",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "cetoacidose diabética",
+        "CAD"
+      ],
+      "explanation": "Hiperglicemia, cetose e acidose sustentam CAD."
+    },
+    {
+      "id": "potassio",
+      "label": "Repõe potássio e adia insulina até K acima de 3,5 mmol/L",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "reponho potássio",
+        "adiar insulina",
+        "K acima de 3,5"
+      ],
+      "explanation": "Insulina com K 3,1 pode precipitar arritmia grave."
+    },
+    {
+      "id": "insulina",
+      "label": "Planeja insulina IV após corrigir K e monitoriza glicose/ânion gap",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "insulina após potássio",
+        "monitoro glicemia",
+        "ânion gap"
+      ],
+      "explanation": "A correção da cetose requer insulina quando segura."
+    },
+    {
+      "id": "vasopressor",
+      "label": "Inicia noradrenalina se hipotensão persistir após fluido guiado",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "noradrenalina",
+        "vasopressor"
+      ],
+      "explanation": "Vasopressor mantém perfusão no choque refratário."
+    },
+    {
+      "id": "reavaliacao",
+      "label": "Reavalia perfusão, eletrólitos e resposta ao foco infeccioso",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "reavalio perfusão",
+        "eletrólitos",
+        "foco"
+      ],
+      "explanation": "CAD e sepse evoluem em paralelo."
+    }
+  ],
+  "referenceAnswer": "Reconheço sepse com hipoperfusão e CAD. Inicio acesso, cristaloide guiado, culturas sem atrasar antibiótico. Com K 3,1, reponho potássio e adio insulina até potássio superior a 3,5 mmol/L; depois inicio insulina e monitoro glicose e cetose. Se PAM persistir baixa, noradrenalina; trato o foco.",
+  "references": [
+    "https://sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines",
+    "https://diabetesjournals.org/care/article/47/8/1257/156114/Hyperglycemic-Crises-in-Adults-With-Diabetes-A"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2023
+  },
+  "criticalErrors": [
+    "Iniciar insulina com potássio de 3,1 mmol/L antes de repor potássio."
+  ]
+}

@@ -1,5 +1,19 @@
 [
   {
+    "id": "us-ve-hipertrofia",
+    "type": "image",
+    "src": "assets/praticas/pocus/us-ve-hipertrofia.jpg",
+    "thumbnail": "assets/praticas/pocus/us-ve-hipertrofia.jpg",
+    "examAlt": "Ecocardiografia estática para avaliar espessura das paredes do ventrículo esquerdo; registro de outra pessoa.",
+    "reviewAlt": "Ecocardiografia com hipertrofia das paredes do ventrículo esquerdo.",
+    "reviewCaption": "A imagem demonstra espessamento do ventrículo esquerdo, mas não permite concluir função sistólica por ser estática.",
+    "credit": "Hugovillarroelabrego, Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:FIGURA_10.jpg",
+    "license": "Domínio público",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:FIGURA_10.jpg",
+    "modified": "2026-09-26"
+  },
+  {
     "id": "us-mcconnell-amostra",
     "type": "video",
     "src": "assets/praticas/pocus/us-mcconnell-amostra.mp4",

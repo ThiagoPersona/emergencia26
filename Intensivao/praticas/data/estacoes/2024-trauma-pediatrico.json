@@ -1,0 +1,232 @@
+{
+  "id": "2024-trauma-pediatrico",
+  "version": 2,
+  "title": "Trauma pediátrico com deterioração e hemorragia",
+  "examTitle": "Criança após colisão rodoviária",
+  "domain": "Trauma pediátrico",
+  "domains": [
+    "Trauma",
+    "Pediatria"
+  ],
+  "family": "Trauma e APH",
+  "tags": [
+    "PECARN",
+    "cervical",
+    "intubação pediátrica",
+    "hemácias",
+    "eFAST"
+  ],
+  "briefing": "Criança de 6 anos após colisão. Responda às decisões de imagem, via aérea, ressuscitação e limitações do eFAST.",
+  "phases": [
+    {
+      "id": "imagem",
+      "title": "Tarefa 1: imagem",
+      "prompt": "Indique avaliação por imagem de crânio e coluna cervical, métodos e regra de decisão craniana.",
+      "patientState": {
+        "summary": "Criança de 6 anos, 20 kg, acordada. Colisão de alta energia; há hemotímpano e dor cervical mediana. Inicialmente estável.",
+        "vitals": {
+          "PA": "102/64 mmHg",
+          "FC": "118 bpm",
+          "GCS": "15"
+        }
+      }
+    },
+    {
+      "id": "deterioracao",
+      "title": "Tarefa 2: intervenção",
+      "prompt": "O estado piora. Qual tamanho do tubo solicitado nesta estação e qual dose inicial de concentrado de hemácias?",
+      "patientState": {
+        "summary": "Durante observação, sonolência progressiva, proteção de via aérea inadequada e sinais de hipoperfusão. Será usado tubo sem cuff.",
+        "vitals": {
+          "GCS": "8",
+          "PA": "76/42 mmHg",
+          "FC": "148 bpm",
+          "Peso": "20 kg"
+        }
+      }
+    },
+    {
+      "id": "fast",
+      "title": "Tarefa 3: interpretação",
+      "prompt": "O eFAST não mostra líquido livre. Compare sua sensibilidade na criança e enumere os locais de sangramento que ainda precisam ser examinados.",
+      "patientState": {
+        "summary": "Após suporte inicial, mantém palidez e perfusão periférica ruim. O eFAST inicial não mostra líquido livre.",
+        "vitals": {
+          "PA": "80/44 mmHg",
+          "FC": "142 bpm"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "imagem-cranio",
+      "label": "Indicou a realização de exame de imagem de crânio",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "imagem de crânio",
+        "tomografia de crânio"
+      ],
+      "explanation": "O hemotímpano exige investigação intracraniana.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "tc-cranio",
+      "label": "Indicou realização de tomografia de crânio como método de escolha",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "tomografia de crânio",
+        "TC de crânio"
+      ],
+      "explanation": "A tomografia avalia lesão aguda de crânio.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "pecarn",
+      "label": "Citou o PECARN como escore de escolha",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "PECARN"
+      ],
+      "explanation": "O checklist de 2024 exigia o nome específico do escore.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "imagem-cervical",
+      "label": "Indicou a realização de exame de imagem cervical",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "imagem cervical",
+        "exame da coluna cervical"
+      ],
+      "explanation": "Dor cervical mediana requer avaliação dirigida.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "rx-cervical",
+      "label": "Indicou realização de radiografia de cervical",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "radiografia cervical",
+        "raio X de cervical"
+      ],
+      "explanation": "Item da folha original; neste caso inicialmente estável, a radiografia é escolha plausível.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "tot-55",
+      "label": "Respondeu tamanho do TOT 5,5",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "tubo 5,5",
+        "TOT 5,5"
+      ],
+      "explanation": "Para 6 anos, a fórmula de tubo sem cuff resulta em 5,5.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "hemacias",
+      "label": "Respondeu 10 mL/kg de concentrado de hemácias",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "10 mL/kg",
+        "200 mL de hemácias"
+      ],
+      "explanation": "A dose pedida equivale a 200 mL para 20 kg.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "sensibilidade",
+      "label": "Respondeu menor sensibilidade do FAST na criança",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "menor sensibilidade",
+        "FAST menos sensível em criança"
+      ],
+      "explanation": "eFAST negativo não exclui lesão ou hemorragia.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "abdome",
+      "label": "Citou abdome como local de sangramento",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "abdome"
+      ],
+      "explanation": "Pode haver sangramento intra-abdominal mesmo com exame inicial negativo.",
+      "officialPoints": 0.1
+    },
+    {
+      "id": "pelve",
+      "label": "Citou pelve como local de sangramento",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "pelve"
+      ],
+      "explanation": "Fraturas pélvicas podem sangrar.",
+      "officialPoints": 0.1
+    },
+    {
+      "id": "retroperitonio",
+      "label": "Citou retroperitônio como local de sangramento",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "retroperitônio"
+      ],
+      "explanation": "Sangramento retroperitoneal não é bem excluído pelo FAST.",
+      "officialPoints": 0.1
+    },
+    {
+      "id": "membros",
+      "label": "Citou membros ou sangramento externo como local de sangramento",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "membros",
+        "sangramento externo"
+      ],
+      "explanation": "Inspecionar membros e superfícies externas completa a busca.",
+      "officialPoints": 0.1
+    }
+  ],
+  "referenceAnswer": "Na fase estável, indico TC de crânio e cito PECARN; avalio cervical e solicito radiografia cervical conforme o checklist original de 2024. Com rebaixamento, preparo TOT sem cuff 5,5 para 6 anos e 10 mL/kg de hemácias (200 mL). eFAST negativo tem menor sensibilidade na criança; busco sangramento em abdome, pelve, retroperitônio e membros/externo. A decisão real de imagem cervical deve considerar risco, exame e protocolo atual.",
+  "references": [
+    "https://www.pecarn.org/studyDatasets/documents/Kuppermann_2009_The-Lancet_000.pdf",
+    "https://www.facs.org/quality-programs/qi-resources/case-studies/implementation-of-pediatric-trauma-cervical-spine-clearance-pathway/"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "acervo_reescrito",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Folha de Avaliação TEME 2024",
+    "year": 2024,
+    "checklistOriginal": "TEME24/Estação I - 24.txt",
+    "scoring": "Pontos oficiais multiplicados por 50 para escala de 100"
+  },
+  "criticalErrors": [
+    "Considerar eFAST negativo suficiente para excluir hemorragia em criança instável."
+  ]
+}

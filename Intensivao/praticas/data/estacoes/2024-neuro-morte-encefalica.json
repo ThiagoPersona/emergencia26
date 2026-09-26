@@ -1,0 +1,163 @@
+{
+  "id": "2024-neuro-morte-encefalica",
+  "version": 2,
+  "title": "Protocolo brasileiro de determinação de morte encefálica",
+  "examTitle": "Coma profundo após lesão encefálica",
+  "domain": "Emergências neurológicas",
+  "domains": [
+    "Neurologia",
+    "Reanimação"
+  ],
+  "family": "Neurologia",
+  "tags": [
+    "morte encefálica",
+    "pré-requisitos",
+    "teste de apneia",
+    "CFM"
+  ],
+  "briefing": "Paciente adulto com lesão encefálica devastadora. Explique os passos exigidos no Brasil antes de concluir qualquer diagnóstico.",
+  "phases": [
+    {
+      "id": "preparar",
+      "title": "Pré-requisitos",
+      "prompt": "Quais condições devem ser verificadas antes de abrir o protocolo?",
+      "patientState": {
+        "summary": "Adulto com lesão intracraniana estrutural grave conhecida, em ventilação invasiva. Sedação foi suspensa recentemente.",
+        "vitals": {
+          "Temperatura": "34,8 °C",
+          "PA": "92/54 mmHg",
+          "SpO2": "96%"
+        }
+      }
+    },
+    {
+      "id": "corrigido",
+      "title": "Avaliação clínica",
+      "prompt": "Após correção de temperatura/pressão e exclusão de sedação residual, descreva a sequência formal de avaliação.",
+      "patientState": {
+        "summary": "Horas depois, normotermia e estabilidade hemodinâmica; equipe treinada assume avaliação.",
+        "vitals": {
+          "Temperatura": "36,4 °C",
+          "PA": "116/70 mmHg",
+          "SpO2": "98%"
+        }
+      }
+    },
+    {
+      "id": "concluir",
+      "title": "Documentação",
+      "prompt": "Quais exames, teste e profissionais ainda são necessários antes de registrar a determinação?",
+      "patientState": {
+        "summary": "No primeiro exame, não há reflexos do tronco nem resposta motora supraespinhal; o processo ainda não terminou.",
+        "vitals": {
+          "PaCO2 basal": "39 mmHg"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "irreversivel",
+      "label": "Confirma lesão encefálica conhecida e irreversível",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "causa conhecida",
+        "irreversível"
+      ],
+      "explanation": "Sem causa definida não se inicia determinação."
+    },
+    {
+      "id": "confundidores",
+      "label": "Exclui sedativos, bloqueio neuromuscular e distúrbios reversíveis",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "sedação",
+        "bloqueador neuromuscular",
+        "distúrbio metabólico"
+      ],
+      "explanation": "Confundidores podem simular ausência de resposta."
+    },
+    {
+      "id": "estabilidade",
+      "label": "Corrige hipotermia e hipotensão antes do protocolo",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "temperatura acima de 35",
+        "pressão sistólica pelo menos 100",
+        "estabilidade"
+      ],
+      "explanation": "No caso inicial, temperatura e pressão ainda não atendem aos pré-requisitos."
+    },
+    {
+      "id": "exames",
+      "label": "Solicita dois exames clínicos por médicos capacitados diferentes",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "dois exames clínicos",
+        "médicos diferentes"
+      ],
+      "explanation": "A resolução brasileira exige duas avaliações clínicas independentes."
+    },
+    {
+      "id": "reflexos",
+      "label": "Pesquisa coma não perceptivo e ausência de reflexos de tronco",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "coma não perceptivo",
+        "reflexo pupilar",
+        "corneano",
+        "tosse"
+      ],
+      "explanation": "O exame do tronco precisa ser documentado."
+    },
+    {
+      "id": "apneia",
+      "label": "Planeja um teste de apneia com segurança e gasometrias",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "teste de apneia",
+        "gasometria"
+      ],
+      "explanation": "O teste precisa demonstrar ausência de movimentos sob estímulo adequado."
+    },
+    {
+      "id": "complementar",
+      "label": "Solicita exame complementar validado e documenta protocolo",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "exame complementar",
+        "documentação"
+      ],
+      "explanation": "No Brasil o exame complementar é obrigatório."
+    }
+  ],
+  "referenceAnswer": "Ainda não inicio o protocolo na primeira fase: há hipotermia, hipotensão e sedação recente. Confirmo lesão irreversível e excluo confundidores. Após correção, dois médicos capacitados diferentes documentam exames clínicos, um teste de apneia seguro e um exame complementar conforme a Resolução CFM 2.173/2017.",
+  "references": [
+    "https://portal.cfm.org.br/noticias/resolucao-da-morte-encefalica-e-publicada-no-diario-oficial",
+    "https://portal.cfm.org.br/artigos/determinacao-de-morte-encefalica-uma-analise-de-sete-meses-de-vigencia/"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2024
+  },
+  "criticalErrors": [
+    "Abrir protocolo de morte encefálica sem corrigir hipotermia, hipotensão ou excluir sedação residual."
+  ]
+}

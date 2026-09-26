@@ -1,0 +1,163 @@
+{
+  "id": "2023-trauma-multiplas-vitimas",
+  "version": 2,
+  "title": "Incidente com múltiplas vítimas e triagem inicial",
+  "examTitle": "Acidente rodoviário com várias vítimas",
+  "domain": "Trauma e APH",
+  "domains": [
+    "Trauma",
+    "APH",
+    "Gestão"
+  ],
+  "family": "Trauma e APH",
+  "tags": [
+    "triagem",
+    "incidente com múltiplas vítimas",
+    "START"
+  ],
+  "briefing": "Você é o primeiro emergencista em um acidente com várias vítimas. Demonstre a sequência de comando e triagem rápida.",
+  "phases": [
+    {
+      "id": "cena",
+      "title": "Segurança e organização",
+      "prompt": "Qual sua primeira ação e como solicita recursos e organiza a triagem?",
+      "patientState": {
+        "summary": "Ônibus atingiu dois automóveis. Há fumaça, trânsito ativo e várias pessoas solicitando ajuda.",
+        "vitals": {
+          "Equipes": "1 equipe inicial",
+          "Vítimas": "número ainda incerto"
+        }
+      }
+    },
+    {
+      "id": "vitimas",
+      "title": "Triagem rápida",
+      "prompt": "Classifique as vítimas A, B e C e justifique com os dados apresentados.",
+      "patientState": {
+        "summary": "A: deambula e obedece comandos. B: não deambula, FR 36/min, pulso radial presente. C: não respira mesmo após abertura da via aérea.",
+        "vitals": {
+          "A": "deambula",
+          "B": "FR 36/min",
+          "C": "apneia persistente"
+        }
+      }
+    },
+    {
+      "id": "destino",
+      "title": "Reavaliação e remoção",
+      "prompt": "Defina prioridade de transporte e como evita perder a visão global da cena.",
+      "patientState": {
+        "summary": "Equipe de reforço chegou; a vítima B permanece taquipneica e outras vítimas aguardam avaliação.",
+        "vitals": {
+          "Ambulâncias": "3 disponíveis"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "seguranca",
+      "label": "Avalia segurança da cena e usa EPI antes de entrar",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "segurança da cena",
+        "EPI",
+        "trânsito"
+      ],
+      "explanation": "Uma equipe ferida reduz a capacidade de resposta."
+    },
+    {
+      "id": "comando",
+      "label": "Assume comando inicial, estima vítimas e pede recursos",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "comando",
+        "recursos adicionais",
+        "número de vítimas"
+      ],
+      "explanation": "A triagem exige organização simultânea."
+    },
+    {
+      "id": "metodo",
+      "label": "Usa triagem primária rápida e convoca deambulantes",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "START",
+        "deambulantes",
+        "triagem primária"
+      ],
+      "explanation": "A separação inicial permite priorizar quem não anda."
+    },
+    {
+      "id": "a-verde",
+      "label": "Classifica A como prioridade baixa/verde provisória",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "A verde",
+        "prioridade baixa"
+      ],
+      "explanation": "Deambular permite classificação inicial, sujeita a reavaliação."
+    },
+    {
+      "id": "b-vermelho",
+      "label": "Classifica B como vermelho por FR maior que 30",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "B vermelho",
+        "FR 36",
+        "imediato"
+      ],
+      "explanation": "Taquipneia extrema é critério de prioridade imediata."
+    },
+    {
+      "id": "c-preto",
+      "label": "Classifica C como preto/óbito após abertura de via aérea sem respiração",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "C preto",
+        "apneia após abrir via aérea"
+      ],
+      "explanation": "A classificação segue o achado após manobra simples."
+    },
+    {
+      "id": "reavaliacao",
+      "label": "Prioriza transporte do vermelho e reavalia todos na zona segura",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "transporte do vermelho",
+        "retriagem",
+        "zona segura"
+      ],
+      "explanation": "Classificação pode mudar com o tempo."
+    }
+  ],
+  "referenceAnswer": "Garanto cena segura, EPI, comando e reforços. Aplico triagem rápida: A deambula, verde provisório; B não deambula e respira 36/min, vermelho; C segue apneico após abertura de via aérea, preto no protocolo adulto. Removo prioritariamente B e reavalio os demais.",
+  "references": [
+    "https://www.who.int/publications/i/item/9789240017492",
+    "https://www.facs.org/quality-programs/trauma/"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2023
+  },
+  "criticalErrors": [
+    "Entrar em cena insegura ou deixar de priorizar vítima vermelha."
+  ]
+}

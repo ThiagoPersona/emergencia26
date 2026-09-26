@@ -40,7 +40,7 @@ flowchart LR
 
 ## Banco de estações
 
-O simulador reúne **30 estações v2**: cinco estações históricas de 2025, reconstruídas em formato de treino, e 25 estações inéditas. Todas têm cinco minutos, fases progressivas, checklist observável de 100 pontos e correção ao final.
+O simulador reúne **77 estações v2**: seis simulados de treino, cinco estações históricas de 2025, quinze cenários para as provas de 2022 a 2024 e outros casos de prática. Todas têm cinco minutos, fases progressivas, checklist observável de 100 pontos e correção ao final.
 
 As cinco reconstruções históricas cobrem:
 
@@ -50,12 +50,12 @@ As cinco reconstruções históricas cobrem:
 - síndrome colinérgica pediátrica;
 - TCE grave e hipertensão intracraniana.
 
-Os checklists históricos foram estruturados a partir das provas locais. As respostas de referência foram reescritas e atualizadas; quando o documento antigo apresenta formulação insegura ou ambígua, o material conserva a habilidade cobrada e explicita a conduta clínica adequada.
+Os checklists históricos de 2025 já presentes no banco foram mantidos. As folhas disponíveis de 2024, trauma pediátrico e POCUS, foram reproduzidas item a item, preservando as pontuações originais de 0,1/0,2/0,4 ponto por meio de conversão proporcional para 100 pontos. Os casos e checklists dos demais temas de 2022 a 2024 são **reconstruções autorais para treino**, não reproduções de estações oficiais. As respostas de referência são educativas e devem ser confrontadas com protocolos atuais.
 
 ## Modos do simulador
 
-- **Modo prova:** sorteia uma estação do banco, evita repetição no ciclo atual e mantém metadados diagnósticos ocultos antes do início.
-- **Treino dirigido:** permite filtrar por domínio, dificuldade, competência, mídia disponível e tentativas ainda não realizadas antes de sortear a estação.
+- **Modo prova:** permite escolher os simulados 1 a 6 ou as provas TEME 2022 a 2025, cada qual com cinco estações fixas e nota final própria; os detalhes diagnósticos permanecem ocultos antes do início.
+- **Treino dirigido:** permite escolher diretamente um cenário, ver a última nota concluída e refazê-lo.
 - **Revisão:** usa o histórico local para recomendar estações relacionadas a itens ausentes ou incorretos; sem lacunas registradas, prioriza as menos realizadas.
 
 ## Trilhas

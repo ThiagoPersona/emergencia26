@@ -1353,5 +1353,347 @@
     "domain": "Toxicologia e animais peçonhentos", "domains": ["Toxicologia", "Cardiovascular e PCR"], "family": "Toxicologia e animais peçonhentos",
     "difficulty": "avancada", "origin": "acervo_reescrito", "tags": ["tricíclico", "QRS", "bicarbonato", "convulsões", "choque"],
     "hasMedia": true, "trainingSimulado": 6
+  },
+  {
+    "id": "2022-va-bvm-supraglotico",
+    "file": "2022-va-bvm-supraglotico.json",
+    "schemaVersion": 2,
+    "examTitle": "Paciente com ventilação ineficaz",
+    "title": "Falha ventilatória e resgate com supraglótico",
+    "domain": "Via aérea e ventilação mecânica",
+    "domains": [
+      "Via aérea",
+      "Reanimação"
+    ],
+    "family": "Via aérea e ventilação mecânica",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "bolsa-válvula-máscara",
+      "supraglótico",
+      "capnografia"
+    ],
+    "hasMedia": false,
+    "year": 2022
+  },
+  {
+    "id": "2022-trauma-choque-fast",
+    "file": "2022-trauma-choque-fast.json",
+    "schemaVersion": 2,
+    "examTitle": "Vítima de colisão com instabilidade",
+    "title": "Trauma com choque e localização da hemorragia",
+    "domain": "Trauma e controle de danos",
+    "domains": [
+      "Trauma",
+      "Reanimação"
+    ],
+    "family": "Trauma e APH",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "XABCDE",
+      "hemorragia",
+      "eFAST",
+      "controle de danos"
+    ],
+    "hasMedia": true,
+    "year": 2022
+  },
+  {
+    "id": "2022-pocus-tamponamento",
+    "file": "2022-pocus-tamponamento.json",
+    "schemaVersion": 2,
+    "examTitle": "Hipotensão após trauma torácico",
+    "title": "POCUS no choque obstrutivo",
+    "domain": "POCUS",
+    "domains": [
+      "POCUS",
+      "Choque"
+    ],
+    "family": "POCUS",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "janela cardíaca",
+      "tamponamento",
+      "colapso diastólico"
+    ],
+    "hasMedia": true,
+    "year": 2022
+  },
+  {
+    "id": "2022-pcr-causa-reversivel",
+    "file": "2022-pcr-causa-reversivel.json",
+    "schemaVersion": 2,
+    "examTitle": "Colapso durante observação",
+    "title": "PCR em AESP com causa reversível",
+    "domain": "Reanimação cardiovascular",
+    "domains": [
+      "PCR",
+      "POCUS"
+    ],
+    "family": "Cardiovascular e PCR",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "AESP",
+      "RCP",
+      "tamponamento",
+      "causas reversíveis"
+    ],
+    "hasMedia": true,
+    "year": 2022
+  },
+  {
+    "id": "2022-clinico-choque-cardiogenico",
+    "file": "2022-clinico-choque-cardiogenico.json",
+    "schemaVersion": 2,
+    "examTitle": "Dor torácica, hipotensão e extremidades frias",
+    "title": "Choque cardiogênico com infarto inferior",
+    "domain": "Emergências cardiovasculares",
+    "domains": [
+      "Cardiovascular",
+      "Choque"
+    ],
+    "family": "Cardiovascular e PCR",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "ECG",
+      "infarto inferior",
+      "ventrículo direito",
+      "choque"
+    ],
+    "hasMedia": true,
+    "year": 2022
+  },
+  {
+    "id": "2023-va-bougie",
+    "file": "2023-va-bougie.json",
+    "schemaVersion": 2,
+    "examTitle": "Dificuldade durante proteção da via aérea",
+    "title": "Intubação difícil com bougie",
+    "domain": "Via aérea e ventilação mecânica",
+    "domains": [
+      "Via aérea",
+      "Procedimentos"
+    ],
+    "family": "Via aérea e ventilação mecânica",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "via aérea difícil",
+      "bougie",
+      "capnografia"
+    ],
+    "hasMedia": false,
+    "year": 2023
+  },
+  {
+    "id": "2023-trauma-multiplas-vitimas",
+    "file": "2023-trauma-multiplas-vitimas.json",
+    "schemaVersion": 2,
+    "examTitle": "Acidente rodoviário com várias vítimas",
+    "title": "Incidente com múltiplas vítimas e triagem inicial",
+    "domain": "Trauma e APH",
+    "domains": [
+      "Trauma",
+      "APH",
+      "Gestão"
+    ],
+    "family": "Trauma e APH",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "triagem",
+      "incidente com múltiplas vítimas",
+      "START"
+    ],
+    "hasMedia": false,
+    "year": 2023
+  },
+  {
+    "id": "2023-pocus-blue-dispneia",
+    "file": "2023-pocus-blue-dispneia.json",
+    "schemaVersion": 2,
+    "examTitle": "Dispneia súbita em paciente hipertenso",
+    "title": "Protocolo BLUE na dispneia aguda",
+    "domain": "POCUS",
+    "domains": [
+      "POCUS",
+      "Respiratório"
+    ],
+    "family": "POCUS",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "BLUE",
+      "linhas B",
+      "lung sliding",
+      "edema pulmonar"
+    ],
+    "hasMedia": true,
+    "year": 2023
+  },
+  {
+    "id": "2023-ped-tsv",
+    "file": "2023-ped-tsv.json",
+    "schemaVersion": 2,
+    "examTitle": "Criança com taquicardia regular",
+    "title": "Taquicardia supraventricular pediátrica",
+    "domain": "Emergências pediátricas",
+    "domains": [
+      "Pediatria",
+      "Cardiovascular"
+    ],
+    "family": "Pediatria",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "TSV pediátrica",
+      "adenosina",
+      "cardioversão sincronizada"
+    ],
+    "hasMedia": false,
+    "year": 2023
+  },
+  {
+    "id": "2023-clinico-sepse-cad",
+    "file": "2023-clinico-sepse-cad.json",
+    "schemaVersion": 2,
+    "examTitle": "Febre, desidratação e hipoperfusão",
+    "title": "Infecção grave com cetoacidose e hipocalemia",
+    "domain": "Respiratório, sepse e metabólico",
+    "domains": [
+      "Sepse",
+      "Metabólico"
+    ],
+    "family": "Respiratório, sepse e metabólico",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "sepse",
+      "cetoacidose",
+      "potássio",
+      "insulina"
+    ],
+    "hasMedia": false,
+    "year": 2023
+  },
+  {
+    "id": "2024-trauma-pediatrico",
+    "file": "2024-trauma-pediatrico.json",
+    "schemaVersion": 2,
+    "examTitle": "Criança após colisão rodoviária",
+    "title": "Trauma pediátrico com deterioração e hemorragia",
+    "domain": "Trauma pediátrico",
+    "domains": [
+      "Trauma",
+      "Pediatria"
+    ],
+    "family": "Trauma e APH",
+    "difficulty": "intermediaria",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "PECARN",
+      "cervical",
+      "intubação pediátrica",
+      "hemácias",
+      "eFAST"
+    ],
+    "hasMedia": false,
+    "year": 2024
+  },
+  {
+    "id": "2024-va-cricotireoidostomia",
+    "file": "2024-va-cricotireoidostomia.json",
+    "schemaVersion": 2,
+    "examTitle": "Perda de oxigenação após falha de via aérea",
+    "title": "Via aérea não oxigenável e cricotireoidostomia",
+    "domain": "Via aérea e procedimentos",
+    "domains": [
+      "Via aérea",
+      "Procedimentos"
+    ],
+    "family": "Via aérea e ventilação mecânica",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "CICO",
+      "cricotireoidostomia",
+      "oxigenação"
+    ],
+    "hasMedia": false,
+    "year": 2024
+  },
+  {
+    "id": "2024-pocus-scape",
+    "file": "2024-pocus-scape.json",
+    "schemaVersion": 2,
+    "examTitle": "Dispneia intensa com pressão elevada",
+    "title": "POCUS cardiopulmonar em edema hipertensivo",
+    "domain": "POCUS",
+    "domains": [
+      "POCUS",
+      "Cardiovascular",
+      "Respiratório"
+    ],
+    "family": "POCUS",
+    "difficulty": "intermediaria",
+    "origin": "acervo_reescrito",
+    "tags": [
+      "SCAPE",
+      "VE preservado",
+      "hipertrofia ventricular",
+      "linhas B"
+    ],
+    "hasMedia": true,
+    "year": 2024
+  },
+  {
+    "id": "2024-cardio-bavt-fv",
+    "file": "2024-cardio-bavt-fv.json",
+    "schemaVersion": 2,
+    "examTitle": "Dor torácica e pulso lento",
+    "title": "Bradicardia instável com evolução para arritmia",
+    "domain": "Emergências cardiovasculares",
+    "domains": [
+      "Cardiovascular",
+      "PCR"
+    ],
+    "family": "Cardiovascular e PCR",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "BAVT",
+      "marcapasso transcutâneo",
+      "IAM inferior",
+      "FV"
+    ],
+    "hasMedia": true,
+    "year": 2024
+  },
+  {
+    "id": "2024-neuro-morte-encefalica",
+    "file": "2024-neuro-morte-encefalica.json",
+    "schemaVersion": 2,
+    "examTitle": "Coma profundo após lesão encefálica",
+    "title": "Protocolo brasileiro de determinação de morte encefálica",
+    "domain": "Emergências neurológicas",
+    "domains": [
+      "Neurologia",
+      "Reanimação"
+    ],
+    "family": "Neurologia",
+    "difficulty": "intermediaria",
+    "origin": "inedita",
+    "tags": [
+      "morte encefálica",
+      "pré-requisitos",
+      "teste de apneia",
+      "CFM"
+    ],
+    "hasMedia": false,
+    "year": 2024
   }
 ]

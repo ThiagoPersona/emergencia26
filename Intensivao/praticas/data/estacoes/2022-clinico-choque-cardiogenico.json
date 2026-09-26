@@ -1,0 +1,154 @@
+{
+  "id": "2022-clinico-choque-cardiogenico",
+  "version": 2,
+  "title": "Choque cardiogênico com infarto inferior",
+  "examTitle": "Dor torácica, hipotensão e extremidades frias",
+  "domain": "Emergências cardiovasculares",
+  "domains": [
+    "Cardiovascular",
+    "Choque"
+  ],
+  "family": "Cardiovascular e PCR",
+  "tags": [
+    "ECG",
+    "infarto inferior",
+    "ventrículo direito",
+    "choque"
+  ],
+  "briefing": "Paciente com dor torácica e hipotensão. Interprete os dados progressivos e conduza as primeiras decisões.",
+  "phases": [
+    {
+      "id": "inicial",
+      "title": "Abordagem",
+      "prompt": "Avalie o choque e solicite o exame prioritário.",
+      "patientState": {
+        "summary": "Homem de 61 anos com dor torácica há 50 minutos, sudorese, turgência jugular e pulmões sem estertores.",
+        "vitals": {
+          "PA": "78/52 mmHg",
+          "FC": "58 bpm",
+          "SpO2": "95%"
+        }
+      }
+    },
+    {
+      "id": "ecg",
+      "title": "Exame apresentado",
+      "prompt": "Interprete o traçado e indique os exames/derivações adicionais pertinentes.",
+      "patientState": {
+        "summary": "O ECG de 12 derivações foi obtido à beira-leito.",
+        "vitals": {
+          "PA": "76/48 mmHg"
+        }
+      },
+      "media": [
+        "ecg-iam-inferior-vd"
+      ]
+    },
+    {
+      "id": "conduta",
+      "title": "Plano imediato",
+      "prompt": "Diga a estratégia de reperfusão e os cuidados hemodinâmicos enquanto a equipe se mobiliza.",
+      "patientState": {
+        "summary": "O paciente mantém hipotensão; angioplastia primária pode ser ativada.",
+        "vitals": {
+          "PA": "74/46 mmHg",
+          "FC": "54 bpm"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "choque",
+      "label": "Reconhece hipoperfusão/choque e inicia monitorização e acesso",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "choque",
+        "monitorização",
+        "acesso venoso"
+      ],
+      "explanation": "Hipotensão com extremidades frias requer ação simultânea."
+    },
+    {
+      "id": "ecg",
+      "label": "Interpreta supra de ST inferior e suspeita de acometimento do VD",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "IAM inferior",
+        "ventrículo direito",
+        "supra inferior"
+      ],
+      "explanation": "O padrão explica a dependência de pré-carga."
+    },
+    {
+      "id": "direitas",
+      "label": "Solicita derivações direitas, especialmente V4R",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "V4R",
+        "derivações direitas"
+      ],
+      "explanation": "V4R aumenta a evidência de infarto de VD."
+    },
+    {
+      "id": "reperfusao",
+      "label": "Ativa hemodinâmica para reperfusão urgente",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "angioplastia",
+        "hemodinâmica",
+        "reperfusão"
+      ],
+      "explanation": "Reperfusão é tratamento definitivo do infarto com choque."
+    },
+    {
+      "id": "nitrato",
+      "label": "Evita nitrato e diurético na hipotensão/infarto de VD",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "evito nitrato",
+        "sem diurético",
+        "dependente de pré-carga"
+      ],
+      "explanation": "Vasodilatação pode agravar a hipotensão."
+    },
+    {
+      "id": "hemodinamica",
+      "label": "Considera pequenos bolus guiados e vasopressor se hipoperfusão persistir",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "bolus cauteloso",
+        "vasopressor",
+        "noradrenalina"
+      ],
+      "explanation": "Reavaliar resposta evita sobrecarga e mantém perfusão."
+    }
+  ],
+  "referenceAnswer": "Reconheço choque no contexto de IAM inferior com suspeita de VD. Solicito V4R, ativo angioplastia imediata, evito nitrato/diurético e mantenho suporte hemodinâmico com bolus pequenos guiados e vasopressor se necessário.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+    "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/acute-coronary-syndromes"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2022
+  },
+  "criticalErrors": [
+    "Administrar nitrato a paciente hipotenso com suspeita de infarto de ventrículo direito."
+  ]
+}

@@ -6,6 +6,8 @@ const {
   pickStation,
   getExamArea,
   getSimuladoNumbers,
+  getPastExamYears,
+  getExamPlanLabel,
   buildSimuladoExamPlan,
   summarizeSimuladoExamPlan,
   getRecommendedStations
@@ -116,6 +118,19 @@ test("cada simulado selecionado usa exatamente seus cinco cenarios na ordem edit
   }
   assert.equal(buildSimuladoExamPlan(index, 7), null);
   assert.deepEqual(getSimuladoNumbers([{ id: "a", trainingSimulado: 1 }]), []);
+});
+
+test("provas anteriores selecionam cinco estacoes do proprio ano sem misturar simulados", () => {
+  const index = require("../praticas/data/estacoes/index.json");
+  assert.deepEqual(getPastExamYears(index), [2022, 2023, 2024, 2025]);
+  for (const year of getPastExamYears(index)) {
+    const plan = buildSimuladoExamPlan(index, year);
+    assert.equal(plan.simulado, year);
+    assert.equal(plan.stationIds.length, 5);
+    assert.deepEqual(plan.stationIds, index.filter((entry) => entry.year === year).map((entry) => entry.id));
+    assert.equal(getExamPlanLabel(year), `Prova TEME ${year}`);
+  }
+  assert.equal(getExamPlanLabel(6), "Simulado 6");
 });
 
 test("nota final do simulado usa apenas as cinco tentativas desta execucao", () => {

@@ -1,0 +1,166 @@
+{
+  "id": "2023-pocus-blue-dispneia",
+  "version": 2,
+  "title": "Protocolo BLUE na dispneia aguda",
+  "examTitle": "Dispneia súbita em paciente hipertenso",
+  "domain": "POCUS",
+  "domains": [
+    "POCUS",
+    "Respiratório"
+  ],
+  "family": "POCUS",
+  "tags": [
+    "BLUE",
+    "linhas B",
+    "lung sliding",
+    "edema pulmonar"
+  ],
+  "briefing": "Paciente com dispneia aguda. Faça avaliação pulmonar focada e integre o achado ao quadro hemodinâmico.",
+  "phases": [
+    {
+      "id": "inicio",
+      "title": "Avaliação inicial",
+      "prompt": "Quais janelas pulmonares examina e quais artefatos descreve?",
+      "patientState": {
+        "summary": "Mulher de 69 anos com dispneia súbita, sudorese e crepitações bilaterais. Sem febre ou assimetria auscultatória.",
+        "vitals": {
+          "PA": "214/118 mmHg",
+          "FC": "126 bpm",
+          "SpO2": "82%"
+        }
+      }
+    },
+    {
+      "id": "clipe",
+      "title": "Interpretação",
+      "prompt": "Interprete os clipes pulmonares e apresente hipóteses prioritárias.",
+      "patientState": {
+        "summary": "Clipe representativo de outro paciente com achado equivalente em ambas as regiões anterolaterais.",
+        "vitals": {
+          "SpO2": "86% com oxigênio"
+        }
+      },
+      "media": [
+        "us-edema-pulmonar-linhas-b"
+      ]
+    },
+    {
+      "id": "conduta",
+      "title": "Decisão",
+      "prompt": "Defina tratamento inicial e reavaliação nos primeiros minutos.",
+      "patientState": {
+        "summary": "Mantém grande esforço ventilatório. A pressão arterial segue muito elevada.",
+        "vitals": {
+          "PA": "206/112 mmHg",
+          "FR": "34 irpm"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "janelas",
+      "label": "Examina campos anteriores e laterais bilateralmente",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "bilateral",
+        "anterior",
+        "lateral"
+      ],
+      "explanation": "Comparação bilateral é indispensável."
+    },
+    {
+      "id": "deslizamento",
+      "label": "Reconhece deslizamento pleural presente",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "lung sliding",
+        "deslizamento pleural"
+      ],
+      "explanation": "O deslizamento ajuda a contextualizar os artefatos."
+    },
+    {
+      "id": "blines",
+      "label": "Identifica múltiplas linhas B bilaterais",
+      "weight": 25,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "linhas B bilaterais",
+        "padrão B difuso"
+      ],
+      "explanation": "B-lines difusas sugerem síndrome intersticial."
+    },
+    {
+      "id": "integra",
+      "label": "Integra POCUS e clínica como edema pulmonar cardiogênico hipertensivo provável",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "edema agudo de pulmão",
+        "SCAPE",
+        "edema hipertensivo"
+      ],
+      "explanation": "Ultrassom sozinho não define a etiologia; a hipertensão orienta."
+    },
+    {
+      "id": "vni",
+      "label": "Inicia ventilação não invasiva e monitora tolerância",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "VNI",
+        "CPAP",
+        "BiPAP"
+      ],
+      "explanation": "Pressão positiva reduz trabalho ventilatório precocemente."
+    },
+    {
+      "id": "vasodilatador",
+      "label": "Considera nitrato sob monitorização da pressão se não houver contraindicação",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "nitrato",
+        "nitroglicerina",
+        "vasodilatação"
+      ],
+      "explanation": "Redução de pós-carga é central em edema hipertensivo."
+    },
+    {
+      "id": "reavaliacao",
+      "label": "Reavalia SpO2, esforço, PA e resposta à VNI",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "reavalio saturação",
+        "pressão arterial",
+        "esforço"
+      ],
+      "explanation": "A evolução determina escalonamento."
+    }
+  ],
+  "referenceAnswer": "Faço POCUS pulmonar bilateral. Há deslizamento e múltiplas linhas B, compatíveis com síndrome intersticial. No contexto de hipertensão grave e início súbito, priorizo edema pulmonar hipertensivo, VNI, vasodilatação com nitrato se apropriado e reavaliação estreita.",
+  "references": [
+    "https://www.acep.org/sonoguide",
+    "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/acute-and-chronic-heart-failure"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2023
+  },
+  "criticalErrors": [
+    "Tratar linhas B isoladamente como diagnóstico definitivo sem integrar a clínica."
+  ]
+}

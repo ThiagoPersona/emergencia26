@@ -1,0 +1,194 @@
+{
+  "id": "2024-pocus-scape",
+  "version": 2,
+  "title": "POCUS cardiopulmonar em edema hipertensivo",
+  "examTitle": "Dispneia intensa com pressão elevada",
+  "domain": "POCUS",
+  "domains": [
+    "POCUS",
+    "Cardiovascular",
+    "Respiratório"
+  ],
+  "family": "POCUS",
+  "tags": [
+    "SCAPE",
+    "VE preservado",
+    "hipertrofia ventricular",
+    "linhas B"
+  ],
+  "briefing": "Paciente com dispneia súbita e hipertensão grave. Demonstre seleção de probes e interprete os achados cardiopulmonares progressivos.",
+  "phases": [
+    {
+      "id": "janelas",
+      "title": "Tarefa 1: aquisição",
+      "prompt": "Quais probes e janelas usará para avaliação cardíaca e pleuropulmonar? Identifique as estruturas que precisa encontrar.",
+      "patientState": {
+        "summary": "Homem de 65 anos com dispneia súbita, crepitações difusas, sem febre ou dor pleurítica.",
+        "vitals": {
+          "PA": "232/126 mmHg",
+          "FC": "132 bpm",
+          "SpO2": "79%",
+          "FR": "38 irpm"
+        }
+      }
+    },
+    {
+      "id": "imagens",
+      "title": "Tarefa 2: achados",
+      "prompt": "Interprete as imagens pulmonares e cardíacas e o dado de função sistólica disponibilizado.",
+      "patientState": {
+        "summary": "Amostras visuais de outras pessoas representam os achados vistos no exame à beira-leito; a imagem cardíaca é estática.",
+        "vitals": {
+          "FEVE (estimativa dinâmica)": "62%",
+          "PA": "218/120 mmHg"
+        }
+      },
+      "media": [
+        "us-ve-hipertrofia",
+        "us-edema-pulmonar-linhas-b"
+      ]
+    },
+    {
+      "id": "sintese",
+      "title": "Tarefa 3: síntese",
+      "prompt": "Integre a apresentação clínica e os achados do POCUS em um diagnóstico sindrômico.",
+      "patientState": {
+        "summary": "O paciente continua hipoxêmico e hipertenso; há VNI e vasodilatador disponíveis.",
+        "vitals": {
+          "SpO2": "84% com oxigênio",
+          "PA": "216/116 mmHg"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "probe-cardiaco",
+      "label": "Utilizou o probe setorial com orientação adequada",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "probe setorial",
+        "transdutor setorial",
+        "orientação cardíaca"
+      ],
+      "explanation": "A janela cardíaca usa o transdutor apropriado.",
+      "officialPoints": 0.4
+    },
+    {
+      "id": "estruturas-cardiacas",
+      "label": "Reconheceu as estruturas demonstradas nas janelas cardíacas escolhidas",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "ventrículo esquerdo",
+        "ventrículo direito",
+        "átrio"
+      ],
+      "explanation": "Reconhecer câmaras é pré-requisito para interpretar a função.",
+      "officialPoints": 0.4
+    },
+    {
+      "id": "probe-pulmonar",
+      "label": "Utilizou probe curvilíneo ou setorial e obteve linha pleural, sombras costais e linhas A",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "curvilíneo",
+        "setorial",
+        "linha pleural",
+        "sombras costais",
+        "linhas A"
+      ],
+      "explanation": "A folha original pontuava escolha de probe e orientação pleuropulmonar.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "funcao-ve",
+      "label": "Avaliou qualitativamente o VE: função preservada",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "função preservada",
+        "VE preservado",
+        "FEVE normal"
+      ],
+      "explanation": "A estimativa dinâmica de 62% sustenta função sistólica preservada.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "hipertrofia-ve",
+      "label": "Identificou hipertrofia do VE e/ou aumento de câmaras esquerdas",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "hipertrofia de VE",
+        "câmaras esquerdas aumentadas"
+      ],
+      "explanation": "A imagem estática demonstra espessamento ventricular.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "lung-sliding",
+      "label": "Identificou presença de lung sliding",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "lung sliding",
+        "deslizamento pleural"
+      ],
+      "explanation": "O deslizamento deve ser descrito no clipe pulmonar.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "blines",
+      "label": "Identificou padrão de linhas B difusas",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "linhas B difusas",
+        "múltiplas linhas B bilaterais"
+      ],
+      "explanation": "O padrão B bilateral apoia congestão intersticial.",
+      "officialPoints": 0.2
+    },
+    {
+      "id": "scape",
+      "label": "Formulou diagnóstico de SCAPE/EAP hipertensivo",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "SCAPE",
+        "EAP hipertensivo",
+        "IC com fração de ejeção preservada"
+      ],
+      "explanation": "O conjunto clínico e ultrassonográfico orienta a síntese.",
+      "officialPoints": 0.2
+    }
+  ],
+  "referenceAnswer": "Escolho setorial para coração, reconheço câmaras e avalio VE; para pulmão uso curvilíneo ou setorial, localizo costelas, linha pleural e artefatos. O dado dinâmico informa função sistólica preservada, a imagem estática mostra espessamento de VE, o clipe pulmonar mostra deslizamento e linhas B difusas. Com hipertensão grave e edema agudo, concluo SCAPE/EAP hipertensivo. A imagem estática isolada não mede a função.",
+  "references": [
+    "https://www.acep.org/sonoguide",
+    "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/acute-and-chronic-heart-failure"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "acervo_reescrito",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Folha de Avaliação TEME 2024",
+    "year": 2024,
+    "checklistOriginal": "TEME24/Estação III - 24.txt",
+    "scoring": "Pontos oficiais multiplicados por 50 para escala de 100"
+  },
+  "criticalErrors": [
+    "Interpretar a imagem estática cardíaca como prova isolada de função sistólica."
+  ]
+}

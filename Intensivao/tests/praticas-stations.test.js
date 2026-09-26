@@ -71,18 +71,48 @@ const EXPECTED_STATIONS = [
   ["emt-6-trauma-quimico", "Colisão com carga química e vítima exposta"],
   ["emt-6-pocus-via-aerea", "Via aérea difícil e avaliação ultrassonográfica"],
   ["emt-6-neutropenia", "Febre após tratamento oncológico"],
-  ["emt-6-triciclico", "Rebaixamento após ingestão de comprimidos"]
+  ["emt-6-triciclico", "Rebaixamento após ingestão de comprimidos"],
+  ["2022-va-bvm-supraglotico", "Paciente com ventilação ineficaz"],
+  ["2022-trauma-choque-fast", "Vítima de colisão com instabilidade"],
+  ["2022-pocus-tamponamento", "Hipotensão após trauma torácico"],
+  ["2022-pcr-causa-reversivel", "Colapso durante observação"],
+  ["2022-clinico-choque-cardiogenico", "Dor torácica, hipotensão e extremidades frias"],
+  ["2023-va-bougie", "Dificuldade durante proteção da via aérea"],
+  ["2023-trauma-multiplas-vitimas", "Acidente rodoviário com várias vítimas"],
+  ["2023-pocus-blue-dispneia", "Dispneia súbita em paciente hipertenso"],
+  ["2023-ped-tsv", "Criança com taquicardia regular"],
+  ["2023-clinico-sepse-cad", "Febre, desidratação e hipoperfusão"],
+  ["2024-trauma-pediatrico", "Criança após colisão rodoviária"],
+  ["2024-va-cricotireoidostomia", "Perda de oxigenação após falha de via aérea"],
+  ["2024-pocus-scape", "Dispneia intensa com pressão elevada"],
+  ["2024-cardio-bavt-fv", "Dor torácica e pulso lento"],
+  ["2024-neuro-morte-encefalica", "Coma profundo após lesão encefálica"]
 ];
 
+test("provas TEME 22 a 25 tem cinco estacoes por ano e preservam as folhas oficiais de 2024", () => {
+  const index = readIndex();
+  for (const year of [2022, 2023, 2024, 2025]) {
+    assert.equal(index.filter((entry) => entry.year === year).length, 5, `TEME ${year}`);
+  }
+  const trauma = readStation(index.find((entry) => entry.id === "2024-trauma-pediatrico"));
+  const pocus = readStation(index.find((entry) => entry.id === "2024-pocus-scape"));
+  assert.deepEqual(trauma.checklist.map((item) => item.officialPoints),
+    [0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.1, 0.1, 0.1, 0.1]);
+  assert.deepEqual(pocus.checklist.map((item) => item.officialPoints),
+    [0.4, 0.4, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]);
+  assert.equal(trauma.checklist.reduce((sum, item) => sum + item.weight, 0), 100);
+  assert.equal(pocus.checklist.reduce((sum, item) => sum + item.weight, 0), 100);
+});
+
 const EXPECTED_FAMILY_DISTRIBUTION = {
-  "Via aérea e ventilação mecânica": 7,
-  "Trauma e APH": 10,
-  "POCUS": 10,
-  "Cardiovascular e PCR": 6,
-  "Pediatria": 9,
+  "Via aérea e ventilação mecânica": 10,
+  "Trauma e APH": 13,
+  "POCUS": 13,
+  "Cardiovascular e PCR": 9,
+  "Pediatria": 10,
   "Toxicologia e animais peçonhentos": 5,
-  "Neurologia": 4,
-  "Respiratório, sepse e metabólico": 5,
+  "Neurologia": 5,
+  "Respiratório, sepse e metabólico": 6,
   "Obstetrícia": 2,
   "Procedimentos, analgesia e sedação": 1,
   "Gastroenterologia": 2,
@@ -221,17 +251,17 @@ function checklistHash(checklist) {
   return crypto.createHash("sha256").update(JSON.stringify(checklist)).digest("hex");
 }
 
-test("indice v2 possui exatamente as 62 estacoes na ordem editorial", () => {
+test("indice v2 possui exatamente as 77 estacoes na ordem editorial", () => {
   const index = readIndex();
   const expectedIds = EXPECTED_STATIONS.map(([id]) => id);
   const expectedFiles = expectedIds.map((id) => `${id}.json`);
   const stationFiles = fs.readdirSync(stationDirectory)
     .filter((file) => file.endsWith(".json") && file !== "index.json");
 
-  assert.equal(index.length, 62);
+  assert.equal(index.length, 77);
   assert.deepEqual(index.map((entry) => entry.id), expectedIds);
   assert.equal(new Set(index.map((entry) => entry.id)).size, expectedIds.length);
-  assert.equal(stationFiles.length, 62);
+  assert.equal(stationFiles.length, 77);
   assert.deepEqual(new Set(stationFiles), new Set(expectedFiles));
 });
 
@@ -243,7 +273,7 @@ test("indice permite montar o catalogo sem baixar os JSONs", () => {
     const prefix = `index[${indexPosition}]`;
     const expectedKeys = ["id", "file", "schemaVersion", "examTitle", "title", "domain", "domains", "family", "difficulty", "origin", "tags", "hasMedia"];
     if (TRAINING_SIMULADO_BY_ID.has(entry.id)) expectedKeys.push("trainingSimulado");
-    if (entry.id.startsWith("2025-")) expectedKeys.push("year");
+    if (/^202[2-5]-/.test(entry.id)) expectedKeys.push("year");
     assert.deepEqual(Object.keys(entry), expectedKeys, `${prefix} deve expor somente os metadados ricos esperados`);
     assert.equal(entry.schemaVersion, 2, `${prefix}.schemaVersion`);
     assert.equal(entry.examTitle, expectedTitles.get(entry.id), `${prefix}.examTitle`);
@@ -257,7 +287,7 @@ test("indice permite montar o catalogo sem baixar os JSONs", () => {
     assert.ok(Array.isArray(entry.tags) && entry.tags.length > 0, `${prefix}.tags`);
     assert.equal(typeof entry.hasMedia, "boolean", `${prefix}.hasMedia`);
     assert.equal(fs.existsSync(path.join(stationDirectory, entry.file)), true, `${entry.file} ausente`);
-    if (entry.id.startsWith("2025-")) assert.equal(entry.year, 2025, `${prefix}.year`);
+    if (/^202[2-5]-/.test(entry.id)) assert.equal(entry.year, Number(entry.id.slice(0, 4)), `${prefix}.year`);
     else assert.equal(Object.hasOwn(entry, "year"), false, `${prefix} inedito nao deve ter year`);
   });
 });

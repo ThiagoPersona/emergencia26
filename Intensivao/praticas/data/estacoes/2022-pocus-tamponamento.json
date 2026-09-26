@@ -1,0 +1,152 @@
+{
+  "id": "2022-pocus-tamponamento",
+  "version": 2,
+  "title": "POCUS no choque obstrutivo",
+  "examTitle": "Hipotensão após trauma torácico",
+  "domain": "POCUS",
+  "domains": [
+    "POCUS",
+    "Choque"
+  ],
+  "family": "POCUS",
+  "tags": [
+    "janela cardíaca",
+    "tamponamento",
+    "colapso diastólico"
+  ],
+  "briefing": "Paciente instável após trauma fechado de tórax. Use POCUS para diferenciar causas imediatas de choque.",
+  "phases": [
+    {
+      "id": "primeira",
+      "title": "Janelas iniciais",
+      "prompt": "Diga quais janelas rápidas examina e o que procura em cada uma.",
+      "patientState": {
+        "summary": "Adulto após colisão, sem hemorragia externa evidente. Bulhas pouco audíveis.",
+        "vitals": {
+          "PA": "72/48 mmHg",
+          "FC": "128 bpm",
+          "SpO2": "93%"
+        }
+      }
+    },
+    {
+      "id": "eco",
+      "title": "Imagem cardíaca",
+      "prompt": "Interprete o clipe e defina a ameaça prioritária.",
+      "patientState": {
+        "summary": "A janela subxifoide é limitada; o examinador oferece outra janela cardíaca.",
+        "vitals": {
+          "PA": "68/42 mmHg"
+        }
+      },
+      "media": [
+        "us-tamponamento-rv-collapse"
+      ]
+    },
+    {
+      "id": "conduta",
+      "title": "Intervenção",
+      "prompt": "Indique equipe, medida temporizadora e tratamento definitivo.",
+      "patientState": {
+        "summary": "O paciente piora hemodinamicamente durante a avaliação.",
+        "vitals": {
+          "PA": "60/38 mmHg",
+          "FC": "138 bpm"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "janelas",
+      "label": "Escolhe janelas cardíacas subxifoide e paraesternal/apical",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "subxifoide",
+        "paraesternal",
+        "apical"
+      ],
+      "explanation": "Janelas alternativas melhoram a avaliação no trauma."
+    },
+    {
+      "id": "derrame",
+      "label": "Reconhece coleção pericárdica no clipe",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "derrame pericárdico",
+        "líquido pericárdico"
+      ],
+      "explanation": "Coleção pericárdica no choque exige avaliar repercussão."
+    },
+    {
+      "id": "colapso",
+      "label": "Identifica colapso diastólico de câmaras direitas",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "colapso diastólico",
+        "ventrículo direito",
+        "átrio direito"
+      ],
+      "explanation": "Colapso diastólico é sinal de comprometimento hemodinâmico."
+    },
+    {
+      "id": "diagnostico",
+      "label": "Integra choque e imagem como tamponamento provável",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "tamponamento cardíaco",
+        "choque obstrutivo"
+      ],
+      "explanation": "O diagnóstico combina clínica e POCUS."
+    },
+    {
+      "id": "equipe",
+      "label": "Aciona imediatamente cirurgia/trauma e prepara drenagem",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "cirurgia",
+        "drenagem pericárdica",
+        "pericardiocentese"
+      ],
+      "explanation": "Descompressão é urgente; no trauma, tratamento cirúrgico costuma ser definitivo."
+    },
+    {
+      "id": "limitacao",
+      "label": "Não prolonga pausas de pulso nem atrasa intervenção por novas imagens",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "não atraso intervenção",
+        "pausa breve",
+        "reavaliação"
+      ],
+      "explanation": "POCUS deve acelerar decisão, não interromper ressuscitação."
+    }
+  ],
+  "referenceAnswer": "Faço avaliação cardíaca focada em janelas rápidas. O clipe mostra derrame pericárdico com colapso direito, compatível com tamponamento no choque. Chamo imediatamente cirurgia/trauma, preparo descompressão conforme contexto e mantenho ressuscitação com pausas mínimas.",
+  "references": [
+    "https://www.acep.org/sonoguide",
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2022
+  },
+  "criticalErrors": [
+    "Prolongar pausas de ressuscitação para ultrassom ou não tratar tamponamento no choque."
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "2022-trauma-choque-fast",
+  "version": 2,
+  "title": "Trauma com choque e localização da hemorragia",
+  "examTitle": "Vítima de colisão com instabilidade",
+  "domain": "Trauma e controle de danos",
+  "domains": [
+    "Trauma",
+    "Reanimação"
+  ],
+  "family": "Trauma e APH",
+  "tags": [
+    "XABCDE",
+    "hemorragia",
+    "eFAST",
+    "controle de danos"
+  ],
+  "briefing": "Vítima de colisão chega hipotensa. Conduza as primeiras decisões sem atrasar o controle da hemorragia.",
+  "phases": [
+    {
+      "id": "inicio",
+      "title": "Abordagem inicial",
+      "prompt": "Priorize a avaliação e a ressuscitação dos primeiros minutos.",
+      "patientState": {
+        "summary": "Motociclista adulto após colisão. Pele fria, confuso e com escoriações em abdome.",
+        "vitals": {
+          "PA": "78/46 mmHg",
+          "FC": "138 bpm",
+          "SpO2": "94%"
+        }
+      }
+    },
+    {
+      "id": "imagem",
+      "title": "Avaliação dirigida",
+      "prompt": "Interprete o eFAST apresentado e diga o que ele muda no plano.",
+      "patientState": {
+        "summary": "A pressão permanece baixa após medidas iniciais. Há equipamento de ultrassom à beira-leito.",
+        "vitals": {
+          "PA": "74/42 mmHg",
+          "FC": "142 bpm"
+        }
+      },
+      "media": [
+        "us-fast-morison-positivo"
+      ]
+    },
+    {
+      "id": "destino",
+      "title": "Controle definitivo",
+      "prompt": "Defina a ressuscitação hemostática, a equipe e o destino.",
+      "patientState": {
+        "summary": "Há acesso venoso e hemocomponentes disponíveis; o paciente segue instável.",
+        "vitals": {
+          "PA": "76/44 mmHg"
+        }
+      }
+    }
+  ],
+  "checklist": [
+    {
+      "id": "xabcde",
+      "label": "Inicia XABCDE e procura hemorragia externa controlável",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "XABCDE",
+        "sangramento externo"
+      ],
+      "explanation": "Sangramento externo maciço precede avaliação detalhada."
+    },
+    {
+      "id": "acessos",
+      "label": "Obtém dois acessos calibrosos ou intraósseo e tipagem",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "dois acessos",
+        "intraósseo",
+        "tipagem"
+      ],
+      "explanation": "Acesso rápido permite ressuscitação hemostática."
+    },
+    {
+      "id": "fast",
+      "label": "Identifica líquido livre na janela hepatorrenal do eFAST",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "líquido livre",
+        "Morison",
+        "FAST positivo"
+      ],
+      "explanation": "Líquido peritoneal no instável sugere hemorragia intra-abdominal."
+    },
+    {
+      "id": "sangue",
+      "label": "Ativa protocolo de transfusão maciça e evita excesso de cristaloide",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "transfusão maciça",
+        "hemocomponentes",
+        "evito cristaloide excessivo"
+      ],
+      "explanation": "A reposição deve priorizar sangue e controle da fonte."
+    },
+    {
+      "id": "cirurgia",
+      "label": "Aciona cirurgia/controle de danos sem aguardar TC no instável",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "cirurgia",
+        "centro cirúrgico",
+        "não aguardo tomografia"
+      ],
+      "explanation": "eFAST positivo com choque requer controle definitivo urgente."
+    },
+    {
+      "id": "reavaliacao",
+      "label": "Reavalia perfusão, temperatura e resposta aos hemocomponentes",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "reavalio perfusão",
+        "temperatura",
+        "resposta hemodinâmica"
+      ],
+      "explanation": "Reavaliação orienta novas medidas e previne hipotermia."
+    }
+  ],
+  "referenceAnswer": "Aplico XABCDE, controlo sangramento externo, obtenho acessos e ativo hemocomponentes. O eFAST mostra líquido livre hepatorrenal. Com choque persistente, aciono cirurgia para controle de danos sem atrasar com TC; monitoro perfusão e temperatura.",
+  "references": [
+    "https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/",
+    "https://www.acep.org/sonoguide"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2022
+  },
+  "criticalErrors": [
+    "Atrasar o controle cirúrgico de hemorragia em paciente instável para realizar tomografia."
+  ]
+}

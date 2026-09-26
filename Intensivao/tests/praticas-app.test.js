@@ -597,6 +597,34 @@ test("modo prova escolhe o simulado e conserva os cinco casos ao reabrir", async
   assert.doesNotMatch(reopened.simulator.innerHTML, /Sortear nova série/);
 });
 
+test("seletor oferece provas anteriores abaixo dos simulados e conserva o ano escolhido", async () => {
+  const storage = createStorage({ [PREFERENCES_KEY]: JSON.stringify({ mode: "exam", filters: {} }) });
+  const entries = [
+    ...Array.from({ length: 5 }, (_, index) => ({
+      id: `sim-${index}`, file: `sim-${index}.json`, trainingSimulado: 1, family: "POCUS"
+    })),
+    ...Array.from({ length: 5 }, (_, index) => ({
+      id: `teme-2024-${index}`, file: `teme-2024-${index}.json`, year: 2024, family: "POCUS"
+    }))
+  ];
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse(entries);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation(url.match(/\/(sim-\d|teme-2024-\d)\.json$/)[1]));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  await createPracticeApp(fixture.root).mount();
+  assert.match(fixture.simulator.innerHTML, /<optgroup label="Simulados">/);
+  assert.match(fixture.simulator.innerHTML, /<optgroup label="Provas anteriores">/);
+  assert.ok(fixture.simulator.innerHTML.indexOf("Simulado 1") < fixture.simulator.innerHTML.indexOf("Prova TEME 2024"));
+  const select = fixture.simulator.querySelector("#practice-simulado");
+  select.value = "2024";
+  select.dispatch("change");
+  await waitFor(() => assert.equal(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).simulado, 2024));
+  assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)).stationIds, entries.slice(5).map((entry) => entry.id));
+  assert.doesNotMatch(fixture.simulator.innerHTML, /Simulado 2024/);
+});
+
 test("apos atualizar a pagina uma estacao corrigida ainda permite avancar", async () => {
   const entries = ["a", "b", "c", "d", "e"].map((id) => ({
     id, file: `${id}.json`, family: "Trauma e APH", trainingSimulado: 1
@@ -965,6 +993,7 @@ test("reenvio apos transcricao em loop preserva audio e nao anexa texto defeituo
 
 test("resultado mostra pontos e criterios confirmados manualmente de forma coerente com a nota", async () => {
   const confirmedStation = createStation("confirmed");
+  confirmedStation.source = { collection: "Folha de Avaliação TEME 2024", year: 2024 };
   confirmedStation.checklist = [
     { id: "manual", label: "Gesto manual", weight: 50, verification: "manual", critical: true },
     { id: "hibrido", label: "Gesto hibrido", weight: 50, verification: "hibrido", critical: true }
@@ -1002,6 +1031,7 @@ test("resultado mostra pontos e criterios confirmados manualmente de forma coere
   assert.match(fixture.simulator.innerHTML, /100%/);
   assert.match(fixture.simulator.innerHTML, /2 de 2 critérios contemplados/);
   assert.equal((fixture.simulator.innerHTML.match(/50\/50 pts/g) || []).length, 2);
+  assert.match(fixture.simulator.innerHTML, /Checklist da folha de avaliação TEME 2024/);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Pontos críticos esquecidos|Prioridades para revisar/);
 });
 

@@ -1,0 +1,159 @@
+{
+  "id": "2024-cardio-bavt-fv",
+  "version": 2,
+  "title": "Bradicardia instável com evolução para arritmia",
+  "examTitle": "Dor torácica e pulso lento",
+  "domain": "Emergências cardiovasculares",
+  "domains": [
+    "Cardiovascular",
+    "PCR"
+  ],
+  "family": "Cardiovascular e PCR",
+  "tags": [
+    "BAVT",
+    "marcapasso transcutâneo",
+    "IAM inferior",
+    "FV"
+  ],
+  "briefing": "Paciente com dor torácica, bradicardia e piora elétrica. Tome decisões sequenciais sobre ritmo, reperfusão e reanimação.",
+  "phases": [
+    {
+      "id": "lento",
+      "title": "Ritmo inicial",
+      "prompt": "Interprete o primeiro traçado e trate a instabilidade.",
+      "patientState": {
+        "summary": "Homem de 68 anos com dor torácica e tontura. Pele fria e pressão baixa.",
+        "vitals": {
+          "PA": "72/40 mmHg",
+          "FC": "32 bpm",
+          "SpO2": "96%"
+        }
+      },
+      "media": [
+        "ecg-bavt-cc0"
+      ]
+    },
+    {
+      "id": "isquemia",
+      "title": "Origem",
+      "prompt": "Um novo ECG é obtido. Relacione os achados à causa provável e organize o tratamento definitivo.",
+      "patientState": {
+        "summary": "A equipe prepara marcapasso transcutâneo enquanto mantém suporte hemodinâmico.",
+        "vitals": {
+          "PA": "80/48 mmHg",
+          "FC": "36 bpm"
+        }
+      },
+      "media": [
+        "ecg-iam-inferior-vd"
+      ]
+    },
+    {
+      "id": "parada",
+      "title": "Nova evolução",
+      "prompt": "O paciente perde pulso e surge o traçado apresentado. Diga a intervenção imediata e o seguimento dos ciclos.",
+      "patientState": {
+        "summary": "Após minutos de instabilidade, fica inconsciente e sem pulso.",
+        "vitals": {
+          "Pulso": "ausente"
+        }
+      },
+      "media": [
+        "ecg-vf-cc0"
+      ]
+    }
+  ],
+  "checklist": [
+    {
+      "id": "bavt",
+      "label": "Identifica bloqueio atrioventricular total no ECG",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "BAVT",
+        "bloqueio AV total"
+      ],
+      "explanation": "Dissociação atrioventricular e ritmo de escape explicam a bradicardia."
+    },
+    {
+      "id": "perfusao",
+      "label": "Reconhece bradicardia instável e inicia monitorização/acesso",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "instável",
+        "hipotensão",
+        "monitorização"
+      ],
+      "explanation": "A repercussão clínica muda o tratamento."
+    },
+    {
+      "id": "pacing",
+      "label": "Indica marcapasso transcutâneo e confirma captura elétrica e mecânica",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "marcapasso transcutâneo",
+        "captura elétrica",
+        "captura mecânica"
+      ],
+      "explanation": "Frequência no monitor não basta sem pulso efetivo."
+    },
+    {
+      "id": "iam",
+      "label": "Reconhece IAM inferior e ativa reperfusão urgente",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "IAM inferior",
+        "angioplastia",
+        "reperfusão"
+      ],
+      "explanation": "Tratar a isquemia corrige a causa subjacente."
+    },
+    {
+      "id": "fv",
+      "label": "Identifica fibrilação ventricular sem pulso",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "FV",
+        "fibrilação ventricular"
+      ],
+      "explanation": "A mudança de ritmo exige novo algoritmo."
+    },
+    {
+      "id": "desfibrilacao",
+      "label": "Desfibrila imediatamente e retoma RCP",
+      "weight": 20,
+      "verification": "verbal",
+      "critical": true,
+      "expected": [
+        "desfibrilação",
+        "RCP",
+        "compressões"
+      ],
+      "explanation": "FV sem pulso é ritmo chocável; marcapasso não substitui choque."
+    }
+  ],
+  "referenceAnswer": "O primeiro ECG mostra BAVT com hipotensão. Monitoro, preparo pacing transcutâneo e confirmo captura elétrica e pulso; o ECG seguinte sugere IAM inferior, então ativo reperfusão. Ao surgir FV sem pulso, desfibrilo e retomo RCP conforme algoritmo.",
+  "references": [
+    "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/algorithms",
+    "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/acute-coronary-syndromes"
+  ],
+  "difficulty": "intermediaria",
+  "origin": "inedita",
+  "durationSeconds": 300,
+  "source": {
+    "collection": "Treino autoral por temas históricos",
+    "year": 2024
+  },
+  "criticalErrors": [
+    "Tentar marcapasso quando o ritmo evolui para fibrilação ventricular sem pulso."
+  ]
+}

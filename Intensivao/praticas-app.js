@@ -161,7 +161,8 @@
     const area = catalogModule.getExamArea(entry);
     if (!area) return 1;
     const sameArea = (Array.isArray(entries) ? entries : []).filter((candidate) =>
-      catalogModule.getExamArea(candidate)?.label === area.label
+      catalogModule.getExamArea(candidate)?.label === area.label &&
+      (!entry.year || candidate.year === entry.year)
     );
     const index = sameArea.findIndex((candidate) => candidate.id === entry.id);
     return index >= 0 ? index + 1 : 1;
@@ -733,7 +734,8 @@
   }
 
   function startNewExamRound(simulado) {
-    const numbers = catalogModule?.getSimuladoNumbers(state.stationEntries) || [];
+    const numbers = (catalogModule?.getSimuladoNumbers(state.stationEntries) || [])
+      .concat(catalogModule?.getPastExamYears(state.stationEntries) || []);
     const selected = numbers.includes(simulado) ? simulado : numbers.includes(state.examPlan?.simulado)
       ? state.examPlan.simulado : numbers[0];
     state.examPlan = catalogModule?.buildSimuladoExamPlan(state.stationEntries, selected) || null;
@@ -865,7 +867,8 @@
       if (!groups.has(family)) groups.set(family, []);
       const prefix = DIRECTED_FAMILY_PREFIXES[family] || family;
       const score = latestScores.get(entry.id);
-      const label = `${trainingPrefix(entry)}${prefix} - ${entry.title || `Cenário ${index + 1}`}${score == null ? "" : ` - ${Math.round(score)}%`}`;
+      const yearPrefix = Number.isInteger(entry.year) ? `TEME ${entry.year} · ` : "";
+      const label = `${trainingPrefix(entry)}${yearPrefix}${prefix} - ${entry.title || `Cenário ${index + 1}`}${score == null ? "" : ` - ${Math.round(score)}%`}`;
       groups.get(family).push(`<option value="${escapeHtml(entry.id)}" ${entry.id === selectedId ? "selected" : ""}>${escapeHtml(label)}</option>`);
     });
     return Array.from(groups, ([family, options]) => (
@@ -921,12 +924,18 @@
   function renderExamSelector() {
     if (state.mode !== "exam") return "";
     const numbers = catalogModule?.getSimuladoNumbers(state.stationEntries) || [];
+    const years = catalogModule?.getPastExamYears(state.stationEntries) || [];
     const results = getExamResults();
     return `<div class="practice-toolbar practice-simulado-toolbar">
-      <label for="practice-simulado">Simulado</label>
-      <select id="practice-simulado">${numbers.map((number) =>
-        `<option value="${number}" ${number === state.examPlan?.simulado ? "selected" : ""}>Simulado ${number}${Number.isFinite(results[number]?.finalPercent) ? ` - ${results[number].finalPercent}%` : ""}</option>`
-      ).join("")}</select>
+      <label for="practice-simulado">Prova</label>
+      <select id="practice-simulado">
+        ${numbers.length ? `<optgroup label="Simulados">${numbers.map((number) =>
+          `<option value="${number}" ${number === state.examPlan?.simulado ? "selected" : ""}>Simulado ${number}${Number.isFinite(results[number]?.finalPercent) ? ` - ${results[number].finalPercent}%` : ""}</option>`
+        ).join("")}</optgroup>` : ""}
+        ${years.length ? `<optgroup label="Provas anteriores">${years.map((year) =>
+          `<option value="${year}" ${year === state.examPlan?.simulado ? "selected" : ""}>Prova TEME ${year}${Number.isFinite(results[year]?.finalPercent) ? ` - ${results[year].finalPercent}%` : ""}</option>`
+        ).join("")}</optgroup>` : ""}
+      </select>
     </div>`;
   }
 
@@ -954,11 +963,12 @@
     if (!mount || !state.examPlan) return;
     const plan = state.examPlan;
     const summary = catalogModule.summarizeSimuladoExamPlan(plan, getStoredAttempts());
+    const planLabel = catalogModule.getExamPlanLabel(plan.simulado);
     mount.innerHTML = `<section class="practice-shell practice-exam-summary">
       ${renderPracticeModeControl("exam")}
       ${renderExamSelector()}
       <div class="practice-result-head">
-        <div><span class="practice-kicker">RESULTADO DO SIMULADO ${plan.simulado}</span><h2>Prova prática</h2></div>
+        <div><span class="practice-kicker">RESULTADO: ${escapeHtml(planLabel)}</span><h2>Prova prática</h2></div>
         <strong class="practice-score">${summary.finalPercent == null ? "-" : `${summary.finalPercent}%`}</strong>
       </div>
       <p class="practice-result-overview">${summary.completedCount}/5 estações concluídas${summary.earnedPoints == null ? "" : ` · ${summary.earnedPoints.toLocaleString("pt-BR", { maximumFractionDigits: 2 })}/500 pontos`}</p>
@@ -968,7 +978,7 @@
         const score = summary.scores[index];
         return `<div><span>${index + 1}. ${escapeHtml(entry?.title || "Estação")}</span><strong>${score == null ? "Pendente" : `${score}%`}</strong></div>`;
       }).join("")}</div>
-      <div class="practice-actions"><button id="practice-restart-simulado" class="practice-button practice-button-primary" type="button">Refazer simulado ${plan.simulado}</button></div>
+      <div class="practice-actions"><button id="practice-restart-simulado" class="practice-button practice-button-primary" type="button">Refazer ${escapeHtml(planLabel)}</button></div>
     </section>`;
     mount.querySelectorAll("input[name='practice-mode']").forEach((input) => {
       input.addEventListener("change", () => { if (input.checked) setPracticeMode(input.value); });
@@ -1033,8 +1043,8 @@
             </div>
           </div>
           ${renderPracticeStartActions(setupView)}
-          ${currentExamScore != null ? `<div class="practice-actions"><button class="practice-button practice-button-primary" id="practice-resume-exam" type="button">${state.examPlan.currentIndex < 4 ? "Próxima estação" : "Ver resultado do simulado"}</button></div>` : ""}
-          ${state.mode === "exam" ? `<div class="practice-actions"><button class="practice-button practice-button-quiet" id="practice-new-exam-round" type="button">Reiniciar simulado ${state.examPlan?.simulado || ""}</button></div>` : ""}
+          ${currentExamScore != null ? `<div class="practice-actions"><button class="practice-button practice-button-primary" id="practice-resume-exam" type="button">${state.examPlan.currentIndex < 4 ? "Próxima estação" : state.examPlan.simulado >= 2022 ? "Ver resultado da prova" : "Ver resultado do simulado"}</button></div>` : ""}
+          ${state.mode === "exam" ? `<div class="practice-actions"><button class="practice-button practice-button-quiet" id="practice-new-exam-round" type="button">Reiniciar ${escapeHtml(catalogModule.getExamPlanLabel(state.examPlan?.simulado))}</button></div>` : ""}
         ` : ""}
         <div id="practice-auth" class="practice-auth"><p>Verificando acesso à correção automática...</p></div>
         <p class="practice-help">O checklist permanece oculto durante a estação. Permita o microfone somente se desejar correção pela fala.</p>
@@ -1436,6 +1446,12 @@
     const attempt = state.lastAttempt;
     if (!mount || !attempt) return;
     const hasPendingManual = attempt.pendingManualItemIds.length > 0;
+    const source = state.station.source || {};
+    const provenance = source.collection === "Folha de Avaliação TEME 2024"
+      ? "Checklist da folha de avaliação TEME 2024; caso adaptado e pontos oficiais convertidos proporcionalmente para a escala de 100."
+      : source.collection === "Treino autoral por temas históricos"
+        ? `Caso e checklist autorais para treinar os temas de ${source.year}; não reproduzem uma estação oficial.`
+        : "";
     const checklistById = new Map(state.station.checklist.map((item) => [item.id, item]));
     const missingCritical = attempt.criticalFailures.map((id) => checklistById.get(id)?.label || id);
     const earnedFor = (evaluation, item) => root.TemePracticeUtils.getPracticeItemPoints(item, evaluation);
@@ -1478,12 +1494,13 @@
               ? "não executado" : evaluation.status.replace("_", " ");
             return `
             <article class="practice-result-item is-${manualOverride ? "cumprido" : escapeHtml(evaluation.status)}">
-              <header><strong>${escapeHtml(evaluation.label)}</strong><span>${escapeHtml(displayStatus)}${hasPendingManual ? "" : ` · ${earnedFor(evaluation, item)}/${item?.weight || 0} pts`}</span></header>
+              <header><strong>${escapeHtml(evaluation.label)}</strong><span>${escapeHtml(displayStatus)}${hasPendingManual ? "" : ` · ${earnedFor(evaluation, item)}/${item?.weight || 0} pts${Number.isFinite(item?.officialPoints) ? ` · ${item.officialPoints.toLocaleString("pt-BR")} pt na folha` : ""}`}</span></header>
               <p>${escapeHtml(evaluation.evidence)}</p>
               ${evaluation.rationale ? `<small>${escapeHtml(evaluation.rationale)}</small>` : ""}
               ${item?.explanation ? `<small>${escapeHtml(item.explanation)}</small>` : ""}
             </article>`; }).join("")}
         </div>
+        ${provenance ? `<p class="practice-help">${escapeHtml(provenance)}</p>` : ""}
         ${state.station.references?.length ? `<details class="practice-references"><summary>Referências clínicas</summary><ul>${state.station.references.map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a></li>`).join("")}</ul></details>` : ""}
         ${attempt.transcript ? `<details class="practice-references practice-transcript-details">
           <summary>Transcrição da fala</summary>
@@ -1495,7 +1512,7 @@
           <div id="practice-result-media"></div>
         </section>
         <div class="practice-actions">
-          ${state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : "Ver resultado do simulado"}</button>` : ""}
+          ${state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : state.examPlan.simulado >= 2022 ? "Ver resultado da prova" : "Ver resultado do simulado"}</button>` : ""}
           ${hasPendingManual ? "" : `<button id="practice-download" class="practice-button practice-button-primary" type="button">Baixar relatório</button>`}
           <button id="practice-back" class="practice-button" type="button">Voltar ao simulador</button>
           <a class="practice-button practice-button-quiet" href="#/praticas/DESEMPENHO">Ver desempenho</a>

@@ -980,6 +980,8 @@
 
   .practice-run-header {
     align-items: flex-start;
+    box-sizing: border-box;
+    padding-left: 44px;
   }
 
   .practice-briefing h2,
