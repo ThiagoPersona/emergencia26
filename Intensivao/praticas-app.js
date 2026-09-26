@@ -555,6 +555,15 @@
     return [attempt, ...filtered].slice(0, 250);
   }
 
+  function mergeServerAttempts(localAttempts, serverAttempts) {
+    const local = Array.isArray(localAttempts) ? localAttempts : [];
+    const localCorrections = new Map(local.filter((attempt) =>
+      attempt.id && Array.isArray(attempt.selfCorrectedItemIds) && attempt.selfCorrectedItemIds.length
+    ).map((attempt) => [attempt.id, attempt]));
+    return (Array.isArray(serverAttempts) ? serverAttempts : []).slice().reverse().reduce((merged, attempt) =>
+      upsertAttemptList(merged, localCorrections.get(attempt.id) || attempt), local);
+  }
+
   function saveAttempt(attempt) {
     if (!root || !root.localStorage) return;
     const next = upsertAttemptList(getStoredAttempts(), attempt);
@@ -592,8 +601,17 @@
       "CHECKLIST"
     ];
 
+    const selfCorrectedIds = new Set(attempt.selfCorrectedItemIds || []);
+    if (selfCorrectedIds.size) {
+      lines.push("Nota com ajuste pessoal local; a avaliacao original da IA permanece separada.");
+    }
+
     (attempt.evaluations || []).forEach((evaluation, index) => {
       lines.push(`${index + 1}. [${String(evaluation.status || "ausente").toUpperCase()}] ${evaluation.label || evaluation.itemId}`);
+      if (selfCorrectedIds.has(evaluation.itemId)) {
+        const original = (attempt.aiEvaluations || []).find((item) => item.itemId === evaluation.itemId);
+        lines.push(`   Ajuste pessoal: marcado correto (IA: ${original?.status || "nao informado"}).`);
+      }
       if (typeof evaluation.manualConfirmed === "boolean") {
         lines.push(`   Execucao manual: ${evaluation.manualConfirmed ? "confirmada pelo aluno" : "nao realizada"}`);
       }
@@ -1402,6 +1420,10 @@
         ? `Caso e checklist autorais para treinar os temas de ${source.year}; não reproduzem uma estação oficial.`
         : "";
     const checklistById = new Map(state.station.checklist.map((item) => [item.id, item]));
+    const selfCorrectedIds = new Set(attempt.selfCorrectedItemIds || []);
+    const originalEvaluations = new Map((attempt.aiEvaluations || []).map((item) => [item.itemId, item]));
+    const originalScore = selfCorrectedIds.size
+      ? root.TemePracticeUtils.calculatePracticeScore(state.station, attempt.aiEvaluations).finalPercent : null;
     const missingCritical = attempt.criticalFailures.map((id) => checklistById.get(id)?.label || id);
     const earnedFor = (evaluation, item) => root.TemePracticeUtils.getPracticeItemPoints(item, evaluation);
     const missedItems = attempt.evaluations.filter((evaluation) => {
@@ -1419,6 +1441,7 @@
           ${hasPendingManual ? "" : `<strong class="practice-score">${attempt.finalPercent}%</strong>`}
         </div>
         ${hasPendingManual ? "" : `<p class="practice-result-overview">${completedCount} de ${state.station.checklist.length} critérios contemplados · ${missedItems.length} ausentes ou parciais · ${attempt.earnedPoints}/${attempt.totalPoints} pontos</p>`}
+        ${selfCorrectedIds.size ? `<p class="practice-help">Nota ajustada por você neste navegador. Avaliação original da IA: ${originalScore}%. O ajuste não altera a correção salva na API.</p>` : ""}
         ${attempt.persistenceWarning ? `<div class="practice-alert">${escapeHtml(attempt.persistenceWarning)}</div>` : ""}
         ${hasPendingManual ? `
           <form id="practice-manual-confirm" class="practice-manual-confirm">
@@ -1437,15 +1460,20 @@
         <div class="practice-result-list">
           ${attempt.evaluations.map((evaluation) => {
             const item = checklistById.get(evaluation.itemId);
+            const selfCorrected = selfCorrectedIds.has(evaluation.itemId);
+            const original = originalEvaluations.get(evaluation.itemId);
             const manualOverride = item && item.verification !== "verbal" && evaluation.manualConfirmed === true &&
               ["ausente", "nao_verificavel"].includes(evaluation.status);
-            const displayStatus = manualOverride ? "confirmado por você" : evaluation.manualConfirmed === false
+            const displayStatus = selfCorrected ? "Corrigido por você" : manualOverride ? "confirmado por você" : evaluation.manualConfirmed === false
               ? "não executado" : evaluation.status.replace("_", " ");
+            const canCorrect = attempt.evaluationMode === "ai" && !hasPendingManual && item &&
+              (selfCorrected || earnedFor(evaluation, item) < item.weight);
             return `
-            <article class="practice-result-item is-${manualOverride ? "cumprido" : escapeHtml(evaluation.status)}">
-              <header><strong>${escapeHtml(evaluation.label)}</strong><span>${escapeHtml(displayStatus)}${hasPendingManual ? "" : ` · ${earnedFor(evaluation, item)}/${item?.weight || 0} pts${Number.isFinite(item?.officialPoints) ? ` · ${item.officialPoints.toLocaleString("pt-BR")} pt na folha` : ""}`}</span></header>
-              <p>${escapeHtml(evaluation.evidence)}</p>
-              ${evaluation.rationale ? `<small>${escapeHtml(evaluation.rationale)}</small>` : ""}
+            <article class="practice-result-item is-${selfCorrected || manualOverride ? "cumprido" : escapeHtml(evaluation.status)}">
+              <header><strong>${escapeHtml(evaluation.label)}</strong><div class="practice-result-actions"><span>${escapeHtml(displayStatus)}${hasPendingManual ? "" : ` · ${earnedFor(evaluation, item)}/${item?.weight || 0} pts${Number.isFinite(item?.officialPoints) ? ` · ${item.officialPoints.toLocaleString("pt-BR")} pt na folha` : ""}`}</span>${canCorrect ? `<button id="practice-${selfCorrected ? "undo" : "correct"}-${escapeHtml(item.id)}" class="practice-button practice-button-quiet practice-correction-button" type="button">${selfCorrected ? "Desfazer ajuste" : "Marcar correto"}</button>` : ""}</div></header>
+              ${selfCorrected && original ? `<small>IA: ${escapeHtml(original.status.replace("_", " "))}. Ajuste pessoal registrado.</small>` : ""}
+              <p>${escapeHtml(selfCorrected && original ? original.evidence : evaluation.evidence)}</p>
+              ${(selfCorrected && original ? original.rationale : evaluation.rationale) ? `<small>${escapeHtml(selfCorrected && original ? original.rationale : evaluation.rationale)}</small>` : ""}
               ${item?.explanation ? `<small>${escapeHtml(item.explanation)}</small>` : ""}
             </article>`; }).join("")}
         </div>
@@ -1477,6 +1505,12 @@
     }
     const downloadButton = mount.querySelector("#practice-download");
     if (downloadButton) downloadButton.addEventListener("click", () => downloadText(buildPracticeReport(attempt), `treino-${attempt.stationId}.txt`));
+    state.station.checklist.forEach((item) => {
+      const correct = mount.querySelector(`#practice-correct-${item.id}`);
+      if (correct) correct.addEventListener("click", () => setSelfCorrection(item.id, true));
+      const undo = mount.querySelector(`#practice-undo-${item.id}`);
+      if (undo) undo.addEventListener("click", () => setSelfCorrection(item.id, false));
+    });
     mount.querySelector("#practice-back").addEventListener("click", resetSimulator);
     const revisedTranscript = mount.querySelector("#practice-result-transcript");
     const reevaluateButton = mount.querySelector("#practice-reevaluate-transcript");
@@ -1496,6 +1530,32 @@
     if (nextStation) nextStation.addEventListener("click", advanceExamStation);
     const confirmationForm = mount.querySelector("#practice-manual-confirm");
     if (confirmationForm) confirmationForm.addEventListener("submit", confirmManualItems);
+  }
+
+  function setSelfCorrection(itemId, corrected) {
+    const attempt = state.lastAttempt;
+    if (!attempt || attempt.evaluationMode !== "ai" || attempt.pendingManualItemIds.length) return;
+    const item = state.station.checklist.find((candidate) => candidate.id === itemId);
+    if (!item) return;
+    const baseline = attempt.aiEvaluations || attempt.evaluations;
+    const original = baseline.find((evaluation) => evaluation.itemId === itemId);
+    if (!original || (corrected && root.TemePracticeUtils.getPracticeItemPoints(item, original) >= item.weight)) return;
+    const ids = new Set(attempt.selfCorrectedItemIds || []);
+    if (corrected) ids.add(itemId);
+    else ids.delete(itemId);
+    const itemsById = new Map(state.station.checklist.map((criterion) => [criterion.id, criterion]));
+    const evaluations = baseline.map((evaluation) => ids.has(evaluation.itemId)
+      ? { ...evaluation, status: "cumprido", manualConfirmed: itemsById.get(evaluation.itemId)?.verification === "verbal" ? evaluation.manualConfirmed : true }
+      : { ...evaluation });
+    const score = root.TemePracticeUtils.calculatePracticeScore(state.station, evaluations);
+    state.lastAttempt = {
+      ...attempt,
+      ...score,
+      aiEvaluations: baseline.map((evaluation) => ({ ...evaluation })),
+      selfCorrectedItemIds: Array.from(ids)
+    };
+    saveAttempt(state.lastAttempt);
+    renderResult();
   }
 
   async function confirmManualItems(event) {
@@ -1666,10 +1726,7 @@
         return;
       }
       const serverAttempts = await root.TemePracticeApi.listAttempts();
-      let merged = getStoredAttempts();
-      serverAttempts.slice().reverse().forEach((attempt) => {
-        merged = upsertAttemptList(merged, attempt);
-      });
+      const merged = mergeServerAttempts(getStoredAttempts(), serverAttempts);
       root.localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
       renderDashboard(true);
       const refreshed = root.document.getElementById("practice-sync-state");
@@ -1823,6 +1880,7 @@
     buildPracticeReport,
     parseStoredAttempts,
     upsertAttemptList,
+    mergeServerAttempts,
     mount
   };
 });

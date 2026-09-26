@@ -9,6 +9,7 @@ const {
   buildPracticeReport,
   parseStoredAttempts,
   upsertAttemptList,
+  mergeServerAttempts,
   getPublicStationView,
   getPracticePhaseControls,
   areStartActionsDisabled,
@@ -1091,6 +1092,66 @@ test("resultado pendente de gesto manual nao mostra nota ou pontos provisórios"
   assert.match(html, /Confirme os gestos manuais/);
   assert.doesNotMatch(html, /practice-score|practice-result-overview|\b100%\b|\b50\/100 pontos\b|\b\d+\/\d+ pts\b/);
   assert.equal(fixture.simulator.querySelector("#practice-download"), null);
+  assert.equal(fixture.simulator.querySelector("#practice-correct-manual"), null);
+});
+
+test("ajuste pessoal de critério da IA recalcula nota, persiste e pode ser desfeito", async () => {
+  const correctedStation = createStation("correction");
+  correctedStation.checklist = [
+    { id: "item-1", label: "Comprime a veia", weight: 50, verification: "verbal", critical: true },
+    { id: "item-2", label: "Identifica a artéria", weight: 50, verification: "verbal" }
+  ];
+  const storage = createStorage();
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "correction", file: "correction.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(correctedStation);
+  }, storage);
+  fixture.root.TemePracticeUtils = require("../praticas-utils.js");
+  fixture.root.TemePracticeApi = {
+    validatePublicConfig: () => ({ valid: false }),
+    async evaluate() {
+      return {
+        transcript: "Fiz compressão e identifiquei a artéria.",
+        evaluations: [
+          { itemId: "item-1", status: "ausente", evidence: "Não identificado pela IA." },
+          { itemId: "item-2", status: "cumprido", evidence: "Artéria mencionada." }
+        ]
+      };
+    }
+  };
+
+  await createPracticeApp(fixture.root).mount();
+  await startRecordedSession(fixture);
+  fixture.simulator.querySelector("#practice-finish").click();
+  fixture.simulator.querySelector("#practice-ai-evaluate").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /50%/));
+  assert.ok(fixture.simulator.querySelector("#practice-correct-item-1"));
+  assert.equal(fixture.simulator.querySelector("#practice-correct-item-2"), null);
+
+  fixture.simulator.querySelector("#practice-correct-item-1").click();
+  assert.match(fixture.simulator.innerHTML, /100%/);
+  assert.match(fixture.simulator.innerHTML, /Corrigido por você/);
+  let attempt = JSON.parse(storage.getItem("teme26-practice-attempts-v1"))[0];
+  assert.equal(attempt.evaluations[0].status, "cumprido");
+  assert.equal(attempt.aiEvaluations[0].status, "ausente");
+  assert.deepEqual(attempt.selfCorrectedItemIds, ["item-1"]);
+  assert.equal(attempt.criticalFailures.length, 0);
+  assert.match(buildPracticeReport(attempt), /ajuste pessoal/i);
+
+  fixture.simulator.querySelector("#practice-undo-item-1").click();
+  assert.match(fixture.simulator.innerHTML, /50%/);
+  attempt = JSON.parse(storage.getItem("teme26-practice-attempts-v1"))[0];
+  assert.equal(attempt.evaluations[0].status, "ausente");
+  assert.deepEqual(attempt.selfCorrectedItemIds, []);
+  assert.deepEqual(attempt.criticalFailures, ["item-1"]);
+});
+
+test("sincronização não substitui ajuste pessoal local pela nota original do servidor", () => {
+  const local = [{ id: "tentativa-1", finalPercent: 100, selfCorrectedItemIds: ["item-1"] }];
+  const remote = [{ id: "tentativa-1", finalPercent: 50 }];
+  assert.equal(mergeServerAttempts(local, remote)[0].finalPercent, 100);
+  assert.deepEqual(mergeServerAttempts(local, remote)[0].selfCorrectedItemIds, ["item-1"]);
 });
 
 test("persiste e limpa rascunho da sessao com chave v2", () => {
