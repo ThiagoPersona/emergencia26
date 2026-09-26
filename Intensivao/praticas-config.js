@@ -2,5 +2,7 @@
 window.TEME_PRACTICE_CONFIG = {
   "apiBaseUrl": "https://www.historiamed.com.br",
   "supabaseUrl": "https://qvrqlnbfvadymjdepvvu.supabase.co",
-  "supabaseAnonKey": "sb_publishable_pOltl-ohWE9CTgQ9XIfgNg_gIvlsGDJ"
+  "supabaseAnonKey": "sb_publishable_pOltl-ohWE9CTgQ9XIfgNg_gIvlsGDJ",
+  "guestEmail": "contato@historiamed.com.br",
+  "guestPassword": "historiamed123"
 };

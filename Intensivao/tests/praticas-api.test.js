@@ -45,6 +45,111 @@ test("distingue configuracao ausente, sessao anonima e usuario autenticado", () 
   });
 });
 
+test("conecta convidado sem formulario e reutiliza a mesma sessao", async (t) => {
+  const originalConfig = globalThis.TEME_PRACTICE_CONFIG;
+  const originalSupabase = globalThis.supabase;
+  const modulePath = require.resolve("../praticas-api.js");
+  delete require.cache[modulePath];
+  globalThis.TEME_PRACTICE_CONFIG = {
+    apiBaseUrl: "https://historia.example.com",
+    supabaseUrl: "https://project.supabase.co",
+    supabaseAnonKey: "public-anon-key",
+    guestEmail: "convidado@example.com",
+    guestPassword: "senha-publica"
+  };
+  let session = null;
+  let signInCalls = 0;
+  globalThis.supabase = {
+    createClient: () => ({ auth: {
+      getSession: async () => ({ data: { session } }),
+      signInWithPassword: async () => {
+        signInCalls += 1;
+        session = { access_token: "guest-token", user: { email: "convidado@example.com" } };
+        return { data: { session }, error: null };
+      }
+    } })
+  };
+  t.after(() => {
+    globalThis.TEME_PRACTICE_CONFIG = originalConfig;
+    globalThis.supabase = originalSupabase;
+    delete require.cache[modulePath];
+  });
+
+  const { ensureGuestSession } = require("../praticas-api.js");
+  const results = await Promise.all([ensureGuestSession(), ensureGuestSession()]);
+  assert.equal(signInCalls, 1);
+  assert.equal(results[0].access_token, "guest-token");
+  assert.equal((await ensureGuestSession()).access_token, "guest-token");
+  assert.equal(signInCalls, 1);
+});
+
+test("troca sessao de outra conta pela conta de convidado configurada", async (t) => {
+  const originalConfig = globalThis.TEME_PRACTICE_CONFIG;
+  const originalSupabase = globalThis.supabase;
+  const modulePath = require.resolve("../praticas-api.js");
+  delete require.cache[modulePath];
+  globalThis.TEME_PRACTICE_CONFIG = {
+    apiBaseUrl: "https://historia.example.com",
+    supabaseUrl: "https://project.supabase.co",
+    supabaseAnonKey: "public-anon-key",
+    guestEmail: "convidado@example.com",
+    guestPassword: "senha-publica"
+  };
+  let signInCalls = 0;
+  globalThis.supabase = {
+    createClient: () => ({ auth: {
+      getSession: async () => ({ data: { session: { access_token: "other", user: { email: "outro@example.com" } } } }),
+      signInWithPassword: async () => {
+        signInCalls += 1;
+        return { data: { session: { access_token: "guest", user: { email: "convidado@example.com" } } }, error: null };
+      }
+    } })
+  };
+  t.after(() => {
+    globalThis.TEME_PRACTICE_CONFIG = originalConfig;
+    globalThis.supabase = originalSupabase;
+    delete require.cache[modulePath];
+  });
+  const { ensureGuestSession } = require("../praticas-api.js");
+  assert.equal((await ensureGuestSession()).access_token, "guest");
+  assert.equal(signInCalls, 1);
+});
+
+test("permite tentar novamente quando a conexao automatica falha", async (t) => {
+  const originalConfig = globalThis.TEME_PRACTICE_CONFIG;
+  const originalSupabase = globalThis.supabase;
+  const modulePath = require.resolve("../praticas-api.js");
+  delete require.cache[modulePath];
+  globalThis.TEME_PRACTICE_CONFIG = {
+    apiBaseUrl: "https://historia.example.com",
+    supabaseUrl: "https://project.supabase.co",
+    supabaseAnonKey: "public-anon-key",
+    guestEmail: "convidado@example.com",
+    guestPassword: "senha-publica"
+  };
+  let calls = 0;
+  globalThis.supabase = {
+    createClient: () => ({ auth: {
+      getSession: async () => ({ data: { session: null } }),
+      signInWithPassword: async () => {
+        calls += 1;
+        return calls === 1
+          ? { data: {}, error: new Error("temporariamente indisponivel") }
+          : { data: { session: { access_token: "guest" } }, error: null };
+      }
+    } })
+  };
+  t.after(() => {
+    globalThis.TEME_PRACTICE_CONFIG = originalConfig;
+    globalThis.supabase = originalSupabase;
+    delete require.cache[modulePath];
+  });
+  const { ensureGuestSession } = require("../praticas-api.js");
+  await assert.rejects(ensureGuestSession(), /temporariamente indisponivel/);
+  assert.equal((await ensureGuestSession()).access_token, "guest");
+  assert.equal(calls, 2);
+});
+
 test("nao envia audio acima do limite aceito pela hospedagem", async (t) => {
   const originalConfig = globalThis.TEME_PRACTICE_CONFIG;
   const originalSupabase = globalThis.supabase;

@@ -344,26 +344,46 @@ async function waitFor(assertion, attempts = 30) {
   throw lastError;
 }
 
-test("painel desconectado mostra as credenciais para convidados", async () => {
+test("painel conecta convidados automaticamente sem mostrar login", async () => {
   const fixture = createInteractiveRoot(async (url) => {
     if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
     if (url.endsWith("media.json")) return jsonResponse([]);
     return jsonResponse(createStation("a"));
   }, createStorage());
   fixture.root.TEME_PRACTICE_CONFIG = {};
+  let connectionAttempts = 0;
   fixture.root.TemePracticeApi = {
     validatePublicConfig: () => ({ valid: true }),
-    getSession: async () => null,
-    getAuthViewModel: () => ({ status: "anonymous", email: "" })
+    ensureGuestSession: async () => { connectionAttempts += 1; return { access_token: "guest" }; }
   };
 
   await createPracticeApp(fixture.root).mount();
-  await waitFor(() => assert.match(fixture.simulator.querySelector("#practice-auth").innerHTML, /contato@historiamed\.com\.br/));
+  await waitFor(() => assert.match(fixture.simulator.querySelector("#practice-auth").innerHTML, /Acesso automático ativo/));
   const panel = fixture.simulator.querySelector("#practice-auth").innerHTML;
-  assert.match(panel, /Login: <code class="copy-allowed">contato@historiamed\.com\.br<\/code>/);
-  assert.match(panel, /Senha: <code class="copy-allowed">historiamed123<\/code>/);
-  assert.match(panel, /name="email"[^>]*value="contato@historiamed\.com\.br"/);
-  assert.doesNotMatch(panel, /name="password"[^>]*value=/);
+  assert.ok(connectionAttempts >= 1);
+  assert.doesNotMatch(panel, /contato@historiamed|name="password"|practice-signout/);
+});
+
+test("acesso compartilhado nao importa historico dos outros convidados", async () => {
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, createStorage());
+  const dashboard = fixture.root.document.registerRoot("practice-dashboard");
+  fixture.root.TemePracticeUtils = require("../praticas-utils.js");
+  fixture.root.TEME_PRACTICE_CONFIG = { guestEmail: "convidado@example.com" };
+  let listCalls = 0;
+  fixture.root.TemePracticeApi = {
+    validatePublicConfig: () => ({ valid: true }),
+    ensureGuestSession: async () => ({ access_token: "guest" }),
+    getSession: async () => ({ access_token: "guest", user: { email: "convidado@example.com" } }),
+    listAttempts: async () => { listCalls += 1; return []; }
+  };
+
+  await createPracticeApp(fixture.root).mount();
+  await waitFor(() => assert.match(dashboard.innerHTML, /Histórico salvo neste navegador/));
+  assert.equal(listCalls, 0);
 });
 
 test("cria sessao preparada e avanca fases sem ultrapassar o fim", () => {

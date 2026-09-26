@@ -7,6 +7,7 @@
 
   let supabaseClient = null;
   let initialized = false;
+  let guestSessionPromise = null;
   const MAX_PRACTICE_AUDIO_BYTES = 4 * 1024 * 1024;
 
   function isSafeHttpUrl(value, allowLocalhost) {
@@ -104,6 +105,20 @@
     return data.session;
   }
 
+  async function ensureGuestSession() {
+    const config = getConfig();
+    if (!config || !config.guestEmail || !config.guestPassword) {
+      throw new Error("Acesso automático não configurado.");
+    }
+    const session = await getSession();
+    if (session && session.access_token &&
+        session.user?.email?.toLowerCase() === config.guestEmail.trim().toLowerCase()) return session;
+    if (guestSessionPromise) return guestSessionPromise;
+    guestSessionPromise = signIn(config.guestEmail, config.guestPassword)
+      .finally(() => { guestSessionPromise = null; });
+    return guestSessionPromise;
+  }
+
   async function signOut() {
     const client = init();
     if (!client) return;
@@ -127,12 +142,12 @@
     }
     let session;
     try {
-      session = await getSession();
+      session = await ensureGuestSession();
     } catch (error) {
       throw getPracticeFetchError(error);
     }
     if (!session || !session.access_token) {
-      throw new Error("Entre na sua conta para usar a correção automática.");
+      throw new Error("Não foi possível conectar ao serviço de correção. Tente novamente.");
     }
 
     const form = new FormData();
@@ -173,8 +188,8 @@
     const config = getConfig();
     const validation = validatePublicConfig(config);
     if (!validation.valid) throw new Error(validation.errors.join("; "));
-    const session = await getSession();
-    if (!session || !session.access_token) throw new Error("Entre na sua conta para sincronizar.");
+    const session = await ensureGuestSession();
+    if (!session || !session.access_token) throw new Error("Não foi possível conectar ao serviço de correção.");
     const response = await fetch(buildEvaluationEndpoint(config.apiBaseUrl), {
       method,
       headers: {
@@ -208,6 +223,7 @@
     getAuthViewModel,
     init,
     getSession,
+    ensureGuestSession,
     signIn,
     signOut,
     onAuthStateChange,

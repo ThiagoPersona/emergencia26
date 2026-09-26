@@ -1022,56 +1022,22 @@
     if (!container || !root.TemePracticeApi) return;
     const config = root.TEME_PRACTICE_CONFIG;
     const configured = root.TemePracticeApi.validatePublicConfig(config).valid;
-    let session = null;
-    if (configured) {
-      try {
-        session = await root.TemePracticeApi.getSession();
-      } catch {
-        session = null;
-      }
-    }
-    const view = root.TemePracticeApi.getAuthViewModel(session, configured);
-    if (view.status === "unconfigured") {
+    if (!configured) {
       container.innerHTML = "<p><strong>Correção automática ainda não configurada.</strong> O modo manual permanece disponível.</p>";
       return;
     }
-    if (view.status === "authenticated") {
-      container.innerHTML = `<div><span>Conectado como <strong>${escapeHtml(view.email)}</strong></span><button id="practice-signout" class="practice-button practice-button-quiet" type="button">Sair</button></div>`;
-      container.querySelector("#practice-signout").addEventListener("click", async () => {
-        await root.TemePracticeApi.signOut();
-        renderAuthPanel();
-      });
-      return;
-    }
-    container.innerHTML = `
-      <details>
-        <summary>Entrar para usar transcrição e correção automática</summary>
-        <p class="practice-access-hint">Acesso para convidados:<br>
-          Login: <code class="copy-allowed">contato@historiamed.com.br</code><br>
-          Senha: <code class="copy-allowed">historiamed123</code>
-        </p>
-        <form id="practice-login" class="practice-login">
-          <label><span>E-mail</span><input name="email" type="email" autocomplete="username" value="contato@historiamed.com.br" required></label>
-          <label><span>Senha</span><input name="password" type="password" autocomplete="current-password" required></label>
-          <button class="practice-button practice-button-primary" type="submit">Entrar</button>
-          <p id="practice-login-error" role="alert"></p>
-        </form>
-      </details>`;
-    container.querySelector("#practice-login").addEventListener("submit", async (event) => {
-      event.preventDefault();
-      const errorNode = container.querySelector("#practice-login-error");
-      const button = event.currentTarget.querySelector("button");
-      const data = new FormData(event.currentTarget);
-      button.disabled = true;
-      errorNode.textContent = "";
-      try {
-        await root.TemePracticeApi.signIn(data.get("email"), data.get("password"));
-        renderAuthPanel();
-      } catch (error) {
-        errorNode.textContent = error.message || "Falha no login.";
-        button.disabled = false;
+    container.innerHTML = "<p>Conectando ao serviço de correção...</p>";
+    try {
+      await root.TemePracticeApi.ensureGuestSession();
+      if (root.document.getElementById("practice-auth") === container) {
+        container.innerHTML = "<p>Acesso automático ativo.</p>";
       }
-    });
+    } catch {
+      if (root.document.getElementById("practice-auth") !== container) return;
+      container.innerHTML = `<p role="alert">Não foi possível conectar ao serviço de correção.</p>
+        <button id="practice-reconnect" class="practice-button practice-button-quiet" type="button">Tentar conectar novamente</button>`;
+      container.querySelector("#practice-reconnect").addEventListener("click", renderAuthPanel);
+    }
   }
 
   function clearSessionTimer() {
@@ -1593,6 +1559,7 @@
   function renderDashboard(skipSync) {
     const mount = root.document && root.document.getElementById("practice-dashboard");
     if (!mount || !root.TemePracticeUtils) return;
+    const sharedGuestAccess = Boolean(root.TEME_PRACTICE_CONFIG?.guestEmail);
     const attempts = getStoredAttempts();
     const summary = root.TemePracticeUtils.summarizePracticeAttempts(attempts);
     mount.innerHTML = `
@@ -1602,7 +1569,7 @@
           <div><strong>${summary.averagePercent == null ? "-" : `${summary.averagePercent}%`}</strong><span>média concluída</span></div>
           <div><strong>${summary.byDomain.length}</strong><span>domínios treinados</span></div>
         </div>
-        <p id="practice-sync-state" class="practice-help">Histórico local${root.TemePracticeApi ? "; verificando sincronização..." : "."}</p>
+        <p id="practice-sync-state" class="practice-help">${sharedGuestAccess ? "Histórico salvo neste navegador." : `Histórico local${root.TemePracticeApi ? "; verificando sincronização..." : "."}`}</p>
         <h2>Lacunas mais frequentes</h2>
         ${summary.frequentGaps.length ? `<ol class="practice-gap-list">${summary.frequentGaps.slice(0, 10).map((gap) => `<li><span>${escapeHtml(gap.label)}</span><strong>${gap.count}x</strong></li>`).join("")}</ol>` : "<p>Nenhuma lacuna registrada. Conclua uma estação para iniciar o histórico.</p>"}
         <h2>Últimas tentativas</h2>
@@ -1623,7 +1590,7 @@
       root.localStorage.removeItem(STORAGE_KEY);
       renderDashboard();
     });
-    if (!skipSync && !state.dashboardSyncStarted) syncDashboardAttempts();
+    if (!sharedGuestAccess && !skipSync && !state.dashboardSyncStarted) syncDashboardAttempts();
   }
 
   async function syncDashboardAttempts() {
