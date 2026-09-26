@@ -171,7 +171,11 @@ function createFakeDocument() {
     querySelector(selector) {
       if (selector.startsWith("#")) {
         const id = selector.slice(1);
-        return this._parsedNodes.find((node) => node.id === id) || null;
+        for (const node of [...this._parsedNodes, ...this.childNodes]) {
+          if (node.id === id) return node;
+          const nested = node.querySelector(selector);
+          if (nested) return nested;
+        }
       }
       return null;
     }
@@ -756,6 +760,104 @@ test("resultado mostra transcricao apos referencias e permite reavaliar texto co
   assert.ok(back);
   back.click();
   await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-start-manual")));
+});
+
+test("transcricao em loop nao gera nota e permite avaliar texto corrigido", async () => {
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, createStorage());
+  fixture.root.TemePracticeUtils = require("../praticas-utils.js");
+  const requests = [];
+  fixture.root.TemePracticeApi = {
+    validatePublicConfig: () => ({ valid: false }),
+    async evaluate(request) {
+      requests.push(request);
+      if (requests.length === 1) {
+        const error = new Error("Transcrição repetitiva. A estação não foi pontuada.");
+        error.code = "transcript_quality";
+        error.transcript = "O paciente está exausto. O paciente está exausto.";
+        throw error;
+      }
+      return {
+        transcript: request.transcript,
+        evaluations: [{ itemId: "item-1", status: "cumprido", evidence: "Resposta corrigida", rationale: "Atendeu" }],
+        summary: "Avaliação concluída."
+      };
+    }
+  };
+
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-manual").click();
+  const answer = fixture.simulator.querySelector("#practice-slide-answer");
+  answer.value = "Resposta inicial da estação.";
+  answer.dispatch("input");
+  fixture.simulator.querySelector("#practice-finish").click();
+  fixture.simulator.querySelector("#practice-ai-evaluate").click();
+
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-corrected-evaluate")));
+  assert.doesNotMatch(fixture.simulator.innerHTML, /practice-result-overview/);
+  const corrected = fixture.simulator.querySelector("#practice-transcript");
+  assert.match(corrected.value, /exausto/);
+  assert.equal(fixture.simulator.querySelector("#practice-corrected-evaluate").disabled, true);
+  corrected.value = "Avalio via aérea e circulação. Solicito cirurgia geral precocemente.";
+  corrected.dispatch("input");
+  assert.equal(fixture.simulator.querySelector("#practice-corrected-evaluate").disabled, false);
+  fixture.simulator.querySelector("#practice-corrected-evaluate").click();
+
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /practice-result-overview/));
+  assert.equal(requests.length, 2);
+  assert.equal(requests[1].audioBlob, null);
+  assert.match(requests[1].transcript, /cirurgia geral precocemente/);
+});
+
+test("reenvio apos transcricao em loop preserva audio e nao anexa texto defeituoso", async () => {
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, createStorage());
+  fixture.root.TemePracticeUtils = require("../praticas-utils.js");
+  const requests = [];
+  fixture.root.TemePracticeApi = {
+    validatePublicConfig: () => ({ valid: false }),
+    async evaluate(request) {
+      requests.push(request);
+      if (requests.length === 1) {
+        const error = new Error("Transcrição repetitiva.");
+        error.code = "transcript_quality";
+        error.transcript = "Fala repetida. Fala repetida.";
+        throw error;
+      }
+      return {
+        transcript: "Solicito cirurgia geral precocemente.",
+        evaluations: [{ itemId: "item-1", status: "cumprido", evidence: "Fala recuperada", rationale: "Atendeu" }]
+      };
+    }
+  };
+
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.equal(fixture.recorders[0].state, "recording"));
+  fixture.recorders[0].emitData(new Blob(["audio valido"], { type: "audio/webm" }));
+  fixture.simulator.querySelector("#practice-finish").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Baixar gravação/));
+  const transcript = fixture.simulator.querySelector("#practice-transcript");
+  transcript.value = "Resposta inicial falada.";
+  transcript.dispatch("input");
+  fixture.simulator.querySelector("#practice-ai-evaluate").click();
+  await waitFor(() => assert.match(
+    fixture.simulator.querySelector("#practice-api-message").innerHTML,
+    /Transcrição pouco confiável/
+  ));
+  assert.match(fixture.simulator.innerHTML, /Baixar gravação/);
+  fixture.simulator.querySelector("#practice-ai-evaluate").click();
+
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /practice-result-overview/));
+  assert.ok(requests[0].audioBlob.size > 0);
+  assert.ok(requests[1].audioBlob.size > 0);
+  assert.equal(requests[1].transcript, "");
 });
 
 test("resultado mostra pontos e criterios confirmados manualmente de forma coerente com a nota", async () => {

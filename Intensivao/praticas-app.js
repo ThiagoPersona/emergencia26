@@ -104,6 +104,7 @@
     audioUrl: null,
     runtimeNotice: "",
     transcript: "",
+    transcriptionQualityError: false,
     phaseAnswers: {},
     lastAttempt: null,
     apiStatus: "idle",
@@ -655,6 +656,7 @@
     state.stationMedia = null;
     state.mediaStatus = "loading";
     state.loadError = "";
+    state.transcriptionQualityError = false;
     renderSetup();
 
     try {
@@ -1467,28 +1469,51 @@
     renderResult();
   }
 
-  async function requestAiEvaluation() {
+  async function requestAiEvaluation(options = {}) {
+    const textOnly = options?.textOnly === true;
     const message = root.document.getElementById("practice-api-message");
     if (!root.TemePracticeApi || typeof root.TemePracticeApi.evaluate !== "function") {
       message.innerHTML = "<div class=\"practice-alert\">A API protegida ainda não está configurada neste navegador. Use a autoavaliação manual.</div>";
       return;
     }
-    const button = root.document.getElementById("practice-ai-evaluate");
+    const button = root.document.getElementById(textOnly ? "practice-corrected-evaluate" : "practice-ai-evaluate");
     button.disabled = true;
-    button.textContent = "Analisando...";
+    button.textContent = textOnly ? "Analisando texto..." : "Analisando...";
     try {
       const result = await root.TemePracticeApi.evaluate({
         station: state.station,
-        audioBlob: state.audioBlob,
-        transcript: state.transcript.trim(),
+        audioBlob: textOnly ? null : state.audioBlob,
+        transcript: textOnly || !state.transcriptionQualityError ? state.transcript.trim() : "",
         durationSeconds: Math.min(state.station.durationSeconds, Math.round((Date.now() - state.session.startedAtMs) / 1000))
       });
+      state.transcriptionQualityError = false;
       state.transcript = result.transcript || state.transcript;
       finalizeEvaluation(result.evaluations, "ai", result.attemptId, result);
     } catch (error) {
+      if (error.code === "transcript_quality" && typeof error.transcript === "string") {
+        state.transcript = error.transcript;
+        state.transcriptionQualityError = true;
+        renderReview();
+        const review = root.document.getElementById("practice-simulator");
+        const textarea = review.querySelector("#practice-transcript");
+        textarea.value = state.transcript;
+        const recovery = review.querySelector("#practice-api-message");
+        recovery.innerHTML = `<div class="practice-alert practice-alert-error"><strong>Transcrição pouco confiável; nota não gerada.</strong><span>${escapeHtml(error.message)}</span></div>
+          <button id="practice-corrected-evaluate" class="practice-button" type="button" disabled>Avaliar texto corrigido</button>`;
+        const correctedButton = recovery.querySelector("#practice-corrected-evaluate");
+        const originalText = state.transcript.trim();
+        textarea.addEventListener("input", () => {
+          correctedButton.disabled = textarea.value.trim().length < 10 || textarea.value.trim() === originalText;
+        });
+        correctedButton.addEventListener("click", () => requestAiEvaluation({ textOnly: true }));
+        const audioRetry = review.querySelector("#practice-ai-evaluate");
+        if (state.audioBlob?.size) audioRetry.textContent = "Transcrever áudio novamente";
+        else audioRetry.disabled = true;
+        return;
+      }
       message.innerHTML = `<div class="practice-alert practice-alert-error"><strong>Correção indisponível.</strong><span>${escapeHtml(error.message)}</span></div>`;
       button.disabled = false;
-      button.textContent = "Tentar correção novamente";
+      button.textContent = textOnly ? "Avaliar texto corrigido" : "Tentar correção novamente";
     }
   }
 
@@ -1521,6 +1546,7 @@
     cleanupRecording();
     state.runtimeNotice = "";
     state.transcript = "";
+    state.transcriptionQualityError = false;
     state.phaseAnswers = {};
     if (root.localStorage) clearPracticeDraft(root.localStorage);
     if (root.localStorage) root.localStorage.removeItem(ANSWERS_KEY);

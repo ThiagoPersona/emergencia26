@@ -48,6 +48,15 @@
     return `A API respondeu com erro ${status || "desconhecido"}.`;
   }
 
+  function buildPracticeApiError(payload, status) {
+    const error = new Error(parseApiError(payload, status));
+    if (status === 422 && payload?.code === "transcript_quality" && typeof payload.transcript === "string") {
+      error.code = payload.code;
+      error.transcript = payload.transcript;
+    }
+    return error;
+  }
+
   function getPracticeFetchError(error) {
     return error instanceof TypeError || /failed to fetch|networkerror|load failed/i.test(error?.message || "")
       ? new Error("Não foi possível conectar ao servidor da correção. Confira sua internet e tente novamente. A gravação permanece disponível nesta tela.")
@@ -177,7 +186,7 @@
     } catch {
       payload = null;
     }
-    if (!response.ok) throw new Error(parseApiError(payload, response.status));
+    if (!response.ok) throw buildPracticeApiError(payload, response.status);
     if (!payload || !Array.isArray(payload.evaluations)) {
       throw new Error("A API devolveu uma avaliação inválida.");
     }
@@ -219,6 +228,7 @@
     validatePublicConfig,
     buildEvaluationEndpoint,
     parseApiError,
+    buildPracticeApiError,
     getPracticeFetchError,
     getAuthViewModel,
     init,

@@ -4,6 +4,7 @@ const test = require("node:test");
 const {
   validatePublicConfig,
   buildEvaluationEndpoint,
+  buildPracticeApiError,
   parseApiError,
   getAuthViewModel
 } = require("../praticas-api.js");
@@ -34,6 +35,17 @@ test("constroi endpoint sem barra duplicada", () => {
 test("extrai mensagem segura de erro da API", () => {
   assert.equal(parseApiError({ error: "Sessão expirada." }, 401), "Sessão expirada.");
   assert.match(parseApiError(null, 500), /500/);
+});
+
+test("preserva transcricao recuperavel quando API bloqueia uma nota por repeticao", () => {
+  const error = buildPracticeApiError({
+    error: "Transcrição pouco confiável.",
+    code: "transcript_quality",
+    transcript: "Frase repetida. Frase repetida."
+  }, 422);
+  assert.equal(error.message, "Transcrição pouco confiável.");
+  assert.equal(error.code, "transcript_quality");
+  assert.equal(error.transcript, "Frase repetida. Frase repetida.");
 });
 
 test("distingue configuracao ausente, sessao anonima e usuario autenticado", () => {
