@@ -1,0 +1,52 @@
+{
+  "id": "emt-5-sepse-choque",
+  "version": 2,
+  "title": "Sepse com hipoperfusão e avaliação de fluidorresponsividade",
+  "examTitle": "Febre e hipoperfusão",
+  "domain": "Respiratório, sepse e metabólico",
+  "domains": ["Sepse", "Choque"],
+  "family": "Respiratório, sepse e metabólico",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["infecção", "hipoperfusão", "fluidorresponsividade", "vasopressores"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 5, "adaptation": "Caso discretamente reescrito; perguntas, ordem, itens e pesos do checklist preservados" },
+  "briefing": "Responda uma tarefa por vez. A evolução hemodinâmica aparece quando avançar.",
+  "phases": [
+    {
+      "id": "avaliacao-inicial",
+      "title": "Tarefa 1",
+      "prompt": "Qual sua provável hipótese diagnóstica e quais as medidas de avaliação e estabilização para esse cenário?",
+      "patientState": { "summary": "Homem de 70 anos, diabético, com febre há dois dias, tosse com secreção purulenta e confusão recente. Está sonolento, com extremidades frias e moteadas, TEC de 5 segundos, diurese aproximada de 0,2 mL/kg/h nas últimas três horas e estertores na base pulmonar direita. Lactato inicial de 4,1 mmol/L e creatinina de 1,9 mg/dL.", "vitals": { "PA": "86/52 mmHg", "FC": "124 bpm", "FR": "29 irpm", "SpO2": "92% em ar ambiente", "temperatura": "39,1 °C" } }
+    },
+    {
+      "id": "fluidorresponsividade",
+      "title": "Tarefa 2",
+      "prompt": "Escolha 1 método para avaliar fluidorresponsividade e detalhe o passo a passo, indicando o resultado esperado caso o paciente seja respondedor.",
+      "patientState": { "summary": "A equipe iniciou suporte e pergunta como decidir se mais volume trará benefício. Há ultrassom e monitorização à beira-leito; descreva um teste dinâmico e a medida usada para interpretar a resposta.", "vitals": { "PA": "84/50 mmHg", "FC": "122 bpm" } }
+    },
+    {
+      "id": "choque-persistente",
+      "title": "Tarefa 3",
+      "prompt": "Considerando que o paciente não era fluidorresponsivo e os sinais vitais abaixo, quais suas próximas condutas?",
+      "patientState": { "summary": "Após a avaliação dinâmica, não houve aumento relevante do débito com a manobra. A perfusão segue ruim; há equipe e bomba de infusão disponíveis.", "vitals": { "PA": "76/42 mmHg", "PAM": "53 mmHg", "FC": "128 bpm", "SpO2": "95% com oxigênio" } }
+    }
+  ],
+  "checklist": [
+    { "id": "choque-septico", "label": "Reconhece choque séptico (infecção + hipoperfusão: lactato 4, TEC, DU baixo ± hipotensão)", "weight": 13, "verification": "verbal", "critical": true, "explanation": "Infecção provável e hipoperfusão com lactato elevado e pressão baixa exigem ressuscitação imediata." },
+    { "id": "oxigenio-acessos", "label": "Oxigênio para SatO2 >94% + 2 acessos calibrosos + PAM invasiva", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Monitorização e acesso devem acompanhar a estabilização; a meta de saturação é a do checklist e pode ser individualizada." },
+    { "id": "hemoculturas", "label": "Hemoculturas antes do antibiótico", "weight": 6, "verification": "verbal", "critical": false, "explanation": "Colher rapidamente antes do antimicrobiano quando isso não atrasar a primeira dose." },
+    { "id": "lactato-labs", "label": "Lactato seriado e exames laboratoriais iniciais", "weight": 4.5, "verification": "verbal", "critical": false, "explanation": "Lactato seriado e função orgânica auxiliam na reavaliação da perfusão." },
+    { "id": "antibiotico", "label": "Antibiótico EV de amplo espectro na 1ª hora", "weight": 13, "verification": "verbal", "critical": true, "explanation": "Choque séptico requer antimicrobiano imediato, dirigido ao foco e ao perfil epidemiológico local." },
+    { "id": "cristaloide", "label": "Expansão volêmica inicial (cristaloide; considerar nora se refratário)", "weight": 11, "verification": "verbal", "critical": true, "explanation": "Administrar cristaloide com reavaliação frequente, evitando volume adicional sem benefício; noradrenalina pode começar cedo." },
+    { "id": "antitermico", "label": "Antitérmico", "weight": 2.5, "verification": "verbal", "critical": false, "explanation": "Medida de conforto do checklist; não substitui antibiótico nem ressuscitação." },
+    { "id": "tecnica-fluidos", "label": "Descreve a técnica corretamente", "weight": 14, "verification": "hibrido", "critical": true, "explanation": "Exemplo aceito: elevação passiva das pernas com aferição antes e durante a manobra, ou minidesafio monitorado." },
+    { "id": "metrica-fluidos", "label": "Informa métrica utilizada", "weight": 6, "verification": "verbal", "critical": false, "explanation": "Usar variação de débito/volume sistólico ou VTI, não só pressão arterial; elevação de cerca de 10% após elevação passiva sugere resposta." },
+    { "id": "noradrenalina", "label": "Noradrenalina 0,05–0,3 µg/kg/min, titular para PAM ≥65 mmHg", "weight": 16, "verification": "verbal", "critical": true, "explanation": "Vasopressor de primeira linha, titulado à perfusão e à PAM; dose indicada é a faixa cobrada pelo curso." },
+    { "id": "hidrocortisona", "label": "Hidrocortisona 200 mg/dia (refratariedade a vasopressor)", "weight": 4, "verification": "verbal", "critical": false, "explanation": "Considerar no choque com necessidade persistente de vasopressores; não é a primeira intervenção isolada." },
+    { "id": "vasopressina", "label": "Vasopressina 0,03 U/min se NE em dose alta/associar", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Adicionar à noradrenalina quando a dose sobe e a PAM permanece inadequada, conforme protocolo local." }
+  ],
+  "criticalErrors": ["Não reconhecer hipoperfusão com infecção provável", "Atrasar antibiótico no choque", "Dar mais fluidos sem reavaliar resposta e ignorar vasopressor"],
+  "referenceAnswer": "Tarefa 1: reconheço infecção com hipoperfusão e hipotensão; monitorizo, ofereço oxigênio, obtenho dois acessos, colho culturas sem atrasar antibiótico, lactato seriado e exames. Inicio antibiótico EV na primeira hora e cristaloide com reavaliação; antitérmico para conforto. Tarefa 2: escolho elevação passiva das pernas e meço VTI/volume sistólico antes e durante; aumento transitório em torno de 10% sugere resposta, sem inferir responsividade apenas pela pressão. Tarefa 3: sem resposta a volume e com PAM 53, não insisto em bolus. Inicio noradrenalina titulada para PAM ao menos 65 mmHg; considero vasopressina 0,03 U/min com necessidade crescente e hidrocortisona 200 mg/dia se mantiver vasopressor. Reavalio perfusão e foco infeccioso.",
+  "references": ["https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026"]
+}

@@ -124,7 +124,7 @@
     : (typeof require === "function" ? require("./praticas-utils.js") : null);
 
   function trainingPrefix(entry) {
-    return entry && Number.isInteger(entry.trainingSimulado) && entry.trainingSimulado >= 1 && entry.trainingSimulado <= 4
+    return entry && Number.isInteger(entry.trainingSimulado) && entry.trainingSimulado >= 1 && entry.trainingSimulado <= 5
       ? "\u{1F534} " : "";
   }
 

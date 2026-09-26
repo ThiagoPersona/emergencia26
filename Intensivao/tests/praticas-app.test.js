@@ -479,6 +479,8 @@ test("deriva titulo publico por modo sem vazar diagnostico na prova", () => {
   const marked = getPublicStationView({ ...diagnosticStation, trainingSimulado: 4 }, "exam", 2);
   assert.equal(marked.title, "\u{1F534} Caso 2");
   assert.equal(marked.title.includes(diagnosticStation.title), false);
+  const markedFifth = getPublicStationView({ ...diagnosticStation, trainingSimulado: 5 }, "exam", 3);
+  assert.equal(markedFifth.title, "\u{1F534} Caso 3");
 });
 
 test("cartao da prova oculta o caso e o total de criterios antes do inicio", async () => {

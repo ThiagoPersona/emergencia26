@@ -1,0 +1,52 @@
+{
+  "id": "emt-5-metanol",
+  "version": 2,
+  "title": "Intoxicação por álcool tóxico com acidose e alteração visual",
+  "examTitle": "Alteração visual após bebida de origem incerta",
+  "domain": "Toxicologia e animais peçonhentos",
+  "domains": ["Toxicologia", "Metabólico"],
+  "family": "Toxicologia e animais peçonhentos",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["álcool tóxico", "acidose", "gap osmolar", "antídoto", "hemodiálise"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 5, "adaptation": "Caso discretamente reescrito; perguntas, ordem, itens e pesos do checklist preservados" },
+  "briefing": "Responda à abordagem antes de abrir os exames. A interpretação laboratorial e a terapia específica vêm depois.",
+  "phases": [
+    {
+      "id": "suspeita",
+      "title": "Tarefa 1",
+      "prompt": "Qual a abordagem inicial e a principal hipótese diagnóstica?",
+      "patientState": { "summary": "Homem de 43 anos, 70 kg, antes hígido, chega com náuseas, vômitos, dor abdominal, cefaleia intensa e visão descrita como ‘campo nevado’. Cerca de 18 horas antes ingeriu bebida artesanal sem rótulo; um amigo que a consumiu também adoeceu. Glasgow 14, respirando espontaneamente.", "vitals": { "PA": "106/67 mmHg", "FC": "107 bpm", "FR": "29 irpm", "SpO2": "98% em ar ambiente" } }
+    },
+    {
+      "id": "laboratorio",
+      "title": "Tarefa 2",
+      "prompt": "Como interpretar os resultados apresentados?",
+      "patientState": { "summary": "Os exames iniciais estão disponíveis: pH 7,12; bicarbonato 8 mEq/L; sódio 140 mEq/L; potássio 4 mEq/L; cloro 100 mEq/L; glicose 90 mg/dL; ureia 28 mg/dL. Osmolalidade sérica medida 330 mOsm/kg e calculada 303 mOsm/kg. Ainda não saiu a dosagem dos álcoois.", "vitals": { "PA": "104/66 mmHg", "FC": "108 bpm" } }
+    },
+    {
+      "id": "terapia",
+      "title": "Tarefa 3",
+      "prompt": "Quais são as medidas terapêuticas específicas neste momento?",
+      "patientState": { "summary": "A alteração visual e a acidemia persistem. Hemodiálise e centro de toxicologia podem ser acionados, mas a dosagem sérica do agente ainda não está pronta.", "vitals": { "PA": "102/64 mmHg", "FC": "110 bpm", "FR": "30 irpm" } }
+    }
+  ],
+  "checklist": [
+    { "id": "ecg", "label": "Solicita ECG 12 derivações", "weight": 8, "verification": "verbal", "critical": false, "explanation": "Ajuda a avaliar repercussões e diagnósticos diferenciais, sem atrasar antídoto." },
+    { "id": "diurese", "label": "Inicia hidratação visando diurese de 1–2 mL/kg/h", "weight": 8, "verification": "verbal", "critical": false, "explanation": "Alvo do checklist; não administrar volume cegamente só para atingir diurese, reavaliando perfusão e risco de sobrecarga." },
+    { "id": "hipotese", "label": "Reconhece a hipótese de intoxicação por metanol: bebida de procedência duvidosa, período de latência, sintomas gastrointestinais e alteração visual", "weight": 14, "verification": "verbal", "critical": true, "explanation": "Latência e sintomas visuais após bebida compartilhada são pistas fortes de álcool tóxico." },
+    { "id": "gap-osmolar", "label": "Calcula o gap osmolar: 330 – 303 = 27 mOsm/kg", "weight": 8, "verification": "verbal", "critical": false, "explanation": "A diferença entre valores medido e calculado é 27; o gap pode diminuir em fases tardias." },
+    { "id": "dosagem", "label": "Solicita dosagem sérica de metanol e etanol", "weight": 8, "verification": "verbal", "critical": false, "explanation": "Confirmar concentrações orienta acompanhamento, mas não deve atrasar antídoto ou diálise." },
+    { "id": "acidose", "label": "Interpreta acidose metabólica grave com ânion gap e gap osmolar elevados, compatível com diagnóstico presuntivo de intoxicação por metanol", "weight": 14, "verification": "verbal", "critical": true, "explanation": "Ânion gap calculado é 140 − (100 + 8) = 32 mEq/L; o slide do curso informa 36, discrepância aritmética mantida como dado do material, sem alterar o critério de pontuação." },
+    { "id": "bicarbonato", "label": "Inicia correção da acidose com bicarbonato de sódio IV", "weight": 9, "verification": "verbal", "critical": false, "explanation": "A acidemia grave pode exigir bicarbonato como ponte enquanto antídoto e diálise são providenciados." },
+    { "id": "antidoto", "label": "Indica início imediato de antídoto (etanol ou fomepizol), sem aguardar a dosagem sérica de metanol", "weight": 7, "verification": "verbal", "critical": true, "explanation": "Bloquear álcool desidrogenase evita nova formação de formiato; fomepizol é preferido quando disponível." },
+    { "id": "hemodialise", "label": "Indica hemodiálise imediata, preferencialmente intermitente, diante de alteração visual, pH ≤ 7,15 e ânion gap > 24 mEq/L", "weight": 9, "verification": "verbal", "critical": true, "explanation": "EXTRIP recomenda diálise com qualquer desses critérios; este caso já tem déficit visual e pH 7,12, além de gap calculado 32." },
+    { "id": "folinico", "label": "Indica ácido folínico (1 mg/kg IV a cada 4–6 h)", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Adjuvante ao metabolismo do formiato, sem substituir bloqueio da ADH ou diálise." },
+    { "id": "lavagem-carvao", "label": "Reconhece que lavagem gástrica e carvão ativado estão contraindicados", "weight": 6, "verification": "verbal", "critical": false, "explanation": "No contexto apresentado, 18 horas após ingestão, não trazem benefício e podem adicionar risco; preservar a redação do checklist." },
+    { "id": "seguimento", "label": "Solicita acompanhamento laboratorial seriado (gasometria, ionograma, função renal e hepática a cada 12 h) e avaliação de fundo de olho", "weight": 4, "verification": "verbal", "critical": false, "explanation": "A frequência de 12 horas é a do curso; em acidose grave e durante diálise, reavaliar mais frequentemente conforme protocolo." }
+  ],
+  "criticalErrors": ["Aguardar dosagem para iniciar antídoto", "Não indicar diálise com déficit visual e pH 7,12", "Ignorar acidose com gap elevado"],
+  "referenceAnswer": "Tarefa 1: reconheço suspeita de intoxicação por álcool tóxico, especialmente metanol, pela bebida duvidosa, latência, sintomas gastrointestinais e alteração visual; monitorizo, acesso, ECG e hidratação conforme perfusão/diurese. Tarefa 2: gap osmolar 330 − 303 = 27; pH 7,12 e HCO3 8 definem acidose metabólica grave. Pelos eletrólitos apresentados, ânion gap = 140 − (100 + 8) = 32 mEq/L, apesar de o slide original trazer 36; ambos são elevados. Solicito metanol e etanol sem atrasar terapia. Tarefa 3: inicio fomepizol, ou etanol se indisponível, corrijo acidemia com bicarbonato, aciono hemodiálise intermitente por déficit visual e acidose, e considero folinato. Não uso lavagem gástrica/carvão neste cenário; acompanho gasometria, eletrólitos, função renal/hepática e avaliação oftalmológica.",
+  "references": ["https://www.extrip-workgroup.org/methanol"]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "emt-5-obstrucao-intestinal",
+  "version": 2,
+  "title": "Obstrução intestinal com avaliação ultrassonográfica",
+  "examTitle": "Dor abdominal e distensão progressiva",
+  "domain": "Gastroenterologia",
+  "domains": ["Gastroenterologia", "POCUS"],
+  "family": "Gastroenterologia",
+  "difficulty": "intermediaria",
+  "origin": "acervo_reescrito",
+  "tags": ["obstrução intestinal", "ultrassom de alças", "descompressão", "tomografia"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 5, "adaptation": "Caso discretamente reescrito; perguntas, ordem, itens e pesos do checklist preservados; imagem e clipe abertos equivalentes" },
+  "briefing": "Interprete a imagem e o clipe antes de avançar à conduta. São amostras de outros pacientes com achados equivalentes.",
+  "phases": [
+    {
+      "id": "ultrassom",
+      "title": "Tarefa 1",
+      "prompt": "Você decide realizar uma ultrassonografia à beira do leito e encontra as imagens abaixo. Descreva os achados patológicos presentes e os sinais adicionais que procuraria no exame.",
+      "patientState": { "summary": "Homem de 73 anos com cólica abdominal há dois dias, náuseas, vômitos biliosos e distensão progressiva. Não elimina fezes ou flatos há cerca de 36 horas. Teve apendicectomia décadas atrás. Abdome distendido e timpânico, doloroso difusamente, com ruídos intestinais aumentados. A imagem estática e o clipe são de outros pacientes e exemplificam diferentes achados possíveis no ultrassom.", "vitals": { "PA": "108/70 mmHg", "FC": "108 bpm", "FR": "22 irpm", "SpO2": "97% em ar ambiente" } },
+      "media": ["us-em5-alca-dilatada", "us-em5-alcas-dinamica"]
+    },
+    {
+      "id": "conduta",
+      "title": "Tarefa 2",
+      "prompt": "Descreva as condutas prioritárias neste paciente.",
+      "patientState": { "summary": "O paciente mantém vômitos, dor e distensão. Não há peritonite ao exame inicial, mas ainda é necessário caracterizar nível, causa e eventuais sinais de complicação.", "vitals": { "PA": "104/68 mmHg", "FC": "112 bpm" } }
+    }
+  ],
+  "checklist": [
+    { "id": "to-and-fro", "label": "To-and-fro (conteúdo indo e voltando no lúmen)", "weight": 8, "verification": "verbal", "critical": false, "explanation": "Alteração dinâmica do trânsito é vista no clipe, não pode ser inferida de uma foto isolada." },
+    { "id": "teclado", "label": "Sinal do ‘teclado de piano’ (pregas valvulares)", "weight": 8, "verification": "verbal", "critical": false, "explanation": "Pregas proeminentes aparecem na alça da imagem estática." },
+    { "id": "alcas", "label": "Dilatação de alças > 3 cm", "weight": 8, "verification": "verbal", "critical": true, "explanation": "A amostra estática mede aproximadamente 3 cm; aceitar descrição de alças dilatadas e a medida limítrofe, sem exigir que a foto prove >3 cm." },
+    { "id": "liquido", "label": "Líquido livre perialças", "weight": 8, "verification": "verbal", "critical": false, "explanation": "Pode acompanhar obstrução complicada; não atribuir a cada amostra externa achado que não esteja claramente visível." },
+    { "id": "peristaltismo", "label": "Peristaltismo reduzido (ou desorganizado em fases tardias)", "weight": 8, "verification": "verbal", "critical": false, "explanation": "Motilidade varia conforme a fase; clipe pode mostrar padrão anormal sem demonstrar hipomotilidade tardia." },
+    { "id": "cristaloide", "label": "Hidratação venosa com cristaloides", "weight": 13, "verification": "verbal", "critical": false, "explanation": "Vômitos e sequestro intraluminal causam depleção; reavaliar perfusão e eletrólitos." },
+    { "id": "sng", "label": "Sonda nasogástrica para descompressão gástrica", "weight": 15, "verification": "verbal", "critical": true, "explanation": "Descomprimir quando há vômitos e distensão relevantes, reduzindo desconforto e risco de aspiração." },
+    { "id": "dieta-zero", "label": "Dieta zero", "weight": 4, "verification": "verbal", "critical": false, "explanation": "Suspender ingesta enquanto obstrução e risco cirúrgico são avaliados." },
+    { "id": "laboratorio", "label": "Exames laboratoriais (hemograma, função renal, ± lactato)", "weight": 6, "verification": "verbal", "critical": false, "explanation": "Avaliar desidratação, disfunção orgânica e sinais de isquemia, sem usar lactato isolado para excluí-la." },
+    { "id": "tc", "label": "TC de abdome total com contraste IV", "weight": 13, "verification": "verbal", "critical": true, "explanation": "Ajuda a localizar ponto de transição e sinais de estrangulamento, considerando função renal e contraindicações." },
+    { "id": "cirurgia", "label": "Avaliação da cirurgia geral precoce", "weight": 9, "verification": "verbal", "critical": true, "explanation": "Cirurgia deve avaliar cedo e imediatamente se houver peritonite, sofrimento intestinal ou deterioração." }
+  ],
+  "criticalErrors": ["Não iniciar ressuscitação/descompressão em paciente com vômitos e distensão", "Não solicitar avaliação cirúrgica diante de suspeita de obstrução", "Tomar ultrassom isolado como exclusão de isquemia"],
+  "referenceAnswer": "Tarefa 1: a imagem estática ilustra alça dilatada e pregas coniventes proeminentes, cerca de 3 cm; o clipe exemplifica movimento to-and-fro. Procuro líquido entre alças e avalio a motilidade, que pode estar reduzida ou desorganizada tardiamente, mas não afirmo esses achados se a amostra não os demonstra. Tarefa 2: deixo em dieta zero, obtenho acesso e hidrato com cristaloide, coloco sonda nasogástrica para descompressão, colho hemograma, função renal, eletrólitos e lactato conforme gravidade, solicito TC de abdome com contraste IV se possível e aciono cirurgia geral cedo. Reavalio continuamente sinais de isquemia/peritonite.",
+  "references": ["https://bestpracticeinsurgery.ca/guidelines/sbo/", "https://www.acep.org/sonoguide/advanced/gi---bowel-obstruction", "https://commons.wikimedia.org/wiki/File:Strickleiterphaenomen_Sonographie_als_Hinweis_auf_Ileus_51M_-_US_-_001.jpg", "https://commons.wikimedia.org/wiki/File:UOTW_20_-_Ultrasound_of_the_Week_2.webm"]
+}

@@ -61,21 +61,26 @@ const EXPECTED_STATIONS = [
   ["emt-4-trauma-torax-penetrante", "Ferimento torácico com deterioração"],
   ["emt-4-pocus-pelve", "Trauma com avaliação ultrassonográfica e radiografia"],
   ["emt-4-neuro-febre-convulsao", "Convulsão prolongada com febre"],
-  ["emt-4-cardio-iam-arritmias", "Dor torácica com evolução elétrica"]
+  ["emt-4-cardio-iam-arritmias", "Dor torácica com evolução elétrica"],
+  ["emt-5-sepse-choque", "Febre e hipoperfusão"],
+  ["emt-5-trauma-coluna", "Queda de altura com déficit motor"],
+  ["emt-5-pocus-valvulas", "Hipotensão e sopro cardíaco"],
+  ["emt-5-obstrucao-intestinal", "Dor abdominal e distensão progressiva"],
+  ["emt-5-metanol", "Alteração visual após bebida de origem incerta"]
 ];
 
 const EXPECTED_FAMILY_DISTRIBUTION = {
   "Via aérea e ventilação mecânica": 7,
-  "Trauma e APH": 8,
-  "POCUS": 8,
+  "Trauma e APH": 9,
+  "POCUS": 9,
   "Cardiovascular e PCR": 6,
   "Pediatria": 8,
-  "Toxicologia e animais peçonhentos": 3,
+  "Toxicologia e animais peçonhentos": 4,
   "Neurologia": 4,
-  "Respiratório, sepse e metabólico": 3,
+  "Respiratório, sepse e metabólico": 4,
   "Obstetrícia": 2,
   "Procedimentos, analgesia e sedação": 1,
-  "Gastroenterologia": 1,
+  "Gastroenterologia": 2,
   "Gestão": 1
 };
 
@@ -92,8 +97,100 @@ const TRAINING_SIMULADO_BY_ID = new Map([
   ["sim-obst-eclampsia-01", 2],
   ["sim-obst-pcr-materna-01", 3],
   ...EXPECTED_STATIONS.filter(([id]) => /^emt-[123]-/.test(id)).map(([id]) => [id, Number(id[4])]),
-  ...EXPECTED_STATIONS.filter(([id]) => id.startsWith("emt-4-")).map(([id]) => [id, 4])
+  ...EXPECTED_STATIONS.filter(([id]) => id.startsWith("emt-4-")).map(([id]) => [id, 4]),
+  ...EXPECTED_STATIONS.filter(([id]) => id.startsWith("emt-5-")).map(([id]) => [id, 5])
 ]);
+
+const SIMULADO_5_CHECKLIST = {
+  "emt-5-sepse-choque": [
+    ["Reconhece choque séptico (infecção + hipoperfusão: lactato 4, TEC, DU baixo ± hipotensão)", 13],
+    ["Oxigênio para SatO2 >94% + 2 acessos calibrosos + PAM invasiva", 5],
+    ["Hemoculturas antes do antibiótico", 6],
+    ["Lactato seriado e exames laboratoriais iniciais", 4.5],
+    ["Antibiótico EV de amplo espectro na 1ª hora", 13],
+    ["Expansão volêmica inicial (cristaloide; considerar nora se refratário)", 11],
+    ["Antitérmico", 2.5],
+    ["Descreve a técnica corretamente", 14],
+    ["Informa métrica utilizada", 6],
+    ["Noradrenalina 0,05–0,3 µg/kg/min, titular para PAM ≥65 mmHg", 16],
+    ["Hidrocortisona 200 mg/dia (refratariedade a vasopressor)", 4],
+    ["Vasopressina 0,03 U/min se NE em dose alta/associar", 5]
+  ],
+  "emt-5-trauma-coluna": [
+    ["Avalia sistematicamente o XABCDE", 8],
+    ["Avalia estabilidade pélvica", 8],
+    ["Indica eFAST", 4],
+    ["RX de tórax e pelve no leito", 3.5],
+    ["Cristaloides com volume restrito", 7.5],
+    ["Considera ácido tranexâmico e hemocomponentes", 9],
+    ["Considera vasopressor se hipotensão persistente", 4.5],
+    ["Mantém colar cervical e posição supina", 5],
+    ["Retira prancha longa com mobilização em bloco", 2.5],
+    ["TC crânio +", 8],
+    ["TC coluna cervical +", 8],
+    ["TC coluna torácica +", 8],
+    ["TC coluna lombar +", 8],
+    ["TC tórax com contraste +", 8],
+    ["TC abdome com contraste", 8]
+  ],
+  "emt-5-pocus-valvulas": [
+    ["Reconhece que se trata de um choque indiferenciado (hipotensão + hipoperfusão).", 15],
+    ["Choque séptico", 5],
+    ["Choque cardiogênico (ex: ruptura de cordoalha mitral, endocardite infecciosa)", 5],
+    ["Choque obstrutivo (TEP, tamponamento, mas menos provável pelo sopro)", 5],
+    ["Visualização de válvula mitral 1", 5],
+    ["Visualização de válvula mitral 2", 5],
+    ["Visualização de válvula aórtica 1", 5],
+    ["Visualização de válvula aórtica 2", 5],
+    ["MOV: monitorização contínua, O2 suplementar, acesso venoso calibroso", 5],
+    ["Reposição volêmica inicial", 5],
+    ["Coleta 3 pares de hemoculturas ANTES DO antibiótico", 10],
+    ["Inicia antibioticoterapia empírica EV de amplo espectro", 7.5],
+    ["Cita o esquema antibiótico nominalmente (ex: ceftriaxona + oxacilina, ampicilina + gentamicina + oxacilina, ceftriaxona + gentamicina)", 7.5],
+    ["Solicita ecocardiograma formal (transtorácico ou transesofágico)", 7.5],
+    ["Aciona equipe de cardiologia/cirurgia cardíaca", 7.5]
+  ],
+  "emt-5-obstrucao-intestinal": [
+    ["To-and-fro (conteúdo indo e voltando no lúmen)", 8],
+    ["Sinal do ‘teclado de piano’ (pregas valvulares)", 8],
+    ["Dilatação de alças > 3 cm", 8],
+    ["Líquido livre perialças", 8],
+    ["Peristaltismo reduzido (ou desorganizado em fases tardias)", 8],
+    ["Hidratação venosa com cristaloides", 13],
+    ["Sonda nasogástrica para descompressão gástrica", 15],
+    ["Dieta zero", 4],
+    ["Exames laboratoriais (hemograma, função renal, ± lactato)", 6],
+    ["TC de abdome total com contraste IV", 13],
+    ["Avaliação da cirurgia geral precoce", 9]
+  ],
+  "emt-5-metanol": [
+    ["Solicita ECG 12 derivações", 8],
+    ["Inicia hidratação visando diurese de 1–2 mL/kg/h", 8],
+    ["Reconhece a hipótese de intoxicação por metanol: bebida de procedência duvidosa, período de latência, sintomas gastrointestinais e alteração visual", 14],
+    ["Calcula o gap osmolar: 330 – 303 = 27 mOsm/kg", 8],
+    ["Solicita dosagem sérica de metanol e etanol", 8],
+    ["Interpreta acidose metabólica grave com ânion gap e gap osmolar elevados, compatível com diagnóstico presuntivo de intoxicação por metanol", 14],
+    ["Inicia correção da acidose com bicarbonato de sódio IV", 9],
+    ["Indica início imediato de antídoto (etanol ou fomepizol), sem aguardar a dosagem sérica de metanol", 7],
+    ["Indica hemodiálise imediata, preferencialmente intermitente, diante de alteração visual, pH ≤ 7,15 e ânion gap > 24 mEq/L", 9],
+    ["Indica ácido folínico (1 mg/kg IV a cada 4–6 h)", 5],
+    ["Reconhece que lavagem gástrica e carvão ativado estão contraindicados", 6],
+    ["Solicita acompanhamento laboratorial seriado (gasometria, ionograma, função renal e hepática a cada 12 h) e avaliação de fundo de olho", 4]
+  ]
+};
+
+test("simulado 5 preserva cada item, ordem e pontuação do checklist do curso", () => {
+  const byId = new Map(readIndex().map((entry) => [entry.id, readStation(entry)]));
+  for (const [id, expected] of Object.entries(SIMULADO_5_CHECKLIST)) {
+    const station = byId.get(id);
+    assert.ok(station, `${id} não aparece no índice`);
+    assert.deepEqual(station.checklist.map(({ label, weight }) => [label, weight]), expected, id);
+    assert.equal(expected.reduce((sum, [, points]) => sum + points, 0), 100, id);
+  }
+  assert.ok(byId.get("emt-5-pocus-valvulas").phases.some((phase) => phase.media?.length));
+  assert.ok(byId.get("emt-5-obstrucao-intestinal").phases[0].media?.length);
+  assert.doesNotMatch(byId.get("emt-5-metanol").phases[0].patientState.summary, /metanol/i);
+});
 
 const HISTORICAL_CHECKLIST_SHA256 = {
   "2025-vm-autopeep": "a82acc2aa325e563651298ca50b4f4bba2194ac581a640ae132dcd89fee992e6",
@@ -115,17 +212,17 @@ function checklistHash(checklist) {
   return crypto.createHash("sha256").update(JSON.stringify(checklist)).digest("hex");
 }
 
-test("indice v2 possui exatamente as 52 estacoes na ordem editorial", () => {
+test("indice v2 possui exatamente as 57 estacoes na ordem editorial", () => {
   const index = readIndex();
   const expectedIds = EXPECTED_STATIONS.map(([id]) => id);
   const expectedFiles = expectedIds.map((id) => `${id}.json`);
   const stationFiles = fs.readdirSync(stationDirectory)
     .filter((file) => file.endsWith(".json") && file !== "index.json");
 
-  assert.equal(index.length, 52);
+  assert.equal(index.length, 57);
   assert.deepEqual(index.map((entry) => entry.id), expectedIds);
   assert.equal(new Set(index.map((entry) => entry.id)).size, expectedIds.length);
-  assert.equal(stationFiles.length, 52);
+  assert.equal(stationFiles.length, 57);
   assert.deepEqual(new Set(stationFiles), new Set(expectedFiles));
 });
 
@@ -158,7 +255,7 @@ test("indice permite montar o catalogo sem baixar os JSONs", () => {
 
 test("marcador presencial corresponde ao simulado sem atribuir autoria da prova oficial", () => {
   const index = readIndex();
-  assert.equal(TRAINING_SIMULADO_BY_ID.size, 20);
+  assert.equal(TRAINING_SIMULADO_BY_ID.size, 25);
   index.forEach((entry) => {
     const expected = TRAINING_SIMULADO_BY_ID.get(entry.id);
     assert.equal(entry.trainingSimulado, expected, `${entry.id}: procedência incorreta`);
@@ -266,7 +363,7 @@ test("fases revelam estado e midia progressivamente usando apenas o manifesto", 
 
   readIndex().forEach((entry) => {
     const station = readStation(entry);
-    const minPhases = station.id === "emt-4-trauma-torax-penetrante" ? 2 : 3;
+    const minPhases = ["emt-4-trauma-torax-penetrante", "emt-5-trauma-coluna", "emt-5-obstrucao-intestinal"].includes(station.id) ? 2 : 3;
     assert.ok(station.phases.length >= minPhases && station.phases.length <= 6, `${entry.file}: numero de fases invalido`);
 
     station.phases.forEach((phase, phaseIndex) => {
@@ -387,7 +484,7 @@ test("estacoes da Task 8 possuem conteudo progressivo e midias obrigatorias", ()
     const station = readStation(entry);
     assert.equal(station.examTitle, new Map(EXPECTED_STATIONS).get(entry.id));
     assert.notEqual(station.examTitle, station.title, `${entry.id}: titulo de prova entrega diagnostico`);
-    const minPhases = station.id === "emt-4-trauma-torax-penetrante" ? 2 : 3;
+    const minPhases = ["emt-4-trauma-torax-penetrante", "emt-5-trauma-coluna", "emt-5-obstrucao-intestinal"].includes(station.id) ? 2 : 3;
     assert.ok(station.phases.length >= minPhases && station.phases.length <= 6, `${entry.id}: progressao invalida`);
     assert.ok(station.referenceAnswer.length > 200, `${entry.id}: resposta oral incompleta`);
     assert.ok(station.references.length >= 2, `${entry.id}: referencias insuficientes`);

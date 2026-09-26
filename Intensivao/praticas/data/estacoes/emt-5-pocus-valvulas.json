@@ -1,0 +1,56 @@
+{
+  "id": "emt-5-pocus-valvulas",
+  "version": 2,
+  "title": "POCUS valvar no choque com sopro",
+  "examTitle": "Hipotensão e sopro cardíaco",
+  "domain": "POCUS",
+  "domains": ["POCUS", "Cardiovascular e PCR", "Infectologia"],
+  "family": "POCUS",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["choque indiferenciado", "valva mitral", "valva aórtica", "hemoculturas", "ecocardiograma"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 5, "adaptation": "Caso discretamente reescrito; perguntas, ordem, itens e pesos do checklist preservados; clipes externos identificados como amostras" },
+  "briefing": "Demonstre as janelas no manequim ou verbalmente; os clipes são amostras externas para interpretação, não exames deste paciente.",
+  "phases": [
+    {
+      "id": "diferenciais",
+      "title": "Tarefa 1",
+      "prompt": "Quais os diagnósticos diferenciais possíveis neste cenário?",
+      "patientState": { "summary": "Paciente de 43 anos foi encontrado confuso em casa. Familiares relatam uso de drogas injetáveis. Glasgow 13, extremidades frias, enchimento capilar de 4 segundos e sopro sistólico novo à ausculta. A causa da hipotensão ainda não foi estabelecida.", "vitals": { "PA": "82/48 mmHg", "FC": "128 bpm", "FR": "25 irpm", "SpO2": "94% em ar ambiente", "temperatura": "38,5 °C" } }
+    },
+    {
+      "id": "valvas",
+      "title": "Tarefa 2",
+      "prompt": "Realize o POCUS cardíaco para visualização da valva mitral e aórtica em 2 planos. Verbalize posicionamento do transdutor, estrutura identificada em cada janela e achados que procuraria.",
+      "patientState": { "summary": "O aparelho e o manequim estão disponíveis. Os clipes abaixo mostram janelas valvares obtidas em outros pacientes; use-os como amostras anatômicas e descreva o que avaliaria no paciente desta estação.", "vitals": { "PA": "80/46 mmHg", "FC": "130 bpm" } },
+      "media": ["us-em5-valvas-plax", "us-em5-mitral-2c"]
+    },
+    {
+      "id": "manejo",
+      "title": "Tarefa 3",
+      "prompt": "Qual o manejo mais adequado frente a esse cenário?",
+      "patientState": { "summary": "A hipotensão e o sopro persistem. O exame à beira-leito foi realizado, mas a causa da instabilidade ainda não foi confirmada.", "vitals": { "PA": "78/44 mmHg", "FC": "132 bpm", "SpO2": "96% com oxigênio" } }
+    }
+  ],
+  "checklist": [
+    { "id": "choque", "label": "Reconhece que se trata de um choque indiferenciado (hipotensão + hipoperfusão).", "weight": 15, "verification": "verbal", "critical": true, "explanation": "Hipotensão, má perfusão e confusão pedem abordagem sindrômica antes de fixar uma causa." },
+    { "id": "diferencial-septico", "label": "Choque séptico", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Febre, possível exposição bacteriana e hipoperfusão tornam a infecção hipótese importante." },
+    { "id": "diferencial-cardiogenico", "label": "Choque cardiogênico (ex: ruptura de cordoalha mitral, endocardite infecciosa)", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Sopro novo e hipotensão podem refletir disfunção valvar aguda; não assumir mecanismo sem eco formal." },
+    { "id": "diferencial-obstrutivo", "label": "Choque obstrutivo (TEP, tamponamento, mas menos provável pelo sopro)", "weight": 5, "verification": "verbal", "critical": false, "explanation": "POCUS pode investigar VD, pericárdio e pulmões para afastar causas obstrutivas." },
+    { "id": "mitral-1", "label": "Visualização de válvula mitral 1", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Mostrar mitral no eixo longo paraesternal ou janela equivalente, identificando folhetos." },
+    { "id": "mitral-2", "label": "Visualização de válvula mitral 2", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Mostrar mitral em outro plano, por exemplo apical de quatro ou duas câmaras." },
+    { "id": "aortica-1", "label": "Visualização de válvula aórtica 1", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Identificar valva aórtica no eixo longo paraesternal." },
+    { "id": "aortica-2", "label": "Visualização de válvula aórtica 2", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Completar com eixo curto na base ou plano apical de cinco câmaras." },
+    { "id": "mov", "label": "MOV: monitorização contínua, O2 suplementar, acesso venoso calibroso", "weight": 5, "verification": "verbal", "critical": true, "explanation": "Tratar simultaneamente instabilidade e suspeita diagnóstica." },
+    { "id": "reposicao", "label": "Reposição volêmica inicial", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Fazer com reavaliação cautelosa, pois insuficiência valvar grave pode limitar tolerância a fluidos." },
+    { "id": "hemoculturas", "label": "Coleta 3 pares de hemoculturas ANTES DO antibiótico", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Coleta microbiológica é central na suspeita de endocardite, desde que não atrase indevidamente antibiótico no choque." },
+    { "id": "atb-empirico", "label": "Inicia antibioticoterapia empírica EV de amplo espectro", "weight": 7.5, "verification": "verbal", "critical": true, "explanation": "Escolha deve considerar valva nativa/prótese, exposição, gravidade e resistência local." },
+    { "id": "atb-esquema", "label": "Cita o esquema antibiótico nominalmente (ex: ceftriaxona + oxacilina, ampicilina + gentamicina + oxacilina, ceftriaxona + gentamicina)", "weight": 7.5, "verification": "verbal", "critical": false, "explanation": "Exemplos reproduzem o checklist do curso; aceitar esquema equivalente coerente com epidemiologia local e evitar aminoglicosídeo automático em disfunção renal." },
+    { "id": "eco-formal", "label": "Solicita ecocardiograma formal (transtorácico ou transesofágico)", "weight": 7.5, "verification": "verbal", "critical": true, "explanation": "POCUS não substitui estudo valvar completo, especialmente para complicações e indicação cirúrgica." },
+    { "id": "equipe", "label": "Aciona equipe de cardiologia/cirurgia cardíaca", "weight": 7.5, "verification": "verbal", "critical": false, "explanation": "Choque com possível lesão valvar infecciosa ou mecânica requer avaliação especializada precoce." }
+  ],
+  "criticalErrors": ["Não reconhecer choque", "Não colher culturas nem iniciar antibiótico em suspeita infecciosa", "Usar clipe externo como diagnóstico definitivo do paciente"],
+  "referenceAnswer": "Tarefa 1: reconheço choque indiferenciado e considero sepse, falência valvar cardiogênica e causas obstrutivas. Tarefa 2: posiciono transdutor em janelas paraesternal eixo longo, apical e eixo curto basal ou apical cinco câmaras, mostrando mitral e aórtica em dois planos cada, e procuro mobilidade anormal, massas, regurgitação e função ventricular. Os clipes são de outros pacientes e não confirmam diagnóstico neste caso. Tarefa 3: monitorizo, oxigeno, obtenho acesso, reponho volume com reavaliação, colho três pares de culturas sem atrasar terapia, inicio antibiótico EV empírico conforme protocolo/epidemiologia local, solicito ecocardiograma formal e aciono cardiologia/cirurgia cardíaca. Os esquemas nominais do curso servem como exemplos, não prescrição universal.",
+  "references": ["https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/endocarditis/", "https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026", "https://commons.wikimedia.org/wiki/File:Endocarditis_of_aortic_valve_and_mitral_valve_E00809_(CardioNetworks_ECHOpedia).webm", "https://commons.wikimedia.org/wiki/File:Endocarditis_of_mitral_valve_E00424_(CardioNetworks_ECHOpedia).webm"]
+}

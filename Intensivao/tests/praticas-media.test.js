@@ -38,10 +38,14 @@ const REQUIRED_ACERVO_IDS = [
   "us-consolidacao-pulmonar",
   "rx-pelve-diastase",
   "ecg-vt-cc0",
-  "ecg-vf-cc0"
+  "ecg-vf-cc0",
+  "us-em5-valvas-plax",
+  "us-em5-mitral-2c",
+  "us-em5-alca-dilatada",
+  "us-em5-alcas-dinamica"
 ];
 
-test("acervo visual local contem os 28 itens licenciados e arquivos resolviveis", () => {
+test("acervo visual local contem os 32 itens licenciados e arquivos resolviveis", () => {
   const intensivaoRoot = path.resolve(__dirname, "..");
   const manifestPath = path.join(intensivaoRoot, "assets", "praticas", "media.json");
   const attributionPath = path.join(intensivaoRoot, "assets", "praticas", "ATRIBUICOES.md");

@@ -1,0 +1,49 @@
+{
+  "id": "emt-5-trauma-coluna",
+  "version": 2,
+  "title": "Queda de altura com déficit motor e investigação de lesões associadas",
+  "examTitle": "Queda de altura com déficit motor",
+  "domain": "Trauma e APH",
+  "domains": ["Trauma e APH", "Neurologia"],
+  "family": "Trauma e APH",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["XABCDE", "trauma raquimedular", "imagem no politrauma", "ressuscitação"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 5, "adaptation": "Mecanismo e idade discretamente reescritos; perguntas, ordem, itens e pesos do checklist preservados" },
+  "briefing": "Você é o médico do trauma. Primeiro estabilize; a decisão sobre exames vem na tarefa seguinte.",
+  "phases": [
+    {
+      "id": "avaliacao-leito",
+      "title": "Tarefa 1",
+      "prompt": "Descreva os principais passos para a avaliação no leito e estabilização inicial do paciente.",
+      "patientState": { "summary": "Equipe pré-hospitalar traz um homem de 26 anos após queda de cerca de 7 metros. Está consciente, refere dor intensa nas costas e não consegue mover as pernas. Chega imobilizado em prancha longa e com colar cervical. Não há sangramento externo volumoso visível.", "vitals": { "PA": "94/62 mmHg", "FC": "110 bpm", "FR": "24 irpm", "SpO2": "96% em ar ambiente" } }
+    },
+    {
+      "id": "imagem-adicional",
+      "title": "Tarefa 2",
+      "prompt": "Quais exames de imagem adicionais devem ser solicitados?",
+      "patientState": { "summary": "Após a avaliação inicial e medidas de estabilização, não foi identificada hemorragia externa importante. O déficit motor dos membros inferiores persiste. Considere a disponibilidade de tomografia e o estado circulatório antes de transportar.", "vitals": { "PA": "102/68 mmHg após reavaliação", "FC": "104 bpm" } }
+    }
+  ],
+  "checklist": [
+    { "id": "xabcde", "label": "Avalia sistematicamente o XABCDE", "weight": 8, "verification": "verbal", "critical": true, "explanation": "Procurar e tratar ameaças à vida antes de transportar para imagem." },
+    { "id": "pelve", "label": "Avalia estabilidade pélvica", "weight": 8, "verification": "hibrido", "critical": false, "explanation": "Inspecionar e avaliar sem compressões repetidas que possam agravar sangramento." },
+    { "id": "efast", "label": "Indica eFAST", "weight": 4, "verification": "verbal", "critical": false, "explanation": "Apoia busca rápida de hemorragia e lesões torácicas, sem excluir todas as lesões quando negativo." },
+    { "id": "rx-leito", "label": "RX de tórax e pelve no leito", "weight": 3.5, "verification": "verbal", "critical": false, "explanation": "Exames no leito são condicionais e não devem atrasar intervenção imediata ou CT apropriada em paciente estável." },
+    { "id": "cristaloides", "label": "Cristaloides com volume restrito", "weight": 7.5, "verification": "verbal", "critical": false, "explanation": "Se houver hemorragia, evitar excesso de cristaloides e priorizar hemostasia/hemocomponentes." },
+    { "id": "txa-hemocomponentes", "label": "Considera ácido tranexâmico e hemocomponentes", "weight": 9, "verification": "verbal", "critical": false, "explanation": "São considerados quando há suspeita de sangramento traumático significativo, conforme janela temporal e protocolo; não de rotina só pelo mecanismo." },
+    { "id": "vasopressor", "label": "Considera vasopressor se hipotensão persistente", "weight": 4.5, "verification": "verbal", "critical": false, "explanation": "Investigar hemorragia e choque neurogênico; vasopressor pode ser necessário após reposição apropriada, não substitui controle de sangramento." },
+    { "id": "colar-supino", "label": "Mantém colar cervical e posição supina", "weight": 5, "verification": "hibrido", "critical": true, "explanation": "Manter precauções de coluna até avaliação e liberação apropriadas." },
+    { "id": "prancha", "label": "Retira prancha longa com mobilização em bloco", "weight": 2.5, "verification": "hibrido", "critical": false, "explanation": "Evitar permanência prolongada na prancha; coordenar movimento em bloco preservando alinhamento." },
+    { "id": "tc-cranio", "label": "TC crânio +", "weight": 8, "verification": "verbal", "critical": false, "explanation": "No politrauma de alta energia, considerar lesão intracraniana associada após estabilização." },
+    { "id": "tc-cervical", "label": "TC coluna cervical +", "weight": 8, "verification": "verbal", "critical": true, "explanation": "Mecanismo de alto risco e déficit neurológico indicam investigação da coluna cervical." },
+    { "id": "tc-toracica", "label": "TC coluna torácica +", "weight": 8, "verification": "verbal", "critical": true, "explanation": "Dor dorsal e paraplegia exigem avaliar coluna torácica." },
+    { "id": "tc-lombar", "label": "TC coluna lombar +", "weight": 8, "verification": "verbal", "critical": true, "explanation": "Completar avaliação da coluna conforme mecanismo e déficit; considerar RM após TC se déficit persistir." },
+    { "id": "tc-torax", "label": "TC tórax com contraste +", "weight": 8, "verification": "verbal", "critical": false, "explanation": "Busca lesões torácicas/vasculares associadas após estabilização." },
+    { "id": "tc-abdome", "label": "TC abdome com contraste", "weight": 8, "verification": "verbal", "critical": false, "explanation": "Busca lesões abdominais e retroperitoneais em politrauma estável; não atrasar hemostasia em instabilidade." }
+  ],
+  "criticalErrors": ["Transportar paciente instável para tomografia antes do XABCDE", "Ignorar déficit motor e possível lesão de coluna", "Repetir manipulação pélvica ou deixar paciente por tempo prolongado na prancha"],
+  "referenceAnswer": "Tarefa 1: avalio XABCDE, busco sangramento oculto, examino pelve sem testar repetidamente, considero eFAST e radiografias de tórax e pelve no leito. Ressuscito conforme fisiologia e suspeita de hemorragia, com cristaloide restrito; TXA e hemocomponentes se houver sangramento importante, vasopressor se hipotensão persistir após abordagem da causa. Mantenho precauções de coluna e retiro a prancha longa em bloco assim que possível. Tarefa 2: depois de estabilizar, solicito TC de crânio, coluna cervical, torácica e lombar, tórax e abdome com contraste conforme avaliação e protocolo de politrauma. Com déficit neurológico persistente, discuto RM de coluna e equipe especializada após CT; não espero tomografia para tratar instabilidade.",
+  "references": ["https://www.nice.org.uk/guidance/ng41/chapter/Recommendations", "https://www.nice.org.uk/guidance/ng39/chapter/recommendations"]
+}
