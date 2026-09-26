@@ -10,8 +10,9 @@
     "Reanimação"
   ],
   "difficulty": "avancada",
-  "origin": "inedita",
-  "trainingReference": { "collection": "Treino presencial", "simulado": 3, "relation": "Checklist semelhante; cenário independente" },
+  "origin": "acervo_reescrito",
+  "source": { "collection": "EmTalks simulado", "simulado": 3, "adaptation": "Caso autoral; perguntas e checklist preservados" },
+  "trainingReference": { "collection": "Treino presencial", "simulado": 3, "relation": "Caso adaptado; perguntas e checklist do simulado preservados" },
   "tags": [
     "PCR na gestação",
     "RCP de alta qualidade",
@@ -21,128 +22,158 @@
     "equipe neonatal"
   ],
   "durationSeconds": 300,
-  "briefing": "Gestante com útero ao nível ou acima do umbigo sofre colapso no hospital. Conduza a reanimação materna modificada, trate ritmos conforme o algoritmo adulto e organize a intervenção necessária no local.",
+  "briefing": "Você atende uma gestante em colapso na emergência. Responda conforme os dados de cada tarefa.",
   "phases": [
     {
-      "id": "reconhecimento-parada",
-      "title": "Reconhecimento do colapso",
-      "prompt": "Reconheça a condição, ative a resposta e inicie as medidas imediatas adaptadas à gestação.",
+      "id": "medidas-iniciais",
+      "title": "Tarefa 1",
+      "prompt": "Quais medidas iniciais estão indicadas para a ressuscitação dessa gestante em PCR?",
       "patientState": {
-        "summary": "Gestante de 34 semanas fica inconsciente, não respira normalmente e não tem pulso central em até 10 segundos; o monitor ainda não está conectado.",
+        "summary": "Gestante de 34 semanas sofre colapso súbito na sala de emergência. Não responde, não respira normalmente e não há pulso central em dez segundos. O fundo uterino está acima do umbigo; a equipe traz o carrinho de reanimação.",
         "vitals": {
-          "PA": "não mensurável",
-          "FC": "sem pulso",
-          "FR": "apneia",
-          "SpO2": "não mensurável"
+          "pulso": "ausente",
+          "respiração": "ausente",
+          "tempoSemCirculacao": "menos de 1 minuto"
         }
       }
     },
     {
-      "id": "ritmo-chocavel",
-      "title": "Primeiro ritmo",
-      "prompt": "Diante do ritmo informado pelo monitor, execute desfibrilação, compressões, manejo da via aérea e organização da equipe.",
+      "id": "momento",
+      "title": "Tarefa 2",
+      "prompt": "Após quanto tempo de reanimação está indicada a histerotomia de ressuscitação?",
       "patientState": {
-        "summary": "O monitor mostra fibrilação ventricular.",
+        "summary": "A equipe iniciou RCP e não houve retorno da circulação. O relógio marca quatro minutos desde o colapso.",
         "vitals": {
-          "PA": "não mensurável",
-          "FC": "fibrilação ventricular",
-          "FR": "apneia",
-          "SpO2": "não mensurável"
-        }
-      }
-    },
-    {
-      "id": "quatro-minutos",
-      "title": "Quatro minutos sem circulação",
-      "prompt": "Defina o procedimento no tempo e local apropriados e demonstre no manequim a sequência essencial, mantendo a reanimação.",
-      "patientState": {
-        "summary": "O fundo uterino está acima do umbigo e não houve retorno da circulação após duas rodadas de reanimação.",
-        "vitals": {
-          "PA": "não mensurável",
-          "FC": "sem pulso",
-          "FR": "ventilação assistida",
+          "pulso": "ausente",
           "tempoSemRCE": "4 minutos"
         }
       }
     },
     {
-      "id": "pos-extracao",
-      "title": "Após a intervenção",
-      "prompt": "Organize cuidados pós-retorno da circulação, controle de hemorragia, busca de causas e cuidado neonatal separado.",
+      "id": "procedimento",
+      "title": "Tarefa 3",
+      "prompt": "Execute no manequim a histerotomia de ressuscitação passo a passo.",
       "patientState": {
-        "summary": "Há retorno da circulação após o parto; outra equipe atende o recém-nascido.",
+        "summary": "A paciente segue sem pulso, com compressões em andamento. Material, equipe obstétrica e equipe neonatal estão ao lado do leito; não há necessidade de transporte.",
         "vitals": {
-          "PA": "92/54 mmHg",
-          "FC": "118 bpm",
-          "FR": "assistida",
-          "SpO2": "96%"
+          "pulso": "ausente",
+          "tempoSemRCE": "4 minutos"
         }
       }
     }
   ],
   "checklist": [
     {
-      "id": "inicia-rcp",
-      "label": "Reconhece a parada, inicia RCP de alta qualidade imediatamente e minimiza interrupções",
-      "weight": 20,
-      "verification": "manual",
-      "critical": true
-    },
-    {
-      "id": "deslocamento-uterino",
-      "label": "Faz deslocamento uterino manual para a esquerda durante compressões quando o fundo uterino está no nível ou acima do umbigo",
-      "weight": 15,
-      "verification": "manual",
-      "critical": true
-    },
-    {
-      "id": "acls-adulto",
-      "label": "Usa desfibrilação e medicamentos do algoritmo adulto nas doses usuais e não reduz a energia por causa da gestação",
-      "weight": 10,
-      "verification": "hibrido",
-      "critical": true
-    },
-    {
-      "id": "via-aerea-acesso",
-      "label": "Prioriza via aérea por profissional experiente e instala IV ou IO preferencialmente em membro superior",
-      "weight": 10,
-      "verification": "hibrido",
-      "critical": false
-    },
-    {
-      "id": "prepara-parto",
-      "label": "Prepara parto de ressuscitação desde o reconhecimento da parada, com equipe neonatal e material no local",
-      "weight": 15,
-      "verification": "hibrido",
-      "critical": true
-    },
-    {
-      "id": "tempo-parto",
-      "label": "Prepara desde a PCR e, sem retorno da circulação, inicia parto de ressuscitação com objetivo de conclusão até 5 minutos",
-      "weight": 10,
-      "verification": "verbal",
-      "critical": true
-    },
-    {
-      "id": "sequencia-histerotomia",
-      "label": "No manequim, demonstra acesso abdominal rápido, protege estruturas, abre o útero, retira o feto e entrega o recém-nascido à equipe, sem interromper a RCP",
-      "weight": 10,
-      "verification": "hibrido",
-      "critical": true
-    },
-    {
-      "id": "local-parto",
-      "label": "Realiza o procedimento no local da parada sem perder tempo com transporte ao centro cirúrgico",
+      "id": "curso-01",
+      "label": "Inicia RCP de alta qualidade (compressões torácicas 100-120/min, profundidade 5 cm).",
       "weight": 5,
       "verification": "verbal",
-      "critical": true
+      "critical": true,
+      "explanation": "Manter compressões eficazes e aliviar compressão aortocava; fármacos de PCR em dose adulta usual."
     },
     {
-      "id": "pos-rce",
-      "label": "Após retorno da circulação, trata causa reversível, hemorragia e choque e assegura equipes separadas para mãe e recém-nascido",
+      "id": "curso-02",
+      "label": "Realiza deslocamento uterino manual para a esquerda ou inclinação lateral da maca (para reduzir compressão aortocava).",
       "weight": 5,
       "verification": "verbal",
-      "critical": false
+      "critical": true,
+      "explanation": "Manter compressões eficazes e aliviar compressão aortocava; fármacos de PCR em dose adulta usual."
+    },
+    {
+      "id": "curso-03",
+      "label": "Garante oxigenação com bvm / IOT se disponível",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Manter compressões eficazes e aliviar compressão aortocava; fármacos de PCR em dose adulta usual."
+    },
+    {
+      "id": "curso-04",
+      "label": "Adrenalina 1mg EV a cada 3-5 min.",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Manter compressões eficazes e aliviar compressão aortocava; fármacos de PCR em dose adulta usual."
+    },
+    {
+      "id": "curso-05",
+      "label": "4 minutos de PCR materna: cesárea perimortem no 5º minuto de ressuscitação.",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "AHA 2025: preparar parto de ressuscitação desde o reconhecimento da PCR, com meta de concluir até 5 minutos quando factível; não esperar 4 minutos para montar equipe."
+    },
+    {
+      "id": "curso-06",
+      "label": "Posicionamento (posição supina enquanto está sendo reanimada)",
+      "weight": 2.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Sequência de histerotomia em manequim: manter RCP, acesso rápido, proteção materna e equipe neonatal separada."
+    },
+    {
+      "id": "curso-07",
+      "label": "Descompressão vesical (sonda Foley)",
+      "weight": 2.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Sequência de histerotomia em manequim: manter RCP, acesso rápido, proteção materna e equipe neonatal separada."
+    },
+    {
+      "id": "curso-08",
+      "label": "Antissepsia e assepsia (rapidamente com gazes e compressas e clorexidina alcoólica)",
+      "weight": 2.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Sequência de histerotomia em manequim: manter RCP, acesso rápido, proteção materna e equipe neonatal separada."
+    },
+    {
+      "id": "curso-09",
+      "label": "Incisão vertical mediana da pele e parede abdominal (xifopubiana)",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Sequência de histerotomia em manequim: manter RCP, acesso rápido, proteção materna e equipe neonatal separada."
+    },
+    {
+      "id": "curso-10",
+      "label": "Incisão vertical no útero de 1 - 2 cm usando a tesoura",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Sequência de histerotomia em manequim: manter RCP, acesso rápido, proteção materna e equipe neonatal separada."
+    },
+    {
+      "id": "curso-11",
+      "label": "Retirada do feto",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Sequência de histerotomia em manequim: manter RCP, acesso rápido, proteção materna e equipe neonatal separada."
+    },
+    {
+      "id": "curso-12",
+      "label": "Clampeamento do cordão umbilical",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Sequência de histerotomia em manequim: manter RCP, acesso rápido, proteção materna e equipe neonatal separada."
+    },
+    {
+      "id": "curso-13",
+      "label": "Retirada da placenta",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Sequência de histerotomia em manequim: manter RCP, acesso rápido, proteção materna e equipe neonatal separada."
+    },
+    {
+      "id": "curso-14",
+      "label": "Tamponamento uterino com compressas estéreis (fazer massagem uterina)",
+      "weight": 7.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Sequência de histerotomia em manequim: manter RCP, acesso rápido, proteção materna e equipe neonatal separada."
     }
   ],
   "criticalErrors": [

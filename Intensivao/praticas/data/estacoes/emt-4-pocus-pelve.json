@@ -14,39 +14,139 @@
   "briefing": "Demonstre as janelas ultrassonográficas no manequim ou verbalmente. Os exames aparecem quando solicitados.",
   "phases": [
     {
-      "id": "trauma-inicial",
-      "title": "Avaliação inicial",
-      "prompt": "Qual seu exame ultrassonográfico à beira-leito e para que ele é útil neste contexto?",
-      "patientState": { "summary": "Homem de 35 anos ejetado após colisão. Consciente, pálido e diaforético, com membro inferior esquerdo encurtado e rodado externamente. Sem hemorragia externa importante.", "vitals": { "PA": "82/48 mmHg", "FC": "132 bpm", "FR": "27 irpm", "SpO2": "95% com oxigênio" } }
-    },
-    {
       "id": "janelas",
-      "title": "Demonstração eFAST",
-      "prompt": "Demonstre todas as janelas do eFAST e identifique as estruturas avaliadas em cada uma.",
-      "patientState": { "summary": "O aparelho está disponível. Não há imagem patológica pronta; demonstre sistematicamente o exame no manequim.", "vitals": { "PA": "80/46 mmHg", "FC": "136 bpm" } }
+      "title": "Tarefa 1",
+      "prompt": "Realize todas as janelas do eFAST, verbalizando as estruturas vistas em cada janela.",
+      "patientState": {
+        "summary": "Homem de 35 anos ejetado após colisão. Chega pálido, diaforético e hipotenso, com membro inferior esquerdo em rotação externa. Não há sangramento externo volumoso. O aparelho de POCUS está disponível.",
+        "vitals": {
+          "PA": "78/46 mmHg",
+          "FC": "142 bpm",
+          "SpO2": "94% com oxigênio"
+        }
+      }
     },
     {
       "id": "pelve",
-      "title": "Radiografia e conduta",
-      "prompt": "Interprete a radiografia AP da pelve apresentada e conduza o paciente com suspeita de sangramento pélvico. Verbalize posicionamento do dispositivo e tratamento definitivo.",
-      "patientState": { "summary": "O eFAST não demonstrou líquido livre inequívoco. A radiografia AP da pelve está disponível. A imagem externa abaixo é de outro paciente e mostra um achado equivalente ao do caso.", "vitals": { "PA": "76/44 mmHg", "FC": "142 bpm" } },
-      "media": ["rx-pelve-diastase"]
+      "title": "Tarefa 2",
+      "prompt": "No RX de pelve, os ramos púbicos distam 3 cm. Qual o significado desse achado e quais as próximas condutas?",
+      "patientState": {
+        "summary": "O eFAST não mostrou líquido livre inequívoco. A radiografia AP apresentada é amostra de outro paciente; a hipotensão persiste.",
+        "vitals": {
+          "PA": "76/42 mmHg",
+          "FC": "146 bpm"
+        }
+      },
+      "media": [
+        "rx-pelve-diastase"
+      ]
     }
   ],
   "checklist": [
-    { "id": "janela-hepatorrenal", "label": "Mostra janela hepatorrenal e recessos subfrênico e de Morison", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Procura líquido livre no quadrante superior direito." },
-    { "id": "janela-esplenorrenal", "label": "Mostra janela esplenorrenal e espaço subfrênico esquerdo", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Não limitar o exame ao espaço hepatorrenal." },
-    { "id": "janela-subxifoide", "label": "Mostra janela subxifoide ou paraesternal para derrame pericárdico", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Pesquisa tamponamento em trauma torácico/choque." },
-    { "id": "janela-suprapubica", "label": "Mostra janela suprapúbica em planos longitudinal e transversal", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Líquido pode se acumular na pelve." },
-    { "id": "pulmao-direito", "label": "Mostra janela pleuropulmonar direita para pneumotórax/hemotórax", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "A extensão pulmonar diferencia FAST de eFAST." },
-    { "id": "pulmao-esquerdo", "label": "Mostra janela pleuropulmonar esquerda para pneumotórax/hemotórax", "weight": 7.5, "verification": "manual", "critical": false, "explanation": "Exame bilateral evita falsa segurança." },
-    { "id": "diastase", "label": "Identifica diástase da sínfise púbica na radiografia", "weight": 10, "verification": "verbal", "critical": true, "explanation": "A imagem de referência ilustra afastamento; não atribua uma medida exata à amostra externa." },
-    { "id": "anel-instavel", "label": "Relaciona a diástase com lesão instável do anel pélvico e sangramento oculto", "weight": 10, "verification": "verbal", "critical": true, "explanation": "eFAST negativo não exclui hemorragia retroperitoneal pélvica." },
-    { "id": "binder", "label": "Aplica lençol ou binder sobre os grandes trocânteres, sem testar repetidamente a estabilidade", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "Posicionar alto, nas cristas ilíacas, reduz a eficácia." },
-    { "id": "transfusao", "label": "Ativa transfusão maciça balanceada e reavalia choque continuamente", "weight": 5, "verification": "verbal", "critical": true, "explanation": "Não esperar tomografia em paciente instável." },
-    { "id": "membros", "label": "Alinha e aproxima os membros inferiores com cuidado se apropriado", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Evitar manobras que agravem fraturas ou atrasem estabilização." },
-    { "id": "lesoes-associadas", "label": "Investiga lesões associadas sem atribuir o choque apenas ao fêmur ou ao eFAST", "weight": 5, "verification": "verbal", "critical": false, "explanation": "O trauma de alta energia pode produzir fontes simultâneas de sangramento." },
-    { "id": "controle-definitivo", "label": "Aciona trauma, cirurgia e radiologia intervencionista para controle definitivo do sangramento", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Binder e transfusão são pontes para hemostasia definitiva." }
+    {
+      "id": "curso-01",
+      "label": "Janela hepatorrenal",
+      "weight": 7.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Janela do eFAST; verbalize estruturas, líquido e limitações do exame."
+    },
+    {
+      "id": "curso-02",
+      "label": "Janela esplenorrenal",
+      "weight": 7.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Janela do eFAST; verbalize estruturas, líquido e limitações do exame."
+    },
+    {
+      "id": "curso-03",
+      "label": "Janela subxifoidea",
+      "weight": 7.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Janela do eFAST; verbalize estruturas, líquido e limitações do exame."
+    },
+    {
+      "id": "curso-04",
+      "label": "Janela suprapúbica",
+      "weight": 7.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Janela do eFAST; verbalize estruturas, líquido e limitações do exame."
+    },
+    {
+      "id": "curso-05",
+      "label": "Janela pulmonar direita",
+      "weight": 7.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Janela do eFAST; verbalize estruturas, líquido e limitações do exame."
+    },
+    {
+      "id": "curso-06",
+      "label": "Janela pulmonar esquerda",
+      "weight": 7.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Janela do eFAST; verbalize estruturas, líquido e limitações do exame."
+    },
+    {
+      "id": "curso-07",
+      "label": "Reconhece trauma pélvico instável em paciente com choque",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Diástase de 3 cm e choque sugerem lesão pélvica instável; ressuscitar e acionar controle definitivo sem atribuir toda a instabilidade ao eFAST."
+    },
+    {
+      "id": "curso-08",
+      "label": "Realiza estabilização imediata da pelve com cinta pélvica ou lençol",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Cinta ou lençol deve comprimir na altura dos grandes trocânteres, sem compressões repetidas da pelve."
+    },
+    {
+      "id": "curso-09",
+      "label": "Aciona protocolo de transfusão maciça",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Diástase de 3 cm e choque sugerem lesão pélvica instável; ressuscitar e acionar controle definitivo sem atribuir toda a instabilidade ao eFAST."
+    },
+    {
+      "id": "curso-10",
+      "label": "Considera outras possibilidades de lesões ocultas associadas",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Diástase de 3 cm e choque sugerem lesão pélvica instável; ressuscitar e acionar controle definitivo sem atribuir toda a instabilidade ao eFAST."
+    },
+    {
+      "id": "curso-11",
+      "label": "Alinha membros inferiores, especialmente o esquerdo (rotação externa)",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Diástase de 3 cm e choque sugerem lesão pélvica instável; ressuscitar e acionar controle definitivo sem atribuir toda a instabilidade ao eFAST."
+    },
+    {
+      "id": "curso-12",
+      "label": "Aciona equipe de cirurgia / ortopedia para controle definitivo do sangramento (cirurgia ou embolização)",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Diástase de 3 cm e choque sugerem lesão pélvica instável; ressuscitar e acionar controle definitivo sem atribuir toda a instabilidade ao eFAST."
+    },
+    {
+      "id": "curso-13",
+      "label": "Evita manipulações repetidas da pelve",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Diástase de 3 cm e choque sugerem lesão pélvica instável; ressuscitar e acionar controle definitivo sem atribuir toda a instabilidade ao eFAST."
+    }
   ],
   "criticalErrors": ["Não reconhecer diástase e sangramento pélvico", "Não estabilizar a pelve no nível dos grandes trocânteres", "Aguardar tomografia em choque persistente"],
   "referenceAnswer": "Faço eFAST com janelas hepatorrenal, esplenorrenal, subxifoide, suprapúbica em dois planos e ambas as pleuras. O eFAST negativo não exclui hemorragia retroperitoneal. A radiografia mostra diástase púbica. Trato como instabilidade do anel pélvico: binder ou lençol nos grandes trocânteres, sem mobilização pélvica repetida, transfusão maciça e reavaliação. Aciono equipe de trauma e controle definitivo por cirurgia ou angioembolização conforme lesões, resposta e disponibilidade. A radiografia externa é apenas uma amostra de achado equivalente; não infiro medida exata dela.",

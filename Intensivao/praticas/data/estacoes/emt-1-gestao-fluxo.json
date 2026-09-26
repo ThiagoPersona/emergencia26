@@ -27,7 +27,7 @@
     {
       "id": "mapa",
       "title": "Diagnóstico de fluxo",
-      "prompt": "Identifique os gargalos e a primeira prioridade de segurança.",
+      "prompt": "Diante da superlotação, quais medidas de gestão de leitos e fluxo você indicaria para o período imediato?",
       "patientState": {
         "summary": "DE com 38 pacientes internados aguardando leito; 12 na sala de espera há mais de 3 horas; sala vermelha sem vaga.",
         "vitals": {
@@ -40,9 +40,9 @@
     {
       "id": "saida",
       "title": "Gargalo de saída",
-      "prompt": "Qual ação de curto prazo coordena com hospital e rede?",
+      "prompt": "Diante do número de pacientes internados no DE aguardando vaga, qual estratégia de revisão do perfil assistencial você aplicaria?",
       "patientState": {
-        "summary": "Há 14 altas hospitalares previstas, mas nenhuma com transporte agendado; dois procedimentos eletivos ocuparão leitos de retaguarda.",
+        "summary": "Há pacientes internados no DE que podem ter mudado de condição clínica desde a admissão. A equipe pede revisão individual de segurança e destino.",
         "vitals": {
           "boarding": "38 pacientes",
           "leitosDisponiveis": "0"
@@ -52,9 +52,9 @@
     {
       "id": "revisao",
       "title": "Segurança e medida",
-      "prompt": "Como revisa os pacientes retidos, organiza a fila e mede se o plano funcionou?",
+      "prompt": "Quais ações imediatas você tomaria para a fila de pacientes aguardando avaliação médica inicial há mais de 3 horas?",
       "patientState": {
-        "summary": "Após duas horas, cinco pacientes internados foram realocados; a fila de espera inicial persiste.",
+        "summary": "A fila de espera inicial persiste há mais de três horas; alguns pacientes ainda não foram reavaliados desde a classificação de risco.",
         "vitals": {
           "boarding": "33 pacientes",
           "esperaMediana": "3 h 40 min"
@@ -64,60 +64,76 @@
   ],
   "checklist": [
     {
-      "id": "risco",
-      "label": "Reclassifica e reavalia pacientes em espera/boarding, priorizando deterioração clínica",
-      "weight": 20,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Fluxo nunca substitui vigilância clínica."
-    },
-    {
-      "id": "mapa",
-      "label": "Distingue entrada, processamento e saída com indicadores próprios",
-      "weight": 10,
-      "verification": "verbal",
-      "critical": false,
-      "explanation": "Separar etapas evita agir no lugar errado."
-    },
-    {
-      "id": "leitos",
-      "label": "Aciona gestão de leitos, altas/transferências seguras e responsáveis com prazo",
-      "weight": 20,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "O boarding é restrição de saída que exige coordenação hospitalar."
-    },
-    {
-      "id": "eletivas",
-      "label": "Discute contingência de leitos e agenda eletiva conforme governança e risco",
-      "weight": 10,
-      "verification": "verbal",
-      "critical": false,
-      "explanation": "Mudança de agenda exige decisão formal, não ordem isolada do emergencista."
-    },
-    {
-      "id": "alta",
-      "label": "Faz revisão clínica dos internados e identifica altas/contrarreferência somente se seguras",
+      "id": "curso-01",
+      "label": "Indica suspensão/adiamento das cirurgias eletivas não urgentes para liberar leitos de retaguarda (UTI/enfermaria)",
       "weight": 15,
       "verification": "verbal",
       "critical": true,
-      "explanation": "Alta por pressão de leitos sem critério clínico transfere risco."
+      "explanation": "Leitos de retaguarda condicionam a saída do DE; suspensão é contingência pactuada com direção."
     },
     {
-      "id": "fila",
-      "label": "Reforça capacidade da avaliação inicial e cria fluxo apropriado para baixa complexidade",
+      "id": "curso-02",
+      "label": "Indica comunicação formal à Diretoria Técnica e ao Centro Cirúrgico sobre a decisão",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Decisão de contingência exige governança e comunicação formal."
+    },
+    {
+      "id": "curso-03",
+      "label": "Indica remanejamento dos pacientes eletivos já internados para outras unidades/andares, conforme prioridade clínica",
       "weight": 15,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Também é preciso atuar na fila de entrada."
+      "explanation": "Remanejamento só quando clinicamente seguro, com priorização documentada."
     },
     {
-      "id": "metrica",
-      "label": "Acompanha tempo decisão-leito, espera, reclassificações e eventos adversos",
+      "id": "curso-04",
+      "label": "Indica realizar triagem reversa (reavaliação clínica) dos pacientes já internados no DE",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Triagem reversa identifica oportunidades de alta e risco de deterioração."
+    },
+    {
+      "id": "curso-05",
+      "label": "Identifica pacientes com critério de alta ou de encaminhamento para acompanhamento ambulatorial",
+      "weight": 15,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Alta e ambulatório dependem de critérios clínicos e rede disponível."
+    },
+    {
+      "id": "curso-06",
+      "label": "Formaliza plano de contrarreferência (atenção primária / ambulatório especializado) para os pacientes elegíveis",
       "weight": 10,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Um indicador isolado pode esconder piora em outra etapa."
+      "explanation": "Contrarreferência precisa de destino e seguimento definido."
+    },
+    {
+      "id": "curso-07",
+      "label": "Reclassifica o risco (reavaliação Manchester) dos pacientes em espera prolongada",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Espera prolongada exige nova classificação porque o risco pode mudar."
+    },
+    {
+      "id": "curso-08",
+      "label": "Aciona reforço de equipe médica (plantonista adicional/hospitalista de retaguarda)",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Capacidade assistencial adicional reduz atraso na avaliação."
+    },
+    {
+      "id": "curso-09",
+      "label": "Define fluxo alternativo (ex.: fast-track) para os casos de menor complexidade",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Fluxo rápido é apropriado para baixa complexidade após estratificação."
     }
   ],
   "criticalErrors": [

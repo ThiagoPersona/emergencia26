@@ -27,7 +27,7 @@
     {
       "id": "suporte",
       "title": "Tratamento inicial",
-      "prompt": "Que medidas de suporte indica e quais não são rotina?",
+      "prompt": "De acordo com o cenário, quais medidas terapêuticas estão indicadas? Cite também o que não deve ser utilizado de rotina.",
       "patientState": {
         "summary": "Lactente de 7 meses, 8 kg, com coriza, sibilos, tiragem e baixa aceitação alimentar.",
         "vitals": {
@@ -41,9 +41,9 @@
     {
       "id": "falha",
       "title": "Deterioração",
-      "prompt": "A criança faz pausas respiratórias e fica sonolenta. Como conduz via aérea e preparo?",
+      "prompt": "Após aspiração nasal e escalonamento do suporte, surgem apneias, SpO2 86% e rebaixamento. Posicione o lactente para intubação e indique tamanhos dos dispositivos e doses das drogas.",
       "patientState": {
-        "summary": "Após aspiração nasal superficial e oxigênio, persiste esforço importante e surgem apneias.",
+        "summary": "Após suporte respiratório e aspiração nasal superficial, SpO2 86%, menor entrada de ar, apneias e sonolência. Lactente de 8 kg.",
         "vitals": {
           "FC": "92 bpm",
           "FR": "irregular",
@@ -54,9 +54,9 @@
     {
       "id": "tubo",
       "title": "Após passagem do tubo",
-      "prompt": "Como confirma o tubo, mantém analgesia e ventilação e define destino?",
+      "prompt": "Descreva o processo de intubação no manequim, verbalizando o passo a passo e a confirmação do tubo.",
       "patientState": {
-        "summary": "Após ventilação com bolsa-máscara, o tubo foi passado sob visão.",
+        "summary": "O paciente está posicionado e a equipe entregou o material solicitado. Mostre a técnica no manequim e verbalize como confirmará a posição do tubo.",
         "vitals": {
           "FC": "154 bpm",
           "SpO2": "95% com ventilação"
@@ -66,60 +66,156 @@
   ],
   "checklist": [
     {
-      "id": "suporte",
-      "label": "Faz aspiração superficial, hidratação dirigida e oxigênio conforme necessidade",
-      "weight": 15,
+      "id": "curso-01",
+      "label": "Fornece medidas de suporte (hidratação, oxigênio)",
+      "weight": 7,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Bronquiolite é tratada principalmente com suporte."
+      "explanation": "Suporte da bronquiolite guiado por oxigenação, hidratação e trabalho respiratório; terapias não rotineiras exigem indicação específica."
     },
     {
-      "id": "sem-rotina",
-      "label": "Não usa broncodilatador, corticoide ou antibiótico de rotina sem outra indicação",
-      "weight": 10,
+      "id": "curso-02",
+      "label": "Não indica beta2-agonista/salbutamol",
+      "weight": 3,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Esses tratamentos não melhoram a maioria dos casos de bronquiolite."
+      "explanation": "Suporte da bronquiolite guiado por oxigenação, hidratação e trabalho respiratório; terapias não rotineiras exigem indicação específica."
     },
     {
-      "id": "falha",
-      "label": "Reconhece apneia, exaustão e rebaixamento como falha iminente e ventila imediatamente",
-      "weight": 20,
+      "id": "curso-03",
+      "label": "Não indica corticosteroide sistêmico ou inalatório isoladamente/de rotina",
+      "weight": 3,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Suporte da bronquiolite guiado por oxigenação, hidratação e trabalho respiratório; terapias não rotineiras exigem indicação específica."
+    },
+    {
+      "id": "curso-04",
+      "label": "Não indica adrenalina/epinefrina nebulizada isoladamente/de rotina",
+      "weight": 3,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Suporte da bronquiolite guiado por oxigenação, hidratação e trabalho respiratório; terapias não rotineiras exigem indicação específica."
+    },
+    {
+      "id": "curso-05",
+      "label": "Não indica antibiótico",
+      "weight": 3,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Suporte da bronquiolite guiado por oxigenação, hidratação e trabalho respiratório; terapias não rotineiras exigem indicação específica."
+    },
+    {
+      "id": "curso-06",
+      "label": "Indica CNAF ou CPAP como suporte ventilatório",
+      "weight": 8,
       "verification": "verbal",
       "critical": true,
-      "explanation": "Não prolongar CNAF ou CPAP diante de apneias e perda de proteção de via aérea."
+      "explanation": "Suporte da bronquiolite guiado por oxigenação, hidratação e trabalho respiratório; terapias não rotineiras exigem indicação específica."
     },
     {
-      "id": "prepara",
-      "label": "Chama ajuda, escolhe material pelo tamanho e posição do lactente, pré-oxigena e prepara resgate",
-      "weight": 15,
+      "id": "curso-07",
+      "label": "Considera antitérmico/analgésico para tratamento da febre",
+      "weight": 3,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Suporte da bronquiolite guiado por oxigenação, hidratação e trabalho respiratório; terapias não rotineiras exigem indicação específica."
+    },
+    {
+      "id": "curso-08",
+      "label": "Seleciona lâmina reta Miller nº 1 ou nº 2",
+      "weight": 8,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escolha de equipamento e fármacos deve ser ajustada ao lactente e confirmada antes da tentativa."
+    },
+    {
+      "id": "curso-09",
+      "label": "Seleciona tubo com cuff nº 3,0",
+      "weight": 8,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escolha de equipamento e fármacos deve ser ajustada ao lactente e confirmada antes da tentativa."
+    },
+    {
+      "id": "curso-10",
+      "label": "Utiliza fita de broselow",
+      "weight": 4,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escolha de equipamento e fármacos deve ser ajustada ao lactente e confirmada antes da tentativa."
+    },
+    {
+      "id": "curso-11",
+      "label": "Verbaliza dose da indução com cetamina 1-2 mg/kg IV (8-16 mg) ou etomidato (0,3 mg/kg IV (2,4 mg)) e bloqueio com rocurônio 1-1,5 mg/kg IV (aprox. 10 mg) ou succinilcolina 2 mg/kg (16 mg); não usa atropina de rotina",
+      "weight": 9,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escolha de equipamento e fármacos deve ser ajustada ao lactente e confirmada antes da tentativa."
+    },
+    {
+      "id": "curso-12",
+      "label": "Verbaliza o posicionamento do lactente com coxim sob os ombros",
+      "weight": 6,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escolha de equipamento e fármacos deve ser ajustada ao lactente e confirmada antes da tentativa."
+    },
+    {
+      "id": "curso-13",
+      "label": "Segura o laringoscópio com a mão esquerda, introduz a lâmina pela direita e desloca a língua para a esquerda",
+      "weight": 5.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Na execução, confirme via aérea traqueal por capnografia em onda e mantenha ventilação/analgesia."
+    },
+    {
+      "id": "curso-14",
+      "label": "Insufla o cuff",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Na execução, confirme via aérea traqueal por capnografia em onda e mantenha ventilação/analgesia."
+    },
+    {
+      "id": "curso-15",
+      "label": "Fixa o tubo na altura de 10,5 cm na comissura labial",
+      "weight": 8,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Na execução, confirme via aérea traqueal por capnografia em onda e mantenha ventilação/analgesia."
+    },
+    {
+      "id": "curso-16",
+      "label": "Confirma posicionamento prioritariamente por capnografia contínua com curva de ETCO₂",
+      "weight": 6.5,
       "verification": "hibrido",
       "critical": true,
-      "explanation": "Fita de comprimento e peso ajudam; o tubo não tem tamanho fixo para toda criança."
+      "explanation": "Na execução, confirme via aérea traqueal por capnografia em onda e mantenha ventilação/analgesia."
     },
     {
-      "id": "farmacos",
-      "label": "Verbaliza indutor/bloqueador apropriados, dose por peso e contraindicações",
-      "weight": 15,
-      "verification": "verbal",
+      "id": "curso-17",
+      "label": "Confirma expansão torácica e ausculta bilateral, sem ruídos epigástricos",
+      "weight": 5,
+      "verification": "hibrido",
       "critical": false,
-      "explanation": "Dose deve ser recalculada para 8 kg e situação hemodinâmica."
+      "explanation": "Na execução, confirme via aérea traqueal por capnografia em onda e mantenha ventilação/analgesia."
     },
     {
-      "id": "confirmacao",
-      "label": "Confirma por capnografia contínua, expansão e ausculta; ajusta profundidade",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Ausculta isolada não confirma posicionamento traqueal."
-    },
-    {
-      "id": "pos",
-      "label": "Inicia sedoanalgesia/ventilação, monitora e aciona UTI pediátrica",
-      "weight": 10,
-      "verification": "verbal",
+      "id": "curso-18",
+      "label": "Garante analgesia/sedação pós-IOT e verbaliza início de ventilação protetora",
+      "weight": 3.75,
+      "verification": "hibrido",
       "critical": false,
-      "explanation": "A estabilização continua após a intubação."
+      "explanation": "Na execução, confirme via aérea traqueal por capnografia em onda e mantenha ventilação/analgesia."
+    },
+    {
+      "id": "curso-19",
+      "label": "Solicita vaga de UTI pediátrica",
+      "weight": 1.25,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Na execução, confirme via aérea traqueal por capnografia em onda e mantenha ventilação/analgesia."
     }
   ],
   "criticalErrors": [

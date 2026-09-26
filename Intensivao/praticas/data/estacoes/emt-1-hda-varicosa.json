@@ -27,7 +27,7 @@
     {
       "id": "admissao",
       "title": "Hematêmese inicial",
-      "prompt": "Qual seu diagnóstico operacional e pacote inicial?",
+      "prompt": "Qual sua principal hipótese diagnóstica e quais as condutas iniciais?",
       "patientState": {
         "summary": "Homem de 54 anos com cirrose conhecida e hematêmese volumosa. Está acordado e orientado.",
         "vitals": {
@@ -40,9 +40,9 @@
     {
       "id": "persistencia",
       "title": "Persistência do sangramento",
-      "prompt": "Que intervenção definitiva solicita e em qual prazo após ressuscitação?",
+      "prompt": "Quais exames você solicitaria para esse paciente?",
       "patientState": {
-        "summary": "Novo episódio de sangue vivo; recebeu acesso, fármaco vasoativo e antibiótico.",
+        "summary": "O paciente permanece consciente e estável após as primeiras medidas, sem novo sangramento volumoso até este momento.",
         "vitals": {
           "PA": "88/54 mmHg",
           "FC": "128 bpm"
@@ -52,9 +52,9 @@
     {
       "id": "ponte",
       "title": "Falha temporária",
-      "prompt": "Sangramento incontrolável enquanto se organiza terapia definitiva. Descreva a ponte e suas precauções.",
+      "prompt": "Apesar do tratamento iniciado, o paciente apresenta hematêmese recorrente e instabilidade. Você inicia transfusão balanceada e protege a via aérea. Qual intervenção temporária poderia controlar o sangramento até a hemostasia definitiva? Descreva o passo a passo.",
       "patientState": {
-        "summary": "A via aérea está protegida. Endoscopia terapêutica falhou e a equipe prepara TIPS/resgate.",
+        "summary": "A hematêmese se intensifica apesar das medidas iniciais. Há sangue disponível, equipe de endoscopia avisada e necessidade de estabilizar o paciente enquanto se organiza hemostasia definitiva.",
         "vitals": {
           "PA": "78/46 mmHg",
           "FC": "136 bpm"
@@ -64,60 +64,164 @@
   ],
   "checklist": [
     {
-      "id": "abc",
-      "label": "Ressuscita, acessa, tipa sangue e protege via aérea se houver risco real de aspiração",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "IOT não é automática em toda hematêmese; considerar incapacidade de proteger via aérea."
-    },
-    {
-      "id": "vasoativo",
-      "label": "Inicia vasoativo esplâncnico cedo (octreotídeo ou terlipressina, conforme protocolo)",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Reduzir hipertensão portal antes da endoscopia melhora controle inicial."
-    },
-    {
-      "id": "antibiotico",
-      "label": "Inicia profilaxia antibiótica apropriada, como ceftriaxona 1 g IV a cada 24 h",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "A infecção aumenta ressangramento e mortalidade em cirrose."
-    },
-    {
-      "id": "endoscopia",
-      "label": "Solicita endoscopia terapêutica até 12 h após ressuscitação e avaliação para TIPS se indicado",
-      "weight": 20,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "O alvo de 12 h se aplica à suspeita de sangramento varicoso após estabilização."
-    },
-    {
-      "id": "balao",
-      "label": "Usa balão apenas como ponte, testa e confirma posição completa por imagem antes de insuflar plenamente",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Inflar fora do estômago pode causar ruptura esofágica."
-    },
-    {
-      "id": "limites",
-      "label": "Segue fabricante para volume/pressão, mantém tração controlada e limita tamponamento a até 24 h",
-      "weight": 10,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Volumes de um modelo não se generalizam para outros."
-    },
-    {
-      "id": "definitivo",
-      "label": "Reavalia perfusão e organiza hemostasia definitiva/UTI sem confiar no balão como tratamento final",
-      "weight": 10,
+      "id": "curso-01",
+      "label": "Reconhece hemorragia digestiva alta em paciente estável",
+      "weight": 2,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Balão é temporário e exige vigilância contínua."
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-02",
+      "label": "Coleta exames laboratoriais",
+      "weight": 4,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-03",
+      "label": "IBP EV (pantoprazol 80 mg bolus ± manutenção)",
+      "weight": 7,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-04",
+      "label": "Vasoconstritor esplâncnico IV (Terlipressina 2mg 4/4h OU Octreotide 50mcg bolus + 50mcg/h OU Somatostatina 250mcg bolus + 250mcg/h)",
+      "weight": 7,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-05",
+      "label": "Ceftriaxona 1g profilática EV",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-06",
+      "label": "Hemograma completo",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-07",
+      "label": "Ureia/creatinina",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-08",
+      "label": "TAP/INR e TTPa",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-09",
+      "label": "Função hepática (bilirrubinas, albumina)",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-10",
+      "label": "Gasometria",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-11",
+      "label": "Fibrinogênio",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-12",
+      "label": "Endoscopia em 12-24h",
+      "weight": 3,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do checklist do curso; correlacionar com estabilidade hemodinâmica e suspeita de sangramento varicoso."
+    },
+    {
+      "id": "curso-13",
+      "label": "Testa o balão em busca de vazamentos",
+      "weight": 6,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Etapa da técnica de tamponamento temporário; confirmar posição e seguir fabricante, sem atrasar hemostasia definitiva."
+    },
+    {
+      "id": "curso-14",
+      "label": "Insere o balão pela boca ou narina até o estômago, como uma sonda orogástrica. Se necessário, utilizar laringoscopia e fio-guia para facilitar a passagem.",
+      "weight": 8,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Etapa da técnica de tamponamento temporário; confirmar posição e seguir fabricante, sem atrasar hemostasia definitiva."
+    },
+    {
+      "id": "curso-15",
+      "label": "Insufla o balão gástrico inicialmente com 50-60 mL",
+      "weight": 7,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Etapa da técnica de tamponamento temporário; confirmar posição e seguir fabricante, sem atrasar hemostasia definitiva."
+    },
+    {
+      "id": "curso-16",
+      "label": "Checagem da posição com exame físico (aspiração de conteúdo, insuflação de ar com ausculta epigástrica)",
+      "weight": 8,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Etapa da técnica de tamponamento temporário; confirmar posição e seguir fabricante, sem atrasar hemostasia definitiva."
+    },
+    {
+      "id": "curso-17",
+      "label": "Realiza imagem para confirmar posicionamento infradiafragmático (POCUS ou RX)",
+      "weight": 8,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Etapa da técnica de tamponamento temporário; confirmar posição e seguir fabricante, sem atrasar hemostasia definitiva."
+    },
+    {
+      "id": "curso-18",
+      "label": "Completa a insuflação do balão gástrico com volume indicado pelo fabricante (entre 250-500 mL)",
+      "weight": 7,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Etapa da técnica de tamponamento temporário; confirmar posição e seguir fabricante, sem atrasar hemostasia definitiva."
+    },
+    {
+      "id": "curso-19",
+      "label": "Traciona gentilmente até sentir resistência na junção gastroesofágica, mantém tração aproximada de 1 kg e fixa adequadamente.",
+      "weight": 6,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Etapa da técnica de tamponamento temporário; confirmar posição e seguir fabricante, sem atrasar hemostasia definitiva."
+    },
+    {
+      "id": "curso-20",
+      "label": "Considera insuflar o balão esofágico a 35-40 mmHg",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Etapa da técnica de tamponamento temporário; confirmar posição e seguir fabricante, sem atrasar hemostasia definitiva."
     }
   ],
   "criticalErrors": [

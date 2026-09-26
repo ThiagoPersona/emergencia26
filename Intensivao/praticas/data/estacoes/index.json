@@ -217,7 +217,7 @@
     ],
     "family": "Trauma e APH",
     "difficulty": "avancada",
-    "origin": "inedita",
+    "origin": "acervo_reescrito",
     "tags": [
       "XABCDE pediátrico",
       "choque hemorrágico",
@@ -700,7 +700,7 @@
     ],
     "family": "Obstetrícia",
     "difficulty": "avancada",
-    "origin": "inedita",
+    "origin": "acervo_reescrito",
     "tags": [
       "eclâmpsia",
       "sulfato de magnésio",
@@ -726,7 +726,7 @@
     ],
     "family": "Obstetrícia",
     "difficulty": "avancada",
-    "origin": "inedita",
+    "origin": "acervo_reescrito",
     "tags": [
       "PCR na gestação",
       "RCP de alta qualidade",
@@ -893,7 +893,7 @@
       "POCUS",
       "reperfusão"
     ],
-    "hasMedia": false,
+    "hasMedia": true,
     "trainingSimulado": 2
   },
   {

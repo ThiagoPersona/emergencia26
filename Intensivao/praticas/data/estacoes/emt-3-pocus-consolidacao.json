@@ -27,7 +27,7 @@
     {
       "id": "janelas",
       "title": "Aquisição",
-      "prompt": "Demonstre as janelas anterior e posterolateral e identifique estruturas.",
+      "prompt": "De acordo com o protocolo LUS, realize duas janelas pulmonares, uma anterior e outra na transição toracoabdominal, descrevendo as estruturas visualizadas em cada uma.",
       "patientState": {
         "summary": "Mulher de 63 anos com febre e dispneia; ausculta com crepitações basais esquerdas.",
         "vitals": {
@@ -40,9 +40,9 @@
     {
       "id": "clipe",
       "title": "Achado liberado",
-      "prompt": "Descreva os achados do clipe e seus diferenciais principais.",
+      "prompt": "Na transição toracoabdominal esquerda, descreva os achados do exame apresentado e cite duas patologias em que eles podem estar presentes.",
       "patientState": {
-        "summary": "Foi obtida uma janela ultrassonográfica da base esquerda. O clipe externo é de outro paciente e ilustra o achado a ser interpretado.",
+        "summary": "Na janela basal esquerda, além do clipe de consolidação de outra pessoa, o operador descreve fina lâmina de líquido anecoico adjacente e pontos ecogênicos intrapulmonares imóveis durante os ciclos respiratórios. Interprete os achados em conjunto.",
         "vitals": {
           "FR": "30 irpm",
           "SpO2": "93% com O2"
@@ -55,7 +55,7 @@
     {
       "id": "decisao",
       "title": "Interpretação e conduta",
-      "prompt": "O ultrassom define exsudato/transudato? Como integra o achado ao tratamento?",
+      "prompt": "Pelo contexto apresentado, o derrame pleural é mais provavelmente um exsudato ou um transudato?",
       "patientState": {
         "summary": "A paciente permanece febril e dispneica, sem instabilidade hemodinâmica. Considere os dados clínicos e o clipe já apresentado.",
         "vitals": {
@@ -67,60 +67,114 @@
   ],
   "checklist": [
     {
-      "id": "janela",
-      "label": "Descreve linha pleural e sombras costais na janela anterior",
-      "weight": 10,
+      "id": "curso-01",
+      "label": "Descreve linha pleural",
+      "weight": 5,
       "verification": "hibrido",
       "critical": false,
-      "explanation": "A orientação inicial evita interpretar tecido superficial como pulmão."
+      "explanation": "Identifique os marcos anatômicos da janela pulmonar anterior e posterolateral."
     },
     {
-      "id": "base",
-      "label": "Na transição posterolateral reconhece diafragma, órgão sólido e sinal da coluna",
-      "weight": 15,
+      "id": "curso-02",
+      "label": "Descreve linha A",
+      "weight": 5,
       "verification": "hibrido",
       "critical": false,
-      "explanation": "Essa janela ajuda a localizar líquido e consolidação."
+      "explanation": "Identifique os marcos anatômicos da janela pulmonar anterior e posterolateral."
     },
     {
-      "id": "consolidacao",
-      "label": "Reconhece hepatização pulmonar como consolidação",
-      "weight": 20,
+      "id": "curso-03",
+      "label": "Descreve sombra acústica de costelas",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Identifique os marcos anatômicos da janela pulmonar anterior e posterolateral."
+    },
+    {
+      "id": "curso-04",
+      "label": "Descreve diafragma",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Identifique os marcos anatômicos da janela pulmonar anterior e posterolateral."
+    },
+    {
+      "id": "curso-05",
+      "label": "Descreve órgão sólido (fígado ou baço)",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Identifique os marcos anatômicos da janela pulmonar anterior e posterolateral."
+    },
+    {
+      "id": "curso-06",
+      "label": "Descreve sinal da coluna",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Identifique os marcos anatômicos da janela pulmonar anterior e posterolateral."
+    },
+    {
+      "id": "curso-07",
+      "label": "Descreve a linha pleural na transição toraco-abdominal",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Identifique os marcos anatômicos da janela pulmonar anterior e posterolateral."
+    },
+    {
+      "id": "curso-08",
+      "label": "Hepatização pulmonar",
+      "weight": 10,
       "verification": "verbal",
       "critical": true,
-      "explanation": "A área pulmonar torna-se semelhante ao fígado quando perde aeração."
+      "explanation": "Descreva apenas achados realmente visíveis no clipe, distinguindo consolidação, broncograma e líquido pleural."
     },
     {
-      "id": "bronco",
-      "label": "Diferencia broncograma dinâmico de estático quando visualizável",
+      "id": "curso-09",
+      "label": "Broncograma aéreo estático",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Descreva apenas achados realmente visíveis no clipe, distinguindo consolidação, broncograma e líquido pleural."
+    },
+    {
+      "id": "curso-10",
+      "label": "Derrame pleural laminar",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Descreva apenas achados realmente visíveis no clipe, distinguindo consolidação, broncograma e líquido pleural."
+    },
+    {
+      "id": "curso-11",
+      "label": "Pneumonia - Atelectasia - Neoplasia - Hemorragias",
       "weight": 10,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Dinâmico favorece pneumonia; estático pode ocorrer em atelectasia."
+      "expected": [
+        "1ª hipótese distinta entre pneumonia, atelectasia, neoplasia e hemorragia."
+      ],
+      "explanation": "Cite duas etiologias distintas capazes de produzir consolidação; repetir a mesma não pontua duas vezes."
     },
     {
-      "id": "derrame",
-      "label": "Descreve derrame adjacente sem chamar automaticamente empiema",
+      "id": "curso-12",
+      "label": "Pneumonia - Atelectasia - Neoplasia - Hemorragias",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "2ª hipótese distinta entre pneumonia, atelectasia, neoplasia e hemorragia."
+      ],
+      "explanation": "Cite duas etiologias distintas capazes de produzir consolidação; repetir a mesma não pontua duas vezes."
+    },
+    {
+      "id": "curso-13",
+      "label": "Exsudato",
       "weight": 15,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Aspecto complexo pode aumentar suspeita, mas exige contexto."
-    },
-    {
-      "id": "limites",
-      "label": "Não classifica exsudato/transudato apenas pelo ultrassom",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Quando indicada, a análise do líquido estabelece a classificação."
-    },
-    {
-      "id": "integra",
-      "label": "Trata hipoxemia/infeção provável e decide imagem, drenagem ou toracocentese pelo quadro",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "POCUS orienta, mas não substitui avaliação clínica."
+      "explanation": "No contexto de pneumonia, exsudato é clinicamente provável, mas a ultrassonografia isolada não classifica definitivamente o líquido; critérios de Light exigem análise pleural."
     }
   ],
   "criticalErrors": [
@@ -128,7 +182,7 @@
     "Omitir: Não classifica exsudato/transudato apenas pelo ultrassom",
     "Omitir: Trata hipoxemia/infeção provável e decide imagem, drenagem ou toracocentese pelo quadro"
   ],
-  "referenceAnswer": "Identifico pleura, sombras costais e diafragma. A hepatização subpleural mostra consolidação; broncograma dinâmico, se presente, favorece pneumonia. Pequeno derrame pode acompanhar infecção. Não classifico exsudato pelo ultrassom: quando indicada, preciso de análise do líquido. Oxigeno, trato a provável infecção e defino investigação/drenagem pela gravidade.",
+  "referenceAnswer": "Na janela anterior descrevo costelas e sombras acústicas, linha pleural e linhas A; na posterolateral, diafragma, órgão sólido, sinal da coluna e transição pleural. O clipe mostra consolidação com aspecto de hepatização; a descrição adicional informa focos ecogênicos imóveis e pequena lâmina de líquido pleural. Cito duas causas distintas, como pneumonia e atelectasia. Neste contexto febril, exsudato parapneumônico é mais provável, mas ultrassom não classifica definitivamente o líquido: se clinicamente indicada, análise pleural aplica os critérios de Light.",
   "references": [
     "https://www.acep.org/globalassets/new-pdfs/policy-statements/emergency-ultrasound-imaging-criteria-compendium.pdf",
     "https://www.brit-thoracic.org.uk/clinical-resources/guidelines/pleural-disease/"

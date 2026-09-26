@@ -25,8 +25,8 @@
   "phases": [
     {
       "id": "probabilidade",
-      "title": "Avaliação pré-teste",
-      "prompt": "Quais dados clínicos e qual rota de investigação você escolhe?",
+      "title": "Tarefa 1",
+      "prompt": "Diante do cenário, qual a principal hipótese diagnóstica, como conduz a avaliação clínica inicial e qual escore diagnóstico pode utilizar?",
       "patientState": {
         "summary": "Mulher de 47 anos com edema e dor unilateral na perna esquerda há três dias após imobilização. Sem dispneia ou dor torácica.",
         "vitals": {
@@ -38,8 +38,8 @@
     },
     {
       "id": "tecnica",
-      "title": "Manobra no manequim",
-      "prompt": "Escolha o transdutor, descreva a varredura dos segmentos proximais e explique como verifica a compressibilidade.",
+      "title": "Tarefa 2",
+      "prompt": "Demonstre no manequim o POCUS para pesquisa de TVP com técnica de compressão em três pontos.",
       "patientState": {
         "summary": "O aparelho de ultrassom está disponível para examinar o membro acometido.",
         "vitals": {
@@ -49,76 +49,132 @@
     },
     {
       "id": "conduta",
-      "title": "Imagem e decisão",
-      "prompt": "Durante compressão perpendicular adequada, a artéria vizinha se deforma, mas as paredes da estrutura venosa permanecem separadas. Integre esse dado dinâmico à imagem e defina tratamento e seguimento.",
+      "title": "Tarefa 3",
+      "prompt": "Qual sua conduta após interpretar o clipe de compressão poplítea apresentado?",
       "patientState": {
-        "summary": "A paciente permanece estável. A imagem estática é de outro paciente e ilustra a região femoral avaliada; a compressibilidade é informada separadamente pela manobra dinâmica.",
+        "summary": "A paciente permanece estável. O clipe é de outra pessoa e foi escolhido por demonstrar a mesma região examinada no caso; interprete a manobra dinâmica antes de decidir.",
         "vitals": {
           "PA": "120/74 mmHg",
           "FC": "84 bpm"
         }
       },
       "media": [
-        "us-tvp-femoral-compressao"
+        "us-tvp-poplitea-compressao"
       ]
     }
   ],
   "checklist": [
     {
-      "id": "probabilidade",
-      "label": "Estratifica probabilidade clínica e procura sintomas de TEP",
-      "weight": 15,
+      "id": "curso-01",
+      "label": "Reconhece trombose venosa profunda do membro inferior esquerdo como principal hipótese diagnóstica",
+      "weight": 5,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Wells ajuda a definir a sequência de exames."
+      "explanation": "Integre probabilidade clínica e exame dirigido; a ausência de sintomas torácicos não elimina completamente TEP."
     },
     {
-      "id": "transdutor",
-      "label": "Seleciona transdutor linear e identifica veia e artéria em eixo curto",
-      "weight": 15,
-      "verification": "hibrido",
+      "id": "curso-02",
+      "label": "Investiga fatores de risco para tromboembolismo venoso e questiona sintomas sugestivos de embolia pulmonar",
+      "weight": 5,
+      "verification": "verbal",
       "critical": false,
-      "explanation": "A identificação anatômica evita comprimir a estrutura errada."
+      "explanation": "Integre probabilidade clínica e exame dirigido; a ausência de sintomas torácicos não elimina completamente TEP."
     },
     {
-      "id": "compressao",
-      "label": "Demonstra compressão venosa completa em segmentos proximais, incluindo femoral e poplítea",
-      "weight": 20,
-      "verification": "hibrido",
-      "critical": true,
-      "explanation": "A ausência de colabamento é o sinal central da TVP proximal."
-    },
-    {
-      "id": "limite",
-      "label": "Reconhece que exame limitado negativo não exclui TVP distal/ilíaca ou TEP",
-      "weight": 10,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Quando o risco persiste, planejar exame completo ou repetição."
-    },
-    {
-      "id": "diagnostico",
-      "label": "Interpreta veia femoral não compressível como TVP proximal",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "A imagem está de acordo com o achado dinâmico informado."
-    },
-    {
-      "id": "anticoagula",
-      "label": "Considera anticoagulação por pelo menos três meses após revisar sangramento, rim, gestação e contexto",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Alta e fármaco oral não são automáticos para todos."
-    },
-    {
-      "id": "destino",
-      "label": "Define estabilidade, sinais de TEP e seguimento seguro",
+      "id": "curso-03",
+      "label": "Cita o Escore de Wells para diagnóstico de TVP",
       "weight": 10,
       "verification": "verbal",
       "critical": false,
-      "explanation": "A disposição depende da avaliação integral."
+      "explanation": "Integre probabilidade clínica e exame dirigido; a ausência de sintomas torácicos não elimina completamente TEP."
+    },
+    {
+      "id": "curso-04",
+      "label": "Seleciona o transdutor linear de alta frequência, utiliza preset vascular/venoso e ajusta profundidade e ganho",
+      "weight": 12,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Integre probabilidade clínica e exame dirigido; a ausência de sintomas torácicos não elimina completamente TEP."
+    },
+    {
+      "id": "curso-05",
+      "label": "Posiciona o paciente em decúbito dorsal, com o joelho discretamente fletido e a coxa abduzida e rodada externamente, em posição de 'frog leg'",
+      "weight": 12,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Integre probabilidade clínica e exame dirigido; a ausência de sintomas torácicos não elimina completamente TEP."
+    },
+    {
+      "id": "curso-06",
+      "label": "Ponto 1: Identifica corretamente a artéria femoral comum, a veia femoral comum e a junção safenofemoral",
+      "weight": 6,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Na compressão em eixo curto, a veia normal colaba completamente; repetir em todos os pontos previstos."
+    },
+    {
+      "id": "curso-07",
+      "label": "Realiza compressão TOTAL da veia no Ponto 1",
+      "weight": 6,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Na compressão em eixo curto, a veia normal colaba completamente; repetir em todos os pontos previstos."
+    },
+    {
+      "id": "curso-08",
+      "label": "Ponto 2: Identifica corretamente as artérias femorais superficial e profunda e a veia femoral comum + realiza compressão adequada da veia",
+      "weight": 6,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Na compressão em eixo curto, a veia normal colaba completamente; repetir em todos os pontos previstos."
+    },
+    {
+      "id": "curso-09",
+      "label": "Realiza compressão TOTAL da veia no Ponto 2",
+      "weight": 6,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Na compressão em eixo curto, a veia normal colaba completamente; repetir em todos os pontos previstos."
+    },
+    {
+      "id": "curso-10",
+      "label": "Ponto 3: Identifica corretamente a veia poplítea e a artéria poplítea + realiza compressão adequada da veia",
+      "weight": 6,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Na compressão em eixo curto, a veia normal colaba completamente; repetir em todos os pontos previstos."
+    },
+    {
+      "id": "curso-11",
+      "label": "Realiza compressão TOTAL da veia no Ponto 3",
+      "weight": 6,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Na compressão em eixo curto, a veia normal colaba completamente; repetir em todos os pontos previstos."
+    },
+    {
+      "id": "curso-12",
+      "label": "Avalia sinais de embolia pulmonar, estabilidade hemodinâmica, risco de sangramento, contraindicações à anticoagulação",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Tratamento/alta dependem de estabilidade, exclusão de contraindicações e seguimento garantido."
+    },
+    {
+      "id": "curso-13",
+      "label": "Inicia anticoagulação oral",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Tratamento/alta dependem de estabilidade, exclusão de contraindicações e seguimento garantido."
+    },
+    {
+      "id": "curso-14",
+      "label": "Define alta com acompanhamento ambulatorial",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Tratamento/alta dependem de estabilidade, exclusão de contraindicações e seguimento garantido."
     }
   ],
   "criticalErrors": [
@@ -127,7 +183,7 @@
     "Omitir: Interpreta veia femoral não compressível como TVP proximal",
     "Omitir: Considera anticoagulação por pelo menos três meses após revisar sangramento, rim, gestação e contexto"
   ],
-  "referenceAnswer": "Avalio a probabilidade clínica e sintomas de embolia. Com transdutor linear identifico as veias proximais e comprimo até colabar a parede normal; a femoral não compressível neste caso confirma TVP proximal. Reviso risco hemorrágico, função renal, gestação e comorbidades para anticoagular por pelo menos três meses e definir seguimento. Um exame limitado negativo exige estratégia de repetição se a suspeita persistir.",
+  "referenceAnswer": "Avalio a probabilidade clínica e sintomas de embolia. Com transdutor linear identifico as veias proximais e comprimo até colabar a parede normal; a poplítea não compressível no clipe confirma TVP proximal na amostra. No paciente da estação, confirmo o mesmo achado antes de tratar. Reviso risco hemorrágico, função renal, gestação e comorbidades para anticoagular por pelo menos três meses e definir seguimento. Um exame limitado negativo exige estratégia de repetição se a suspeita persistir.",
   "references": [
     "https://www.acep.org/sonoguide/basic/dvt",
     "https://www.nice.org.uk/guidance/ng158/chapter/Recommendations"

@@ -315,7 +315,7 @@ test("simulado 4 mantém progressão, perguntas práticas e imagens diagnóstica
   ]);
 
   const pocus = byId.get("emt-4-pocus-pelve");
-  assert.match(pocus.phases[1].prompt, /e.?FAST/i);
+  assert.match(pocus.phases[0].prompt, /e.?FAST/i);
   assert.ok(pocus.phases.at(-1).media.includes("rx-pelve-diastase"));
 
   const neuro = byId.get("emt-4-neuro-febre-convulsao");
@@ -324,7 +324,7 @@ test("simulado 4 mantém progressão, perguntas práticas e imagens diagnóstica
 
   const cardio = byId.get("emt-4-cardio-iam-arritmias");
   assert.deepEqual(cardio.phases.map((phase) => phase.media?.[0]), ["ecg-iam-inferior-vd", "ecg-vt-cc0", "ecg-vf-cc0"]);
-  assert.ok(cardio.checklist.some((item) => /cardioversão sincronizada/i.test(item.label)));
+  assert.ok(cardio.checklist.some((item) => /cardioversão elétrica sincronizada/i.test(item.label)));
   assert.match(cardio.referenceAnswer, /evidência incerta|utilidade não estabelecida/i);
 });
 
@@ -366,8 +366,7 @@ test("fases revelam estado e midia progressivamente usando apenas o manifesto", 
 
   readIndex().forEach((entry) => {
     const station = readStation(entry);
-    const minPhases = ["emt-4-trauma-torax-penetrante", "emt-5-trauma-coluna", "emt-5-obstrucao-intestinal"].includes(station.id) ? 2 : 3;
-    assert.ok(station.phases.length >= minPhases && station.phases.length <= 6, `${entry.file}: numero de fases invalido`);
+    assert.ok(station.phases.length >= 2 && station.phases.length <= 6, `${entry.file}: numero de fases invalido`);
 
     station.phases.forEach((phase, phaseIndex) => {
       const prefix = `${entry.file}/phases[${phaseIndex}]`;
@@ -425,8 +424,8 @@ test("fases de interpretação não antecipam o achado no estado clínico", () =
   });
 
   const dvt = byId.get("emt-2-tvp-compressao");
-  assert.match(getPhase(dvt.id, "conduta").prompt, /paredes.*separadas/i);
-  assert.ok(getPhase(dvt.id, "conduta").media.includes("us-tvp-femoral-compressao"));
+  assert.doesNotMatch(getPhase(dvt.id, "conduta").prompt, /paredes.*separadas|n.o compress/i);
+  assert.ok(getPhase(dvt.id, "conduta").media.includes("us-tvp-poplitea-compressao"));
 
   for (const stationId of ["2025-vm-autopeep", "sim-resp-asma-intubado-01"]) {
     const station = byId.get(stationId);
@@ -435,7 +434,7 @@ test("fases de interpretação não antecipam o achado no estado clínico", () =
   }
   assert.equal(getPhase("sim-resp-asma-intubado-01", "apos-ajuste").waveform, "flow-time-recovered");
   assert.match(getPhase("sim-tox-triciclico-01", "achado-eletrico").patientState.vitals["QRS medido"], /156 ms/);
-  assert.doesNotMatch(getPhase("emt-2-tep-choque", "eco").prompt, /clipe/i);
+  assert.doesNotMatch(getPhase("emt-2-tep-choque", "achados").prompt, /TEP|McConnell|sobrecarga de VD/i);
   assert.doesNotMatch(getPhase("emt-1-avci-pos-trombolise", "imagem").prompt, /hematoma/i);
 });
 
@@ -468,7 +467,7 @@ test("estacao historica de AAA usa midia que demonstra trombo mural, nao flap", 
 });
 
 test("estacoes ineditas nao citam cursos nem recebem atribuicao historica", () => {
-  readIndex().slice(5, 30).forEach((entry) => {
+  readIndex().filter((entry) => entry.origin === "inedita").forEach((entry) => {
     const station = readStation(entry);
     const serialized = JSON.stringify(station);
 

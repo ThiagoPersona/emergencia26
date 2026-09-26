@@ -10,8 +10,9 @@
     "Reanimação"
   ],
   "difficulty": "avancada",
-  "origin": "inedita",
-  "trainingReference": { "collection": "Treino presencial", "simulado": 2, "relation": "Checklist semelhante; cenário independente" },
+  "origin": "acervo_reescrito",
+  "source": { "collection": "EmTalks simulado", "simulado": 2, "adaptation": "Caso autoral; perguntas e checklist preservados" },
+  "trainingReference": { "collection": "Treino presencial", "simulado": 2, "relation": "Caso adaptado; perguntas e checklist do simulado preservados" },
   "tags": [
     "eclâmpsia",
     "sulfato de magnésio",
@@ -21,139 +22,165 @@
     "resolução da gestação"
   ],
   "durationSeconds": 300,
-  "briefing": "Gestante no terceiro trimestre apresenta convulsão e hipertensão grave. Priorize a mãe, trate a crise, controle a pressão sustentada e coordene a resolução obstétrica após estabilização.",
+  "briefing": "Você atende uma gestante na emergência. Responda a cada tarefa com os dados clínicos liberados.",
   "phases": [
     {
-      "id": "convulsao-ativa",
-      "title": "Convulsão ativa",
-      "prompt": "Proteja imediatamente via aérea e integridade física e faça o posicionamento materno apropriado.",
+      "id": "diagnostico",
+      "title": "Tarefa 1.1",
+      "prompt": "Qual o diagnóstico mais provável?",
       "patientState": {
-        "summary": "Gestante de 31 anos, 34 semanas, em convulsão tônico-clônica.",
+        "summary": "Gestante de 31 anos, 31 semanas, trazida após convulsão tônico-clônica generalizada. Família relata cefaleia e escotomas antes do episódio. Não há história prévia de epilepsia.",
         "vitals": {
           "PA": "184/118 mmHg",
           "FC": "108 bpm",
-          "FR": "irregular, 10 a 16 irpm",
-          "SpO2": "90%",
-          "T": "36,8 °C"
+          "FR": "16 irpm",
+          "SpO2": "92% em ar ambiente"
         }
       }
     },
     {
-      "id": "pos-ictal",
-      "title": "Pós-ictal",
-      "prompt": "Indique tratamento anticonvulsivante específico, exames de gravidade e monitorização.",
+      "id": "diferenciais",
+      "title": "Tarefa 1.2",
+      "prompt": "Cite dois diagnósticos diferenciais a considerar.",
       "patientState": {
-        "summary": "Após cessar a crise, está sonolenta, com cefaleia, dor epigástrica e clônus.",
+        "summary": "A crise cessou; a paciente está sonolenta, sem trauma aparente. Ainda não há exames laboratoriais disponíveis.",
         "vitals": {
           "PA": "178/114 mmHg",
+          "glicemia": "104 mg/dL"
+        }
+      }
+    },
+    {
+      "id": "manejo",
+      "title": "Tarefa 2",
+      "prompt": "Qual o manejo imediato no departamento de emergência?",
+      "patientState": {
+        "summary": "A pressão permanece elevada, a paciente ainda está sonolenta e não voltou a convulsionar. Há monitor, oxigênio e acesso venoso disponíveis.",
+        "vitals": {
+          "PA": "176/112 mmHg",
           "FC": "102 bpm",
-          "FR": "18 irpm",
           "SpO2": "95% com O2"
         }
       }
     },
     {
-      "id": "hipertensao-sustentada",
-      "title": "Hipertensão sustentada",
-      "prompt": "Indique tratamento de ação rápida e descreva uma redução segura da pressão.",
+      "id": "exames",
+      "title": "Tarefa 3",
+      "prompt": "Há alguma alteração preocupante nos exames? Qual a conduta definitiva para resolução do quadro?",
       "patientState": {
-        "summary": "A pressão grave persiste por mais de 15 minutos.",
+        "summary": "Após as primeiras medidas, chegam os exames. A dor epigástrica persiste. Obstetrícia e equipe neonatal estão disponíveis.",
         "vitals": {
-          "PA": "172/112 mmHg",
-          "FC": "98 bpm",
-          "FR": "18 irpm",
-          "SpO2": "96%"
-        }
-      }
-    },
-    {
-      "id": "exames-hellp",
-      "title": "Exames liberados",
-      "prompt": "Interprete os exames, ajuste a vigilância e diga se a resolução da gestação deve esperar o corticoide fetal.",
-      "patientState": {
-        "summary": "Após magnésio e anti-hipertensivo, surge dor epigástrica persistente; não há nova convulsão.",
-        "vitals": { "plaquetas": "78.000/mm³", "AST": "146 U/L", "ALT": "118 U/L", "LDH": "890 U/L", "PA": "150/96 mmHg" }
-      }
-    },
-    {
-      "id": "estabilizacao-destino",
-      "title": "Estabilização e destino",
-      "prompt": "Vigie toxicidade, ajuste o tratamento à função renal e organize a resolução obstétrica após estabilização materna.",
-      "patientState": {
-        "summary": "Não há nova crise, mas a diurese está reduzida; equipes obstétrica, anestésica e neonatal estão disponíveis.",
-        "vitals": {
-          "PA": "148/94 mmHg",
-          "FC": "92 bpm",
-          "FR": "16 irpm",
-          "SpO2": "97%",
-          "diurese": "25 mL/h"
+          "plaquetas": "78.000/mm³",
+          "AST": "146 U/L",
+          "ALT": "118 U/L",
+          "LDH": "890 U/L",
+          "PA": "150/96 mmHg"
         }
       }
     }
   ],
   "checklist": [
     {
-      "id": "protecao-abc",
-      "label": "Protege de trauma, posiciona lateralmente ou desloca o útero quando necessário, mantém via aérea e oxigênio e prepara aspiração e ventilação",
+      "id": "curso-01",
+      "label": "Reconhece eclâmpsia (convulsão em gestante ≥ 20 semanas + hipertensão grave).",
+      "weight": 7.5,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Critério do curso; considerar via aérea, glicemia, gravidade hipertensiva e segurança materno-fetal."
+    },
+    {
+      "id": "curso-02",
+      "label": "Diferenciais: Epilepsia - AVE - Encefalopatia hipertensiva - Intoxicações - Hipoglicemia",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "1º diagnóstico diferencial distinto, entre epilepsia, AVC, encefalopatia hipertensiva, intoxicação e hipoglicemia."
+      ],
+      "explanation": "Critério do curso; considerar via aérea, glicemia, gravidade hipertensiva e segurança materno-fetal."
+    },
+    {
+      "id": "curso-03",
+      "label": "Diferenciais: Epilepsia - AVE - Encefalopatia hipertensiva - Intoxicações - Hipoglicemia",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "2º diagnóstico diferencial distinto, entre epilepsia, AVC, encefalopatia hipertensiva, intoxicação e hipoglicemia."
+      ],
+      "explanation": "Critério do curso; considerar via aérea, glicemia, gravidade hipertensiva e segurança materno-fetal."
+    },
+    {
+      "id": "curso-04",
+      "label": "Monitorização multiparamétrica",
+      "weight": 2.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do curso; considerar via aérea, glicemia, gravidade hipertensiva e segurança materno-fetal."
+    },
+    {
+      "id": "curso-05",
+      "label": "Suporte de O2",
+      "weight": 2.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do curso; considerar via aérea, glicemia, gravidade hipertensiva e segurança materno-fetal."
+    },
+    {
+      "id": "curso-06",
+      "label": "Acesso venoso",
+      "weight": 2.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do curso; considerar via aérea, glicemia, gravidade hipertensiva e segurança materno-fetal."
+    },
+    {
+      "id": "curso-07",
+      "label": "Sulfato de magnésio (esquema de Zuspan: 4g EV em 20 min, seguido de 1 g/h por 24h).",
       "weight": 15,
-      "verification": "hibrido",
-      "critical": true
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Magnésio trata/preveni recorrência eclâmptica; monitorizar reflexos, respiração e diurese."
     },
     {
-      "id": "reconhece-exames",
-      "label": "Reconhece eclâmpsia e solicita plaquetas, creatinina, AST, ALT, proteinúria e avaliação fetal sem atrasar a mãe",
+      "id": "curso-08",
+      "label": "Controle da PA com hidralazina 5 mg EV, repetir conforme resposta (considerar nifedipino VO)",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Critério do curso; considerar via aérea, glicemia, gravidade hipertensiva e segurança materno-fetal."
+    },
+    {
+      "id": "curso-09",
+      "label": "Coleta de exames laboratoriais (hemograma, função renal/hepática, coagulograma, proteinúria).",
       "weight": 5,
       "verification": "verbal",
-      "critical": false
+      "critical": false,
+      "explanation": "Critério do curso; considerar via aérea, glicemia, gravidade hipertensiva e segurança materno-fetal."
     },
     {
-      "id": "magnesio",
-      "label": "Administra MgSO4 4 a 6 g IV em 20 a 30 minutos, seguido de 1 a 2 g/h",
-      "weight": 25,
-      "verification": "verbal",
-      "critical": true
-    },
-    {
-      "id": "toxicidade",
-      "label": "Monitora frequência respiratória, reflexos patelares, diurese e função renal e prevê interrupção ou antagonização conforme toxicidade e protocolo",
-      "weight": 10,
-      "verification": "hibrido",
-      "critical": false
-    },
-    {
-      "id": "trata-pa",
-      "label": "Trata pressão sistólica de pelo menos 160 mmHg ou diastólica de pelo menos 110 mmHg persistente por 15 minutos com fármaco de ação rápida",
+      "id": "curso-10",
+      "label": "Reconhece síndrome HELLP",
       "weight": 15,
       "verification": "verbal",
-      "critical": true
+      "critical": true,
+      "explanation": "Critério do curso; considerar via aérea, glicemia, gravidade hipertensiva e segurança materno-fetal."
     },
     {
-      "id": "esquema-pa",
-      "label": "Descreve esquema válido, como labetalol 20 mg IV seguido de 40 e 80 mg a cada 10 minutos, ou hidralazina ou nifedipina conforme protocolo",
-      "weight": 5,
+      "id": "curso-11",
+      "label": "Considera corticoterapia para maturação pulmonar fetal (betametasona 12 mg IM 24/24h por 2 doses).",
+      "weight": 15,
       "verification": "verbal",
-      "critical": false
+      "critical": false,
+      "explanation": "Corticoide é para maturação fetal em prematuridade elegível, não para tratar HELLP; não atrasar parto indicado para completar o esquema."
     },
     {
-      "id": "hellp",
-      "label": "Reconhece padrão de HELLP (plaquetopenia, transaminases/LDH elevadas), aciona obstetrícia e não adia parto indicado para completar corticoide fetal",
-      "weight": 10,
+      "id": "curso-12",
+      "label": "Indica parto de urgência após estabilização materna e solicita a avaliação obstétrica imediata.",
+      "weight": 15,
       "verification": "verbal",
-      "critical": true
-    },
-    {
-      "id": "resolucao-obstetrica",
-      "label": "Após estabilizar a mãe, aciona obstetrícia, anestesia e neonatologia e indica resolução conforme a condição materno-fetal",
-      "weight": 10,
-      "verification": "verbal",
-      "critical": true
-    },
-    {
-      "id": "reavalia",
-      "label": "Reavalia consciência, respiração, pressão, diurese e recorrência sem priorizar parto antes da estabilização materna",
-      "weight": 5,
-      "verification": "hibrido",
-      "critical": false
+      "critical": true,
+      "explanation": "Após estabilizar a mãe, organizar parto urgente com obstetrícia; não aguardar o curso completo de corticoide se a condição exige resolução."
     }
   ],
   "criticalErrors": [

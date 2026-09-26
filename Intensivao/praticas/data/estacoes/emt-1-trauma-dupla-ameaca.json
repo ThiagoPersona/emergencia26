@@ -27,7 +27,7 @@
     {
       "id": "hemorragia",
       "title": "Primeira ameaça",
-      "prompt": "Qual é a prioridade e o que você faz agora?",
+      "prompt": "Qual a abordagem prioritária neste cenário? Descreva o procedimento que realizaria no manequim.",
       "patientState": {
         "summary": "Motociclista de 31 anos caiu e apresenta jato de sangue na coxa direita. Está consciente e pálido.",
         "vitals": {
@@ -41,9 +41,9 @@
     {
       "id": "torax",
       "title": "Nova ameaça",
-      "prompt": "Após conter o sangramento, indique a próxima intervenção imediata.",
+      "prompt": "Quais as próximas abordagens iniciais de acordo com o algoritmo de manejo inicial ao trauma?",
       "patientState": {
-        "summary": "A hemostasia externa foi obtida. Há expansão torácica reduzida à direita, ausência de murmúrio e piora súbita da perfusão.",
+        "summary": "A equipe controlou temporariamente o sangramento da coxa. Há expansão torácica reduzida à direita, murmúrio abolido nesse lado e piora da perfusão.",
         "vitals": {
           "PA": "72/40 mmHg",
           "FC": "150 bpm",
@@ -54,9 +54,9 @@
     {
       "id": "destino",
       "title": "Depois da intervenção",
-      "prompt": "Como confirma a resposta, organiza investigação e controle definitivo?",
+      "prompt": "Quais exames complementares você indicaria agora e quais as respectivas justificativas?",
       "patientState": {
-        "summary": "Após descompressão torácica, melhora da expansão e da pressão. O eFAST inicial não mostra líquido livre.",
+        "summary": "Após a intervenção no tórax, a expansão e a pressão melhoram. O eFAST inicial não mostra líquido livre; ECG 13.",
         "vitals": {
           "PA": "96/60 mmHg",
           "FC": "120 bpm",
@@ -67,60 +67,140 @@
   ],
   "checklist": [
     {
-      "id": "x-sangue",
-      "label": "Reconhece e comprime a hemorragia exsanguinante antes de outras etapas",
-      "weight": 20,
+      "id": "curso-01",
+      "label": "Reconhece sangramento externo ativo como prioridade (X)",
+      "weight": 10,
       "verification": "verbal",
       "critical": true,
-      "explanation": "A perda externa maciça pode ser fatal antes da avaliação completa."
+      "explanation": "Hemorragia exsanguinante precede A e B no XABCDE."
     },
     {
-      "id": "torniquete",
-      "label": "Aplica torniquete proximal eficaz e registra horário, sem afrouxar",
+      "id": "curso-02",
+      "label": "Inicia compressão direta imediata",
+      "weight": 7.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Pressão direta é a primeira medida enquanto se prepara controle definitivo."
+    },
+    {
+      "id": "curso-03",
+      "label": "Indica e aplica torniquete proximal no MID",
       "weight": 15,
       "verification": "hibrido",
       "critical": true,
-      "explanation": "Confirmar que o sangramento cessou; não colocar sobre articulação."
+      "explanation": "Torniquete proximal é indicado se a pressão direta não controla sangramento ameaçador à vida."
     },
     {
-      "id": "pneumo",
-      "label": "Reconhece pneumotórax hipertensivo clinicamente e descomprime sem esperar imagem",
-      "weight": 20,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Hipotensão com assimetria ventilatória aguda requer ação imediata."
+      "id": "curso-04",
+      "label": "Confirma interrupção do sangramento e posicionamento correto (pulso distal ausente)",
+      "weight": 7.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "A eficácia exige ausência de sangramento ativo e reavaliação distal."
     },
     {
-      "id": "dreno",
-      "label": "Organiza drenagem torácica definitiva após descompressão",
-      "weight": 10,
+      "id": "curso-05",
+      "label": "A: Coloca colar cervical",
+      "weight": 2.5,
       "verification": "verbal",
       "critical": false,
-      "explanation": "A descompressão temporária não substitui o dreno quando indicado."
+      "explanation": "Mantém precaução cervical durante avaliação do trauma."
     },
     {
-      "id": "reanimacao",
-      "label": "Inicia sangue aquecido e prevenção da hipotermia, com reavaliação seriada",
+      "id": "curso-06",
+      "label": "B: Reconhece pneumotórax hipertensivo à direita",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Hipotensão, assimetria ventilatória e silêncio auscultatório sugerem causa obstrutiva imediata."
+    },
+    {
+      "id": "curso-07",
+      "label": "B: Descreve descompressão imediata (agulha ou digital)",
       "weight": 15,
-      "verification": "verbal",
+      "verification": "hibrido",
       "critical": true,
-      "explanation": "Ressuscitação e controle de fonte ocorrem em paralelo."
+      "explanation": "Descompressão não deve esperar radiografia em instabilidade."
     },
     {
-      "id": "imagem",
-      "label": "Indica TC apenas se houver estabilidade suficiente; eFAST negativo não exclui lesão",
+      "id": "curso-08",
+      "label": "B: Indica toracostomia com dreno em selo d'água (4º/5º EIC linha axilar média)",
       "weight": 10,
-      "verification": "verbal",
+      "verification": "hibrido",
       "critical": false,
-      "explanation": "O exame à beira do leito tem sensibilidade limitada."
+      "explanation": "Após alívio inicial, a drenagem torácica trata a recorrência."
     },
     {
-      "id": "destino",
-      "label": "Aciona cirurgia/trauma e define controle definitivo e destino",
-      "weight": 10,
+      "id": "curso-09",
+      "label": "C: Reavalia perfusão; eFAST negativo, sem novas condutas de choque hemorrágico",
+      "weight": 2.5,
       "verification": "verbal",
       "critical": false,
-      "explanation": "A melhora transitória não encerra o atendimento."
+      "explanation": "Reavaliar resposta eFAST sem interpretar negativo como exclusão de todas as lesões."
+    },
+    {
+      "id": "curso-10",
+      "label": "D: Mantém vigilância neurológica (ECG 13)",
+      "weight": 2.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escala de coma e exame neurológico seriados orientam investigação."
+    },
+    {
+      "id": "curso-11",
+      "label": "E: Reavalia extremidades; lesão vascular já controlada",
+      "weight": 2.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Confirma perfusão e mantém vigilância da lesão vascular."
+    },
+    {
+      "id": "curso-12",
+      "label": "TC de corpo inteiro OU",
+      "weight": 12,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Em politrauma de alta energia e estabilidade suficiente, pode-se optar por TC de corpo inteiro."
+    },
+    {
+      "id": "curso-13",
+      "label": "TC crânio (ECG <15 + mecanismo) +",
+      "weight": 0.8,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Déficit na escala de coma e mecanismo justificam imagem craniana se clinicamente estável."
+    },
+    {
+      "id": "curso-14",
+      "label": "TC coluna dorsal (cervical, torácica e lombar) (ECG <15 / potencial dor distrativa) +",
+      "weight": 0.7,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Avalia coluna conforme exame e mecanismo, sem retardar ressuscitação."
+    },
+    {
+      "id": "curso-15",
+      "label": "TC tórax (atropelamento/alta energia) +",
+      "weight": 0.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Investiga lesões torácicas associadas após estabilização."
+    },
+    {
+      "id": "curso-16",
+      "label": "TC abdome com contraste (atropelamento/alta energia) +",
+      "weight": 0.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Busca sangramento e lesões abdominais ocultas quando há estabilidade para transporte."
+    },
+    {
+      "id": "curso-17",
+      "label": "RX coxa direita (lesão local exsanguinante, descartar fratura)",
+      "weight": 0.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Investiga fratura na extremidade após controle da hemorragia."
     }
   ],
   "criticalErrors": [

@@ -45,6 +45,15 @@ A figura `vm-autopeep-sinais-fig4` é **CC BY-NC-ND 4.0**. O JPG original foi re
 
 ## Processamento
 
+As mídias adicionais abaixo são amostras de outros pacientes, não achados colhidos no caso fictício:
+
+| ID | Título / achado | Autor / instituição | Fonte | Licença | Alterações técnicas | Arquivo local |
+|---|---|---|---|---|---|---|
+| `us-mcconnell-amostra` | Ecocardiograma com alteração segmentar do VD | Patel VI et al. | [PMC8552222](https://pmc.ncbi.nlm.nih.gov/articles/PMC8552222/) | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) | Vídeo suplementar 1 convertido para MP4 sem corte de conteúdo; poster do primeiro quadro | `pocus/us-mcconnell-amostra.mp4` |
+| `us-vd-choque-amostra` | Ecocardiograma com sobrecarga de VD | Lanspa MJ et al. | [PMC9399626](https://pmc.ncbi.nlm.nih.gov/articles/PMC9399626/) | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) | Vídeo suplementar 3 convertido para MP4 sem corte de conteúdo; poster do primeiro quadro | `pocus/us-vd-choque-amostra.mp4` |
+| `us-tvp-poplitea-compressao` | Compressão venosa poplítea dinâmica | Lanspa MJ et al. | [PMC9399626](https://pmc.ncbi.nlm.nih.gov/articles/PMC9399626/) | [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) | Vídeo suplementar 5 convertido para MP4 sem corte de conteúdo; poster do primeiro quadro | `pocus/us-tvp-poplitea-compressao.mp4` |
+| `us-olho-bainha-amostra` | Ultrassom ocular anatômico | Nevit Dilmen | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Eye_ultrasound_110318153108_1536400.jpg) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) | JPG original, sem anotação; não demonstra diâmetro patológico | `pocus/us-olho-bainha-amostra.jpg` |
+
 - Estáticas adaptáveis: WebP com qualidade 92 e miniatura WebP de 480 px com qualidade 88, via FFmpeg, sem metadados de origem.
 - Clipes adaptáveis: MP4 H.264 com CRF 18, `yuv420p`, mudo, `faststart`, sem metadados de origem, além de poster e miniatura WebP.
 - Nenhum enquadramento, orientação, ordem temporal ou achado clínico foi cortado ou anotado.

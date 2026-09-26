@@ -25,10 +25,10 @@
   "phases": [
     {
       "id": "diagnostico",
-      "title": "Nova síndrome",
-      "prompt": "Qual diagnóstico explica a piora e com quais dados?",
+      "title": "Tarefa 1",
+      "prompt": "Qual o diagnóstico e qual a justificativa?",
       "patientState": {
-        "summary": "Criança de 8 anos, 25 kg, HbSS, internada por dor vaso-oclusiva; agora febre, tosse e dor torácica.",
+        "summary": "Criança de 8 anos, 25 kg, HbSS, internada por crise álgica há 24 horas. Agora apresenta febre, tosse, dor torácica e retrações; crepitações basais direitas, sem sibilos. Radiografia: novo infiltrado basal direito.",
         "vitals": {
           "temperatura": "38,8 °C",
           "FC": "132 bpm",
@@ -40,85 +40,125 @@
     },
     {
       "id": "inicial",
-      "title": "Tratamento",
-      "prompt": "Quais medidas inicia sem aguardar deterioração adicional?",
+      "title": "Tarefa 2",
+      "prompt": "Quais são as medidas terapêuticas iniciais?",
       "patientState": {
-        "summary": "Radiografia mostra infiltrado novo basal direito. Sem sibilos; hidratação anterior foi liberal.",
+        "summary": "A paciente permanece febril e hipoxêmica, com hemoglobina 6,7 g/dL (basal 8,4 g/dL). Ainda não recebeu tratamento específico para o quadro respiratório.",
         "vitals": {
-          "SpO2": "92% com O2",
+          "SpO2": "88% em ar ambiente",
           "PA": "94/58 mmHg"
         }
       }
     },
     {
       "id": "progressao",
-      "title": "Piora respiratória",
-      "prompt": "Como escolhe suporte respiratório e modalidade transfusional?",
+      "title": "Tarefa 3",
+      "prompt": "Qual a indicação transfusional e a conduta diante de uma piora respiratória?",
       "patientState": {
-        "summary": "A criança aumenta o trabalho respiratório e necessita FiO2 crescente apesar de antibiótico e transfusão simples inicial.",
+        "summary": "Após iniciar oxigênio e antibiótico, o esforço respiratório aumenta. A necessidade de FiO2 cresce e a hemoglobina permanece abaixo do valor basal; a equipe de hematologia está disponível.",
         "vitals": {
-          "SpO2": "90% com alto fluxo",
-          "Hb": "9,0 g/dL"
+          "SpO2": "90% com oxigênio de alto fluxo",
+          "Hb": "6,7 g/dL"
         }
       }
     }
   ],
   "checklist": [
     {
-      "id": "diagnostico",
-      "label": "Reconhece síndrome torácica aguda: infiltrado novo e sintomas respiratórios/febre",
-      "weight": 20,
+      "id": "curso-01",
+      "label": "Diagnostica síndrome torácica aguda",
+      "weight": 10,
       "verification": "verbal",
       "critical": true,
-      "explanation": "Não é apenas crise álgica ou pneumonia simples."
+      "explanation": "Doença falciforme com novo infiltrado e sintomas respiratórios define síndrome torácica aguda."
     },
     {
-      "id": "oxigenio",
-      "label": "Corrige hipoxemia e reavalia esforço/SpO2 e necessidade de escalada",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Hipóxia alimenta falcização e deterioração."
-    },
-    {
-      "id": "antibiotico",
-      "label": "Inicia antibiótico cobrindo agentes usuais e atípicos conforme protocolo pediátrico",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Infecção pode desencadear ou coexistir com a síndrome."
-    },
-    {
-      "id": "suporte",
-      "label": "Faz analgesia, espirometria de incentivo quando viável e hidratação sem sobrecarga",
-      "weight": 15,
+      "id": "curso-02",
+      "label": "Reconhece os critérios: novo infiltrado pulmonar associado a febre e sintomas respiratórios",
+      "weight": 10,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Excesso de fluido pode piorar pulmão."
+      "explanation": "Doença falciforme com novo infiltrado e sintomas respiratórios define síndrome torácica aguda."
     },
     {
-      "id": "transfusao",
-      "label": "Indica transfusão simples no quadro com Hb abaixo do basal, evitando Hb excessiva",
-      "weight": 15,
+      "id": "curso-03",
+      "label": "Inicia oxigenoterapia para manter SatO2 acima de 92%",
+      "weight": 8,
       "verification": "verbal",
       "critical": true,
-      "explanation": "Hb final alta eleva viscosidade; discutir meta com hematologia."
+      "explanation": "O tratamento combina oxigenação, antibiótico, hidratação sem sobrecarga e analgesia equilibrada."
     },
     {
-      "id": "troca",
-      "label": "Na progressão grave aciona hematologia/banco para troca eritrocitária",
-      "weight": 15,
+      "id": "curso-04",
+      "label": "Inicia precocemente cefalosporina (cefuroxima ou cefotaxima) associada à azitromicina",
+      "weight": 12,
       "verification": "verbal",
       "critical": true,
-      "explanation": "Na forma grave ou rapidamente progressiva a troca pode ser preferida."
+      "explanation": "O tratamento combina oxigenação, antibiótico, hidratação sem sobrecarga e analgesia equilibrada."
     },
     {
-      "id": "destino",
-      "label": "Escalona suporte, UTI pediátrica e monitorização de complicações",
-      "weight": 5,
+      "id": "curso-05",
+      "label": "Mantém hidratação venosa para manter euvolemia",
+      "weight": 10,
       "verification": "verbal",
       "critical": false,
-      "explanation": "A piora após tratamento inicial exige reavaliação contínua."
+      "explanation": "O tratamento combina oxigenação, antibiótico, hidratação sem sobrecarga e analgesia equilibrada."
+    },
+    {
+      "id": "curso-06",
+      "label": "Realiza analgesia conforme escala de dor, evitando excesso de opioides",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "O tratamento combina oxigenação, antibiótico, hidratação sem sobrecarga e analgesia equilibrada."
+    },
+    {
+      "id": "curso-07",
+      "label": "Indica fisioterapia respiratória",
+      "weight": 8,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "O tratamento combina oxigenação, antibiótico, hidratação sem sobrecarga e analgesia equilibrada."
+    },
+    {
+      "id": "curso-08",
+      "label": "Não indica corticoide de rotina nem beta-2-agonista na ausência de exacerbação da asma",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "O tratamento combina oxigenação, antibiótico, hidratação sem sobrecarga e analgesia equilibrada."
+    },
+    {
+      "id": "curso-09",
+      "label": "Indica transfusão simples diante da hipoxemia, aumento do esforço respiratório e queda da Hb em 1–2 g/dL",
+      "weight": 10,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Escolher modalidade transfusional conforme gravidade, queda de Hb e equipe de hematologia; evitar hiperviscosidade."
+    },
+    {
+      "id": "curso-10",
+      "label": "Limita a transfusão para atingir hemoglobina de até 11 g/dL",
+      "weight": 4,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escolher modalidade transfusional conforme gravidade, queda de Hb e equipe de hematologia; evitar hiperviscosidade."
+    },
+    {
+      "id": "curso-11",
+      "label": "Considera VNI pela piora da hipoxemia ou dispneia grave",
+      "weight": 12,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Escolher modalidade transfusional conforme gravidade, queda de Hb e equipe de hematologia; evitar hiperviscosidade."
+    },
+    {
+      "id": "curso-12",
+      "label": "Indica exsanguineotransfusão se insuficiência respiratória e hipoxemia persistirem apesar do oxigênio",
+      "weight": 4,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Escolher modalidade transfusional conforme gravidade, queda de Hb e equipe de hematologia; evitar hiperviscosidade."
     }
   ],
   "criticalErrors": [

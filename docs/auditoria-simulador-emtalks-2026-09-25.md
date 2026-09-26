@@ -1,47 +1,28 @@
-# Auditoria do simulador e dos quatro simulados EmTalks
+# Auditoria dos simulados EmTalks no simulador
 
-Data: 2026-09-25. Fontes: capturas locais em `EmTalks simulado/`, 52 JSONs em `Intensivao/praticas/data/estacoes/`, manifesto de mídia e testes do simulador. As fotos do curso não foram publicadas.
+Revisada em 2026-09-26. Fontes editoriais: imagens e casos locais em `EmTalks simulado/` (simulados 1 a 5), banco em `Intensivao/praticas/data/estacoes/`, manifesto de mídia e testes. As capturas do curso não são publicadas.
 
-## Conclusão
+## Escopo e resultado
 
-**Os checklists online não são, em geral, iguais aos do curso.** O Trauma 4 foi conferido item a item: duas tarefas e 19 critérios com os mesmos pesos. Nos demais, o projeto preserva temas e parte da sequência, mas agrupa, redistribui ou atualiza critérios. Contagem igual não demonstra equivalência de redação e pontuação. A bolinha vermelha indica origem semelhante, não checklist literal.
+Os cinco simulados correspondem a 25 cenários online, cinco por simulado. Os 20 cenários dos simulados 1 a 4 foram rechecados contra as capturas e revisados: perguntas, ordem, granularidade e pesos dos itens do checklist foram alinhados à fonte. Os cinco cenários do simulado 5 já tinham comparação item a item. Cada checklist soma 100 pontos. Casos ausentes ou incompletos foram reconstruídos como situações clínicas autorais que permitem executar os critérios, sem copiar fotos do curso.
 
-| Simulado | Situação do curso | Cenário online correspondente | Checklist |
-|---|---|---|---|
-| 1 | Trauma | `emt-1-trauma-dupla-ameaca` | Adaptado: compressão, torniquete e confirmação agrupados; TC de corpo inteiro **ou** exames segmentados não cabem na soma simples atual. |
-| 1 | Clínico/HDA | `emt-1-hda-varicosa` | Adaptado: exames e passos do balão foram agrupados. |
-| 1 | Neuro/AVC | `emt-1-avci-pos-trombolise` | Adaptado: trombólise, contraindicações e reversão agrupadas; medida da bainha do nervo óptico do curso não está na estação. |
-| 1 | Via aérea/bronquiolite | `emt-1-bronquiolite-iot` | Adaptado: tamanhos, doses e técnica do manequim agrupados. |
-| 1 | Gestão | `emt-1-gestao-fluxo` | Adaptado: medidas de leitos, contrarreferência e fluxo agrupadas. |
-| 2 | Obstetrícia/eclâmpsia | `sim-obst-eclampsia-01` | Correspondência temática, sem vínculo explícito ao simulado; pesos diferentes e condutas atualizadas. |
-| 2 | POCUS/TVP | `emt-2-tvp-compressao` | Adaptado: técnica de compressão em três pontos condensada; imagem estática não prova compressibilidade, que é informada no caso. |
-| 2 | Reanimação/TEP | `emt-2-tep-choque` | Adaptado: marcadores ecográficos e regra de citar quatro achados agrupados; achados são descritos em texto, sem eco. |
-| 2 | Trauma pediátrico | `sim-trauma-pediatrico-01` | Correspondência temática, sem vínculo explícito; critérios e pesos diferentes. |
-| 2 | Via aérea contaminada | `emt-2-via-aerea-suja` | Adaptado: passos individuais da aspiração e videolaringoscopia agrupados. |
-| 3 | Clínico pediátrico/síndrome torácica | `emt-3-sindrome-toracica-aguda` | Adaptado: terapias, transfusão e limites de Hb agrupados. |
-| 3 | POCUS pulmonar | `emt-3-pocus-consolidacao` | Adaptado: descrição de janelas, achados e diagnósticos alternativos agrupados. O curso pede exsudato provável pelo conjunto apresentado; a estação online diferencia probabilidade clínica de classificação definitiva pelo líquido pleural. |
-| 3 | Reanimação materna | `sim-obst-pcr-materna-01` | Correspondência temática, sem vínculo explícito; passos da histerotomia de ressuscitação agrupados. |
-| 3 | Trauma elétrico/queimaduras | `emt-3-queimadura-eletrica` | Adaptado: indução, volume e complicações agrupados; fórmula fixa do curso exige ressalva clínica. |
-| 3 | Via aérea na obesidade | `emt-3-via-aerea-obesidade` | Adaptado: demonstração de rampa, fármacos, videolaringoscópio e bougie agrupada. |
-| 4 | Cardio/IAM e arritmias | `emt-4-cardio-iam-arritmias` | Adaptado: ECG recebeu item próprio, pesos redistribuídos e mudança de vetor/desfibrilação dupla não são pontuadas como rotina. |
-| 4 | Neuro/convulsão febril | `emt-4-neuro-febre-convulsao` | Adaptado: investigação, punção e terapias têm pesos e condicionantes diferentes. |
-| 4 | POCUS/eFAST e pelve | `emt-4-pocus-pelve` | Treze itens em ambos, mas critérios finais e pesos não são idênticos. |
-| 4 | Trauma torácico penetrante | `emt-4-trauma-torax-penetrante` | **Conferido: 19 itens, redação, ordem e pesos iguais ao checklist fornecido.** Caso e imagem foram adaptados. |
-| 4 | Via aérea/OVACE lactente | `emt-4-ovace-lactente` | Adaptado: parte dos gestos manuais foi agrupada e pesos redistribuídos. |
+| Simulado | Cenários vinculados |
+| --- | --- |
+| 1 | `emt-1-trauma-dupla-ameaca`, `emt-1-bronquiolite-iot`, `emt-1-avci-pos-trombolise`, `emt-1-hda-varicosa`, `emt-1-gestao-fluxo` |
+| 2 | `sim-obst-eclampsia-01`, `sim-trauma-pediatrico-01`, `emt-2-tep-choque`, `emt-2-tvp-compressao`, `emt-2-via-aerea-suja` |
+| 3 | `sim-obst-pcr-materna-01`, `emt-3-queimadura-eletrica`, `emt-3-pocus-consolidacao`, `emt-3-sindrome-toracica-aguda`, `emt-3-via-aerea-obesidade` |
+| 4 | `emt-4-ovace-lactente`, `emt-4-trauma-torax-penetrante`, `emt-4-pocus-pelve`, `emt-4-neuro-febre-convulsao`, `emt-4-cardio-iam-arritmias` |
+| 5 | `emt-5-sepse-choque`, `emt-5-trauma-coluna`, `emt-5-pocus-valvulas`, `emt-5-obstrucao-intestinal`, `emt-5-metanol` |
 
-## Fluxo e mídia
+As fases foram reduzidas ou reorganizadas onde havia progressão artificial. A descrição pélvica deixou de nomear a separação do anel antes da interpretação. AVC pós-trombólise apresenta ultrassom ocular na tarefa de medida e TC apenas após piora; TEP e TVP usam clipes dinâmicos reais de outros pacientes, com fonte e distinção explícita entre imagem-amostra e paciente fictício. A resposta editorial da TVP foi alinhada à veia poplítea do clipe. Os cenários inéditos foram inspecionados quanto à sequência clínica e aos vazamentos óbvios de diagnóstico, sem alterar seus checklists.
 
-- Os 52 cenários somam 189 fases. Todos os JSONs atendem ao contrato visual, seus checklists totalizam 100 pontos e nenhuma referência de mídia aponta para ID ou arquivo inexistente. Isso verifica estrutura, **não** equivalência clínica integral.
-- O modo prova oculta o título diagnóstico e os itens antes do início. As mídias do manifesto usam descrição neutra durante a resolução e interpretação detalhada na revisão.
-- Corrigida nesta auditoria: a última fase do AVC pós-trombólise pedia interpretar TC sem apresentá-la. Agora libera TC de domínio público, identificada como amostra de outro paciente, e não antecipa a leitura no estado clínico.
-- Pendente para maior fidelidade: no TEP do simulado 2, a fase de POCUS descreve os achados sem exibir ecocardiograma; no AVC do simulado 1, a tarefa original de medir bainha do nervo óptico não está reproduzida; na TVP, a compressibilidade é descrita porque a imagem disponível é estática. Não substituir esses exames por mídia que não demonstre o achado cobrado.
-- A progressão é, em geral, coerente nos exemplos revisados: apresentação, intervenção/resultado e reavaliação. Ainda há diferenças entre as perguntas originais e as fases adaptadas, registradas na tabela. Uma auditoria semântica manual de cada fala possível não é coberta pelos testes automatizados.
+## Ressalvas clínicas
 
-## Decisões clínicas antes de igualar notas
+- Os pesos do curso foram mantidos mesmo quando a atualização clínica recomenda cautela. No Cardio 4, mudança de vetor/desfibrilação dupla são itens do checklist, mas a [AHA 2025](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support) não estabelece sua utilidade na FV refratária. A revisão explica essa diferença.
+- Em Queimadura 3, a fórmula clássica cobrada é 4 mL/kg/%SCQ; a [ABA](https://guidance.nattrauma.org/media/wetjtmrg/american-burn-association-clinical-practice-guidelines-on-burn-shock-resuscitation.pdf) sugere iniciar 2 mL/kg/%SCQ no adulto e titular conforme resposta. As duas aparecem diferenciadas na resposta editorial.
+- No POCUS 3, um derrame parapneumônico é provavelmente exsudativo pelo contexto, mas a imagem isolada não o classifica; a resposta editorial exige análise do líquido quando indicada. A amostra de consolidação não deve ser interpretada como imagem do paciente fictício.
+- Rubricas com alternativas ou itens duplicados (por exemplo, TC de corpo inteiro **ou** exames segmentares no Trauma 1; McConnell em duas perguntas do TEP 2) exigem interpretação humana cuidadosa na autoavaliação. A correção por IA deve contar apenas o que foi explicitamente verbalizado, sem inventar evidência e sem transformar itens alternativos em exigência cumulativa.
 
-- A diretriz [AHA 2025 para suporte avançado](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-advanced-life-support) afirma que a utilidade da mudança de vetor e da dupla desfibrilação na FV refratária ainda não está estabelecida; o checklist do Cardio 4 as pontua de modo afirmativo.
-- A [diretriz pleural BTS 2023](https://thorax.bmj.com/content/78/Suppl_3/s1) usa análise do líquido (critérios de Light) para distinguir exsudato e transudato. No POCUS 3, pneumonia com derrame pode tornar exsudato provável clinicamente, mas a imagem isolada não o confirma.
-- A [NICE NG39 de trauma maior](https://www.nice.org.uk/guidance/ng39/chapter/recommendations) prioriza hemocomponentes em sangramento ativo e limita cristaloides; limites fixos e fórmulas de cursos devem ser lidos no contexto do protocolo e da disponibilidade.
-- Para pontuação literalmente idêntica, a rubrica precisa suportar alternativas e limites por grupo (por exemplo, TC de corpo inteiro **ou** exames segmentados; citar quatro de oito achados). A soma atual de itens independentes não reproduz esses casos sem distorção.
+## Verificação
 
-Nenhum checklist foi reponderado nesta auditoria. Antes de alterar notas históricas, decidir se a correção online deve seguir literalmente o curso ou a conduta atual, exibindo as diferenças na revisão.
+`Intensivao/tests/praticas-emtalks-fidelity.test.js` fixa quantidade e ordem dos pesos dos 20 cenários dos simulados 1 a 4; `praticas-stations.test.js` compara literalmente o checklist do simulado 5 e verifica contrato, mídia e vazamentos selecionados. Esses testes não substituem inspeção médica de todas as respostas possíveis nem validam o reconhecimento de fala em uma gravação real.

@@ -26,98 +26,152 @@
   "phases": [
     {
       "id": "preparo",
-      "title": "Pré-intubação",
-      "prompt": "Organize oxigenação, perfusão, material e plano de falha.",
+      "title": "Tarefa 1",
+      "prompt": "Realize no manequim as medidas pré-intubação para este paciente.",
       "patientState": {
-        "summary": "Adulto de 46 anos com hematêmese e insuficiência respiratória, sangue na boca e agitação.",
+        "summary": "Homem de 46 anos com hematêmese volumosa, sangue visível na boca, hipoxemia e rebaixamento progressivo. A equipe prepara videolaringoscópio, bolsa-válvula-máscara e material de aspiração.",
         "vitals": {
           "PA": "82/48 mmHg",
           "FC": "132 bpm",
-          "SpO2": "84% com máscara"
+          "SpO2": "88% com máscara",
+          "Glasgow": "9"
         }
       }
     },
     {
-      "id": "primeira",
-      "title": "Via aérea inundada",
-      "prompt": "Durante a laringoscopia a visão desaparece. Que manobras executa agora?",
+      "id": "procedimento",
+      "title": "Tarefa 2",
+      "prompt": "Realize a intubação no manequim com videolaringoscópio. Considere a via aérea inundada.",
       "patientState": {
-        "summary": "O aspirador fino obstruiu. Sangue volta a inundar a hipofaringe e a saturação cai.",
+        "summary": "Após o preparo, sangue volta a preencher a orofaringe e dificulta a visualização. O paciente segue com pulso e a equipe aguarda sua sequência técnica.",
         "vitals": {
-          "PA": "78/44 mmHg",
-          "SpO2": "76%"
-        }
-      }
-    },
-    {
-      "id": "pos",
-      "title": "Tubo colocado",
-      "prompt": "Como confirma, estabiliza e age se não conseguir oxigenar?",
-      "patientState": {
-        "summary": "Após aspiração rígida e tentativa otimizada, o tubo passa pelas cordas.",
-        "vitals": {
-          "PA": "92/54 mmHg",
-          "SpO2": "91%"
+          "PA": "86/52 mmHg",
+          "FC": "128 bpm",
+          "SpO2": "91% após pré-oxigenação"
         }
       }
     }
   ],
   "checklist": [
     {
-      "id": "ajuda",
-      "label": "Chama ajuda, distribui papéis, monitora e prepara resgate",
-      "weight": 10,
+      "id": "curso-01",
+      "label": "Pré-oxigenação com BVM a 15L/min ou MNR flush rate",
+      "weight": 5,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Um operador isolado perde tempo em via aérea inundada."
+      "explanation": "Pré-oxigenação reduz dessaturação durante a tentativa."
     },
     {
-      "id": "fisiologia",
-      "label": "Pré-oxigena conforme tolerância e prepara suporte vasopressor/ressuscitação",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "A indução em choque aumenta risco de colapso."
-    },
-    {
-      "id": "aspiracao",
-      "label": "Usa aspirador rígido eficaz e aspiração contínua antes/durante visualização",
-      "weight": 20,
-      "verification": "hibrido",
-      "critical": true,
-      "explanation": "Sangue impede visão e contamina via aérea; SALAD exige sucção efetiva."
-    },
-    {
-      "id": "tentativa",
-      "label": "Otimiza posição, videolaringoscópio/bougie e limita tentativas repetidas",
-      "weight": 15,
-      "verification": "hibrido",
-      "critical": true,
-      "explanation": "Repetir a mesma tentativa após dessaturação piora a situação."
-    },
-    {
-      "id": "capnografia",
-      "label": "Confirma tubo por capnografia em onda contínua, depois ausculta/expansão",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "A capnografia é confirmação principal."
-    },
-    {
-      "id": "cico",
-      "label": "Se não intuba nem oxigena, declara CICO e inicia acesso anterior de pescoço",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Não prolongar tentativas quando oxigenação falhou."
-    },
-    {
-      "id": "pos",
-      "label": "Inicia sedoanalgesia, ventilação e reavaliação da pressão",
-      "weight": 10,
+      "id": "curso-02",
+      "label": "Considera oxigenação apneica com CN 15L/min",
+      "weight": 5,
       "verification": "verbal",
       "critical": false,
-      "explanation": "O pós-tubo integra a ressuscitação."
+      "explanation": "Oxigenação apneica é adjunto, não substitui ventilação."
+    },
+    {
+      "id": "curso-03",
+      "label": "Posicionamento com cabeceira elevada (aplicar no manequim)",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Cabeceira elevada melhora geometria e pré-oxigenação."
+    },
+    {
+      "id": "curso-04",
+      "label": "Otimização fisiológica com expansão volêmica",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Corrigir fisiologia antes da indução, evitando excesso de fluido."
+    },
+    {
+      "id": "curso-05",
+      "label": "Considera noradrenalina",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Preparar vasopressor em paciente hipotenso."
+    },
+    {
+      "id": "curso-06",
+      "label": "Aspira a boca do paciente antes de introduzir o VL",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Remover contaminação visível antes da laringoscopia."
+    },
+    {
+      "id": "curso-07",
+      "label": "Introduz o videolaringoscópio pela linha média",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Linha média facilita navegação do videolaringoscópio."
+    },
+    {
+      "id": "curso-08",
+      "label": "Entra com o aspirador rígido pelo lado direito para limpar a via aérea",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Aspirador rígido deve manter fluxo eficaz durante a visualização."
+    },
+    {
+      "id": "curso-09",
+      "label": "Estaciona o aspirador rígido do lado esquerdo da lâmina do VL",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Estacionar sucção ao lado da lâmina libera campo visual."
+    },
+    {
+      "id": "curso-10",
+      "label": "Posiciona a ponta do aspirador rígido no esôfago",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Técnica SALAD: sucção contínua próxima ao esôfago durante laringoscopia."
+    },
+    {
+      "id": "curso-11",
+      "label": "Visualiza a epiglote",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Identificar epiglote antes de avançar."
+    },
+    {
+      "id": "curso-12",
+      "label": "Encaixe correto da lâmina na valécula",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Posição da lâmina na valécula otimiza a visão glótica."
+    },
+    {
+      "id": "curso-13",
+      "label": "Passagem do tubo com visualização da via aérea nos 50% superiores da tela",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Passar tubo sob visão, sem perder referência na tela."
+    },
+    {
+      "id": "curso-14",
+      "label": "Insufla o cuff",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Insuflar cuff após passagem traqueal."
+    },
+    {
+      "id": "curso-15",
+      "label": "Solicita a capnografia em forma de onda",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Capnografia contínua em onda é confirmação prioritária."
     }
   ],
   "criticalErrors": [

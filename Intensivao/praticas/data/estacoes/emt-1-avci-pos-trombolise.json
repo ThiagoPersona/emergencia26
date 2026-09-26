@@ -26,8 +26,8 @@
   "phases": [
     {
       "id": "elegibilidade",
-      "title": "Decisão inicial",
-      "prompt": "Qual a rota de reperfusão e o que checa antes de tratar?",
+      "title": "Tarefa 1",
+      "prompt": "Quais suas condutas imediatas e quais cuidados toma antes da decisão de reperfusão? Verbalize as doses dos fármacos que indicar.",
       "patientState": {
         "summary": "Adulto de 67 anos com afasia e hemiparesia incapacitante há 90 minutos. TC sem hemorragia.",
         "vitals": {
@@ -38,88 +38,246 @@
       }
     },
     {
-      "id": "piora",
-      "title": "Piora súbita",
-      "prompt": "Trinta minutos após iniciar a trombólise, há rebaixamento. O que faz antes de concluir a causa?",
+      "id": "medida-bainha",
+      "title": "Tarefa 2.1",
+      "prompt": "Trinta minutos após o início da trombólise, o paciente rebaixa. Na imagem ocular apresentada, indique onde e como mediria o diâmetro da bainha do nervo óptico.",
       "patientState": {
-        "summary": "O paciente torna-se sonolento, vomita e apresenta cefaleia intensa.",
+        "summary": "O paciente vomita, queixa-se de cefaleia intensa e apresenta rebaixamento abrupto. A ultrassonografia ocular é uma amostra anatômica de outra pessoa; não determina a causa da piora neste paciente.",
         "vitals": {
           "PA": "184/102 mmHg",
-          "Glasgow": "7",
+          "Glasgow": "5",
+          "SpO2": "93%"
+        }
+      },
+      "media": [
+        "us-olho-bainha-amostra"
+      ]
+    },
+    {
+      "id": "piora",
+      "title": "Tarefa 2.2",
+      "prompt": "Com essa deterioração, quais condutas imediatas realiza enquanto investiga a causa?",
+      "patientState": {
+        "summary": "O estado neurológico permanece grave. A tomografia de controle ainda não foi realizada.",
+        "vitals": {
+          "PA": "184/102 mmHg",
+          "Glasgow": "5",
           "SpO2": "93%"
         }
       }
     },
     {
       "id": "imagem",
-      "title": "Exame de controle",
-      "prompt": "Interprete a TC de controle apresentada e organize o tratamento imediato, a neuroproteção e o destino.",
+      "title": "Tarefa 3",
+      "prompt": "Interprete a TC de controle apresentada. Quais medidas adicionais realiza agora?",
       "patientState": {
-        "summary": "A infusão foi interrompida. A TC de controle está disponível; a amostra apresentada é de outro paciente com achado equivalente ao caso.",
+        "summary": "A TC de controle está disponível. A imagem é de outro paciente e deve ser interpretada para esta simulação.",
         "vitals": {
           "PA": "178/100 mmHg",
           "Glasgow": "7"
         }
       },
-      "media": ["tc-hemorragia-intracerebral"]
+      "media": [
+        "tc-hemorragia-intracerebral"
+      ]
     }
   ],
   "checklist": [
     {
-      "id": "elegibilidade",
-      "label": "Confere tempo, déficit incapacitante, TC, contraindicações e possibilidade endovascular",
-      "weight": 15,
+      "id": "curso-01",
+      "label": "Indica trombólise endovenosa (EV) agora",
+      "weight": 11,
       "verification": "verbal",
       "critical": true,
-      "explanation": "A reperfusão depende de elegibilidade clínica e vascular."
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
     },
     {
-      "id": "pa",
-      "label": "Corrige PA para menos de 185/110 mmHg antes da trombólise e vigia depois",
+      "id": "curso-02",
+      "label": "Inicia vasodilatador venoso titulável para PA <185/110 mmHg ANTES de iniciar trombólise",
+      "weight": 12,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
+    },
+    {
+      "id": "curso-03",
+      "label": "Prescreve alteplase (rt-PA): 0,9 mg/kg (max. 90 mg) → 10% bolus em 1 min, 90% em 60 min. (Se não verbalizar a dose, não pontua)",
+      "weight": 11,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
+    },
+    {
+      "id": "curso-04",
+      "label": "TC com sangramento - AVCi nos últimos 3 meses - TCE grave nos últimos 3 meses - AVCh prévio - Neoplasia intracraniana - Suspeita de HSA - Suspeita de dissecção - Suspeita de endocardite - Cirurgia recente importante, Etc.",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "1ª contraindicação distinta dentre sangramento intracraniano, AVC recente, TCE recente, AVCh prévio, neoplasia intracraniana, suspeita de HSA, dissecção, endocardite e cirurgia recente."
+      ],
+      "explanation": "São necessárias quatro contraindicações diferentes; repetir a mesma não deve render quatro pontuações."
+    },
+    {
+      "id": "curso-05",
+      "label": "TC com sangramento - AVCi nos últimos 3 meses - TCE grave nos últimos 3 meses - AVCh prévio - Neoplasia intracraniana - Suspeita de HSA - Suspeita de dissecção - Suspeita de endocardite - Cirurgia recente importante, Etc.",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "2ª contraindicação distinta dentre sangramento intracraniano, AVC recente, TCE recente, AVCh prévio, neoplasia intracraniana, suspeita de HSA, dissecção, endocardite e cirurgia recente."
+      ],
+      "explanation": "São necessárias quatro contraindicações diferentes; repetir a mesma não deve render quatro pontuações."
+    },
+    {
+      "id": "curso-06",
+      "label": "TC com sangramento - AVCi nos últimos 3 meses - TCE grave nos últimos 3 meses - AVCh prévio - Neoplasia intracraniana - Suspeita de HSA - Suspeita de dissecção - Suspeita de endocardite - Cirurgia recente importante, Etc.",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "3ª contraindicação distinta dentre sangramento intracraniano, AVC recente, TCE recente, AVCh prévio, neoplasia intracraniana, suspeita de HSA, dissecção, endocardite e cirurgia recente."
+      ],
+      "explanation": "São necessárias quatro contraindicações diferentes; repetir a mesma não deve render quatro pontuações."
+    },
+    {
+      "id": "curso-07",
+      "label": "TC com sangramento - AVCi nos últimos 3 meses - TCE grave nos últimos 3 meses - AVCh prévio - Neoplasia intracraniana - Suspeita de HSA - Suspeita de dissecção - Suspeita de endocardite - Cirurgia recente importante, Etc.",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "expected": [
+        "4ª contraindicação distinta dentre sangramento intracraniano, AVC recente, TCE recente, AVCh prévio, neoplasia intracraniana, suspeita de HSA, dissecção, endocardite e cirurgia recente."
+      ],
+      "explanation": "São necessárias quatro contraindicações diferentes; repetir a mesma não deve render quatro pontuações."
+    },
+    {
+      "id": "curso-08",
+      "label": "Mede a 3 mm de profundidade a partir da retina",
+      "weight": 2.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "A bainha do nervo óptico é medida 3 mm atrás da retina, de borda externa a borda externa; não substitui TC."
+    },
+    {
+      "id": "curso-09",
+      "label": "Mede o diâmetro da bainha de borda externa a borda externa",
+      "weight": 2.5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "A bainha do nervo óptico é medida 3 mm atrás da retina, de borda externa a borda externa; não substitui TC."
+    },
+    {
+      "id": "curso-10",
+      "label": "Interromper infusão do trombolítico",
       "weight": 10,
       "verification": "verbal",
       "critical": true,
-      "explanation": "PA sistólica de 192 precisa ser tratada antes da infusão."
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
     },
     {
-      "id": "dose",
-      "label": "Se usar alteplase, verbaliza 0,9 mg/kg (máx. 90 mg), 10% bolus e restante em 60 min; aceita alternativa elegível",
-      "weight": 15,
+      "id": "curso-11",
+      "label": "Terapia hiperosmolar de resgate com manitol ou salina hipertônica em bolus",
+      "weight": 7,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Tenecteplase 0,25 mg/kg (máx. 25 mg) também é opção em cenários elegíveis na diretriz 2026."
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
     },
     {
-      "id": "interrompe",
-      "label": "Interrompe trombolítico na piora e solicita TC urgente, glicemia e avaliação ABC",
-      "weight": 20,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Piora não deve ser atribuída a edema sem excluir hemorragia."
-    },
-    {
-      "id": "hemostasia",
-      "label": "Após confirmação, aciona protocolo de reversão/hemostasia e dosa fibrinogênio",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Crioprecipitado é considerado com alvo de fibrinogênio adequado; terapia individualizada."
-    },
-    {
-      "id": "suporte",
-      "label": "Protege oxigenação/perfusão, controla temperatura e prepara neurocirurgia/UTI",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Evitar hipóxia, hipotensão e febre; não hiperventilar de rotina."
-    },
-    {
-      "id": "pocus",
-      "label": "Não usa bainha do nervo óptico isoladamente para diagnosticar ou descartar hemorragia",
-      "weight": 10,
+      "id": "curso-12",
+      "label": "Sedoanalgesia profunda",
+      "weight": 3,
       "verification": "verbal",
       "critical": false,
-      "explanation": "A TC é decisiva para a nova deterioração."
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
+    },
+    {
+      "id": "curso-13",
+      "label": "Cabeceira 30°",
+      "weight": 3,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
+    },
+    {
+      "id": "curso-14",
+      "label": "Manter PAS > 100 mmHg (otimizar perfusão cerebral)",
+      "weight": 4,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
+    },
+    {
+      "id": "curso-15",
+      "label": "Evitar hipertermia",
+      "weight": 3,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
+    },
+    {
+      "id": "curso-16",
+      "label": "Repetir TC de crânio",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Critério do curso; o raciocínio deve integrar janela terapêutica, segurança da reperfusão e piora neurológica."
+    },
+    {
+      "id": "curso-17",
+      "label": "Ácido tranexâmico 1g IV",
+      "weight": 3,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Investigar coagulopatia e discutir reversão/hemostasia quando a TC confirma hemorragia pós-trombólise."
+    },
+    {
+      "id": "curso-18",
+      "label": "Crioprecipitado 10 unidades",
+      "weight": 4,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Investigar coagulopatia e discutir reversão/hemostasia quando a TC confirma hemorragia pós-trombólise."
+    },
+    {
+      "id": "curso-19",
+      "label": "Solicita hemograma com plaquetas",
+      "weight": 2,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Investigar coagulopatia e discutir reversão/hemostasia quando a TC confirma hemorragia pós-trombólise."
+    },
+    {
+      "id": "curso-20",
+      "label": "Solicita TAP",
+      "weight": 1,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Investigar coagulopatia e discutir reversão/hemostasia quando a TC confirma hemorragia pós-trombólise."
+    },
+    {
+      "id": "curso-21",
+      "label": "Solicita TTPa",
+      "weight": 1,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Investigar coagulopatia e discutir reversão/hemostasia quando a TC confirma hemorragia pós-trombólise."
+    },
+    {
+      "id": "curso-22",
+      "label": "Dosa fibrinogênio",
+      "weight": 4,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Investigar coagulopatia e discutir reversão/hemostasia quando a TC confirma hemorragia pós-trombólise."
+    },
+    {
+      "id": "curso-23",
+      "label": "Solicita avaliação da neurocirurgia",
+      "weight": 3,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Investigar coagulopatia e discutir reversão/hemostasia quando a TC confirma hemorragia pós-trombólise."
     }
   ],
   "criticalErrors": [

@@ -27,7 +27,7 @@
     {
       "id": "entrada",
       "title": "Primeira abordagem",
-      "prompt": "Quais ameaças e medidas iniciais prioriza?",
+      "prompt": "Quais as intervenções iniciais para este paciente, incluindo doses de drogas?",
       "patientState": {
         "summary": "Eletricista de 29 anos sofreu descarga de alta tensão e caiu de escada. Queimaduras em face e ambas as mãos; rouquidão nova.",
         "vitals": {
@@ -42,7 +42,7 @@
     {
       "id": "extensao",
       "title": "Reposição inicial",
-      "prompt": "Estime reposição para 70 kg e 25% SCQ, explicando como ajusta.",
+      "prompt": "Com 70 kg e 25% de superfície corporal queimada, diga o fluido de escolha, a fórmula clássica cobrada no checklist para o volume inicial e como guiaria a reposição.",
       "patientState": {
         "summary": "Há cerca de 25% de queimadura profunda. A urina torna-se escura. O tempo desde o acidente é de duas horas.",
         "vitals": {
@@ -55,7 +55,7 @@
     {
       "id": "complicacoes",
       "title": "Lesão oculta",
-      "prompt": "Quais lesões ocultas, exames e complicações procura agora?",
+      "prompt": "Considerando a distribuição das lesões, que outras complicações devem ser avaliadas e que conduta indica para cada uma?",
       "patientState": {
         "summary": "ECG com extrassístoles esparsas. A mão de entrada está tensa e muito dolorosa.",
         "vitals": {
@@ -68,68 +68,124 @@
   ],
   "checklist": [
     {
-      "id": "cena",
-      "label": "Confirma desligamento da fonte e avalia lesões da queda e via aérea",
+      "id": "curso-01",
+      "label": "Reconhece risco à perviedade da via aérea: queimadura de face, possibilidade de edema progressivo.",
       "weight": 10,
-      "verification": "verbal",
+      "verification": "hibrido",
       "critical": true,
-      "explanation": "Segurança elétrica precede contato; queda pode causar trauma associado."
+      "explanation": "Avaliar via aérea, queimaduras e trauma da queda antes da reposição."
     },
     {
-      "id": "airway",
-      "label": "Reconhece rouquidão/face queimada e planeja via aérea precoce se edema progredir",
-      "weight": 15,
-      "verification": "verbal",
+      "id": "curso-02",
+      "label": "Considera IOT precoce para segurança, com tubo de maior calibre (7,5–8,0 mm).",
+      "weight": 10,
+      "verification": "hibrido",
       "critical": true,
-      "explanation": "SpO2 normal com O2 não exclui lesão de inalação."
+      "explanation": "Avaliar via aérea, queimaduras e trauma da queda antes da reposição."
     },
     {
-      "id": "formula",
-      "label": "Usa cristalóide balanceado com cálculo inicial de 2 mL/kg/%SCQ/24 h em adulto (3500 mL), desde o momento da queimadura",
-      "weight": 15,
+      "id": "curso-03",
+      "label": "Cetamina 1–2 mg/kg EV ou etomidato 0,3mg/kg",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Avaliar via aérea, queimaduras e trauma da queda antes da reposição."
+    },
+    {
+      "id": "curso-04",
+      "label": "Succinilcolina 1-2mg/kg ou Rocurônio 1,2-1,5 mg/kg EV",
+      "weight": 5,
+      "verification": "hibrido",
+      "critical": false,
+      "explanation": "Avaliar via aérea, queimaduras e trauma da queda antes da reposição."
+    },
+    {
+      "id": "curso-05",
+      "label": "Fluido de escolha: Ringer Lactato",
+      "weight": 5,
       "verification": "verbal",
       "critical": false,
-      "explanation": "A fórmula inicia, mas não determina todo volume; 4 mL/kg/% não é regra universal."
+      "explanation": "Avaliar via aérea, queimaduras e trauma da queda antes da reposição."
     },
     {
-      "id": "titulacao",
-      "label": "Titula reposição por perfusão, diurese e lesão elétrica profunda; evita sobrecarga",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Mioglobinúria pode exigir abordagem individualizada."
-    },
-    {
-      "id": "musculo",
-      "label": "Investiga rabdomiólise, função renal, potássio e lesão compartimental",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Lesão elétrica profunda pode exceder a área cutânea aparente."
-    },
-    {
-      "id": "coracao",
-      "label": "Faz ECG, monitoriza arritmias e trata distúrbios eletrolíticos",
+      "id": "curso-06",
+      "label": "Repõe 4 mL/kg/% SCQ nas primeiras 24h",
       "weight": 10,
       "verification": "verbal",
       "critical": true,
-      "explanation": "Alta tensão e alterações no ECG exigem vigilância."
+      "explanation": "Fórmula clássica do checklist (Parkland). A ABA atual recomenda iniciar em 2 mL/kg/%SCQ no adulto, ajustando por resposta; lesão elétrica pode exigir mais."
     },
     {
-      "id": "membro",
-      "label": "Avalia perfusão da mão e consulta centro de queimados/cirurgia para possível fasciotomia",
-      "weight": 10,
-      "verification": "verbal",
-      "critical": false,
-      "explanation": "Escarotomia e fasciotomia tratam compartimentos diferentes."
-    },
-    {
-      "id": "destino",
-      "label": "Aciona centro de queimados e organiza transferência segura",
+      "id": "curso-07",
+      "label": "Titulação pela diurese, alvo: 1–1,5 mL/kg/h",
       "weight": 10,
       "verification": "verbal",
       "critical": false,
-      "explanation": "Alta tensão merece avaliação especializada."
+      "explanation": "Na lesão elétrica, titular fluidos por perfusão e diurese; não perseguir fórmula fixa se houver sobrecarga."
+    },
+    {
+      "id": "curso-08",
+      "label": "Cita rabdomiólise",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Descarga elétrica pode causar lesão muscular profunda, arritmia, distúrbios eletrolíticos e síndrome compartimental."
+    },
+    {
+      "id": "curso-09",
+      "label": "Indica HV vigorosa",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Descarga elétrica pode causar lesão muscular profunda, arritmia, distúrbios eletrolíticos e síndrome compartimental."
+    },
+    {
+      "id": "curso-10",
+      "label": "Indica vigilância da diurese",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Descarga elétrica pode causar lesão muscular profunda, arritmia, distúrbios eletrolíticos e síndrome compartimental."
+    },
+    {
+      "id": "curso-11",
+      "label": "Cita arritmias",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Descarga elétrica pode causar lesão muscular profunda, arritmia, distúrbios eletrolíticos e síndrome compartimental."
+    },
+    {
+      "id": "curso-12",
+      "label": "Indica monitorização cardíaca",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Descarga elétrica pode causar lesão muscular profunda, arritmia, distúrbios eletrolíticos e síndrome compartimental."
+    },
+    {
+      "id": "curso-13",
+      "label": "Indica correção de DHE",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Descarga elétrica pode causar lesão muscular profunda, arritmia, distúrbios eletrolíticos e síndrome compartimental."
+    },
+    {
+      "id": "curso-14",
+      "label": "Cita síndrome compartimental",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Descarga elétrica pode causar lesão muscular profunda, arritmia, distúrbios eletrolíticos e síndrome compartimental."
+    },
+    {
+      "id": "curso-15",
+      "label": "Indica fasciotomia/escarotomia",
+      "weight": 10,
+      "verification": "hibrido",
+      "critical": true,
+      "explanation": "Descarga elétrica pode causar lesão muscular profunda, arritmia, distúrbios eletrolíticos e síndrome compartimental."
     }
   ],
   "criticalErrors": [
@@ -139,7 +195,7 @@
     "Omitir: Investiga rabdomiólise, função renal, potássio e lesão compartimental",
     "Omitir: Faz ECG, monitoriza arritmias e trata distúrbios eletrolíticos"
   ],
-  "referenceAnswer": "Após segurança da cena e XABCDE, vigio via aérea por queimadura facial e rouquidão. Inicio cristalóide balanceado com estimativa 2 mL/kg/%SCQ: 3500 mL em 24 horas neste adulto, contados desde a lesão, e titulo por perfusão/diurese. Monitorizo ECG, K, CK e rim; avalio síndrome compartimental e aciono centro de queimados.",
+  "referenceAnswer": "Após segurança da cena e avaliação do trauma associado, vigio via aérea por queimadura facial e rouquidão e considero IOT precoce se houver risco de edema, com indutor e bloqueador ajustados. No checklist do curso, a fórmula clássica de 4 mL/kg/%SCQ corresponde a 7.000 mL/24 h para 70 kg e 25% SCQ. Na prática atual, a ABA recomenda iniciar em 2 mL/kg/%SCQ no adulto (3.500 mL/24 h) para reduzir sobrecarga; queimadura elétrica pode exigir mais, sempre titulando por perfusão e diurese. Monitorizo ECG, potássio, CK, função renal e sinais de síndrome compartimental; avalio cirurgia de queimados para possível fasciotomia/escarotomia.",
   "references": [
     "https://www.ameriburn.org/quality-care/clinical-practice-guidelines",
     "https://ameriburn.org/wp-content/uploads/2019/08/2018-abls-providermanual.pdf"

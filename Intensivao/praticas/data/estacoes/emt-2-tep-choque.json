@@ -25,99 +25,178 @@
   "briefing": "Atenda o paciente com os dados liberados a cada pergunta. Verbalize condutas, alvos, reavaliação e destino.",
   "phases": [
     {
-      "id": "choque",
-      "title": "Primeira avaliação",
-      "prompt": "Qual a síndrome e quais etiologias precisa considerar?",
+      "id": "sindrome",
+      "title": "Tarefa 1",
+      "prompt": "Verbalize o diagnóstico sindrômico e a etiologia específica mais provável. Que achados corroboram sua hipótese?",
       "patientState": {
-        "summary": "Mulher de 59 anos, cirurgia recente há 8 semanas, dispneia súbita e síncope; pulmões sem congestão difusa.",
+        "summary": "Mulher de 59 anos, imobilizada recentemente, chega com dispneia súbita e síncope. Tem extremidades frias, turgência jugular e ausculta pulmonar sem congestão. Os clipes ecocardiográficos são amostras de outras pessoas para interpretação; não são imagens desta paciente.",
         "vitals": {
           "PA": "74/42 mmHg",
           "FC": "138 bpm",
-          "SpO2": "86%"
-        }
-      }
-    },
-    {
-      "id": "eco",
-      "title": "Imagem dirigida",
-      "prompt": "Interprete os achados ecocardiográficos informados e diga seus limites diagnósticos.",
-      "patientState": {
-        "summary": "POCUS mostra VD dilatado e septo retificado. Sem tamponamento e sem disfunção grave de VE. Transporte para TC é inseguro agora.",
-        "vitals": {
-          "PA": "68/38 mmHg",
+          "SpO2": "86% em ar ambiente",
+          "TAPSE": "14 mm",
           "lactato": "5,9 mmol/L"
         }
+      },
+      "media": [
+        "us-vd-choque-amostra",
+        "us-mcconnell-amostra"
+      ]
+    },
+    {
+      "id": "achados",
+      "title": "Tarefa 2",
+      "prompt": "Cite pelo menos quatro achados ultrassonográficos que podem ser encontrados em cenários como esse.",
+      "patientState": {
+        "summary": "A paciente segue hipotensa. A equipe pergunta que outros sinais cardíacos ou vasculares você procuraria, além dos clipes já apresentados.",
+        "vitals": {
+          "PA": "70/40 mmHg",
+          "FC": "142 bpm"
+        }
       }
     },
     {
-      "id": "reperfusao",
-      "title": "Decisão terapêutica",
-      "prompt": "Como ressuscita e decide reperfusão, dose e destino?",
+      "id": "tratamento",
+      "title": "Tarefa 3",
+      "prompt": "Qual o tratamento mais indicado e sua respectiva dose?",
       "patientState": {
-        "summary": "Suspeita clínica de TEP de alto risco; não há contraindicação maior conhecida à trombólise após revisão dirigida.",
+        "summary": "O transporte para angiotomografia é inseguro. Familiares relatam AVC isquêmico há quatro anos, sem cirurgia ou sangramento recente conhecido. Os recursos de reperfusão e terapia intensiva estão disponíveis.",
         "vitals": {
-          "PA": "70/40 mmHg",
-          "FC": "144 bpm"
+          "PA": "68/38 mmHg",
+          "FC": "144 bpm",
+          "SpO2": "88% com O2"
         }
       }
     }
   ],
   "checklist": [
     {
-      "id": "fenotipo",
-      "label": "Reconhece choque obstrutivo e inclui TEP de alto risco no diferencial",
+      "id": "curso-01",
+      "label": "Identifica que o paciente apresenta sinais de choque obstrutivo (hipotensão, hipoperfusão, turgência jugular, sem congestão pulmonar).",
+      "weight": 8.75,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Integre sinais de choque, POCUS e contraindicações antes da decisão de reperfusão."
+    },
+    {
+      "id": "curso-02",
+      "label": "VD>VE",
+      "weight": 2.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Integre sinais de choque, POCUS e contraindicações antes da decisão de reperfusão."
+    },
+    {
+      "id": "curso-03",
+      "label": "TAPSE < 16 mm",
+      "weight": 2.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Integre sinais de choque, POCUS e contraindicações antes da decisão de reperfusão."
+    },
+    {
+      "id": "curso-04",
+      "label": "Sinal de McConnell",
+      "weight": 2.5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Integre sinais de choque, POCUS e contraindicações antes da decisão de reperfusão."
+    },
+    {
+      "id": "curso-05",
+      "label": "Associa o quadro clínico ao TEP maciço como causa provável.",
+      "weight": 8.75,
+      "verification": "verbal",
+      "critical": true,
+      "explanation": "Integre sinais de choque, POCUS e contraindicações antes da decisão de reperfusão."
+    },
+    {
+      "id": "curso-06",
+      "label": "Sinal de McConnell",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um dos achados possíveis de sobrecarga de VD; não é específico de TEP isoladamente."
+    },
+    {
+      "id": "curso-07",
+      "label": "D sign (retificação / rechaço do septo interventricular)",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um dos achados possíveis de sobrecarga de VD; não é específico de TEP isoladamente."
+    },
+    {
+      "id": "curso-08",
+      "label": "Aumento do VD",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um dos achados possíveis de sobrecarga de VD; não é específico de TEP isoladamente."
+    },
+    {
+      "id": "curso-09",
+      "label": "Trombo visível",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um dos achados possíveis de sobrecarga de VD; não é específico de TEP isoladamente."
+    },
+    {
+      "id": "curso-10",
+      "label": "TAPSE reduzido",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um dos achados possíveis de sobrecarga de VD; não é específico de TEP isoladamente."
+    },
+    {
+      "id": "curso-11",
+      "label": "PSAP aumentada",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um dos achados possíveis de sobrecarga de VD; não é específico de TEP isoladamente."
+    },
+    {
+      "id": "curso-12",
+      "label": "Sinal do 60/60",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um dos achados possíveis de sobrecarga de VD; não é específico de TEP isoladamente."
+    },
+    {
+      "id": "curso-13",
+      "label": "Early systolic notching",
+      "weight": 5,
+      "verification": "verbal",
+      "critical": false,
+      "explanation": "Um dos achados possíveis de sobrecarga de VD; não é específico de TEP isoladamente."
+    },
+    {
+      "id": "curso-14",
+      "label": "Reconhece indicação de trombólise sistêmica por TEP maciço com choque.",
       "weight": 15,
       "verification": "verbal",
       "critical": true,
-      "explanation": "Choque com VD sobrecarregado exige investigação urgente."
+      "explanation": "Integre sinais de choque, POCUS e contraindicações antes da decisão de reperfusão."
     },
     {
-      "id": "limite-us",
-      "label": "Reconhece que VD dilatado/McConnell não confirmam TEP isoladamente",
-      "weight": 10,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "US sustenta decisão quando TC é insegura, mas não é prova etiológica única."
-    },
-    {
-      "id": "ressuscita",
-      "label": "Oxigena, monitora, inicia vasopressor quando necessário e evita bolus indiscriminados",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "VD falente pode piorar com excesso de volume."
-    },
-    {
-      "id": "reperfusao",
-      "label": "Considera reperfusão imediata em TEP de alto risco após revisar contraindicações",
-      "weight": 25,
-      "verification": "verbal",
-      "critical": true,
-      "explanation": "Choque persistente pode justificar trombólise sistêmica, cateter ou embolectomia conforme recursos."
-    },
-    {
-      "id": "alteplase",
-      "label": "Se optar por alteplase, verbaliza 100 mg IV em 2 h no adulto e revisa riscos",
-      "weight": 15,
-      "verification": "verbal",
-      "critical": false,
-      "explanation": "Não converter automaticamente dose de tenecteplase de outro cenário em padrão de TEP."
-    },
-    {
-      "id": "anticoagula",
-      "label": "Planeja anticoagulação quando apropriada e coordena equipe/UTI",
+      "id": "curso-15",
+      "label": "Indica alteplase 100 mg EV em 2h (adulto). (Alternativa: tenecteplase peso-dependente 0,6mg/kg)",
       "weight": 10,
       "verification": "verbal",
       "critical": false,
-      "explanation": "A estratégia depende da reperfusão e do risco hemorrágico."
+      "explanation": "Regime do checklist do curso; tenecteplase para TEP não tem o mesmo grau de padronização da alteplase e requer protocolo local."
     },
     {
-      "id": "reavalia",
-      "label": "Reavalia perfusão, oxigenação e possibilidade de confirmação anatômica",
+      "id": "curso-16",
+      "label": "Avalia contraindicações à trombólise (Nesse caso não tem. O AVCi é há mais de 3 meses)",
       "weight": 10,
       "verification": "verbal",
-      "critical": false,
-      "explanation": "A decisão deve responder à evolução hemodinâmica."
+      "critical": true,
+      "explanation": "Integre sinais de choque, POCUS e contraindicações antes da decisão de reperfusão."
     }
   ],
   "criticalErrors": [
