@@ -125,7 +125,7 @@
 
   function trainingPrefix(entry) {
     return entry && Number.isInteger(entry.trainingSimulado) && entry.trainingSimulado >= 1 && entry.trainingSimulado <= 5
-      ? "\u{1F534} " : "";
+      ? `${["❶", "❷", "❸", "❹", "❺"][entry.trainingSimulado - 1]} ` : "";
   }
 
   function getPublicStationView(station, mode, caseNumber) {

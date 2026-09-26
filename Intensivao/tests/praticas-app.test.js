@@ -496,10 +496,14 @@ test("deriva titulo publico por modo sem vazar diagnostico na prova", () => {
   assert.equal(Object.values(review).join(" ").includes(diagnosticStation.domain), false);
 
   const marked = getPublicStationView({ ...diagnosticStation, trainingSimulado: 4 }, "exam", 2);
-  assert.equal(marked.title, "\u{1F534} Caso 2");
+  assert.equal(marked.title, "❹ Caso 2");
   assert.equal(marked.title.includes(diagnosticStation.title), false);
   const markedFifth = getPublicStationView({ ...diagnosticStation, trainingSimulado: 5 }, "exam", 3);
-  assert.equal(markedFifth.title, "\u{1F534} Caso 3");
+  assert.equal(markedFifth.title, "❺ Caso 3");
+  ["❶", "❷", "❸", "❹", "❺"].forEach((marker, index) => {
+    assert.equal(getPublicStationView({ ...diagnosticStation, trainingSimulado: index + 1 }, "exam", 1).title,
+      `${marker} Caso 1`);
+  });
 });
 
 test("cartao da prova oculta o caso e o total de criterios antes do inicio", async () => {
@@ -517,19 +521,40 @@ test("cartao da prova oculta o caso e o total de criterios antes do inicio", asy
   await createPracticeApp(fixture.root).mount();
 
   assert.match(fixture.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/);
-  assert.match(fixture.simulator.innerHTML, /\u{1F534} (Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/u);
+  assert.match(fixture.simulator.innerHTML, /❹ (Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/u);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
   assert.doesNotMatch(fixture.simulator.innerHTML, /\d+ itens/);
   const initialPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
   assert.equal(initialPlan.stationIds.length, 5);
   fixture.simulator.querySelector("#practice-start-manual").click();
-  assert.match(fixture.simulator.innerHTML, /\u{1F534} (Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/u);
+  assert.match(fixture.simulator.innerHTML, /❹ (Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/u);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
 
   const restored = createInteractiveRoot(fetch, storage);
   await createPracticeApp(restored.root).mount();
   assert.deepEqual(JSON.parse(storage.getItem(EXAM_PLAN_KEY)), initialPlan);
   assert.match(restored.simulator.innerHTML, /(Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/);
+});
+
+test("lista do treino dirigido mostra o numero do simulado em cada cenario", async () => {
+  const entries = Array.from({ length: 5 }, (_, index) => ({
+    id: `emt-${index + 1}`,
+    file: `emt-${index + 1}.json`,
+    title: `Cenário ${index + 1}`,
+    family: "Trauma e APH",
+    trainingSimulado: index + 1
+  }));
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse(entries);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("emt-1"));
+  }, createStorage());
+
+  await createPracticeApp(fixture.root).mount();
+  ["❶", "❷", "❸", "❹", "❺"].forEach((marker, index) => {
+    assert.match(fixture.simulator.innerHTML, new RegExp(`<option value="emt-${index + 1}"[^>]*>${marker} Trauma - `));
+  });
+  assert.doesNotMatch(fixture.simulator.innerHTML, /🔴/u);
 });
 
 test("reabrir modo prova sem sessao ativa sorteia nova serie e evita cenarios da anterior", async () => {
@@ -1207,7 +1232,7 @@ test("treino dirigido agrupa cenarios, mostra a ultima nota concluida e ignora f
   assert.match(fixture.simulator.innerHTML, /<optgroup label="Via aérea e ventilação mecânica">/);
   assert.match(fixture.simulator.innerHTML, /VA - Ventilação mecânica e auto-PEEP - 95%/);
   assert.match(fixture.simulator.innerHTML, /<optgroup label="Trauma e APH">/);
-  assert.match(fixture.simulator.innerHTML, /\u{1F534} Trauma - Trauma com hemorragia exsanguinante<\/option>/u);
+  assert.match(fixture.simulator.innerHTML, /❹ Trauma - Trauma com hemorragia exsanguinante<\/option>/u);
   assert.doesNotMatch(fixture.simulator.innerHTML, /<summary>Filtros<\/summary>|id="practice-filters"/);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Nenhuma estação atende aos filtros atuais/);
   assert.match(fixture.simulator.innerHTML, /de cenário<\/span>/);
