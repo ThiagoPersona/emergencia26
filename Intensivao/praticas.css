@@ -437,6 +437,48 @@
   user-select: text !important;
 }
 
+.practice-support {
+  margin-top: 24px;
+  padding: 20px 24px;
+  background: #9f3038;
+  color: #fff;
+}
+
+.practice-support .practice-support-eyebrow {
+  margin: 0 0 6px;
+  color: #ffe1e1;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.markdown-section .practice-support h2 {
+  margin: 0 0 12px;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  font-size: 1.35rem;
+  line-height: 1.3;
+}
+
+.practice-support p {
+  margin: 0 0 10px;
+  line-height: 1.55;
+}
+
+.practice-support-pix {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 16px;
+}
+
+.practice-support-pix label {
+  color: #fff;
+  font-weight: 700;
+}
+
 .practice-pix-key {
   width: min(100%, 290px);
   border: 1px solid #bfd0d8;

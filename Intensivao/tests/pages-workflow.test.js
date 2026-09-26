@@ -57,13 +57,18 @@ test("simulador monta antes de qualquer descricao visivel", () => {
 
 test("simulador informa gratuidade, custo operacional e apoio opcional via Pix", () => {
   const simulator = fs.readFileSync(path.join(__dirname, "..", "praticas", "SIMULADOR.md"), "utf8");
+  const styles = fs.readFileSync(path.join(__dirname, "..", "praticas.css"), "utf8");
 
+  assert.match(simulator, /<section class="practice-support"/);
+  assert.match(simulator, /Simulador gratuito, custos reais/i);
   assert.match(simulator, /projeto aut[oô]nomo/i);
   assert.match(simulator, /APIs externas/i);
   assert.match(simulator, /gratuitamente/i);
   assert.match(simulator, /doa[cç][aã]o opcional/i);
   assert.match(simulator, /thiagopersona@gmail\.com/);
   assert.match(simulator, /class="practice-pix-key copy-allowed"/);
+  assert.match(styles, /\.practice-support\s*\{[^}]*background:\s*#9f3038/s);
+  assert.match(styles, /\.markdown-section \.practice-support h2\s*\{[^}]*color:\s*#fff/s);
 });
 
 test("carrega os modulos do simulador na ordem de dependencia", () => {
