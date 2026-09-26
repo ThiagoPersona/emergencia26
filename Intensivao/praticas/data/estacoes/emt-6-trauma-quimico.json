@@ -1,0 +1,36 @@
+{
+  "id": "emt-6-trauma-quimico",
+  "version": 2,
+  "title": "Acidente rodoviário com soda cáustica e queimadura química",
+  "examTitle": "Colisão com carga química e vítima exposta",
+  "domain": "Trauma e APH",
+  "domains": ["Trauma e APH", "Queimaduras", "Produtos perigosos"],
+  "family": "Trauma e APH",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["cena insegura", "descontaminação", "álcali", "queimadura química"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 6, "adaptation": "Caso discretamente reescrito; perguntas, ordem, itens e pesos preservados" },
+  "briefing": "Você integra a primeira equipe pré-hospitalar no local. A equipe especializada pode ser acionada.",
+  "phases": [
+    { "id": "cena", "title": "Tarefa 1", "prompt": "Quais são as medidas iniciais de segurança e organização da cena?", "patientState": { "summary": "Um caminhão-tanque tombou em rodovia após colisão. Há líquido vazando e odor irritante; um motorista se encontra próximo ao veículo com a roupa molhada. Pessoas tentam se aproximar. O vento sopra em direção ao acostamento onde estão os curiosos. A carga ainda não foi identificada.", "vitals": { "Vítimas visíveis": "1", "Produto": "não identificado" } } },
+    { "id": "descontaminacao", "title": "Tarefa 2", "prompt": "Como deve ser realizada a descontaminação?", "patientState": { "summary": "A equipe especializada identifica à distância, pelo painel e documento de transporte, solução de hidróxido de sódio (soda cáustica). A vítima é retirada com proteção adequada até a zona morna. A roupa permanece úmida e há contato cutâneo em tórax e membros superiores.", "vitals": { "Produto": "hidróxido de sódio líquido", "Tempo desde exposição": "cerca de 12 min" } } },
+    { "id": "atendimento", "title": "Tarefa 3", "prompt": "Qual deve ser o atendimento após a descontaminação?", "patientState": { "summary": "Após irrigação adequada, o paciente de 42 anos está consciente, com dor intensa e áreas úmidas e bolhosas em aproximadamente 8% da superfície corporal, predominando em tórax e braços. Nega falta de ar, rouquidão ou dificuldade para engolir.", "vitals": { "PA": "126/78 mmHg", "FC": "108 bpm", "FR": "20 irpm", "SpO2": "98% em ar ambiente", "SCQ estimada": "8%" } } }
+  ],
+  "checklist": [
+    { "id": "seguranca", "label": "Mantém distância, posiciona a viatura com o vento pelas costas, interrompe o tráfego e impede a aproximação de pessoas; não entra na área sem proteção adequada", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Segurança da cena precede contato com vítima potencialmente contaminada." },
+    { "id": "identificacao", "label": "Identifica o produto por painel, rótulo ou documento de transporte e consulta a guia ERG/Abiquim", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Conhecer o agente define isolamento, EPI e método de descontaminação." },
+    { "id": "especialistas", "label": "Aciona bombeiros e equipes especializadas, define isolamento e evacuação e organiza as zonas quente, morna e fria com EPI adequado ao risco", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Resgate sem proteção amplia o número de vítimas e contamina a equipe." },
+    { "id": "roupas", "label": "Realiza a descontaminação na zona morna, removendo e isolando roupas, calçados e pertences contaminados; absorve os resíduos líquidos com material inerte", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Remover roupas reduz exposição continuada; material absorvente não substitui irrigação da pele." },
+    { "id": "irrigacao", "label": "Por se tratar de soda cáustica, inicia lavagem imediata com água corrente por pelo menos 20 minutos, associada a detergente neutro e fricção suave", "weight": 15, "verification": "verbal", "critical": true, "explanation": "Irrigação copiosa e imediata é o principal. Caso se use sabão neutro, não atrasar água nem esfregar pele lesionada; evitar trauma adicional." },
+    { "id": "neutralizacao", "label": "Não tenta neutralizar o produto com outra substância, devido ao risco de reação exotérmica e agravamento da lesão", "weight": 7.5, "verification": "verbal", "critical": true, "explanation": "Neutralização química pode gerar calor e lesão adicional." },
+    { "id": "protecao", "label": "Protege a equipe, evita abrasões e hipotermia e somente encaminha a vítima à zona fria após a descontaminação", "weight": 7.5, "verification": "verbal", "critical": false, "explanation": "Evita contaminação secundária e perda de calor durante irrigação prolongada." },
+    { "id": "abcde", "label": "Realiza avaliação individualizada pelo ABCDE e reconhece queimadura química por álcali, com possibilidade de progressão da lesão e necrose por liquefação", "weight": 7.5, "verification": "verbal", "critical": true, "explanation": "Lesão alcalina pode aprofundar apesar de aparência inicial limitada; avaliar via aérea e outras lesões." },
+    { "id": "curativo", "label": "Preserva as bolhas, cobre as lesões com compressas estéreis, previne hipotermia e realiza analgesia, preferencialmente com opioide intravenoso se dor intensa", "weight": 7.5, "verification": "verbal", "critical": false, "explanation": "Após descontaminar, cobrir e tratar dor sem manipulação desnecessária das bolhas." },
+    { "id": "formula", "label": "Não indica reposição pela fórmula de queimados, pois só é recomendada no adulto somente quando SCQ superior a 20%", "weight": 5, "verification": "verbal", "critical": false, "explanation": "Com 8% de SCQ e estabilidade, fluido pode ser guiado por estado clínico, sem fórmula de grande queimado." },
+    { "id": "destino", "label": "Encaminha para centro especializado em queimados, pois toda queimadura química constitui critério de referência; comunica o produto, tempo de exposição e descontaminação realizada", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Queimadura química exige avaliação especializada; comunicar exposição e medidas já feitas." }
+  ],
+  "criticalErrors": ["Entrar sem EPI na zona contaminada", "Tentar neutralizar o álcali", "Não irrigar prontamente"],
+  "referenceAnswer": "Tarefa 1: paro a uma distância segura, fico a barlavento, isolo tráfego e curiosos, identifico o produto a distância, consulto ERG/Abiquim e aciono bombeiros/equipe HazMat para estabelecer zonas e EPI. Tarefa 2: com proteção adequada, removo e isolo roupas e pertences contaminados na zona morna, absorvo líquido residual quando indicado e irrigo pele com água corrente por pelo menos 20 minutos, evitando abrasão, frio e neutralização química. Tarefa 3: só após descontaminação avalio ABCDE, observo risco de progressão de queimadura alcalina, cubro com compressas estéreis, preservo bolhas, ofereço analgesia IV e previno hipotermia; 8% SCQ não requer fórmula de grande queimado. Encaminho ao centro de queimados com comunicação da exposição.",
+  "references": ["https://wwwn.cdc.gov/TSP/MMG/MMGDetails.aspx?mmgid=246&toxid=45"]
+}

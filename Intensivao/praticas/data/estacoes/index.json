@@ -1318,5 +1318,40 @@
     "tags": ["álcool tóxico", "acidose", "gap osmolar", "antídoto", "hemodiálise"],
     "hasMedia": false,
     "trainingSimulado": 5
+  },
+  {
+    "id": "emt-6-neonatal", "file": "emt-6-neonatal.json", "schemaVersion": 2,
+    "examTitle": "Recém-nascido sem respiração ao nascer", "title": "Reanimação neonatal após parto de emergência",
+    "domain": "Pediatria", "domains": ["Pediatria", "Reanimação neonatal"], "family": "Pediatria",
+    "difficulty": "avancada", "origin": "acervo_reescrito", "tags": ["recém-nascido", "ventilação", "compressões", "reanimação"],
+    "hasMedia": false, "trainingSimulado": 6
+  },
+  {
+    "id": "emt-6-trauma-quimico", "file": "emt-6-trauma-quimico.json", "schemaVersion": 2,
+    "examTitle": "Colisão com carga química e vítima exposta", "title": "Acidente rodoviário com soda cáustica e queimadura química",
+    "domain": "Trauma e APH", "domains": ["Trauma e APH", "Queimaduras", "Produtos perigosos"], "family": "Trauma e APH",
+    "difficulty": "avancada", "origin": "acervo_reescrito", "tags": ["cena insegura", "descontaminação", "álcali", "queimadura química"],
+    "hasMedia": false, "trainingSimulado": 6
+  },
+  {
+    "id": "emt-6-pocus-via-aerea", "file": "emt-6-pocus-via-aerea.json", "schemaVersion": 2,
+    "examTitle": "Via aérea difícil e avaliação ultrassonográfica", "title": "Marcação da membrana cricotireóidea e confirmação ultrassonográfica de tubo",
+    "domain": "POCUS", "domains": ["POCUS", "Via aérea e ventilação mecânica"], "family": "POCUS",
+    "difficulty": "avancada", "origin": "acervo_reescrito", "tags": ["cricotireóidea", "colar de contas", "TACA", "intubação", "ultrassom"],
+    "hasMedia": true, "trainingSimulado": 6
+  },
+  {
+    "id": "emt-6-neutropenia", "file": "emt-6-neutropenia.json", "schemaVersion": 2,
+    "examTitle": "Febre após tratamento oncológico", "title": "Febre pós-quimioterapia com choque e alterações metabólicas",
+    "domain": "Respiratório, sepse e metabólico", "domains": ["Oncologia", "Sepse", "Metabólico"], "family": "Respiratório, sepse e metabólico",
+    "difficulty": "avancada", "origin": "acervo_reescrito", "tags": ["neutropenia febril", "sepse", "lise tumoral", "injúria renal"],
+    "hasMedia": false, "trainingSimulado": 6
+  },
+  {
+    "id": "emt-6-triciclico", "file": "emt-6-triciclico.json", "schemaVersion": 2,
+    "examTitle": "Rebaixamento após ingestão de comprimidos", "title": "Intoxicação por tricíclico com cardiotoxicidade e convulsões",
+    "domain": "Toxicologia e animais peçonhentos", "domains": ["Toxicologia", "Cardiovascular e PCR"], "family": "Toxicologia e animais peçonhentos",
+    "difficulty": "avancada", "origin": "acervo_reescrito", "tags": ["tricíclico", "QRS", "bicarbonato", "convulsões", "choque"],
+    "hasMedia": true, "trainingSimulado": 6
   }
 ]

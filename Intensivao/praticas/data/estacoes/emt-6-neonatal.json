@@ -1,0 +1,38 @@
+{
+  "id": "emt-6-neonatal",
+  "version": 2,
+  "title": "Reanimação neonatal após parto de emergência",
+  "examTitle": "Recém-nascido sem respiração ao nascer",
+  "domain": "Pediatria",
+  "domains": ["Pediatria", "Reanimação neonatal"],
+  "family": "Pediatria",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["recém-nascido", "ventilação", "compressões", "reanimação"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 6, "adaptation": "Caso discretamente reescrito; perguntas, ordem, itens e pesos preservados" },
+  "briefing": "Você está na sala de parto com mesa de reanimação e equipe disponíveis.",
+  "phases": [
+    { "id": "primeiros-segundos", "title": "Tarefa 1", "prompt": "Descreva o passo a passo da abordagem inicial desse recém-nascido nos primeiros 30 segundos.", "patientState": { "summary": "Gestante de 38 anos, 39 semanas, passou por cesariana de emergência após sangramento e bradicardia fetal. Nasce um menino de 3.200 g, sem choro, sem respiração regular e sem movimentos espontâneos.", "vitals": { "Idade gestacional": "39 semanas", "Peso": "3.200 g" } } },
+    { "id": "ventilacao", "title": "Tarefa 2", "prompt": "Qual é a próxima conduta e como deve ser conduzida a ventilação considerando que o RN mantém apneia e FC de 80 bpm?", "patientState": { "summary": "Após os passos iniciais, persiste apneia. Frequência cardíaca auscultada: 80 bpm.", "vitals": { "FC": "80 bpm", "Respiração": "apneia" } } },
+    { "id": "avancada", "title": "Tarefa 3", "prompt": "Qual a indicação e qual a sequência da reanimação avançada em RCP neonatal?", "patientState": { "summary": "Após 30 segundos de ventilação com pressão positiva efetiva, com elevação torácica, a frequência cardíaca permanece em 50 bpm. Material para via aérea avançada está disponível.", "vitals": { "FC": "50 bpm", "Ventilação": "expansão torácica visível" } } }
+  ],
+  "checklist": [
+    { "id": "vitalidade", "label": "Confirma ausência de boa vitalidade pela ausência de choro/respiração regular e de movimentação ativa", "weight": 10, "verification": "verbal", "critical": true, "explanation": "A avaliação inicial decide se o recém-nascido pode permanecer com a mãe ou precisa de reanimação." },
+    { "id": "estimulo", "label": "Realiza no máximo dois estímulos táteis delicados no dorso e, diante da ausência de resposta, indica clampeamento imediato do cordão e transferência para a mesa de reanimação aquecida", "weight": 8, "verification": "hibrido", "critical": false, "explanation": "Estimular rapidamente não pode atrasar ventilação no RN apneico." },
+    { "id": "temperatura", "label": "Mantém normotermia: fonte de calor radiante, campos aquecidos, secagem do corpo e da fontanela, retirada dos campos úmidos e colocação de touca; temperatura-alvo entre 36,5 e 37,5 °C", "weight": 10, "verification": "hibrido", "critical": false, "explanation": "A perda de calor é rápida e piora a transição cardiopulmonar." },
+    { "id": "posicao", "label": "Posiciona o RN em decúbito dorsal, com a cabeça em leve extensão, evitando hiperextensão ou flexão", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Posição neutra ou levemente estendida facilita a permeabilidade da via aérea." },
+    { "id": "aspiracao", "label": "Não indica aspiração de rotina. Aspira somente se houver excesso de secreção com suspeita de obstrução, primeiro a boca e depois as narinas, com sonda nº 8 ou nº 10 e sem atingir a faringe posterior", "weight": 3, "verification": "verbal", "critical": false, "explanation": "Aspiração de rotina pode causar bradicardia e atrasar ventilação." },
+    { "id": "avaliacao", "label": "Avalia simultaneamente respiração e FC; determina a FC por ausculta durante 6 segundos, multiplicando o resultado por 10, associada ao monitor cardíaco", "weight": 4, "verification": "verbal", "critical": false, "explanation": "A tendência da frequência cardíaca mede a efetividade da ventilação." },
+    { "id": "vpp", "label": "Indica imediatamente ventilação com pressão positiva, pois o RN está em apneia e apresenta FC abaixo de 100 bpm", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "Ventilar adequadamente é a medida decisiva na reanimação neonatal." },
+    { "id": "monitor", "label": "Instala oximetria pré-ductal no pulso radial direito ou na palma da mão direita e mantém monitorização cardíaca", "weight": 10, "verification": "hibrido", "critical": false, "explanation": "Saturação pré-ductal e FC orientam titulação de oxigênio e resposta à ventilação." },
+    { "id": "ar", "label": "Inicia a VPP em ar ambiente, com FiO2 de 0,21", "weight": 10, "verification": "verbal", "critical": false, "explanation": "RN a termo começa com ar ambiente; ajustar FiO2 conforme saturação-alvo." },
+    { "id": "mascara", "label": "Verbaliza máscara de tamanho adequado, cobrindo nariz, boca e ponta do queixo, e descreve aplicação da máscara do queixo em direção ao nariz, com técnica C-E", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Vedação correta permite expansão torácica sem fuga importante." },
+    { "id": "frequencia", "label": "Realiza VPP com frequência de 40 a 60 movimentos por minuto, utilizando a sequência aperta/solta/solta", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Esta é a faixa do checklist; a diretriz AHA/AAP 2025 admite 30–60/min, portanto uma cadência efetiva dentro dessa faixa também é clinicamente aceitável." },
+    { "id": "indicacao-compressao", "label": "Indica massagem cardíaca porque a FC permanece abaixo de 60 bpm após 30 segundos de VPP efetiva com cânula traqueal", "weight": 10, "verification": "verbal", "critical": true, "explanation": "Confirmar ventilação eficaz antes de iniciar compressões; estabelecer via aérea avançada quando possível." },
+    { "id": "tres-um", "label": "Mantém relação de 3 compressões para 1 ventilação, totalizando 120 eventos/minuto: 90 compressões e 30 ventilações", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "O padrão neonatal intercala três compressões e uma ventilação por ciclo." }
+  ],
+  "criticalErrors": ["Atrasar VPP em RN apneico", "Iniciar compressões sem confirmar ventilação eficaz"],
+  "referenceAnswer": "Tarefa 1: verifico respiração, choro e movimentos; estimulo brevemente, transfiro à mesa aquecida, seco, retiro campos úmidos, coloco gorro, posiciono cabeça em leve extensão, só aspiro se obstrução, e reavalio FC/respiração. Tarefa 2: apneia e FC 80 indicam VPP imediata com máscara bem vedada e ar ambiente no RN a termo; monitorizo oximetria pré-ductal e FC, ventilo em cadência efetiva e reavalio expansão torácica e FC. Tarefa 3: FC 50 após VPP efetiva indica via aérea avançada se possível e compressões coordenadas 3:1, 90 compressões e 30 ventilações por minuto.",
+  "references": ["https://www.heart.org/-/media/CPR-Files/CPR-Guidelines-Files/2025-Algorithms/1-2-Algorithm-Neonatal-Resuscitation-250129.pdf"]
+}

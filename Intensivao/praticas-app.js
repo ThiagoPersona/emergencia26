@@ -125,8 +125,8 @@
     : (typeof require === "function" ? require("./praticas-utils.js") : null);
 
   function trainingPrefix(entry) {
-    return entry && Number.isInteger(entry.trainingSimulado) && entry.trainingSimulado >= 1 && entry.trainingSimulado <= 5
-      ? `${["❶", "❷", "❸", "❹", "❺"][entry.trainingSimulado - 1]} ` : "";
+    return entry && Number.isInteger(entry.trainingSimulado) && entry.trainingSimulado >= 1 && entry.trainingSimulado <= 6
+      ? `${["❶", "❷", "❸", "❹", "❺", "❻"][entry.trainingSimulado - 1]} ` : "";
   }
 
   function getPublicStationView(station, mode, caseNumber) {

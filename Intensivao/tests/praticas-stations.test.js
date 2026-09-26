@@ -66,18 +66,23 @@ const EXPECTED_STATIONS = [
   ["emt-5-trauma-coluna", "Queda de altura com déficit motor"],
   ["emt-5-pocus-valvulas", "Hipotensão e sopro cardíaco"],
   ["emt-5-obstrucao-intestinal", "Dor abdominal e distensão progressiva"],
-  ["emt-5-metanol", "Alteração visual após bebida de origem incerta"]
+  ["emt-5-metanol", "Alteração visual após bebida de origem incerta"],
+  ["emt-6-neonatal", "Recém-nascido sem respiração ao nascer"],
+  ["emt-6-trauma-quimico", "Colisão com carga química e vítima exposta"],
+  ["emt-6-pocus-via-aerea", "Via aérea difícil e avaliação ultrassonográfica"],
+  ["emt-6-neutropenia", "Febre após tratamento oncológico"],
+  ["emt-6-triciclico", "Rebaixamento após ingestão de comprimidos"]
 ];
 
 const EXPECTED_FAMILY_DISTRIBUTION = {
   "Via aérea e ventilação mecânica": 7,
-  "Trauma e APH": 9,
-  "POCUS": 9,
+  "Trauma e APH": 10,
+  "POCUS": 10,
   "Cardiovascular e PCR": 6,
-  "Pediatria": 8,
-  "Toxicologia e animais peçonhentos": 4,
+  "Pediatria": 9,
+  "Toxicologia e animais peçonhentos": 5,
   "Neurologia": 4,
-  "Respiratório, sepse e metabólico": 4,
+  "Respiratório, sepse e metabólico": 5,
   "Obstetrícia": 2,
   "Procedimentos, analgesia e sedação": 1,
   "Gastroenterologia": 2,
@@ -98,7 +103,8 @@ const TRAINING_SIMULADO_BY_ID = new Map([
   ["sim-obst-pcr-materna-01", 3],
   ...EXPECTED_STATIONS.filter(([id]) => /^emt-[123]-/.test(id)).map(([id]) => [id, Number(id[4])]),
   ...EXPECTED_STATIONS.filter(([id]) => id.startsWith("emt-4-")).map(([id]) => [id, 4]),
-  ...EXPECTED_STATIONS.filter(([id]) => id.startsWith("emt-5-")).map(([id]) => [id, 5])
+  ...EXPECTED_STATIONS.filter(([id]) => id.startsWith("emt-5-")).map(([id]) => [id, 5]),
+  ...EXPECTED_STATIONS.filter(([id]) => id.startsWith("emt-6-")).map(([id]) => [id, 6])
 ]);
 
 const SIMULADO_5_CHECKLIST = {
@@ -215,17 +221,17 @@ function checklistHash(checklist) {
   return crypto.createHash("sha256").update(JSON.stringify(checklist)).digest("hex");
 }
 
-test("indice v2 possui exatamente as 57 estacoes na ordem editorial", () => {
+test("indice v2 possui exatamente as 62 estacoes na ordem editorial", () => {
   const index = readIndex();
   const expectedIds = EXPECTED_STATIONS.map(([id]) => id);
   const expectedFiles = expectedIds.map((id) => `${id}.json`);
   const stationFiles = fs.readdirSync(stationDirectory)
     .filter((file) => file.endsWith(".json") && file !== "index.json");
 
-  assert.equal(index.length, 57);
+  assert.equal(index.length, 62);
   assert.deepEqual(index.map((entry) => entry.id), expectedIds);
   assert.equal(new Set(index.map((entry) => entry.id)).size, expectedIds.length);
-  assert.equal(stationFiles.length, 57);
+  assert.equal(stationFiles.length, 62);
   assert.deepEqual(new Set(stationFiles), new Set(expectedFiles));
 });
 
@@ -258,7 +264,7 @@ test("indice permite montar o catalogo sem baixar os JSONs", () => {
 
 test("marcador presencial corresponde ao simulado sem atribuir autoria da prova oficial", () => {
   const index = readIndex();
-  assert.equal(TRAINING_SIMULADO_BY_ID.size, 25);
+  assert.equal(TRAINING_SIMULADO_BY_ID.size, 30);
   index.forEach((entry) => {
     const expected = TRAINING_SIMULADO_BY_ID.get(entry.id);
     assert.equal(entry.trainingSimulado, expected, `${entry.id}: procedência incorreta`);

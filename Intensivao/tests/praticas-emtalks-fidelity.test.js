@@ -47,3 +47,26 @@ test("o gabarito da TVP interpreta a mesma veia do clipe apresentado", () => {
   assert.ok(station.phases.at(-1).media.includes("us-tvp-poplitea-compressao"));
   assert.match(station.referenceAnswer, /poplítea não compressível/i);
 });
+
+const SIMULADO_6 = {
+  "emt-6-neonatal": [[10, 8, 10, 5, 3, 4, 10, 10, 10, 5, 5, 10, 10], 3],
+  "emt-6-trauma-quimico": [[10, 10, 10, 10, 15, 7.5, 7.5, 7.5, 7.5, 5, 10], 3],
+  "emt-6-pocus-via-aerea": [[10, 5, 10, 5, 5, 7, 10, 5, 15, 10, 5, 5, 8], 3],
+  "emt-6-neutropenia": [[5, 5, 5, 5, 5, 5, 5, 5, 5, 2, 2, 2, 2, 2, 2, 2.5, 2.5, 10, 10, 5, 5, 2.5, 5.5], 3],
+  "emt-6-triciclico": [[15, 10, 5, 5, 5, 5, 7.5, 10, 5, 5, 5, 5, 2.5, 5, 2.5, 2.5, 2.5, 2.5], 6]
+};
+
+test("simulado 6 preserva ordem, granularidade e 100 pontos por checklist", () => {
+  for (const [id, [weights, phases]] of Object.entries(SIMULADO_6)) {
+    const station = read(id);
+    assert.equal(station.source.collection, "EmTalks simulado", id);
+    assert.equal(station.source.simulado, 6, id);
+    assert.deepEqual(station.checklist.map((item) => item.weight), weights, id);
+    assert.equal(weights.reduce((sum, weight) => sum + weight, 0), 100, id);
+    assert.equal(station.phases.length, phases, id);
+  }
+  assert.deepEqual(read("emt-6-triciclico").phases.map((phase) => phase.title),
+    ["Tarefa 1.1", "Tarefa 1.2", "Tarefa 2.1", "Tarefa 2.2", "Tarefa 3.1", "Tarefa 3.2"]);
+  assert.deepEqual(read("emt-6-pocus-via-aerea").phases[2].media, ["us-em6-duplo-trajeto"]);
+  assert.deepEqual(read("emt-6-triciclico").phases[1].media, ["ecg-triciclico-qrs"]);
+});

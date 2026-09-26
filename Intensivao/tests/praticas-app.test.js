@@ -504,7 +504,7 @@ test("deriva titulo publico por modo sem vazar diagnostico na prova", () => {
   assert.equal(marked.title.includes(diagnosticStation.title), false);
   const markedFifth = getPublicStationView({ ...diagnosticStation, trainingSimulado: 5 }, "exam", 3);
   assert.equal(markedFifth.title, "❺ Caso 3");
-  ["❶", "❷", "❸", "❹", "❺"].forEach((marker, index) => {
+  ["❶", "❷", "❸", "❹", "❺", "❻"].forEach((marker, index) => {
     assert.equal(getPublicStationView({ ...diagnosticStation, trainingSimulado: index + 1 }, "exam", 1).title,
       `${marker} Caso 1`);
   });
@@ -541,7 +541,7 @@ test("cartao da prova oculta o caso e o total de criterios antes do inicio", asy
 });
 
 test("lista do treino dirigido mostra o numero do simulado em cada cenario", async () => {
-  const entries = Array.from({ length: 5 }, (_, index) => ({
+  const entries = Array.from({ length: 6 }, (_, index) => ({
     id: `emt-${index + 1}`,
     file: `emt-${index + 1}.json`,
     title: `Cenário ${index + 1}`,
@@ -555,7 +555,7 @@ test("lista do treino dirigido mostra o numero do simulado em cada cenario", asy
   }, createStorage());
 
   await createPracticeApp(fixture.root).mount();
-  ["❶", "❷", "❸", "❹", "❺"].forEach((marker, index) => {
+  ["❶", "❷", "❸", "❹", "❺", "❻"].forEach((marker, index) => {
     assert.match(fixture.simulator.innerHTML, new RegExp(`<option value="emt-${index + 1}"[^>]*>${marker} Trauma - `));
   });
   assert.doesNotMatch(fixture.simulator.innerHTML, /🔴/u);

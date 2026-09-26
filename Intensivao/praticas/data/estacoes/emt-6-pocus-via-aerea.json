@@ -1,0 +1,38 @@
+{
+  "id": "emt-6-pocus-via-aerea",
+  "version": 2,
+  "title": "Marcação da membrana cricotireóidea e confirmação ultrassonográfica de tubo",
+  "examTitle": "Via aérea difícil e avaliação ultrassonográfica",
+  "domain": "POCUS",
+  "domains": ["POCUS", "Via aérea e ventilação mecânica"],
+  "family": "POCUS",
+  "difficulty": "avancada",
+  "origin": "acervo_reescrito",
+  "tags": ["cricotireóidea", "colar de contas", "TACA", "intubação", "ultrassom"],
+  "durationSeconds": 300,
+  "source": { "collection": "EmTalks simulado", "simulado": 6, "adaptation": "Caso discretamente reescrito; perguntas, ordem, itens e pesos preservados; imagem licenciada de outro paciente para a tarefa de interpretação" },
+  "briefing": "Há transdutor linear e manequim. Descreva as manobras que demonstraria no exame prático.",
+  "phases": [
+    { "id": "tecnicas", "title": "Tarefa 1", "prompt": "Cite o nome das duas técnicas utilizadas para marcação da membrana cricotireóidea pelo POCUS e quais as orientações do probe que podem ser utilizadas nas duas maneiras?", "patientState": { "summary": "Adulto de 56 anos com dificuldade respiratória progressiva necessita avaliação de via aérea. A palpação dos marcos laríngeos é difícil. Há um aparelho de ultrassom à beira do leito e você deve planejar uma eventual via aérea de resgate.", "vitals": { "PA": "132/78 mmHg", "FC": "112 bpm", "SpO2": "91% com oxigênio" } } },
+    { "id": "demonstracao", "title": "Tarefa 2", "prompt": "Descreva e realize a técnica SOP (Colar de contas) no manequim.", "patientState": { "summary": "O transdutor linear, gel, clipe metálico e caneta estão disponíveis. Demonstre a marcação no manequim; os achados anatômicos serão identificados conforme você os procura.", "vitals": { "Material": "transdutor linear, gel, clipe e caneta" } } },
+    { "id": "tubo", "title": "Tarefa 3", "prompt": "Você realizou a primeira tentativa de intubação e obteve a seguinte imagem durante a passagem do tubo. Descreva o que a imagem mostra e qual a conduta necessária a seguir.", "patientState": { "summary": "Durante a passagem do tubo, uma imagem ultrassonográfica transversal anterior do pescoço é exibida. É uma amostra de outro paciente usada para testar a interpretação do sinal; a confirmação clínica deste paciente permanece pendente.", "vitals": { "SpO2": "88%", "Capnografia": "ainda não confirmada" } }, "media": ["us-em6-duplo-trajeto"] }
+  ],
+  "checklist": [
+    { "id": "sop", "label": "Verbaliza o nome da técnica: colar de contas (string of pearls - SOP)", "weight": 10, "verification": "verbal", "critical": false, "explanation": "No eixo longo, os anéis traqueais compõem o padrão de contas." },
+    { "id": "sop-eixo", "label": "Técnica colar de contas: verbaliza que a insonação é com o probe em uma janela longitudinal", "weight": 5, "verification": "verbal", "critical": false, "explanation": "O plano sagital mostra anéis, cricoide, membrana e cartilagem tireoide em sequência." },
+    { "id": "taca", "label": "Verbaliza o nome da técnica: técnica tiroide-ar-cricoide-ar (TACA)", "weight": 10, "verification": "verbal", "critical": false, "explanation": "TACA usa as mudanças de perfil vistas ao varrer a laringe." },
+    { "id": "taca-eixo", "label": "Técnica TACA: verbaliza que a insonação é com o probe em uma janela transversal", "weight": 5, "verification": "verbal", "critical": false, "explanation": "A varredura transversal permite reconhecer estruturas cervicais sucessivas." },
+    { "id": "posicao", "label": "Posiciona-se à direita do paciente; seleciona o transdutor linear, com o marcador voltado para o examinador; coloca o paciente em decúbito dorsal e com leve extensão cervical", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Padronizar posição e marcador evita inversão de orientação." },
+    { "id": "esterno", "label": "Identifica o esterno como referência inicial e posiciona o transdutor transversalmente na região supraesternal", "weight": 7, "verification": "hibrido", "critical": false, "explanation": "Começar caudalmente torna a identificação da traqueia reprodutível." },
+    { "id": "traqueia", "label": "Identifica a traqueia como estrutura hipoecoica em formato de U, com linha hiperecoica posterior correspondente à interface tecido-ar", "weight": 10, "verification": "hibrido", "critical": false, "explanation": "Cartilagem e interface ar-tecido ajudam a localizar linha média traqueal." },
+    { "id": "desliza-direita", "label": "Desliza o transdutor para a direita do paciente até posicionar sua borda direita sobre a linha média traqueal", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "Prepara a rotação preservando o plano da linha média." },
+    { "id": "rotacao", "label": "Mantendo esse ponto fixo, rotaciona o transdutor 90° no sentido horário e obtém o corte sagital da traqueia, identificando o padrão colar de conta", "weight": 15, "verification": "hibrido", "critical": true, "explanation": "A rotação transforma a janela axial em uma varredura longitudinal dos anéis." },
+    { "id": "cartilagens", "label": "Desliza o transdutor cefalicamente e identifica a cartilagem cricoide, a borda caudal da cartilagem tireoide e o espaço entre elas", "weight": 10, "verification": "hibrido", "critical": true, "explanation": "O espaço entre as cartilagens é o alvo anatômico, não o anel traqueal." },
+    { "id": "clipe", "label": "Posiciona um clipe de papel entre o transdutor e a pele até que sua sombra acústica fique no ponto médio entre a borda inferior da cartilagem tireoide e a borda superior da cartilagem cricoide", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "A sombra do clipe localiza o ponto longitudinal da membrana." },
+    { "id": "marcacao", "label": "Retira o transdutor, mantém o clipe de papel como referência do centro da membrana no plano transverso e realiza a marcação externa com caneta", "weight": 5, "verification": "hibrido", "critical": false, "explanation": "A marcação final cruza as referências longitudinal e transversal." },
+    { "id": "imagem-tubo", "label": "Descreva o que a imagem mostra e qual a conduta necessária a seguir", "weight": 8, "verification": "verbal", "critical": true, "expected": ["Reconhece sinal de duplo trajeto ou intubação esofágica", "Retira tubo mal posicionado, reoxigena e confirma nova tentativa com capnografia"], "explanation": "A imagem amostral mostra uma segunda interface aérea lateral à traqueia; no paciente real, integrar ultrassom, capnografia e clínica sem atrasar reoxigenação." }
+  ],
+  "criticalErrors": ["Confundir membrana com anel traqueal", "Manter tubo suspeito de posição esofágica sem reoxigenar ou confirmar"],
+  "referenceAnswer": "Tarefa 1: identifico SOP/colar de contas no plano longitudinal e TACA/tiroide-ar-cricoide-ar no plano transversal. Tarefa 2: posiciono paciente supino com leve extensão, fico à direita, transdutor linear com marcador para mim; parto do esterno em corte transversal supraesternal, localizo traqueia em U com interface aérea, deslizo à direita até borda do probe sobre linha média, rodo 90 graus no mesmo ponto, vejo anéis em colar de contas, avanço cefalicamente até cricoide e borda caudal da tireoide, localizo o intervalo, uso a sombra do clipe e marco o centro da membrana. Tarefa 3: a amostra ultrassonográfica sugere duplo trajeto/esôfago intubado; retiro o tubo suspeito, ventilo e reoxigeno, reavalio via aérea e confirmo próxima tentativa com capnografia de onda contínua.",
+  "references": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC10177245/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC5455017/"]
+}

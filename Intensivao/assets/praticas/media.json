@@ -519,5 +519,19 @@
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "modified": "2026-09-25"
+  },
+  {
+    "id": "us-em6-duplo-trajeto",
+    "type": "image",
+    "src": "assets/praticas/pocus/us-em6-duplo-trajeto.jpg",
+    "thumbnail": "assets/praticas/pocus/us-em6-duplo-trajeto-thumb.jpg",
+    "examAlt": "Ultrassom transversal anterior do pescoço, amostra de outro paciente para interpretação da posição do tubo.",
+    "reviewAlt": "Ultrassom transversal com sinal de duplo trajeto, compatível com tubo no esôfago.",
+    "reviewCaption": "A segunda interface aérea lateral à traqueia sugere intubação esofágica; confirmar posição do tubo do paciente por capnografia.",
+    "credit": "Chou HC et al., Indian Journal of Critical Care Medicine / PubMed Central, figura 2",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5455017/",
+    "license": "CC BY-NC-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "modified": "2026-09-26"
   }
 ]
