@@ -603,15 +603,6 @@
   line-height: 1.45;
 }
 
-.practice-slide-answer {
-  margin-top: 16px;
-}
-
-.practice-slide-answer textarea {
-  min-height: 86px;
-  background: #fff;
-}
-
 .practice-slide-actions {
   align-items: center;
   margin-top: 14px;

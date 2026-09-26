@@ -8,7 +8,6 @@
 
   const STORAGE_KEY = "teme26-practice-attempts-v1";
   const DRAFT_KEY = "teme26-practice-draft-v2";
-  const ANSWERS_KEY = "teme26-practice-answers-v1";
   const CYCLE_KEY = "teme26-practice-cycle-v2";
   const EXAM_PLAN_KEY = "teme26-practice-exam-plan-v1";
   const EXAM_RESULTS_KEY = "teme26-practice-exam-results-v1";
@@ -106,7 +105,6 @@
     runtimeNotice: "",
     transcript: "",
     transcriptionQualityError: false,
-    phaseAnswers: {},
     lastAttempt: null,
     apiStatus: "idle",
     dashboardSyncStarted: false
@@ -755,10 +753,9 @@
     }
     saveExamPlan();
     state.transcript = "";
-    state.phaseAnswers = {};
+    state.transcriptionQualityError = false;
     state.lastAttempt = null;
     state.runtimeNotice = "";
-    if (root.localStorage) root.localStorage.removeItem(ANSWERS_KEY);
     const entry = getStationEntry(state.examPlan.stationIds[state.examPlan.currentIndex]);
     if (entry) await loadSelectedStation(entry);
   }
@@ -917,7 +914,6 @@
     return `
       <div class="practice-actions practice-start-actions">
         <button class="practice-button practice-button-primary" id="practice-start-record" type="button"${disabled}>Iniciar e gravar</button>
-        <button class="practice-button" id="practice-start-manual" type="button"${disabled}>Iniciar sem áudio</button>
       </div>`;
   }
 
@@ -948,11 +944,9 @@
     clearSessionTimer();
     cleanupRecording();
     state.transcript = "";
-    state.phaseAnswers = {};
     state.lastAttempt = null;
     if (root.localStorage) {
       clearPracticeDraft(root.localStorage);
-      root.localStorage.removeItem(ANSWERS_KEY);
     }
     startNewExamRound(number);
     await loadCurrentModeSelection();
@@ -1043,11 +1037,12 @@
             </div>
           </div>
           ${renderPracticeStartActions(setupView)}
+          ${state.runtimeNotice ? `<div class="practice-alert practice-alert-error" role="alert">${escapeHtml(state.runtimeNotice)}</div>` : ""}
           ${currentExamScore != null ? `<div class="practice-actions"><button class="practice-button practice-button-primary" id="practice-resume-exam" type="button">${state.examPlan.currentIndex < 4 ? "Próxima estação" : state.examPlan.simulado >= 2022 ? "Ver resultado da prova" : "Ver resultado do simulado"}</button></div>` : ""}
           ${state.mode === "exam" ? `<div class="practice-actions"><button class="practice-button practice-button-quiet" id="practice-new-exam-round" type="button">Reiniciar ${escapeHtml(catalogModule.getExamPlanLabel(state.examPlan?.simulado))}</button></div>` : ""}
         ` : ""}
         <div id="practice-auth" class="practice-auth"><p>Verificando acesso à correção automática...</p></div>
-        <p class="practice-help">O checklist permanece oculto durante a estação. Permita o microfone somente se desejar correção pela fala.</p>
+        <p class="practice-help">O checklist permanece oculto durante a estação. A gravação exige acesso ao microfone.</p>
       </section>`;
 
     mount.querySelectorAll("input[name='practice-mode']").forEach((input) => {
@@ -1081,9 +1076,7 @@
       loadSelectedStation(selection.entry);
     });
     const recordButton = mount.querySelector("#practice-start-record");
-    if (recordButton) recordButton.addEventListener("click", () => beginSession(true));
-    const manualButton = mount.querySelector("#practice-start-manual");
-    if (manualButton) manualButton.addEventListener("click", () => beginSession(false));
+    if (recordButton) recordButton.addEventListener("click", beginSession);
     const resumeExamButton = mount.querySelector("#practice-resume-exam");
     if (resumeExamButton) resumeExamButton.addEventListener("click", advanceExamStation);
     const newRoundButton = mount.querySelector("#practice-new-exam-round");
@@ -1100,7 +1093,7 @@
     const config = root.TEME_PRACTICE_CONFIG;
     const configured = root.TemePracticeApi.validatePublicConfig(config).valid;
     if (!configured) {
-      container.innerHTML = "<p><strong>Correção automática ainda não configurada.</strong> O modo manual permanece disponível.</p>";
+      container.innerHTML = "<p><strong>Correção automática ainda não configurada.</strong> A gravação e a autoavaliação continuam disponíveis.</p>";
       return;
     }
     container.innerHTML = "<p>Conectando ao serviço de correção...</p>";
@@ -1130,7 +1123,7 @@
       && state.mode === mode;
   }
 
-  async function beginSession(withRecording) {
+  async function beginSession() {
     if (!state.station || areStartActionsDisabled(state.mediaStatus)) return;
     const station = state.station;
     const mode = state.mode;
@@ -1141,18 +1134,14 @@
     cleanupRecording();
     clearSessionTimer();
     const expectedRecordingGeneration = state.recordingGeneration;
-    let runtimeNotice = "";
-    if (withRecording) {
-      try {
-        const recordingReady = await startRecording(
-          expectedLifecycleGeneration,
-          expectedRecordingGeneration
-        );
-        if (!recordingReady) return;
-      } catch (error) {
-        if (!isSessionStartCurrent(startGeneration, expectedLifecycleGeneration, simulator, station, mode)) return;
-        runtimeNotice = `Microfone indisponível: ${error.message}. O treino continuará sem áudio.`;
-      }
+    try {
+      const recordingReady = await startRecording(expectedLifecycleGeneration, expectedRecordingGeneration);
+      if (!recordingReady) return;
+    } catch (error) {
+      if (!isSessionStartCurrent(startGeneration, expectedLifecycleGeneration, simulator, station, mode)) return;
+      state.runtimeNotice = `Microfone indisponível: ${error.message}. Permita o acesso e tente novamente.`;
+      renderSetup();
+      return;
     }
     if (!isSessionStartCurrent(startGeneration, expectedLifecycleGeneration, simulator, station, mode)) {
       cleanupRecording();
@@ -1164,10 +1153,9 @@
       ? sessionModule.startSession(prepared, now)
       : { ...prepared, status: "running", startedAtMs: now };
     state.transcript = "";
-    state.phaseAnswers = {};
-    if (root.localStorage) root.localStorage.removeItem(ANSWERS_KEY);
+    state.transcriptionQualityError = false;
     state.lastAttempt = null;
-    state.runtimeNotice = runtimeNotice;
+    state.runtimeNotice = "";
     if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
     renderRunning();
     state.timerId = root.setInterval(updateTimer, 250);
@@ -1208,32 +1196,6 @@
       </svg>
       <figcaption>Curva fluxo-tempo simulada</figcaption>
     </figure>`;
-  }
-
-  function savePhaseAnswers() {
-    if (!root.localStorage || !state.session) return;
-    root.localStorage.setItem(ANSWERS_KEY, JSON.stringify({
-      stationId: state.session.stationId,
-      startedAtMs: state.session.startedAtMs,
-      answers: state.phaseAnswers
-    }));
-  }
-
-  function restorePhaseAnswers(session) {
-    const raw = root.localStorage && root.localStorage.getItem(ANSWERS_KEY);
-    try {
-      const saved = JSON.parse(raw);
-      return saved && saved.stationId === session.stationId && saved.startedAtMs === session.startedAtMs &&
-        saved.answers && typeof saved.answers === "object" && !Array.isArray(saved.answers)
-        ? saved.answers : {};
-    } catch { return {}; }
-  }
-
-  function collectPhaseAnswers() {
-    return state.station.phases.map((phase, index) => {
-      const answer = String(state.phaseAnswers[phase.id] || "").trim();
-      return answer ? `Pergunta ${index + 1}: ${answer}` : "";
-    }).filter(Boolean).join("\n\n");
   }
 
   function getVitalEntries(patientState) {
@@ -1277,22 +1239,17 @@
         ${renderFlowTimeWaveform(phase.waveform)}
         <div id="practice-phase-media" aria-label="Mídia da fase atual"></div>
         ${hasVisual ? vitalsHtml : ""}
-        <label class="practice-field practice-slide-answer" for="practice-slide-answer"><span>Resposta desta pergunta</span><textarea id="practice-slide-answer" rows="3">${escapeHtml(state.phaseAnswers[phase.id] || "")}</textarea></label>
         <div class="practice-actions practice-slide-actions">
           <button id="practice-previous" class="practice-button" type="button" ${controls.previous.disabled ? "disabled" : ""}>${controls.previous.label}</button>
           ${controls.primary.action === "next" ? `<button id="practice-next" class="practice-button practice-button-primary" type="button">Próxima pergunta</button>` : `<span class="practice-end-hint">Última pergunta. Você pode voltar enquanto houver tempo.</span>`}
           <button id="practice-finish" class="practice-button practice-button-danger" type="button">Encerrar estação</button>
         </div>
-        <p class="practice-recording-state">${state.mediaRecorder ? "● Gravação em andamento" : "Treino sem gravação"}</p>
+        <p class="practice-recording-state">● Gravação em andamento</p>
       </section>`;
     const mediaContainer = mount.querySelector("#practice-phase-media");
     if (mediaContainer && mediaModule && typeof mediaModule.renderPhaseMedia === "function") {
       mediaModule.renderPhaseMedia(mediaContainer, currentPhaseMedia, getRunningMediaOptions(currentPhaseMedia));
     }
-    mount.querySelector("#practice-slide-answer").addEventListener("input", (event) => {
-      state.phaseAnswers[phase.id] = event.target.value;
-      savePhaseAnswers();
-    });
     mount.querySelector("#practice-previous").addEventListener("click", () => {
       state.session = movePracticePhase(state.session, "previous");
       if (root.localStorage) savePracticeDraft(root.localStorage, state.session);
@@ -1336,8 +1293,6 @@
     clearSessionTimer();
     state.session = { ...state.session, status: "review", completedAtMs: Date.now() };
     if (root.localStorage) clearPracticeDraft(root.localStorage);
-    if (root.localStorage) root.localStorage.removeItem(ANSWERS_KEY);
-    if (!state.mediaRecorder || state.mediaRecorder.state === "inactive") state.transcript = collectPhaseAnswers();
     if (state.mediaRecorder && state.mediaRecorder.state !== "inactive") stopRecording();
     else renderReview();
   }
@@ -1354,23 +1309,17 @@
         <h2>Revise suas respostas</h2>
         ${state.audioUrl ? `<audio class="practice-audio" controls src="${escapeHtml(state.audioUrl)}"></audio>` : ""}
         ${state.audioUrl ? `<div class="practice-audio-info"><span>Gravação: ${formatClock(recordedSeconds)} · ${formatAudioSize(state.audioBlob.size)}</span><a href="${escapeHtml(state.audioUrl)}" download="estacao.${state.audioBlob.type.includes("mp4") ? "m4a" : state.audioBlob.type.includes("ogg") ? "ogg" : "webm"}">Baixar gravação</a></div>` : ""}
-        ${state.audioBlob && !state.audioBlob.size ? `<div class="practice-alert practice-alert-error">Nenhum áudio foi captado. Você ainda pode registrar sua resposta em texto ou usar a autoavaliação.</div>` : ""}
-        <label class="practice-field" for="practice-transcript">
-          <span>Respostas da estação</span>
-          <textarea id="practice-transcript" rows="8" placeholder="Registre somente o que foi dito ou demonstrado.">${escapeHtml(state.transcript)}</textarea>
-        </label>
+        ${state.audioBlob && !state.audioBlob.size ? `<div class="practice-alert practice-alert-error">Nenhum áudio foi captado. Refaça a gravação ou use a autoavaliação do que você falou.</div>` : ""}
+        ${state.transcriptionQualityError && state.transcript ? `<label class="practice-field" for="practice-transcript"><span>Corrigir transcrição da fala</span><textarea id="practice-transcript" rows="8">${escapeHtml(state.transcript)}</textarea></label>` : ""}
         <div id="practice-api-message"></div>
         <div class="practice-actions">
-          <button id="practice-ai-evaluate" class="practice-button practice-button-primary" type="button" ${state.audioBlob?.size || state.transcript ? "" : "disabled"}>Transcrever e corrigir com IA</button>
+          <button id="practice-ai-evaluate" class="practice-button practice-button-primary" type="button" ${state.audioBlob?.size ? "" : "disabled"}>Transcrever e corrigir com IA</button>
           <button id="practice-manual-evaluate" class="practice-button" type="button">Abrir autoavaliação</button>
           <button id="practice-restart" class="practice-button practice-button-quiet" type="button">Descartar e reiniciar</button>
         </div>
       </section>`;
     const textarea = mount.querySelector("#practice-transcript");
-    textarea.addEventListener("input", () => {
-      state.transcript = textarea.value;
-      mount.querySelector("#practice-ai-evaluate").disabled = !(state.audioBlob?.size || state.transcript.trim());
-    });
+    if (textarea) textarea.addEventListener("input", () => { state.transcript = textarea.value; });
     mount.querySelector("#practice-manual-evaluate").addEventListener("click", renderManualChecklist);
     mount.querySelector("#practice-ai-evaluate").addEventListener("click", requestAiEvaluation);
     mount.querySelector("#practice-restart").addEventListener("click", resetSimulator);
@@ -1598,16 +1547,16 @@
         renderReview();
         const review = root.document.getElementById("practice-simulator");
         const textarea = review.querySelector("#practice-transcript");
-        textarea.value = state.transcript;
+        if (textarea) textarea.value = state.transcript;
         const recovery = review.querySelector("#practice-api-message");
         recovery.innerHTML = `<div class="practice-alert practice-alert-error"><strong>Transcrição pouco confiável; nota não gerada.</strong><span>${escapeHtml(error.message)}</span></div>
-          <button id="practice-corrected-evaluate" class="practice-button" type="button" disabled>Avaliar texto corrigido</button>`;
+          ${textarea ? `<button id="practice-corrected-evaluate" class="practice-button" type="button" disabled>Avaliar texto corrigido</button>` : ""}`;
         const correctedButton = recovery.querySelector("#practice-corrected-evaluate");
         const originalText = state.transcript.trim();
-        textarea.addEventListener("input", () => {
+        if (textarea) textarea.addEventListener("input", () => {
           correctedButton.disabled = textarea.value.trim().length < 10 || textarea.value.trim() === originalText;
         });
-        correctedButton.addEventListener("click", () => requestAiEvaluation({ textOnly: true }));
+        if (correctedButton) correctedButton.addEventListener("click", () => requestAiEvaluation({ textOnly: true }));
         const audioRetry = review.querySelector("#practice-ai-evaluate");
         if (state.audioBlob?.size) audioRetry.textContent = "Transcrever áudio novamente";
         else audioRetry.disabled = true;
@@ -1649,9 +1598,7 @@
     state.runtimeNotice = "";
     state.transcript = "";
     state.transcriptionQualityError = false;
-    state.phaseAnswers = {};
     if (root.localStorage) clearPracticeDraft(root.localStorage);
-    if (root.localStorage) root.localStorage.removeItem(ANSWERS_KEY);
     state.session = state.station ? createPracticeSession(state.station, Date.now(), state.mode) : null;
     renderSetup();
   }
@@ -1758,14 +1705,9 @@
       clearPracticeDraft(root.localStorage);
       return false;
     }
-    state.session = restored.session;
-    state.phaseAnswers = restorePhaseAnswers(restored.session);
-    state.audioBlob = restored.audioBlob;
-    state.audioUrl = restored.audioUrl;
-    state.runtimeNotice = restored.notice;
-    renderRunning();
-    clearSessionTimer();
-    state.timerId = root.setInterval(updateTimer, 250);
+    clearPracticeDraft(root.localStorage);
+    state.runtimeNotice = "A gravação anterior não pode ser recuperada após atualizar a página. Inicie esta estação novamente com o microfone.";
+    renderSetup();
     return true;
   }
 

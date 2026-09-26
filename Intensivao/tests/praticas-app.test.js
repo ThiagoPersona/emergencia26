@@ -353,6 +353,12 @@ async function waitFor(assertion, attempts = 30) {
   throw lastError;
 }
 
+async function startRecordedSession(fixture, spoken = "Resposta gravada") {
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
+  fixture.recorders.at(-1).emitData(new Blob([spoken], { type: "audio/webm" }));
+}
+
 test("painel conecta convidados automaticamente sem mostrar login", async () => {
   const fixture = createInteractiveRoot(async (url) => {
     if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
@@ -558,7 +564,7 @@ test("cartao da prova oculta o caso e o total de criterios antes do inicio", asy
   assert.doesNotMatch(fixture.simulator.innerHTML, /\d+ itens/);
   const initialPlan = JSON.parse(storage.getItem(EXAM_PLAN_KEY));
   assert.equal(initialPlan.stationIds.length, 5);
-  fixture.simulator.querySelector("#practice-start-manual").click();
+  fixture.simulator.querySelector("#practice-start-record").click();
   assert.match(fixture.simulator.innerHTML, /❹ (Via aérea|Trauma|POCUS|Cardiovascular|Pediatria) 1/u);
   assert.doesNotMatch(fixture.simulator.innerHTML, /Paciente [a-f]/);
 
@@ -756,8 +762,8 @@ test("numero do caso no modo prova corresponde ao cenario da familia", async () 
   assert.equal(plan.simulado, 4);
   const setupTitle = `❹ POCUS ${Number(plan.stationIds[0].split("-")[1])}`;
   assert.match(fixture.simulator.innerHTML, new RegExp(`<h2>${setupTitle}<\\/h2>`));
-  fixture.simulator.querySelector("#practice-start-manual").click();
-  assert.match(fixture.simulator.innerHTML, new RegExp(`<strong>${setupTitle}<\\/strong>`));
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, new RegExp(`<strong>${setupTitle}<\\/strong>`)));
 });
 
 test("expoe controles anterior, proximo e finalizar por fase", () => {
@@ -822,7 +828,7 @@ test("fase visual exibe pergunta e traçado antes da grade de sinais vitais", as
     return jsonResponse(visualStation);
   }, createStorage());
   await createPracticeApp(fixture.root).mount();
-  fixture.simulator.querySelector("#practice-start-manual").click();
+  fixture.simulator.querySelector("#practice-start-record").click();
   await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
 
   const html = fixture.simulator.innerHTML;
@@ -852,7 +858,7 @@ test("resultado mostra transcricao apos referencias e permite reavaliar texto co
       requests.push(request);
       const fulfilled = request.transcript.includes("gasometria arterial");
       return {
-        transcript: request.transcript,
+        transcript: request.transcript || "Resposta inicial da estação.",
         evaluations: [{
           itemId: "item-1",
           status: fulfilled ? "cumprido" : "ausente",
@@ -865,11 +871,7 @@ test("resultado mostra transcricao apos referencias e permite reavaliar texto co
   };
 
   await createPracticeApp(fixture.root).mount();
-  fixture.simulator.querySelector("#practice-start-manual").click();
-  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
-  const answer = fixture.simulator.querySelector("#practice-slide-answer");
-  answer.value = "Resposta inicial da estação.";
-  answer.dispatch("input");
+  await startRecordedSession(fixture, "Resposta inicial da estação.");
   fixture.simulator.querySelector("#practice-finish").click();
   fixture.simulator.querySelector("#practice-ai-evaluate").click();
   await waitFor(() => assert.match(fixture.simulator.innerHTML, /Transcrição da fala/));
@@ -890,7 +892,7 @@ test("resultado mostra transcricao apos referencias e permite reavaliar texto co
   const back = fixture.simulator.querySelector("#practice-back");
   assert.ok(back);
   back.click();
-  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-start-manual")));
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-start-record")));
 });
 
 test("transcricao em loop nao gera nota e permite avaliar texto corrigido", async () => {
@@ -920,10 +922,7 @@ test("transcricao em loop nao gera nota e permite avaliar texto corrigido", asyn
   };
 
   await createPracticeApp(fixture.root).mount();
-  fixture.simulator.querySelector("#practice-start-manual").click();
-  const answer = fixture.simulator.querySelector("#practice-slide-answer");
-  answer.value = "Resposta inicial da estação.";
-  answer.dispatch("input");
+  await startRecordedSession(fixture, "Resposta inicial da estação.");
   fixture.simulator.querySelector("#practice-finish").click();
   fixture.simulator.querySelector("#practice-ai-evaluate").click();
 
@@ -941,6 +940,34 @@ test("transcricao em loop nao gera nota e permite avaliar texto corrigido", asyn
   assert.equal(requests.length, 2);
   assert.equal(requests[1].audioBlob, null);
   assert.match(requests[1].transcript, /cirurgia geral precocemente/);
+});
+
+test("transcrição defeituosa vazia só oferece nova tentativa com o áudio", async () => {
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, createStorage());
+  fixture.root.TemePracticeApi = {
+    validatePublicConfig: () => ({ valid: false }),
+    async evaluate() {
+      const error = new Error("Transcrição vazia.");
+      error.code = "transcript_quality";
+      error.transcript = "";
+      throw error;
+    }
+  };
+  await createPracticeApp(fixture.root).mount();
+  await startRecordedSession(fixture);
+  fixture.simulator.querySelector("#practice-finish").click();
+  fixture.simulator.querySelector("#practice-ai-evaluate").click();
+  await waitFor(() => assert.match(
+    fixture.simulator.querySelector("#practice-api-message").innerHTML,
+    /Transcrição pouco confiável/
+  ));
+  assert.equal(fixture.simulator.querySelector("#practice-transcript"), null);
+  assert.equal(fixture.simulator.querySelector("#practice-corrected-evaluate"), null);
+  assert.match(fixture.simulator.querySelector("#practice-ai-evaluate").textContent, /Transcrever áudio novamente/);
 });
 
 test("reenvio apos transcricao em loop preserva audio e nao anexa texto defeituoso", async () => {
@@ -974,9 +1001,7 @@ test("reenvio apos transcricao em loop preserva audio e nao anexa texto defeituo
   fixture.recorders[0].emitData(new Blob(["audio valido"], { type: "audio/webm" }));
   fixture.simulator.querySelector("#practice-finish").click();
   await waitFor(() => assert.match(fixture.simulator.innerHTML, /Baixar gravação/));
-  const transcript = fixture.simulator.querySelector("#practice-transcript");
-  transcript.value = "Resposta inicial falada.";
-  transcript.dispatch("input");
+  assert.equal(fixture.simulator.querySelector("#practice-transcript"), null);
   fixture.simulator.querySelector("#practice-ai-evaluate").click();
   await waitFor(() => assert.match(
     fixture.simulator.querySelector("#practice-api-message").innerHTML,
@@ -987,6 +1012,7 @@ test("reenvio apos transcricao em loop preserva audio e nao anexa texto defeituo
 
   await waitFor(() => assert.match(fixture.simulator.innerHTML, /practice-result-overview/));
   assert.ok(requests[0].audioBlob.size > 0);
+  assert.equal(requests[0].transcript, "");
   assert.ok(requests[1].audioBlob.size > 0);
   assert.equal(requests[1].transcript, "");
 });
@@ -1019,11 +1045,7 @@ test("resultado mostra pontos e criterios confirmados manualmente de forma coere
   };
 
   await createPracticeApp(fixture.root).mount();
-  fixture.simulator.querySelector("#practice-start-manual").click();
-  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
-  const answer = fixture.simulator.querySelector("#practice-slide-answer");
-  answer.value = "Executei os dois gestos no manequim.";
-  answer.dispatch("input");
+  await startRecordedSession(fixture, "Executei os dois gestos no manequim.");
   fixture.simulator.querySelector("#practice-finish").click();
   fixture.simulator.querySelector("#practice-ai-evaluate").click();
 
@@ -1061,10 +1083,7 @@ test("resultado pendente de gesto manual nao mostra nota ou pontos provisórios"
   };
 
   await createPracticeApp(fixture.root).mount();
-  fixture.simulator.querySelector("#practice-start-manual").click();
-  const answer = fixture.simulator.querySelector("#practice-slide-answer");
-  answer.value = "Realizei a ação verbal.";
-  answer.dispatch("input");
+  await startRecordedSession(fixture, "Realizei a ação verbal.");
   fixture.simulator.querySelector("#practice-finish").click();
   fixture.simulator.querySelector("#practice-ai-evaluate").click();
   await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-manual-confirm")));
@@ -1420,7 +1439,34 @@ test("mantem preview e acoes de inicio visiveis e desabilitadas durante preload"
   assert.equal(view.startDisabled, true);
   assert.equal(view.title, selectedEntry.examTitle);
   assert.match(actions, /id="practice-start-record"[^>]*disabled/);
-  assert.match(actions, /id="practice-start-manual"[^>]*disabled/);
+  assert.doesNotMatch(actions, /practice-start-manual|Iniciar sem áudio/);
+});
+
+test("a estação de fala não oferece resposta escrita nem início sem áudio", async () => {
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, createStorage());
+  await createPracticeApp(fixture.root).mount();
+  assert.equal(fixture.simulator.querySelector("#practice-start-manual"), null);
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
+  assert.equal(fixture.simulator.querySelector("#practice-slide-answer"), null);
+  assert.match(fixture.simulator.innerHTML, /Gravação em andamento/);
+});
+
+test("falha do microfone impede iniciar a estação sem áudio", async () => {
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, createStorage(), { getUserMedia: async () => { throw new Error("Permissão negada"); } });
+  await createPracticeApp(fixture.root).mount();
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Permissão negada/));
+  assert.equal(fixture.simulator.querySelector("#practice-finish"), null);
+  assert.equal(fixture.intervals.length, 0);
 });
 
 test("mantem start bloqueado no preload e habilita quando a estacao fica pronta", async () => {
@@ -1436,15 +1482,15 @@ test("mantem start bloqueado no preload e habilita quando a estacao fica pronta"
 
   const mounting = app.mount();
   await waitFor(() => {
-    assert.equal(fixture.simulator.querySelector("#practice-start-manual").disabled, true);
+    assert.equal(fixture.simulator.querySelector("#practice-start-record").disabled, true);
   });
-  fixture.simulator.querySelector("#practice-start-manual").click();
+  fixture.simulator.querySelector("#practice-start-record").click();
   assert.equal(storage.getItem(DRAFT_KEY), null);
   assert.equal(fixture.intervals.length, 0);
 
   pendingStation.resolve(jsonResponse(createStation("a")));
   await mounting;
-  assert.equal(fixture.simulator.querySelector("#practice-start-manual").disabled, false);
+  assert.equal(fixture.simulator.querySelector("#practice-start-record").disabled, false);
 });
 
 test("troca o modo pelo evento change do radio nativo", async () => {
@@ -1593,7 +1639,7 @@ test("retry dispara um novo load e libera o start apos sucesso", async () => {
   fixture.simulator.querySelector("#practice-retry-load").click();
   await waitFor(() => {
     assert.equal(stationLoads, 2);
-    assert.equal(fixture.simulator.querySelector("#practice-start-manual").disabled, false);
+    assert.equal(fixture.simulator.querySelector("#practice-start-record").disabled, false);
   });
 });
 
@@ -1634,7 +1680,8 @@ test("proxima pergunta leva a tela ao inicio da nova progressao", async () => {
     return jsonResponse(nextStation);
   }, createStorage());
   await createPracticeApp(fixture.root).mount();
-  fixture.simulator.querySelector("#practice-start-manual").click();
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-next")));
 
   fixture.simulator.querySelector("#practice-next").click();
 
@@ -1645,7 +1692,7 @@ test("proxima pergunta leva a tela ao inicio da nova progressao", async () => {
   assert.equal(anchor.style.scrollMarginTop, "100px");
 });
 
-test("respostas por pergunta persistem ao voltar e ao recarregar a estação", async () => {
+test("navegar entre perguntas mantém a gravação e não mostra campo de escrita", async () => {
   const storage = createStorage();
   const fetch = async (url) => {
     if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
@@ -1654,17 +1701,13 @@ test("respostas por pergunta persistem ao voltar e ao recarregar a estação", a
   };
   const first = createInteractiveRoot(fetch, storage);
   await createPracticeApp(first.root).mount();
-  first.simulator.querySelector("#practice-start-manual").click();
-  const answer = first.simulator.querySelector("#practice-slide-answer");
-  answer.value = "Primeira conduta dita em voz alta";
-  answer.dispatch("input");
+  first.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.ok(first.simulator.querySelector("#practice-next")));
   first.simulator.querySelector("#practice-next").click();
   first.simulator.querySelector("#practice-previous").click();
-  assert.match(first.simulator.innerHTML, /Primeira conduta dita em voz alta/);
-  const second = createInteractiveRoot(fetch, storage);
-  await createPracticeApp(second.root).mount();
-  assert.match(second.simulator.innerHTML, /Primeira conduta dita em voz alta/);
-  assert.equal(second.simulator.querySelector("#practice-next") !== null, true);
+  assert.equal(first.simulator.querySelector("#practice-slide-answer"), null);
+  assert.equal(first.recorders[0].state, "recording");
+  assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).phaseIndex, 0);
 });
 
 test("mantem a sidebar fechada ao iniciar e mudar de fase no mobile", async () => {
@@ -1680,7 +1723,7 @@ test("mantem a sidebar fechada ao iniciar e mudar de fase no mobile", async () =
   const app = createPracticeApp(fixture.root);
   await app.mount();
 
-  fixture.simulator.querySelector("#practice-start-manual").click();
+  fixture.simulator.querySelector("#practice-start-record").click();
   await waitFor(() => assert.match(fixture.simulator.innerHTML, /Pergunta 1 de 2/));
   assert.equal(fixture.root.document.body.classList.contains("close"), true);
 
@@ -1689,41 +1732,32 @@ test("mantem a sidebar fechada ao iniciar e mudar de fase no mobile", async () =
   assert.equal(fixture.root.document.body.classList.contains("close"), true);
 });
 
-test("impede o listener delegado sem bloquear os dois controles de inicio", async (t) => {
-  const cases = [
-    { selector: "#practice-start-record", records: true },
-    { selector: "#practice-start-manual", records: false }
-  ];
+test("impede o listener delegado sem bloquear o início gravado", async () => {
+  const storage = createStorage();
+  const fetch = async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  };
+  const fixture = createInteractiveRoot(fetch, storage);
+  fixture.root.innerWidth = 390;
+  fixture.root.document.body.classList.add("close");
+  let delegatedClicks = 0;
+  fixture.root.document.body.addEventListener("click", () => {
+    delegatedClicks += 1;
+    fixture.root.document.body.classList.remove("close");
+  });
+  const app = createPracticeApp(fixture.root);
+  await app.mount();
 
-  for (const currentCase of cases) {
-    await t.test(currentCase.selector, async () => {
-      const storage = createStorage();
-      const fetch = async (url) => {
-        if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
-        if (url.endsWith("media.json")) return jsonResponse([]);
-        return jsonResponse(createStation("a"));
-      };
-      const fixture = createInteractiveRoot(fetch, storage);
-      fixture.root.innerWidth = 390;
-      fixture.root.document.body.classList.add("close");
-      let delegatedClicks = 0;
-      fixture.root.document.body.addEventListener("click", () => {
-        delegatedClicks += 1;
-        fixture.root.document.body.classList.remove("close");
-      });
-      const app = createPracticeApp(fixture.root);
-      await app.mount();
+  fixture.simulator.querySelector("#practice-start-record").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Pergunta 1 de 2/));
 
-      fixture.simulator.querySelector(currentCase.selector).click();
-      await waitFor(() => assert.match(fixture.simulator.innerHTML, /Pergunta 1 de 2/));
-
-      assert.equal(delegatedClicks, 0);
-      assert.equal(fixture.root.document.body.classList.contains("close"), true);
-      assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).status, "running");
-      assert.equal(fixture.intervals.length, 1);
-      assert.equal(fixture.recorders.length, currentCase.records ? 1 : 0);
-    });
-  }
+  assert.equal(delegatedClicks, 0);
+  assert.equal(fixture.root.document.body.classList.contains("close"), true);
+  assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).status, "running");
+  assert.equal(fixture.intervals.length, 1);
+  assert.equal(fixture.recorders.length, 1);
 });
 
 test("impede o listener delegado ao usar os controles da estacao no mobile", async () => {
@@ -1744,7 +1778,7 @@ test("impede o listener delegado ao usar os controles da estacao no mobile", asy
   const app = createPracticeApp(fixture.root);
   await app.mount();
 
-  fixture.simulator.querySelector("#practice-start-manual").click();
+  fixture.simulator.querySelector("#practice-start-record").click();
   await waitFor(() => assert.match(fixture.simulator.innerHTML, /Pergunta 1 de 2/));
   fixture.simulator.querySelector("#practice-next").click();
 
@@ -1765,13 +1799,13 @@ test("nao força o fechamento da sidebar ao iniciar no desktop", async () => {
   const app = createPracticeApp(fixture.root);
   await app.mount();
 
-  fixture.simulator.querySelector("#practice-start-manual").click();
+  fixture.simulator.querySelector("#practice-start-record").click();
   await waitFor(() => assert.match(fixture.simulator.innerHTML, /Pergunta 1 de 2/));
 
   assert.equal(fixture.root.document.body.classList.contains("close"), false);
 });
 
-test("mount restaura draft em andamento sem recuperar audio", async () => {
+test("ao atualizar descarta draft sem áudio e oferece reinício gravado", async () => {
   const now = Date.now();
   const storage = createStorage({
     [DRAFT_KEY]: JSON.stringify({
@@ -1795,14 +1829,14 @@ test("mount restaura draft em andamento sem recuperar audio", async () => {
 
   await app.mount();
 
-  assert.match(fixture.simulator.innerHTML, /Sessão restaurada sem a gravação anterior/);
-  assert.match(fixture.simulator.innerHTML, /Treino sem gravação/);
+  assert.match(fixture.simulator.innerHTML, /gravação anterior não pode ser recuperada/i);
+  assert.ok(fixture.simulator.querySelector("#practice-start-record"));
   assert.equal(fixture.recorders.length, 0);
-  assert.equal(fixture.intervals.length, 1);
-  assert.match(fixture.simulator.innerHTML, /Pergunta 2 de 2/);
+  assert.equal(fixture.intervals.length, 0);
+  assert.equal(storage.getItem(DRAFT_KEY), null);
 });
 
-test("fecha a sidebar no mobile ao restaurar draft em andamento", async () => {
+test("no mobile, atualizar exige reiniciar a gravação", async () => {
   const now = Date.now();
   const storage = createStorage({
     [DRAFT_KEY]: JSON.stringify({
@@ -1827,11 +1861,12 @@ test("fecha a sidebar no mobile ao restaurar draft em andamento", async () => {
 
   await app.mount();
 
-  assert.match(fixture.simulator.innerHTML, /Pergunta 2 de 2/);
-  assert.equal(fixture.root.document.body.classList.contains("close"), true);
+  assert.match(fixture.simulator.innerHTML, /gravação anterior não pode ser recuperada/i);
+  assert.ok(fixture.simulator.querySelector("#practice-start-record"));
+  assert.equal(fixture.intervals.length, 0);
 });
 
-test("mount concorrente restaura um unico draft sem sortear outra estacao", async () => {
+test("mount concorrente prepara uma única estação para nova gravação", async () => {
   const now = Date.now();
   const loads = { index: 0, media: 0, station: 0 };
   const storage = createStorage({
@@ -1867,9 +1902,9 @@ test("mount concorrente restaura um unico draft sem sortear outra estacao", asyn
   await firstMount;
 
   assert.deepEqual(loads, { index: 1, media: 1, station: 1 });
-  assert.equal(fixture.intervals.length, 1);
-  assert.match(fixture.simulator.innerHTML, /Sessão restaurada sem a gravação anterior/);
-  assert.match(fixture.simulator.innerHTML, /Pergunta 2 de 2/);
+  assert.equal(fixture.intervals.length, 0);
+  assert.match(fixture.simulator.innerHTML, /gravação anterior não pode ser recuperada/i);
+  assert.ok(fixture.simulator.querySelector("#practice-start-record"));
 });
 
 test("descarta gravacao e cronometro quando a rota deixa de usar o simulador", async (t) => {
@@ -1920,7 +1955,7 @@ test("descarta gravacao e cronometro quando a rota deixa de usar o simulador", a
   }
 });
 
-test("nova sessao manual descarta o audio produzido pela sessao anterior", async () => {
+test("nova sessão gravada descarta o áudio produzido pela sessão anterior", async () => {
   const storage = createStorage();
   const fetch = async (url) => {
     if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
@@ -1938,7 +1973,7 @@ test("nova sessao manual descarta o audio produzido pela sessao anterior", async
   await waitFor(() => assert.match(fixture.simulator.innerHTML, /<audio/));
 
   await app.mount();
-  fixture.simulator.querySelector("#practice-start-manual").click();
+  fixture.simulator.querySelector("#practice-start-record").click();
   await waitFor(() => assert.ok(fixture.simulator.querySelector("#practice-finish")));
   fixture.simulator.querySelector("#practice-finish").click();
 
@@ -2026,7 +2061,7 @@ test("inicia a sessao somente depois que o gravador fica pronto", async (t) => {
   assert.equal(fixture.intervals.length, 1);
 });
 
-test("negacao tardia do microfone inicia imediatamente sem audio", async (t) => {
+test("negação tardia do microfone mantém a estação na preparação", async (t) => {
   let now = 2000;
   const permission = deferred();
   t.mock.method(Date, "now", () => now);
@@ -2045,12 +2080,12 @@ test("negacao tardia do microfone inicia imediatamente sem audio", async (t) => 
   fixture.simulator.querySelector("#practice-start-record").click();
   now = 9000;
   permission.reject(new Error("permissao negada"));
-  await waitFor(() => assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).status, "running"));
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Microfone indisponível: permissao negada/));
 
-  assert.equal(JSON.parse(storage.getItem(DRAFT_KEY)).startedAtMs, 9000);
+  assert.equal(storage.getItem(DRAFT_KEY), null);
   assert.match(fixture.simulator.innerHTML, /Microfone indisponível: permissao negada/);
-  assert.match(fixture.simulator.innerHTML, /Treino sem gravação/);
-  assert.equal(fixture.intervals.length, 1);
+  assert.ok(fixture.simulator.querySelector("#practice-start-record"));
+  assert.equal(fixture.intervals.length, 0);
 });
 
 test("libera o microfone quando o MediaRecorder falha apos a permissao", async (t) => {
@@ -2090,11 +2125,12 @@ test("libera o microfone quando o MediaRecorder falha apos a permissao", async (
       await app.mount();
 
       fixture.simulator.querySelector("#practice-start-record").click();
-      await waitFor(() => assert.match(fixture.simulator.innerHTML, /O treino continuará sem áudio/));
+      await waitFor(() => assert.match(fixture.simulator.innerHTML, /Permita o acesso e tente novamente/));
 
       assert.equal(fixture.tracks.length, 1);
       assert.equal(fixture.tracks[0].stopped, true);
-      assert.match(fixture.simulator.innerHTML, /Treino sem gravação/);
+      assert.equal(fixture.simulator.querySelector("#practice-finish"), null);
+      assert.equal(fixture.intervals.length, 0);
     });
   }
 });
