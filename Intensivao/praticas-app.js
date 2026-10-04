@@ -965,12 +965,13 @@
     };
   }
 
-  function renderPracticeStartActions(view) {
+  function renderPracticeStartActions(view, showChecklist = false) {
     if (!view || !view.visible) return "";
     const disabled = view.startDisabled ? " disabled" : "";
     return `
       <div class="practice-actions practice-start-actions">
         <button class="practice-button practice-button-primary" id="practice-start-record" type="button"${disabled}>Iniciar e gravar</button>
+        ${showChecklist ? `<button id="practice-open-checklist" class="practice-button" type="button">Ver último checklist</button>` : ""}
       </div>`;
   }
 
@@ -1095,8 +1096,7 @@
               ${showDiagnosticMeta ? `<span><strong>${escapeHtml(setupView.difficulty)}</strong> dificuldade</span>` : ""}
             </div>
           </div>
-          ${renderPracticeStartActions(setupView)}
-          ${selectedAttempt ? `<div class="practice-actions"><button id="practice-open-checklist" class="practice-button" type="button">Ver último checklist</button></div>` : ""}
+          ${renderPracticeStartActions(setupView, Boolean(selectedAttempt))}
           ${state.runtimeNotice ? `<div class="practice-alert practice-alert-error" role="alert">${escapeHtml(state.runtimeNotice)}</div>` : ""}
           ${currentExamScore != null ? `<div class="practice-actions"><button class="practice-button practice-button-primary" id="practice-resume-exam" type="button">${state.examPlan.currentIndex < 4 ? "Próxima estação" : state.examPlan.simulado >= 2022 ? "Ver resultado da prova" : "Ver resultado do simulado"}</button></div>` : ""}
           ${state.mode === "exam" ? `<div class="practice-actions"><button class="practice-button practice-button-quiet" id="practice-new-exam-round" type="button">Reiniciar ${escapeHtml(catalogModule.getExamPlanLabel(state.examPlan?.simulado))}</button></div>` : ""}

@@ -333,6 +333,10 @@
   min-height: 44px;
 }
 
+.practice-start-actions #practice-open-checklist {
+  margin-left: auto;
+}
+
 .practice-briefing h2,
 .practice-result-head h2,
 .practice-shell > h2 {
@@ -997,6 +1001,10 @@
 
   .practice-actions .practice-button {
     width: 100%;
+  }
+
+  .practice-start-actions .practice-button {
+    width: auto;
   }
 
   .practice-meta {

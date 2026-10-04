@@ -1576,12 +1576,14 @@ test("mantem preview e acoes de inicio visiveis e desabilitadas durante preload"
   };
   const view = getSetupStationView(null, selectedEntry, "directed", "loading");
   const actions = renderPracticeStartActions(view);
+  const completedActions = renderPracticeStartActions({ ...view, startDisabled: false }, true);
 
   assert.equal(view.visible, true);
   assert.equal(view.startDisabled, true);
   assert.equal(view.title, selectedEntry.examTitle);
   assert.match(actions, /id="practice-start-record"[^>]*disabled/);
   assert.doesNotMatch(actions, /practice-start-manual|Iniciar sem áudio/);
+  assert.match(completedActions, /practice-start-actions[^]*practice-start-record[^]*practice-open-checklist/);
 });
 
 test("a estação de fala não oferece resposta escrita nem início sem áudio", async () => {
