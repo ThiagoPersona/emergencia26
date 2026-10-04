@@ -114,7 +114,7 @@
   function getPastExamYears(entries) {
     const counts = new Map();
     asEntries(entries).forEach((entry) => {
-      if (Number.isInteger(entry.year) && entry.year >= 2022 && entry.year <= 2025) {
+      if (Number.isInteger(entry.year) && entry.year >= 2022 && entry.year <= 2026) {
         counts.set(entry.year, (counts.get(entry.year) || 0) + 1);
       }
     });
@@ -122,7 +122,7 @@
   }
 
   function getExamPlanLabel(selection) {
-    return Number.isInteger(selection) && selection >= 2022 && selection <= 2025
+    return Number.isInteger(selection) && selection >= 2022 && selection <= 2026
       ? `Prova TEME ${selection}` : `Simulado ${selection}`;
   }
 

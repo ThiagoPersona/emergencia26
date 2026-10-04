@@ -224,7 +224,7 @@
   }
 
   function normalizePracticeMode(mode) {
-    return ["exam", "directed", "review"].includes(mode) ? mode : "directed";
+    return ["exam", "directed", "review", "performance"].includes(mode) ? mode : "directed";
   }
 
   function normalizePracticeFilters(filters) {
@@ -726,6 +726,10 @@
   }
 
   async function loadCurrentModeSelection() {
+    if (state.mode === "performance") {
+      renderPerformanceMode();
+      return;
+    }
     if (state.mode === "exam" && state.examPlan?.completed) {
       renderExamSummary();
       return;
@@ -747,6 +751,19 @@
     state.mode = nextMode;
     saveCurrentSetup();
     await loadCurrentModeSelection();
+  }
+
+  function renderPerformanceMode() {
+    const mount = root.document?.getElementById("practice-simulator");
+    if (!mount) return;
+    mount.innerHTML = `<section class="practice-shell practice-setup">
+      ${renderPracticeModeControl("performance")}
+      <div id="practice-dashboard" class="practice-mount" aria-live="polite"></div>
+    </section>`;
+    mount.querySelectorAll("input[name='practice-mode']").forEach((input) => {
+      input.addEventListener("change", () => { if (input.checked) setPracticeMode(input.value); });
+    });
+    renderDashboard();
   }
 
   function startNewExamRound(simulado) {
@@ -899,7 +916,7 @@
         ${[
           ["exam", "Modo prova"],
           ["directed", "Treino dirigido"],
-          ["review", "Revisão"]
+          ["performance", "Desempenho"]
         ].map(([value, label]) => `
           <label class="practice-mode-option">
             <input type="radio" name="practice-mode" value="${value}" data-practice-mode="${value}" ${selectedMode === value ? "checked" : ""}>
@@ -1416,6 +1433,8 @@
     const source = state.station.source || {};
     const provenance = source.collection === "Folha de Avaliação TEME 2024"
       ? "Checklist da folha de avaliação TEME 2024; caso adaptado e pontos oficiais convertidos proporcionalmente para a escala de 100."
+      : source.collection === "Folha de Avaliação TEME 2026"
+        ? "Checklist e pesos da prova prática TEME 2026; enunciado e progressão reconstruídos para treino."
       : source.collection === "Treino autoral por temas históricos"
         ? `Caso e checklist autorais para treinar os temas de ${source.year}; não reproduzem uma estação oficial.`
         : "";
@@ -1492,7 +1511,7 @@
           ${state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : state.examPlan.simulado >= 2022 ? "Ver resultado da prova" : "Ver resultado do simulado"}</button>` : ""}
           ${hasPendingManual ? "" : `<button id="practice-download" class="practice-button practice-button-primary" type="button">Baixar relatório</button>`}
           <button id="practice-back" class="practice-button" type="button">Voltar ao simulador</button>
-          <a class="practice-button practice-button-quiet" href="#/praticas/DESEMPENHO">Ver desempenho</a>
+          <button id="practice-view-performance" class="practice-button practice-button-quiet" type="button">Ver desempenho</button>
         </div>
       </section>`;
     const mediaContainer = mount.querySelector("#practice-result-media");
@@ -1512,6 +1531,7 @@
       if (undo) undo.addEventListener("click", () => setSelfCorrection(item.id, false));
     });
     mount.querySelector("#practice-back").addEventListener("click", resetSimulator);
+    mount.querySelector("#practice-view-performance").addEventListener("click", () => setPracticeMode("performance"));
     const revisedTranscript = mount.querySelector("#practice-result-transcript");
     const reevaluateButton = mount.querySelector("#practice-reevaluate-transcript");
     if (revisedTranscript && reevaluateButton) {
@@ -1682,7 +1702,7 @@
     const attempts = getStoredAttempts();
     const summary = root.TemePracticeUtils.summarizePracticeAttempts(attempts);
     mount.innerHTML = `
-      <section class="practice-shell">
+      <section class="practice-performance">
         <div class="practice-dashboard-stats">
           <div><strong>${summary.totalAttempts}</strong><span>tentativas</span></div>
           <div><strong>${summary.averagePercent == null ? "-" : `${summary.averagePercent}%`}</strong><span>média concluída</span></div>

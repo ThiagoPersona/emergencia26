@@ -86,12 +86,17 @@ const EXPECTED_STATIONS = [
   ["2024-va-cricotireoidostomia", "Perda de oxigenação após falha de via aérea"],
   ["2024-pocus-scape", "Dispneia intensa com pressão elevada"],
   ["2024-cardio-bavt-fv", "Dor torácica e pulso lento"],
-  ["2024-neuro-morte-encefalica", "Coma profundo após lesão encefálica"]
+  ["2024-neuro-morte-encefalica", "Coma profundo após lesão encefálica"],
+  ["2026-via-aerea-dsi", "Paciente agitado com hipoxemia grave"],
+  ["2026-trauma-pcr-toracostomia", "Colapso após trauma torácico"],
+  ["2026-pocus-extravasamento", "Avaliação ultrassonográfica em doença febril"],
+  ["2026-pediatria-bronquiolite", "Lactente com esforço respiratório crescente"],
+  ["2026-comunicacao-mas-noticias", "Familiar aguarda informações"]
 ];
 
-test("provas TEME 22 a 25 tem cinco estacoes por ano e preservam as folhas oficiais de 2024", () => {
+test("provas TEME 22 a 26 tem cinco estacoes por ano e preservam as folhas oficiais disponiveis", () => {
   const index = readIndex();
-  for (const year of [2022, 2023, 2024, 2025]) {
+  for (const year of [2022, 2023, 2024, 2025, 2026]) {
     assert.equal(index.filter((entry) => entry.year === year).length, 5, `TEME ${year}`);
   }
   const trauma = readStation(index.find((entry) => entry.id === "2024-trauma-pediatrico"));
@@ -102,14 +107,24 @@ test("provas TEME 22 a 25 tem cinco estacoes por ano e preservam as folhas ofici
     [0.4, 0.4, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]);
   assert.equal(trauma.checklist.reduce((sum, item) => sum + item.weight, 0), 100);
   assert.equal(pocus.checklist.reduce((sum, item) => sum + item.weight, 0), 100);
+  const official2026 = index.filter((entry) => entry.year === 2026).map(readStation);
+  assert.deepEqual(official2026.map((station) => station.source.station).sort(),
+    ["Comunicação", "Pediatria", "POCUS", "Trauma", "Via aérea"].sort());
+  official2026.forEach((station) => {
+    assert.equal(station.source.exam, "TEME");
+    assert.equal(station.source.year, 2026);
+    assert.equal(station.checklist.reduce((sum, item) => sum + item.weight, 0), 100);
+    assert.ok(station.checklist.every((item) => item.officialPoints === item.weight));
+  });
+  assert.deepEqual(official2026.map((station) => station.checklist.length).sort((a, b) => a - b), [9, 16, 20, 20, 20]);
 });
 
 const EXPECTED_FAMILY_DISTRIBUTION = {
-  "Via aérea e ventilação mecânica": 10,
-  "Trauma e APH": 13,
-  "POCUS": 13,
+  "Via aérea e ventilação mecânica": 11,
+  "Trauma e APH": 14,
+  "POCUS": 14,
   "Cardiovascular e PCR": 9,
-  "Pediatria": 10,
+  "Pediatria": 12,
   "Toxicologia e animais peçonhentos": 5,
   "Neurologia": 5,
   "Respiratório, sepse e metabólico": 6,
@@ -251,17 +266,17 @@ function checklistHash(checklist) {
   return crypto.createHash("sha256").update(JSON.stringify(checklist)).digest("hex");
 }
 
-test("indice v2 possui exatamente as 77 estacoes na ordem editorial", () => {
+test("indice v2 possui exatamente as 82 estacoes na ordem editorial", () => {
   const index = readIndex();
   const expectedIds = EXPECTED_STATIONS.map(([id]) => id);
   const expectedFiles = expectedIds.map((id) => `${id}.json`);
   const stationFiles = fs.readdirSync(stationDirectory)
     .filter((file) => file.endsWith(".json") && file !== "index.json");
 
-  assert.equal(index.length, 77);
+  assert.equal(index.length, 82);
   assert.deepEqual(index.map((entry) => entry.id), expectedIds);
   assert.equal(new Set(index.map((entry) => entry.id)).size, expectedIds.length);
-  assert.equal(stationFiles.length, 77);
+  assert.equal(stationFiles.length, 82);
   assert.deepEqual(new Set(stationFiles), new Set(expectedFiles));
 });
 
@@ -273,7 +288,7 @@ test("indice permite montar o catalogo sem baixar os JSONs", () => {
     const prefix = `index[${indexPosition}]`;
     const expectedKeys = ["id", "file", "schemaVersion", "examTitle", "title", "domain", "domains", "family", "difficulty", "origin", "tags", "hasMedia"];
     if (TRAINING_SIMULADO_BY_ID.has(entry.id)) expectedKeys.push("trainingSimulado");
-    if (/^202[2-5]-/.test(entry.id)) expectedKeys.push("year");
+    if (/^202[2-6]-/.test(entry.id)) expectedKeys.push("year");
     assert.deepEqual(Object.keys(entry), expectedKeys, `${prefix} deve expor somente os metadados ricos esperados`);
     assert.equal(entry.schemaVersion, 2, `${prefix}.schemaVersion`);
     assert.equal(entry.examTitle, expectedTitles.get(entry.id), `${prefix}.examTitle`);
@@ -287,7 +302,7 @@ test("indice permite montar o catalogo sem baixar os JSONs", () => {
     assert.ok(Array.isArray(entry.tags) && entry.tags.length > 0, `${prefix}.tags`);
     assert.equal(typeof entry.hasMedia, "boolean", `${prefix}.hasMedia`);
     assert.equal(fs.existsSync(path.join(stationDirectory, entry.file)), true, `${entry.file} ausente`);
-    if (/^202[2-5]-/.test(entry.id)) assert.equal(entry.year, Number(entry.id.slice(0, 4)), `${prefix}.year`);
+    if (/^202[2-6]-/.test(entry.id)) assert.equal(entry.year, Number(entry.id.slice(0, 4)), `${prefix}.year`);
     else assert.equal(Object.hasOwn(entry, "year"), false, `${prefix} inedito nao deve ter year`);
   });
 });

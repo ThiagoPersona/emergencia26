@@ -49,10 +49,14 @@ const REQUIRED_ACERVO_IDS = [
   "us-em5-mitral-2c",
   "us-em5-alca-dilatada",
   "us-em5-alcas-dinamica",
-  "us-em6-duplo-trajeto"
+  "us-em6-duplo-trajeto",
+  "dispositivo-2026-cnaf",
+  "us-2026-derrame-pleural",
+  "us-2026-vesicula-parede",
+  "video-2026-esforco-respiratorio"
 ];
 
-test("acervo visual local contem os 39 itens licenciados e arquivos resolviveis", () => {
+test("acervo visual local contem os 43 itens licenciados e arquivos resolviveis", () => {
   const intensivaoRoot = path.resolve(__dirname, "..");
   const manifestPath = path.join(intensivaoRoot, "assets", "praticas", "media.json");
   const attributionPath = path.join(intensivaoRoot, "assets", "praticas", "ATRIBUICOES.md");

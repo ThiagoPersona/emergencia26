@@ -10,9 +10,23 @@
 | PCR/cardiovascular | RCP e tamponamento | TSV pediátrica | BAVT, IAM/FV e marcapasso | Variável entre estações/casos | Alta |
 | Clínica variável | Choque cardiogênico | Sepse e CAD | Morte encefálica | TCE/HIC e toxicologia pediátrica | Alta |
 
+## TEME 2026: cinco checklists oficiais
+
+As folhas da prova prática real estão em `TEME26/Prova Pratica/`. No simulador, **itens e pontuações seguem essas folhas**; enunciados, falas e progressões foram reconstruídos para treino e não devem ser confundidos com o caso original da banca.
+
+| Estação | O que foi pontuado | Ponto de atenção |
+|---|---|---|
+| Via aérea | Agitação por hipoxemia, dificuldade anatômica e fisiológica, sequência atrasada, pré-oxigenação, planos de resgate e cricotireoidostomia | 20 itens; sem sedação isolada, sem bloqueio antes de oxigenar e sem atraso na decisão cirúrgica |
+| Trauma | PCR traumática, ventilação, descompressão bilateral, toracostomia digital, POCUS e cuidados pós-RCE | 70 pontos de ações, 20 de técnica e 10 de comunicação/priorização |
+| POCUS | Janelas pulmonares, abdominais e vesícula; interpretação de derrame pleural e parede vesicular espessada; mecanismo de extravasamento plasmático | 9 itens; a técnica de aquisição pesa 42 pontos e os achados/mecanismo, 58 |
+| Pediatria | TAP, bronquiolite, falha do baixo fluxo, CNAF com parâmetros/reavaliação e preparo da IOT | 20 itens; reconhecer hipoxemia, selecionar CNAF, intubar sem atraso na falha e não indicar vasoativo sem choque |
+| Comunicação | Identificação, privacidade, notícia inequívoca da morte, escuta, empatia, compreensão, apoio e despedida | 20 itens; dizer "morreu"/"morte", verificar compreensão e garantir próximo passo acompanhado |
+
+**Mudança em relação às apostas anteriores:** o quinto eixo de 2026 foi comunicação de más notícias, não uma estação cardiovascular. Isso amplia o treino de habilidades observáveis sem diminuir a prioridade de via aérea, trauma e POCUS.
+
 ## Leitura estratégica
 
-**Três eixos são praticamente estruturais:** via aérea/VM, trauma e POCUS. Eles mudam o caso, mas preservam habilidades nucleares. Reanimação/cardiovascular aparece repetidamente. A última vaga costuma testar amplitude do emergencista: neurologia, pediatria, toxicologia, obstetrícia, sepse ou outro cenário tempo-dependente.
+**Via aérea, trauma e POCUS apareceram em todos os anos mapeados.** O caso muda, mas preserva habilidades nucleares. As duas vagas restantes variaram; em 2026 foram pediatria e comunicação. O padrão histórico orienta treino, não prevê a próxima prova.
 
 ## Competências recorrentes
 

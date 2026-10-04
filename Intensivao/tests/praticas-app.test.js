@@ -1474,15 +1474,35 @@ test("mantem metadados v2 do indice acima do fallback legado", async () => {
   assert.deepEqual(entries[0].competencies, ["competência-v2"]);
 });
 
-test("renderiza modos como radios nativos com uma unica opcao marcada", () => {
-  const markup = renderPracticeModeControl("review");
+test("renderiza desempenho como terceira aba do simulador", () => {
+  const markup = renderPracticeModeControl("performance");
 
   assert.equal((markup.match(/type="radio"/g) || []).length, 3);
   assert.equal((markup.match(/name="practice-mode"/g) || []).length, 3);
   assert.match(markup, /value="exam"/);
   assert.match(markup, /value="directed"/);
-  assert.match(markup, /value="review"[^>]*checked/);
+  assert.match(markup, /value="performance"[^>]*checked/);
+  assert.doesNotMatch(markup, /value="review"/);
   assert.doesNotMatch(markup, /role="radio"|role="radiogroup"/);
+});
+
+test("aba desempenho mostra historico dentro do simulador sem carregar outra estacao", async () => {
+  let stationLoads = 0;
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    stationLoads += 1;
+    return jsonResponse(createStation("a"));
+  }, createStorage());
+  fixture.root.TemePracticeUtils = require("../praticas-utils.js");
+  await createPracticeApp(fixture.root).mount();
+  const performanceInput = fixture.simulator.querySelectorAll("input[name='practice-mode']")
+    .find((input) => input.value === "performance");
+  performanceInput.checked = true;
+  performanceInput.dispatch("change");
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /practice-dashboard/));
+  assert.match(fixture.simulator.querySelector("#practice-dashboard").innerHTML, /Últimas tentativas/);
+  assert.equal(stationLoads, 1);
 });
 
 test("mantem preview e acoes de inicio visiveis e desabilitadas durante preload", () => {

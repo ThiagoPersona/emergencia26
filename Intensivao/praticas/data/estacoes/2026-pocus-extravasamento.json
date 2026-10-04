@@ -1,0 +1,34 @@
+{
+  "id": "2026-pocus-extravasamento",
+  "version": 2,
+  "title": "POCUS multissistêmico e sinais de extravasamento plasmático",
+  "examTitle": "Avaliação ultrassonográfica em doença febril",
+  "domain": "POCUS",
+  "domains": ["POCUS", "Infectologia"],
+  "family": "POCUS",
+  "difficulty": "avancada",
+  "origin": "historica",
+  "tags": ["pulmão", "eFAST", "vesícula biliar", "derrame pleural", "extravasamento plasmático"],
+  "durationSeconds": 300,
+  "source": { "exam": "TEME", "year": 2026, "station": "POCUS", "collection": "Folha de Avaliação TEME 2026", "adaptation": "Checklist e pesos oficiais; cenário e imagens externas reconstruídos para treino." },
+  "briefing": "Paciente febril em observação necessita exame ultrassonográfico dirigido. Demonstre as janelas no manequim e interprete as imagens quando forem apresentadas.",
+  "phases": [
+    { "id": "janelas", "title": "Tarefa 1", "prompt": "No manequim, demonstre as janelas pulmonares, toracoabdominais, cardíaca subxifoide, abdominais, pélvicas e da vesícula. Diga o que espera reconhecer em imagens normais.", "patientState": { "summary": "Adulto com febre há cinco dias e dor abdominal. O aparelho, o transdutor e o manequim estão disponíveis. Primeiro, a banca pede uma demonstração técnica em janelas normais.", "vitals": { "PA": "108/70 mmHg", "FC": "104 bpm", "SpO2": "96%" } } },
+    { "id": "imagens", "title": "Tarefa 2", "prompt": "Interprete separadamente as duas imagens apresentadas e nomeie os achados.", "patientState": { "summary": "A banca apresenta um clipe supradiafragmático e uma imagem da vesícula de outros pacientes, com alterações equivalentes às do caso. Relate apenas os achados demonstrados.", "vitals": { "Plaquetas": "76.000/mm³", "Hematócrito": "subiu de 40% para 48%" } }, "media": ["us-2026-derrame-pleural", "us-2026-vesicula-parede"] },
+    { "id": "mecanismo", "title": "Tarefa 3", "prompt": "Qual mecanismo fisiopatológico integra os achados clínicos e ultrassonográficos?", "patientState": { "summary": "O paciente permanece febril, com piora da dor abdominal e elevação do hematócrito apesar da queda de plaquetas.", "vitals": { "PA": "100/64 mmHg", "FC": "112 bpm" } } }
+  ],
+  "checklist": [
+    { "id": "pulmao-posicao", "label": "Janelas pulmonares: posiciona transdutor convexo anterior bilateral com marcador cranial e examina espaços supradiafragmáticos bilateralmente", "weight": 7, "officialPoints": 7, "verification": "hibrido", "critical": true, "expected": ["Parede anterior paralela ao esterno e linha hemiclavicular bilateral", "Janelas toracoabdominais direita e esquerda com varredura até o diafragma"] },
+    { "id": "pulmao-normal", "label": "Janelas pulmonares: obtém linha pleural e padrão A normais bilateralmente e espaços supradiafragmáticos sem líquido", "weight": 7, "officialPoints": 7, "verification": "hibrido", "critical": false, "expected": ["Linha pleural entre sombras costais e linhas A sem padrão B", "Diafragma e espaço supradiafragmático sem líquido ou sinal da coluna acima do diafragma"] },
+    { "id": "abdome-posicao", "label": "Janelas abdominais: posiciona subxifoide, Morrison, esplenorrenal e suprapúbica em longitudinal e transversal com varredura", "weight": 7, "officialPoints": 7, "verification": "hibrido", "critical": true, "expected": ["Subcostal com fígado como janela para coração", "Flancos posteriores direito e esquerdo com marcador cefálico e varredura em Z", "Pelve suprapúbica longitudinal e transversal, incluindo retrovesical"] },
+    { "id": "abdome-normal", "label": "Janelas abdominais: obtém coração subxifoide, espaços hepatorrenal e esplenorrenal e pelve com qualidade para avaliar líquido", "weight": 7, "officialPoints": 7, "verification": "hibrido", "critical": false },
+    { "id": "vesicula-posicao", "label": "Parede vesicular: posiciona transdutor no quadrante superior direito, marcador cefálico, e varre a vesícula", "weight": 7, "officialPoints": 7, "verification": "hibrido", "critical": true, "expected": ["Abaixo da última costela perto do ponto cístico", "Movimento pendular cefálico e varredura lateral"] },
+    { "id": "vesicula-normal", "label": "Parede vesicular: identifica vesícula e parede anterior normoespessada, sem camadas ou líquido perivesicular", "weight": 7, "officialPoints": 7, "verification": "hibrido", "critical": false },
+    { "id": "derrame", "label": "Reconhece derrame pleural na imagem supradiafragmática", "weight": 20, "officialPoints": 20, "verification": "verbal", "critical": false, "expected": ["Líquido anecoico supradiafragmático no espaço pleural; aceita formulação equivalente"] },
+    { "id": "parede-espessada", "label": "Reconhece espessamento ou edema da parede da vesícula", "weight": 20, "officialPoints": 20, "verification": "verbal", "critical": true, "expected": ["Parede vesicular espessada, edemaciada ou em favo de mel; medida não exigida"] },
+    { "id": "extravasamento", "label": "Identifica extravasamento plasmático por aumento da permeabilidade capilar ou vascular", "weight": 18, "officialPoints": 18, "verification": "verbal", "critical": true, "expected": ["Aceita plasma leakage, capillary leak, hiperpermeabilidade vascular ou equivalente"] }
+  ],
+  "criticalErrors": ["Não realizar as janelas essenciais", "Não reconhecer edema vesicular", "Atribuir os achados apenas a desidratação sem reconhecer extravasamento"],
+  "referenceAnswer": "Na tarefa técnica, uso transdutor convexo e mostro bilateralmente linha pleural, padrão A e espaços supradiafragmáticos; faço subxifoide com fígado como janela, Morrison, esplenorrenal e pelve longitudinal/transversal, varrendo todos os recessos. No QSD localizo vesícula e parede anterior em corte adequado. Nas imagens anormais, descrevo coleção pleural acima do diafragma e parede vesicular espessada/edemaciada. Em paciente febril com hematócrito crescente e plaquetopenia, esses achados são compatíveis com extravasamento plasmático por aumento da permeabilidade vascular; não bastaria dizer apenas dengue ou desidratação.",
+  "references": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC8948308/", "https://pmc.ncbi.nlm.nih.gov/articles/PMC4075927/", "https://www.who.int/publications/i/item/9789241547871"]
+}

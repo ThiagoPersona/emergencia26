@@ -1,0 +1,40 @@
+{
+  "id": "2026-trauma-pcr-toracostomia",
+  "version": 2,
+  "title": "PCR traumática e toracostomia digital bilateral",
+  "examTitle": "Colapso após trauma torácico",
+  "domain": "Trauma e controle de danos",
+  "domains": ["Trauma", "Reanimação"],
+  "family": "Trauma e APH",
+  "difficulty": "avancada",
+  "origin": "historica",
+  "tags": ["PCR traumática", "toracostomia digital", "causas reversíveis", "POCUS", "pós-RCE"],
+  "durationSeconds": 300,
+  "source": { "exam": "TEME", "year": 2026, "station": "Trauma", "collection": "Folha de Avaliação TEME 2026", "adaptation": "Checklist, subitens técnicos e pesos oficiais; caso clínico reconstruído." },
+  "briefing": "Um paciente com trauma torácico deteriora na sala de emergência. Você dispõe de equipe, monitor, equipamento de ventilação, ultrassom e manequim de toracostomia. Atue e verbalize as prioridades.",
+  "phases": [
+    { "id": "colapso", "title": "Tarefa 1", "prompt": "Avalie o paciente, determine as prioridades imediatas e demonstre no manequim a intervenção torácica que decidir realizar.", "patientState": { "summary": "Homem de 34 anos após colisão de motocicleta. Chega irresponsivo, sem movimentos respiratórios efetivos. Monitor mostra complexos estreitos regulares a 70/min; ausculta ventilatória muito reduzida bilateralmente.", "vitals": { "Pulso central": "não palpável", "SpO2": "sem leitura confiável", "PA": "não mensurável" } } },
+    { "id": "pos-retorno", "title": "Tarefa 2", "prompt": "Depois das medidas iniciais, houve retorno de pulso. Diga o que falta fazer e como reavaliará o paciente.", "patientState": { "summary": "Há pulso central palpável. O paciente permanece irresponsivo e hipotenso; a equipe aguarda novas ordens. O ultrassom está disponível.", "vitals": { "PA": "78/44 mmHg", "FC": "118 bpm", "SpO2": "91% com ventilação assistida" } } }
+  ],
+  "checklist": [
+    { "id": "reconhece-pcr", "label": "Reconhece PCR traumática: irresponsivo, apneico ou em gasping e sem pulso central apesar de atividade elétrica organizada", "weight": 10, "officialPoints": 10, "verification": "verbal", "critical": true },
+    { "id": "ventilacao", "label": "Institui ou delega ventilação por pressão positiva com BVM, supraglótico ou tubo orotraqueal", "weight": 10, "officialPoints": 10, "verification": "hibrido", "critical": false },
+    { "id": "bilateral", "label": "Indica explicitamente descompressão ou toracostomia digital bilateral na PCR traumática", "weight": 10, "officialPoints": 10, "verification": "verbal", "critical": true },
+    { "id": "demo", "label": "Demonstra toracostomia digital unilateral segura e efetiva, alcançando a cavidade pleural no simulador", "weight": 10, "officialPoints": 10, "verification": "manual", "critical": true },
+    { "id": "pocus", "label": "Realiza ou solicita POCUS antes da toracostomia ou após retorno da circulação", "weight": 10, "officialPoints": 10, "verification": "verbal", "critical": false },
+    { "id": "iot-pos", "label": "Após retorno da circulação, indica intubação se persistir irresponsivo e ainda não estiver intubado", "weight": 5, "officialPoints": 5, "verification": "verbal", "critical": false },
+    { "id": "pam", "label": "Após retorno da circulação, otimiza hemodinâmica com alvo de PAM acima de 65 mmHg, citando vasoativo ou hemotransfusão", "weight": 5, "officialPoints": 5, "verification": "verbal", "critical": false },
+    { "id": "dreno", "label": "Após retorno da circulação, converte a toracostomia em drenagem com selo d'água", "weight": 5, "officialPoints": 5, "verification": "verbal", "critical": false },
+    { "id": "investigacao", "label": "Após retorno da circulação, solicita exames de imagem e laboratório ou transferência para centro de trauma", "weight": 5, "officialPoints": 5, "verification": "verbal", "critical": false },
+    { "id": "espaco", "label": "Toracostomia: identifica 4º ou 5º espaço intercostal em região axilar anterior ou lateral", "weight": 4, "officialPoints": 4, "verification": "manual", "critical": false },
+    { "id": "incisao", "label": "Toracostomia: faz incisão de pele e subcutâneo suficiente para dissecção e entrada digital, controlando o instrumento", "weight": 4, "officialPoints": 4, "verification": "manual", "critical": false },
+    { "id": "disseccao", "label": "Toracostomia: disseca rombamente até parede torácica e espaço intercostal, sem progredir com lâmina em profundidade", "weight": 4, "officialPoints": 4, "verification": "manual", "critical": false },
+    { "id": "pleura", "label": "Toracostomia: penetra a pleura e amplia trajeto para descompressão", "weight": 4, "officialPoints": 4, "verification": "manual", "critical": false },
+    { "id": "dedo", "label": "Toracostomia: introduz dedo na cavidade pleural, confirma entrada e mantém abertura efetiva", "weight": 4, "officialPoints": 4, "verification": "manual", "critical": false },
+    { "id": "equipe", "label": "Competência global: comunicação e trabalho em equipe", "weight": 5, "officialPoints": 5, "verification": "hibrido", "critical": false, "expected": ["Delega claramente, confirma tarefas e mantém coordenação funcional"] },
+    { "id": "priorizacao", "label": "Competência global: priorização e gestão da crise", "weight": 5, "officialPoints": 5, "verification": "hibrido", "critical": false, "expected": ["Prioriza ventilação e causas reversíveis; organiza intervenções simultâneas e reavalia"] }
+  ],
+  "criticalErrors": ["Não reconhecer ausência de pulso", "Não ventilar", "Omitir descompressão torácica bilateral", "Não alcançar pleura na demonstração"],
+  "referenceAnswer": "Confirmo irresponsividade, apneia e ausência de pulso com ritmo organizado: PCR traumática. Delego ventilação por pressão positiva e descompressão torácica bilateral sem atraso; demonstro toracostomia digital no 4º/5º EIC axilar anterior/lateral, incisão controlada, dissecção romba, abertura da pleura e confirmação digital do trajeto. Solicito POCUS se não interromper medidas essenciais. Após retorno de pulso, garanto via aérea definitiva se ainda irresponsivo, busco PAM acima de 65 mmHg com hemoderivados e/ou vasoativo conforme mecanismo, converto toracostomia em dreno com selo d'água, investigo lesões e aciono centro de trauma, delegando e reavaliando continuamente.",
+  "references": ["https://learning.facs.org/sites/default/files/scorm_engine/matls_module03_NEW%20APRIL2021_1-1619126603/ATLS%2010th%20Edition%20Student%20Manual.pdf", "https://www.resus.org.uk/library/2025-resuscitation-guidelines/advanced-life-support-guidelines"]
+}

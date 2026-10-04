@@ -122,7 +122,7 @@ test("cada simulado selecionado usa exatamente seus cinco cenarios na ordem edit
 
 test("provas anteriores selecionam cinco estacoes do proprio ano sem misturar simulados", () => {
   const index = require("../praticas/data/estacoes/index.json");
-  assert.deepEqual(getPastExamYears(index), [2022, 2023, 2024, 2025]);
+  assert.deepEqual(getPastExamYears(index), [2022, 2023, 2024, 2025, 2026]);
   for (const year of getPastExamYears(index)) {
     const plan = buildSimuladoExamPlan(index, year);
     assert.equal(plan.simulado, year);

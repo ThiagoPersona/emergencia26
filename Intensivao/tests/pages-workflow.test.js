@@ -99,22 +99,33 @@ test("paginas praticas omitem blocos editoriais removidos", () => {
   assert.doesNotMatch(procedures, /Treino mínimo semanal|\| Procedimento \| Repetições \| Meta \|/);
 });
 
-test("sidebar posiciona o simulador imediatamente antes do desempenho", () => {
+test("sidebar pratica mantem apenas matriz, procedimentos e simulador", () => {
   const sidebar = fs.readFileSync(path.join(__dirname, "..", "_sidebar.md"), "utf8");
-  const visual = "[Treino visual](praticas/TREINO_VISUAL.md)";
-  const simulator = "[Simulador de estações](praticas/SIMULADOR.md)";
-  const performance = "[Desempenho](praticas/DESEMPENHO.md)";
+  const practice = sidebar.split("- PROVA PRÁTICA")[1].split("- Temas")[0];
+  assert.match(practice, /Matriz da banca/);
+  assert.match(practice, /Procedimentos/);
+  assert.match(practice, /Simulador de estações/);
+  assert.doesNotMatch(practice, /Visão geral|Intensivo|Roteiro de 5 minutos|Treino visual|Desempenho/);
+});
 
-  assert.ok(sidebar.indexOf(visual) < sidebar.indexOf(simulator));
-  assert.ok(sidebar.indexOf(simulator) < sidebar.indexOf(performance));
-  assert.match(sidebar, /Simulador de estações[^\n]*\n\s*- \[Desempenho\]/);
+test("matriz e procedimentos incorporam as cinco habilidades da prova pratica TEME 2026", () => {
+  const base = path.join(__dirname, "..", "praticas");
+  const matrix = fs.readFileSync(path.join(base, "MATRIZ_DA_BANCA.md"), "utf8");
+  const procedures = fs.readFileSync(path.join(base, "PROCEDIMENTOS.md"), "utf8");
+  for (const topic of ["Via aérea", "Trauma", "POCUS", "Pediatria", "Comunicação"]) {
+    assert.match(matrix, new RegExp(topic, "i"));
+  }
+  assert.match(matrix, /TEME 2026/);
+  assert.match(matrix, /checklists oficiais/i);
+  assert.match(procedures, /sequência atrasada|DSI/i);
+  assert.match(procedures, /toracostomia digital/i);
+  assert.match(procedures, /cânula nasal de alto fluxo|CNAF/i);
 });
 
 test("publica o Intensivo Codex como roteiro operacional das cinco apostas", () => {
   const base = path.join(__dirname, "..");
   const intensivePath = path.join(base, "praticas", "INTENSIVO_CODEX.md");
   const sidebar = fs.readFileSync(path.join(base, "_sidebar.md"), "utf8");
-  const overview = fs.readFileSync(path.join(base, "PRATICAS.md"), "utf8");
 
   assert.equal(fs.existsSync(intensivePath), true);
 
@@ -134,11 +145,7 @@ test("publica o Intensivo Codex como roteiro operacional das cinco apostas", () 
   assert.match(intensive, /estações-reserva/i);
   assert.match(intensive, /toxicologia[^\n]{0,200}obstetrícia[^\n]{0,200}gestão[^\n]{0,200}neuro/i);
 
-  assert.match(
-    sidebar,
-    /\[Intensivo Claude\][^\n]*\n\s*- \[Intensivo Codex\]\(praticas\/INTENSIVO_CODEX\.md\)/
-  );
-  assert.match(overview, /\[Intensivo Codex\]\(praticas\/INTENSIVO_CODEX\.md\)/);
+  assert.doesNotMatch(sidebar, /Intensivo Codex/);
 });
 
 test("publica tema e banco autonomos de gestao sem alterar o total de questoes", () => {
