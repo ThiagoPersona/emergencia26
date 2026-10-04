@@ -152,7 +152,7 @@ Sistema de Comando de Incidentes (SCI/ICS):
 
 - Estrutura modular: comando, operações, planejamento, logística e administração/finanças.
 - Pode ser comando único ou unificado.
-- Span of control clássico: 1-7 subordinados por líder; 5 é o número ideal.
+- Alcance de controle clássico: 3-7 subordinados por líder; 5 é referência ideal. Não é limite rígido: redistribuir conforme complexidade, risco e distância.
 - Objetivo: usar recursos disponíveis de forma eficiente, com linguagem comum e cadeia clara.
 
 Regra de ouro:
@@ -165,7 +165,7 @@ Regra de ouro:
 
 ### 6. START adulto
 
-START é triagem rápida, não tratamento completo. Em geral, 60-90 segundos por vítima.
+START é triagem primária rápida, não tratamento completo: procurar classificar em menos de 60 segundos por vítima, conforme segurança e protocolo.
 
 1. **Consegue andar?** Verde.
 2. **Não anda e não respira:** abrir via aérea.
@@ -183,7 +183,9 @@ Categorias:
 | Verde | Mínimo | Deambula, baixo risco imediato |
 | Amarelo | Tardio | Grave, mas pode esperar horas |
 | Vermelho | Imediato | Intervenção/transporte em minutos |
-| Preto | Óbito/expectante | Sem chance com recurso disponível ou sem respiração após abertura |
+| Preto | Sem respiração após abrir via aérea | Critério do START clássico; não confundir com categoria expectante do SALT |
+
+**Não confundir algoritmos:** no START adulto clássico, preto corresponde à vítima que permanece apneica após abrir via aérea. Sistemas como SALT separam morto de expectante; a categoria expectante depende dos recursos e exige conforto e reavaliação, não abandono. Verde também precisa de avaliação secundária.
 
 Limites:
 
@@ -210,7 +212,7 @@ Sequência:
 3. Identificar produto quando possível sem se expor.
 4. Retirar vítimas da zona quente.
 5. Remover roupas contaminadas e descontaminar antes de colocar na ambulância/hospital, se a contaminação permitir.
-6. Só depois fazer atendimento clínico convencional, antídotos e transporte.
+6. Intervenções salvadoras e antídotos podem ocorrer em paralelo à descontaminação, por equipe protegida e no local adequado. Não esperar toda a descontaminação para ventilar/controlar hemorragia; não levar contaminação para a zona limpa.
 
 Pegada de prova: vítima contaminada não deve contaminar equipe, ambulância, sala vermelha e outros pacientes. Cena insegura é indicação de recuar, não de "coragem".
 
@@ -245,7 +247,7 @@ Queimadura/elétrica/química:
 **Afogamento**
 
 - Problema central é hipóxia. Comece por via aérea/ventilação.
-- Inconsciente/apneico: posicionar via aérea e fazer 5 ventilações/rescue breaths quando aplicável.
+- Apneico: abrir via aérea e ventilar precocemente; RCP deve incluir ventilações e compressões. Cinco ventilações iniciais são a sequência de protocolos ERC/SOBRASA, não um número universal de todas as diretrizes. Resgate aquático só por pessoa capacitada e sem pôr socorrista em risco.
 - Não tente "drenar água" com manobra de Heimlich ou cabeça para baixo.
 - O2, VNI se alerta e hipoxemia leve-moderada; IOT se rebaixado, vômitos, hipoxemia grave ou falência.
 - Rx inicial pode ser normal. Se assintomático, normaliza e não piora, observação de 4-6 h costuma ser aceitável em diretriz atual; aula local usa até 8 h.
@@ -261,7 +263,7 @@ Queimadura/elétrica/química:
 **Altitude**
 
 - Risco em não aclimatados acima de 2.500 m.
-- AMS: cefaleia + fadiga, náuseas/vômitos, tontura, sono ruim após subida.
+- AMS: cefaleia associada a fadiga, náuseas/vômitos ou tontura após subida. Sono ruim pode acompanhar, mas não integra a pontuação atual de Lake Louise.
 - Conduta: parar ascensão, repouso, analgesia/antiemético; descer se moderado/grave ou se piora. TEME cobrou descida de pelo menos 300 m.
 - HACE: ataxia + alteração mental = descer/O2/dexametasona.
 - HAPE: dispneia, queda de performance, tosse, hipoxemia/crepitantes = descer/O2/nifedipina se indicado.
@@ -272,6 +274,7 @@ Queimadura/elétrica/química:
 - Narcose por nitrogênio: parece embriaguez, clássica a partir de 30 m.
 - Doença descompressiva: dor articular, rash/prurido, sintomas neurológicos ou vestibulares após mergulho/subida.
 - Primeira conduta: O2 100% por máscara bem vedada/demand valve ou não reinalante 15 L/min, repouso, hidratação se alerta, contato com medicina hiperbárica/DAN e transporte.
+- Não fazer recompressão improvisada na água. Transporte deve minimizar altitude/queda de pressão e ser coordenado com equipe hiperbárica; melhora com O2 não exclui doença descompressiva.
 
 **Hipotermia**
 
@@ -360,11 +363,11 @@ flowchart TD
 
 | Item | Número | Observação TEME |
 |---|---:|---|
-| START por vítima | 60-90 s | Triagem rápida, não atendimento completo |
+| START por vítima | Buscar <60 s | Triagem primária, não atendimento completo |
 | START vermelho | FR >30/min | Ou respira após abrir VA, perfusão ruim, não obedece comando |
 | START perfusão ruim | Sem pulso radial ou TEC >2 s | Depende do protocolo/local |
 | START preto | Não respira após abrir VA | Em recurso insuficiente |
-| SCI span of control | 1-7; ideal 5 | Banca cobrou estrutura flexível |
+| SCI alcance de controle | 3-7; referência ideal 5 | Ajustar a incidentes e riscos |
 | Queda de altura alto risco | >3 m | Cinemática de trauma |
 | Intrusão veicular alto risco | >0,3 m no ocupante ou >0,5 m em qualquer área | Além de extricação, ejeção, morte no mesmo compartimento |
 | SpO2 trauma/crítico APH | >=94% | O2 e ventilação, depois titular |
@@ -378,14 +381,14 @@ flowchart TD
 | AMS TEME | Descer pelo menos 300 m se sintomático relevante | Descida é mais efetiva |
 | Heat stroke | SNC alterado + hipertermia | Antitérmico não trata |
 | Alvo de resfriamento | 38,6-39 °C | Evitar resfriamento excessivo; seguir protocolo |
-| Afogamento | 5 ventilações iniciais em apneico/inconsciente | Não drenar água |
+| Afogamento | Ventilar cedo; 5 iniciais em ERC/SOBRASA | RCP com ventilações; não drenar água |
 | observação afogamento | 4-6 h atual; até 8 h aula local | Se normal e sem deterioração |
 | Hipotermia | <=35 °C | Diagnóstico clínico se sem termômetro confiável |
 | Hipotermia grave | <28 °C | Alto risco de arritmia/PCR |
 | Checar pulso hipotermia | Até 1 min | Antes de declarar sem pulso |
 | Queimadura importante adulto | >20% SCQ | Aula local; depende de contexto e recurso |
 | Queimadura importante criança | >10% SCQ | Regular para centro adequado |
-| Torniquete | Alto e apertado se hemorragia exsanguinante | Registrar horário |
+| Torniquete | 5-7 cm proximal à ferida, fora de articulação | Alto e apertado se ferida não localizável/ameaça direta; registrar horário |
 
 ### Pontos de prova
 
@@ -453,6 +456,8 @@ flowchart TD
 
 ## Referências
 
+Revisão editorial: 04/10/2026. Atualizações selecionadas abaixo; respostas históricas não substituem critérios atuais.
+
 **Prova/TEME**
 
 - Conteúdo programático TEME26.
@@ -466,24 +471,30 @@ flowchart TD
 - Aulas de cursinho: Aula 37 - Trauma ambiental I.
 - Aulas de cursinho: Aula 56 - Trauma ambiental II e áreas remotas.
 - Aulas de cursinho: Aula 04 - Avaliação inicial do politraumatizado.
-- Resumo do cursinho.docx.
-- Adendos para complementar.docx.
+- Material local: `Emergency Talks/Resumo do Emergency.docx`.
+- Material local: `Emergency Talks/Adendos para complementar.docx`.
 - Livro local: Atendimento pré-hospitalar: abordagem prática (`Livros/Livro - Atendimento Pré-Hospitalar.pdf`).
 
 **Atualização clínica e normativa**
 
-- Ministério da Saúde. Regulação Médica das Urgências. https://www.gov.br/saude/pt-br/composicao/saes/samu-192/publicacoes/regulacao_medica_urgencias.pdf/view
-- Ministério da Saúde. Portaria GM/MS 2.048/2002, Regulamento Técnico dos Sistemas Estaduais de Urgência e Emergência. https://bvs.saude.gov.br/bvs/saudelegis/gm/2002/anexo/anexo_prt2048_05_11_2002.pdf
-- Ministério da Saúde. Portaria GM/MS 1.010/2012, SAMU 192 e Central de Regulação das Urgências. https://bvsms.saude.gov.br/bvs/saudelegis/gm/2012/prt1010_21_05_2012_atual.html
-- Ministério da Saúde. Centrais de Regulação. https://www.gov.br/saude/pt-br/composicao/saes/drac/regulacao/regulacao-do-acesso/centrais-de-regulacao/centrais-de-regulacao
-- Conselho Federal de Medicina. Resolução CFM 2.110/2014, serviços pré-hospitalares móveis. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2014/2110
-- Conselho Federal de Medicina. Resolução CFM 1.672/2003, transporte inter-hospitalar de pacientes. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2003/1672
-- Conselho Federal de Medicina. Resolução CFM 2.077/2014, serviços hospitalares de urgência e emergência. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2014/2077
-- CHEMM/ASPR/HHS. START Adult Triage Algorithm. https://chemm.hhs.gov/startadult.htm
-- CHEMM/ASPR/HHS. SALT Mass Casualty Triage Algorithm. https://chemm.hhs.gov/salttriage.htm
-- FEMA. National Incident Management System, 2017. https://www.fema.gov/sites/default/files/2020-07/fema_nims_doctrine-2017.pdf
-- Wilderness Medical Society. Heat Illness Clinical Practice Guidelines, 2024 update. https://journals.sagepub.com/doi/full/10.1177/10806032241227924
-- Wilderness Medical Society. Acute Altitude Illness Clinical Practice Guidelines, 2024 update. https://journals.sagepub.com/doi/10.1016/j.wem.2023.05.013
-- Wilderness Medical Society. Drowning Clinical Practice Guidelines, 2024 update. https://journals.sagepub.com/doi/10.1177/10806032241227460
-- Wilderness Medical Society. Accidental Hypothermia Clinical Practice Guidelines, 2019 update. https://journals.sagepub.com/doi/10.1016/j.wem.2019.10.002
-- Divers Alert Network. Decompression Illness: What Is It and What Is the Treatment? https://dan.org/health-medicine/health-resources/diseases-conditions/decompression-illness-what-is-it-and-what-is-the-treatment/
+- [Ministério da Saúde. Regulação Médica das Urgências.](https://www.gov.br/saude/pt-br/composicao/saes/samu-192/publicacoes/regulacao_medica_urgencias.pdf/view)
+- [Ministério da Saúde. Portaria GM/MS 2.048/2002, Regulamento Técnico dos Sistemas Estaduais de Urgência e Emergência.](https://bvs.saude.gov.br/bvs/saudelegis/gm/2002/anexo/anexo_prt2048_05_11_2002.pdf)
+- [Ministério da Saúde. Portaria GM/MS 1.010/2012, SAMU 192 e Central de Regulação das Urgências.](https://bvsms.saude.gov.br/bvs/saudelegis/gm/2012/prt1010_21_05_2012_atual.html)
+- [Ministério da Saúde. Centrais de Regulação.](https://www.gov.br/saude/pt-br/composicao/saes/drac/regulacao/regulacao-do-acesso/centrais-de-regulacao/centrais-de-regulacao)
+- [Conselho Federal de Medicina. Resolução CFM 2.110/2014, serviços pré-hospitalares móveis.](https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2014/2110)
+- [Conselho Federal de Medicina. Resolução CFM 1.672/2003, transporte inter-hospitalar de pacientes.](https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2003/1672)
+- [Conselho Federal de Medicina. Resolução CFM 2.077/2014, serviços hospitalares de urgência e emergência.](https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2014/2077)
+- [CHEMM/ASPR/HHS. START Adult Triage Algorithm.](https://chemm.hhs.gov/startadult.htm)
+- [CHEMM/ASPR/HHS. SALT Mass Casualty Triage Algorithm.](https://chemm.hhs.gov/salttriage.htm)
+- [FEMA. National Incident Management System, 2017.](https://www.fema.gov/sites/default/files/2020-07/fema_nims_doctrine-2017.pdf)
+- [Wilderness Medical Society. Heat Illness Clinical Practice Guidelines, 2024 update.](https://journals.sagepub.com/doi/full/10.1177/10806032241227924)
+- [Wilderness Medical Society. Acute Altitude Illness Clinical Practice Guidelines, 2024 update.](https://journals.sagepub.com/doi/10.1016/j.wem.2023.05.013)
+- [Wilderness Medical Society. Drowning Clinical Practice Guidelines, 2024 update.](https://journals.sagepub.com/doi/10.1177/10806032241227460)
+- [Wilderness Medical Society. Accidental Hypothermia Clinical Practice Guidelines, 2019 update.](https://journals.sagepub.com/doi/10.1016/j.wem.2019.10.002)
+- [Divers Alert Network. Decompression Illness: What Is It and What Is the Treatment?](https://dan.org/health-medicine/health-resources/diseases-conditions/decompression-illness-what-is-it-and-what-is-the-treatment/)
+
+**Fontes da revisão de outubro de 2026**
+
+- [FEMA. Alcance de controle no SCI: referência e adaptação.](https://emilms.fema.gov/_is0700b/groups/203.html)
+
+- Livros locais: Medicina de Emergência HCFMUSP, 18ª edição, e Tratado ABRAMEDE, 1ª edição; consulta dirigida aos capítulos relacionados, não leitura integral nesta revisão.

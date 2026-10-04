@@ -2,7 +2,7 @@
 
 ## Leitura de 30 segundos
 
-- Anafilaxia é adrenalina IM primeiro. Anti-histamínico e corticoide são adjuntos, não salvam choque/broncoespasmo/edema de via aérea.
+- Anafilaxia é adrenalina IM primeiro. Anti-H1 apenas para sintomas cutâneos depois da estabilização; corticoide não é rotina e não previne bifásica de forma comprovada.
 - Angioedema com língua, voz, disfagia, estridor ou progressão rápida e via aérea difícil antecipada. IECA/bradicinina pode não responder a adrenalina, anti-H1 ou corticoide.
 - Celulite é clínica; abscesso drena; fasciite necrosante e cirurgia agora. Dor desproporcional, bolhas, necrose, crepitacao, anestesia cutanea ou choque não esperam TC.
 - SJS/TEN: parar droga suspeita, suporte tipo queimado, oftalmo/dermato/UTI cedo. Antibiótico profilático não é rotina.
@@ -39,19 +39,21 @@ Red flags:
 
 ### 2. Anafilaxia
 
-Diagnóstico prático: reação aguda após exposição provável com pele/mucosa e respiratório/circulatório/GI, ou hipotensão/broncoespasmo/laringe após alérgeno conhecido, mesmo sem urticária.
+Diagnóstico prático: início agudo com pele/mucosa e comprometimento respiratório, hipotensão ou sintomas GI graves (dor cólica intensa/vômitos repetidos, especialmente após alérgenos não alimentares); ou hipotensão, broncoespasmo ou envolvimento laríngeo após alérgeno conhecido/altamente provável, mesmo sem urticária. Náusea isolada com urticária não deve ser equiparada automaticamente a choque anafilático.
 
 Conduta:
 
-1. Chamar ajuda, retirar gatilho, deitar com pernas elevadas se tolera.
+1. Chamar ajuda, retirar gatilho, deitar com pernas elevadas se tolera; gestante em decúbito lateral esquerdo. Não deixar levantar/caminhar abruptamente. Desconforto respiratório pode exigir posição adaptada, sem ortostatismo.
 2. Adrenalina IM no vasto lateral imediatamente.
 3. O2 alto se respiratório/choque, monitor, acesso, cristaloide em bolus se hipotensão.
 4. Repetir adrenalina IM a cada 5-15 min se resposta incompleta.
-5. Se refratária: infusão de adrenalina titulada e UTI.
-6. Salbutamol se broncoespasmo; anti-H1 para urticária/prurido; corticoide como adjunto, sem atrasar adrenalina.
+5. Comprometimento respiratório/circulatório persistente após duas doses IM adequadas: anafilaxia refratária; equipe experiente, infusão EV titulada de adrenalina, bomba, monitorização e UTI. Não usar bolus EV de adrenalina no paciente com pulso como rotina.
+6. Salbutamol complementa broncoespasmo, não edema laríngeo/choque. Anti-H1 não sedativo para pele após estabilização. Corticoide só por indicação específica, como asma concomitante; não substitui adrenalina nem observação.
 7. Beta-bloqueado com choque refratário: considerar glucagon.
 8. Observar risco de bifásica: mais tempo se grave, precisou doses repetidas, asma, hipotensão, gatilho longo ou acesso dificil.
 9. Alta: prescrever/treinar autoinjetor se disponível, plano escrito, retorno e alergologia.
+
+**Observação após resolução (NICE NG258, 2026):** alta em 2 h só em baixo risco rigorosamente selecionado, resposta rápida a dose única, resolução completa, autoinjetores/treinamento e supervisão. Pelo menos 6 h se duas doses IM ou bifásica prévia; >=12 h se reação grave com >2 doses, asma grave/comprometimento respiratório importante, absorção contínua ou difícil acesso a atendimento. Não cronometrar a partir da chegada enquanto ainda há sintomas.
 
 > **Resposta de prova TEME:** adrenalina IM é a primeira medicação. Anti-histamínico isolado em anafilaxia é erro.
 
@@ -61,8 +63,8 @@ Separe dois mundos:
 
 | Tipo | Pistas | Resposta esperada |
 |---|---|---|
-| Histaminérgico/alérgico | urticária, prurido, broncoespasmo, hipotensão, gatilho alimentar/veneno/remedio | Adrenalina se anafilaxia, anti-H1, corticoide |
-| Bradicinina | IECA, hereditario, sem urticária/prurido, língua/face/laringe, dor abdominal | Via aérea + C1-INH/icatibant/FFP conforme recurso |
+| Histaminérgico/alérgico | Urticária/prurido, broncoespasmo, hipotensão, gatilho | Adrenalina se anafilaxia; anti-H1 para pele após estabilização |
+| Bradicinina | IECA ou hereditário, geralmente sem urticária/prurido | Via aérea; tratamento específico comprovado no hereditário, não extrapolado automaticamente para IECA |
 
 Conduta:
 
@@ -70,6 +72,7 @@ Conduta:
 - Se parece alérgico ou dúvida razoável, trate como anafilaxia com adrenalina IM.
 - IECA: suspender definitivamente. Pode ocorrer mesmo após anos de uso.
 - Angioedema por bradicinina pode precisar intubação acordada/fibro, equipe cirúrgica pronta e tubo menor.
+- C1-INH/icatibant tratam crises de angioedema hereditário conforme produto. No causado por IECA, AAEM considera evidência insuficiente para uso rotineiro desses agentes, TXA ou plasma. Nenhuma tentativa medicamentosa deve atrasar proteção da via aérea.
 
 > **Resposta de prova TEME24:** angioedema por enalapril com língua/lábios, dificuldade para falar/deglutir e estridor justifica intubação acordada pelo risco de falha de resgate/oxigenação.
 
@@ -152,6 +155,7 @@ Cristais:
 - Pseudogota: idoso, joelho/punho, condrocalcinose, cristais de CPPD.
 - Cristal no líquido não exclui infecção concomitante.
 - Não iniciar alopurinol como analgésico de crise. Se já usa, em geral não suspender.
+- Isso não significa proibir início de terapia redutora de urato durante crise: ACR admite iniciar quando indicada, com cobertura anti-inflamatória e seguimento. Colchicina exige ajuste ao produto disponível (comprimidos de 0,5 ou 0,6 mg), rim e interações; associação com claritromicina/inibidores fortes de CYP3A4/P-gp pode ser tóxica, sobretudo em DRC.
 
 ### 7. Emergências reumatológicas
 
@@ -182,7 +186,7 @@ Nem todo rash e "alergia". urticária com hipotensão e anafilaxia; eritema com 
 
 ### Adrenalina não tem substituto na anafilaxia
 
-Anti-H1 melhora prurido; corticoide talvez reduza inflamação tardia, mas nenhum dos dois reverte choque, edema de laringe ou broncoespasmo no tempo certo. O atraso da adrenalina é a pegadinha principal.
+Anti-H1 melhora prurido, mas não reverte choque ou obstrução. Corticoide não tem benefício comprovado na prevenção de bifásica e não integra o resgate rotineiro. O atraso da adrenalina é a pegadinha principal.
 
 ### O pus da articulação é uma colecao fechada
 
@@ -190,7 +194,7 @@ Artrite séptica não é "dar antibiótico e ver". Precisa diagnóstico por líq
 
 ### Corticoide certo no paciente certo
 
-Na arterite temporal e na compressão visual, corticoide precoce previne cegueira. Em celulite simples ele pode confundir; em SJS/TEN e DRESS depende de gravidade e especialista; em infecção necrosante não substitui faça.
+Na arterite temporal com ameaça visual, corticoide precoce busca prevenir perda adicional de visão. Em SJS/TEN e DRESS, imunomodulação depende de gravidade/especialista; em infecção necrosante não substitui desbridamento.
 
 ## Fluxograma
 
@@ -214,7 +218,7 @@ flowchart TD
     B --> C[Deitar se tolera + O2 + monitor + acesso]
     C --> D{Hipotensão/choque?}
     D -->|Sim| E[Cristaloide 20 mL/kg e repetir adrenalina 5-15 min]
-    D -->|Não| F[Adjuntos: salbutamol, anti-H1, corticoide]
+    D -->|Não| F[Reavaliar respiração; salbutamol se indicado; anti-H1 para pele]
     E --> G{Refratária?}
     G -->|Sim| H[Infusão adrenalina + UTI; glucagon se beta-bloqueado]
     G -->|Não| I[observação e plano de alta]
@@ -236,7 +240,7 @@ flowchart TD
 
 | Item | Número | observação TEME |
 |---|---:|---|
-| Adrenalina anafilaxia | 0,01 mg/kg IM de 1 mg/mL | Max adulto 0,5 mg; criança max 0,3 mg |
+| Adrenalina anafilaxia | 0,01 mg/kg IM da solução 1 mg/mL | Máximo 0,5 mg; criança pequena usual até 0,3 mg, adolescente pode precisar 0,5 mg |
 | Repetir adrenalina | 5-15 min | Se resposta incompleta |
 | Cristaloide anafilaxia | 20 mL/kg, repetir conforme choque | Adulto pode precisar litros |
 | Glucagon beta-bloqueado | 1-5 mg EV, depois 5-15 mcg/min | Se choque refratário |
@@ -298,9 +302,11 @@ flowchart TD
 
 > **Para prova TEME:** anafilaxia = adrenalina IM; angioedema por IECA com estridor = via aérea acordada/antecipada; celulite é clínica, abscesso drena, fasciite opera; SJS/TEN para droga e suporte; monoartrite febril = artrocentese; arterite temporal = corticoide antes da confirmação; crise renal esclerodérmica = captopril/IECA.
 >
-> **Na prática clínica:** protocolos locais variam em icatibant/C1-INH/FFP no angioedema por bradicinina, escolha de antibiótico para SSTI/MRSA e uso de imunomoduladores em SJS/TEN. A regra operacional permanece: via aérea, choque, faça, punção e corticoide tempo-dependente quando indicados.
+> **Na prática clínica:** não equiparar evidência de angioedema hereditário à de IECA. Escolhas de antibiótico e imunomodulação dependem do contexto. A prioridade permanece: via aérea, adrenalina quando indicada, controle de foco e tratamento tempo-dependente de ameaça visual.
 
 ## Referências
+
+Revisão editorial: 04/10/2026. Atualizações selecionadas abaixo; respostas históricas não substituem critérios atuais.
 
 **Prova/TEME**
 
@@ -314,18 +320,26 @@ flowchart TD
 - Aulas de cursinho: Aula 37 - Trauma ambiental I.
 - Aulas de cursinho: Aula 53 - Abordagem geral do paciente intoxicado.
 - Aulas de cursinho: Aula 62 - Animais peçonhentos.
-- Resumo do cursinho.docx.
-- Adendos para complementar.docx.
+- Material local: `Emergency Talks/Resumo do Emergency.docx`.
+- Material local: `Emergency Talks/Adendos para complementar.docx`.
 
 **Atualização clínica**
 
-- World Allerey Organization. Anaphylaxis Guidance 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/
-- AAAAI/ACAAI. Anaphylaxis: 2023 practice parameter update. https://www.guidelinecentral.com/guideline/7615/
-- WAO/EAACI. Hereditary angioedema guideline, 2021 revision/update. https://pmc.ncbi.nlm.nih.gov/articles/PMC9023902/
-- IDSA. Skin and Soft Tissue Infections Guideline, 2014. https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/
-- WSES/SIS-E. Skin and soft-tissue infections consensus, 2018. https://pmc.ncbi.nlm.nih.gov/articles/PMC6295010/
-- British Association of Dermatologists. SJS/TEN guideline, 2016. https://academic.oup.com/bjd/article/174/6/1194/6617016
-- SANJO. Guideline for management of septic arthritis in native joints, 2023. https://jbji.copernicus.org/articles/8/29/2023/
-- American College of Rheumatology. Gout Guideline, 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC10563586/
-- EULAR. Large vessel vasculitis recommendations, 2018 update. https://ard.bmj.com/content/79/1/19
-- EULAR. Systemic sclerosis treatment recommendations, 2023 update. https://ard.bmj.com/content/early/2024/10/17/ard-2024-226430
+- [World Allergy Organization. Anaphylaxis Guidance 2020.](https://pmc.ncbi.nlm.nih.gov/articles/PMC7607509/)
+- [AAAAI/ACAAI. Anaphylaxis: 2023 practice parameter update.](https://www.guidelinecentral.com/guideline/7615/)
+- [WAO/EAACI. Hereditary angioedema guideline, 2021 revision/update.](https://pmc.ncbi.nlm.nih.gov/articles/PMC9023902/)
+- [IDSA. Skin and Soft Tissue Infections Guideline, 2014.](https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/)
+- [WSES/SIS-E. Skin and soft-tissue infections consensus, 2018.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6295010/)
+- [British Association of Dermatologists. SJS/TEN guideline, 2016.](https://academic.oup.com/bjd/article/174/6/1194/6617016)
+- [SANJO. Guideline for management of septic arthritis in native joints, 2023.](https://jbji.copernicus.org/articles/8/29/2023/)
+- [American College of Rheumatology. Gout Guideline, 2020.](https://pmc.ncbi.nlm.nih.gov/articles/PMC10563586/)
+- [EULAR. Large vessel vasculitis recommendations, 2018 update.](https://ard.bmj.com/content/79/1/19)
+- [EULAR. Systemic sclerosis treatment recommendations, 2023 update.](https://ard.bmj.com/content/early/2024/10/17/ard-2024-226430)
+
+**Fontes da revisão de outubro de 2026**
+
+- [RCUK. Tratamento emergencial de anafilaxia, 2021.](https://www.resus.org.uk/sites/default/files/2021-05/Emergency%20Treatment%20of%20Anaphylaxis%20May%202021_0.pdf)
+- [NICE NG258. Observação e encaminhamento após anafilaxia, 2026.](https://www.nice.org.uk/guidance/ng258/resources/anaphylaxis-assessment-and-referral-after-emergency-treatment-pdf-66144023784133)
+- [AAEM. Angioedema por IECA: declaração clínica, 2020.](https://www.aaem.org/statements/ed-patients-angioedema-secondary/)
+
+- Livros locais: Medicina de Emergência HCFMUSP, 18ª edição, e Tratado ABRAMEDE, 1ª edição; consulta dirigida aos capítulos relacionados, não leitura integral nesta revisão.

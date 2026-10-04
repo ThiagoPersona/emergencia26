@@ -4,9 +4,9 @@
 
 - Metabólico grave na sala vermelha: ABCDE, glicemia, ECG, gaso/lactato, Na/K/Ca/Mg/P, ureia/creatinina, cetona, osmolaridade quando indicado e busca ativa de gatilho.
 - Gasometria de prova: pH -> distúrbio primário -> compensação -> anion gap corrigido -> delta/delta -> oxigenação. Não pule a compensação.
-- HiperK com ECG, arritmia, fraqueza ou K muito alto: cálcio primeiro, depois deslocar K para dentro da célula e remover K do corpo. Resina não é tratamento de emergência.
+- HiperK >=6,5 exige tratamento urgente mesmo com ECG normal; cálcio imediato se alterações eletrocardiográficas/instabilidade. Insulina desloca K, mas não o elimina; não esqueça diálise/remoção e vigilância de hipoglicemia.
 - Hiponatremia com convulsão/coma: salina 3% em bolus. O alvo inicial e melhorar sintoma/subir 4-6 mEq/L, não normalizar o sódio.
-- CAD/EHH: volume e potássio antes de insulina plena. TEME cobrou CAD como glicemia >250 + pH <7,3 + cetonemia positiva.
+- CAD adulta atual: diabetes conhecido ou glicemia >=200 + cetose significativa + acidose. Volume, potássio seguro e insulina; normalizar glicemia não encerra o tratamento da cetose.
 - IRA/rabdomiólise: trate causa, pare nefrotóxicos, monitore K/acidose/volume e lembre AEIOU para diálise.
 - Endócrino que mata: hipoglicemia, crise tireotóxica, coma mixedematoso e crise adrenal. Na dúvida de adrenal, hidrocortisona não espera laboratório.
 
@@ -44,6 +44,8 @@ Pontos de prova:
 - Gasometria venosa costuma servir para pH/HCO3 em muitos cenários, mas PaO2/hipoxemia exige gasometria arterial ou outra avaliação de oxigenação.
 - Lactato, BE, diurese e perfusão ajudam a acompanhar choque, mas não substituem exame clínico.
 
+**Compensação respiratória que vale decorar:** a cada 10 mmHg de aumento da PaCO2 acima de 40, HCO3 sobe aproximadamente 1 mEq/L na acidose respiratória aguda e 3,5-4 na crônica. A cada 10 mmHg de queda, HCO3 cai cerca de 2 na alcalose respiratória aguda e 4-5 na crônica. São estimativas: desvio sugere outro distúrbio, e pH normal não exclui combinação de alterações. PvCO2 não deve ser usada como PaCO2 nas fórmulas.
+
 ### 3. Acidose metabólica com anion gap aumentado
 
 Pense em ácido novo no sangue: lactato, cetonas, uremia, tóxicos.
@@ -63,14 +65,14 @@ Trate como emergência se:
 
 - ECG alterado, arritmia, PCR, fraqueza/paralisia.
 - K >=6,5 ou subida rápida.
-- IRA/DRC, rabdomiólise, lise tumoral, queimadura, esmagamento, uso de IECA/BRA/espironolactona ou acidose importante.
+- IRA/DRC, rabdomiólise, lise tumoral e medicamentos aumentam risco, mas não indicam cálcio isoladamente: avalie valor, tendência, sintomas e ECG.
 
 Sequência:
 
-1. **Estabilizar membrana:** cálcio EV se ECG/instabilidade/hiperK grave.
+1. **Estabilizar membrana:** cálcio EV se alterações no ECG/instabilidade; repetir conforme resposta. ECG normal não autoriza adiar o tratamento de K >=6,5.
 2. **Deslocar para dentro:** insulina regular + glicose; beta-2 agonista nebulizado; bicarbonato se acidose metabólica relevante.
-3. **Remover do corpo:** diurético se urina e volume permitem; diálise se grave/refratária/renal; resinas/quelantes não resolvem emergência.
-4. **Rechecar:** K e glicemia seriados; hipoglicemia pós-insulina é comum.
+3. **Remover do corpo:** diurético se urina e volume permitem; diálise se grave/refratária/renal. Ligantes novos, como ciclosilicato de zircônio, podem complementar o protocolo, nunca substituir medidas imediatas; poliestirenossulfonato não é resgate.
+4. **Rechecar:** K seriado e glicemia por pelo menos 6 h após insulina; há hipoglicemia tardia e rebote do K. Na UKKA, glicemia inicial <126 mg/dL indica SG 10% 50 mL/h por 5 h após o esquema inicial, com ajuste ao contexto.
 
 > **Pegada TEME:** ECG normal não exclui hiperK grave; ECG alterado com suspeita forte não deve esperar laboratório para cálcio.
 
@@ -81,6 +83,7 @@ Sequência:
 - Grave se <2,5, fraqueza/paralisia, arritmia, QT/U wave, uso de digoxina, IAM/IC.
 - Corrija Mg junto, porque hipomagnesemia impede corrigir K.
 - Evite glicose na infusão se hipoK importante: estimula insulina e piora K.
+- KCl deve ser diluído e infundido em bomba; nunca em bolus EV. Taxa, acesso, concentração e monitorização seguem protocolo.
 
 **Hipocalcemia:**
 
@@ -90,7 +93,7 @@ Sequência:
 **Hipercalcemia:**
 
 - Desidratação, constipação, confusão, coma, QT curto, malignidade/hiperPTH.
-- Tratamento inicial: SF 0,9% se tolera volume; calcitonina para efeito rápido; bisfosfonato para efeito sustentado; diálise se grave/refratária/DRC/instabilidade.
+- Tratamento inicial: cristaloide isotônico se tolera volume; na hipercalcemia maligna, bisfosfonato EV ou denosumabe conforme rim/contexto. Se grave (>14 mg/dL), associar calcitonina para efeito rápido, limitada a 48-72 h pela taquifilaxia; diálise se indicação clínica/refratariedade.
 - Furosemida não é primeira linha; use apenas se sobrecarga.
 
 **Magnésio:**
@@ -108,12 +111,14 @@ Sequência:
 4. Depois, corrigir devagar. Risco de mielinólise aumenta com álcoolismo, desnutrição, hepatopatia, hipocalemia e Na muito baixo.
 5. Hipovolêmica = cristaloide isotônico; euvolêmica/hipervolêmica = restrição hídrica e tratar causa, com exceções.
 
+**Depois do bolus:** dosar Na a cada 2-4 h durante correção ativa e acompanhar diurese. Alto risco de desmielinização: meta 4-6 mEq/L/dia, sem ultrapassar 8 em qualquer período de 24 h. Nos demais, limite europeu de 10 nas primeiras 24 h e 8 por dia depois. Reposição de K também eleva Na; diurese aquosa súbita pode provocar ultrapassagem. Se isso ocorrer, interromper a correção e discutir relowering com água livre/desmopressina e especialista, sem esperar sintomas neurológicos.
+
 **Hipernatremia:**
 
 1. Se choque/hipoperfusão: primeiro SF 0,9% ou Ringer, mesmo com Na alto.
 2. Depois, calcular déficit de água e repor água livre por VO/SNE ou SG 5%.
 3. Se crônica/desconhecida, reduzir em geral até 10-12 mEq/L/dia.
-4. Se aguda por carea de sódio, pode corrigir mais rápido com monitorização.
+4. Se aguda por carga de sódio, pode corrigir mais rápido com monitorização. O limite convencional da forma crônica não deve virar justificativa para deixar hipernatremia grave sem reposição/reavaliação.
 
 > **Resposta de prova/local:** aula de cursinho usa salina 3% 100 mL em 10 min na hiponatremia com convulsão refratária.
 >
@@ -121,41 +126,40 @@ Sequência:
 
 ### 7. CAD e EHH
 
-**CAD clássica de prova:**
+**CAD adulta: critérios atuais (consenso 2024), todos necessários:**
 
-- Glicemia >250 mg/dL.
-- pH <7,3 ou bicarbonato baixo.
-- Cetonemia positiva.
+- Diabetes conhecido ou glicemia >=200 mg/dL.
+- Beta-hidroxibutirato >=3 mmol/L; cetonúria >=2+ se medida sanguínea indisponível.
+- pH <7,3 ou HCO3 <18 mEq/L. Pode ser euglicêmica, especialmente com SGLT2, gestação ou jejum.
 
-**EHH clássico:**
+**EHH adulto: critérios atuais, todos necessários:**
 
-- Glicemia geralmente >600 mg/dL.
-- Osmolaridade efetiva alta, tipicamente >320 mOsm/kg nos materiais de prova.
-- Pouca ou nenhuma cetose; pH geralmente >=7,3.
-- Desidratação mais intensa e sintomas neurológicos comuns.
+- Glicemia >=600 mg/dL; osmolaridade efetiva >300 ou total >320 mOsm/kg.
+- Beta-hidroxibutirato <3 mmol/L (ou cetonúria <2+), pH >=7,3 e HCO3 >=15.
+- Cetose/acidose significativas indicam sobreposição CAD/EHH e tratamento como CAD.
 
 Conduta:
 
 1. ABCDE, monitor, 2 acessos, glicemia horaria, gaso, cetona, Na/K/Cl/HCO3/Mg/P, ureia/creatinina, ECG e gatilho.
-2. Cristaloide isotônico inicial. Em choque, ressuscitar primeiro.
+2. Cristaloide isotônico/balanceado inicial. Sem restrição cardíaca/renal, 500-1000 mL/h nas primeiras 2-4 h; idosos, IC e diálise precisam de volumes menores e reavaliação frequente. Em choque, ressuscitar primeiro.
 3. Potássio manda na insulina:
-   - K baixo: repor K e segurar insulina.
+   - K <3,5: repor K e segurar insulina até >3,5 no adulto.
    - K normal: iniciar insulina e repor K na solução.
    - K alto: iniciar insulina sem K inicial, monitorando de perto.
 4. Insulina regular EV depois de volume inicial e avaliação do K.
-5. Quando glicose cair, trocar para solução com dextrose e manter insulina até fechar cetose/AG.
+5. Na CAD, glicose <250: adicionar dextrose 5-10%, reduzir insulina conforme protocolo e mantê-la até resolver cetose/acidose. Não usar AG ou cetonúria como critério isolado de resolução.
 6. Tratar gatilho: infecção, IAM, AVC, pancreatite, omissão de insulina, gestação, drogas.
 
 > **Resposta de prova TEME22:** adolescente com suspeita de CAD, choque/infecção e glicemia 390: a alternativa correta foi hidratação com SF 0,9% + antibiótico na primeira hora, evitando bolus de insulina, bicarbonato e KCl às cegas.
 >
-> **Atualização clínica 2024:** o consenso internacional reduziu o limiar diagnóstico de hiperglicemia da CAD para >=200 mg/dL ou diabetes conhecido, quando há cetose significativa e acidose. Para TEME, memorize a tríade cobrada: >250 + pH <7,3 + cetonemia.
+> **Histórico não é regra atual:** >250 mg/dL aparece em questões antigas; não exclui CAD abaixo desse valor. No EHH, evitar queda de osmolaridade >8 mOsm/kg/h (meta 3-8), glicemia >90-120 mg/dL/h e Na >10 mEq/L/24 h. Use Na medido no cálculo da osmolaridade; sua subida inicial com queda da glicose não obriga trocar para solução hipotônica.
 
 ### 8. Hipoglicemia
 
-1. Se acordado e consegue eneolir: carboidrato VO e reavaliar em 15 min.
+1. Se acordado e consegue engolir: carboidrato VO e reavaliar em 15 min.
 2. Se rebaixado, convulsionando, NPO ou risco de aspiração: glicose EV.
 3. Sem acesso: glucagon IM/SC/IN se disponível, mas em álcoolismo/desnutrição/hepatopatia pode falhar por pouco glicogênio.
-4. Desnutrido/álcoolista/risco de Wernicke: tiamina 100 mg EV/IM junto, sem atrasar glicose se grave.
+4. Desnutrido/alcoolista: tiamina parenteral junto, sem atrasar glicose se grave. A dose de 100 mg é profilática; suspeita de encefalopatia de Wernicke exige esquema terapêutico de alta dose.
 5. Sempre procurar causa: insulina/sulfonilureia, sepse, insuficiência adrenal, renal/hepática, álcool, jejum, erro de dose.
 
 ### 9. IRA, DRC descompensada e diálise de urgência
@@ -187,7 +191,7 @@ Abordagem:
 
 - Suspeite em trauma/esmagamento, crise convulsiva prolongada, hipertermia, drogas, estatina, imobilização prolongada, choque elétrico, exercício extremo, infecção viral.
 - Exames: CPK, K, Ca, P, ácido úrico, creatinina, EAS/mioglobinúria, gaso se grave.
-- Tratamento principal: volume cristaloide precoce se não houver contraindicação, alvo de diurese 200-300 mL/h ou 2-3 mL/kg/h.
+- Tratamento principal: cristaloide guiado por resposta, alvo de diurese 1-3 mL/kg/h, até 300 mL/h. Não perseguir essa meta com litros sucessivos em oligúria/anúria ou congestão; reavaliar rim e necessidade de diálise.
 - Monitorar compartimental, hiperK, hipocalcemia inicial, hipercalcemia tardia, acidose e IRA.
 - Bicarbonato/manitol/alcalinização não são rotina universal; podem aparecer em protocolos de esmagamento selecionados.
 - Diálise não remove mioglobina por si só de forma preventiva: diálise por AEIOU.
@@ -199,7 +203,7 @@ Abordagem:
 **Crise tireotóxica:**
 
 - Diagnóstico clínico: febre, taquicardia/descompensação cardíaca, agitação/delirium, vômitos/diarreia, disfunção hepática e hipertireoidismo conhecido ou TSH suprimido/T4 alto.
-- Tratamento em blocos: suporte/UTI, tratar gatilho, beta-bloqueio se tolerado, tionamida, iodo depois da tionamida, corticoide, resfriamento e antitérmico sem AAS.
+- Tratamento em blocos: suporte/UTI, tratar gatilho, beta-bloqueio se tolerado, tionamida, iodo pelo menos 1 h depois da tionamida, corticoide, resfriamento e antitérmico sem AAS.
 - Se choque/IC grave, cuidado com propranolol; considerar beta-bloqueio curto/titulado e suporte intensivo.
 
 **Coma mixedematoso:**
@@ -265,11 +269,11 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[CAD/EHH suspeita] --> B[Volume inicial + exames + ECG + cetona + K]
-    B --> C{K <3,3-3,5?}
+    B --> C{K <3,5 no adulto?}
     C -->|Sim| D[Repor K e segurar insulina]
     C -->|Não| E[Iniciar insulina EV conforme protocolo]
-    E --> F{Glicose caiu para 200-250 CAD ou 250-300 EHH?}
-    F -->|Sim| G[Adicionar dextrose e manter insulina até fechar cetose/AG]
+    E --> F{Glicose <250 na CAD?}
+    F -->|Sim| G[Dextrose e insulina até resolver cetose e acidose]
     F -->|Não| H[Reavaliar queda 50-70 mg/dL/h, volume, bomba e gatilho]
     G --> I[Transicao SC com sobreposicao 1-2 h]
 ```
@@ -281,7 +285,7 @@ flowchart TD
     C -->|Sim| D[Desobstruir: SVD/urologia/nefro]
     C -->|Não| E[Parar nefrotóxicos, ajustar dose, tratar causa]
     E --> F{AEIOU?}
-    F -->|Sim| G[Nepro/UTI e terapia renal substitutiva]
+    F -->|Sim| G[Nefro/UTI e terapia renal substitutiva]
     F -->|Não| H[Monitor seriado: K, pH, volume, ureia, diurese]
 ```
 
@@ -300,31 +304,32 @@ flowchart TD
 | Osm efetiva | 2 x Na + glicose/18 | Ureia não conta para tonicidade efetiva |
 | Osm calculada total | 2 x Na + glicose/18 + BUN/2,8 | BUN = ureia/2,14 |
 | Osmolar gap | Osm medida - osm calculada | Alto sugere álcool tóxico, entre outros |
-| CAD prova | Glicose >250 + pH <7,3 + cetonemia | TEME22/23 |
-| EHH prova | Glicose >600 + osm >320 + pouca/sem cetose | Desidratação e SNC |
+| CAD adulta atual | Diabetes ou glicose >=200 + beta-OHB >=3 + pH <7,3 ou HCO3 <18 | Os três eixos são necessários |
+| EHH adulto atual | Glicose >=600; osm efetiva >300 ou total >320; sem cetose/acidose significativas | Ver critérios completos acima |
 | Queda glicêmica alvo CAD | 50-70 mg/dL/h | Aula de cursinho |
 | Insulina regular CAD adulto | 0,1 U/kg/h EV | Iniciar após volume e K adequado; muitos protocolos não usam bolus |
-| Segurar insulina | K <3,3-3,5 mEq/L | Repor K primeiro |
-| Bicarbonato na DKA | pH <6,9-7,0 | Não é rotina |
-| Resolução CAD | pH >7,3, HCO3 >=18, cetose/AG resolvendo | Cetonuria pode enganar |
+| Insulina EHH sem acidose significativa | 0,05 U/kg/h EV | Sobreposição CAD/EHH: 0,1 U/kg/h |
+| Segurar insulina no adulto | K <3,5 mEq/L | Repor até >3,5 primeiro |
+| Bicarbonato na CAD adulta | Considerar se pH <7,0 | Não é rotina; não extrapolar para criança |
+| Resolução CAD adulta | Beta-OHB <0,6 e (pH >=7,3 ou HCO3 >=18) | Idealmente glicose <200; não usar AG/cetonúria |
 | Glicose hipoglicemia adulto | 15-20 g VO se alerta; 25 g EV se grave | D50 50 mL ou D10 250 mL, conforme protocolo |
 | Tiamina | 100 mg EV/IM | Alcoolismo/desnutrição; não atrasar glicose grave |
 | Hidrocortisona crise adrenal | 100 mg EV/IM, depois 200 mg/24 h ou 50 mg 6/6 h | Não esperar cortisol se instável |
 | HiperK emergente | K >=6,5 ou ECG/sintomas | Cálcio primeiro se instável/ECG |
-| Gluconato de cálcio 10% | 10-30 mL EV | Repetir se ECG não melhora |
+| Gluconato de cálcio 10% na hiperK | UKKA: 30 mL EV em 10 min | Equivale em cálcio a 10 mL de cloreto 10%; acompanhar ECG |
 | Cloreto de cálcio 10% | 10 mL EV | Preferir acesso central/PCR |
 | Insulina hiperK | Regular 10 U EV + glicose 25 g | Monitorar hipoglicemia por 4-6 h |
 | Salbutamol hiperK | 10-20 mg nebulizado | Adjuvante, não substitui cálcio/insulina |
 | KCl IV | 10 mEq/h periférico; até 20 mEq/h monitorizado | Corrigir Mg junto |
 | NaCl 3% hiponatremia grave | 100 mL em 10 min ou 150 mL em 20 min | Bolus e reavaliação; alvo inicial +4-6 |
-| Limite correção Na crônica | 8-10 mEq/L em 24 h | Mais conservador se alto risco |
+| Limite Na, alto risco de desmielinização | <=8 mEq/L em qualquer 24 h | Meta 4-6; considerar também correção de K |
 | Hipernatremia crônica | Reduzir até 10-12 mEq/L/dia | Primeiro tratar choque com isotônico |
 | Hipocalcemia sintomática | Gluconato Ca 10% 10-20 mL EV | Convulsão, QT, tetania, instabilidade |
 | Hipermagnesemia instável | Cálcio EV | Depois volume/diurese/diálise |
 | Mg torsades | 1-2 g EV | Mesmo se Mg normal |
 | IRA KDIGO | Cr +0,3/48h; 1,5x/7d; diurese <0,5 mL/kg/h por 6h | Definição |
 | Rabdomiolise | CPK >1000 ou >5x LSN | Risco maior com >5000 |
-| Diurese alvo rabdo | 200-300 mL/h ou 2-3 mL/kg/h | Se tolera volume |
+| Diurese alvo rabdo | 1-3 mL/kg/h, até 300 mL/h | Não forçar volume em anúria/congestão |
 | Crise renal esclerodérmica | IECA/captopril | TEME22 Q63: captopril |
 | Tricíclico com QRS largo/choque | Bicarbonato 1-2 mEq/kg EV | Alvo QRS estreitar/pH 7,45-7,55 |
 | Crise tireotóxica | Tionamida + beta-bloq + corticoide + iodo depois | Tratar gatilho e evitar AAS |
@@ -332,7 +337,7 @@ flowchart TD
 
 ### Pontos de prova
 
-- **CAD:** definição = glicemia >250 mg/dL + pH <7,3/HCO3 baixo + cetonemia. Na conduta inicial, volume vem antes; insulina exige potássio seguro; bicarbonato só em exceção.
+- **CAD:** use critérios atuais acima; >250 pertence ao histórico de algumas questões. Volume, K seguro e tratamento do gatilho; glicose normalizada não significa cetose resolvida.
 - **Crise renal esclerodérmica:** hipertensão acelerada + IRA em esclerose sistêmica = IECA/captopril imediatamente. Corticoide alto é armadilha.
 - **Álcoois tóxicos:** etilenoglicol = anion gap alto + cristais de oxalato; metanol = visual; isopropanol = cetose sem acidose importante.
 - **Tricíclicos:** choque/rebaixamento + QRS largo ou ECG sugestivo = bicarbonato de sódio, suporte circulatório e via aérea planejada. Evite flumazenil.
@@ -341,7 +346,7 @@ flowchart TD
 
 ## Pegadinhas TEME
 
-- **CAD = glicemia >600:** falso. Isso é mais EHH. CAD de prova e >250 + pH <7,3 + cetonemia.
+- **CAD exige glicemia >250:** falso nos critérios atuais; pode ser euglicêmica. >600 sugere EHH, mas não exclui sobreposição.
 - **Insulina em bolus sempre primeiro na CAD:** falso. Primeiro volume e K; no caso TEME22, a melhor resposta imediata foi SF 0,9% + antibiótico.
 - **Bicarbonato em toda acidose metabólica:** falso. Trate causa; reserve para indicações específicas.
 - **K alto com ECG alterado: glicose-insulina primeiro:** incompleto. Cálcio estabiliza membrana e vem antes se ECG/instabilidade.
@@ -354,7 +359,7 @@ flowchart TD
 - **Rabdomiolise tem que alcalinizar urina/manitol:** falso como rotina.
 - **Crise tireotóxica espera TSH/T4 ou rastreio infeccioso:** falso. Diagnóstico é clínico; tratar cedo.
 - **Crise adrenal espera cortisol:** falso se instável.
-- **Cetonuria negativa encerra CAD:** falso. Beta-hidroxibutirato/cetose e AG importam mais.
+- **AG fechado ou cetonúria negativa encerra CAD:** falso. Use beta-hidroxibutirato e resolução da acidose; acidose hiperclorêmica pode persistir após resolver cetose.
 
 ## Erros fatais na prática
 
@@ -371,11 +376,13 @@ flowchart TD
 
 ## Para prova vs na prática
 
-> **Para prova TEME:** CAD = glicemia >250 + pH <7,3 + cetonemia; CAD com choque/infecção pede SF 0,9% e antibiótico antes de insulinizar às cegas; etilenoglicol = AG alto + oxalato; crise renal esclerodérmica = captopril/IECA; TCA instável = bicarbonato; hiperK emergente = cálcio.
+> **Para questões antigas TEME:** o corte >250 aparece no histórico, não como exclusão atual de CAD. CAD com choque/infecção exige perfusão e tratamento do gatilho; etilenoglicol = AG alto + oxalato; crise renal esclerodérmica = IECA; TCA instável = bicarbonato; hiperK com ECG/instabilidade = cálcio.
 >
 > **Na prática clínica:** CAD adulta atual pode ser diagnosticada com glicemia >=200 se houver diabetes/cetose/acidose; salina balanceada pode reduzir acidose hipercloremica; protocolos de sódio usam limites de correção mais conservadores em alto risco; beta-bloqueio na tireotoxicose deve ser individualizado se choque/IC.
 
 ## Referências
+
+Revisão editorial: 04/10/2026. Atualizações selecionadas abaixo; respostas históricas não substituem critérios atuais.
 
 **Prova/TEME**
 
@@ -389,16 +396,23 @@ flowchart TD
 - Aulas de cursinho: Aula 33 - Gasometria.
 - Aulas de cursinho: Aula 42 - Distúrbios hidroeletrolíticos e ácido-básicos.
 - Aulas de cursinho: Aula 59 - Emergências endocrinológicas.
-- Resumo do cursinho.docx.
-- Adendos para complementar.docx.
+- Material local: `Emergency Talks/Resumo do Emergency.docx`.
+- Material local: `Emergency Talks/Adendos para complementar.docx`.
 
 **Atualização clínica**
 
-- ADA/EASD/JBDS/AACE/DTS. Hyperelycemic Crises in Adults With Diabetes: A Consensus Report, 2024. https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A
-- UK Kidney Association. Clinical Practice Guideline: Treatment of Acute Hyperkalaemia in Adults, 2023. https://guidelines.ukkidney.org/hyperkalaemia/
-- European Society of Endocrinology/ERA-EDTA/ESICM. Clinical Practice Guideline on Diagnosis and Treatment of Hyponatraemia. https://academic.oup.com/ejendo/article/170/3/G1/6668025
-- KDIGO. Clinical Practice Guideline for Acute Kidney Injury. https://kdigo.org/guidelines/acute-kidney-injury/
-- AAST Critical Care Committee. Rhabdomyolysis: Clinical Consensus Document, 2022. https://tsaco.bmj.com/content/7/1/e000836
-- Society for Endocrinology. Emergency Guidance: Adrenal Crisis. https://www.endocrinology.org/clinical-practice/clinical-guidance/adrenal-crisis/
-- American Thyroid Association. Hyperthyroidism and Other Causes of Thyrotoxicosis Guidelines, 2016. https://www.liebertpub.com/doi/10.1089/thy.2016.0229
-- American Thyroid Association. Guidelines for the Treatment of Hypothyroidism, 2014. https://www.liebertpub.com/doi/10.1089/thy.2014.0028
+- [ADA/EASD/JBDS/AACE/DTS. Hyperglycemic Crises in Adults With Diabetes: A Consensus Report, 2024.](https://diabetesjournals.org/care/article/47/8/1257/156808/Hyperglycemic-Crises-in-Adults-With-Diabetes-A)
+- [UK Kidney Association. Clinical Practice Guideline: Treatment of Acute Hyperkalaemia in Adults, 2023.](https://guidelines.ukkidney.org/hyperkalaemia/)
+- [European Society of Endocrinology/ERA-EDTA/ESICM. Clinical Practice Guideline on Diagnosis and Treatment of Hyponatraemia.](https://academic.oup.com/ejendo/article/170/3/G1/6668025)
+- [KDIGO. Clinical Practice Guideline for Acute Kidney Injury, 2012; atualização 2026 ainda identificada como rascunho para revisão pública.](https://kdigo.org/guidelines/acute-kidney-injury/)
+- [AAST Critical Care Committee. Rhabdomyolysis: Clinical Consensus Document, 2022.](https://tsaco.bmj.com/content/7/1/e000836)
+- [Society for Endocrinology. Emergency Guidance: Adrenal Crisis.](https://www.endocrinology.org/clinical-practice/clinical-guidance/adrenal-crisis/)
+- [American Thyroid Association. Hyperthyroidism and Other Causes of Thyrotoxicosis Guidelines, 2016.](https://www.liebertpub.com/doi/10.1089/thy.2016.0229)
+- [American Thyroid Association. Guidelines for the Treatment of Hypothyroidism, 2014.](https://www.liebertpub.com/doi/10.1089/thy.2014.0028)
+
+**Fontes da revisão de outubro de 2026**
+
+- [Endocrine Society. Hipercalcemia maligna, 2022/2023.](https://support.endocrine.org/clinical-practice-guidelines/hypercalcemia)
+- [JBDS. Manejo de CAD adulta, 2023.](https://www.diabetes.org.uk/sites/default/files/2023-03/JBDS%2002%20DKA%20Guideline%20with%20qr%20code.pdf)
+
+- Livros locais: Medicina de Emergência HCFMUSP, 18ª edição, e Tratado ABRAMEDE, 1ª edição; consulta dirigida aos capítulos relacionados, não leitura integral nesta revisão.

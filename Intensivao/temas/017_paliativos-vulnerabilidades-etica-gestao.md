@@ -4,7 +4,7 @@
 
 - Cuidado paliativo não é "não fazer nada": é tratar sofrimento, alinhar metas, evitar distanásia e manter cuidado proporcional.
 - Código de não reanimar, limitação de suporte e terminalidade precisam de decisão clínica, comunicação, registro e plano de cuidado. Não são ordem para abandonar o paciente.
-- Paciente capaz pode recusar tratamento eletivo após informação adequada; em urgência com risco relevante/morte, o médico pode intervir se não há consentimento válido disponível.
+- Avaliar capacidade, vontade válida e alternativas. Urgência não apaga automaticamente recusa informada ou DAV aplicável; incapacidade sem vontade conhecida pode justificar tratamento emergencial pelo melhor interesse.
 - Diretivas antecipadas de vontade devem ser consideradas se conhecidas e aplicáveis, desde que não contrariem o Código de Ética.
 - Sedação paliativa exige sintoma refratário, proporcionalidade, intenção de aliviar sofrimento, consentimento/representante quando possível e registro.
 - Violência sexual: acolher, tratar antes de burocracia, não exigir boletim de ocorrência, oferecer PEP HIV até 72 h por 28 dias, contracepção, profilaxias, coleta quando possível e notificação obrigatória.
@@ -48,7 +48,7 @@ Frase útil:
 **Delirium/agitação**
 
 - Procure gatilhos proporcionais: dor, retenção urinária, constipação, hipóxia, infecção, abstinência, medicação.
-- Haloperidol é comum; benzodiazepínico se abstinência, ansiedade extrema ou sedação paliativa.
+- Medidas ambientais, família e causas reversíveis vêm primeiro. Antipsicótico pode ser tentado se delirium/agitação provoca sofrimento ou risco, não como tratamento automático de toda confusão. Considerar QT, Parkinson/Lewy e efeitos adversos; benzodiazepínico pode piorar delirium, salvo indicação específica ou sedação proporcional de sintoma refratário.
 
 **Secreção terminal**
 
@@ -64,6 +64,8 @@ Indicar apenas quando:
 - Objetivo e aliviar sofrimento, não apressar morte.
 - Há consentimento do paciente ou representante quando possível.
 - A equipe documenta indicação, fármacos, proporcionalidade e reavaliação.
+
+EAPC 2024 reforça profundidade proporcional ao sofrimento e reavaliação; sedação não substitui analgesia. Decisões sobre hidratação/nutrição são separadas, não suspensas automaticamente ao sedar. Registrar qual sintoma é refratário e quais medidas foram tentadas, de preferência com equipe paliativa.
 
 Sintomas comuns: dispneia refratária, delirium/agitação refratária, dor intratável, sangramento/sofrimento extremo.
 
@@ -87,12 +89,13 @@ Se capaz:
 Se incapaz:
 
 - Procurar representante/família/diretiva.
-- Em risco de morte/urgência, tratar pelo melhor interesse.
+- Em risco imediato sem vontade válida conhecida, tratar pelo melhor interesse enquanto busca informações. Inconsciência atual não invalida automaticamente uma DAV aplicável.
 
 Recusa terapêutica:
 
-- É direito em tratamentos eletivos quando paciente é maior, capaz, lúcido, orientado e consciente.
-- Pode ser rejeitada em abuso de direito, risco a terceiros, doença transmissivel relevante ou urgência/emergência com risco relevante.
+- Exige capacidade para aquela decisão, informação, voluntariedade e registro; estar orientado sozinho não prova capacidade.
+- **STF, Temas 952 e 1.069 (2024):** adulto capaz pode recusar transfusão por motivo religioso por decisão livre, inequívoca e esclarecida, inclusive por DAV. Não repetir a regra antiga "risco de morte sempre autoriza transfundir contra a vontade". Oferecer alternativas tecnicamente viáveis e acionar ética/jurídico se houver dúvida, sem abandono.
+- Essa recusa não se estende aos filhos menores. Proteção de criança/incapaz, risco a terceiros e medidas sanitárias exigem análise própria; não transformar exceções em autorização genérica para qualquer intervenção.
 
 ### 5. Diretivas, ortotanásia e morte encefálica
 
@@ -129,7 +132,7 @@ Violência sexual:
 6. Contracepção de emergência conforme tempo e gestação excluída/risco.
 7. Hepatite B: vacina e imunoglobulina conforme status.
 8. Profilaxia de IST conforme protocolo.
-9. Notificação compulsória imediata/autoridade de saúde; criança/adolescente/idoso exige rede de proteção.
+9. Notificação sanitária de violência sexual em até 24 h. Distinguir da comunicação policial: Lei 13.931/2019 determina comunicar indícios/confirmação de violência contra mulher à polícia em até 24 h. Crianças/adolescentes, idosos e outros vulneráveis têm deveres específicos de proteção; explicar limites do sigilo, preservar dados e seguir fluxo institucional.
 10. Seguimento psicossocial, infectologia/gineco/serviço especializado.
 
 Outras vulnerabilidades:
@@ -137,7 +140,7 @@ Outras vulnerabilidades:
 - Criança/adolescente, idoso, pessoa com deficiência, rua, migrante, população LGBTQIA+, violência doméstica, tráfico humano, custódia policial.
 - Use acompanhante/intérprete quando ajuda, mas entreviste sozinho se houver suspeita de coerção.
 - Preservar sigilo, dignidade e nome social.
-- Notificação não é denuncia policial automática em todos os casos; conheça fluxo local.
+- Notificação ao SINAN, comunicação legal à autoridade e BO feito pela vítima são atos diferentes. Nenhum pode ser usado como requisito para atender/profilaxias.
 
 ### 7. Risco suicida e crise psiquiátrica
 
@@ -182,7 +185,7 @@ flowchart TD
     A[Paciente grave com doença avançada] --> B[Tratar sintomas e estabilizar o que é proporcional]
     B --> C{Tem capacidade agora?}
     C -->|Sim| D[Explicar opções, riscos e valores; registrar decisão]
-    C -->|Não| E[Buscar DAV, representante é melhor interesse]
+    C -->|Não| E[Buscar DAV, representante e melhor interesse]
     D --> F{Intervenção proporcional a meta?}
     E --> F
     F -->|Sim| G[Oferecer tratamento e reavaliar]
@@ -224,7 +227,7 @@ flowchart TD
 | Haloperidol delirium/náusea | 0,5-2 mg VO/SC/EV | Cuidado QT/parkinsonismo |
 | Midazolam agitação/sedação | 1-2 mg EV/SC titulados; infusão conforme protocolo | Sedação paliativa exige critério |
 | Butilbrometo/hioscina secreção | 20 mg SC/EV 4/4-6/6 h | Alternativas variam por serviço |
-| PEP HIV | Iniciar até 72 h | Dura 28 dias |
+| PEP HIV adulto, esquema preferencial MS | TDF 300 mg + 3TC 300 mg + DTG 50 mg VO/dia | Até 72 h, por 28 dias; ajustar contraindicações/interações |
 | Contracepção de emergência | Quanto antes; levonorgestrel até 5 dias | Melhor eficácia precoce |
 | HBIG hepatite B | 0,06 mL/kg IM | Se indicada por status vacinal/fonte |
 | Morte encefálica | 2 exames clínicos + teste apneia + exame complementar | Médicos capacitados e sem equipe transplante |
@@ -244,8 +247,8 @@ flowchart TD
 - **Paliativo = não tratar:** falso. Trata sofrimento e condutas proporcionais.
 - **DNR = não fazer analgesia/antibiótico/O2:** falso. DNR fala de RCP, não de abandono.
 - **Sedação paliativa = eutanásia:** falso se sintoma refratário, proporcionalidade e intenção de conforto.
-- **Paciente capaz nunca pode recusar tratamento:** falso em tratamento eletivo informado.
-- **Recusa em urgência com risco de morte sempre paralisa o médico:** falso; depende de capacidade, contexto e risco.
+- **Paciente capaz só pode recusar em tratamento eletivo:** generalização incorreta; observar jurisprudência atual, sobretudo recusa informada de transfusão.
+- **Risco de morte apaga DAV/recusa válida:** falso como regra geral. Avaliar aplicabilidade e capacidade; oferecer alternativas e não abandonar.
 - **DAV e pedido para qualquer conduta:** falso. Não obriga conduta antiética ou sem indicação.
 - **Violência sexual exige BO para atender:** falso.
 - **PEP pode esperar consulta ambulatorial:** falso se dentro de 72 h.
@@ -278,6 +281,8 @@ flowchart TD
 
 ## Referências
 
+Revisão editorial: 04/10/2026. Atualizações selecionadas abaixo; respostas históricas não substituem critérios atuais.
+
 **Prova/TEME**
 
 - Conteúdo programático TEME26.
@@ -290,21 +295,30 @@ flowchart TD
 - Aulas de cursinho: Aula 07 - Princípios do APH.
 - Aulas de cursinho: Aula 11 - Incidentes com múltiplas vítimas.
 - Aulas de cursinho: Aulas obstétricas/ginecológicas e infectológicas relacionadas a vulnerabilidades.
-- Resumo do cursinho.docx.
-- Adendos para complementar.docx.
+- Material local: `Emergency Talks/Resumo do Emergency.docx`.
+- Material local: `Emergency Talks/Adendos para complementar.docx`.
 
 **Atualização clínica, normativa e legal**
 
-- Ministério da Saúde. Manual de Cuidados Paliativos, 2ª edição, 2023. https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2023/manual-de-cuidados-paliativos-2a-edicao/view
-- WHO. Palliative care fact sheet. https://www.who.int/news-room/fact-sheets/detail/palliative-care
-- NICE NG31. Care of dying adults in the last days of life. https://www.nice.org.uk/guidance/ng31
-- EAPC. Framework for palliative sedation. https://bmcpalliatcare.biomedcentral.com/articles/10.1186/1472-684X-9-20
-- CFM. Resolução 1.805/2006, ortotanásia. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805
-- CFM. Resolução 1.995/2012, diretivas antecipadas de vontade. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995
-- CFM. Resolução 2.173/2017, morte encefálica. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2017/2173
-- CFM. Resolução 2.232/2019, recusa terapêutica. https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2019/2232_2019.pdf
-- CFM. Resolução 2.077/2014, serviços hospitalares de urgência e emergência. https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2014/2077
-- Ministério da Saúde. Violência sexual: etapas do atendimento e notificação. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/violencia-sexual
-- Ministério da Saúde/CONITEC. PCDT PEP HIV, IST e hepatites virais, 2024/2025. https://www.gov.br/conitec/pt-br/midias/protocolos/PCDTPEP.pdf/view
-- Ministério da Saúde. Prevenção do suicídio. https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio-prevencao/suicidio-prevencao
-- Ministério da Saúde. Linha de cuidado ansiedade/crise em emergência e notificação de violência autoprovocada. https://linhasdecuidado.saude.gov.br/portal/ansiedade/unidade-de-pronto-atendimento/avaliacao-conduta/
+- [Ministério da Saúde. Manual de Cuidados Paliativos, 2ª edição, 2023.](https://www.gov.br/saude/pt-br/centrais-de-conteudo/publicacoes/guias-e-manuais/2023/manual-de-cuidados-paliativos-2a-edicao/view)
+- [WHO. Palliative care fact sheet.](https://www.who.int/news-room/fact-sheets/detail/palliative-care)
+- [NICE NG31. Care of dying adults in the last days of life.](https://www.nice.org.uk/guidance/ng31)
+- [EAPC. Framework for palliative sedation.](https://bmcpalliatcare.biomedcentral.com/articles/10.1186/1472-684X-9-20)
+- [CFM. Resolução 1.805/2006, ortotanásia.](https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2006/1805)
+- [CFM. Resolução 1.995/2012, diretivas antecipadas de vontade.](https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2012/1995)
+- [CFM. Resolução 2.173/2017, morte encefálica.](https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2017/2173)
+- [CFM. Resolução 2.232/2019, recusa terapêutica.](https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2019/2232_2019.pdf)
+- [CFM. Resolução 2.077/2014, serviços hospitalares de urgência e emergência.](https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2014/2077)
+- [Ministério da Saúde. Violência sexual: etapas do atendimento e notificação.](https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/violencia-sexual)
+- [Ministério da Saúde/CONITEC. PCDT PEP HIV, IST e hepatites virais, 2024/2025.](https://www.gov.br/conitec/pt-br/midias/protocolos/PCDTPEP.pdf/view)
+- [Ministério da Saúde. Prevenção do suicídio.](https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio-prevencao/suicidio-prevencao)
+- [Ministério da Saúde. Linha de cuidado ansiedade/crise em emergência e notificação de violência autoprovocada.](https://linhasdecuidado.saude.gov.br/portal/ansiedade/unidade-de-pronto-atendimento/avaliacao-conduta/)
+
+**Fontes da revisão de outubro de 2026**
+
+- [STF. Temas 952 e 1.069: recusa informada de transfusão, 2024.](https://noticias.stf.jus.br/postsnoticias/testemunhas-de-jeova-tem-direito-de-recusar-procedimento-que-envolva-transfusao-de-sangue-decide-stf/)
+- [Presidência da República. Lei 13.931/2019: comunicação de violência contra mulher.](https://planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13931.htm)
+- [EAPC. Framework revisado de sedação paliativa, 2024.](https://doi.org/10.1177/02692163231220225)
+- [Ministério da Saúde. Política Nacional de Cuidados Paliativos, Portaria 3.681/2024.](https://bvsms.saude.gov.br/bvs/saudelegis/gm/2024/prt3681_22_05_2024.html)
+
+- Livros locais: Medicina de Emergência HCFMUSP, 18ª edição, e Tratado ABRAMEDE, 1ª edição; consulta dirigida aos capítulos relacionados, não leitura integral nesta revisão.

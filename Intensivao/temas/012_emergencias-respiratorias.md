@@ -84,7 +84,7 @@ Sinais de falência iminente:
 
 Tratamento inicial:
 
-1. O2 para alvo 94-98%.
+1. O2 titulado: na asma de adultos/adolescentes, GINA 2026 recomenda alvo 93-95%, não 100%. Não deixar hipoxemia sem tratamento enquanto prepara suporte.
 2. Salbutamol repetido ou contínuo conforme gravidade.
 3. Ipratrópio nas crises moderadas/graves na primeira hora.
 4. Corticoide sistêmico precoce.
@@ -103,7 +103,7 @@ Pós-IOT na asma:
 - Sedação profunda; ketamina e boa opção se broncoespasmo/choque.
 - Procurar auto-PEEP se hipotensão pós-IOT.
 
-> **Atualização clínica:** GINA 2025 reforca que SABA isolado não deve ser plano de alta. Depois de controlar a crise, revisar corticoide inalatorio/formoterol ou controlador com ICS, técnica inalatória e plano escrito.
+> **Atualização clínica:** GINA 2026 mantém tratamento contendo corticoide inalatório; SABA isolado não é plano de alta. Revisar controlador, técnica, adesão, plano escrito e retorno precoce. PaCO2 normal em crise exaustiva pode indicar falência, não melhora.
 
 ### 5. DPOC exacerbado
 
@@ -156,19 +156,20 @@ Tratamento:
 
 > **Resposta de prova TEME22:** paciente pós-trauma torácico com febre, choque, base opacificada e derrame/hipotransparência = infecção pulmonar com sepse/choque séptico; expansão volêmica e antibiótico imediato.
 >
-> **Na prática clínica:** corticoide na PAC grave mudou bastante. ATS/IDSA 2019 não recomendava rotina salvo choque refratário; estudos recentes apoiam hidrocortisona em PAC grave selecionada. Para prova, use corticoide quando houver indicação explícita: choque refratário, DPOC/asma associada, COVID ou protocolo local de PAC grave.
+> **Atualização ATS 2025:** recomenda não usar corticoide na PAC não grave e sugere seu uso na PAC grave hospitalizada; essa recomendação exclui pneumonia grave por influenza. Não depende exclusivamente de choque refratário. Avaliar contraindicações, etiologia e protocolo; o esquema de hidrocortisona varia. A atualização é da ATS, não deve ser rotulada como consenso ATS/IDSA 2025.
 
 ### 7. Derrame pleural, empiema e pneumotórax
 
 **Derrame pleural:**
 
-- Punir se: derrame novo sem causa clara, febre/sepsis, suspeita de empiema, alívio sintomático, neoplasia/TB, unilateral importante.
+- Puncionar se: derrame novo sem causa clara, febre/sepse, suspeita de empiema, alívio sintomático, neoplasia/TB, unilateral importante. Usar ultrassom para escolher local seguro.
 - Light: exsudato se proteína pleural/soro >0,5, LDH pleural/soro >0,6 ou LDH pleural >2/3 do limite superior sérico.
 
 **Parapneumonico/empiema:**
 
 - Pus, Gram/cultura positiva, loculacao, pH baixo ou glicose baixa indicam drenagem.
 - Atualização BTS 2023: pH pleural <=7,2 = alto risco e deve drenar se houver colecao acessível.
+- pH entre >7,2 e <7,4 é zona intermediária: integrar LDH, glicose, febre persistente, volume e septações. pH isolado não substitui contexto; pus já indica drenagem, sem precisar aguardar pH.
 
 **Pneumotórax:**
 
@@ -177,13 +178,17 @@ Tratamento:
 
 ### 8. Tromboembolismo pulmonar
 
-**estável:**
+**Estável:**
 
 1. Probabilidade clínica: Wells/Geneva ou gestalt estruturada.
 2. Baixa probabilidade: PERC pode excluir sem exames se todos negativos.
 3. Baixa/intermediária: D-dímero; considerar corte ajustado por idade/probabilidade.
 4. Alta probabilidade: angioTC, e anticoagulação enquanto aguarda se baixo risco de sangramento.
 5. Estratificar risco: PESI/sPESI, VD no eco/CT, troponina/BNP.
+
+**Probabilidade antes do exame:** PERC só em risco clínico baixo, não em qualquer paciente com Wells baixo. D-dímero ajustado por idade (>50 anos): idade x 10 ng/mL FEU; conferir unidade/ensaio. Gestação requer estratégia validada própria. TEP com disfunção de VD e biomarcador positivo, mesmo normotenso, precisa vigilância: não é indicação automática de trombólise.
+
+**AHA/ACC 2026:** categorias A (assintomático), B (sintomático com baixo escore), C (maior gravidade clínica, com possível VD/biomarcadores), D (falência cardiopulmonar incipiente) e E (falência com hipotensão persistente). C-E exigem internação; D-E podem necessitar terapia avançada decidida por equipe especializada. Alta A/B depende também de anticoagulação segura, apoio e seguimento.
 
 **instável/alto risco:**
 
@@ -195,7 +200,7 @@ Tratamento:
 
 > **Resposta de prova TEME22:** pós-operatório com dor torácica, dispneia, hipotensão e suspeita de TEP não é "alteplase automática" se há alto risco de sangramento e ainda sem confirmação; a banca aceitou suporte inicial com pequeno bolus de Ringer 500 mL.
 >
-> **Na PCR por TEP:** considerar trombólise durante RCP quando suspeita forte, especialmente com VD dilatado no eco. O material local usa alteplase 50 mg em bolus e reanimação prolongada.
+> **Na PCR por TEP:** considerar trombólise se forte suspeita, integrando história e contexto; VD dilatado durante RCP não confirma TEP sozinho. O esquema de 50 mg em bolus pertence a protocolos locais, não a uma dose universal da AHA. Não repetir automaticamente após RCE; ponderar dose total, sangramento e protocolo especializado.
 
 ### 9. SDRA
 
@@ -206,6 +211,8 @@ Definição prática:
 - PEEP/CPAP >=5 cmH2O.
 - P/F: leve 200-300, moderada 100-200, grave <=100.
 
+Essa é a classificação de Berlim, frequente em prova. A definição global de 2023 também contempla SDRA não intubada em CNAF >=30 L/min e avaliação por S/F em condições específicas; não descartar síndrome só porque ainda não há PEEP invasiva.
+
 Conduta:
 
 1. Tratar causa: pneumonia, sepse, pancreatite, trauma, aspiração, transfusão, COVID etc.
@@ -214,6 +221,8 @@ Conduta:
 4. Se P/F <150 apesar de ajuste: prona precoce por sessões longas.
 5. Considerar bloqueio neuromuscular em SDRA grave com assincronia/hipoxemia; ECMO em centro experto para refratários.
 6. Estratégia de fluidos mais conservadora após choque resolvido.
+
+ATS 2024 também sugere corticoide sistêmico na SDRA, sem estabelecer esquema único, e PEEP mais alta sem manobras prolongadas de recrutamento em moderada/grave. Driving <=15 é referência fisiológica, não substitui avaliação de pressão de platô, complacência e hemodinâmica.
 
 > **Resposta de prova TEME:** paciente intubado, FiO2 100%, PaO2 81, P/F 81 = SDRA grave; conduta de prova é posição prona, não oxido nitrico/ECMO antes do básico.
 
@@ -227,7 +236,7 @@ Conduta:
 | Linhas B difusas bilaterais | Síndrome intersticial/congestão | Pneumonia/SDRA também podem dar B, olhe distribuição |
 | Linhas B focais | Lesão focal | Pneumonia, contusão, atelectasia |
 | Consolidação + broncograma | Pneumonia/atelectasia | Broncograma dinâmico favorece pneumonia |
-| Derrame anecoico | Líquido pleural | Use US para punir com segurança |
+| Derrame anecoico | Líquido pleural | Use US para puncionar com segurança |
 | VD dilatado | TEP/cor pulmonale/hipertensão pulmonar | Não diagnostica TEP isoladamente |
 
 > **Resposta de prova TEME22:** POCUS pulmonar avalia pleura e artefatos ar-tecido. Perfil A' com lung point = pneumotórax, não TEP.
@@ -279,7 +288,7 @@ flowchart TD
 flowchart TD
     A[DPOC exacerbado] --> B[O2 alvo 88-92 + SABA/SAMA + corticoide]
     B --> C[Gaso arterial/venosa]
-    C --> D{pH <7,35 e PaCO2 alta com desconforto?}
+    C --> D{pH <7,35 e hipercapnia arterial com desconforto?}
     D -->|Sim, cooperativo| E[VNI BiPAP + reavaliar 30-60 min]
     E --> F{Melhora pH/FR/consciência?}
     F -->|Sim| G[Manter VNI, tratar gatilho, desmame gradual]
@@ -318,6 +327,7 @@ flowchart TD
 | Item | Número | observação TEME |
 |---|---:|---|
 | SpO2 alvo maioria aguda | 94-98% | Titular O2, evitar hiperoxia prolongada |
+| SpO2 asma adulto/adolescente | 93-95% | GINA 2026; não confundir com alvo genérico |
 | SpO2 alvo risco hipercapnia | 88-92% | DPOC grave, obesidade-hipoventilação, neuromuscular |
 | PaO2 hipoxemia | <60 mmHg | IR hipoxêmica clássica |
 | PaCO2 hipercapnia | >45 mmHg | Interpretar com pH e HCO3 |
@@ -334,7 +344,7 @@ flowchart TD
 | Derrame parapneumonico | pH <=7,2 | Drenar se colecao acessível |
 | Light exsudato | Prot P/S >0,5; LDH P/S >0,6; LDH P >2/3 LSN | Qualquer um = exsudato |
 | TEP alto risco | Choque/hipotensão/PCR | reperfusão se sem contra |
-| Alteplase TEP | 100 mg em 2 h | PCR: material local usa 50 mg bolus, repetir se RCE |
+| Alteplase TEP sem PCR | 100 mg em 2 h, conforme indicação/protocolo | PCR usa esquema próprio; não repetir por RCE automaticamente |
 | Anticoagulação TEP instável | Heparina não fracionada | Fácil suspender se procedimento/trombólise |
 | Bolus no TEP com VD ruim | 250-500 mL se necessário | Evitar excesso de volume |
 | P/F SDRA leve | 200-300 | Com PEEP/CPAP >=5 |
@@ -360,7 +370,7 @@ flowchart TD
 ## Pegadinhas TEME
 
 - **DPOC hipóxico precisa MNR até 100%:** falso. Oxigênio controlado, alvo 88-92%, e gaso.
-- **PaO2/FiO2 pode ser calculada com qualquer O2 sem saber FiO2:** cuidado. Para prova, gaso arterial em ar ambiente define gravidade de hipoxemia.
+- **Retirar O2 para medir hipoxemia:** perigoso no instável. Calcular P/F com FiO2 conhecida/estimativa explicitada; não desoxigenar o paciente para obter exame em ar ambiente.
 - **VNI serve para todo rebaixado:** falso. Rebaixamento/aspiração/choque grave pedem IOT.
 - **Asma mais calma sempre melhorou:** falso. Pode ser fadiga e falência.
 - **Silêncio auscultatório na asma é bom sinal:** falso.
@@ -388,11 +398,15 @@ flowchart TD
 
 ## Para prova vs na prática
 
-> **Para prova TEME:** Venturi no DPOC; alvo 88-92% em hipoventilação/retentor; gaso arterial em ar ambiente para gravidade da hipoxemia; DPOC hipercápnico acordado = VNI; PAC hospitalar = beta-lactâmico + macrolídeo; P/F <150 = prona; POCUS pulmonar = pleura + artefatos ar-tecido.
+> **Para prova TEME:** Venturi no DPOC; alvo 88-92% se risco de hipercapnia; gasometria arterial avalia oxigenação, sem retirar O2 necessário; DPOC acidótico cooperativo = VNI; PAC hospitalar = beta-lactâmico + macrolídeo; SDRA com P/F <150 = considerar prona; POCUS pulmonar = pleura + artefatos.
 >
 > **Na prática clínica:** O2 alto e correto no paciente criticamente hipóxico enquanto você estabiliza; depois titule. TEP alto risco exige decisão por risco de sangramento e recurso local. Corticoide em PAC grave selecionada está mais aceito em diretrizes e estudos recentes, mas não é automático para toda pneumonia.
 
 ## Referências
+
+- [Nova definição global de SDRA, publicada em 2023/2024: inclui suporte de alto fluxo e critérios próprios.](https://doi.org/10.1164/rccm.202303-0558WS)
+
+Revisão editorial: 04/10/2026. Atualizações selecionadas abaixo; respostas históricas não substituem critérios atuais.
 
 **Prova/TEME**
 
@@ -407,17 +421,25 @@ flowchart TD
 - Aulas de cursinho: Aula 28 - Insuficiência respiratória aguda.
 - Aulas de cursinho: Aula 31 - Obstrução das vias aéreas inferiores.
 - Aulas de cursinho: Aulas 25 e 26 - Ventilação Mecânica I e II.
-- Resumo do cursinho.docx.
-- Adendos para complementar.docx.
+- Material local: `Emergency Talks/Resumo do Emergency.docx`.
+- Material local: `Emergency Talks/Adendos para complementar.docx`.
 
 **Atualização clínica**
 
-- British Thoracic Society. Guideline for oxygen use in adults in healthcare and emergency settings. https://bmjopenrespres.bmj.com/content/4/1/e000170
-- Global Initiative for Asthma. 2025 GINA Strategy Report. https://ginasthma.org/2025-gina-strategy-report/
-- Global Initiative for Chronic Obstructive Lung Disease. GOLD Report 2026. https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf
-- ATS/IDSA. Diagnosis and Treatment of Adults with Community-acquired Pneumonia, 2019. https://www.atsjournals.org/doi/10.1164/rccm.201908-1581ST
-- IDSA. CAP Clinical Pathway. https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf
-- ESC/ERS. 2019 Guidelines for diagnosis and management of acute pulmonary embolism. https://academic.oup.com/eurheartj/article/41/4/543/5556136
-- CHEST. Antithrombotic Therapy for VTE Disease, 2021 update. https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext
-- American Thoracic Society. Update on Management of Adult Patients with ARDS, 2024. https://www.atsjournals.org/doi/10.1164/rccm.202311-2011ST
-- British Thoracic Society. Guideline for pleural disease, 2023. https://thorax.bmj.com/content/78/Suppl_3/s1
+- [British Thoracic Society. Guideline for oxygen use in adults in healthcare and emergency settings.](https://bmjopenrespres.bmj.com/content/4/1/e000170)
+- [Global Initiative for Asthma. 2025 GINA Strategy Report.](https://ginasthma.org/2025-gina-strategy-report/)
+- [Global Initiative for Chronic Obstructive Lung Disease. GOLD Report 2026.](https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf)
+- [ATS/IDSA. Diagnosis and Treatment of Adults with Community-acquired Pneumonia, 2019.](https://www.atsjournals.org/doi/10.1164/rccm.201908-1581ST)
+- [IDSA. CAP Clinical Pathway.](https://www.idsociety.org/globalassets/idsa/practice-guidelines/community-acquired-pneumonia-in-adults/cap-clinical-pathway-final-online.pdf)
+- [ESC/ERS. 2019 Guidelines for diagnosis and management of acute pulmonary embolism.](https://academic.oup.com/eurheartj/article/41/4/543/5556136)
+- [CHEST. Antithrombotic Therapy for VTE Disease, 2021 update.](https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext)
+- [American Thoracic Society. Update on Management of Adult Patients with ARDS, 2024.](https://www.atsjournals.org/doi/10.1164/rccm.202311-2011ST)
+- [British Thoracic Society. Guideline for pleural disease, 2023.](https://thorax.bmj.com/content/78/Suppl_3/s1)
+
+**Fontes da revisão de outubro de 2026**
+
+- [GINA. Strategy Report 2026: crise, oxigênio e controlador.](https://ginasthma.org/wp-content/uploads/2026/05/GINA-2026-Strategy-Report-WMS.pdf)
+- [ATS. Diretriz de PAC, 2025; síntese para clínicos, 2026.](https://academic.oup.com/annalsats/article/23/7/1001/8554088)
+- [AHA/ACC e sociedades parceiras. TEP agudo, 2026.](https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005)
+
+- Livros locais: Medicina de Emergência HCFMUSP, 18ª edição, e Tratado ABRAMEDE, 1ª edição; consulta dirigida aos capítulos relacionados, não leitura integral nesta revisão.

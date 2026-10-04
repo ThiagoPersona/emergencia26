@@ -9,7 +9,7 @@
 - Compressão medular metastática: dor lombar nova em câncer + fraqueza/sensitivo/esfincter = dexametasona, RM urgente e radio/neurocirurgia.
 - Falciforme com dor torácica, febre, hipoxemia ou infiltrado novo = síndrome torácica aguda: O2, antibiótico, analgesia e considerar transfusão.
 - Reação transfusional: pare a transfusão, mantenha SF 0,9%, confira identificacao, avise banco de sangue e trate o fenótipo: TRALI, TACO, anafilaxia ou hemólise.
-- Sangramento em anticoagulado: reverta rápido se ICH/vida-ameaça. Varfarina = 4F-PCC + vitamina K; dabigatrana = idarucizumabe; Xa = andexanet se disponível ou PCC conforme protocolo.
+- Sangramento em anticoagulado: reversão urgente se HIC/ameaça à vida. Varfarina = 4F-PCC + vitamina K; dabigatrana = idarucizumabe; inibidores Xa = estratégia atual do serviço, frequentemente 4F-PCC. Andexanet não deve ser apresentado como opção universalmente disponível/segura.
 
 ## Por que cai
 
@@ -40,9 +40,11 @@ Conduta:
 1. Reconheceu? Isolamento/proteção, ABCDE e sepse.
 2. Coletar culturas periféricas e de cateter se presentes, mas não atrasar antibiótico.
 3. Antibiótico EV antipseudomonas em até 60 min: cefepime, piperacilina-tazobactam ou meropenem/imipenem conforme risco local.
-4. Adicionar vancomicina apenas se houver indicação: choque/instabilidade, pneumonia, pele/partes moles, cateter, mucosite grave, MRSA conhecido ou Gram+ em cultura.
+4. Adicionar vancomicina apenas por indicação: choque/instabilidade, pneumonia, pele/partes moles, suspeita de infecção de cateter, MRSA conhecido ou Gram+ em cultura. Mucosite isolada não obriga vancomicina com cefepime/pip-tazo/carbapenêmico; a indicação clássica depende do esquema e da profilaxia prévia.
 5. Alto risco = internar: choque, comorbidade, pneumonia, dor abdominal, mucosite intensa, ANC muito baixo/prolongado, disfunção renal/hepática, leucemia/transplante, MASCC <21, CISNE >=3.
 6. Baixo risco selecionado pode ir ambulatorial depois de dose inicial, observação e garantia de retorno: fluoroquinolona + amoxicilina/clavulanato e seguimento próximo, conforme protocolo.
+
+MASCC/CISNE não autorizam alta sozinhos; CISNE é para tumor sólido aparentemente estável, não choque/leucemia. ASCO/IDSA recomenda observar pelo menos 4 h antes de alta selecionada; não usar fluoroquinolona ambulatorial se já recebeu profilaxia com essa classe. Dor abdominal/diarreia em neutropênico: pensar enterocolite neutropênica, pedir TC e cobrir anaeróbios; evitar toque retal/colonoscopia de rotina.
 
 > **Resposta de prova TEME:** neutropênico febril não espera resultado de cultura, PCR/procalcitonina ou imagem para começar antibiótico.
 
@@ -66,7 +68,7 @@ Conduta:
 1. Monitor cardíaco e ECG: hiperK mata primeiro.
 2. Cálcio EV se ECG/instabilidade por hiperK/hipocalcemia sintomática; depois insulina/glicose, beta2, bicarbonato se acidose relevante.
 3. Hidratação EV com cristaloide se não congesto; alvo de diurese, sem alcalinização rotineira da urina.
-4. Rasburicase se alto risco ou lise estabelecida com hiperuricemia/IRA. Checar G6PD quando possível, mas não atrasar se risco extremo e protocolo permite.
+4. Rasburicase se indicada por risco/hiperuricemia. É contraindicada em deficiência de G6PD; rastrear pacientes de risco antes de administrar. Não contornar contraindicação pela gravidade: discutir alternativa e diálise com hematologia/nefrologia. Após rasburicase, coleta de ácido úrico exige tubo refrigerado/transporte em gelo conforme laboratório, evitando resultado falsamente baixo.
 5. Allopurinol e profilaxia/intermediario: impede úrico novo, não remove úrico já formado.
 6. Dosar K, P, Ca, úrico, creatinina, LDH seriados; considerar UTI.
 7. Diálise se hiperK, hipocalcemia/hiperfosfatemia sintomática, sobrecarga, uremia ou acidose refratárias.
@@ -93,6 +95,7 @@ Conduta:
 - Sangramento + DIC + blastos/pancitopenia: suspeitou, heme agora.
 - ATRA deve ser iniciado precocemente quando suspeita forte, sem esperar confirmação completa, conforme hematologia.
 - Suporte agressivo de coagulopatia: plaquetas, fibrinogênio/crio e plasma conforme sangramento/metas.
+- Leucaferese não é rotina para toda hiperleucocitose e deve ser evitada na APL pela coagulopatia. Não atrasar tratamento definitivo por ela.
 
 ### 5. Compressão medular e veia cava superior
 
@@ -107,7 +110,7 @@ Suspeite se câncer conhecido ou red flags:
 Conduta:
 
 1. Dexametasona se déficit neurológico/suspeita alta, salvo contraindicação forte.
-2. RM de coluna total urgente.
+2. RM de coluna total urgente, até 24 h na suspeita de compressão medular, mais cedo conforme deterioração. Dexametasona 16 mg/dia é o esquema NICE na presença de sinais neurológicos; altas doses empíricas aumentam toxicidade.
 3. Analgesia, imobilização se instabilidade/risco, sondagem se retenção.
 4. Radio-oncologia e neurocirurgia: radioterapia, cirurgia ou ambos conforme histologia, estabilidade e déficit.
 
@@ -144,7 +147,7 @@ Conduta:
 - Transfusão simples se queda de Hb importante, hipoxemia, multilobar ou piora; não elevar Hb acima de 10-11.
 - Exsanguineotransfusão se grave: hipoxemia importante, falência respiratória, multilobar, deterioração, AVC ou Hb alta que impede transfusão simples.
 
-> **Resposta de prova TEME25:** criança HbSS com febre, dor torácica, infiltrado e Hb caiu de 8,2 para 6,5: ceftriaxona + azitromicina + O2 alvo >=94% e considerar transfusão pela queda >=2 g/dL.
+> **Resposta de prova TEME25:** criança HbSS com febre, infiltrado, hipoxemia e queda de Hb de 8,2 para 6,5 precisa tratamento de STA e avaliação transfusional. A queda é 1,7 g/dL, não >=2; decisão não deve depender desse corte isolado.
 
 ### 7. Reação transfusional
 
@@ -176,16 +179,17 @@ Reversão de anticoagulante em sangramento grave/ICH:
 |---|---|
 | Varfarina | 4F-PCC + vitamina K 10 mg EV |
 | Dabigatrana | Idarucizumabe 5 g EV |
-| Rivaroxabana/apixabana/edoxabana | Andexanet alfa se disponível/indicado; 4F-PCC conforme protocolo |
+| Rivaroxabana/apixabana/edoxabana | 4F-PCC conforme protocolo; avaliar exposição e função renal. Não generalizar indicação de andexanet para todas essas drogas |
 | Heparina não fracionada | Protamina |
 | HBPM | Protamina parcial, principalmente se dose recente |
 | AAS/P2Y12 em ICH | Neuro/hemo; plaqueta não é automática para todo caso |
 
-Plaquetas:
+Plaquetas: contexto e procedimento importam; não há corte único para toda punção.
 
 - <10.000: profilaxia em paciente estável sem sangramento.
-- <20.000: febre/sepsis/mucosite ou fatores de risco.
-- <50.000: sangramento ativo, procedimento invasivo, cirurgia maior.
+- Febre/sepse/mucosite: individualizar profilaxia; <20.000 é referência tradicional de risco, não obrigação universal.
+- AABB/ICTMG 2025: punção lombar <20.000; CVC em sítio compressível <10.000; cirurgia maior não neuroaxial <50.000. Avaliar coagulopatia, técnica e protocolo.
+- Sangramento importante: meta frequentemente >=50.000, conforme sítio e causa. Dengue sem sangramento maior não recebe plaquetas por contagem baixa isolada.
 - <100.000: neurocirurgia/olho posterior ou SNC, conforme protocolo.
 - TTP/HIT: evite plaquetas salvo sangramento ameaçador.
 
@@ -201,6 +205,7 @@ TTP:
 - PLASMIC ajuda, mas não espere ADAMTS13 se suspeita alta.
 - Plasma exchange urgente + corticoide; caplacizumabe/rituximabe conforme heme.
 - Não transfundir plaquetas de rotina.
+- Colher ADAMTS13 antes de plasma/plasmaférese se possível, sem atrasar tratamento. Diferenciar HIT: queda >50% e trombose após heparina exige 4Ts, suspensão de todas as heparinas e anticoagulante não heparínico quando indicado, não só "esperar plaqueta subir".
 
 ITP com sangramento grave:
 
@@ -243,7 +248,7 @@ flowchart TD
     A[Neutropenia febril] --> B[Sepse bundle + culturas periféricas/cateter]
     B --> C[Antipseudomonas EV: cefepime ou pip-tazo ou meropenem]
     C --> D{Indica vancomicina?}
-    D -->|Choque, pneumonia, pele/cateter, MRSA, mucosite grave| E[Adicionar vancomicina]
+    D -->|Choque, pneumonia, pele/cateter, MRSA ou cultura indicada| E[Adicionar vancomicina]
     D -->|Não| F[Sem vancomicina inicial]
     E --> G{Baixo risco real?}
     F --> G
@@ -300,12 +305,13 @@ flowchart TD
 | Transfusão ACS | Considerar se Hb cai >=2 g/dL ou hipoxemia/piora | Evitar Hb >10-11 |
 | Hb transfusão estável | <7 g/dL em geral | AABB; individualizar oncológico/cardíaco |
 | Plaqueta profilaxia | <10.000/mm3 | Se estável sem sangramento |
-| Plaqueta febre/sepsis | <20.000/mm3 | Regra prática |
-| Plaqueta sangramento/procedimento | >50.000/mm3 alvo | CNS/neuro geralmente >100.000 |
+| Plaqueta febre/sepse | <20.000/mm3: referência tradicional | Individualizar risco; não é indicação universal |
+| Plaqueta sangramento importante/cirurgia maior | >=50.000/mm3, conforme contexto | Não é corte universal de procedimentos |
+| Plaqueta punção lombar / CVC compressível | Transfundir se <20.000 / <10.000 | AABB/ICTMG 2025; avaliar riscos adicionais |
 | Fibrinogênio sangramento | >150-200 mg/dL | Crio/concentrado conforme recurso |
 | Varfarina ICH/grave | 4F-PCC + vitamina K 10 mg EV | PCC mais rápido que PFC |
 | Dabigatrana | Idarucizumabe 5 g EV | 2 doses de 2,5 g |
-| Xa inhibitors | Andexanet ou 4F-PCC 50 U/kg | Conforme disponibilidade/protocolo |
+| Inibidores Xa, sangramento ameaçador | 4F-PCC, usual 25-50 U/kg conforme protocolo | Avaliar trombose e dose máxima do produto |
 | Heparina UFH | Protamina 1 mg/100 U heparina recente | Max usual 50 mg, depende tempo |
 | TTP | Plasma exchange urgente | Não esperar ADAMTS13 se suspeita alta |
 | ITP grave sangrando | Corticoide + IVIG + plaqueta se vida-ameaça | Plaqueta isolada dura pouco |
@@ -367,6 +373,10 @@ flowchart TD
 
 ## Referências
 
+Revisão editorial: 04/10/2026. Atualizações selecionadas abaixo; respostas históricas não substituem critérios atuais.
+
+**Alerta regulatório conferido em 04/10/2026:** a FDA comunicou risco tromboembólico e encerramento das vendas de Andexxa nos EUA em 22/12/2025. Isso não estabelece por si só o status regulatório brasileiro; consultar ANVISA, disponibilidade e protocolo, sem reproduzir indicação antiga automaticamente.
+
 **Prova/TEME**
 
 - Conteúdo programático TEME26.
@@ -380,20 +390,29 @@ flowchart TD
 - Aulas de cursinho: Aula 20 - Pneumonia e doença pleural.
 - Aulas de cursinho: Aula 33 - Gasometria.
 - Aulas de cursinho: Aula 42 - Distúrbios hidroeletrolíticos e ácido-básicos.
-- Resumo do cursinho.docx.
-- Adendos para complementar.docx.
+- Material local: `Emergency Talks/Resumo do Emergency.docx`.
+- Material local: `Emergency Talks/Adendos para complementar.docx`.
 
 **Atualização clínica**
 
-- ASCO/IDSA. Outpatient Management of Fever and Neutropenia in Adults Treated for Malignancy, 2018. https://www.idsociety.org/practice-guideline/fever-and-neutropenia-in-adults-with-cancer/
-- NCCN. Prevention and Treatment of Câncer-Related Infections, Version 3.2024. https://pubmed.ncbi.nlm.nih.gov/39536464/
-- MD Anderson. Tumor Lysis Syndrome in Adult Patients, 2025 algorithm. https://www.mdanderson.org/content/dam/mdanderson/documents/for-physicians/algorithms/clinical-management/clin-management-tumor-lysis-web-algorithm.pdf
-- NCI PDQ. Superior Vena Cava Syndrome. https://www.cancer.gov/about-cancer/treatment/side-effects/cardiopulmonary-hp-pdq
-- NICE NG234. Spinal metástases and metastatic spinal cord compression, 2023. https://www.nice.org.uk/guidance/ng234
-- ASH. Sickle Cell Disease: Transfusion Support Guidelines, 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC6988392/
-- NHLBI. Evidence-Based Management of Sickle Cell Disease Expert Panel Report. https://www.nhlbi.nih.gov/health-topics/evidence-based-management-sickle-cell-disease
-- AABB. Red Blood Cell Transfusion: 2023 International Guidelines. https://www.aabb.org/news-resources/press-releases/detail/2023/10/12/new-red-blood-cell-transfusion-guidelines-recommend-an-individualized-approach
-- AABB. Quick Reference Guide for NHSN Hemovigilance Module: Adverse Reaction Definitions. https://www.aabb.org/docs/default-source/default-document-library/resources/aabb-quick-reference-guide-nhsn-hemovigilance-module.pdf
-- AHA/ASA. 2022 Guideline for Management of Spontaneous Intracerebral Hemorrhage. https://www.ahajournals.org/doi/10.1161/STR.0000000000000407
-- ISTH. Guidelines for Diagnosis and Treatment of Thrombotic Thrombocytopenic púrpura. https://www.isth.org/TTPGuidelines
-- ASH. Immune Thrombocytopenia Guidelines, 2019. https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/immune-thrombocytopenia-guidelines
+- [ASCO/IDSA. Outpatient Management of Fever and Neutropenia in Adults Treated for Malignancy, 2018.](https://www.idsociety.org/practice-guideline/fever-and-neutropenia-in-adults-with-cancer/)
+- [NCCN. Prevention and Treatment of Câncer-Related Infections, Version 3.2024.](https://pubmed.ncbi.nlm.nih.gov/39536464/)
+- [MD Anderson. Tumor Lysis Syndrome in Adult Patients, Algoritmo institucional (ver data da versão disponível).](https://www.mdanderson.org/content/dam/mdanderson/documents/for-physicians/algorithms/clinical-management/clin-management-tumor-lysis-web-algorithm.pdf)
+- [NCI PDQ. Superior Vena Cava Syndrome.](https://www.cancer.gov/about-cancer/treatment/side-effects/cardiopulmonary-hp-pdq)
+- [NICE NG234. Spinal metástases and metastatic spinal cord compression, 2023.](https://www.nice.org.uk/guidance/ng234)
+- [ASH. Sickle Cell Disease: Transfusion Support Guidelines, 2020.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6988392/)
+- [NHLBI. Evidence-Based Management of Sickle Cell Disease Expert Panel Report.](https://www.nhlbi.nih.gov/health-topics/evidence-based-management-sickle-cell-disease)
+- [AABB. Red Blood Cell Transfusion: 2023 International Guidelines.](https://www.aabb.org/news-resources/press-releases/detail/2023/10/12/new-red-blood-cell-transfusion-guidelines-recommend-an-individualized-approach)
+- [AABB. Quick Reference Guide for NHSN Hemovigilance Module: Adverse Reaction Definitions.](https://www.aabb.org/docs/default-source/default-document-library/resources/aabb-quick-reference-guide-nhsn-hemovigilance-module.pdf)
+- [AHA/ASA. 2022 Guideline for Management of Spontaneous Intracerebral Hemorrhage.](https://www.ahajournals.org/doi/10.1161/STR.0000000000000407)
+- [ISTH. Guidelines for Diagnosis and Treatment of Thrombotic Thrombocytopenic púrpura.](https://www.isth.org/TTPGuidelines)
+- [ASH. Immune Thrombocytopenia Guidelines, 2019.](https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/immune-thrombocytopenia-guidelines)
+
+**Fontes da revisão de outubro de 2026**
+
+- [AABB/ICTMG. Novas recomendações de plaquetas, 2025.](https://www.aabb.org/news-resources/news/article/2025/05/29/aabb-develops-new-platelet-transfusion-guidelines)
+- [FDA. Segurança e encerramento de vendas de Andexxa nos EUA, dezembro de 2025.](https://www.fda.gov/safety/medical-product-safety-information/update-safety-andexxa-astrazeneca-fda-safety-communication)
+- [Bula de rasburicase: contraindicação G6PD e processamento de amostras.](https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=0ae10bc4-6b65-402f-9db5-2d7753054922)
+- [European LeukemiaNet. APL: recomendações atualizadas, 2019.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6509567/)
+
+- Livros locais: Medicina de Emergência HCFMUSP, 18ª edição, e Tratado ABRAMEDE, 1ª edição; consulta dirigida aos capítulos relacionados, não leitura integral nesta revisão.

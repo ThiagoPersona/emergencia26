@@ -6,7 +6,7 @@
 - Analgesia não atrapalha diagnóstico. Dor tratada deixa o exame melhor; não espere cirurgião para aliviar sofrimento.
 - Cirrótico no pronto-socorro tem infecção e sangramento até prova em contrário: paracentese se ascite, antibiótico se HDA varicosa, lactulose se encefalopatia e cuidado com rim.
 - HDA: estabilize, acesso, tipagem/prova cruzada, transfusão restritiva, PPI se não varicosa provável; se cirrose/variz, vasoativo + ceftriaxona + EDA precoce.
-- Pancreatite: 2 de 3 critérios, analgesia, cristaloide balanceado moderado, alimentar cedo quando tolera; CPRE urgente só se colangite ou obstrução biliar persistente.
+- Pancreatite: 2 de 3 critérios, analgesia, cristaloide balanceado moderado e alimentação precoce quando tolerada. Colangite exige CPRE urgente; obstrução persistente sem colangite exige avaliação para intervenção, não CPRE emergencial automática.
 - Biliar: colecistite = cirurgia precoce; colangite = antibiótico + drenagem biliar/CPRE, principalmente se grave.
 - Isquemia mesentérica, perfuração, AAA roto e obstrução estrangulada são diagnósticos de tempo: TC/angioTC e cirurgia/intervenção cedo.
 - Ureterolitíase infectada e torção testicular são "abdome" que você não pode perder: obstrução + infecção = desobstruir; testículo torcido = urologia agora.
@@ -89,6 +89,8 @@ Conduta de variz:
 - Lactulose se encefalopatia, mas sem atrasar controle de sangramento.
 - Evite excesso de volume/transfusão: aumenta pressão portal e ressangramento.
 
+**Estratificar e não normalizar exames às cegas:** Glasgow-Blatchford 0-1 pode permitir manejo ambulatorial de HDA selecionada com seguimento. Na cirrose, INR não mede sozinho risco hemorrágico: plasma para normalizar INR não é rotina. Sangramento varicoso de alto risco (Child C 10-13 ou Child B >7 com sangramento ativo à EDA) merece avaliar TIPS preemptivo em até 72 h, idealmente <24 h. Balão/stent esofágico é ponte de resgate, com via aérea protegida e equipe especializada.
+
 > **Pegada TEME:** em HDA varicosa, antibiótico não é "para quando tiver febre"; e profilaxia/tratamento preventivo de infecção e PBE.
 
 ### 4. Cirrose descompensada: ascite, PBE, encefalopatia e rim
@@ -101,6 +103,7 @@ PBE:
 - Tratamento clássico: ceftriaxona ou cefotaxima.
 - Albumina reduz risco renal/mortalidade em PBE de maior risco: 1,5 g/kg no dia 1 e 1 g/kg no dia 3.
 - Não espere cultura se o paciente está grave.
+- Cultura da ascite deve ser inoculada à beira-leito em frascos de hemocultura. Cefalosporina é opção comunitária; infecção hospitalar, choque e colonização resistente exigem cobertura guiada pela epidemiologia. Falha de melhora, flora polimicrobiana ou sinais cirúrgicos sugerem peritonite secundária, não apenas ampliar tratamento de PBE.
 
 Encefalopatia hepática:
 
@@ -119,7 +122,7 @@ Rim no cirrótico:
 - Pare diuréticos/nefrotóxicos se IRA/hipovolemia.
 - Trate infecção e sangramento.
 - Albumina quando indicado.
-- Suspeite síndrome hepatorrenal após excluir hipovolemia, choque, nefrotóxicos e lesão renal estrutural.
+- Suspeite SHR-AKI em cirrose com ascite e IRA sem melhora após ressuscitação adequada quando indicada, sem causa alternativa predominante. ADQI/ICA 2024 não exige albumina por 48 h para diagnosticar: em euvolemia/congestão isso pode causar dano. Pode coexistir com lesão tubular/DRC. Diagnóstico estabelecido pede vasoconstritor + albumina ajustada à volemia, com vigilância respiratória e hepatologia/UTI.
 
 ### 5. Pancreatite aguda
 
@@ -138,7 +141,9 @@ Conduta inicial:
 5. Alimentação oral/enteral precoce quando tolera; não precisa "zerar dieta" por dias.
 6. Antibiótico não é rotina em pancreatite estéril.
 7. TC precoce não é obrigatória se diagnóstico claro e evolução boa; considerar se dúvida, grave, falha de melhora ou complicação.
-8. CPRE urgente se colangite ou obstrução biliar persistente.
+8. Colangite associada: CPRE precoce, em geral até 24 h. Suspeita de cálculo sem colangite: colangio-RM/ecoendoscopia quando necessário; obstrução persistente exige avaliação para intervenção, não CPRE emergente automática para toda pancreatite biliar.
+
+Na pancreatite biliar leve, realizar colecistectomia na mesma internação, antes da alta. Necrose infectada estável costuma admitir estratégia escalonada e intervenção adiada até amadurecer coleção; sepse não controlada exige reavaliação precoce. Alimentação oral de baixo teor de gordura em 24-48 h, quando tolerada, não depende de normalizar lipase.
 
 Gravidade:
 
@@ -170,7 +175,7 @@ Colangite grave:
 - Migração da dor para FID, anorexia, náusea/vômito, febre baixa, dor localizada, peritonismo.
 - US pode ser primeiro em criança/gestante; TC com contraste em adulto se dúvida.
 - Antibiótico não deve ser postergado em paciente com suspeita relevante/perfuração/sepse.
-- Cirurgia é resposta clássica, especialmente complicada. Tratamento não operatório pode ser opção selecionada, mas não é "sem risco".
+- Cirurgia é resposta clássica, especialmente complicada. WSES edição 2025 (publicada em 2026) aceita antibiótico em não complicada selecionada após imagem e decisão compartilhada sobre falha/recorrência; apendicolito aumenta risco de falha. Não aplicar essa opção a peritonite difusa/instabilidade nem usar para postergar controle de foco.
 
 **Gestante/mulher em idade fértil**
 
@@ -214,6 +219,7 @@ Colangite grave:
 - Dor desproporcional, FA, aterosclerose, baixo fluxo/choque, diarreia/sangue, lactato/acidose tardios.
 - AngioTC é exame-chave. Lactato normal não exclui.
 - Antibiótico, heparina se arterioembólica/trombose sem contra, cirurgia/intervenção vascular cedo.
+- AngioTC deve ser realizada sem demora mesmo com IRA quando a suspeita é relevante: o risco de perder intestino supera o risco do contraste. Na trombose venosa mesentérica sem peritonite, anticoagulação costuma ser o tratamento inicial; peritonite exige avaliar necrose/cirurgia.
 
 **AAA roto**
 
@@ -256,6 +262,8 @@ C. difficile:
 - Inicial não fulminante: fidaxomicina preferida nas diretrizes atuais; vancomicina VO alternativa muito usada.
 - Fulminante: hipotensão/choque, íleo ou megacólon = vancomicina VO/NG em dose alta + metronidazol EV; considerar vancomicina retal se íleo e cirurgia precoce se deteriora.
 - Evitar loperamida em colite grave/tóxica.
+
+**Diarreia com sangue não significa antibiótico automático:** suspeita de STEC (dor intensa, sangue, pouca febre, exposição alimentar) exige pesquisa de toxina Shiga; antibiótico e antimotilidade podem aumentar risco de síndrome hemolítico-urêmica. Em C. difficile, NAAT positivo pode representar colonização: interpretar com diarreia clínica e algoritmo do laboratório, não tratar teste isolado.
 
 ## Conceitos que sustentam a conduta
 
@@ -320,9 +328,9 @@ flowchart TD
 flowchart TD
     A[Dor HCD/epigástrio + febre/icterícia/lipase] --> B{Lipase >=3x e dor típica?}
     B -->|Sim| C[Pancreatite: analgesia + RL moderado + US biliar]
-    C --> D{Colangite ou obstrução persistente?}
+    C --> D{Colangite?}
     D -->|Sim| E[CPRE urgente]
-    D -->|Não| F[Suporte, alimentar cedo, cirurgia biliar quando indicado]
+    D -->|Não| F[Suporte e alimentação precoce; avaliar obstrução persistente e cirurgia biliar]
     B -->|Não| G{Febre + icterícia + dor HCD?}
     G -->|Sim| H[Colangite: ATB + drenagem/CPRE]
     G -->|Não| I{Murphy/febre/leuco/US?}
@@ -347,11 +355,11 @@ flowchart TD
 | Rifaximina | 550 mg VO 12/12 h | Recorrente/parcial, conforme recurso |
 | Pancreatite diagnóstico | 2 de 3 critérios | Dor, enzima >=3x, imagem |
 | Pancreatite TC | 48-72 h se dúvida/falha/grave | TC precoce pode subestimar necrose |
-| CPRE pancreatite biliar | Urgente se colangite/obstrução persistente | Não é rotina em toda pancreatite biliar |
+| CPRE pancreatite biliar com colangite | Em geral até 24 h | Obstrução sem colangite: avaliar contexto; não é emergência automática |
 | Colecistite | Colecistectomia precoce | Se candidato cirúrgico |
 | Colangite grave | Drenagem biliar urgente | Antibiótico sozinho pode falhar |
 | Diverticulite abscesso | Drenagem se grande, usual >=4-5 cm | Depende de recurso/local |
-| START urológico infecção + obstrução | Desobstrução urgente | Duplo J ou nefrostomia |
+| Obstrução urinária infectada | Desobstrução urgente | Duplo J ou nefrostomia |
 | Torção testicular | Ideal <6 h | US não deve atrasar se clínica forte |
 | C. difficile inicial | Fidaxomicina 200 mg 12/12 h 10 d ou vanco VO 125 mg 6/6 h 10 d | Diretriz atual prefere fidaxomicina |
 | C. difficile fulminante | Vanco VO/NG 500 mg 6/6 h + metronidazol EV 500 mg 8/8 h | Considerar vanco retal se íleo |
@@ -411,6 +419,8 @@ flowchart TD
 
 ## Referências
 
+Revisão editorial: 04/10/2026. Atualizações selecionadas abaixo; respostas históricas não substituem critérios atuais.
+
 **Prova/TEME**
 
 - Conteúdo programático TEME26.
@@ -424,20 +434,28 @@ flowchart TD
 - Aulas de cursinho: Aula 17 - Trauma abdominopelvico.
 - Aulas de cursinho: Aula 24 - Emergências urológicas.
 - Aulas de cursinho: Aula 32 - Hemorragia digestiva alta e hepatopatia crônica.
-- Resumo do cursinho.docx.
-- Adendos para complementar.docx.
+- Material local: `Emergency Talks/Resumo do Emergency.docx`.
+- Material local: `Emergency Talks/Adendos para complementar.docx`.
 
 **Atualização clínica**
 
-- ACG. Upper Gastrointestinal and Ulcer Bleeding Guideline, 2021. https://pubmed.ncbi.nlm.nih.gov/33929377/
-- Baveno VII. Renewine consensus in portal hypertension, 2022. https://pubmed.ncbi.nlm.nih.gov/35120736/
-- AASLD. Diagnosis, Management, and Prevention of Ascites, SBP, and Hepatorenal Syndrome, 2021. https://journals.lww.com/hep/fulltext/2021/08000/diagnosis,_management,_and_prevention_of.33.aspx
-- ACG. Management of Acute Pancreatitis Guideline, 2024. https://pubmed.ncbi.nlm.nih.gov/38268429/
-- Tokyo Guidelines 2018. Acute cholaneitis and acute cholecystitis management. https://pubmed.ncbi.nlm.nih.gov/29045062/
-- WSES. Diagnosis and treatment of acute appendicitis, 2020 update. https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00306-3
-- WSES. Acute colonic diverticulitis emergency setting guidelines, 2020 update. https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00313-4
-- WSES. Acute mesenteric ischemia updated guidelines, 2022. https://wjes.biomedcentral.com/articles/10.1186/s13017-022-00443-x
-- WSES. Perforated and bleeding peptic ulcer guidelines, 2020. https://wjes.biomedcentral.com/articles/10.1186/s13017-019-0283-9
-- IDSA/SHEA. Clostridioides difficile infection focused update, 2021. https://academic.oup.com/cid/article/73/5/e1029/6298219
-- EAU. Urolithiasis Guidelines. https://uroweb.org/guidelines/urolithiasis
-- ESVS. Abdominal Aorto-Iliac Artery Aneurysms Guidelines, 2024. https://academic.oup.com/ejves/article/67/2/192/7474300
+- [ACG. Upper Gastrointestinal and Ulcer Bleeding Guideline, 2021.](https://pubmed.ncbi.nlm.nih.gov/33929377/)
+- [Baveno VII. Renewing consensus in portal hypertension, 2022.](https://pubmed.ncbi.nlm.nih.gov/35120736/)
+- [AASLD. Diagnosis, Management, and Prevention of Ascites, SBP, and Hepatorenal Syndrome, 2021.](https://journals.lww.com/hep/fulltext/2021/08000/diagnosis,_management,_and_prevention_of.33.aspx)
+- [ACG. Management of Acute Pancreatitis Guideline, 2024.](https://pubmed.ncbi.nlm.nih.gov/38268429/)
+- [Tokyo Guidelines 2018. Acute cholangitis and acute cholecystitis management.](https://pubmed.ncbi.nlm.nih.gov/29045062/)
+- [WSES. Diagnosis and treatment of acute appendicitis, 2020 update.](https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00306-3)
+- [WSES. Acute colonic diverticulitis emergency setting guidelines, 2020 update.](https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00313-4)
+- [WSES. Acute mesenteric ischemia updated guidelines, 2022.](https://wjes.biomedcentral.com/articles/10.1186/s13017-022-00443-x)
+- [WSES. Perforated and bleeding peptic ulcer guidelines, 2020.](https://wjes.biomedcentral.com/articles/10.1186/s13017-019-0283-9)
+- [IDSA/SHEA. Clostridioides difficile infection focused update, 2021.](https://academic.oup.com/cid/article/73/5/e1029/6298219)
+- [EAU. Urolithiasis Guidelines.](https://uroweb.org/guidelines/urolithiasis)
+- [ESVS. Abdominal Aorto-Iliac Artery Aneurysms Guidelines, 2024.](https://academic.oup.com/ejves/article/67/2/192/7474300)
+
+**Fontes da revisão de outubro de 2026**
+
+- [ADQI/ICA. IRA e SHR no cirrótico, consenso 2024.](https://doi.org/10.1016/j.jhep.2024.03.031)
+- [WSES. Apendicite: edição 2025, publicada em 2026.](https://doi.org/10.1001/jamasurg.2025.6218)
+- [IDSA. Diarreia infecciosa e STEC, 2017.](https://www.idsociety.org/practice-guideline/infectious-diarrhea/)
+
+- Livros locais: Medicina de Emergência HCFMUSP, 18ª edição, e Tratado ABRAMEDE, 1ª edição; consulta dirigida aos capítulos relacionados, não leitura integral nesta revisão.

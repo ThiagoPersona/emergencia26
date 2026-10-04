@@ -22,11 +22,14 @@
 4. Red flags: baixa acuidade, dor forte, náusea/vômito, halos, pupila média fixa, córnea turva, hifema, perfuração, úlcera em usuário de lente.
 5. Analgesia/antiemético/proteção ocular e oftalmo cedo quando ameaça visual.
 
+**Queimadura química em sequência:** começar irrigação abundante com solução disponível, inclusive água limpa se necessário, sem aguardar história/exame completo. Retirar lentes e partículas de fórnices, com anestesia tópica para facilitar o procedimento. Buscar pH fisiológico, aproximadamente 7,0-7,2, e confirmar que permanece adequado após interromper/reavaliar. Não neutralizar ácido com base nem vice-versa; volume fixo não garante descontaminação. Avaliar córnea e isquemia limbar após irrigação, sem atrasá-la.
+
 ### 2. Glaucoma agudo de ângulo fechado
 
 - Dor ocular intensa, olho vermelho, halos, cefaleia, náuseas/vômitos, baixa visual.
 - Pupila médio-dilatada/fixa, córnea turva, pressão intraocular alta se medida.
 - Conduta inicial: antiemético/analgesia, colírios hipotensores conforme protocolo, acetazolamida se sem contraindicação e oftalmo urgente para tratamento definitivo.
+- Timolol exige cautela/evitar em asma, bradicardia e bloqueio; acetazolamida em insuficiência renal importante/distúrbios metabólicos. Pilocarpina depende do mecanismo e da redução inicial da PIO: não prescrever automaticamente, especialmente se fechamento secundário a topiramato/efusão. Iridotomia trata bloqueio pupilar, não toda forma de fechamento angular.
 
 ### 3. Retina e POCUS ocular
 
@@ -35,11 +38,14 @@
 - Evite pressão no globo se suspeita de perfuração/trauma aberto.
 - ONSD aumentado pode sugerir HIC no contexto certo, mas não é diagnóstico isolado.
 
+**Perda visual súbita indolor também pode ser AVC da retina:** documentar último momento normal, acuidade/pupilas e encaminhar imediatamente a centro com avaliação de AVC e oftalmologia. Não gastar a janela com massagem ocular ou encaminhamento eletivo. Em >50 anos com cefaleia/claudicação mandibular, considerar arterite de células gigantes e corticoide urgente quando indicado.
+
 ### 4. Trauma ocular
 
 - Suspeite globo aberto: mecanismo penetrante, deformidade pupilar, hifema, Seidel positivo, acuidade muito reduzida.
 - Não comprimir, não manipular, não medir PIO, não retirar objeto empalado.
 - Protetor rígido, antiemético, analgesia, jejum, antibiótico conforme protocolo e oftalmo/cirurgia.
+- Suspeita de globo aberto contraindica tonometria e POCUS com pressão; Seidel negativo não exclui lesão tamponada. TC de órbitas ajuda a procurar corpo estranho, mas não descarta toda ruptura; evitar RM se possível metal. Síndrome compartimental orbitária (proptose, baixa visual, defeito pupilar, órbita tensa) exige descompressão urgente por equipe capacitada, sem aguardar imagem se diagnóstico clínico forte.
 
 ### 5. Epistaxe e via aérea alta
 
@@ -49,18 +55,23 @@
 4. Tamponamento anterior se persistente; suspeitar posterior se sangramento volumoso, bilateral, pela orofaringe ou falha do anterior.
 5. Reverter anticoagulação se ameaça vida conforme droga/risco.
 
+Tamponamento posterior precisa de otorrino e ambiente monitorado; não é alta simples. No anticoagulado sem sangramento ameaçador, iniciar controle local antes de suspender/reverter anticoagulante automaticamente; considerar tampão absorvível. Cauterizar apenas ponto identificado, não septo bilateralmente às cegas.
+
 ### 6. Vertigem
 
 - Distinguir vertigem episódica posicional, vestibular periférica contínua e AVC posterior.
 - Red flags centrais: déficit neurológico, cefaleia nova intensa, incapacidade de ficar sentado/em pé, nistagmo vertical/direcional cambiante, skew positivo, perda auditiva súbita com sinais centrais, fatores vasculares fortes.
-- HINTS só deve ser usado em síndrome vestibular aguda contínua e por examinador treinado.
+- HINTS só deve ser usado por examinador treinado em síndrome vestibular aguda contínua com nistagmo. Sem nistagmo, avaliar marcha/ataxia e exame neurológico, não chamar HINTS "negativo".
 - Vertigem + neuro red flag = imagem/neurologia, não "labirintite".
+- HINTS central ou inconclusivo requer RM/avaliação vascular conforme cenário. TC sem contraste normal não exclui AVC posterior; RM muito precoce também pode falhar. Vertigem breve desencadeada por posição: Dix-Hallpike e Epley se VPPB de canal posterior confirmada, não HINTS. Perda auditiva súbita requer avaliação urgente, não apenas sintomático.
 
 ### 7. Odonto e infecção cervical
 
 - Dor dentária simples não é sala vermelha; mas trismo, disfagia, sialorreia, voz abafada, elevação de assoalho, edema submandibular ou estridor = via aérea difícil prevista.
 - Angina de Ludwig/abscesso profundo: antibiótico EV amplo, cirurgia/otorrino/bucomaxilo e plano de via aérea acordada se progressivo.
 - Nunca drene "às cegas" coleção profunda no pescoço.
+
+**Avulsão dentária:** dente permanente pode ser reimplantado precocemente por equipe capacitada; segurar pela coroa, não esfregar raiz, e manter em leite/solução apropriada se não houver reimplante imediato. Dente decíduo não é reimplantado. Trauma de face com sangramento/edema pode exigir controle de via aérea antes do cuidado odontológico.
 
 ## Conceitos que sustentam a conduta
 
@@ -86,12 +97,12 @@ flowchart TD
 
 | Item | Número | Observação TEME |
 |---|---:|---|
-| Irrigação ocular química | imediata até pH neutro | Não esperar especialista |
+| Irrigação ocular química | Imediata até pH fisiológico estável, ~7,0-7,2 | Retirar partículas; reavaliar pH após pausa |
 | Compressão epistaxe | 10-15 min | Parte mole do nariz, cabeça para frente |
 | Acetazolamida glaucoma | 500 mg VO/EV | Se sem contraindicação; protocolo local |
 | Dor ocular/trauma | antiemético + analgesia | Evitar Valsalva/vômitos no globo aberto |
 | Antibiótico infecção cervical | precoce EV amplo | Associar drenagem/controle de foco |
-| HINTS | só em vertigem contínua | Não usar em tontura episódica ou examinador inseguro |
+| HINTS | Síndrome contínua com nistagmo, examinador treinado | Não usar em episódios breves ou sem nistagmo |
 
 ### Pontos de prova
 
@@ -127,6 +138,8 @@ flowchart TD
 
 ## Referências
 
+Revisão editorial: 04/10/2026. Atualizações selecionadas abaixo; respostas históricas não substituem critérios atuais.
+
 **Prova/TEME**
 
 - Conteúdo programático TEME26: grandes síndromes, olho vermelho, trauma ocular/facial, emergências infecciosas e POCUS ocular.
@@ -138,7 +151,17 @@ flowchart TD
 
 **Atualização clínica**
 
-- AAO/EyeWiki. Retinal Detachment: https://eyewiki.aao.org/Retinal_Detachment
-- AAO/EyeWiki. Acute angle closure/drug-induced angle closure: https://eyewiki.aao.org/Drug-induced_Acute_Angle_Closure_Glaucoma
-- AAO/EyeWiki. Laser Peripheral Iridotomy: https://eyewiki.aao.org/Laser_Peripheral_Iridotomy
+- [AAO/EyeWiki. Retinal Detachment](https://eyewiki.aao.org/Retinal_Detachment)
+- [AAO/EyeWiki. Acute angle closure/drug-induced angle closure](https://eyewiki.aao.org/Drug-induced_Acute_Angle_Closure_Glaucoma)
+- [AAO/EyeWiki. Laser Peripheral Iridotomy](https://eyewiki.aao.org/Laser_Peripheral_Iridotomy)
+
+**Fontes da revisão de outubro de 2026**
+
+- [SAEM. GRACE-3: vertigem e tontura, 2023.](https://www.saem.org/docs/default-source/grace/grace-3-infographic-051023.pdf?sfvrsn=4b4e50e_2)
+- [AAO-HNS. Epistaxe: diretriz, 2020.](https://aao-hnsfjournals.onlinelibrary.wiley.com/doi/full/10.1177/0194599819890327)
+- [AAO. Oclusões arteriais retinianas: Preferred Practice Pattern, 2025.](https://www.aaojournal.org/article/S0161-6420%2824%2900788-7/abstract)
+- [University of Iowa. Lesão química ocular: avaliação e manejo.](https://webeye.ophth.uiowa.edu/eyeforum/cases/307-Chemical-Eye-Injury.pdf)
+- [IADT. Avulsão de dentes permanentes, 2020.](https://www.aapd.org/media/policies_guidelines/e_avulsion.pdf)
+
+- Livros locais: Medicina de Emergência HCFMUSP, 18ª edição, e Tratado ABRAMEDE, 1ª edição; consulta dirigida aos capítulos relacionados, não leitura integral nesta revisão.
 
