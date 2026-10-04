@@ -4,11 +4,6 @@
 
 - [INTENSIVÃO](INTENSIVAO.md)
 
-- PROVA PRÁTICA
-  - [Matriz da banca](praticas/MATRIZ_DA_BANCA.md)
-  - [Procedimentos](praticas/PROCEDIMENTOS.md)
-  - [Simulador de estações](praticas/SIMULADOR.md)
-
 - Temas
   - [1. Via aérea e ventilação mecânica](temas/001_via-aerea_vm.md)
   - [2. Trauma hemorrágico e transfusão maciça](temas/002_trauma-hemorragico.md)
@@ -36,3 +31,8 @@
   - [24. Cardiovascular complementar](temas/024_cardiovascular-complementar.md)
   - [25. Estratégia de prova e estações práticas](temas/025_estrategia-prova-estacoes-praticas.md)
   - [26. Gestão do Departamento de Emergência](temas/026_gestao-departamento-emergencia.md)
+
+- PROVA PRÁTICA
+  - [Matriz da banca](praticas/MATRIZ_DA_BANCA.md)
+  - [Procedimentos](praticas/PROCEDIMENTOS.md)
+  - [Simulador de estações](praticas/SIMULADOR.md)
