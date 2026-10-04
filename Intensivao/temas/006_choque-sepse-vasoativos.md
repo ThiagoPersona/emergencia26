@@ -5,7 +5,7 @@
 - Choque é hipoperfusão, não apenas hipotensão: confusão, TEC lento, moteamento, pele fria, oligúria, lactato e base déficit contam.
 - Primeiro minuto: ABCDE, monitor, dois acessos/IO, gaso/lactato, ECG, POCUS/RUSH, tratar causa óbvia e não atrasar vasopressor se colapsando.
 - Sepse = infecção + disfunção orgânica; choque séptico = vasopressor para PAM >=65 após volume adequado + lactato >2.
-- Na prova, sepse grave/choque pede culturas se não atrasar, antibiótico precoce, cristaloide 30 mL/kg em até 3 h, lactato seriado, noradrenalina e controle de foco.
+- Sepse com hipoperfusão/choque pede culturas sem atrasar antibiótico, cristaloide com reavaliação a cada bolus, lactato seriado, noradrenalina e controle de foco. Os 30 mL/kg em 3 h são uma recomendação condicional, não uma ordem para infundir apesar de congestão.
 - Na prática, depois do volume inicial, o jogo é reavaliação: fluido-responsividade, fluido-tolerância, VTI/PLR, B-lines, VCI, perfusão e lactato.
 - Noradrenalina é vasopressor de primeira linha no choque séptico; vasopressina entra como poupadora; adrenalina entra em refratário; dobutamina é inotrópico.
 - Choque anafilático = adrenalina IM primeiro. Corticoide e anti-histamínico são coadjuvantes, não salvam o colapso.
@@ -57,7 +57,7 @@ Frase de plantão: "Estou tratando hipoperfusão enquanto descubro o tipo de cho
 
 | Tipo | Pista clínica | POCUS/lab | Conduta inicial |
 |---|---|---|---|
-| Hipovolêmico/hemorrágico | História de perda, trauma, HDA, desidratação; pele fria | VE pequeno/hiperdinâmico, VCI colabável, lactato/BE | Cristaloide como ponte se não hemorrágico; sangue/controle fonte se hemorrágico |
+| Hipovolêmico/hemorrágico | História de perda, trauma, HDA, desidratação; pele fria | VE pequeno/hiperdinâmico, VCI variável, lactato/BE | Reidratação com cristaloide se não hemorrágico; sangue e controle da fonte se hemorrágico |
 | Distributivo/séptico | Febre/hipotermia, foco, vasodilatação, pele quente inicial ou fria tardia | VCI variável, VE hiperdinâmico ou disfunção séptica, lactato | ATB, foco, cristaloide balanceado, noradrenalina |
 | Anafilático | Exposição + pele/mucosa, broncoespasmo/edema, hipotensão | Diagnóstico clínico | Adrenalina IM, via aérea, volume, broncodilatador |
 | Cardiogênico | SCA, IC, arritmia, B3, congestão, extremidades frias | VE ruim, B-lines, VCI cheia, lactato | Noradrenalina se hipotenso, dobutamina se baixo débito, tratar causa |
@@ -69,10 +69,12 @@ Frase de plantão: "Estou tratando hipoperfusão enquanto descubro o tipo de cho
 Suspeite de sepse quando infecção vem com disfunção orgânica:
 
 - Hipotensão/PAM baixa ou necessidade de vasopressor.
-- Lactato > 2.
+- Lactato >2 mmol/L aumenta a preocupação, mas isoladamente não define sepse nem sua causa.
 - Rebaixamento, delirium, oligúria, creatinina subindo.
 - Hipoxemia, plaquetopenia, bilirrubina alta, coagulopatia.
 - qSOFA >=2 ajuda a perceber risco, mas não deve ser usado sozinho para excluir sepse.
+
+**Sepsis-3:** infecção com disfunção orgânica ameaçadora à vida, operacionalizada por aumento do SOFA >=2. Não espere calcular o escore para tratar. "Sepse grave" é nomenclatura histórica. Choque séptico, na definição formal, associa vasopressor para PAM >=65 e lactato >2 apesar de reposição adequada; lactato normal não exclui choque de outras causas nem dispensa ressuscitação.
 
 Pacote inicial prático:
 
@@ -80,15 +82,15 @@ Pacote inicial prático:
 2. Dosar lactato; repetir em 2-4 h se elevado ou se choque.
 3. Coletar hemoculturas e culturas do foco antes do antibiótico se não atrasar.
 4. Antibiótico empírico amplo precoce.
-5. Cristaloide balanceado se hipoperfusão/septic shock; 30 mL/kg em até 3 h e reavaliação frequente.
-6. Noradrenalina se PAM <65 ou hipoperfusão persistente; não esperar CVC se o paciente está colapsando.
+5. Cristaloide, preferencialmente balanceado, em bolus com reavaliação. A SSC 2026 sugere pelo menos 30 mL/kg em 3 h na hipoperfusão séptica/choque, individualizando por resposta e tolerância; em TCE associado, prefere SF 0,9%.
+6. Noradrenalina para hipotensão persistente; pode começar em paralelo ao fluido se choque profundo, sem esperar completar volume ou obter CVC. PAM adequada com hipoperfusão exige investigar débito, congestão e causa, não apenas subir vasopressor.
 7. Controle de foco: drenar, retirar cateter, operar, desobstruir, limpar, conforme fonte.
 
 Antibiótico:
 
-- **Choque séptico ou sepse provável/definida grave:** imediato, alvo clássico de até 1 h.
-- **Possível sepse sem choque:** investigue rápido e trate cedo se a probabilidade subir; não transforme todo SIRS em meropenem automático.
-- Reavaliar 48-72 h para descalonar, estreitar, suspender se não era infecção e ajustar por cultura.
+- **Choque séptico ou sepse provável/definida, mesmo sem choque:** imediato, idealmente até 1 h.
+- **Possível sepse sem choque:** investigação rápida; se a suspeita persistir, antibiótico em até 3 h da suspeita inicial. Não é autorização para esperar quando há deterioração.
+- Reavaliar diariamente para estreitar cobertura, ajustar por cultura/função renal e suspender se houver diagnóstico não infeccioso convincente. Não esperar obrigatoriamente 48-72 h.
 
 ### 5. TEP, VD E IOT No Choque Obstrutivo
 
@@ -97,7 +99,7 @@ O TEP maciço cai porque mistura hipoxemia, choque, POCUS e uma pegadinha de via
 - Pistas: dispneia súbita, hipoxemia, choque, pulmão limpo, VD dilatado, septo em D, PSAP alta, VCI pouco variável.
 - Se o paciente está mantendo ventilação, prepare vasopressor e trate a causa antes de induzir apneia.
 - Se precisar intubar, faça com pré-ressuscitação, noradrenalina pronta, menor perda de pressão possível e plano para colapso peri-IOT.
-- Em TEP instável, cirurgia recente é contraindicação relativa/ponderada, não um "nunca" absoluto quando o paciente pode morrer.
+- Cirurgia de grande porte recente é contraindicação importante à trombólise sistêmica. Em TEP com risco imediato de morte, discutir reperfusão com equipe especializada, inclusive cateter/cirurgia; não chamar toda cirurgia recente de contraindicação apenas relativa nem anticoagulação de substituto da reperfusão necessária.
 - Cor pulmonale agudo costuma ter parede livre de VD fina (< 5 mm); VD hipertrofiado sugere crônico.
 
 ### 6. Choque Neurogênico E Morte Encefálica
@@ -118,12 +120,12 @@ Perguntas antes de repetir volume:
 Ferramentas:
 
 - Passive leg raise com VTI/VS: aumento de 10-15% sugere responsividade.
-- Mini-bolus 250-500 mL com VTI/PA/perfusão.
+- Desafio de fluido de 250-500 mL com avaliação de VTI/volume sistólico e perfusão; não confundir com mini-fluid challenge de volume menor.
 - VCI: útil como parte do conjunto; isolada engana.
 - pulmão: B-lines novas/difusas indicam baixa tolerância.
 - Clínica: TEC, moteamento, diurese, ausculta, congestão, trabalho respiratório.
 
-Depois de 30 mL/kg na sepse ou volume inicial no choque, pare de agir no automático. O excesso de fluido também mata.
+Reavalie desde o primeiro bolus, não só depois de 30 mL/kg. Responsividade não significa necessidade nem tolerância a fluido: se a perfusão já está adequada, ou há congestão, mais volume pode causar dano.
 
 ### 8. Drogas Vasoativas: Escolha Pelo Problema
 
@@ -132,7 +134,7 @@ Depois de 30 mL/kg na sepse ou volume inicial no choque, pare de agir no automá
 | Vasoplegia/séptico | Noradrenalina | Primeira linha para PAM >=65 |
 | Noradrenalina subindo | Vasopressina 0,03 U/min | Poupadora de noradrenalina; não é primeira linha isolada |
 | Choque refratário | Adrenalina | Alternativa/adicional; pode aumentar lactato |
-| Baixo débito/miocárdio ruim | Dobutamina | Inotrópico; pode causar hipotensão/taquiarritmia |
+| Disfunção cardíaca com hipoperfusão persistente apesar de pressão e volemia adequadas | Dobutamina | Não indicar apenas por FE baixa; pode causar hipotensão/taquiarritmia |
 | Anafilaxia | Adrenalina IM | Primeira linha; IV só em refratário por equipe experiente |
 | Bradicardia instável | Adrenalina/dopamina/marca-passo | Ver capítulo de arritmias |
 | Neurogênico | Noradrenalina geralmente boa escolha | Fenilefrina pode piorar bradi; individualizar |
@@ -150,7 +152,7 @@ Noradrenalina periférica:
 - Hemoglobina alvo restritivo geralmente 7 g/dL, salvo sangramento ativo, isquemia miocárdica, hipoxemia grave ou contexto específico.
 - Controle glicêmico: iniciar insulina se glicose >=180 mg/dL, evitando hipoglicemia.
 - Bicarbonato: não corrige choque; considerar em acidemia grave selecionada, hipercalemia ou indicações específicas.
-- Albumina pode ser considerada se grande volume de cristaloide e necessidade persistente, mas não é a primeira ampola da sepse.
+- Cristaloide isolado é preferido à adição rotineira de albumina na SSC 2026. Albumina pode ter papel selecionado após grandes volumes ou em cirrose; evitar em TCE.
 - Controle de foco e antibiótico certo importam mais que vitamina C, "coquetel" ou moda de UTI.
 
 ### 10. Situações Misturadas Que Apareceram
@@ -205,15 +207,16 @@ flowchart TD
 flowchart TD
     A["Infecção suspeita + disfunção orgânica"] --> B["Lactato + culturas sem atrasar ATB + foco"]
     B --> C{"Choque séptico ou alta probabilidade?"}
-    C -->|Sim| D["Antibiótico imediato/até 1h + cristaloide balanceado"]
-    C -->|Possível sem choque| E["Investigar rápido; ATB se probabilidade subir"]
-    D --> F{"PAM <65 ou hipoperfusão persiste?"}
+    C -->|Sim| D["ATB até 1h; fluido se hipoperfusão, reavaliando"]
+    C -->|Possível sem choque| E["Investigar rápido; ATB até 3h se suspeita persiste"]
+    D --> F{"Hipotensão persiste ou choque profundo?"}
     F -->|Sim| G["Noradrenalina; periférica se necessário com protocolo"]
-    F -->|Não| H["Reavaliar perfusão e lactato"]
+    F -->|Não| H["Reavaliar perfusão, débito, congestão e lactato"]
     G --> I{"Nora alta ou refratário?"}
     I -->|Sim| J["Adicionar vasopressina; considerar adrenalina/hidrocortisona"]
     I -->|Disfunção miocárdica/baixo débito| K["Dobutamina ou adrenalina conforme fenótipo"]
-    H --> L["Controle de foco + descalonamento em 48-72h"]
+    H --> L["Controle de foco + revisão diária da cobertura"]
+    E --> L
     J --> L
     K --> L
 ```
@@ -251,17 +254,16 @@ flowchart TD
 |---|---|
 | Cristaloide inicial sepse/choque | 30 mL/kg em até 3 h se hipoperfusão/septic shock |
 | Crianças choque hipovolêmico | 20 mL/kg cristaloide, reavaliando |
-| Mini-bolus adulto | 250-500 mL e reavaliar |
+| Desafio de fluido adulto | 250-500 mL e reavaliar antes de repetir |
 | PLR/VTI | Aumento 10-15% sugere responsividade |
 | Culturas | Antes do ATB se não atrasar |
 | Controle de foco | Idealmente precoce; SSC 2026 sugere alvo em até 6 h quando necessário |
-| HDA varicosa | Terlipressina + ceftriaxona | Medidas com impacto em mortalidade |
 
 ### Vasoativos E Adjuntos
 
-| Droga | Dose inicial comum | Uso principal |
+| Droga | Dose/faixa usual; titular conforme protocolo | Uso principal |
 |---|---:|---|
-| Noradrenalina | 0,05-1 mcg/kg/min, titular | Primeira linha no choque séptico/vasoplégico |
+| Noradrenalina | Início frequente 0,05-0,1 mcg/kg/min; titular | Primeira linha; não há teto universal de 1 mcg/kg/min; dose crescente exige reavaliação |
 | Vasopressina | 0,03 U/min fixa | Adjuvante/poupadora de noradrenalina |
 | Adrenalina infusão | 0,01-0,5 mcg/kg/min, titular | refratário, alternativa, anafilaxia refratária |
 | Dobutamina | 2,5-20 mcg/kg/min | Baixo débito/disfunção miocárdica |
@@ -270,18 +272,20 @@ flowchart TD
 | Hidrocortisona | 200 mg/dia | Choque séptico com vasopressor persistente |
 | Adrenalina anafilaxia adulto | 0,5 mg IM, 1 mg/mL, vasto lateral | Repetir a cada 5 min se necessário |
 | Cristaloide anafilaxia adulto | 500-1000 mL rápido | Repetir conforme resposta |
-| Glicoinsulina BB/BCC | Insulina regular 1 U/kg bolus, depois 0,5-1 U/kg/h | Repor glicose e potássio conforme protocolo |
+| Glicoinsulina BB/BCC | Insulina regular 1 U/kg bolus, depois 1 U/kg/h; titular com CIATox | Glicose e K frequentes; ver tema 8; não repor K automaticamente por redistribuição |
 
 ### Antibiótico Empírico: Atalho Mental
 
 | Foco provável | Esquema mental inicial |
 |---|---|
-| Pneumonia comunitária grave | Ceftriaxona + azitromicina ou quinolona respiratória; ampliar se risco Pseudomonas/MRSA |
+| Pneumonia comunitária grave | Beta-lactâmico + macrolídeo (ex.: ceftriaxona + azitromicina), ou beta-lactâmico + quinolona respiratória; ampliar se risco Pseudomonas/MRSA |
 | Urinário complicado/urosepse | Ceftriaxona, cefepime ou piperacilina-tazobactam; drenar obstrução |
 | Intra-abdominal | Ceftriaxona + metronidazol ou piperacilina-tazobactam; cirurgia/drenagem |
 | Pele grave/fascite | Vancomicina + piperacilina-tazobactam/meropenem + clindamicina; cirurgia urgente |
 | Meningite suspeita | Ceftriaxona + vancomicina +/- ampicilina; dexametasona antes/junto |
 | Neutropenia febril | Cefepime ou piperacilina-tazobactam; ampliar conforme risco/local |
+
+Estes esquemas são referências para adultos, não prescrições universais: alergias, gestação, resistência local, colonização, função renal e foco mudam a escolha. Na meningite, ampicilina cobre Listeria em grupos de risco; no trato urinário obstruído, antibiótico não substitui drenagem.
 
 ## Pegadinhas TEME
 
@@ -318,8 +322,8 @@ flowchart TD
 |---|---|---|
 | Definição de choque | Hipoperfusão com ou sem hipotensão | Use sinais clínicos seriados, lactato, gaso, POCUS e resposta ao tratamento |
 | Sepse | Infecção + disfunção orgânica; qSOFA aparece como triagem | SSC recomenda não depender de qSOFA isolado; julgamento clínico e disfunção orgânica mandam |
-| Antibiótico | Até 1 h em sepse grave/choque | SSC 2026 diferencia probabilidade: choque/sepse provável = imediato; possível sem choque = investigação rápida sem atrasar se piora |
-| Fluido | 30 mL/kg em 3 h na sepse com hipoperfusão | Depois disso, personalizar com medidas dinâmicas e tolerância; evitar tanto sub quanto hiperressuscitação |
+| Antibiótico | Até 1 h em choque/sepse provável | Possível sepse sem choque: avaliação rápida e, se suspeita persistir, até 3 h |
+| Fluido | 30 mL/kg em 3 h na hipoperfusão séptica | Recomendação condicional; reavaliar a cada bolus desde o início |
 | Vasopressor | Noradrenalina primeira linha | Pode iniciar periférico com protocolo; CVC se dose alta/uso prolongado |
 | Vasoativo refratário | Vasopressina, adrenalina, hidrocortisona, dobutamina conforme fenótipo | fenótipo importa mais que sequência decorada |
 | Lactato | Repetir e buscar queda | Não é ordem para dar volume infinito; adrenalina, beta-agonista e hepatopatia confundem |
@@ -331,7 +335,9 @@ flowchart TD
 - Provas teóricas TEME22, TEME23, TEME24 e TEME25 disponíveis no projeto.
 - Estações práticas disponíveis até TEME25 disponíveis no projeto.
 - Aulas de cursinho: Aula 13 - Choque; Aula 22 - Sepse; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 53 - Intoxicações; Aula 63 - Emergências Infecciosas.
-- Resumo do cursinho.docx, arquivo do usuário.
+- Emergency Talks: `Resumo do Emergency.docx`, material local.
+- Medicina de Emergência HCFMUSP, 18ª ed.: capítulos Choque e Sepse; leitura dirigida dos trechos de ressuscitação e antimicrobianos.
+- ATS/IDSA. 2019: [Diagnóstico e tratamento da pneumonia adquirida na comunidade](https://doi.org/10.1164/rccm.201908-1581ST).
 - Society of Critical Care Medicine/ESICM. 2026: [Surviving Sepsis Campaign International Guidelines for Management of Sepsis and Septic Shock](https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026).
 - IDSA. 2026: [Surviving Sepsis Campaign Adult Guidelines 2026](https://www.idsociety.org/practice-guideline/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026/).
 - Society for Cardiovascular Angiography and Interventions. 2022: [SCAI SHOCK Stages Classification Expert Consensus Update](https://pmc.ncbi.nlm.nih.gov/articles/PMC11308837/).

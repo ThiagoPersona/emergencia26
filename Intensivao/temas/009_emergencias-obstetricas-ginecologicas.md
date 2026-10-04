@@ -3,7 +3,7 @@
 ## Leitura de 30 segundos
 
 - Mulher em idade fértil com dor abdominal, síncope, choque ou sangramento vaginal: faça beta-hCG e pense em gravidez ectópica até provar o contrário.
-- Gestante/puérpera com convulsão, cefaleia, escotomas, epigastralgia ou PA >=160/110: trate como pré-eclâmpsia grave/eclâmpsia com sulfato de magnésio e controle pressor, sem esperar proteinúria.
+- Gestante/puérpera com convulsão ou sinais de pré-eclâmpsia grave: MgSO4 quando indicado, sem esperar proteinúria. PAS >=160 **ou** PAD >=110 persistente exige controle pressor urgente; hipertensão isolada não equivale automaticamente a eclâmpsia.
 - Hemorragia pós-parto e pacote simultâneo: chamar ajuda, massagem uterina/bimanual se atonia, 2 acessos, protocolo transfusional, ocitocina, TXA precoce, procurar os 4 T e escalar para balão/cirurgia.
 - Sangramento na segunda metade: placenta prévia e sangramento vivo indolor; DPP e dor, hipertonia uterina, sofrimento fetal e fibrinogênio baixo; não fazer toque vaginal antes de excluir placenta prévia.
 - Gineco aguda de prova: DIP é diagnóstico clínico com baixo limiar para antibiótico; torção ovariana pode ter Doppler normal; violência sexual não exige boletim de ocorrência para atendimento.
@@ -28,7 +28,7 @@
 
 1. ABCDE, lateralizar, O2 se hipoxemia, aspirar secreção, glicemia, acesso, monitor, proteger via aérea se coma/aspiração/hipoxemia.
 2. Se gestante >20 semanas ou puérpera com crise convulsiva: **sulfato de magnésio imediato.**
-3. Se PA >=160/110 mmHg persistente: anti-hipertensivo de ação rápida, sem normalizar PA.
+3. Se PAS >=160 ou PAD >=110 mmHg persistir por cerca de 15 min: tratar com anti-hipertensivo de ação rápida o quanto antes, idealmente em 30-60 min da confirmação, sem normalizar PA abruptamente. Não precisa elevar ambos os componentes.
 4. Coletar: hemograma/plaquetas, creatinina, TGO/TGP, DHL, bilirrubina, urina/proteinúria se possível, coagulograma se sangramento/HELLP.
 5. Acionar obstetrícia/UTI/anestesia/neonatal. O tratamento definitivo da eclâmpsia é interrupção da gestação, depois de estabilizar a mãe.
 
@@ -45,6 +45,8 @@
 5. **Abortamento infectado:** febre, dor importante, secreção fétida, peritonite ou sepse; antibiótico EV amplo + esvaziamento uterino após estabilização.
 6. **Ectópica:** dor + sangramento + atraso menstrual. Instável = cirurgia; estável selecionada = metotrexato e seguimento rigoroso.
 7. **Molar:** sangramento + útero maior que a idade gestacional, hiperêmese/hipertireoidismo/pré-eclâmpsia precoce, US em "tempestade de neve"; estabilizar e esvaziar por aspiração.
+
+**Gestação de localização desconhecida:** beta-hCG positivo e US sem gestação definida não fecham ectópica. Paciente estável precisa beta seriado em 48 h, novo US e orientação de retorno imediato por dor/síncope/sangramento. Nem "duplicação" nem um único valor discriminatório localizam a gestação; não dar metotrexato sem excluir gestação intrauterina viável e assegurar acompanhamento.
 
 ### 4. Sangramento vaginal: segunda metade
 
@@ -75,9 +77,11 @@ Conduta inicial:
 5. Esvaziar bexiga; revisar canal de parto; procurar restos placentários; avaliar coagulopatia.
 6. Se refratária: uterotônicos de segunda linha, balão intrauterino, suturas compressivas, embolização ou cirurgia/histerectomia.
 
+**Reconhecimento precoce (OMS/FIGO/ICM 2025):** medir objetivamente a perda. Acionar primeira resposta com >=500 mL, ou >=300 mL associados a sinal hemodinâmico anormal; não esperar 1000 mL após cesárea para agir se há deterioração. Balão não substitui cirurgia em rotura uterina ou sangramento por outra causa não controlada.
+
 > **Resposta de prova TEME:** atonia = útero flácido + sangramento pós-parto. A primeira manobra mecânica clássica é massagem/compressão uterina bimanual, associada a ocitocina e ressuscitação.
 >
-> **Atualização clínica:** OMS/FIGO/OPAS caminham para pacote simultâneo de primeira resposta: massagem uterina, uterotônico, TXA, fluidos IV, exame do trato genital e escalonamento. TXA deve ser precoce, idealmente até 3 h do parto.
+> **Atualização clínica:** pacote simultâneo de primeira resposta: massagem uterina, uterotônico, TXA, fluidos IV, exame do trato genital e escalonamento. TXA até 3 h **do nascimento**, não 3 h do diagnóstico; após essa janela não iniciar rotineiramente para HPP. Não é profilaxia universal de todos os partos.
 
 ### 6. Parto, RPM, trabalho prematuro e prolapso de cordão
 
@@ -93,7 +97,7 @@ Conduta inicial:
 - Oxigenação, controle de hemorragia, pelve, eFAST, TXA quando indicado, hemocomponentes, evitar hipotermia.
 - Deslocamento uterino manual para esquerda se útero acima do umbigo.
 - Rh negativo com trauma abdominal: imunoglobulina anti-D idealmente até 72 h; teste de Kleihauer-Betke ajuda a quantificar hemorragia feto-materna.
-- PCR gestante com útero no nível/acima do umbigo: RCP de alta qualidade, deslocamento uterino, via aérea antecipada, desfibrilação normal. Se sem RCE rápido, histerotomia de reanimação a partir de 4 min, nascimento em torno de 5 min.
+- PCR com útero no nível/acima do umbigo: RCP de alta qualidade, deslocamento uterino manual, via aérea antecipada e desfibrilação nas doses habituais. Preparar parto de reanimação desde o reconhecimento; se sem RCE, meta de nascimento até 5 min. Não esperar 4 min para chamar equipe/preparar material, nem transferir ao centro cirúrgico durante a PCR hospitalar para realizar o procedimento.
 
 ### 8. Emergências ginecológicas não obstétricas
 
@@ -115,6 +119,7 @@ Conduta inicial:
 - Dor pélvica/baixo ventre + dor a mobilização do colo, dor uterina ou anexial, corrimento/febre/dispareunia.
 - Diagnóstico é clínico; imagem ajuda a excluir apendicite, ectópica e abscesso, mas não deve atrasar antibiótico.
 - Internar se gravidez, abscesso tubo-ovariano, doença grave, vômitos/intolerância VO, falha em 72 h, impossibilidade de excluir emergência cirúrgica ou seguimento ruim.
+- Reavaliar melhora em até 72 h; testar HIV/sífilis/gonococo/clamídia e tratar parceiros conforme diagnóstico. Abstinência até concluir tratamento, resolução dos sintomas e tratamento dos parceiros. Gestação exige esquema hospitalar apropriado, não doxiciclina ambulatorial por reflexo.
 
 **Miocardiopatia periparto:**
 
@@ -164,7 +169,7 @@ flowchart TD
     B --> C{Convulsão ou alto risco?}
     C -->|Sim| D[MgSO4 ataque 4-6 g IV + manutenção 1-2 g/h]
     C -->|Não| E[Avaliar critérios de gravidade e labs]
-    D --> F{PA >=160/110 persistente?}
+    D --> F{PAS >=160 ou PAD >=110 persistente?}
     E --> F
     F -->|Sim| G[Nifedipina VO ou hidralazina/labetalol IV]
     F -->|Não| H[Monitorar mãe e feto]
@@ -181,7 +186,7 @@ flowchart TD
 flowchart TD
     A[Sangramento vaginal] --> B[ABCDE, sinais de choque, beta-hCG, Hb, coagulograma, tipagem]
     B --> C{Instável?}
-    C -->|Sim| D[2 acessos, sangue, TXA se hemorragia, gineco/obst, US beira-leito]
+    C -->|Sim| D[2 acessos, sangue, gineco/obst, US sem atrasar controle da fonte]
     C -->|Não| E{Gestante?}
     E -->|Não| F[SUA: excluir coagulopatia/câncer; tratar e definir urgência]
     E -->|Sim| G{Idade gestacional}
@@ -203,6 +208,7 @@ flowchart TD
 | Alvo após tratamento | manter <160/110; comum 140-150/90-100 | Evitar queda brusca e hipoperfusão placentária/cerebral |
 | MgSO4 ataque | 4-6 g IV em 15-20 min | Primeira linha na eclâmpsia |
 | MgSO4 manutenção | 1-2 g/h IV | Manter conforme protocolo, geralmente até 24 h pós-parto/última crise |
+| Pritchard, se infusão contínua inviável | 4 g IV lento + 10 g IM (5 g em cada nádega); depois 5 g IM 4/4 h | Alternativa protocolizada; verificar reflexos, FR e diurese antes de cada manutenção |
 | Nova crise em MgSO4 | 2 g IV adicional | Depois pensar UTI, neuroimagem e outro anticonvulsivante |
 | Monitorar MgSO4 | FR >=12/min, reflexos presentes, diurese >=25-30 mL/h | Creatinina >1,3: reduzir dose/medir magnésio conforme MS |
 | Antídoto MgSO4 | Gluconato de cálcio 10%, 10 mL IV lento | Depressão respiratória, arreflexia ou toxicidade |
@@ -217,23 +223,24 @@ flowchart TD
 | HPP clássica | >=500 mL vaginal, >=1000 mL cesárea ou qualquer sangramento com instabilidade | Na prova, clínica supera volume estimado |
 | Índice de choque | FC/PAS >1 alerta; >1,4 sugere gravidade/transfusão maciça | TEME23 cobrou SI >1,4 |
 | Ocitocina HPP | 10 UI IM ou 5 UI IV lento + 20-40 UI em 500 mL SF | Evitar bolus EV rápido de dose alta |
-| TXA HPP | 1 g IV em 10 min, ideal até 3 h | Repetir 1 g se sangramento persiste/recorre conforme protocolo |
-| Metilereometrina | 0,2 mg IM | Contraindicada em hipertensão/pré-eclâmpsia |
+| TXA HPP | 1 g IV em 10 min, até 3 h do nascimento | Segunda dose 1 g se persiste após 30 min ou recorre em até 24 h |
+| Metilergometrina | 0,2 mg IM | Contraindicada em hipertensão/pré-eclâmpsia |
 | Carboprost | 250 mcg IM a cada 15-90 min, max 2 mg | Contraindicado em asma |
-| Misoprostol | 800-1000 mcg VO/SL/retal | Útil se sem acesso/uterotônico indisponível |
-| Fibrinogênio | <200 mg/dL grave; <300 já preocupa em obstetrícia | DPP/HPP: queda precoce e preditiva |
+| Misoprostol para tratamento da HPP | 800 mcg sublingual, conforme protocolo | Se ocitocina indisponível/sem resposta; outras vias/doses não são intercambiáveis automaticamente |
+| Fibrinogênio na HPP grave | Repor se <200 mg/dL; alvo >=200 mg/dL | Crioprecipitado/concentrado conforme disponibilidade e protocolo; interpretar tendência |
 
 ### Gineco/violência sexual
 
 | Item | Número | observação TEME |
 |---|---:|---|
-| Metotrexato ectópica | 50 mg/m2 IM dose única | Só estável, sem hemoperitônio, massa <4 cm, sem BCF, beta-hCG baixo e seguimento |
+| Metotrexato ectópica | 50 mg/m2 IM, esquema de dose única | Seleção ginecológica: estável, não rota, sem contraindicações e seguimento garantido; massa/BCF/beta alto aumentam falha |
+| Seguimento após MTX | Beta-hCG nos dias 4 e 7; queda >=15% entre eles, depois semanal até negativar | Queda insuficiente exige reavaliação; dor/instabilidade pode indicar rotura mesmo com beta em queda |
 | Abortamento infectado | Clindamicina 900 mg IV 8/8 h + gentamicina | Associar ampicilina/metronidazol conforme protocolo/sepse |
 | DIP ambulatorial | Ceftriaxona 500 mg IM dose única + doxiciclina 100 mg 12/12 h 14 d + metronidazol 500 mg 12/12 h 14 d | CDC 2021; imagem não deve atrasar se clínica forte |
 | Violência sexual: CE | Levonorgestrel 1,5 mg VO dose única | Preferir até 72 h; pode considerar até 120 h conforme MS |
 | PEP HIV | iniciar o quanto antes, max 72 h; 28 dias | Não atrasar por exames pendentes |
 | HBV violência sexual | Vacina + IGHAHB 0,06 mL/kg IM se não imunizada/incompleta | Ideal 24-48 h; max 14 dias |
-| IST não virais violência sexual BR | Penicilina benzatina 2,4 mi UI IM + ceftriaxona 500 mg IM + azitro 1 g VO + metronidazol 2 g VO | Metronidazol pode ser postergado se CE/PEP; evitar 1º trimestre |
+| IST não virais violência sexual BR | Penicilina benzatina 2,4 mi UI IM + ceftriaxona 500 mg IM + azitro 1 g VO + metronidazol 2 g VO | Esquema de referência do PCDT-IST; ajustar por peso/idade, gestação, alergias e protocolo vigente |
 
 ## Pegadinhas TEME
 
@@ -261,7 +268,7 @@ flowchart TD
 - Subestimar choque na gestante porque PAS ainda parece "aceitável".
 - Tratar HPP em sequência lenta, esperando uma droga falhar antes de chamar ajuda/sangue.
 - Fazer bolus rápido de grande dose de ocitocina EV e causar hipotensão.
-- Dar metilereometrina para paciente hipertensa/pré-eclâmptica.
+- Dar metilergometrina para paciente hipertensa/pré-eclâmptica.
 - Dar alta para dor pélvica com Doppler normal quando a história sugere torção.
 - Esperar imagem/laboratório para iniciar antibiótico em DIP clínica com risco.
 - Revitimizar paciente de violência sexual ou condicionar atendimento a boletim de ocorrência.
@@ -280,7 +287,7 @@ flowchart TD
 
 - **Regulação do trabalho de parto a termo:** gestante estável, contrações regulares e meio próprio deve procurar maternidade por meios próprios; não acione SAV/SBV sem emergência materno-fetal.
 - **Ectópica/torção:** dor pélvica súbita + atraso menstrual/lipotimia = beta-HCG e US como primeira linha, avaliando estabilidade antes de tudo.
-- **Beta-HCG seriado:** se beta positivo e US inconclusivo, acompanhe evolução; gestação tópica normal tende a subir de forma importante em 48h, e elevação insuficiente sugere ectópica/não evolutiva.
+- **Beta-hCG seriado:** US inconclusivo exige seguimento; elevação ou queda não determina sozinha a localização. Ectópica pode romper com beta baixo/em queda; sintomas e estabilidade prevalecem.
 - **Prolapso de cordão:** Trendelenburg/joelho-peito e elevação manual da apresentação fetal para aliviar compressão até resolução obstétrica.
 - **Distócia de ombro:** McRoberts + pressão suprapúbica; pressão fúndica é erro clássico.
 - **HELLP:** pode ocorrer sem crise hipertensiva franca e com coagulograma normal; plaquetas baixas + DHL/hemólise + AST/ALT elevadas fecham o raciocínio.
@@ -301,15 +308,19 @@ flowchart TD
 - Aulas de cursinho: Aula 52 - intercorrências do parto e pós-parto.
 - Aulas de cursinho: Aula 57 - Emergências ginecológicas.
 - Aulas de cursinho: Aula 58 - intercorrências da 2ª metade da gestação.
-- Aulas de cursinho: Resumo do cursinho.docx.
+- Emergency Talks: `Resumo do Emergency.docx`.
+- Medicina de Emergência HCFMUSP, 18ª ed.: capítulos de emergências ginecológicas e intercorrências obstétricas; leitura dirigida dos esquemas de MgSO4 e decisões de emergência.
 - Aulas de cursinho: Adendos para complementar.docx.
 
 **Atualização clínica**
 
+- OMS/FIGO/ICM. 2025: [Diretriz consolidada de prevenção, diagnóstico e tratamento da HPP](https://www.ncbi.nlm.nih.gov/books/NBK619239/); [síntese oficial sobre reconhecimento precoce](https://www.who.int/news/item/05-10-2025-global-health-agencies-issue-new-recommendations-to-help-end-deaths-from-postpartum-haemorrhage).
+- AHA. 2025: [Circunstâncias especiais da reanimação, incluindo gestação](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-and-pediatric-special-circumstances-of-resuscitation).
+
 - Ministério da Saúde. Manual de Gestação de Alto Risco, 2022: https://bvsms.saude.gov.br/bvs/publicacoes/manual_gestacao_alto_risco.pdf
 - Ministério da Saúde. Violência sexual: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/saude-da-mulher/saude-sexual-e-reprodutiva/violencia-sexual
 - Ministério da Saúde. PEP pós-exposição ao HIV, ISTs e hepatites virais: https://www.gov.br/aids/pt-br/assuntos/prevencao-combinada/pep-profilaxia-pos-exposicao-ao-hiv
-- Ministério da Saúde. PCDT Atenção Integral às Pessoas com IST, seção violência sexual: https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_diretrizes_terapeutica_atencao_integral_pessoas_infeccoes_sexualmente_transmissiveis.pdf
+- Ministério da Saúde. [PCDT Atenção Integral às Pessoas com IST, seção violência sexual](https://bvsms.saude.gov.br/bvs/publicacoes/protocolo_clinico_diretrizes_terapeutica_atencao_integral_pessoas_infeccoes_sexualmente_transmissiveis.pdf).
 - Hospital das Clínicas UFMG/Ebserh. Protocolo Hemorragia Pós-parto, 2024: https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-sudeste/hc-ufmg/saude/protocolos-assistenciais-hc-ufmg-ebserh/PRT_UMUL_380_Hemorragia_posparto_V01.pdf
 - WHO. Recommendations on assessment of postpartum blood loss and treatment bundle for postpartum haemorrhage, 2023: https://www.who.int/publications/i/item/9789240085398
 - CDC. Pelvic Inflammatory Disease, STI Treatment Guidelines: https://www.cdc.gov/std/treatment-guidelines/pid.htm

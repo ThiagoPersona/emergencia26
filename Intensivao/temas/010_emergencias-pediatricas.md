@@ -51,6 +51,7 @@ Conduta inicial:
 - Avalie gravidade por apneia, exaustão, hipoxemia persistente, desidratação, idade pequena, prematuridade, cardiopatia ou pneumopatia.
 - Tratamento: aspiração nasal se secreção, hidratação, O2 se hipoxemia persistente, considerar cateter nasal de alto fluxo/CPAP se trabalho respiratório importante.
 - Não pedir RX/labs de rotina se quadro típico e estável.
+- **O2 na bronquiolite (NICE):** hipoxemia persistente <90% se >=6 semanas; <92% se <6 semanas ou com comorbidade. Apneia, exaustão ou perfusão ruim exigem suporte independentemente desse corte. Aspiração nasal não deve ser profunda/rotineira sem secreção interferindo na respiração/alimentação.
 
 > **Resposta de prova TEME:** lactente com bronquiolite, SatO2 70%, inconsciente e FC 48 precisa de ventilação com pressão positiva e O2; se FC segue <60 com má perfusão apesar de ventilação, iniciar compressão.
 >
@@ -67,7 +68,7 @@ Conduta inicial:
 **Anafilaxia:**
 
 - Exposição possível + pele/mucosa, respiratório, hipotensão/síncope ou gastrointestinal agudo.
-- Primeira droga é adrenalina IM na face anterolateral da coxa. Anti-H1, beta-2 e corticoide são adjuvantes, não substituem adrenalina.
+- Primeira droga é adrenalina IM na face anterolateral da coxa. Anti-H1 é para sintomas cutâneos; beta-2 pode ajudar broncoespasmo. Corticoide não é medida de resgate nem prevenção comprovada de reação bifásica; nenhum substitui adrenalina.
 - Choque: cristaloide 20 mL/kg e repetir conforme resposta.
 
 **Corpo estranho:**
@@ -75,6 +76,7 @@ Conduta inicial:
 - Tosse/engasgo abrupto, assimetria auscultatória ou estridor.
 - Se tosse efetiva: estimular tosse e monitorar.
 - Se obstrução grave: manobras de desobstrução por idade; se inconsciente, RCP e olhar boca antes de ventilar.
+- **AHA 2025:** lactente consciente com obstrução grave: 5 golpes nas costas alternados com 5 compressões torácicas; criança: 5 golpes nas costas alternados com 5 compressões abdominais. Não fazer varredura digital às cegas.
 
 ### 5. Asma aguda grave
 
@@ -105,9 +107,11 @@ Pontos de ventilação pós-IOT na asma:
 - **Ritmo chocável em PCR pediátrica:** FV/TV sem pulso = desfibrilação. Energia inicial 2 J/kg; depois 4 J/kg e escalonar conforme algoritmo.
 - **RCP básica:** um socorrista usa 30:2; dois socorristas em lactente/criança usam 15:2. Com via aérea avançada, compressões contínuas e ventilação controlada.
 - **Bradicardia com pulso:** se FC <60/min com má perfusão apesar de oxigênio e ventilação eficaz, iniciar compressões.
-- **Pós-RCE:** evitar hipotensão, hipóxia, hiperóxia, febre e hipocapnia/hipercapnia. Titule FiO2, confirme ventilação com gasometria quando possível e mantenha PAS pelo menos no percentil 50 para idade.
+- **Pós-RCE (PALS 2025):** PAS e PAM >percentil 10 para idade/sexo, SpO2 94-99% quando mensurável e ventilação guiada por gasometria. No comatoso, evitar temperatura central >37,5 °C. Não usar um único exame precoce para prognóstico neurológico.
 - **Bicarbonato:** não é rotina no pós-RCE; use se indicação específica, como hipercalemia, intoxicação por bloqueio de canal de sódio ou acidose extrema selecionada.
 - Não intube pneumonia só porque há febre e taquipneia; intube se falência ventilatória/oxigenatória, rebaixamento, choque refratário ou exaustão.
+
+**Recém-nascido ao nascimento: algoritmo próprio, não PALS.** Aquecer, posicionar e estimular; aspirar somente se obstrução. Apneia/gasping ou FC <100: VPP eficaz, 30-60 insuflações/min. Se FC <60 após 30 s de ventilação que expande o tórax, iniciar compressões 3:1 com via aérea adequada e O2 100%. Se segue <60 após 60 s de compressões/ventilação eficazes, adrenalina intravascular 0,01-0,03 mg/kg da solução 0,1 mg/mL. Confirmar ventilação antes de atribuir falha à droga; reduzir O2 após recuperação conforme saturação pré-ductal esperada para os minutos de vida.
 
 ### 7. Choque, desidratação e sepse
 
@@ -126,6 +130,8 @@ Conduta:
 4. Se choque refratário a fluidos ou risco de sobrecarga: vasoativo cedo, inclusive periférico/IO enquanto obtém acesso melhor.
 5. Se sangramento/trauma: hemocomponente cedo, aquecer, TXA quando indicado por protocolo de trauma, controle de fonte.
 
+**SSC pediátrica 2026:** com UTI disponível, considerar até 40-60 mL/kg na primeira hora em bolus de 10-20, interrompendo se choque resolve ou surge sobrecarga; não é volume obrigatório. Sem UTI e sem hipotensão, não fazer bolus de rotina. Não há preferência comprovada entre adrenalina e noradrenalina como primeira linha; escolher pelo contexto e não atrasar por falta de CVC. Choque: antibiótico idealmente <=1 h; provável sepse sem choque: avaliação rápida, idealmente <=3 h se confirmada a preocupação.
+
 ### 7.1. Neutropenia febril e síndrome torácica aguda
 
 - **Oncopediatria febril com letargia/hipotensão:** trate como sepse/neutropenia febril. Coletar culturas não pode atrasar antibiótico e ressuscitação; bolus de 10-20 mL/kg com reavaliação.
@@ -134,14 +140,14 @@ Conduta:
 
 > **Resposta de prova TEME:** lactente com diarreia, vômitos, TEC 3-4 s, PA baixa e sonolência = choque hipovolêmico; tratamento inicial = SF 0,9% 20 mL/kg.
 >
-> **Atualização clínica:** em sepse pediátrica, diretrizes atuais favorecem bolus menores de 10-20 mL/kg, guiados por reavaliação frequente, com limite e vasoativo precoce se não melhorar. Em desidratação hipovolêmica clássica, a banca ainda cobra 20 mL/kg.
+> **Atualização clínica:** bolus, vasoativo e metas de oxigenação dependem do contexto. A SSC 2026 sugere SpO2 88-92% após ressuscitação da sepse, recomendação condicional; não extrapolar para pós-PCR (PALS: 94-99%), reanimação inicial ou cardiopatia com alvo próprio. Aplicar em ambiente monitorado conforme protocolo pediátrico.
 
 ### 8. Convulsão, crise febril e status epilepticus
 
 **Crise em andamento:**
 
 1. ABC, lateralizar, aspirar se necessário, O2 se hipoxemia, glicemia capilar.
-2. Se >5 min ou crise repetida sem recuperar: benzodiazepínico.
+2. Se >=5 min ou crise repetida sem recuperar: benzodiazepínico.
 3. Pode repetir benzodiazepínico uma vez; depois, segunda linha sem atrasar.
 4. refratário: UTI, via aérea, anestésico e EEG quando disponível.
 
@@ -164,8 +170,10 @@ Conduta:
 - Suspeite em vômitos, dor abdominal, Kussmaul, desidratação, perda de peso, poliúria/polidipsia ou rebaixamento.
 - ABCDE, glicemia, cetona, gasometria, eletrólitos, potássio e ECG se grave.
 - Fluido inicial se choque/desidratação importante, insulina IV sem bolus depois de iniciar fluido e conhecer potássio.
+- **CAD pediátrica:** cristaloide isotônico inicial 10-20 mL/kg em 20-30 min; choque exige bolus e reavaliação mais rápidos. Insulina 0,05-0,1 U/kg/h somente após a primeira hora de fluido e com K >3 mmol/L; se K <=3, repor antes. Depois calcular manutenção/déficit e monitorar glicose, eletrólitos e consciência.
 - Repor potássio conforme K e diurese.
 - Edema cerebral: cefaleia, bradicardia, hipertensão, queda do nível de consciência, vômitos recorrentes. Tratar com salina hipertônica ou manitol e UTI.
+- **Suspeita de lesão cerebral na CAD:** tratar antes de TC; NaCl 3% 5 mL/kg em 10-15 min (máx. 250 mL) ou manitol 0,5-1 g/kg em 15-20 min (máx. 100 g), conforme CPS. Não confundir com volume/duração de osmoterapia do TCE.
 
 > **Pegada de prova:** não dar bolus de insulina na DKA pediátrica e não corrigir bicarbonato de rotina.
 
@@ -177,6 +185,7 @@ Conduta:
 4. **Hérnia cerebral:** salina hipertônica 3% 2-5 mL/kg ou manitol 0,5-1 g/kg.
 5. **Imagem de crânio:** use PECARN em TCE leve. Na estação TEME24, a banca queria TC de crânio e citar PECARN.
 6. **Coluna cervical:** regra de adulto não resolve tudo em criança. Na estação TEME24, a banca queria radiografia cervical, não TC cervical/coluna total.
+   Na assistência atual, usar avaliação pediátrica/PECARN cervical quando aplicável: déficit focal, alteração importante de consciência ou ABC anormal favorecem TC; fatores intermediários podem levar a radiografia. Sintoma neurológico persistente pode exigir RM mesmo com TC normal. A resposta histórica da estação não torna radiografia obrigatória para todo politrauma.
 7. **Abdome:** FAST tem menor sensibilidade em crianças. FAST negativo não exclui abdome, pelve, retroperitônio, ossos longos ou sangramento externo.
 8. **Hemorragia:** concentrado de hemácias 10 mL/kg; pensar em protocolo maciço quando necessidade >40 mL/kg em adolescente ou >50 mL/kg em criança/bebê.
 
@@ -218,6 +227,15 @@ Red flags de maus-tratos: história incompatível com desenvolvimento, demora em
 
 > **Resposta de prova TEME25:** diante do "pote de chumbinho", identificar carbamato/aldicarb e fazer atropina EV em bolus; a estação pontuava atropina 0,5 mg.
 
+### 14. Lactente febril e BRUE
+
+- **Febre no lactente <=90 dias:** temperatura documentada >=38 °C exige estratificação por idade; a definição dos estudos usa medida retal. Estar afebril no atendimento ou ter vírus identificado não exclui infecção bacteriana.
+- **Mal-aparentado/instável:** suporte, culturas e antibiótico sem esperar classificação de baixo risco ou punção lombar. Considerar herpes neonatal com vesículas, crises, alterações hepáticas ou fatores de risco.
+- **Bem-aparentado:** urinálise/urocultura, marcadores inflamatórios e investigação adicional conforme idade/protocolo. Neonato exige abordagem mais conservadora; não aplicar regras de baixo risco a prematuro, imunossuprimido ou criança com comorbidade relevante sem validação.
+- **Step-by-step:** baixo risco exige bom estado geral, idade >21 dias, urinálise sem leucócitos, PCT <0,5 ng/mL, PCR <=20 mg/L e neutrófilos <=10.000/mm3. Não misturar seus cortes com PECARN; alta precisa seguimento confiável em 24-48 h e orientação de retorno.
+- **BRUE:** em <1 ano, episódio resolvido de cianose/palidez, respiração anormal, alteração de tônus ou responsividade, sem causa após história/exame. Febre, engasgo explicado, crise ou sintomas persistentes pedem investigação da causa, não o rótulo BRUE.
+- **Baixo risco BRUE, todos:** >60 dias; nascimento >=32 semanas e idade pós-concepcional >=45 semanas; primeiro episódio, <1 min; sem RCP por profissional treinado; história/exame sem sinais preocupantes. Não exige internação/exames extensos por rotina; observar conforme contexto, orientar retorno e oferecer treinamento de RCP aos cuidadores. Falhar um critério não determina uma bateria fixa de exames, mas exige avaliação individual.
+
 ## Conceitos que sustentam a conduta
 
 ### Criança compensa até despencar
@@ -255,7 +273,7 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[Sibilância/dispneia em criança] --> B{Lactente com IVAS e 1o episódio?}
-    B -->|Sim| C[Bronquiolite: suporte, O2 se persistente <90%, hidratação, considerar alto fluxo]
+    B -->|Sim| C[Bronquiolite: suporte, O2 por idade e risco, hidratação, escalonar se falência]
     B -->|Não| D{Asma ou sibilância recorrente?}
     D -->|Sim| E[SABA repetido + ipratrópio se moderada/grave + corticoide precoce]
     E --> F{Refratária/grave?}
@@ -294,15 +312,15 @@ flowchart TD
 | Dexametasona crupe | 0,6 mg/kg dose única | VO/IM/EV; doses menores existem em protocolos |
 | Adrenalina nebulizada crupe | L-adrenalina 1 mg/mL: 0,5 mL/kg, max 5 mL | Ou racemica 2,25% 0,5 mL; observar 2-4 h |
 | MgSO4 asma grave | 50 mg/kg EV em 20 min | TEME25 aceita 50-75 mg/kg; max usual 2 g |
-| Midazolam crise convulsiva | 0,2 mg/kg IN/IM/bucal ou 0,1 mg/kg EV | Repetir uma vez se necessário |
+| Midazolam crise convulsiva | 0,2 mg/kg IN/IM/bucal, máx. 10 mg; ou 0,1 mg/kg EV, máx. usual 5 mg | Via/formulação conforme protocolo; repetir uma vez com suporte ventilatório |
 | Diazepam crise convulsiva | 0,2 mg/kg EV ou 0,5 mg/kg retal | Cuidado com depressão respiratória |
 | Levetiracetam status | 40-60 mg/kg EV | Alternativa de segunda linha |
 | Fenitoína/fosfenitoina | 20 mg/kg EV ou 20 mg PE/kg | Monitorar ECG/PA; não misturar com SG |
-| Insulina na DKA pediátrica | 0,05-0,1 U/kg/h EV | Sem bolus; após fluido inicial e avaliação do K |
+| Insulina na CAD pediátrica | 0,05-0,1 U/kg/h EV | Sem bolus; após >=1 h de fluido e K >3 mmol/L |
 | Salina hipertônica 3% no TCE/HIC | 2-5 mL/kg | Herniação ou edema cerebral |
 | Manitol no TCE/HIC | 0,5-1 g/kg | Se hemodinamicamente tolerado |
 | TOT sem cuff | idade/4 + 4 | Formula clássica |
-| TOT com cuff | idade/4 + 3,5 | Confirmar por capnografia e ausculta |
+| TOT com cuff | idade/4 + 3,5, estimativa para >2 anos | Em menores, usar tabela por peso/idade; capnografia, posição e pressão do cuff |
 | Profundidade oral do TOT | 3 x diâmetro interno | Ex: TOT 5,5 -> cerca de 16,5 cm |
 | Estação TEME24 TOT | 5,5 | Criança do caso prático |
 | Ventilação com pulso/avançada PALS 2025 | 20-30/min | Evitar hiper e hipoventilação |
@@ -328,6 +346,7 @@ Sinais vitais aproximados para não cair em "normal para idade":
 - **"PA normal, então não é choque":** falso. Choque pediátrico é perfusão ruim; hipotensão é tardia.
 - **"Bronquiolite grave com FC 48: atropina primeiro":** falso. É hipóxia até prova em contrário; ventile com O2.
 - **"Bronquiolite sempre melhora com salbutamol/corticoide":** falso na prática atual. Suporte é o padrão.
+- **"Todo RN segue RCP 15:2":** não ao nascimento; reanimação neonatal usa 3:1 depois de ventilação eficaz.
 - **"Asma com silêncio auscultatório está melhorando":** falso. Pode ser falência ventilatória.
 - **"CO2 normal em asma grave tranquiliza":** cuidado. Em criança exausta, normalizar/subir CO2 e mau sinal.
 - **"Crise febril simples pede TC/EEG/anticonvulsivante":** falso.
@@ -360,7 +379,7 @@ Sinais vitais aproximados para não cair em "normal para idade":
 - **Step-by-step no lactente febril:** aparência clínica, urinálise e biomarcadores ajudam a separar baixo risco; boa aparência isolada não basta.
 - **BRUE:** evento breve, resolvido, em menor de 1 ano, sem causa após história/exame; se há causa identificável, não é BRUE.
 - **Status epiléptico febril:** benzodiazepínico, segunda linha antiepiléptica e infusão contínua se refratário; focalidade/rebaixamento sustentado sugere meningoencefalite.
-- **Sepse pediátrica:** hipotensão é tardia; TAP, perfusão, TEC, extremidades, diurese e consciência mandam. Antibiótico não espera 3 horas.
+- **Sepse pediátrica:** hipotensão é tardia; TAP e perfusão mandam. No choque, antibiótico não espera 3 h; sem choque, a SSC permite avaliação rápida, com tratamento idealmente até 3 h se provável sepse.
 - **Gastroenterite:** diagnóstico é clínico, mas sempre procure imitadores: apendicite, intussuscepção, sepse, CAD, erro inato/metabólico.
 - **Trauma abdominal pediátrico:** sinal do cinto e alta energia mantêm investigação mesmo com FAST negativo.
 - **Cianose:** lembre que a percepção depende da hemoglobina desoxigenada absoluta. A TEME26 Q92 tem gabarito oficial controverso; preserve a letra oficial no treino.
@@ -379,17 +398,18 @@ Sinais vitais aproximados para não cair em "normal para idade":
 - Aulas de cursinho: Aula 30 - Emergências pediátricas I.
 - Aulas de cursinho: Aula 43 - Emergências pediátricas II - respiratórias.
 - Aulas de cursinho: Aula 49 - Trauma em populações especiais II - Pediátrico.
-- Resumo do cursinho.docx.
+- Emergency Talks: `Resumo do Emergency.docx`.
+- Tratado de Medicina de Emergência ABRAMEDE, 1ª ed.: leitura dirigida do trauma pediátrico; diferenças em relação à atualização PECARN/PALS explicitadas no texto.
 - Adendos para complementar.docx.
 
 **Atualização clínica**
 
 - American Heart Association/American Academy of Pediatrics. Pediatric Basic Life Support: 2025 Guidelines. https://publications.aap.org/pediatrics/article/157/1/e2025074350/205235/Part-6-Pediatric-Basic-Life-Support-2025-American
 - American Heart Association/American Academy of Pediatrics. Pediatric Advanced Life Support: 2025 Guidelines. https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/pediatric-advanced-life-support
-- Surviving Sepsis Campaign. International Guidelines for the Management of Septic Shock and Sepsis-Associated Organ Dysfunction in Children, 2020. https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines
+- Surviving Sepsis Campaign. Guidelines for the Management of Sepsis and Septic Shock in Children, 2026. https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-pediatric-guidelines
 - American Academy of Pediatrics. Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis. https://publications.aap.org/pediatrics/article/134/5/e1474/75848/Clinical-Practice-Guideline-The-Diagnosis
 - NICE NG9. Bronchiolitis in children: diagnosis and management. https://www.nice.org.uk/guidance/ng9/chapter/Recommendations
-- Global Initiative for Asthma. 2025 GINA Summary Guide/Report. https://ginasthma.org/2025-gina-summary-guide/
+- Global Initiative for Asthma. [Relatórios e atualização de 2026](https://ginasthma.org/reports/).
 - Canadian Paediatric Society. Acute management of croup in the emergency department. https://cps.ca/en/documents/position/acute-management-of-croup
 - American Academy of Pediatrics. Anaphylaxis. https://publications.aap.org/pediatriccare/article/doi/10.1542/aap.ppcqr.396245/136/Anaphylaxis
 - CDC. Clinical Overview of Measles. https://www.cdc.gov/measles/hcp/clinical-overview/index.html
@@ -397,4 +417,8 @@ Sinais vitais aproximados para não cair em "normal para idade":
 - PECARN cervical spine injury prediction rule, 2024. https://www.sciencedirect.com/science/article/pii/S2352464224001044
 - PECARN pediatric head trauma rule, Lancet 2009/PubMed. https://pubmed.ncbi.nlm.nih.gov/19758692/
 - ISPAD Clinical Practice Consensus Guidelines 2022: Diabetic ketoacidosis and hyperglycemic hyperosmolar state. https://onlinelibrary.wiley.com/doi/10.1111/pedi.13406
+- Canadian Paediatric Society. [Manejo da CAD pediátrica](https://cps.ca/en/documents/position/current-recommendations-for-management-of-paediatric-diabetic-ketoacidosis).
+- Canadian Paediatric Society. [Lactentes febris <=90 dias, atualizado em 2026](https://cps.ca/en/documents/position/management-of-well-appearing-febrile-young-infants-aged-90-days).
+- AAP. [BRUE e critérios de baixo risco](https://publications.aap.org/pediatrics/article/137/5/e20160591/52194/).
+- AHA/AAP. 2025: [Reanimação neonatal](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/neonatal-resuscitation).
 - American Burn Association. Clinical Practice Guidelines on Burn Shock Resuscitation. https://pubmed.ncbi.nlm.nih.gov/?term=38051821

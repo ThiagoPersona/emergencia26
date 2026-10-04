@@ -28,26 +28,30 @@
 1. **Hora zero:** último visto bem, uso de anticoagulante, cirurgia/sangramento recente, PA, glicemia, NIHSS e status funcional prévio.
 2. **TC sem contraste imediata:** objetivo inicial é excluir hemorragia. Não espere laboratório se não há suspeita de anticoagulação/coagulopatia relevante.
 3. **Se TC sem sangramento e janela até 4h30:** avaliar trombólise, corrigindo PA para menos de 185/110 se necessário.
-4. **Se suspeita de oclusão de grande vaso:** angioTC/angioRM e acionar trombectomia; até 6 h critérios mais diretos, até 24 h selecionados por imagem/mismatch.
-5. **Se não reperfundir:** antiagregação após excluir hemorragia, controle de fatores e investigação etiológica. Não baixar PA agressivamente sem indicação.
+4. **Se suspeita de oclusão de grande vaso:** angioTC/angioRM e acionar trombectomia em paralelo, sem esperar resposta ao lítico. Até 24 h em selecionados; os critérios atuais não se resumem a ASPECTS >=6.
+5. **Depois da decisão de reperfusão:** unidade de AVC, avaliação de deglutição antes de VO, controle de fatores e investigação etiológica. Após trombólise, em regra aguardar 24 h e imagem de controle antes de antitrombóticos; sem lítico, antiagregação após excluir hemorragia conforme indicação.
 
 > **Resposta de prova TEME:** déficit focal súbito + TC sem contraste sem sangramento + janela elegível = trombólise se sem contraindicação; se LVO/NIHSS alto/ASPECTS adequado = trombectomia.
 >
-> **Atualização clínica:** tenecteplase 0,25 mg/kg em bolus único é alternativa forte em várias diretrizes internacionais, especialmente em candidato a trombectomia. No PCDT brasileiro de AVCi agudo, atualizado em 2025, a alteplase segue como trombolítico preconizado, e a tenecteplase não é recomendada por ausência de indicação aprovada em bula para AVCi no Brasil.
+> **Atualização AHA/ASA 2026:** alteplase ou tenecteplase são opções na janela de 4h30; déficit incapacitante pode justificar trombólise mesmo com NIHSS baixo. Há seleção por imagem para início desconhecido ou 4h30-9 h. Não extrapole doses do IAM para AVC.
+>
+> **Brasil:** o PCDT disponível na página do Ministério da Saúde (Portaria 29/2023; página atualizada em 2025) preconiza alteplase. A recomendação internacional não equivale a incorporação ao SUS ou autorização regulatória brasileira: confirmar protocolo, bula vigente e disponibilidade com a equipe de AVC.
 
 ### 3. Crise convulsiva e status epilepticus
 
 1. **Se convulsão ativa:** lateralizar/proteger, aspirar se necessário, O2, acesso, glicemia, temperatura, monitor e procurar causa.
-2. **Status é operacionalmente >5 min:** não espere 30 min para tratar como emergência neurológica.
+2. **Status convulsivo: >=5 min ou crises repetidas sem recuperação:** não espere 30 min para tratar.
 3. **Benzodiazepínico em dose cheia:** midazolam IM/IN se sem acesso; lorazepam/diazepam IV se acesso. Repetir uma vez se necessário.
 4. **Se persiste após benzo:** segunda linha sem demora: fenitoína/fosfenitoina, levetiracetam ou valproato conforme disponibilidade e contraindicações.
 5. **Refratário:** IOT, analgesia/sedação, anestésico contínuo, EEG quando disponível e UTI. Corrija etiologia em paralelo.
+
+**Após cessar os movimentos:** se não recupera consciência como esperado, considerar status não convulsivo e solicitar EEG urgente. Bloqueio neuromuscular pode ocultar crises, não tratá-las.
 
 > **Eclampsia:** crise convulsiva em gestante/puérpera é sulfato de magnésio, não fenitoína como primeira linha. Pense também em AVC/HSA/TVC se déficit focal, cefaleia explosiva ou rebaixamento persistente.
 
 ### 4. Cefaleia grave, HSA, HIP e TVC
 
-1. **Cefaleia explosiva/pior da vida:** TC sem contraste. Se TC negativa e suspeita persistente, considerar LP ou angio/estratégia local.
+1. **Cefaleia explosiva/pior da vida:** TC sem contraste. TC negativa nas primeiras 6 h só permite excluir HSA em contexto selecionado, exame neurológico normal e interpretação qualificada. Após 6 h ou com déficit novo e suspeita persistente, investigar, em geral com punção lombar após avaliar segurança; angioTC pode ser alternativa em fluxo acordado, mas aneurisma incidental não prova sangramento.
 2. **HSA aneurismática provável:** analgesia, antiemético, PA controlada, nimodipina, neurocirurgia/intervenção para clipagem ou embolização.
 3. **Hemorragia intraparenquimatosa:** PA com controle contínuo e suave, suspender/reverter anticoagulante, corrigir coagulopatia, avaliar HIC e neurocirurgia.
 4. **Trombose venosa cerebral:** jovem, puerpério, anticoncepcional, trombofilia, cefaleia subaguda, crise ou déficit; pedir angioTC/venoRM. Anticoagulação com heparina pode ser indicada mesmo com hemorragia venosa, salvo contraindicação.
@@ -87,6 +91,7 @@ Conduta de ponte:
 ### 6.1. Regras de imagem no TCE leve e pediátrico
 
 - **Canadian CT Head Rule:** destaque de prova por manter alta sensibilidade com especificidade melhor que New Orleans. Lembre: idade >=65 anos, dois ou mais vômitos, sinais de fratura/base, Glasgow que não normaliza, amnésia e mecanismo perigoso.
+- **População da Canadian:** adulto/adolescente >=16 anos, TCE leve com perda de consciência, amnésia ou desorientação e Glasgow 13-15. Não extrapolar para anticoagulação, crianças ou todo trauma sem esses critérios; Glasgow <15 em 2 h, amnésia retrógrada >30 min e mecanismo perigoso precisam ser descritos corretamente.
 - **PECARN:** divide criança em **menor de 2 anos** e **2 anos ou mais**; a banca tenta trocar por corte de 4 anos. Ajuda a decidir TC em TCE leve, não substitui julgamento em instabilidade, suspeita de abuso ou exame neurológico anormal.
 - **RX de crânio:** não é exame para excluir lesão intracraniana, mas pode ser considerado em suspeita de abuso e corpo estranho sob laceração de escalpo.
 
@@ -94,7 +99,7 @@ Conduta de ponte:
 
 - **Varfarina:** PCC 4 fatores + vitamina K IV; não use plasma como primeira opção se PCC disponível.
 - **Dabigatrana:** idarucizumabe quando indicado/disponível.
-- **Inibidores do fator Xa:** andexanet alfa ou PCC conforme protocolo, disponibilidade e risco; não decorar como opção "sem trombose".
+- **Inibidores do fator Xa:** discutir PCC 4 fatores/reversor disponível conforme protocolo e última dose/função renal. Andexanet não deve ser tratado como escolha universal: a FDA publicou alerta de segurança trombótica e informou encerramento das vendas nos EUA em dezembro de 2025. Isso não determina automaticamente a situação regulatória brasileira.
 - **Plaquetas:** não transfundir de rotina em todo usuário de antiagregante; considerar se plaquetopenia relevante ou cirurgia/neurointervenção, conforme protocolo.
 
 ### 7. Morte encefálica na sala vermelha
@@ -109,9 +114,11 @@ Antes de pensar em protocolo:
 
 > **Pegadinha de estação:** TCE grave + TC catastrófica + sem reflexos de tronco, mas hipotérmico, hipoxêmico ou sob sedação relevante, não permite iniciar/concluir protocolo. Primeiro corrija confundidores e estabilize.
 
+**Números brasileiros essenciais (CFM 2.173/2017):** observação hospitalar >=6 h; >=24 h se encefalopatia hipóxico-isquêmica. Temperatura central >35 °C, saturação >94% e, em adultos, PAS >=100 ou PAM >=65 mmHg. São obrigatórios dois exames clínicos por médicos diferentes capacitados, teste de apneia e exame complementar. Intervalo entre exames: 24 h de 7 dias completos a <2 meses; 12 h de 2 a <24 meses; 1 h a partir de 2 anos. Este resumo não substitui os anexos da resolução, inclusive limites pediátricos e avaliação de fármacos.
+
 ### 8. Vertigem e déficit posterior
 
-- **HINTS só vale em síndrome vestibular aguda contínua**, não em tontura episódica posicional.
+- **HINTS:** síndrome vestibular aguda contínua com nistagmo e examinador treinado; não aplicar como rastreio a toda tontura ou à VPPB. Sem nistagmo, valorizar instabilidade de marcha e exame neurológico. Resultado central/duvidoso exige investigação; TC normal não exclui AVC posterior (GRACE-3).
 - **Periférico/neurite vestibular:** head impulse positivo, nistagmo horizontal unidirecional, skew negativo, sem déficit focal.
 - **Central/fossa posterior:** head impulse normal, skew positivo, nistagmo vertical ou direção variável, cefaleia nova, ataxia importante, diplopia, disartria, déficit focal ou alto risco vascular.
 - **VPPB:** crises breves desencadeadas por posição, Dix-Hallpike positivo; tratar com manobra de reposicionamento.
@@ -129,15 +136,15 @@ Antes de pensar em protocolo:
 
 O objetivo da emergência é separar rápido três grupos: hemorragia, isquemia reperfundível e mímico. A TC sem contraste tira hemorragia do caminho; NIHSS mede gravidade; ASPECTS estima área já infartada; angio identifica oclusão de grande vaso. O erro clássico é pensar que "NIHSS baixo" sempre significa "não tratar": o que manda é déficit incapacitante, janela, imagem e risco.
 
-Janela básica para trombólise é até 4h30 desde o último visto bem. Para trombectomia, a prova gosta de NIHSS >=6, ASPECTS >=6, mRS prévio bom e oclusão de grande vaso, com janela clássica até 6 h e janela estendida até 24 h em selecionados.
+Janela habitual de trombólise: 4h30 desde o último visto bem. Para trombectomia, NIHSS >=6 e ASPECTS >=6 são critérios clássicos de provas antigas, não limites absolutos atuais: há benefício em grandes núcleos isquêmicos selecionados. Oclusão basilar em até 24 h com NIHSS >=10 também tem recomendação na AHA/ASA 2026. A seleção exige centro especializado.
 
 ### Hemorragia: pressão, coagulação e neurocirurgia
 
-HIP/HSA não são "só observar". As primeiras horas definem expansão do hematoma, ressangramento, HIC e necessidade cirúrgica. O controle pressor deve ser contínuo e titulado, evitando picos e quedas bruscas. Anticoagulante em hemorragia intracraniana é emergência de reversão: varfarina pede PCC 4 fatores + vitamina K; dabigatrana pode pedir idarucizumabe; inibidor Xa pode pedir andexanet ou PCC conforme disponibilidade.
+HIP/HSA não são "só observar". Controle pressor titulado, reversão de anticoagulação e avaliação neurocirúrgica são urgentes. Na HSA aneurismática, nimodipina é enteral, nunca IV; manter euvolemia, sem hipervolemia profilática. Na HIP espontânea em uso de AAS, sem cirurgia emergencial, transfusão de plaquetas pode causar dano; não confundir com correção de plaquetopenia.
 
 ### Status epilepticus: receptor muda com o tempo
 
-Quanto mais tempo a crise dura, menos responsiva fica ao benzodiazepínico e maior a chance de lesão, acidose, rabdomiólise, hipertermia e broncoaspiração. Por isso a sequência é em fases: estabilização 0-5 min, benzo 5-20 min, segunda linha 20-40 min, anestésico/UTI se refratário.
+Quanto mais a crise dura, menor a resposta ao benzodiazepínico. Estabilizar, dar benzo em dose plena e avançar à segunda linha se persistir; as faixas de tempo dos algoritmos são limites organizacionais, não ordens para aguardar 20 ou 40 minutos. Planejar suporte ventilatório e EEG em paralelo.
 
 ### HIC/TCE: PPC e lesão secundária
 
@@ -156,11 +163,13 @@ flowchart TD
     D -->|Sem hemorragia| F{Janela até 4h30 e déficit incapacitante?}
     F -->|Sim| G[Checar contraindica e PA menor que 185/110]
     G --> H[Trombólise se elegível]
-    F -->|Não| I[Antiagregar se indicado e investigar etiologia]
-    H --> J{Suspeita LVO ou NIHSS alto?}
-    I --> J
+    F -->|Não| I[Avaliar seleção por imagem ou cuidado sem reperfusão]
+    D --> J{Suspeita de oclusão de grande vaso?}
     J -->|Sim| K[AngioTC/angioRM e acionar trombectomia]
     J -->|Não| L[Unidade AVC/UTI, monitor, disfagia, controle clínico]
+    H --> L
+    I --> L
+    K --> L
 ```
 
 ### Status Epilepticus
@@ -168,7 +177,7 @@ flowchart TD
 ```mermaid
 flowchart TD
     A[Crise convulsiva ativa] --> B[0-5 min: ABC, O2, lateralizar, glicemia, acesso]
-    B --> C{Dura mais de 5 min ou recorrente sem recuperar?}
+    B --> C{Dura 5 min ou mais ou recorrente sem recuperar?}
     C -->|Sim| D[Benzo em dose cheia]
     D --> E{Parou?}
     E -->|Sim| F[Investigar causa, tratar etiologia, observar]
@@ -204,8 +213,9 @@ flowchart TD
 | PA antes da trombólise | <185/110 mmHg | Se refratária, contraindica trombólise |
 | PA após trombólise | <180/105 mmHg por 24 h | Monitor frequente |
 | AVCi sem reperfusão | tratar se >=220/120; reduzir ~15% em 24 h | Evitar queda abrupta da perfusão |
-| Trombectomia até 6 h | LVO anterior, mRS 0-1/2, NIHSS >=6, ASPECTS >=6 | Banca gosta de ACM M1/carotida interna |
-| Trombectomia 6-24 h | selecionados por DAWN/DEFUSE/mismatch | Não é "todo AVC até 24 h" |
+| Trombectomia até 6 h | Oclusão de grande vaso e seleção clínica/imagem | Critérios clássicos não excluem automaticamente grandes núcleos selecionados |
+| Trombectomia 6-24 h | Seleção por imagem, inclusive casos de grande núcleo e basilar | Não é "todo AVC até 24 h"; discutir centro de AVC |
+| PA pós-reperfusão | Não perseguir PAS <140 de forma intensiva | AHA/ASA 2026: pode causar dano após trombectomia, mesmo com reperfusão completa |
 | HIP leve-moderada com PAS 150-220 | alvo PAS 140; manter 130-150 | Evitar PAS <130 |
 | Varfarina + HIC | PCC 4 fatores + vitamina K IV | Não esperar "lavar" anticoagulante |
 | Plaquetas em sangramento SNC/TCE | mirar >100.000/mm3 | Estação prática costuma cobrar alvo alto |
@@ -215,7 +225,7 @@ flowchart TD
 
 | Item | Número | observação TEME |
 |---|---:|---|
-| Status epilepticus | crise >5 min ou crises sem recuperar consciência | Não esperar 30 min |
+| Status epilepticus | crise >=5 min ou crises sem recuperar consciência | Não esperar 30 min |
 | Midazolam IM | 0,15-0,2 mg/kg, usual max 10 mg | Boa opção sem acesso |
 | Midazolam IN/bucal | 0,2 mg/kg, max 10 mg | Útil no APH/pediatria, conforme disponibilidade |
 | Lorazepam IV | 0,1 mg/kg, max 4 mg por dose | Repetir 1 vez se necessário |
@@ -235,8 +245,9 @@ flowchart TD
 | Hiperventilação de ponte | PaCO2 ~30-35 mmHg por curto período | Só herniação/deterioração até terapia definitiva |
 | Manitol 20% | 0,25-1 g/kg IV | Evitar hipovolemia/choque/IRA importante |
 | NaCl 3% | 2-3 mL/kg ou bolus 100-250 mL | Ajustar a protocolo local |
-| NaCl 20% | 30 mL bolus | Número apareceu em aula/curso; checar protocolo |
-| PAS mínima TCE grave | >=100 mmHg se 50-69 anos; >=110 se 15-49 ou >70 | Na sala vermelha, "sem hipotensão" é a ideia-mãe |
+| Hipertônica: segurança | Conferir concentração, dose e acesso; monitorar Na/função renal | Não intercambiar volumes de NaCl 3%, 20% e 23,4% |
+| PAS mínima TCE grave | >=100 mmHg se 50-69 anos; >=110 se 15-49 ou >=70 | BTF; individualizar conforme perfusão/PIC |
+| TCE com monitor de PIC | Tratar PIC >22 mmHg; PPC usual 60-70 mmHg | PPC = PAM - PIC; evitar elevar PPC com fluido indiscriminado |
 | Saturação | >94% | Evitar hipoxemia e hiperoxia sem alvo |
 | Temperatura | normotermia; tratar febre | Hipotermia terapêutica rotineira não melhora desfecho |
 | Corticoide no TCE | não usar | Aumenta mortalidade em TCE grave |
@@ -286,7 +297,7 @@ flowchart TD
 |---|---|---|
 | AVCi trombólise | Alteplase 0,9 mg/kg até 4h30, TC sem sangramento, PA <185/110 | Muitos centros usam tenecteplase 0,25 mg/kg em protocolos; alinhar com neurologia, PCDT, farmacia e bula/local |
 | AVCi leve | Não trombolisar déficit leve sem incapacidade | Afasia, hemianopsia, mão dominante, ataxia incapacitante ou profissao podem tornar "leve" clinicamente relevante |
-| Trombectomia | NIHSS >=6, ASPECTS >=6, LVO, janela até 6 h; até 24 h selecionado | Imagem avançada, transferência e discussão com centro de AVC decidem muito |
+| Trombectomia | Critérios clássicos de janela/NIHSS/ASPECTS | AHA/ASA 2026 amplia seleção; não excluir por ASPECTS baixo isoladamente |
 | PA no AVCi | <185/110 antes e <180/105 depois do lítico; sem lítico tratar se >=220/120 | Ajustar se dissecção, IAM, EAP, encefalopatia hipertensiva ou trombectomia |
 | HIP | PAS alvo 140, manter 130-150 se leve-moderada | Evitar queda brusca; individualizar em hematoma grande, HIC, cirurgia e comorbidades |
 | HSA | TC; se suspeita persiste, investigar; nimodipina e neurocirurgia | LP, angioTC, RM e fluxo local variam conforme tempo da cefaleia e qualidade da TC |
@@ -310,9 +321,15 @@ flowchart TD
 - Aulas de cursinho - Aula 18: POCUS trauma, vascular e neuro.
 - Aulas de cursinho - Aula 40: Alteração do nível de consciência e HIC.
 - Aulas de cursinho - Aula 45: Trauma cranioencefálico.
-- `Resumo do cursinho.docx`.
+- Emergency Talks: `Resumo do Emergency.docx`.
+- Medicina de Emergência HCFMUSP, 18ª ed.: capítulos de AVC, convulsões, cefaleia e trauma cranioencefálico; leitura dirigida das decisões de emergência.
 
 **Atualização clínica**
+
+- AHA/ASA. 2026: [Diretriz de manejo inicial do AVC isquêmico: principais recomendações](https://professional.heart.org/en/science-news/2026-guideline-for-the-early-management-of-patients-with-acute-ischemic-stroke/top-things-to-know).
+- FDA. 18/12/2025: [Alerta de segurança do Andexxa](https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/update-safety-andexxa).
+- SAEM. 2023: [GRACE-3: vertigem aguda](https://doi.org/10.1111/acem.14728).
+- CFM. [Resolução 2.173/2017 e anexos, com apostilamentos](https://sistemas.cfm.org.br/normas/arquivos/resolucoes/BR/2017/2173_2017.pdf).
 
 - Ministério da Saúde. PCDT Acidente Vascular Cerebral Isquêmico Agudo, Portaria Conjunta SAES/SECTICS n 29, 12/12/2023, página atualizada em 21/01/2025: https://www.gov.br/saude/pt-br/assuntos/pcdt/a/acidente-vascular-cerebral-isquemico-agudo/view
 - Ministério da Saúde. Linha de Cuidado AVC Isquêmico até 4 horas: https://linhasdecuidado.saude.gov.br/portal/acidente-vascular-cerebral-%28AVC%29-no-adulto/unidade-hospitalar/avc-isquemico-menor-igual-4horas/
