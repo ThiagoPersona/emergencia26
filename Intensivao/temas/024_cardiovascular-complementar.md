@@ -17,9 +17,15 @@
 ### 1. Pericardite e tamponamento
 
 - Pericardite típica: dor pleurítica/posicional, atrito, supra difuso/PR baixo, derrame.
-- Miopericardite: troponina elevada, disfunção ventricular ou arritmia.
+- Troponina elevada na pericardite sugere acometimento miocárdico. Miopericardite clássica preserva função ventricular; disfunção nova ou arritmia aumenta suspeita de predomínio de miocardite e gravidade, não é apenas pericardite simples.
 - Tamponamento: hipotensão/choque, turgência, abafamento, pulso paradoxal, taquicardia, POCUS com derrame + colapso AD/VD + VCI cheia.
 - Instável: pericardiocentese como ponte, cirurgia quando traumático/purulento/dissecção/iatrogênico conforme caso.
+
+**Pericardite sem complicação:** combinar AAS/AINE com colchicina e proteção gástrica quando indicada, após avaliar rim, sangramento e interações. Esquema usual de colchicina no primeiro episódio: 0,5 mg/dia se <=70 kg ou 0,5 mg 12/12 h se >70 kg, por 3 meses, ajustado ao paciente/produto. Corticoide não é primeira escolha automática; excluir causa infecciosa relevante e discutir indicação específica.
+
+**Destino:** febre >38 °C, curso subagudo, derrame >20 mm/tamponamento ou falha de resposta ao anti-inflamatório são alertas; imunossupressão, trauma, anticoagulação e acometimento miocárdico também aumentam cautela. Baixo risco pode ter seguimento ambulatorial próximo com orientação de retorno. ECG sem supra difuso não exclui; não chamar todo supra de pericardite sem avaliar SCA.
+
+**Tamponamento:** avaliar fisiologia e contexto, não apenas tamanho do derrame. Ventilação positiva e indução podem precipitar colapso; preparar drenagem e suporte antes quando possível. Fluido cauteloso pode servir de ponte, não substituir drenagem; evitar diurético/vasodilatador no choque obstrutivo. Hemopericárdio traumático pode conter coágulos e exigir cirurgia.
 
 ### 2. Miocardite
 
@@ -27,6 +33,7 @@
 - Pistas: viral recente, jovem, dor torácica, troponina, arritmia, disfunção de VE, choque desproporcional.
 - Evitar exercício; internar se troponina alta, ECG alterado, arritmia, síncope, IC, disfunção ventricular ou instabilidade.
 - Choque: suporte hemodinâmico, inotrópico/vasopressor, considerar centro com suporte circulatório.
+- ECG/troponina/eco normais isoladamente não excluem miocardite. RM cardíaca ajuda no estável; biópsia é selecionada, sobretudo em apresentações graves quando muda tratamento. Bloqueio AV avançado, arritmia ventricular ou choque exigem avaliação urgente. Restrição de exercício e retorno devem ser individualizados por remissão clínica, função e avaliação arrítmica, não por um prazo único para todos.
 
 ### 3. Endocardite
 
@@ -34,11 +41,12 @@
 - Coletar hemoculturas antes do antibiótico se estável; se choque/sepsis, não atrasar antibiótico.
 - Complicações de emergência: IC aguda por regurgitação, AVC/embolias, abscesso, bloqueio AV, choque séptico.
 - Eco e infecto/cardio/cirurgia conforme gravidade.
+- No estável, ESC recomenda três conjuntos de hemoculturas periféricas antes do antibiótico. Eco transtorácico inicial; transesofágico se prótese/dispositivo, exame inconclusivo ou suspeita persistente. Eco inicial negativo não encerra investigação. IC por lesão valvar, infecção não controlada/abscesso e risco embólico podem indicar cirurgia. Trombólise no AVC por endocardite não é tratamento de rotina; discutir neurologia/endocardite.
 
 ### 4. Dissecção de aorta
 
 - Dor abrupta intensa torácica/dorsal/abdominal, síncope, déficit neurológico, assimetria de pulso/PA, novo sopro aórtico, isquemia.
-- Controle primeiro: beta-bloqueador para FC <60 e PAS 100-120 se perfusão permite. Depois vasodilatador se necessário.
+- Analgesia e controle anti-impulso: ACC/AHA 2022 propõe FC 60-80 e PAS <120, ou menor pressão que preserve perfusão. Betabloqueador EV antes do vasodilatador quando indicado; em choque, bradicardia ou insuficiência aórtica grave, individualizar, não perseguir números às custas da perfusão.
 - Nunca dar vasodilatador isolado antes de controlar FC.
 - Tipo A: cirurgia. Tipo B complicada: vascular/endovascular.
 - Trombólise/anticoagulação em SCA/TEP sem excluir dissecção pode ser desastre.
@@ -55,6 +63,7 @@
 - TEP está no capítulo respiratório, mas o raciocínio cardíaco é VD.
 - Anticoagular se alta probabilidade e baixo risco de sangramento quando imagem atrasar, conforme protocolo.
 - TEP alto risco: choque/hipotensão/PCR; considerar reperfusão se benefício > sangramento.
+- TVP segue probabilidade clínica + D-dímero/US, não D-dímero em todo edema. No algoritmo NICE, US proximal negativo com D-dímero positivo pede repetição em 6-8 dias; US limitado de poucos pontos não exclui trombo distal/ilíaco. Escolha do anticoagulante considera rim, gestação, câncer, interações e sangramento; TVP proximal costuma requerer pelo menos 3 meses, com reavaliação da duração.
 
 ### 7. Complicações mecânicas do IAM
 
@@ -88,11 +97,11 @@ flowchart TD
 
 | Item | Número | Observação TEME |
 |---|---:|---|
-| Dissecção | FC <60; PAS 100-120 se tolera | Beta-bloqueador antes de vasodilatador |
+| Síndrome aórtica aguda, ACC/AHA | FC 60-80; PAS <120 ou menor que preserve perfusão | Controle anti-impulso; exceções hemodinâmicas |
 | Esmolol | bolus 500 mcg/kg, infusão 50-200 mcg/kg/min | Titular; alternativa labetalol |
 | Pericardiocentese | imediata se tamponamento instável | POCUS guiado quando possível |
 | Pericardite baixo risco | AINE + colchicina | Internar se febre, grande derrame, anticoag, trauma, imunossupressão, miocardite |
-| Hemoculturas endocardite | 2-3 pares | Se estável antes de ATB; não atrasar se choque |
+| Hemoculturas endocardite | 3 conjuntos periféricos no estável | Antes de ATB; não atrasar tratamento do choque |
 | TVP US | não compressibilidade | Achado central no POCUS vascular |
 | TEP alto risco | choque/hipotensão/PCR | Reperfusão se sem contra ou benefício supera risco |
 
@@ -133,6 +142,8 @@ flowchart TD
 
 ## Referências
 
+Revisão editorial: 04/10/2026. Metas atuais foram diferenciadas de simplificações clássicas de prova.
+
 **Prova/TEME**
 
 - Conteúdo programático TEME26: emergências cardiovasculares, miocardites, endocardites, pericardites, tamponamento, doenças da aorta, embolia pulmonar, TVP/TEV e complicações mecânicas do infarto.
@@ -145,4 +156,11 @@ flowchart TD
 **Atualização clínica**
 
 - ACC/AHA/ACEP/NAEMSP/SCAI. ACS Guideline 2025, listado no edital TEME26.
-- ESC/ERS. Pulmonary embolism guideline 2019: https://academic.oup.com/eurheartj/article/41/4/543/5556136
+- [ESC/ERS. TEP, 2019: referência histórica.](https://academic.oup.com/eurheartj/article/41/4/543/5556136)
+- [ESC. Miocardite e pericardite, 2025.](https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/myocarditis-and-pericarditis)
+- [Ensaio ICAP. Colchicina no primeiro episódio, 2013.](https://pubmed.ncbi.nlm.nih.gov/23992557/)
+- [ACC/AHA. Aorta, 2022: síntese oficial.](https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2022/11/01/12/21/2022-Guideline-on-Aortic-Disease-2-gl-ad)
+- [ESC. Endocardite, 2023.](https://academic.oup.com/eurheartj/article/44/39/3948/7243107)
+- [NICE NG158. TVP/TEP: diagnóstico e seguimento.](https://www.nice.org.uk/guidance/ng158/resources/visual-summary-pdf-11193380893)
+- [AHA/ACC. TEP, 2026; consultar também o tema respiratório.](https://www.jacc.org/doi/10.1016/j.jacc.2025.11.005)
+- Livro local: HCFMUSP, 18ª edição; consulta dirigida à diferenciação de pericardite/tamponamento na dor torácica.

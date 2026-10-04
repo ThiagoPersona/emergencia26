@@ -49,17 +49,25 @@
 - Idoso/delirium: doses menores, evitar benzodiazepínico salvo abstinência ou indicação clara.
 - Sempre monitorar sedação, via aérea, QT, hipotensão e interação com álcool/opioide.
 
+**Agitação grave indiferenciada no adulto:** ACEP 2024 favorece droperidol + midazolam; antipsicótico isolado é opção e haloperidol com/sem benzodiazepínico continua alternativa. Cetamina pode ser considerada quando o risco exige controle muito rápido, com capacidade de resgate respiratório. Não extrapolar automaticamente essas recomendações ao idoso ou à criança.
+
+**Intoxicação alcoólica não é abstinência:** depressor associado a benzodiazepínico aumenta risco respiratório; na intoxicação, preferir abordagem proporcional e considerar antipsicótico quando indicado. Na abstinência, benzodiazepínico trata a fisiopatologia; antipsicótico não deve ser monoterapia. Evitar associação concomitante de olanzapina IM com benzodiazepínico parenteral: a bula alerta para sedação excessiva/depressão cardiorrespiratória.
+
+**Catatonia e hipertermia:** mutismo, negativismo, posturas e estupor/agitação sem propósito pedem suspeita de catatonia; avaliação especializada e teste com benzodiazepínico podem ajudar. Febre, rigidez, disautonomia e CK elevada após antipsicótico sugerem síndrome neuroléptica maligna: suspender agente, resfriar, suporte e UTI. Não aumentar antipsicótico automaticamente em catatonia maligna ou delirium febril.
+
 ### 5. Contenção física
 
 - Indicação: risco iminente a si/equipe/terceiros e falha/impossibilidade de medidas menos restritivas.
 - Técnica: equipe treinada, 4/5 pontos, proteger cabeça/via aérea, evitar prona, checar circulação.
 - Depois: medicação para sofrimento/agitação, monitorização, reavaliação frequente, retirar assim que seguro, documentar indicação e alternativas tentadas.
+- Não comprimir tórax/pescoço, não cobrir boca/nariz nem prender o paciente de modo que impeça ventilação. A agitação cessar abruptamente após luta não prova melhora: checar pulso, respiração, temperatura e perfusão. Registrar dose/horário, resposta e avaliações neurovasculares; restringir pelo menor tempo necessário.
 
 ### 6. Suicídio e alta segura
 
 - Alto risco: tentativa recente de alta letalidade, tentativas prévias, plano persistente, psicose, intoxicação, impulsividade, desesperança, pouco suporte, acesso a meios, doença/dor grave.
-- Baixo risco exige: avaliação completa, melhora sustentada, plano de segurança, acompanhante, retirada de meios, seguimento definido e retorno orientado.
+- Alta exige avaliação psicossocial individual, capacidade de participar, segurança e seguimento viável; rótulo de "baixo risco" ou escala não autoriza alta. NICE desaconselha usar escores/categorias para prever suicídio ou decidir destino.
 - Notificação/acionamento de rede conforme violência/autolesão e regra local.
+- Perguntar diretamente sobre intenção, plano, acesso a meios e tentativas anteriores; ouvir familiares quando pertinente. Intoxicação pode exigir observação/reavaliação, sem adiar todo apoio até um valor de alcoolemia. Plano de segurança é conjunto de ações/contatos e restrição de meios, não "contrato de não suicídio". CVV 188 pode complementar apoio, mas emergência com risco imediato precisa atendimento presencial/rede de urgência.
 
 ## Conceitos que sustentam a conduta
 
@@ -91,7 +99,7 @@ flowchart TD
 | Droperidol | 2,5-5 mg IM/EV | Conforme disponibilidade/protocolo |
 | Midazolam | 2-5 mg IM/EV/IN | Cuidado depressão respiratória, álcool/opioide |
 | Diazepam abstinência | 5-10 mg EV/VO repetido | Titular por sedação leve/controle autonômico |
-| Tiamina | 100 mg EV/IM | Alcoolismo/desnutrição; não atrasar glicose grave |
+| Tiamina profilática | 100 mg EV/IM conforme protocolo | Suspeita de Wernicke exige esquema terapêutico maior; não atrasar glicose |
 | BARS | 1-7 | 6 = muito ativo; 7 = violento |
 
 ### Pontos de prova
@@ -128,6 +136,8 @@ flowchart TD
 
 ## Referências
 
+Revisão editorial: 04/10/2026. Recomendações de agitação grave adulta não foram generalizadas a todas as populações.
+
 **Prova/TEME**
 
 - Conteúdo programático TEME26: agitação psicomotora, delirium, tentativa de suicídio, emergências psiquiátricas e manejo de psicofármacos.
@@ -139,7 +149,9 @@ flowchart TD
 
 **Atualização clínica**
 
-- ACEP. Clinical Policy: Severe Agitation: https://www.acep.org/siteassets/new-pdfs/clinical-policies/severe-agitation-cp.pdf
-- ACEP. Use of Patient Restraints: https://www.acep.org/siteassets/new-pdfs/policy-statements/use-of-patient-restraints.pdf
-- Project BETA overview: https://onlinelibrary.wiley.com/doi/full/10.1002/emp2.12138
+- [ACEP. Agitação grave: política publicada em 2024.](https://www.acep.org/siteassets/new-pdfs/clinical-policies/severe-agitation-cp.pdf)
+- [ACEP. Contenção de pacientes.](https://www.acep.org/siteassets/new-pdfs/policy-statements/use-of-patient-restraints.pdf)
+- [Project BETA: implementação.](https://onlinelibrary.wiley.com/doi/full/10.1002/emp2.12138)
+- [NICE NG225. Autolesão: avaliação e segurança.](https://www.nice.org.uk/guidance/ng225/chapter/recommendations)
+- [DailyMed. Bula de olanzapina IM: cautela com benzodiazepínicos parenterais.](https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=1e9666ef-4271-4834-8496-ccb3125d83db)
 

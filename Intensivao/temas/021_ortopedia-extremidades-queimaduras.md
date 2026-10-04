@@ -3,7 +3,7 @@
 ## Leitura de 30 segundos
 
 - Extremidade no TEME é MARCH/ABCDE: hemorragia, perfusão, função neurovascular, alinhamento, analgesia, antibiótico/profilaxia e ortopedia.
-- Fratura exposta recebe cobertura estéril, antibiótico precoce, profilaxia antitetânica, irrigação grosseira se contaminada, imobilização e cirurgia. Não é "fechar no PS".
+- Fratura exposta recebe remoção cuidadosa de contaminação grosseira, cobertura estéril, antibiótico precoce, profilaxia antitetânica, imobilização e cirurgia. Não fazer lavagem/desbridamento improvisado nem fechar no PS.
 - Queimado grave mata por via aérea, CO/cianeto, choque, hipotermia e erro de cálculo de superfície/profundidade.
 
 ## Por que cai
@@ -25,10 +25,11 @@
 ### 2. Fratura exposta
 
 - Não atrasar antibiótico para raio X.
-- Remover contaminação grosseira, irrigar de forma simples se sujo, cobrir com curativo estéril úmido/seco conforme protocolo.
+- Remover apenas contaminação grosseira acessível, sem explorar a ferida; cobrir com gaze umedecida em salina e filme oclusivo conforme protocolo. BOAST desaconselha mini-lavagens fora do centro cirúrgico em fraturas expostas de ossos longos/retropé/mediopé.
 - Não fechar ferida no pronto-socorro.
 - Ortopedia precoce para desbridamento, estabilização e decisão cirúrgica.
 - Gustilo ajuda prognóstico, mas a primeira hora é controle de hemorragia, antibiótico e imobilização.
+- Antibioticoprofilaxia EV idealmente até 1 h da lesão; classificação definitiva após desbridamento. Contaminação agrícola, aquática, fecal e lesão vascular exigem planejamento específico, não uma ampliação única para todo caso. Não usar a antiga regra de 6 h como justificativa para esperar: isquemia/contaminação importante aceleram a cirurgia.
 
 ### 3. Luxações e reduções
 
@@ -36,6 +37,7 @@
 - Ombro posterior pode passar no AP; suspeite após convulsão/choque elétrico com rotação interna.
 - Quadril luxado: reduzir cedo pelo risco de necrose avascular.
 - Joelho luxado: risco de lesão poplítea; ABI/angioTC conforme pulso/índice e protocolo.
+- Luxação de joelho pode ter reduzido espontaneamente. Pulso palpável não exclui lesão arterial: ITB <0,9 ou exame alterado exige investigação vascular urgente; mesmo exame inicial normal pede vigilância neurovascular seriada. Não atrasar tratamento da isquemia para exames eletivos.
 
 ### 4. Síndrome compartimental
 
@@ -43,21 +45,27 @@
 - Pulso pode estar presente até tarde; ausência de pulso é sinal tardio.
 - Medir pressão se dúvida e disponível, mas clínica forte exige ortopedia/fasciotomia.
 - Risco: fratura de tíbia/antebraço, esmagamento, reperfusão, queimadura circunferencial, anticoagulação.
+- Retirar curativos/gesso constritivos, manter membro ao nível do coração e corrigir hipotensão. Delta de pressão = PAD menos pressão compartimental; valor <30 mmHg aumenta suspeita, mas não decide isoladamente nem exclui quadro pela medida única. Analgesia/bloqueio exige plano de avaliação seriada, especialmente no paciente incapaz de relatar dor.
 
 ### 5. Queimaduras
 
 1. Cena segura, retirar da fonte, remover roupas/acessórios não aderidos, resfriar queimadura térmica recente com água corrente se precoce e sem hipotermia.
-2. ABCDE: rouquidão, estridor, queimadura facial, fuligem, queimadura em ambiente fechado, rebaixamento ou edema progressivo = via aérea cedo.
+2. ABCDE: estridor, falha ventilatória, rebaixamento ou edema progressivo exigem proteção precoce da via aérea. Face queimada/fuligem/ambiente fechado elevam suspeita e pedem avaliação seriada; isoladamente não tornam a IOT obrigatória.
 3. CO: oximetria comum pode ser falsamente normal; O2 100%.
 4. Cianeto: incêndio fechado + lactato alto/choque/RNC = hidroxocobalamina conforme disponibilidade.
 5. Calcular SCQ: não contar primeiro grau para fórmula.
 6. Cobrir limpo, analgesia, aquecer, tétano e transferir se critério.
+
+**SCQ e fluidos:** Lund-Browder é especialmente útil na criança; a mão inteira do paciente, com dedos, aproxima 1% para áreas pequenas. Só espessura parcial/total entra na fórmula. ABA 2024 recomenda começar com 2 mL/kg/%SCQ nas primeiras 24 h em adultos com >=20% SCQ; Parkland clássica usa 4. Fórmula é ponto de partida, não volume obrigatório: descontar o já administrado, contar desde a queimadura e titular por perfusão/diurese. Crianças precisam cálculo próprio e manutenção, incluindo glicose quando indicada; não extrapolar a recomendação adulta.
+
+**Escarotomia não é fasciotomia:** escara circunferencial profunda com perfusão distal comprometida ou restrição ventilatória exige avaliação urgente para escarotomia. Lesão muscular compartimental, sobretudo elétrica, pode exigir fasciotomia. Não esperar pulso desaparecer. Queimadura elétrica pede ECG, avaliação de trauma e rabdomiólise conforme exposição; lesão cutânea pequena não mede dano profundo. Antibiótico sistêmico profilático não é rotina na queimadura térmica sem infecção.
 
 ### 6. Critérios práticos de centro de queimados
 
 - Parcial profunda/total relevante, face/mãos/pés/genitália/períneo/grandes articulações.
 - Inalatória, elétrica/química, trauma associado, comorbidade, crianças, idosos, suspeita de violência/necessidade social.
 - Grande queimado: ressuscitação guiada por fórmula e diurese, evitando tanto sub quanto hiper-hidratação.
+- ABA: consultar imediatamente e considerar transferência em espessura parcial >=10% SCQ, qualquer espessura total, áreas especiais com lesão profunda ou suspeita inalatória. Queimaduras potencialmente profundas menores também merecem consulta; necessidade pediátrica e suporte familiar entram na decisão.
 
 ## Conceitos que sustentam a conduta
 
@@ -84,7 +92,7 @@ flowchart TD
 | Antibiótico fratura exposta | o mais precoce possível | Cefazolina é base comum; ampliar conforme gravidade/contaminação |
 | Torniquete | registrar horário | Não afrouxar intermitentemente |
 | Síndrome compartimental | dor à extensão passiva | Pulso presente não exclui |
-| Queimadura: fórmula inicial | 2-4 mL x kg x %SCQ em 24 h | Só 2º/3º grau; metade nas primeiras 8 h desde o trauma |
+| Queimadura adulta >=20% SCQ, ABA 2024 | Início: 2 mL x kg x %SCQ/24 h | Titular; Parkland clássica = 4; metade inicial em 8 h desde a lesão |
 | Diurese adulto queimado | 0,5 mL/kg/h | Maior alvo em elétrica/rabdomiólise conforme protocolo |
 | Centro de queimados | face, mãos, pés, períneo, articulações, inalatória, elétrica/química | Critérios variam; usar referência oficial/local |
 | CO | O2 100% | SatO2 pode enganar |
@@ -126,6 +134,8 @@ flowchart TD
 
 ## Referências
 
+Revisão editorial: 04/10/2026. Fórmulas históricas de prova foram distinguidas das recomendações atuais.
+
 **Prova/TEME**
 
 - Conteúdo programático TEME26: trauma de extremidades, reduções, queimaduras, explosão, eletrocussão e causas ambientais.
@@ -137,5 +147,9 @@ flowchart TD
 
 **Atualização clínica**
 
-- American Burn Association. Burn Patient Referral Guidelines: https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral
+- [ABA. Critérios de encaminhamento.](https://www.ameriburn.org/burn-care-team/resources/guidelines-for-burn-patient-referral)
+- [ABA. Ressuscitação do choque por queimadura, 2024.](https://doi.org/10.1093/jbcr/irad125)
+- [BOAST. Fraturas expostas.](https://www.boa.ac.uk/resource/boast-4-pdf.html)
+- [BOAST. Síndrome compartimental: versão disponível consultada.](https://www.boa.ac.uk/resource/boast-10-pdf.html)
+- Livro local: Medicina de Emergência HCFMUSP, 18ª edição; consulta dirigida sobre queimaduras, não leitura integral.
 

@@ -29,7 +29,7 @@ Frase útil de estação:
 
 ### Durante a estação
 
-1. Faça **ABCDE em voz alta**, com intervenção junto da avaliação.
+1. Faça avaliação primária com intervenção junto da avaliação; verbalize de forma objetiva. Hemorragia exsanguinante pode preceder ABCDE, e PCR segue seu algoritmo próprio.
 2. Não espere exame para corrigir hipóxia, choque, hipoglicemia, convulsão, arritmia instável, hemorragia exsanguinante ou via aérea ameaçada.
 3. Verbalize hipótese principal e diferenciais perigosos.
 4. Use comunicação em alça fechada: peça, confirme e confira execução.
@@ -67,18 +67,32 @@ Se duas alternativas parecem certas, a melhor costuma ser a que resolve o risco 
 
 O avaliador só pontua o que você faz ou verbaliza. Se você pensou, mas não disse, a estação pode tratar como não feito. Por isso, verbalize ações críticas de forma objetiva:
 
+O comando e o checklist oficial definem se o item exige **dizer, demonstrar ou executar**. Verbalizar não substitui gesto obrigatório; simular uma técnica não autoriza pular dose, via, indicação ou segurança solicitadas. Na correção automatizada, confirmação manual deve refletir o que realmente foi realizado, não apenas o que ficou claro depois de ler o gabarito.
+
 - "Paciente instável: vou chamar ajuda."
 - "Vou monitorizar, obter acesso venoso e checar glicemia."
 - "A intervenção imediata é..."
 - "Vou reavaliar PA, pulso, consciência, SpO2 e resposta clínica."
 - "Vou registrar horário e comunicar equipe/destino."
 
+### Treino oral de cinco minutos
+
+- **Primeiros 30-45 s:** ler o comando, identificar instabilidade e priorizar a ação crítica. Não gastar esse tempo recitando um roteiro completo sem relação com o caso.
+- **Parte central:** responder uma tarefa por vez, com achado, interpretação e ação. Para drogas críticas, incluir dose, unidade, via e repetição/titulação; pediatria exige peso.
+- **Últimos 30-45 s:** reavaliar, completar pendência relevante e definir destino. Esses intervalos são organização pessoal, não regra oficial da banca.
+- Ao voltar a uma pergunta, acrescentar a informação claramente: "Complementando a conduta anterior...". Isso ajuda a interpretação; não presumir que resposta tardia recupera uma falha crítica tempo-dependente no exame real.
+- Depois da correção, separar omissão clínica, erro de dose/prioridade, gesto não demonstrado e falha de transcrição. Conferir o áudio antes de atribuir nota manual e repetir sem consultar respostas.
+
+### Quando a evolução muda o plano
+
+Não assumir que uma intervenção funcionou: checar os dados novos e dizer a resposta observada. Se piorou, reformular hipótese, conferir execução e escolher resgate; repetir a mesma manobra sem justificar não é progressão. Em imagem, descrever achado visível, limite do exame e consequência clínica; não inventar resultado ausente.
+
 ## Fluxograma
 
 ```mermaid
 flowchart TD
     A[Recebi o caso] --> B[Higiene/EPI + segurança + apresentação]
-    B --> C[Monitor + acesso + glicemia + ABCDE]
+    B --> C[Avaliação primária + recursos conforme cenário]
     C --> D{Ameaça imediata à vida?}
     D -->|Sim| E[Tratar agora + chamar ajuda + preparar recurso definitivo]
     D -->|Não| F[Diagnóstico dirigido + exames que mudam conduta]
@@ -147,7 +161,7 @@ flowchart TD
 
 - Conteúdo programático TEME26.
 - Provas teóricas TEME22-26 e gabaritos oficiais disponíveis no projeto.
-- Estações práticas disponíveis até TEME25 disponíveis no projeto.
+- Casos/checklists de provas práticas disponíveis no projeto, incluindo TEME26 em `TEME26/Prova Pratica`; consultar a matriz para distinguir prova oficial de simulado/adaptação.
 
 **Material local**
 
@@ -156,6 +170,8 @@ flowchart TD
 
 **Atualização clínica**
 
-- AHA Guidelines for CPR and ECC.
+- [AHA. Diretrizes de suporte básico adulto, 2025.](https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines/adult-basic-life-support)
 - ATLS/trauma e protocolos institucionais de atendimento ao politrauma.
 - Protocolos locais de segurança do paciente, regulação, transferência e procedimentos.
+
+Revisão editorial: 04/10/2026. Estratégia de treino é orientação autoral, não promessa de pontuação nem reprodução de critérios não documentados da banca. Não foram alterados checklists oficiais ou dos cursos.

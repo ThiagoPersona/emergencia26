@@ -37,17 +37,24 @@
 - Escolha por fisiologia: cetamina preserva drive/PA em muitos cenários; propofol é rápido mas hipotensor; midazolam/fentanil somam depressão respiratória; etomidato pode ser útil em cardioversão/redução curta conforme protocolo.
 - Reavaliar até retorno ao basal, via aérea protegida e critérios de alta/observação.
 
+**Sedação não é analgesia:** propofol, midazolam e etomidato não tratam dor por si; associar analgesia quando necessária, reduzindo doses pela interação. Cetamina não garante via aérea: apneia, laringoespasmo e vômito ainda são possíveis. Em choque com depleção catecolaminérgica pode haver hipotensão, não apenas aumento da PA.
+
+**Jejum e recuperação:** não atrasar procedimento urgente apenas por horas de jejum; considerar urgência, risco de aspiração e plano de resgate. Capnografia identifica hipoventilação antes da dessaturação, sobretudo com O2 suplementar; saturação normal não prova ventilação. Monitorização prossegue na recuperação. Para alta, retorno ao basal, sinais vitais estáveis, dor/náusea controladas, acompanhante e orientação; não usar apenas um tempo fixo.
+
 ### 4. Bloqueios guiados por US
 
 - Verbalizar: probe correto, assepsia, imagem do nervo/plano, agulha em plano ou fora de plano, aspiração, injeção fracionada, visualizar dispersão.
 - Sempre calcular dose máxima de anestésico local.
 - LAST: zumbido, gosto metálico, agitação, convulsão, arritmia/choque. Tratamento com suporte, benzo e emulsão lipídica 20%.
 
+**Resgate de LAST (ASRA 2020):** suspender injeção, chamar ajuda, oxigenar/ventilar e tratar convulsão com benzodiazepínico. Iniciar lipídio 20%: <70 kg, bolus 1,5 mL/kg em 2-3 min e infusão 0,25 mL/kg/min; >70 kg, aproximadamente 100 mL e 250 mL em 15-20 min. Instabilidade persistente permite repetir bolus/dobrar infusão conforme checklist; continuar >=15 min após estabilidade, máximo 12 mL/kg. Reanimação difere do ACLS habitual: se adrenalina, começar <1 mcg/kg; evitar vasopressina, betabloqueadores, bloqueadores de cálcio e mais anestésico local. Observar pelo menos 2 h após convulsão e 4-6 h após instabilidade cardiovascular.
+
 ### 5. Toracocentese e drenagem pleural
 
 - Indicações: diagnóstico de derrame relevante, alívio, suspeita de empiema; drenagem se pus/pH baixo/glicose baixa/loculado ou pneumotórax/hemotórax conforme caso.
 - Use US se disponível: reduz complicação.
 - Evitar punção às cegas em derrame pequeno, coagulopatia grave não corrigida quando não emergente, instabilidade sem preparo.
+- No derrame, localizar com US na posição do procedimento; não marcar e depois reposicionar sem reconferir. Aspirar lentamente por seringa/gravidade, em geral até 1,5 L por tentativa; interromper antes se dor torácica, dispneia ou tosse persistente. Evitar sucção a vácuo. RX após punção simples e assintomática não é automático; sintomas/complicação mudam a indicação (BTS 2023).
 
 ### 6. Paracentese
 
@@ -55,12 +62,13 @@
 - POCUS ajuda local e profundidade.
 - PBE: PMN >=250/mm3 no líquido ascítico; antibiótico precoce.
 - Albumina quando PBE com risco renal ou grande volume conforme protocolo.
+- Paracentese na cirrose é de baixo risco: INR elevado isolado não indica plasma profilático, nem deve atrasar investigação de PBE. Considerar sangramento ativo, CIVD, trombocitopenia grave e anticoagulante real individualmente. Na retirada >5 L, albumina usual 6-8 g por litro do volume total retirado, não apenas dos litros acima de cinco.
 
 ### 7. Acesso vascular e punção guiada
 
 - Linear, veia compressível, diferenciar artéria/veia, técnica estéril.
 - Visualizar ponta da agulha. Na prática 2025 isso pontuou.
-- Confirmar posição conforme contexto: US, retorno, flush, Rx se CVC, sinais de complicação.
+- Antes de dilatar CVC, confirmar fio na veia por US; sangue escuro/sem pulsatilidade não basta em choque. Se dúvida arterial, parar e confirmar. Cateter calibroso/dilatador colocado em artéria não deve ser arrancado às cegas: acionar equipe vascular. Confirmar ponta e excluir complicações conforme sítio/método validado; RX não é obrigatório para todo acesso, como femoral.
 
 ## Conceitos que sustentam a conduta
 
@@ -92,16 +100,16 @@ flowchart TD
 | Cetamina dissociativa | 1-2 mg/kg EV ou 4-5 mg/kg IM | Preparar salivação/vômito/agitação |
 | Propofol | 0,5-1 mg/kg EV, titular | Hipotensão/apneia |
 | Midazolam | 1-2 mg EV titulado | Idoso/álcool/opioide: cuidado respiratório |
-| Lidocaína sem adrenalina | 4,5 mg/kg | Checar dose total |
-| Lidocaína com adrenalina | 7 mg/kg | Evitar em locais/protocolos contraindicados |
+| Lidocaína sem adrenalina | 4,5 mg/kg; teto usual 300 mg | Conferir bula/técnica, somar todos os locais |
+| Lidocaína com adrenalina | 7 mg/kg; teto usual 500 mg | Reduzir se risco; não usar onde perfusão comprometida |
 | Bupivacaína | 2-2,5 mg/kg | Mais cardiotóxica; cuidado LAST |
-| Emulsão lipídica LAST | bolus 1,5 mL/kg a 20% | Depois infusão conforme protocolo |
+| Emulsão lipídica LAST, <70 kg | Bolus 1,5 mL/kg a 20%; infusão 0,25 mL/kg/min | ASRA: máximo 12 mL/kg; ver resgate acima |
 
 ### Pontos de prova
 
 - Abscesso pequeno, flutuante, em paciente hígido e afebril: incisão, drenagem, limpeza, curativo e orientação; antibiótico não é automático sem celulite extensa, imunossupressão ou gravidade.
 - Analgesia não atrapalha abdome agudo; leucograma normal não exclui inflamação e ultrassom é forte para via biliar.
-- Sedação procedural exige monitorização, acesso, oxigênio, aspiração, BVM, material de via aérea e pessoa dedicada a observar o paciente quando possível.
+- Sedação procedural exige monitorização, acesso, oxigênio, aspiração, BVM, material de via aérea e profissional dedicado à vigilância contínua, além de quem executa o procedimento.
 - Bloqueio regional: escolha pelo território anatômico. Ciático poplíteo cobre tornozelo/maléolo lateral; fáscia ilíaca é quadril/fêmur proximal; ESP block é bom para fraturas costais posteriores.
 - LAST: calcular dose máxima, injetar fracionado, aspirar e observar sinais neurológicos/cardiovasculares; toxicidade de anestésicos locais é aditiva quando se misturam drogas.
 - Torsades adquirida: corrigir K/Mg, suspender drogas que prolongam QT, magnésio EV e, se recorrente, aumentar frequência com overdrive pacing/isoproterenol conforme contexto.
@@ -132,6 +140,8 @@ flowchart TD
 
 ## Referências
 
+Revisão editorial: 04/10/2026. Doses são pontos de partida; conferir produto, população e protocolo.
+
 **Prova/TEME**
 
 - Conteúdo programático TEME26: analgesia e sedação procedural adulto/pediátrica, monitorização, POCUS procedimentos, bloqueios periféricos, toracocentese e paracentese.
@@ -143,4 +153,11 @@ flowchart TD
 
 **Atualização clínica**
 
-- ACEP. Procedural Sedation and Analgesia: https://www.acep.org/by-medical-focus/procedural-sedation
+- [ACEP. Sedação procedural: documentos e recomendações.](https://www.acep.org/by-medical-focus/procedural-sedation)
+- [ACEP. Política clínica de sedação, 2014: jejum, capnografia e equipe.](https://www.acep.org/siteassets/new-pdfs/clinical-policies/clinical-policy-procedural-sedation-and-analgesia-in-the-emergency-department.pdf)
+- [ASRA. Checklist de toxicidade sistêmica por anestésico local, 2020.](https://asra.com/news-publications/asra-updates/blog-landing/guidelines/2020/11/01/checklist-for-treatment-of-local-anesthetic-systemic-toxicity)
+- [BTS. Procedimentos pleurais, 2023.](https://thorax.bmj.com/content/78/Suppl_3/s43)
+- [AASLD. Ascite/PBE/síndrome hepatorrenal, 2021.](https://www.aasld.org/practice-guidelines/diagnosis-evaluation-and-management-ascites-spontaneous-bacterial-peritonitis)
+- [AASLD. Risco hemorrágico periprocedimento na cirrose, 2024.](https://www.aasld.org/liver-fellow-network/core-series/clinical-pearls/peri-procedural-management-bleeding-risk-cirrhosis)
+- [Bula Xylocaine. Limites de dose em adultos saudáveis.](https://www.dailymed.nlm.nih.gov/dailymed/getFile.cfm?setid=441a0cfa-a5fc-4ace-8dd8-84bb8c804c2e&type=pdf)
+- Livro local: HCFMUSP, 18ª edição, capítulo de sedação e analgesia em procedimentos não eletivos; consulta dirigida.
