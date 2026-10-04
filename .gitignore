@@ -42,3 +42,10 @@ Intensivao/.obsidian/
 /.vscode/
 /.worktrees/
 /.superpowers/sdd/
+
+# Backend TEME em worktree independente
+/Simulador de Provas/
+
+# Acervo local de estudo; material publicado fica em Intensivao/
+/EmTalks simulado/
+/Praticas/
