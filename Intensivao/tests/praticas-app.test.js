@@ -1505,6 +1505,67 @@ test("aba desempenho mostra historico dentro do simulador sem carregar outra est
   assert.equal(stationLoads, 1);
 });
 
+test("treino dirigido reabre o checklist salvo e permite ajustar a nota", async () => {
+  const utils = require("../praticas-utils.js");
+  const saved = {
+    id: "tentativa-a", stationId: "a", stationVersion: 1, stationTitle: "Estacao a",
+    domain: "Teste", completedAt: "2026-10-04T12:00:00.000Z", evaluationMode: "ai",
+    transcript: "Resposta falada.", summary: "Faltou o primeiro item.",
+    ...utils.calculatePracticeScore(createStation("a"), [
+      { itemId: "item-1", status: "ausente", evidence: "Não mencionado", rationale: "Revise o critério." }
+    ])
+  };
+  const storage = createStorage({ "teme26-practice-attempts-v1": JSON.stringify([saved]) });
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, storage);
+  fixture.root.TemePracticeUtils = utils;
+  await createPracticeApp(fixture.root).mount();
+
+  assert.ok(fixture.simulator.querySelector("#practice-open-checklist"));
+  fixture.simulator.querySelector("#practice-open-checklist").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Faltou o primeiro item/));
+  assert.match(fixture.simulator.innerHTML, /Revise o critério/);
+  fixture.simulator.querySelector("#practice-correct-item-1").click();
+  assert.match(fixture.simulator.innerHTML, /100%/);
+  assert.deepEqual(JSON.parse(storage.getItem("teme26-practice-attempts-v1"))[0].selfCorrectedItemIds, ["item-1"]);
+  fixture.simulator.querySelector("#practice-back").click();
+  assert.ok(fixture.simulator.querySelector("#practice-start-record"));
+  assert.ok(fixture.simulator.querySelector("#practice-open-checklist"));
+});
+
+test("desempenho abre tentativa individual e volta ao historico", async () => {
+  const utils = require("../praticas-utils.js");
+  const saved = {
+    id: "tentativa-a", stationId: "a", stationVersion: 1, stationTitle: "Estacao a",
+    domain: "Teste", completedAt: "2026-10-04T12:00:00.000Z", evaluationMode: "ai",
+    transcript: "Resposta falada.", summary: "Comentário da correção.",
+    ...utils.calculatePracticeScore(createStation("a"), [
+      { itemId: "item-1", status: "cumprido", evidence: "Foi dito", rationale: "Correto." }
+    ])
+  };
+  const storage = createStorage({
+    [PREFERENCES_KEY]: JSON.stringify({ mode: "performance", filters: {} }),
+    "teme26-practice-attempts-v1": JSON.stringify([saved])
+  });
+  const fixture = createInteractiveRoot(async (url) => {
+    if (url.endsWith("index.json")) return jsonResponse([{ id: "a", file: "a.json" }]);
+    if (url.endsWith("media.json")) return jsonResponse([]);
+    return jsonResponse(createStation("a"));
+  }, storage);
+  fixture.root.TemePracticeUtils = utils;
+  await createPracticeApp(fixture.root).mount();
+
+  assert.ok(fixture.simulator.querySelector("#practice-history-open-0"));
+  fixture.simulator.querySelector("#practice-history-open-0").click();
+  await waitFor(() => assert.match(fixture.simulator.innerHTML, /Comentário da correção/));
+  assert.match(fixture.simulator.innerHTML, /Foi dito/);
+  fixture.simulator.querySelector("#practice-back").click();
+  assert.ok(fixture.simulator.querySelector("#practice-history-open-0"));
+});
+
 test("mantem preview e acoes de inicio visiveis e desabilitadas durante preload", () => {
   const selectedEntry = {
     id: "2025-vm-autopeep",

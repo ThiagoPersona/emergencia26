@@ -106,6 +106,8 @@
     transcript: "",
     transcriptionQualityError: false,
     lastAttempt: null,
+    reviewingSavedAttempt: false,
+    reviewReturnMode: null,
     apiStatus: "idle",
     dashboardSyncStarted: false
   };
@@ -549,6 +551,11 @@
     return parseStoredAttempts(root.localStorage.getItem(STORAGE_KEY));
   }
 
+  function getLatestCompletedAttempt(stationId) {
+    return getStoredAttempts().find((attempt) => attempt.stationId === stationId &&
+      Number.isFinite(attempt.finalPercent) && Array.isArray(attempt.evaluations) && attempt.evaluations.length) || null;
+  }
+
   function upsertAttemptList(attempts, attempt) {
     const list = Array.isArray(attempts) ? attempts : [];
     const filtered = list.filter((item) => !attempt.id || item.id !== attempt.id);
@@ -667,6 +674,19 @@
     return state.stationEntries.find((entry) => entry.id === stationId) || null;
   }
 
+  async function openSavedAttempt(attemptId) {
+    const attempt = getStoredAttempts().find((item) => item.id === attemptId);
+    const entry = attempt && getStationEntry(attempt.stationId);
+    if (!entry || !Array.isArray(attempt.evaluations) || !attempt.evaluations.length) return;
+    const returnMode = state.mode;
+    if (!state.station || state.station.id !== entry.id) await loadSelectedStation(entry);
+    if (!state.station || state.station.id !== entry.id) return;
+    state.reviewReturnMode = returnMode;
+    state.reviewingSavedAttempt = true;
+    state.lastAttempt = { ...attempt, pendingManualItemIds: attempt.pendingManualItemIds || [] };
+    renderResult();
+  }
+
   function updateStationEntry(entry, station) {
     const enriched = enrichStationEntry(entry, station);
     state.stationEntries = state.stationEntries.map((candidate) => (
@@ -748,6 +768,8 @@
 
   async function setPracticeMode(mode) {
     const nextMode = normalizePracticeMode(mode);
+    state.reviewingSavedAttempt = false;
+    state.reviewReturnMode = null;
     state.mode = nextMode;
     saveCurrentSetup();
     await loadCurrentModeSelection();
@@ -1031,6 +1053,8 @@
     const currentExamScore = examProgress?.scores[state.examPlan.currentIndex];
     const latestScores = state.mode === "directed" ? getLatestCompletedScores(getStoredAttempts()) : new Map();
     const selectedScore = state.selectedEntry && latestScores.get(state.selectedEntry.id);
+    const selectedAttempt = state.mode === "directed" && state.selectedEntry
+      ? getLatestCompletedAttempt(state.selectedEntry.id) : null;
     const showDiagnosticMeta = setupView.showDiagnosticMeta;
     const relatedIntro = state.mode === "review"
       ? "A escolha usa seu histórico. Os detalhes da estação aparecem ao iniciar."
@@ -1072,6 +1096,7 @@
             </div>
           </div>
           ${renderPracticeStartActions(setupView)}
+          ${selectedAttempt ? `<div class="practice-actions"><button id="practice-open-checklist" class="practice-button" type="button">Ver último checklist</button></div>` : ""}
           ${state.runtimeNotice ? `<div class="practice-alert practice-alert-error" role="alert">${escapeHtml(state.runtimeNotice)}</div>` : ""}
           ${currentExamScore != null ? `<div class="practice-actions"><button class="practice-button practice-button-primary" id="practice-resume-exam" type="button">${state.examPlan.currentIndex < 4 ? "Próxima estação" : state.examPlan.simulado >= 2022 ? "Ver resultado da prova" : "Ver resultado do simulado"}</button></div>` : ""}
           ${state.mode === "exam" ? `<div class="practice-actions"><button class="practice-button practice-button-quiet" id="practice-new-exam-round" type="button">Reiniciar ${escapeHtml(catalogModule.getExamPlanLabel(state.examPlan?.simulado))}</button></div>` : ""}
@@ -1112,6 +1137,8 @@
     });
     const recordButton = mount.querySelector("#practice-start-record");
     if (recordButton) recordButton.addEventListener("click", beginSession);
+    const checklistButton = mount.querySelector("#practice-open-checklist");
+    if (checklistButton) checklistButton.addEventListener("click", () => openSavedAttempt(selectedAttempt.id));
     const resumeExamButton = mount.querySelector("#practice-resume-exam");
     if (resumeExamButton) resumeExamButton.addEventListener("click", advanceExamStation);
     const newRoundButton = mount.querySelector("#practice-new-exam-round");
@@ -1160,6 +1187,8 @@
 
   async function beginSession() {
     if (!state.station || areStartActionsDisabled(state.mediaStatus)) return;
+    state.reviewingSavedAttempt = false;
+    state.reviewReturnMode = null;
     const station = state.station;
     const mode = state.mode;
     const simulator = root.document.getElementById("practice-simulator");
@@ -1500,15 +1529,15 @@
         ${state.station.references?.length ? `<details class="practice-references"><summary>Referências clínicas</summary><ul>${state.station.references.map((url) => `<li><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a></li>`).join("")}</ul></details>` : ""}
         ${attempt.transcript ? `<details class="practice-references practice-transcript-details">
           <summary>Transcrição da fala</summary>
-          <label class="practice-field" for="practice-result-transcript"><span>Texto analisado</span><textarea id="practice-result-transcript" rows="8" ${attempt.evaluationMode === "ai" ? "" : "readonly"}>${escapeHtml(attempt.transcript)}</textarea></label>
-          ${attempt.evaluationMode === "ai" ? `<div class="practice-actions"><button id="practice-reevaluate-transcript" class="practice-button" type="button" disabled>Reavaliar após corrigir texto</button></div><div id="practice-reevaluation-message" role="status"></div>` : ""}
+          <label class="practice-field" for="practice-result-transcript"><span>Texto analisado</span><textarea id="practice-result-transcript" rows="8" ${attempt.evaluationMode === "ai" && !state.reviewingSavedAttempt ? "" : "readonly"}>${escapeHtml(attempt.transcript)}</textarea></label>
+          ${attempt.evaluationMode === "ai" && !state.reviewingSavedAttempt ? `<div class="practice-actions"><button id="practice-reevaluate-transcript" class="practice-button" type="button" disabled>Reavaliar após corrigir texto</button></div><div id="practice-reevaluation-message" role="status"></div>` : ""}
         </details>` : ""}
         <section class="practice-result-media" aria-label="Mídias revisadas da estação">
           <h3>Revisão visual</h3>
           <div id="practice-result-media"></div>
         </section>
         <div class="practice-actions">
-          ${state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : state.examPlan.simulado >= 2022 ? "Ver resultado da prova" : "Ver resultado do simulado"}</button>` : ""}
+          ${!state.reviewingSavedAttempt && state.mode === "exam" && state.examPlan ? `<button id="practice-next-station" class="practice-button practice-button-primary" type="button" ${attempt.pendingManualItemIds.length ? "disabled" : ""}>${state.examPlan.currentIndex + 1 < state.examPlan.stationIds.length ? "Próxima estação" : state.examPlan.simulado >= 2022 ? "Ver resultado da prova" : "Ver resultado do simulado"}</button>` : ""}
           ${hasPendingManual ? "" : `<button id="practice-download" class="practice-button practice-button-primary" type="button">Baixar relatório</button>`}
           <button id="practice-back" class="practice-button" type="button">Voltar ao simulador</button>
           <button id="practice-view-performance" class="practice-button practice-button-quiet" type="button">Ver desempenho</button>
@@ -1675,12 +1704,16 @@
   function resetSimulator() {
     clearSessionTimer();
     cleanupRecording();
+    const returnMode = state.reviewingSavedAttempt ? state.reviewReturnMode : null;
+    state.reviewingSavedAttempt = false;
+    state.reviewReturnMode = null;
     state.runtimeNotice = "";
     state.transcript = "";
     state.transcriptionQualityError = false;
     if (root.localStorage) clearPracticeDraft(root.localStorage);
     state.session = state.station ? createPracticeSession(state.station, Date.now(), state.mode) : null;
-    renderSetup();
+    if (returnMode === "performance") renderPerformanceMode();
+    else renderSetup();
   }
 
   function downloadText(content, filename) {
@@ -1712,13 +1745,17 @@
         <h2>Lacunas mais frequentes</h2>
         ${summary.frequentGaps.length ? `<ol class="practice-gap-list">${summary.frequentGaps.slice(0, 10).map((gap) => `<li><span>${escapeHtml(gap.label)}</span><strong>${gap.count}x</strong></li>`).join("")}</ol>` : "<p>Nenhuma lacuna registrada. Conclua uma estação para iniciar o histórico.</p>"}
         <h2>Últimas tentativas</h2>
-        ${attempts.length ? `<div class="practice-history">${attempts.slice(0, 20).map((attempt) => `<article><div><strong>${escapeHtml(attempt.stationTitle)}</strong><span>${escapeHtml(formatDate(attempt.completedAt))}</span></div><b>${Number.isFinite(attempt.finalPercent) ? `${attempt.finalPercent}%` : "pendente"}</b></article>`).join("")}</div>` : "<p>O histórico local está vazio.</p>"}
+        ${attempts.length ? `<div class="practice-history">${attempts.slice(0, 20).map((attempt, index) => `<article><div><strong>${escapeHtml(attempt.stationTitle)}</strong><span>${escapeHtml(formatDate(attempt.completedAt))}</span></div><b>${Number.isFinite(attempt.finalPercent) ? `${attempt.finalPercent}%` : "pendente"}</b>${getStationEntry(attempt.stationId) && Number.isFinite(attempt.finalPercent) && Array.isArray(attempt.evaluations) && attempt.evaluations.length ? `<button id="practice-history-open-${index}" class="practice-button practice-button-quiet" type="button">Ver checklist</button>` : ""}</article>`).join("")}</div>` : "<p>O histórico local está vazio.</p>"}
         <div class="practice-actions">
           <button id="practice-export-history" class="practice-button practice-button-primary" type="button" ${attempts.length ? "" : "disabled"}>Exportar histórico</button>
           <button id="practice-clear-history" class="practice-button practice-button-danger" type="button" ${attempts.length ? "" : "disabled"}>Limpar histórico local</button>
         </div>
       </section>`;
     const exportButton = mount.querySelector("#practice-export-history");
+    attempts.slice(0, 20).forEach((attempt, index) => {
+      const button = mount.querySelector(`#practice-history-open-${index}`);
+      if (button) button.addEventListener("click", () => openSavedAttempt(attempt.id));
+    });
     if (exportButton) exportButton.addEventListener("click", () => {
       const content = attempts.map(buildPracticeReport).join("\n\n");
       downloadText(content, "historico-pratica-teme.txt");

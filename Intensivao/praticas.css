@@ -941,6 +941,20 @@
 
 .practice-history article > div {
   display: grid;
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.practice-history article {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+}
+
+.practice-history article .practice-button {
+  min-height: 36px;
+  padding: 7px 11px;
 }
 
 .practice-history span {
