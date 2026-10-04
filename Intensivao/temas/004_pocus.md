@@ -5,7 +5,7 @@
 - POCUS não é "fazer ultrassom"; é responder uma Pergunta clínica imediatamente: tem pneumotórax? tem tamponamento? tem líquido livre? o VE está ruim? o VD está grande? cabe volume?
 - Na prova TEME, os quatro trilhos são: **BLUE** na dispneia, **RUSH** no choque, **eFAST** no trauma e **CASA** na PCR.
 - Lung sliding presente reduz muito a chance de pneumotórax naquele ponto; ausente não fecha diagnóstico sozinho.
-- Linhas B difusas bilaterais com sliding = congestão/edema pulmonar até prova em contrário; no contexto hipertensivo, pense em SCAPE.
+- Linhas B difusas bilaterais = síndrome intersticial, não diagnóstico etiológico; com dispneia hipertensiva e contexto cardíaco, pense em SCAPE, mas considere SDRA, fibrose e outras causas.
 - Choque + VE hipercinético/cavidades pequenas/VCI colabando = hipovolemia provável; choque + VE ruim/B-lines/VCI cheia = cardiogênico ou intolerância a volume.
 - FAST negativo não libera paciente instável nem exclui retroperitônio, pelve, lesão de órgão sólido ou trauma abdominal em paciente estável.
 - Na PCR, POCUS só entra se a pausa couber em até 10 segundos. Se atrasou compressão ou choque, virou problema.
@@ -93,6 +93,10 @@ O que fazer com o achado:
 
 Regra TEME: POCUS pulmonar avalia principalmente **pleura e artefatos**, não "olha o parênquima todo" como TC.
 
+Sliding, linhas B verdadeiras ou lung pulse excluem pneumotórax **no ponto examinado**, não no hemitórax inteiro. Ausência de sliding/código de barras é inespecífica. Lung point típico é muito específico, porém pode faltar no pneumotórax completo; sua ausência não exclui o diagnóstico.
+
+Broncograma aéreo **dinâmico** em consolidação favorece pneumonia em relação à atelectasia obstrutiva; broncograma estático não resolve sozinho. Derrame pode ser anecoico mesmo quando há sangue: ecogenicidade não define a composição.
+
 ### 5. Choque: RUSH Em Linguagem De Plantão
 
 RUSH = **Pump, Tank, Pipes**.
@@ -104,7 +108,9 @@ RUSH = **Pump, Tank, Pipes**.
 - VD maior que VE, septo em D, TAPSE baixo: sobrecarga de VD/TEP/cor pulmonale.
 - Derrame pericárdico + colapso de câmaras direitas + VCI cheia: tamponamento.
 - Tamponamento no eco: colapso diastólico do VD, colapso sistólico do AD, VCI dilatada e pouca colapsibilidade. Nenhum sinal isolado substitui o contexto.
-- TEP/cor pulmonale agudo: VD dilatado, septo em D, hipocinesia de VD, VCI cheia e, quando descrito, VD fino (< 5 mm) sugerindo processo agudo. O sinal de McConnell é mais específico que sensível; não use sozinho para "fechar" TEP.
+- TEP/cor pulmonale agudo: VD dilatado, septo em D, hipocinesia de VD, VCI cheia e, quando descrito, VD fino (< 5 mm) favorecendo processo agudo. McConnell também ocorre no infarto de VD; não confirma nem exclui TEP sozinho. Na PCR, a própria parada pode dilatar o VD.
+
+Tamponamento é diagnóstico clínico-hemodinâmico apoiado pelo eco, não sinônimo de derrame. Hipertensão pulmonar e ventilação com pressão positiva podem modificar os sinais clássicos de colapso; derrame pequeno de instalação rápida pode ser grave. Não indicar punção apenas por haver líquido.
 
 **Tank - tanque/volume e congestão**
 
@@ -115,7 +121,7 @@ RUSH = **Pump, Tank, Pipes**.
 
 **Pipes - tubos/vasos**
 
-- Aorta abdominal maior que 3 cm = aneurisma.
+- Aorta abdominal com diâmetro >= 3 cm = aneurisma, medindo parede externa a parede externa, perpendicular ao eixo do vaso.
 - Hipotensão/dor abdominal/dorso + AAA no POCUS = chamar cirurgia/vascular; não medir só a luz verdadeira se houver trombo.
 - Veia femoral/poplitea não compressível = TVP; com choque/VD dilatado, aumenta suspeita de TEP.
 
@@ -161,7 +167,7 @@ Perguntas do CASA:
 
 Uso inteligente:
 
-- Pseudo-AESP: sem pulso palpável, mas com contratilidade no POCUS; trate como choque gravíssimo, procure causa e otimize vasopressor/volume/inotrópico conforme fenótipo.
+- Pseudo-AESP: sem pulso palpável, mas com contratilidade no POCUS; **continue RCP enquanto não houver evidência de circulação efetiva**, procure causa e otimize tratamento conforme fenótipo.
 - Cardiac standstill tem prognóstico ruim, mas não deve ser o único critério de interrupção.
 - POCUS nunca deve atrasar desfibrilação, adrenalina indicada ou compressões.
 
@@ -174,7 +180,7 @@ Para punção/acesso guiado por US:
 3. Diferenciar veia e artéria por compressibilidade, pulsatilidade e Doppler quando necessário.
 4. Planejar trajeto da agulha.
 5. Visualizar ponta da agulha, não apenas "alguma coisa brilhando".
-6. Confirmar fio/cateter conforme procedimento; em CVC, considerar bubble test e avaliar pneumotórax.
+6. Em CVC, confirmar fio-guia dentro da veia em mais de um plano **antes de dilatar**; suspeita de punção arterial exige interromper e esclarecer. Depois, confirmar posição do cateter e excluir complicações conforme técnica/protocolo; bubble test isolado não garante posição ideal da ponta.
 
 Frase de prova: "A técnica pode ser eixo curto, eixo longo ou oblíqua; o ponto crítico é manter a ponta da agulha visível e não transfixar estrutura profunda."
 
@@ -187,7 +193,15 @@ Frase de prova: "A técnica pode ser eixo curto, eixo longo ou oblíqua; o ponto
 | Fratura proximal de fêmur/quadril | Dor anterior/proximal | Bloqueio femoral ou fáscia ilíaca |
 | Apendicite | Estrutura em alvo, não compressível, > 6 mm, gordura hiperecogênica | Em hospital rural, acelera cirurgia/regulação |
 | Ocular | Alta miopia + flashes/escotoma/perda visual indolor | POCUS ocular pode apoiar diagnóstico de descolamento de retina |
-| AAA com trombo mural | Aorta > 3 cm medindo parede externa a parede externa | Não medir só a luz; dor/choque exige vascular/cirurgia |
+| AAA com trombo mural | Aorta >= 3 cm medindo parede externa a parede externa | Não medir só a luz; dor/choque exige vascular/cirurgia |
+
+### 10. TVP, Aorta E Ocular: Limites Que Mudam Conduta
+
+- **Compressão venosa:** identificar veia femoral comum, junções e segmentos femorais, além da poplítea; comprimir sequencialmente, não apenas capturar duas imagens. Veia normal colaba completamente. A chamada "veia femoral superficial" pertence ao sistema profundo: trombose nela é TVP.
+- **POCUS limitado negativo:** não exclui TVP distal/segmento não examinado. Com suspeita persistente, completar Doppler formal ou repetir estudo proximal em aproximadamente 5-7 dias, conforme probabilidade clínica e estratégia de D-dímero. Não repetir indiscriminadamente exame completo negativo de boa qualidade.
+- **AAA:** varrer epigástrio até bifurcação em planos transversal/longitudinal, sem medir somente a luz quando houver trombo mural. Gás que impede visualização é exame inconclusivo, não negativo. Rotura retroperitoneal pode ocorrer com FAST negativo.
+- **Ocular:** gel abundante sobre pálpebra fechada, pouca pressão e configurações próprias para olho. Suspeita de ruptura do globo contraindica pressionar para obter a imagem; priorizar proteção e oftalmologia.
+- **Bainha do nervo óptico:** medir aproximadamente 3 mm atrás do globo em técnica padronizada; limiares variam. Não excluir HIC com medida normal nem indicar tratamento invasivo apenas por diâmetro aumentado.
 
 ## Conceitos que sustentam a conduta
 
@@ -217,13 +231,17 @@ Esse par cai porque evita dois erros opostos: deixar chocado seco ou afogar o ca
 - **Fluido-responsivo:** o débito cardíaco sobe se eu der volume.
 - **Fluido-tolerante:** o paciente consegue receber volume sem congestionar/piorar VD/VE/pulmão.
 
-VCI colabando sugere responsividade, mas não é verdade universal. Ventilação mecânica, pressão intra-abdominal, disfunção de VD, PEEP, DPOC e esforço respiratório bagunçam a leitura.
+VCI avalia principalmente pressão atrial direita e interação cardiopulmonar; **colapsabilidade não prova fluido-responsividade**. Ventilação mecânica, pressão intra-abdominal, disfunção de VD, PEEP, DPOC e esforço respiratório alteram a leitura. Estimativas de pressão atrial direita pela VCI foram desenvolvidas para condições específicas, especialmente respiração espontânea, e não devem ser transportadas automaticamente para VM.
 
 Melhor raciocínio:
 
 - Perfusão ruim + sem B-lines + VE pequeno/hipercinético + VCI pequena = volume provavelmente faz sentido.
 - Perfusão ruim + B-lines difusas + VE ruim ou VD ruim + VCI cheia = cuidado com volume; vasopressor/inotrópico/causa.
 - Se houver tempo e janela boa: use teste dinâmico, como passive leg raise com VTI. Aumento de VTI/VS em torno de 10-15% sugere fluido-responsividade.
+
+**PLR bem executado:** a partir de posição semissentada, baixar tronco e elevar pernas a 45 graus; medir VTI/débito antes e no pico da resposta, geralmente no primeiro minuto, e confirmar reversibilidade. Não usar apenas aumento da PA como substituto de débito. Use mesma janela, alinhamento e média de batimentos; arritmia e erro de medida podem superar a variação procurada. O Tratado ABRAMEDE utiliza delta VTI >= 15%; outros estudos adotam aproximadamente 10% com métodos apropriados. Não misturar limiares de PLR, bolus e mini-fluid challenge.
+
+VExUS combina VCI e Doppler venoso hepático, portal e intrarrenal para caracterizar congestão. É complemento de perfusão/pulmão/coração, não prova de que todo paciente deve receber diurético nem substituto de teste dinâmico. Ser responsivo não obriga dar volume: precisa existir indicação e tolerância.
 
 ### O Que O pulmão Mostra
 
@@ -249,6 +267,15 @@ No emergencista, o ecocardio focado não precisa ser perfeito para ser salvador.
 
 Depois, se o paciente estabiliza, eco formal e cardiologia entram para quantificar e refinar.
 
+| Janela cardíaca básica | Pergunta útil e erro a evitar |
+|---|---|
+| Paraesternal longa | VE, valvas, raiz e pericárdio; diferenciar líquido pleural/pericárdico pela aorta descendente |
+| Paraesternal curta | Contratilidade global/segmentar e septo em D; evitar interpretação de corte oblíquo |
+| Apical quatro câmaras | Comparar VD/VE sem encurtar o ápice; VD grande não define a causa |
+| Subcostal | Pericárdio e câmaras; útil na PCR se janela rápida, mas nunca prolongar pausa |
+
+Escolha transdutor/preset, ajuste profundidade para enquadrar a estrutura, ganho para distinguir sangue/tecido e orientação antes de interpretar. Imagem inadequada deve ser registrada como limitada, não convertida em certeza diagnóstica.
+
 ## Fluxograma
 
 ### Choque Indiferenciado
@@ -263,7 +290,7 @@ flowchart TD
     D -->|Derrame + colapso AD/VD| G["Tamponamento: drenagem/pericardiocentese/cirurgia"]
     D -->|VE pequeno/hipercinético| H["Tanque/Pipes: VCI, pulmões, FAST, aorta"]
     H --> I{"Líquido livre/AAA/VCI colabando?"}
-    I -->|FAST+ ou AAA| J["Hemorragia/rotura: cirurgia/vascular + sangue"]
+    I -->|FAST+ traumático ou AAA com dor/choque compatível| J["Suspeita de hemorragia/rotura: cirurgia/vascular + sangue"]
     I -->|VCI pequena sem B-lines| K["Volume teste + reavaliar VTI/perfusão"]
     I -->|B-lines ou VCI cheia| L["Baixa tolerância: vasopressor precoce, procurar sepse/cardio/obstrutivo"]
 ```
@@ -303,22 +330,22 @@ flowchart TD
 |---|---:|---|
 | Pausa para POCUS na PCR | < 10 s | Probe já deve estar posicionado |
 | Linhas B | >= 3 por espaço ou múltiplas zonas | Difusas bilaterais sugerem congestão/interstício |
-| VCI respiração espontânea | Colapso > 50% | Sugere baixo RAP/responsividade, mas isolado e fraco |
+| VCI respiração espontânea | Diâmetro <= 2,1 cm + colapso > 50% | Sugere pressão atrial direita baixa; não comprova responsividade |
 | VCI plethorica | > 2,1 cm e colapso < 50% | Sugere RAP alta/baixa tolerância a volume |
-| VTI LVOT | 16-22 cm normal aproximado | Baixo VTI sugere baixo volume sistólico |
-| PLR/mini-bolus | Delta VTI/VS 10-15% | Sugere fluido-responsividade |
+| VTI LVOT | Aproximadamente 17-23 cm no Tratado; varia com contexto | Valor seriado é mais útil que um corte universal; depende de janela/alinhamento |
+| PLR | Delta VTI/VS aproximadamente 10-15%, conforme método | Sugere fluido-responsividade se variação superar erro da medida |
 | Mini-fluid challenge | 100 mL com delta DC > 6% | Limiar cobrado em prova TEME |
 | EPSS | > 7 mm | Sugere disfunção sistólica do VE |
 | TAPSE | > 17 mm normal | Reduzido sugere disfunção de VD |
 | Relação VD:VE | VD > VE | Sugere sobrecarga de VD se agudo/contexto compatível |
 | VD agudo/cor pulmonale | Parede VD < 5 mm | Ajuda a diferenciar agudo de crônico na prova |
 | Tamponamento | Colapso diastólico VD + sistólico AD | VCI cheia reforça fisiologia |
-| Aorta abdominal | > 3 cm | Aneurisma; medir parede externa a parede externa |
+| Aorta abdominal | >= 3 cm | Aneurisma; medir parede externa a parede externa |
 | AAA alto risco | > 5-5,5 cm ou sintomático | Dor/choque + AAA = vascular/cirurgia |
 | FAST positivo + instabilidade | Conduta imediata | Cirurgia/controle de fonte, não TC |
 | Bainha nervo óptico | > 5 mm no curso; > 6 mm apareceu em prova | Sugere HIC; não substitui TC quando disponível |
 | Apêndice | > 6 mm, não compressível | Sugere apendicite no contexto certo |
-| Vesicula | parede > 3 mm + Murphy/líquido | Sugere colecistite no contexto certo |
+| Vesícula | Parede > 3 mm é inespecífica; integrar cálculo, Murphy e inflamação | Espessamento também ocorre em IC, hipoalbuminemia, hepatite e dengue |
 
 ## Pegadinhas TEME
 
@@ -369,7 +396,7 @@ flowchart TD
 - **Lung point no modo M:** alternância entre código de barras e sinal da praia é altamente específica para pneumotórax.
 - **Pleural vs pericárdico na PLAX:** líquido posterior à aorta descendente sugere derrame pleural; líquido anterior à aorta sugere pericárdico.
 - **PLAPS:** derrame pleural volumoso aparece como coleção anecoica com pulmão atelectasiado/comprimido.
-- **FAST difícil:** se o espaço de Morrison está pequeno/longe, ajuste inicial costuma ser reduzir profundidade; ganho/TGC melhora brilho, não enquadramento.
+- **FAST difícil:** ajustar profundidade para incluir o alvo e depois enquadrá-lo, reposicionar probe e explorar cortes; reduzir profundidade quando o alvo está fora do campo pode piorar. Ganho/TGC ajusta brilho, não posição.
 - **Fluido responsivo ≠ fluido tolerante:** PLR/VTI positivo pode coexistir com VExUS congesto e linhas B; nesse caso, não empilhe volume.
 - **Pseudo-AESP:** ritmo organizado sem pulso + contração cardíaca no US sugere atividade mecânica residual e causa potencialmente reversível, mas não autoriza parar RCP.
 - **RUSH no choque distributivo:** POCUS ajuda a excluir obstrutivo/cardiogênico grosseiro, mas não diferencia sozinho sepse de anafilaxia.
@@ -378,10 +405,11 @@ flowchart TD
 
 - Conteúdo programático TEME26 e referências oficiais do edital.
 - Livro POCUS ABRAMEDE disponível no projeto.
-- Provas teóricas TEME22, TEME23, TEME24 e TEME25 disponíveis no projeto.
-- Estações práticas TEME24 e TEME25 disponíveis no projeto.
+- Ultrassonografia Point-of-Care na Emergência ABRAMEDE: capítulo 27, avaliação do choque (páginas 214-215: janelas RUSH e integração de VE/VD com contexto clínico).
+- Tratado de Medicina de Emergência ABRAMEDE, 1ª edição: avaliação hemodinâmica, VTI, TVP e ultrassom no choque; Medicina de Emergência HCFMUSP, 18ª edição: choque e ultrassom à beira-leito.
+- Provas teóricas TEME22-TEME26 e checklists práticos disponíveis no projeto, incluindo TEME26.
 - Aulas de cursinho: Aula 09 - POCUS Pulmonar; Aula 13 - Choque; Aula 18 - POCUS Trauma, Vascular e Neuro; Aula 29 - POCUS Cardíaco; Aula 35 - POCUS Procedimentos.
-- Resumo do cursinho.docx, arquivo do usuário.
+- `Emergency Talks/Resumo do Emergency.docx`, arquivo do usuário.
 - American College of Emergency Physicians. 2023: [Ultrasound Guidelines: Emergency, Point-of-care, and Clinical Ultrasound Guidelines in Medicine](https://www.annemergmed.com/article/S0196-0644(23)00432-8/fulltext).
 - ACEP. 2023: [Point-of-Care Ultrasound Guidelines PDF](https://www.acep.org/siteassets/sites/acep/media/ultrasound/pointofcareultrasound-guidelines.pdf).
 - EFSUMB. 2022/2023: [Clinical Practice Guidelines for Point-of-Care Ultrasound: common heart and pulmonary applications](https://pubmed.ncbi.nlm.nih.gov/36228631/).

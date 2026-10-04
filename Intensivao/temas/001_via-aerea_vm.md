@@ -59,7 +59,7 @@ Antes de induzir:
 - Acesso venoso ou intraósseo funcionante.
 - Aspiração ligada.
 - BVM com PEEP, máscara adequada e técnica a quatro mãos se possível.
-- Vídeo ou laringoscópio direto, bougie, tubos testados, seringa, fixação.
+- Videolaringoscópio preferencialmente, quando disponível e com operador treinado; laringoscópio direto como alternativa, bougie, tubos testados, seringa e fixação.
 - Dispositivo extraglótico de resgate.
 - Kit de crico aberto ou imediatamente acessível.
 - Vasopressor pronto se choque/risco de colapso.
@@ -86,9 +86,9 @@ Regra de sala vermelha: se dá para oxigenar por BVM/VNI, dá para ganhar tempo 
 Sequência prática:
 
 1. preparação e plano verbalizado.
-2. Pré-oxigenação por 3-5 min ou 8 respirações profundas se cooperativo.
+2. Pré-oxigenação por 3-5 min, com vedação e FiO2 adequadas. Oito respirações profundas são alternativa no cooperativo de baixo risco, não substituto confiável no crítico hipoxêmico.
 3. Posicionamento: rampa/cabeceira elevada; estabilização manual em linha se trauma cervical.
-4. Indução + bloqueador em dose plena.
+4. Hipnótico ajustado à fisiologia, seguido de bloqueador em dose adequada para RSI. Reduzir hipnótico no choque não significa subdosar o bloqueador nem deixar paciente consciente e paralisado.
 5. Laringoscopia com a melhor ferramenta disponível; bougie cedo se visão parcial.
 6. Confirmar com capnografia em onda, ausculta e expansibilidade.
 7. Fixar, sedar, analgesiar, ventilar e reavaliar hemodinâmica.
@@ -103,7 +103,19 @@ Depois de tentativa ruim:
 - Use dispositivo extraglótico se ventilação por máscara está ruim ou tentativa nova não é segura.
 - Declare via aérea falha cedo se não oxigena.
 
-Definição operacional para prova: via aérea falha = duas tentativas sem sucesso por intubador experiente, ou uma tentativa sem sucesso no paciente "forçado a agir" e que não tolera nova demora.
+Os algoritmos não usam todos a mesma contagem: o modelo de Walls descreve falha após tentativas por operador experiente ou falha no paciente forçado a agir; o DAS 2025 limita a intubação a três tentativas, com uma adicional por profissional mais experiente quando apropriado. Isso é **teto, não meta**. Dessaturação ou ausência de oxigenação exige resgate antes desse limite. Não repita tentativa sem mudança relevante.
+
+### 6. RSI, DSI Ou Intubação Acordada?
+
+| Estratégia | Quando faz sentido | O que não pode faltar |
+|---|---|---|
+| RSI / sequência rápida | Precisa de IOT; pré-oxigenação viável; primeira tentativa com boa chance | Hipnótico + bloqueador, melhor operador, capnografia e resgate prontos |
+| DSI / sequência prolongada | Agitação impede máscara/VNI e pré-oxigenação, mas há ventilação espontânea e tempo para otimizar | Dissociação para permitir oxigenação; depois decidir indução/bloqueio e IOT |
+| Intubação acordada | Dificuldade prevista de intubação e de resgate, obstrução progressiva, ou risco importante de perder ventilação após indução | Especialista, anestesia tópica, oxigênio, sedação cautelosa e preservação da ventilação espontânea |
+
+Na DSI, o Manual de Via Aérea 2026 descreve cetamina IV 0,5-1 mg/kg lentamente, em aproximadamente 60 s, com monitorização e resgate imediato. Permita pré-oxigenação, frequentemente com VNI/PEEP e FiO2 100%, por 3-5 min; reavalie PA e ventilação antes do bloqueador. A dose seguinte de hipnótico considera o que já foi administrado. **Cetamina não garante ventilação espontânea nem estabilidade pressórica.** DSI não resolve obstrução anatômica e não substitui intubação acordada.
+
+No choque, corrija a causa e prepare vasopressor; um bolus de cristalóide para todos antes de IOT não demonstrou benefício. Na acidose metabólica grave, minimize apneia e preserve a ventilação compensatória; depois da IOT, gasometria precoce e ventilação-minuto compatível com a demanda, sem abandonar limites protetores. Na falência de VD, volume e PEEP excessivos também podem provocar colapso.
 
 ## Fluxograma
 
@@ -150,7 +162,7 @@ Pegadinha: videolaringoscopia melhora visão, mas não garante passagem do tubo.
 | Cetamina | 1-2 mg/kg | Broncoespasmo, dor, hipotensão sem catecolamina esgotada | Pode aumentar FC/PA; em choque catecolamina-depletado também pode hipotensar |
 | Propofol | 0,5-1,5 mg/kg no crítico | Convulsão, HIC selecionada, paciente estável | Hipotensão e vasodilatação; evitar dose cheia no choque |
 | Midazolam | 0,1-0,3 mg/kg | Alternativa quando sem outros indutores | início mais lento; hipotensão; não é preferido para RSI moderna |
-| Fentanil | 1-3 mcg/kg como pretratamento/analgesia | Atenuar resposta simpática, analgesia | Dose alta/rápida pode causar rigidez torácica e hipotensão |
+| Fentanil | 1-3 mcg/kg quando indicado como analgesia/pretratamento | Atenuar resposta simpática em casos selecionados | Não é pretratamento obrigatório; dose alta/rápida pode causar rigidez torácica e hipotensão, especialmente no choque |
 
 ### Bloqueadores Neuromusculares
 
@@ -217,9 +229,24 @@ Se piorou depois de intubar, pense **DOPE**:
 | PEEP | 5 cmH2O | Aumentar conforme hipoxemia/recrutabilidade |
 | FiO2 | 100% inicialmente se peri-IOT | Reduzir para alvo de SpO2 após estabilizar |
 | Pressão de platô | <= 30 cmH2O | Medir em pausa inspiratória no VCV |
-| Driving pressure | <= 15 cmH2O quando possível | Pplat - PEEP |
+| Driving pressure | <= 15 cmH2O quando possível | Pplat - PEEP total, em paciente passivo; alvo fisiológico, não garantia isolada de proteção |
 
 Peso predito, não peso real, guia o volume corrente. Obeso não recebe VC por peso total.
+
+**Cálculo do peso predito para VM:** masculino = 50 + 0,91 x (altura em cm - 152,4); feminino = 45,5 + 0,91 x (altura em cm - 152,4). A altura de 170 cm corresponde a aproximadamente 66 kg e 61 kg, respectivamente. Na SDRA, 6 mL/kg desses pesos equivale a cerca de 396 e 366 mL, não ao volume calculado pelo peso da balança.
+
+Meça platô por pausa inspiratória sem esforço do paciente; meça PEEP total por pausa expiratória em condições adequadas. Auto-PEEP = PEEP total - PEEP ajustada. Esforço ativo, vazamento e assincronia prejudicam essas medidas.
+
+### SDRA: Reconhecer E Proteger
+
+Pelo critério de Berlim, procure início em até uma semana, opacidades bilaterais não explicadas apenas por derrame/atelectasia e insuficiência respiratória não plenamente atribuível a edema hidrostático. Com PEEP/CPAP >= 5 cmH2O, PaO2/FiO2: leve > 200 até 300; moderada > 100 até 200; grave <= 100. A definição global também contempla pacientes em HFNC e uso de SpO2/FiO2 em condições específicas; identifique qual definição a questão utiliza.
+
+- VC inicialmente 6 mL/kg de peso predito, ajustável entre 4-8 conforme platô, pH e sincronia; Pplat <= 30 cmH2O.
+- Na SDRA moderada/grave, PEEP mais alta pode ajudar, mas exige reavaliação da hemodinâmica e da mecânica. Não fazer manobras prolongadas de recrutamento com alta pressão como rotina.
+- PaO2/FiO2 persistentemente < 150 apesar de otimização: considerar prona precoce por sessões de pelo menos 16 h, conforme estratégia PROSEVA, com equipe preparada e avaliação de contraindicações. A recomendação geral ATS é mais de 12 h/dia na SDRA grave.
+- Corticoide é recomendação condicional da ATS 2024; esquema e elegibilidade dependem do contexto. Bloqueio neuromuscular e ECMO são medidas selecionadas, não pacote obrigatório para todos.
+
+Referências para essas decisões: [ATS 2024](https://doi.org/10.1164/rccm.202311-2011ST) e [definição global de SDRA](https://doi.org/10.1164/rccm.202303-0558WS).
 
 ### Alvos De Oxigenação E Ventilação
 
@@ -261,7 +288,7 @@ Frase de prova: **capnografia confirma ventilação e ajuda a detectar RCE, desl
 | Cateter nasal comum | Baixo fluxo e conforto | Pré-oxigenação robusta no crítico |
 | Máscara não reinalante | Alto fluxo/alta FiO2 se bem ajustada | PEEP ou ventilação |
 | Venturi | FiO2 controlada, útil em risco de retenção de CO2 | Melhor dispositivo para shunt grave |
-| HFNC | Alto fluxo aquecido/umidificado; pode ajudar na oxigenação apneica | Esterilização de via aérea |
+| HFNC | Alto fluxo aquecido/umidificado; pode ajudar na oxigenação apneica | Proteção contra aspiração ou garantia de ventilação na apneia |
 | CPAP | Pressão contínua; edema agudo cardiogênico, hipoxemia selecionada | Ventilação em dois níveis |
 | BiPAP/VNI dois níveis | Aumenta ventilação alveolar; DPOC hipercápnico acidótico | Paciente sem proteção de via aérea |
 
@@ -299,8 +326,8 @@ Na titulação de PEEP, a prova tende a premiar **oxigenação suficiente com me
 | PAF cervical com sangue na boca + choque | Via aérea difícil + hemorragia; chamar cirurgia/trauma, controle de dano, plano cirúrgico de resgate |
 | Extricação longa com acesso ruim | Priorizar oxigenação/ventilação simples possível no cenário; IOT pode não ser factível antes da retirada |
 | Afogamento ou broncoaspiração | Hipóxia é o problema central: abrir via aérea, aspirar o que impede ventilação e ventilar |
-| Corpo estranho consciente e não fala | Manobras de desobstrução enquanto consciente |
-| Corpo estranho não retirado com laringoscopia/Magill e deterioração | Como último recurso, empurrar para um brônquio para ventilar o outro pulmão |
+| Adulto consciente com obstrução grave e tosse ineficaz | AHA 2025: alternar 5 golpes dorsais e 5 compressões abdominais; usar compressões torácicas na gestação avançada ou se não for possível envolver o abdome |
+| Obstrução com perda de consciência | Iniciar RCP; ao abrir a via aérea, remover apenas objeto visível. Laringoscopia/Magill por equipe treinada e broncoscopia quando indicada; não fazer varredura digital cega nem empurrar objeto distalmente como conduta geral |
 
 ### Acidose Extrema, Choque E Intoxicações
 
@@ -330,7 +357,7 @@ Na titulação de PEEP, a prova tende a premiar **oxigenação suficiente com me
 | Modo | O ventilador controla | O que varia | Pegadinha |
 |---|---|---|---|
 | VCV A/C | Volume e fluxo | Pressão | Se complacência piora, pressão sobe |
-| PCV A/C | Pressão é tempo inspiratório | Volume | Se complacência piora, volume cai |
+| PCV A/C | Pressão e tempo inspiratório | Volume | Se complacência piora, volume cai |
 | PSV | Pressão de suporte nos ciclos espontâneos | Volume e FR dependem do paciente | Não usar como modo pleno em paciente profundamente sedado/paralisado |
 | SIMV + PSV | Ciclos mandatórios + espontâneos assistidos | Misto | Mais complexo; pouco necessário no início |
 
@@ -351,11 +378,11 @@ Suspeite em:
 Como corrigir:
 
 1. Reduzir volume minuto: principalmente diminuir FR.
-2. Aumentar tempo expiratório: maior fluxo inspiratório, menor tempo inspiratório, relação I:E mais longa.
+2. Aumentar tempo expiratório: no VCV, maior fluxo inspiratório encurta a inspiração; no PCV, reduzir tempo inspiratório. Em PSV, aumentar o percentual de ciclagem pode corrigir ciclagem tardia.
 3. Reduzir VC se seguro.
 4. Broncodilatador é tratamento da obstrução.
 5. Sedação/analgesia se assincronia.
-6. Em colapso: desconectar brevemente do ventilador e comprimir tórax pode aliviar hiperinsuflação dinâmica enquanto trata causa.
+6. Em colapso com suspeita de hiperinsuflação: desconectar brevemente para permitir expiração, avaliar DOPE e tratar a causa. Não prescrever compressão torácica manual como manobra rotineira; se não houver pulso, iniciar RCP.
 
 ```mermaid
 flowchart TD
@@ -428,7 +455,7 @@ Conduta: chamar ajuda cedo, preparar via aérea difícil e crico. Acordado pode 
 - **ETCO2 sobe na RCP**: pense em RCE; confirme pulso/ritmo na pausa apropriada.
 - **SpO2 normal no incêndio fechado**: não exclui CO, porque a oximetria comum pode enganar.
 - **VNI**: DPOC acidótico é ótimo cenário; coma com secreção, choque ou pneumotórax não drenado é armadilha.
-- **Corpo estranho não removível**: se deteriora e Magill falhou, pode ser necessário empurrar para um brônquio para ventilar o outro pulmão.
+- **Corpo estranho não removível**: solicitar resgate especializado/broncoscopia; retirar apenas objeto visível e não deslocá-lo às cegas.
 - **Guillain-Barré**: não espere hipoxemia; queda de força ventilatória e sinais bulbares/autonômicos vêm antes.
 - **Auto-PEEP**: tratar reduzindo volume minuto e aumentando tempo expiratório.
 - **VC no obeso**: usar peso predito, não peso real.
@@ -467,7 +494,9 @@ Conduta: chamar ajuda cedo, preparar via aérea difícil e crico. Acordado pode 
 - Aulas de cursinho: Aula 05 - Via aérea I.
 - Aulas de cursinho: Aula 50 - Via aérea II.
 - Aulas de cursinho: Aula 25 e 26 - Ventilação Mecânica I e II.
-- `Aulas de cursinho/Resumo do cursinho.docx`.
+- `Emergency Talks/Resumo do Emergency.docx`.
+- Medicina de Emergência HCFMUSP, 18ª edição: via aérea, insuficiência respiratória e ventilação mecânica.
+- Manual de Via Aérea na Emergência, 2ª edição, 2026: dificuldade fisiológica, pré-oxigenação e sequência prolongada; Walls, 5ª edição: avaliação e resgate da via aérea.
 
 **Atualização clínica**
 
@@ -478,5 +507,9 @@ Conduta: chamar ajuda cedo, preparar via aérea difícil e crico. Acordado pode 
 - British Thoracic Society. Guideline for oxygen use in adults in healthcare and emergency settings: https://www.brit-thoracic.org.uk/clinical-resources/guidelines/emergency-oxygen/
 - ATS/ESICM/SCCM. Mechanical ventilation in adult patients with ARDS: implementation tools and recommendations: https://www.thoracic.org/statements/guideline-implementation-tools/mechanical-ventilation-in-adults-with-ards.php
 - Casey JD et al. Noninvasive Ventilation for Preoxygenation during Emergency Intubation. New England Journal of Medicine, 2024. DOI: https://doi.org/10.1056/NEJMoa2313680
+- Casey JD et al. Ketamine or Etomidate for Tracheal Intubation of Critically Ill Adults. Ensaio randomizado, publicação online em dezembro de 2025: https://doi.org/10.1056/NEJMoa2511420
+- Society of Critical Care Medicine. Rapid Sequence Intubation Guidelines, 2023: https://www.sccm.org/clinical-resources/guidelines/guidelines/guidelines-rapid-sequence-intubation
+- American Thoracic Society. Update on Management of Adult ARDS, 2024: https://doi.org/10.1164/rccm.202311-2011ST
+- Guérin C et al. PROSEVA: prone positioning in severe ARDS, 2013. https://doi.org/10.1056/NEJMoa1214103
 - Zampieri FG et al. Induction agents for emergency tracheal intubation in critically ill adults: systematic review and network meta-analysis. Critical Care, 2026. DOI: https://doi.org/10.1186/s13054-026-06067-w
 - NIH ARDSNet Ventilator Protocol: low tidal volume ventilation, plateau pressure and oxygenation targets.

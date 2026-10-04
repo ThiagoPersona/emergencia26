@@ -51,7 +51,7 @@ Mensagem de prova: se o sangramento e catastrofico, ele é tratado antes do A. N
 | situação | Conduta |
 |---|---|
 | Sangramento compressível | Compressão direta forte e contínua |
-| Ferida profunda/juncional | Packing com eaze, preferir hemostática se disponível, mais pressão |
+| Ferida profunda/juncional compressível | Packing com gaze, preferir hemostática se disponível, mais pressão; não tamponar às cegas cavidades torácica/abdominal |
 | Extremidade com sangramento grave | Torniquete proximal, apertar até parar sangramento e pulso distal |
 | Torniquete insuficiente | Revisar posição/aperto e colocar segundo torniquete acima |
 | Depois de controlar | Curativo compressivo, registrar horário, não afrouxar no atendimento inicial |
@@ -89,6 +89,8 @@ Ative se houver:
 - eFAST positivo + instabilidade.
 - Pelve instável + choque.
 - Shock index elevado, lactato/base déficit importantes ou piora progressiva.
+
+**ABC score:** um ponto para cada item: mecanismo penetrante, PAS <= 90 mmHg, FC >= 120/min e FAST positivo. Escore >= 2 apoia ativação precoce do protocolo, mas não é obrigatório para reconhecer hemorragia grave. Não espere atingir a definição retrospectiva de 10 CH em 24 h. Hemoglobina inicialmente normal não exclui perda importante; lactato e déficit de bases ajudam a seguir resposta, não devem atrasar controle da fonte.
 
 Conduta da primeira hora:
 
@@ -133,13 +135,19 @@ flowchart TD
 |---|---:|---|
 | TXA trauma | 1 g EV em 10 min + 1 g EV em 8 h | Referência clássica CRASH-2; administrar até 3 h do trauma |
 | Transfusão maciça | CH:PFC:Plaquetas 1:1:1 | Sangue total também aceito se disponível/protocolo |
-| Cristaloide | 1.000-1.500 mL aquecido como ponte | Evitar litros repetidos se choque hemorrágico |
-| Cálcio | 1-2 ampolas a cada 4 hemoderivados | A estação 2025 cobrou exatamente esse padrão |
+| Cristaloide | Apenas ponte se sangue não estiver imediatamente disponível; pequenos bolus, por exemplo 250 mL no adulto, com reavaliação | Não há cota obrigatória de 1-1,5 L antes de sangue; evitar diluição e atraso |
+| Cálcio durante transfusão importante | CaCl2 10%: 1 g = 10 mL; alternativa: gluconato de cálcio 10%: 3 g = 30 mL | Doses aproximadamente equivalentes em cálcio elementar; não equivalem grama por grama |
 | Temperatura | evitar < 35-36 C | Hipotermia piora coagulopatia |
-| Fibrinogênio | tratar se baixo; alvo prático > 150-200 mg/dL | Usar crio/fibrinogênio conforme protocolo/ROTEM |
+| Fibrinogênio | Repor se <= 150 mg/dL ou déficit funcional no viscoelástico; dose inicial de concentrado 3-4 g no adulto | Crioprecipitado conforme conteúdo/protocolo; reavaliar para manter pelo menos 150-200 mg/dL |
 | Plaquetas | alvo > 50.000; no TCE/hemorragia SNC mirar > 100.000 | Prova pode cobrar alvo maior no neurotrauma |
 | PAS em hemorragia sem TCE | alvo aproximado 80-90 mmHg até controle | Hipotensão permissiva não vale para TCE grave |
-| PAS em TCE grave | manter pelo menos > 100-110 mmHg | Evitar hipotensão e hipoxemia |
+| PAS em TCE grave | >= 110 mmHg entre 15-49 anos e acima de 70; >= 100 entre 50-69 | BTF; diretriz europeia propõe PAM >= 80 mmHg no TCE grave. Individualizar perfusão cerebral |
+
+**Cálcio sem ambiguidade:** monitorar cálcio iônico, buscando faixa normal, aproximadamente 1,1-1,3 mmol/L; corrigir hipocalcemia prontamente, sobretudo se < 0,9 mmol/L. O JTS recomenda reposição no início da ressuscitação e após cada quatro unidades de produtos sanguíneos, enquanto se organizam medidas seriadas. Cloreto é mais lesivo se extravasar; preferir acesso seguro, geralmente central, ou gluconato em acesso periférico monitorado. Conferir apresentação, via e protocolo; "uma ampola" não define uma dose universal.
+
+**Hipotensão permissiva tem prazo e exceções:** PAS 80-90 mmHg é ponte para controle da hemorragia em adulto selecionado sem lesão cerebral. Não aplicar automaticamente em TCE, lesão medular, gestante, criança ou paciente com perfusão coronariana/cerebral vulnerável. Vasopressor pode ser adjuvante em hipotensão extrema, mas não substitui sangue e hemostasia.
+
+**Transfusão dirigida:** 1:1:1 é estratégia empírica inicial, com dose terapêutica de plaquetas conforme o banco de sangue, não uma bolsa qualquer de cada produto. Quando chegam exames/TEG/ROTEM, tratar o déficit identificado. Reavaliar necessidade do protocolo após controle da fonte; transfusão maciça não é infusão automática até esgotar os kits.
 
 ### Perdas Em Fraturas
 
@@ -159,13 +167,31 @@ flowchart TD
 | Drenagem inicial > 1.500 mL | Toracotomia/avaliação cirúrgica urgente |
 | Sangramento > 200 mL/h por 3 h | Toracotomia/avaliação cirúrgica |
 
+Os números são gatilhos, não autorização para esperar três horas em paciente deteriorando. Choque, necessidade transfusional e suspeita de lesão vascular também determinam intervenção.
+
+### Ameaças Torácicas E PCR Traumática
+
+| Situação | Reconhecimento e ação imediata |
+|---|---|
+| Pneumotórax hipertensivo | Choque/deterioração respiratória no contexto compatível: descompressão imediata, sem esperar Rx ou US; toracostomia digital por equipe habilitada ou agulha conforme recurso, seguida de drenagem |
+| Ferida torácica aberta | Selo ventilado quando disponível e vigilância; se deteriorar, avaliar tensão, retirar/abrir selo e descomprimir conforme achados |
+| Hemotórax maciço | Dreno, sangue aquecido e cirurgia; volume drenado não substitui avaliação de perfusão |
+| Tamponamento penetrante | Cirurgia urgente; pericardiocentese pode falhar por sangue coagulado e não é tratamento definitivo habitual |
+
+Na PCR traumática, corrija **HOTT** em paralelo: **H**ipovolemia/hemorragia, **O**xigenação, pneumotórax sob **T**ensão e **T**amponamento. Controle sangramento, transfunda, ventile e considere descompressão torácica bilateral quando indicada, especialmente na PCR com trauma torácico. Não deixe compressões/medicação atrasarem essas medidas; se a parada pode ter causa clínica antecedendo o trauma, mantenha também o algoritmo convencional.
+
+Toracotomia ressuscitativa depende de mecanismo, sinais de vida, tempo de PCR, equipe e estrutura; não é indicada para toda parada traumática. eFAST pode ajudar, mas não deve consumir o tempo da intervenção salvadora.
+
 ### Trauma Pediátrico
 
 | Item | Número |
 |---|---:|
-| Cristaloide inicial | 20 mL/kg |
-| Concentrado de hemácias | 10-20 mL/kg |
-| Hipotensão sistolica minima | 70 + 2 x idade |
+| Hemorragia com choque | Priorizar sangue cedo, aquecido e conforme protocolo pediátrico |
+| Concentrado de hemácias | Bolus usual 10 mL/kg, reavaliar e repetir conforme resposta/perda |
+| Cristaloide como ponte | 10-20 mL/kg somente quando indicado e sangue indisponível; evitar bolus repetidos antes de hemostasia |
+| Limite inferior de PAS | Lactente: 70 mmHg; 1-10 anos: 70 + 2 x idade; acima de 10: 90 mmHg. No neonato, 60 mmHg |
+
+Esses limites identificam hipotensão, **não são metas de ressuscitação**. Perfusão ruim com PA ainda normal já pode representar choque.
 
 ## eFAST No Choque Hemorrágico
 
@@ -234,7 +260,7 @@ Além do controle de hemorragia, a banca costuma misturar trauma com cinemática
 | Ferida soprante de tórax | curativo oclusivo/ventilado e vigilância; descomprimir se deteriorar | curativo em três pontos não é resposta universal |
 | PCR traumática | corrigir causa reversível mecânica: hipovolemia, pneumotórax, tamponamento, hipóxia | compressão isolada sem tratar causa tem pouco valor |
 | Traqueostomia com sangramento pulsátil | fístula traqueoinominada até prova em contrário | hiperinsuflar cuff e chamar cirurgia imediatamente |
-| Trauma pediátrico | hipotensão é tardia; FAST negativo não libera criança com sinais de hipoperfusão | usar exame/laboratório de apoio, aquecer e bolus 20 mL/kg quando indicado |
+| Trauma pediátrico | hipotensão é tardia; FAST negativo não libera criança com sinais de hipoperfusão | aquecer, tratar fonte e priorizar sangue na hemorragia; não repetir cristalóide automaticamente |
 
 ### Regras De Decisão Rápida
 
@@ -243,7 +269,7 @@ Além do controle de hemorragia, a banca costuma misturar trauma com cinemática
 - **Paciente estável com trauma de tronco:** TC com contraste costuma ser o exame que define lesão.
 - **Paciente instável com FAST positivo:** controle de fonte, não "tomografia para entender melhor".
 - **Ferida abdominal por arma branca:** sem instabilidade/peritonite pode haver manejo seletivo com exame seriado e/ou TC conforme recurso.
-- **Fratura exposta:** antibiótico precoce; Gustilo I-II costuma ser cefazolina, Gustilo III costuma pedir cefazolina + gentamicina.
+- **Fratura exposta:** antibiótico precoce, sem esperar centro cirúrgico; cefazolina é opção para I-II. No tipo III, escolher cobertura pelo protocolo e exposição, não prescrever gentamicina obrigatoriamente.
 - **Shock index:** FC/PAS. Valor > 1 em trauma deve acender transfusão/controle de fonte cedo.
 
 ## Extremidades
@@ -262,8 +288,10 @@ Além do controle de hemorragia, a banca costuma misturar trauma com cinemática
 | Gustilo-Anderson | Antibiótico inicial típico |
 |---|---|
 | I-II sem contaminação grosseira | Cefazolina |
-| III | Cefazolina + gentamicina |
+| III | Conforme protocolo: AAST 2024 recomenda Gram-positivo + Gram-negativo, com opções como ceftriaxona, piperacilina-tazobactam ou cefazolina + aminoglicosídeo |
 | Solo/fezes/água ou contaminação importante | Ampliar cobertura conforme exposição/protocolo |
+
+Há divergência: a SIS 2022 recomenda não ampliar rotineiramente além de Gram-positivos no tipo III. Registre a referência adotada pelo serviço/banca, função renal e tipo de contaminação. A prioridade comum é antibiótico precoce, desbridamento e estabilização; não prolongar profilaxia automaticamente até cicatrização. [AAST 2024](https://doi.org/10.1136/tsaco-2023-001304) e [SIS 2022](https://pubmed.ncbi.nlm.nih.gov/36350736/).
 
 ### Síndrome Compartimental
 
@@ -342,6 +370,9 @@ Pulso ausente, palidez e paralisia são tardios. Conduta: retirar constrições 
 
 **Material local**
 
+- Medicina de Emergência HCFMUSP, 18ª edição: capítulo 67, trauma hemorrágico, e abordagem do politrauma.
+- Tratado de Medicina de Emergência ABRAMEDE, 1ª edição: choque, trauma e lesões torácicas.
+
 - Aulas de cursinho: Aula 04 - Avaliação inicial do politraumatizado.
 - Aulas de cursinho: Aula 10 - Trauma torácico.
 - Aulas de cursinho: Aula 13 - Choque.
@@ -355,6 +386,8 @@ Pulso ausente, palidez e paralisia são tardios. Conduta: retirar constrições 
 **Atualização clínica**
 
 - Rossaint R et al. The European guideline on management of major bleeding and coagulopathy following trauma: sixth edition. Critical Care, 2023. DOI: https://doi.org/10.1186/s13054-023-04327-7
+- ACS. ATLS 11, lançado em 2025: avaliação inicial xABCDE. https://www.facs.org/quality-programs/trauma/education/advanced-trauma-life-support/atls-11/
+- WSES-AAST. Thoracic trauma guidelines, 2025. https://doi.org/10.1186/s13017-025-00651-1
 - Joint Trauma System. Damage Control Resuscitation Clinical Practice Guideline, 2019/atualizado no portal JTS. https://jts.health.mil/assets/docs/cpgs/Damage_Control_Resuscitation_12_Jul_2019_ID18.pdf
 - American College of Surgeons. ACS TQIP Massive Transfusion in Trauma Guidelines. https://www.facs.org/media/zcjdtrd1/transfusion_guildelines.pdf
 - Brain Trauma Foundation. Guidelines for the Management of Severe TBI, 4th Edition. https://braintrauma.org/coma/guidelines/severe-tbi
