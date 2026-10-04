@@ -130,24 +130,6 @@ flowchart TD
 >
 > **Na prática clínica:** drogas, doses e exigência de jejum/capnografia dependem de protocolo, treinamento e recurso. Emergência verdadeira não espera jejum, mas exige preparo proporcional.
 
-## Checklist de revisão
-
-- [ ] Sei checklist antes de procedimento.
-- [ ] Sei doses básicas de sedação/analgesia.
-- [ ] Sei dose máxima de anestésico local.
-- [ ] Sei reconhecer e tratar LAST.
-- [ ] Sei indicações de paracentese no cirrótico.
-- [ ] Sei quando usar US em toracocentese/acesso/bloqueio.
-- [ ] Sei critérios de observação pós-sedação.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q97/Q63:** analgesia em dor abdominal e emergências reumato/renal.
-- **TEME24 Q63:** analgesia em dor abdominal aguda.
-- **TEME25 Q52/Q63:** bloqueio ESP e bloqueio guiado por US em trauma.
-- **TEME25 prática POCUS:** punção guiada, escolha do transdutor e visualização da agulha.
-- **TEME25 prática caso clínico:** sedação/analgesia contínua no neurocrítico.
-
 ## Referências
 
 **Prova/TEME**

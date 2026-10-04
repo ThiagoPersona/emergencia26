@@ -303,46 +303,6 @@ FA = frascos-ampolas. A dose e definida por gravidade, não por peso.
 - **Micrurus:** problema é neuroparalítico por toxinas pré/pós-sinápticas; coagulação não é o eixo.
 - **Cnidários:** dor intensa local pode complicar com hipersensibilidade/anafilaxia; água doce pode piorar disparo de nematocistos.
 
-## Checklist de revisão
-
-- [ ] No intoxicado grave, eu faço ABCDE, glicemia, ECG, temperatura e suporte antes de "nomear" o veneno.
-- [ ] Sei quando usar e quando evitar carvão, lavagem e flumazenil.
-- [ ] Sei reconhecer opioide, colinérgico, simpatomimético, TCA, CCB/BB e álcool tóxico.
-- [ ] Sei as doses centrais: naloxona, bicarbonato, atropina, pralidoxima, NAC, fomepizol, hidroxocobalamina, HDI e lipídica.
-- [ ] Sei que naloxona não substitui RCP em PCR.
-- [ ] Sei que salicilato intubado precisa manter ventilação minuto alta.
-- [ ] Sei diferenciar Bothrops, Crotalus, Lachesis, elapídico, escorpião, Loxosceles, Phoneutria e Lonomia.
-- [ ] Sei as doses de soro mais prováveis: Bothrops 3/6/12, Crotalus 5/10/20, escorpião 0/3/6.
-- [ ] Sei as pegadinhas de Bothrops filhote, coral vs Crotalus, escorpião grave em criança e múltiplas abelhas.
-- [ ] Sei quando acionar CIATox/toxicologista.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q55:** insuficiência respiratória tipo II e intoxicação por opioide/inalação como mecanismos possíveis.
-- **TEME22 Q85:** abstinência alcoólica, crise convulsiva e avaliação de causas associadas.
-- **TEME22 Q96:** descontaminação gastrointestinal, carvão, lavagem, diálise e risco de procedimento invasivo.
-- **TEME22 Q108:** álcool tóxico com acidose/gap e necessidade de antídoto + hemodiálise.
-- **TEME22 Q114:** acidentes por animais peçonhentos e diferença entre escorpião, crotálico e elapídico.
-- **TEME23 Q30:** etilenoglicol com acidose e cristais de oxalato.
-- **TEME23 Q40:** inalação de fumaça, CO/cianeto e hidroxocobalamina.
-- **TEME23 Q70:** escorpionismo e pancreatite aguda.
-- **TEME23 Q73/Q82:** opioide, naloxona, miose ausente e ventilação.
-- **TEME23 Q97:** chumbo/encefalopatia e quelação.
-- **TEME24 Q1/Q65:** Bothrops filhote, coagulopatia importante e pouco achado local.
-- **TEME24 Q2:** descontaminação gástrica e lavagem.
-- **TEME24 Q23:** LAST e emulsão lipídica 20%.
-- **TEME24 Q30:** TCA com QRS largo, bicarbonato e contraindicação ao flumazenil.
-- **TEME24 Q57:** paraquat.
-- **TEME24 Q79:** múltiplas picadas de abelha e envenenamento sistêmico.
-- **TEME24 Q82:** PCR associada a drogas: RCP/ACLS antes de antídoto.
-- **TEME25 prática pediátrica:** chumbinho/carbamato-organofosforado e atropina.
-- **TEME25 Q1:** cocaína, hipertermia, benzodiazepínico, resfriamento e rocurônio.
-- **TEME25 Q11:** escorpionismo grave em criança com disfunção ventricular/EAP.
-- **TEME25 Q27:** arsenico, diarreia intensa, QT/torsades, Rx radiopaco e quelação antes de confirmação se sintomático.
-- **TEME25 Q36:** naloxona/flumazenil e marcadores clínicos de resposta.
-- **TEME25 Q38:** botulismo alimentar e paralisia descendente.
-- **TEME25 Q64:** CCB/BB com choque bradicárdico e insulina em alta dose.
-
 ## Referências
 
 **Prova/TEME**

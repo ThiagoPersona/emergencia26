@@ -285,41 +285,6 @@ flowchart TD
 - **Distócia de ombro:** McRoberts + pressão suprapúbica; pressão fúndica é erro clássico.
 - **HELLP:** pode ocorrer sem crise hipertensiva franca e com coagulograma normal; plaquetas baixas + DHL/hemólise + AST/ALT elevadas fecham o raciocínio.
 
-## Checklist de revisão
-
-- [ ] Toda mulher em idade fértil com dor/sangramento/choque tem beta-hCG considerado.
-- [ ] Sei diagnosticar eclâmpsia e dar MgSO4 antes de benzo/fenitoína.
-- [ ] Sei tratar PA >=160/110 na gestação/puerpério.
-- [ ] Sei quando pedir TC na eclâmpsia.
-- [ ] Sei diferenciar placenta prévia, DPP, rotura uterina e vasa prévia.
-- [ ] Sei os 4 T da HPP e o pacote inicial.
-- [ ] Sei doses de MgSO4, hidralazina/nifedipina/labetalol, ocitocina e TXA.
-- [ ] Sei critérios de ectópica para cirurgia vs metotrexato.
-- [ ] Sei que DIP é clínica e que torção pode ter Doppler normal.
-- [ ] Sei o fluxo mínimo de violência sexual: acolher, não exigir BO, notificar 24 h, CE/PEP/IST/HBV.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q21:** doenças hipertensivas da gestação; MgSO4, TC se déficit neurológico e anti-hipertensivos corretos.
-- **TEME22 Q82:** PCR gestante e cesárea/histerotomia perimortem após 4 min se PCR persiste.
-- **TEME22 Q107:** HPP por atonia: útero flácido, sangramento e massagem/compressão uterina.
-- **TEME22 Q109:** violência sexual; exame físico completo e lesões extragenitais.
-- **TEME22 Q113:** SUA em não gestante e opções de manejo.
-- **TEME23 Q7:** PCR em gestante, RCP otimizada, desfibrilação e histerotomia precoce.
-- **TEME23 Q59:** hemorragia puerperal, shock index, ocitocina IM/EV e massagem uterina.
-- **TEME23 Q84:** pré-eclâmpsia grave; trombocitopenia grave é indicação de parto; MgSO4 não é só após convulsão.
-- **TEME23 Q92:** SUA não gestante é indicação de avaliação ginecológica emergencial.
-- **TEME24 Q14:** PCR gestante 32 semanas, histerotomia de reanimação.
-- **TEME24 Q18:** DIP clínica; dor a mobilização do colo e imagem para diferenciais/complicações.
-- **TEME24 Q78:** prolapso de cordão em gestante termo; cesárea emergencial.
-- **TEME24 Q96:** mulher em choque com líquido livre; pensar ectópica rota/hemoperitônio.
-- **TEME25 Q2:** eclâmpsia com rebaixamento/risco de aspiração é indicação de via aérea sem atrasar MgSO4/PA.
-- **TEME25 Q37:** eclâmpsia no 10º dia pós-parto; primeira conduta MgSO4.
-- **TEME25 Q59-Q60:** violência sexual, levonorgestrel, notificação, HBV/IST/PEP.
-- **TEME25 Q61:** miocardiopatia periparto e fatores de risco.
-- **TEME25 Q85:** DPP e fibrinogênio como marcador de gravidade/transfusão.
-- **Aulas de cursinho:** Aulas 46, 51, 52, 57 e 58.
-
 ## Referências
 
 **Prova/TEME**

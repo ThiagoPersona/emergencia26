@@ -294,27 +294,6 @@ flowchart TD
 | TCE/HIC | HOB 30, normocapnia, manitol/hipertônica, evitar hipoxemia/hipotensão | Monitorizacao invasiva, sedação, osmoterapia e neurocirurgia dependem do centro |
 | ME | Não iniciar/concluir com confundidores | Seguir estritamente CFM, hospital, CIHDOTT/OPO e documentação |
 
-## Checklist de revisão
-
-- [ ] Sei fazer abordagem inicial de coma/déficit focal/crise sem esquecer glicemia.
-- [ ] Sei dose e janela de alteplase e quando lembrar da tenecteplase.
-- [ ] Sei metas de PA no AVCi com lítico, AVCi sem lítico e HIP.
-- [ ] Sei critério básico de trombectomia e que janela estendida exige selecao.
-- [ ] Sei tratar status em fases e não ficar preso em benzodiazepínico.
-- [ ] Sei quando TC deve vir antes da LP.
-- [ ] Sei medidas iniciais de HIC e quando hiperventilar.
-- [ ] Sei alvos de TCE grave: oxigenação, PA, PaCO2, temperatura e coagulação.
-- [ ] Sei que corticoide não é tratamento de TCE.
-- [ ] Sei por que não abrir ME com hipotermia/hipoxemia/sedação/confundidores.
-
-## Questões e estações relacionadas
-
-- **TEME22:** TCE grave/possível ME; AVCi e decisão após TC; mal agudo da montanha; encefalopatia hepática; crise/lesões em imunossuprimido; VNI contraindicada em AVE com rebaixamento/disfagia/secreção.
-- **TEME24 prática:** TCE pediátrico com indicação de imagem; estação de neuro com TCE, HSA traumática/hematoma intraparenquimatoso, ausência de reflexos de tronco e impeditivos para ME.
-- **TEME25 teórica/prática:** tenecteplase vs alteplase; eclampsia pós-parto; síncope simulando convulsão; ONSD >6 mm e HIC; TCE/via aérea; AVCi com NIHSS alto/ASPECTS; pré-requisitos de morte encefálica.
-- **Banco teórico do tema 007:** TEME22 Q11, Q23, Q49, Q53, Q67, Q83, Q98, Q99, Q110, Q120; TEME23 Q57, Q60, Q61, Q68, Q76, Q77, Q80; TEME24 Q4, Q7, Q29, Q36, Q47, Q68, Q95; TEME25 Q18, Q21, Q43, Q69, Q81, Q82, Q96.
-- **Aulas de cursinho:** aulas 02, 03, 12, 18, 40 e 45; `Resumo do cursinho.docx`.
-
 ## Referências
 
 **Prova/TEME**

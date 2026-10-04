@@ -56,18 +56,6 @@ flowchart TD
 >
 > **Na prática clínica:** ajuste por contexto, diretriz atual ou protocolo local.
 
-## Checklist de revisão
-
-- [ ] Sei reconhecer indicação de conduta imediata.
-- [ ] Sei as doses/alvos.
-- [ ] Sei as contraindicações.
-- [ ] Sei a pegadinha mais provável da banca.
-
-## Questões e estações relacionadas
-
-- TEME ano/questão:
-- Estação prática:
-
 ## Referências
 
 **Prova/TEME**

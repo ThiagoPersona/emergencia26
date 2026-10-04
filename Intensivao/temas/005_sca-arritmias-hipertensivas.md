@@ -442,36 +442,6 @@ flowchart TD
 - **Síndrome aórtica aguda:** dor lancinante para dorso + PA alta + IAo/raiz dilatada/derrame no POCUS = angioTC urgente, mesmo sem visualizar flap.
 - **Complicação mecânica pós-IAM:** choque dias após IAM com derrame/tamponamento no POCUS sugere ruptura de parede livre até prova em contrário.
 
-## Checklist de revisão
-
-- [ ] Sei fazer abordagem inicial da dor torácica em até 10 min.
-- [ ] Sei quando IAMCST vai para PCI e quando considerar fibrinólise.
-- [ ] Sei doses de AAS, Clopidogrel/ticagrelor, heparina/enoxaparina e nitrato.
-- [ ] Sei que oxigênio não é rotina no IAM com SatO2 normal.
-- [ ] Sei contraindicações críticas de nitrato e fibrinólise.
-- [ ] Sei o ajuste de fibrinólise/anticoagulação no idoso >=75 anos.
-- [ ] Sei reconhecer Wellens, de Winter, Sgarbossa/Smith, hipotermia/Osborn, IAM inferior/VD e TdP.
-- [ ] Sei usar HEART, GRACE e TIMI no contexto correto.
-- [ ] Sei tratar bradicardia instável e quando preparar marcapasso.
-- [ ] Sei o básico do marcapasso transvenoso: indicação, acesso, VVI, frequência, output e sensibilidade.
-- [ ] Sei reconhecer complicação de marcapasso transvenoso com soluços/estimulação diafragmática.
-- [ ] Sei classificar taquicardia por instabilidade, QRS e regularidade.
-- [ ] Sei que FA pré-excitada não recebe bloqueador nodal.
-- [ ] Sei reconhecer emergência hipertensiva por lesão de órgão-alvo.
-- [ ] Sei metas de PA em dissecção, AVCi trombólise, AVCi sem trombólise, eclampsia e SCAPE.
-- [ ] Sei que SCAPE precisa VNI + nitrato precoce se PA permite.
-- [ ] Sei diferenciar IC terminal/fase ativa de morte de descompensação reversível.
-- [ ] Sei a sequência inicial da tempestade tireotóxica.
-
-## Questões e estações relacionadas
-
-- **TEME22:** Q22, Q44, Q68, Q93, Q111.
-- **TEME23:** Q8, Q9, Q15, Q90.
-- **TEME24:** Q25, Q26, Q55, Q63, Q76, Q98, Q99.
-- **TEME25:** Q30, Q35, Q57, Q89, Q90, Q97.
-- **Estações práticas:** TEME24 com BAVT instável, IAMCST, marcapasso e FV.
-- **Aulas de cursinho:** Aula 34 - Síncope e Arritmias; Aula 36 - Síndrome Coronariana Aguda; Aula 47 - Emergências hipertensivas e IC Aguda; Aula 48 - Pericardite, Miocardite e Endocardite.
-
 ## Referências
 
 - Conteúdo programático TEME26 e referências oficiais do edital.

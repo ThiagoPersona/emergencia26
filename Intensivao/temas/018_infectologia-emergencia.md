@@ -123,22 +123,6 @@ flowchart TD
 >
 > **Na prática clínica:** antibiótico empírico depende de epidemiologia local, resistência, alergia, foco, gravidade, gestação, imunossupressão e protocolos institucionais. Em HIV/TB/meningites crônicas, coordene cedo com infectologia.
 
-## Checklist de revisão
-
-- [ ] Sei diferenciar febre baixa segura de febre com sinal de gravidade.
-- [ ] Sei quando meningite/encefalite não espera TC/LP.
-- [ ] Sei sinais de alarme e gravidade da dengue.
-- [ ] Sei PEP HIV: até 72 h e 28 dias.
-- [ ] Sei que antibiótico não substitui drenagem/desobstrução/cirurgia.
-- [ ] Sei isolar TB suspeita e notificar quando indicado.
-
-## Questões e estações relacionadas
-
-- **TEME22:** HIV com crise/cefaleia, meningite tuberculosa, dengue, odontogênica, febre em contexto de vulnerabilidade.
-- **TEME23:** HIV/infecção e pielonefrite obstrutiva como controle de foco.
-- **TEME24:** HIV/TB, meningite/encefalite, dengue e contenção/delirium com diferencial clínico.
-- **TEME25:** HIV/TB/pneumocistose, meningite/criptococo/TB, dengue, febre sem gravidade com alta segura.
-
 ## Referências
 
 **Prova/TEME**

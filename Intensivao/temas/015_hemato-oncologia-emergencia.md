@@ -365,36 +365,6 @@ flowchart TD
 - **Síndrome torácica aguda falciforme:** dor, febre, hipoxemia e infiltrado/alteração torácica = cefalosporina de 2ª/3ª geração + macrolídeo, oxigênio, analgesia e evitar hiper-hidratação.
 - **Hipercalcemia maligna/mieloma:** dor óssea/lombar + anemia + rim + cálcio alto = CRAB; hidratação venosa monitorizada vem antes de bisfosfonato.
 
-## Checklist de revisão
-
-- [ ] Sei definir febre e ANC na neutropenia febril.
-- [ ] Sei iniciar cefepime/pip-tazo/meropenem em até 60 min.
-- [ ] Sei quando adicionar vancomicina.
-- [ ] Sei reconhecer TLS e tratar hiperK antes do resto.
-- [ ] Sei diferenciar allopurinol de rasburicase.
-- [ ] Sei suspeitar leucostase/hiperviscosidade por sintomas.
-- [ ] Sei SVCS grave vs estável e quando corticoide não é rotina.
-- [ ] Sei compressão medular metastática: dexametasona, RM e radio/neuro.
-- [ ] Sei STA falciforme e quando transfundir.
-- [ ] Sei parar transfusão e diferenciar TRALI/TACO/anafilaxia/hemólise.
-- [ ] Sei reversão de varfarina, dabigatrana, Xa e heparina.
-- [ ] Sei TTP: plasma exchange, não plaqueta de rotina.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q45:** choque hemorrágico traumático persistente após cristaloide/torniquete: transfusão balanceada 1:1:1.
-- **TEME22 Q62:** encefalopatia hepática: lactulose como medida inicial.
-- **TEME22 Q90:** PBE em cirrótico: PMN no líquido ascítico >=250/mm3.
-- **TEME22 Q113:** sangramento uterino anormal: corrigir coagulopatia e transfundir se anemia sintomática; cuidado com condutas inadequadas.
-- **TEME23 Q20:** dor lombar com história de neoplasia exige imagem para rastrear metástase/causa grave.
-- **TEME24 Q39:** falciforme com dor torácica, febre e hipoxemia: síndrome torácica aguda, O2, imagem, analgesia, ATB e considerar transfusão.
-- **TEME24:** neutropenia febril em linfoma/quimioterapia: antibiótico precoce e estratificação de risco.
-- **TEME24 Q71:** síndrome de veia cava superior: grave se via aérea, edema cerebral ou instabilidade; anticoagulação não é sempre contraindicada.
-- **TEME25 Q29:** linfoma de Burkitt em quimioterapia com hiperK, hiperP, úrico alto, hipocalcemia e IRA: síndrome de lise tumoral.
-- **TEME25:** reação transfusional com TRALI/TACO/anafilaxia/sepse: parar transfusão e tratar fenótipo.
-- **TEME25 Q69:** AVC hemorrágico e reversão de coagulopatias/anticoagulantes.
-- **TEME25 Q72:** síndrome torácica aguda em criança HbSS: ceftriaxona + azitromicina, O2 e considerar transfusão se queda de Hb.
-
 ## Referências
 
 **Prova/TEME**

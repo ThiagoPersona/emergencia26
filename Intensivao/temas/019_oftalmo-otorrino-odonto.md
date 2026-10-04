@@ -125,23 +125,6 @@ flowchart TD
 >
 > **Na prática clínica:** protocolos de colírios, antibióticos e disponibilidade de oftalmo/otorrino/bucomaxilo variam. O emergencista deve iniciar as medidas que preservam visão, via aérea e segurança antes da transferência.
 
-## Checklist de revisão
-
-- [ ] Sei red flags do olho vermelho.
-- [ ] Sei glaucoma agudo: dor, halos, vômitos, pupila média, córnea turva.
-- [ ] Sei retina: flashes, moscas novas e cortina.
-- [ ] Sei que químico ocular é irrigação imediata.
-- [ ] Sei epistaxe anterior vs posterior.
-- [ ] Sei quando vertigem é AVC posterior.
-- [ ] Sei sinais de infecção odontogênica ameaçando via aérea.
-
-## Questões e estações relacionadas
-
-- **TEME22:** fotoceratite/lesão ocular por solda; glaucoma agudo; questões com termos ocular/oftalmo/otorrino/odonto.
-- **TEME24:** olho vermelho/glaucoma, vertigem/otorrino, epistaxe e POCUS ocular em contexto de prova.
-- **TEME25:** POCUS ocular/descolamento de retina; ONSD/HIC em POCUS/neuro; vertigem e deficiência visual.
-- **Práticas:** temas de via aérea difícil podem envolver infecção cervical/angioedema e necessidade de chamar ajuda cedo.
-
 ## Referências
 
 **Prova/TEME**

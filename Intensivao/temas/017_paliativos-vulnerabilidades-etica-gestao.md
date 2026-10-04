@@ -276,30 +276,6 @@ flowchart TD
 - **Paliativos:** dispneia refratária pode receber opioide em baixa dose titulada; sedação paliativa é proporcional para sintoma refratário, não eutanásia.
 - **Declaração de óbito:** morte domiciliar natural conhecida deve ser direcionada ao médico assistente/equipe domiciliar; IML é para causa externa/suspeita.
 
-## Checklist de revisão
-
-- [ ] Sei diferenciar paliativo, terminalidade, ortotanásia, distanásia e eutanásia.
-- [ ] Sei conduzir uma conversa curta de metas no DE.
-- [ ] Sei tratar dor, dispneia, delirium e secreção terminal.
-- [ ] Sei critérios básicos de sedação paliativa.
-- [ ] Sei avaliar capacidade decisional.
-- [ ] Sei lidar com recusa terapêutica e urgência.
-- [ ] Sei reconhecer e aplicar diretivas antecipadas.
-- [ ] Sei os passos da violência sexual, PEP <=72 h e notificação.
-- [ ] Sei avaliar alto risco suicida e quando não dar alta.
-- [ ] Sei pontos centrais de morte encefálica.
-- [ ] Sei que registro e comunicação são condutas de segurança.
-
-## Questões e estações relacionadas
-
-- **TEME23 Q12:** violência sexual: acolhimento, profilaxias, PEP/IST/hepatite, contracepção e seguimento.
-- **TEME23 Q23:** óbito em cena/APH e decisão de reanimação conforme contexto legal e clínico.
-- **TEME25:** dor total em câncer: sofrimento físico, psicológico, social e espiritual; opioide não é único cuidado.
-- **TEME25 Q78:** febre baixa/risco epidemiológico e alta segura com sinais de alarme quando sem gravidade.
-- **TEME25 Q81:** responsabilidade médica, estabilização e transferência para serviço com recurso adequado.
-- **TEME25 Q88:** tentativa de suicídio com tentativas prévias e baixo suporte: alto risco, não alta simples.
-- **Práticas disponíveis até TEME25:** comunicação, decisão compartilhada, segurança do paciente, transferência e registro aparecem como critérios de avaliação mesmo quando a estação é técnica.
-
 ## Referências
 
 **Prova/TEME**

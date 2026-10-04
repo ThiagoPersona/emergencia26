@@ -409,48 +409,6 @@ flowchart TD
 >
 > **Na prática clínica:** diverticulite leve não complicada pode ser manejada sem antibiótico em paciente selecionado; fidaxomicina é preferida para C. difficile inicial em diretrizes atuais, mas vancomicina VO segue muito usada por custo/acesso; estratégias de fluido na pancreatite são moderadas e guiadas por resposta, não "hidratar agressivo" sem reavaliar.
 
-## Checklist de revisão
-
-- [ ] Sei reconhecer abdome que mata: choque, peritonite, isquemia, perfuração, AAA, obstrução estrangulada.
-- [ ] Sei que analgesia não mascara diagnóstico.
-- [ ] Sei pedir beta-hCG em mulher em idade fertil.
-- [ ] Sei diferenciar HDA varicosa de não varicosa e iniciar vasoativo/ceftriaxona quando cirrose.
-- [ ] Sei PMN >=250 para PBE e albumina 1,5/1,0 g/kg.
-- [ ] Sei lactulose para 2-3 evacuações/dia e busca de gatilho na encefalopatia.
-- [ ] Sei pancreatite: 2/3 critérios, RL moderado, sem antibiótico rotineiro, CPRE só se indicado.
-- [ ] Sei colecistite vs colangite.
-- [ ] Sei apendicite/diverticulite e quando TC/cirurgia entram.
-- [ ] Sei isquemia mesentérica: dor desproporcional e angioTC.
-- [ ] Sei obstrução: sinais de estrangulamento e necessidade de cirurgia.
-- [ ] Sei ureter infectado obstruido e torção testicular.
-- [ ] Sei C. difficile inicial vs fulminante.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q14:** hemorragia digestiva alta em cirrose/hipertensão portal.
-- **TEME22 Q31:** pancreatite aguda/biliar e decisão sobre hidratação, imagem e CPRE.
-- **TEME22 Q39-40:** diverticulite/dor abdominal com imagem.
-- **TEME22 Q62:** cirrose grave/descompensação.
-- **TEME22 Q90:** peritonite bacteriana espontânea em cirrótico com ascite.
-- **TEME22 Q97:** abordagem do paciente com dor abdominal; leucograma normal não exclui abdome agudo inflamatório.
-- **TEME23 Q4:** cirrótico com ascite volumosa, icterícia e alteração de consciência.
-- **TEME23 Q13 e Q94:** ferimento por arma branca em parede anterior do abdome; conduta conforme estabilidade/peritonite/achados.
-- **TEME23 Q22:** apendicite aguda é conduta inicial.
-- **TEME23 Q32:** lombar/testicular com hidronefrose e infecção: pielonefrite obstrutiva + antibiótico EV + desobstrução.
-- **TEME23 Q58:** obstrução intestinal baixa/volvo.
-- **TEME23 Q70:** escorpião pode cursar com pancreatite aguda.
-- **TEME24 Q18:** abdome agudo em mulher; diagnósticos diferenciais ginecológicos e beta-hCG.
-- **TEME24 Q40:** cólica/flanco, POCUS é ureterolitíase/pielonefrite obstrutiva.
-- **TEME24 Q44:** dor epigástrica com POCUS/imagem sugerindo úlcera perfurada.
-- **TEME24 Q63:** analgesia em dor abdominal aguda sem etiologia definida.
-- **TEME25 Q5:** cirrótico com ascite no POCUS; pensar ascite/PBE conforme contexto, não hemoperitônio automaticamente.
-- **TEME25 Q37 e Q58:** HDA, estabilização e decisão endoscópica/transfusional.
-- **TEME25 Q57:** dor HCD + febre/icterícia: colangite e CPRE/drenagem quando grave.
-- **TEME25 Q70:** POCUS sugestivo de apendicite em contexto rural/remoto.
-- **TEME25 Q89:** diverticulite não complicada em TC, sem abscesso.
-- **TEME25 Q98:** diarreia após fluoroquinolona: suspeitar C. difficile.
-- **TEME25 Q99:** torção testicular: dor súbita, náusea/vômito e sinais clínicos.
-
 ## Referências
 
 **Prova/TEME**

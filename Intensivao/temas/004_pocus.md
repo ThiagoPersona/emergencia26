@@ -374,34 +374,6 @@ flowchart TD
 - **Pseudo-AESP:** ritmo organizado sem pulso + contração cardíaca no US sugere atividade mecânica residual e causa potencialmente reversível, mas não autoriza parar RCP.
 - **RUSH no choque distributivo:** POCUS ajuda a excluir obstrutivo/cardiogênico grosseiro, mas não diferencia sozinho sepse de anafilaxia.
 
-## Checklist de revisão
-
-- [ ] Sei escolher probe: linear, curvilíneo ou setorial.
-- [ ] Sei o básico de frequência, penetração, impedância, sombra, reforço posterior e espelho.
-- [ ] Sei reconhecer linhas A, linhas B, lung sliding, lung point e estratosfera.
-- [ ] Sei interpretar perfil B difuso em SCAPE/EAP hipertensivo.
-- [ ] Sei montar BLUE em dispneia sem decorar demais.
-- [ ] Sei fazer RUSH: pump, tank, pipes.
-- [ ] Sei diferenciar choque hipovolêmico, cardiogênico e obstrutivo pelos extremos ultrassonográficos.
-- [ ] Sei os sinais de tamponamento: colapso diastólico do VD, colapso sistólico do AD e VCI cheia.
-- [ ] Sei que VD dilatado sugere TEP/cor pulmonale, mas não fecha sozinho.
-- [ ] Sei que VCI sozinha não decide volume.
-- [ ] Sei usar VTI/PLR quando houver tempo e janela.
-- [ ] Sei janelas do eFAST: QSD, QSE, pelve, pericárdio e pleura.
-- [ ] Sei que FAST negativo não exclui trauma abdominal.
-- [ ] Sei usar CASA sem prolongar pausa na PCR.
-- [ ] Sei reconhecer hidronefrose infectada, apendicite, descolamento de retina e indicações básicas de bloqueio regional.
-- [ ] Sei pontos da prática: PLAX, subxifoide, Morison, VCI, aorta, punção guiada e ponta da agulha.
-
-## Questões e estações relacionadas
-
-- **TEME22:** Q9, Q17, Q24, Q29, Q39, Q50, Q57, Q84, Q86, Q105, Q115.
-- **TEME23:** Q5, Q38, Q62, Q66, Q75.
-- **TEME24:** Q17, Q40, Q41, Q53.
-- **TEME25:** Q5, Q50, Q70, Q77.
-- **Estações práticas:** TEME24 com probe setorial, janelas cardíacas e pulmão; TEME25 com aorta aneurismática/trombo mural, choque hipovolêmico/hemorrágico, PLAX, subxifoide, Morison, VCI colabando e punção guiada por US.
-- **Aulas de cursinho:** Aula 09 POCUS pulmonar; Aula 13 Choque; Aula 18 POCUS trauma/vascular/neuro; Aula 29 POCUS cardíaco; Aula 35 POCUS procedimentos.
-
 ## Referências
 
 - Conteúdo programático TEME26 e referências oficiais do edital.

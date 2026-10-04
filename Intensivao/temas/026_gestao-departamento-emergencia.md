@@ -449,37 +449,6 @@ flowchart TD
 >
 > **Na prática clínica:** escolha indicadores, metas, escalas e gatilhos segundo população, contrato, protocolo local e maturidade de dados. A Resolução CFM 2.077/2014 traz referências normativas para serviços hospitalares; UPA, APH e outros cenários têm regulamentação própria. Mudanças de fluxo devem ser monitoradas quanto a segurança, equidade e efeitos indesejados.
 
-## Checklist de revisão
-
-- [ ] Sei diferenciar entrada, processamento, saída e boarding.
-- [ ] Sei calcular takt time e comparar ciclo efetivo/capacidade agregada quando há recursos paralelos.
-- [ ] Entendo por que capacidade igual à demanda não oferece folga.
-- [ ] Sei aplicar a Lei de Little a um exemplo simples.
-- [ ] Sei os cinco sensos do 5S e o objetivo do VSM.
-- [ ] Diferencio Manchester de ESI.
-- [ ] Sei interpretar tempos e distribuição da classificação sem conclusões precipitadas.
-- [ ] Sei escolher indicadores de resultado, processo e equilíbrio.
-- [ ] Diferencio incidência de prevalência.
-- [ ] Diferencio near miss, incidente sem dano e evento adverso.
-- [ ] Sei conduzir resposta imediata e análise de causa raiz.
-- [ ] Sei definir cultura justa sem confundir com impunidade.
-- [ ] Sei caracterizar acreditação.
-- [ ] Sei os números mais cobrados da Resolução CFM 2.077/2014.
-- [ ] Sei o papel da vaga zero, da regulação e da passagem de plantão.
-- [ ] Sei montar um huddle curto com responsável e prazo.
-- [ ] Sei explicar por que informação honesta melhora a experiência da espera.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q30:** ESI e previsão de recursos.
-- **TEME23 Q54/Q96:** incidência e regulação/vaga zero.
-- **TEME24 Q46/Q75/Q87:** escala de plantão, classificação de risco e Resolução CFM 2.077/2014.
-- **TEME25 Q87:** organização do atendimento pré-hospitalar fixo.
-- **TEME26 Q7/Q12/Q24/Q29/Q48/Q56/Q62/Q96:** Lean, acreditação, espera, capacidade, boarding, causa raiz e Manchester.
-- **Prova prática:** liderança, distribuição de tarefas, comunicação fechada, segurança, registro e destino pontuam transversalmente em qualquer estação.
-
-[Resolver as questões de Gestão](../provas/026_gestao-departamento-emergencia.md)
-
 ## Referências
 
 **Prova e material local**

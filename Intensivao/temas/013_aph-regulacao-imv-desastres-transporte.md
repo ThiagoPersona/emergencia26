@@ -451,42 +451,6 @@ flowchart TD
 - **Equipamento complexo no voo:** ECMO ou tecnologia não familiar exige profissional capacitado e briefing de segurança, ou missão deve ser rediscutida.
 - **RMC moderna:** evite prancha prolongada; faça restrição seletiva e transporte ao centro adequado quando mecanismo é de alto risco.
 
-## Checklist de revisão
-
-- [ ] Sei que APH começa por segurança, cena, EPI e recursos.
-- [ ] Sei comunicar IMV com METHANE.
-- [ ] Sei diferenciar APH normal de medicina de massa.
-- [ ] Sei montar mentalmente comando, ACV, triagem, tratamento e transporte.
-- [ ] Sei START adulto sem olhar.
-- [ ] Sei as categorias verde, amarelo, vermelho e preto.
-- [ ] Sei as funções do médico regulador e a lógica de vaga zero.
-- [ ] Sei preservar cena/vestígios e conduzir óbito evidente conforme regulação/protocolo.
-- [ ] Sei usar debriefing como ferramenta de aprendizado e segurança psicológica.
-- [ ] Sei checar transporte antes de sair: VA, ventilação/O2, drogas, monitor, comunicação e relatório.
-- [ ] Sei riscos do aeromédico: altitude, gases, pneumotórax e cabine.
-- [ ] Sei zonas hot/warm/cold no atendimento tático.
-- [ ] Sei que HazMat exige EPI, isolamento e descontaminação antes de contaminar a rede.
-- [ ] Sei blast primário, secundário, terciário, quaternário e quinário.
-- [ ] Sei afogamento, intermação, altitude, mergulho e hipotermia em uma linha cada.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q1:** rodovia com vítima em faixa de rolamento: melhor posicionamento da ambulância para proteger a cena e desviar fluxo.
-- **TEME22 Q25:** cinemática de trauma e risco por mecanismo.
-- **TEME22 Q30:** triagem/priorização também aloca recursos, não apenas ordem de chegada.
-- **TEME22 Q41:** mergulho profundo com dor articular/rash/prurido = doença descompressiva; O2 por máscara não reinalante 15 L/min.
-- **TEME22 Q54:** mal agudo da montanha em 3.000 m; conduta de prova = descer pelo menos 300 m.
-- **TEME22 Q56:** explosão com ruptura de membrana timpânica = lesão primária por blast.
-- **TEME22 Q66:** transporte aeromédico; questão anulada, mas revisar primário/secundário, altitude e cabine.
-- **TEME23 Q19:** narcose por nitrogênio, com quadro semelhante a embriaguez, clássica a partir de 30 m.
-- **TEME23 Q27:** atendimento tático sob ameaça direta: autoajuda sempre que possível e controle de hemorragia exsanguinante.
-- **TEME23 Q33:** afogamento inconsciente/apneico: abrir via aérea e realizar 5 ventilações.
-- **TEME23 Q93:** intermação/heat stroke: resfriamento prioritário, antes do transporte quando há condição.
-- **TEME25 Q70:** contexto rural/remoto: POCUS pode antecipar decisão, regulação e logística.
-- **TEME25 Q75:** via aérea em cena/extricação: considerar acesso limitado, segurança e manobras simples enquanto se organiza resgate.
-- **TEME25 Q79:** médico regulador e atribuições/experiência na Central de Regulação das Urgências.
-- **Aulas de cursinho - Aula 11:** SCI, START, ACV, IMV e "não transferir o caos".
-
 ## Referências
 
 **Prova/TEME**

@@ -115,23 +115,6 @@ flowchart TD
 >
 > **Na prática clínica:** escolha de antibiótico, via de drenagem e técnica de priapismo depende de recurso, urologia, idade, risco de IST, cultura e protocolo local.
 
-## Checklist de revisão
-
-- [ ] Sei sinais de torção testicular.
-- [ ] Sei que Doppler não atrasa urologia se clínica forte.
-- [ ] Sei identificar pielonefrite obstrutiva.
-- [ ] Sei priapismo isquêmico >4 h.
-- [ ] Sei parafimose e fratura de pênis.
-- [ ] Sei quando não passar sonda.
-- [ ] Sei suspeitar Fournier.
-
-## Questões e estações relacionadas
-
-- **TEME23 Q32:** lombar/testicular, hidronefrose e infecção = pielonefrite obstrutiva; antibiótico EV + desobstrução.
-- **TEME24 Q40:** cólica/flanco com POCUS/hidronefrose e risco de obstrução.
-- **TEME25 Q99/Q100:** dor testicular súbita, náuseas/vômitos e sinais clínicos de torção.
-- **TEME22-26:** termos hidronefrose, testicular, priapismo e retenção aparecem como distratores ou diagnósticos associados.
-
 ## Referências
 
 **Prova/TEME**

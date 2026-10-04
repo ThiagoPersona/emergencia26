@@ -126,23 +126,6 @@ flowchart TD
 >
 > **Na prática clínica:** protocolos de droperidol, olanzapina, haloperidol, cetamina e benzodiazepínicos variam. Use a menor restrição eficaz, com equipe, monitorização e documentação.
 
-## Checklist de revisão
-
-- [ ] Sei abordar segurança no primeiro minuto.
-- [ ] Sei red flags de causa clínica.
-- [ ] Sei diferenciar delirium, psicose, estimulante e abstinência.
-- [ ] Sei BARS 6 vs 7.
-- [ ] Sei regras de contenção segura.
-- [ ] Sei alto risco suicida.
-- [ ] Sei doses básicas e riscos respiratórios/QT.
-
-## Questões e estações relacionadas
-
-- **TEME22:** tentativa de suicídio/trauma, agitação psicomotora, abstinência e investigação clínica em sintomas psiquiátricos.
-- **TEME24:** agitação, contenção e delirium em casos clínicos.
-- **TEME25 Q86:** BARS e conduta na agitação.
-- **TEME25 Q88:** tentativa de suicídio com tentativas prévias e baixo suporte = alto risco, sem alta simples.
-
 ## Referências
 
 **Prova/TEME**

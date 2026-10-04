@@ -325,34 +325,6 @@ flowchart TD
 | Lactato | Repetir e buscar queda | Não é ordem para dar volume infinito; adrenalina, beta-agonista e hepatopatia confundem |
 | Anafilaxia | Adrenalina IM | IV apenas refratária/PCR ou por equipe treinada; anti-H1/corticoide são coadjuvantes |
 
-## Checklist de revisão
-
-- [ ] Sei reconhecer choque por hipoperfusão, não só PA.
-- [ ] Sei diferenciar hipovolêmico, distributivo, cardiogênico, obstrutivo e neurogênico.
-- [ ] Sei abordagem dos primeiros 5 minutos do choque.
-- [ ] Sei pacote inicial de sepse/choque séptico.
-- [ ] Sei que culturas não podem atrasar antibiótico.
-- [ ] Sei quando usar 30 mL/kg e quando parar para reavaliar.
-- [ ] Sei usar PLR/VTI, VCI, B-lines, TEC e lactato para reavaliação.
-- [ ] Sei que noradrenalina é primeira linha no choque séptico.
-- [ ] Sei papel de vasopressina, adrenalina, dobutamina e hidrocortisona.
-- [ ] Sei dose de adrenalina IM na anafilaxia.
-- [ ] Sei que choque neurogênico em trauma é diagnóstico depois de excluir hemorragia.
-- [ ] Sei por que IOT pode colapsar TEP maciço/VD falente.
-- [ ] Sei diferenciar TRALI de TACO.
-- [ ] Sei que HDA varicosa precisa vasoativo + antibiótico.
-- [ ] Sei reconhecer escorpionismo grave e intoxicação por BB/BCC como causas de choque.
-- [ ] Sei reconhecer shred sign como pneumonia no US pulmonar.
-
-## Questões e estações relacionadas
-
-- **TEME22:** Q12, Q13, Q17, Q38, Q43, Q57, Q61, Q76, Q81, Q94, Q105, Q111.
-- **TEME23:** Q1, Q42, Q45, Q66, Q75.
-- **TEME24:** Q4, Q17, Q65, Q73, Q88.
-- **TEME25:** Q11, Q22, Q26, Q41, Q50, Q62, Q64.
-- **Estações práticas:** trauma hemorrágico, POCUS em choque, BAVT/IAMCST com choque e decisão de marca-passo/vasoativo.
-- **Aulas de cursinho:** Aula 13 - Choque; Aula 22 - Sepse; Aula 63 - Emergências Infecciosas; Aula 47 - IC/choque cardiogênico; Aula 53 - intoxicações com choque/bradicardia.
-
 ## Referências
 
 - Conteúdo programático TEME26 e referências oficiais do edital.

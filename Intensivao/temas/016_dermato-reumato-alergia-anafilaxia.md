@@ -300,30 +300,6 @@ flowchart TD
 >
 > **Na prática clínica:** protocolos locais variam em icatibant/C1-INH/FFP no angioedema por bradicinina, escolha de antibiótico para SSTI/MRSA e uso de imunomoduladores em SJS/TEN. A regra operacional permanece: via aérea, choque, faça, punção e corticoide tempo-dependente quando indicados.
 
-## Checklist de revisão
-
-- [ ] Sei diagnosticar anafilaxia mesmo sem urticária.
-- [ ] Sei dose de adrenalina IM e intervalo de repeticao.
-- [ ] Sei diferenciar angioedema histaminérgico de bradicinina.
-- [ ] Sei quando chamar via aérea difícil no angioedema.
-- [ ] Sei celulite vs abscesso vs fasciite necrosante.
-- [ ] Sei que fasciite e cirurgia, não TC.
-- [ ] Sei reconhecer SJS/TEN e parar a droga.
-- [ ] Sei punir monoartrite antes de antibiótico se não houver sepse.
-- [ ] Sei que cristal não exclui infecção articular.
-- [ ] Sei tratar crise de gota sem iniciar alopurinol como analgésico.
-- [ ] Sei arterite temporal e crise renal esclerodérmica.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q63:** crise renal esclerodérmica: PA alta, creatinina/proteinúria/hematúria e manifestações neurológicas; captopril/IECA.
-- **TEME23:** celulite/erisipela: diagnóstico clínico, etiologia estrepto/staph e US quando há dúvida/abscesso, não como regra universal.
-- **TEME24 Q52:** angioedema por enalapril com língua/lábios, disfagia e estridor: indicação de intubação acordada pelo risco de falha de resgate.
-- **TEME24 Q71:** queimadura térmica com bolhas: reconhecer segundo grau e manejo local/analgesia/cobertura, sem tratar todo caso como grande queimado.
-- **TEME24 Q79:** abelhas: diferenciar anafilaxia de síndrome de envenenamento por múltiplas picadas; esta pode cursar com CIVD, alterações neuro/cardiovasculares e IRA.
-- **TEME25:** mordeduras e infecção de partes moles: gatos infectam muito; profilaxia e cobertura dependem de animal, ferida, local e risco.
-- **Aulas de cursinho - Aula 19:** emergências reumato e dermato: rash perigoso, infecções de pele, monoartrite e vasculites.
-
 ## Referências
 
 **Prova/TEME**

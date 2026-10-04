@@ -10,7 +10,7 @@ Material de revisão dirigida em módulos de emergência, organizado para estudo
 2. Refaça mentalmente o fluxograma sem olhar.
 3. Decore a tabela de doses, alvos e números.
 4. Leia as pegadinhas TEME.
-5. Termine pelo checklist de revisão.
+5. Revise as decisões e doses que ainda não consegue recordar sem consultar o texto.
 
 ## Ordem Prioritária
 

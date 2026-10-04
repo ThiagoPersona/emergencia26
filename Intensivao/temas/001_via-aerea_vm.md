@@ -454,41 +454,6 @@ Conduta: chamar ajuda cedo, preparar via aérea difícil e crico. Acordado pode 
 - **NINO/CICO:** falhou intubação e falhou ventilação com BVM/dispositivo extraglótico = cricotireoidostomia cirúrgica imediata, dedo-bisturi-bougie, com tubo adequado.
 - **PSV em DPOC:** ciclagem tardia prolonga inspiração, piora auto-PEEP e assincronia; aumente critério de ciclagem quando o ventilador entrega tempo inspiratório maior que o esforço neural.
 
-## Checklist de revisão
-
-- [ ] Sei dizer as três indicações clássicas de IOT.
-- [ ] Sei diferenciar via aérea difícil anatômica, fisiológica e falha.
-- [ ] Sei montar a primeira tentativa com plano B.
-- [ ] Sei dose de etomidato, cetamina, propofol, succinilcolina e rocurônio.
-- [ ] Sei contraindicar succinilcolina quando há risco de hiperK.
-- [ ] Sei reconhecer NINO/CICO e indicar crico.
-- [ ] Sei confirmar tubo com capnografia.
-- [ ] Sei interpretar ETCO2 alto/súbito, baixo e ausente na RCP/pós-IOT.
-- [ ] Sei escolher oxigênio, HFNC, CPAP, BiPAP ou IOT conforme proteção de via aérea e estabilidade.
-- [ ] Sei contraindicar VNI quando há secreção, coma, choque, trauma facial ou pneumotórax não drenado.
-- [ ] Sei programar VM inicial protetora.
-- [ ] Sei diferenciar Ppico alta por resistência de Pplat alta por complacência.
-- [ ] Sei reconhecer auto-PEEP na curva fluxo-tempo.
-- [ ] Sei corrigir auto-PEEP reduzindo FR/volume minuto e aumentando tempo expiratório.
-- [ ] Sei lembrar que CO pode ter SpO2 normal e que fumaça também pode trazer cianeto.
-- [ ] Sei reconhecer fadiga em asma pediátrica e falência ventilatória neuromuscular.
-
-## Questões e estações relacionadas
-
-**Provas teóricas**
-
-- TEME22: questões 3, 4, 5, 6, 7, 8, 9, 15, 18, 19, 23, 24, 31, 32, 34, 46, 48, 64, 69, 70, 77, 78, 79, 88, 89, 95.
-- TEME23: questões 1, 2, 14, 16, 19, 21, 24, 33, 37, 38, 40, 46, 48, 56, 64, 76, 81, 82.
-- TEME24: questões 6, 15, 16, 30, 34, 36, 38, 52, 60, 64, 66, 80, 82, 85, 97.
-- TEME25: questões 1, 2, 4, 8, 9, 13, 14, 15, 16, 21, 31, 42, 55, 56, 75, 83, 91.
-
-**Práticas**
-
-- 2022: BVM + dispositivo extraglótico; troubleshooting.
-- 2023: IOT com laringoscopia direta + bougie em suspeita de trauma raquimedular.
-- 2024: via aérea cirúrgica/cricotireoidostomia.
-- 2025: VCV, gasometria, auto-PEEP e correção por redução de volume minuto.
-
 ## Referências
 
 **Prova/TEME**

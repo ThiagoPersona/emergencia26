@@ -124,23 +124,6 @@ flowchart TD
 >
 > **Na prática clínica:** antibiótico e critério de centro de queimados seguem protocolo regional. Bloqueios e sedação são excelentes quando há equipe treinada, monitorização e plano de resgate.
 
-## Checklist de revisão
-
-- [ ] Sei passo inicial da fratura exposta.
-- [ ] Sei avaliar neurovascular antes/depois.
-- [ ] Sei sinais de síndrome compartimental.
-- [ ] Sei luxações que não podem esperar.
-- [ ] Sei critérios de via aérea no queimado.
-- [ ] Sei calcular SCQ sem contar primeiro grau.
-- [ ] Sei que CO pode ter oximetria normal.
-
-## Questões e estações relacionadas
-
-- **TEME22:** fratura exposta, controle de hemorragia em extremidade, START com fratura, blast/queimadura.
-- **TEME23:** fraturas expostas, luxação/compartimental, lesão por fumaça e queimadura.
-- **TEME24:** queimadura térmica com bolhas, analgesia/bloqueio e trauma de extremidades.
-- **TEME25:** síndrome compartimental, fraturas/luxações, fratura exposta de tíbia, bloqueio guiado por US, cálculo de queimadura e trauma prático com torniquete.
-
 ## Referências
 
 **Prova/TEME**

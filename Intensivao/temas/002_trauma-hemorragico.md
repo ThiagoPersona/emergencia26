@@ -332,39 +332,6 @@ Pulso ausente, palidez e paralisia são tardios. Conduta: retirar constrições 
 - Não acionar cirurgia/intervenção cedo.
 - Não reavaliar resposta: pulso, pele, consciência, lactato, base déficit, eFAST e sangramento.
 
-## Checklist de revisão
-
-- [ ] Sei executar XABCDE com X antes do A quando há hemorragia exsanguinante.
-- [ ] Sei indicar compressão, packing e torniquete.
-- [ ] Sei que torniquete não deve ser afrouxado periodicamente.
-- [ ] Sei as quatro fontes ocultas de sangue no trauma.
-- [ ] Sei quando eFAST positivo manda para laparotomia.
-- [ ] Sei usar binder/lençol na pelve no nível dos trocanteres.
-- [ ] Sei ativar transfusão maciça e responder 1:1:1 ou sangue total.
-- [ ] Sei dose e janela do TXA.
-- [ ] Sei repor cálcio durante transfusão maciça.
-- [ ] Sei evitar hipotermia, acidose, coagulopatia e hipocalcemia.
-- [ ] Sei que hipotensão permissiva não vale para TCE grave.
-- [ ] Sei que FAST negativo não exclui pelve/retroperitônio/criança.
-- [ ] Sei que colar cervical em penetrante de pescoço pode atrapalhar mais que ajudar.
-- [ ] Sei reconhecer fístula traqueoinominada: sangramento pulsátil pela traqueostomia.
-- [ ] Sei usar START sem transformar toda fratura exposta em vermelho.
-
-## Questões e estações relacionadas
-
-**Provas teóricas**
-
-- TEME22: questões 3, 39, 42, 45, 61, 74, 91.
-- TEME23: questões 13, 27, 34, 43, 44, 47, 94.
-- TEME24: questões 5, 17, 43, 54, 73, 74, 77, 85.
-- TEME25: questões 7, 17, 19, 33, 39, 42, 66, 75, 76.
-
-**Práticas**
-
-- 2025: estação trauma com XABCDE, torniquete, horário, choque hemorrágico, eFAST, pelve/ossos longos, transfusão maciça 1:1:1 ou sangue total, cristaloide aquecido, TXA, cálcio, aquecimento, coagulopatia/ROTEM e avaliação cirúrgica.
-- 2024: trauma pediátrico com politrauma, eFAST, choque, TC e concentrado de hemácias.
-- 2022: trauma + POCUS com choque hemorrágico e FAST.
-
 ## Referências
 
 **Prova/TEME**

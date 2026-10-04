@@ -365,35 +365,6 @@ Sinais vitais aproximados para não cair em "normal para idade":
 - **Trauma abdominal pediátrico:** sinal do cinto e alta energia mantêm investigação mesmo com FAST negativo.
 - **Cianose:** lembre que a percepção depende da hemoglobina desoxigenada absoluta. A TEME26 Q92 tem gabarito oficial controverso; preserve a letra oficial no treino.
 
-## Checklist de revisão
-
-- [ ] Sei reconhecer criança grave pelo triângulo de avaliação pediátrica.
-- [ ] Sei que hipotensão e bradicardia são sinais tardios.
-- [ ] Sei ventilar primeiro na bronquiolite grave/bradicardia hipóxica.
-- [ ] Sei diferenciar bronquiolite, crupe, anafilaxia, corpo estranho e asma.
-- [ ] Sei as doses: bolus 20 mL/kg, sepsis 10-20 mL/kg, CH 10 mL/kg, adrenalina IM 0,01 mg/kg, MgSO4, midazolam e D10.
-- [ ] Sei quando tratar crise febril simples sem excesso de exames.
-- [ ] Sei que DKA pediátrica não recebe bolus de insulina.
-- [ ] Sei conduzir queimadura pediátrica inicial com aquecimento, analgesia, SCQ pediátrica, manutenção com glicose e diurese alvo.
-- [ ] Sei usar PECARN e não confiar no FAST negativo.
-- [ ] Sei as pistas de Kawasaki, sarampo, escarlatina, exantema súbito e choque tóxico.
-- [ ] Sei a conduta da estação de chumbinho: ABCDE, glicemia/O2/aquecer/estimular/acesso, carbamato/aldicarb e atropina EV se toxíndrome colinérgico.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q12-13:** lactente com diarreia/vômitos, choque hipovolêmico e SF 0,9% 20 mL/kg.
-- **TEME23 Q14:** particularidades de via aérea pediátrica; lâmina reta pode elevar epiglote; criança pequena pode precisar coxim sob ombros; máscara laríngea não é proibida só por idade <2 anos.
-- **TEME23 Q16:** espasmo de masseter após medicação de IOT associado a succinilcolina.
-- **TEME23 Q17:** febre, hipotensão, rash/língua em framboesa e inflamação sistêmica = síndrome do choque tóxico.
-- **TEME23 Q50-51:** choque hipovolêmico/desidratação e cristaloide 20 mL/kg.
-- **TEME24 Q15:** bronquiolite com rebaixamento, SatO2 70% e FC 48: ventilação com pressão positiva e O2; compressão se FC <60 persistir com má perfusão.
-- **TEME24 Q16/Q38:** asma grave pediátrica, corticoide, MgSO4 e indicações de via aérea.
-- **TEME24 Q32:** exantemas, especialmente exantema súbito/HHV6-7.
-- **TEME24 Q95:** fatores de risco para imagem cervical pediátrica.
-- **TEME24 Estação I:** trauma pediátrico: TC crânio/PECARN, radiografia cervical, TOT 5,5, CH 10 mL/kg, FAST menos sensível e fontes ocultas de choque.
-- **TEME25 Estação Ped:** "chumbinho": glicemia, O2, aquecer, estimular, acesso; carbamato/aldicarb; atropina 0,5 mg EV em bolus.
-- **TEME25 Q39:** trauma pediátrico com perfusão ruim e FAST negativo; não excluir choque/lesão oculta.
-
 ## Referências
 
 **Prova/TEME**

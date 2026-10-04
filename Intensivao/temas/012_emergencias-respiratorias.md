@@ -392,39 +392,6 @@ flowchart TD
 >
 > **Na prática clínica:** O2 alto e correto no paciente criticamente hipóxico enquanto você estabiliza; depois titule. TEP alto risco exige decisão por risco de sangramento e recurso local. Corticoide em PAC grave selecionada está mais aceito em diretrizes e estudos recentes, mas não é automático para toda pneumonia.
 
-## Checklist de revisão
-
-- [ ] Sei reconhecer falência respiratória iminente pela aparência, não só pela SpO2.
-- [ ] Sei os alvos de O2 94-98% e 88-92%.
-- [ ] Sei escolher Venturi no DPOC e MNR como ponte para hipoxemia grave.
-- [ ] Sei indicar VNI no DPOC hipercápnico e parar se falhar.
-- [ ] Sei tratar asma grave e ventilar obstrutivo sem auto-PEEP.
-- [ ] Sei usar CURB-65/critérios de gravidade sem atrasar antibiótico.
-- [ ] Sei quando cobrir MRSA/Pseudomonas e quando não cobrir anaeróbio.
-- [ ] Sei pH pleural <=7,2 como indicação de drenagem em parapneumonico.
-- [ ] Sei algoritmo de TEP estável vs instável.
-- [ ] Sei pacote inicial de SDRA é indicação de prona.
-- [ ] Sei perfis POCUS: A, A', B, B', C, PLAPS e lung point.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q9:** POCUS pulmonar avalia pleura e artefatos ar-tecido.
-- **TEME22 Q28:** melhor dispositivo: DPOC com SatO2 86% = Venturi FiO2 controlada.
-- **TEME22 Q29:** POCUS com perfil A' e lung point = pneumotórax.
-- **TEME22 Q34:** alvo 88-92% em hipoventilação por obesidade/risco hipercápnico.
-- **TEME22 Q36:** melhor exame para definir gravidade da hipoxemia = gasometria arterial em ar ambiente.
-- **TEME22 Q38:** suspeita de TEP pós-operatório instável; suporte inicial com pequeno bolus, não trombólise automática.
-- **TEME22 Q43:** infecção pulmonar com sepse/choque = expansão volêmica e antibiótico imediato.
-- **TEME22 Q46:** deterioração súbita no ventilador em SDRA/COVID: abordagem sistemática e ventilações de resgate quando necessário.
-- **TEME22 Q48:** mecanismos de IRpA hipoxêmica e gradiente alvéolo-arterial.
-- **TEME22 Q78-79:** DPOC/pneumonia com acidose e VNI/BiPAP.
-- **TEME22 Q89:** SDRA grave com P/F muito baixo = posição prona.
-- **TEME24 Q34:** meta de saturação em risco de depressão/hipoventilação.
-- **TEME24 Q38:** asma grave pediátrica, corticoide EV se não deglute e MgSO4 quando indicado.
-- **TEME25 Q64:** curva fluxo-tempo com auto-PEEP; reduzir FR/aumentar tempo expiratório.
-- **TEME25 Q72:** síndrome torácica aguda na falciforme: O2, ceftriaxona + azitromicina e considerar transfusão se queda de Hb.
-- **TEME25 Q91:** asma com "melhora" da agitação + hipoxemia/esforço persistente = fadiga/falência iminente.
-
 ## Referências
 
 **Prova/TEME**

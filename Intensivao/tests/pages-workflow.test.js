@@ -3,6 +3,18 @@ const fs = require("node:fs");
 const path = require("node:path");
 const test = require("node:test");
 
+test("temas terminam no conteudo e referencias sem blocos editoriais de checklist", () => {
+  const themes = fs.readdirSync(path.join(__dirname, "..", "temas")).filter((file) => file.endsWith(".md"));
+  assert.equal(themes.length, 26);
+  themes.forEach((file) => {
+    const content = fs.readFileSync(path.join(__dirname, "..", "temas", file), "utf8");
+    assert.doesNotMatch(content, /^## (?:Checklist de revisão|Questões e estações relacionadas)$/m, file);
+    assert.match(content, /^## Referências$/m, file);
+  });
+  const template = fs.readFileSync(path.join(__dirname, "..", "TEMPLATE_TEMA.md"), "utf8");
+  assert.doesNotMatch(template, /^## (?:Checklist de revisão|Questões e estações relacionadas)$/m);
+});
+
 test("workflow publica scripts, estilos, dados das praticas e sidebar atual", () => {
   const workflow = fs.readFileSync(
     path.join(__dirname, "..", "..", ".github", "workflows", "pages-intensivao.yml"),

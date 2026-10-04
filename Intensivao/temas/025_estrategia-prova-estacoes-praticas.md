@@ -141,38 +141,6 @@ flowchart TD
 >
 > **Na prática clínica:** protocolos locais, recursos disponíveis, equipe, fluxo de regulação e segurança operacional ajustam a execução. A lógica permanece: estabilizar, tratar o que mata agora, reavaliar e comunicar.
 
-## Checklist de revisão
-
-### Checklist mental para estação
-
-- [ ] Higienizei mãos/EPI e chequei segurança.
-- [ ] Chamei ajuda quando o paciente era crítico.
-- [ ] Pedi monitor, acesso, glicemia e material necessário.
-- [ ] Fiz ABCDE em voz alta.
-- [ ] Tratei ameaça imediata antes de exame.
-- [ ] Usei comunicação objetiva com a equipe.
-- [ ] Reavaliei após intervenção.
-- [ ] Falei diagnóstico sindrômico e próximo passo.
-- [ ] Defini destino e necessidade de especialista/regulação.
-- [ ] Registrei horários e condutas críticas.
-
-### Checklist mental para questão teórica
-
-- [ ] Li o comando: correta, incorreta, próxima conduta ou exceção.
-- [ ] Identifiquei estabilidade e ameaça imediata.
-- [ ] Procurei contraindicação clássica.
-- [ ] Eliminei alternativa que atrasa tratamento essencial.
-- [ ] Diferenciei resposta de prova de detalhe avançado da prática.
-- [ ] Não chutei por padrão de letras sem raciocínio.
-
-## Questões e estações relacionadas
-
-- **TEME22-26 teórica:** questões multidisciplinares, gestão, decisão sob incerteza, regulação, segurança e condutas que cruzam mais de um tema.
-- **Prática 2022:** RCP de alta qualidade, higiene/checklist, via aérea com BVM/dispositivo supraglótico, trauma com FAST, choque cardiogênico/miocardiopatia periparto.
-- **Prática 2023:** PCR pediátrica/TSV, IOT com bougie, BLUE protocol, IMV/desastres, sepse e CAD.
-- **Prática 2024:** bradicardia instável/IAMCST/FV, cricotireoidostomia, POCUS em SCAPE, trauma pediátrico e protocolo de morte encefálica.
-- **Prática 2025:** VM/auto-PEEP, trauma hemorrágico, POCUS com AAA/punção guiada, intoxicação pediátrica por carbamato/organofosforado e neurocrítico/TCE-HIC.
-
 ## Referências
 
 **Prova/TEME**

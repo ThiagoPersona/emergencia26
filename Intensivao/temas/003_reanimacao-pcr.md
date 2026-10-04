@@ -370,38 +370,6 @@ flowchart TD
 | Pós-RCE com IAMCST | ECG e hemodinâmica | Sem IAMCST, cateterismo seletivo conforme choque, instabilidade elétrica e suspeita coronariana |
 | Interrupção de RCP | Decisão estruturada, tempo/ritmo/contexto/causa | EtCO2, POCUS é tempo ajudam, mas nenhum deve ser usado isoladamente |
 
-## Checklist de revisão
-
-- [ ] Reconheco PCR em até 10 segundos e início compressões.
-- [ ] Sei diferenciar FV/TVsp de AESP/assistolia.
-- [ ] Sei a sequência do ritmo chocável sem atrasar choque.
-- [ ] Sei que AESP/assistolia pede adrenalina precoce e 5H/5T.
-- [ ] Sei dose de adrenalina, amiodarona, choque e magnésio.
-- [ ] Sei metas de compressão: 100-120/min, 5-6 cm, pausa menor que 10 s.
-- [ ] Sei ventilação adulto com via avançada: 10/min.
-- [ ] Sei ventilação pediátrica com via avançada: 20-30/min.
-- [ ] Sei quando iniciar RCP em bradicardia pediátrica com pulso.
-- [ ] Sei usar POCUS sem prolongar pausa.
-- [ ] Sei interpretar capnografia que sobe abruptamente ou desaparece após transporte.
-- [ ] Sei quando considerar trombólise em PCR por TEP provável.
-- [ ] Sei a regra prática da histerotomia perimortem na gestante.
-- [ ] Sei que afogamento é PCR hipóxica e pede ventilação precoce.
-- [ ] Sei reconhecer fluxo IML vs SVO após óbito.
-- [ ] Sei pacote pós-RCE: O2, CO2, PA, ECG, causa, temperatura, convulsão, UTI.
-- [ ] Sei que prognóstico neurológico é tardio e multimodal.
-
-## Questões e estações relacionadas
-
-Use está lista para refazer mentalmente as respostas depois de ler o capítulo:
-
-- **TEME22:** questões 6, 7, 22, 50, 82, 102 e 119.
-- **TEME23:** questões 7, 23, 33, 37, 62 e 89.
-- **TEME24:** questões 15, 51, 63, 67, 82, 97 e 99.
-- **TEME25:** questões 45, 55, 83 e 94.
-- **Prática 2022:** reanimação, RCP de alta qualidade e tamponamento por pneumopericárdio.
-- **Prática 2023:** reanimação pediátrica e TSV estável.
-- **Prática 2024:** BAVT instável, marca-passo, IAMCST e evolução para FV.
-
 ## Referências
 
 - Conteúdo programático TEME26 e referências oficiais do edital.

@@ -375,37 +375,6 @@ flowchart TD
 >
 > **Na prática clínica:** CAD adulta atual pode ser diagnosticada com glicemia >=200 se houver diabetes/cetose/acidose; salina balanceada pode reduzir acidose hipercloremica; protocolos de sódio usam limites de correção mais conservadores em alto risco; beta-bloqueio na tireotoxicose deve ser individualizado se choque/IC.
 
-## Checklist de revisão
-
-- [ ] Sei interpretar gasometria em 5 passos e calcular compensação.
-- [ ] Sei calcular AG, corrigir por albumina e pensar em osmolar gap.
-- [ ] Sei tratar hiperK emergente na ordem: cálcio, shift, remoção.
-- [ ] Sei que ECG normal não exclui hiperK.
-- [ ] Sei tratar hiponatremia grave com bolus de NaCl 3% sem normalizar rápido.
-- [ ] Sei diferenciar CAD e EHH e não iniciar insulina com K baixo.
-- [ ] Sei quando bicarbonato ajuda e quando atrapalha.
-- [ ] Sei AEIOU da diálise de urgência.
-- [ ] Sei manejar rabdomiólise com volume, diurese alvo e monitorização de K/IRA.
-- [ ] Sei reconhecer crise tireotóxica, mixedema e crise adrenal.
-- [ ] Sei as questões TEME: CAD >250/pH<7,3/cetonemia; etilenoglicol; captopril na crise renal esclerodérmica; bicarbonato no TCA.
-
-## Questões e estações relacionadas
-
-- **TEME22 Q51:** suspeita de CAD com choque/infecção: hidratação com SF 0,9% + antibiótico na primeira hora; evitar bolus de insulina/bicarbonato/KCl às cegas.
-- **TEME22 Q58:** definição de CAD: glicemia >250 mg/dL + pH <7,3 + cetonemia positiva.
-- **TEME22 Q63:** crise renal esclerodérmica com PA alta, convulsão, creatinina/proteinúria/hematúria: captopril.
-- **TEME22 Q57:** melhora pós-ressuscitação no choque: queda de lactato, melhora de BE e diurese.
-- **TEME23 Q30:** etilenoglicol: acidose metabólica com anion gap aumentado, QT prolongado e cristais de oxalato de cálcio.
-- **TEME23 Q63:** repetiu definição de CAD.
-- **TEME24 Q30:** intoxicação por tricíclico com instabilidade/ECG: bicarbonato de sódio, volume/vasoativo e via aérea após estabilização inicial.
-- **TEME24 Q79:** múltiplas picadas de abelha podem causar síndrome de envenenamento com IRA e necessidade de hemodialise.
-- **TEME25 Q83:** pós-RCE pediátrico: não usar bicarbonato de sódio rotineiramente para acidose metabólica.
-- **TEME25 Q97:** crise tireotóxica: antitireoidiano + beta-bloqueio + corticoide, iodeto após antitireoidiano.
-- **Aulas de cursinho - Aula 16:** IRA, DRC, indicações de diálise e rabdomiólise.
-- **Aulas de cursinho - Aula 33:** gasometria, compensações, AG, delta e osmolar gap.
-- **Aulas de cursinho - Aula 42:** K, Na, Ca, Mg é tratamento emergente.
-- **Aulas de cursinho - Aula 59:** hipoglicemia, CAD/EHH, mixedema, tireotoxicose e adrenal.
-
 ## Referências
 
 **Prova/TEME**

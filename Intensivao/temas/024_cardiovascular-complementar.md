@@ -131,23 +131,6 @@ flowchart TD
 >
 > **Na prática clínica:** escolha de anti-hipertensivo, anticoagulação e reperfusão depende de recurso, imagem, equipe, risco de sangramento e protocolo de aorta/TEP/cardiologia.
 
-## Checklist de revisão
-
-- [ ] Sei diferenciar pericardite, miocardite e SCA.
-- [ ] Sei sinais clínicos/POCUS de tamponamento.
-- [ ] Sei metas iniciais da dissecção.
-- [ ] Sei quando pensar em AAA roto.
-- [ ] Sei red flags de endocardite.
-- [ ] Sei complicações mecânicas do IAM.
-- [ ] Sei TVP/TEP como causa obstrutiva.
-
-## Questões e estações relacionadas
-
-- **TEME22:** tamponamento/pericárdio, miocardite e aorta como diagnósticos diferenciais.
-- **TEME23:** endocardite, tamponamento, TEV/TVP, dissecção e choque obstrutivo.
-- **TEME24:** tamponamento, aorta/aneurisma, TEV e choque.
-- **TEME25:** miocardite, pericárdio, TEV e choque cardiogênico/obstrutivo em questões e POCUS.
-
 ## Referências
 
 **Prova/TEME**
